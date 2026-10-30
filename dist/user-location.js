@@ -17,16 +17,10 @@
   const searchStatus = document.createElement('p');
   searchStatus.className = 'city-search-status';
   searchStatus.setAttribute('role', 'status');
-  const attribution = document.createElement('a');
-  attribution.className = 'city-attribution';
-  attribution.href = 'https://open-meteo.com/en/docs/geocoding-api';
-  attribution.target = '_blank';
-  attribution.rel = 'noopener noreferrer';
-  attribution.textContent = 'City search: Open-Meteo / GeoNames';
   input.autocomplete = 'off';
   input.setAttribute('aria-controls', suggestions.id);
   input.setAttribute('aria-expanded', 'false');
-  input.after(suggestions, searchStatus, attribution);
+  input.after(suggestions, searchStatus);
   const clearSuggestions = () => {
     clearTimeout(timer); searchRevision++; searchController?.abort();
     suggestions.replaceChildren(); suggestions.hidden = true;
