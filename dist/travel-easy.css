@@ -24,3 +24,7 @@
 .easy-search select {width:100%;}
 .easy-search .easy-plan-button {display:block; margin:24px auto 0; min-width:160px;}
 .easy-hero {padding-top:54px;}
+
+.easy-search #trip-budget {display:block; width:100%; min-height:56px; padding:15px; font:16px var(--sans); color:#202124; background:#fff; border:1px solid #a4a7ad; border-radius:12px;}
+.easy-search #trip-budget:focus-visible {outline:3px solid #458be7; outline-offset:4px;}
+.easy-budget-hint {font-size:12px; color:#656970; margin:10px 0 0; line-height:1.5;}
