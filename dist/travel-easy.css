@@ -114,3 +114,9 @@
 .departure-controls {display:flex; flex-wrap:wrap; gap:14px 20px; align-items:end; margin:16px 0 20px;}
 .detail-panel .departure-controls > label {display:flex; flex-direction:column; gap:8px; margin:0; font-size:12px; flex:1 1 170px;}
 .departure-controls select,.departure-controls input[type="date"] {box-sizing:border-box; width:100%; min-height:42px; padding:9px 11px; border:1px solid #bea77c; border-radius:5px; color:#493b26; background:#fffaf0; font:14px var(--sans); color-scheme:light;}
+
+.trip-preview-actions {display:flex; align-items:center; flex-wrap:wrap; gap:14px 20px; margin-top:20px;}
+#quick-add-trip {border:0; border-radius:24px; background:#1769d2; color:#fff; padding:13px 25px; min-height:46px; font:600 14px var(--sans);}
+#quick-add-trip:hover {background:#105aba;}
+.trip-preview-actions #trip-guide {margin-top:0;}
+#quick-add-status:empty {display:none;}

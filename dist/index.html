@@ -8,9 +8,10 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="atlas-theme.css?v=about-1"><link rel="stylesheet" href="map-transition.css?v=egypt-nz-1"><script src="map-transition.js?v=egypt-nz-1" defer></script><script src="country-facts.js?v=egypt-nz-1" defer></script><script src="travel-details.js?v=calendar-1" defer></script><script src="community-picks.js?v=egypt-nz-1" defer></script><script src="treasures.js?v=egypt-nz-1" defer></script><script src="app.js?v=saved-trips-1" defer></script>
 <link rel="stylesheet" href="clarity.css?v=planning-1">
-<link rel="stylesheet" href="travel-easy.css?v=calendar-1">
-<script src="trip-start.js?v=saved-trips-1" defer></script>
+<link rel="stylesheet" href="travel-easy.css?v=quick-add-1">
+<script src="trip-start.js?v=quick-add-1" defer></script>
 <script src="user-location.js?v=costs-1" defer></script>
+<script src="saved-trips.js?v=quick-add-1" defer></script>
 </head>
 <body class="home-page">
 <a class="skip" href="#main-content">Skip to content</a>
@@ -43,7 +44,8 @@
     <section id="trip-idea" class="trip-idea" aria-labelledby="trip-idea-title" aria-live="polite" hidden>
       <p class="trip-idea-label">YOUR TRIP IDEA</p><h2 id="trip-idea-title"></h2>
       <p id="trip-origin"></p><p id="trip-dates"></p><p id="trip-budget-summary" hidden></p>
-      <a id="trip-guide" href="destinations.html">Explore this destination →</a>
+      <div class="trip-preview-actions"><button type="button" id="quick-add-trip">Add Now</button><a id="trip-guide" href="destinations.html">Explore this destination →</a></div>
+      <p id="quick-add-status" role="status"></p>
     </section>
   </section>
 </main>

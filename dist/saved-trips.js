@@ -15,10 +15,17 @@
     try { const draft=JSON.parse(localStorage.getItem(draftKey)); return validTrip(draft?.trip)&&Date.now()-draft.savedAt<604800000 ? draft.trip : null; } catch {return null;}
   }
   document.addEventListener('click', event => {
-    const button=event.target.closest('#add-this-trip');
+    const button=event.target.closest('#add-this-trip, #quick-add-trip');
     if (!button) return;
-    const status=document.querySelector('#trip-add-status');
+    const status=document.querySelector(button.id==='quick-add-trip'?'#quick-add-status':'#trip-add-status');
     try {
+      if(button.id==='quick-add-trip'){
+        const trip=JSON.parse(document.querySelector('#trip-idea').dataset.trip||'null');
+        if(!validTrip(trip))throw Error('Please generate a trip first.');
+        localStorage.setItem(draftKey,JSON.stringify({trip,savedAt:Date.now()}));
+        location.href='profile.html?addTrip=1';
+        return;
+      }
       const params=new URLSearchParams(location.search),key=params.get('country');
       if(!names[key])throw Error('Choose a destination first.');
       const state=getBudgetState(key),request=flightRequest(key,state.days);
