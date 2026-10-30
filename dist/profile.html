@@ -13,10 +13,13 @@
 
 <meta name="referrer" content="no-referrer"><link rel="stylesheet" href="profile.css?v=accounts-1"><script src="vendor/supabase-2.118.0.js" defer></script><script src="profile-config.js?v=accounts-1" defer></script><script src="profile.js?v=accounts-1" defer></script>
 <link rel="stylesheet" href="clarity.css?v=planning-1">
-<link rel="stylesheet" href="travel-easy.css?v=clean-1">
+<link rel="stylesheet" href="travel-easy.css?v=location-1">
+<script src="user-location.js?v=location-1" defer></script>
 </head>
 <body class="interior-page"><a class="skip" href="#main-content">Skip to content</a><header class="site-header wrap">
-  <a class="brand" href="index.html" aria-label="Travel Easy home"><span>TRAVEL EASY</span></a>
+  <div class="header-identity"><a class="brand" href="index.html" aria-label="Travel Easy home"><span>TRAVEL EASY</span></a>
+    <div class="user-location"><button type="button" id="location-toggle" aria-expanded="false" aria-controls="location-editor"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-7 7-13a7 7 0 0 0-14 0c0 6 7 13 7 13Z"/><circle cx="12" cy="8" r="2.5"/></svg><span id="location-label" aria-live="polite">Finding your city…</span><span class="location-change">Change</span></button>
+    <form id="location-editor" hidden><label for="location-city">Your departure city</label><input id="location-city" type="text" placeholder="e.g. Toronto, Canada" maxlength="100" required autocomplete="address-level2"><p>Approximate location from your internet connection. You can choose any city.</p><div><button type="submit">Save</button><button type="button" id="location-cancel">Cancel</button></div></form></div></div>
   <nav aria-label="Main navigation"><a href="index.html">Home</a><a href="destinations.html">Destinations</a><a href="profile.html" aria-current="page" class="profile-nav">Profile</a></nav>
 </header><main id="main-content"><section class="account-intro wrap">
   <p class="eyebrow">YOUR PERSONAL ATLAS</p>
