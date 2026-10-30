@@ -15,10 +15,10 @@ function renderTravelDetail(key,kind){
  const panel=document.querySelector('.detail-panel'),d=travelData[key],name=countries[key].name;
  panel.hidden=false;
  if(kind==='flights'){
- panel.innerHTML=`<h3>Flights and routing</h3><p class="estimate-note">Illustrative CAD round-trip economy allowances and one-way journey times, to be confirmed. These are not current fares, schedules or ranked live results. Enter your dates in the linked flight search to compare actual options.</p><label>Departure city <select id="departure-city">${departureCities.map(([code,n])=>`<option value="${code}" ${code===guideDeparture?'selected':''}>${n} (${code})</option>`).join('')}</select></label>${departureDateField(key)}<div id="route-results"></div>`;
+ panel.innerHTML=`<h3>Flights and routing</h3><p class="estimate-note">Illustrative CAD round-trip economy allowances and one-way journey times, to be confirmed. These are not current fares, schedules or ranked live results. Enter your dates in the linked flight search to compare actual options.</p><div class="departure-controls"><label>Departure city <select id="departure-city">${departureCities.map(([code,n])=>`<option value="${code}" ${code===guideDeparture?'selected':''}>${n} (${code})</option>`).join('')}</select></label>${departureDateField(key)}</div><div id="route-results"></div>`;
  const update=()=>{guideDeparture=panel.querySelector('select').value;
  const request=flightRequest(key,getBudgetState(key).days),routes=getFlightRoutes(key,request);
- panel.querySelector('#route-results').innerHTML=`<div class="table-scroll"><table><thead><tr><th>Arrival hub</th><th>Return CAD</th><th>Journey out</th><th>Dates & fares</th></tr></thead><tbody>${routes.map(r=>`<tr><td>${r.city} (${r.code})</td><td>${r.verified?'':'Sample '}$${r.price}</td><td>${r.verified?'':'~'}${r.time} h</td><td><a target="_blank" rel="noopener noreferrer" href="${flightSearchUrl(request,r.code)}">Search ↗</a></td></tr>`).join('')}</tbody></table></div><p>Connections, season and baggage can change the total considerably.</p>`;};panel.querySelector('select').onchange=update;update();
+ panel.querySelector('#route-results').innerHTML=`<div class="table-scroll"><table><thead><tr><th>Arrival hub</th><th>Return CAD</th><th>Journey out</th><th>Dates & fares</th></tr></thead><tbody>${routes.map(r=>`<tr><td>${r.city} (${r.code})</td><td>${r.verified?'':'Sample '}$${r.price}</td><td>${r.verified?'':'~'}${r.time} h</td><td><a target="_blank" rel="noopener noreferrer" href="${flightSearchUrl(request,r.code)}">Search ↗</a></td></tr>`).join('')}</tbody></table></div><p>Connections, season and baggage can change the total considerably.</p>`;};panel.querySelector('select').onchange=update;bindDepartureDate(key,panel,update);update();
  }else if(kind==='season'){
  panel.innerHTML=`<h3>Best month to go</h3><p class="estimate-note">Draft seasonal guide — classifications to be confirmed against regional climate sources. BEST = generally milder/drier sightseeing conditions; AVERAGE = mixed conditions; WORST = less favourable heat, rain or cold for general sightseeing. This is not a safety forecast or a rating for skiing, festivals or every activity.</p><div class="table-scroll"><table class="season-table"><colgroup><col class="season-region-col">${Array.from({length:12},()=>'<col class="season-month-col">').join('')}</colgroup><thead><tr><th>Region</th>${['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'].map(m=>`<th>${m}</th>`).join('')}</tr></thead><tbody>${d.regions.map(([region,months])=>`<tr><th>${region}</th>${[...months].map(c=>{const text={B:'BEST',A:'AVERAGE',W:'WORST'}[c];return `<td class="${text.toLowerCase()}">${text}</td>`}).join('')}</tr>`).join('')}</tbody></table></div><p><a href="https://climateknowledgeportal.worldbank.org/" target="_blank" rel="noopener noreferrer">Explore World Bank climate data ↗</a></p>`;
  }else if(kind==='insurance'){
@@ -27,7 +27,7 @@ function renderTravelDetail(key,kind){
  const state=getBudgetState(key);
  const flight=getFlightRoutes(key,flightRequest(key,state.days))[0];
  if(!state.flightManual)state.rates[0]=flight.price;
- panel.innerHTML=`<h3>Budget and costs</h3><p class="estimate-note">Sample CAD allowances per person, to be confirmed. Airfare matches Flights and routing for your departure city; live fares are not connected. Edit amounts to suit your trip. Excludes insurance, visas and major paid activities.</p><label>Departure city <select id="budget-departure">${departureCities.map(([code,n])=>`<option value="${code}" ${code===guideDeparture?'selected':''}>${n} (${code})</option>`).join('')}</select></label>${departureDateField(key)}<label>Days <input id="trip-days" type="number" min="1" max="365" value="${state.days}"></label><label>Nights <input id="trip-nights" type="number" min="0" max="365" value="${state.nights}"> <button type="button" class="budget-auto" id="reset-nights" ${state.nightsManual?'':'hidden'}>Use Days − 1</button></label><table><thead><tr><th>Category</th><th>Basis</th><th>CAD allowance</th></tr></thead><tbody>${[['Flights (round trip)','one-time'],['Accommodation','per night'],['Food','per day'],['Internal transport','per day'],['Miscellaneous','per day']].map(([n,b],i)=>`<tr><td>${n}</td><td>${b}</td><td><input aria-label="${n} CAD" class="budget-rate" type="number" min="0" max="100000" value="${state.rates[i]}" style="width:85px"></td></tr>`).join('')}</tbody></table><p class="budget-flight-note" id="budget-flight-note"></p><button type="button" class="budget-auto" id="reset-flight" ${state.flightManual?'':'hidden'}>Use route estimate</button><output id="budget-total" aria-live="polite"></output>`;
+ panel.innerHTML=`<h3>Budget and costs</h3><p class="estimate-note">Sample CAD allowances per person, to be confirmed. Airfare matches Flights and routing for your departure city; live fares are not connected. Edit amounts to suit your trip. Excludes insurance, visas and major paid activities.</p><div class="departure-controls"><label>Departure city <select id="budget-departure">${departureCities.map(([code,n])=>`<option value="${code}" ${code===guideDeparture?'selected':''}>${n} (${code})</option>`).join('')}</select></label>${departureDateField(key)}</div><label>Days <input id="trip-days" type="number" min="1" max="365" value="${state.days}"></label><label>Nights <input id="trip-nights" type="number" min="0" max="365" value="${state.nights}"> <button type="button" class="budget-auto" id="reset-nights" ${state.nightsManual?'':'hidden'}>Use Days − 1</button></label><table><thead><tr><th>Category</th><th>Basis</th><th>CAD allowance</th></tr></thead><tbody>${[['Flights (round trip)','one-time'],['Accommodation','per night'],['Food','per day'],['Internal transport','per day'],['Miscellaneous','per day']].map(([n,b],i)=>`<tr><td>${n}</td><td>${b}</td><td><input aria-label="${n} CAD" class="budget-rate" type="number" min="0" max="100000" value="${state.rates[i]}" style="width:85px"></td></tr>`).join('')}</tbody></table><p class="budget-flight-note" id="budget-flight-note"></p><button type="button" class="budget-auto" id="reset-flight" ${state.flightManual?'':'hidden'}>Use route estimate</button><output id="budget-total" aria-live="polite"></output>`;
  const daysInput=panel.querySelector('#trip-days'),nightsInput=panel.querySelector('#trip-nights'),rateInputs=[...panel.querySelectorAll('.budget-rate')];
  const update=()=>{
   panel.querySelector('#reset-nights').hidden=!state.nightsManual;
@@ -42,6 +42,7 @@ function renderTravelDetail(key,kind){
  panel.querySelector('#reset-nights').onclick=()=>{state.nightsManual=false;state.nights=Math.max(0,state.days-1);nightsInput.value=state.nights;update();};
  rateInputs.forEach((input,i)=>input.oninput=()=>{state.rates[i]=Math.max(0,Number(input.value)||0);if(i===0)state.flightManual=true;update();});
  panel.querySelector('#budget-departure').onchange=event=>{guideDeparture=event.target.value;syncFlight();update();};
+ bindDepartureDate(key,panel,()=>{syncFlight();update();});
  panel.querySelector('#reset-flight').onclick=()=>{state.flightManual=false;syncFlight();update();};
  update();
  }
@@ -61,8 +62,8 @@ function flightRequest(key,days=30,now=new Date()){
  const end=new Date(start);end.setDate(end.getDate()+Math.max(0,days-1));
  const date=d=>`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
  const params=new URLSearchParams(location.search);
- const requestedStart=params.get('start');
- if(params.get('country')===key && params.get('returnTo')==='home' && validTripDate(requestedStart)) {
+ const requestedStart=budgetStates[key]?.departureDate || params.get('start');
+ if((budgetStates[key]?.departureDate || (params.get('country')===key && params.get('returnTo')==='home')) && validTripDate(requestedStart)) {
   const tripStart=new Date(requestedStart+'T12:00:00');
   const tripEnd=new Date(tripStart);tripEnd.setDate(tripEnd.getDate()+Math.max(0,days-1));
   return {origin:guideDeparture,key,departureDate:requestedStart,returnDate:date(tripEnd)};
@@ -142,5 +143,20 @@ function validTripDate(value) {
 }
 function departureDateField(key) {
  const request=flightRequest(key,getBudgetState(key).days);
- return '<span class="trip-departure-date">Departure date <strong>'+request.departureDate+'</strong></span>';
+ return '<label class="trip-departure-date">Departure date <input id="departure-date" type="date" value="'+request.departureDate+'" required></label>';
+}
+
+function bindDepartureDate(key,panel,onChange) {
+ const input=panel.querySelector('#departure-date');
+ input.addEventListener('change',()=>{
+  if(!validTripDate(input.value)){input.value=flightRequest(key,getBudgetState(key).days).departureDate;return;}
+  getBudgetState(key).departureDate=input.value;
+  const params=new URLSearchParams(location.search);
+  if(params.get('country')===key){
+   const request=flightRequest(key,getBudgetState(key).days);
+   params.set('start',request.departureDate);params.set('end',request.returnDate);
+   history.replaceState(null,'',location.pathname+'?'+params.toString()+location.hash);
+  }
+  onChange();
+ });
 }

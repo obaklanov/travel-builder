@@ -111,3 +111,6 @@
   #guide-dialog.trip-mode .trip-collectibles {grid-column:1; grid-row:1; position:relative; width:100%; margin-top:calc(305px + clamp(280px,43vh,390px)); padding:25px 30px 35px; border-top:0; clear:none; align-self:start;}
   #guide-dialog.trip-mode .trip-collectibles > section {max-width:none; margin:0;}
 }
+.departure-controls {display:flex; flex-wrap:wrap; gap:14px 20px; align-items:end; margin:16px 0 20px;}
+.detail-panel .departure-controls > label {display:flex; flex-direction:column; gap:8px; margin:0; font-size:12px; flex:1 1 170px;}
+.departure-controls select,.departure-controls input[type="date"] {box-sizing:border-box; width:100%; min-height:42px; padding:9px 11px; border:1px solid #bea77c; border-radius:5px; color:#493b26; background:#fffaf0; font:14px var(--sans); color-scheme:light;}
