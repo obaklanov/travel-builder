@@ -360,8 +360,9 @@
     try {
       if (!window.supabase?.createClient || !config?.url || !config?.publishableKey) throw new Error('Account connection unavailable');
       client = window.supabase.createClient(config.url, config.publishableKey, {
-        auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: true, storageKey: 'travel-atlas-auth' }
+        auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: true, storageKey: 'travel-easy-auth' }
       });
+      window.TRAVEL_EASY_CLIENT = client;
       client.auth.onAuthStateChange((event, session) => {
         if (event === 'PASSWORD_RECOVERY') recoveryMode = true;
         // Do not await another auth operation inside the SDK's callback.

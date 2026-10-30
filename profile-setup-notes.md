@@ -8,12 +8,12 @@ The public configuration is in `dist/profile-config.js`. Its publishable key is 
 
 ## Project configuration
 
-Supabase project: `hmecyiinaotnjaxgzkow`.
+Supabase project: `ytevjyzzqnapbawmenzz`.
 
-1. Run `supabase-profile-setup.sql` in the project's SQL Editor.
+1. Run `supabase-travel-easy-setup.sql` in the project's SQL Editor.
 2. Authentication → URL Configuration:
-   - Site URL: `https://obaklanov.github.io/canadian-travel-atlas/profile.html`
-   - Allowed redirects: the same URL and `https://obaklanov.github.io/canadian-travel-atlas/profile.html?reset=1`.
+   - Site URL: `https://obaklanov.github.io/travel-easy/profile.html`
+   - Allowed redirects: the same URL and `https://obaklanov.github.io/travel-easy/profile.html?reset=1`.
 3. Keep email/password sign-in and email confirmation enabled. The website enforces at least ten characters for new passwords; Supabase's own password rules also apply.
 4. For initial testing, use the email associated with a project-team member. The default Supabase email sender restricts recipients and has low sending limits. Configure custom SMTP before inviting other users; do not bypass confirmation to work around email delivery limits.
 
@@ -30,7 +30,7 @@ The account holder enters their own password and handles email links; passwords 
 - Country choices update a draft map immediately. Save writes to Supabase. The page uses no separate local profile database.
 - The catalogue includes countries and territories, so its counter is labelled “places visited.” Smaller places may have no visible polygon in the coarse map.
 - Visiting a country does not automatically award its landmark treasures.
-- Planned/previous trip records, photo uploads, public profiles and community sharing are not implemented yet.
+- Planned trips are saved privately in travel_easy_trips. Previous trip records, photo uploads, public profiles and community sharing are not implemented yet.
 - Row-level security restricts SELECT, INSERT and UPDATE to `auth.uid() = id`. Anonymous access is revoked. Nickname and country lists are validated on the database as well as in the interface.
 
 ## Libraries and data

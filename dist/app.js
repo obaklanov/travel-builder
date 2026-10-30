@@ -33,6 +33,8 @@ try {
 function showGuide(key) {
   const country = countries[key];
   if (!country) return;
+  const isTrip = new URLSearchParams(location.search).get('returnTo') === 'home';
+  dialog.classList.toggle('trip-mode',isTrip);
   activeCountry = key;
   const url = 'https://travel.gc.ca/destinations/' + key;
   const facts = countryFacts[key];
@@ -47,7 +49,7 @@ function showGuide(key) {
       <p><span>Area</span> <strong title="${facts.area.toLocaleString('en-CA')} km²">${areaLabel} km²</strong><small title="Share of combined country and territory area; see definitions">· ${facts.areaShare}% world · Rank ${facts.areaRank}/${facts.areaCount}</small></p>
       <details class="facts-sources"><summary>Dates, sources &amp; definitions</summary><div>Population: 2026 estimates. Area includes inland water; its world share is calculated from the combined 234 listed countries and territories (136,059,683 km²), excluding oceans and Antarctica. Rankings include territories. Figures retrieved 29 October 2026. M = million; k = thousand.<br><a href="https://www.worldometers.info/world-population/population-by-country/" target="_blank" rel="noopener noreferrer">Population source</a> · <a href="https://www.worldometers.info/geography/largest-countries-in-the-world/" target="_blank" rel="noopener noreferrer">Area source</a></div></details>
     </section>
-    ${countryTreasures(key)}
+    ${isTrip ? '<section class="trip-add-area"><button type="button" id="add-this-trip">ADD THIS TRIP <span aria-hidden="true">＋</span></button><p>Save it to your profile.</p><p id="trip-add-status" role="status"></p></section>' : countryTreasures(key)}
     <div class="guide-body"><p class="eyebrow">${country.region.toUpperCase()}</p>
     <h2 id="guide-title">7 Key details on trip to ${country.name}</h2>
     <div class="guide-links">
@@ -59,9 +61,8 @@ function showGuide(key) {
       <button data-detail="budget">${guideDetailIcon('budget')}<span class="guide-detail-label">Budget and costs</span><span class="guide-detail-arrow" aria-hidden="true">→</span></button>
       <a href="${url}" target="_blank" rel="noopener noreferrer">${guideDetailIcon('advice')}<span class="guide-detail-label">Current Canadian travel advice</span><span class="guide-detail-arrow" aria-hidden="true">↗</span></a>
     </div><section class="detail-panel" hidden tabindex="-1"></section>
-    <button class="guide-checklist departure-stamp"><span class="stamp-check" aria-hidden="true">✓</span><span class="stamp-copy"><span class="stamp-eyebrow">READY TO GO?</span><span class="stamp-action">Open departure checklist <span aria-hidden="true">→</span></span></span></button>${communitySection(key)}</div>`;
+    <button class="guide-checklist departure-stamp"><span class="stamp-check" aria-hidden="true">✓</span><span class="stamp-copy"><span class="stamp-eyebrow">READY TO GO?</span><span class="stamp-action">Open departure checklist <span aria-hidden="true">→</span></span></span></button>${communitySection(key)}</div>${isTrip ? '<div class="trip-collectibles">'+countryTreasures(key)+'</div>' : ''}`;
   document.querySelector('.guide-checklist').onclick = () => {
-    dialog.close();
     if(!document.querySelector('#checklist')){window.location.href='planning.html?tripCountry='+encodeURIComponent(key);return;}
     document.querySelector('#checklist').scrollIntoView({behavior:'smooth'});
     document.querySelector('#download-checklist').focus({preventScroll:true});
