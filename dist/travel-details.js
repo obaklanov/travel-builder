@@ -10,7 +10,7 @@ const travelData={
  thailand:{airports:[['BKK','Bangkok Suvarnabhumi'],['HKT','Phuket'],['CNX','Chiang Mai'],['USM','Koh Samui']],base:1600,hours:22,costs:[65,25,15,18],regions:[['Bangkok / central Thailand','BBAAWWWWWWBB'],['Chiang Mai / north','BAWWAAWWWABB'],['Phuket / Andaman coast','BBBAWWWWWWAB'],['Koh Samui / Gulf coast','ABBBBAAAAAWW']]}
 };
 const departureCities=[['YYZ','Toronto'],['YVR','Vancouver'],['YUL','Montréal'],['YYC','Calgary'],['YEG','Edmonton']];
-let guideDeparture='YYZ';
+let guideDeparture=departureCities.some(([code])=>code===new URLSearchParams(location.search).get('origin'))?new URLSearchParams(location.search).get('origin'):'YYZ';
 function renderTravelDetail(key,kind){
  const panel=document.querySelector('.detail-panel'),d=travelData[key],name=countries[key].name;
  panel.hidden=false;
@@ -34,7 +34,7 @@ function renderTravelDetail(key,kind){
   panel.querySelector('#reset-flight').hidden=!state.flightManual;
   const route=getFlightRoutes(key,flightRequest(key,state.days))[0];
   panel.querySelector('#budget-flight-note').textContent=state.flightManual?'Custom round-trip flight allowance.':`${guideDeparture} ↔ ${route.code} · ${route.verified?'Lowest qualifying quoted fare':'Sample round-trip allowance'}`;
-  panel.querySelector('output').textContent='Estimated total: '+new Intl.NumberFormat('en-CA',{style:'currency',currency:'CAD',maximumFractionDigits:0}).format(state.rates[0]+state.rates[1]*state.nights+(state.rates[2]+state.rates[3]+state.rates[4])*state.days);
+  panel.querySelector('output').textContent='Estimated total: '+new Intl.NumberFormat('en-CA',{style:'currency',currency:'CAD',maximumFractionDigits:0}).format(tripTotalFromRates(state.rates,state.days,state.nights));
  };
  const syncFlight=()=>{if(!state.flightManual){state.rates[0]=getFlightRoutes(key,flightRequest(key,state.days))[0].price;rateInputs[0].value=state.rates[0];}};
  daysInput.oninput=()=>{if(daysInput.value==='')return;state.days=Math.min(365,Math.max(1,Math.floor(Number(daysInput.value)||1)));if(!state.nightsManual){state.nights=Math.max(0,state.days-1);nightsInput.value=state.nights;}syncFlight();update();};
@@ -53,7 +53,7 @@ function renderTravelDetail(key,kind){
 const verifiedFlightOffers = [];
 const flightSearchPolicy = Object.freeze({monthsAhead:3,maxStopsPerDirection:2,maxLayoverMinutes:240,maxQuoteAgeHours:24,currency:'CAD',cabin:'economy'});
 const budgetStates={};
-function getBudgetState(key){return budgetStates[key]??=( {days:30,nights:29,nightsManual:false,flightManual:false,rates:[travelData[key].base,...travelData[key].costs]} );}
+function getBudgetState(key){return budgetStates[key]??=( {days:initialTripDays(key),nights:initialTripDays(key)-1,nightsManual:false,flightManual:false,rates:[travelData[key].base,...travelData[key].costs]} );}
 function flightRequest(key,days=30,now=new Date()){
  const start=new Date(now.getFullYear(),now.getMonth()+flightSearchPolicy.monthsAhead,1);
  const lastDay=new Date(start.getFullYear(),start.getMonth()+1,0).getDate();
@@ -99,4 +99,31 @@ function getFlightRoutes(key,request=flightRequest(key),offers=verifiedFlightOff
 function flightSearchUrl(request,destination){
  const query=`round trip economy flights ${request.origin} to ${destination} departing ${request.departureDate} returning ${request.returnDate} maximum 2 stops each way layovers no longer than 4 hours`;
  return 'https://www.google.com/travel/flights?q='+encodeURIComponent(query)+'&curr=CAD';
+}
+
+// Shared by the budget editor and the quick trip preview.
+function initialTripDays(key) {
+ const params=new URLSearchParams(location.search),days=Number(params.get('days'));
+ return params.get('country')===key && Number.isInteger(days) && days>=1 && days<=365 ? days : 30;
+}
+function tripTotalFromRates(rates,days,nights=Math.max(0,days-1)) {
+ return rates[0]+rates[1]*nights+(rates[2]+rates[3]+rates[4])*days;
+}
+function departureForLocation(label,latitude,longitude) {
+ const text=label.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+ const direct=departureCities.find(([,city])=>text.includes(city.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase()));
+ if(direct)return {code:direct[0],city:direct[1],matched:true};
+ const hubs=[['YYZ','Toronto',43.68,-79.63],['YVR','Vancouver',49.19,-123.18],['YUL','Montréal',45.47,-73.74],['YYC','Calgary',51.13,-114.01],['YEG','Edmonton',53.31,-113.58]];
+ if(Number.isFinite(latitude)&&Number.isFinite(longitude)) {
+  const radians=value=>value*Math.PI/180;
+  const distance=hub=>{const dlat=radians(hub[2]-latitude),dlon=radians(hub[3]-longitude);return Math.sin(dlat/2)**2+Math.cos(radians(latitude))*Math.cos(radians(hub[2]))*Math.sin(dlon/2)**2;};
+  hubs.sort((a,b)=>distance(a)-distance(b));
+ }
+ return {code:hubs[0][0],city:hubs[0][1],matched:false};
+}
+function quickTripEstimate(key,days,origin,start,end) {
+ const request={...flightRequest(key,days),origin};
+ if(start&&end){request.departureDate=start;request.returnDate=end;}
+ const flight=getFlightRoutes(key,request)[0];
+ return {total:tripTotalFromRates([flight.price,...travelData[key].costs],days),verified:flight.verified};
 }

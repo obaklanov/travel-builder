@@ -98,12 +98,21 @@ document.querySelector('#destination-search').addEventListener('submit', event =
   const formatter = new Intl.DateTimeFormat('en-CA', {month:'short',day:'numeric',year:'numeric'});
   document.querySelector('#trip-idea-title').textContent = destination.textContent;
   document.querySelector('#trip-origin').textContent = knownOrigin ? 'From ' + origin : 'Departure city: choose your city above';
-  document.querySelector('#trip-dates').textContent = formatter.format(start) + ' – ' + formatter.format(end) + ' · ' + days + ' days';
+  const locationLabel = document.querySelector('#location-label');
+  const departure = departureForLocation(knownOrigin ? origin : '', locationLabel?.dataset.latitude ? Number(locationLabel.dataset.latitude) : NaN, locationLabel?.dataset.longitude ? Number(locationLabel.dataset.longitude) : NaN);
+  const iso = date => date.getFullYear() + '-' + String(date.getMonth()+1).padStart(2,'0') + '-' + String(date.getDate()).padStart(2,'0');
+  const estimate = quickTripEstimate(destination.value,days,departure.code,iso(start),iso(end));
+  const cost = new Intl.NumberFormat('en-CA',{style:'currency',currency:'CAD',maximumFractionDigits:0}).format(estimate.total);
+  const datesLine = document.querySelector('#trip-dates');
+  datesLine.textContent = formatter.format(start) + ' – ' + formatter.format(end) + ' · ' + days + ' days · Approx. ' + cost + ' CAD';
+  datesLine.title = 'Sample per-person budget: round-trip flight, accommodation, food, local transport and miscellaneous. Excludes insurance, visas and major paid activities.';
+  if (!departure.matched) document.querySelector('#trip-origin').textContent += ' · estimate via ' + departure.city;
+
   const budgetSummary = document.querySelector('#trip-budget-summary');
   budgetSummary.hidden = !validBudget;
   budgetSummary.textContent = validBudget ? 'Your budget: ' + new Intl.NumberFormat('en-CA', {style:'currency',currency:'CAD',maximumFractionDigits:2}).format(Number(amount)) + ' CAD' : '';
   const guide = document.querySelector('#trip-guide');
-  guide.href = 'destinations.html?country=' + encodeURIComponent(destination.value) + '&returnTo=home' + (validBudget ? '&budget=' + encodeURIComponent(amount) + '&currency=CAD' : '');
+  guide.href = 'destinations.html?country=' + encodeURIComponent(destination.value) + '&returnTo=home&origin=' + departure.code + '&days=' + days + (validBudget ? '&budget=' + encodeURIComponent(amount) + '&currency=CAD' : '');
   tripIdea.hidden = false;
   document.querySelector('#search-message').textContent = budgetChoice.value && !validBudget ? 'Trip created without a budget. Enter a positive CAD amount to include one.' : '';
 });

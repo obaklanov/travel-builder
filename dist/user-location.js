@@ -42,7 +42,7 @@
       if (city.admin1) { const region = document.createElement('small'); region.textContent = city.admin1; button.append(region); }
       button.addEventListener('click', () => {
         input.value = title;
-        store({city:title, manual:true, savedAt:Date.now()}); show(title); close();
+        store({city:title, manual:true, latitude:city.latitude, longitude:city.longitude, savedAt:Date.now()}); show(title); close();
       });
       suggestions.append(button);
     }
@@ -83,7 +83,12 @@
     else buttons[(index + (event.key === 'ArrowDown' ? 1 : -1) + buttons.length) % buttons.length]?.focus();
   });
   const show = value => { label.textContent = value || 'Set your city'; };
-  const store = value => { chosen = value; };
+  const store = value => {
+    chosen = value;
+    if (Number.isFinite(value.latitude) && Number.isFinite(value.longitude)) {
+      label.dataset.latitude = String(value.latitude); label.dataset.longitude = String(value.longitude);
+    } else { delete label.dataset.latitude; delete label.dataset.longitude; }
+  };
   const close = () => { clearSuggestions(); editor.hidden = true; toggle.setAttribute('aria-expanded', 'false'); toggle.focus(); };
   toggle.addEventListener('click', () => {
     clearSuggestions();
@@ -107,6 +112,6 @@
       if (chosen?.manual) return;
       if (data.error || typeof data.city !== 'string' || !data.city.trim()) throw Error('No city');
       const city = [data.city, data.country_name].filter(value => typeof value === 'string' && value.trim()).join(', ').slice(0,100);
-      store({city, manual:false, savedAt:Date.now()}); show(city);
+      store({city, manual:false, latitude:data.latitude, longitude:data.longitude, savedAt:Date.now()}); show(city);
     }).catch(() => { if (!chosen) show(''); });
 })();
