@@ -85,7 +85,7 @@ document.querySelector('#destination-search')?.addEventListener('submit', event 
   const query = document.querySelector('#destination').value.trim().toLocaleLowerCase();
   const found = Object.keys(countries).find(key => key === query || countries[key].name.toLocaleLowerCase() === query);
   const message = document.querySelector('#search-message');
-  if (found) { message.textContent = ''; if(!document.querySelector('#destination-grid')){const budget = document.querySelector('#trip-budget')?.value; window.location.href='destinations.html?country='+encodeURIComponent(found)+(budget?'&budget='+encodeURIComponent(budget)+'&currency=CAD':'');return;} showGuide(found); }
+  if (found) { message.textContent = ''; if(!document.querySelector('#destination-grid')){const budget = document.querySelector('#trip-budget')?.value.replace(/[$,\s]/g, ''); window.location.href='destinations.html?country='+encodeURIComponent(found)+(budget?'&budget='+encodeURIComponent(budget)+'&currency=CAD':'');return;} showGuide(found); }
   else message.textContent = query ? 'Our first edition covers Japan, Portugal, Mexico, Thailand, Italy, Argentina, Egypt and New Zealand. Choose one to explore.' : 'Choose a country to get started: Japan, Portugal, Mexico, Thailand, Italy, Argentina, Egypt or New Zealand.';
 });
 document.querySelectorAll('[data-region]').forEach(button => {
