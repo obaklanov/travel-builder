@@ -17,3 +17,10 @@
 .easy-search button:hover {background:#105aba;}
 .easy-search select:focus-visible,.easy-search button:focus-visible {outline:3px solid #458be7; outline-offset:4px;}
 @media(max-width:700px){.easy-hero {padding-top:64px; padding-bottom:64px;}.easy-hero h1 {letter-spacing:-2px;}.easy-intro {font-size:18px; margin-bottom:36px;}.easy-tagline {font-size:14px;}.easy-search-row {flex-direction:column;}.site-header .brand {font-size:12px;}}
+
+/* Reveal the next decision only after a destination is selected. */
+.easy-budget-field[hidden] {display:none;}
+.easy-budget-field {margin-top:24px;}
+.easy-search select {width:100%;}
+.easy-search .easy-plan-button {display:block; margin:24px auto 0; min-width:160px;}
+.easy-hero {padding-top:54px;}
