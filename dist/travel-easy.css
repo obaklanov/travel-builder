@@ -103,3 +103,11 @@
 .saved-trip-item p {font-size:13px; margin:5px 0;}
 .saved-trip-item a {font-size:13px; color:#1769d2; text-underline-offset:4px;}
 @media(max-width:700px){#guide-dialog.trip-mode .trip-add-area {position:relative; top:auto; left:auto; width:auto; margin:0 26px 24px; padding-top:740px;}#guide-dialog.trip-mode .guide-body {padding-top:25px;}#guide-dialog.trip-mode .trip-collectibles {padding:24px 26px;}.trip-departure-date {margin-left:0; display:flex;}}
+
+/* Keep generated-trip collectibles in the left-hand page below the save action. */
+@media(min-width:701px) {
+  #guide-dialog.trip-mode .guide-content {display:grid; grid-template-columns:45% 55%; align-items:start;}
+  #guide-dialog.trip-mode .guide-body {grid-column:2; grid-row:1; width:100%; max-width:none; margin-left:0;}
+  #guide-dialog.trip-mode .trip-collectibles {grid-column:1; grid-row:1; position:relative; width:100%; margin-top:calc(305px + clamp(280px,43vh,390px)); padding:25px 30px 35px; border-top:0; clear:none; align-self:start;}
+  #guide-dialog.trip-mode .trip-collectibles > section {max-width:none; margin:0;}
+}
