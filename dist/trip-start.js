@@ -6,8 +6,8 @@ function updateDestinationVisibility() {
   const amount = budgetChoice.value.replace(/[$,\s]/g, '');
   const valid = /^\d+(?:\.\d{1,2})?$/.test(amount) && Number(amount) > 0;
   budgetChoice.setCustomValidity(budgetChoice.value && !valid ? 'Enter a positive CAD amount, such as $5,000 or 4250.' : '');
-  destinationField.hidden = !valid;
-  destinationChoice.disabled = !valid;
+  destinationField.hidden = false;
+  destinationChoice.disabled = false;
 }
 budgetChoice.addEventListener('input', updateDestinationVisibility);
 budgetChoice.addEventListener('change', updateDestinationVisibility);
@@ -73,3 +73,37 @@ budgetSuggestions.addEventListener('keydown', event => {
 });
 document.addEventListener('click', event => { if (!budgetWrapper.contains(event.target)) closeBudgetSuggestions(); });
 budgetWrapper.addEventListener('focusout', event => { if (!budgetWrapper.contains(event.relatedTarget)) closeBudgetSuggestions(); });
+
+// Generate editable trip ideas without requiring filters or an account.
+let previousDestination = null;
+const tripIdea = document.querySelector('#trip-idea');
+document.querySelector('#destination-search').addEventListener('submit', event => {
+  event.preventDefault(); closeBudgetSuggestions();
+  const amount = budgetChoice.value.replace(/[$,\s]/g, '');
+  const validBudget = /^\d+(?:\.\d{1,2})?$/.test(amount) && Number(amount) > 0;
+  const origin = document.querySelector('#location-label')?.textContent || '';
+  const knownOrigin = origin && !['Finding your city…','Set your city'].includes(origin);
+  let options = [...destinationChoice.options].filter(option => option.value);
+  if (!destinationChoice.value) {
+    const abroad = options.filter(option => !knownOrigin || !origin.toLowerCase().endsWith(', ' + option.textContent.toLowerCase()));
+    if (abroad.length) options = abroad;
+    const different = options.filter(option => option.value !== previousDestination);
+    if (different.length) options = different;
+  }
+  const destination = destinationChoice.value ? [...destinationChoice.options].find(option => option.value === destinationChoice.value) : options[Math.floor(Math.random() * options.length)];
+  previousDestination = destination.value;
+  const days = [7,10,14,21][Math.floor(Math.random() * 4)];
+  const start = new Date(); start.setHours(12,0,0,0); start.setDate(start.getDate() + 14 + Math.floor(Math.random() * 77));
+  const end = new Date(start); end.setDate(end.getDate() + days - 1);
+  const formatter = new Intl.DateTimeFormat('en-CA', {month:'short',day:'numeric',year:'numeric'});
+  document.querySelector('#trip-idea-title').textContent = destination.textContent;
+  document.querySelector('#trip-origin').textContent = knownOrigin ? 'From ' + origin : 'Departure city: choose your city above';
+  document.querySelector('#trip-dates').textContent = formatter.format(start) + ' – ' + formatter.format(end) + ' · ' + days + ' days';
+  const budgetSummary = document.querySelector('#trip-budget-summary');
+  budgetSummary.hidden = !validBudget;
+  budgetSummary.textContent = validBudget ? 'Your budget: ' + new Intl.NumberFormat('en-CA', {style:'currency',currency:'CAD',maximumFractionDigits:2}).format(Number(amount)) + ' CAD' : '';
+  const guide = document.querySelector('#trip-guide');
+  guide.href = 'destinations.html?country=' + encodeURIComponent(destination.value) + (validBudget ? '&budget=' + encodeURIComponent(amount) + '&currency=CAD' : '');
+  tripIdea.hidden = false;
+  document.querySelector('#search-message').textContent = budgetChoice.value && !validBudget ? 'Trip created without a budget. Enter a positive CAD amount to include one.' : '';
+});

@@ -82,6 +82,7 @@ dialog.addEventListener('click', event => {
 });
 document.querySelector('#destination-search')?.addEventListener('submit', event => {
   event.preventDefault();
+  if (event.currentTarget.hasAttribute('data-random-trips')) return;
   const query = document.querySelector('#destination').value.trim().toLocaleLowerCase();
   const found = Object.keys(countries).find(key => key === query || countries[key].name.toLocaleLowerCase() === query);
   const message = document.querySelector('#search-message');

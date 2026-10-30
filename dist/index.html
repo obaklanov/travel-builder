@@ -6,10 +6,10 @@
   <meta name="theme-color" content="#241b13"><title>Travel Easy — Your next trip starts here</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="atlas-theme.css?v=about-1"><link rel="stylesheet" href="map-transition.css?v=egypt-nz-1"><script src="map-transition.js?v=egypt-nz-1" defer></script><script src="country-facts.js?v=egypt-nz-1" defer></script><script src="travel-details.js?v=egypt-nz-1" defer></script><script src="community-picks.js?v=egypt-nz-1" defer></script><script src="treasures.js?v=egypt-nz-1" defer></script><script src="app.js?v=budget-3" defer></script>
+  <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="atlas-theme.css?v=about-1"><link rel="stylesheet" href="map-transition.css?v=egypt-nz-1"><script src="map-transition.js?v=egypt-nz-1" defer></script><script src="country-facts.js?v=egypt-nz-1" defer></script><script src="travel-details.js?v=egypt-nz-1" defer></script><script src="community-picks.js?v=egypt-nz-1" defer></script><script src="treasures.js?v=egypt-nz-1" defer></script><script src="app.js?v=random-1" defer></script>
 <link rel="stylesheet" href="clarity.css?v=planning-1">
-<link rel="stylesheet" href="travel-easy.css?v=white-budget-1">
-<script src="trip-start.js?v=white-budget-1" defer></script>
+<link rel="stylesheet" href="travel-easy.css?v=random-1">
+<script src="trip-start.js?v=random-1" defer></script>
 <script src="user-location.js?v=location-clean-1" defer></script>
 </head>
 <body class="home-page">
@@ -23,21 +23,29 @@
 <main id="main-content">
   <section class="easy-hero" aria-labelledby="hero-title">
     <h1 id="hero-title">Your next trip<br>starts here.</h1>
-    <p class="easy-intro">Choose a destination. Start planning.</p>
-    <form id="destination-search" class="easy-search">
+    <p class="easy-intro">A little inspiration. A trip of your own.</p>
+    <form id="destination-search" class="easy-search" data-random-trips novalidate>
+      <button class="easy-plan-button" type="submit">Create a trip</button>
+      <details class="trip-filters"><summary>Add filters</summary>
       <div id="budget-field" class="easy-budget-field">
         <label for="trip-budget">What’s your total budget? (CAD)</label>
-        <input id="trip-budget" name="budget" type="text" inputmode="decimal" autocomplete="off" placeholder="Choose or type an amount" aria-describedby="budget-hint" required>
+        <input id="trip-budget" name="budget" type="text" inputmode="decimal" autocomplete="off" placeholder="Choose or type an amount" aria-describedby="budget-hint">
         <datalist id="budget-options"><option value="$500"></option><option value="$1,000"></option><option value="$1,500"></option><option value="$2,000"></option><option value="$2,500"></option><option value="$3,000"></option><option value="$3,500"></option><option value="$4,000"></option><option value="$4,500"></option><option value="$5,000"></option><option value="$6,000"></option><option value="$7,000"></option><option value="$8,000"></option><option value="$9,000"></option><option value="$10,000"></option><option value="$11,000"></option><option value="$12,000"></option><option value="$13,000"></option><option value="$14,000"></option><option value="$15,000"></option><option value="$16,000"></option><option value="$17,000"></option><option value="$18,000"></option><option value="$19,000"></option><option value="$20,000"></option><option value="$25,000"></option><option value="$30,000"></option><option value="$35,000"></option><option value="$40,000"></option><option value="$45,000"></option><option value="$50,000"></option></datalist>
         <p id="budget-hint" class="easy-budget-hint">Select a suggested amount or enter your own.</p>
       </div>
-      <div id="destination-field" class="easy-destination-field" hidden>
+      <div id="destination-field" class="easy-destination-field">
       <label for="destination">Where would you like to go?</label>
-      <div class="easy-search-row"><select id="destination" required disabled><option value="" disabled selected>Choose a country</option><option value="argentina">Argentina</option><option value="egypt">Egypt</option><option value="italy">Italy</option><option value="japan">Japan</option><option value="mexico">Mexico</option><option value="new-zealand">New Zealand</option><option value="portugal">Portugal</option><option value="thailand">Thailand</option></select></div>
+      <div class="easy-search-row"><select id="destination"><option value="" selected>Surprise me</option><option value="argentina">Argentina</option><option value="egypt">Egypt</option><option value="italy">Italy</option><option value="japan">Japan</option><option value="mexico">Mexico</option><option value="new-zealand">New Zealand</option><option value="portugal">Portugal</option><option value="thailand">Thailand</option></select></div>
       </div>
-      <button class="easy-plan-button" type="submit">Plan my trip</button>
+      </details>
       <p id="search-message" class="search-message" role="status"></p>
     </form>
+    <section id="trip-idea" class="trip-idea" aria-labelledby="trip-idea-title" aria-live="polite" hidden>
+      <p class="trip-idea-label">YOUR TRIP IDEA</p><h2 id="trip-idea-title"></h2>
+      <p id="trip-origin"></p><p id="trip-dates"></p><p id="trip-budget-summary" hidden></p>
+      <a id="trip-guide" href="destinations.html">Explore this destination →</a>
+      <p class="trip-idea-note">A starting idea, ready to make your own. Prices and availability haven’t been checked.</p>
+    </section>
   </section>
 </main>
 <dialog id="guide-dialog" aria-labelledby="guide-title"><button class="close-dialog" aria-label="Close destination starter">×</button><div class="guide-content"></div></dialog>
