@@ -103,7 +103,7 @@ document.querySelector('#destination-search').addEventListener('submit', event =
   budgetSummary.hidden = !validBudget;
   budgetSummary.textContent = validBudget ? 'Your budget: ' + new Intl.NumberFormat('en-CA', {style:'currency',currency:'CAD',maximumFractionDigits:2}).format(Number(amount)) + ' CAD' : '';
   const guide = document.querySelector('#trip-guide');
-  guide.href = 'destinations.html?country=' + encodeURIComponent(destination.value) + (validBudget ? '&budget=' + encodeURIComponent(amount) + '&currency=CAD' : '');
+  guide.href = 'destinations.html?country=' + encodeURIComponent(destination.value) + '&returnTo=home' + (validBudget ? '&budget=' + encodeURIComponent(amount) + '&currency=CAD' : '');
   tripIdea.hidden = false;
   document.querySelector('#search-message').textContent = budgetChoice.value && !validBudget ? 'Trip created without a budget. Enter a positive CAD amount to include one.' : '';
 });

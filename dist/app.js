@@ -75,6 +75,9 @@ function showGuide(key) {
 }
 document.querySelectorAll('[data-guide]').forEach(button => button.addEventListener('click', () => showGuide(button.dataset.guide)));
 document.querySelector('.close-dialog').onclick = () => dialog.close();
+dialog.addEventListener('close', () => {
+  if (new URLSearchParams(window.location.search).get('returnTo') === 'home') window.location.href = 'index.html';
+});
 dialog.addEventListener('click', event => {
   if (event.target !== dialog) return;
   const rect = dialog.getBoundingClientRect();
