@@ -2,40 +2,30 @@
 <html lang="en-CA">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Explore destinations, estimate your travel budget and build your departure checklist. Your next trip starts here—free to explore, no account needed.">
-  <meta name="theme-color" content="#241b13"><title>Travel Atlas — Go places. Collect stories.</title>
+  <meta name="description" content="Your next trip starts here. Choose a destination and start planning with Travel Easy.">
+  <meta name="theme-color" content="#241b13"><title>Travel Easy — Your next trip starts here</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="atlas-theme.css?v=about-1"><link rel="stylesheet" href="map-transition.css?v=egypt-nz-1"><script src="map-transition.js?v=egypt-nz-1" defer></script><script src="country-facts.js?v=egypt-nz-1" defer></script><script src="travel-details.js?v=egypt-nz-1" defer></script><script src="community-picks.js?v=egypt-nz-1" defer></script><script src="treasures.js?v=egypt-nz-1" defer></script><script src="app.js?v=planning-1" defer></script>
 <link rel="stylesheet" href="clarity.css?v=planning-1">
+<link rel="stylesheet" href="travel-easy.css?v=clean-1">
 </head>
 <body class="home-page">
 <a class="skip" href="#main-content">Skip to content</a>
 <header class="site-header wrap">
-  <a class="brand" href="index.html" aria-label="Your Travel Atlas home"><span>YOUR TRAVEL<br>ATLAS</span></a>
+  <a class="brand" href="index.html" aria-label="Travel Easy home"><span>TRAVEL EASY</span></a>
   <nav aria-label="Main navigation"><a href="index.html" aria-current="page">Home</a><a href="destinations.html">Destinations</a><a href="profile.html" class="profile-nav">Profile</a></nav>
 </header>
 <main id="main-content">
-  <section class="clear-hero wrap" aria-labelledby="hero-title">
-    <div class="clear-hero-copy">
-      <p class="eyebrow">GO PLACES. COLLECT STORIES.</p>
-      <h1 id="hero-title">Your next trip<br>starts <em>here.</em></h1>
-      <p class="clear-intro">Explore destinations, estimate your budget and build your departure checklist.</p>
-      <form id="destination-search" class="clear-search">
-        <label for="destination">Where would you like to go?</label>
-        <div class="clear-search-row"><select id="destination" required><option value="" disabled selected>Choose a country</option><option value="argentina">Argentina</option><option value="egypt">Egypt</option><option value="italy">Italy</option><option value="japan">Japan</option><option value="mexico">Mexico</option><option value="new-zealand">New Zealand</option><option value="portugal">Portugal</option><option value="thailand">Thailand</option></select><button type="submit">Explore destination <span aria-hidden="true">↗</span></button></div>
-        <p id="search-message" class="search-message" role="status"></p>
-        <p class="clear-search-note">Free to explore. No account needed.</p>
-      </form>
-      <a class="clear-profile-link" href="profile.html">Already been somewhere? Mark where you’ve been <span aria-hidden="true">↗</span></a>
-    </div>
-    <div class="clear-map" aria-hidden="true"><img src="images/antique-atlas.png" alt="" fetchpriority="high"><span>A world of possibilities.</span></div>
-  </section>
-  <div class="foundation wrap"><span><b>01</b> Plan your next trip</span><span><b>02</b> Celebrate where you’ve been</span><span><b>03</b> Share the journey</span></div>
-
-  <section class="clear-about wrap" id="about" aria-labelledby="about-title">
-    <div><p class="eyebrow">ABOUT YOUR TRAVEL ATLAS</p><h2 id="about-title">For the curious.<br>For the journey.</h2></div>
-    <div><p>We’re travellers at heart—drawn to unfamiliar streets, adventure stories and the places that stay with us.</p><p>Your Travel Atlas brings practical trip details and your personal travel map together. Start with a destination. Make it part of your story.</p><a href="destinations.html">Browse all 8 destinations <span aria-hidden="true">↗</span></a></div>
+  <section class="easy-hero" aria-labelledby="hero-title">
+    <p class="easy-tagline">Go places. Collect stories.</p>
+    <h1 id="hero-title">Your next trip<br>starts here.</h1>
+    <p class="easy-intro">Choose a destination. Start planning.</p>
+    <form id="destination-search" class="easy-search">
+      <label for="destination">Where would you like to go?</label>
+      <div class="easy-search-row"><select id="destination" required><option value="" disabled selected>Choose a country</option><option value="argentina">Argentina</option><option value="egypt">Egypt</option><option value="italy">Italy</option><option value="japan">Japan</option><option value="mexico">Mexico</option><option value="new-zealand">New Zealand</option><option value="portugal">Portugal</option><option value="thailand">Thailand</option></select><button type="submit">Plan my trip</button></div>
+      <p id="search-message" class="search-message" role="status"></p>
+    </form>
   </section>
 </main>
 <dialog id="guide-dialog" aria-labelledby="guide-title"><button class="close-dialog" aria-label="Close destination starter">×</button><div class="guide-content"></div></dialog>
