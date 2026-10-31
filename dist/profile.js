@@ -92,6 +92,8 @@
 
   function updateMap() {
     $('#visited-count').textContent = String(selected.size);
+    $('#unselect-all').checked = selected.size === 0;
+    $('#unselect-all').disabled = selected.size === 0;
     $('#visited-world-map').setAttribute('aria-label', 'World map: ' + selected.size + ' countries and territories selected as visited.');
     const saved = new Set(profile?.visited_countries || []);
     pendingOutlineLayer?.replaceChildren();
@@ -197,7 +199,6 @@
     if (!user) {
       recoveryMode = false;
       $('#account-gate').hidden = false;
-      $('#profile-nickname').value = '';
       $('#traveller-title').textContent = 'Your personal atlas';
       $('#visited-country-list').replaceChildren();
       updateMap();
@@ -225,7 +226,6 @@
       legacySelected = new Set((data?.visited_countries || []).filter(code => !allowedCodes.has(code)));
       message(data ? '' : 'Welcome aboard. Choose the countries and territories you’ve visited, then save your profile.', 'success');
     }
-    $('#profile-nickname').value = data?.nickname || user.user_metadata?.nickname || '';
     $('#traveller-title').textContent = data?.nickname ? data.nickname + '’s atlas' : 'Your personal atlas';
     $('#save-profile').disabled = !storageReady;
     $('#country-search').value = '';
@@ -342,7 +342,7 @@
   $('#profile-form').addEventListener('submit', event => {
     event.preventDefault();
     if (!user || !storageReady) return;
-    const nickname = $('#profile-nickname').value.trim();
+    const nickname = profile?.nickname || user.user_metadata?.nickname || '';
     if (!nicknamePattern.test(nickname)) { message('Choose a nickname with 3–24 letters, numbers or underscores.', 'error'); return; }
     const id = user.id;
     const previouslySaved = new Set(profile?.visited_countries || []);
@@ -370,7 +370,7 @@
         updateMap();
         if (user?.id !== id) return;
         $('#traveller-title').textContent = nickname + '’s atlas';
-        const current = JSON.stringify({ nickname: $('#profile-nickname').value.trim(), visited: [...new Set([...selected,...legacySelected])].sort() });
+        const current = JSON.stringify({ nickname: profile?.nickname || user.user_metadata?.nickname || '', visited: [...new Set([...selected,...legacySelected])].sort() });
         setDirty(current !== snapshot);
         message('Your profile has been saved to your account.', 'success');
       } catch (error) {
@@ -379,9 +379,15 @@
     })();
   });
 
-  $('#profile-nickname').addEventListener('input', () => setDirty(true));
   $('#country-search').addEventListener('input', renderCountries);
   $('#selected-only').addEventListener('change', renderCountries);
+  $('#unselect-all').addEventListener('change', event => {
+    if (!event.target.checked) return;
+    selected.clear();
+    setDirty(true);
+    renderCountries();
+    updateMap();
+  });
   $('#signout-button').addEventListener('click', async event => {
     event.currentTarget.disabled = true;
     try {

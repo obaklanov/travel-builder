@@ -28,3 +28,9 @@
 @keyframes scratch-flag-breeze {0%,100%{transform:skewY(-2deg) scaleX(.98);}50%{transform:skewY(3deg) scaleX(1.02);}}
 @media(max-width:700px){.scratch-flag {width:96px;height:74px;right:0;top:6px;}}
 @media(prefers-reduced-motion:reduce){.scratch-flag-cloth {animation:none;}}
+
+.country-selection-actions {display:flex; flex-direction:column; gap:9px; flex-shrink:0; padding-bottom:3px;}
+.country-search-row .country-selection-actions .selected-filter {margin:0; min-height:24px; line-height:1.4;}
+.country-selection-actions input:disabled {cursor:default;}
+@media(max-width:700px){.country-search-row {flex-direction:row;align-items:end;gap:18px;}.country-search-row > label:first-child {min-width:0;}.country-selection-actions {padding-bottom:0;}.country-search-row .country-selection-actions .selected-filter {font-size:11px;}}
+@media(max-width:380px){.country-search-row {flex-direction:column;align-items:start;gap:12px;}.country-selection-actions {width:100%;}}
