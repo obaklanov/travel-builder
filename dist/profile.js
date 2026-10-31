@@ -13,6 +13,8 @@
   let selected = new Set();
   let legacySelected = new Set();
   let mapPaths = [];
+  let countryColors = {};
+  let celebrationPending = new Set();
   let dirty = false;
   let loaded = false;
   let revision = 0;
@@ -90,7 +92,12 @@
   function updateMap() {
     $('#visited-count').textContent = String(selected.size);
     $('#visited-world-map').setAttribute('aria-label', 'World map: ' + selected.size + ' countries and territories selected as visited.');
-    for (const [path, code] of mapPaths) path.classList.toggle('visited', selected.has(code));
+    const saved = new Set(profile?.visited_countries || []);
+    for (const [path, code] of mapPaths) {
+      path.style.setProperty('--country-color', countryColors[code] || '#82afd0');
+      path.classList.toggle('visited', selected.has(code) && saved.has(code) && !celebrationPending.has(code));
+      path.classList.toggle('pending-visit', selected.has(code) && !saved.has(code));
+    }
   }
 
   function renderCountries() {
@@ -129,10 +136,12 @@
   }
 
   async function loadGeography() {
-    const [catalogueResponse, mapResponse] = await Promise.all([fetch('country-catalog.json?v=worldometer-234-1'), fetch('world-countries.json')]);
-    if (!catalogueResponse.ok || !mapResponse.ok) throw new Error('Country data unavailable');
+    const [catalogueResponse, mapResponse, colorResponse] = await Promise.all([fetch('country-catalog.json?v=worldometer-234-1'), fetch('profile-country-outlines.json?v=scratch-1'), fetch('country-colors.json?v=scratch-1')]);
+    if (!catalogueResponse.ok || !mapResponse.ok || !colorResponse.ok) throw new Error('Country data unavailable');
     catalogue = await catalogueResponse.json();
     const outlines = await mapResponse.json();
+    countryColors = (await colorResponse.json()).colors;
+    window.TRAVEL_SCRATCH?.init(outlines,countryColors);
     allowedCodes = new Set(catalogue.map(country => country.code));
     const ns = 'http://www.w3.org/2000/svg';
     const svg = document.createElementNS(ns, 'svg');
@@ -164,6 +173,8 @@
       return;
     }
     const currentRevision = ++revision;
+    window.TRAVEL_SCRATCH?.cancel();
+    celebrationPending.clear();
     user = nextUser;
     loaded = false;
     storageReady = false;
@@ -324,6 +335,7 @@
     const nickname = $('#profile-nickname').value.trim();
     if (!nicknamePattern.test(nickname)) { message('Choose a nickname with 3–24 letters, numbers or underscores.', 'error'); return; }
     const id = user.id;
+    const previouslySaved = new Set(profile?.visited_countries || []);
     const visited = [...new Set([...selected].filter(code => allowedCodes.has(code)).concat([...legacySelected]))].sort();
     const snapshot = JSON.stringify({ nickname, visited });
     const button = $('#save-profile');
@@ -334,7 +346,19 @@
         const { data, error } = await client.from('traveller_profiles').upsert({ id, nickname, visited_countries: visited }, { onConflict: 'id' }).select('id,nickname,visited_countries,updated_at').single();
         if (error) throw error;
         if (user?.id !== id) return;
+        const newlyVisited = visited.filter(code => allowedCodes.has(code) && !previouslySaved.has(code));
+        celebrationPending = new Set(newlyVisited);
         profile = data;
+        updateMap();
+        if (newlyVisited.length && window.TRAVEL_SCRATCH) {
+          try { await window.TRAVEL_SCRATCH.celebrate(newlyVisited, code => {
+            celebrationPending.delete(code);
+            updateMap();
+          }); } catch { /* The account save already succeeded; an effect must never undo it. */ }
+        }
+        celebrationPending.clear();
+        updateMap();
+        if (user?.id !== id) return;
         $('#traveller-title').textContent = nickname + '’s atlas';
         const current = JSON.stringify({ nickname: $('#profile-nickname').value.trim(), visited: [...new Set([...selected,...legacySelected])].sort() });
         setDirty(current !== snapshot);
