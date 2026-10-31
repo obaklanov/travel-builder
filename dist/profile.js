@@ -17,7 +17,16 @@
   let mapZoom = null;
   let countryColors = {};
   let countryInfo = {};
+  let mapCountryCode=null, savingCountries=false;
+  function updateMapAddButton(){
+    const button=$('#map-add-country');if(!button)return;
+    const saved=profile?.visited_countries?.includes(mapCountryCode);
+    button.hidden=!mapCountryCode;
+    button.disabled=!user||!storageReady||savingCountries||saved;
+    button.textContent=savingCountries?'Saving…':saved?'Already travelled':'Add to travelled';
+  }
   function showCountryInfo(code) {
+    mapCountryCode=code;
     const country=catalogue.find(c=>c.code===code), panel=$("#map-country-info");
     if(!country || !panel)return;
     panel.replaceChildren();
@@ -26,7 +35,7 @@
     const facts=countryInfo[code];
     const compact=value=>new Intl.NumberFormat('en',{notation:'compact',maximumFractionDigits:1}).format(value);
     details.textContent=country.region+(facts ? '. Population '+compact(facts.population)+' (Rank '+facts.populationRank+'/'+facts.populationCount+'). Area '+(facts.area===0?'<1':compact(facts.area))+' km\u00b2 (Rank '+facts.areaRank+'/'+facts.areaCount+').' : '.');
-    panel.append(heading,details);panel.hidden=false;
+    panel.append(heading,details);panel.hidden=false;updateMapAddButton();
   }
   let celebrationPending = new Set();
   let dirty = false;
@@ -225,6 +234,7 @@
     celebrationPending.clear();
     mapZoom?.reset();
     if($('#map-country-info'))$('#map-country-info').hidden=true;
+    mapCountryCode=null;updateMapAddButton();
     user = nextUser;
     loaded = false;
     storageReady = false;
@@ -380,7 +390,7 @@
   $('#profile-form').addEventListener('submit', event => {
     window.TRAVEL_SCRATCH?.prepareAudio?.();
     event.preventDefault();
-    if (!user || !storageReady) return;
+    if (!user || !storageReady || savingCountries) return;
     const nickname = profile?.nickname || user.user_metadata?.nickname || '';
     if (!nicknamePattern.test(nickname)) { message('Choose a nickname with 3–24 letters, numbers or underscores.', 'error'); return; }
     const id = user.id;
@@ -389,6 +399,7 @@
     const snapshot = JSON.stringify({ nickname, visited });
     const button = $('#save-profile');
     button.disabled = true;
+    savingCountries=true;updateMapAddButton();
     $('#save-state').textContent = 'Saving…';
     (async () => {
       try {
@@ -414,8 +425,14 @@
         message('Your profile has been saved to your account.', 'success');
       } catch (error) {
         if (user?.id === id) { setDirty(true); message(friendlyError(error), 'error'); }
-      } finally { if (user?.id === id) button.disabled = !storageReady; }
+      } finally { savingCountries=false;updateMapAddButton();if (user?.id === id) button.disabled = !storageReady; }
     })();
+  });
+
+  $('#map-add-country')?.addEventListener('click',()=>{
+    if(!mapCountryCode||savingCountries||!user||!storageReady)return;
+    setCountrySelection(mapCountryCode,true);
+    $('#profile-form').requestSubmit();
   });
 
   $('#country-search').addEventListener('input', renderCountries);

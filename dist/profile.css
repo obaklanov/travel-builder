@@ -62,3 +62,12 @@
 @media(max-width:700px){.map-heading{flex-wrap:wrap;}.map-country-info{margin:0;max-width:none;}.map-zoom-controls{align-self:flex-end;}}
 
 .scratch-result-facts{white-space:pre-line;font:14px/1.9 var(--sans);color:#685b43;margin:10px 0 18px}.scratch-result-facts[hidden]{display:none}.scratch-dust{pointer-events:none;}
+
+.map-heading{flex-wrap:wrap;}
+.map-country-info{max-width:none;flex:1 1 auto;min-width:0;}
+.map-country-info p{white-space:nowrap;}
+.map-add-country{flex-shrink:0;min-height:40px;padding:10px 15px;border-radius:7px;}
+.map-add-country[hidden]{display:none;}
+.map-add-country:disabled{cursor:default;}
+@media(max-width:1000px){.map-country-info{order:3;flex-basis:calc(100% - 180px);margin-left:0;}.map-add-country{order:4;}.map-zoom-controls{order:2;}}
+@media(max-width:600px){.map-country-info{flex-basis:100%;width:100%;}.map-country-info p{white-space:normal;}.map-add-country{align-self:flex-start;}.map-zoom-controls{order:0;}}
