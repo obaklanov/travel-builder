@@ -210,11 +210,14 @@
                 const openness=Math.min(1,stroke.length/Math.max(shape.box.w,shape.box.h)*2);
                 const pressure=.15+.85*Math.sin(Math.PI*local)*openness;
                 run.sound?.update(progress,scratching,pressure);
-                if(scratching&&now-lastDust>32&&dustCount<240){
-                  lastDust=now;dustCount++;
+                if(scratching&&now-lastDust>32&&dustCount<720){
+                  lastDust=now;
+                  for(let fleck=0;fleck<3;fleck++){
+                  dustCount++;
                   const size=Math.max(shape.box.w,shape.box.h)*(.0018+Math.random()*.0025);
                   const flake=svgNode('path',{d:`M${x-size},${y}l${size*1.4},${-size*.6} ${size},${size} ${-size*1.6},${size*.5}Z`,fill:['#e1c17e','#b8955d','#f0dba4'][dustCount%3],opacity:.85});
                   flake.dataset.drift=String(.6+Math.random());shape.dust.append(flake);
+                  }
                 }
               }
               if(progress<1)requestAnimationFrame(frame);else resolve();
@@ -236,7 +239,7 @@
           details.textContent=countryFacts(code);details.hidden=false;
           details.animate?.([{opacity:0,transform:'translateY(5px)'},{opacity:1,transform:'translateY(0)'}],{duration:350,fill:'both'});
           run.effect=finishSound('victory');onReveal(code);
-          const end=performance.now()+3000;while(!run.cancelled&&performance.now()<end)await wait(50);
+          const end=performance.now()+10000;while(!run.cancelled&&performance.now()<end)await wait(50);
           run.effect?.stop();run.effect=null;
         }
         onReveal(code);
