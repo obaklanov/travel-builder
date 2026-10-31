@@ -79,7 +79,7 @@
         else{
           shape.coin.style.opacity='1';
           await new Promise(resolve=>{
-            const start=performance.now(),duration=1650;
+            const start=performance.now(),duration=4950;
             const frame=now=>{
               if(run.cancelled){resolve();return;}
               const progress=Math.min(1,(now-start)/duration),distance=progress*length;
