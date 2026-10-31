@@ -164,7 +164,7 @@
   }
 
   async function loadGeography() {
-    const [catalogueResponse, mapResponse, colorResponse] = await Promise.all([fetch('country-catalog.json?v=worldometer-234-1'), fetch('profile-country-outlines.json?v=recognized-borders-1'), fetch('country-colors.json?v=scratch-1')]);
+    const [catalogueResponse, mapResponse, colorResponse] = await Promise.all([fetch('country-catalog.json?v=shared-facts-1'), fetch('profile-country-outlines.json?v=recognized-borders-1'), fetch('country-colors.json?v=scratch-1')]);
     if (!catalogueResponse.ok || !mapResponse.ok || !colorResponse.ok) throw new Error('Country data unavailable');
     catalogue = await catalogueResponse.json();
     const outlines = await mapResponse.json();

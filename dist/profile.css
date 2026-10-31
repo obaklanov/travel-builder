@@ -60,3 +60,5 @@
 .map-zoom-controls{margin-left:auto;}
 .scratch-sound{margin-left:10px;font:12px var(--sans);padding:10px 16px;border:1px solid #c9be9f;border-radius:20px;background:transparent;color:#6f634e;min-height:40px;}
 @media(max-width:700px){.map-heading{flex-wrap:wrap;}.map-country-info{margin:0;max-width:none;}.map-zoom-controls{align-self:flex-end;}}
+
+.scratch-result-facts{white-space:pre-line;font:14px/1.9 var(--sans);color:#685b43;margin:10px 0 18px}.scratch-result-facts[hidden]{display:none}.scratch-dust{pointer-events:none;}

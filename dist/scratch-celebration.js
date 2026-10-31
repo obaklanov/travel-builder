@@ -1,7 +1,7 @@
 'use strict';
 (() => {
   const ns='http://www.w3.org/2000/svg';
-  let features=new Map(),colors={},flags={},active=null;
+  let features=new Map(),colors={},flags={},facts={},active=null;
   function svgNode(tag,attrs={}){const node=document.createElementNS(ns,tag);for(const [key,value] of Object.entries(attrs))node.setAttribute(key,String(value));return node;}
   function countryShape(feature){
     const allPolygons=feature.geometry.type==='Polygon'?[feature.geometry.coordinates]:feature.geometry.coordinates;
@@ -51,6 +51,12 @@
       spans.sort((a,b)=>a[0]-b[0]);if(row%2)spans.reverse();
       for(const span of spans){const start=project([span[row%2?1:0],v]),end=project([span[row%2?0:1],v]);strokes.push({start,end,length:Math.hypot(end[0]-start[0],end[1]-start[1])});}
     }
+    const cx=box.x+box.w/2,cy=box.y+box.h/2;
+    const distance=p=>Math.hypot(p[0]-cx,p[1]-cy);
+    strokes.sort((a,b)=>distance([(a.start[0]+a.end[0])/2,(a.start[1]+a.end[1])/2])-distance([(b.start[0]+b.end[0])/2,(b.start[1]+b.end[1])/2]));
+    for(const stroke of strokes)if(distance(stroke.end)<distance(stroke.start))[stroke.start,stroke.end]=[stroke.end,stroke.start];
+    // Begin inside the central land span, then work outward.
+    if(strokes.length){const first=strokes.shift(),middle=first.start.map((v,i)=>(v+first.end[i])/2);strokes.unshift({start:middle,end:first.end,length:first.length/2},{start:middle,end:first.start,length:first.length/2});}
     return {strokes,step};
   }
   function makeStage(feature,color){
@@ -73,10 +79,11 @@
     svg.append(svgNode('path',{...outline,fill:'url(#scratch-gold)',stroke:'#ad8d53','stroke-width':Math.max(box.w,box.h)*.003}));
     const colourPath=svgNode('path',{...outline,fill:color,stroke:color,'stroke-width':Math.max(box.w,box.h)*.002,mask:'url(#scratch-reveal)'});
     svg.append(colourPath);
+    const dust=svgNode('g',{'class':'scratch-dust'});svg.append(dust);
     const coin=svgNode('g',{'class':'scratch-coin'});
     coin.append(svgNode('circle',{r:radius,fill:'#d7b365',stroke:'#8e6d32','stroke-width':radius*.1}),svgNode('circle',{r:radius*.76,fill:'#f0d69a',stroke:'#b68b3d','stroke-width':radius*.045}));
     const coinMark=svgNode('text',{x:0,y:radius*.35,'text-anchor':'middle','font-size':radius*1.1,'font-family':'Georgia, serif',fill:'#9b7537'});coinMark.textContent='TE';coin.append(coinMark);svg.append(coin);
-    return {svg,strokes,coin,colourPath,box};
+    return {svg,strokes,coin,colourPath,box,dust};
   }
   function makeFlag(code,name,reduced){
     const wrapper=document.createElement('div');wrapper.className='scratch-flag';
@@ -102,9 +109,38 @@
     source.buffer=buffer;source.loop=true;
     const filter=audio.createBiquadFilter();filter.type='bandpass';filter.frequency.value=1800;filter.Q.value=.65;
     const gain=audio.createGain();gain.gain.value=0;source.connect(filter);filter.connect(gain);gain.connect(audio.destination);source.start();
-    return {update(progress,scratching=true){const pressure=.018+.025*Math.pow(Math.sin(progress*Math.PI*17),2);gain.gain.setTargetAtTime(muted||!scratching?0:pressure,audio.currentTime,.025);},stop(){gain.gain.setTargetAtTime(0,audio.currentTime,.02);setTimeout(()=>{try{source.stop();source.disconnect();filter.disconnect();gain.disconnect();}catch{}},100);}};
+    return {update(progress,scratching=true,pressure=.5){
+      filter.frequency.setTargetAtTime(2600-pressure*1700,audio.currentTime,.035);
+      filter.Q.setTargetAtTime(.9-pressure*.5,audio.currentTime,.035);
+      source.playbackRate.setTargetAtTime(.7+pressure*.8,audio.currentTime,.035);
+      gain.gain.setTargetAtTime(muted||!scratching?0:.014+pressure*.052,audio.currentTime,.025);
+    },stop(){gain.gain.setTargetAtTime(0,audio.currentTime,.02);setTimeout(()=>{try{source.stop();source.disconnect();filter.disconnect();gain.disconnect();}catch{}},100);}};
   }
-  function cancel(){if(active){active.cancelled=true;active.sound?.stop();active.sound=null;active.dialog.close();}}
+  function finishSound(kind){
+    if(!audio||audio.state!=='running'||muted)return null;
+    const nodes=[],now=audio.currentTime;
+    const gain=audio.createGain();gain.connect(audio.destination);nodes.push(gain);
+    if(kind==='blow'){
+      const source=audio.createBufferSource(),buffer=audio.createBuffer(1,audio.sampleRate*2,audio.sampleRate);
+      const samples=buffer.getChannelData(0);let smooth=0;
+      for(let i=0;i<samples.length;i++){smooth=.88*smooth+.12*(Math.random()*2-1);samples[i]=smooth;}
+      source.buffer=buffer;const filter=audio.createBiquadFilter();filter.type='lowpass';filter.frequency.value=1100;
+      source.connect(filter);filter.connect(gain);gain.gain.setValueAtTime(0,now);
+      gain.gain.linearRampToValueAtTime(.20,now+.15);gain.gain.exponentialRampToValueAtTime(.001,now+1.8);
+      source.start();source.stop(now+2);nodes.push(source,filter);
+    }else{
+      gain.gain.value=.035;
+      [659.25,830.61,987.77].forEach((frequency,i)=>{const oscillator=audio.createOscillator(),envelope=audio.createGain();oscillator.type='sine';oscillator.frequency.value=frequency;envelope.gain.setValueAtTime(0,now);envelope.gain.setValueAtTime(.001,now+i*.12);envelope.gain.linearRampToValueAtTime(.65,now+i*.12+.035);envelope.gain.exponentialRampToValueAtTime(.001,now+i*.12+1.1);oscillator.connect(envelope);envelope.connect(gain);oscillator.start(now+i*.12);oscillator.stop(now+1.6);nodes.push(oscillator,envelope);});
+    }
+    let stopped=false;const stop=()=>{if(stopped)return;stopped=true;for(const node of nodes){try{node.stop?.();node.disconnect();}catch{}}};
+    setTimeout(stop,2200);return {stop};
+  }
+  function countryFacts(code){
+    const row=facts[code];if(!row)return '';
+    const compact=n=>new Intl.NumberFormat('en',{notation:'compact',maximumFractionDigits:1}).format(n);
+    return `Population ${compact(row.population)} · ${row.populationShare}% world · Rank ${row.populationRank}/234\nArea ${row.area===0?'<1':compact(row.area)} km\u00b2 · ${row.areaShare}% world · Rank ${row.areaRank}/234`;
+  }
+  function cancel(){if(active){active.cancelled=true;active.sound?.stop();active.sound=null;active.effect?.stop();active.dialog.close();}}
   async function celebrate(codes,onReveal=()=>{}){
     cancel();
     const mapped=codes.filter(code=>features.has(code));
@@ -115,25 +151,29 @@
     const title=document.createElement('h2');title.id='scratch-celebration-title';dialog.setAttribute('aria-labelledby',title.id);
     const stage=document.createElement('div');stage.className='scratch-country-stage';
     const caption=document.createElement('p');caption.className='scratch-caption';
+    const details=document.createElement('p');details.className='scratch-result-facts';details.hidden=true;details.setAttribute('aria-live','polite');
     const skip=document.createElement('button');skip.type='button';skip.className='scratch-skip';skip.textContent='Skip animation';
     const soundButton=document.createElement('button');soundButton.type='button';soundButton.className='scratch-sound';
     const soundLabel=()=>{soundButton.textContent=muted?'Sound off':'Sound on';soundButton.setAttribute('aria-pressed',String(!muted));};soundLabel();
-    soundButton.addEventListener('click',()=>{muted=!muted;prepareAudio();soundLabel();});
-    content.append(eyebrow,title,stage,caption,skip,soundButton);dialog.append(content);document.body.append(dialog);
+    soundButton.addEventListener('click',()=>{muted=!muted;if(muted){run.effect?.stop();run.effect=null;}prepareAudio();soundLabel();});
+    content.append(eyebrow,title,stage,caption,details,skip,soundButton);dialog.append(content);document.body.append(dialog);
     const run={dialog,cancelled:false};active=run;
-    skip.addEventListener('click',cancel);dialog.addEventListener('cancel',()=>{run.cancelled=true;});dialog.addEventListener('close',()=>{run.cancelled=true;run.sound?.stop();run.sound=null;});
+    skip.addEventListener('click',cancel);dialog.addEventListener('cancel',()=>{run.cancelled=true;});dialog.addEventListener('close',()=>{run.cancelled=true;run.sound?.stop();run.sound=null;run.effect?.stop();});
     const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
     try{
       dialog.showModal();skip.focus({preventScroll:true});
       const sequence=mapped.slice(0,3);
       for(let index=0;index<sequence.length&&!run.cancelled;index++){
         const code=sequence[index],feature=features.get(code);
-        title.textContent=feature.properties.name;
+        title.textContent=feature.properties.name;details.hidden=true;details.textContent='';
         caption.textContent=codes.length===1?'A memory worth keeping.':`${index+1} of ${codes.length} newly travelled places`;
         const shape=makeStage(feature,colors[code]||'#82afd0');stage.replaceChildren(shape.svg);
         if(flags[code])stage.append(makeFlag(code,feature.properties.name,reduced));
-        const liftWeight=Math.max(shape.box.w,shape.box.h)*.035;
-        const length=shape.strokes.reduce((sum,stroke)=>sum+stroke.length+liftWeight,0);let strokeIndex=0,strokeStart=0;
+
+        for(const stroke of shape.strokes)stroke.weight=Math.sqrt(stroke.length/Math.max(shape.box.w,shape.box.h))*.55+.006;
+        const liftTime=.004;
+        const length=shape.strokes.reduce((sum,stroke)=>sum+stroke.weight+liftTime,0);let strokeIndex=0,strokeStart=0;
+        let lastDust=0,dustCount=0;
         shape.coin.style.opacity='0';
         const mapPath=document.querySelector(`#visited-world-map path[data-country="${code}"]`);
         const source=mapPath?.getBoundingClientRect(),target=stage.getBoundingClientRect();
@@ -144,46 +184,70 @@
           await shape.svg.animate([{transform:`translate(${dx}px,${dy}px) scale(${scale})`,opacity:.25},{transform:'translate(0,0) scale(1)',opacity:1}],{duration:620,easing:'cubic-bezier(.2,.75,.2,1)',fill:'both'}).finished;
         }
         if(run.cancelled)break;
-        if(reduced){shape.colourPath.removeAttribute('mask');await wait(450);}
+        if(reduced){shape.colourPath.removeAttribute('mask');caption.textContent=feature.properties.name+' · '+(facts[code]?.region||'');details.textContent=countryFacts(code);details.hidden=false;await wait(1500);}
         else{
           shape.coin.style.opacity='1';
           run.sound=scratchSound();
           await new Promise(resolve=>{
-            const start=performance.now(),duration=10000;
+            const start=performance.now(),duration=9380;
             const frame=now=>{
               if(run.cancelled){resolve();return;}
               const progress=Math.min(1,(now-start)/duration);
-              const handProgress=progress===1?1:Math.max(0,Math.min(1,progress+.008*Math.sin(progress*Math.PI*14)+.002*Math.sin(progress*Math.PI*34)));
               const distance=progress*length;
-              while(strokeIndex<shape.strokes.length-1 && distance>strokeStart+shape.strokes[strokeIndex].length+liftWeight){
+              while(strokeIndex<shape.strokes.length-1 && distance>strokeStart+shape.strokes[strokeIndex].weight+liftTime){
                 shape.strokes[strokeIndex].path.setAttribute('stroke-dashoffset',0);
-                strokeStart+=shape.strokes[strokeIndex].length+liftWeight;strokeIndex++;
+                strokeStart+=shape.strokes[strokeIndex].weight+liftTime;strokeIndex++;
               }
               const stroke=shape.strokes[strokeIndex];
               if(stroke){
-                const local=Math.min(1,Math.max(0,(distance-strokeStart)/stroke.length));
-                const scratching=distance-strokeStart<=stroke.length;
-                const handLocal=Math.max(0,Math.min(1,local+.009*Math.sin(local*Math.PI*6)));
+                const local=Math.min(1,Math.max(0,(distance-strokeStart)/stroke.weight));
+                const scratching=distance-strokeStart<=stroke.weight;
+                const handLocal=(1-Math.cos(Math.PI*local))/2;
                 stroke.path.setAttribute('stroke-dashoffset',stroke.length*(1-handLocal));
                 const x=stroke.start[0]+(stroke.end[0]-stroke.start[0])*handLocal,y=stroke.start[1]+(stroke.end[1]-stroke.start[1])*handLocal;
                 shape.coin.style.opacity=scratching?'1':'0';
                 shape.coin.setAttribute('transform',`translate(${x},${y}) rotate(${-26+Math.sin(progress*45)*14})`);
-                run.sound?.update(progress,scratching);
+                const openness=Math.min(1,stroke.length/Math.max(shape.box.w,shape.box.h)*2);
+                const pressure=.15+.85*Math.sin(Math.PI*local)*openness;
+                run.sound?.update(progress,scratching,pressure);
+                if(scratching&&now-lastDust>32&&dustCount<240){
+                  lastDust=now;dustCount++;
+                  const size=Math.max(shape.box.w,shape.box.h)*(.0018+Math.random()*.0025);
+                  const flake=svgNode('path',{d:`M${x-size},${y}l${size*1.4},${-size*.6} ${size},${size} ${-size*1.6},${size*.5}Z`,fill:['#e1c17e','#b8955d','#f0dba4'][dustCount%3],opacity:.85});
+                  flake.dataset.drift=String(.6+Math.random());shape.dust.append(flake);
+                }
               }
               if(progress<1)requestAnimationFrame(frame);else resolve();
             };requestAnimationFrame(frame);
           });
           run.sound?.stop();run.sound=null;
-          shape.coin.style.opacity='0';shape.colourPath.removeAttribute('mask');await wait(200);
+          shape.coin.style.opacity='0';shape.colourPath.removeAttribute('mask');
+          if(run.cancelled)break;
+          caption.textContent='One last puff…';run.effect=finishSound('blow');
+          await new Promise(resolve=>{const start=performance.now();const frame=now=>{
+            if(run.cancelled){resolve();return;}
+            const p=Math.min(1,(now-start)/2000),ease=p*p;
+            for(const flake of shape.dust.children){const drift=Number(flake.dataset.drift);flake.setAttribute('transform',`translate(${ease*shape.box.w*.7*drift},${-ease*shape.box.h*.3*drift})`);flake.setAttribute('opacity',String(.85*(1-p)));}
+            if(p<1)requestAnimationFrame(frame);else resolve();
+          };requestAnimationFrame(frame);});
+          run.effect?.stop();run.effect=null;shape.dust.replaceChildren();
+          if(run.cancelled)break;
+          caption.textContent=feature.properties.name+' · '+(facts[code]?.region||'A new place uncovered');
+          details.textContent=countryFacts(code);details.hidden=false;
+          details.animate?.([{opacity:0,transform:'translateY(5px)'},{opacity:1,transform:'translateY(0)'}],{duration:350,fill:'both'});
+          run.effect=finishSound('victory');onReveal(code);
+          const end=performance.now()+3000;while(!run.cancelled&&performance.now()<end)await wait(50);
+          run.effect?.stop();run.effect=null;
         }
         onReveal(code);
       }
       if(!run.cancelled&&codes.length>3){caption.textContent=`All ${codes.length} places are now part of your map.`;await wait(reduced?300:650);}
     }finally{
-      run.sound?.stop();run.sound=null;
+      run.sound?.stop();run.sound=null;run.effect?.stop();
       codes.forEach(onReveal);
       if(dialog.open)dialog.close();dialog.remove();if(active===run)active=null;
     }
   }
-  window.TRAVEL_SCRATCH={init(outlines,palette,catalogue=[]){flags=Object.fromEntries(catalogue.map(country=>[country.code,country.iso2.toLowerCase()]));features=new Map(outlines.features.map(feature=>[feature.id,feature]));colors=palette;},celebrate,cancel,prepareAudio};
+  window.TRAVEL_SCRATCH={init(outlines,palette,catalogue=[]){const populationTotal=catalogue.reduce((sum,c)=>sum+(c.population||0),0),areaTotal=catalogue.reduce((sum,c)=>sum+(c.area||0),0);
+    facts=Object.fromEntries(catalogue.map(c=>[c.code,{...c,populationShare:(c.population/populationTotal*100).toFixed(2),areaShare:(c.area/areaTotal*100).toFixed(2)}]));flags=Object.fromEntries(catalogue.map(country=>[country.code,country.iso2.toLowerCase()]));features=new Map(outlines.features.map(feature=>[feature.id,feature]));colors=palette;},celebrate,cancel,prepareAudio};
 })();
