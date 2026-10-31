@@ -19,3 +19,5 @@
 .scratch-skip:hover {background:#eee8d8;}
 @media(max-width:700px){.scratch-celebration-inner {padding:28px 20px 20px;}.scratch-celebration h2 {font-size:42px;}.scratch-country-stage {height:40svh;}}
 @media(prefers-reduced-motion:reduce){.visited-world-map path {transition:none;}}
+
+.pending-country-outlines{pointer-events:none}.visited-world-map .pending-country-outline{fill:none;stroke:#94723f;stroke-width:2.5;stroke-linejoin:round;stroke-linecap:round;vector-effect:non-scaling-stroke}

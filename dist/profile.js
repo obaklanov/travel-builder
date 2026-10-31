@@ -13,6 +13,7 @@
   let selected = new Set();
   let legacySelected = new Set();
   let mapPaths = [];
+  let pendingOutlineLayer = null;
   let countryColors = {};
   let celebrationPending = new Set();
   let dirty = false;
@@ -93,10 +94,18 @@
     $('#visited-count').textContent = String(selected.size);
     $('#visited-world-map').setAttribute('aria-label', 'World map: ' + selected.size + ' countries and territories selected as visited.');
     const saved = new Set(profile?.visited_countries || []);
+    pendingOutlineLayer?.replaceChildren();
     for (const [path, code] of mapPaths) {
       path.style.setProperty('--country-color', countryColors[code] || '#82afd0');
       path.classList.toggle('visited', selected.has(code) && saved.has(code) && !celebrationPending.has(code));
-      path.classList.toggle('pending-visit', selected.has(code) && !saved.has(code));
+      const pending = selected.has(code) && !saved.has(code);
+      path.classList.toggle('pending-visit', pending);
+      if (pending && pendingOutlineLayer) {
+        const outline = document.createElementNS('http://www.w3.org/2000/svg','path');
+        outline.setAttribute('d',path.getAttribute('d'));
+        outline.setAttribute('class','pending-country-outline');
+        pendingOutlineLayer.append(outline);
+      }
     }
   }
 
@@ -160,6 +169,7 @@
       path.append(title);
       const code = aliases[feature.id] || feature.id;
       path.dataset.country = code;
+      path.setAttribute('id','profile-country-' + code);
       mapPaths.push([path, code]);
       svg.append(path);
     }
