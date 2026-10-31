@@ -34,3 +34,7 @@
 .country-selection-actions input:disabled {cursor:default;}
 @media(max-width:700px){.country-search-row {flex-direction:row;align-items:end;gap:18px;}.country-search-row > label:first-child {min-width:0;}.country-selection-actions {padding-bottom:0;}.country-search-row .country-selection-actions .selected-filter {font-size:11px;}}
 @media(max-width:380px){.country-search-row {flex-direction:column;align-items:start;gap:12px;}.country-selection-actions {width:100%;}}
+
+.visited-world-map path[data-country] {cursor:pointer;}
+.visited-world-map path[data-country]:hover {filter:brightness(.94);}
+.visited-world-map path[data-country]:focus-visible {outline:none;stroke:#315d89;stroke-width:2;vector-effect:non-scaling-stroke;}

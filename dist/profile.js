@@ -99,6 +99,7 @@
     pendingOutlineLayer?.replaceChildren();
     for (const [path, code] of mapPaths) {
       path.style.setProperty('--country-color', countryColors[code] || '#82afd0');
+      path.setAttribute('aria-pressed', String(selected.has(code)));
       path.classList.toggle('visited', selected.has(code) && saved.has(code) && !celebrationPending.has(code));
       const pending = selected.has(code) && !saved.has(code);
       path.classList.toggle('pending-visit', pending);
@@ -129,13 +130,7 @@
       const name = document.createElement('span');
       name.textContent = country.name;
       label.append(checkbox, name);
-      checkbox.addEventListener('change', () => {
-        if (checkbox.checked) selected.add(country.code); else selected.delete(country.code);
-        setDirty(true);
-        updateMap();
-        if (selectedOnly) renderCountries();
-        else $('#country-result-count').textContent = matches.length + ' places shown · ' + selected.size + ' selected';
-      });
+      checkbox.addEventListener('change', () => setCountrySelection(country.code,checkbox.checked,selectedOnly));
       list.append(label);
     }
     if (!matches.length) {
@@ -144,6 +139,15 @@
       empty.textContent = selectedOnly ? 'No selected places match this search.' : 'No places match this search.';
       list.append(empty);
     }
+  }
+
+  function setCountrySelection(code,checked,refreshList=true) {
+    if (!user || !storageReady || !allowedCodes.has(code)) return;
+    if (checked) selected.add(code); else selected.delete(code);
+    setDirty(true);
+    updateMap();
+    if (refreshList) renderCountries();
+    else $('#country-result-count').textContent = document.querySelectorAll('.country-choice').length + ' places shown · ' + selected.size + ' selected';
   }
 
   async function loadGeography() {
@@ -157,7 +161,8 @@
     const ns = 'http://www.w3.org/2000/svg';
     const svg = document.createElementNS(ns, 'svg');
     svg.setAttribute('viewBox', '0 10 1000 465');
-    svg.setAttribute('aria-hidden', 'true');
+    svg.setAttribute('role','group');
+    svg.setAttribute('aria-label','Select travelled countries on the map');
     const aliases = { SDS: 'SSD', KOS: 'UNK' };
     for (const feature of outlines.features) {
       const geometry = feature.geometry;
@@ -172,9 +177,24 @@
       const code = aliases[feature.id] || feature.id;
       path.dataset.country = code;
       path.setAttribute('id','profile-country-' + code);
+      path.setAttribute('role','button');
+      path.setAttribute('tabindex','0');
+      path.setAttribute('aria-label',feature.properties.name);
+      path.setAttribute('aria-pressed','false');
+      path.addEventListener('click', () => setCountrySelection(code,!selected.has(code)));
+      path.addEventListener('keydown', event => {
+        if (event.key==='Enter' || event.key===' ') {
+          event.preventDefault();
+          setCountrySelection(code,!selected.has(code));
+        }
+      });
       mapPaths.push([path, code]);
       svg.append(path);
     }
+    pendingOutlineLayer = document.createElementNS(ns,'g');
+    pendingOutlineLayer.setAttribute('aria-hidden','true');
+    pendingOutlineLayer.setAttribute('class','pending-country-outlines');
+    svg.append(pendingOutlineLayer);
     $('#visited-world-map').replaceChildren(svg);
   }
 
