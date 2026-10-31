@@ -38,3 +38,14 @@
 .visited-world-map path[data-country] {cursor:pointer;}
 .visited-world-map path[data-country]:hover {filter:brightness(.94);}
 .visited-world-map path[data-country]:focus-visible {outline:none;stroke:#315d89;stroke-width:2;vector-effect:non-scaling-stroke;}
+
+.map-zoom-controls {display:flex;align-items:center;gap:6px;flex-shrink:0;}
+.map-zoom-controls button {display:grid;place-items:center;min-width:34px;min-height:34px;padding:5px 9px;border:1px solid #c9bea5;border-radius:7px;background:#fffaf0;color:#493b26;font:18px var(--sans);}
+.map-zoom-controls button[data-map-zoom="reset"] {font-size:11px;margin-left:5px;}
+.map-zoom-controls button:disabled {opacity:.35;cursor:default;}
+#map-zoom-level {min-width:43px;text-align:center;font:11px var(--sans);color:#756953;}
+.visited-world-map {overflow:hidden;user-select:none;-webkit-user-select:none;}
+.visited-world-map.map-is-zoomed,.visited-world-map.map-is-zoomed path[data-country] {cursor:grab;}
+.visited-world-map.map-is-dragging,.visited-world-map.map-is-dragging path[data-country] {cursor:grabbing;}
+@media(max-width:500px){.map-heading {align-items:start;flex-direction:column;gap:14px;}.map-zoom-controls {align-self:flex-end;}}
+.visited-world-map path{vector-effect:non-scaling-stroke;}

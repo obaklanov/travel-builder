@@ -11,7 +11,7 @@
 
 
 
-<meta name="referrer" content="no-referrer"><link rel="stylesheet" href="profile.css?v=click-map-1"><script src="vendor/supabase-2.118.0.js" defer></script><script src="profile-config.js?v=travel-easy-1" defer></script><script src="scratch-celebration.js?v=flag-10s-1" defer></script><script src="profile.js?v=click-map-1" defer></script>
+<meta name="referrer" content="no-referrer"><link rel="stylesheet" href="profile.css?v=artistic-1"><script src="vendor/supabase-2.118.0.js" defer></script><script src="profile-config.js?v=travel-easy-1" defer></script><script src="scratch-celebration.js?v=artistic-1" defer></script><script src="profile-map-zoom.js?v=artistic-1" defer></script><script src="profile.js?v=artistic-1" defer></script>
 <link rel="stylesheet" href="clarity.css?v=planning-1">
 <link rel="stylesheet" href="travel-easy.css?v=trip-row-1">
 <script src="user-location.js?v=costs-1" defer></script>
@@ -69,7 +69,7 @@
   <section id="traveller-profile" hidden aria-labelledby="traveller-title">
     <header class="traveller-header"><div><p class="eyebrow">YOUR TRAVEL STORY</p><h2 id="traveller-title">Your personal atlas</h2><p id="profile-privacy">Private profile · visible only to you</p></div><button id="signout-button" class="account-secondary" type="button">Sign out</button></header>
     <div class="profile-stat-row"><div><strong id="visited-count">0</strong><span>places visited</span></div><p>Countries and territories you’ve explored, one pin at a time.</p></div>
-    <article class="account-card visited-map-card"><div class="map-heading"><div><p class="eyebrow">A WORLD TO UNCOVER</p><h2>Your scratch map</h2></div></div><div id="visited-world-map" class="visited-world-map" role="group" aria-label="World map of your visited destinations"></div></article>
+    <article class="account-card visited-map-card"><div class="map-heading"><div><p class="eyebrow">A WORLD TO UNCOVER</p><h2>Your scratch map</h2></div><div class="map-zoom-controls" role="group" aria-label="Map zoom controls"><button type="button" data-map-zoom="out" aria-label="Zoom out on map" title="Zoom out" disabled>−</button><span id="map-zoom-level" aria-live="polite">100%</span><button type="button" data-map-zoom="in" aria-label="Zoom in on map" title="Zoom in" disabled>+</button><button type="button" data-map-zoom="reset" aria-label="Reset map zoom" title="Show whole world" disabled>Reset</button></div></div><div id="visited-world-map" class="visited-world-map" role="group" tabindex="0" title="Use + and − to zoom. Drag to move when zoomed. Ctrl + scroll zooms at the pointer." aria-label="World map of your visited destinations"></div></article>
     <form id="profile-form" class="account-card country-editor"><div class="editor-heading"><div><p class="eyebrow">BUILD YOUR ATLAS</p><h2>Where have you been?</h2><p>Select countries and territories you’ve visited. You can change this list whenever you like.</p></div><p id="save-state" class="save-state" role="status" aria-live="polite"></p></div>
       <div class="country-search-row"><label for="country-search">Find a country or territory<input id="country-search" type="search" placeholder="Search countries…" autocomplete="off"></label><div class="country-selection-actions"><label class="selected-filter"><input id="selected-only" type="checkbox"> Show selected</label><label class="selected-filter"><input id="unselect-all" type="checkbox"> Unselect all</label></div></div>
       <p id="country-result-count" class="country-result-count" role="status"></p>

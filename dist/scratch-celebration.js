@@ -22,14 +22,27 @@
     const gold=svgNode('linearGradient',{id:'scratch-gold',x1:0,y1:0,x2:1,y2:1});
     for(const [offset,fill] of [['0%','#ecd49d'],['45%','#c5a568'],['72%','#f4dfab'],['100%','#ad8950']])gold.append(svgNode('stop',{offset,'stop-color':fill}));
     const reveal=svgNode('mask',{id:'scratch-reveal',maskUnits:'userSpaceOnUse',x:box.x-padding,y:box.y-padding,width:box.w+2*padding,height:box.h+2*padding});
-    const lines=15,step=box.h/(lines-1),radius=Math.max(box.w,box.h)*.045;
-    const points=[];
+    // Hand-like diagonal strokes, slightly curved, with rounded turnarounds.
+    const angle=-Math.PI/6,cos=Math.cos(angle),sin=Math.sin(angle);
+    const cx=box.x+box.w/2,cy=box.y+box.h/2;
+    const corners=[[box.x,box.y],[box.x+box.w,box.y],[box.x,box.y+box.h],[box.x+box.w,box.y+box.h]];
+    const rotated=corners.map(([x,y])=>[(x-cx)*cos+(y-cy)*sin,-(x-cx)*sin+(y-cy)*cos]);
+    const left=Math.min(...rotated.map(p=>p[0])),right=Math.max(...rotated.map(p=>p[0]));
+    const top=Math.min(...rotated.map(p=>p[1])),bottom=Math.max(...rotated.map(p=>p[1]));
+    const lines=17,step=(bottom-top)/(lines-1),radius=Math.max(box.w,box.h)*.045;
+    const project=(u,v)=>[cx+u*cos-v*sin,cy+u*sin+v*cos];
+    const fmt=p=>p.map(v=>v.toFixed(5)).join(',');
+    const points=[];let scratchD='';let previous=null;
     for(let i=0;i<lines;i++){
-      const y=box.y+i*step;
-      points.push([i%2?box.x+box.w+radius:box.x-radius,y],[i%2?box.x-radius:box.x+box.w+radius,y]);
+      const v=top+i*step,overrun=radius*(.45+.22*Math.sin(i*2.17));
+      const from=i%2?right+overrun:left-overrun,to=i%2?left-overrun:right+overrun;
+      const start=project(from,v+Math.sin(i*1.81)*step*.11),end=project(to,v+Math.sin(i*2.41)*step*.12);
+      if(!previous)scratchD+='M'+fmt(start);
+      else{const turn=project(from+(i%2?1:-1)*step*.35,v-step*.45);scratchD+='Q'+fmt(turn)+' '+fmt(start);}
+      const control=project((from+to)/2,v+Math.sin(i*.91)*step*.32);
+      scratchD+='Q'+fmt(control)+' '+fmt(end);points.push(start,end);previous=end;
     }
-    const scratchD=points.map(([x,y],i)=>(i?'L':'M')+x+','+y).join(' ');
-    const trail=svgNode('path',{d:scratchD,fill:'none',stroke:'#fff','stroke-width':Math.max(step*1.6,radius*2),'stroke-linecap':'round','stroke-linejoin':'round'});
+    const trail=svgNode('path',{d:scratchD,fill:'none',stroke:'#fff','stroke-width':step*1.28,'stroke-linecap':'round','stroke-linejoin':'round'});
     reveal.append(trail);defs.append(gold,reveal);svg.append(defs);
     const outline={d:box.d,'fill-rule':'evenodd','stroke-linejoin':'round'};
     svg.append(svgNode('path',{...outline,fill:'url(#scratch-gold)',stroke:'#ad8d53','stroke-width':Math.max(box.w,box.h)*.003}));
@@ -95,14 +108,16 @@
             const start=performance.now(),duration=10000;
             const frame=now=>{
               if(run.cancelled){resolve();return;}
-              const progress=Math.min(1,(now-start)/duration),distance=progress*length;
+              const progress=Math.min(1,(now-start)/duration);
+              const handProgress=progress===1?1:Math.max(0,Math.min(1,progress+.008*Math.sin(progress*Math.PI*14)+.002*Math.sin(progress*Math.PI*34)));
+              const distance=handProgress*length;
               shape.trail.setAttribute('stroke-dashoffset',length-distance);
               const point=shape.trail.getPointAtLength(distance);
-              shape.coin.setAttribute('transform',`translate(${point.x},${point.y}) rotate(${Math.sin(progress*35)*12})`);
+              shape.coin.setAttribute('transform',`translate(${point.x},${point.y}) rotate(${-26+Math.sin(progress*45)*14+Math.sin(progress*17)*5})`);
               if(progress<1)requestAnimationFrame(frame);else resolve();
             };requestAnimationFrame(frame);
           });
-          shape.coin.style.opacity='0';await wait(200);
+          shape.coin.style.opacity='0';shape.colourPath.removeAttribute('mask');await wait(200);
         }
         onReveal(code);
       }

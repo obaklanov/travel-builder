@@ -14,6 +14,7 @@
   let legacySelected = new Set();
   let mapPaths = [];
   let pendingOutlineLayer = null;
+  let mapZoom = null;
   let countryColors = {};
   let celebrationPending = new Set();
   let dirty = false;
@@ -181,7 +182,7 @@
       path.setAttribute('tabindex','0');
       path.setAttribute('aria-label',feature.properties.name);
       path.setAttribute('aria-pressed','false');
-      path.addEventListener('click', () => setCountrySelection(code,!selected.has(code)));
+      path.addEventListener('click', () => {if(svg.dataset.suppressSelection!=='true')setCountrySelection(code,!selected.has(code));});
       path.addEventListener('keydown', event => {
         if (event.key==='Enter' || event.key===' ') {
           event.preventDefault();
@@ -196,6 +197,7 @@
     pendingOutlineLayer.setAttribute('class','pending-country-outlines');
     svg.append(pendingOutlineLayer);
     $('#visited-world-map').replaceChildren(svg);
+    mapZoom = window.TRAVEL_MAP_ZOOM?.attach(svg,$('#visited-world-map'),$('.visited-map-card'));
   }
 
   async function displaySession(session, force = false) {
@@ -207,6 +209,7 @@
     const currentRevision = ++revision;
     window.TRAVEL_SCRATCH?.cancel();
     celebrationPending.clear();
+    mapZoom?.reset();
     user = nextUser;
     loaded = false;
     storageReady = false;
