@@ -1,5 +1,5 @@
 // Population and catalogue: data/worldometer-countries.json; 2026 estimates.
-// Area figures retain the existing Worldometer area snapshot.
+// Total area and rankings: the same Worldometer source snapshot used by profiles.
 const countryFacts = {
   "egypt": {
     "population": 120101175,

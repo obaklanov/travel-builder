@@ -24,7 +24,8 @@
     const heading=document.createElement("strong"), details=document.createElement("p");
     heading.textContent=country.name;
     const facts=countryInfo[code];
-    details.textContent=country.region+(facts ? " � Population "+new Intl.NumberFormat("en",{notation:"compact",maximumFractionDigits:1}).format(facts.population)+" � Rank "+facts.populationRank+"/234" : "");
+    const compact=value=>new Intl.NumberFormat('en',{notation:'compact',maximumFractionDigits:1}).format(value);
+    details.textContent=country.region+(facts ? '. Population '+compact(facts.population)+' (Rank '+facts.populationRank+'/'+facts.populationCount+'). Area '+(facts.area===0?'<1':compact(facts.area))+' km\u00b2 (Rank '+facts.areaRank+'/'+facts.areaCount+').' : '.');
     panel.append(heading,details);panel.hidden=false;
   }
   let celebrationPending = new Set();
@@ -168,7 +169,7 @@
     catalogue = await catalogueResponse.json();
     const outlines = await mapResponse.json();
     countryColors = (await colorResponse.json()).colors;
-    try {const response=await fetch('profile-country-info.json');if(response.ok)countryInfo=await response.json();} catch {}
+    try {const response=await fetch('profile-country-info.json?v=shared-facts-1');if(response.ok)countryInfo=await response.json();} catch {}
     window.TRAVEL_SCRATCH?.init(outlines,countryColors,catalogue);
     allowedCodes = new Set(catalogue.map(country => country.code));
     const ns = 'http://www.w3.org/2000/svg';

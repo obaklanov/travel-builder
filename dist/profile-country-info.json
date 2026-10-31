@@ -1,1 +1,1874 @@
-{"IND":{"population":1476625576,"populationRank":1},"CHN":{"population":1412914089,"populationRank":2},"USA":{"population":349035494,"populationRank":3},"IDN":{"population":287886782,"populationRank":4},"PAK":{"population":259299791,"populationRank":5},"NGA":{"population":242431832,"populationRank":6},"BRA":{"population":213562666,"populationRank":7},"BGD":{"population":177818044,"populationRank":8},"RUS":{"population":143394458,"populationRank":9},"ETH":{"population":138902185,"populationRank":10},"MEX":{"population":132997658,"populationRank":11},"JPN":{"population":122427731,"populationRank":12},"EGY":{"population":120101175,"populationRank":13},"PHL":{"population":117724471,"populationRank":14},"COD":{"population":116452162,"populationRank":15},"VNM":{"population":102177431,"populationRank":16},"IRN":{"population":93168497,"populationRank":17},"TUR":{"population":87926082,"populationRank":18},"DEU":{"population":83644258,"populationRank":19},"TZA":{"population":72563780,"populationRank":20},"THA":{"population":71559614,"populationRank":21},"GBR":{"population":69931528,"populationRank":22},"FRA":{"population":66746401,"populationRank":23},"ZAF":{"population":65453084,"populationRank":24},"ITA":{"population":58926166,"populationRank":25},"KEN":{"population":58636412,"populationRank":26},"MMR":{"population":55184819,"populationRank":27},"COL":{"population":53936226,"populationRank":28},"SDN":{"population":53282719,"populationRank":29},"UGA":{"population":52761469,"populationRank":30},"KOR":{"population":51600388,"populationRank":31},"DZA":{"population":48028334,"populationRank":32},"IRQ":{"population":48007437,"populationRank":33},"ESP":{"population":47850793,"populationRank":34},"ARG":{"population":46003734,"populationRank":35},"AFG":{"population":45047069,"populationRank":36},"YEM":{"population":42961653,"populationRank":37},"CAN":{"population":40467728,"populationRank":38},"AGO":{"population":40215179,"populationRank":39},"UKR":{"population":39535849,"populationRank":40},"MAR":{"population":38762441,"populationRank":41},"POL":{"population":37843188,"populationRank":42},"UZB":{"population":37724223,"populationRank":43},"MOZ":{"population":36639851,"populationRank":44},"MYS":{"population":36385115,"populationRank":45},"GHA":{"population":35697557,"populationRank":46},"SAU":{"population":35165787,"populationRank":47},"PER":{"population":34922148,"populationRank":48},"MDG":{"population":33522052,"populationRank":49},"CIV":{"population":33494346,"populationRank":50},"CMR":{"population":30640817,"populationRank":51},"NPL":{"population":29629410,"populationRank":52},"NER":{"population":28814878,"populationRank":53},"VEN":{"population":28633711,"populationRank":54},"AUS":{"population":27227096,"populationRank":55},"PRK":{"population":26633691,"populationRank":56},"SYR":{"population":26472497,"populationRank":57},"MLI":{"population":25932275,"populationRank":58},"BFA":{"population":24601700,"populationRank":59},"LKA":{"population":23348315,"populationRank":60},"TWN":{"population":23011292,"populationRank":61},"MWI":{"population":22785535,"populationRank":62},"ZMB":{"population":22521915,"populationRank":63},"TCD":{"population":21560380,"populationRank":64},"KAZ":{"population":21083626,"populationRank":65},"SOM":{"population":20305907,"populationRank":66},"CHL":{"population":19945850,"populationRank":67},"SEN":{"population":19366548,"populationRank":68},"GTM":{"population":18967978,"populationRank":69},"ROU":{"population":18800605,"populationRank":70},"NLD":{"population":18448775,"populationRank":71},"ECU":{"population":18444506,"populationRank":72},"KHM":{"population":18051219,"populationRank":73},"ZWE":{"population":17273580,"populationRank":74},"GIN":{"population":15441993,"populationRank":75},"BEN":{"population":15170419,"populationRank":76},"RWA":{"population":14889693,"populationRank":77},"BDI":{"population":14729157,"populationRank":78},"BOL":{"population":12749291,"populationRank":79},"SSD":{"population":12436037,"populationRank":80},"TUN":{"population":12415138,"populationRank":81},"HTI":{"population":12037506,"populationRank":82},"BEL":{"population":11774642,"populationRank":83},"DOM":{"population":11609500,"populationRank":84},"JOR":{"population":11589532,"populationRank":85},"ARE":{"population":11574682,"populationRank":86},"HND":{"population":11184760,"populationRank":87},"TJK":{"population":10978599,"populationRank":88},"PNG":{"population":10947848,"populationRank":89},"CUB":{"population":10892659,"populationRank":90},"SWE":{"population":10701047,"populationRank":91},"CZE":{"population":10527781,"populationRank":92},"AZE":{"population":10454855,"populationRank":93},"PRT":{"population":10395362,"populationRank":94},"TGO":{"population":9930918,"populationRank":95},"GRC":{"population":9897115,"populationRank":96},"ISR":{"population":9647689,"populationRank":97},"HUN":{"population":9585818,"populationRank":98},"AUT":{"population":9107266,"populationRank":99},"CHE":{"population":9007798,"populationRank":100},"SLE":{"population":8996745,"populationRank":101},"BLR":{"population":8937018,"populationRank":102},"LAO":{"population":7974017,"populationRank":103},"TKM":{"population":7736632,"populationRank":104},"LBY":{"population":7539851,"populationRank":105},"KGZ":{"population":7400465,"populationRank":106},"HKG":{"population":7378602,"populationRank":107},"NIC":{"population":7097329,"populationRank":108},"PRY":{"population":7095279,"populationRank":109},"BGR":{"population":6667659,"populationRank":110},"SRB":{"population":6641964,"populationRank":111},"COG":{"population":6637785,"populationRank":112},"SLV":{"population":6391253,"populationRank":113},"DNK":{"population":6023520,"populationRank":114},"SGP":{"population":5905748,"populationRank":115},"LBN":{"population":5897467,"populationRank":116},"LBR":{"population":5853949,"populationRank":117},"CAF":{"population":5698984,"populationRank":118},"PSE":{"population":5692790,"populationRank":119},"OMN":{"population":5671458,"populationRank":120},"NOR":{"population":5652989,"populationRank":121},"FIN":{"population":5621739,"populationRank":122},"MRT":{"population":5461319,"populationRank":123},"SVK":{"population":5451342,"populationRank":124},"IRL":{"population":5356950,"populationRank":125},"NZL":{"population":5287479,"populationRank":126},"CRI":{"population":5174789,"populationRank":127},"KWT":{"population":5102773,"populationRank":128},"PAN":{"population":4625718,"populationRank":129},"HRV":{"population":3822345,"populationRank":130},"GEO":{"population":3804642,"populationRank":131},"ERI":{"population":3682669,"populationRank":132},"MNG":{"population":3556798,"populationRank":133},"URY":{"population":3382537,"populationRank":134},"PRI":{"population":3222688,"populationRank":135},"QAT":{"population":3173559,"populationRank":136},"NAM":{"population":3153246,"populationRank":137},"BIH":{"population":3114242,"populationRank":138},"MDA":{"population":2961253,"populationRank":139},"ARM":{"population":2930915,"populationRank":140},"GMB":{"population":2884079,"populationRank":141},"JAM":{"population":2833403,"populationRank":142},"LTU":{"population":2797338,"populationRank":143},"ALB":{"population":2751025,"populationRank":144},"GAB":{"population":2647399,"populationRank":145},"BWA":{"population":2603388,"populationRank":146},"LSO":{"population":2389336,"populationRank":147},"GNB":{"population":2297808,"populationRank":148},"SVN":{"population":2114573,"populationRank":149},"GNQ":{"population":1984468,"populationRank":150},"LVA":{"population":1835935,"populationRank":151},"MKD":{"population":1804063,"populationRank":152},"BHR":{"population":1675572,"populationRank":153},"TTO":{"population":1513268,"populationRank":154},"TLS":{"population":1436923,"populationRank":155},"CYP":{"population":1382334,"populationRank":156},"EST":{"population":1331062,"populationRank":157},"SWZ":{"population":1269859,"populationRank":158},"MUS":{"population":1265059,"populationRank":159},"DJI":{"population":1199459,"populationRank":160},"FJI":{"population":937282,"populationRank":161},"COM":{"population":899010,"populationRank":162},"REU":{"population":886298,"populationRank":163},"SLB":{"population":858288,"populationRank":164},"GUY":{"population":840890,"populationRank":165},"BTN":{"population":802214,"populationRank":166},"MAC":{"population":723188,"populationRank":167},"LUX":{"population":687448,"populationRank":168},"SUR":{"population":645256,"populationRank":169},"MNE":{"population":626233,"populationRank":170},"ESH":{"population":610813,"populationRank":171},"MLT":{"population":549011,"populationRank":172},"MDV":{"population":531517,"populationRank":173},"CPV":{"population":529630,"populationRank":174},"BRN":{"population":469775,"populationRank":175},"BLZ":{"population":428644,"populationRank":176},"BHS":{"population":404628,"populationRank":177},"ISL":{"population":402329,"populationRank":178},"GLP":{"population":372453,"populationRank":179},"MYT":{"population":347536,"populationRank":180},"VUT":{"population":342564,"populationRank":181},"MTQ":{"population":337711,"populationRank":182},"GUF":{"population":318872,"populationRank":183},"NCL":{"population":297892,"populationRank":184},"PYF":{"population":283076,"populationRank":185},"BRB":{"population":282724,"populationRank":186},"STP":{"population":244994,"populationRank":187},"WSM":{"population":220528,"populationRank":188},"CUW":{"population":185440,"populationRank":189},"LCA":{"population":180488,"populationRank":190},"GUM":{"population":170185,"populationRank":191},"KIR":{"population":138445,"populationRank":192},"SYC":{"population":134959,"populationRank":193},"GRD":{"population":117362,"populationRank":194},"FSM":{"population":114183,"populationRank":195},"ABW":{"population":108164,"populationRank":196},"TON":{"population":103291,"populationRank":197},"VCT":{"population":99245,"populationRank":198},"ATG":{"population":94626,"populationRank":199},"IMN":{"population":84055,"populationRank":200},"AND":{"population":83753,"populationRank":201},"VIR":{"population":83400,"populationRank":202},"CYM":{"population":77196,"populationRank":203},"DMA":{"population":65511,"populationRank":204},"BMU":{"population":64459,"populationRank":205},"FRO":{"population":56526,"populationRank":206},"GRL":{"population":55629,"populationRank":207},"TCA":{"population":47148,"populationRank":208},"KNA":{"population":46992,"populationRank":209},"ASM":{"population":45319,"populationRank":210},"SXM":{"population":44447,"populationRank":211},"MNP":{"population":42914,"populationRank":212},"GIB":{"population":40867,"populationRank":213},"LIE":{"population":40368,"populationRank":214},"VGB":{"population":39936,"populationRank":215},"MCO":{"population":38087,"populationRank":216},"MHL":{"population":35075,"populationRank":217},"SMR":{"population":33605,"populationRank":218},"BES":{"population":31913,"populationRank":219},"MAF":{"population":23898,"populationRank":220},"PLW":{"population":17614,"populationRank":221},"AIA":{"population":14817,"populationRank":222},"COK":{"population":12826,"populationRank":223},"NRU":{"population":12101,"populationRank":224},"BLM":{"population":11550,"populationRank":225},"WLF":{"population":11113,"populationRank":226},"TUV":{"population":9362,"populationRank":227},"SPM":{"population":5513,"populationRank":228},"SHN":{"population":5147,"populationRank":229},"MSR":{"population":4328,"populationRank":230},"FLK":{"population":3465,"populationRank":231},"TKL":{"population":2691,"populationRank":232},"NIU":{"population":1822,"populationRank":233},"VAT":{"population":506,"populationRank":234}}
+{
+  "IND": {
+    "population": 1476625576,
+    "populationRank": 1,
+    "populationCount": 234,
+    "area": 3287590,
+    "areaRank": 7,
+    "areaCount": 234
+  },
+  "CHN": {
+    "population": 1412914089,
+    "populationRank": 2,
+    "populationCount": 234,
+    "area": 9706961,
+    "areaRank": 3,
+    "areaCount": 234
+  },
+  "USA": {
+    "population": 349035494,
+    "populationRank": 3,
+    "populationCount": 234,
+    "area": 9372610,
+    "areaRank": 4,
+    "areaCount": 234
+  },
+  "IDN": {
+    "population": 287886782,
+    "populationRank": 4,
+    "populationCount": 234,
+    "area": 1904569,
+    "areaRank": 15,
+    "areaCount": 234
+  },
+  "PAK": {
+    "population": 259299791,
+    "populationRank": 5,
+    "populationCount": 234,
+    "area": 881912,
+    "areaRank": 34,
+    "areaCount": 234
+  },
+  "NGA": {
+    "population": 242431832,
+    "populationRank": 6,
+    "populationCount": 234,
+    "area": 923768,
+    "areaRank": 32,
+    "areaCount": 234
+  },
+  "BRA": {
+    "population": 213562666,
+    "populationRank": 7,
+    "populationCount": 234,
+    "area": 8515767,
+    "areaRank": 5,
+    "areaCount": 234
+  },
+  "BGD": {
+    "population": 177818044,
+    "populationRank": 8,
+    "populationCount": 234,
+    "area": 147570,
+    "areaRank": 94,
+    "areaCount": 234
+  },
+  "RUS": {
+    "population": 143394458,
+    "populationRank": 9,
+    "populationCount": 234,
+    "area": 17098242,
+    "areaRank": 1,
+    "areaCount": 234
+  },
+  "ETH": {
+    "population": 138902185,
+    "populationRank": 10,
+    "populationCount": 234,
+    "area": 1104300,
+    "areaRank": 27,
+    "areaCount": 234
+  },
+  "MEX": {
+    "population": 132997658,
+    "populationRank": 11,
+    "populationCount": 234,
+    "area": 1964375,
+    "areaRank": 14,
+    "areaCount": 234
+  },
+  "JPN": {
+    "population": 122427731,
+    "populationRank": 12,
+    "populationCount": 234,
+    "area": 377930,
+    "areaRank": 62,
+    "areaCount": 234
+  },
+  "EGY": {
+    "population": 120101175,
+    "populationRank": 13,
+    "populationCount": 234,
+    "area": 1002450,
+    "areaRank": 30,
+    "areaCount": 234
+  },
+  "PHL": {
+    "population": 117724471,
+    "populationRank": 14,
+    "populationCount": 234,
+    "area": 342353,
+    "areaRank": 64,
+    "areaCount": 234
+  },
+  "COD": {
+    "population": 116452162,
+    "populationRank": 15,
+    "populationCount": 234,
+    "area": 2344858,
+    "areaRank": 11,
+    "areaCount": 234
+  },
+  "VNM": {
+    "population": 102177431,
+    "populationRank": 16,
+    "populationCount": 234,
+    "area": 331212,
+    "areaRank": 67,
+    "areaCount": 234
+  },
+  "IRN": {
+    "population": 93168497,
+    "populationRank": 17,
+    "populationCount": 234,
+    "area": 1648195,
+    "areaRank": 18,
+    "areaCount": 234
+  },
+  "TUR": {
+    "population": 87926082,
+    "populationRank": 18,
+    "populationCount": 234,
+    "area": 783562,
+    "areaRank": 37,
+    "areaCount": 234
+  },
+  "DEU": {
+    "population": 83644258,
+    "populationRank": 19,
+    "populationCount": 234,
+    "area": 357114,
+    "areaRank": 63,
+    "areaCount": 234
+  },
+  "TZA": {
+    "population": 72563780,
+    "populationRank": 20,
+    "populationCount": 234,
+    "area": 945087,
+    "areaRank": 31,
+    "areaCount": 234
+  },
+  "THA": {
+    "population": 71559614,
+    "populationRank": 21,
+    "populationCount": 234,
+    "area": 513120,
+    "areaRank": 51,
+    "areaCount": 234
+  },
+  "GBR": {
+    "population": 69931528,
+    "populationRank": 22,
+    "populationCount": 234,
+    "area": 242900,
+    "areaRank": 80,
+    "areaCount": 234
+  },
+  "FRA": {
+    "population": 66746401,
+    "populationRank": 23,
+    "populationCount": 234,
+    "area": 551695,
+    "areaRank": 49,
+    "areaCount": 234
+  },
+  "ZAF": {
+    "population": 65453084,
+    "populationRank": 24,
+    "populationCount": 234,
+    "area": 1221037,
+    "areaRank": 25,
+    "areaCount": 234
+  },
+  "ITA": {
+    "population": 58926166,
+    "populationRank": 25,
+    "populationCount": 234,
+    "area": 301336,
+    "areaRank": 73,
+    "areaCount": 234
+  },
+  "KEN": {
+    "population": 58636412,
+    "populationRank": 26,
+    "populationCount": 234,
+    "area": 580367,
+    "areaRank": 48,
+    "areaCount": 234
+  },
+  "MMR": {
+    "population": 55184819,
+    "populationRank": 27,
+    "populationCount": 234,
+    "area": 676578,
+    "areaRank": 40,
+    "areaCount": 234
+  },
+  "COL": {
+    "population": 53936226,
+    "populationRank": 28,
+    "populationCount": 234,
+    "area": 1141748,
+    "areaRank": 26,
+    "areaCount": 234
+  },
+  "SDN": {
+    "population": 53282719,
+    "populationRank": 29,
+    "populationCount": 234,
+    "area": 1886068,
+    "areaRank": 16,
+    "areaCount": 234
+  },
+  "UGA": {
+    "population": 52761469,
+    "populationRank": 30,
+    "populationCount": 234,
+    "area": 241550,
+    "areaRank": 81,
+    "areaCount": 234
+  },
+  "KOR": {
+    "population": 51600388,
+    "populationRank": 31,
+    "populationCount": 234,
+    "area": 100210,
+    "areaRank": 109,
+    "areaCount": 234
+  },
+  "DZA": {
+    "population": 48028334,
+    "populationRank": 32,
+    "populationCount": 234,
+    "area": 2381741,
+    "areaRank": 10,
+    "areaCount": 234
+  },
+  "IRQ": {
+    "population": 48007437,
+    "populationRank": 33,
+    "populationCount": 234,
+    "area": 438317,
+    "areaRank": 59,
+    "areaCount": 234
+  },
+  "ESP": {
+    "population": 47850793,
+    "populationRank": 34,
+    "populationCount": 234,
+    "area": 505992,
+    "areaRank": 52,
+    "areaCount": 234
+  },
+  "ARG": {
+    "population": 46003734,
+    "populationRank": 35,
+    "populationCount": 234,
+    "area": 2780400,
+    "areaRank": 8,
+    "areaCount": 234
+  },
+  "AFG": {
+    "population": 45047069,
+    "populationRank": 36,
+    "populationCount": 234,
+    "area": 652230,
+    "areaRank": 41,
+    "areaCount": 234
+  },
+  "YEM": {
+    "population": 42961653,
+    "populationRank": 37,
+    "populationCount": 234,
+    "area": 527968,
+    "areaRank": 50,
+    "areaCount": 234
+  },
+  "CAN": {
+    "population": 40467728,
+    "populationRank": 38,
+    "populationCount": 234,
+    "area": 9984670,
+    "areaRank": 2,
+    "areaCount": 234
+  },
+  "AGO": {
+    "population": 40215179,
+    "populationRank": 39,
+    "populationCount": 234,
+    "area": 1246700,
+    "areaRank": 23,
+    "areaCount": 234
+  },
+  "UKR": {
+    "population": 39535849,
+    "populationRank": 40,
+    "populationCount": 234,
+    "area": 603500,
+    "areaRank": 45,
+    "areaCount": 234
+  },
+  "MAR": {
+    "population": 38762441,
+    "populationRank": 41,
+    "populationCount": 234,
+    "area": 446550,
+    "areaRank": 58,
+    "areaCount": 234
+  },
+  "POL": {
+    "population": 37843188,
+    "populationRank": 42,
+    "populationCount": 234,
+    "area": 312679,
+    "areaRank": 71,
+    "areaCount": 234
+  },
+  "UZB": {
+    "population": 37724223,
+    "populationRank": 43,
+    "populationCount": 234,
+    "area": 447400,
+    "areaRank": 57,
+    "areaCount": 234
+  },
+  "MOZ": {
+    "population": 36639851,
+    "populationRank": 44,
+    "populationCount": 234,
+    "area": 801590,
+    "areaRank": 36,
+    "areaCount": 234
+  },
+  "MYS": {
+    "population": 36385115,
+    "populationRank": 45,
+    "populationCount": 234,
+    "area": 330803,
+    "areaRank": 68,
+    "areaCount": 234
+  },
+  "GHA": {
+    "population": 35697557,
+    "populationRank": 46,
+    "populationCount": 234,
+    "area": 238533,
+    "areaRank": 82,
+    "areaCount": 234
+  },
+  "SAU": {
+    "population": 35165787,
+    "populationRank": 47,
+    "populationCount": 234,
+    "area": 2149690,
+    "areaRank": 13,
+    "areaCount": 234
+  },
+  "PER": {
+    "population": 34922148,
+    "populationRank": 48,
+    "populationCount": 234,
+    "area": 1285216,
+    "areaRank": 20,
+    "areaCount": 234
+  },
+  "MDG": {
+    "population": 33522052,
+    "populationRank": 49,
+    "populationCount": 234,
+    "area": 587041,
+    "areaRank": 46,
+    "areaCount": 234
+  },
+  "CIV": {
+    "population": 33494346,
+    "populationRank": 50,
+    "populationCount": 234,
+    "area": 322463,
+    "areaRank": 70,
+    "areaCount": 234
+  },
+  "CMR": {
+    "population": 30640817,
+    "populationRank": 51,
+    "populationCount": 234,
+    "area": 475442,
+    "areaRank": 54,
+    "areaCount": 234
+  },
+  "NPL": {
+    "population": 29629410,
+    "populationRank": 52,
+    "populationCount": 234,
+    "area": 147181,
+    "areaRank": 95,
+    "areaCount": 234
+  },
+  "NER": {
+    "population": 28814878,
+    "populationRank": 53,
+    "populationCount": 234,
+    "area": 1267000,
+    "areaRank": 22,
+    "areaCount": 234
+  },
+  "VEN": {
+    "population": 28633711,
+    "populationRank": 54,
+    "populationCount": 234,
+    "area": 916445,
+    "areaRank": 33,
+    "areaCount": 234
+  },
+  "AUS": {
+    "population": 27227096,
+    "populationRank": 55,
+    "populationCount": 234,
+    "area": 7692024,
+    "areaRank": 6,
+    "areaCount": 234
+  },
+  "PRK": {
+    "population": 26633691,
+    "populationRank": 56,
+    "populationCount": 234,
+    "area": 120538,
+    "areaRank": 99,
+    "areaCount": 234
+  },
+  "SYR": {
+    "population": 26472497,
+    "populationRank": 57,
+    "populationCount": 234,
+    "area": 185180,
+    "areaRank": 89,
+    "areaCount": 234
+  },
+  "MLI": {
+    "population": 25932275,
+    "populationRank": 58,
+    "populationCount": 234,
+    "area": 1240192,
+    "areaRank": 24,
+    "areaCount": 234
+  },
+  "BFA": {
+    "population": 24601700,
+    "populationRank": 59,
+    "populationCount": 234,
+    "area": 272967,
+    "areaRank": 75,
+    "areaCount": 234
+  },
+  "LKA": {
+    "population": 23348315,
+    "populationRank": 60,
+    "populationCount": 234,
+    "area": 65610,
+    "areaRank": 123,
+    "areaCount": 234
+  },
+  "TWN": {
+    "population": 23011292,
+    "populationRank": 61,
+    "populationCount": 234,
+    "area": 36193,
+    "areaRank": 137,
+    "areaCount": 234
+  },
+  "MWI": {
+    "population": 22785535,
+    "populationRank": 62,
+    "populationCount": 234,
+    "area": 118484,
+    "areaRank": 100,
+    "areaCount": 234
+  },
+  "ZMB": {
+    "population": 22521915,
+    "populationRank": 63,
+    "populationCount": 234,
+    "area": 752612,
+    "areaRank": 39,
+    "areaCount": 234
+  },
+  "TCD": {
+    "population": 21560380,
+    "populationRank": 64,
+    "populationCount": 234,
+    "area": 1284000,
+    "areaRank": 21,
+    "areaCount": 234
+  },
+  "KAZ": {
+    "population": 21083626,
+    "populationRank": 65,
+    "populationCount": 234,
+    "area": 2724900,
+    "areaRank": 9,
+    "areaCount": 234
+  },
+  "SOM": {
+    "population": 20305907,
+    "populationRank": 66,
+    "populationCount": 234,
+    "area": 637657,
+    "areaRank": 42,
+    "areaCount": 234
+  },
+  "CHL": {
+    "population": 19945850,
+    "populationRank": 67,
+    "populationCount": 234,
+    "area": 756102,
+    "areaRank": 38,
+    "areaCount": 234
+  },
+  "SEN": {
+    "population": 19366548,
+    "populationRank": 68,
+    "populationCount": 234,
+    "area": 196722,
+    "areaRank": 88,
+    "areaCount": 234
+  },
+  "GTM": {
+    "population": 18967978,
+    "populationRank": 69,
+    "populationCount": 234,
+    "area": 108889,
+    "areaRank": 107,
+    "areaCount": 234
+  },
+  "ROU": {
+    "population": 18800605,
+    "populationRank": 70,
+    "populationCount": 234,
+    "area": 238391,
+    "areaRank": 83,
+    "areaCount": 234
+  },
+  "NLD": {
+    "population": 18448775,
+    "populationRank": 71,
+    "populationCount": 234,
+    "area": 41850,
+    "areaRank": 134,
+    "areaCount": 234
+  },
+  "ECU": {
+    "population": 18444506,
+    "populationRank": 72,
+    "populationCount": 234,
+    "area": 276841,
+    "areaRank": 74,
+    "areaCount": 234
+  },
+  "KHM": {
+    "population": 18051219,
+    "populationRank": 73,
+    "populationCount": 234,
+    "area": 181035,
+    "areaRank": 90,
+    "areaCount": 234
+  },
+  "ZWE": {
+    "population": 17273580,
+    "populationRank": 74,
+    "populationCount": 234,
+    "area": 390757,
+    "areaRank": 61,
+    "areaCount": 234
+  },
+  "GIN": {
+    "population": 15441993,
+    "populationRank": 75,
+    "populationCount": 234,
+    "area": 245857,
+    "areaRank": 79,
+    "areaCount": 234
+  },
+  "BEN": {
+    "population": 15170419,
+    "populationRank": 76,
+    "populationCount": 234,
+    "area": 112622,
+    "areaRank": 102,
+    "areaCount": 234
+  },
+  "RWA": {
+    "population": 14889693,
+    "populationRank": 77,
+    "populationCount": 234,
+    "area": 26338,
+    "areaRank": 148,
+    "areaCount": 234
+  },
+  "BDI": {
+    "population": 14729157,
+    "populationRank": 78,
+    "populationCount": 234,
+    "area": 27834,
+    "areaRank": 146,
+    "areaCount": 234
+  },
+  "BOL": {
+    "population": 12749291,
+    "populationRank": 79,
+    "populationCount": 234,
+    "area": 1098581,
+    "areaRank": 28,
+    "areaCount": 234
+  },
+  "SSD": {
+    "population": 12436037,
+    "populationRank": 80,
+    "populationCount": 234,
+    "area": 619745,
+    "areaRank": 44,
+    "areaCount": 234
+  },
+  "TUN": {
+    "population": 12415138,
+    "populationRank": 81,
+    "populationCount": 234,
+    "area": 163610,
+    "areaRank": 93,
+    "areaCount": 234
+  },
+  "HTI": {
+    "population": 12037506,
+    "populationRank": 82,
+    "populationCount": 234,
+    "area": 27750,
+    "areaRank": 147,
+    "areaCount": 234
+  },
+  "BEL": {
+    "population": 11774642,
+    "populationRank": 83,
+    "populationCount": 234,
+    "area": 30528,
+    "areaRank": 140,
+    "areaCount": 234
+  },
+  "DOM": {
+    "population": 11609500,
+    "populationRank": 84,
+    "populationCount": 234,
+    "area": 48671,
+    "areaRank": 131,
+    "areaCount": 234
+  },
+  "JOR": {
+    "population": 11589532,
+    "populationRank": 85,
+    "populationCount": 234,
+    "area": 89342,
+    "areaRank": 112,
+    "areaCount": 234
+  },
+  "ARE": {
+    "population": 11574682,
+    "populationRank": 86,
+    "populationCount": 234,
+    "area": 83600,
+    "areaRank": 116,
+    "areaCount": 234
+  },
+  "HND": {
+    "population": 11184760,
+    "populationRank": 87,
+    "populationCount": 234,
+    "area": 112492,
+    "areaRank": 103,
+    "areaCount": 234
+  },
+  "TJK": {
+    "population": 10978599,
+    "populationRank": 88,
+    "populationCount": 234,
+    "area": 143100,
+    "areaRank": 96,
+    "areaCount": 234
+  },
+  "PNG": {
+    "population": 10947848,
+    "populationRank": 89,
+    "populationCount": 234,
+    "area": 462840,
+    "areaRank": 55,
+    "areaCount": 234
+  },
+  "CUB": {
+    "population": 10892659,
+    "populationRank": 90,
+    "populationCount": 234,
+    "area": 109884,
+    "areaRank": 106,
+    "areaCount": 234
+  },
+  "SWE": {
+    "population": 10701047,
+    "populationRank": 91,
+    "populationCount": 234,
+    "area": 450295,
+    "areaRank": 56,
+    "areaCount": 234
+  },
+  "CZE": {
+    "population": 10527781,
+    "populationRank": 92,
+    "populationCount": 234,
+    "area": 78865,
+    "areaRank": 118,
+    "areaCount": 234
+  },
+  "AZE": {
+    "population": 10454855,
+    "populationRank": 93,
+    "populationCount": 234,
+    "area": 86600,
+    "areaRank": 114,
+    "areaCount": 234
+  },
+  "PRT": {
+    "population": 10395362,
+    "populationRank": 94,
+    "populationCount": 234,
+    "area": 92090,
+    "areaRank": 111,
+    "areaCount": 234
+  },
+  "TGO": {
+    "population": 9930918,
+    "populationRank": 95,
+    "populationCount": 234,
+    "area": 56785,
+    "areaRank": 126,
+    "areaCount": 234
+  },
+  "GRC": {
+    "population": 9897115,
+    "populationRank": 96,
+    "populationCount": 234,
+    "area": 131990,
+    "areaRank": 97,
+    "areaCount": 234
+  },
+  "ISR": {
+    "population": 9647689,
+    "populationRank": 97,
+    "populationCount": 234,
+    "area": 20770,
+    "areaRank": 153,
+    "areaCount": 234
+  },
+  "HUN": {
+    "population": 9585818,
+    "populationRank": 98,
+    "populationCount": 234,
+    "area": 93028,
+    "areaRank": 110,
+    "areaCount": 234
+  },
+  "AUT": {
+    "population": 9107266,
+    "populationRank": 99,
+    "populationCount": 234,
+    "area": 83871,
+    "areaRank": 115,
+    "areaCount": 234
+  },
+  "CHE": {
+    "population": 9007798,
+    "populationRank": 100,
+    "populationCount": 234,
+    "area": 41284,
+    "areaRank": 135,
+    "areaCount": 234
+  },
+  "SLE": {
+    "population": 8996745,
+    "populationRank": 101,
+    "populationCount": 234,
+    "area": 71740,
+    "areaRank": 120,
+    "areaCount": 234
+  },
+  "BLR": {
+    "population": 8937018,
+    "populationRank": 102,
+    "populationCount": 234,
+    "area": 207600,
+    "areaRank": 86,
+    "areaCount": 234
+  },
+  "LAO": {
+    "population": 7974017,
+    "populationRank": 103,
+    "populationCount": 234,
+    "area": 236800,
+    "areaRank": 84,
+    "areaCount": 234
+  },
+  "TKM": {
+    "population": 7736632,
+    "populationRank": 104,
+    "populationCount": 234,
+    "area": 488100,
+    "areaRank": 53,
+    "areaCount": 234
+  },
+  "LBY": {
+    "population": 7539851,
+    "populationRank": 105,
+    "populationCount": 234,
+    "area": 1759540,
+    "areaRank": 17,
+    "areaCount": 234
+  },
+  "KGZ": {
+    "population": 7400465,
+    "populationRank": 106,
+    "populationCount": 234,
+    "area": 199951,
+    "areaRank": 87,
+    "areaCount": 234
+  },
+  "HKG": {
+    "population": 7378602,
+    "populationRank": 107,
+    "populationCount": 234,
+    "area": 1104,
+    "areaRank": 183,
+    "areaCount": 234
+  },
+  "NIC": {
+    "population": 7097329,
+    "populationRank": 108,
+    "populationCount": 234,
+    "area": 130373,
+    "areaRank": 98,
+    "areaCount": 234
+  },
+  "PRY": {
+    "population": 7095279,
+    "populationRank": 109,
+    "populationCount": 234,
+    "area": 406752,
+    "areaRank": 60,
+    "areaCount": 234
+  },
+  "BGR": {
+    "population": 6667659,
+    "populationRank": 110,
+    "populationCount": 234,
+    "area": 110879,
+    "areaRank": 105,
+    "areaCount": 234
+  },
+  "SRB": {
+    "population": 6641964,
+    "populationRank": 111,
+    "populationCount": 234,
+    "area": 88361,
+    "areaRank": 113,
+    "areaCount": 234
+  },
+  "COG": {
+    "population": 6637785,
+    "populationRank": 112,
+    "populationCount": 234,
+    "area": 342000,
+    "areaRank": 65,
+    "areaCount": 234
+  },
+  "SLV": {
+    "population": 6391253,
+    "populationRank": 113,
+    "populationCount": 234,
+    "area": 21041,
+    "areaRank": 152,
+    "areaCount": 234
+  },
+  "DNK": {
+    "population": 6023520,
+    "populationRank": 114,
+    "populationCount": 234,
+    "area": 43094,
+    "areaRank": 133,
+    "areaCount": 234
+  },
+  "SGP": {
+    "population": 5905748,
+    "populationRank": 115,
+    "populationCount": 234,
+    "area": 710,
+    "areaRank": 190,
+    "areaCount": 234
+  },
+  "LBN": {
+    "population": 5897467,
+    "populationRank": 116,
+    "populationCount": 234,
+    "area": 10452,
+    "areaRank": 167,
+    "areaCount": 234
+  },
+  "LBR": {
+    "population": 5853949,
+    "populationRank": 117,
+    "populationCount": 234,
+    "area": 111369,
+    "areaRank": 104,
+    "areaCount": 234
+  },
+  "CAF": {
+    "population": 5698984,
+    "populationRank": 118,
+    "populationCount": 234,
+    "area": 622984,
+    "areaRank": 43,
+    "areaCount": 234
+  },
+  "PSE": {
+    "population": 5692790,
+    "populationRank": 119,
+    "populationCount": 234,
+    "area": 6220,
+    "areaRank": 170,
+    "areaCount": 234
+  },
+  "OMN": {
+    "population": 5671458,
+    "populationRank": 120,
+    "populationCount": 234,
+    "area": 309500,
+    "areaRank": 72,
+    "areaCount": 234
+  },
+  "NOR": {
+    "population": 5652989,
+    "populationRank": 121,
+    "populationCount": 234,
+    "area": 323802,
+    "areaRank": 69,
+    "areaCount": 234
+  },
+  "FIN": {
+    "population": 5621739,
+    "populationRank": 122,
+    "populationCount": 234,
+    "area": 338424,
+    "areaRank": 66,
+    "areaCount": 234
+  },
+  "MRT": {
+    "population": 5461319,
+    "populationRank": 123,
+    "populationCount": 234,
+    "area": 1030700,
+    "areaRank": 29,
+    "areaCount": 234
+  },
+  "SVK": {
+    "population": 5451342,
+    "populationRank": 124,
+    "populationCount": 234,
+    "area": 49037,
+    "areaRank": 130,
+    "areaCount": 234
+  },
+  "IRL": {
+    "population": 5356950,
+    "populationRank": 125,
+    "populationCount": 234,
+    "area": 70273,
+    "areaRank": 121,
+    "areaCount": 234
+  },
+  "NZL": {
+    "population": 5287479,
+    "populationRank": 126,
+    "populationCount": 234,
+    "area": 270467,
+    "areaRank": 76,
+    "areaCount": 234
+  },
+  "CRI": {
+    "population": 5174789,
+    "populationRank": 127,
+    "populationCount": 234,
+    "area": 51100,
+    "areaRank": 129,
+    "areaCount": 234
+  },
+  "KWT": {
+    "population": 5102773,
+    "populationRank": 128,
+    "populationCount": 234,
+    "area": 17818,
+    "areaRank": 157,
+    "areaCount": 234
+  },
+  "PAN": {
+    "population": 4625718,
+    "populationRank": 129,
+    "populationCount": 234,
+    "area": 75417,
+    "areaRank": 119,
+    "areaCount": 234
+  },
+  "HRV": {
+    "population": 3822345,
+    "populationRank": 130,
+    "populationCount": 234,
+    "area": 56594,
+    "areaRank": 127,
+    "areaCount": 234
+  },
+  "GEO": {
+    "population": 3804642,
+    "populationRank": 131,
+    "populationCount": 234,
+    "area": 69700,
+    "areaRank": 122,
+    "areaCount": 234
+  },
+  "ERI": {
+    "population": 3682669,
+    "populationRank": 132,
+    "populationCount": 234,
+    "area": 117600,
+    "areaRank": 101,
+    "areaCount": 234
+  },
+  "MNG": {
+    "population": 3556798,
+    "populationRank": 133,
+    "populationCount": 234,
+    "area": 1564110,
+    "areaRank": 19,
+    "areaCount": 234
+  },
+  "URY": {
+    "population": 3382537,
+    "populationRank": 134,
+    "populationCount": 234,
+    "area": 181034,
+    "areaRank": 91,
+    "areaCount": 234
+  },
+  "PRI": {
+    "population": 3222688,
+    "populationRank": 135,
+    "populationCount": 234,
+    "area": 8870,
+    "areaRank": 169,
+    "areaCount": 234
+  },
+  "QAT": {
+    "population": 3173559,
+    "populationRank": 136,
+    "populationCount": 234,
+    "area": 11586,
+    "areaRank": 164,
+    "areaCount": 234
+  },
+  "NAM": {
+    "population": 3153246,
+    "populationRank": 137,
+    "populationCount": 234,
+    "area": 825615,
+    "areaRank": 35,
+    "areaCount": 234
+  },
+  "BIH": {
+    "population": 3114242,
+    "populationRank": 138,
+    "populationCount": 234,
+    "area": 51209,
+    "areaRank": 128,
+    "areaCount": 234
+  },
+  "MDA": {
+    "population": 2961253,
+    "populationRank": 139,
+    "populationCount": 234,
+    "area": 33846,
+    "areaRank": 139,
+    "areaCount": 234
+  },
+  "ARM": {
+    "population": 2930915,
+    "populationRank": 140,
+    "populationCount": 234,
+    "area": 29743,
+    "areaRank": 142,
+    "areaCount": 234
+  },
+  "GMB": {
+    "population": 2884079,
+    "populationRank": 141,
+    "populationCount": 234,
+    "area": 10689,
+    "areaRank": 166,
+    "areaCount": 234
+  },
+  "JAM": {
+    "population": 2833403,
+    "populationRank": 142,
+    "populationCount": 234,
+    "area": 10991,
+    "areaRank": 165,
+    "areaCount": 234
+  },
+  "LTU": {
+    "population": 2797338,
+    "populationRank": 143,
+    "populationCount": 234,
+    "area": 65300,
+    "areaRank": 124,
+    "areaCount": 234
+  },
+  "ALB": {
+    "population": 2751025,
+    "populationRank": 144,
+    "populationCount": 234,
+    "area": 28748,
+    "areaRank": 144,
+    "areaCount": 234
+  },
+  "GAB": {
+    "population": 2647399,
+    "populationRank": 145,
+    "populationCount": 234,
+    "area": 267668,
+    "areaRank": 77,
+    "areaCount": 234
+  },
+  "BWA": {
+    "population": 2603388,
+    "populationRank": 146,
+    "populationCount": 234,
+    "area": 582000,
+    "areaRank": 47,
+    "areaCount": 234
+  },
+  "LSO": {
+    "population": 2389336,
+    "populationRank": 147,
+    "populationCount": 234,
+    "area": 30355,
+    "areaRank": 141,
+    "areaCount": 234
+  },
+  "GNB": {
+    "population": 2297808,
+    "populationRank": 148,
+    "populationCount": 234,
+    "area": 36125,
+    "areaRank": 138,
+    "areaCount": 234
+  },
+  "SVN": {
+    "population": 2114573,
+    "populationRank": 149,
+    "populationCount": 234,
+    "area": 20273,
+    "areaRank": 154,
+    "areaCount": 234
+  },
+  "GNQ": {
+    "population": 1984468,
+    "populationRank": 150,
+    "populationCount": 234,
+    "area": 28051,
+    "areaRank": 145,
+    "areaCount": 234
+  },
+  "LVA": {
+    "population": 1835935,
+    "populationRank": 151,
+    "populationCount": 234,
+    "area": 64559,
+    "areaRank": 125,
+    "areaCount": 234
+  },
+  "MKD": {
+    "population": 1804063,
+    "populationRank": 152,
+    "populationCount": 234,
+    "area": 25713,
+    "areaRank": 149,
+    "areaCount": 234
+  },
+  "BHR": {
+    "population": 1675572,
+    "populationRank": 153,
+    "populationCount": 234,
+    "area": 765,
+    "areaRank": 187,
+    "areaCount": 234
+  },
+  "TTO": {
+    "population": 1513268,
+    "populationRank": 154,
+    "populationCount": 234,
+    "area": 5130,
+    "areaRank": 172,
+    "areaCount": 234
+  },
+  "TLS": {
+    "population": 1436923,
+    "populationRank": 155,
+    "populationCount": 234,
+    "area": 14874,
+    "areaRank": 159,
+    "areaCount": 234
+  },
+  "CYP": {
+    "population": 1382334,
+    "populationRank": 156,
+    "populationCount": 234,
+    "area": 9251,
+    "areaRank": 168,
+    "areaCount": 234
+  },
+  "EST": {
+    "population": 1331062,
+    "populationRank": 157,
+    "populationCount": 234,
+    "area": 45227,
+    "areaRank": 132,
+    "areaCount": 234
+  },
+  "SWZ": {
+    "population": 1269859,
+    "populationRank": 158,
+    "populationCount": 234,
+    "area": 17364,
+    "areaRank": 158,
+    "areaCount": 234
+  },
+  "MUS": {
+    "population": 1265059,
+    "populationRank": 159,
+    "populationCount": 234,
+    "area": 2040,
+    "areaRank": 178,
+    "areaCount": 234
+  },
+  "DJI": {
+    "population": 1199459,
+    "populationRank": 160,
+    "populationCount": 234,
+    "area": 23200,
+    "areaRank": 150,
+    "areaCount": 234
+  },
+  "FJI": {
+    "population": 937282,
+    "populationRank": 161,
+    "populationCount": 234,
+    "area": 18272,
+    "areaRank": 156,
+    "areaCount": 234
+  },
+  "COM": {
+    "population": 899010,
+    "populationRank": 162,
+    "populationCount": 234,
+    "area": 1862,
+    "areaRank": 179,
+    "areaCount": 234
+  },
+  "REU": {
+    "population": 886298,
+    "populationRank": 163,
+    "populationCount": 234,
+    "area": 2511,
+    "areaRank": 177,
+    "areaCount": 234
+  },
+  "SLB": {
+    "population": 858288,
+    "populationRank": 164,
+    "populationCount": 234,
+    "area": 28896,
+    "areaRank": 143,
+    "areaCount": 234
+  },
+  "GUY": {
+    "population": 840890,
+    "populationRank": 165,
+    "populationCount": 234,
+    "area": 214969,
+    "areaRank": 85,
+    "areaCount": 234
+  },
+  "BTN": {
+    "population": 802214,
+    "populationRank": 166,
+    "populationCount": 234,
+    "area": 38394,
+    "areaRank": 136,
+    "areaCount": 234
+  },
+  "MAC": {
+    "population": 723188,
+    "populationRank": 167,
+    "populationCount": 234,
+    "area": 30,
+    "areaRank": 227,
+    "areaCount": 234
+  },
+  "LUX": {
+    "population": 687448,
+    "populationRank": 168,
+    "populationCount": 234,
+    "area": 2586,
+    "areaRank": 176,
+    "areaCount": 234
+  },
+  "SUR": {
+    "population": 645256,
+    "populationRank": 169,
+    "populationCount": 234,
+    "area": 163820,
+    "areaRank": 92,
+    "areaCount": 234
+  },
+  "MNE": {
+    "population": 626233,
+    "populationRank": 170,
+    "populationCount": 234,
+    "area": 13812,
+    "areaRank": 161,
+    "areaCount": 234
+  },
+  "ESH": {
+    "population": 610813,
+    "populationRank": 171,
+    "populationCount": 234,
+    "area": 266000,
+    "areaRank": 78,
+    "areaCount": 234
+  },
+  "MLT": {
+    "population": 549011,
+    "populationRank": 172,
+    "populationCount": 234,
+    "area": 316,
+    "areaRank": 208,
+    "areaCount": 234
+  },
+  "MDV": {
+    "population": 531517,
+    "populationRank": 173,
+    "populationCount": 234,
+    "area": 300,
+    "areaRank": 209,
+    "areaCount": 234
+  },
+  "CPV": {
+    "population": 529630,
+    "populationRank": 174,
+    "populationCount": 234,
+    "area": 4033,
+    "areaRank": 174,
+    "areaCount": 234
+  },
+  "BRN": {
+    "population": 469775,
+    "populationRank": 175,
+    "populationCount": 234,
+    "area": 5765,
+    "areaRank": 171,
+    "areaCount": 234
+  },
+  "BLZ": {
+    "population": 428644,
+    "populationRank": 176,
+    "populationCount": 234,
+    "area": 22966,
+    "areaRank": 151,
+    "areaCount": 234
+  },
+  "BHS": {
+    "population": 404628,
+    "populationRank": 177,
+    "populationCount": 234,
+    "area": 13943,
+    "areaRank": 160,
+    "areaCount": 234
+  },
+  "ISL": {
+    "population": 402329,
+    "populationRank": 178,
+    "populationCount": 234,
+    "area": 103000,
+    "areaRank": 108,
+    "areaCount": 234
+  },
+  "GLP": {
+    "population": 372453,
+    "populationRank": 179,
+    "populationCount": 234,
+    "area": 1628,
+    "areaRank": 180,
+    "areaCount": 234
+  },
+  "MYT": {
+    "population": 347536,
+    "populationRank": 180,
+    "populationCount": 234,
+    "area": 374,
+    "areaRank": 204,
+    "areaCount": 234
+  },
+  "VUT": {
+    "population": 342564,
+    "populationRank": 181,
+    "populationCount": 234,
+    "area": 12189,
+    "areaRank": 162,
+    "areaCount": 234
+  },
+  "MTQ": {
+    "population": 337711,
+    "populationRank": 182,
+    "populationCount": 234,
+    "area": 1128,
+    "areaRank": 182,
+    "areaCount": 234
+  },
+  "GUF": {
+    "population": 318872,
+    "populationRank": 183,
+    "populationCount": 234,
+    "area": 83534,
+    "areaRank": 117,
+    "areaCount": 234
+  },
+  "NCL": {
+    "population": 297892,
+    "populationRank": 184,
+    "populationCount": 234,
+    "area": 18575,
+    "areaRank": 155,
+    "areaCount": 234
+  },
+  "PYF": {
+    "population": 283076,
+    "populationRank": 185,
+    "populationCount": 234,
+    "area": 4167,
+    "areaRank": 173,
+    "areaCount": 234
+  },
+  "BRB": {
+    "population": 282724,
+    "populationRank": 186,
+    "populationCount": 234,
+    "area": 430,
+    "areaRank": 201,
+    "areaCount": 234
+  },
+  "STP": {
+    "population": 244994,
+    "populationRank": 187,
+    "populationCount": 234,
+    "area": 964,
+    "areaRank": 184,
+    "areaCount": 234
+  },
+  "WSM": {
+    "population": 220528,
+    "populationRank": 188,
+    "populationCount": 234,
+    "area": 2842,
+    "areaRank": 175,
+    "areaCount": 234
+  },
+  "CUW": {
+    "population": 185440,
+    "populationRank": 189,
+    "populationCount": 234,
+    "area": 444,
+    "areaRank": 199,
+    "areaCount": 234
+  },
+  "LCA": {
+    "population": 180488,
+    "populationRank": 190,
+    "populationCount": 234,
+    "area": 616,
+    "areaRank": 192,
+    "areaCount": 234
+  },
+  "GUM": {
+    "population": 170185,
+    "populationRank": 191,
+    "populationCount": 234,
+    "area": 549,
+    "areaRank": 194,
+    "areaCount": 234
+  },
+  "KIR": {
+    "population": 138445,
+    "populationRank": 192,
+    "populationCount": 234,
+    "area": 811,
+    "areaRank": 186,
+    "areaCount": 234
+  },
+  "SYC": {
+    "population": 134959,
+    "populationRank": 193,
+    "populationCount": 234,
+    "area": 452,
+    "areaRank": 198,
+    "areaCount": 234
+  },
+  "GRD": {
+    "population": 117362,
+    "populationRank": 194,
+    "populationCount": 234,
+    "area": 344,
+    "areaRank": 206,
+    "areaCount": 234
+  },
+  "FSM": {
+    "population": 114183,
+    "populationRank": 195,
+    "populationCount": 234,
+    "area": 702,
+    "areaRank": 191,
+    "areaCount": 234
+  },
+  "ABW": {
+    "population": 108164,
+    "populationRank": 196,
+    "populationCount": 234,
+    "area": 180,
+    "areaRank": 217,
+    "areaCount": 234
+  },
+  "TON": {
+    "population": 103291,
+    "populationRank": 197,
+    "populationCount": 234,
+    "area": 747,
+    "areaRank": 189,
+    "areaCount": 234
+  },
+  "VCT": {
+    "population": 99245,
+    "populationRank": 198,
+    "populationCount": 234,
+    "area": 389,
+    "areaRank": 203,
+    "areaCount": 234
+  },
+  "ATG": {
+    "population": 94626,
+    "populationRank": 199,
+    "populationCount": 234,
+    "area": 442,
+    "areaRank": 200,
+    "areaCount": 234
+  },
+  "IMN": {
+    "population": 84055,
+    "populationRank": 200,
+    "populationCount": 234,
+    "area": 572,
+    "areaRank": 193,
+    "areaCount": 234
+  },
+  "AND": {
+    "population": 83753,
+    "populationRank": 201,
+    "populationCount": 234,
+    "area": 468,
+    "areaRank": 195,
+    "areaCount": 234
+  },
+  "VIR": {
+    "population": 83400,
+    "populationRank": 202,
+    "populationCount": 234,
+    "area": 347,
+    "areaRank": 205,
+    "areaCount": 234
+  },
+  "CYM": {
+    "population": 77196,
+    "populationRank": 203,
+    "populationCount": 234,
+    "area": 264,
+    "areaRank": 210,
+    "areaCount": 234
+  },
+  "DMA": {
+    "population": 65511,
+    "populationRank": 204,
+    "populationCount": 234,
+    "area": 751,
+    "areaRank": 188,
+    "areaCount": 234
+  },
+  "BMU": {
+    "population": 64459,
+    "populationRank": 205,
+    "populationCount": 234,
+    "area": 54,
+    "areaRank": 224,
+    "areaCount": 234
+  },
+  "FRO": {
+    "population": 56526,
+    "populationRank": 206,
+    "populationCount": 234,
+    "area": 1393,
+    "areaRank": 181,
+    "areaCount": 234
+  },
+  "GRL": {
+    "population": 55629,
+    "populationRank": 207,
+    "populationCount": 234,
+    "area": 2166086,
+    "areaRank": 12,
+    "areaCount": 234
+  },
+  "TCA": {
+    "population": 47148,
+    "populationRank": 208,
+    "populationCount": 234,
+    "area": 948,
+    "areaRank": 185,
+    "areaCount": 234
+  },
+  "KNA": {
+    "population": 46992,
+    "populationRank": 209,
+    "populationCount": 234,
+    "area": 261,
+    "areaRank": 211,
+    "areaCount": 234
+  },
+  "ASM": {
+    "population": 45319,
+    "populationRank": 210,
+    "populationCount": 234,
+    "area": 199,
+    "areaRank": 215,
+    "areaCount": 234
+  },
+  "SXM": {
+    "population": 44447,
+    "populationRank": 211,
+    "populationCount": 234,
+    "area": 34,
+    "areaRank": 226,
+    "areaCount": 234
+  },
+  "MNP": {
+    "population": 42914,
+    "populationRank": 212,
+    "populationCount": 234,
+    "area": 464,
+    "areaRank": 196,
+    "areaCount": 234
+  },
+  "GIB": {
+    "population": 40867,
+    "populationRank": 213,
+    "populationCount": 234,
+    "area": 6,
+    "areaRank": 232,
+    "areaCount": 234
+  },
+  "LIE": {
+    "population": 40368,
+    "populationRank": 214,
+    "populationCount": 234,
+    "area": 160,
+    "areaRank": 218,
+    "areaCount": 234
+  },
+  "VGB": {
+    "population": 39936,
+    "populationRank": 215,
+    "populationCount": 234,
+    "area": 151,
+    "areaRank": 219,
+    "areaCount": 234
+  },
+  "MCO": {
+    "population": 38087,
+    "populationRank": 216,
+    "populationCount": 234,
+    "area": 2,
+    "areaRank": 233,
+    "areaCount": 234
+  },
+  "MHL": {
+    "population": 35075,
+    "populationRank": 217,
+    "populationCount": 234,
+    "area": 181,
+    "areaRank": 216,
+    "areaCount": 234
+  },
+  "SMR": {
+    "population": 33605,
+    "populationRank": 218,
+    "populationCount": 234,
+    "area": 61,
+    "areaRank": 223,
+    "areaCount": 234
+  },
+  "BES": {
+    "population": 31913,
+    "populationRank": 219,
+    "populationCount": 234,
+    "area": 328,
+    "areaRank": 207,
+    "areaCount": 234
+  },
+  "MAF": {
+    "population": 23898,
+    "populationRank": 220,
+    "populationCount": 234,
+    "area": 53,
+    "areaRank": 225,
+    "areaCount": 234
+  },
+  "PLW": {
+    "population": 17614,
+    "populationRank": 221,
+    "populationCount": 234,
+    "area": 459,
+    "areaRank": 197,
+    "areaCount": 234
+  },
+  "AIA": {
+    "population": 14817,
+    "populationRank": 222,
+    "populationCount": 234,
+    "area": 91,
+    "areaRank": 222,
+    "areaCount": 234
+  },
+  "COK": {
+    "population": 12826,
+    "populationRank": 223,
+    "populationCount": 234,
+    "area": 236,
+    "areaRank": 214,
+    "areaCount": 234
+  },
+  "NRU": {
+    "population": 12101,
+    "populationRank": 224,
+    "populationCount": 234,
+    "area": 21,
+    "areaRank": 229,
+    "areaCount": 234
+  },
+  "BLM": {
+    "population": 11550,
+    "populationRank": 225,
+    "populationCount": 234,
+    "area": 21,
+    "areaRank": 230,
+    "areaCount": 234
+  },
+  "WLF": {
+    "population": 11113,
+    "populationRank": 226,
+    "populationCount": 234,
+    "area": 142,
+    "areaRank": 220,
+    "areaCount": 234
+  },
+  "TUV": {
+    "population": 9362,
+    "populationRank": 227,
+    "populationCount": 234,
+    "area": 26,
+    "areaRank": 228,
+    "areaCount": 234
+  },
+  "SPM": {
+    "population": 5513,
+    "populationRank": 228,
+    "populationCount": 234,
+    "area": 242,
+    "areaRank": 213,
+    "areaCount": 234
+  },
+  "SHN": {
+    "population": 5147,
+    "populationRank": 229,
+    "populationCount": 234,
+    "area": 394,
+    "areaRank": 202,
+    "areaCount": 234
+  },
+  "MSR": {
+    "population": 4328,
+    "populationRank": 230,
+    "populationCount": 234,
+    "area": 102,
+    "areaRank": 221,
+    "areaCount": 234
+  },
+  "FLK": {
+    "population": 3465,
+    "populationRank": 231,
+    "populationCount": 234,
+    "area": 12173,
+    "areaRank": 163,
+    "areaCount": 234
+  },
+  "TKL": {
+    "population": 2691,
+    "populationRank": 232,
+    "populationCount": 234,
+    "area": 12,
+    "areaRank": 231,
+    "areaCount": 234
+  },
+  "NIU": {
+    "population": 1822,
+    "populationRank": 233,
+    "populationCount": 234,
+    "area": 260,
+    "areaRank": 212,
+    "areaCount": 234
+  },
+  "VAT": {
+    "population": 506,
+    "populationRank": 234,
+    "populationCount": 234,
+    "area": 0,
+    "areaRank": 234,
+    "areaCount": 234
+  }
+}
