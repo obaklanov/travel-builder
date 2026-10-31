@@ -3,1494 +3,2142 @@
     "code": "AFG",
     "iso2": "AF",
     "name": "Afghanistan",
-    "region": "Asia"
-  },
-  {
-    "code": "ALA",
-    "iso2": "AX",
-    "name": "Åland Islands",
-    "region": "Europe"
+    "region": "Asia",
+    "aliases": [],
+    "population": 45047069,
+    "populationRank": 36
   },
   {
     "code": "ALB",
     "iso2": "AL",
     "name": "Albania",
-    "region": "Europe"
+    "region": "Europe",
+    "aliases": [],
+    "population": 2751025,
+    "populationRank": 144
   },
   {
     "code": "DZA",
     "iso2": "DZ",
     "name": "Algeria",
-    "region": "Africa"
+    "region": "Africa",
+    "aliases": [],
+    "population": 48028334,
+    "populationRank": 32
   },
   {
     "code": "ASM",
     "iso2": "AS",
     "name": "American Samoa",
-    "region": "Oceania"
+    "region": "Oceania",
+    "aliases": [],
+    "population": 45319,
+    "populationRank": 210
   },
   {
     "code": "AND",
     "iso2": "AD",
     "name": "Andorra",
-    "region": "Europe"
+    "region": "Europe",
+    "aliases": [],
+    "population": 83753,
+    "populationRank": 201
   },
   {
     "code": "AGO",
     "iso2": "AO",
     "name": "Angola",
-    "region": "Africa"
+    "region": "Africa",
+    "aliases": [],
+    "population": 40215179,
+    "populationRank": 39
   },
   {
     "code": "AIA",
     "iso2": "AI",
     "name": "Anguilla",
-    "region": "Americas"
+    "region": "Americas",
+    "aliases": [],
+    "population": 14817,
+    "populationRank": 222
   },
   {
     "code": "ATG",
     "iso2": "AG",
     "name": "Antigua and Barbuda",
-    "region": "Americas"
+    "region": "Americas",
+    "aliases": [],
+    "population": 94626,
+    "populationRank": 199
   },
   {
     "code": "ARG",
     "iso2": "AR",
     "name": "Argentina",
-    "region": "Americas"
+    "region": "Americas",
+    "aliases": [],
+    "population": 46003734,
+    "populationRank": 35
   },
   {
     "code": "ARM",
     "iso2": "AM",
     "name": "Armenia",
-    "region": "Asia"
+    "region": "Asia",
+    "aliases": [],
+    "population": 2930915,
+    "populationRank": 140
   },
   {
     "code": "ABW",
     "iso2": "AW",
     "name": "Aruba",
-    "region": "Americas"
+    "region": "Americas",
+    "aliases": [],
+    "population": 108164,
+    "populationRank": 196
   },
   {
     "code": "AUS",
     "iso2": "AU",
     "name": "Australia",
-    "region": "Oceania"
+    "region": "Oceania",
+    "aliases": [],
+    "population": 27227096,
+    "populationRank": 55
   },
   {
     "code": "AUT",
     "iso2": "AT",
     "name": "Austria",
-    "region": "Europe"
+    "region": "Europe",
+    "aliases": [],
+    "population": 9107266,
+    "populationRank": 99
   },
   {
     "code": "AZE",
     "iso2": "AZ",
     "name": "Azerbaijan",
-    "region": "Asia"
+    "region": "Asia",
+    "aliases": [],
+    "population": 10454855,
+    "populationRank": 93
   },
   {
     "code": "BHS",
     "iso2": "BS",
     "name": "Bahamas",
-    "region": "Americas"
+    "region": "Americas",
+    "aliases": [],
+    "population": 404628,
+    "populationRank": 177
   },
   {
     "code": "BHR",
     "iso2": "BH",
     "name": "Bahrain",
-    "region": "Asia"
+    "region": "Asia",
+    "aliases": [],
+    "population": 1675572,
+    "populationRank": 153
   },
   {
     "code": "BGD",
     "iso2": "BD",
     "name": "Bangladesh",
-    "region": "Asia"
+    "region": "Asia",
+    "aliases": [],
+    "population": 177818044,
+    "populationRank": 8
   },
   {
     "code": "BRB",
     "iso2": "BB",
     "name": "Barbados",
-    "region": "Americas"
+    "region": "Americas",
+    "aliases": [],
+    "population": 282724,
+    "populationRank": 186
   },
   {
     "code": "BLR",
     "iso2": "BY",
     "name": "Belarus",
-    "region": "Europe"
+    "region": "Europe",
+    "aliases": [],
+    "population": 8937018,
+    "populationRank": 102
   },
   {
     "code": "BEL",
     "iso2": "BE",
     "name": "Belgium",
-    "region": "Europe"
+    "region": "Europe",
+    "aliases": [],
+    "population": 11774642,
+    "populationRank": 83
   },
   {
     "code": "BLZ",
     "iso2": "BZ",
     "name": "Belize",
-    "region": "Americas"
+    "region": "Americas",
+    "aliases": [],
+    "population": 428644,
+    "populationRank": 176
   },
   {
     "code": "BEN",
     "iso2": "BJ",
     "name": "Benin",
-    "region": "Africa"
+    "region": "Africa",
+    "aliases": [],
+    "population": 15170419,
+    "populationRank": 76
   },
   {
     "code": "BMU",
     "iso2": "BM",
     "name": "Bermuda",
-    "region": "Americas"
+    "region": "Americas",
+    "aliases": [],
+    "population": 64459,
+    "populationRank": 205
   },
   {
     "code": "BTN",
     "iso2": "BT",
     "name": "Bhutan",
-    "region": "Asia"
+    "region": "Asia",
+    "aliases": [],
+    "population": 802214,
+    "populationRank": 166
   },
   {
     "code": "BOL",
     "iso2": "BO",
     "name": "Bolivia",
-    "region": "Americas"
+    "region": "Americas",
+    "aliases": [],
+    "population": 12749291,
+    "populationRank": 79
   },
   {
     "code": "BIH",
     "iso2": "BA",
     "name": "Bosnia and Herzegovina",
-    "region": "Europe"
+    "region": "Europe",
+    "aliases": [],
+    "population": 3114242,
+    "populationRank": 138
   },
   {
     "code": "BWA",
     "iso2": "BW",
     "name": "Botswana",
-    "region": "Africa"
-  },
-  {
-    "code": "BVT",
-    "iso2": "BV",
-    "name": "Bouvet Island",
-    "region": "Antarctic"
+    "region": "Africa",
+    "aliases": [],
+    "population": 2603388,
+    "populationRank": 146
   },
   {
     "code": "BRA",
     "iso2": "BR",
     "name": "Brazil",
-    "region": "Americas"
-  },
-  {
-    "code": "IOT",
-    "iso2": "IO",
-    "name": "British Indian Ocean Territory",
-    "region": "Africa"
+    "region": "Americas",
+    "aliases": [],
+    "population": 213562666,
+    "populationRank": 7
   },
   {
     "code": "VGB",
     "iso2": "VG",
     "name": "British Virgin Islands",
-    "region": "Americas"
+    "region": "Americas",
+    "aliases": [],
+    "population": 39936,
+    "populationRank": 215
   },
   {
     "code": "BRN",
     "iso2": "BN",
     "name": "Brunei",
-    "region": "Asia"
+    "region": "Asia",
+    "aliases": [],
+    "population": 469775,
+    "populationRank": 175
   },
   {
     "code": "BGR",
     "iso2": "BG",
     "name": "Bulgaria",
-    "region": "Europe"
+    "region": "Europe",
+    "aliases": [],
+    "population": 6667659,
+    "populationRank": 110
   },
   {
     "code": "BFA",
     "iso2": "BF",
     "name": "Burkina Faso",
-    "region": "Africa"
+    "region": "Africa",
+    "aliases": [],
+    "population": 24601700,
+    "populationRank": 59
   },
   {
     "code": "BDI",
     "iso2": "BI",
     "name": "Burundi",
-    "region": "Africa"
+    "region": "Africa",
+    "aliases": [],
+    "population": 14729157,
+    "populationRank": 78
+  },
+  {
+    "code": "CPV",
+    "iso2": "CV",
+    "name": "Cabo Verde",
+    "region": "Africa",
+    "aliases": [
+      "Cape Verde"
+    ],
+    "population": 529630,
+    "populationRank": 174
   },
   {
     "code": "KHM",
     "iso2": "KH",
     "name": "Cambodia",
-    "region": "Asia"
+    "region": "Asia",
+    "aliases": [],
+    "population": 18051219,
+    "populationRank": 73
   },
   {
     "code": "CMR",
     "iso2": "CM",
     "name": "Cameroon",
-    "region": "Africa"
+    "region": "Africa",
+    "aliases": [],
+    "population": 30640817,
+    "populationRank": 51
   },
   {
     "code": "CAN",
     "iso2": "CA",
     "name": "Canada",
-    "region": "Americas"
-  },
-  {
-    "code": "CPV",
-    "iso2": "CV",
-    "name": "Cape Verde",
-    "region": "Africa"
+    "region": "Americas",
+    "aliases": [],
+    "population": 40467728,
+    "populationRank": 38
   },
   {
     "code": "BES",
     "iso2": "BQ",
     "name": "Caribbean Netherlands",
-    "region": "Americas"
+    "region": "Americas",
+    "aliases": [],
+    "population": 31913,
+    "populationRank": 219
   },
   {
     "code": "CYM",
     "iso2": "KY",
     "name": "Cayman Islands",
-    "region": "Americas"
+    "region": "Americas",
+    "aliases": [],
+    "population": 77196,
+    "populationRank": 203
   },
   {
     "code": "CAF",
     "iso2": "CF",
     "name": "Central African Republic",
-    "region": "Africa"
+    "region": "Africa",
+    "aliases": [],
+    "population": 5698984,
+    "populationRank": 118
   },
   {
     "code": "TCD",
     "iso2": "TD",
     "name": "Chad",
-    "region": "Africa"
+    "region": "Africa",
+    "aliases": [],
+    "population": 21560380,
+    "populationRank": 64
   },
   {
     "code": "CHL",
     "iso2": "CL",
     "name": "Chile",
-    "region": "Americas"
+    "region": "Americas",
+    "aliases": [],
+    "population": 19945850,
+    "populationRank": 67
   },
   {
     "code": "CHN",
     "iso2": "CN",
     "name": "China",
-    "region": "Asia"
-  },
-  {
-    "code": "CXR",
-    "iso2": "CX",
-    "name": "Christmas Island",
-    "region": "Oceania"
-  },
-  {
-    "code": "CCK",
-    "iso2": "CC",
-    "name": "Cocos (Keeling) Islands",
-    "region": "Oceania"
+    "region": "Asia",
+    "aliases": [],
+    "population": 1412914089,
+    "populationRank": 2
   },
   {
     "code": "COL",
     "iso2": "CO",
     "name": "Colombia",
-    "region": "Americas"
+    "region": "Americas",
+    "aliases": [],
+    "population": 53936226,
+    "populationRank": 28
   },
   {
     "code": "COM",
     "iso2": "KM",
     "name": "Comoros",
-    "region": "Africa"
+    "region": "Africa",
+    "aliases": [],
+    "population": 899010,
+    "populationRank": 162
+  },
+  {
+    "code": "COG",
+    "iso2": "CG",
+    "name": "Congo",
+    "region": "Africa",
+    "aliases": [
+      "Republic of the Congo"
+    ],
+    "population": 6637785,
+    "populationRank": 112
   },
   {
     "code": "COK",
     "iso2": "CK",
     "name": "Cook Islands",
-    "region": "Oceania"
+    "region": "Oceania",
+    "aliases": [],
+    "population": 12826,
+    "populationRank": 223
   },
   {
     "code": "CRI",
     "iso2": "CR",
     "name": "Costa Rica",
-    "region": "Americas"
+    "region": "Americas",
+    "aliases": [],
+    "population": 5174789,
+    "populationRank": 127
+  },
+  {
+    "code": "CIV",
+    "iso2": "CI",
+    "name": "Côte d'Ivoire",
+    "region": "Africa",
+    "aliases": [
+      "Ivory Coast"
+    ],
+    "population": 33494346,
+    "populationRank": 50
   },
   {
     "code": "HRV",
     "iso2": "HR",
     "name": "Croatia",
-    "region": "Europe"
+    "region": "Europe",
+    "aliases": [],
+    "population": 3822345,
+    "populationRank": 130
   },
   {
     "code": "CUB",
     "iso2": "CU",
     "name": "Cuba",
-    "region": "Americas"
+    "region": "Americas",
+    "aliases": [],
+    "population": 10892659,
+    "populationRank": 90
   },
   {
     "code": "CUW",
     "iso2": "CW",
     "name": "Curaçao",
-    "region": "Americas"
+    "region": "Americas",
+    "aliases": [],
+    "population": 185440,
+    "populationRank": 189
   },
   {
     "code": "CYP",
     "iso2": "CY",
     "name": "Cyprus",
-    "region": "Europe"
+    "region": "Europe",
+    "aliases": [],
+    "population": 1382334,
+    "populationRank": 156
   },
   {
     "code": "CZE",
     "iso2": "CZ",
-    "name": "Czechia",
-    "region": "Europe"
+    "name": "Czech Republic (Czechia)",
+    "region": "Europe",
+    "aliases": [
+      "Czechia"
+    ],
+    "population": 10527781,
+    "populationRank": 92
   },
   {
     "code": "DNK",
     "iso2": "DK",
     "name": "Denmark",
-    "region": "Europe"
+    "region": "Europe",
+    "aliases": [],
+    "population": 6023520,
+    "populationRank": 114
   },
   {
     "code": "DJI",
     "iso2": "DJ",
     "name": "Djibouti",
-    "region": "Africa"
+    "region": "Africa",
+    "aliases": [],
+    "population": 1199459,
+    "populationRank": 160
   },
   {
     "code": "DMA",
     "iso2": "DM",
     "name": "Dominica",
-    "region": "Americas"
+    "region": "Americas",
+    "aliases": [],
+    "population": 65511,
+    "populationRank": 204
   },
   {
     "code": "DOM",
     "iso2": "DO",
     "name": "Dominican Republic",
-    "region": "Americas"
+    "region": "Americas",
+    "aliases": [],
+    "population": 11609500,
+    "populationRank": 84
   },
   {
     "code": "COD",
     "iso2": "CD",
     "name": "DR Congo",
-    "region": "Africa"
+    "region": "Africa",
+    "aliases": [],
+    "population": 116452162,
+    "populationRank": 15
   },
   {
     "code": "ECU",
     "iso2": "EC",
     "name": "Ecuador",
-    "region": "Americas"
+    "region": "Americas",
+    "aliases": [],
+    "population": 18444506,
+    "populationRank": 72
   },
   {
     "code": "EGY",
     "iso2": "EG",
     "name": "Egypt",
-    "region": "Africa"
+    "region": "Africa",
+    "aliases": [],
+    "population": 120101175,
+    "populationRank": 13
   },
   {
     "code": "SLV",
     "iso2": "SV",
     "name": "El Salvador",
-    "region": "Americas"
+    "region": "Americas",
+    "aliases": [],
+    "population": 6391253,
+    "populationRank": 113
   },
   {
     "code": "GNQ",
     "iso2": "GQ",
     "name": "Equatorial Guinea",
-    "region": "Africa"
+    "region": "Africa",
+    "aliases": [],
+    "population": 1984468,
+    "populationRank": 150
   },
   {
     "code": "ERI",
     "iso2": "ER",
     "name": "Eritrea",
-    "region": "Africa"
+    "region": "Africa",
+    "aliases": [],
+    "population": 3682669,
+    "populationRank": 132
   },
   {
     "code": "EST",
     "iso2": "EE",
     "name": "Estonia",
-    "region": "Europe"
+    "region": "Europe",
+    "aliases": [],
+    "population": 1331062,
+    "populationRank": 157
   },
   {
     "code": "SWZ",
     "iso2": "SZ",
     "name": "Eswatini",
-    "region": "Africa"
+    "region": "Africa",
+    "aliases": [],
+    "population": 1269859,
+    "populationRank": 158
   },
   {
     "code": "ETH",
     "iso2": "ET",
     "name": "Ethiopia",
-    "region": "Africa"
+    "region": "Africa",
+    "aliases": [],
+    "population": 138902185,
+    "populationRank": 10
+  },
+  {
+    "code": "FRO",
+    "iso2": "FO",
+    "name": "Faeroe Islands",
+    "region": "Europe",
+    "aliases": [
+      "Faroe Islands"
+    ],
+    "population": 56526,
+    "populationRank": 206
   },
   {
     "code": "FLK",
     "iso2": "FK",
     "name": "Falkland Islands",
-    "region": "Americas"
-  },
-  {
-    "code": "FRO",
-    "iso2": "FO",
-    "name": "Faroe Islands",
-    "region": "Europe"
+    "region": "Americas",
+    "aliases": [],
+    "population": 3465,
+    "populationRank": 231
   },
   {
     "code": "FJI",
     "iso2": "FJ",
     "name": "Fiji",
-    "region": "Oceania"
+    "region": "Oceania",
+    "aliases": [],
+    "population": 937282,
+    "populationRank": 161
   },
   {
     "code": "FIN",
     "iso2": "FI",
     "name": "Finland",
-    "region": "Europe"
+    "region": "Europe",
+    "aliases": [],
+    "population": 5621739,
+    "populationRank": 122
   },
   {
     "code": "FRA",
     "iso2": "FR",
     "name": "France",
-    "region": "Europe"
+    "region": "Europe",
+    "aliases": [],
+    "population": 66746401,
+    "populationRank": 23
   },
   {
     "code": "GUF",
     "iso2": "GF",
     "name": "French Guiana",
-    "region": "Americas"
+    "region": "Americas",
+    "aliases": [],
+    "population": 318872,
+    "populationRank": 183
   },
   {
     "code": "PYF",
     "iso2": "PF",
     "name": "French Polynesia",
-    "region": "Oceania"
-  },
-  {
-    "code": "ATF",
-    "iso2": "TF",
-    "name": "French Southern and Antarctic Lands",
-    "region": "Antarctic"
+    "region": "Oceania",
+    "aliases": [],
+    "population": 283076,
+    "populationRank": 185
   },
   {
     "code": "GAB",
     "iso2": "GA",
     "name": "Gabon",
-    "region": "Africa"
+    "region": "Africa",
+    "aliases": [],
+    "population": 2647399,
+    "populationRank": 145
   },
   {
     "code": "GMB",
     "iso2": "GM",
     "name": "Gambia",
-    "region": "Africa"
+    "region": "Africa",
+    "aliases": [],
+    "population": 2884079,
+    "populationRank": 141
   },
   {
     "code": "GEO",
     "iso2": "GE",
     "name": "Georgia",
-    "region": "Asia"
+    "region": "Asia",
+    "aliases": [],
+    "population": 3804642,
+    "populationRank": 131
   },
   {
     "code": "DEU",
     "iso2": "DE",
     "name": "Germany",
-    "region": "Europe"
+    "region": "Europe",
+    "aliases": [],
+    "population": 83644258,
+    "populationRank": 19
   },
   {
     "code": "GHA",
     "iso2": "GH",
     "name": "Ghana",
-    "region": "Africa"
+    "region": "Africa",
+    "aliases": [],
+    "population": 35697557,
+    "populationRank": 46
   },
   {
     "code": "GIB",
     "iso2": "GI",
     "name": "Gibraltar",
-    "region": "Europe"
+    "region": "Europe",
+    "aliases": [],
+    "population": 40867,
+    "populationRank": 213
   },
   {
     "code": "GRC",
     "iso2": "GR",
     "name": "Greece",
-    "region": "Europe"
+    "region": "Europe",
+    "aliases": [],
+    "population": 9897115,
+    "populationRank": 96
   },
   {
     "code": "GRL",
     "iso2": "GL",
     "name": "Greenland",
-    "region": "Americas"
+    "region": "Americas",
+    "aliases": [],
+    "population": 55629,
+    "populationRank": 207
   },
   {
     "code": "GRD",
     "iso2": "GD",
     "name": "Grenada",
-    "region": "Americas"
+    "region": "Americas",
+    "aliases": [],
+    "population": 117362,
+    "populationRank": 194
   },
   {
     "code": "GLP",
     "iso2": "GP",
     "name": "Guadeloupe",
-    "region": "Americas"
+    "region": "Americas",
+    "aliases": [],
+    "population": 372453,
+    "populationRank": 179
   },
   {
     "code": "GUM",
     "iso2": "GU",
     "name": "Guam",
-    "region": "Oceania"
+    "region": "Oceania",
+    "aliases": [],
+    "population": 170185,
+    "populationRank": 191
   },
   {
     "code": "GTM",
     "iso2": "GT",
     "name": "Guatemala",
-    "region": "Americas"
-  },
-  {
-    "code": "GGY",
-    "iso2": "GG",
-    "name": "Guernsey",
-    "region": "Europe"
+    "region": "Americas",
+    "aliases": [],
+    "population": 18967978,
+    "populationRank": 69
   },
   {
     "code": "GIN",
     "iso2": "GN",
     "name": "Guinea",
-    "region": "Africa"
+    "region": "Africa",
+    "aliases": [],
+    "population": 15441993,
+    "populationRank": 75
   },
   {
     "code": "GNB",
     "iso2": "GW",
     "name": "Guinea-Bissau",
-    "region": "Africa"
+    "region": "Africa",
+    "aliases": [],
+    "population": 2297808,
+    "populationRank": 148
   },
   {
     "code": "GUY",
     "iso2": "GY",
     "name": "Guyana",
-    "region": "Americas"
+    "region": "Americas",
+    "aliases": [],
+    "population": 840890,
+    "populationRank": 165
   },
   {
     "code": "HTI",
     "iso2": "HT",
     "name": "Haiti",
-    "region": "Americas"
+    "region": "Americas",
+    "aliases": [],
+    "population": 12037506,
+    "populationRank": 82
   },
   {
-    "code": "HMD",
-    "iso2": "HM",
-    "name": "Heard Island and McDonald Islands",
-    "region": "Antarctic"
+    "code": "VAT",
+    "iso2": "VA",
+    "name": "Holy See",
+    "region": "Europe",
+    "aliases": [
+      "Vatican City"
+    ],
+    "population": 506,
+    "populationRank": 234
   },
   {
     "code": "HND",
     "iso2": "HN",
     "name": "Honduras",
-    "region": "Americas"
+    "region": "Americas",
+    "aliases": [],
+    "population": 11184760,
+    "populationRank": 87
   },
   {
     "code": "HKG",
     "iso2": "HK",
     "name": "Hong Kong",
-    "region": "Asia"
+    "region": "Asia",
+    "aliases": [],
+    "population": 7378602,
+    "populationRank": 107
   },
   {
     "code": "HUN",
     "iso2": "HU",
     "name": "Hungary",
-    "region": "Europe"
+    "region": "Europe",
+    "aliases": [],
+    "population": 9585818,
+    "populationRank": 98
   },
   {
     "code": "ISL",
     "iso2": "IS",
     "name": "Iceland",
-    "region": "Europe"
+    "region": "Europe",
+    "aliases": [],
+    "population": 402329,
+    "populationRank": 178
   },
   {
     "code": "IND",
     "iso2": "IN",
     "name": "India",
-    "region": "Asia"
+    "region": "Asia",
+    "aliases": [],
+    "population": 1476625576,
+    "populationRank": 1
   },
   {
     "code": "IDN",
     "iso2": "ID",
     "name": "Indonesia",
-    "region": "Asia"
+    "region": "Asia",
+    "aliases": [],
+    "population": 287886782,
+    "populationRank": 4
   },
   {
     "code": "IRN",
     "iso2": "IR",
     "name": "Iran",
-    "region": "Asia"
+    "region": "Asia",
+    "aliases": [],
+    "population": 93168497,
+    "populationRank": 17
   },
   {
     "code": "IRQ",
     "iso2": "IQ",
     "name": "Iraq",
-    "region": "Asia"
+    "region": "Asia",
+    "aliases": [],
+    "population": 48007437,
+    "populationRank": 33
   },
   {
     "code": "IRL",
     "iso2": "IE",
     "name": "Ireland",
-    "region": "Europe"
+    "region": "Europe",
+    "aliases": [],
+    "population": 5356950,
+    "populationRank": 125
   },
   {
     "code": "IMN",
     "iso2": "IM",
     "name": "Isle of Man",
-    "region": "Europe"
+    "region": "Europe",
+    "aliases": [],
+    "population": 84055,
+    "populationRank": 200
   },
   {
     "code": "ISR",
     "iso2": "IL",
     "name": "Israel",
-    "region": "Asia"
+    "region": "Asia",
+    "aliases": [],
+    "population": 9647689,
+    "populationRank": 97
   },
   {
     "code": "ITA",
     "iso2": "IT",
     "name": "Italy",
-    "region": "Europe"
-  },
-  {
-    "code": "CIV",
-    "iso2": "CI",
-    "name": "Ivory Coast",
-    "region": "Africa"
+    "region": "Europe",
+    "aliases": [],
+    "population": 58926166,
+    "populationRank": 25
   },
   {
     "code": "JAM",
     "iso2": "JM",
     "name": "Jamaica",
-    "region": "Americas"
+    "region": "Americas",
+    "aliases": [],
+    "population": 2833403,
+    "populationRank": 142
   },
   {
     "code": "JPN",
     "iso2": "JP",
     "name": "Japan",
-    "region": "Asia"
-  },
-  {
-    "code": "JEY",
-    "iso2": "JE",
-    "name": "Jersey",
-    "region": "Europe"
+    "region": "Asia",
+    "aliases": [],
+    "population": 122427731,
+    "populationRank": 12
   },
   {
     "code": "JOR",
     "iso2": "JO",
     "name": "Jordan",
-    "region": "Asia"
+    "region": "Asia",
+    "aliases": [],
+    "population": 11589532,
+    "populationRank": 85
   },
   {
     "code": "KAZ",
     "iso2": "KZ",
     "name": "Kazakhstan",
-    "region": "Asia"
+    "region": "Asia",
+    "aliases": [],
+    "population": 21083626,
+    "populationRank": 65
   },
   {
     "code": "KEN",
     "iso2": "KE",
     "name": "Kenya",
-    "region": "Africa"
+    "region": "Africa",
+    "aliases": [],
+    "population": 58636412,
+    "populationRank": 26
   },
   {
     "code": "KIR",
     "iso2": "KI",
     "name": "Kiribati",
-    "region": "Oceania"
-  },
-  {
-    "code": "UNK",
-    "iso2": "XK",
-    "name": "Kosovo",
-    "region": "Europe"
+    "region": "Oceania",
+    "aliases": [],
+    "population": 138445,
+    "populationRank": 192
   },
   {
     "code": "KWT",
     "iso2": "KW",
     "name": "Kuwait",
-    "region": "Asia"
+    "region": "Asia",
+    "aliases": [],
+    "population": 5102773,
+    "populationRank": 128
   },
   {
     "code": "KGZ",
     "iso2": "KG",
     "name": "Kyrgyzstan",
-    "region": "Asia"
+    "region": "Asia",
+    "aliases": [],
+    "population": 7400465,
+    "populationRank": 106
   },
   {
     "code": "LAO",
     "iso2": "LA",
     "name": "Laos",
-    "region": "Asia"
+    "region": "Asia",
+    "aliases": [],
+    "population": 7974017,
+    "populationRank": 103
   },
   {
     "code": "LVA",
     "iso2": "LV",
     "name": "Latvia",
-    "region": "Europe"
+    "region": "Europe",
+    "aliases": [],
+    "population": 1835935,
+    "populationRank": 151
   },
   {
     "code": "LBN",
     "iso2": "LB",
     "name": "Lebanon",
-    "region": "Asia"
+    "region": "Asia",
+    "aliases": [],
+    "population": 5897467,
+    "populationRank": 116
   },
   {
     "code": "LSO",
     "iso2": "LS",
     "name": "Lesotho",
-    "region": "Africa"
+    "region": "Africa",
+    "aliases": [],
+    "population": 2389336,
+    "populationRank": 147
   },
   {
     "code": "LBR",
     "iso2": "LR",
     "name": "Liberia",
-    "region": "Africa"
+    "region": "Africa",
+    "aliases": [],
+    "population": 5853949,
+    "populationRank": 117
   },
   {
     "code": "LBY",
     "iso2": "LY",
     "name": "Libya",
-    "region": "Africa"
+    "region": "Africa",
+    "aliases": [],
+    "population": 7539851,
+    "populationRank": 105
   },
   {
     "code": "LIE",
     "iso2": "LI",
     "name": "Liechtenstein",
-    "region": "Europe"
+    "region": "Europe",
+    "aliases": [],
+    "population": 40368,
+    "populationRank": 214
   },
   {
     "code": "LTU",
     "iso2": "LT",
     "name": "Lithuania",
-    "region": "Europe"
+    "region": "Europe",
+    "aliases": [],
+    "population": 2797338,
+    "populationRank": 143
   },
   {
     "code": "LUX",
     "iso2": "LU",
     "name": "Luxembourg",
-    "region": "Europe"
+    "region": "Europe",
+    "aliases": [],
+    "population": 687448,
+    "populationRank": 168
   },
   {
     "code": "MAC",
     "iso2": "MO",
-    "name": "Macau",
-    "region": "Asia"
+    "name": "Macao",
+    "region": "Asia",
+    "aliases": [
+      "Macau"
+    ],
+    "population": 723188,
+    "populationRank": 167
   },
   {
     "code": "MDG",
     "iso2": "MG",
     "name": "Madagascar",
-    "region": "Africa"
+    "region": "Africa",
+    "aliases": [],
+    "population": 33522052,
+    "populationRank": 49
   },
   {
     "code": "MWI",
     "iso2": "MW",
     "name": "Malawi",
-    "region": "Africa"
+    "region": "Africa",
+    "aliases": [],
+    "population": 22785535,
+    "populationRank": 62
   },
   {
     "code": "MYS",
     "iso2": "MY",
     "name": "Malaysia",
-    "region": "Asia"
+    "region": "Asia",
+    "aliases": [],
+    "population": 36385115,
+    "populationRank": 45
   },
   {
     "code": "MDV",
     "iso2": "MV",
     "name": "Maldives",
-    "region": "Asia"
+    "region": "Asia",
+    "aliases": [],
+    "population": 531517,
+    "populationRank": 173
   },
   {
     "code": "MLI",
     "iso2": "ML",
     "name": "Mali",
-    "region": "Africa"
+    "region": "Africa",
+    "aliases": [],
+    "population": 25932275,
+    "populationRank": 58
   },
   {
     "code": "MLT",
     "iso2": "MT",
     "name": "Malta",
-    "region": "Europe"
+    "region": "Europe",
+    "aliases": [],
+    "population": 549011,
+    "populationRank": 172
   },
   {
     "code": "MHL",
     "iso2": "MH",
     "name": "Marshall Islands",
-    "region": "Oceania"
+    "region": "Oceania",
+    "aliases": [],
+    "population": 35075,
+    "populationRank": 217
   },
   {
     "code": "MTQ",
     "iso2": "MQ",
     "name": "Martinique",
-    "region": "Americas"
+    "region": "Americas",
+    "aliases": [],
+    "population": 337711,
+    "populationRank": 182
   },
   {
     "code": "MRT",
     "iso2": "MR",
     "name": "Mauritania",
-    "region": "Africa"
+    "region": "Africa",
+    "aliases": [],
+    "population": 5461319,
+    "populationRank": 123
   },
   {
     "code": "MUS",
     "iso2": "MU",
     "name": "Mauritius",
-    "region": "Africa"
+    "region": "Africa",
+    "aliases": [],
+    "population": 1265059,
+    "populationRank": 159
   },
   {
     "code": "MYT",
     "iso2": "YT",
     "name": "Mayotte",
-    "region": "Africa"
+    "region": "Africa",
+    "aliases": [],
+    "population": 347536,
+    "populationRank": 180
   },
   {
     "code": "MEX",
     "iso2": "MX",
     "name": "Mexico",
-    "region": "Americas"
+    "region": "Americas",
+    "aliases": [],
+    "population": 132997658,
+    "populationRank": 11
   },
   {
     "code": "FSM",
     "iso2": "FM",
     "name": "Micronesia",
-    "region": "Oceania"
+    "region": "Oceania",
+    "aliases": [],
+    "population": 114183,
+    "populationRank": 195
   },
   {
     "code": "MDA",
     "iso2": "MD",
     "name": "Moldova",
-    "region": "Europe"
+    "region": "Europe",
+    "aliases": [],
+    "population": 2961253,
+    "populationRank": 139
   },
   {
     "code": "MCO",
     "iso2": "MC",
     "name": "Monaco",
-    "region": "Europe"
+    "region": "Europe",
+    "aliases": [],
+    "population": 38087,
+    "populationRank": 216
   },
   {
     "code": "MNG",
     "iso2": "MN",
     "name": "Mongolia",
-    "region": "Asia"
+    "region": "Asia",
+    "aliases": [],
+    "population": 3556798,
+    "populationRank": 133
   },
   {
     "code": "MNE",
     "iso2": "ME",
     "name": "Montenegro",
-    "region": "Europe"
+    "region": "Europe",
+    "aliases": [],
+    "population": 626233,
+    "populationRank": 170
   },
   {
     "code": "MSR",
     "iso2": "MS",
     "name": "Montserrat",
-    "region": "Americas"
+    "region": "Americas",
+    "aliases": [],
+    "population": 4328,
+    "populationRank": 230
   },
   {
     "code": "MAR",
     "iso2": "MA",
     "name": "Morocco",
-    "region": "Africa"
+    "region": "Africa",
+    "aliases": [],
+    "population": 38762441,
+    "populationRank": 41
   },
   {
     "code": "MOZ",
     "iso2": "MZ",
     "name": "Mozambique",
-    "region": "Africa"
+    "region": "Africa",
+    "aliases": [],
+    "population": 36639851,
+    "populationRank": 44
   },
   {
     "code": "MMR",
     "iso2": "MM",
     "name": "Myanmar",
-    "region": "Asia"
+    "region": "Asia",
+    "aliases": [],
+    "population": 55184819,
+    "populationRank": 27
   },
   {
     "code": "NAM",
     "iso2": "NA",
     "name": "Namibia",
-    "region": "Africa"
+    "region": "Africa",
+    "aliases": [],
+    "population": 3153246,
+    "populationRank": 137
   },
   {
     "code": "NRU",
     "iso2": "NR",
     "name": "Nauru",
-    "region": "Oceania"
+    "region": "Oceania",
+    "aliases": [],
+    "population": 12101,
+    "populationRank": 224
   },
   {
     "code": "NPL",
     "iso2": "NP",
     "name": "Nepal",
-    "region": "Asia"
+    "region": "Asia",
+    "aliases": [],
+    "population": 29629410,
+    "populationRank": 52
   },
   {
     "code": "NLD",
     "iso2": "NL",
     "name": "Netherlands",
-    "region": "Europe"
+    "region": "Europe",
+    "aliases": [],
+    "population": 18448775,
+    "populationRank": 71
   },
   {
     "code": "NCL",
     "iso2": "NC",
     "name": "New Caledonia",
-    "region": "Oceania"
+    "region": "Oceania",
+    "aliases": [],
+    "population": 297892,
+    "populationRank": 184
   },
   {
     "code": "NZL",
     "iso2": "NZ",
     "name": "New Zealand",
-    "region": "Oceania"
+    "region": "Oceania",
+    "aliases": [],
+    "population": 5287479,
+    "populationRank": 126
   },
   {
     "code": "NIC",
     "iso2": "NI",
     "name": "Nicaragua",
-    "region": "Americas"
+    "region": "Americas",
+    "aliases": [],
+    "population": 7097329,
+    "populationRank": 108
   },
   {
     "code": "NER",
     "iso2": "NE",
     "name": "Niger",
-    "region": "Africa"
+    "region": "Africa",
+    "aliases": [],
+    "population": 28814878,
+    "populationRank": 53
   },
   {
     "code": "NGA",
     "iso2": "NG",
     "name": "Nigeria",
-    "region": "Africa"
+    "region": "Africa",
+    "aliases": [],
+    "population": 242431832,
+    "populationRank": 6
   },
   {
     "code": "NIU",
     "iso2": "NU",
     "name": "Niue",
-    "region": "Oceania"
-  },
-  {
-    "code": "NFK",
-    "iso2": "NF",
-    "name": "Norfolk Island",
-    "region": "Oceania"
+    "region": "Oceania",
+    "aliases": [],
+    "population": 1822,
+    "populationRank": 233
   },
   {
     "code": "PRK",
     "iso2": "KP",
     "name": "North Korea",
-    "region": "Asia"
+    "region": "Asia",
+    "aliases": [],
+    "population": 26633691,
+    "populationRank": 56
   },
   {
     "code": "MKD",
     "iso2": "MK",
     "name": "North Macedonia",
-    "region": "Europe"
+    "region": "Europe",
+    "aliases": [],
+    "population": 1804063,
+    "populationRank": 152
   },
   {
     "code": "MNP",
     "iso2": "MP",
     "name": "Northern Mariana Islands",
-    "region": "Oceania"
+    "region": "Oceania",
+    "aliases": [],
+    "population": 42914,
+    "populationRank": 212
   },
   {
     "code": "NOR",
     "iso2": "NO",
     "name": "Norway",
-    "region": "Europe"
+    "region": "Europe",
+    "aliases": [],
+    "population": 5652989,
+    "populationRank": 121
   },
   {
     "code": "OMN",
     "iso2": "OM",
     "name": "Oman",
-    "region": "Asia"
+    "region": "Asia",
+    "aliases": [],
+    "population": 5671458,
+    "populationRank": 120
   },
   {
     "code": "PAK",
     "iso2": "PK",
     "name": "Pakistan",
-    "region": "Asia"
+    "region": "Asia",
+    "aliases": [],
+    "population": 259299791,
+    "populationRank": 5
   },
   {
     "code": "PLW",
     "iso2": "PW",
     "name": "Palau",
-    "region": "Oceania"
-  },
-  {
-    "code": "PSE",
-    "iso2": "PS",
-    "name": "Palestine",
-    "region": "Asia"
+    "region": "Oceania",
+    "aliases": [],
+    "population": 17614,
+    "populationRank": 221
   },
   {
     "code": "PAN",
     "iso2": "PA",
     "name": "Panama",
-    "region": "Americas"
+    "region": "Americas",
+    "aliases": [],
+    "population": 4625718,
+    "populationRank": 129
   },
   {
     "code": "PNG",
     "iso2": "PG",
     "name": "Papua New Guinea",
-    "region": "Oceania"
+    "region": "Oceania",
+    "aliases": [],
+    "population": 10947848,
+    "populationRank": 89
   },
   {
     "code": "PRY",
     "iso2": "PY",
     "name": "Paraguay",
-    "region": "Americas"
+    "region": "Americas",
+    "aliases": [],
+    "population": 7095279,
+    "populationRank": 109
   },
   {
     "code": "PER",
     "iso2": "PE",
     "name": "Peru",
-    "region": "Americas"
+    "region": "Americas",
+    "aliases": [],
+    "population": 34922148,
+    "populationRank": 48
   },
   {
     "code": "PHL",
     "iso2": "PH",
     "name": "Philippines",
-    "region": "Asia"
-  },
-  {
-    "code": "PCN",
-    "iso2": "PN",
-    "name": "Pitcairn Islands",
-    "region": "Oceania"
+    "region": "Asia",
+    "aliases": [],
+    "population": 117724471,
+    "populationRank": 14
   },
   {
     "code": "POL",
     "iso2": "PL",
     "name": "Poland",
-    "region": "Europe"
+    "region": "Europe",
+    "aliases": [],
+    "population": 37843188,
+    "populationRank": 42
   },
   {
     "code": "PRT",
     "iso2": "PT",
     "name": "Portugal",
-    "region": "Europe"
+    "region": "Europe",
+    "aliases": [],
+    "population": 10395362,
+    "populationRank": 94
   },
   {
     "code": "PRI",
     "iso2": "PR",
     "name": "Puerto Rico",
-    "region": "Americas"
+    "region": "Americas",
+    "aliases": [],
+    "population": 3222688,
+    "populationRank": 135
   },
   {
     "code": "QAT",
     "iso2": "QA",
     "name": "Qatar",
-    "region": "Asia"
-  },
-  {
-    "code": "COG",
-    "iso2": "CG",
-    "name": "Republic of the Congo",
-    "region": "Africa"
+    "region": "Asia",
+    "aliases": [],
+    "population": 3173559,
+    "populationRank": 136
   },
   {
     "code": "REU",
     "iso2": "RE",
     "name": "Réunion",
-    "region": "Africa"
+    "region": "Africa",
+    "aliases": [],
+    "population": 886298,
+    "populationRank": 163
   },
   {
     "code": "ROU",
     "iso2": "RO",
     "name": "Romania",
-    "region": "Europe"
+    "region": "Europe",
+    "aliases": [],
+    "population": 18800605,
+    "populationRank": 70
   },
   {
     "code": "RUS",
     "iso2": "RU",
     "name": "Russia",
-    "region": "Europe"
+    "region": "Europe",
+    "aliases": [],
+    "population": 143394458,
+    "populationRank": 9
   },
   {
     "code": "RWA",
     "iso2": "RW",
     "name": "Rwanda",
-    "region": "Africa"
+    "region": "Africa",
+    "aliases": [],
+    "population": 14889693,
+    "populationRank": 77
   },
   {
     "code": "BLM",
     "iso2": "BL",
-    "name": "Saint Barthélemy",
-    "region": "Americas"
+    "name": "Saint Barthelemy",
+    "region": "Americas",
+    "aliases": [
+      "Saint Barthélemy"
+    ],
+    "population": 11550,
+    "populationRank": 225
   },
   {
     "code": "SHN",
     "iso2": "SH",
-    "name": "Saint Helena, Ascension and Tristan da Cunha",
-    "region": "Africa"
+    "name": "Saint Helena",
+    "region": "Africa",
+    "aliases": [
+      "Saint Helena, Ascension and Tristan da Cunha"
+    ],
+    "population": 5147,
+    "populationRank": 229
   },
   {
     "code": "KNA",
     "iso2": "KN",
-    "name": "Saint Kitts and Nevis",
-    "region": "Americas"
+    "name": "Saint Kitts & Nevis",
+    "region": "Americas",
+    "aliases": [
+      "Saint Kitts and Nevis"
+    ],
+    "population": 46992,
+    "populationRank": 209
   },
   {
     "code": "LCA",
     "iso2": "LC",
     "name": "Saint Lucia",
-    "region": "Americas"
+    "region": "Americas",
+    "aliases": [],
+    "population": 180488,
+    "populationRank": 190
   },
   {
     "code": "MAF",
     "iso2": "MF",
     "name": "Saint Martin",
-    "region": "Americas"
+    "region": "Americas",
+    "aliases": [],
+    "population": 23898,
+    "populationRank": 220
   },
   {
     "code": "SPM",
     "iso2": "PM",
-    "name": "Saint Pierre and Miquelon",
-    "region": "Americas"
-  },
-  {
-    "code": "VCT",
-    "iso2": "VC",
-    "name": "Saint Vincent and the Grenadines",
-    "region": "Americas"
+    "name": "Saint Pierre & Miquelon",
+    "region": "Americas",
+    "aliases": [
+      "Saint Pierre and Miquelon"
+    ],
+    "population": 5513,
+    "populationRank": 228
   },
   {
     "code": "WSM",
     "iso2": "WS",
     "name": "Samoa",
-    "region": "Oceania"
+    "region": "Oceania",
+    "aliases": [],
+    "population": 220528,
+    "populationRank": 188
   },
   {
     "code": "SMR",
     "iso2": "SM",
     "name": "San Marino",
-    "region": "Europe"
+    "region": "Europe",
+    "aliases": [],
+    "population": 33605,
+    "populationRank": 218
   },
   {
     "code": "STP",
     "iso2": "ST",
-    "name": "São Tomé and Príncipe",
-    "region": "Africa"
+    "name": "Sao Tome & Principe",
+    "region": "Africa",
+    "aliases": [
+      "São Tomé and Príncipe"
+    ],
+    "population": 244994,
+    "populationRank": 187
   },
   {
     "code": "SAU",
     "iso2": "SA",
     "name": "Saudi Arabia",
-    "region": "Asia"
+    "region": "Asia",
+    "aliases": [],
+    "population": 35165787,
+    "populationRank": 47
   },
   {
     "code": "SEN",
     "iso2": "SN",
     "name": "Senegal",
-    "region": "Africa"
+    "region": "Africa",
+    "aliases": [],
+    "population": 19366548,
+    "populationRank": 68
   },
   {
     "code": "SRB",
     "iso2": "RS",
     "name": "Serbia",
-    "region": "Europe"
+    "region": "Europe",
+    "aliases": [],
+    "population": 6641964,
+    "populationRank": 111
   },
   {
     "code": "SYC",
     "iso2": "SC",
     "name": "Seychelles",
-    "region": "Africa"
+    "region": "Africa",
+    "aliases": [],
+    "population": 134959,
+    "populationRank": 193
   },
   {
     "code": "SLE",
     "iso2": "SL",
     "name": "Sierra Leone",
-    "region": "Africa"
+    "region": "Africa",
+    "aliases": [],
+    "population": 8996745,
+    "populationRank": 101
   },
   {
     "code": "SGP",
     "iso2": "SG",
     "name": "Singapore",
-    "region": "Asia"
+    "region": "Asia",
+    "aliases": [],
+    "population": 5905748,
+    "populationRank": 115
   },
   {
     "code": "SXM",
     "iso2": "SX",
     "name": "Sint Maarten",
-    "region": "Americas"
+    "region": "Americas",
+    "aliases": [],
+    "population": 44447,
+    "populationRank": 211
   },
   {
     "code": "SVK",
     "iso2": "SK",
     "name": "Slovakia",
-    "region": "Europe"
+    "region": "Europe",
+    "aliases": [],
+    "population": 5451342,
+    "populationRank": 124
   },
   {
     "code": "SVN",
     "iso2": "SI",
     "name": "Slovenia",
-    "region": "Europe"
+    "region": "Europe",
+    "aliases": [],
+    "population": 2114573,
+    "populationRank": 149
   },
   {
     "code": "SLB",
     "iso2": "SB",
     "name": "Solomon Islands",
-    "region": "Oceania"
+    "region": "Oceania",
+    "aliases": [],
+    "population": 858288,
+    "populationRank": 164
   },
   {
     "code": "SOM",
     "iso2": "SO",
     "name": "Somalia",
-    "region": "Africa"
+    "region": "Africa",
+    "aliases": [],
+    "population": 20305907,
+    "populationRank": 66
   },
   {
     "code": "ZAF",
     "iso2": "ZA",
     "name": "South Africa",
-    "region": "Africa"
-  },
-  {
-    "code": "SGS",
-    "iso2": "GS",
-    "name": "South Georgia",
-    "region": "Antarctic"
+    "region": "Africa",
+    "aliases": [],
+    "population": 65453084,
+    "populationRank": 24
   },
   {
     "code": "KOR",
     "iso2": "KR",
     "name": "South Korea",
-    "region": "Asia"
+    "region": "Asia",
+    "aliases": [],
+    "population": 51600388,
+    "populationRank": 31
   },
   {
     "code": "SSD",
     "iso2": "SS",
     "name": "South Sudan",
-    "region": "Africa"
+    "region": "Africa",
+    "aliases": [],
+    "population": 12436037,
+    "populationRank": 80
   },
   {
     "code": "ESP",
     "iso2": "ES",
     "name": "Spain",
-    "region": "Europe"
+    "region": "Europe",
+    "aliases": [],
+    "population": 47850793,
+    "populationRank": 34
   },
   {
     "code": "LKA",
     "iso2": "LK",
     "name": "Sri Lanka",
-    "region": "Asia"
+    "region": "Asia",
+    "aliases": [],
+    "population": 23348315,
+    "populationRank": 60
+  },
+  {
+    "code": "VCT",
+    "iso2": "VC",
+    "name": "St. Vincent & Grenadines",
+    "region": "Americas",
+    "aliases": [
+      "Saint Vincent and the Grenadines"
+    ],
+    "population": 99245,
+    "populationRank": 198
+  },
+  {
+    "code": "PSE",
+    "iso2": "PS",
+    "name": "State of Palestine",
+    "region": "Asia",
+    "aliases": [
+      "Palestine"
+    ],
+    "population": 5692790,
+    "populationRank": 119
   },
   {
     "code": "SDN",
     "iso2": "SD",
     "name": "Sudan",
-    "region": "Africa"
+    "region": "Africa",
+    "aliases": [],
+    "population": 53282719,
+    "populationRank": 29
   },
   {
     "code": "SUR",
     "iso2": "SR",
     "name": "Suriname",
-    "region": "Americas"
-  },
-  {
-    "code": "SJM",
-    "iso2": "SJ",
-    "name": "Svalbard and Jan Mayen",
-    "region": "Europe"
+    "region": "Americas",
+    "aliases": [],
+    "population": 645256,
+    "populationRank": 169
   },
   {
     "code": "SWE",
     "iso2": "SE",
     "name": "Sweden",
-    "region": "Europe"
+    "region": "Europe",
+    "aliases": [],
+    "population": 10701047,
+    "populationRank": 91
   },
   {
     "code": "CHE",
     "iso2": "CH",
     "name": "Switzerland",
-    "region": "Europe"
+    "region": "Europe",
+    "aliases": [],
+    "population": 9007798,
+    "populationRank": 100
   },
   {
     "code": "SYR",
     "iso2": "SY",
     "name": "Syria",
-    "region": "Asia"
+    "region": "Asia",
+    "aliases": [],
+    "population": 26472497,
+    "populationRank": 57
   },
   {
     "code": "TWN",
     "iso2": "TW",
     "name": "Taiwan",
-    "region": "Asia"
+    "region": "Asia",
+    "aliases": [],
+    "population": 23011292,
+    "populationRank": 61
   },
   {
     "code": "TJK",
     "iso2": "TJ",
     "name": "Tajikistan",
-    "region": "Asia"
+    "region": "Asia",
+    "aliases": [],
+    "population": 10978599,
+    "populationRank": 88
   },
   {
     "code": "TZA",
     "iso2": "TZ",
     "name": "Tanzania",
-    "region": "Africa"
+    "region": "Africa",
+    "aliases": [],
+    "population": 72563780,
+    "populationRank": 20
   },
   {
     "code": "THA",
     "iso2": "TH",
     "name": "Thailand",
-    "region": "Asia"
+    "region": "Asia",
+    "aliases": [],
+    "population": 71559614,
+    "populationRank": 21
   },
   {
     "code": "TLS",
     "iso2": "TL",
     "name": "Timor-Leste",
-    "region": "Asia"
+    "region": "Asia",
+    "aliases": [],
+    "population": 1436923,
+    "populationRank": 155
   },
   {
     "code": "TGO",
     "iso2": "TG",
     "name": "Togo",
-    "region": "Africa"
+    "region": "Africa",
+    "aliases": [],
+    "population": 9930918,
+    "populationRank": 95
   },
   {
     "code": "TKL",
     "iso2": "TK",
     "name": "Tokelau",
-    "region": "Oceania"
+    "region": "Oceania",
+    "aliases": [],
+    "population": 2691,
+    "populationRank": 232
   },
   {
     "code": "TON",
     "iso2": "TO",
     "name": "Tonga",
-    "region": "Oceania"
+    "region": "Oceania",
+    "aliases": [],
+    "population": 103291,
+    "populationRank": 197
   },
   {
     "code": "TTO",
     "iso2": "TT",
     "name": "Trinidad and Tobago",
-    "region": "Americas"
+    "region": "Americas",
+    "aliases": [],
+    "population": 1513268,
+    "populationRank": 154
   },
   {
     "code": "TUN",
     "iso2": "TN",
     "name": "Tunisia",
-    "region": "Africa"
+    "region": "Africa",
+    "aliases": [],
+    "population": 12415138,
+    "populationRank": 81
   },
   {
     "code": "TUR",
     "iso2": "TR",
-    "name": "Türkiye",
-    "region": "Asia"
+    "name": "Turkey",
+    "region": "Asia",
+    "aliases": [
+      "Türkiye"
+    ],
+    "population": 87926082,
+    "populationRank": 18
   },
   {
     "code": "TKM",
     "iso2": "TM",
     "name": "Turkmenistan",
-    "region": "Asia"
+    "region": "Asia",
+    "aliases": [],
+    "population": 7736632,
+    "populationRank": 104
   },
   {
     "code": "TCA",
     "iso2": "TC",
-    "name": "Turks and Caicos Islands",
-    "region": "Americas"
+    "name": "Turks and Caicos",
+    "region": "Americas",
+    "aliases": [
+      "Turks and Caicos Islands"
+    ],
+    "population": 47148,
+    "populationRank": 208
   },
   {
     "code": "TUV",
     "iso2": "TV",
     "name": "Tuvalu",
-    "region": "Oceania"
+    "region": "Oceania",
+    "aliases": [],
+    "population": 9362,
+    "populationRank": 227
+  },
+  {
+    "code": "VIR",
+    "iso2": "VI",
+    "name": "U.S. Virgin Islands",
+    "region": "Americas",
+    "aliases": [
+      "United States Virgin Islands"
+    ],
+    "population": 83400,
+    "populationRank": 202
   },
   {
     "code": "UGA",
     "iso2": "UG",
     "name": "Uganda",
-    "region": "Africa"
+    "region": "Africa",
+    "aliases": [],
+    "population": 52761469,
+    "populationRank": 30
   },
   {
     "code": "UKR",
     "iso2": "UA",
     "name": "Ukraine",
-    "region": "Europe"
+    "region": "Europe",
+    "aliases": [],
+    "population": 39535849,
+    "populationRank": 40
   },
   {
     "code": "ARE",
     "iso2": "AE",
     "name": "United Arab Emirates",
-    "region": "Asia"
+    "region": "Asia",
+    "aliases": [],
+    "population": 11574682,
+    "populationRank": 86
   },
   {
     "code": "GBR",
     "iso2": "GB",
     "name": "United Kingdom",
-    "region": "Europe"
+    "region": "Europe",
+    "aliases": [],
+    "population": 69931528,
+    "populationRank": 22
   },
   {
     "code": "USA",
     "iso2": "US",
     "name": "United States",
-    "region": "Americas"
-  },
-  {
-    "code": "UMI",
-    "iso2": "UM",
-    "name": "United States Minor Outlying Islands",
-    "region": "Americas"
-  },
-  {
-    "code": "VIR",
-    "iso2": "VI",
-    "name": "United States Virgin Islands",
-    "region": "Americas"
+    "region": "Americas",
+    "aliases": [],
+    "population": 349035494,
+    "populationRank": 3
   },
   {
     "code": "URY",
     "iso2": "UY",
     "name": "Uruguay",
-    "region": "Americas"
+    "region": "Americas",
+    "aliases": [],
+    "population": 3382537,
+    "populationRank": 134
   },
   {
     "code": "UZB",
     "iso2": "UZ",
     "name": "Uzbekistan",
-    "region": "Asia"
+    "region": "Asia",
+    "aliases": [],
+    "population": 37724223,
+    "populationRank": 43
   },
   {
     "code": "VUT",
     "iso2": "VU",
     "name": "Vanuatu",
-    "region": "Oceania"
-  },
-  {
-    "code": "VAT",
-    "iso2": "VA",
-    "name": "Vatican City",
-    "region": "Europe"
+    "region": "Oceania",
+    "aliases": [],
+    "population": 342564,
+    "populationRank": 181
   },
   {
     "code": "VEN",
     "iso2": "VE",
     "name": "Venezuela",
-    "region": "Americas"
+    "region": "Americas",
+    "aliases": [],
+    "population": 28633711,
+    "populationRank": 54
   },
   {
     "code": "VNM",
     "iso2": "VN",
     "name": "Vietnam",
-    "region": "Asia"
+    "region": "Asia",
+    "aliases": [],
+    "population": 102177431,
+    "populationRank": 16
   },
   {
     "code": "WLF",
     "iso2": "WF",
-    "name": "Wallis and Futuna",
-    "region": "Oceania"
+    "name": "Wallis & Futuna",
+    "region": "Oceania",
+    "aliases": [
+      "Wallis and Futuna"
+    ],
+    "population": 11113,
+    "populationRank": 226
   },
   {
     "code": "ESH",
     "iso2": "EH",
     "name": "Western Sahara",
-    "region": "Africa"
+    "region": "Africa",
+    "aliases": [],
+    "population": 610813,
+    "populationRank": 171
   },
   {
     "code": "YEM",
     "iso2": "YE",
     "name": "Yemen",
-    "region": "Asia"
+    "region": "Asia",
+    "aliases": [],
+    "population": 42961653,
+    "populationRank": 37
   },
   {
     "code": "ZMB",
     "iso2": "ZM",
     "name": "Zambia",
-    "region": "Africa"
+    "region": "Africa",
+    "aliases": [],
+    "population": 22521915,
+    "populationRank": 63
   },
   {
     "code": "ZWE",
     "iso2": "ZW",
     "name": "Zimbabwe",
-    "region": "Africa"
+    "region": "Africa",
+    "aliases": [],
+    "population": 17273580,
+    "populationRank": 74
   }
 ]

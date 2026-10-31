@@ -42,3 +42,7 @@ Country catalogue derived from world-countries 5.1.0, excluding Antarctica: http
 ## Validation limits
 
 Isolated DOM tests cover form state, map selection, save payloads, reload/sign-in persistence, invalid nicknames and clearing private screen data at sign-out using a simulated backend. A real anonymous API request is denied access to the profile table. A real authenticated email-confirmation/save/recovery round trip must be completed by the account holder; this has not been replaced with a fake production account.
+
+## Shared country catalogue
+
+Profiles and population rankings use data/worldometer-countries.json, the 234-entry Worldometer 2026 snapshot retrieved 2026-10-31. Run node scripts/build-country-data.cjs after editing that source to rebuild dist/country-catalog.json and dist/country-facts.js. ISO codes stay stable. Original country names are retained as searchable aliases. Saved codes outside the current catalogue remain in profile storage when saving, but are not offered in the 234-place picker or counted on the current map. The original database constraint intentionally accepts legacy codes so earlier records are preserved; no database migration is required for this catalogue change.

@@ -11,6 +11,7 @@
   let catalogue = [];
   let allowedCodes = new Set();
   let selected = new Set();
+  let legacySelected = new Set();
   let mapPaths = [];
   let dirty = false;
   let loaded = false;
@@ -96,7 +97,7 @@
     const normalise = value => value.normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLocaleLowerCase();
     const query = normalise($('#country-search').value.trim());
     const selectedOnly = $('#selected-only').checked;
-    const matches = catalogue.filter(country => (!selectedOnly || selected.has(country.code)) && normalise(country.name + ' ' + country.code + ' ' + country.iso2).includes(query));
+    const matches = catalogue.filter(country => (!selectedOnly || selected.has(country.code)) && normalise(country.name + ' ' + country.code + ' ' + country.iso2 + ' ' + (country.aliases || []).join(' ')).includes(query));
     const list = $('#visited-country-list');
     list.replaceChildren();
     $('#country-result-count').textContent = matches.length + ' places shown · ' + selected.size + ' selected';
@@ -128,7 +129,7 @@
   }
 
   async function loadGeography() {
-    const [catalogueResponse, mapResponse] = await Promise.all([fetch('country-catalog.json'), fetch('world-countries.json')]);
+    const [catalogueResponse, mapResponse] = await Promise.all([fetch('country-catalog.json?v=worldometer-234-1'), fetch('world-countries.json')]);
     if (!catalogueResponse.ok || !mapResponse.ok) throw new Error('Country data unavailable');
     catalogue = await catalogueResponse.json();
     const outlines = await mapResponse.json();
@@ -168,6 +169,7 @@
     storageReady = false;
     profile = null;
     selected = new Set();
+    legacySelected = new Set();
     $('#account-gate').hidden = true;
     $('#traveller-profile').hidden = true;
     $('#password-recovery').hidden = true;
@@ -198,6 +200,8 @@
       storageReady = true;
       profile = data;
       selected = new Set((data?.visited_countries || []).filter(code => allowedCodes.has(code)));
+      // Preserve earlier saved places outside the current Worldometer catalogue.
+      legacySelected = new Set((data?.visited_countries || []).filter(code => !allowedCodes.has(code)));
       message(data ? '' : 'Welcome aboard. Choose the countries and territories you’ve visited, then save your profile.', 'success');
     }
     $('#profile-nickname').value = data?.nickname || user.user_metadata?.nickname || '';
@@ -320,7 +324,7 @@
     const nickname = $('#profile-nickname').value.trim();
     if (!nicknamePattern.test(nickname)) { message('Choose a nickname with 3–24 letters, numbers or underscores.', 'error'); return; }
     const id = user.id;
-    const visited = [...selected].filter(code => allowedCodes.has(code)).sort();
+    const visited = [...new Set([...selected].filter(code => allowedCodes.has(code)).concat([...legacySelected]))].sort();
     const snapshot = JSON.stringify({ nickname, visited });
     const button = $('#save-profile');
     button.disabled = true;
@@ -332,7 +336,7 @@
         if (user?.id !== id) return;
         profile = data;
         $('#traveller-title').textContent = nickname + '’s atlas';
-        const current = JSON.stringify({ nickname: $('#profile-nickname').value.trim(), visited: [...selected].sort() });
+        const current = JSON.stringify({ nickname: $('#profile-nickname').value.trim(), visited: [...new Set([...selected,...legacySelected])].sort() });
         setDirty(current !== snapshot);
         message('Your profile has been saved to your account.', 'success');
       } catch (error) {
