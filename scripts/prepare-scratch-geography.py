@@ -15,6 +15,10 @@ for feature in raw['features']:
  code=next((p.get(k) for k in ['ISO_A3','ISO_A3_EH','GU_A3','ADM0_A3'] if p.get(k) in codes),None)
  if code:groups.setdefault(code,[]).append(shape(feature['geometry']))
 geometries={code:unary_union(parts) for code,parts in groups.items()}
+# Preserve internationally recognized Ukrainian borders, including Crimea and Donbas.
+recognized=json.loads((root/'data/ukraine-recognized-borders.geojson').read_text(encoding='utf-8'))
+for feature in recognized['features']:
+ geometries[feature['id']]=shape(feature['geometry'])
 keys=sorted(geometries);geoms=[geometries[c] for c in keys];tree=STRtree(geoms)
 neighbors={code:set() for code in keys}
 for i,geom in enumerate(geoms):
@@ -42,9 +46,11 @@ features=[]
 for code in keys:
  # Keep all islands and territorial parts; simplify only below display resolution.
  geometry=geometries[code].simplify(.003,preserve_topology=True)
+ if code=='RUS':geometry=geometry.difference(geometries['UKR'].simplify(.003,preserve_topology=True))
  g=mapping(geometry)
  features.append({'type':'Feature','id':code,'properties':{'name':next(c['name'] for c in catalogue if c['code']==code)},'geometry':{'type':g['type'],'coordinates':rounded(g['coordinates'])}})
 output={'type':'FeatureCollection','source':'Natural Earth 1:10m admin-0 map units, public domain','features':features}
 (root/'dist/profile-country-outlines.json').write_text(json.dumps(output,separators=(',',':')),encoding='utf-8')
 (root/'dist/country-colors.json').write_text(json.dumps({'colors':dict(sorted(colors.items())),'neighbors':{c:sorted(v) for c,v in sorted(neighbors.items())}},indent=2)+'\n',encoding='utf-8')
 print(json.dumps({'mapped':len(features),'catalogue':len(codes),'missing':sorted(codes-geometries.keys()),'adjacencyPairs':sum(len(v) for v in neighbors.values())//2,'conflicts':len(conflicts),'geometryBytes':(root/'dist/profile-country-outlines.json').stat().st_size}))
+
