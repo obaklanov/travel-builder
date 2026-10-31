@@ -4,7 +4,13 @@
   let features=new Map(),colors={},flags={},active=null;
   function svgNode(tag,attrs={}){const node=document.createElementNS(ns,tag);for(const [key,value] of Object.entries(attrs))node.setAttribute(key,String(value));return node;}
   function countryShape(feature){
-    const polygons=feature.geometry.type==='Polygon'?[feature.geometry.coordinates]:feature.geometry.coordinates;
+    const allPolygons=feature.geometry.type==='Polygon'?[feature.geometry.coordinates]:feature.geometry.coordinates;
+    const area=polygon=>Math.abs(polygon[0].reduce((sum,p,i,ring)=>{const q=ring[(i+1)%ring.length];return sum+p[0]*q[1]-q[0]*p[1];},0)/2);
+    const mainland=[...allPolygons].sort((a,b)=>area(b)-area(a))[0];
+    const xs=mainland[0].map(p=>p[0]),ys=mainland[0].map(p=>p[1]);
+    const west=Math.min(...xs)-5,east=Math.max(...xs)+5,south=Math.min(...ys)-5,north=Math.max(...ys)+5;
+    // Focus on the main geographic cluster; all territories still fill on the world map.
+    const polygons=allPolygons.filter(p=>p===mainland || p[0].some(([x,y])=>x>=west&&x<=east&&y>=south&&y<=north));
     const biggest=[...polygons].sort((a,b)=>b[0].length-a[0].length)[0];
     const center=biggest[0].reduce((sum,p)=>sum+p[0],0)/biggest[0].length;
     let minX=Infinity,minY=Infinity,maxX=-Infinity,maxY=-Infinity;
@@ -66,7 +72,20 @@
     cloth.append(svgNode('image',{href:'flags/'+flags[code]+'.svg',x:16,y:13,width:116,height:87,preserveAspectRatio:'xMinYMin meet'}));svg.append(cloth);wrapper.append(svg);return wrapper;
   }
   const wait=ms=>new Promise(resolve=>setTimeout(resolve,ms));
-  function cancel(){if(active){active.cancelled=true;active.dialog.close();}}
+  let audio=null,muted=false;
+  function prepareAudio(){
+    try {const Context=window.AudioContext||window.webkitAudioContext;if(!Context)return;audio ||= new Context();audio.resume().catch(()=>{});}catch{}
+  }
+  function scratchSound(){
+    if(!audio || audio.state!=='running')return null;
+    const source=audio.createBufferSource(),buffer=audio.createBuffer(1,audio.sampleRate*2,audio.sampleRate),samples=buffer.getChannelData(0);
+    let smooth=0;for(let i=0;i<samples.length;i++){smooth=.7*smooth+.3*(Math.random()*2-1);samples[i]=smooth;}
+    source.buffer=buffer;source.loop=true;
+    const filter=audio.createBiquadFilter();filter.type='bandpass';filter.frequency.value=1800;filter.Q.value=.65;
+    const gain=audio.createGain();gain.gain.value=0;source.connect(filter);filter.connect(gain);gain.connect(audio.destination);source.start();
+    return {update(progress){const pressure=.018+.025*Math.pow(Math.sin(progress*Math.PI*17),2);gain.gain.setTargetAtTime(muted?0:pressure,audio.currentTime,.025);},stop(){gain.gain.setTargetAtTime(0,audio.currentTime,.02);setTimeout(()=>{try{source.stop();source.disconnect();filter.disconnect();gain.disconnect();}catch{}},100);}};
+  }
+  function cancel(){if(active){active.cancelled=true;active.sound?.stop();active.sound=null;active.dialog.close();}}
   async function celebrate(codes,onReveal=()=>{}){
     cancel();
     const mapped=codes.filter(code=>features.has(code));
@@ -78,9 +97,12 @@
     const stage=document.createElement('div');stage.className='scratch-country-stage';
     const caption=document.createElement('p');caption.className='scratch-caption';
     const skip=document.createElement('button');skip.type='button';skip.className='scratch-skip';skip.textContent='Skip animation';
-    content.append(eyebrow,title,stage,caption,skip);dialog.append(content);document.body.append(dialog);
+    const soundButton=document.createElement('button');soundButton.type='button';soundButton.className='scratch-sound';
+    const soundLabel=()=>{soundButton.textContent=muted?'Sound off':'Sound on';soundButton.setAttribute('aria-pressed',String(!muted));};soundLabel();
+    soundButton.addEventListener('click',()=>{muted=!muted;prepareAudio();soundLabel();});
+    content.append(eyebrow,title,stage,caption,skip,soundButton);dialog.append(content);document.body.append(dialog);
     const run={dialog,cancelled:false};active=run;
-    skip.addEventListener('click',cancel);dialog.addEventListener('cancel',()=>{run.cancelled=true;});dialog.addEventListener('close',()=>{run.cancelled=true;});
+    skip.addEventListener('click',cancel);dialog.addEventListener('cancel',()=>{run.cancelled=true;});dialog.addEventListener('close',()=>{run.cancelled=true;run.sound?.stop();run.sound=null;});
     const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
     try{
       dialog.showModal();skip.focus({preventScroll:true});
@@ -104,12 +126,14 @@
         if(reduced){shape.trail.setAttribute('stroke-dashoffset',0);await wait(450);}
         else{
           shape.coin.style.opacity='1';
+          run.sound=scratchSound();
           await new Promise(resolve=>{
             const start=performance.now(),duration=10000;
             const frame=now=>{
               if(run.cancelled){resolve();return;}
               const progress=Math.min(1,(now-start)/duration);
               const handProgress=progress===1?1:Math.max(0,Math.min(1,progress+.008*Math.sin(progress*Math.PI*14)+.002*Math.sin(progress*Math.PI*34)));
+              run.sound?.update(progress);
               const distance=handProgress*length;
               shape.trail.setAttribute('stroke-dashoffset',length-distance);
               const point=shape.trail.getPointAtLength(distance);
@@ -117,15 +141,17 @@
               if(progress<1)requestAnimationFrame(frame);else resolve();
             };requestAnimationFrame(frame);
           });
+          run.sound?.stop();run.sound=null;
           shape.coin.style.opacity='0';shape.colourPath.removeAttribute('mask');await wait(200);
         }
         onReveal(code);
       }
       if(!run.cancelled&&codes.length>3){caption.textContent=`All ${codes.length} places are now part of your map.`;await wait(reduced?300:650);}
     }finally{
+      run.sound?.stop();run.sound=null;
       codes.forEach(onReveal);
       if(dialog.open)dialog.close();dialog.remove();if(active===run)active=null;
     }
   }
-  window.TRAVEL_SCRATCH={init(outlines,palette,catalogue=[]){flags=Object.fromEntries(catalogue.map(country=>[country.code,country.iso2.toLowerCase()]));features=new Map(outlines.features.map(feature=>[feature.id,feature]));colors=palette;},celebrate,cancel};
+  window.TRAVEL_SCRATCH={init(outlines,palette,catalogue=[]){flags=Object.fromEntries(catalogue.map(country=>[country.code,country.iso2.toLowerCase()]));features=new Map(outlines.features.map(feature=>[feature.id,feature]));colors=palette;},celebrate,cancel,prepareAudio};
 })();

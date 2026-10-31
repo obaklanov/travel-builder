@@ -16,6 +16,17 @@
   let pendingOutlineLayer = null;
   let mapZoom = null;
   let countryColors = {};
+  let countryInfo = {};
+  function showCountryInfo(code) {
+    const country=catalogue.find(c=>c.code===code), panel=$("#map-country-info");
+    if(!country || !panel)return;
+    panel.replaceChildren();
+    const heading=document.createElement("strong"), details=document.createElement("p");
+    heading.textContent=country.name;
+    const facts=countryInfo[code];
+    details.textContent=country.region+(facts ? " � Population "+new Intl.NumberFormat("en",{notation:"compact",maximumFractionDigits:1}).format(facts.population)+" � Rank "+facts.populationRank+"/234" : "");
+    panel.append(heading,details);panel.hidden=false;
+  }
   let celebrationPending = new Set();
   let dirty = false;
   let loaded = false;
@@ -157,6 +168,7 @@
     catalogue = await catalogueResponse.json();
     const outlines = await mapResponse.json();
     countryColors = (await colorResponse.json()).colors;
+    try {const response=await fetch('profile-country-info.json');if(response.ok)countryInfo=await response.json();} catch {}
     window.TRAVEL_SCRATCH?.init(outlines,countryColors,catalogue);
     allowedCodes = new Set(catalogue.map(country => country.code));
     const ns = 'http://www.w3.org/2000/svg';
@@ -182,10 +194,11 @@
       path.setAttribute('tabindex','0');
       path.setAttribute('aria-label',feature.properties.name);
       path.setAttribute('aria-pressed','false');
-      path.addEventListener('click', () => {if(svg.dataset.suppressSelection!=='true')setCountrySelection(code,!selected.has(code));});
+      path.addEventListener('click', () => {if(svg.dataset.suppressSelection!=='true'){showCountryInfo(code);setCountrySelection(code,!selected.has(code));}});
       path.addEventListener('keydown', event => {
         if (event.key==='Enter' || event.key===' ') {
           event.preventDefault();
+          showCountryInfo(code);
           setCountrySelection(code,!selected.has(code));
         }
       });
@@ -210,6 +223,7 @@
     window.TRAVEL_SCRATCH?.cancel();
     celebrationPending.clear();
     mapZoom?.reset();
+    if($('#map-country-info'))$('#map-country-info').hidden=true;
     user = nextUser;
     loaded = false;
     storageReady = false;
@@ -363,6 +377,7 @@
   });
 
   $('#profile-form').addEventListener('submit', event => {
+    window.TRAVEL_SCRATCH?.prepareAudio?.();
     event.preventDefault();
     if (!user || !storageReady) return;
     const nickname = profile?.nickname || user.user_metadata?.nickname || '';
