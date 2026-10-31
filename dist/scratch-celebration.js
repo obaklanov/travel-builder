@@ -53,10 +53,20 @@
     }
     const cx=box.x+box.w/2,cy=box.y+box.h/2;
     const distance=p=>Math.hypot(p[0]-cx,p[1]-cy);
-    strokes.sort((a,b)=>distance([(a.start[0]+a.end[0])/2,(a.start[1]+a.end[1])/2])-distance([(b.start[0]+b.end[0])/2,(b.start[1]+b.end[1])/2]));
-    for(const stroke of strokes)if(distance(stroke.end)<distance(stroke.start))[stroke.start,stroke.end]=[stroke.end,stroke.start];
-    // Begin inside the central land span, then work outward.
-    if(strokes.length){const first=strokes.shift(),middle=first.start.map((v,i)=>(v+first.end[i])/2);strokes.unshift({start:middle,end:first.end,length:first.length/2},{start:middle,end:first.start,length:first.length/2});}
+    const middle=s=>[(s.start[0]+s.end[0])/2,(s.start[1]+s.end[1])/2];
+    strokes.sort((a,b)=>distance(middle(a))-distance(middle(b)));
+    const first=strokes.shift(),ordered=[];
+    if(first){const mid=middle(first);ordered.push({start:mid,end:first.end,length:first.length/2},{start:first.start,end:mid,length:first.length/2});}
+    const threshold=Math.max(box.w,box.h)*.14;
+    const groups=[strokes.filter(s=>s.length>=threshold&&middle(s)[1]<=cy),strokes.filter(s=>s.length>=threshold&&middle(s)[1]>cy),strokes.filter(s=>s.length<threshold)];
+    let cursor=ordered.at(-1)?.end||[cx,cy];
+    // Finish broad upper land, then broad lower land, before narrow coastal details.
+    for(const group of groups)while(group.length){
+      let best=0,reverse=false,cost=Infinity;
+      for(let i=0;i<group.length;i++)for(const flip of [false,true]){const p=flip?group[i].end:group[i].start,d=Math.hypot(p[0]-cursor[0],p[1]-cursor[1]);if(d<cost){cost=d;best=i;reverse=flip;}}
+      const stroke=group.splice(best,1)[0];if(reverse)[stroke.start,stroke.end]=[stroke.end,stroke.start];ordered.push(stroke);cursor=stroke.end;
+    }
+    strokes.splice(0,strokes.length,...ordered);
     return {strokes,step};
   }
   function makeStage(feature,color){
@@ -70,6 +80,7 @@
     const fmt=p=>p.map(v=>v.toFixed(5)).join(',');
     for(const stroke of strokes){
       stroke.path=svgNode('path',{d:'M'+fmt(stroke.start)+'L'+fmt(stroke.end),fill:'none',stroke:'#fff','stroke-width':step*1.8,'stroke-linecap':'round'});
+      stroke.path.setAttribute('visibility','hidden');
       stroke.path.setAttribute('stroke-dasharray',stroke.length);
       stroke.path.setAttribute('stroke-dashoffset',stroke.length);
       reveal.append(stroke.path);
@@ -83,7 +94,7 @@
     const coin=svgNode('g',{'class':'scratch-coin'});
     coin.append(svgNode('circle',{r:radius,fill:'#d7b365',stroke:'#8e6d32','stroke-width':radius*.1}),svgNode('circle',{r:radius*.76,fill:'#f0d69a',stroke:'#b68b3d','stroke-width':radius*.045}));
     const coinMark=svgNode('text',{x:0,y:radius*.35,'text-anchor':'middle','font-size':radius*1.1,'font-family':'Georgia, serif',fill:'#9b7537'});coinMark.textContent='TE';coin.append(coinMark);svg.append(coin);
-    return {svg,strokes,coin,colourPath,box,dust};
+    return {svg,strokes,coin,colourPath,box,dust,radius,step};
   }
   function makeFlag(code,name,reduced){
     const wrapper=document.createElement('div');wrapper.className='scratch-flag';
@@ -171,8 +182,9 @@
         if(flags[code])stage.append(makeFlag(code,feature.properties.name,reduced));
 
         for(const stroke of shape.strokes)stroke.weight=Math.sqrt(stroke.length/Math.max(shape.box.w,shape.box.h))*.55+.006;
-        const liftTime=.004;
-        const length=shape.strokes.reduce((sum,stroke)=>sum+stroke.weight+liftTime,0);let strokeIndex=0,strokeStart=0;
+        const scale=Math.max(shape.box.w,shape.box.h);
+        shape.strokes.forEach((stroke,i)=>{const next=shape.strokes[i+1];stroke.lift=next?.start||stroke.end;stroke.liftWeight=next?.start ? .018+Math.hypot(stroke.lift[0]-stroke.end[0],stroke.lift[1]-stroke.end[1])/scale*.28 : 0;});
+        const length=shape.strokes.reduce((sum,stroke)=>sum+stroke.weight+stroke.liftWeight,0);let strokeIndex=0,strokeStart=0;
         let lastDust=0,dustCount=0;
         shape.coin.style.opacity='0';
         const mapPath=document.querySelector(`#visited-world-map path[data-country="${code}"]`);
@@ -189,34 +201,41 @@
           shape.coin.style.opacity='1';
           run.sound=scratchSound();
           await new Promise(resolve=>{
-            const start=performance.now(),duration=9380;
+            const start=performance.now(),duration=11380;
             const frame=now=>{
               if(run.cancelled){resolve();return;}
               const progress=Math.min(1,(now-start)/duration);
               const distance=progress*length;
-              while(strokeIndex<shape.strokes.length-1 && distance>strokeStart+shape.strokes[strokeIndex].weight+liftTime){
-                shape.strokes[strokeIndex].path.setAttribute('stroke-dashoffset',0);
-                strokeStart+=shape.strokes[strokeIndex].weight+liftTime;strokeIndex++;
+              while(strokeIndex<shape.strokes.length-1 && distance>strokeStart+shape.strokes[strokeIndex].weight+shape.strokes[strokeIndex].liftWeight){
+                shape.strokes[strokeIndex].path.setAttribute('visibility','visible');shape.strokes[strokeIndex].path.setAttribute('stroke-dashoffset',0);
+                strokeStart+=shape.strokes[strokeIndex].weight+shape.strokes[strokeIndex].liftWeight;strokeIndex++;
               }
               const stroke=shape.strokes[strokeIndex];
               if(stroke){
                 const local=Math.min(1,Math.max(0,(distance-strokeStart)/stroke.weight));
                 const scratching=distance-strokeStart<=stroke.weight;
                 const handLocal=(1-Math.cos(Math.PI*local))/2;
+                if(local>0)stroke.path.setAttribute('visibility','visible');
                 stroke.path.setAttribute('stroke-dashoffset',stroke.length*(1-handLocal));
-                const x=stroke.start[0]+(stroke.end[0]-stroke.start[0])*handLocal,y=stroke.start[1]+(stroke.end[1]-stroke.start[1])*handLocal;
-                shape.coin.style.opacity=scratching?'1':'0';
+                let x=stroke.start[0]+(stroke.end[0]-stroke.start[0])*handLocal,y=stroke.start[1]+(stroke.end[1]-stroke.start[1])*handLocal;
+                if(!scratching){const t=Math.max(0,Math.min(1,(distance-strokeStart-stroke.weight)/Math.max(.00001,stroke.liftWeight))),ease=t*t*(3-2*t);x=stroke.end[0]+(stroke.lift[0]-stroke.end[0])*ease;y=stroke.end[1]+(stroke.lift[1]-stroke.end[1])*ease-Math.sin(t*Math.PI)*scale*.025;}
+                shape.coin.style.opacity=scratching?'1':'.55';
                 shape.coin.setAttribute('transform',`translate(${x},${y}) rotate(${-26+Math.sin(progress*45)*14})`);
                 const openness=Math.min(1,stroke.length/Math.max(shape.box.w,shape.box.h)*2);
                 const pressure=.15+.85*Math.sin(Math.PI*local)*openness;
                 run.sound?.update(progress,scratching,pressure);
-                if(scratching&&now-lastDust>32&&dustCount<720){
+                if(scratching&&now-lastDust>24&&dustCount<1800){
                   lastDust=now;
-                  for(let fleck=0;fleck<3;fleck++){
-                  dustCount++;
-                  const size=Math.max(shape.box.w,shape.box.h)*(.0018+Math.random()*.0025);
-                  const flake=svgNode('path',{d:`M${x-size},${y}l${size*1.4},${-size*.6} ${size},${size} ${-size*1.6},${size*.5}Z`,fill:['#e1c17e','#b8955d','#f0dba4'][dustCount%3],opacity:.85});
-                  flake.dataset.drift=String(.6+Math.random());shape.dust.append(flake);
+                  const dx=(stroke.end[0]-stroke.start[0])/stroke.length,dy=(stroke.end[1]-stroke.start[1])/stroke.length;
+                  for(let fleck=0;fleck<6;fleck++){
+                    dustCount++;
+                    // Coin pushes most flakes into ridges on both sides; a few stay in the groove.
+                    const side=fleck%2?1:-1,offset=fleck===5?(Math.random()-.5)*shape.radius*.6:side*shape.radius*(.65+Math.random()*1.35);
+                    const along=(Math.random()-.5)*shape.radius*1.6;
+                    const px=x-dy*offset+dx*along,py=y+dx*offset+dy*along;
+                    const size=scale*(.0018+Math.random()*.0035);
+                    const flake=svgNode('path',{d:`M${px-size},${py}l${size*1.4},${-size*.6} ${size},${size} ${-size*1.6},${size*.5}Z`,fill:['#eee1bf',colors[code]||'#82afd0','#b8955d','#f0dba4',colors[code]||'#82afd0','#dbc397'][dustCount%6],opacity:.9});
+                    flake.dataset.drift=String(.6+Math.random());shape.dust.append(flake);
                   }
                 }
               }
