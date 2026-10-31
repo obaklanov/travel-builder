@@ -1,7 +1,7 @@
 'use strict';
 (() => {
   const ns='http://www.w3.org/2000/svg';
-  let features=new Map(),colors={},active=null;
+  let features=new Map(),colors={},flags={},active=null;
   function svgNode(tag,attrs={}){const node=document.createElementNS(ns,tag);for(const [key,value] of Object.entries(attrs))node.setAttribute(key,String(value));return node;}
   function countryShape(feature){
     const polygons=feature.geometry.type==='Polygon'?[feature.geometry.coordinates]:feature.geometry.coordinates;
@@ -40,6 +40,18 @@
     const coinMark=svgNode('text',{x:0,y:radius*.35,'text-anchor':'middle','font-size':radius*1.1,'font-family':'Georgia, serif',fill:'#9b7537'});coinMark.textContent='TE';coin.append(coinMark);svg.append(coin);
     return {svg,trail,coin,colourPath,points,box};
   }
+  function makeFlag(code,name,reduced){
+    const wrapper=document.createElement('div');wrapper.className='scratch-flag';
+    const svg=svgNode('svg',{viewBox:'0 0 150 115',role:'img','aria-label':name+' flag waving in the wind'});
+    const defs=svgNode('defs');
+    const filter=svgNode('filter',{id:'scratch-flag-wind',x:'-15%',y:'-15%',width:'140%',height:'140%'});
+    const noise=svgNode('feTurbulence',{type:'fractalNoise',baseFrequency:'.012 .025',numOctaves:2,seed:4,result:'wind'});
+    if(!reduced)noise.append(svgNode('animate',{attributeName:'baseFrequency',values:'.012 .025;.018 .035;.012 .025',dur:'2.8s',repeatCount:'indefinite'}));
+    filter.append(noise,svgNode('feDisplacementMap',{in:'SourceGraphic',in2:'wind',scale:reduced?0:7,xChannelSelector:'R',yChannelSelector:'G'}));defs.append(filter);svg.append(defs);
+    svg.append(svgNode('path',{d:'M13 8V108',fill:'none',stroke:'#a68e5e','stroke-width':3,'stroke-linecap':'round'}),svgNode('circle',{cx:13,cy:7,r:4,fill:'#d1b574'}));
+    const cloth=svgNode('g',{'class':'scratch-flag-cloth',filter:'url(#scratch-flag-wind)'});
+    cloth.append(svgNode('image',{href:'flags/'+flags[code]+'.svg',x:16,y:13,width:116,height:87,preserveAspectRatio:'xMinYMin meet'}));svg.append(cloth);wrapper.append(svg);return wrapper;
+  }
   const wait=ms=>new Promise(resolve=>setTimeout(resolve,ms));
   function cancel(){if(active){active.cancelled=true;active.dialog.close();}}
   async function celebrate(codes,onReveal=()=>{}){
@@ -65,6 +77,7 @@
         title.textContent=feature.properties.name;
         caption.textContent=codes.length===1?'A memory worth keeping.':`${index+1} of ${codes.length} newly travelled places`;
         const shape=makeStage(feature,colors[code]||'#82afd0');stage.replaceChildren(shape.svg);
+        if(flags[code])stage.append(makeFlag(code,feature.properties.name,reduced));
         const length=shape.trail.getTotalLength();shape.trail.setAttribute('stroke-dasharray',length);shape.trail.setAttribute('stroke-dashoffset',length);shape.coin.style.opacity='0';
         const mapPath=document.querySelector(`#visited-world-map path[data-country="${code}"]`);
         const source=mapPath?.getBoundingClientRect(),target=stage.getBoundingClientRect();
@@ -79,7 +92,7 @@
         else{
           shape.coin.style.opacity='1';
           await new Promise(resolve=>{
-            const start=performance.now(),duration=4950;
+            const start=performance.now(),duration=10000;
             const frame=now=>{
               if(run.cancelled){resolve();return;}
               const progress=Math.min(1,(now-start)/duration),distance=progress*length;
@@ -99,5 +112,5 @@
       if(dialog.open)dialog.close();dialog.remove();if(active===run)active=null;
     }
   }
-  window.TRAVEL_SCRATCH={init(outlines,palette){features=new Map(outlines.features.map(feature=>[feature.id,feature]));colors=palette;},celebrate,cancel};
+  window.TRAVEL_SCRATCH={init(outlines,palette,catalogue=[]){flags=Object.fromEntries(catalogue.map(country=>[country.code,country.iso2.toLowerCase()]));features=new Map(outlines.features.map(feature=>[feature.id,feature]));colors=palette;},celebrate,cancel};
 })();

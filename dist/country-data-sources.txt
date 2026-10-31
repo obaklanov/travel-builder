@@ -4,3 +4,5 @@ Country/territory catalogue: world-countries 5.1.0, https://github.com/mledoze/c
 City search: Open-Meteo Geocoding API (https://open-meteo.com/en/docs/geocoding-api), based on GeoNames (https://www.geonames.org/), CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). City search results are displayed as city, country and administrative region.
 
 Detailed profile and scratch animation outlines: Natural Earth 1:10m admin-0 map units, public domain. https://www.naturalearthdata.com/downloads/10m-cultural-vectors/ and https://www.naturalearthdata.com/about/terms-of-use/ . Retrieved 2026-10-31 from the Natural Earth source repository (nvkelso/natural-earth-vector); topology-preserving display simplification 0.003 degrees. Natural Earth uses cartographic, de facto boundaries by default. All 234 catalogue entries have mapped geometry. Fixed colour adjacency is based on these outlines.
+
+Country flags: flag-icons 7.6.0 by lipis and contributors, MIT licence. https://github.com/lipis/flag-icons . SVG assets hosted locally in flags/; full licence at flags/LICENSE.txt.

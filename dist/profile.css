@@ -21,3 +21,10 @@
 @media(prefers-reduced-motion:reduce){.visited-world-map path {transition:none;}}
 
 .pending-country-outlines{pointer-events:none}.visited-world-map .pending-country-outline{fill:none;stroke:#94723f;stroke-width:2.5;stroke-linejoin:round;stroke-linecap:round;vector-effect:non-scaling-stroke}
+
+.scratch-flag {position:absolute; top:12px; right:10px; width:128px; height:98px; z-index:2; pointer-events:none;}
+.scratch-country-stage .scratch-flag svg {width:100%;height:100%;filter:drop-shadow(0 3px 3px #664d2920);overflow:visible;}
+.scratch-flag-cloth {transform-origin:16px 55px;animation:scratch-flag-breeze 2.4s ease-in-out infinite;}
+@keyframes scratch-flag-breeze {0%,100%{transform:skewY(-2deg) scaleX(.98);}50%{transform:skewY(3deg) scaleX(1.02);}}
+@media(max-width:700px){.scratch-flag {width:96px;height:74px;right:0;top:6px;}}
+@media(prefers-reduced-motion:reduce){.scratch-flag-cloth {animation:none;}}

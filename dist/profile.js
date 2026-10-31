@@ -150,7 +150,7 @@
     catalogue = await catalogueResponse.json();
     const outlines = await mapResponse.json();
     countryColors = (await colorResponse.json()).colors;
-    window.TRAVEL_SCRATCH?.init(outlines,countryColors);
+    window.TRAVEL_SCRATCH?.init(outlines,countryColors,catalogue);
     allowedCodes = new Set(catalogue.map(country => country.code));
     const ns = 'http://www.w3.org/2000/svg';
     const svg = document.createElementNS(ns, 'svg');
