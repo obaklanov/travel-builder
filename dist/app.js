@@ -34,22 +34,23 @@ function showGuide(key) {
   const country = countries[key];
   if (!country) return;
   const isTrip = new URLSearchParams(location.search).get('returnTo') === 'home';
-  dialog.classList.toggle('trip-mode',isTrip);
+  dialog.classList.add('trip-mode','unified-guide');
   activeCountry = key;
   const url = 'https://travel.gc.ca/destinations/' + key;
   const facts = countryFacts[key];
   const populationLabel = (facts.population / 1000000).toFixed(1) + 'M';
   const areaLabel = facts.area >= 1000000 ? (facts.area / 1000000).toFixed(2) + 'M' : (facts.area / 1000).toFixed(1) + 'k';
   document.querySelector('.guide-content').innerHTML = `
-    <div class="country-map" aria-hidden="true"></div>
+    <aside class="guide-overview" aria-label="Destination and trip saving"><div class="country-map" aria-hidden="true"></div>
     <p class="map-status" role="status">Finding ${country.name} in the atlas…</p>
     <section class="country-facts" aria-label="Country at a glance">
       <h3>${country.name}</h3>
       <p><span>Population</span> <strong title="${facts.population.toLocaleString('en-CA')} people">${populationLabel}</strong><small>· ${facts.populationShare}% world · Rank ${facts.populationRank}/${facts.populationCount}</small></p>
       <p><span>Area</span> <strong title="${facts.area.toLocaleString('en-CA')} km²">${areaLabel} km²</strong><small title="Share of combined country and territory area; see definitions">· ${facts.areaShare}% world · Rank ${facts.areaRank}/${facts.areaCount}</small></p>
-      <details class="facts-sources"><summary>Dates, sources &amp; definitions</summary><div>Population: 2026 estimates. Area includes inland water; its world share is calculated from the combined 234 listed countries and territories (136,059,683 km²), excluding oceans and Antarctica. Rankings include territories. Figures retrieved 29 October 2026. M = million; k = thousand.<br><a href="https://www.worldometers.info/world-population/population-by-country/" target="_blank" rel="noopener noreferrer">Population source</a> · <a href="https://www.worldometers.info/geography/largest-countries-in-the-world/" target="_blank" rel="noopener noreferrer">Area source</a></div></details>
+      <details class="facts-sources"><summary>Dates, sources &amp; definitions</summary><div>Population: 2026 estimates. Area includes inland water; its world share is calculated from the combined 234 listed countries and territories (136,059,683 km²), excluding oceans and Antarctica. Rankings include territories. Figures retrieved 31 October 2026. M = million; k = thousand.<br><a href="https://www.worldometers.info/world-population/population-by-country/" target="_blank" rel="noopener noreferrer">Population source</a> · <a href="https://www.worldometers.info/geography/largest-countries-in-the-world/" target="_blank" rel="noopener noreferrer">Area source</a></div></details>
     </section>
-    ${isTrip ? '<section class="trip-add-area"><button type="button" id="add-this-trip">ADD THIS TRIP <span aria-hidden="true">＋</span></button><p>Save it to your profile.</p><p id="trip-add-status" role="status"></p></section>' : countryTreasures(key)}
+    <section class="trip-add-area"><button type="button" id="add-this-trip">ADD THIS TRIP <span aria-hidden="true">＋</span></button><p>Save it to your profile.</p><p id="trip-add-status" role="status"></p></section>
+    <div class="trip-collectibles">${countryTreasures(key)}</div></aside>
     <div class="guide-body"><p class="eyebrow">${country.region.toUpperCase()}</p>
     <h2 id="guide-title">7 Key details on trip to ${country.name}</h2>
     <div class="guide-links">
@@ -61,7 +62,9 @@ function showGuide(key) {
       <button data-detail="budget">${guideDetailIcon('budget')}<span class="guide-detail-label">Budget and costs</span><span class="guide-detail-arrow" aria-hidden="true">→</span></button>
       <a href="${url}" target="_blank" rel="noopener noreferrer">${guideDetailIcon('advice')}<span class="guide-detail-label">Current Canadian travel advice</span><span class="guide-detail-arrow" aria-hidden="true">↗</span></a>
     </div><section class="detail-panel" hidden tabindex="-1"></section>
-    <button class="guide-checklist departure-stamp"><span class="stamp-check" aria-hidden="true">✓</span><span class="stamp-copy"><span class="stamp-eyebrow">READY TO GO?</span><span class="stamp-action">Open departure checklist <span aria-hidden="true">→</span></span></span></button>${communitySection(key)}</div>${isTrip ? '<div class="trip-collectibles">'+countryTreasures(key)+'</div>' : ''}`;
+    <button class="guide-checklist departure-stamp"><span class="stamp-check" aria-hidden="true">✓</span><span class="stamp-copy"><span class="stamp-eyebrow">READY TO GO?</span><span class="stamp-action">Open departure checklist <span aria-hidden="true">→</span></span></span></button>${communitySection(key)}</div>`;
+  const content=document.querySelector('.guide-content');
+  content.prepend(content.querySelector('.guide-body'));
   document.querySelector('.guide-checklist').onclick = () => {
     if(!document.querySelector('#checklist')){window.location.href='planning.html?tripCountry='+encodeURIComponent(key);return;}
     document.querySelector('#checklist').scrollIntoView({behavior:'smooth'});

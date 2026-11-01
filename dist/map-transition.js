@@ -41,7 +41,7 @@ async function animateCountryMap(key, name) {
   const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
   const duration=reduced?0:1550;
   let alignedOffset = 0;
-  const alignDuringZoom = key === 'mexico' && !matchMedia('(max-width:700px)').matches;
+  const alignDuringZoom = !panel.classList.contains('unified-guide') && key === 'mexico' && !matchMedia('(max-width:700px)').matches;
   {
     // Every country zooms within its settled book-page geometry.
     // Resolve it before the first painted frame to avoid a second layout movement.
@@ -81,7 +81,7 @@ async function animateCountryMap(key, name) {
 // Align visible geography, rather than the padded SVG viewport.
 function alignMexicoOutline(){
  const panel=document.querySelector('#guide-dialog');
- if(!panel.open||!panel.querySelector('.mexico-treasures')||matchMedia('(max-width:700px)').matches)return;
+ if(panel.classList.contains('unified-guide')||!panel.open||!panel.querySelector('.mexico-treasures')||matchMedia('(max-width:700px)').matches)return;
  const host=panel.querySelector('.country-map'),outline=host?.querySelector('.selected-country'),label=panel.querySelector('.facts-sources summary');
  if(!outline||!label)return;
  host.style.translate='none';
