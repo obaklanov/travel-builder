@@ -196,7 +196,7 @@ function travelMonthLabel(value){return new Date(value+'-01T12:00:00').toLocaleD
 function setupSeasonChoice(key,panel){
  const state=getBudgetState(key),d=travelData[key],current=flightRequest(key,state.days).departureDate;
  const box=document.createElement('form');box.className='season-choice';
- box.innerHTML='<div class="departure-controls"><label>Travel region <select id="travel-region" required><option value="">Choose a region</option>'+d.regions.map(([region],i)=>'<option value="'+i+'" '+(state.regionChoice?.index===i?'selected':'')+'>'+region+'</option>').join('')+'</select></label><label>Travel month <input type="month" id="travel-month" min="'+new Date().toISOString().slice(0,7)+'" value="'+(state.regionChoice?.month||current.slice(0,7))+'" required></label></div><button type="submit" class="season-confirm">Use this region and month →</button><p class="season-choice-status" role="status"></p>';
+ box.innerHTML='<div class="departure-controls"><label>Travel region <select id="travel-region" required><option value="">Choose a region</option>'+d.regions.map(([region],i)=>'<option value="'+i+'" '+(state.regionChoice?.index===i?'selected':'')+'>'+region+'</option>').join('')+'</select></label><label>Travel month <input type="month" id="travel-month" max="2028-12" min="'+new Date().toISOString().slice(0,7)+'" value="'+(state.regionChoice?.month||current.slice(0,7))+'" required></label></div><button type="submit" class="season-confirm">Use this region and month →</button><p class="season-choice-status" role="status"></p>';
  panel.querySelector('h3').after(box);
  panel.querySelectorAll('.season-table tbody tr').forEach((row,index)=>{
   [...row.querySelectorAll('td')].forEach((cell,month)=>{
@@ -207,7 +207,7 @@ function setupSeasonChoice(key,panel){
  });
  box.onsubmit=event=>{
   event.preventDefault();const region=box.querySelector('#travel-region'),month=box.querySelector('#travel-month');
-  if(!region.value||!/^\d{4}-\d{2}$/.test(month.value)||month.value<new Date().toISOString().slice(0,7)){box.querySelector('.season-choice-status').textContent='Choose a region and a current or future month.';return;}
+  if(!region.value||!/^\d{4}-\d{2}$/.test(month.value)||month.value<new Date().toISOString().slice(0,7)||month.value>'2028-12'){box.querySelector('.season-choice-status').textContent='Choose a region and a travel month between now and December 2028.';return;}
   const index=Number(region.value),oldDay=Number(current.slice(8)),[year,m]=month.value.split('-').map(Number);
   const now=new Date(),minimum=month.value===now.toISOString().slice(0,7)?now.getDate():1;
   const day=Math.max(minimum,Math.min(oldDay,new Date(year,m,0).getDate()));
