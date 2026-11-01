@@ -116,6 +116,8 @@ document.querySelector('#destination-search').addEventListener('submit', event =
   guide.href = 'destinations.html?country=' + encodeURIComponent(destination.value) + '&returnTo=home&origin=' + departure.code + '&days=' + days + '&start=' + iso(start) + '&end=' + iso(end) + '&tripId=' + tripId + '&from=' + encodeURIComponent(knownOrigin ? origin : departure.city) + (validBudget ? '&budget=' + encodeURIComponent(amount) + '&currency=CAD' : '');
   tripIdea.dataset.trip = JSON.stringify({id:tripId,country:destination.value,origin:departure.code,origin_label:(knownOrigin?origin:departure.city).slice(0,160),departure_date:iso(start),return_date:iso(end),days,estimated_total:estimate.total,budget:validBudget?Number(amount):null,currency:'CAD'});
   document.querySelector('#quick-add-status').textContent = '';
+  document.querySelector('#quick-add-trip').textContent='Add Now';
+  if(document.querySelector('#quick-add-trip').dataset.saving!=='true')document.querySelector('#quick-add-trip').disabled=false;
   tripIdea.hidden = false;
   document.querySelector('#search-message').textContent = budgetChoice.value && !validBudget ? 'Trip created without a budget. Enter a positive CAD amount to include one.' : '';
 });
