@@ -81,3 +81,5 @@
 .magnifier-glint{stroke:#fff;stroke-width:1.5;opacity:.9;}
 .magnifier-sign{stroke:#665031;stroke-width:1.6;}
 @media(prefers-reduced-motion:reduce){.map-zoom-controls button{transition:none!important;transform:none!important;}}
+
+.scratch-country-stage{overflow:hidden;isolation:isolate}.foil-flake{pointer-events:none;filter:none;}

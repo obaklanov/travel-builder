@@ -75,6 +75,11 @@
     const defs=svgNode('defs');
     const gold=svgNode('linearGradient',{id:'scratch-gold',x1:0,y1:0,x2:1,y2:1});
     for(const [offset,fill] of [['0%','#ecd49d'],['45%','#c5a568'],['72%','#f4dfab'],['100%','#ad8950']])gold.append(svgNode('stop',{offset,'stop-color':fill}));
+    // Tiny folded foil surfaces: alternating metallic faces, without glow or trails.
+    for(const [id,dark,light] of [['gold','#9d793b','#f4dfa3'],['silver','#89918d','#eef0df'],['rose','#aa7767','#eac2a6']]){
+      const metal=svgNode('linearGradient',{id:'foil-'+id,x1:0,y1:0,x2:1,y2:1});
+      for(const [offset,fill] of [['0%',light],['42%',dark],['55%',light],['100%',dark]])metal.append(svgNode('stop',{offset,'stop-color':fill}));defs.append(metal);
+    }
     const reveal=svgNode('mask',{id:'scratch-reveal',maskUnits:'userSpaceOnUse',x:box.x-padding,y:box.y-padding,width:box.w+2*padding,height:box.h+2*padding});
     const {strokes,step}=landStrokes(box),radius=Math.max(box.w,box.h)*.028;
     const fmt=p=>p.map(v=>v.toFixed(5)).join(',');
@@ -233,9 +238,15 @@
                     const side=fleck%2?1:-1,offset=fleck===5?(Math.random()-.5)*shape.radius*.6:side*shape.radius*(.65+Math.random()*1.35);
                     const along=(Math.random()-.5)*shape.radius*1.6;
                     const px=x-dy*offset+dx*along,py=y+dx*offset+dy*along;
-                    const size=scale*(.0018+Math.random()*.0035);
-                    const flake=svgNode('path',{d:`M${px-size},${py}l${size*1.4},${-size*.6} ${size},${size} ${-size*1.6},${size*.5}Z`,fill:['#eee1bf',colors[code]||'#82afd0','#b8955d','#f0dba4',colors[code]||'#82afd0','#dbc397'][dustCount%6],opacity:.9});
-                    flake.dataset.drift=String(.6+Math.random());shape.dust.append(flake);
+                    const powder=dustCount%4===0;
+                    const size=scale*(powder?.00065+Math.random()*.0012:.0016+Math.random()*.0024);
+                    const angle=Math.random()*360;
+                    const flake=svgNode('g',{'class':'foil-flake',transform:`translate(${px},${py}) rotate(${angle})`});
+                    const metal=dustCount%11===0?'rose':dustCount%5===0?'silver':'gold';
+                    flake.append(svgNode('path',{d:`M${-size},${-size*.25}L${-size*.2},${-size*.6} ${size*.9},${-size*.3} ${size*.6},${size*.45} ${-size*.55},${size*.3}Z`,fill:'url(#foil-'+metal+')',opacity:powder?.72:.94}));
+                    if(!powder)flake.append(svgNode('path',{d:`M${-size*.6},${-size*.2}L${size*.5},${size*.08}`,fill:'none',stroke:'#fff3c9','stroke-width':size*.12,opacity:.5}));
+                    Object.assign(flake.dataset,{x:String(px),y:String(py),angle:String(angle),drift:String(Math.random()*2-1),cling:String(.04+Math.random()*.17),spin:String((Math.random()*2-1)*200)});
+                    shape.dust.append(flake);
                   }
                 }
               }
@@ -248,8 +259,21 @@
           caption.textContent='One last puff…';run.effect=finishSound('blow');
           await new Promise(resolve=>{const start=performance.now();const frame=now=>{
             if(run.cancelled){resolve();return;}
-            const p=Math.min(1,(now-start)/2000),ease=p*p;
-            for(const flake of shape.dust.children){const drift=Number(flake.dataset.drift);flake.setAttribute('transform',`translate(${ease*shape.box.w*.7*drift},${-ease*shape.box.h*.3*drift})`);flake.setAttribute('opacity',String(.85*(1-p)));}
+            const p=Math.min(1,(now-start)/2000);
+            for(const flake of shape.dust.children){
+              const x=Number(flake.dataset.x),y=Number(flake.dataset.y),drift=Number(flake.dataset.drift);
+              // Air reaches the near/bottom edge first; static cling briefly delays lift-off.
+              const fromBottom=Math.max(0,Math.min(1,(shape.box.y+shape.box.h-y)/shape.box.h));
+              const delay=fromBottom*.22+Number(flake.dataset.cling);
+              const t=Math.max(0,Math.min(1,(p-delay)/(1-delay))),lift=t*t*(2-t);
+              const up=(shape.box.h+Math.max(shape.box.w,shape.box.h)*1.3)*lift;
+              const flutter=Math.sin(t*13+drift*4)*shape.box.w*.012*Math.sin(Math.PI*t);
+              const sideways=drift*shape.box.w*.055*t+flutter;
+              const angle=Number(flake.dataset.angle)+Number(flake.dataset.spin)*t;
+              flake.setAttribute('transform',`translate(${x+sideways},${y-up}) rotate(${angle}) scale(1,${1-.65*Math.abs(Math.sin(t*11))})`);
+              // Stay opaque until airborne near the upper edge; no dissolving comet tail.
+              flake.setAttribute('opacity',String(t<.78?1:Math.max(0,(1-t)/.22)));
+            }
             if(p<1)requestAnimationFrame(frame);else resolve();
           };requestAnimationFrame(frame);});
           run.effect?.stop();run.effect=null;shape.dust.replaceChildren();
