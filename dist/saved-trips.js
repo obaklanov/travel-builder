@@ -68,7 +68,9 @@
   let saving=null;
   const money=value=>new Intl.NumberFormat('en-CA',{style:'currency',currency:'CAD',maximumFractionDigits:0}).format(value);
   const setNotice=text=>{notice.textContent=text;notice.hidden=!text;};
-  function render(rows) {
+  let visibleTrips=[];
+  function render(rows,ownerId) {
+    visibleTrips=rows;
     list.replaceChildren();
     for(const trip of rows){
       const article=document.createElement('article');article.className='saved-trip-item';
@@ -80,7 +82,31 @@
       const params=new URLSearchParams({country:trip.country,origin:trip.origin,days:String(trip.days),start:trip.departure_date,end:trip.return_date,tripId:trip.id,from:trip.origin_label,returnTo:'home'});
       if(trip.budget)params.set('budget',String(trip.budget));
       link.href='destinations.html?'+params;
-      article.append(title,origin,dates,cost,link);list.append(article);
+      const actions=document.createElement('div');actions.className='saved-trip-actions';
+      const remove=document.createElement('button');remove.type='button';remove.className='saved-trip-remove';remove.textContent='Remove trip';remove.setAttribute('aria-label','Remove '+title.textContent+' trip');
+      const confirmation=document.createElement('div');confirmation.className='saved-trip-confirm';confirmation.hidden=true;
+      const prompt=document.createElement('span');prompt.textContent='Remove this planned trip?';
+      const confirm=document.createElement('button');confirm.type='button';confirm.textContent='Remove';
+      const cancel=document.createElement('button');cancel.type='button';cancel.textContent='Keep trip';
+      const feedback=document.createElement('p');feedback.className='saved-trip-feedback';feedback.setAttribute('role','status');
+      confirmation.append(prompt,confirm,cancel);actions.append(link,remove);
+      remove.addEventListener('click',()=>{confirmation.hidden=false;remove.hidden=true;confirm.focus();});
+      cancel.addEventListener('click',()=>{confirmation.hidden=true;remove.hidden=false;feedback.textContent='';remove.focus();});
+      confirm.addEventListener('click',async()=>{
+        const revision=serial;confirm.disabled=true;cancel.disabled=true;feedback.textContent='Removing…';
+        try{
+          const {data:auth,error:authError}=await client.auth.getSession();
+          if(authError||auth.session?.user.id!==ownerId)throw Error('Account changed');
+          const {data,error}=await client.from('travel_easy_trips').delete().eq('id',trip.id).eq('user_id',ownerId).select('id');
+          if(error)throw error;if(!data?.some(row=>row.id===trip.id))throw Error('Trip not removed');
+          if(revision!==serial)return;
+          const pending=readDraft();if(pending?.id===trip.id)localStorage.removeItem(draftKey);
+          render(visibleTrips.filter(item=>item.id!==trip.id),ownerId);setNotice('Trip removed from your plans.');
+        }catch{
+          if(revision===serial)feedback.textContent='This trip could not be removed. Please try again.';
+        }finally{confirm.disabled=false;cancel.disabled=false;}
+      });
+      article.append(title,origin,dates,cost,actions,confirmation,feedback);list.append(article);
     }
     status.textContent=rows.length ? rows.length+' saved '+(rows.length===1?'trip':'trips') : 'No trips planned yet. Explore destinations to start planning your next trip.';
   }
@@ -99,7 +125,7 @@
       }
       const {data,error}=await client.from('travel_easy_trips').select('id,country,origin,origin_label,departure_date,return_date,days,estimated_total,budget,currency').eq('user_id',session.user.id).order('departure_date');
       if(version!==serial)return;
-      if(error)throw error;render(data||[]);
+      if(error)throw error;render(data||[],session.user.id);
     }catch(error){
       if(version!==serial)return;
       const setup=['PGRST205','42P01','42501'].includes(error.code);

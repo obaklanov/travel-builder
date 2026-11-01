@@ -26,3 +26,11 @@ drop policy if exists trips_update_own on public.travel_easy_trips;
 create policy trips_update_own on public.travel_easy_trips for update to authenticated using ((select auth.uid()) = user_id) with check ((select auth.uid()) = user_id);
 create index if not exists travel_easy_trips_user_date on public.travel_easy_trips(user_id, departure_date);
 commit;
+
+-- Trip removal permissions.
+begin;
+grant delete on table public.travel_easy_trips to authenticated;
+drop policy if exists trips_delete_own on public.travel_easy_trips;
+create policy trips_delete_own on public.travel_easy_trips
+  for delete to authenticated using ((select auth.uid()) = user_id);
+commit;
