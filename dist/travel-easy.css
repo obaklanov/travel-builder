@@ -188,3 +188,5 @@ select:not([multiple]):not([size]){appearance:none;-webkit-appearance:none;backg
 .budget-route-info{min-width:0;padding-top:0}.budget-route-info .budget-route-summary{margin:0;font-size:11px;line-height:1.4}.budget-route-info .budget-date-summary{margin:13px 0 0;font-size:11px;line-height:1.5}
 @media(max-width:1000px){.detail-panel .budget-trip-controls{grid-template-columns:minmax(0,1fr) 145px}.budget-route-info .budget-date-summary{margin-top:10px}}
 @media(max-width:420px){.detail-panel .budget-trip-controls{grid-template-columns:1fr 1fr}.budget-route-info{grid-column:1/-1}}
+
+.budget-suggestions{box-sizing:border-box;height:220px;overscroll-behavior-y:contain;overflow-anchor:none}

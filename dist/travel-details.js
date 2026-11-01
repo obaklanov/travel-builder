@@ -215,7 +215,7 @@ function setupSeasonChoice(key,panel){
 for(const [key,airports] of Object.entries({"united-states": [["SEA", "Seattle"]], "vietnam": [["PQC", "Phu Quoc"]], "colombia": [["PEI", "Pereira"]], "argentina": [["IGR", "Puerto Iguazú"], ["FTE", "El Calafate"], ["SLA", "Salta"]], "italy": [["FLR", "Florence"], ["CTA", "Catania"]], "mexico": [["OAX", "Oaxaca"], ["PVR", "Puerto Vallarta"]], "japan": [["CTS", "Sapporo New Chitose"], ["OKA", "Okinawa Naha"]], "portugal": [["FNC", "Funchal"]]}))travelData[key].airports.push(...airports);
 
 function roundBudgetRate(value,index){const step=index===0?10:5;return Math.max(0,Math.min(100000,Math.round((Number(value)||0)/step)*step));}
-function budgetSuggestedAmounts(value,index){const step=index===0?10:5,current=roundBudgetRate(value,index);return Array.from({length:16},(_,i)=>current+(i-5)*step).filter(value=>value>=0&&value<=100000);}
+function budgetSuggestedAmounts(value,index){const step=index===0?10:5,current=roundBudgetRate(value,index);return Array.from({length:26},(_,i)=>current+(i-10)*step).filter(value=>value>=0&&value<=100000);}
 function setupBudgetAllowances(panel,state,inputs,update){
  const closeAll=()=>panel.querySelectorAll('.budget-suggestions').forEach(list=>{list.hidden=true;list.previousElementSibling.setAttribute('aria-expanded','false');});
  inputs.forEach((input,index)=>{
@@ -231,6 +231,11 @@ function setupBudgetAllowances(panel,state,inputs,update){
     const option=document.createElement('button');option.type='button';option.textContent='$'+value.toLocaleString('en-CA');option.className=value===roundBudgetRate(input.value,index)?'current':'';
     option.onclick=()=>{input.value=value;commit();closeAll();input.focus();};list.append(option);
    });list.hidden=false;toggle.setAttribute('aria-expanded','true');
+   // Pad both ends so even zero and the upper limit can be centered without moving the page.
+   const selected=list.querySelector('.current');
+   const inset=Math.max(0,(list.clientHeight-(selected?.offsetHeight||0))/2);
+   list.style.paddingTop=inset+'px';list.style.paddingBottom=inset+'px';
+   if(selected)list.scrollTop=selected.offsetTop-(list.clientHeight-selected.offsetHeight)/2;
   };
  });
  panel.onclick=event=>{if(!event.target.closest('.budget-allowance'))closeAll();};
