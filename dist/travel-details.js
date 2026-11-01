@@ -13,8 +13,20 @@ const departureCities=[['YYZ','Toronto'],['YVR','Vancouver'],['YUL','Montréal']
 let guideDeparture=departureCities.some(([code])=>code===new URLSearchParams(location.search).get('origin'))?new URLSearchParams(location.search).get('origin'):'YYZ';
 function renderTravelDetail(key,kind){
  const panel=document.querySelector('.detail-panel'),d=travelData[key],name=countries[key].name;
- panel.hidden=false;
- if(kind==='flights'){
+ const trigger=document.querySelector('[data-detail="'+kind+'"]');
+ const closing=!panel.hidden&&panel.dataset.kind===kind;
+ document.querySelectorAll('[data-detail]').forEach(button=>button.setAttribute('aria-expanded','false'));
+ if(closing){panel.hidden=true;panel.dataset.kind='';trigger?.focus({preventScroll:true});return;}
+ if(trigger){trigger.after(panel);trigger.setAttribute('aria-expanded','true');panel.setAttribute('aria-labelledby',trigger.id);}
+ panel.dataset.kind=kind;panel.hidden=false;
+ const official='https://travel.gc.ca/destinations/'+key;
+ if(kind==='entry'){
+  panel.innerHTML=`<h3>Entry requirements and visas</h3><p>Government of Canada guidance for Canadian passport holders travelling to ${name}.</p><p><a href="${official}#entryexit" target="_blank" rel="noopener noreferrer">Read official passport, visa and entry requirements ↗</a></p><p class="estimate-note">Requirements depend on your passport, purpose of travel and length of stay. Confirm the current rules with your destination’s authorities before booking.</p>`;
+ }else if(kind==='health'){
+  panel.innerHTML=`<h3>Health and vaccines</h3><p><a href="${official}#health" target="_blank" rel="noopener noreferrer">Read official health notices and vaccine guidance for ${name} ↗</a></p><p>Discuss your itinerary and health needs with a travel health professional.</p>`;
+ }else if(kind==='advice'){
+  panel.innerHTML=`<h3>Current Canadian travel advice</h3><p><a href="${official}" target="_blank" rel="noopener noreferrer">Check the latest Government of Canada advice for ${name} ↗</a></p><p>Review the risk level and any regional advisories for your route.</p>`;
+ }else if(kind==='flights'){
  panel.innerHTML=`<h3>Flights and routing</h3><p class="estimate-note">Illustrative CAD round-trip economy allowances and one-way journey times, to be confirmed. These are not current fares, schedules or ranked live results. Enter your dates in the linked flight search to compare actual options.</p><div class="departure-controls"><label>Departure city <select id="departure-city">${departureCities.map(([code,n])=>`<option value="${code}" ${code===guideDeparture?'selected':''}>${n} (${code})</option>`).join('')}</select></label>${departureDateField(key)}</div><div id="route-results"></div>`;
  const update=()=>{guideDeparture=panel.querySelector('select').value;
  const request=flightRequest(key,getBudgetState(key).days),routes=getFlightRoutes(key,request);

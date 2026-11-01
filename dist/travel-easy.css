@@ -156,3 +156,5 @@
  #guide-dialog.unified-guide .trip-add-area{padding:0;margin:12px 0 24px;}
  #guide-dialog.unified-guide .guide-content::after{display:none;}
 }
+
+#guide-dialog .guide-links>.detail-panel{min-width:0;margin:0 0 10px;padding:18px 14px;background:#fff8e733;border-top:0;border-bottom:1px solid #c9b48e;}#guide-dialog .guide-links>.detail-panel[hidden]{display:none;}#guide-dialog .guide-links>button[aria-expanded="true"]{color:#795321;background:#d8bd8525;}#guide-dialog .detail-panel p{font-size:12px;line-height:1.7;}

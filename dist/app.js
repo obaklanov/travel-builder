@@ -52,16 +52,16 @@ function showGuide(key) {
     <section class="trip-add-area"><button type="button" id="add-this-trip">ADD THIS TRIP <span aria-hidden="true">＋</span></button><p>Save it to your profile.</p><p id="trip-add-status" role="status"></p></section>
     <div class="trip-collectibles">${countryTreasures(key)}</div></aside>
     <div class="guide-body"><p class="eyebrow">${country.region.toUpperCase()}</p>
-    <h2 id="guide-title">7 Key details on trip to ${country.name}</h2>
+    <h2 id="guide-title">7 KEY details for YOUR trip to ${country.name}</h2>
     <div class="guide-links">
-      <a href="${url}#entryexit" target="_blank" rel="noopener noreferrer">${guideDetailIcon('entry')}<span class="guide-detail-label">Entry requirements and visas</span><span class="guide-detail-arrow" aria-hidden="true">↗</span></a>
+      <button type="button" data-detail="entry">${guideDetailIcon('entry')}<span class="guide-detail-label">Entry requirements and visas</span><span class="guide-detail-arrow" aria-hidden="true">→</span></button>
       <button data-detail="flights">${guideDetailIcon('flights')}<span class="guide-detail-label">Flights and routing</span><span class="guide-detail-arrow" aria-hidden="true">→</span></button>
       <button data-detail="season">${guideDetailIcon('season')}<span class="guide-detail-label">Best month to go</span><span class="guide-detail-arrow" aria-hidden="true">→</span></button>
-      <a href="${url}#health" target="_blank" rel="noopener noreferrer">${guideDetailIcon('health')}<span class="guide-detail-label">Health and vaccines</span><span class="guide-detail-arrow" aria-hidden="true">↗</span></a>
+      <button type="button" data-detail="health">${guideDetailIcon('health')}<span class="guide-detail-label">Health and vaccines</span><span class="guide-detail-arrow" aria-hidden="true">→</span></button>
       <button data-detail="insurance">${guideDetailIcon('insurance')}<span class="guide-detail-label">Travel insurance</span><span class="guide-detail-arrow" aria-hidden="true">→</span></button>
       <button data-detail="budget">${guideDetailIcon('budget')}<span class="guide-detail-label">Budget and costs</span><span class="guide-detail-arrow" aria-hidden="true">→</span></button>
-      <a href="${url}" target="_blank" rel="noopener noreferrer">${guideDetailIcon('advice')}<span class="guide-detail-label">Current Canadian travel advice</span><span class="guide-detail-arrow" aria-hidden="true">↗</span></a>
-    </div><section class="detail-panel" hidden tabindex="-1"></section>
+      <button type="button" data-detail="advice">${guideDetailIcon('advice')}<span class="guide-detail-label">Current Canadian travel advice</span><span class="guide-detail-arrow" aria-hidden="true">→</span></button>
+    <section id="trip-detail-panel" class="detail-panel" hidden tabindex="-1" role="region"></section></div>
     <button class="guide-checklist departure-stamp"><span class="stamp-check" aria-hidden="true">✓</span><span class="stamp-copy"><span class="stamp-eyebrow">READY TO GO?</span><span class="stamp-action">Open departure checklist <span aria-hidden="true">→</span></span></span></button>${communitySection(key)}</div>`;
   const content=document.querySelector('.guide-content');
   content.prepend(content.querySelector('.guide-body'));
@@ -70,7 +70,7 @@ function showGuide(key) {
     document.querySelector('#checklist').scrollIntoView({behavior:'smooth'});
     document.querySelector('#download-checklist').focus({preventScroll:true});
   };
-  document.querySelectorAll('[data-detail]').forEach(button => button.onclick = () => renderTravelDetail(key, button.dataset.detail));
+  document.querySelectorAll('[data-detail]').forEach(button => {button.id='trip-detail-'+button.dataset.detail;button.setAttribute('aria-expanded','false');button.setAttribute('aria-controls','trip-detail-panel');button.onclick=()=>renderTravelDetail(key,button.dataset.detail);});
   if (!dialog.open) dialog.showModal();
   dialog.scrollTop = 0;
   animateCountryMap(key, country.name);
