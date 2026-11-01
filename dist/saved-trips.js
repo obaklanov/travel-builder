@@ -62,7 +62,7 @@
       link.href='destinations.html?'+params;
       article.append(title,origin,dates,cost,link);list.append(article);
     }
-    status.textContent=rows.length ? rows.length+' saved '+(rows.length===1?'trip':'trips') : 'No trips saved yet. Create one from Home.';
+    status.textContent=rows.length ? rows.length+' saved '+(rows.length===1?'trip':'trips') : 'No trips planned yet. Explore destinations to start planning your next trip.';
   }
   async function refresh(session) {
     const version=++serial;list.replaceChildren();
@@ -83,8 +83,8 @@
     }catch(error){
       if(version!==serial)return;
       const setup=['PGRST205','42P01','42501'].includes(error.code);
-      status.textContent=setup?'Saved trips are awaiting database setup.':'Trips could not load. Reload to try again.';
-      if(trip)setNotice(setup?'Your trip is kept in this browser. Account saving needs the saved-trips database setup.':'Your trip is kept in this browser. We couldn’t save it yet; reload to try again.');
+      status.textContent=setup?'Saved trips are awaiting database setup.':'We couldn’t load your saved trips. Please try again shortly.';
+      if(trip)setNotice(setup?'This trip could not be added yet: account trip storage needs setup.':'We couldn’t add this trip to your account yet. Please try again shortly.');
     }
   }
   client.auth.onAuthStateChange((_event,session)=>{setTimeout(()=>refresh(session),0);});

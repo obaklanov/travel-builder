@@ -170,7 +170,7 @@
     const compact=n=>new Intl.NumberFormat('en',{notation:'compact',maximumFractionDigits:1}).format(n);
     return `Population ${compact(row.population)} · ${row.populationShare}% world · Rank ${row.populationRank}/234\nArea ${row.area===0?'<1':compact(row.area)} km\u00b2 · ${row.areaShare}% world · Rank ${row.areaRank}/234`;
   }
-  function cancel(){if(active){active.cancelled=true;active.sound?.stop();active.sound=null;active.effect?.stop();active.dialog.close();}}
+  function cancel(){if(active){active.cancelled=true;active.finish?.();active.sound?.stop();active.sound=null;active.effect?.stop();active.dialog.close();}}
   async function celebrate(codes,onReveal=()=>{}){
     cancel();
     const mapped=codes.filter(code=>features.has(code));
@@ -188,7 +188,12 @@
     soundButton.addEventListener('click',()=>{muted=!muted;if(muted){run.effect?.stop();run.effect=null;}prepareAudio();soundLabel();});
     content.append(eyebrow,title,stage,caption,details,skip,soundButton);dialog.append(content);document.body.append(dialog);
     const run={dialog,cancelled:false};active=run;
-    skip.addEventListener('click',cancel);dialog.addEventListener('cancel',()=>{run.cancelled=true;});dialog.addEventListener('close',()=>{run.cancelled=true;run.sound?.stop();run.sound=null;run.effect?.stop();});
+    skip.addEventListener('click',cancel);dialog.addEventListener('cancel',()=>{run.cancelled=true;});dialog.addEventListener('close',()=>{run.cancelled=true;run.finish?.();run.sound?.stop();run.sound=null;run.effect?.stop();});
+    dialog.addEventListener('click',event=>{
+      if(event.target!==dialog)return;
+      const rect=dialog.getBoundingClientRect();
+      if(event.clientX<rect.left||event.clientX>rect.right||event.clientY<rect.top||event.clientY>rect.bottom)cancel();
+    });
     const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
     try{
       dialog.showModal();skip.focus({preventScroll:true});
@@ -215,7 +220,7 @@
           await shape.svg.animate([{transform:`translate(${dx}px,${dy}px) scale(${scale})`,opacity:.25},{transform:'translate(0,0) scale(1)',opacity:1}],{duration:620,easing:'cubic-bezier(.2,.75,.2,1)',fill:'both'}).finished;
         }
         if(run.cancelled)break;
-        if(reduced){shape.colourPath.removeAttribute('mask');caption.textContent=feature.properties.name+' · '+(facts[code]?.region||'');details.textContent=countryFacts(code);details.hidden=false;await wait(1500);}
+        if(reduced){shape.colourPath.removeAttribute('mask');caption.textContent=feature.properties.name+' · '+(facts[code]?.region||'');details.textContent=countryFacts(code);details.hidden=false;onReveal(code);await new Promise(resolve=>{run.finish=resolve;skip.textContent='Close';});run.finish=null;}
         else{
           shape.coin.style.opacity='1';
           run.sound=scratchSound();
@@ -296,7 +301,7 @@
           details.textContent=countryFacts(code);details.hidden=false;
           details.animate?.([{opacity:0,transform:'translateY(5px)'},{opacity:1,transform:'translateY(0)'}],{duration:350,fill:'both'});
           run.effect=finishSound('victory');onReveal(code);
-          const end=performance.now()+10000;while(!run.cancelled&&performance.now()<end)await wait(50);
+          await new Promise(resolve=>{run.finish=resolve;skip.textContent='Close';});run.finish=null;
           run.effect?.stop();run.effect=null;
         }
         onReveal(code);

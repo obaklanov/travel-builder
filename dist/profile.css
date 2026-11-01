@@ -83,3 +83,5 @@
 @media(prefers-reduced-motion:reduce){.map-zoom-controls button{transition:none!important;transform:none!important;}}
 
 .scratch-country-stage{overflow:hidden;isolation:isolate}.foil-flake{pointer-events:none;filter:none;}
+
+.account-layout{padding-top:30px}.account-gate{grid-template-columns:minmax(0,550px);justify-content:center}.profile-planned-trips{margin:0 0 30px}.profile-planned-trips>.future-card{width:100%}.profile-planned-trips .pending-trip-notice{margin:12px 0;padding:12px;font-size:12px}.traveller-header{margin-top:0;}
