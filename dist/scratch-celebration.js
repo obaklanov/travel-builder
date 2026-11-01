@@ -137,13 +137,27 @@
     const nodes=[],now=audio.currentTime;
     const gain=audio.createGain();gain.connect(audio.destination);nodes.push(gain);
     if(kind==='blow'){
-      const source=audio.createBufferSource(),buffer=audio.createBuffer(1,audio.sampleRate*2,audio.sampleRate);
-      const samples=buffer.getChannelData(0);let smooth=0;
-      for(let i=0;i<samples.length;i++){smooth=.88*smooth+.12*(Math.random()*2-1);samples[i]=smooth;}
-      source.buffer=buffer;const filter=audio.createBiquadFilter();filter.type='lowpass';filter.frequency.value=1100;
-      source.connect(filter);filter.connect(gain);gain.gain.setValueAtTime(0,now);
-      gain.gain.linearRampToValueAtTime(.20,now+.15);gain.gain.exponentialRampToValueAtTime(.001,now+1.8);
-      source.start();source.stop(now+2);nodes.push(source,filter);
+      // Unvoiced, high-frequency breath: a soft "pfff", with no pitched wind tone.
+      const source=audio.createBufferSource(),duration=.78;
+      const buffer=audio.createBuffer(1,Math.ceil(audio.sampleRate*duration),audio.sampleRate);
+      const samples=buffer.getChannelData(0);
+      for(let i=0;i<samples.length;i++){
+        const t=i/audio.sampleRate;
+        const breath=(Math.random()*2-1)*(.88+.08*Math.sin(t*31)+.04*Math.sin(t*79));
+        // A few very faint, dry irregularities suggest loose flakes lifting.
+        const scatter=[.17,.28,.39].reduce((sum,at)=>sum+Math.exp(-Math.pow((t-at)/.018,2)),0);
+        samples[i]=breath*(1+scatter*.12);
+      }
+      source.buffer=buffer;
+      const highpass=audio.createBiquadFilter();highpass.type='highpass';highpass.frequency.value=850;highpass.Q.value=.5;
+      const lowpass=audio.createBiquadFilter();lowpass.type='lowpass';lowpass.frequency.value=6500;lowpass.Q.value=.5;
+      source.connect(highpass);highpass.connect(lowpass);lowpass.connect(gain);
+      gain.gain.setValueAtTime(0,now);
+      gain.gain.linearRampToValueAtTime(.055,now+.035);
+      gain.gain.exponentialRampToValueAtTime(.022,now+.20);
+      gain.gain.exponentialRampToValueAtTime(.0001,now+.72);
+      gain.gain.linearRampToValueAtTime(0,now+duration);
+      source.start(now);source.stop(now+duration);nodes.push(source,highpass,lowpass);
     }else{
       gain.gain.value=.035;
       [659.25,830.61,987.77].forEach((frequency,i)=>{const oscillator=audio.createOscillator(),envelope=audio.createGain();oscillator.type='sine';oscillator.frequency.value=frequency;envelope.gain.setValueAtTime(0,now);envelope.gain.setValueAtTime(.001,now+i*.12);envelope.gain.linearRampToValueAtTime(.65,now+i*.12+.035);envelope.gain.exponentialRampToValueAtTime(.001,now+i*.12+1.1);oscillator.connect(envelope);envelope.connect(gain);oscillator.start(now+i*.12);oscillator.stop(now+1.6);nodes.push(oscillator,envelope);});
