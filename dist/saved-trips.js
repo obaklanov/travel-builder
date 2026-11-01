@@ -14,15 +14,7 @@
   function readDraft() {
     try { const draft=JSON.parse(localStorage.getItem(draftKey)); return validTrip(draft?.trip)&&Date.now()-draft.savedAt<604800000 ? draft.trip : null; } catch {return null;}
   }
-  document.addEventListener('click', async event => {
-    const button=event.target.closest('#add-this-trip, #quick-add-trip');
-    if (!button) return;
-    const status=document.querySelector(button.id==='quick-add-trip'?'#quick-add-status':'#trip-add-status');
-    try {
-      if(button.id==='quick-add-trip'){
-        const trip=JSON.parse(document.querySelector('#trip-idea').dataset.trip||'null');
-        if(!validTrip(trip))throw Error('Please generate a trip first.');
-        localStorage.setItem(draftKey,JSON.stringify({trip,savedAt:Date.now()}));
+  async function saveTripHere(trip,button,status){
         const client=window.TRAVEL_EASY_CLIENT;
         if(!client||!window.TRAVEL_LANDING_ACCOUNT)throw Error('Trip saving is unavailable. Please reload and try again.');
         if(button.dataset.saving==='true')return;
@@ -33,29 +25,41 @@
             if(error)throw error;
             const draft=readDraft();if(draft?.id===trip.id)localStorage.removeItem(draftKey);
             // A new suggestion may have been generated while the request was pending.
-            if(JSON.parse(document.querySelector('#trip-idea').dataset.trip||'null')?.id===trip.id){
+            if(button.isConnected&&(button.id!=='quick-add-trip'||JSON.parse(document.querySelector('#trip-idea').dataset.trip||'null')?.id===trip.id)){
               status.replaceChildren(document.createTextNode('Added to your planned trips. '));
               const link=document.createElement('a');link.href='profile.html#planned-trips';link.textContent='View planned trips →';status.append(link);button.textContent='Added';
             }
-          }catch(error){status.textContent='This trip could not be added. Please try Add Now again.';error.tripSave=true;throw error;}
+          }catch(error){status.textContent='This trip could not be added. Please try adding it again.';error.tripSave=true;throw error;}
           finally{button.dataset.saving='false';button.disabled=button.textContent==='Added';}
         };
         button.disabled=true;
         const {data,error}=await client.auth.getSession();if(error){button.disabled=false;throw error;}
         if(data.session)await save(data.session);
         else {button.disabled=false;window.TRAVEL_LANDING_ACCOUNT.open(save);}
+  }
+  document.addEventListener('click', async event => {
+    const button=event.target.closest('#add-this-trip, #quick-add-trip');
+    if (!button) return;
+    const status=document.querySelector(button.id==='quick-add-trip'?'#quick-add-status':'#trip-add-status');
+    try {
+      if(button.id==='quick-add-trip'){
+        const trip=JSON.parse(document.querySelector('#trip-idea').dataset.trip||'null');
+        if(!validTrip(trip))throw Error('Please generate a trip first.');
+        localStorage.setItem(draftKey,JSON.stringify({trip,savedAt:Date.now()}));
+        await saveTripHere(trip,button,status);
         return;
       }
-      const params=new URLSearchParams(location.search),key=params.get('country');
+      const params=new URLSearchParams(location.search),key=typeof activeCountry!=='undefined'&&names[activeCountry]?activeCountry:params.get('country');
       if(!names[key])throw Error('Choose a destination first.');
       const state=getBudgetState(key),request=flightRequest(key,state.days);
       const route=getFlightRoutes(key,request)[0];
       if(!state.flightManual)state.rates[0]=route.price;
       const amount=Number(params.get('budget'));
-      const trip={id:uuid.test(params.get('tripId')||'')?params.get('tripId'):crypto.randomUUID(),country:key,origin:guideDeparture,origin_label:(params.get('from')||departureCities.find(([code])=>code===guideDeparture)?.[1]||guideDeparture).slice(0,160),departure_date:request.departureDate,return_date:request.returnDate,days:state.days,estimated_total:tripTotalFromRates(state.rates,state.days,state.nights),budget:amount>0?amount:null,currency:'CAD'};
+      const trip={id:button.dataset.tripId||(params.get('country')===key&&uuid.test(params.get('tripId')||'')?params.get('tripId'):crypto.randomUUID()),country:key,origin:guideDeparture,origin_label:((params.get('origin')===guideDeparture?params.get('from'):null)||departureCities.find(([code])=>code===guideDeparture)?.[1]||guideDeparture).slice(0,160),departure_date:request.departureDate,return_date:request.returnDate,days:state.days,estimated_total:tripTotalFromRates(state.rates,state.days,state.nights),budget:amount>0?amount:null,currency:'CAD'};
       if(!validTrip(trip))throw Error('Please check the trip details before adding it.');
       localStorage.setItem(draftKey,JSON.stringify({trip,savedAt:Date.now()}));
-      location.href='profile.html?addTrip=1';
+      button.dataset.tripId=trip.id;
+      await saveTripHere(trip,button,status);
     } catch(error) {if(error.tripSave)return;status.textContent=error.message.includes('trip')?error.message:'Your browser could not keep this trip. Please allow site storage and try again.';}
   });
   const list=document.querySelector('#planned-trip-list');
