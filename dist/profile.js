@@ -17,7 +17,7 @@
   let mapZoom = null;
   let countryColors = {};
   let countryInfo = {};
-  let mapCountryCode=null, savingCountries=false;
+  let mapCountryCode=null, savingCountries=false, mapDraftCode=null;
   function updateMapAddButton(){
     const button=$('#map-add-country');if(!button)return;
     const saved=profile?.visited_countries?.includes(mapCountryCode);
@@ -163,6 +163,15 @@
     }
   }
 
+  function selectMapCountry(code){
+    if(!user||!storageReady||!allowedCodes.has(code))return;
+    // Replace only the unsaved selection made by the map; keep saved visits and list choices.
+    if(mapDraftCode&&mapDraftCode!==code&&!profile?.visited_countries?.includes(mapDraftCode))selected.delete(mapDraftCode);
+    if(!selected.has(code)){selected.add(code);mapDraftCode=code;}
+    else if(mapDraftCode!==code)mapDraftCode=null;
+    showCountryInfo(code);setDirty(true);updateMap();renderCountries();
+  }
+
   function setCountrySelection(code,checked,refreshList=true) {
     if (!user || !storageReady || !allowedCodes.has(code)) return;
     if (checked) selected.add(code); else selected.delete(code);
@@ -204,12 +213,11 @@
       path.setAttribute('tabindex','0');
       path.setAttribute('aria-label',feature.properties.name);
       path.setAttribute('aria-pressed','false');
-      path.addEventListener('click', () => {if(svg.dataset.suppressSelection!=='true'){showCountryInfo(code);setCountrySelection(code,!selected.has(code));}});
+      path.addEventListener('click', () => {if(svg.dataset.suppressSelection!=='true'){selectMapCountry(code);}});
       path.addEventListener('keydown', event => {
         if (event.key==='Enter' || event.key===' ') {
           event.preventDefault();
-          showCountryInfo(code);
-          setCountrySelection(code,!selected.has(code));
+          selectMapCountry(code);
         }
       });
       mapPaths.push([path, code]);
@@ -234,7 +242,7 @@
     celebrationPending.clear();
     mapZoom?.reset();
     if($('#map-country-info'))$('#map-country-info').hidden=true;
-    mapCountryCode=null;updateMapAddButton();
+    mapCountryCode=null;mapDraftCode=null;updateMapAddButton();
     user = nextUser;
     loaded = false;
     storageReady = false;

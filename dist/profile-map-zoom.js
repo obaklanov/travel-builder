@@ -26,7 +26,6 @@
     function reset(){box={...base};render();}
     buttons.in.addEventListener('click',()=>zoom(1.7));buttons.out.addEventListener('click',()=>zoom(1/1.7));buttons.reset.addEventListener('click',reset);
     container.addEventListener('wheel',event=>{
-      if(!event.ctrlKey&&!event.metaKey&&level()<=1.001)return;
       event.preventDefault();zoom(Math.exp(-Math.max(-120,Math.min(120,event.deltaY))*.005),point(event));
     },{passive:false});
     svg.addEventListener('pointerdown',event=>{
