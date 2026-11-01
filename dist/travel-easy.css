@@ -4,7 +4,7 @@
 .site-header nav a[aria-current="page"] {color:#202124; border-bottom-color:#202124;}
 .site-header nav .profile-nav {border-color:#bbbfc5;}
 .site-header nav .profile-nav[aria-current="page"] {background:#f5f5f7; border-color:#7b8088;}
-.home-page {background:#fff; color:#202124;}
+.home-page {background:var(--paper); color:#202124;}
 .easy-hero {max-width:850px; margin:0 auto; min-height:calc(100svh - 97px); padding:86px 24px 100px; text-align:center;}
 .easy-tagline {font-size:16px; color:#656970; margin:0 0 24px; font-weight:500;}
 .easy-hero h1 {font-family:var(--sans); font-size:clamp(48px,6.6vw,82px); line-height:1.06; letter-spacing:-3.8px; font-weight:600; margin:0 0 26px;}
