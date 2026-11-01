@@ -55,7 +55,7 @@
 .visited-world-map path[data-country]:focus-visible{stroke:#315d89;stroke-width:1.5;}
 .map-country-info{margin-left:10px;max-width:330px;border-left:2px solid #bda776;padding:5px 14px;flex:1;}
 .map-country-info strong{font:26px/1.15 var(--serif);color:#354a48;}
-.map-country-info p{font:12px/1.6 var(--sans);color:#756953;margin:5px 0 0;}
+.map-country-info p{font:14px/1.6 var(--sans);color:#756953;margin:5px 0 0;}
 .map-country-info[hidden]{display:none;}
 .map-zoom-controls{margin-left:auto;}
 .scratch-sound{margin-left:10px;font:12px var(--sans);padding:10px 16px;border:1px solid #c9be9f;border-radius:20px;background:transparent;color:#6f634e;min-height:40px;}
@@ -85,3 +85,12 @@
 .scratch-country-stage{overflow:hidden;isolation:isolate}.foil-flake{pointer-events:none;filter:none;}
 
 .account-layout{padding-top:30px}.account-gate{grid-template-columns:minmax(0,550px);justify-content:center}.profile-planned-trips{margin:0 0 30px}.profile-planned-trips>.future-card{width:100%}.profile-planned-trips .pending-trip-notice{margin:12px 0;padding:12px;font-size:12px}.traveller-header{margin-top:0;}
+
+.profile-header-actions{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end;}
+.edit-profile-dialog{width:min(520px,calc(100vw - 32px));max-height:90svh;overflow:auto;padding:26px;border:1px solid #c9b58c;border-radius:14px;background:#fbf6e9;color:#493b29;box-shadow:0 20px 70px #0003;}
+.edit-profile-dialog::backdrop{background:#1a29275c;backdrop-filter:blur(4px);}
+.edit-profile-heading{display:flex;align-items:center;justify-content:space-between;gap:20px;}
+.edit-profile-heading h2{font:36px var(--serif);margin:0;}.edit-profile-heading button{border:0;background:none;font:28px var(--sans);color:#70512d;min-width:40px;min-height:40px;}
+.edit-profile-dialog form{margin-top:20px;padding-top:18px;border-top:1px solid #d6c6a4;}.edit-profile-dialog h3{font:24px var(--serif);margin:0 0 16px;}
+.edit-profile-dialog label{display:block;font:13px var(--sans);margin:14px 0 7px;}.edit-profile-dialog input{box-sizing:border-box;width:100%;padding:12px;border:1px solid #bca77f;border-radius:5px;background:#fffdf7;color:#352b20;font:15px var(--sans);}
+.edit-profile-dialog small{display:block;font:11px/1.5 var(--sans);color:#756953;margin-top:7px;}.edit-profile-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px;}.edit-profile-dialog #save-profile-password{margin-top:18px;}.edit-profile-dialog p[role="status"]{font:13px/1.6 var(--sans);margin:12px 0 0;}.edit-profile-dialog [data-tone="error"]{color:#944b38;}.edit-profile-dialog [data-tone="success"]{color:#426746;}

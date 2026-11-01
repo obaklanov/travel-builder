@@ -248,10 +248,10 @@
                 const openness=Math.min(1,stroke.length/Math.max(shape.box.w,shape.box.h)*2);
                 const pressure=.15+.85*Math.sin(Math.PI*local)*openness;
                 run.sound?.update(progress,scratching,pressure);
-                if(scratching&&now-lastDust>24&&dustCount<3600){
+                if(scratching&&now-lastDust>24&&dustCount<7200){
                   lastDust=now;
                   const dx=(stroke.end[0]-stroke.start[0])/stroke.length,dy=(stroke.end[1]-stroke.start[1])/stroke.length;
-                  for(let fleck=0;fleck<12;fleck++){
+                  for(let fleck=0;fleck<24;fleck++){
                     dustCount++;
                     // Coin pushes most flakes into ridges on both sides; a few stay in the groove.
                     const side=fleck%2?1:-1,offset=fleck%6===5?(Math.random()-.5)*shape.radius*.6:side*shape.radius*(.65+Math.random()*1.35);

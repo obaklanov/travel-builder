@@ -59,7 +59,7 @@
     if (error?.code === 'email_not_confirmed') return 'Please confirm your email using the link in your inbox, then sign in.';
     if (error?.code === 'invalid_credentials') return 'That email and password combination was not recognised. Check your details or reset your password.';
     if (['over_email_send_rate_limit', 'over_request_rate_limit'].includes(error?.code) || error?.status === 429) return 'Too many requests in a short time. Please wait a little before trying again.';
-    if (error?.code === 'weak_password') return 'Please choose a stronger password with at least 10 characters.';
+    if (error?.code === 'weak_password') return 'Use at least 8 characters, including a letter, a number and a symbol.';
     if (error?.code === 'same_password') return 'Please choose a password different from your current password.';
     if (error?.code === 'signup_disabled') return 'New account registration is currently unavailable.';
     if (error?.code === 'email_address_not_authorized') return 'Email delivery is not yet set up for this address. The site owner needs to configure authentication email before inviting testers.';
@@ -165,6 +165,11 @@
 
   function selectMapCountry(code){
     if(!user||!storageReady||!allowedCodes.has(code))return;
+    if(mapCountryCode===code){
+      if(mapDraftCode===code&&!profile?.visited_countries?.includes(code))selected.delete(code);
+      mapDraftCode=null;mapCountryCode=null;
+      $('#map-country-info').hidden=true;updateMapAddButton();setDirty(true);updateMap();renderCountries();return;
+    }
     // Replace only the unsaved selection made by the map; keep saved visits and list choices.
     if(mapDraftCode&&mapDraftCode!==code&&!profile?.visited_countries?.includes(mapDraftCode))selected.delete(mapDraftCode);
     if(!selected.has(code)){selected.add(code);mapDraftCode=code;}
@@ -255,7 +260,7 @@
     if (!user) {
       recoveryMode = false;
       $('#account-gate').hidden = false;
-      $('#traveller-title').textContent = 'Your personal atlas';
+      $('#traveller-title').textContent = 'Your personal Atlas';
       $('#visited-country-list').replaceChildren();
       updateMap();
       setDirty(false);
@@ -282,7 +287,7 @@
       legacySelected = new Set((data?.visited_countries || []).filter(code => !allowedCodes.has(code)));
       message(data ? '' : 'Welcome aboard. Choose the countries and territories you’ve visited, then save your profile.', 'success');
     }
-    $('#traveller-title').textContent = data?.nickname ? data.nickname + '’s atlas' : 'Your personal atlas';
+    $('#traveller-title').textContent = data?.nickname ? data.nickname + '’s Atlas' : 'Your personal Atlas';
     $('#save-profile').disabled = !storageReady;
     $('#country-search').value = '';
     $('#selected-only').checked = false;
@@ -322,6 +327,7 @@
     if (!nicknamePattern.test(nickname)) { message('Choose a nickname with 3–24 letters, numbers or underscores.', 'error'); return; }
     const email = $('#signup-email').value.trim();
     const password = $('#signup-password').value;
+    if(!window.TRAVEL_PROFILE_EDITOR.validPassword(password)){message('Use at least 8 characters, including a letter, a number and a symbol.','error');return;}
     busy(form, async () => {
       message('Creating your account…');
       const { data, error } = await client.auth.signUp({ email, password, options: { data: { nickname }, emailRedirectTo: redirectUrl() } });
@@ -381,6 +387,7 @@
     event.preventDefault();
     const form = event.currentTarget;
     const password = $('#recovery-password').value;
+    if(!window.TRAVEL_PROFILE_EDITOR.validPassword(password)){message('Use at least 8 characters, including a letter, a number and a symbol.','error');return;}
     busy(form, async () => {
       const { error } = await client.auth.updateUser({ password });
       if (error) throw error;
@@ -427,10 +434,10 @@
         celebrationPending.clear();
         updateMap();
         if (user?.id !== id) return;
-        $('#traveller-title').textContent = nickname + '’s atlas';
+        $('#traveller-title').textContent = nickname + '’s Atlas';
         const current = JSON.stringify({ nickname: profile?.nickname || user.user_metadata?.nickname || '', visited: [...new Set([...selected,...legacySelected])].sort() });
         setDirty(current !== snapshot);
-        message('Your profile has been saved to your account.', 'success');
+        message('');
       } catch (error) {
         if (user?.id === id) { setDirty(true); message(friendlyError(error), 'error'); }
       } finally { savingCountries=false;updateMapAddButton();if (user?.id === id) button.disabled = !storageReady; }
@@ -471,6 +478,9 @@
         auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: true, storageKey: 'travel-easy-auth' }
       });
       window.TRAVEL_EASY_CLIENT = client;
+      window.TRAVEL_PROFILE_EDITOR?.init(client,()=>({user,profile}),data=>{
+        profile=data;$('#traveller-title').textContent=data.nickname+'’s Atlas';
+      });
       client.auth.onAuthStateChange((event, session) => {
         if (event === 'PASSWORD_RECOVERY') recoveryMode = true;
         // Do not await another auth operation inside the SDK's callback.
