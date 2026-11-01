@@ -174,3 +174,6 @@
 .country-reward{width:70px;height:60px;flex:0 0 70px;filter:drop-shadow(0 3px 2px #70502b25)}
 
 .season-choice{padding:16px 0;margin-bottom:16px;border-bottom:1px solid #bba882}.season-confirm{padding:10px 16px;border:1px solid #9c8053;border-radius:5px;background:#e6d5b1;color:#493620;cursor:pointer}.season-cell-choice{font:inherit;color:inherit;background:none;border:0;padding:8px 1px;width:100%;cursor:pointer}.season-cell-choice:hover,.season-cell-choice:focus-visible{outline:2px solid #987341;outline-offset:-2px}.trip-region-summary{font-weight:600}
+
+/* Nights are calculated from the trip length, not entered by the user. */
+.budget-trip-controls #trip-nights[readonly]{background:#e2dfd6;color:#78766f;border-color:#c8c5bc;box-shadow:none;cursor:default;-moz-appearance:textfield}.budget-trip-controls #trip-nights[readonly]::-webkit-inner-spin-button,.budget-trip-controls #trip-nights[readonly]::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}
