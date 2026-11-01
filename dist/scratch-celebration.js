@@ -137,8 +137,8 @@
     const nodes=[],now=audio.currentTime;
     const gain=audio.createGain();gain.connect(audio.destination);nodes.push(gain);
     if(kind==='blow'){
-      // Unvoiced, high-frequency breath: a soft "pfff", with no pitched wind tone.
-      const source=audio.createBufferSource(),duration=.78;
+      // A quiet, rounded breath gust with a little low-frequency wind body.
+      const source=audio.createBufferSource(),duration=1.1;
       const buffer=audio.createBuffer(1,Math.ceil(audio.sampleRate*duration),audio.sampleRate);
       const samples=buffer.getChannelData(0);
       for(let i=0;i<samples.length;i++){
@@ -149,13 +149,13 @@
         samples[i]=breath*(1+scatter*.12);
       }
       source.buffer=buffer;
-      const highpass=audio.createBiquadFilter();highpass.type='highpass';highpass.frequency.value=850;highpass.Q.value=.5;
-      const lowpass=audio.createBiquadFilter();lowpass.type='lowpass';lowpass.frequency.value=6500;lowpass.Q.value=.5;
+      const highpass=audio.createBiquadFilter();highpass.type='highpass';highpass.frequency.value=280;highpass.Q.value=.5;
+      const lowpass=audio.createBiquadFilter();lowpass.type='lowpass';lowpass.frequency.value=4800;lowpass.Q.value=.5;
       source.connect(highpass);highpass.connect(lowpass);lowpass.connect(gain);
       gain.gain.setValueAtTime(0,now);
-      gain.gain.linearRampToValueAtTime(.055,now+.035);
-      gain.gain.exponentialRampToValueAtTime(.022,now+.20);
-      gain.gain.exponentialRampToValueAtTime(.0001,now+.72);
+      gain.gain.linearRampToValueAtTime(.060,now+.10);
+      gain.gain.exponentialRampToValueAtTime(.030,now+.40);
+      gain.gain.exponentialRampToValueAtTime(.0001,now+1.02);
       gain.gain.linearRampToValueAtTime(0,now+duration);
       source.start(now);source.stop(now+duration);nodes.push(source,highpass,lowpass);
     }else{
@@ -248,13 +248,13 @@
                 const openness=Math.min(1,stroke.length/Math.max(shape.box.w,shape.box.h)*2);
                 const pressure=.15+.85*Math.sin(Math.PI*local)*openness;
                 run.sound?.update(progress,scratching,pressure);
-                if(scratching&&now-lastDust>24&&dustCount<1800){
+                if(scratching&&now-lastDust>24&&dustCount<3600){
                   lastDust=now;
                   const dx=(stroke.end[0]-stroke.start[0])/stroke.length,dy=(stroke.end[1]-stroke.start[1])/stroke.length;
-                  for(let fleck=0;fleck<6;fleck++){
+                  for(let fleck=0;fleck<12;fleck++){
                     dustCount++;
                     // Coin pushes most flakes into ridges on both sides; a few stay in the groove.
-                    const side=fleck%2?1:-1,offset=fleck===5?(Math.random()-.5)*shape.radius*.6:side*shape.radius*(.65+Math.random()*1.35);
+                    const side=fleck%2?1:-1,offset=fleck%6===5?(Math.random()-.5)*shape.radius*.6:side*shape.radius*(.65+Math.random()*1.35);
                     const along=(Math.random()-.5)*shape.radius*1.6;
                     const px=x-dy*offset+dx*along,py=y+dx*offset+dy*along;
                     const powder=dustCount%4===0;
