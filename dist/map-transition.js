@@ -17,11 +17,15 @@ async function animateCountryMap(key, name) {
   svg.setAttribute('viewBox','0 0 1000 520');
   svg.setAttribute('preserveAspectRatio',key === 'mexico' ? 'xMidYMax meet' : 'xMidYMid meet');
   svg.setAttribute('aria-hidden','true');
-  const selectedId = {egypt:'EGY','new-zealand':'NZL',argentina:'ARG',italy:'ITA',japan:'JPN',portugal:'PRT',mexico:'MEX',thailand:'THA'}[key];
+  const selectedId = {"united-states":"USA","vietnam":"VNM","colombia":"COL","morocco":"MAR",egypt:'EGY','new-zealand':'NZL',argentina:'ARG',italy:'ITA',japan:'JPN',portugal:'PRT',mexico:'MEX',thailand:'THA'}[key];
   let bounds = [Infinity,Infinity,-Infinity,-Infinity];
   for (const feature of data.features) {
     const selected = feature.id === selectedId;
-    const polygons = feature.geometry.type === 'Polygon' ? [feature.geometry.coordinates] : feature.geometry.coordinates;
+    let polygons = feature.geometry.type === 'Polygon' ? [feature.geometry.coordinates] : feature.geometry.coordinates;
+    if(selected&&key==='united-states'){
+      const area=p=>Math.abs(p[0].reduce((sum,a,i,ring)=>{const b=ring[(i+1)%ring.length];return sum+a[0]*b[1]-b[0]*a[1];},0));
+      polygons=[[...polygons].sort((a,b)=>area(b)-area(a))[0]];
+    }
     if (!['Polygon','MultiPolygon'].includes(feature.geometry.type)) continue;
     const path = document.createElementNS(ns,'path');
     const d = polygons.map(polygon => polygon.map(ring => ring.map(([lon,lat],i) => {

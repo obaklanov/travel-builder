@@ -19,3 +19,5 @@ Read the candidate government text and the official page. Edit the appropriate r
 Government page update dates may refer to unrelated sections and are not used as the website's Last checked date. Only an unchanged, successfully fetched approved entry section advances that date.
 
 Sources: https://travel.gc.ca/destinations/ and https://open.canada.ca/data/en/dataset/bef2ebb3-ca9a-485f-aaff-5dc36eb89426 . The public feed does not contain the full entry text; this importer uses the country pages instead. Reuse is attributed to the Government of Canada; Travel Easy is not affiliated with it.
+
+The catalogue expanded to twelve destinations on November 1, 2026, adding United States, Vietnam, Colombia and Morocco. The US source uses a narrative Visas section rather than a Tourist visa label; parsing validates that format explicitly.

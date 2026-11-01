@@ -80,5 +80,45 @@ const countryFacts = {
     "areaShare": "0.38",
     "areaRank": 51,
     "areaCount": 234
+  },
+  "united-states": {
+    "population": 349035494,
+    "populationRank": 3,
+    "populationCount": 234,
+    "populationShare": "4.21",
+    "area": 9372610,
+    "areaRank": 4,
+    "areaShare": "6.89",
+    "areaCount": 234
+  },
+  "vietnam": {
+    "population": 102177431,
+    "populationRank": 16,
+    "populationCount": 234,
+    "populationShare": "1.23",
+    "area": 331212,
+    "areaRank": 67,
+    "areaShare": "0.24",
+    "areaCount": 234
+  },
+  "colombia": {
+    "population": 53936226,
+    "populationRank": 28,
+    "populationCount": 234,
+    "populationShare": "0.65",
+    "area": 1141748,
+    "areaRank": 26,
+    "areaShare": "0.84",
+    "areaCount": 234
+  },
+  "morocco": {
+    "population": 38762441,
+    "populationRank": 41,
+    "populationCount": 234,
+    "populationShare": "0.47",
+    "area": 446550,
+    "areaRank": 58,
+    "areaShare": "0.33",
+    "areaCount": 234
   }
 };

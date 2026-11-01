@@ -87,5 +87,47 @@
     "checkedAt": "2026-11-01",
     "needsReview": false,
     "checkFailed": false
+  },
+  "united-states": {
+    "summary": "Visa-free tourism is generally permitted for up to 6 months.",
+    "notes": [
+      "The border officer determines admission and your permitted stay. Some travellers face exceptions."
+    ],
+    "passport": "For air travel, a Canadian passport must be valid for the duration of your stay.",
+    "sourceUrl": "https://travel.gc.ca/destinations/united-states#entryexit",
+    "checkedAt": "2026-11-01",
+    "needsReview": false,
+    "checkFailed": false
+  },
+  "vietnam": {
+    "summary": "Tourist visa required.",
+    "notes": [
+      "Eligible regular Canadian passport holders can apply for an eVisa for up to 90 days; entry-point and visa conditions apply."
+    ],
+    "passport": "Valid for at least 6 months beyond your expected departure from Vietnam.",
+    "sourceUrl": "https://travel.gc.ca/destinations/vietnam#entryexit",
+    "checkedAt": "2026-11-01",
+    "needsReview": false,
+    "checkFailed": false
+  },
+  "colombia": {
+    "summary": "Visa-free for tourism for up to 90 days.",
+    "notes": [
+      "Complete the Check-Mig immigration form. An entry fee applies to many Canadian visitors; exemptions exist."
+    ],
+    "passport": "Valid for the duration of your stay.",
+    "sourceUrl": "https://travel.gc.ca/destinations/colombia#entryexit",
+    "checkedAt": "2026-11-01",
+    "needsReview": false,
+    "checkFailed": false
+  },
+  "morocco": {
+    "summary": "Visa-free for tourism for stays of less than 90 days.",
+    "notes": [],
+    "passport": "Valid for at least 6 months beyond your expected departure from Morocco.",
+    "sourceUrl": "https://travel.gc.ca/destinations/morocco#entryexit",
+    "checkedAt": "2026-11-01",
+    "needsReview": false,
+    "checkFailed": false
   }
 }

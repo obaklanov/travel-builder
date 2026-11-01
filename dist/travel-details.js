@@ -1,4 +1,9 @@
 const travelData={
+"united-states":{"airports": [["JFK", "New York JFK"], ["MIA", "Miami"], ["LAX", "Los Angeles"], ["SFO", "San Francisco"]], "base": 350, "hours": 2, "costs": [170, 60, 30, 25], "regions": [["New York / Northeast", "WWAABBBBBBAW"], ["Miami / South Florida", "BBBBAAWWWWAB"], ["Los Angeles / Southern California", "AABBBBBBBBAA"], ["Grand Canyon / Southwest", "WWABBAWWBBAW"], ["Pacific Northwest", "WWWAABBBBAWW"]]},
+"vietnam":{"airports": [["HAN", "Hanoi"], ["SGN", "Ho Chi Minh City"], ["DAD", "Da Nang"]], "base": 1500, "hours": 22, "costs": [55, 22, 12, 18], "regions": [["Hanoi / Ha Long Bay", "AABBAWWWWBBB"], ["Da Nang / Hoi An", "ABBBBBAWWWWA"], ["Ho Chi Minh City / Mekong Delta", "BBBBAWWWWWAB"], ["Phu Quoc", "BBBBAWWWWWBB"]]},
+"colombia":{"airports": [["BOG", "Bogot\u00e1"], ["MDE", "Medell\u00edn"], ["CTG", "Cartagena"], ["CLO", "Cali"]], "base": 800, "hours": 6, "costs": [85, 30, 18, 22], "regions": [["Cartagena / Caribbean coast", "BBBAAWWWWWAB"], ["Medell\u00edn / Antioquia", "BBAWWABBAWWB"], ["Bogot\u00e1 / highlands", "BBWWAABBAWWB"], ["Coffee region", "BBAWWABBAWWB"]]},
+"morocco":{"airports": [["CMN", "Casablanca"], ["RAK", "Marrakech"], ["FEZ", "Fes"], ["AGA", "Agadir"]], "base": 950, "hours": 8, "costs": [80, 28, 18, 22], "regions": [["Marrakech / inland cities", "AABBBWWWBBAA"], ["Fes / northern interior", "AABBBWWBBBAA"], ["Essaouira / Atlantic coast", "AABBBBBBBBAA"], ["Merzouga / Sahara edge", "AABBWWWWBBAA"]]},
+
 "egypt":{"airports": [["CAI", "Cairo"], ["HRG", "Hurghada"], ["LXR", "Luxor"], ["SSH", "Sharm el-Sheikh"]], "base": 1300, "hours": 13, "costs": [75, 25, 15, 20], "regions": [["Cairo / Giza", "BBBBAWWWAABB"], ["Luxor / Aswan / Abu Simbel", "BBBAWWWWWABB"], ["Hurghada / Red Sea coast", "AABBBWWBBAAA"], ["White Desert / Farafra", "BBBBAWWWAABB"]]},
 "new-zealand":{"airports": [["AKL", "Auckland"], ["CHC", "Christchurch"], ["WLG", "Wellington"], ["ZQN", "Queenstown"]], "base": 1900, "hours": 18, "costs": [150, 50, 35, 25], "regions": [["Auckland / Northland", "BBBAAWWWAABB"], ["Waikato / Hobbiton / Rotorua", "BBBAAWWWAABB"], ["Wellington / lower North Island", "BBBAAWWWAABB"], ["Queenstown / Southern Lakes", "BBBAAWWWAABB"], ["Milford Sound / Fiordland", "BBBAAWWWAABB"]]},
 
@@ -112,7 +117,7 @@ function getFlightRoutes(key,request=flightRequest(key),offers=verifiedFlightOff
    return [{code,city,price:offer.totalCAD,time:Math.round((Date.parse(outbound.at(-1).arrival)-Date.parse(outbound[0].departure))/360000)/10,verified:true}];
   }).sort((a,b)=>a.price-b.price);
  }
- const d=travelData[key],i=Math.max(0,departureCities.findIndex(r=>r[0]===request.origin)),asia=['japan','thailand'].includes(key);
+ const d=travelData[key],i=Math.max(0,departureCities.findIndex(r=>r[0]===request.origin)),asia=['japan','thailand','vietnam'].includes(key);
  const delta=asia?[0,-200,100,120,180][i]:[0,180,30,130,200][i],dt=asia?[0,-3,1,1,2][i]:[0,3,0,2,3][i];
  return d.airports.map(([code,city],j)=>({code,city,price:d.base+delta+j*110,time:d.hours+dt+j*1.5,verified:false})).sort((a,b)=>a.price-b.price);
 }

@@ -13,9 +13,9 @@ fs.writeFileSync(path.join(root,'dist/country-catalog.json'),JSON.stringify(cata
 const factPath=path.join(root,'dist/country-facts.js');
 const context=vm.createContext({});
 vm.runInContext(fs.readFileSync(factPath,'utf8')+'\nthis.facts=countryFacts;',context);
-const keys={egypt:'EGY','new-zealand':'NZL',argentina:'ARG',italy:'ITA',japan:'JPN',portugal:'PRT',mexico:'MEX',thailand:'THA'};
+const keys={"united-states":"USA","vietnam":"VNM","colombia":"COL","morocco":"MAR",egypt:'EGY','new-zealand':'NZL',argentina:'ARG',italy:'ITA',japan:'JPN',portugal:'PRT',mexico:'MEX',thailand:'THA'};
 for(const [key,code] of Object.entries(keys)){
- const row=countries.find(c=>c.code===code);if(!row||!context.facts[key])throw Error('Missing country '+key);
+ const row=countries.find(c=>c.code===code);if(!row)throw Error('Missing country '+key);context.facts[key] ||= {};
  Object.assign(context.facts[key],{population:row.population,populationRank:row.populationRank,populationCount:countries.length,populationShare:(row.population/populationTotal*100).toFixed(2),area:row.area,areaRank:row.areaRank,areaShare:(row.area/areaTotal*100).toFixed(2),areaCount:countries.length});
 }
 fs.writeFileSync(factPath,'// Population and catalogue: data/worldometer-countries.json; '+source.populationYear+' estimates.\n// Total area and rankings: the same Worldometer source snapshot used by profiles.\nconst countryFacts = '+JSON.stringify(context.facts,null,2)+';\n');

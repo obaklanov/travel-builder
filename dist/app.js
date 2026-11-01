@@ -3,6 +3,11 @@ const guideDetailArtwork={"entry": "<rect x=\"12\" y=\"7\" width=\"36\" height=\
 function guideDetailIcon(kind){return '<svg class="guide-detail-icon" viewBox="0 0 64 64" aria-hidden="true" focusable="false" stroke-width="1.4" stroke-linejoin="round">'+guideDetailArtwork[kind]+'</svg>';}
 
 const countries = {
+"united-states":{"name": "United States", "region": "North America", "prompt": "Prepare for your next adventure."},
+"vietnam":{"name": "Vietnam", "region": "Asia", "prompt": "Prepare for your next adventure."},
+"colombia":{"name": "Colombia", "region": "South America", "prompt": "Prepare for your next adventure."},
+"morocco":{"name": "Morocco", "region": "Africa", "prompt": "Prepare for your next adventure."},
+
 "egypt":{"name": "Egypt", "region": "Africa", "prompt": "Prepare for your next adventure."},
 "new-zealand":{"name": "New Zealand", "region": "Oceania", "prompt": "Prepare for your next adventure."},
 
@@ -94,7 +99,7 @@ document.querySelector('#destination-search')?.addEventListener('submit', event 
   const found = Object.keys(countries).find(key => key === query || countries[key].name.toLocaleLowerCase() === query);
   const message = document.querySelector('#search-message');
   if (found) { message.textContent = ''; if(!document.querySelector('#destination-grid')){const budget = document.querySelector('#trip-budget')?.value.replace(/[$,\s]/g, ''); window.location.href='destinations.html?country='+encodeURIComponent(found)+(budget?'&budget='+encodeURIComponent(budget)+'&currency=CAD':'');return;} showGuide(found); }
-  else message.textContent = query ? 'Our first edition covers Japan, Portugal, Mexico, Thailand, Italy, Argentina, Egypt and New Zealand. Choose one to explore.' : 'Choose a country to get started: Japan, Portugal, Mexico, Thailand, Italy, Argentina, Egypt or New Zealand.';
+  else message.textContent = query ? 'Choose one of our 12 destinations to explore.' : 'Choose a country to explore its trip-planning details.';
 });
 document.querySelectorAll('[data-region]').forEach(button => {
   if (button.tagName !== 'BUTTON') return;

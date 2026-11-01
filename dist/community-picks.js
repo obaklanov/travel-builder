@@ -87,7 +87,7 @@ const communityPicks={
 };
 
 function communitySection(key){
- const p=communityPicks[key];
+ const p=communityPicks[key];if(!p)return '';
  return '<section class="community-section"><h2>Set the mood for your trip. Voted by community</h2><div class="community-picks">'+[['song','Song to set the mood'],['book','Book for the journey'],['film','Film to spark adventure']].map(([type,label])=>{
   const [title,creator,description,bookUrl]=p[type];
   const query=encodeURIComponent(title+' '+creator);

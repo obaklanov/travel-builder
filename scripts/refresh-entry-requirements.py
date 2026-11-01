@@ -26,7 +26,7 @@ def retrieve(key):
   if response.status!=200:raise ValueError('Unexpected HTTP response')
   html=response.read(2500000).decode('utf-8')
  parser=EntryParser();parser.feed(html);text=normalize(''.join(parser.parts))
- if len(text)<500 or 'Regular Canadian passport' not in text or 'Tourist visa:' not in text:raise ValueError('Entry section structure changed or incomplete response')
+ if len(text)<500 or 'passport' not in text.lower() or ('Tourist visa:' not in text and not (key=='united-states' and 'Visas' in text and 'Canadian visitors' in text)):raise ValueError('Entry section structure changed or incomplete response')
  return text
 def refresh_entry(row,text,today):
  updated=dict(row)
