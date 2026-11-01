@@ -126,14 +126,34 @@
   function makeFlag(code,name,reduced){
     const wrapper=document.createElement('div');wrapper.className='scratch-flag';
     const svg=svgNode('svg',{viewBox:'0 0 150 115',role:'img','aria-label':name+' flag waving in the wind'});
-    const defs=svgNode('defs');
-    const filter=svgNode('filter',{id:'scratch-flag-wind',x:'-15%',y:'-15%',width:'140%',height:'140%'});
-    const noise=svgNode('feTurbulence',{type:'fractalNoise',baseFrequency:'.012 .025',numOctaves:2,seed:4,result:'wind'});
-    if(!reduced)noise.append(svgNode('animate',{attributeName:'baseFrequency',values:'.012 .025;.018 .035;.012 .025',dur:'2.8s',repeatCount:'indefinite'}));
-    filter.append(noise,svgNode('feDisplacementMap',{in:'SourceGraphic',in2:'wind',scale:reduced?0:7,xChannelSelector:'R',yChannelSelector:'G'}));defs.append(filter);svg.append(defs);
+    const defs=svgNode('defs');svg.append(defs);
     svg.append(svgNode('path',{d:'M13 8V108',fill:'none',stroke:'#a68e5e','stroke-width':3,'stroke-linecap':'round'}),svgNode('circle',{cx:13,cy:7,r:4,fill:'#d1b574'}));
-    const cloth=svgNode('g',{'class':'scratch-flag-cloth',filter:'url(#scratch-flag-wind)'});
-    cloth.append(svgNode('image',{href:'flags/'+flags[code]+'.svg',x:16,y:13,width:116,height:87,preserveAspectRatio:'xMinYMin meet'}));svg.append(cloth);wrapper.append(svg);return wrapper;
+    const cloth=svgNode('g',{'class':'scratch-flag-cloth'});
+    const strips=28,left=16,top=13,width=116,height=77,frames=32;
+    const wave=(x,phase)=>7*Math.pow(x/width,1.45)*Math.sin(phase-x/width*Math.PI*2.1);
+    // Thin overlapping fabric panels share the same travelling wave at their edges.
+    for(let i=0;i<strips;i++){
+      const x=left+i*width/strips,w=width/strips,translations=[],skews=[],lights=[],shadows=[];
+      for(let frame=0;frame<=frames;frame++){
+        const phase=frame/frames*Math.PI*2;
+        const y0=reduced?0:wave(x-left,phase),y1=reduced?0:wave(x+w-left,phase),slope=(y1-y0)/w;
+        translations.push('0 '+(y0-slope*x).toFixed(4));skews.push((Math.atan(slope)*180/Math.PI).toFixed(4));
+        const fold=Math.sin(phase-(i+.5)/strips*Math.PI*2.1),strength=Math.pow((i+.5)/strips,.7);
+        lights.push((reduced?0:Math.max(0,fold)*.14*strength).toFixed(3));shadows.push((reduced?0:Math.max(0,-fold)*.12*strength).toFixed(3));
+      }
+      const clip=svgNode('clipPath',{id:'flag-panel-'+i});clip.append(svgNode('rect',{x,y:top,width:w+.22,height}));defs.append(clip);
+      const lift=svgNode('g',{transform:'translate('+translations[0]+')'}),bend=svgNode('g',{transform:'skewY('+skews[0]+')'}),panel=svgNode('g',{'clip-path':'url(#flag-panel-'+i+')'});
+      panel.append(svgNode('image',{href:'flags/'+flags[code]+'.svg',x:left,y:top,width,height,preserveAspectRatio:'none'}));
+      const highlight=svgNode('rect',{x,y:top,width:w+.22,height,fill:'#fff7df',opacity:lights[0]}),shadow=svgNode('rect',{x,y:top,width:w+.22,height,fill:'#172522',opacity:shadows[0]});
+      panel.append(highlight,shadow);bend.append(panel);lift.append(bend);cloth.append(lift);
+      if(!reduced){
+        const timing={dur:'3.4s',repeatCount:'indefinite',calcMode:'linear'};
+        lift.append(svgNode('animateTransform',{...timing,attributeName:'transform',type:'translate',values:translations.join(';')}));
+        bend.append(svgNode('animateTransform',{...timing,attributeName:'transform',type:'skewY',values:skews.join(';')}));
+        highlight.append(svgNode('animate',{...timing,attributeName:'opacity',values:lights.join(';')}));shadow.append(svgNode('animate',{...timing,attributeName:'opacity',values:shadows.join(';')}));
+      }
+    }
+    svg.append(cloth);wrapper.append(svg);return wrapper;
   }
   const wait=ms=>new Promise(resolve=>setTimeout(resolve,ms));
   let audio=null,muted=false;
