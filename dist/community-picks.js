@@ -95,3 +95,109 @@ function communitySection(key){
   return '<article><span class="pick-category">'+label.replace(/^(Song|Book|Film)/, '<strong>$1</strong>')+'</span><h3>'+title+'</h3><p class="pick-creator">'+creator+'</p><p>'+description+'</p><div class="resource-links">'+links.map(([text,url])=>'<a href="'+url+'" target="_blank" rel="noopener noreferrer">'+text+' ↗</a>').join('')+'</div></article>';
  }).join('')+'</div></section>';
 }
+
+Object.assign(communityPicks, {
+  "united-states": {
+    "song": [
+      "Flowers (2023)",
+      "Miley Cyrus",
+      "Bright pop for a fresh start.",
+      "https://www.youtube.com/watch?v=G7KNmW9a75Y"
+    ],
+    "book": [
+      "Into the Wild",
+      "Jon Krakauer",
+      "A compelling, cautionary true story of a journey into the American wilderness.",
+      "https://www.penguinrandomhouse.com/books/95440/into-the-wild-by-jon-krakauer/"
+    ],
+    "film": [
+      "The Secret Life of Walter Mitty (2013)",
+      "Ben Stiller · director",
+      "An ordinary dreamer steps into an extraordinary real-world adventure."
+    ]
+  },
+  "vietnam": {
+    "song": [
+      "See Tình (2022)",
+      "Hoàng Thuỳ Linh",
+      "Playful Vietnamese dance-pop with an irresistible chorus.",
+      "https://www.youtube.com/watch?v=gJHSDZfJrRY"
+    ],
+    "book": [
+      "Catfish and Mandala",
+      "Andrew X. Pham",
+      "A bicycle journey through Vietnam becomes a moving exploration of family and belonging.",
+      "https://us.macmillan.com/books/9781429979924/catfishandmandala/"
+    ],
+    "film": [
+      "The Quiet American (2002)",
+      "Phillip Noyce · director",
+      "A tense historical drama set in 1950s Vietnam, based on Graham Greene’s novel."
+    ]
+  },
+  "colombia": {
+    "song": [
+      "Si Antes Te Hubiera Conocido (2024)",
+      "KAROL G",
+      "Sun-soaked merengue-pop from the Colombian star.",
+      "https://www.youtube.com/watch?v=MgsdDfdGdHc"
+    ],
+    "book": [
+      "Love in the Time of Cholera",
+      "Gabriel García Márquez",
+      "A sweeping love story in a vivid Caribbean setting inspired by Colombia.",
+      "https://www.penguinrandomhouseretail.com/book/?isbn=9780307389732"
+    ],
+    "film": [
+      "Encanto (2021)",
+      "Disney · Byron Howard and Jared Bush",
+      "A colourful Colombian-inspired family adventure filled with music and magic."
+    ]
+  },
+  "morocco": {
+    "song": [
+      "NIYA (2020)",
+      "MANAL",
+      "Upbeat Moroccan pop celebrating tradition with a modern pulse.",
+      "https://www.youtube.com/watch?v=e1_yflHZ-jI"
+    ],
+    "book": [
+      "The Caliph’s House",
+      "Tahir Shah",
+      "An adventurous, often funny memoir of restoring a house and starting anew in Casablanca.",
+      "https://www.penguinrandomhouse.com/books/164630/the-caliphs-house-by-tahir-shah/"
+    ],
+    "film": [
+      "Hideous Kinky (1999)",
+      "Gillies MacKinnon · director",
+      "A mother and her daughters seek a different life in 1970s Morocco."
+    ]
+  }
+});
+Object.assign(verifiedBookExtras, {"united-states": [], "vietnam": [], "colombia": [], "morocco": []});
+Object.assign(verifiedFilmLinks, {
+  "united-states": [
+    [
+      "Official film page",
+      "https://www.20thcenturystudios.com/movies/the-secret-life-of-walter-mitty"
+    ]
+  ],
+  "vietnam": [
+    [
+      "Official film page",
+      "https://www.miramax.com/movie/the-quiet-american/"
+    ]
+  ],
+  "colombia": [
+    [
+      "Disney",
+      "https://movies.disney.com/encanto"
+    ]
+  ],
+  "morocco": [
+    [
+      "Prime Video",
+      "https://www.primevideo.com/detail/0QX12YZOYRI808XADWHTTYAP4I"
+    ]
+  ]
+});

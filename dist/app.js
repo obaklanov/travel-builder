@@ -67,14 +67,9 @@ function showGuide(key) {
       <button data-detail="budget">${guideDetailIcon('budget')}<span class="guide-detail-label">Budget and costs</span><span class="guide-detail-arrow" aria-hidden="true">→</span></button>
       <button type="button" data-detail="advice">${guideDetailIcon('advice')}<span class="guide-detail-label">Current Canadian travel advice</span><span class="guide-detail-arrow" aria-hidden="true">→</span></button>
     <section id="trip-detail-panel" class="detail-panel" hidden tabindex="-1" role="region"></section></div>
-    <button class="guide-checklist departure-stamp"><span class="stamp-check" aria-hidden="true">✓</span><span class="stamp-copy"><span class="stamp-eyebrow">READY TO GO?</span><span class="stamp-action">Open departure checklist <span aria-hidden="true">→</span></span></span></button>${communitySection(key)}</div>`;
+    ${communitySection(key)}</div>`;
   const content=document.querySelector('.guide-content');
   content.prepend(content.querySelector('.guide-body'));
-  document.querySelector('.guide-checklist').onclick = () => {
-    if(!document.querySelector('#checklist')){window.location.href='planning.html?tripCountry='+encodeURIComponent(key);return;}
-    document.querySelector('#checklist').scrollIntoView({behavior:'smooth'});
-    document.querySelector('#download-checklist').focus({preventScroll:true});
-  };
   document.querySelectorAll('[data-detail]').forEach(button => {button.id='trip-detail-'+button.dataset.detail;button.setAttribute('aria-expanded','false');button.setAttribute('aria-controls','trip-detail-panel');button.onclick=()=>renderTravelDetail(key,button.dataset.detail);});
   if (!dialog.open) dialog.showModal();
   dialog.scrollTop = 0;

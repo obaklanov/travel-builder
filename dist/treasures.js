@@ -40,3 +40,151 @@ function argentinaTreasures(){return '<section class="thailand-treasures argenti
 
 const newCountryTreasures={"egypt": {"name": "Egypt", "rewardName": "scarab", "reward": "<svg class=\"scarab-reward\" viewBox=\"0 0 100 90\" role=\"img\" aria-label=\"Playful golden scarab profile reward\"><defs><linearGradient id=\"scarab-gold\" x2=\"1\" y2=\"1\"><stop stop-color=\"#ffecab\"/><stop offset=\".5\" stop-color=\"#d8ab51\"/><stop offset=\"1\" stop-color=\"#9c7130\"/></linearGradient></defs><ellipse cx=\"50\" cy=\"80\" rx=\"29\" ry=\"5\" fill=\"#70502b\" opacity=\".14\"/><path d=\"M34 40L17 29l-6 9 14 12m11 5L16 55l-7 10 18-2m11 5L26 80m40-40 17-11 6 9-14 12m-11 5 20 0 7 10-18-2m-11 5 12 12\" fill=\"none\" stroke=\"#a28243\" stroke-width=\"3\" stroke-linecap=\"round\"/><ellipse cx=\"50\" cy=\"53\" rx=\"24\" ry=\"26\" fill=\"url(#scarab-gold)\" stroke=\"#977135\" stroke-width=\"1.5\"/><path d=\"M29 43q21-12 42 0M50 41v36M31 48l15 20m23-20L54 68\" fill=\"none\" stroke=\"#b78a3d\" stroke-width=\"1.6\"/><path d=\"M39 32q-6-14 11-17 17 3 11 17Z\" fill=\"#86aaa0\" stroke=\"#627f72\"/><circle cx=\"44\" cy=\"24\" r=\"2\" fill=\"#f8edc8\"/><circle cx=\"56\" cy=\"24\" r=\"2\" fill=\"#f8edc8\"/><circle cx=\"44\" cy=\"24\" r=\".8\" fill=\"#46584b\"/><circle cx=\"56\" cy=\"24\" r=\".8\" fill=\"#46584b\"/><path d=\"M45 15l-5-7m15 7 5-7M41 34q9 5 18 0\" fill=\"none\" stroke=\"#9f7e42\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><circle cx=\"50\" cy=\"10\" r=\"7\" fill=\"#d8ad57\" stroke=\"#ad8741\"/><path d=\"M34 45q-5 11 1 20\" fill=\"none\" stroke=\"#ffedb1\" stroke-width=\"2\" stroke-linecap=\"round\"/></svg>", "treasures": [{"name": "Pyramids of Giza", "subtitle": "Wonders in the sand", "description": "The monumental pyramids of Khufu, Khafre and Menkaure rise from the Giza plateau, an enduring symbol of ancient Egypt.", "region": "Giza, Egypt", "lat": 29.9792, "lon": 31.1342}, {"name": "Abu Simbel", "subtitle": "Carved into history", "description": "Rock-cut temples beside Lake Nasser, celebrated for the colossal seated statues of Ramesses II guarding the Great Temple.", "region": "Aswan, Egypt", "lat": 22.3372, "lon": 31.6258}, {"name": "White Desert", "subtitle": "A chalk-white dream", "description": "Wind-sculpted chalk formations create a surreal landscape near Farafra. The map marks a point within the White Desert protected area.", "region": "New Valley, Egypt", "lat": 27.3573, "lon": 28.1873}], "icons": ["<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 73l29-49 29 49ZM37 24l9 49M59 64l19-31 16 40H66M6 81h88M22 49l15 4m-20 5 25 4M64 57l14 4\"/><circle cx=\"74\" cy=\"18\" r=\"7\"/></svg>", "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M10 76V28l15-11h50l15 11v48M17 30h66M20 76V53m19 23V53m22 23V53m19 23V53M22 45v-9q7-8 14 0v9l-3 8H25ZM64 45v-9q7-8 14 0v9l-3 8H67ZM24 57h11v19H22Zm40 0h11l3 19H64M44 76V49h12v27M17 82h66\"/></svg>", "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M9 77h82M22 76l4-22q-16-1-18-11 2-12 22-13 23 1 25 13-1 10-20 11l5 22M60 76l4-16q-10-2-10-8 0-8 17-9 17 1 18 9-1 7-15 9l6 15M18 41q11-6 25 0M12 85q11-4 22 0t22 0 22 0M61 28l8-11 10 11\"/></svg>"]}, "new-zealand": {"name": "New Zealand", "rewardName": "kiwi", "reward": "<svg class=\"kiwi-reward\" viewBox=\"0 0 100 90\" role=\"img\" aria-label=\"Round fluffy kiwi bird profile reward\"><defs><radialGradient id=\"kiwi-brown\" cx=\".35\" cy=\".3\"><stop stop-color=\"#b49b72\"/><stop offset=\"1\" stop-color=\"#786447\"/></radialGradient></defs><ellipse cx=\"47\" cy=\"81\" rx=\"30\" ry=\"5\" fill=\"#70502b\" opacity=\".15\"/><path d=\"M35 67l-2 13m24-13 3 13M27 82h13m13 0h14\" stroke=\"#a3834e\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M17 45l-3-3 5-3-3-4 6-2-1-5 6 1 2-5 6 1 3-4 5 3 6-3 4 4 6-1 3 5 6 1 1 5 5 3-2 6 3 4-4 5 1 5-5 3-1 5-6 1-4 4-5-1-5 3-5-3-6 1-4-5-5-1-2-6-5-3 2-5-3-5Z\" fill=\"url(#kiwi-brown)\" stroke=\"#7a684b\" stroke-width=\"1.3\"/><circle cx=\"63\" cy=\"35\" r=\"13\" fill=\"#a48d64\" stroke=\"#806d4d\"/><path d=\"M74 35l21 13-23-7Z\" fill=\"#d5b879\" stroke=\"#a48b57\" stroke-width=\"1.1\"/><circle cx=\"66\" cy=\"32\" r=\"3\" fill=\"#302c22\"/><circle cx=\"67\" cy=\"31\" r=\"1\" fill=\"#f9edce\"/><path d=\"M25 37l4 5m5-11 2 6m9-8v6M24 49l5 3m7-10 3 5m8-6 1 6M30 59l5 2m9-6 1 6m10-11 2 5\" fill=\"none\" stroke=\"#c7b18a\" stroke-width=\"1.5\" stroke-linecap=\"round\"/></svg>", "treasures": [{"name": "Milford Sound", "subtitle": "Fiords & waterfalls", "description": "Piopiotahi / Milford Sound is a dramatic fiord surrounded by sheer cliffs, rainforest and waterfalls. The map marks its visitor waterfront.", "region": "Southland, New Zealand", "lat": -44.6718, "lon": 167.925}, {"name": "Hobbiton", "subtitle": "A little movie magic", "description": "The movie set near Matamata brings the Shire’s grassy hills and round-doored homes to life, explored on guided tours.", "region": "Waikato, New Zealand", "lat": -37.8721, "lon": 175.6829}, {"name": "Sky Tower", "subtitle": "Auckland from above", "description": "Auckland’s landmark observation tower rises above the city, offering sweeping views over its skyline and harbours.", "region": "Auckland, New Zealand", "lat": -36.8484, "lon": 174.7622}], "icons": ["<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M7 72l21-47 15 24 18-33 32 56M19 57l9-22 11 20m12-13 10-17 15 28M8 75q12-5 24 0t24 0 24 0M17 84q10-4 20 0t20 0 20 0M78 51v15m5-8v10\"/></svg>", "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M9 73V51q2-28 41-29 39 1 41 29v22M6 75h88M16 49q34-18 68 0M36 74V53a14 14 0 0 1 28 0v21M43 74V54a7 7 0 0 1 14 0v20\"/><circle cx=\"53\" cy=\"59\" r=\"1.5\"/><circle cx=\"24\" cy=\"56\" r=\"6\"/><circle cx=\"77\" cy=\"56\" r=\"6\"/><path d=\"M12 83h20m36 0h20M66 29V15h8v18M62 15h16M11 42q39-42 78 0\"/></svg>", "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M50 7v21m-3-9h6M43 73l4-31h6l4 31M40 42h20l3-9H37ZM37 33l5-6h16l5 6M35 73h30M30 80h40M48 47h4M14 80V61h9v19m54 0V55h9v25M11 61h15m48-6h15M8 87h84\"/></svg>"]}};
 function renderNewCountryTreasures(key){const c=newCountryTreasures[key];return '<section class="thailand-treasures '+key+'-treasures" data-treasure-country="'+key+'" aria-label="'+c.name+' treasures"><p class="treasures-label treasure-reward-line"><span>TREASURES OF '+c.name.toUpperCase()+' — Collect all 3. Earn your profile '+c.rewardName+'.</span>'+c.reward+'</p><div class="treasure-badges">'+c.treasures.map((t,i)=>'<button type="button" class="treasure-badge" data-treasure="'+i+'" aria-label="Discover '+t.name+'" aria-pressed="false">'+c.icons[i]+'<span class="treasure-caption"><strong>'+t.name+'</strong><span>'+t.subtitle+'</span></span></button>').join('')+'</div><div class="treasure-inline-details" hidden role="region" aria-label="Selected treasure details" aria-live="polite"></div></section>';}
+
+// Shared treasure cards for the latest destinations.
+Object.assign(newCountryTreasures, {
+  "united-states": {
+    "name": "United States",
+    "rewardName": "cowboy hat",
+    "reward": "<svg class=\"country-reward\" viewBox=\"0 0 100 90\" role=\"img\" aria-label=\"Playful cowboy hat profile reward\"><ellipse cx=\"50\" cy=\"80\" rx=\"30\" ry=\"5\" fill=\"#70502b\" opacity=\".15\"/><path d=\"M24 57q7-15 9-35 12-8 17 0 5-8 17 0 2 20 9 35\" fill=\"#c99b60\" stroke=\"#876037\" stroke-width=\"2\"/><path d=\"M10 50q10 17 40 12 30 5 40-12 9 25-40 27Q1 75 10 50Z\" fill=\"#d9b778\" stroke=\"#876037\" stroke-width=\"2\"/><path d=\"M30 48q20 8 40 0v8q-20 8-40 0Z\" fill=\"#9a573b\"/><path d=\"m50 49 3 5 6 1-4 4 1 6-6-3-6 3 1-6-4-4 6-1Z\" fill=\"#e7c55c\"/></svg>",
+    "treasures": [
+      {
+        "name": "Statue of Liberty",
+        "subtitle": "A harbour welcome",
+        "description": "The copper statue on Liberty Island has welcomed generations arriving in New York Harbour.",
+        "region": "New York, United States",
+        "lat": 40.6892,
+        "lon": -74.0445
+      },
+      {
+        "name": "Grand Canyon",
+        "subtitle": "Layers of deep time",
+        "description": "A vast canyon carved by the Colorado River. This map point marks the South Rim visitor area.",
+        "region": "Arizona, United States",
+        "lat": 36.0591,
+        "lon": -112.1093
+      },
+      {
+        "name": "Golden Gate Bridge",
+        "subtitle": "Across the bay",
+        "description": "San Francisco’s orange suspension bridge spans the Golden Gate strait.",
+        "region": "California, United States",
+        "lat": 37.8199,
+        "lon": -122.4783
+      }
+    ],
+    "icons": [
+      "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M34 83h32l-5-10H39ZM40 73l5-35h11l5 35M44 39l-9-16-8-3m20 13 12-9 7 8M29 23V9m-4 2h8M45 25l2-8h8l3 8ZM44 15l-4-5m10 4V6m6 9 5-5M65 32v22h9V32Z\"/></svg>",
+      "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 25h24l12 18 16-6 15-16h18M8 34l17 7 9 25 15 11 16-23 17-12 10-3M19 38l7 20m6-8 8 18m24-24-9 18M10 85q20-11 40-2t40-3M49 77l-4 10\"/></svg>",
+      "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M22 78V23h8v55m40 0V23h8v55M18 29h16m32 0h16M8 62h84M26 27Q50 70 74 27M8 43l18-16m48 0 18 16M14 48v14m8-27v27m14-20v20m10-13v13m10-13v13m10-20v20m17-16v16M8 84q10-5 20 0t20 0 20 0 20 0\"/></svg>"
+    ]
+  },
+  "vietnam": {
+    "name": "Vietnam",
+    "rewardName": "lantern",
+    "reward": "<svg class=\"country-reward\" viewBox=\"0 0 100 90\" role=\"img\" aria-label=\"Glowing silk lantern profile reward\"><ellipse cx=\"50\" cy=\"80\" rx=\"30\" ry=\"5\" fill=\"#70502b\" opacity=\".15\"/><path d=\"M50 6v10m0 54v12\" stroke=\"#967440\" stroke-width=\"2\"/><path d=\"M36 17h28l15 26-15 27H36L21 43Z\" fill=\"#c87550\" stroke=\"#8e593c\" stroke-width=\"2\"/><path d=\"M44 17 35 43l9 27m12-53 9 26-9 27M21 43h58M50 18v51\" fill=\"none\" stroke=\"#f1c777\" stroke-width=\"2\"/><path d=\"M43 77v8m7-9v11m7-10v8\" stroke=\"#bd914b\" stroke-width=\"2\"/></svg>",
+    "treasures": [
+      {
+        "name": "Ha Long Bay",
+        "subtitle": "Limestone & water",
+        "description": "Limestone towers rise from sheltered waters in this iconic bay. The map marks a point among its islands.",
+        "region": "Quảng Ninh, Vietnam",
+        "lat": 20.9101,
+        "lon": 107.1839
+      },
+      {
+        "name": "Hoi An Ancient Town",
+        "subtitle": "Lantern-lit lanes",
+        "description": "Historic merchant houses, riverside lanes and glowing lanterns give Hoi An its distinctive atmosphere.",
+        "region": "Da Nang, Vietnam",
+        "lat": 15.8801,
+        "lon": 108.338
+      },
+      {
+        "name": "Trang An",
+        "subtitle": "Through emerald valleys",
+        "description": "Boat routes weave through caves and limestone valleys. The map marks the main boat departure area.",
+        "region": "Ninh Binh, Vietnam",
+        "lat": 20.2506,
+        "lon": 105.9185
+      }
+    ],
+    "icons": [
+      "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 70l7-27 10-9 9 36m5 0 8-42 9-10 11 52m4 0 8-27 10 27M18 43l5 10m27-21 7 12M8 78q10-5 20 0t20 0 20 0 20 0M18 87q10-4 20 0t20 0 20 0\"/></svg>",
+      "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 72V42h28v30m20 0V42h28v30M8 42l18-14 18 14m12 0 18-14 18 14M20 72V56h12v16m36 0V56h12v16M8 20q42 17 84 0M48 27v7m-7 0h14l5 10-5 10H41l-5-10ZM48 54v9M8 82h84\"/></svg>",
+      "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M7 70l15-40 13 27 15-40 13 36 14-22 16 39M29 68q21-27 42 0M40 66q10-14 20 0M25 76h43l-10 9H36ZM49 75V59m0 3 16 13M8 90h84\"/></svg>"
+    ]
+  },
+  "colombia": {
+    "name": "Colombia",
+    "rewardName": "toucan",
+    "reward": "<svg class=\"country-reward\" viewBox=\"0 0 100 90\" role=\"img\" aria-label=\"Cheerful toucan profile reward\"><ellipse cx=\"50\" cy=\"80\" rx=\"30\" ry=\"5\" fill=\"#70502b\" opacity=\".15\"/><path d=\"M38 40q-14 17-9 31l-9 9 22-4q25-2 24-31Z\" fill=\"#394f4b\" stroke=\"#34443b\" stroke-width=\"2\"/><circle cx=\"53\" cy=\"32\" r=\"20\" fill=\"#405950\"/><path d=\"M59 17q31-4 34 22H62Z\" fill=\"#e9b84e\" stroke=\"#95713a\" stroke-width=\"2\"/><path d=\"M81 22q12 6 12 17H80Z\" fill=\"#c36b42\"/><path d=\"M42 40q20 4 17 25-20 2-17-25\" fill=\"#f1dfb4\"/><circle cx=\"51\" cy=\"28\" r=\"5\" fill=\"#e4d6ae\"/><circle cx=\"52\" cy=\"28\" r=\"2\" fill=\"#26362d\"/><path d=\"M39 74v7m11-7v7M31 82h29\" stroke=\"#9e7d43\" stroke-width=\"2\"/></svg>",
+    "treasures": [
+      {
+        "name": "Cartagena Walled City",
+        "subtitle": "Caribbean history",
+        "description": "Colourful streets, plazas and fortifications frame Cartagena’s historic Caribbean heart. The map marks Plaza de los Coches.",
+        "region": "Bolívar, Colombia",
+        "lat": 10.423,
+        "lon": -75.5508
+      },
+      {
+        "name": "Cocora Valley",
+        "subtitle": "Palms in the clouds",
+        "description": "Towering wax palms rise above green Andean slopes near Salento. The map marks the valley’s visitor area.",
+        "region": "Quindío, Colombia",
+        "lat": 4.637,
+        "lon": -75.488
+      },
+      {
+        "name": "El Peñol Rock",
+        "subtitle": "Steps to the sky",
+        "description": "A huge granite rock near Guatapé rewards its steep staircase climb with views across a reservoir.",
+        "region": "Antioquia, Colombia",
+        "lat": 6.2208,
+        "lon": -75.1798
+      }
+    ],
+    "icons": [
+      "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M10 77V45h80v32M10 45V31h10v8h10v-8h10v14m20 0V31h10v8h10v-8h10v14M42 77V58q8-12 16 0v19M17 55h12m42 0h12M8 84h84M48 44V22h9v22M45 22l8-9 8 9\"/></svg>",
+      "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 78l19-23 18 15 22-20 25 28M48 72V27m0 0Q30 9 20 25q19-3 28 2m0 0Q65 8 79 24q-20-3-31 3m0 0Q29 24 27 40q13-12 21-13m0 0q21-2 23 13Q57 29 48 27M17 84h66\"/></svg>",
+      "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M18 78q-2-45 23-57 24-10 37 22l7 35ZM37 77l4-11 7-3-3-10 7-5-1-12 8-7M32 82h57M8 90q10-4 20 0t20 0 20 0 20 0\"/></svg>"
+    ]
+  },
+  "morocco": {
+    "name": "Morocco",
+    "rewardName": "tea pot",
+    "reward": "<svg class=\"country-reward\" viewBox=\"0 0 100 90\" role=\"img\" aria-label=\"Ornate mint tea pot profile reward\"><ellipse cx=\"50\" cy=\"80\" rx=\"30\" ry=\"5\" fill=\"#70502b\" opacity=\".15\"/><path d=\"M32 37q-15 27 3 36h33q18-12 0-36Z\" fill=\"#b8b8a3\" stroke=\"#747a68\" stroke-width=\"2\"/><path d=\"M36 37h28l-4-8H40ZM50 29v-9m-6 0h12M29 43 10 32l9 25 10 4M71 40q26-7 20 15-4 14-16 6\" fill=\"none\" stroke=\"#858d79\" stroke-width=\"5\"/><path d=\"M35 52q16-11 32 0m-32 8q16 11 32 0M42 43v24m17-24v24\" fill=\"none\" stroke=\"#e9d8a5\" stroke-width=\"2\"/><path d=\"M31 76h43\" stroke=\"#8b815f\" stroke-width=\"3\"/></svg>",
+    "treasures": [
+      {
+        "name": "Jemaa el-Fnaa",
+        "subtitle": "Marrakech comes alive",
+        "description": "Marrakech’s great public square fills with performers, market stalls and food sellers, especially toward evening.",
+        "region": "Marrakech-Safi, Morocco",
+        "lat": 31.6258,
+        "lon": -7.9889
+      },
+      {
+        "name": "Aït Ben Haddou",
+        "subtitle": "An earthen citadel",
+        "description": "A fortified village of earthen buildings stands beside an old caravan route near Ouarzazate.",
+        "region": "Drâa-Tafilalet, Morocco",
+        "lat": 31.047,
+        "lon": -7.131
+      },
+      {
+        "name": "Erg Chebbi",
+        "subtitle": "A sea of dunes",
+        "description": "Sweeping Saharan sand dunes rise near Merzouga. This map point marks a spot within the dune field.",
+        "region": "Drâa-Tafilalet, Morocco",
+        "lat": 31.15,
+        "lon": -4.0
+      }
+    ],
+    "icons": [
+      "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M9 78V49h21v29m-25-29 14-10 15 10M66 78V43h26v35M62 43l17-12 17 12M42 78V24h13v54M39 24h19l-3-8h-13ZM48 16V8M8 84h84M13 57h10m-10 8h10m49-13h12m-12 9h12M35 78V61h27v17\"/></svg>",
+      "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M9 79V43h18V27h15v13h17V24h17v20h15v35M23 79V53h16v26m24 0V52h15v27M29 27v-8h11v8m21-3v-8h13v8M10 44l8-8 9 7M46 79V61h10v18M8 86h84\"/></svg>",
+      "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 77q30-44 61-22 15 10 27 5M6 77q47-12 61-22-5 24 27 25M9 87h83M14 58q20-25 39-19\"/><circle cx=\"77\" cy=\"23\" r=\"10\"/></svg>"
+    ]
+  }
+});

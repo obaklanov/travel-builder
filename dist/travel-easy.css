@@ -169,3 +169,6 @@
 .easy-search #trip-length:focus-visible{outline:3px solid #458be7;outline-offset:4px;}.easy-duration-field{margin-bottom:24px;}
 .filter-suggestions[hidden]{display:none;}.filter-suggestions{position:absolute;top:calc(100% + 8px);left:0;right:0;z-index:10;max-height:230px;overflow-y:auto;padding:6px;background:#fff;border:1px solid #dedee3;border-radius:12px;box-shadow:0 8px 24px #00000012;scrollbar-width:thin;scrollbar-color:#c5c7cc #fff;color-scheme:light;}
 #create-filtered-trip{border:0;border-radius:28px;background:#356bd6;color:#fff;padding:15px 25px;font:600 14px var(--sans);width:100%;margin:24px 0 0;}.easy-search select:disabled{opacity:.65;}#filter-message:empty{display:none;}
+
+/* Playful collection rewards share the established compact badge scale. */
+.country-reward{width:70px;height:60px;flex:0 0 70px;filter:drop-shadow(0 3px 2px #70502b25)}
