@@ -190,3 +190,5 @@ select:not([multiple]):not([size]){appearance:none;-webkit-appearance:none;backg
 @media(max-width:420px){.detail-panel .budget-trip-controls{grid-template-columns:1fr 1fr}.budget-route-info{grid-column:1/-1}}
 
 .budget-suggestions{box-sizing:border-box;height:220px;overscroll-behavior-y:contain;overflow-anchor:none}
+
+.detail-panel a.flight-search-button{display:inline-flex;align-items:center;justify-content:center;min-height:38px;padding:8px 14px;box-sizing:border-box;border:1px solid #80602c;border-radius:5px;background:#b58a42;color:#fffdf4;font-weight:600;font-size:12px;line-height:1.3;text-decoration:none;white-space:nowrap;box-shadow:0 2px 4px #70502b25;transition:background .15s,box-shadow .15s}.detail-panel a.flight-search-button:hover{background:#967033;box-shadow:0 3px 7px #70502b35}.detail-panel a.flight-search-button:focus-visible{outline:3px solid #527b91;outline-offset:3px}
