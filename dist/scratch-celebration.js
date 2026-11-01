@@ -69,6 +69,54 @@
     strokes.splice(0,strokes.length,...ordered);
     return {strokes,step};
   }
+  function residueDensity(box){
+    // A small land-distance field keeps per-flake classification inexpensive.
+    const cell=Math.max(box.w,box.h)/96,pad=7;
+    const width=Math.ceil(box.w/cell)+pad*2,height=Math.ceil(box.h/cell)+pad*2;
+    const originX=box.x-pad*cell,originY=box.y-pad*cell;
+    const land=new Uint8Array(width*height),distance=new Float32Array(width*height);
+    for(let row=0;row<height;row++){
+      const y=originY+(row+.5)*cell;
+      for(const polygon of box.land){
+        const cuts=[];
+        for(const ring of polygon)for(let i=0;i<ring.length;i++){
+          const a=ring[i],b=ring[(i+1)%ring.length];
+          if((a[1]<=y&&b[1]>y)||(b[1]<=y&&a[1]>y))cuts.push(a[0]+(y-a[1])*(b[0]-a[0])/(b[1]-a[1]));
+        }
+        cuts.sort((a,b)=>a-b);
+        for(let i=0;i+1<cuts.length;i+=2){
+          const left=Math.max(0,Math.ceil((cuts[i]-originX)/cell-.5)),right=Math.min(width-1,Math.floor((cuts[i+1]-originX)/cell-.5));
+          for(let col=left;col<=right;col++)land[row*width+col]=1;
+        }
+      }
+    }
+    for(let i=0;i<land.length;i++)distance[i]=land[i]?10000:0;
+    const diagonal=Math.SQRT2;
+    for(let y=1;y<height-1;y++)for(let x=1;x<width-1;x++){
+      const i=y*width+x;if(land[i])distance[i]=Math.min(distance[i],distance[i-1]+1,distance[i-width]+1,distance[i-width-1]+diagonal,distance[i-width+1]+diagonal);
+    }
+    for(let y=height-2;y>0;y--)for(let x=width-2;x>0;x--){
+      const i=y*width+x;if(land[i])distance[i]=Math.min(distance[i],distance[i+1]+1,distance[i+width]+1,distance[i+width-1]+diagonal,distance[i+width+1]+diagonal);
+    }
+    // Scale the interior band for each separate island, including narrow countries.
+    const region=new Int32Array(land.length),depths=[0];let next=0;
+    for(let seed=0;seed<land.length;seed++)if(land[seed]&&!region[seed]){
+      const id=++next,queue=[seed];region[seed]=id;let depth=0;
+      for(let head=0;head<queue.length;head++){
+        const i=queue[head];depth=Math.max(depth,distance[i]);
+        for(const j of [i-1,i+1,i-width,i+width])if(j>=0&&j<land.length&&land[j]&&!region[j]){region[j]=id;queue.push(j);}
+      }
+      depths[id]=depth;
+    }
+    return (x,y)=>{
+      const col=Math.floor((x-originX)/cell),row=Math.floor((y-originY)/cell);
+      if(col<0||col>=width||row<0||row>=height)return 2;
+      const i=row*width+col;if(!land[i])return 2;
+      const band=Math.max(1,Math.min(6,depths[region[i]]*.65));
+      const t=Math.min(1,Math.max(0,(distance[i]-.5)/band));
+      return 2-1.5*t*t*(3-2*t);
+    };
+  }
   function makeStage(feature,color){
     const box=countryShape(feature),padding=Math.max(box.w,box.h)*.11;
     const svg=svgNode('svg',{viewBox:`${box.x-padding} ${box.y-padding} ${box.w+2*padding} ${box.h+2*padding}`,'aria-hidden':'true'});
@@ -121,7 +169,7 @@
     }
     mint.append(svgNode('path',{d:'M-73 -54A91 91 0 0 1 30 -86',fill:'none',stroke:'#fff5cb','stroke-width':2.4,opacity:.8,'stroke-linecap':'round'}));
     coin.append(mint);svg.append(coin);
-    return {svg,strokes,coin,colourPath,box,dust,radius,step};
+    return {svg,strokes,coin,colourPath,box,dust,radius,step,residueDensity:residueDensity(box)};
   }
   function makeFlag(code,name,reduced){
     const wrapper=document.createElement('div');wrapper.className='scratch-flag';
@@ -290,15 +338,18 @@
                 const openness=Math.min(1,stroke.length/Math.max(shape.box.w,shape.box.h)*2);
                 const pressure=.15+.85*Math.sin(Math.PI*local)*openness;
                 run.sound?.update(progress,scratching,pressure);
-                if(scratching&&now-lastDust>24&&dustCount<7200){
+                if(scratching&&now-lastDust>24&&dustCount<14400){
                   lastDust=now;
                   const dx=(stroke.end[0]-stroke.start[0])/stroke.length,dy=(stroke.end[1]-stroke.start[1])/stroke.length;
                   for(let fleck=0;fleck<24;fleck++){
-                    dustCount++;
                     // Coin pushes most flakes into ridges on both sides; a few stay in the groove.
                     const side=fleck%2?1:-1,offset=fleck%6===5?(Math.random()-.5)*shape.radius*.6:side*shape.radius*(.65+Math.random()*1.35);
                     const along=(Math.random()-.5)*shape.radius*1.6;
                     const px=x-dy*offset+dx*along,py=y+dx*offset+dy*along;
+                    const density=shape.residueDensity(px,py);
+                    const copies=Math.floor(density)+(Math.random()<density%1?1:0);
+                    for(let copy=0;copy<copies&&dustCount<14400;copy++){
+                    dustCount++;
                     const powder=dustCount%4===0;
                     const size=scale*(powder?.00065+Math.random()*.0012:.0016+Math.random()*.0024);
                     const angle=Math.random()*360;
@@ -308,6 +359,7 @@
                     if(!powder)flake.append(svgNode('path',{d:`M${-size*.6},${-size*.2}L${size*.5},${size*.08}`,fill:'none',stroke:'#fff3c9','stroke-width':size*.12,opacity:.5}));
                     Object.assign(flake.dataset,{x:String(px),y:String(py),angle:String(angle),drift:String(Math.random()*2-1),cling:String(.04+Math.random()*.17),spin:String((Math.random()*2-1)*200)});
                     shape.dust.append(flake);
+                    }
                   }
                 }
               }
