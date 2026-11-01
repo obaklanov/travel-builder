@@ -215,7 +215,14 @@ function setupSeasonChoice(key,panel){
 for(const [key,airports] of Object.entries({"united-states": [["SEA", "Seattle"]], "vietnam": [["PQC", "Phu Quoc"]], "colombia": [["PEI", "Pereira"]], "argentina": [["IGR", "Puerto Iguazú"], ["FTE", "El Calafate"], ["SLA", "Salta"]], "italy": [["FLR", "Florence"], ["CTA", "Catania"]], "mexico": [["OAX", "Oaxaca"], ["PVR", "Puerto Vallarta"]], "japan": [["CTS", "Sapporo New Chitose"], ["OKA", "Okinawa Naha"]], "portugal": [["FNC", "Funchal"]]}))travelData[key].airports.push(...airports);
 
 function roundBudgetRate(value,index){const step=index===0?10:5;return Math.max(0,Math.min(100000,Math.round((Number(value)||0)/step)*step));}
-function budgetSuggestedAmounts(value,index){const step=index===0?10:5,current=roundBudgetRate(value,index);return Array.from({length:26},(_,i)=>current+(i-10)*step).filter(value=>value>=0&&value<=100000);}
+function budgetSuggestedAmounts(value,index){
+ const current=roundBudgetRate(value,index);
+ if(index===0){
+  const offsets=[10,20,30,40,50,70,90,110,130,150];
+  return [...offsets.map(offset=>current-offset).reverse(),current,...offsets.map(offset=>current+offset)].filter(value=>value>=0&&value<=100000);
+ }
+ return Array.from({length:26},(_,i)=>current+(i-10)*5).filter(value=>value>=0&&value<=100000);
+}
 function setupBudgetAllowances(panel,state,inputs,update){
  const closeAll=()=>panel.querySelectorAll('.budget-suggestions').forEach(list=>{list.hidden=true;list.previousElementSibling.setAttribute('aria-expanded','false');});
  inputs.forEach((input,index)=>{
