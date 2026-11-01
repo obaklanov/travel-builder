@@ -62,9 +62,9 @@ function showGuide(key) {
       <button type="button" data-detail="entry">${guideDetailIcon('entry')}<span class="guide-detail-label">Will you need a visa?</span><span class="guide-detail-arrow" aria-hidden="true">→</span></button>
       <button data-detail="season">${guideDetailIcon('season')}<span class="guide-detail-label">What month will you go?</span><span class="guide-detail-arrow" aria-hidden="true">→</span></button>
       <button data-detail="flights">${guideDetailIcon('flights')}<span class="guide-detail-label">Flights and routing</span><span class="guide-detail-arrow" aria-hidden="true">→</span></button>
+      <button data-detail="budget">${guideDetailIcon('budget')}<span class="guide-detail-label">How much money will you need?</span><span class="guide-detail-arrow" aria-hidden="true">→</span></button>
       <button type="button" data-detail="health">${guideDetailIcon('health')}<span class="guide-detail-label">Health and vaccines</span><span class="guide-detail-arrow" aria-hidden="true">→</span></button>
       <button data-detail="insurance">${guideDetailIcon('insurance')}<span class="guide-detail-label">Travel insurance</span><span class="guide-detail-arrow" aria-hidden="true">→</span></button>
-      <button data-detail="budget">${guideDetailIcon('budget')}<span class="guide-detail-label">Budget and costs</span><span class="guide-detail-arrow" aria-hidden="true">→</span></button>
       <button type="button" data-detail="advice">${guideDetailIcon('advice')}<span class="guide-detail-label">Current Canadian travel advice</span><span class="guide-detail-arrow" aria-hidden="true">→</span></button>
     <section id="trip-detail-panel" class="detail-panel" hidden tabindex="-1" role="region"></section></div>
     ${communitySection(key)}</div>`;
