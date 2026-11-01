@@ -50,21 +50,19 @@ function renderTravelDetail(key,kind){
  const state=getBudgetState(key);
  state.nights=Math.max(0,state.days-1);state.nightsManual=false;
  const flight=getFlightRoutes(key,flightRequest(key,state.days))[0];
- if(!state.flightManual)state.rates[0]=flight.price;
- panel.innerHTML=`<h3>How much money will you need?</h3><p class="estimate-note">Sample CAD allowances per person, to be confirmed. Airfare matches Flights and routing for your departure city; live fares are not connected. Edit amounts to suit your trip. Excludes insurance, visas and major paid activities.</p><div class="departure-controls budget-trip-controls"><p class="budget-route-summary">${departureCities.find(([code])=>code===guideDeparture)?.[1]||guideDeparture} (${guideDeparture}) → ${flight.city} (${flight.code})</p>${departureDateField(key)}<label>Days <input id="trip-days" type="number" min="1" max="365" value="${state.days}"></label><label>Nights <input id="trip-nights" type="number" value="${state.nights}" readonly aria-readonly="true"><small>Days − 1</small></label></div><table><thead><tr><th>Category</th><th>Basis</th><th>CAD allowance</th></tr></thead><tbody>${[['Flights (round trip)','one-time'],['Accommodation','per night'],['Food','per day'],['Internal transport','per day'],['Miscellaneous','per day']].map(([n,b],i)=>`<tr><td>${n}</td><td>${b}</td><td><input aria-label="${n} CAD" class="budget-rate" type="number" min="0" max="100000" value="${state.rates[i]}" style="width:85px"></td></tr>`).join('')}</tbody></table><p class="budget-flight-note" id="budget-flight-note"></p><button type="button" class="budget-auto" id="reset-flight" ${state.flightManual?'':'hidden'}>Use route estimate</button><output id="budget-total" aria-live="polite"></output>`;
+ if(!state.flightManual)state.rates[0]=roundBudgetRate(flight.price,0);
+ state.rates=state.rates.map(roundBudgetRate);
+ panel.innerHTML=`<h3>How much money will you need?</h3><p class="estimate-note">Sample CAD allowances per person, to be confirmed. Airfare matches Flights and routing for your departure city; live fares are not connected. Edit amounts to suit your trip. Excludes insurance, visas and major paid activities.</p><div class="departure-controls budget-trip-controls"><p class="budget-route-summary">${departureCities.find(([code])=>code===guideDeparture)?.[1]||guideDeparture} (${guideDeparture}) → ${flight.city} (${flight.code})</p>${departureDateField(key)}<label>Days <input id="trip-days" type="number" min="1" max="365" value="${state.days}"></label><label>Nights <input id="trip-nights" type="number" value="${state.nights}" readonly aria-readonly="true"><small>Days − 1</small></label></div><table><thead><tr><th>Category</th><th>Basis</th><th>CAD allowance</th></tr></thead><tbody>${[[`Flights (round trip, ${guideDeparture} ↔ ${flight.code})`,'one-time'],['Accommodation','per night'],['Food','per day'],['Internal transport','per day'],['Miscellaneous','per day']].map(([n,b],i)=>`<tr><td>${n}</td><td>${b}</td><td><div class="budget-allowance"><input aria-label="${n} CAD" class="budget-rate" type="number" min="0" max="100000" step="${i===0?10:5}" value="${state.rates[i]}"><button type="button" class="budget-suggestions-toggle" aria-label="Suggested ${i===0?'flight':n.toLowerCase()} amounts" aria-expanded="false" aria-controls="budget-suggestions-${i}">⌄</button><div id="budget-suggestions-${i}" class="budget-suggestions" hidden></div></div></td></tr>`).join('')}</tbody></table><output id="budget-total" aria-live="polite"></output>`;
  const daysInput=panel.querySelector('#trip-days'),nightsInput=panel.querySelector('#trip-nights'),rateInputs=[...panel.querySelectorAll('.budget-rate')];
  const update=()=>{
-  panel.querySelector('#reset-flight').hidden=!state.flightManual;
   const route=getFlightRoutes(key,flightRequest(key,state.days))[0];
-  panel.querySelector('#budget-flight-note').textContent=state.flightManual?'Custom round-trip flight allowance.':`${guideDeparture} ↔ ${route.code} · ${route.verified?'Lowest qualifying quoted fare':'Sample round-trip allowance'}`;
   let dates=panel.querySelector('.budget-date-summary');if(!dates){dates=document.createElement('p');dates.className='budget-date-summary';panel.querySelector('.budget-trip-controls').after(dates);}const datesRequest=flightRequest(key,state.days);dates.textContent='Trip: '+datesRequest.departureDate+' – '+datesRequest.returnDate;
   panel.querySelector('output').textContent='Estimated total: '+new Intl.NumberFormat('en-CA',{style:'currency',currency:'CAD',maximumFractionDigits:0}).format(tripTotalFromRates(state.rates,state.days,state.nights));
  };
- const syncFlight=()=>{if(!state.flightManual){state.rates[0]=getFlightRoutes(key,flightRequest(key,state.days))[0].price;rateInputs[0].value=state.rates[0];}};
+ const syncFlight=()=>{if(!state.flightManual){state.rates[0]=roundBudgetRate(getFlightRoutes(key,flightRequest(key,state.days))[0].price,0);rateInputs[0].value=state.rates[0];}};
  daysInput.oninput=()=>{if(daysInput.value==='')return;state.days=Math.min(365,Math.max(1,Math.floor(Number(daysInput.value)||1)));if(!state.nightsManual){state.nights=Math.max(0,state.days-1);nightsInput.value=state.nights;}syncFlight();update();};
- rateInputs.forEach((input,i)=>input.oninput=()=>{state.rates[i]=Math.max(0,Number(input.value)||0);if(i===0)state.flightManual=true;update();});
+ setupBudgetAllowances(panel,state,rateInputs,update);
  bindDepartureDate(key,panel,()=>{syncFlight();update();});
- panel.querySelector('#reset-flight').onclick=()=>{state.flightManual=false;syncFlight();update();};
  update();
  }
  panel.focus({preventScroll:true});panel.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'nearest'});
@@ -215,3 +213,28 @@ function setupSeasonChoice(key,panel){
 }
 
 for(const [key,airports] of Object.entries({"united-states": [["SEA", "Seattle"]], "vietnam": [["PQC", "Phu Quoc"]], "colombia": [["PEI", "Pereira"]], "argentina": [["IGR", "Puerto Iguazú"], ["FTE", "El Calafate"], ["SLA", "Salta"]], "italy": [["FLR", "Florence"], ["CTA", "Catania"]], "mexico": [["OAX", "Oaxaca"], ["PVR", "Puerto Vallarta"]], "japan": [["CTS", "Sapporo New Chitose"], ["OKA", "Okinawa Naha"]], "portugal": [["FNC", "Funchal"]]}))travelData[key].airports.push(...airports);
+
+function roundBudgetRate(value,index){const step=index===0?10:5;return Math.max(0,Math.min(100000,Math.round((Number(value)||0)/step)*step));}
+function budgetSuggestedAmounts(value,index){const step=index===0?10:5,current=roundBudgetRate(value,index);return Array.from({length:16},(_,i)=>current+(i-5)*step).filter(value=>value>=0&&value<=100000);}
+function setupBudgetAllowances(panel,state,inputs,update){
+ const closeAll=()=>panel.querySelectorAll('.budget-suggestions').forEach(list=>{list.hidden=true;list.previousElementSibling.setAttribute('aria-expanded','false');});
+ inputs.forEach((input,index)=>{
+  const toggle=input.nextElementSibling,list=toggle.nextElementSibling;
+  const commit=()=>{state.rates[index]=roundBudgetRate(input.value,index);input.value=state.rates[index];if(index===0)state.flightManual=true;update();};
+  input.oninput=()=>{if(input.value==='')return;state.rates[index]=Math.max(0,Math.min(100000,Number(input.value)||0));if(index===0)state.flightManual=true;update();};
+  input.onchange=commit;
+  input.onkeydown=event=>{if(event.key==='Escape')closeAll();};
+  toggle.onclick=()=>{
+   const opening=list.hidden;closeAll();if(!opening)return;
+   list.replaceChildren();
+   budgetSuggestedAmounts(input.value,index).forEach(value=>{
+    const option=document.createElement('button');option.type='button';option.textContent='$'+value.toLocaleString('en-CA');option.className=value===roundBudgetRate(input.value,index)?'current':'';
+    option.onclick=()=>{input.value=value;commit();closeAll();input.focus();};list.append(option);
+   });list.hidden=false;toggle.setAttribute('aria-expanded','true');
+  };
+ });
+ panel.onclick=event=>{if(!event.target.closest('.budget-allowance'))closeAll();};
+ panel.onkeydown=event=>{if(event.key==='Escape'){const open=panel.querySelector('.budget-suggestions:not([hidden])');if(open){event.stopPropagation();closeAll();open.previousElementSibling.focus();}}};
+}
+// Shared rounded daily allowances keep entry-level estimates and the editor aligned.
+for(const data of Object.values(travelData))data.costs=data.costs.map(value=>roundBudgetRate(value,1));
