@@ -82,11 +82,8 @@ document.querySelector('.close-dialog').onclick = () => dialog.close();
 dialog.addEventListener('close', () => {
   if (new URLSearchParams(window.location.search).get('returnTo') === 'home') window.location.href = 'index.html';
 });
-dialog.addEventListener('click', event => {
-  if (event.target !== dialog) return;
-  const rect = dialog.getBoundingClientRect();
-  if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) dialog.close();
-});
+// Keep planning open until the user explicitly clicks the corner close button.
+dialog.addEventListener('cancel', event => event.preventDefault());
 document.querySelector('#destination-search')?.addEventListener('submit', event => {
   event.preventDefault();
   if (event.currentTarget.hasAttribute('data-random-trips')) return;
