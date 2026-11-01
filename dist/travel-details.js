@@ -231,11 +231,9 @@ function setupBudgetAllowances(panel,state,inputs,update){
     const option=document.createElement('button');option.type='button';option.textContent='$'+value.toLocaleString('en-CA');option.className=value===roundBudgetRate(input.value,index)?'current':'';
     option.onclick=()=>{input.value=value;commit();closeAll();input.focus();};list.append(option);
    });list.hidden=false;toggle.setAttribute('aria-expanded','true');
-   // Pad both ends so even zero and the upper limit can be centered without moving the page.
+   // Center within the actual options; native scroll limits stop at either data boundary.
    const selected=list.querySelector('.current');
-   const inset=Math.max(0,(list.clientHeight-(selected?.offsetHeight||0))/2);
-   list.style.paddingTop=inset+'px';list.style.paddingBottom=inset+'px';
-   if(selected)list.scrollTop=selected.offsetTop-(list.clientHeight-selected.offsetHeight)/2;
+   if(selected)list.scrollTop=Math.max(0,selected.offsetTop-(list.clientHeight-selected.offsetHeight)/2);
   };
  });
  panel.onclick=event=>{if(!event.target.closest('.budget-allowance'))closeAll();};
