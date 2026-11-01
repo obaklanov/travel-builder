@@ -8,8 +8,8 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css?v=inline-details-1"><link rel="stylesheet" href="atlas-theme.css?v=about-1"><link rel="stylesheet" href="map-transition.css?v=inline-details-1"><script src="map-transition.js?v=unified-planner-1" defer></script><script src="country-facts.js?v=worldometer-234-1" defer></script><script src="entry-requirements.js?v=weekly-entry-1" defer></script><script src="travel-details.js?v=weekly-entry-1" defer></script><script src="community-picks.js?v=egypt-nz-1" defer></script><script src="treasures.js?v=egypt-nz-1" defer></script><script src="app.js?v=inline-details-1" defer></script>
 <link rel="stylesheet" href="clarity.css?v=planning-1">
-<link rel="stylesheet" href="travel-easy.css?v=compass-filters-1">
-<script src="trip-start.js?v=inline-save-1" defer></script>
+<link rel="stylesheet" href="travel-easy.css?v=three-filters-1">
+<script src="trip-start.js?v=three-filters-1" defer></script>
 <script src="user-location.js?v=costs-1" defer></script>
 <script src="vendor/supabase-2.118.0.js" defer></script><script src="profile-config.js?v=travel-easy-1" defer></script><script src="landing-account.js?v=inline-save-1" defer></script><script src="saved-trips.js?v=country-save-1" defer></script>
 </head>
@@ -26,8 +26,9 @@
     <h1 id="hero-title">Your next trip<br>starts here.</h1>
     <p class="easy-intro">A little inspiration. A trip of your own.</p>
     <form id="destination-search" class="easy-search" data-random-trips novalidate>
-      <button class="easy-plan-button" type="submit">Surprise me with a trip</button>
+      <button id="surprise-trip" class="easy-plan-button" type="submit">Surprise me with a trip</button>
       <details class="trip-filters"><summary>Have something in mind? Add filters below.</summary>
+      <div class="easy-duration-field"><label for="trip-length">How many days is your trip?</label><input id="trip-length" name="days" type="text" inputmode="numeric" autocomplete="off" placeholder="Choose or type 1–90 days" aria-describedby="duration-hint"><p id="duration-hint" class="easy-budget-hint">Total trip length, including return travel.</p></div>
       <div id="budget-field" class="easy-budget-field">
         <label for="trip-budget">What’s your total budget? (CAD)</label>
         <input id="trip-budget" name="budget" type="text" inputmode="decimal" autocomplete="off" placeholder="Choose or type an amount" aria-describedby="budget-hint">
@@ -36,8 +37,9 @@
       </div>
       <div id="destination-field" class="easy-destination-field">
       <label for="destination">Where would you like to go?</label>
-      <div class="easy-search-row"><select id="destination"><option value="" selected>Surprise me</option><option value="argentina">Argentina</option><option value="egypt">Egypt</option><option value="italy">Italy</option><option value="japan">Japan</option><option value="mexico">Mexico</option><option value="new-zealand">New Zealand</option><option value="portugal">Portugal</option><option value="thailand">Thailand</option></select></div>
+      <div class="easy-search-row"><select id="destination"><option value="" selected>Choose for me</option><option value="argentina">Argentina</option><option value="egypt">Egypt</option><option value="italy">Italy</option><option value="japan">Japan</option><option value="mexico">Mexico</option><option value="new-zealand">New Zealand</option><option value="portugal">Portugal</option><option value="thailand">Thailand</option></select></div>
       </div>
+      <p id="filter-message" class="search-message" role="status"></p><p class="easy-budget-hint">Matches use estimated flight times and costs, not live availability.</p><button id="create-filtered-trip" class="easy-plan-button" type="submit">Create a trip for me</button>
       </details>
       <p id="search-message" class="search-message" role="status"></p>
     </form>
