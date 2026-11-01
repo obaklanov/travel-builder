@@ -14,7 +14,7 @@
       tell('#profile-name-feedback','');tell('#profile-password-feedback','');dialog.showModal();
     });
     $('#close-edit-profile').addEventListener('click',()=>dialog.close());
-    dialog.addEventListener('click',event=>{if(event.target!==dialog)return;const r=dialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)dialog.close();});
+    dialog.addEventListener('cancel',event=>event.preventDefault());
     dialog.addEventListener('close',()=>{resetPasswords();});
     $('#edit-profile-name').addEventListener('input',()=>tell('#profile-name-feedback',''));
     $('#edit-name-form').addEventListener('submit',async event=>{
