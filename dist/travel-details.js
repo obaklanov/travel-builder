@@ -21,7 +21,7 @@ function renderTravelDetail(key,kind){
  panel.dataset.kind=kind;panel.hidden=false;
  const official='https://travel.gc.ca/destinations/'+key;
  if(kind==='entry'){
-  panel.innerHTML=`<h3>Entry requirements and visas</h3><p>Government of Canada guidance for Canadian passport holders travelling to ${name}.</p><p><a href="${official}#entryexit" target="_blank" rel="noopener noreferrer">Read official passport, visa and entry requirements ↗</a></p><p class="estimate-note">Requirements depend on your passport, purpose of travel and length of stay. Confirm the current rules with your destination’s authorities before booking.</p>`;
+  window.TRAVEL_ENTRY_DETAILS.render(panel,key);
  }else if(kind==='health'){
   panel.innerHTML=`<h3>Health and vaccines</h3><p><a href="${official}#health" target="_blank" rel="noopener noreferrer">Read official health notices and vaccine guidance for ${name} ↗</a></p><p>Discuss your itinerary and health needs with a travel health professional.</p>`;
  }else if(kind==='advice'){

@@ -1,0 +1,91 @@
+{
+  "mexico": {
+    "summary": "Visa-free for tourism for up to 180 days.",
+    "notes": [
+      "The immigration officer determines your permitted stay; 180 days is not guaranteed."
+    ],
+    "passport": "Valid for the duration of your stay.",
+    "sourceUrl": "https://travel.gc.ca/destinations/mexico#entryexit",
+    "checkedAt": "2026-11-01",
+    "needsReview": false,
+    "checkFailed": false
+  },
+  "japan": {
+    "summary": "Visa-free for tourism for up to 90 days.",
+    "notes": [],
+    "passport": "Valid for the duration of your stay.",
+    "sourceUrl": "https://travel.gc.ca/destinations/japan#entryexit",
+    "checkedAt": "2026-11-01",
+    "needsReview": false,
+    "checkFailed": false
+  },
+  "portugal": {
+    "summary": "Visa-free for tourism for up to 90 days in any 180-day period.",
+    "notes": [
+      "The limit covers your combined stays across the Schengen area.",
+      "ETIAS applications are not yet open; check the latest requirements before travel."
+    ],
+    "passport": "Valid for at least 3 months after leaving the Schengen area.",
+    "sourceUrl": "https://travel.gc.ca/destinations/portugal#entryexit",
+    "checkedAt": "2026-11-01",
+    "needsReview": false,
+    "checkFailed": false
+  },
+  "italy": {
+    "summary": "Visa-free for tourism for up to 90 days in any 180-day period.",
+    "notes": [
+      "The limit covers your combined stays across the Schengen area.",
+      "ETIAS applications are not yet open; check the latest requirements before travel."
+    ],
+    "passport": "Valid for at least 3 months after leaving the Schengen area.",
+    "sourceUrl": "https://travel.gc.ca/destinations/italy#entryexit",
+    "checkedAt": "2026-11-01",
+    "needsReview": false,
+    "checkFailed": false
+  },
+  "argentina": {
+    "summary": "Visa-free for tourism.",
+    "notes": [
+      "Check the permitted length of stay in the official guidance or with Argentine authorities."
+    ],
+    "passport": "Valid for the duration of your stay.",
+    "sourceUrl": "https://travel.gc.ca/destinations/argentina#entryexit",
+    "checkedAt": "2026-11-01",
+    "needsReview": false,
+    "checkFailed": false
+  },
+  "thailand": {
+    "summary": "Visa-free for tourism for up to 30 days.",
+    "notes": [
+      "Complete the Thailand Digital Arrival Card before arrival."
+    ],
+    "passport": "Valid for at least 6 months upon entry.",
+    "sourceUrl": "https://travel.gc.ca/destinations/thailand#entryexit",
+    "checkedAt": "2026-11-01",
+    "needsReview": false,
+    "checkFailed": false
+  },
+  "egypt": {
+    "summary": "Tourist visa required.",
+    "notes": [
+      "An eVisa before travel or a 30-day visa on arrival is available to Canadian passport holders.",
+      "Different conditions apply to some Sinai-only visits; see official guidance."
+    ],
+    "passport": "Valid for at least 6 months after your expected departure from Egypt.",
+    "sourceUrl": "https://travel.gc.ca/destinations/egypt#entryexit",
+    "checkedAt": "2026-11-01",
+    "needsReview": false,
+    "checkFailed": false
+  },
+  "new-zealand": {
+    "summary": "Visa-free for tourism for up to 90 days; NZeTA required.",
+    "notes": [
+      "Obtain your NZeTA before travel. The tourism levy and a New Zealand Traveller Declaration also apply."
+    ],
+    "passport": "Valid for at least 3 months after your expected departure from New Zealand.",
+    "sourceUrl": "https://travel.gc.ca/destinations/new-zealand#entryexit",
+    "checkedAt": "2026-11-01",
+    "needsReview": false,
+    "checkFailed": false
+  }
+}

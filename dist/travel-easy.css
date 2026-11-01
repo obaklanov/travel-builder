@@ -158,3 +158,5 @@
 }
 
 #guide-dialog .guide-links>.detail-panel{min-width:0;margin:0 0 10px;padding:18px 14px;background:#fff8e733;border-top:0;border-bottom:1px solid #c9b48e;}#guide-dialog .guide-links>.detail-panel[hidden]{display:none;}#guide-dialog .guide-links>button[aria-expanded="true"]{color:#795321;background:#d8bd8525;}#guide-dialog .detail-panel p{font-size:12px;line-height:1.7;}
+
+.entry-scope{font-size:11px!important;color:#84704e!important}.entry-summary{font-size:15px!important;font-weight:600;line-height:1.55!important}.entry-note{margin:8px 0;}.entry-checked{font-size:11px!important;color:#84704e!important;margin:14px 0 8px;}.entry-refresh-note{padding:10px;border-left:2px solid #ae8650;background:#d9be8922;font-size:11px!important;}

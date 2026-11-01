@@ -1,0 +1,41 @@
+name: Weekly entry requirements check
+on:
+  schedule:
+    - cron: '0 11 * * 1'
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  refresh-and-publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check official entry sections
+        run: python scripts/refresh-entry-requirements.py
+      - name: Save dated snapshots and review flags
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/entry-requirements-reviewed.json data/entry-requirements-review.json dist/entry-requirements.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Refresh dated entry requirement checks"
+            git push origin HEAD:main
+          fi
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - name: Publish refreshed snapshots
+        id: deployment
+        uses: actions/deploy-pages@v4
