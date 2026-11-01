@@ -4,7 +4,7 @@
   const load=()=>snapshot ||= fetch('entry-requirements.json',{cache:'no-cache'}).then(response=>{if(!response.ok)throw Error('Entry data unavailable');return response.json();}).catch(error=>{snapshot=null;throw error;});
   async function render(panel,key){
     panel.dataset.entryKey=key;
-    const heading=document.createElement('h3');heading.textContent='Will you need a visa?';
+    const heading=document.createElement('h3');heading.textContent='VISA. Do you need it?';
     const scope=document.createElement('p');scope.className='entry-scope';scope.textContent='Regular Canadian passport · Tourism';
     const summary=document.createElement('p');summary.className='entry-summary';summary.textContent='Checking saved guidance…';
     const source=document.createElement('a');source.href='https://travel.gc.ca/destinations/'+key+'#entryexit';source.target='_blank';source.rel='noopener noreferrer';source.textContent='Latest requirements and other visa types ↗';
