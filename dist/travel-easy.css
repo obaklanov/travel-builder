@@ -1,5 +1,5 @@
 /* Travel Easy: restrained, readable and focused on the next action. */
-.site-header,.interior-page .site-header {background:#fff; color:#202124; border-color:#ececef;}
+.site-header,.interior-page .site-header {background:var(--paper); color:#202124; border-color:var(--line);}
 .site-header .brand {font-size:14px; letter-spacing:1.2px; white-space:nowrap;}
 .site-header nav a[aria-current="page"] {color:#202124; border-bottom-color:#202124;}
 .site-header nav .profile-nav {border-color:#bbbfc5;}
