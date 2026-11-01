@@ -31,13 +31,19 @@ function renderTravelDetail(key,kind){
   panel.innerHTML=`<h3>Health and vaccines</h3><p><a href="${official}#health" target="_blank" rel="noopener noreferrer">Read official health notices and vaccine guidance for ${name} ↗</a></p><p>Discuss your itinerary and health needs with a travel health professional.</p>`;
  }else if(kind==='advice'){
   panel.innerHTML=`<h3>Current Canadian travel advice</h3><p><a href="${official}" target="_blank" rel="noopener noreferrer">Check the latest Government of Canada advice for ${name} ↗</a></p><p>Review the risk level and any regional advisories for your route.</p>`;
+ }else if(kind==='flights'&&!getBudgetState(key).regionChoice){
+ panel.innerHTML='<h3>Flights and routing</h3><p>First choose your region and travel month.</p><button type="button" id="choose-travel-season">Choose region and month →</button>';
+ panel.querySelector('#choose-travel-season').onclick=()=>renderTravelDetail(key,'season');
  }else if(kind==='flights'){
- panel.innerHTML=`<h3>Flights and routing</h3><p class="estimate-note">Illustrative CAD round-trip economy allowances and one-way journey times, to be confirmed. These are not current fares, schedules or ranked live results. Enter your dates in the linked flight search to compare actual options.</p><div class="departure-controls"><label>Departure city <select id="departure-city">${departureCities.map(([code,n])=>`<option value="${code}" ${code===guideDeparture?'selected':''}>${n} (${code})</option>`).join('')}</select></label>${departureDateField(key)}</div><div id="route-results"></div>`;
+ panel.innerHTML=`<h3>Flights and routing</h3><p class="trip-region-summary">${getBudgetState(key).regionChoice.region} · ${travelMonthLabel(getBudgetState(key).departureDate.slice(0,7))}</p><p class="estimate-note">Illustrative CAD round-trip economy allowances and one-way journey times, to be confirmed. These are not current fares, schedules or ranked live results. Enter your dates in the linked flight search to compare actual options.</p><div class="departure-controls"><label>Departure city <select id="departure-city">${departureCities.map(([code,n])=>`<option value="${code}" ${code===guideDeparture?'selected':''}>${n} (${code})</option>`).join('')}</select></label>${departureDateField(key)}</div><div id="route-results"></div>`;
  const update=()=>{guideDeparture=panel.querySelector('select').value;
  const request=flightRequest(key,getBudgetState(key).days),routes=getFlightRoutes(key,request);
+ panel.querySelector('.trip-region-summary').textContent=getBudgetState(key).regionChoice.region+' · '+travelMonthLabel(request.departureDate.slice(0,7));
  panel.querySelector('#route-results').innerHTML=`<div class="table-scroll"><table><thead><tr><th>Arrival hub</th><th>Return CAD</th><th>Journey out</th><th>Dates & fares</th></tr></thead><tbody>${routes.map(r=>`<tr><td>${r.city} (${r.code})</td><td>${r.verified?'':'Sample '}$${r.price}</td><td>${r.verified?'':'~'}${r.time} h</td><td><a target="_blank" rel="noopener noreferrer" href="${flightSearchUrl(request,r.code)}">Search ↗</a></td></tr>`).join('')}</tbody></table></div><p>Connections, season and baggage can change the total considerably.</p>`;};panel.querySelector('select').onchange=update;bindDepartureDate(key,panel,update);update();
  }else if(kind==='season'){
  panel.innerHTML=`<h3>Best month to go</h3><p class="estimate-note">Draft seasonal guide — classifications to be confirmed against regional climate sources. BEST = generally milder/drier sightseeing conditions; AVERAGE = mixed conditions; WORST = less favourable heat, rain or cold for general sightseeing. This is not a safety forecast or a rating for skiing, festivals or every activity.</p><div class="table-scroll"><table class="season-table"><colgroup><col class="season-region-col">${Array.from({length:12},()=>'<col class="season-month-col">').join('')}</colgroup><thead><tr><th>Region</th>${['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'].map(m=>`<th>${m}</th>`).join('')}</tr></thead><tbody>${d.regions.map(([region,months])=>`<tr><th>${region}</th>${[...months].map(c=>{const text={B:'BEST',A:'AVERAGE',W:'WORST'}[c];return `<td class="${text.toLowerCase()}">${text}</td>`}).join('')}</tr>`).join('')}</tbody></table></div><p><a href="https://climateknowledgeportal.worldbank.org/" target="_blank" rel="noopener noreferrer">Explore World Bank climate data ↗</a></p>`;
+
+ setupSeasonChoice(key,panel);
  }else if(kind==='insurance'){
  panel.innerHTML=`<h3>Travel insurance</h3><p>Start with emergency medical cover, then assess trip cancellation, interruption and baggage cover against your bookings and existing benefits.</p><ul><li>Check medical evacuation and repatriation.</li><li>Confirm pre-existing condition and stability clauses in writing.</li><li>Check deductibles, activity exclusions, destination advisories and coverage for the full trip.</li><li>Check whether the insurer pays hospitals directly and offers 24-hour assistance.</li></ul><p class="estimate-note">Price requires a personal quote: age, health, destination, duration, deductible and coverage all matter. For this prototype only, allow CAD $5/day as a planning placeholder, not an insurer quote or coverage recommendation.</p><p><a href="https://travel.gc.ca/travelling/documents/travel-insurance" target="_blank" rel="noopener noreferrer">Government of Canada: choosing coverage ↗</a></p>`;
  }else{
@@ -83,9 +89,9 @@ function flightRequest(key,days=30,now=new Date()){
  if((budgetStates[key]?.departureDate || (params.get('country')===key && params.get('returnTo')==='home')) && validTripDate(requestedStart)) {
   const tripStart=new Date(requestedStart+'T12:00:00');
   const tripEnd=new Date(tripStart);tripEnd.setDate(tripEnd.getDate()+Math.max(0,days-1));
-  return {origin:guideDeparture,key,departureDate:requestedStart,returnDate:date(tripEnd)};
+  return {origin:guideDeparture,key,regionIndex:budgetStates[key]?.regionChoice?.index,departureDate:requestedStart,returnDate:date(tripEnd)};
  }
- return {origin:guideDeparture,key,departureDate:date(start),returnDate:date(end)};
+ return {origin:guideDeparture,key,regionIndex:budgetStates[key]?.regionChoice?.index,departureDate:date(start),returnDate:date(end)};
 }
 function isEligibleFlightOffer(offer,request,now=Date.now()){
  if(offer.origin!==request.origin||offer.country!==request.key||offer.departureDate!==request.departureDate||offer.returnDate!==request.returnDate||offer.currency!=='CAD'||offer.cabin!=='economy'||!Number.isFinite(offer.totalCAD)||offer.totalCAD<=0||offer.selfTransfer!==false||!/^https:\/\//.test(offer.sourceUrl||''))return false;
@@ -110,7 +116,7 @@ function isEligibleFlightOffer(offer,request,now=Date.now()){
 function getFlightRoutes(key,request=flightRequest(key),offers=verifiedFlightOffers){
  const eligible=offers.filter(o=>isEligibleFlightOffer(o,request));
  if(eligible.length){
-  return travelData[key].airports.flatMap(([code,city])=>{
+  return regionalAirports(key,request).flatMap(([code,city])=>{
    const offer=eligible.filter(o=>o.destination===code).sort((a,b)=>a.totalCAD-b.totalCAD)[0];
    if(!offer)return [];
    const outbound=offer.legs[0].segments;
@@ -119,7 +125,7 @@ function getFlightRoutes(key,request=flightRequest(key),offers=verifiedFlightOff
  }
  const d=travelData[key],i=Math.max(0,departureCities.findIndex(r=>r[0]===request.origin)),asia=['japan','thailand','vietnam'].includes(key);
  const delta=asia?[0,-200,100,120,180][i]:[0,180,30,130,200][i],dt=asia?[0,-3,1,1,2][i]:[0,3,0,2,3][i];
- return d.airports.map(([code,city],j)=>({code,city,price:d.base+delta+j*110,time:d.hours+dt+j*1.5,verified:false})).sort((a,b)=>a.price-b.price);
+ return d.airports.map(([code,city],j)=>({code,city,price:d.base+delta+j*110,time:d.hours+dt+j*1.5,verified:false})).filter(route=>regionalAirports(key,request).some(([code])=>code===route.code)).sort((a,b)=>a.price-b.price);
 }
 function flightSearchUrl(request,destination){
  const query=`round trip economy flights ${request.origin} to ${destination} departing ${request.departureDate} returning ${request.returnDate} maximum 2 stops each way layovers no longer than 4 hours`;
@@ -148,6 +154,7 @@ function departureForLocation(label,latitude,longitude) {
 }
 function quickTripEstimate(key,days,origin,start,end) {
  const request={...flightRequest(key,days),origin};
+ delete request.regionIndex; // Entry-level suggestions remain independent of mid-level choices.
  if(start&&end){request.departureDate=start;request.returnDate=end;}
  const flight=getFlightRoutes(key,request)[0];
  return {total:tripTotalFromRates([flight.price,...travelData[key].costs],days),verified:flight.verified};
@@ -168,6 +175,7 @@ function bindDepartureDate(key,panel,onChange) {
  input.addEventListener('change',()=>{
   if(!validTripDate(input.value)){input.value=flightRequest(key,getBudgetState(key).days).departureDate;return;}
   getBudgetState(key).departureDate=input.value;
+  if(getBudgetState(key).regionChoice)getBudgetState(key).regionChoice.month=input.value.slice(0,7);
   const params=new URLSearchParams(location.search);
   if(params.get('country')===key){
    const request=flightRequest(key,getBudgetState(key).days);
@@ -177,3 +185,35 @@ function bindDepartureDate(key,panel,onChange) {
   onChange();
  });
 }
+
+// Each seasonal region has explicit arrival gateways; some require onward travel.
+const regionGateways = {"united-states": [["JFK"], ["MIA"], ["LAX"], ["LAX"], ["SEA"]], "vietnam": [["HAN"], ["DAD"], ["SGN"], ["PQC"]], "colombia": [["CTG"], ["MDE"], ["BOG"], ["PEI"]], "morocco": [["RAK"], ["FEZ"], ["AGA"], ["CMN"]], "egypt": [["CAI"], ["LXR"], ["HRG"], ["CAI"]], "new-zealand": [["AKL"], ["AKL"], ["WLG"], ["ZQN"], ["ZQN"]], "argentina": [["EZE"], ["IGR"], ["MDZ"], ["FTE"], ["BRC"], ["SLA"]], "italy": [["FCO"], ["VCE"], ["FLR"], ["NAP"], ["CTA"], ["VCE"]], "mexico": [["CUN"], ["MEX"], ["OAX"], ["PVR"], ["SJD"]], "japan": [["HND", "NRT", "KIX"], ["CTS"], ["OKA"]], "portugal": [["LIS"], ["OPO"], ["FAO"], ["FNC"], ["PDL"]], "thailand": [["BKK"], ["CNX"], ["HKT"], ["USM"]]};
+function regionalAirports(key,request){
+ const codes=regionGateways[key]?.[request.regionIndex];
+ return codes?travelData[key].airports.filter(([code])=>codes.includes(code)):travelData[key].airports;
+}
+function travelMonthLabel(value){return new Date(value+'-01T12:00:00').toLocaleDateString('en-CA',{month:'long',year:'numeric'});}
+function setupSeasonChoice(key,panel){
+ const state=getBudgetState(key),d=travelData[key],current=flightRequest(key,state.days).departureDate;
+ const box=document.createElement('form');box.className='season-choice';
+ box.innerHTML='<div class="departure-controls"><label>Travel region <select id="travel-region" required><option value="">Choose a region</option>'+d.regions.map(([region],i)=>'<option value="'+i+'" '+(state.regionChoice?.index===i?'selected':'')+'>'+region+'</option>').join('')+'</select></label><label>Travel month <input type="month" id="travel-month" min="'+new Date().toISOString().slice(0,7)+'" value="'+(state.regionChoice?.month||current.slice(0,7))+'" required></label></div><button type="submit" class="season-confirm">Use this region and month →</button><p class="season-choice-status" role="status"></p>';
+ panel.querySelector('h3').after(box);
+ panel.querySelectorAll('.season-table tbody tr').forEach((row,index)=>{
+  [...row.querySelectorAll('td')].forEach((cell,month)=>{
+   const text=cell.textContent;const button=document.createElement('button');button.type='button';button.className='season-cell-choice';button.textContent=text;
+   button.setAttribute('aria-label',d.regions[index][0]+', '+['January','February','March','April','May','June','July','August','September','October','November','December'][month]+': '+text);
+   button.onclick=()=>{box.querySelector('#travel-region').value=String(index);const now=new Date(),year=now.getFullYear()+(month<now.getMonth()?1:0);box.querySelector('#travel-month').value=year+'-'+String(month+1).padStart(2,'0');box.querySelector('.season-choice-status').textContent='Selected '+d.regions[index][0]+'. Confirm below the selectors to continue.';};cell.replaceChildren(button);
+  });
+ });
+ box.onsubmit=event=>{
+  event.preventDefault();const region=box.querySelector('#travel-region'),month=box.querySelector('#travel-month');
+  if(!region.value||!/^\d{4}-\d{2}$/.test(month.value)||month.value<new Date().toISOString().slice(0,7)){box.querySelector('.season-choice-status').textContent='Choose a region and a current or future month.';return;}
+  const index=Number(region.value),oldDay=Number(current.slice(8)),[year,m]=month.value.split('-').map(Number);
+  const now=new Date(),minimum=month.value===now.toISOString().slice(0,7)?now.getDate():1;
+  const day=Math.max(minimum,Math.min(oldDay,new Date(year,m,0).getDate()));
+  state.departureDate=month.value+'-'+String(day).padStart(2,'0');state.regionChoice={index,region:d.regions[index][0],month:month.value};
+  renderTravelDetail(key,'flights');
+ };
+}
+
+for(const [key,airports] of Object.entries({"united-states": [["SEA", "Seattle"]], "vietnam": [["PQC", "Phu Quoc"]], "colombia": [["PEI", "Pereira"]], "argentina": [["IGR", "Puerto Iguazú"], ["FTE", "El Calafate"], ["SLA", "Salta"]], "italy": [["FLR", "Florence"], ["CTA", "Catania"]], "mexico": [["OAX", "Oaxaca"], ["PVR", "Puerto Vallarta"]], "japan": [["CTS", "Sapporo New Chitose"], ["OKA", "Okinawa Naha"]], "portugal": [["FNC", "Funchal"]]}))travelData[key].airports.push(...airports);

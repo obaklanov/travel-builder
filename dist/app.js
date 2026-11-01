@@ -60,8 +60,8 @@ function showGuide(key) {
     <h2 id="guide-title">7 KEY details for YOUR trip to ${country.name}</h2>
     <div class="guide-links">
       <button type="button" data-detail="entry">${guideDetailIcon('entry')}<span class="guide-detail-label">Entry requirements and visas</span><span class="guide-detail-arrow" aria-hidden="true">→</span></button>
-      <button data-detail="flights">${guideDetailIcon('flights')}<span class="guide-detail-label">Flights and routing</span><span class="guide-detail-arrow" aria-hidden="true">→</span></button>
       <button data-detail="season">${guideDetailIcon('season')}<span class="guide-detail-label">Best month to go</span><span class="guide-detail-arrow" aria-hidden="true">→</span></button>
+      <button data-detail="flights">${guideDetailIcon('flights')}<span class="guide-detail-label">Flights and routing</span><span class="guide-detail-arrow" aria-hidden="true">→</span></button>
       <button type="button" data-detail="health">${guideDetailIcon('health')}<span class="guide-detail-label">Health and vaccines</span><span class="guide-detail-arrow" aria-hidden="true">→</span></button>
       <button data-detail="insurance">${guideDetailIcon('insurance')}<span class="guide-detail-label">Travel insurance</span><span class="guide-detail-arrow" aria-hidden="true">→</span></button>
       <button data-detail="budget">${guideDetailIcon('budget')}<span class="guide-detail-label">Budget and costs</span><span class="guide-detail-arrow" aria-hidden="true">→</span></button>
