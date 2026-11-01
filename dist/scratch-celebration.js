@@ -275,7 +275,7 @@
           run.sound?.stop();run.sound=null;
           shape.coin.style.opacity='0';shape.colourPath.removeAttribute('mask');
           if(run.cancelled)break;
-          caption.textContent='One last puff…';run.effect=finishSound('blow');
+          caption.textContent='';run.effect=finishSound('blow');
           await new Promise(resolve=>{const start=performance.now();const frame=now=>{
             if(run.cancelled){resolve();return;}
             const p=Math.min(1,(now-start)/2000);
