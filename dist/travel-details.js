@@ -229,7 +229,7 @@ function setupBudgetAllowances(panel,state,inputs,update){
    list.replaceChildren();
    budgetSuggestedAmounts(input.value,index).forEach(value=>{
     const option=document.createElement('button');option.type='button';option.textContent='$'+value.toLocaleString('en-CA');option.className=value===roundBudgetRate(input.value,index)?'current':'';
-    option.onclick=()=>{input.value=value;commit();closeAll();input.focus();};list.append(option);
+    option.onclick=event=>{input.value=value;commit();closeAll();if(event.detail===0)input.focus();else input.blur();};list.append(option);
    });list.hidden=false;toggle.setAttribute('aria-expanded','true');
    // Center within the actual options; native scroll limits stop at either data boundary.
    const selected=list.querySelector('.current');
