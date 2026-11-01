@@ -97,8 +97,30 @@
     svg.append(colourPath);
     const dust=svgNode('g',{'class':'scratch-dust'});svg.append(dust);
     const coin=svgNode('g',{'class':'scratch-coin'});
-    coin.append(svgNode('circle',{r:radius,fill:'#d7b365',stroke:'#8e6d32','stroke-width':radius*.1}),svgNode('circle',{r:radius*.76,fill:'#f0d69a',stroke:'#b68b3d','stroke-width':radius*.045}));
-    const coinMark=svgNode('text',{x:0,y:radius*.35,'text-anchor':'middle','font-size':radius*1.1,'font-family':'Georgia, serif',fill:'#9b7537'});coinMark.textContent='TE';coin.append(coinMark);svg.append(coin);
+    // Freshly struck gold, with the ornament of an antique navigation medallion.
+    const rim=svgNode('linearGradient',{id:'coin-rim',x1:'0%',y1:'0%',x2:'85%',y2:'100%'});
+    for(const [offset,fill] of [['0%','#fff0b3'],['24%','#e4b955'],['49%','#a57324'],['70%','#f9dc83'],['100%','#bc8831']])rim.append(svgNode('stop',{offset,'stop-color':fill}));
+    const face=svgNode('radialGradient',{id:'coin-face',cx:'34%',cy:'28%',r:'82%'});
+    for(const [offset,fill] of [['0%','#fae8a8'],['58%','#dcb863'],['100%','#b18432']])face.append(svgNode('stop',{offset,'stop-color':fill}));defs.append(rim,face);
+    const mint=svgNode('g',{transform:`scale(${radius/100})`});
+    mint.append(svgNode('circle',{cy:4,r:100,fill:'#80541f'}),svgNode('circle',{r:100,fill:'url(#coin-rim)',stroke:'#805923','stroke-width':2}),svgNode('circle',{r:91,fill:'url(#coin-face)',stroke:'#ffecac','stroke-width':2}),svgNode('circle',{r:75,fill:'none',stroke:'#99702b','stroke-width':1.7}),svgNode('circle',{r:71,fill:'none',stroke:'#f9dfa0','stroke-width':1}));
+    for(let i=0;i<44;i++){
+      const angle=i*Math.PI*2/44;
+      mint.append(svgNode('circle',{cx:Math.sin(angle)*83,cy:Math.cos(angle)*83,r:1.8,fill:'#f8df94',stroke:'#9a7028','stroke-width':.65}));
+    }
+    // Engraved compass rose: alternating raised and recessed facets.
+    const rose=svgNode('g',{transform:'rotate(12)'});
+    for(let i=0;i<8;i++){
+      const ray=svgNode('g',{transform:`rotate(${i*45})`}),tip=i%2?-43:-59;
+      ray.append(svgNode('path',{d:`M0 ${tip}L10 -11 0 -3Z`,fill:'#f8e3a2',stroke:'#9b742d','stroke-width':1}),svgNode('path',{d:`M0 ${tip}L-10 -11 0 -3Z`,fill:'#9a6c24',stroke:'#9b742d','stroke-width':1}));rose.append(ray);
+    }
+    mint.append(rose,svgNode('circle',{r:10,fill:'url(#coin-rim)',stroke:'#805923','stroke-width':1.3}),svgNode('circle',{r:4,fill:'#f8e7b5'}));
+    // Small crescent engravings lend a celestial, mysterious character.
+    for(const rotation of [22,112,202,292]){
+      mint.append(svgNode('path',{d:'M-5 -61Q5 -54 10 -63Q6 -49 -5 -61Z',transform:`rotate(${rotation})`,fill:'#a0752d',stroke:'#f6d98f','stroke-width':.6}));
+    }
+    mint.append(svgNode('path',{d:'M-73 -54A91 91 0 0 1 30 -86',fill:'none',stroke:'#fff5cb','stroke-width':2.4,opacity:.8,'stroke-linecap':'round'}));
+    coin.append(mint);svg.append(coin);
     return {svg,strokes,coin,colourPath,box,dust,radius,step};
   }
   function makeFlag(code,name,reduced){
