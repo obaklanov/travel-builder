@@ -27,3 +27,9 @@ indonesia: https://unsplash.com/photos/temple-reflecting-in-bali-lake-1kdIG_258b
 Regional seasonal ratings and CAD flight/daily allowances are editorial planning estimates, not live prices or verified climate forecasts. Gateway routes for Monteverde, Manuel Antonio and Caribbean Costa Rica require onward ground travel.
 
 Spain card replacement, 1 November 2026: Callum Parker, Plaza de España, Seville. https://unsplash.com/photos/white-concrete-building-under-blue-sky-during-daytime-lyimDT5RhYA (Unsplash License). Local asset: images/spain-seville.jpg.
+
+Sunny country covers, 1 November 2026 (all Unsplash License):
+spain: Luis Gonçalves — https://unsplash.com/photos/people-at-a-sunny-plaza-with-fountain-and-ornate-building-cKp776iMu1Q; local asset images/spain-sunny.jpg
+greece: Alberto Lora — https://unsplash.com/photos/white-and-blue-dome-building-near-body-of-water-during-daytime-xEG9zTZ8kog; local asset images/greece-sunny.jpg
+costa-rica: Rikin Katyal — https://unsplash.com/photos/a-view-of-a-mountain-with-a-cloud-in-the-sky-IPa-v6Bir1E; local asset images/costa-rica-sunny.jpg
+indonesia: Mahmud Ahsan — https://unsplash.com/photos/brown-and-green-temple-near-lake-and-green-mountain-under-blue-sky-during-daytime-QqPcxfFKqfU; local asset images/indonesia-sunny.jpg
