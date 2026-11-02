@@ -62,7 +62,7 @@ function showGuide(key) {
 
     <div class="trip-collectibles">${countryTreasures(key)}</div></aside>
     <div class="guide-body"><p class="eyebrow">${country.region.toUpperCase()}</p>
-    <h2 id="guide-title">5 short steps to plan your perfect trip to ${country.name}</h2>
+    <h2 id="guide-title">${country.name}. Your trip in 5 steps.</h2>
     <div class="guide-links">
       <button type="button" data-detail="entry">${guideDetailIcon('entry')}<span class="guide-detail-label">VISA. Do you need it?</span><span class="guide-detail-arrow" aria-hidden="true">→</span></button>
       <button data-detail="season">${guideDetailIcon('season')}<span class="guide-detail-label">WHEN. What month best to go?</span><span class="guide-detail-arrow" aria-hidden="true">→</span></button>
