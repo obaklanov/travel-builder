@@ -228,8 +228,8 @@ Object.assign(newCountryTreasures, {
   },
   "greece": {
     "name": "Greece",
-    "rewardName": "little owl",
-    "reward": "<svg class=\"country-reward\" viewBox=\"0 0 100 90\" role=\"img\" aria-label=\"Little Greek owl profile reward\"><path d=\"M25 30 22 12l19 10h18l19-10-3 18q16 44-25 48Q9 74 25 30Z\" fill=\"#a89366\" stroke=\"#796341\" stroke-width=\"2\"/><circle cx=\"37\" cy=\"40\" r=\"13\" fill=\"#e6d9b4\"/><circle cx=\"63\" cy=\"40\" r=\"13\" fill=\"#e6d9b4\"/><circle cx=\"37\" cy=\"40\" r=\"5\" fill=\"#484838\"/><circle cx=\"63\" cy=\"40\" r=\"5\" fill=\"#484838\"/><path d=\"m45 49 5 9 5-9M37 64l5 4m16 0 5-4\" fill=\"#d1a54d\" stroke=\"#806a42\"/><path d=\"M35 79h12m6 0h12\" stroke=\"#806a42\" stroke-width=\"3\"/></svg>",
+    "rewardName": "blue-domed miniature house",
+    "reward": "<svg class=\"country-reward\" viewBox=\"0 0 100 90\" role=\"img\" aria-label=\"Blue-domed miniature Greek house profile reward\"><ellipse cx=\"50\" cy=\"81\" rx=\"38\" ry=\"5\" fill=\"#70502b\" opacity=\".15\"/><path d=\"M19 75V46l30-8 30 8v29L49 83Z\" fill=\"#fff7dc\" stroke=\"#b5a784\" stroke-width=\"1.5\"/><path d=\"M49 47 79 46v29L49 83Z\" fill=\"#e7e4d3\"/><path d=\"M24 43V32q0-24 25-24t25 24v11Z\" fill=\"#377da4\" stroke=\"#426c83\" stroke-width=\"1.5\"/><path d=\"M28 32q2-19 21-20\" fill=\"none\" stroke=\"#83bacb\" stroke-width=\"3\" stroke-linecap=\"round\"/><path d=\"M22 40q27 9 54 0v7q-27 9-54 0Z\" fill=\"#fff8df\" stroke=\"#b7b29b\" stroke-width=\"1.3\"/><path d=\"M34 77V61q0-12 11-12t11 12v18\" fill=\"#387fa6\" stroke=\"#527b8a\" stroke-width=\"1.5\"/><path d=\"M42 53v25\" stroke=\"#9fc7d3\"/><circle cx=\"49\" cy=\"66\" r=\"1.4\" fill=\"#e3c16e\"/><path d=\"M64 58h9v11h-9Z\" fill=\"#508baa\" stroke=\"#728f98\"/><path d=\"M68 59v9m-4-5h9\" stroke=\"#d7e5dc\"/><path d=\"M13 79h15m49-1h10\" stroke=\"#b8a17b\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M83 71v-9m-4 3q4-7 8 0\" fill=\"none\" stroke=\"#789178\" stroke-width=\"2\"/></svg>",
     "treasures": [
       {
         "name": "Acropolis",
