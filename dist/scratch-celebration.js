@@ -119,7 +119,9 @@
   }
   function makeStage(feature,color){
     const box=countryShape(feature),padding=Math.max(box.w,box.h)*.11;
-    const svg=svgNode('svg',{viewBox:`${box.x-padding} ${box.y-padding} ${box.w+2*padding} ${box.h+2*padding}`,'aria-hidden':'true'});
+    // Reserve vertical room for the 1.298 stretch plus a small margin at both ends.
+    const verticalPadding=Math.max(padding,box.h*.19);
+    const svg=svgNode('svg',{viewBox:`${box.x-padding} ${box.y-verticalPadding} ${box.w+2*padding} ${box.h+2*verticalPadding}`,'aria-hidden':'true'});
     const defs=svgNode('defs');
     const gold=svgNode('linearGradient',{id:'scratch-gold',x1:0,y1:0,x2:1,y2:1});
     for(const [offset,fill] of [['0%','#ecd49d'],['45%','#c5a568'],['72%','#f4dfab'],['100%','#ad8950']])gold.append(svgNode('stop',{offset,'stop-color':fill}));
