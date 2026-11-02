@@ -22,6 +22,9 @@ for feature in recognized['features']:
 somalia=json.loads((root/'data/somalia-recognized-borders.geojson').read_text(encoding='utf-8'))
 for feature in somalia['features']:
  geometries[feature['id']]=shape(feature['geometry'])
+kosovo=json.loads((root/'data/kosovo-country.geojson').read_text(encoding='utf-8'))
+for feature in kosovo['features']:
+ geometries[feature['id']]=shape(feature['geometry'])
 keys=sorted(geometries);geoms=[geometries[c] for c in keys];tree=STRtree(geoms)
 neighbors={code:set() for code in keys}
 for i,geom in enumerate(geoms):

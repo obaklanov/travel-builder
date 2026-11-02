@@ -1,4 +1,4 @@
-// Editorial scratch-map captions keyed to the shared 234-country catalogue.
+// Editorial scratch-map captions keyed to the shared travel-country catalogue.
 window.TRAVEL_SCRATCH_PHRASES = Object.freeze({
   "AFG": "Mountains hold the stories. You found a chapter.",
   "ALB": "Beyond the bends, another blue horizon.",
@@ -228,6 +228,7 @@ window.TRAVEL_SCRATCH_PHRASES = Object.freeze({
   "UZB": "Follow the blue tiles along the Silk Road.",
   "VUT": "Volcanic islands. A spark of adventure.",
   "VEN": "A chapter from Caribbean shores to highland skies.",
+  "UNK": "Mountain paths, lively cafes, a new Balkan chapter.",
   "VNM": "Lantern light and a road worth following.",
   "WLF": "A quiet Pacific chapter between two island groups.",
   "ESH": "A desert horizon on the Atlantic’s edge.",

@@ -1,9 +1,12 @@
 {
   "sources": [
     "https://www.un.org/about-us/member-states",
-    "https://www.un.org/en/about-us/non-member-states"
+    "https://www.un.org/en/about-us/non-member-states",
+    "https://www.international.gc.ca/country-pays/kosovo/relations.aspx?lang=eng",
+    "https://www.international.gc.ca/country-pays/new_zealand-nouvelle_zelande/relations.aspx?lang=eng",
+    "https://www.international.gc.ca/country-pays/palestine/relations.aspx?lang=eng"
   ],
-  "rule": "193 UN member states plus Holy See and State of Palestine. Other destinations remain optional; this is a product counting rule, not a claim that all excluded places are dependent territories.",
+  "rule": "Canadian-guided travel list: 193 UN members, Holy See, Palestine, Kosovo, Cook Islands and Niue. The latter two are self-governing states in free association with New Zealand, with Canadian diplomatic relations established in 2023. Reviewed 2026-11-01.",
   "countryCodes": [
     "AFG",
     "AGO",
@@ -42,6 +45,7 @@
     "CMR",
     "COD",
     "COG",
+    "COK",
     "COL",
     "COM",
     "CPV",
@@ -133,6 +137,7 @@
     "NER",
     "NGA",
     "NIC",
+    "NIU",
     "NLD",
     "NOR",
     "NPL",
@@ -187,6 +192,7 @@
     "TZA",
     "UGA",
     "UKR",
+    "UNK",
     "URY",
     "USA",
     "UZB",
@@ -208,7 +214,6 @@
     "BES",
     "BLM",
     "BMU",
-    "COK",
     "CUW",
     "CYM",
     "ESH",
@@ -228,7 +233,6 @@
     "MTQ",
     "MYT",
     "NCL",
-    "NIU",
     "PRI",
     "PYF",
     "REU",
@@ -241,5 +245,11 @@
     "VGB",
     "VIR",
     "WLF"
+  ],
+  "expectedCountryCount": 198,
+  "recognitionReviewed": "2026-11-01",
+  "selfGoverningStateCodes": [
+    "COK",
+    "NIU"
   ]
 }

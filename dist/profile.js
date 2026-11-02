@@ -117,7 +117,7 @@
   function updateMap() {
     const countriesVisited=catalogue.filter(c=>c.classification==='country'&&selected.has(c.code)).length;
     $('#visited-count').textContent = String(countriesVisited);
-    $('#visited-count-note').textContent = countriesVisited+' of 195 countries · '+(selected.size-countriesVisited)+' territories or other destinations';
+    $('#visited-count-note').textContent = countriesVisited+' of '+catalogue.filter(c=>c.classification==='country').length+' countries and self-governing states · '+(selected.size-countriesVisited)+' territories or other destinations';
     $('#unselect-all').checked = selected.size === 0;
     $('#unselect-all').disabled = selected.size === 0;
     $('#visited-world-map').setAttribute('aria-label', 'World map: ' + selected.size + ' countries and territories selected as visited.');
@@ -195,12 +195,12 @@
   }
 
   async function loadGeography() {
-    const [catalogueResponse, mapResponse, colorResponse] = await Promise.all([fetch('country-catalog.json?v=parent-country-facts-1'), fetch('profile-country-outlines.json?v=somalia-complete-1'), fetch('country-colors.json?v=scratch-1')]);
+    const [catalogueResponse, mapResponse, colorResponse] = await Promise.all([fetch('country-catalog.json?v=canada-policy-198-1'), fetch('profile-country-outlines.json?v=kosovo-included-1'), fetch('country-colors.json?v=kosovo-1')]);
     if (!catalogueResponse.ok || !mapResponse.ok || !colorResponse.ok) throw new Error('Country data unavailable');
     catalogue = await catalogueResponse.json();
     const outlines = await mapResponse.json();
     countryColors = (await colorResponse.json()).colors;
-    try {const response=await fetch('profile-country-info.json?v=parent-country-facts-1');if(response.ok)countryInfo=await response.json();} catch {}
+    try {const response=await fetch('profile-country-info.json?v=canada-policy-198-1');if(response.ok)countryInfo=await response.json();} catch {}
     window.TRAVEL_SCRATCH?.init(outlines,countryColors,catalogue);
     allowedCodes = new Set(catalogue.map(country => country.code));
     const ns = 'http://www.w3.org/2000/svg';

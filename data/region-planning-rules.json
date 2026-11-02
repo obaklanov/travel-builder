@@ -5,10 +5,10 @@
     "areaRank": 0.6,
     "populationRank": 0.4
   },
-  "formula": "0.6 * areaRank + 0.4 * populationRank; ranks use the shared Worldometer 234-entry catalogue, where rank 1 is largest.",
+  "formula": "0.6 * areaRank + 0.4 * populationRank; ranks use the current 198-entry Canadian-guided country/state list, where rank 1 is largest.",
   "bands": [
     {
-      "minBlendedRank": 120,
+      "minBlendedRank": 102,
       "classification": "small",
       "suggestedRegions": [
         2,
@@ -16,7 +16,7 @@
       ]
     },
     {
-      "minBlendedRank": 70,
+      "minBlendedRank": 59,
       "classification": "medium",
       "suggestedRegions": [
         3,
@@ -41,9 +41,9 @@
   "overrides": {
     "costa-rica": {
       "regions": 3,
-      "populationRank": 127,
-      "areaRank": 129,
-      "blendedRank": 128.2,
+      "populationRank": 125,
+      "areaRank": 127,
+      "blendedRank": 126.2,
       "reason": "Inland destinations, Pacific coast, Caribbean coast; preserve differing coastal rainfall patterns.",
       "source": "https://www.visitcostarica.com/planning-your-trip/climate"
     }

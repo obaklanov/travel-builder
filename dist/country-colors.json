@@ -233,7 +233,8 @@
     "YEM": "#bd9cb8",
     "ZAF": "#b7b78a",
     "ZMB": "#68b9b4",
-    "ZWE": "#bd9cb8"
+    "ZWE": "#bd9cb8",
+    "UNK": "#e3bc58"
   },
   "neighbors": {
     "ABW": [],
@@ -255,7 +256,8 @@
     "ALB": [
       "GRC",
       "MKD",
-      "MNE"
+      "MNE",
+      "UNK"
     ],
     "AND": [
       "ESP",
@@ -838,7 +840,8 @@
       "ALB",
       "BGR",
       "GRC",
-      "SRB"
+      "SRB",
+      "UNK"
     ],
     "MLI": [
       "BFA",
@@ -861,7 +864,8 @@
       "ALB",
       "BIH",
       "HRV",
-      "SRB"
+      "SRB",
+      "UNK"
     ],
     "MNG": [
       "CHN",
@@ -1079,7 +1083,8 @@
       "HUN",
       "MKD",
       "MNE",
-      "ROU"
+      "ROU",
+      "UNK"
     ],
     "SSD": [
       "CAF",
@@ -1269,6 +1274,12 @@
       "NAM",
       "ZAF",
       "ZMB"
+    ],
+    "UNK": [
+      "ALB",
+      "MKD",
+      "MNE",
+      "SRB"
     ]
   }
 }

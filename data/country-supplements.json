@@ -1,0 +1,29 @@
+{
+  "retrieved": "2026-11-01",
+  "countries": [
+    {
+      "code": "UNK",
+      "iso2": "XK",
+      "name": "Kosovo",
+      "region": "Europe",
+      "aliases": [
+        "Kosova",
+        "XKX",
+        "XK"
+      ],
+      "population": 1576876,
+      "populationYear": 2025,
+      "area": 10887,
+      "sources": {
+        "population": "https://api.worldbank.org/v2/country/XKX/indicator/SP.POP.TOTL?format=json",
+        "area": "https://documents1.worldbank.org/curated/en/309691585516214104/pdf/Revised-Environmental-and-Social-Management-Framework-ESMF-Greening-Land-P172992.pdf"
+      }
+    }
+  ],
+  "adjustments": {
+    "SRB": {
+      "areaSubtract": 10887
+    }
+  },
+  "notes": "The Worldometer Serbia population excludes Kosovo; retain it unchanged. Its 88,361 km2 area includes Kosovo, so subtract the same 10,887 km2 assigned to Kosovo before aggregation and ranking. World population denominator gains the separately sourced Kosovo population; world area denominator is unchanged. UNK matches existing saved-profile database code."
+}
