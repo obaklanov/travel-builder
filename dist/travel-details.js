@@ -14,6 +14,89 @@ const travelData={
  portugal:{airports:[['LIS','Lisbon'],['OPO','Porto'],['FAO','Faro'],['PDL','Ponta Delgada']],base:950,hours:8,costs:[110,40,18,20],regions:[['Lisbon / central coast','AAABBBBABBAA'],['Porto / north','WWAABBBBBAAW'],['Algarve','AAABBBBABBAA'],['Madeira','AABBBBBBBBAA'],['Azores','WAAABBBBBAAW']]},
  thailand:{airports:[['BKK','Bangkok Suvarnabhumi'],['HKT','Phuket'],['CNX','Chiang Mai'],['USM','Koh Samui']],base:1600,hours:22,costs:[65,25,15,18],regions:[['Bangkok / central Thailand','BBAAWWWWWWBB'],['Chiang Mai / north','BAWWAAWWWABB'],['Phuket / Andaman coast','BBBAWWWWWWAB'],['Koh Samui / Gulf coast','ABBBBAAAAAWW']]}
 };
+// Consistent geographic labels shared by selection, climate rows and flight summaries.
+const regionGeographyLabels={
+  "united-states": [
+    "New York / East",
+    "Miami / South",
+    "Los Angeles / West",
+    "Grand Canyon / West",
+    "Pacific Northwest / West"
+  ],
+  "vietnam": [
+    "Hanoi & Ha Long Bay / North",
+    "Da Nang & Hoi An / Center",
+    "Ho Chi Minh City & Mekong Delta / South",
+    "Phu Quoc / Islands"
+  ],
+  "colombia": [
+    "Cartagena / North",
+    "Medellín / West",
+    "Bogotá / Center",
+    "Coffee region / Center"
+  ],
+  "morocco": [
+    "Marrakech / Center",
+    "Fes / North",
+    "Essaouira / West",
+    "Merzouga / East"
+  ],
+  "egypt": [
+    "Cairo & Giza / North",
+    "Luxor, Aswan & Abu Simbel / South",
+    "Hurghada / East",
+    "White Desert & Farafra / West"
+  ],
+  "new-zealand": [
+    "Auckland & Northland / North",
+    "Waikato, Hobbiton & Rotorua / North",
+    "Wellington / Center",
+    "Queenstown & Southern Lakes / South",
+    "Milford Sound & Fiordland / South"
+  ],
+  "argentina": [
+    "Buenos Aires / East",
+    "Iguazú / North",
+    "Mendoza / West",
+    "El Calafate / South",
+    "Bariloche / South",
+    "Salta / North"
+  ],
+  "italy": [
+    "Rome / Center",
+    "Venice / East",
+    "Florence & Tuscany / Center",
+    "Naples & Amalfi Coast / South",
+    "Sicily / Islands",
+    "Dolomites / North"
+  ],
+  "mexico": [
+    "Cancún & Yucatán / East",
+    "Mexico City / Center",
+    "Oaxaca / South",
+    "Puerto Vallarta / West",
+    "Los Cabos / West"
+  ],
+  "japan": [
+    "Tokyo, Kyoto & Osaka / Center",
+    "Hokkaido / North",
+    "Okinawa / Islands"
+  ],
+  "portugal": [
+    "Lisbon / Center",
+    "Porto / North",
+    "Algarve / South",
+    "Madeira / Islands",
+    "Azores / Islands"
+  ],
+  "thailand": [
+    "Bangkok / Center",
+    "Chiang Mai / North",
+    "Phuket & Andaman coast / South",
+    "Koh Samui / Islands"
+  ]
+};
+for(const [key,labels] of Object.entries(regionGeographyLabels))travelData[key].regions.forEach((region,index)=>{region[0]=labels[index];});
 const departureCities=[['YYZ','Toronto'],['YVR','Vancouver'],['YUL','Montréal'],['YYC','Calgary'],['YEG','Edmonton']];
 let guideDeparture=departureCities.some(([code])=>code===new URLSearchParams(location.search).get('origin'))?new URLSearchParams(location.search).get('origin'):'YYZ';
 function renderTravelDetail(key,kind){
