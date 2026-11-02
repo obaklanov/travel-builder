@@ -15,7 +15,10 @@
       if(p===mainland)return true;
       // Tiny distant islets should not shrink the mainland close-up.
       const nearMainland=p[0].some(([x,y])=>x>=west+4.5&&x<=east-4.5&&y>=south+4.5&&y<=north-4.5);
-      return (area(p)>=mainlandArea*.001||nearMainland) && p[0].some(([x,y])=>x>=west&&x<=east&&y>=south&&y<=north);
+      // Keep major separated land areas in the same broad region (Malaysia,
+      // New Zealand, archipelagos), without framing faraway overseas territories.
+      const substantialRegionalPart=area(p)>=mainlandArea*.05 && p[0].some(([x,y])=>x>=west-20&&x<=east+20&&y>=south-20&&y<=north+20);
+      return substantialRegionalPart || ((area(p)>=mainlandArea*.001||nearMainland) && p[0].some(([x,y])=>x>=west&&x<=east&&y>=south&&y<=north));
     });
     const biggest=[...polygons].sort((a,b)=>b[0].length-a[0].length)[0];
     const center=biggest[0].reduce((sum,p)=>sum+p[0],0)/biggest[0].length;
