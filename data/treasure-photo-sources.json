@@ -206,17 +206,16 @@
     "bytes": 80252
   },
   "Perito Moreno Glacier": {
-    "author": "Fernando",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Perito_Moreno_Glacier_2023.jpg",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "originalTitle": "File:Perito_Moreno_Glacier_2023.jpg",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Perito_Moreno_Glacier_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "src": "images/treasures/argentina-2.webp",
-    "alt": "Perito Moreno Glacier — Argentina",
-    "width": 640,
-    "height": 274,
-    "bytes": 34938
+    "author": "Frans Ruiter",
+    "sourceUrl": "https://unsplash.com/photos/vast-glacier-meets-turquoise-water-near-mountains-ovZ9eD0xic0",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license",
+    "originalUrl": "https://images.unsplash.com/photo-1777824254222-791fc9fc2854",
+    "src": "images/treasures/argentina-perito-turquoise.webp",
+    "alt": "Blue ice walls of Perito Moreno Glacier meeting turquoise water beneath Patagonian mountains",
+    "width": 700,
+    "height": 467,
+    "bytes": 31462
   },
   "Plaza de Mayo": {
     "author": "ProtoplasmaKid",
