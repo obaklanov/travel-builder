@@ -65,7 +65,7 @@ function showGuide(key) {
       <button data-detail="budget">${guideDetailIcon('budget')}<span class="guide-detail-label">MONEY. How much do you need?</span><span class="guide-detail-arrow" aria-hidden="true">→</span></button>
       <button type="button" data-detail="advice">${guideDetailIcon('advice')}<span class="guide-detail-label">GOVERNMENT. What does the Canadian government advise?</span><span class="guide-detail-arrow" aria-hidden="true">→</span></button>
     <section id="trip-detail-panel" class="detail-panel" hidden tabindex="-1" role="region"></section></div>
-    ${communitySection(key)}</div>`;
+    </div>`;
   const content=document.querySelector('.guide-content');
   content.prepend(content.querySelector('.guide-body'));
   document.querySelectorAll('[data-detail]').forEach(button => {button.id='trip-detail-'+button.dataset.detail;button.setAttribute('aria-expanded','false');button.setAttribute('aria-controls','trip-detail-panel');button.onclick=()=>renderTravelDetail(key,button.dataset.detail);});
