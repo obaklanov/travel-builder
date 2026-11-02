@@ -88,10 +88,10 @@ const communityPicks={
 
 function communitySection(key){
  const p=communityPicks[key];if(!p)return '';
- return '<section class="community-section"><h2>Set the mood for your trip. Voted by community</h2><div class="community-picks">'+[['song','Song to set the mood'],['book','Book for the journey'],['film','Film to spark adventure']].map(([type,label])=>{
+ return '<section class="community-section"><h2>Getting into the mood</h2><div class="community-picks">'+[['song','Song to set the mood'],['book','Book for the journey'],['film','Film to spark adventure']].map(([type,label])=>{
   const [title,creator,description,bookUrl]=p[type];
   const query=encodeURIComponent(title+' '+creator);
-  const links=type==='song'?[['Listen on YouTube',p.song[3]],['Spotify','https://open.spotify.com/search/'+query]]:type==='book'?[[p.bookLabel||'Publisher',bookUrl],...verifiedBookExtras[key]]:verifiedFilmLinks[key];
+  const links=type==='song'?[['Listen on YouTube',p.song[3]],['Spotify','https://open.spotify.com/search/'+query]]:type==='book'?[[p.bookLabel||'Publisher',bookUrl],...(verifiedBookExtras[key]||[])]:(verifiedFilmLinks[key]||[]);
   return '<article><span class="pick-category">'+label.replace(/^(Song|Book|Film)/, '<strong>$1</strong>')+'</span><h3>'+title+'</h3><p class="pick-creator">'+creator+'</p><p>'+description+'</p><div class="resource-links">'+links.map(([text,url])=>'<a href="'+url+'" target="_blank" rel="noopener noreferrer">'+text+' ↗</a>').join('')+'</div></article>';
  }).join('')+'</div></section>';
 }
@@ -201,3 +201,87 @@ Object.assign(verifiedFilmLinks, {
     ]
   ]
 });
+
+// Editorial selections for the four newest destinations; restored temporarily.
+Object.assign(communityPicks, {
+  "spain": {
+    "song": [
+      "DESPECHÁ (2022)",
+      "ROSALÍA",
+      "A carefree Spanish pop soundtrack for sunny streets and late evenings.",
+      "https://www.youtube.com/watch?v=5g2hT4GmAGU"
+    ],
+    "book": [
+      "The Shadow of the Wind",
+      "Carlos Ruiz Zafón",
+      "A mysterious book leads into the secrets and hidden streets of Barcelona.",
+      "https://www.carlosruizzafon.com/la-sombra-del-viento/ediciones.php"
+    ],
+    "bookLabel": "Author’s website",
+    "film": [
+      "Vicky Cristina Barcelona (2008)",
+      "Directed by Woody Allen",
+      "Art, romance and a summer of unexpected encounters in Barcelona."
+    ]
+  },
+  "greece": {
+    "song": [
+      "ZARI (2024)",
+      "Marina Satti",
+      "Greek rhythms and playful pop energy for a trip with a little spontaneity.",
+      "https://www.youtube.com/watch?v=mTSTnLWGUPs"
+    ],
+    "book": [
+      "My Family and Other Animals",
+      "Gerald Durrell",
+      "An affectionate, funny account of family life and wildlife on Corfu.",
+      "https://www.penguinrandomhouse.com/books/289004/my-family-and-other-animals-by-gerald-durrell/"
+    ],
+    "film": [
+      "Mamma Mia! (2008)",
+      "Directed by Phyllida Lloyd",
+      "Island sunshine, tangled family stories and an exuberant ABBA soundtrack."
+    ]
+  },
+  "costa-rica": {
+    "song": [
+      "Baño de Luna (2023)",
+      "Debi Nova",
+      "Warm, rhythmic pop from Costa Rican singer-songwriter Debi Nova.",
+      "https://www.youtube.com/watch?v=FFacmzAq_-Y"
+    ],
+    "book": [
+      "Jurassic Park",
+      "Michael Crichton",
+      "A fictional island off Costa Rica becomes the setting for a gripping dinosaur adventure.",
+      "https://michaelcrichton.com/works/jurassic-park/"
+    ],
+    "bookLabel": "Author’s website",
+    "film": [
+      "Jurassic Park (1993)",
+      "Directed by Steven Spielberg",
+      "A fictional Costa Rican island provides the setting for an unforgettable adventure; filming took place elsewhere."
+    ]
+  },
+  "indonesia": {
+    "song": [
+      "Lathi (2020)",
+      "Weird Genius featuring Sara Fajira",
+      "Dramatic electronic pop blending Indonesian talent with Javanese musical elements.",
+      "https://www.youtube.com/watch?v=8uy7G2JXVSA"
+    ],
+    "book": [
+      "The Rainbow Troops",
+      "Andrea Hirata",
+      "Friendship, ambition and childhood adventures on Indonesia’s Belitung island.",
+      "https://us.macmillan.com/books/9780374534448/therainbowtroops/"
+    ],
+    "film": [
+      "The Rainbow Troops / Laskar Pelangi (2008)",
+      "Directed by Riri Riza",
+      "A hopeful story of schoolchildren and their teachers on Belitung island."
+    ]
+  }
+});
+Object.assign(verifiedBookExtras, {"spain": [["WorldCat", "https://search.worldcat.org/title/The-shadow-of-the-wind/oclc/1195034569"]], "greece": [["Canongate", "https://canongate.co.uk/books/1609-my-family-and-other-animals/"]], "costa-rica": [], "indonesia": [["OverDrive", "https://www.overdrive.com/media/1456345/the-rainbow-troops"]]});
+Object.assign(verifiedFilmLinks, {"spain": [["Film details", "https://www.premiosgoya.com/pelicula/vicky-cristina-barcelona"]], "greece": [["Official film page", "https://mamma-mia.com/the-movies/the-movie"]], "costa-rica": [["Official film page", "https://amblin.com/movie/jurassic-park/"]], "indonesia": [["Official film page", "https://milesfilms.net/en/laskar-pelangi/"], ["Viewing options", "https://www.justwatch.com/us/movie/the-rainbow-troops"]]});

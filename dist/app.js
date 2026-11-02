@@ -71,6 +71,7 @@ function showGuide(key) {
       <button type="button" data-detail="advice">${guideDetailIcon('advice')}<span class="guide-detail-label">GOVERNMENT. What does the Canadian government advise?</span><span class="guide-detail-arrow" aria-hidden="true">→</span></button>
     <section id="trip-detail-panel" class="detail-panel" hidden tabindex="-1" role="region"></section></div>
     <section class="trip-add-area"><button type="button" id="add-this-trip">ADD THIS TRIP <span aria-hidden="true">＋</span></button><p>Save it to your profile.</p><p id="trip-add-status" role="status"></p></section>
+    ${communitySection(key)}
     </div>`;
   const content=document.querySelector('.guide-content');
   content.prepend(content.querySelector('.guide-body'));
