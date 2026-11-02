@@ -729,17 +729,15 @@ const treasurePhotos = {
     "bytes": 50070
   },
   "Cartagena Walled City": {
-    "author": "KaremBarreto",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Calles_al_anochecer.JPG",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "originalTitle": "File:Calles al anochecer.JPG",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/19/Calles_al_anochecer.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "alt": "Warm street lamps and historic buildings in Cartagena’s walled city at blue hour",
-    "src": "images/treasures/colombia-cartagena-evening.webp",
-    "width": 360,
-    "height": 480,
-    "bytes": 10054
+    "author": "Juan Nino",
+    "sourceUrl": "https://unsplash.com/photos/a-street-lined-with-buildings-and-pink-flowers-lyetwQ_ym3E",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license",
+    "alt": "Colourful colonial houses, wooden balconies and pink bougainvillea on a street in Cartagena’s old city",
+    "src": "images/treasures/colombia-cartagena-balconies.webp",
+    "width": 400,
+    "height": 500,
+    "bytes": 42574
   },
   "Cocora Valley": {
     "author": "Nicole Arango Lang",
