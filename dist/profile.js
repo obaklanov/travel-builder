@@ -138,10 +138,11 @@
     const normalise = value => value.normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLocaleLowerCase();
     const query = normalise($('#country-search').value.trim());
     const selectedOnly = $('#selected-only').checked;
-    const matches = catalogue.filter(country => (!selectedOnly || selected.has(country.code)) && normalise(country.name + ' ' + country.code + ' ' + country.iso2 + ' ' + (country.aliases || []).join(' ')).includes(query));
+    const matches = catalogue.filter(country => (selectedOnly || query) && (!selectedOnly || selected.has(country.code)) && (!query || [country.name, country.code, country.iso2, ...(country.aliases || [])].some(value => normalise(value || '').startsWith(query))));
     const list = $('#visited-country-list');
     list.replaceChildren();
-    $('#country-result-count').textContent = matches.length + ' places shown · ' + selected.size + ' selected';
+    list.closest('fieldset').hidden = !query && !selectedOnly;
+    $('#country-result-count').textContent = query || selectedOnly ? matches.length + ' matches · ' + selected.size + ' selected' : selected.size + ' selected';
     for (const country of matches) {
       const label = document.createElement('label');
       label.className = 'country-choice';
@@ -155,7 +156,7 @@
       checkbox.addEventListener('change', () => setCountrySelection(country.code,checkbox.checked,selectedOnly));
       list.append(label);
     }
-    if (!matches.length) {
+    if (!matches.length && (query || selectedOnly)) {
       const empty = document.createElement('p');
       empty.className = 'country-empty';
       empty.textContent = selectedOnly ? 'No selected places match this search.' : 'No places match this search.';
@@ -183,7 +184,7 @@
     setDirty(true);
     updateMap();
     if (refreshList) renderCountries();
-    else $('#country-result-count').textContent = document.querySelectorAll('.country-choice').length + ' places shown · ' + selected.size + ' selected';
+    else $('#country-result-count').textContent = document.querySelectorAll('.country-choice').length + ' matches · ' + selected.size + ' selected';
   }
 
   async function loadGeography() {
