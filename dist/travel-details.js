@@ -140,15 +140,18 @@ function renderTravelDetail(key,kind){
  const flight=getFlightRoutes(key,flightRequest(key,state.days))[0];
  if(!state.flightManual)state.rates[0]=roundBudgetRate(flight.price,0);
  state.rates=state.rates.map(roundBudgetRate);
- panel.innerHTML=`<h3>MONEY. How much do you need?</h3><p class="estimate-note">Sample CAD allowances per person, to be confirmed. Airfare matches FLIGHTS for your departure city; live fares are not connected. Edit amounts to suit your trip. Excludes insurance, visas and major paid activities.</p><div class="departure-controls budget-trip-controls"><div class="budget-route-info"><p class="budget-route-summary">${departureCities.find(([code])=>code===guideDeparture)?.[1]||guideDeparture} (${guideDeparture}) → ${flight.city} (${flight.code})</p></div>${departureDateField(key)}<label>Days <input id="trip-days" type="number" min="1" max="365" value="${state.days}"></label><label>Nights <input id="trip-nights" type="number" value="${state.nights}" readonly aria-readonly="true"><small>Days − 1</small></label></div><table><thead><tr><th>Category</th><th>Basis</th><th>CAD allowance</th></tr></thead><tbody>${[[`Flights (round trip, ${guideDeparture} ↔ ${flight.code})`,'one-time'],['Accommodation','per night'],['Food','per day'],['Internal transport','per day'],['Miscellaneous','per day']].map(([n,b],i)=>`<tr><td>${n}</td><td>${b}</td><td><div class="budget-allowance"><input aria-label="${n} CAD" class="budget-rate" type="number" min="0" max="100000" step="${i===0?10:5}" value="${state.rates[i]}"><button type="button" class="budget-suggestions-toggle" aria-label="Suggested ${i===0?'flight':n.toLowerCase()} amounts" aria-expanded="false" aria-controls="budget-suggestions-${i}"></button><div id="budget-suggestions-${i}" class="budget-suggestions" hidden></div></div></td></tr>`).join('')}</tbody></table><output id="budget-total" aria-live="polite"></output>`;
+ panel.innerHTML=`<h3>MONEY. How much do you need?</h3><p class="estimate-note">Sample CAD allowances, to be confirmed. Accommodation is for the whole group; other amounts start per person. Airfare matches FLIGHTS for your departure city; live fares are not connected. Edit amounts to suit your trip. Excludes insurance, visas and major paid activities.</p><div class="departure-controls budget-trip-controls"><div class="budget-route-info"><p class="budget-route-summary">${departureCities.find(([code])=>code===guideDeparture)?.[1]||guideDeparture} (${guideDeparture}) → ${flight.city} (${flight.code})</p></div>${departureDateField(key)}<label>Days <input id="trip-days" type="number" min="1" max="365" value="${state.days}"></label><label>Nights <input id="trip-nights" type="number" value="${state.nights}" readonly aria-readonly="true"><small>Days − 1</small></label></div><label class="budget-group-label">How many people are travelling in your group? <select id="budget-group-size">${[1,2,3,4].map(n=>`<option value="${n}" ${n===state.people?'selected':''}>${n}</option>`).join('')}</select></label><table class="group-budget-table"><thead><tr><th>Category</th><th>Basis</th><th>Budget per person</th><th># of people</th><th>Total budget</th></tr></thead><tbody>${[[`Flights (round trip, ${guideDeparture} ↔ ${flight.code})`,'one-time'],['Accommodation','per night'],['Food','per day'],['Internal transport','per day'],['Miscellaneous','per day']].map(([n,b],i)=>{const control=budgetAllowanceControl(n,i,state.rates[i]);return `<tr><td>${n}</td><td>${b}</td><td>${i===1?'':control}</td><td class="budget-people">${i===1?'—':state.people}</td><td>${i===1?control:'<span class="budget-line-total"></span>'}</td></tr>`;}).join('')}</tbody></table><output id="budget-total" aria-live="polite"></output>`;
  const daysInput=panel.querySelector('#trip-days'),nightsInput=panel.querySelector('#trip-nights'),rateInputs=[...panel.querySelectorAll('.budget-rate')];
  const update=()=>{
   const route=getFlightRoutes(key,flightRequest(key,state.days))[0];
   let dates=panel.querySelector('.budget-date-summary');if(!dates){dates=document.createElement('p');dates.className='budget-date-summary';panel.querySelector('.budget-route-info').append(dates);}const datesRequest=flightRequest(key,state.days);dates.textContent='Trip: '+datesRequest.departureDate+' – '+datesRequest.returnDate;
-  panel.querySelector('output').textContent='Estimated total: '+new Intl.NumberFormat('en-CA',{style:'currency',currency:'CAD',maximumFractionDigits:0}).format(tripTotalFromRates(state.rates,state.days,state.nights));
+  const money=value=>new Intl.NumberFormat('en-CA',{style:'currency',currency:'CAD',maximumFractionDigits:0}).format(value);
+  panel.querySelectorAll('.group-budget-table tbody tr').forEach((row,i)=>{if(i===1)return;row.querySelector('.budget-people').textContent=state.people;row.querySelector('.budget-line-total').textContent=money(state.rates[i]*state.people);});
+  const total=tripTotalFromRates(state.rates,state.days,state.nights,state.people),average=document.createElement('small');average.className='budget-per-person-average';average.textContent=' ('+money(total/state.people)+' per person)';panel.querySelector('#budget-total').replaceChildren(document.createTextNode('Estimated total: '+money(total)),average);
  };
  const syncFlight=()=>{if(!state.flightManual){state.rates[0]=roundBudgetRate(getFlightRoutes(key,flightRequest(key,state.days))[0].price,0);rateInputs[0].value=state.rates[0];}};
  daysInput.oninput=()=>{if(daysInput.value==='')return;state.days=Math.min(365,Math.max(1,Math.floor(Number(daysInput.value)||1)));if(!state.nightsManual){state.nights=Math.max(0,state.days-1);nightsInput.value=state.nights;}syncFlight();update();};
+ panel.querySelector('#budget-group-size').onchange=event=>{state.people=Math.max(1,Math.min(4,Number(event.target.value)||1));update();};
  setupBudgetAllowances(panel,state,rateInputs,update);
  bindDepartureDate(key,panel,()=>{syncFlight();update();});
  update();
@@ -161,7 +164,7 @@ function renderTravelDetail(key,kind){
 const verifiedFlightOffers = [];
 const flightSearchPolicy = Object.freeze({monthsAhead:3,maxStopsPerDirection:2,maxLayoverMinutes:240,maxQuoteAgeHours:24,currency:'CAD',cabin:'economy'});
 const budgetStates={};
-function getBudgetState(key){return budgetStates[key]??=( {days:initialTripDays(key),nights:initialTripDays(key)-1,nightsManual:false,flightManual:false,rates:[travelData[key].base,...travelData[key].costs]} );}
+function getBudgetState(key){return budgetStates[key]??=( {days:initialTripDays(key),nights:initialTripDays(key)-1,nightsManual:false,flightManual:false,people:Math.max(1,Math.min(4,Math.floor(Number(new URLSearchParams(location.search).get('people')))||1)),rates:[travelData[key].base,...travelData[key].costs]} );}
 function flightRequest(key,days=30,now=new Date()){
  const start=new Date(now.getFullYear(),now.getMonth()+flightSearchPolicy.monthsAhead,1);
  const lastDay=new Date(start.getFullYear(),start.getMonth()+1,0).getDate();
@@ -221,8 +224,8 @@ function initialTripDays(key) {
  const params=new URLSearchParams(location.search),days=Number(params.get('days'));
  return params.get('country')===key && Number.isInteger(days) && days>=1 && days<=365 ? days : 30;
 }
-function tripTotalFromRates(rates,days,nights=Math.max(0,days-1)) {
- return rates[0]+rates[1]*nights+(rates[2]+rates[3]+rates[4])*days;
+function tripTotalFromRates(rates,days,nights=Math.max(0,days-1),people=1) {
+ return rates[0]*people+rates[1]*nights+(rates[2]+rates[3]+rates[4])*days*people;
 }
 function departureForLocation(label,latitude,longitude) {
  const text=label.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
@@ -336,3 +339,7 @@ function setupBudgetAllowances(panel,state,inputs,update){
 }
 // Shared rounded daily allowances keep entry-level estimates and the editor aligned.
 for(const data of Object.values(travelData))data.costs=data.costs.map(value=>roundBudgetRate(value,1));
+
+function budgetAllowanceControl(name,index,value){
+ return `<div class="budget-allowance"><input aria-label="${name} CAD ${index===1?'for the group':'per person'}" class="budget-rate" type="number" min="0" max="100000" step="${index===0?10:5}" value="${value}"><button type="button" class="budget-suggestions-toggle" aria-label="Suggested ${index===0?'flight':name.toLowerCase()} amounts" aria-expanded="false" aria-controls="budget-suggestions-${index}"></button><div id="budget-suggestions-${index}" class="budget-suggestions" hidden></div></div>`;
+}

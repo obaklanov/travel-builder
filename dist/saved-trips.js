@@ -55,7 +55,7 @@
       const route=getFlightRoutes(key,request)[0];
       if(!state.flightManual)state.rates[0]=route.price;
       const amount=Number(params.get('budget'));
-      const trip={id:button.dataset.tripId||(params.get('country')===key&&uuid.test(params.get('tripId')||'')?params.get('tripId'):crypto.randomUUID()),country:key,origin:guideDeparture,origin_label:((params.get('origin')===guideDeparture?params.get('from'):null)||departureCities.find(([code])=>code===guideDeparture)?.[1]||guideDeparture).slice(0,160),departure_date:request.departureDate,return_date:request.returnDate,days:state.days,estimated_total:tripTotalFromRates(state.rates,state.days,state.nights),budget:amount>0?amount:null,currency:'CAD'};
+      const trip={id:button.dataset.tripId||(params.get('country')===key&&uuid.test(params.get('tripId')||'')?params.get('tripId'):crypto.randomUUID()),country:key,origin:guideDeparture,origin_label:((params.get('origin')===guideDeparture?params.get('from'):null)||departureCities.find(([code])=>code===guideDeparture)?.[1]||guideDeparture).slice(0,160),departure_date:request.departureDate,return_date:request.returnDate,days:state.days,estimated_total:tripTotalFromRates(state.rates,state.days,state.nights,state.people||1),group_size:state.people||1,budget:amount>0?amount:null,currency:'CAD'};
       if(!validTrip(trip))throw Error('Please check the trip details before adding it.');
       localStorage.setItem(draftKey,JSON.stringify({trip,savedAt:Date.now()}));
       button.dataset.tripId=trip.id;
@@ -81,9 +81,10 @@
       const title=document.createElement('h3');title.textContent=names[trip.country]||trip.country;
       const origin=document.createElement('p');origin.textContent='From '+trip.origin_label+' ('+trip.origin+')';
       const dates=document.createElement('p');dates.textContent=trip.departure_date+' – '+trip.return_date+' · '+trip.days+' days';
-      const cost=document.createElement('p');cost.textContent='Approx. '+money(trip.estimated_total)+' CAD';
+      const cost=document.createElement('p');cost.textContent='Approx. '+money(trip.estimated_total)+' CAD'+((trip.group_size||1)>1?' · '+trip.group_size+' people':'');
       const link=document.createElement('a');link.textContent='View trip →';
       const params=new URLSearchParams({country:trip.country,origin:trip.origin,days:String(trip.days),start:trip.departure_date,end:trip.return_date,tripId:trip.id,from:trip.origin_label,returnTo:'home'});
+      params.set('people',String(trip.group_size||1));
       if(trip.budget)params.set('budget',String(trip.budget));
       link.href='destinations.html?'+params;
       const actions=document.createElement('div');actions.className='saved-trip-actions';
@@ -127,7 +128,7 @@
         const latest=readDraft();if(latest?.id===trip.id)localStorage.removeItem(draftKey);
         setNotice('Your '+names[trip.country]+' trip has been added to your profile.');
       }
-      const {data,error}=await client.from('travel_easy_trips').select('id,country,origin,origin_label,departure_date,return_date,days,estimated_total,budget,currency').eq('user_id',session.user.id).order('departure_date');
+      const {data,error}=await client.from('travel_easy_trips').select('id,country,origin,origin_label,departure_date,return_date,days,estimated_total,budget,currency,group_size').eq('user_id',session.user.id).order('departure_date');
       if(version!==serial)return;
       if(error)throw error;render(data||[],session.user.id);
     }catch(error){
