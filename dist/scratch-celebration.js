@@ -10,7 +10,13 @@
     const xs=mainland[0].map(p=>p[0]),ys=mainland[0].map(p=>p[1]);
     const west=Math.min(...xs)-5,east=Math.max(...xs)+5,south=Math.min(...ys)-5,north=Math.max(...ys)+5;
     // Focus on the main geographic cluster; all territories still fill on the world map.
-    const polygons=allPolygons.filter(p=>p===mainland || p[0].some(([x,y])=>x>=west&&x<=east&&y>=south&&y<=north));
+    const mainlandArea=area(mainland);
+    const polygons=allPolygons.filter(p=>{
+      if(p===mainland)return true;
+      // Tiny distant islets should not shrink the mainland close-up.
+      const nearMainland=p[0].some(([x,y])=>x>=west+4.5&&x<=east-4.5&&y>=south+4.5&&y<=north-4.5);
+      return (area(p)>=mainlandArea*.001||nearMainland) && p[0].some(([x,y])=>x>=west&&x<=east&&y>=south&&y<=north);
+    });
     const biggest=[...polygons].sort((a,b)=>b[0].length-a[0].length)[0];
     const center=biggest[0].reduce((sum,p)=>sum+p[0],0)/biggest[0].length;
     let minX=Infinity,minY=Infinity,maxX=-Infinity,maxY=-Infinity;
