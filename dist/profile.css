@@ -96,3 +96,6 @@
 .edit-profile-dialog small{display:block;font:11px/1.5 var(--sans);color:#756953;margin-top:7px;}.edit-profile-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px;}.edit-profile-dialog #save-profile-password{margin-top:18px;}.edit-profile-dialog p[role="status"]{font:13px/1.6 var(--sans);margin:12px 0 0;}.edit-profile-dialog [data-tone="error"]{color:#944b38;}.edit-profile-dialog [data-tone="success"]{color:#426746;}
 
 .scratch-flag-cloth{animation:none;transform:none;}
+
+/* Stretch country artwork and its scratching effects together; leave flags unchanged. */
+.scratch-country-stage > svg{transform:scaleY(1.18)}

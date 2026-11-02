@@ -307,7 +307,7 @@
           const scale=source?Math.max(.035,Math.min(.22,source.width/target.width)):.12;
           const dx=source?Math.max(-innerWidth,Math.min(innerWidth,source.left+source.width/2-target.left-target.width/2)):0;
           const dy=source?Math.max(-innerHeight*.6,Math.min(innerHeight*.6,source.top+source.height/2-target.top-target.height/2)):90;
-          await shape.svg.animate([{transform:`translate(${dx}px,${dy}px) scale(${scale})`,opacity:.25},{transform:'translate(0,0) scale(1)',opacity:1}],{duration:620,easing:'cubic-bezier(.2,.75,.2,1)',fill:'both'}).finished;
+          await shape.svg.animate([{transform:`translate(${dx}px,${dy}px) scale(${scale}) scaleY(1.18)`,opacity:.25},{transform:'translate(0,0) scale(1) scaleY(1.18)',opacity:1}],{duration:620,easing:'cubic-bezier(.2,.75,.2,1)',fill:'both'}).finished;
         }
         if(run.cancelled)break;
         if(reduced){shape.colourPath.removeAttribute('mask');caption.textContent=feature.properties.name+' · '+(facts[code]?.region||'');details.textContent=countryFacts(code);details.hidden=false;onReveal(code);await new Promise(resolve=>{run.finish=resolve;skip.textContent='Close';});run.finish=null;}
