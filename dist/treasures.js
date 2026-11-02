@@ -520,16 +520,16 @@ const treasurePhotos = {
   },
   "Leaning Tower of Pisa": {
     "author": "John Samuel",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cathedral_and_Leaning_Tower,_Pisa_09.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cathedral_and_Leaning_Tower,_Pisa_04.jpg",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "originalTitle": "File:Cathedral and Leaning Tower, Pisa 09.jpg",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Cathedral_and_Leaning_Tower%2C_Pisa_09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "src": "images/treasures/italy-pisa-landscape.webp",
-    "alt": "Leaning Tower of Pisa in a wider landscape view",
+    "originalTitle": "File:Cathedral and Leaning Tower, Pisa 04.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/44/Cathedral_and_Leaning_Tower%2C_Pisa_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "alt": "The complete Leaning Tower of Pisa from base to flag beside Pisa Cathedral",
+    "src": "images/treasures/italy-pisa-full-tower.webp",
     "width": 640,
     "height": 427,
-    "bytes": 40318
+    "bytes": 55898
   },
   "Iguazú Falls": {
     "author": "Mariordo (Mario Roberto Durán Ortiz)",
