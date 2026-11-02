@@ -25,3 +25,5 @@ greece: https://unsplash.com/photos/santorini-greece-SHKaad-Y2X0 (Unsplash Licen
 costa-rica: https://unsplash.com/photos/a-very-tall-mountain-towering-over-a-lush-green-field-1GEY6GsWEk0 (Unsplash License)
 indonesia: https://unsplash.com/photos/temple-reflecting-in-bali-lake-1kdIG_258bU (Unsplash License)
 Regional seasonal ratings and CAD flight/daily allowances are editorial planning estimates, not live prices or verified climate forecasts. Gateway routes for Monteverde, Manuel Antonio and Caribbean Costa Rica require onward ground travel.
+
+Spain card replacement, 1 November 2026: Callum Parker, Plaza de España, Seville. https://unsplash.com/photos/white-concrete-building-under-blue-sky-during-daytime-lyimDT5RhYA (Unsplash License). Local asset: images/spain-seville.jpg.

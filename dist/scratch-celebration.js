@@ -291,7 +291,7 @@
       for(let index=0;index<sequence.length&&!run.cancelled;index++){
         const code=sequence[index],feature=features.get(code);
         title.textContent=feature.properties.name;details.hidden=true;details.textContent='';
-        caption.textContent=codes.length===1?'A memory worth keeping.':`${index+1} of ${codes.length} newly travelled places`;
+        caption.textContent=window.TRAVEL_SCRATCH_PHRASES?.[code]||('Your '+feature.properties.name+' chapter, uncovered.');
         const shape=makeStage(feature,colors[code]||'#82afd0');stage.replaceChildren(shape.svg);
         if(flags[code])stage.append(makeFlag(code,feature.properties.name,reduced));
 
