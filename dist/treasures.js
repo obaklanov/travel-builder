@@ -521,17 +521,17 @@ const treasurePhotos = {
     "bytes": 74992
   },
   "Leaning Tower of Pisa": {
-    "author": "Arne Müseler",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Italy_-_Pisa_-_Leaning_Tower.jpg",
-    "license": "CC BY-SA 3.0 de",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
-    "originalTitle": "File:Italy_-_Pisa_-_Leaning_Tower.jpg",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Italy_-_Pisa_-_Leaning_Tower.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "src": "images/treasures/italy-3.webp",
-    "alt": "Leaning Tower of Pisa — Italy",
-    "width": 344,
-    "height": 480,
-    "bytes": 41670
+    "author": "John Samuel",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cathedral_and_Leaning_Tower,_Pisa_09.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalTitle": "File:Cathedral and Leaning Tower, Pisa 09.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Cathedral_and_Leaning_Tower%2C_Pisa_09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "src": "images/treasures/italy-pisa-landscape.webp",
+    "alt": "Leaning Tower of Pisa in a wider landscape view",
+    "width": 640,
+    "height": 427,
+    "bytes": 40318
   },
   "Iguazú Falls": {
     "author": "Mariordo (Mario Roberto Durán Ortiz)",
@@ -638,30 +638,30 @@ const treasurePhotos = {
     "bytes": 98798
   },
   "Sky Tower": {
-    "author": "Jorge Royan",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sky_Tower,_Auckland_-_0206_(cropped).jpg",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "originalTitle": "File:Sky_Tower,_Auckland_-_0206_(cropped).jpg",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Sky_Tower%2C_Auckland_-_0206_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "src": "images/treasures/new-zealand-3.webp",
-    "alt": "Sky Tower — New Zealand",
-    "width": 237,
-    "height": 480,
-    "bytes": 13658
+    "author": "Ziqi CHAI",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Viaduct_Basin_in_Auckland_3.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalTitle": "File:Viaduct Basin in Auckland 3.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Viaduct_Basin_in_Auckland_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "src": "images/treasures/new-zealand-sky-tower-landscape.webp",
+    "alt": "Sky Tower in a wider landscape view",
+    "width": 640,
+    "height": 245,
+    "bytes": 26652
   },
   "Statue of Liberty": {
-    "author": "AskALotl",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Front_view_of_Statue_of_Liberty_(cropped).jpg",
-    "license": "CC0",
-    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-    "originalTitle": "File:Front_view_of_Statue_of_Liberty_(cropped).jpg",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/89/Front_view_of_Statue_of_Liberty_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "src": "images/treasures/united-states-1.webp",
-    "alt": "Statue of Liberty — United States",
-    "width": 313,
-    "height": 480,
-    "bytes": 8042
+    "author": "Christian David",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Statue_of_Liberty_and_a_sightseeing_boat,_Liberty_Island,_New_York.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalTitle": "File:Statue of Liberty and a sightseeing boat, Liberty Island, New York.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/93/Statue_of_Liberty_and_a_sightseeing_boat%2C_Liberty_Island%2C_New_York.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "src": "images/treasures/usa-liberty-landscape.webp",
+    "alt": "Statue of Liberty in a wider landscape view",
+    "width": 640,
+    "height": 427,
+    "bytes": 39706
   },
   "Grand Canyon": {
     "author": "Lennart Sikkema",
@@ -751,17 +751,17 @@ const treasurePhotos = {
     "bytes": 40646
   },
   "El Peñol Rock": {
-    "author": "Sebastian Reategui",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:El_Pe%C3%B1ol_de_Guatap%C3%A9_(The_Rock_of_Guatape)_2017-04-10.jpg",
-    "license": "CC0",
-    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-    "originalTitle": "File:El_Peñol_de_Guatapé_(The_Rock_of_Guatape)_2017-04-10.jpg",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bd/El_Pe%C3%B1ol_de_Guatap%C3%A9_%28The_Rock_of_Guatape%29_2017-04-10.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "src": "images/treasures/colombia-3.webp",
-    "alt": "El Peñol Rock — Colombia",
-    "width": 320,
+    "author": "Tzeitel Topel",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sight_of_the_Guatap%C3%A9_Rock.JPG",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalTitle": "File:Sight of the Guatapé Rock.JPG",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Sight_of_the_Guatap%C3%A9_Rock.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "src": "images/treasures/colombia-penol-landscape.webp",
+    "alt": "El Peñol Rock in a wider landscape view",
+    "width": 640,
     "height": 480,
-    "bytes": 33716
+    "bytes": 30904
   },
   "Jemaa el-Fnaa": {
     "author": "Boris Macek",
@@ -803,17 +803,17 @@ const treasurePhotos = {
     "bytes": 10610
   },
   "Sagrada Família": {
-    "author": "Canaan",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:SF_maig_2_cropped.jpg",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "originalTitle": "File:SF_maig_2_cropped.jpg",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ef/SF_maig_2_cropped.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "src": "images/treasures/spain-1.webp",
-    "alt": "Sagrada Família — Spain",
-    "width": 330,
-    "height": 480,
-    "bytes": 32580
+    "author": "Bernard Gagnon",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sagrada_Familia_01.jpg",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalTitle": "File:Sagrada Familia 01.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Sagrada_Familia_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "src": "images/treasures/spain-sagrada-landscape.webp",
+    "alt": "Sagrada Família in a wider landscape view",
+    "width": 640,
+    "height": 430,
+    "bytes": 42308
   },
   "Alhambra": {
     "author": "Jebulon",
@@ -905,17 +905,17 @@ const treasurePhotos = {
     "bytes": 47456
   },
   "Río Celeste": {
-    "author": "Asequeir at English Wikipedia",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rio_celeste.jpg",
-    "license": "Public domain",
-    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-    "originalTitle": "File:Rio_celeste.jpg",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/74/Rio_celeste.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "src": "images/treasures/costa-rica-3.webp",
-    "alt": "Río Celeste — Costa Rica",
-    "width": 360,
-    "height": 480,
-    "bytes": 51166
+    "author": "Imatges, algunes lle…",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rio_Celeste._Parc_natural_Volcan_Tenorio._Bijagua_de_Upala_-_panoramio_(1).jpg",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "originalTitle": "File:Rio Celeste. Parc natural Volcan Tenorio. Bijagua de Upala - panoramio (1).jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Rio_Celeste._Parc_natural_Volcan_Tenorio._Bijagua_de_Upala_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "src": "images/treasures/costa-rica-rio-celeste-landscape.webp",
+    "alt": "Río Celeste in a wider landscape view",
+    "width": 640,
+    "height": 427,
+    "bytes": 104766
   },
   "Borobudur": {
     "author": "CEphoto, Uwe Aranas",
