@@ -14,7 +14,7 @@
 .scratch-country-stage {height:min(48svh,390px);width:100%;position:relative;}
 .scratch-country-stage svg {height:100%;width:100%;overflow:visible;filter:drop-shadow(0 7px 7px #896d3a20);transform-origin:center;}
 .scratch-coin {filter:drop-shadow(0 1px 1px #684c2c55);}
-.scratch-caption {font:16px/1.5 var(--sans);color:#657066;margin:18px 0 14px;}
+.scratch-caption {font:18px/1.5 var(--sans);color:#657066;margin:18px 0 14px;}
 .scratch-skip {font:12px var(--sans);padding:10px 18px;min-height:40px;border:1px solid #c9be9f;border-radius:20px;background:transparent;color:#6f634e;}
 .scratch-skip:hover {background:#eee8d8;}
 @media(max-width:700px){.scratch-celebration-inner {padding:28px 20px 20px;}.scratch-celebration h2 {font-size:42px;}.scratch-country-stage {height:40svh;}}
