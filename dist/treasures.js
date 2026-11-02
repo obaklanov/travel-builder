@@ -342,7 +342,7 @@ Object.assign(newCountryTreasures, {
   "france": {
     "name": "France",
     "rewardName": "croissant",
-    "reward": "<svg class=\"country-reward\" viewBox=\"0 0 100 90\" role=\"img\" aria-label=\"Playful croissant profile reward\" stroke=\"#8c754f\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><ellipse cx=\"50\" cy=\"83\" rx=\"31\" ry=\"4\" fill=\"#806342\" stroke=\"none\" opacity=\".12\"/><path d=\"M18 64q-18-20 1-36l10 12q21-12 42 0l10-12q19 16 1 36l-13-9q-19 13-38 0Z\" fill=\"#dfb36a\"/><path d=\"M30 39l-2 18m14-23-2 28m18-28 2 28m10-23 2 18M17 37l8 7m58-7-8 7\" fill=\"none\"/><path d=\"M35 43q14-7 30 0\" stroke=\"#fff1bc\" fill=\"none\"/></svg>",
+    "reward": "<svg class=\"country-reward\" viewBox=\"0 0 100 90\" role=\"img\" aria-label=\"Golden crescent croissant profile reward\" stroke=\"#956b35\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><defs><linearGradient id=\"croissant-bake\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop stop-color=\"#f7dc94\"/><stop offset=\".45\" stop-color=\"#e7b65e\"/><stop offset=\"1\" stop-color=\"#bf873e\"/></linearGradient></defs><ellipse cx=\"50\" cy=\"78\" rx=\"35\" ry=\"4\" fill=\"#806342\" stroke=\"none\" opacity=\".13\"/><path d=\"M9 64C8 48 18 34 29 29C38 12 62 12 71 29C85 35 94 49 91 64C87 71 78 73 69 70C77 58 72 48 61 45C53 41 45 41 37 45C27 49 23 59 31 70C22 74 11 72 9 64Z\" fill=\"url(#croissant-bake)\"/><path d=\"M34 24C29 33 29 40 34 47M45 18C40 29 40 36 43 43M55 18C60 29 60 36 57 43M66 24C71 33 71 40 66 47M21 35C20 45 22 51 27 56M79 35C80 45 78 51 73 56\" fill=\"none\" stroke=\"#af7937\" stroke-width=\"2\"/><path d=\"M34 27Q38 19 42 20M48 21h4M60 20q5 1 6 7M15 52q-2 8 3 12m67-12q2 8-3 12\" fill=\"none\" stroke=\"#fff0bc\" stroke-width=\"2.5\"/><path d=\"M10 63q5 9 18 7m62-7q-5 9-18 7\" fill=\"none\" stroke=\"#a67134\"/></svg>",
     "treasures": [
       {
         "name": "Eiffel Tower",
@@ -1270,7 +1270,7 @@ const treasurePhotos = {
     "bytes": 52498
   },
   "Pont du Gard": {
-    "author": "This Photo was taken by Wolfgang Moroder.  \n\nFeel free to use my photos, but please mention me as the author and send me a  message. \n\n\n\nThis image is not in the public domain. Please respect the copyright protection. It may only be used according to the rules mentioned here. This specifically excludes use in social media, if applicable terms of the licenses listed here are not appropriate.\n\n\n\nPlease do not upload an updated image here without consultation with the Author. The author would like to make corrections only at his own source. This ensures that the changes are preserved.Please if you think that any changes should be required, please inform the author.Otherwise you can upload a new image with a new name. Please use one of the templates derivative or extract.",
+    "author": "This Photo was taken by Wolfgang Moroder.",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pont_du_Gard_2017.jpg",
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
