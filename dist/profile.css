@@ -98,4 +98,4 @@
 .scratch-flag-cloth{animation:none;transform:none;}
 
 /* Stretch country artwork and its scratching effects together; leave flags unchanged. */
-.scratch-country-stage > svg{transform:scaleY(1.18)}
+.scratch-country-stage > svg{transform:scaleY(1.298)}
