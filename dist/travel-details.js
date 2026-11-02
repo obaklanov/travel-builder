@@ -142,7 +142,7 @@ function renderTravelDetail(key,kind){
  const flight=getFlightRoutes(key,flightRequest(key,state.days))[0];
  if(!state.flightManual)state.rates[0]=roundBudgetRate(flight.price,0);
  state.rates=state.rates.map(roundBudgetRate);
- panel.innerHTML=`<h3>MONEY. How much do you need?</h3><p class="estimate-note">Sample CAD allowances, to be confirmed. Accommodation is for the whole group; other amounts start per person. Airfare matches FLIGHTS for your departure city; live fares are not connected. Edit amounts to suit your trip. Excludes insurance, visas and major paid activities.</p><div class="departure-controls budget-trip-controls"><div class="budget-route-info"><p class="budget-route-summary">${departureCities.find(([code])=>code===guideDeparture)?.[1]||guideDeparture} (${guideDeparture}) → ${flight.city} (${flight.code})</p></div>${departureDateField(key)}<label>Days <input id="trip-days" type="number" min="1" max="365" value="${state.days}"></label><label>Nights <input id="trip-nights" type="number" value="${state.nights}" readonly aria-readonly="true"><small>Days − 1</small></label></div><label class="budget-group-label">How many people are travelling in your group? <select id="budget-group-size">${[1,2,3,4].map(n=>`<option value="${n}" ${n===state.people?'selected':''}>${n}</option>`).join('')}</select></label><table class="group-budget-table"><thead><tr><th>Category</th><th>Basis</th><th>Budget per person</th><th># of people</th><th>Total budget</th></tr></thead><tbody>${[[`Flights (round trip, ${guideDeparture} ↔ ${flight.code})`,'one-time'],['Accommodation','per night'],['Food','per day'],['Internal transport','per day'],['Miscellaneous','per day']].map(([n,b],i)=>{const control=budgetAllowanceControl(n,i,state.rates[i]);return `<tr><td>${n}</td><td>${b}</td><td>${i===1?'':control}</td><td class="budget-people">${i===1?'—':state.people}</td><td>${i===1?control:'<span class="budget-line-total"></span>'}</td></tr>`;}).join('')}</tbody></table><output id="budget-total" aria-live="polite"></output>`;
+ panel.innerHTML=`<h3>MONEY. How much do you need?</h3><p class="estimate-note">Sample CAD allowances, to be confirmed. Accommodation is for the whole group; other amounts start per person. Airfare matches FLIGHTS for your departure city; live fares are not connected. Edit amounts to suit your trip. Excludes insurance, visas and major paid activities.</p><div class="departure-controls budget-trip-controls"><div class="budget-route-info"><p class="budget-route-summary">${departureCities.find(([code])=>code===guideDeparture)?.[1]||guideDeparture} (${guideDeparture}) → ${flight.city} (${flight.code})</p></div>${departureDateField(key)}<label>Days <span class="trip-days-control"><input id="trip-days" type="number" min="1" max="90" value="${state.days}"><button type="button" id="trip-days-toggle" aria-label="Suggested trip lengths" aria-expanded="false" aria-controls="trip-days-options"></button><span id="trip-days-options" class="trip-days-options" hidden></span></span></label><label>Nights <input id="trip-nights" type="number" value="${state.nights}" readonly aria-readonly="true"><small>Days − 1</small></label></div><label class="budget-group-label">How many people are travelling in your group? <select id="budget-group-size">${[1,2,3,4].map(n=>`<option value="${n}" ${n===state.people?'selected':''}>${n}</option>`).join('')}</select></label><table class="group-budget-table"><thead><tr><th>Category</th><th>Basis</th><th>Budget per person</th><th># of people</th><th>Total budget</th></tr></thead><tbody>${[[`Flights (round trip, ${guideDeparture} ↔ ${flight.code})`,'one-time'],['Accommodation','per night'],['Food','per day'],['Internal transport','per day'],['Miscellaneous','per day']].map(([n,b],i)=>{const control=budgetAllowanceControl(n,i,state.rates[i]);return `<tr><td>${n}</td><td>${b}</td><td>${i===1?'':control}</td><td class="budget-people">${i===1?'—':state.people}</td><td>${i===1?control:'<span class="budget-line-total"></span>'}</td></tr>`;}).join('')}</tbody></table><output id="budget-total" aria-live="polite"></output>`;
  const daysInput=panel.querySelector('#trip-days'),nightsInput=panel.querySelector('#trip-nights'),rateInputs=[...panel.querySelectorAll('.budget-rate')];
  const update=()=>{
   const route=getFlightRoutes(key,flightRequest(key,state.days))[0];
@@ -152,8 +152,9 @@ function renderTravelDetail(key,kind){
   const total=tripTotalFromRates(state.rates,state.days,state.nights,state.people),average=document.createElement('small');average.className='budget-per-person-average';average.textContent=' ('+money(total/state.people)+' per person)';panel.querySelector('#budget-total').replaceChildren(document.createTextNode('Estimated total: '+money(total)),average);
  };
  const syncFlight=()=>{if(!state.flightManual){state.rates[0]=roundBudgetRate(getFlightRoutes(key,flightRequest(key,state.days))[0].price,0);rateInputs[0].value=state.rates[0];}};
- daysInput.oninput=()=>{if(daysInput.value==='')return;state.days=Math.min(365,Math.max(1,Math.floor(Number(daysInput.value)||1)));if(!state.nightsManual){state.nights=Math.max(0,state.days-1);nightsInput.value=state.nights;}syncFlight();update();};
+ daysInput.oninput=()=>{if(daysInput.value==='')return;state.days=Math.min(90,Math.max(1,Math.floor(Number(daysInput.value)||1)));if(!state.nightsManual){state.nights=Math.max(0,state.days-1);nightsInput.value=state.nights;}syncFlight();update();};
  panel.querySelector('#budget-group-size').onchange=event=>{state.people=Math.max(1,Math.min(4,Number(event.target.value)||1));update();};
+ setupTripDaySuggestions(panel,daysInput);
  setupBudgetAllowances(panel,state,rateInputs,update);
  bindDepartureDate(key,panel,()=>{syncFlight();update();});
  update();
@@ -344,4 +345,21 @@ for(const data of Object.values(travelData))data.costs=data.costs.map(value=>rou
 
 function budgetAllowanceControl(name,index,value){
  return `<div class="budget-allowance"><input aria-label="${name} CAD ${index===1?'for the group':'per person'}" class="budget-rate" type="number" min="0" max="100000" step="${index===0?10:5}" value="${value}"><button type="button" class="budget-suggestions-toggle" aria-label="Suggested ${index===0?'flight':name.toLowerCase()} amounts" aria-expanded="false" aria-controls="budget-suggestions-${index}"></button><div id="budget-suggestions-${index}" class="budget-suggestions" hidden></div></div>`;
+}
+
+function setupTripDaySuggestions(panel,input){
+ const toggle=panel.querySelector('#trip-days-toggle'),list=panel.querySelector('#trip-days-options');
+ const presets=[...Array.from({length:10},(_,i)=>i+1),12,14,16,18,20,25,30,35,40,45,50,60,70,80,90];
+ const close=()=>{list.hidden=true;toggle.setAttribute('aria-expanded','false');};
+ toggle.onclick=()=>{
+  if(!list.hidden){close();return;}
+  list.replaceChildren();
+  presets.forEach(days=>{const option=document.createElement('button');option.type='button';option.textContent=days+' '+(days===1?'day':'days');if(days===Number(input.value))option.className='current';option.onclick=event=>{input.value=String(days);input.oninput();close();if(event.detail===0)input.focus();};list.append(option);});
+  list.hidden=false;toggle.setAttribute('aria-expanded','true');
+  const options=[...list.children],selected=list.querySelector('.current')||options.reduce((best,item,i)=>Math.abs(presets[i]-Number(input.value))<Math.abs(presets[options.indexOf(best)]-Number(input.value))?item:best,options[0]);
+  list.scrollTop=Math.max(0,selected.offsetTop-(list.clientHeight-selected.offsetHeight)/2);
+ };
+ panel.addEventListener('click',event=>{if(!event.target.closest('.trip-days-control'))close();});
+ panel.addEventListener('keydown',event=>{if(event.key==='Escape'&&!list.hidden){event.preventDefault();event.stopPropagation();close();toggle.focus();}});
+ input.onchange=()=>{input.value=String(Math.min(90,Math.max(1,Math.floor(Number(input.value)||1))));input.oninput();};
 }
