@@ -169,17 +169,15 @@
     "bytes": 52368
   },
   "Grand Canal": {
-    "author": "Didier Descouens",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:View_of_the_Grand_Canal_from_Rialto_to_Ca%27Foscari.jpg",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "originalTitle": "File:View_of_the_Grand_Canal_from_Rialto_to_Ca'Foscari.jpg",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/51/View_of_the_Grand_Canal_from_Rialto_to_Ca%27Foscari.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "src": "images/treasures/italy-2.webp",
-    "alt": "Grand Canal — Italy",
-    "width": 640,
-    "height": 350,
-    "bytes": 74992
+    "author": "Rafael Peier",
+    "sourceUrl": "https://unsplash.com/photos/venice-grand-canal-at-dusk-with-illuminated-buildings-and-boats-9_-Ywj5S4eQ",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license",
+    "alt": "Venice’s Grand Canal at dusk with illuminated palaces, boats and golden reflections on blue water",
+    "src": "images/treasures/italy-grand-canal-dusk.webp",
+    "width": 700,
+    "height": 467,
+    "bytes": 39376
   },
   "Leaning Tower of Pisa": {
     "author": "John Samuel",
