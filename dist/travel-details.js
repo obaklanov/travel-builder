@@ -30,7 +30,7 @@ function renderTravelDetail(key,kind){
  }else if(kind==='health'){
   panel.innerHTML=`<h3>Health and vaccines</h3><p><a href="${official}#health" target="_blank" rel="noopener noreferrer">Read official health notices and vaccine guidance for ${name} ↗</a></p><p>Discuss your itinerary and health needs with a travel health professional.</p>`;
  }else if(kind==='advice'){
-  panel.innerHTML=`<h3>Current Canadian travel advice</h3><p><a href="${official}" target="_blank" rel="noopener noreferrer">Check the latest Government of Canada advice for ${name} ↗</a></p><p>Review the risk level and any regional advisories for your route.</p>`;
+  panel.innerHTML=`<h3>GOVERNMENT. What does the Canadian government advise?</h3><p><a href="${official}" target="_blank" rel="noopener noreferrer">Check the latest Government of Canada advice for ${name} ↗</a></p><p>Review the risk level and any regional advisories for your route.</p>`;
  }else if(kind==='flights'&&!getBudgetState(key).regionChoice){
  panel.innerHTML='<h3>FLIGHTS</h3><p>First choose your region and travel month.</p><button type="button" id="choose-travel-season">Choose region and month →</button>';
  panel.querySelector('#choose-travel-season').onclick=()=>renderTravelDetail(key,'season');

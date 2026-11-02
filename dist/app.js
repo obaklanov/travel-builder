@@ -57,15 +57,13 @@ function showGuide(key) {
     <section class="trip-add-area"><button type="button" id="add-this-trip">ADD THIS TRIP <span aria-hidden="true">＋</span></button><p>Save it to your profile.</p><p id="trip-add-status" role="status"></p></section>
     <div class="trip-collectibles">${countryTreasures(key)}</div></aside>
     <div class="guide-body"><p class="eyebrow">${country.region.toUpperCase()}</p>
-    <h2 id="guide-title">7 KEY details for YOUR trip to ${country.name}</h2>
+    <h2 id="guide-title">5 short steps to plan your perfect trip to ${country.name}</h2>
     <div class="guide-links">
       <button type="button" data-detail="entry">${guideDetailIcon('entry')}<span class="guide-detail-label">VISA. Do you need it?</span><span class="guide-detail-arrow" aria-hidden="true">→</span></button>
       <button data-detail="season">${guideDetailIcon('season')}<span class="guide-detail-label">WHEN. What month best to go?</span><span class="guide-detail-arrow" aria-hidden="true">→</span></button>
       <button data-detail="flights">${guideDetailIcon('flights')}<span class="guide-detail-label">FLIGHTS</span><span class="guide-detail-arrow" aria-hidden="true">→</span></button>
       <button data-detail="budget">${guideDetailIcon('budget')}<span class="guide-detail-label">MONEY. How much do you need?</span><span class="guide-detail-arrow" aria-hidden="true">→</span></button>
-      <button type="button" data-detail="health">${guideDetailIcon('health')}<span class="guide-detail-label">Health and vaccines</span><span class="guide-detail-arrow" aria-hidden="true">→</span></button>
-      <button data-detail="insurance">${guideDetailIcon('insurance')}<span class="guide-detail-label">Travel insurance</span><span class="guide-detail-arrow" aria-hidden="true">→</span></button>
-      <button type="button" data-detail="advice">${guideDetailIcon('advice')}<span class="guide-detail-label">Current Canadian travel advice</span><span class="guide-detail-arrow" aria-hidden="true">→</span></button>
+      <button type="button" data-detail="advice">${guideDetailIcon('advice')}<span class="guide-detail-label">GOVERNMENT. What does the Canadian government advise?</span><span class="guide-detail-arrow" aria-hidden="true">→</span></button>
     <section id="trip-detail-panel" class="detail-panel" hidden tabindex="-1" role="region"></section></div>
     ${communitySection(key)}</div>`;
   const content=document.querySelector('.guide-content');
