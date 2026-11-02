@@ -729,15 +729,15 @@ const treasurePhotos = {
     "bytes": 50070
   },
   "Cartagena Walled City": {
-    "author": "Juan Nino",
-    "sourceUrl": "https://unsplash.com/photos/a-street-lined-with-buildings-and-pink-flowers-lyetwQ_ym3E",
+    "author": "Jimmy Hu",
+    "sourceUrl": "https://unsplash.com/photos/a-row-of-colorful-buildings-with-flowers-growing-on-the-balconies-u1KDpj425VM",
     "license": "Unsplash License",
     "licenseUrl": "https://unsplash.com/license",
-    "alt": "Colourful colonial houses, wooden balconies and pink bougainvillea on a street in Cartagena’s old city",
-    "src": "images/treasures/colombia-cartagena-balconies.webp",
-    "width": 400,
-    "height": 500,
-    "bytes": 42574
+    "alt": "Colourful colonial balconies and flowering bougainvillea in Cartagena’s walled city",
+    "src": "images/treasures/colombia-cartagena-wide-balconies.webp",
+    "width": 700,
+    "height": 467,
+    "bytes": 92106
   },
   "Cocora Valley": {
     "author": "Nicole Arango Lang",
