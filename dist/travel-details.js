@@ -102,6 +102,8 @@ const regionGeographyLabels={
   ]
 };
 for(const [key,labels] of Object.entries(regionGeographyLabels))travelData[key].regions.forEach((region,index)=>{region[0]=labels[index];});
+// Display geographic qualifiers consistently in brackets.
+for(const data of Object.values(travelData))data.regions.forEach(region=>{region[0]=region[0].replace(/ \/ (North|South|Center|West|East|Islands)$/, ' ($1)');});
 const departureCities=[['YYZ','Toronto'],['YVR','Vancouver'],['YUL','Montréal'],['YYC','Calgary'],['YEG','Edmonton']];
 let guideDeparture=departureCities.some(([code])=>code===new URLSearchParams(location.search).get('origin'))?new URLSearchParams(location.search).get('origin'):'YYZ';
 function renderTravelDetail(key,kind){
