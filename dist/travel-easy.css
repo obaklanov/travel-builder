@@ -205,3 +205,5 @@ select:not([multiple]):not([size]){appearance:none;-webkit-appearance:none;backg
 
 /* Preserve natural, bright colours; keep Morocco’s established sunset treatment. */
 .destination-card:not([data-country="morocco"]) .card-image img{filter:none}
+
+.treasure-inline-details .treasure-photo{margin:14px 0 0}.treasure-photo img{display:block;width:100%;height:auto;max-height:300px;object-fit:contain;background:#eee3c7;border:1px solid #bca270;padding:4px;box-sizing:border-box;border-radius:2px}.treasure-photo figcaption{font:10px/1.5 var(--sans);color:#806c4b;margin-top:5px}.treasure-photo figcaption a{color:inherit;text-underline-offset:2px}
