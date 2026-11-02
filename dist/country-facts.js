@@ -120,5 +120,45 @@ const countryFacts = {
     "areaRank": 58,
     "areaShare": "0.33",
     "areaCount": 234
+  },
+  "spain": {
+    "population": 47850793,
+    "populationRank": 34,
+    "populationCount": 234,
+    "populationShare": "0.58",
+    "area": 505992,
+    "areaRank": 52,
+    "areaShare": "0.37",
+    "areaCount": 234
+  },
+  "greece": {
+    "population": 9897115,
+    "populationRank": 96,
+    "populationCount": 234,
+    "populationShare": "0.12",
+    "area": 131990,
+    "areaRank": 97,
+    "areaShare": "0.10",
+    "areaCount": 234
+  },
+  "costa-rica": {
+    "population": 5174789,
+    "populationRank": 127,
+    "populationCount": 234,
+    "populationShare": "0.06",
+    "area": 51100,
+    "areaRank": 129,
+    "areaShare": "0.04",
+    "areaCount": 234
+  },
+  "indonesia": {
+    "population": 287886782,
+    "populationRank": 4,
+    "populationCount": 234,
+    "populationShare": "3.47",
+    "area": 1904569,
+    "areaRank": 15,
+    "areaShare": "1.40",
+    "areaCount": 234
   }
 };

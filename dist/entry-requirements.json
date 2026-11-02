@@ -129,5 +129,49 @@
     "checkedAt": "2026-11-01",
     "needsReview": false,
     "checkFailed": false
+  },
+  "spain": {
+    "summary": "Visa-free tourism for up to 90 days within any 180-day period in the Schengen area.",
+    "notes": [
+      "The 90-day allowance is shared across Schengen countries."
+    ],
+    "passport": "Valid for at least 3 months after your planned departure from the Schengen area.",
+    "sourceUrl": "https://travel.gc.ca/destinations/spain#entryexit",
+    "checkedAt": "2026-11-01",
+    "needsReview": false,
+    "checkFailed": false
+  },
+  "greece": {
+    "summary": "Visa-free tourism for up to 90 days within any 180-day period in the Schengen area.",
+    "notes": [
+      "The 90-day allowance is shared across Schengen countries."
+    ],
+    "passport": "Valid for at least 3 months after your planned departure from the Schengen area.",
+    "sourceUrl": "https://travel.gc.ca/destinations/greece#entryexit",
+    "checkedAt": "2026-11-01",
+    "needsReview": false,
+    "checkFailed": false
+  },
+  "costa-rica": {
+    "summary": "Tourist visa not required for stays of up to 180 days.",
+    "notes": [
+      "The immigration officer decides your permitted stay. Carry a return or onward ticket and evidence of sufficient funds."
+    ],
+    "passport": "Valid for the duration of your stay.",
+    "sourceUrl": "https://travel.gc.ca/destinations/costa-rica#entryexit",
+    "checkedAt": "2026-11-01",
+    "needsReview": false,
+    "checkFailed": false
+  },
+  "indonesia": {
+    "summary": "Tourist visa required. Canadians may obtain one in advance or on arrival at eligible entry points.",
+    "notes": [
+      "A return or onward ticket is required. Use official immigration channels to arrange your visa."
+    ],
+    "passport": "Valid for at least 6 months after entry, with at least one blank page.",
+    "sourceUrl": "https://travel.gc.ca/destinations/indonesia#entryexit",
+    "checkedAt": "2026-11-01",
+    "needsReview": false,
+    "checkFailed": false
   }
 }

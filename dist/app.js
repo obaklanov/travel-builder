@@ -3,6 +3,11 @@ const guideDetailArtwork={"entry": "<rect x=\"12\" y=\"7\" width=\"36\" height=\
 function guideDetailIcon(kind){return '<svg class="guide-detail-icon" viewBox="0 0 64 64" aria-hidden="true" focusable="false" stroke-width="1.4" stroke-linejoin="round">'+guideDetailArtwork[kind]+'</svg>';}
 
 const countries = {
+"spain":{"name": "Spain", "region": "Europe", "prompt": "Prepare for your next adventure."},
+"greece":{"name": "Greece", "region": "Europe", "prompt": "Prepare for your next adventure."},
+"costa-rica":{"name": "Costa Rica", "region": "North America", "prompt": "Prepare for your next adventure."},
+"indonesia":{"name": "Indonesia", "region": "Asia", "prompt": "Prepare for your next adventure."},
+
 "united-states":{"name": "United States", "region": "North America", "prompt": "Prepare for your next adventure."},
 "vietnam":{"name": "Vietnam", "region": "Asia", "prompt": "Prepare for your next adventure."},
 "colombia":{"name": "Colombia", "region": "South America", "prompt": "Prepare for your next adventure."},
@@ -54,7 +59,7 @@ function showGuide(key) {
       <p><span>Area</span> <strong title="${facts.area.toLocaleString('en-CA')} km²">${areaLabel} km²</strong><small title="Share of combined country and territory area; see definitions">· ${facts.areaShare}% world · Rank ${facts.areaRank}/${facts.areaCount}</small></p>
       <details class="facts-sources"><summary>Dates, sources &amp; definitions</summary><div>Population: 2026 estimates. Area includes inland water; its world share is calculated from the combined 234 listed countries and territories (136,059,683 km²), excluding oceans and Antarctica. Rankings include territories. Figures retrieved 31 October 2026. M = million; k = thousand.<br><a href="https://www.worldometers.info/world-population/population-by-country/" target="_blank" rel="noopener noreferrer">Population source</a> · <a href="https://www.worldometers.info/geography/largest-countries-in-the-world/" target="_blank" rel="noopener noreferrer">Area source</a></div></details>
     </section>
-    <section class="trip-add-area"><button type="button" id="add-this-trip">ADD THIS TRIP <span aria-hidden="true">＋</span></button><p>Save it to your profile.</p><p id="trip-add-status" role="status"></p></section>
+
     <div class="trip-collectibles">${countryTreasures(key)}</div></aside>
     <div class="guide-body"><p class="eyebrow">${country.region.toUpperCase()}</p>
     <h2 id="guide-title">5 short steps to plan your perfect trip to ${country.name}</h2>
@@ -65,6 +70,7 @@ function showGuide(key) {
       <button data-detail="budget">${guideDetailIcon('budget')}<span class="guide-detail-label">MONEY. How much do you need?</span><span class="guide-detail-arrow" aria-hidden="true">→</span></button>
       <button type="button" data-detail="advice">${guideDetailIcon('advice')}<span class="guide-detail-label">GOVERNMENT. What does the Canadian government advise?</span><span class="guide-detail-arrow" aria-hidden="true">→</span></button>
     <section id="trip-detail-panel" class="detail-panel" hidden tabindex="-1" role="region"></section></div>
+    <section class="trip-add-area"><button type="button" id="add-this-trip">ADD THIS TRIP <span aria-hidden="true">＋</span></button><p>Save it to your profile.</p><p id="trip-add-status" role="status"></p></section>
     </div>`;
   const content=document.querySelector('.guide-content');
   content.prepend(content.querySelector('.guide-body'));

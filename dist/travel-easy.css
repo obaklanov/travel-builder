@@ -196,3 +196,5 @@ select:not([multiple]):not([size]){appearance:none;-webkit-appearance:none;backg
 .budget-allowance .budget-rate:focus{outline:none;box-shadow:none}.budget-allowance .budget-rate:focus-visible{outline:2px solid #8b754d;outline-offset:2px}
 
 .detail-panel #choose-travel-season{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:10px 17px;border:1px solid #a18450;border-radius:5px;background:#e6d5b1;color:#493620;font:500 13px/1.4 var(--sans);box-shadow:0 2px 4px #70502b15;cursor:pointer;transition:background .15s,border-color .15s}.detail-panel #choose-travel-season:hover{background:#daca9f;border-color:#826334}.detail-panel #choose-travel-season:focus-visible{outline:2px solid #8b754d;outline-offset:3px}
+
+.guide-body > .trip-add-area{position:static;margin:24px 0 0;width:100%;box-sizing:border-box}

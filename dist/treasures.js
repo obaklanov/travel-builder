@@ -188,3 +188,150 @@ Object.assign(newCountryTreasures, {
     ]
   }
 });
+
+Object.assign(newCountryTreasures, {
+  "spain": {
+    "name": "Spain",
+    "rewardName": "Spanish fan",
+    "reward": "<svg class=\"country-reward\" viewBox=\"0 0 100 90\" role=\"img\" aria-label=\"Colourful Spanish fan profile reward\"><path d=\"M50 75 8 30Q50-6 92 30Z\" fill=\"#c57351\" stroke=\"#866039\" stroke-width=\"2\"/><path d=\"M50 75 18 25m32 50L32 17m18 58V13m0 62 18-58M50 75l32-50\" stroke=\"#edd29b\" stroke-width=\"2\"/><circle cx=\"50\" cy=\"75\" r=\"5\" fill=\"#b99552\"/></svg>",
+    "treasures": [
+      {
+        "name": "Sagrada Família",
+        "subtitle": "Gaudí’s soaring vision",
+        "description": "Barcelona’s extraordinary basilica blends sculptural façades with branching, forest-like columns.",
+        "region": "Catalonia, Spain",
+        "lat": 41.4036,
+        "lon": 2.1744
+      },
+      {
+        "name": "Alhambra",
+        "subtitle": "Palaces & courtyards",
+        "description": "Granada’s hilltop palace and fortress complex is known for intricate decoration and tranquil courtyards.",
+        "region": "Andalusia, Spain",
+        "lat": 37.1761,
+        "lon": -3.5881
+      },
+      {
+        "name": "Mount Teide",
+        "subtitle": "Above the clouds",
+        "description": "Tenerife’s great volcanic landmark rises within Teide National Park. This map point marks the summit.",
+        "region": "Canary Islands, Spain",
+        "lat": 28.2723,
+        "lon": -16.6425
+      }
+    ],
+    "icons": [
+      "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M10 79h80M20 79V43h15V25h10V12h10v13h10v18h15v36M16 43l12-20 11 20m22 0 11-20 12 20M44 79V60q6-9 12 0v19M48 35h4m-4 8h4M26 51v12m47-12v12\"/></svg>",
+      "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M10 78V42h20V25h14v17h14V25h14v17h18v36M27 25v-8h20v8m8 0v-8h20v8M42 78V61q8-13 16 0v17M17 51h7m9-17h7m20 0h7m9 17h7M8 85h84\"/></svg>",
+      "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M7 80 39 30h22l32 50M39 30l10 9 12-9M20 80h60M46 23q-7-6-2-12m12 12q7-8 2-14M26 63l15-23m18 11 12 17\"/></svg>"
+    ]
+  },
+  "greece": {
+    "name": "Greece",
+    "rewardName": "little owl",
+    "reward": "<svg class=\"country-reward\" viewBox=\"0 0 100 90\" role=\"img\" aria-label=\"Little Greek owl profile reward\"><path d=\"M25 30 22 12l19 10h18l19-10-3 18q16 44-25 48Q9 74 25 30Z\" fill=\"#a89366\" stroke=\"#796341\" stroke-width=\"2\"/><circle cx=\"37\" cy=\"40\" r=\"13\" fill=\"#e6d9b4\"/><circle cx=\"63\" cy=\"40\" r=\"13\" fill=\"#e6d9b4\"/><circle cx=\"37\" cy=\"40\" r=\"5\" fill=\"#484838\"/><circle cx=\"63\" cy=\"40\" r=\"5\" fill=\"#484838\"/><path d=\"m45 49 5 9 5-9M37 64l5 4m16 0 5-4\" fill=\"#d1a54d\" stroke=\"#806a42\"/><path d=\"M35 79h12m6 0h12\" stroke=\"#806a42\" stroke-width=\"3\"/></svg>",
+    "treasures": [
+      {
+        "name": "Acropolis",
+        "subtitle": "Athens above the city",
+        "description": "The ancient hilltop sanctuary is home to the Parthenon and sweeping views over Athens.",
+        "region": "Attica, Greece",
+        "lat": 37.9715,
+        "lon": 23.7267
+      },
+      {
+        "name": "Meteora",
+        "subtitle": "Monasteries in the sky",
+        "description": "Historic monasteries perch on dramatic sandstone pillars. The map marks Great Meteoron Monastery.",
+        "region": "Thessaly, Greece",
+        "lat": 39.7262,
+        "lon": 21.6268
+      },
+      {
+        "name": "Santorini",
+        "subtitle": "Blue domes & caldera",
+        "description": "Whitewashed villages overlook a volcanic caldera. This map point marks the blue-domed churches in Oia.",
+        "region": "South Aegean, Greece",
+        "lat": 36.4612,
+        "lon": 25.3753
+      }
+    ],
+    "icons": [
+      "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M10 78h80M16 72h68M22 72V39h56v33M18 39l32-20 32 20ZM29 43v25m14-25v25m14-25v25m14-25v25M8 84h84\"/></svg>",
+      "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M13 79l5-45 15-13 14 9 12-17 23 18 5 48M20 44l12-12 8 9m18-15 15 12M29 79V62h25V48h26v31M25 62l16-12 16 12M57 48l11-10 14 10M8 85h84\"/></svg>",
+      "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M21 78V49h58v29M16 49h68M29 49V38q21-33 42 0v11M48 22v-9m-4 4h8M45 78V61h11v17M8 85h84M30 57v10m39-10v10\"/></svg>"
+    ]
+  },
+  "costa-rica": {
+    "name": "Costa Rica",
+    "rewardName": "sloth",
+    "reward": "<svg class=\"country-reward\" viewBox=\"0 0 100 90\" role=\"img\" aria-label=\"Smiling sloth profile reward\"><path d=\"M15 20h73\" stroke=\"#795c3c\" stroke-width=\"6\" stroke-linecap=\"round\"/><path d=\"M31 20q-10 20 2 40 24 29 42-1 5-20-5-39\" fill=\"#ae9b7b\" stroke=\"#7c6e54\" stroke-width=\"3\"/><ellipse cx=\"52\" cy=\"51\" rx=\"25\" ry=\"23\" fill=\"#daceac\"/><path d=\"M32 41q10-6 16 4l-7 10-10-5m41-9q-10-6-16 4l7 10 10-5\" fill=\"#7d7059\"/><circle cx=\"40\" cy=\"47\" r=\"2\" fill=\"#333d33\"/><circle cx=\"64\" cy=\"47\" r=\"2\" fill=\"#333d33\"/><path d=\"M48 56h8m-12 6q8 8 16 0\" fill=\"none\" stroke=\"#695740\" stroke-width=\"2\" stroke-linecap=\"round\"/></svg>",
+    "treasures": [
+      {
+        "name": "Arenal Volcano",
+        "subtitle": "Rainforest & volcano",
+        "description": "A near-perfect volcanic cone rises above forest near La Fortuna. The map marks the volcano itself.",
+        "region": "Alajuela, Costa Rica",
+        "lat": 10.463,
+        "lon": -84.703
+      },
+      {
+        "name": "Manuel Antonio",
+        "subtitle": "Forest meets the Pacific",
+        "description": "A coastal national park combines tropical forest, wildlife and sheltered beaches. The map marks Playa Manuel Antonio.",
+        "region": "Puntarenas, Costa Rica",
+        "lat": 9.3766,
+        "lon": -84.4356
+      },
+      {
+        "name": "Río Celeste",
+        "subtitle": "A ribbon of turquoise",
+        "description": "A striking blue waterfall lies within Tenorio Volcano National Park. The map marks the waterfall.",
+        "region": "Alajuela, Costa Rica",
+        "lat": 10.6951,
+        "lon": -84.9954
+      }
+    ],
+    "icons": [
+      "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M7 80 39 30h22l32 50M39 30l10 9 12-9M20 80h60M46 23q-7-6-2-12m12 12q7-8 2-14M26 63l15-23m18 11 12 17\"/></svg>",
+      "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M11 76q22-14 45-3t35-1M13 85q10-5 20 0t20 0 20 0 20 0M31 70l7-39m0 0q-17-19-28-4 16-4 28 4m0 0q20-20 34-3-19-4-34 3m0 0q-14 1-19 15m19-15q19 1 22 15\"/><circle cx=\"77\" cy=\"21\" r=\"9\"/></svg>",
+      "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M9 25h30v31q0 16-17 25m17-56h21v34q0 14 15 22M46 26v40m7-40v34M8 81q10-5 20 0t20 0 20 0 20 0M8 19l13-6 18 6m22 0 16-6 15 6\"/></svg>"
+    ]
+  },
+  "indonesia": {
+    "name": "Indonesia",
+    "rewardName": "miniature jukung boat",
+    "reward": "<svg class=\"country-reward\" viewBox=\"0 0 100 90\" role=\"img\" aria-label=\"Colourful jukung outrigger boat profile reward\"><path d=\"M20 58h59L66 75H34Z\" fill=\"#ba704b\" stroke=\"#805738\" stroke-width=\"2\"/><path d=\"M49 57V12l27 35H49\" fill=\"#dfc26d\" stroke=\"#8f7441\" stroke-width=\"2\"/><path d=\"M46 18 27 48h19Z\" fill=\"#86a99b\" stroke=\"#637e70\"/><path d=\"M31 66 11 58m57 8 21-8M9 57v14q40 14 82 0V57\" fill=\"none\" stroke=\"#6e9388\" stroke-width=\"3\" stroke-linecap=\"round\"/></svg>",
+    "treasures": [
+      {
+        "name": "Borobudur",
+        "subtitle": "Stone stories at dawn",
+        "description": "A monumental Buddhist temple in central Java, famed for its terraces, reliefs and bell-shaped stupas.",
+        "region": "Central Java, Indonesia",
+        "lat": -7.6079,
+        "lon": 110.2038
+      },
+      {
+        "name": "Ulun Danu Beratan",
+        "subtitle": "Temple on the lake",
+        "description": "A tiered temple stands beside Lake Beratan in Bali’s cool highlands.",
+        "region": "Bali, Indonesia",
+        "lat": -8.2751,
+        "lon": 115.1668
+      },
+      {
+        "name": "Komodo National Park",
+        "subtitle": "Dragons & island horizons",
+        "description": "A protected island landscape shelters Komodo dragons and rich marine life. The map marks Loh Liang on Komodo Island.",
+        "region": "East Nusa Tenggara, Indonesia",
+        "lat": -8.5716,
+        "lon": 119.4893
+      }
+    ],
+    "icons": [
+      "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M10 78h80M16 72h68M22 72V39h56v33M18 39l32-20 32 20ZM29 43v25m14-25v25m14-25v25m14-25v25M8 84h84\"/></svg>",
+      "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M21 78V49h58v29M16 49h68M29 49V38q21-33 42 0v11M48 22v-9m-4 4h8M45 78V61h11v17M8 85h84M30 57v10m39-10v10\"/></svg>",
+      "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M11 76q22-14 45-3t35-1M13 85q10-5 20 0t20 0 20 0 20 0M31 70l7-39m0 0q-17-19-28-4 16-4 28 4m0 0q20-20 34-3-19-4-34 3m0 0q-14 1-19 15m19-15q19 1 22 15\"/><circle cx=\"77\" cy=\"21\" r=\"9\"/></svg>"
+    ]
+  }
+});
