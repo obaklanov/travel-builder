@@ -40,4 +40,8 @@ Pushing to `main` deploys `dist/` through the GitHub Pages workflow. The origina
 
 For an existing database, `supabase-twenty-four-destinations-setup.sql` expands the allowed saved-trip destinations without deleting existing trips. It was applied for this expansion.
 
-Photo attribution is available in the Destinations photo-credit section and below individual treasure photos. Detailed source metadata is retained in `data/treasure-photo-sources.json` and `data/eight-country-photo-sources.json`.
+Photo attribution is available in the About photo-credit section and below individual treasure photos. Detailed source metadata is retained in `data/treasure-photo-sources.json` and `data/eight-country-photo-sources.json`.
+
+## Week 6 learning and cleanup
+
+Start with `PROJECT.md` and `WEEK-6-HANDOFF.md` for the current architecture, learning sessions and safe cleanup procedure.

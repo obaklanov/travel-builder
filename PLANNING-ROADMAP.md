@@ -1,15 +1,24 @@
-# Planning depth
+# Planning depth — current state
 
-1. Surprise me: generate a trip and save it immediately.
-2. Shape the essentials: review the seven key details, adjust timing and budget, then save.
-3. Advanced planning (future): edit a saved trip in detail.
+Updated: 2 November 2026. See PROJECT.md for the current application map.
 
-The departure checklist belongs to advanced planning. Its country-popup button was removed on 2026-11-01; the implementation remains in dist/planning.html and the checklist functions in dist/app.js. Restore access from the advanced trip editor when that feature is built.
+1. Surprise me: generate a trip on Home, optionally using duration, budget and destination filters, and save it.
+2. Shape the essentials: use five country-page steps — visa, region/month, flights, money and Canadian government advice — then ADD THIS TRIP.
+3. Advanced planning (future): edit a saved trip in depth from the profile.
 
-Treasures and Set the mood remain on country pages for now, including the United States, Vietnam, Colombia and Morocco. Rewards are illustrative concepts; collecting them on profiles is a future feature.
+## Visible now
 
-## Five-step mid-level planner
+- Five-step planner for 24 destinations.
+- Treasure badges, on-click photos and illustrative collection rewards.
+- Getting into the mood: song, book and film suggestions, temporarily restored on all 24 country pages at the user's request.
+- Account profiles, saved-trip removal and travelled-country scratch maps.
 
-As of 2026-11-01, mid-level planning contains visa, travel month/region, flights, money, and Canadian government travel advice. Health and vaccines, plus travel insurance, are reserved for future advanced planning. Their renderers and artwork remain in travel-details.js and app.js for reuse; their mid-level buttons are removed.
+## Retained for future work
 
-Set the mood is also reserved for advanced planning. Its song, book and film content and renderer remain in dist/community-picks.js; the country popup no longer renders that section.
+- Departure checklist: country-popup entry point removed; existing `dist/planning.html` route and checklist functions in `dist/app.js` remain for assessment and possible advanced-planner reuse.
+- Health/vaccines and travel insurance: renderers/artwork retained, absent from the five mid-level steps.
+- Full editing of saved trips, real treasure collection on profiles, community voting and sharing features are future work.
+
+## Week 6
+
+Focus on understanding this implementation and identifying safe cleanup opportunities. Temporary or dormant code is not automatically obsolete; inspect references and the planned feature before removing it.
