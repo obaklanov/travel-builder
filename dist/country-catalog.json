@@ -8,7 +8,8 @@
     "population": 45047069,
     "populationRank": 36,
     "area": 652230,
-    "areaRank": 41
+    "areaRank": 41,
+    "classification": "country"
   },
   {
     "code": "ALB",
@@ -19,7 +20,8 @@
     "population": 2751025,
     "populationRank": 144,
     "area": 28748,
-    "areaRank": 144
+    "areaRank": 144,
+    "classification": "country"
   },
   {
     "code": "DZA",
@@ -30,7 +32,8 @@
     "population": 48028334,
     "populationRank": 32,
     "area": 2381741,
-    "areaRank": 10
+    "areaRank": 10,
+    "classification": "country"
   },
   {
     "code": "ASM",
@@ -41,7 +44,8 @@
     "population": 45319,
     "populationRank": 210,
     "area": 199,
-    "areaRank": 215
+    "areaRank": 215,
+    "classification": "territory"
   },
   {
     "code": "AND",
@@ -52,7 +56,8 @@
     "population": 83753,
     "populationRank": 201,
     "area": 468,
-    "areaRank": 195
+    "areaRank": 195,
+    "classification": "country"
   },
   {
     "code": "AGO",
@@ -63,7 +68,8 @@
     "population": 40215179,
     "populationRank": 39,
     "area": 1246700,
-    "areaRank": 23
+    "areaRank": 23,
+    "classification": "country"
   },
   {
     "code": "AIA",
@@ -74,7 +80,8 @@
     "population": 14817,
     "populationRank": 222,
     "area": 91,
-    "areaRank": 222
+    "areaRank": 222,
+    "classification": "territory"
   },
   {
     "code": "ATG",
@@ -85,7 +92,8 @@
     "population": 94626,
     "populationRank": 199,
     "area": 442,
-    "areaRank": 200
+    "areaRank": 200,
+    "classification": "country"
   },
   {
     "code": "ARG",
@@ -96,7 +104,8 @@
     "population": 46003734,
     "populationRank": 35,
     "area": 2780400,
-    "areaRank": 8
+    "areaRank": 8,
+    "classification": "country"
   },
   {
     "code": "ARM",
@@ -107,7 +116,8 @@
     "population": 2930915,
     "populationRank": 140,
     "area": 29743,
-    "areaRank": 142
+    "areaRank": 142,
+    "classification": "country"
   },
   {
     "code": "ABW",
@@ -118,7 +128,8 @@
     "population": 108164,
     "populationRank": 196,
     "area": 180,
-    "areaRank": 217
+    "areaRank": 217,
+    "classification": "territory"
   },
   {
     "code": "AUS",
@@ -129,7 +140,8 @@
     "population": 27227096,
     "populationRank": 55,
     "area": 7692024,
-    "areaRank": 6
+    "areaRank": 6,
+    "classification": "country"
   },
   {
     "code": "AUT",
@@ -140,7 +152,8 @@
     "population": 9107266,
     "populationRank": 99,
     "area": 83871,
-    "areaRank": 115
+    "areaRank": 115,
+    "classification": "country"
   },
   {
     "code": "AZE",
@@ -151,7 +164,8 @@
     "population": 10454855,
     "populationRank": 93,
     "area": 86600,
-    "areaRank": 114
+    "areaRank": 114,
+    "classification": "country"
   },
   {
     "code": "BHS",
@@ -162,7 +176,8 @@
     "population": 404628,
     "populationRank": 177,
     "area": 13943,
-    "areaRank": 160
+    "areaRank": 160,
+    "classification": "country"
   },
   {
     "code": "BHR",
@@ -173,7 +188,8 @@
     "population": 1675572,
     "populationRank": 153,
     "area": 765,
-    "areaRank": 187
+    "areaRank": 187,
+    "classification": "country"
   },
   {
     "code": "BGD",
@@ -184,7 +200,8 @@
     "population": 177818044,
     "populationRank": 8,
     "area": 147570,
-    "areaRank": 94
+    "areaRank": 94,
+    "classification": "country"
   },
   {
     "code": "BRB",
@@ -195,7 +212,8 @@
     "population": 282724,
     "populationRank": 186,
     "area": 430,
-    "areaRank": 201
+    "areaRank": 201,
+    "classification": "country"
   },
   {
     "code": "BLR",
@@ -206,7 +224,8 @@
     "population": 8937018,
     "populationRank": 102,
     "area": 207600,
-    "areaRank": 86
+    "areaRank": 86,
+    "classification": "country"
   },
   {
     "code": "BEL",
@@ -217,7 +236,8 @@
     "population": 11774642,
     "populationRank": 83,
     "area": 30528,
-    "areaRank": 140
+    "areaRank": 140,
+    "classification": "country"
   },
   {
     "code": "BLZ",
@@ -228,7 +248,8 @@
     "population": 428644,
     "populationRank": 176,
     "area": 22966,
-    "areaRank": 151
+    "areaRank": 151,
+    "classification": "country"
   },
   {
     "code": "BEN",
@@ -239,7 +260,8 @@
     "population": 15170419,
     "populationRank": 76,
     "area": 112622,
-    "areaRank": 102
+    "areaRank": 102,
+    "classification": "country"
   },
   {
     "code": "BMU",
@@ -250,7 +272,8 @@
     "population": 64459,
     "populationRank": 205,
     "area": 54,
-    "areaRank": 224
+    "areaRank": 224,
+    "classification": "territory"
   },
   {
     "code": "BTN",
@@ -261,7 +284,8 @@
     "population": 802214,
     "populationRank": 166,
     "area": 38394,
-    "areaRank": 136
+    "areaRank": 136,
+    "classification": "country"
   },
   {
     "code": "BOL",
@@ -272,7 +296,8 @@
     "population": 12749291,
     "populationRank": 79,
     "area": 1098581,
-    "areaRank": 28
+    "areaRank": 28,
+    "classification": "country"
   },
   {
     "code": "BIH",
@@ -283,7 +308,8 @@
     "population": 3114242,
     "populationRank": 138,
     "area": 51209,
-    "areaRank": 128
+    "areaRank": 128,
+    "classification": "country"
   },
   {
     "code": "BWA",
@@ -294,7 +320,8 @@
     "population": 2603388,
     "populationRank": 146,
     "area": 582000,
-    "areaRank": 47
+    "areaRank": 47,
+    "classification": "country"
   },
   {
     "code": "BRA",
@@ -305,7 +332,8 @@
     "population": 213562666,
     "populationRank": 7,
     "area": 8515767,
-    "areaRank": 5
+    "areaRank": 5,
+    "classification": "country"
   },
   {
     "code": "VGB",
@@ -316,7 +344,8 @@
     "population": 39936,
     "populationRank": 215,
     "area": 151,
-    "areaRank": 219
+    "areaRank": 219,
+    "classification": "territory"
   },
   {
     "code": "BRN",
@@ -327,7 +356,8 @@
     "population": 469775,
     "populationRank": 175,
     "area": 5765,
-    "areaRank": 171
+    "areaRank": 171,
+    "classification": "country"
   },
   {
     "code": "BGR",
@@ -338,7 +368,8 @@
     "population": 6667659,
     "populationRank": 110,
     "area": 110879,
-    "areaRank": 105
+    "areaRank": 105,
+    "classification": "country"
   },
   {
     "code": "BFA",
@@ -349,7 +380,8 @@
     "population": 24601700,
     "populationRank": 59,
     "area": 272967,
-    "areaRank": 75
+    "areaRank": 75,
+    "classification": "country"
   },
   {
     "code": "BDI",
@@ -360,7 +392,8 @@
     "population": 14729157,
     "populationRank": 78,
     "area": 27834,
-    "areaRank": 146
+    "areaRank": 146,
+    "classification": "country"
   },
   {
     "code": "CPV",
@@ -373,7 +406,8 @@
     "population": 529630,
     "populationRank": 174,
     "area": 4033,
-    "areaRank": 174
+    "areaRank": 174,
+    "classification": "country"
   },
   {
     "code": "KHM",
@@ -384,7 +418,8 @@
     "population": 18051219,
     "populationRank": 73,
     "area": 181035,
-    "areaRank": 90
+    "areaRank": 90,
+    "classification": "country"
   },
   {
     "code": "CMR",
@@ -395,7 +430,8 @@
     "population": 30640817,
     "populationRank": 51,
     "area": 475442,
-    "areaRank": 54
+    "areaRank": 54,
+    "classification": "country"
   },
   {
     "code": "CAN",
@@ -406,7 +442,8 @@
     "population": 40467728,
     "populationRank": 38,
     "area": 9984670,
-    "areaRank": 2
+    "areaRank": 2,
+    "classification": "country"
   },
   {
     "code": "BES",
@@ -417,7 +454,8 @@
     "population": 31913,
     "populationRank": 219,
     "area": 328,
-    "areaRank": 207
+    "areaRank": 207,
+    "classification": "territory"
   },
   {
     "code": "CYM",
@@ -428,7 +466,8 @@
     "population": 77196,
     "populationRank": 203,
     "area": 264,
-    "areaRank": 210
+    "areaRank": 210,
+    "classification": "territory"
   },
   {
     "code": "CAF",
@@ -439,7 +478,8 @@
     "population": 5698984,
     "populationRank": 118,
     "area": 622984,
-    "areaRank": 43
+    "areaRank": 43,
+    "classification": "country"
   },
   {
     "code": "TCD",
@@ -450,7 +490,8 @@
     "population": 21560380,
     "populationRank": 64,
     "area": 1284000,
-    "areaRank": 21
+    "areaRank": 21,
+    "classification": "country"
   },
   {
     "code": "CHL",
@@ -461,7 +502,8 @@
     "population": 19945850,
     "populationRank": 67,
     "area": 756102,
-    "areaRank": 38
+    "areaRank": 38,
+    "classification": "country"
   },
   {
     "code": "CHN",
@@ -472,7 +514,8 @@
     "population": 1412914089,
     "populationRank": 2,
     "area": 9706961,
-    "areaRank": 3
+    "areaRank": 3,
+    "classification": "country"
   },
   {
     "code": "COL",
@@ -483,7 +526,8 @@
     "population": 53936226,
     "populationRank": 28,
     "area": 1141748,
-    "areaRank": 26
+    "areaRank": 26,
+    "classification": "country"
   },
   {
     "code": "COM",
@@ -494,7 +538,8 @@
     "population": 899010,
     "populationRank": 162,
     "area": 1862,
-    "areaRank": 179
+    "areaRank": 179,
+    "classification": "country"
   },
   {
     "code": "COG",
@@ -507,7 +552,8 @@
     "population": 6637785,
     "populationRank": 112,
     "area": 342000,
-    "areaRank": 65
+    "areaRank": 65,
+    "classification": "country"
   },
   {
     "code": "COK",
@@ -518,7 +564,8 @@
     "population": 12826,
     "populationRank": 223,
     "area": 236,
-    "areaRank": 214
+    "areaRank": 214,
+    "classification": "other"
   },
   {
     "code": "CRI",
@@ -529,7 +576,8 @@
     "population": 5174789,
     "populationRank": 127,
     "area": 51100,
-    "areaRank": 129
+    "areaRank": 129,
+    "classification": "country"
   },
   {
     "code": "CIV",
@@ -542,7 +590,8 @@
     "population": 33494346,
     "populationRank": 50,
     "area": 322463,
-    "areaRank": 70
+    "areaRank": 70,
+    "classification": "country"
   },
   {
     "code": "HRV",
@@ -553,7 +602,8 @@
     "population": 3822345,
     "populationRank": 130,
     "area": 56594,
-    "areaRank": 127
+    "areaRank": 127,
+    "classification": "country"
   },
   {
     "code": "CUB",
@@ -564,7 +614,8 @@
     "population": 10892659,
     "populationRank": 90,
     "area": 109884,
-    "areaRank": 106
+    "areaRank": 106,
+    "classification": "country"
   },
   {
     "code": "CUW",
@@ -575,7 +626,8 @@
     "population": 185440,
     "populationRank": 189,
     "area": 444,
-    "areaRank": 199
+    "areaRank": 199,
+    "classification": "territory"
   },
   {
     "code": "CYP",
@@ -586,7 +638,8 @@
     "population": 1382334,
     "populationRank": 156,
     "area": 9251,
-    "areaRank": 168
+    "areaRank": 168,
+    "classification": "country"
   },
   {
     "code": "CZE",
@@ -599,7 +652,8 @@
     "population": 10527781,
     "populationRank": 92,
     "area": 78865,
-    "areaRank": 118
+    "areaRank": 118,
+    "classification": "country"
   },
   {
     "code": "DNK",
@@ -610,7 +664,8 @@
     "population": 6023520,
     "populationRank": 114,
     "area": 43094,
-    "areaRank": 133
+    "areaRank": 133,
+    "classification": "country"
   },
   {
     "code": "DJI",
@@ -621,7 +676,8 @@
     "population": 1199459,
     "populationRank": 160,
     "area": 23200,
-    "areaRank": 150
+    "areaRank": 150,
+    "classification": "country"
   },
   {
     "code": "DMA",
@@ -632,7 +688,8 @@
     "population": 65511,
     "populationRank": 204,
     "area": 751,
-    "areaRank": 188
+    "areaRank": 188,
+    "classification": "country"
   },
   {
     "code": "DOM",
@@ -643,7 +700,8 @@
     "population": 11609500,
     "populationRank": 84,
     "area": 48671,
-    "areaRank": 131
+    "areaRank": 131,
+    "classification": "country"
   },
   {
     "code": "COD",
@@ -654,7 +712,8 @@
     "population": 116452162,
     "populationRank": 15,
     "area": 2344858,
-    "areaRank": 11
+    "areaRank": 11,
+    "classification": "country"
   },
   {
     "code": "ECU",
@@ -665,7 +724,8 @@
     "population": 18444506,
     "populationRank": 72,
     "area": 276841,
-    "areaRank": 74
+    "areaRank": 74,
+    "classification": "country"
   },
   {
     "code": "EGY",
@@ -676,7 +736,8 @@
     "population": 120101175,
     "populationRank": 13,
     "area": 1002450,
-    "areaRank": 30
+    "areaRank": 30,
+    "classification": "country"
   },
   {
     "code": "SLV",
@@ -687,7 +748,8 @@
     "population": 6391253,
     "populationRank": 113,
     "area": 21041,
-    "areaRank": 152
+    "areaRank": 152,
+    "classification": "country"
   },
   {
     "code": "GNQ",
@@ -698,7 +760,8 @@
     "population": 1984468,
     "populationRank": 150,
     "area": 28051,
-    "areaRank": 145
+    "areaRank": 145,
+    "classification": "country"
   },
   {
     "code": "ERI",
@@ -709,7 +772,8 @@
     "population": 3682669,
     "populationRank": 132,
     "area": 117600,
-    "areaRank": 101
+    "areaRank": 101,
+    "classification": "country"
   },
   {
     "code": "EST",
@@ -720,7 +784,8 @@
     "population": 1331062,
     "populationRank": 157,
     "area": 45227,
-    "areaRank": 132
+    "areaRank": 132,
+    "classification": "country"
   },
   {
     "code": "SWZ",
@@ -731,7 +796,8 @@
     "population": 1269859,
     "populationRank": 158,
     "area": 17364,
-    "areaRank": 158
+    "areaRank": 158,
+    "classification": "country"
   },
   {
     "code": "ETH",
@@ -742,7 +808,8 @@
     "population": 138902185,
     "populationRank": 10,
     "area": 1104300,
-    "areaRank": 27
+    "areaRank": 27,
+    "classification": "country"
   },
   {
     "code": "FRO",
@@ -755,7 +822,8 @@
     "population": 56526,
     "populationRank": 206,
     "area": 1393,
-    "areaRank": 181
+    "areaRank": 181,
+    "classification": "territory"
   },
   {
     "code": "FLK",
@@ -766,7 +834,8 @@
     "population": 3465,
     "populationRank": 231,
     "area": 12173,
-    "areaRank": 163
+    "areaRank": 163,
+    "classification": "territory"
   },
   {
     "code": "FJI",
@@ -777,7 +846,8 @@
     "population": 937282,
     "populationRank": 161,
     "area": 18272,
-    "areaRank": 156
+    "areaRank": 156,
+    "classification": "country"
   },
   {
     "code": "FIN",
@@ -788,7 +858,8 @@
     "population": 5621739,
     "populationRank": 122,
     "area": 338424,
-    "areaRank": 66
+    "areaRank": 66,
+    "classification": "country"
   },
   {
     "code": "FRA",
@@ -799,7 +870,8 @@
     "population": 66746401,
     "populationRank": 23,
     "area": 551695,
-    "areaRank": 49
+    "areaRank": 49,
+    "classification": "country"
   },
   {
     "code": "GUF",
@@ -810,7 +882,8 @@
     "population": 318872,
     "populationRank": 183,
     "area": 83534,
-    "areaRank": 117
+    "areaRank": 117,
+    "classification": "territory"
   },
   {
     "code": "PYF",
@@ -821,7 +894,8 @@
     "population": 283076,
     "populationRank": 185,
     "area": 4167,
-    "areaRank": 173
+    "areaRank": 173,
+    "classification": "territory"
   },
   {
     "code": "GAB",
@@ -832,7 +906,8 @@
     "population": 2647399,
     "populationRank": 145,
     "area": 267668,
-    "areaRank": 77
+    "areaRank": 77,
+    "classification": "country"
   },
   {
     "code": "GMB",
@@ -843,7 +918,8 @@
     "population": 2884079,
     "populationRank": 141,
     "area": 10689,
-    "areaRank": 166
+    "areaRank": 166,
+    "classification": "country"
   },
   {
     "code": "GEO",
@@ -854,7 +930,8 @@
     "population": 3804642,
     "populationRank": 131,
     "area": 69700,
-    "areaRank": 122
+    "areaRank": 122,
+    "classification": "country"
   },
   {
     "code": "DEU",
@@ -865,7 +942,8 @@
     "population": 83644258,
     "populationRank": 19,
     "area": 357114,
-    "areaRank": 63
+    "areaRank": 63,
+    "classification": "country"
   },
   {
     "code": "GHA",
@@ -876,7 +954,8 @@
     "population": 35697557,
     "populationRank": 46,
     "area": 238533,
-    "areaRank": 82
+    "areaRank": 82,
+    "classification": "country"
   },
   {
     "code": "GIB",
@@ -887,7 +966,8 @@
     "population": 40867,
     "populationRank": 213,
     "area": 6,
-    "areaRank": 232
+    "areaRank": 232,
+    "classification": "territory"
   },
   {
     "code": "GRC",
@@ -898,7 +978,8 @@
     "population": 9897115,
     "populationRank": 96,
     "area": 131990,
-    "areaRank": 97
+    "areaRank": 97,
+    "classification": "country"
   },
   {
     "code": "GRL",
@@ -909,7 +990,8 @@
     "population": 55629,
     "populationRank": 207,
     "area": 2166086,
-    "areaRank": 12
+    "areaRank": 12,
+    "classification": "territory"
   },
   {
     "code": "GRD",
@@ -920,7 +1002,8 @@
     "population": 117362,
     "populationRank": 194,
     "area": 344,
-    "areaRank": 206
+    "areaRank": 206,
+    "classification": "country"
   },
   {
     "code": "GLP",
@@ -931,7 +1014,8 @@
     "population": 372453,
     "populationRank": 179,
     "area": 1628,
-    "areaRank": 180
+    "areaRank": 180,
+    "classification": "territory"
   },
   {
     "code": "GUM",
@@ -942,7 +1026,8 @@
     "population": 170185,
     "populationRank": 191,
     "area": 549,
-    "areaRank": 194
+    "areaRank": 194,
+    "classification": "territory"
   },
   {
     "code": "GTM",
@@ -953,7 +1038,8 @@
     "population": 18967978,
     "populationRank": 69,
     "area": 108889,
-    "areaRank": 107
+    "areaRank": 107,
+    "classification": "country"
   },
   {
     "code": "GIN",
@@ -964,7 +1050,8 @@
     "population": 15441993,
     "populationRank": 75,
     "area": 245857,
-    "areaRank": 79
+    "areaRank": 79,
+    "classification": "country"
   },
   {
     "code": "GNB",
@@ -975,7 +1062,8 @@
     "population": 2297808,
     "populationRank": 148,
     "area": 36125,
-    "areaRank": 138
+    "areaRank": 138,
+    "classification": "country"
   },
   {
     "code": "GUY",
@@ -986,7 +1074,8 @@
     "population": 840890,
     "populationRank": 165,
     "area": 214969,
-    "areaRank": 85
+    "areaRank": 85,
+    "classification": "country"
   },
   {
     "code": "HTI",
@@ -997,7 +1086,8 @@
     "population": 12037506,
     "populationRank": 82,
     "area": 27750,
-    "areaRank": 147
+    "areaRank": 147,
+    "classification": "country"
   },
   {
     "code": "VAT",
@@ -1010,7 +1100,8 @@
     "population": 506,
     "populationRank": 234,
     "area": 0,
-    "areaRank": 234
+    "areaRank": 234,
+    "classification": "country"
   },
   {
     "code": "HND",
@@ -1021,7 +1112,8 @@
     "population": 11184760,
     "populationRank": 87,
     "area": 112492,
-    "areaRank": 103
+    "areaRank": 103,
+    "classification": "country"
   },
   {
     "code": "HKG",
@@ -1032,7 +1124,8 @@
     "population": 7378602,
     "populationRank": 107,
     "area": 1104,
-    "areaRank": 183
+    "areaRank": 183,
+    "classification": "territory"
   },
   {
     "code": "HUN",
@@ -1043,7 +1136,8 @@
     "population": 9585818,
     "populationRank": 98,
     "area": 93028,
-    "areaRank": 110
+    "areaRank": 110,
+    "classification": "country"
   },
   {
     "code": "ISL",
@@ -1054,7 +1148,8 @@
     "population": 402329,
     "populationRank": 178,
     "area": 103000,
-    "areaRank": 108
+    "areaRank": 108,
+    "classification": "country"
   },
   {
     "code": "IND",
@@ -1065,7 +1160,8 @@
     "population": 1476625576,
     "populationRank": 1,
     "area": 3287590,
-    "areaRank": 7
+    "areaRank": 7,
+    "classification": "country"
   },
   {
     "code": "IDN",
@@ -1076,7 +1172,8 @@
     "population": 287886782,
     "populationRank": 4,
     "area": 1904569,
-    "areaRank": 15
+    "areaRank": 15,
+    "classification": "country"
   },
   {
     "code": "IRN",
@@ -1087,7 +1184,8 @@
     "population": 93168497,
     "populationRank": 17,
     "area": 1648195,
-    "areaRank": 18
+    "areaRank": 18,
+    "classification": "country"
   },
   {
     "code": "IRQ",
@@ -1098,7 +1196,8 @@
     "population": 48007437,
     "populationRank": 33,
     "area": 438317,
-    "areaRank": 59
+    "areaRank": 59,
+    "classification": "country"
   },
   {
     "code": "IRL",
@@ -1109,7 +1208,8 @@
     "population": 5356950,
     "populationRank": 125,
     "area": 70273,
-    "areaRank": 121
+    "areaRank": 121,
+    "classification": "country"
   },
   {
     "code": "IMN",
@@ -1120,7 +1220,8 @@
     "population": 84055,
     "populationRank": 200,
     "area": 572,
-    "areaRank": 193
+    "areaRank": 193,
+    "classification": "territory"
   },
   {
     "code": "ISR",
@@ -1131,7 +1232,8 @@
     "population": 9647689,
     "populationRank": 97,
     "area": 20770,
-    "areaRank": 153
+    "areaRank": 153,
+    "classification": "country"
   },
   {
     "code": "ITA",
@@ -1142,7 +1244,8 @@
     "population": 58926166,
     "populationRank": 25,
     "area": 301336,
-    "areaRank": 73
+    "areaRank": 73,
+    "classification": "country"
   },
   {
     "code": "JAM",
@@ -1153,7 +1256,8 @@
     "population": 2833403,
     "populationRank": 142,
     "area": 10991,
-    "areaRank": 165
+    "areaRank": 165,
+    "classification": "country"
   },
   {
     "code": "JPN",
@@ -1164,7 +1268,8 @@
     "population": 122427731,
     "populationRank": 12,
     "area": 377930,
-    "areaRank": 62
+    "areaRank": 62,
+    "classification": "country"
   },
   {
     "code": "JOR",
@@ -1175,7 +1280,8 @@
     "population": 11589532,
     "populationRank": 85,
     "area": 89342,
-    "areaRank": 112
+    "areaRank": 112,
+    "classification": "country"
   },
   {
     "code": "KAZ",
@@ -1186,7 +1292,8 @@
     "population": 21083626,
     "populationRank": 65,
     "area": 2724900,
-    "areaRank": 9
+    "areaRank": 9,
+    "classification": "country"
   },
   {
     "code": "KEN",
@@ -1197,7 +1304,8 @@
     "population": 58636412,
     "populationRank": 26,
     "area": 580367,
-    "areaRank": 48
+    "areaRank": 48,
+    "classification": "country"
   },
   {
     "code": "KIR",
@@ -1208,7 +1316,8 @@
     "population": 138445,
     "populationRank": 192,
     "area": 811,
-    "areaRank": 186
+    "areaRank": 186,
+    "classification": "country"
   },
   {
     "code": "KWT",
@@ -1219,7 +1328,8 @@
     "population": 5102773,
     "populationRank": 128,
     "area": 17818,
-    "areaRank": 157
+    "areaRank": 157,
+    "classification": "country"
   },
   {
     "code": "KGZ",
@@ -1230,7 +1340,8 @@
     "population": 7400465,
     "populationRank": 106,
     "area": 199951,
-    "areaRank": 87
+    "areaRank": 87,
+    "classification": "country"
   },
   {
     "code": "LAO",
@@ -1241,7 +1352,8 @@
     "population": 7974017,
     "populationRank": 103,
     "area": 236800,
-    "areaRank": 84
+    "areaRank": 84,
+    "classification": "country"
   },
   {
     "code": "LVA",
@@ -1252,7 +1364,8 @@
     "population": 1835935,
     "populationRank": 151,
     "area": 64559,
-    "areaRank": 125
+    "areaRank": 125,
+    "classification": "country"
   },
   {
     "code": "LBN",
@@ -1263,7 +1376,8 @@
     "population": 5897467,
     "populationRank": 116,
     "area": 10452,
-    "areaRank": 167
+    "areaRank": 167,
+    "classification": "country"
   },
   {
     "code": "LSO",
@@ -1274,7 +1388,8 @@
     "population": 2389336,
     "populationRank": 147,
     "area": 30355,
-    "areaRank": 141
+    "areaRank": 141,
+    "classification": "country"
   },
   {
     "code": "LBR",
@@ -1285,7 +1400,8 @@
     "population": 5853949,
     "populationRank": 117,
     "area": 111369,
-    "areaRank": 104
+    "areaRank": 104,
+    "classification": "country"
   },
   {
     "code": "LBY",
@@ -1296,7 +1412,8 @@
     "population": 7539851,
     "populationRank": 105,
     "area": 1759540,
-    "areaRank": 17
+    "areaRank": 17,
+    "classification": "country"
   },
   {
     "code": "LIE",
@@ -1307,7 +1424,8 @@
     "population": 40368,
     "populationRank": 214,
     "area": 160,
-    "areaRank": 218
+    "areaRank": 218,
+    "classification": "country"
   },
   {
     "code": "LTU",
@@ -1318,7 +1436,8 @@
     "population": 2797338,
     "populationRank": 143,
     "area": 65300,
-    "areaRank": 124
+    "areaRank": 124,
+    "classification": "country"
   },
   {
     "code": "LUX",
@@ -1329,7 +1448,8 @@
     "population": 687448,
     "populationRank": 168,
     "area": 2586,
-    "areaRank": 176
+    "areaRank": 176,
+    "classification": "country"
   },
   {
     "code": "MAC",
@@ -1342,7 +1462,8 @@
     "population": 723188,
     "populationRank": 167,
     "area": 30,
-    "areaRank": 227
+    "areaRank": 227,
+    "classification": "territory"
   },
   {
     "code": "MDG",
@@ -1353,7 +1474,8 @@
     "population": 33522052,
     "populationRank": 49,
     "area": 587041,
-    "areaRank": 46
+    "areaRank": 46,
+    "classification": "country"
   },
   {
     "code": "MWI",
@@ -1364,7 +1486,8 @@
     "population": 22785535,
     "populationRank": 62,
     "area": 118484,
-    "areaRank": 100
+    "areaRank": 100,
+    "classification": "country"
   },
   {
     "code": "MYS",
@@ -1375,7 +1498,8 @@
     "population": 36385115,
     "populationRank": 45,
     "area": 330803,
-    "areaRank": 68
+    "areaRank": 68,
+    "classification": "country"
   },
   {
     "code": "MDV",
@@ -1386,7 +1510,8 @@
     "population": 531517,
     "populationRank": 173,
     "area": 300,
-    "areaRank": 209
+    "areaRank": 209,
+    "classification": "country"
   },
   {
     "code": "MLI",
@@ -1397,7 +1522,8 @@
     "population": 25932275,
     "populationRank": 58,
     "area": 1240192,
-    "areaRank": 24
+    "areaRank": 24,
+    "classification": "country"
   },
   {
     "code": "MLT",
@@ -1408,7 +1534,8 @@
     "population": 549011,
     "populationRank": 172,
     "area": 316,
-    "areaRank": 208
+    "areaRank": 208,
+    "classification": "country"
   },
   {
     "code": "MHL",
@@ -1419,7 +1546,8 @@
     "population": 35075,
     "populationRank": 217,
     "area": 181,
-    "areaRank": 216
+    "areaRank": 216,
+    "classification": "country"
   },
   {
     "code": "MTQ",
@@ -1430,7 +1558,8 @@
     "population": 337711,
     "populationRank": 182,
     "area": 1128,
-    "areaRank": 182
+    "areaRank": 182,
+    "classification": "territory"
   },
   {
     "code": "MRT",
@@ -1441,7 +1570,8 @@
     "population": 5461319,
     "populationRank": 123,
     "area": 1030700,
-    "areaRank": 29
+    "areaRank": 29,
+    "classification": "country"
   },
   {
     "code": "MUS",
@@ -1452,7 +1582,8 @@
     "population": 1265059,
     "populationRank": 159,
     "area": 2040,
-    "areaRank": 178
+    "areaRank": 178,
+    "classification": "country"
   },
   {
     "code": "MYT",
@@ -1463,7 +1594,8 @@
     "population": 347536,
     "populationRank": 180,
     "area": 374,
-    "areaRank": 204
+    "areaRank": 204,
+    "classification": "territory"
   },
   {
     "code": "MEX",
@@ -1474,7 +1606,8 @@
     "population": 132997658,
     "populationRank": 11,
     "area": 1964375,
-    "areaRank": 14
+    "areaRank": 14,
+    "classification": "country"
   },
   {
     "code": "FSM",
@@ -1485,7 +1618,8 @@
     "population": 114183,
     "populationRank": 195,
     "area": 702,
-    "areaRank": 191
+    "areaRank": 191,
+    "classification": "country"
   },
   {
     "code": "MDA",
@@ -1496,7 +1630,8 @@
     "population": 2961253,
     "populationRank": 139,
     "area": 33846,
-    "areaRank": 139
+    "areaRank": 139,
+    "classification": "country"
   },
   {
     "code": "MCO",
@@ -1507,7 +1642,8 @@
     "population": 38087,
     "populationRank": 216,
     "area": 2,
-    "areaRank": 233
+    "areaRank": 233,
+    "classification": "country"
   },
   {
     "code": "MNG",
@@ -1518,7 +1654,8 @@
     "population": 3556798,
     "populationRank": 133,
     "area": 1564110,
-    "areaRank": 19
+    "areaRank": 19,
+    "classification": "country"
   },
   {
     "code": "MNE",
@@ -1529,7 +1666,8 @@
     "population": 626233,
     "populationRank": 170,
     "area": 13812,
-    "areaRank": 161
+    "areaRank": 161,
+    "classification": "country"
   },
   {
     "code": "MSR",
@@ -1540,7 +1678,8 @@
     "population": 4328,
     "populationRank": 230,
     "area": 102,
-    "areaRank": 221
+    "areaRank": 221,
+    "classification": "territory"
   },
   {
     "code": "MAR",
@@ -1551,7 +1690,8 @@
     "population": 38762441,
     "populationRank": 41,
     "area": 446550,
-    "areaRank": 58
+    "areaRank": 58,
+    "classification": "country"
   },
   {
     "code": "MOZ",
@@ -1562,7 +1702,8 @@
     "population": 36639851,
     "populationRank": 44,
     "area": 801590,
-    "areaRank": 36
+    "areaRank": 36,
+    "classification": "country"
   },
   {
     "code": "MMR",
@@ -1573,7 +1714,8 @@
     "population": 55184819,
     "populationRank": 27,
     "area": 676578,
-    "areaRank": 40
+    "areaRank": 40,
+    "classification": "country"
   },
   {
     "code": "NAM",
@@ -1584,7 +1726,8 @@
     "population": 3153246,
     "populationRank": 137,
     "area": 825615,
-    "areaRank": 35
+    "areaRank": 35,
+    "classification": "country"
   },
   {
     "code": "NRU",
@@ -1595,7 +1738,8 @@
     "population": 12101,
     "populationRank": 224,
     "area": 21,
-    "areaRank": 229
+    "areaRank": 229,
+    "classification": "country"
   },
   {
     "code": "NPL",
@@ -1606,7 +1750,8 @@
     "population": 29629410,
     "populationRank": 52,
     "area": 147181,
-    "areaRank": 95
+    "areaRank": 95,
+    "classification": "country"
   },
   {
     "code": "NLD",
@@ -1617,7 +1762,8 @@
     "population": 18448775,
     "populationRank": 71,
     "area": 41850,
-    "areaRank": 134
+    "areaRank": 134,
+    "classification": "country"
   },
   {
     "code": "NCL",
@@ -1628,7 +1774,8 @@
     "population": 297892,
     "populationRank": 184,
     "area": 18575,
-    "areaRank": 155
+    "areaRank": 155,
+    "classification": "territory"
   },
   {
     "code": "NZL",
@@ -1639,7 +1786,8 @@
     "population": 5287479,
     "populationRank": 126,
     "area": 270467,
-    "areaRank": 76
+    "areaRank": 76,
+    "classification": "country"
   },
   {
     "code": "NIC",
@@ -1650,7 +1798,8 @@
     "population": 7097329,
     "populationRank": 108,
     "area": 130373,
-    "areaRank": 98
+    "areaRank": 98,
+    "classification": "country"
   },
   {
     "code": "NER",
@@ -1661,7 +1810,8 @@
     "population": 28814878,
     "populationRank": 53,
     "area": 1267000,
-    "areaRank": 22
+    "areaRank": 22,
+    "classification": "country"
   },
   {
     "code": "NGA",
@@ -1672,7 +1822,8 @@
     "population": 242431832,
     "populationRank": 6,
     "area": 923768,
-    "areaRank": 32
+    "areaRank": 32,
+    "classification": "country"
   },
   {
     "code": "NIU",
@@ -1683,7 +1834,8 @@
     "population": 1822,
     "populationRank": 233,
     "area": 260,
-    "areaRank": 212
+    "areaRank": 212,
+    "classification": "other"
   },
   {
     "code": "PRK",
@@ -1694,7 +1846,8 @@
     "population": 26633691,
     "populationRank": 56,
     "area": 120538,
-    "areaRank": 99
+    "areaRank": 99,
+    "classification": "country"
   },
   {
     "code": "MKD",
@@ -1705,7 +1858,8 @@
     "population": 1804063,
     "populationRank": 152,
     "area": 25713,
-    "areaRank": 149
+    "areaRank": 149,
+    "classification": "country"
   },
   {
     "code": "MNP",
@@ -1716,7 +1870,8 @@
     "population": 42914,
     "populationRank": 212,
     "area": 464,
-    "areaRank": 196
+    "areaRank": 196,
+    "classification": "territory"
   },
   {
     "code": "NOR",
@@ -1727,7 +1882,8 @@
     "population": 5652989,
     "populationRank": 121,
     "area": 323802,
-    "areaRank": 69
+    "areaRank": 69,
+    "classification": "country"
   },
   {
     "code": "OMN",
@@ -1738,7 +1894,8 @@
     "population": 5671458,
     "populationRank": 120,
     "area": 309500,
-    "areaRank": 72
+    "areaRank": 72,
+    "classification": "country"
   },
   {
     "code": "PAK",
@@ -1749,7 +1906,8 @@
     "population": 259299791,
     "populationRank": 5,
     "area": 881912,
-    "areaRank": 34
+    "areaRank": 34,
+    "classification": "country"
   },
   {
     "code": "PLW",
@@ -1760,7 +1918,8 @@
     "population": 17614,
     "populationRank": 221,
     "area": 459,
-    "areaRank": 197
+    "areaRank": 197,
+    "classification": "country"
   },
   {
     "code": "PAN",
@@ -1771,7 +1930,8 @@
     "population": 4625718,
     "populationRank": 129,
     "area": 75417,
-    "areaRank": 119
+    "areaRank": 119,
+    "classification": "country"
   },
   {
     "code": "PNG",
@@ -1782,7 +1942,8 @@
     "population": 10947848,
     "populationRank": 89,
     "area": 462840,
-    "areaRank": 55
+    "areaRank": 55,
+    "classification": "country"
   },
   {
     "code": "PRY",
@@ -1793,7 +1954,8 @@
     "population": 7095279,
     "populationRank": 109,
     "area": 406752,
-    "areaRank": 60
+    "areaRank": 60,
+    "classification": "country"
   },
   {
     "code": "PER",
@@ -1804,7 +1966,8 @@
     "population": 34922148,
     "populationRank": 48,
     "area": 1285216,
-    "areaRank": 20
+    "areaRank": 20,
+    "classification": "country"
   },
   {
     "code": "PHL",
@@ -1815,7 +1978,8 @@
     "population": 117724471,
     "populationRank": 14,
     "area": 342353,
-    "areaRank": 64
+    "areaRank": 64,
+    "classification": "country"
   },
   {
     "code": "POL",
@@ -1826,7 +1990,8 @@
     "population": 37843188,
     "populationRank": 42,
     "area": 312679,
-    "areaRank": 71
+    "areaRank": 71,
+    "classification": "country"
   },
   {
     "code": "PRT",
@@ -1837,7 +2002,8 @@
     "population": 10395362,
     "populationRank": 94,
     "area": 92090,
-    "areaRank": 111
+    "areaRank": 111,
+    "classification": "country"
   },
   {
     "code": "PRI",
@@ -1848,7 +2014,8 @@
     "population": 3222688,
     "populationRank": 135,
     "area": 8870,
-    "areaRank": 169
+    "areaRank": 169,
+    "classification": "territory"
   },
   {
     "code": "QAT",
@@ -1859,7 +2026,8 @@
     "population": 3173559,
     "populationRank": 136,
     "area": 11586,
-    "areaRank": 164
+    "areaRank": 164,
+    "classification": "country"
   },
   {
     "code": "REU",
@@ -1870,7 +2038,8 @@
     "population": 886298,
     "populationRank": 163,
     "area": 2511,
-    "areaRank": 177
+    "areaRank": 177,
+    "classification": "territory"
   },
   {
     "code": "ROU",
@@ -1881,7 +2050,8 @@
     "population": 18800605,
     "populationRank": 70,
     "area": 238391,
-    "areaRank": 83
+    "areaRank": 83,
+    "classification": "country"
   },
   {
     "code": "RUS",
@@ -1892,7 +2062,8 @@
     "population": 143394458,
     "populationRank": 9,
     "area": 17098242,
-    "areaRank": 1
+    "areaRank": 1,
+    "classification": "country"
   },
   {
     "code": "RWA",
@@ -1903,7 +2074,8 @@
     "population": 14889693,
     "populationRank": 77,
     "area": 26338,
-    "areaRank": 148
+    "areaRank": 148,
+    "classification": "country"
   },
   {
     "code": "BLM",
@@ -1916,7 +2088,8 @@
     "population": 11550,
     "populationRank": 225,
     "area": 21,
-    "areaRank": 230
+    "areaRank": 230,
+    "classification": "territory"
   },
   {
     "code": "SHN",
@@ -1929,7 +2102,8 @@
     "population": 5147,
     "populationRank": 229,
     "area": 394,
-    "areaRank": 202
+    "areaRank": 202,
+    "classification": "territory"
   },
   {
     "code": "KNA",
@@ -1942,7 +2116,8 @@
     "population": 46992,
     "populationRank": 209,
     "area": 261,
-    "areaRank": 211
+    "areaRank": 211,
+    "classification": "country"
   },
   {
     "code": "LCA",
@@ -1953,7 +2128,8 @@
     "population": 180488,
     "populationRank": 190,
     "area": 616,
-    "areaRank": 192
+    "areaRank": 192,
+    "classification": "country"
   },
   {
     "code": "MAF",
@@ -1964,7 +2140,8 @@
     "population": 23898,
     "populationRank": 220,
     "area": 53,
-    "areaRank": 225
+    "areaRank": 225,
+    "classification": "territory"
   },
   {
     "code": "SPM",
@@ -1977,7 +2154,8 @@
     "population": 5513,
     "populationRank": 228,
     "area": 242,
-    "areaRank": 213
+    "areaRank": 213,
+    "classification": "territory"
   },
   {
     "code": "WSM",
@@ -1988,7 +2166,8 @@
     "population": 220528,
     "populationRank": 188,
     "area": 2842,
-    "areaRank": 175
+    "areaRank": 175,
+    "classification": "country"
   },
   {
     "code": "SMR",
@@ -1999,7 +2178,8 @@
     "population": 33605,
     "populationRank": 218,
     "area": 61,
-    "areaRank": 223
+    "areaRank": 223,
+    "classification": "country"
   },
   {
     "code": "STP",
@@ -2012,7 +2192,8 @@
     "population": 244994,
     "populationRank": 187,
     "area": 964,
-    "areaRank": 184
+    "areaRank": 184,
+    "classification": "country"
   },
   {
     "code": "SAU",
@@ -2023,7 +2204,8 @@
     "population": 35165787,
     "populationRank": 47,
     "area": 2149690,
-    "areaRank": 13
+    "areaRank": 13,
+    "classification": "country"
   },
   {
     "code": "SEN",
@@ -2034,7 +2216,8 @@
     "population": 19366548,
     "populationRank": 68,
     "area": 196722,
-    "areaRank": 88
+    "areaRank": 88,
+    "classification": "country"
   },
   {
     "code": "SRB",
@@ -2045,7 +2228,8 @@
     "population": 6641964,
     "populationRank": 111,
     "area": 88361,
-    "areaRank": 113
+    "areaRank": 113,
+    "classification": "country"
   },
   {
     "code": "SYC",
@@ -2056,7 +2240,8 @@
     "population": 134959,
     "populationRank": 193,
     "area": 452,
-    "areaRank": 198
+    "areaRank": 198,
+    "classification": "country"
   },
   {
     "code": "SLE",
@@ -2067,7 +2252,8 @@
     "population": 8996745,
     "populationRank": 101,
     "area": 71740,
-    "areaRank": 120
+    "areaRank": 120,
+    "classification": "country"
   },
   {
     "code": "SGP",
@@ -2078,7 +2264,8 @@
     "population": 5905748,
     "populationRank": 115,
     "area": 710,
-    "areaRank": 190
+    "areaRank": 190,
+    "classification": "country"
   },
   {
     "code": "SXM",
@@ -2089,7 +2276,8 @@
     "population": 44447,
     "populationRank": 211,
     "area": 34,
-    "areaRank": 226
+    "areaRank": 226,
+    "classification": "territory"
   },
   {
     "code": "SVK",
@@ -2100,7 +2288,8 @@
     "population": 5451342,
     "populationRank": 124,
     "area": 49037,
-    "areaRank": 130
+    "areaRank": 130,
+    "classification": "country"
   },
   {
     "code": "SVN",
@@ -2111,7 +2300,8 @@
     "population": 2114573,
     "populationRank": 149,
     "area": 20273,
-    "areaRank": 154
+    "areaRank": 154,
+    "classification": "country"
   },
   {
     "code": "SLB",
@@ -2122,7 +2312,8 @@
     "population": 858288,
     "populationRank": 164,
     "area": 28896,
-    "areaRank": 143
+    "areaRank": 143,
+    "classification": "country"
   },
   {
     "code": "SOM",
@@ -2133,7 +2324,8 @@
     "population": 20305907,
     "populationRank": 66,
     "area": 637657,
-    "areaRank": 42
+    "areaRank": 42,
+    "classification": "country"
   },
   {
     "code": "ZAF",
@@ -2144,7 +2336,8 @@
     "population": 65453084,
     "populationRank": 24,
     "area": 1221037,
-    "areaRank": 25
+    "areaRank": 25,
+    "classification": "country"
   },
   {
     "code": "KOR",
@@ -2155,7 +2348,8 @@
     "population": 51600388,
     "populationRank": 31,
     "area": 100210,
-    "areaRank": 109
+    "areaRank": 109,
+    "classification": "country"
   },
   {
     "code": "SSD",
@@ -2166,7 +2360,8 @@
     "population": 12436037,
     "populationRank": 80,
     "area": 619745,
-    "areaRank": 44
+    "areaRank": 44,
+    "classification": "country"
   },
   {
     "code": "ESP",
@@ -2177,7 +2372,8 @@
     "population": 47850793,
     "populationRank": 34,
     "area": 505992,
-    "areaRank": 52
+    "areaRank": 52,
+    "classification": "country"
   },
   {
     "code": "LKA",
@@ -2188,7 +2384,8 @@
     "population": 23348315,
     "populationRank": 60,
     "area": 65610,
-    "areaRank": 123
+    "areaRank": 123,
+    "classification": "country"
   },
   {
     "code": "VCT",
@@ -2201,7 +2398,8 @@
     "population": 99245,
     "populationRank": 198,
     "area": 389,
-    "areaRank": 203
+    "areaRank": 203,
+    "classification": "country"
   },
   {
     "code": "PSE",
@@ -2214,7 +2412,8 @@
     "population": 5692790,
     "populationRank": 119,
     "area": 6220,
-    "areaRank": 170
+    "areaRank": 170,
+    "classification": "country"
   },
   {
     "code": "SDN",
@@ -2225,7 +2424,8 @@
     "population": 53282719,
     "populationRank": 29,
     "area": 1886068,
-    "areaRank": 16
+    "areaRank": 16,
+    "classification": "country"
   },
   {
     "code": "SUR",
@@ -2236,7 +2436,8 @@
     "population": 645256,
     "populationRank": 169,
     "area": 163820,
-    "areaRank": 92
+    "areaRank": 92,
+    "classification": "country"
   },
   {
     "code": "SWE",
@@ -2247,7 +2448,8 @@
     "population": 10701047,
     "populationRank": 91,
     "area": 450295,
-    "areaRank": 56
+    "areaRank": 56,
+    "classification": "country"
   },
   {
     "code": "CHE",
@@ -2258,7 +2460,8 @@
     "population": 9007798,
     "populationRank": 100,
     "area": 41284,
-    "areaRank": 135
+    "areaRank": 135,
+    "classification": "country"
   },
   {
     "code": "SYR",
@@ -2269,7 +2472,8 @@
     "population": 26472497,
     "populationRank": 57,
     "area": 185180,
-    "areaRank": 89
+    "areaRank": 89,
+    "classification": "country"
   },
   {
     "code": "TWN",
@@ -2280,7 +2484,8 @@
     "population": 23011292,
     "populationRank": 61,
     "area": 36193,
-    "areaRank": 137
+    "areaRank": 137,
+    "classification": "other"
   },
   {
     "code": "TJK",
@@ -2291,7 +2496,8 @@
     "population": 10978599,
     "populationRank": 88,
     "area": 143100,
-    "areaRank": 96
+    "areaRank": 96,
+    "classification": "country"
   },
   {
     "code": "TZA",
@@ -2302,7 +2508,8 @@
     "population": 72563780,
     "populationRank": 20,
     "area": 945087,
-    "areaRank": 31
+    "areaRank": 31,
+    "classification": "country"
   },
   {
     "code": "THA",
@@ -2313,7 +2520,8 @@
     "population": 71559614,
     "populationRank": 21,
     "area": 513120,
-    "areaRank": 51
+    "areaRank": 51,
+    "classification": "country"
   },
   {
     "code": "TLS",
@@ -2324,7 +2532,8 @@
     "population": 1436923,
     "populationRank": 155,
     "area": 14874,
-    "areaRank": 159
+    "areaRank": 159,
+    "classification": "country"
   },
   {
     "code": "TGO",
@@ -2335,7 +2544,8 @@
     "population": 9930918,
     "populationRank": 95,
     "area": 56785,
-    "areaRank": 126
+    "areaRank": 126,
+    "classification": "country"
   },
   {
     "code": "TKL",
@@ -2346,7 +2556,8 @@
     "population": 2691,
     "populationRank": 232,
     "area": 12,
-    "areaRank": 231
+    "areaRank": 231,
+    "classification": "territory"
   },
   {
     "code": "TON",
@@ -2357,7 +2568,8 @@
     "population": 103291,
     "populationRank": 197,
     "area": 747,
-    "areaRank": 189
+    "areaRank": 189,
+    "classification": "country"
   },
   {
     "code": "TTO",
@@ -2368,7 +2580,8 @@
     "population": 1513268,
     "populationRank": 154,
     "area": 5130,
-    "areaRank": 172
+    "areaRank": 172,
+    "classification": "country"
   },
   {
     "code": "TUN",
@@ -2379,7 +2592,8 @@
     "population": 12415138,
     "populationRank": 81,
     "area": 163610,
-    "areaRank": 93
+    "areaRank": 93,
+    "classification": "country"
   },
   {
     "code": "TUR",
@@ -2392,7 +2606,8 @@
     "population": 87926082,
     "populationRank": 18,
     "area": 783562,
-    "areaRank": 37
+    "areaRank": 37,
+    "classification": "country"
   },
   {
     "code": "TKM",
@@ -2403,7 +2618,8 @@
     "population": 7736632,
     "populationRank": 104,
     "area": 488100,
-    "areaRank": 53
+    "areaRank": 53,
+    "classification": "country"
   },
   {
     "code": "TCA",
@@ -2416,7 +2632,8 @@
     "population": 47148,
     "populationRank": 208,
     "area": 948,
-    "areaRank": 185
+    "areaRank": 185,
+    "classification": "territory"
   },
   {
     "code": "TUV",
@@ -2427,7 +2644,8 @@
     "population": 9362,
     "populationRank": 227,
     "area": 26,
-    "areaRank": 228
+    "areaRank": 228,
+    "classification": "country"
   },
   {
     "code": "VIR",
@@ -2440,7 +2658,8 @@
     "population": 83400,
     "populationRank": 202,
     "area": 347,
-    "areaRank": 205
+    "areaRank": 205,
+    "classification": "territory"
   },
   {
     "code": "UGA",
@@ -2451,7 +2670,8 @@
     "population": 52761469,
     "populationRank": 30,
     "area": 241550,
-    "areaRank": 81
+    "areaRank": 81,
+    "classification": "country"
   },
   {
     "code": "UKR",
@@ -2462,7 +2682,8 @@
     "population": 39535849,
     "populationRank": 40,
     "area": 603500,
-    "areaRank": 45
+    "areaRank": 45,
+    "classification": "country"
   },
   {
     "code": "ARE",
@@ -2473,7 +2694,8 @@
     "population": 11574682,
     "populationRank": 86,
     "area": 83600,
-    "areaRank": 116
+    "areaRank": 116,
+    "classification": "country"
   },
   {
     "code": "GBR",
@@ -2484,7 +2706,8 @@
     "population": 69931528,
     "populationRank": 22,
     "area": 242900,
-    "areaRank": 80
+    "areaRank": 80,
+    "classification": "country"
   },
   {
     "code": "USA",
@@ -2495,7 +2718,8 @@
     "population": 349035494,
     "populationRank": 3,
     "area": 9372610,
-    "areaRank": 4
+    "areaRank": 4,
+    "classification": "country"
   },
   {
     "code": "URY",
@@ -2506,7 +2730,8 @@
     "population": 3382537,
     "populationRank": 134,
     "area": 181034,
-    "areaRank": 91
+    "areaRank": 91,
+    "classification": "country"
   },
   {
     "code": "UZB",
@@ -2517,7 +2742,8 @@
     "population": 37724223,
     "populationRank": 43,
     "area": 447400,
-    "areaRank": 57
+    "areaRank": 57,
+    "classification": "country"
   },
   {
     "code": "VUT",
@@ -2528,7 +2754,8 @@
     "population": 342564,
     "populationRank": 181,
     "area": 12189,
-    "areaRank": 162
+    "areaRank": 162,
+    "classification": "country"
   },
   {
     "code": "VEN",
@@ -2539,7 +2766,8 @@
     "population": 28633711,
     "populationRank": 54,
     "area": 916445,
-    "areaRank": 33
+    "areaRank": 33,
+    "classification": "country"
   },
   {
     "code": "VNM",
@@ -2550,7 +2778,8 @@
     "population": 102177431,
     "populationRank": 16,
     "area": 331212,
-    "areaRank": 67
+    "areaRank": 67,
+    "classification": "country"
   },
   {
     "code": "WLF",
@@ -2563,7 +2792,8 @@
     "population": 11113,
     "populationRank": 226,
     "area": 142,
-    "areaRank": 220
+    "areaRank": 220,
+    "classification": "territory"
   },
   {
     "code": "ESH",
@@ -2574,7 +2804,8 @@
     "population": 610813,
     "populationRank": 171,
     "area": 266000,
-    "areaRank": 78
+    "areaRank": 78,
+    "classification": "other"
   },
   {
     "code": "YEM",
@@ -2585,7 +2816,8 @@
     "population": 42961653,
     "populationRank": 37,
     "area": 527968,
-    "areaRank": 50
+    "areaRank": 50,
+    "classification": "country"
   },
   {
     "code": "ZMB",
@@ -2596,7 +2828,8 @@
     "population": 22521915,
     "populationRank": 63,
     "area": 752612,
-    "areaRank": 39
+    "areaRank": 39,
+    "classification": "country"
   },
   {
     "code": "ZWE",
@@ -2607,6 +2840,7 @@
     "population": 17273580,
     "populationRank": 74,
     "area": 390757,
-    "areaRank": 61
+    "areaRank": 61,
+    "classification": "country"
   }
 ]

@@ -8,7 +8,10 @@ const profileFacts=Object.fromEntries(countries.map(c=>[c.code,{population:c.pop
 if(countries.some(c=>!(Number.isFinite(c.area)&&c.area>=0)||!(c.areaRank>0)))throw Error('Missing area facts');
 fs.writeFileSync(path.join(root,'dist/profile-country-info.json'),JSON.stringify(profileFacts,null,2)+'\n');
 if(countries.length!==234||new Set(countries.map(c=>c.code)).size!==234||new Set(countries.map(c=>c.populationRank)).size!==234)throw Error('Expected 234 unique Worldometer countries and ranks.');
-const catalogue=[...countries].sort((a,b)=>a.name.localeCompare(b.name,'en'));
+const classification=JSON.parse(fs.readFileSync(path.join(root,'data/country-classification.json'),'utf8'));
+const countryCodes=new Set(classification.countryCodes);
+if(countryCodes.size!==195)throw Error('Expected 195 countries');
+const catalogue=countries.map(c=>({...c,classification:countryCodes.has(c.code)?'country':['TWN','COK','NIU','ESH'].includes(c.code)?'other':'territory'})).sort((a,b)=>a.name.localeCompare(b.name,'en'));
 fs.writeFileSync(path.join(root,'dist/country-catalog.json'),JSON.stringify(catalogue,null,2)+'\n');
 const factPath=path.join(root,'dist/country-facts.js');
 const context=vm.createContext({});

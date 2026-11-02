@@ -19,6 +19,9 @@ geometries={code:unary_union(parts) for code,parts in groups.items()}
 recognized=json.loads((root/'data/ukraine-recognized-borders.geojson').read_text(encoding='utf-8'))
 for feature in recognized['features']:
  geometries[feature['id']]=shape(feature['geometry'])
+somalia=json.loads((root/'data/somalia-recognized-borders.geojson').read_text(encoding='utf-8'))
+for feature in somalia['features']:
+ geometries[feature['id']]=shape(feature['geometry'])
 keys=sorted(geometries);geoms=[geometries[c] for c in keys];tree=STRtree(geoms)
 neighbors={code:set() for code in keys}
 for i,geom in enumerate(geoms):

@@ -113,7 +113,9 @@
   }
 
   function updateMap() {
-    $('#visited-count').textContent = String(selected.size);
+    const countriesVisited=catalogue.filter(c=>c.classification==='country'&&selected.has(c.code)).length;
+    $('#visited-count').textContent = String(countriesVisited);
+    $('#visited-count-note').textContent = countriesVisited+' of 195 countries · '+(selected.size-countriesVisited)+' territories or other destinations';
     $('#unselect-all').checked = selected.size === 0;
     $('#unselect-all').disabled = selected.size === 0;
     $('#visited-world-map').setAttribute('aria-label', 'World map: ' + selected.size + ' countries and territories selected as visited.');
@@ -138,7 +140,7 @@
     const normalise = value => value.normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLocaleLowerCase();
     const query = normalise($('#country-search').value.trim());
     const selectedOnly = $('#selected-only').checked;
-    const matches = catalogue.filter(country => (selectedOnly || query) && (!selectedOnly || selected.has(country.code)) && (!query || [country.name, country.code, country.iso2, ...(country.aliases || [])].some(value => normalise(value || '').startsWith(query))));
+    const matches = catalogue.filter(country => (selectedOnly || query) && (country.classification==='country'||$('#include-territories').checked) && (!selectedOnly || selected.has(country.code)) && (!query || [country.name, country.code, country.iso2, ...(country.aliases || [])].some(value => normalise(value || '').startsWith(query))));
     const list = $('#visited-country-list');
     list.replaceChildren();
     list.closest('fieldset').hidden = !query && !selectedOnly;
@@ -166,6 +168,7 @@
 
   function selectMapCountry(code){
     if(!user||!storageReady||!allowedCodes.has(code))return;
+    if(!$('#include-territories').checked && catalogue.find(c=>c.code===code)?.classification!=='country'){return;}
     if(mapCountryCode===code){
       if(mapDraftCode===code&&!profile?.visited_countries?.includes(code))selected.delete(code);
       mapDraftCode=null;mapCountryCode=null;
@@ -188,7 +191,7 @@
   }
 
   async function loadGeography() {
-    const [catalogueResponse, mapResponse, colorResponse] = await Promise.all([fetch('country-catalog.json?v=shared-facts-1'), fetch('profile-country-outlines.json?v=recognized-borders-1'), fetch('country-colors.json?v=scratch-1')]);
+    const [catalogueResponse, mapResponse, colorResponse] = await Promise.all([fetch('country-catalog.json?v=classified-195-1'), fetch('profile-country-outlines.json?v=somalia-complete-1'), fetch('country-colors.json?v=scratch-1')]);
     if (!catalogueResponse.ok || !mapResponse.ok || !colorResponse.ok) throw new Error('Country data unavailable');
     catalogue = await catalogueResponse.json();
     const outlines = await mapResponse.json();
@@ -453,6 +456,7 @@
 
   $('#country-search').addEventListener('input', renderCountries);
   $('#selected-only').addEventListener('change', renderCountries);
+  $('#include-territories').addEventListener('change',()=>{renderCountries();updateMap();});
   $('#unselect-all').addEventListener('change', event => {
     if (!event.target.checked) return;
     selected.clear();
