@@ -312,7 +312,7 @@
         const length=shape.strokes.reduce((sum,stroke)=>sum+stroke.weight+stroke.liftWeight,0);let strokeIndex=0,strokeStart=0;
         let lastDust=0,dustCount=0;
         shape.coin.style.opacity='0';
-        const mapPath=document.querySelector(`#visited-world-map path[data-country="${code}"]`);
+        const mapPath=document.getElementById(`profile-country-${code}`);
         const source=mapPath?.getBoundingClientRect(),target=stage.getBoundingClientRect();
         if(!reduced){
           const scale=source?Math.max(.035,Math.min(.22,source.width/target.width)):.12;
@@ -418,6 +418,7 @@
       if(dialog.open)dialog.close();dialog.remove();if(active===run)active=null;
     }
   }
-  window.TRAVEL_SCRATCH={init(outlines,palette,catalogue=[]){const populationTotal=catalogue.reduce((sum,c)=>sum+(c.population||0),0),areaTotal=catalogue.reduce((sum,c)=>sum+(c.area||0),0);
-    facts=Object.fromEntries(catalogue.map(c=>[c.code,{...c,populationShare:(c.population/populationTotal*100).toFixed(2),areaShare:(c.area/areaTotal*100).toFixed(2)}]));flags=Object.fromEntries(catalogue.map(country=>[country.code,country.iso2.toLowerCase()]));features=new Map(outlines.features.map(feature=>[feature.id,feature]));colors=palette;},celebrate,cancel,prepareAudio};
+  window.TRAVEL_SCRATCH={init(outlines,palette,catalogue=[]){
+    // Aggregated country shares already use the original world denominator.
+    facts=Object.fromEntries(catalogue.map(c=>[c.code,c]));flags=Object.fromEntries(catalogue.map(country=>[country.code,country.iso2.toLowerCase()]));features=new Map(outlines.features.map(feature=>[feature.id,feature]));colors=palette;},celebrate,cancel,prepareAudio};
 })();

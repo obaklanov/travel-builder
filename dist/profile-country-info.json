@@ -10,24 +10,24 @@
     "areaShare": "2.42"
   },
   "CHN": {
-    "population": 1412914089,
+    "population": 1421015879,
     "populationRank": 2,
     "populationCount": 195,
-    "populationShare": "17.03",
-    "area": 9706961,
+    "populationShare": "17.12",
+    "area": 9708095,
     "areaRank": 3,
     "areaCount": 195,
-    "areaShare": "7.13"
+    "areaShare": "7.14"
   },
   "USA": {
-    "population": 349035494,
+    "population": 352600000,
     "populationRank": 3,
     "populationCount": 195,
-    "populationShare": "4.21",
-    "area": 9372610,
+    "populationShare": "4.25",
+    "area": 9383039,
     "areaRank": 4,
     "areaCount": 195,
-    "areaShare": "6.89"
+    "areaShare": "6.90"
   },
   "IDN": {
     "population": 287886782,
@@ -35,7 +35,7 @@
     "populationCount": 195,
     "populationShare": "3.47",
     "area": 1904569,
-    "areaRank": 14,
+    "areaRank": 15,
     "areaCount": 195,
     "areaShare": "1.40"
   },
@@ -45,7 +45,7 @@
     "populationCount": 195,
     "populationShare": "3.12",
     "area": 881912,
-    "areaRank": 33,
+    "areaRank": 34,
     "areaCount": 195,
     "areaShare": "0.65"
   },
@@ -55,7 +55,7 @@
     "populationCount": 195,
     "populationShare": "2.92",
     "area": 923768,
-    "areaRank": 31,
+    "areaRank": 32,
     "areaCount": 195,
     "areaShare": "0.68"
   },
@@ -75,7 +75,7 @@
     "populationCount": 195,
     "populationShare": "2.14",
     "area": 147570,
-    "areaRank": 92,
+    "areaRank": 93,
     "areaCount": 195,
     "areaShare": "0.11"
   },
@@ -95,7 +95,7 @@
     "populationCount": 195,
     "populationShare": "1.67",
     "area": 1104300,
-    "areaRank": 26,
+    "areaRank": 27,
     "areaCount": 195,
     "areaShare": "0.81"
   },
@@ -105,7 +105,7 @@
     "populationCount": 195,
     "populationShare": "1.60",
     "area": 1964375,
-    "areaRank": 13,
+    "areaRank": 14,
     "areaCount": 195,
     "areaShare": "1.44"
   },
@@ -115,7 +115,7 @@
     "populationCount": 195,
     "populationShare": "1.48",
     "area": 377930,
-    "areaRank": 61,
+    "areaRank": 62,
     "areaCount": 195,
     "areaShare": "0.28"
   },
@@ -125,7 +125,7 @@
     "populationCount": 195,
     "populationShare": "1.45",
     "area": 1002450,
-    "areaRank": 29,
+    "areaRank": 30,
     "areaCount": 195,
     "areaShare": "0.74"
   },
@@ -135,7 +135,7 @@
     "populationCount": 195,
     "populationShare": "1.42",
     "area": 342353,
-    "areaRank": 63,
+    "areaRank": 64,
     "areaCount": 195,
     "areaShare": "0.25"
   },
@@ -155,7 +155,7 @@
     "populationCount": 195,
     "populationShare": "1.23",
     "area": 331212,
-    "areaRank": 66,
+    "areaRank": 67,
     "areaCount": 195,
     "areaShare": "0.24"
   },
@@ -165,7 +165,7 @@
     "populationCount": 195,
     "populationShare": "1.12",
     "area": 1648195,
-    "areaRank": 17,
+    "areaRank": 18,
     "areaCount": 195,
     "areaShare": "1.21"
   },
@@ -175,7 +175,7 @@
     "populationCount": 195,
     "populationShare": "1.06",
     "area": 783562,
-    "areaRank": 36,
+    "areaRank": 37,
     "areaCount": 195,
     "areaShare": "0.58"
   },
@@ -185,7 +185,7 @@
     "populationCount": 195,
     "populationShare": "1.01",
     "area": 357114,
-    "areaRank": 62,
+    "areaRank": 63,
     "areaCount": 195,
     "areaShare": "0.26"
   },
@@ -195,7 +195,7 @@
     "populationCount": 195,
     "populationShare": "0.87",
     "area": 945087,
-    "areaRank": 30,
+    "areaRank": 31,
     "areaCount": 195,
     "areaShare": "0.69"
   },
@@ -205,29 +205,29 @@
     "populationCount": 195,
     "populationShare": "0.86",
     "area": 513120,
-    "areaRank": 50,
+    "areaRank": 51,
     "areaCount": 195,
     "areaShare": "0.38"
   },
   "GBR": {
-    "population": 69931528,
+    "population": 70312946,
     "populationRank": 22,
     "populationCount": 195,
-    "populationShare": "0.84",
-    "area": 242900,
+    "populationShare": "0.85",
+    "area": 257655,
     "areaRank": 78,
     "areaCount": 195,
-    "areaShare": "0.18"
+    "areaShare": "0.19"
   },
   "FRA": {
-    "population": 66746401,
+    "population": 69642313,
     "populationRank": 23,
     "populationCount": 195,
-    "populationShare": "0.80",
-    "area": 551695,
-    "areaRank": 48,
+    "populationShare": "0.84",
+    "area": 664070,
+    "areaRank": 41,
     "areaCount": 195,
-    "areaShare": "0.41"
+    "areaShare": "0.49"
   },
   "ZAF": {
     "population": 65453084,
@@ -235,7 +235,7 @@
     "populationCount": 195,
     "populationShare": "0.79",
     "area": 1221037,
-    "areaRank": 24,
+    "areaRank": 25,
     "areaCount": 195,
     "areaShare": "0.90"
   },
@@ -245,7 +245,7 @@
     "populationCount": 195,
     "populationShare": "0.71",
     "area": 301336,
-    "areaRank": 72,
+    "areaRank": 73,
     "areaCount": 195,
     "areaShare": "0.22"
   },
@@ -255,7 +255,7 @@
     "populationCount": 195,
     "populationShare": "0.71",
     "area": 580367,
-    "areaRank": 47,
+    "areaRank": 49,
     "areaCount": 195,
     "areaShare": "0.43"
   },
@@ -265,7 +265,7 @@
     "populationCount": 195,
     "populationShare": "0.66",
     "area": 676578,
-    "areaRank": 39,
+    "areaRank": 40,
     "areaCount": 195,
     "areaShare": "0.50"
   },
@@ -275,7 +275,7 @@
     "populationCount": 195,
     "populationShare": "0.65",
     "area": 1141748,
-    "areaRank": 25,
+    "areaRank": 26,
     "areaCount": 195,
     "areaShare": "0.84"
   },
@@ -285,7 +285,7 @@
     "populationCount": 195,
     "populationShare": "0.64",
     "area": 1886068,
-    "areaRank": 15,
+    "areaRank": 16,
     "areaCount": 195,
     "areaShare": "1.39"
   },
@@ -295,7 +295,7 @@
     "populationCount": 195,
     "populationShare": "0.64",
     "area": 241550,
-    "areaRank": 79,
+    "areaRank": 80,
     "areaCount": 195,
     "areaShare": "0.18"
   },
@@ -305,7 +305,7 @@
     "populationCount": 195,
     "populationShare": "0.62",
     "area": 100210,
-    "areaRank": 107,
+    "areaRank": 108,
     "areaCount": 195,
     "areaShare": "0.07"
   },
@@ -325,7 +325,7 @@
     "populationCount": 195,
     "populationShare": "0.58",
     "area": 438317,
-    "areaRank": 58,
+    "areaRank": 59,
     "areaCount": 195,
     "areaShare": "0.32"
   },
@@ -335,7 +335,7 @@
     "populationCount": 195,
     "populationShare": "0.58",
     "area": 505992,
-    "areaRank": 51,
+    "areaRank": 52,
     "areaCount": 195,
     "areaShare": "0.37"
   },
@@ -355,7 +355,7 @@
     "populationCount": 195,
     "populationShare": "0.54",
     "area": 652230,
-    "areaRank": 40,
+    "areaRank": 42,
     "areaCount": 195,
     "areaShare": "0.48"
   },
@@ -365,7 +365,7 @@
     "populationCount": 195,
     "populationShare": "0.52",
     "area": 527968,
-    "areaRank": 49,
+    "areaRank": 50,
     "areaCount": 195,
     "areaShare": "0.39"
   },
@@ -385,7 +385,7 @@
     "populationCount": 195,
     "populationShare": "0.48",
     "area": 1246700,
-    "areaRank": 22,
+    "areaRank": 23,
     "areaCount": 195,
     "areaShare": "0.92"
   },
@@ -395,7 +395,7 @@
     "populationCount": 195,
     "populationShare": "0.48",
     "area": 603500,
-    "areaRank": 44,
+    "areaRank": 46,
     "areaCount": 195,
     "areaShare": "0.44"
   },
@@ -405,7 +405,7 @@
     "populationCount": 195,
     "populationShare": "0.47",
     "area": 446550,
-    "areaRank": 57,
+    "areaRank": 58,
     "areaCount": 195,
     "areaShare": "0.33"
   },
@@ -415,7 +415,7 @@
     "populationCount": 195,
     "populationShare": "0.46",
     "area": 312679,
-    "areaRank": 70,
+    "areaRank": 71,
     "areaCount": 195,
     "areaShare": "0.23"
   },
@@ -425,7 +425,7 @@
     "populationCount": 195,
     "populationShare": "0.45",
     "area": 447400,
-    "areaRank": 56,
+    "areaRank": 57,
     "areaCount": 195,
     "areaShare": "0.33"
   },
@@ -435,7 +435,7 @@
     "populationCount": 195,
     "populationShare": "0.44",
     "area": 801590,
-    "areaRank": 35,
+    "areaRank": 36,
     "areaCount": 195,
     "areaShare": "0.59"
   },
@@ -445,7 +445,7 @@
     "populationCount": 195,
     "populationShare": "0.44",
     "area": 330803,
-    "areaRank": 67,
+    "areaRank": 68,
     "areaCount": 195,
     "areaShare": "0.24"
   },
@@ -455,7 +455,7 @@
     "populationCount": 195,
     "populationShare": "0.43",
     "area": 238533,
-    "areaRank": 80,
+    "areaRank": 81,
     "areaCount": 195,
     "areaShare": "0.18"
   },
@@ -465,7 +465,7 @@
     "populationCount": 195,
     "populationShare": "0.42",
     "area": 2149690,
-    "areaRank": 12,
+    "areaRank": 13,
     "areaCount": 195,
     "areaShare": "1.58"
   },
@@ -475,7 +475,7 @@
     "populationCount": 195,
     "populationShare": "0.42",
     "area": 1285216,
-    "areaRank": 19,
+    "areaRank": 20,
     "areaCount": 195,
     "areaShare": "0.94"
   },
@@ -485,7 +485,7 @@
     "populationCount": 195,
     "populationShare": "0.40",
     "area": 587041,
-    "areaRank": 45,
+    "areaRank": 47,
     "areaCount": 195,
     "areaShare": "0.43"
   },
@@ -495,7 +495,7 @@
     "populationCount": 195,
     "populationShare": "0.40",
     "area": 322463,
-    "areaRank": 69,
+    "areaRank": 70,
     "areaCount": 195,
     "areaShare": "0.24"
   },
@@ -505,7 +505,7 @@
     "populationCount": 195,
     "populationShare": "0.37",
     "area": 475442,
-    "areaRank": 53,
+    "areaRank": 54,
     "areaCount": 195,
     "areaShare": "0.35"
   },
@@ -515,7 +515,7 @@
     "populationCount": 195,
     "populationShare": "0.36",
     "area": 147181,
-    "areaRank": 93,
+    "areaRank": 94,
     "areaCount": 195,
     "areaShare": "0.11"
   },
@@ -525,7 +525,7 @@
     "populationCount": 195,
     "populationShare": "0.35",
     "area": 1267000,
-    "areaRank": 21,
+    "areaRank": 22,
     "areaCount": 195,
     "areaShare": "0.93"
   },
@@ -535,7 +535,7 @@
     "populationCount": 195,
     "populationShare": "0.35",
     "area": 916445,
-    "areaRank": 32,
+    "areaRank": 33,
     "areaCount": 195,
     "areaShare": "0.67"
   },
@@ -555,7 +555,7 @@
     "populationCount": 195,
     "populationShare": "0.32",
     "area": 120538,
-    "areaRank": 97,
+    "areaRank": 98,
     "areaCount": 195,
     "areaShare": "0.09"
   },
@@ -565,7 +565,7 @@
     "populationCount": 195,
     "populationShare": "0.32",
     "area": 185180,
-    "areaRank": 87,
+    "areaRank": 88,
     "areaCount": 195,
     "areaShare": "0.14"
   },
@@ -575,7 +575,7 @@
     "populationCount": 195,
     "populationShare": "0.31",
     "area": 1240192,
-    "areaRank": 23,
+    "areaRank": 24,
     "areaCount": 195,
     "areaShare": "0.91"
   },
@@ -585,7 +585,7 @@
     "populationCount": 195,
     "populationShare": "0.30",
     "area": 272967,
-    "areaRank": 74,
+    "areaRank": 75,
     "areaCount": 195,
     "areaShare": "0.20"
   },
@@ -595,7 +595,7 @@
     "populationCount": 195,
     "populationShare": "0.28",
     "area": 65610,
-    "areaRank": 120,
+    "areaRank": 121,
     "areaCount": 195,
     "areaShare": "0.05"
   },
@@ -615,7 +615,7 @@
     "populationCount": 195,
     "populationShare": "0.27",
     "area": 118484,
-    "areaRank": 98,
+    "areaRank": 99,
     "areaCount": 195,
     "areaShare": "0.09"
   },
@@ -625,7 +625,7 @@
     "populationCount": 195,
     "populationShare": "0.27",
     "area": 752612,
-    "areaRank": 38,
+    "areaRank": 39,
     "areaCount": 195,
     "areaShare": "0.55"
   },
@@ -635,7 +635,7 @@
     "populationCount": 195,
     "populationShare": "0.26",
     "area": 1284000,
-    "areaRank": 20,
+    "areaRank": 21,
     "areaCount": 195,
     "areaShare": "0.94"
   },
@@ -655,7 +655,7 @@
     "populationCount": 195,
     "populationShare": "0.24",
     "area": 637657,
-    "areaRank": 41,
+    "areaRank": 43,
     "areaCount": 195,
     "areaShare": "0.47"
   },
@@ -665,7 +665,7 @@
     "populationCount": 195,
     "populationShare": "0.24",
     "area": 756102,
-    "areaRank": 37,
+    "areaRank": 38,
     "areaCount": 195,
     "areaShare": "0.56"
   },
@@ -675,7 +675,7 @@
     "populationCount": 195,
     "populationShare": "0.23",
     "area": 196722,
-    "areaRank": 86,
+    "areaRank": 87,
     "areaCount": 195,
     "areaShare": "0.14"
   },
@@ -685,26 +685,26 @@
     "populationCount": 195,
     "populationShare": "0.23",
     "area": 108889,
-    "areaRank": 105,
+    "areaRank": 106,
     "areaCount": 195,
     "areaShare": "0.08"
   },
   "ROU": {
     "population": 18800605,
-    "populationRank": 69,
+    "populationRank": 70,
     "populationCount": 195,
     "populationShare": "0.23",
     "area": 238391,
-    "areaRank": 81,
+    "areaRank": 82,
     "areaCount": 195,
     "areaShare": "0.18"
   },
   "NLD": {
-    "population": 18448775,
-    "populationRank": 70,
+    "population": 18818739,
+    "populationRank": 69,
     "populationCount": 195,
-    "populationShare": "0.22",
-    "area": 41850,
+    "populationShare": "0.23",
+    "area": 42836,
     "areaRank": 131,
     "areaCount": 195,
     "areaShare": "0.03"
@@ -715,7 +715,7 @@
     "populationCount": 195,
     "populationShare": "0.22",
     "area": 276841,
-    "areaRank": 73,
+    "areaRank": 74,
     "areaCount": 195,
     "areaShare": "0.20"
   },
@@ -725,7 +725,7 @@
     "populationCount": 195,
     "populationShare": "0.22",
     "area": 181035,
-    "areaRank": 88,
+    "areaRank": 89,
     "areaCount": 195,
     "areaShare": "0.13"
   },
@@ -735,7 +735,7 @@
     "populationCount": 195,
     "populationShare": "0.21",
     "area": 390757,
-    "areaRank": 60,
+    "areaRank": 61,
     "areaCount": 195,
     "areaShare": "0.29"
   },
@@ -745,7 +745,7 @@
     "populationCount": 195,
     "populationShare": "0.19",
     "area": 245857,
-    "areaRank": 77,
+    "areaRank": 79,
     "areaCount": 195,
     "areaShare": "0.18"
   },
@@ -755,7 +755,7 @@
     "populationCount": 195,
     "populationShare": "0.18",
     "area": 112622,
-    "areaRank": 100,
+    "areaRank": 101,
     "areaCount": 195,
     "areaShare": "0.08"
   },
@@ -785,7 +785,7 @@
     "populationCount": 195,
     "populationShare": "0.15",
     "area": 1098581,
-    "areaRank": 27,
+    "areaRank": 28,
     "areaCount": 195,
     "areaShare": "0.81"
   },
@@ -795,7 +795,7 @@
     "populationCount": 195,
     "populationShare": "0.15",
     "area": 619745,
-    "areaRank": 43,
+    "areaRank": 45,
     "areaCount": 195,
     "areaShare": "0.46"
   },
@@ -805,7 +805,7 @@
     "populationCount": 195,
     "populationShare": "0.15",
     "area": 163610,
-    "areaRank": 91,
+    "areaRank": 92,
     "areaCount": 195,
     "areaShare": "0.12"
   },
@@ -835,7 +835,7 @@
     "populationCount": 195,
     "populationShare": "0.14",
     "area": 48671,
-    "areaRank": 128,
+    "areaRank": 129,
     "areaCount": 195,
     "areaShare": "0.04"
   },
@@ -845,7 +845,7 @@
     "populationCount": 195,
     "populationShare": "0.14",
     "area": 89342,
-    "areaRank": 110,
+    "areaRank": 111,
     "areaCount": 195,
     "areaShare": "0.07"
   },
@@ -855,7 +855,7 @@
     "populationCount": 195,
     "populationShare": "0.14",
     "area": 83600,
-    "areaRank": 114,
+    "areaRank": 115,
     "areaCount": 195,
     "areaShare": "0.06"
   },
@@ -865,7 +865,7 @@
     "populationCount": 195,
     "populationShare": "0.13",
     "area": 112492,
-    "areaRank": 101,
+    "areaRank": 102,
     "areaCount": 195,
     "areaShare": "0.08"
   },
@@ -875,7 +875,7 @@
     "populationCount": 195,
     "populationShare": "0.13",
     "area": 143100,
-    "areaRank": 94,
+    "areaRank": 95,
     "areaCount": 195,
     "areaShare": "0.11"
   },
@@ -885,7 +885,7 @@
     "populationCount": 195,
     "populationShare": "0.13",
     "area": 462840,
-    "areaRank": 54,
+    "areaRank": 55,
     "areaCount": 195,
     "areaShare": "0.34"
   },
@@ -895,7 +895,7 @@
     "populationCount": 195,
     "populationShare": "0.13",
     "area": 109884,
-    "areaRank": 104,
+    "areaRank": 105,
     "areaCount": 195,
     "areaShare": "0.08"
   },
@@ -905,7 +905,7 @@
     "populationCount": 195,
     "populationShare": "0.13",
     "area": 450295,
-    "areaRank": 55,
+    "areaRank": 56,
     "areaCount": 195,
     "areaShare": "0.33"
   },
@@ -915,7 +915,7 @@
     "populationCount": 195,
     "populationShare": "0.13",
     "area": 78865,
-    "areaRank": 115,
+    "areaRank": 116,
     "areaCount": 195,
     "areaShare": "0.06"
   },
@@ -925,7 +925,7 @@
     "populationCount": 195,
     "populationShare": "0.13",
     "area": 86600,
-    "areaRank": 112,
+    "areaRank": 113,
     "areaCount": 195,
     "areaShare": "0.06"
   },
@@ -935,7 +935,7 @@
     "populationCount": 195,
     "populationShare": "0.13",
     "area": 92090,
-    "areaRank": 109,
+    "areaRank": 110,
     "areaCount": 195,
     "areaShare": "0.07"
   },
@@ -945,7 +945,7 @@
     "populationCount": 195,
     "populationShare": "0.12",
     "area": 56785,
-    "areaRank": 123,
+    "areaRank": 124,
     "areaCount": 195,
     "areaShare": "0.04"
   },
@@ -955,7 +955,7 @@
     "populationCount": 195,
     "populationShare": "0.12",
     "area": 131990,
-    "areaRank": 95,
+    "areaRank": 96,
     "areaCount": 195,
     "areaShare": "0.10"
   },
@@ -975,7 +975,7 @@
     "populationCount": 195,
     "populationShare": "0.12",
     "area": 93028,
-    "areaRank": 108,
+    "areaRank": 109,
     "areaCount": 195,
     "areaShare": "0.07"
   },
@@ -985,7 +985,7 @@
     "populationCount": 195,
     "populationShare": "0.11",
     "area": 83871,
-    "areaRank": 113,
+    "areaRank": 114,
     "areaCount": 195,
     "areaShare": "0.06"
   },
@@ -1005,7 +1005,7 @@
     "populationCount": 195,
     "populationShare": "0.11",
     "area": 71740,
-    "areaRank": 117,
+    "areaRank": 118,
     "areaCount": 195,
     "areaShare": "0.05"
   },
@@ -1015,7 +1015,7 @@
     "populationCount": 195,
     "populationShare": "0.11",
     "area": 207600,
-    "areaRank": 84,
+    "areaRank": 85,
     "areaCount": 195,
     "areaShare": "0.15"
   },
@@ -1025,7 +1025,7 @@
     "populationCount": 195,
     "populationShare": "0.10",
     "area": 236800,
-    "areaRank": 82,
+    "areaRank": 83,
     "areaCount": 195,
     "areaShare": "0.17"
   },
@@ -1035,7 +1035,7 @@
     "populationCount": 195,
     "populationShare": "0.09",
     "area": 488100,
-    "areaRank": 52,
+    "areaRank": 53,
     "areaCount": 195,
     "areaShare": "0.36"
   },
@@ -1045,7 +1045,7 @@
     "populationCount": 195,
     "populationShare": "0.09",
     "area": 1759540,
-    "areaRank": 16,
+    "areaRank": 17,
     "areaCount": 195,
     "areaShare": "1.29"
   },
@@ -1055,7 +1055,7 @@
     "populationCount": 195,
     "populationShare": "0.09",
     "area": 199951,
-    "areaRank": 85,
+    "areaRank": 86,
     "areaCount": 195,
     "areaShare": "0.15"
   },
@@ -1075,7 +1075,7 @@
     "populationCount": 195,
     "populationShare": "0.09",
     "area": 130373,
-    "areaRank": 96,
+    "areaRank": 97,
     "areaCount": 195,
     "areaShare": "0.10"
   },
@@ -1085,7 +1085,7 @@
     "populationCount": 195,
     "populationShare": "0.09",
     "area": 406752,
-    "areaRank": 59,
+    "areaRank": 60,
     "areaCount": 195,
     "areaShare": "0.30"
   },
@@ -1095,7 +1095,7 @@
     "populationCount": 195,
     "populationShare": "0.08",
     "area": 110879,
-    "areaRank": 103,
+    "areaRank": 104,
     "areaCount": 195,
     "areaShare": "0.08"
   },
@@ -1105,7 +1105,7 @@
     "populationCount": 195,
     "populationShare": "0.08",
     "area": 88361,
-    "areaRank": 111,
+    "areaRank": 112,
     "areaCount": 195,
     "areaShare": "0.06"
   },
@@ -1115,7 +1115,7 @@
     "populationCount": 195,
     "populationShare": "0.08",
     "area": 342000,
-    "areaRank": 64,
+    "areaRank": 65,
     "areaCount": 195,
     "areaShare": "0.25"
   },
@@ -1130,14 +1130,14 @@
     "areaShare": "0.02"
   },
   "DNK": {
-    "population": 6023520,
+    "population": 6135675,
     "populationRank": 112,
     "populationCount": 195,
     "populationShare": "0.07",
-    "area": 43094,
-    "areaRank": 130,
+    "area": 2210573,
+    "areaRank": 12,
     "areaCount": 195,
-    "areaShare": "0.03"
+    "areaShare": "1.62"
   },
   "SGP": {
     "population": 5905748,
@@ -1165,7 +1165,7 @@
     "populationCount": 195,
     "populationShare": "0.07",
     "area": 111369,
-    "areaRank": 102,
+    "areaRank": 103,
     "areaCount": 195,
     "areaShare": "0.08"
   },
@@ -1175,7 +1175,7 @@
     "populationCount": 195,
     "populationShare": "0.07",
     "area": 622984,
-    "areaRank": 42,
+    "areaRank": 44,
     "areaCount": 195,
     "areaShare": "0.46"
   },
@@ -1195,7 +1195,7 @@
     "populationCount": 195,
     "populationShare": "0.07",
     "area": 309500,
-    "areaRank": 71,
+    "areaRank": 72,
     "areaCount": 195,
     "areaShare": "0.23"
   },
@@ -1205,7 +1205,7 @@
     "populationCount": 195,
     "populationShare": "0.07",
     "area": 323802,
-    "areaRank": 68,
+    "areaRank": 69,
     "areaCount": 195,
     "areaShare": "0.24"
   },
@@ -1215,7 +1215,7 @@
     "populationCount": 195,
     "populationShare": "0.07",
     "area": 338424,
-    "areaRank": 65,
+    "areaRank": 66,
     "areaCount": 195,
     "areaShare": "0.25"
   },
@@ -1225,7 +1225,7 @@
     "populationCount": 195,
     "populationShare": "0.07",
     "area": 1030700,
-    "areaRank": 28,
+    "areaRank": 29,
     "areaCount": 195,
     "areaShare": "0.76"
   },
@@ -1235,7 +1235,7 @@
     "populationCount": 195,
     "populationShare": "0.07",
     "area": 49037,
-    "areaRank": 127,
+    "areaRank": 128,
     "areaCount": 195,
     "areaShare": "0.04"
   },
@@ -1245,17 +1245,17 @@
     "populationCount": 195,
     "populationShare": "0.06",
     "area": 70273,
-    "areaRank": 118,
+    "areaRank": 119,
     "areaCount": 195,
     "areaShare": "0.05"
   },
   "NZL": {
-    "population": 5287479,
+    "population": 5290170,
     "populationRank": 124,
     "populationCount": 195,
     "populationShare": "0.06",
-    "area": 270467,
-    "areaRank": 75,
+    "area": 270479,
+    "areaRank": 76,
     "areaCount": 195,
     "areaShare": "0.20"
   },
@@ -1265,7 +1265,7 @@
     "populationCount": 195,
     "populationShare": "0.06",
     "area": 51100,
-    "areaRank": 126,
+    "areaRank": 127,
     "areaCount": 195,
     "areaShare": "0.04"
   },
@@ -1285,7 +1285,7 @@
     "populationCount": 195,
     "populationShare": "0.06",
     "area": 75417,
-    "areaRank": 116,
+    "areaRank": 117,
     "areaCount": 195,
     "areaShare": "0.06"
   },
@@ -1295,7 +1295,7 @@
     "populationCount": 195,
     "populationShare": "0.05",
     "area": 56594,
-    "areaRank": 124,
+    "areaRank": 125,
     "areaCount": 195,
     "areaShare": "0.04"
   },
@@ -1305,7 +1305,7 @@
     "populationCount": 195,
     "populationShare": "0.05",
     "area": 69700,
-    "areaRank": 119,
+    "areaRank": 120,
     "areaCount": 195,
     "areaShare": "0.05"
   },
@@ -1315,7 +1315,7 @@
     "populationCount": 195,
     "populationShare": "0.04",
     "area": 117600,
-    "areaRank": 99,
+    "areaRank": 100,
     "areaCount": 195,
     "areaShare": "0.09"
   },
@@ -1325,7 +1325,7 @@
     "populationCount": 195,
     "populationShare": "0.04",
     "area": 1564110,
-    "areaRank": 18,
+    "areaRank": 19,
     "areaCount": 195,
     "areaShare": "1.15"
   },
@@ -1335,7 +1335,7 @@
     "populationCount": 195,
     "populationShare": "0.04",
     "area": 181034,
-    "areaRank": 89,
+    "areaRank": 90,
     "areaCount": 195,
     "areaShare": "0.13"
   },
@@ -1365,7 +1365,7 @@
     "populationCount": 195,
     "populationShare": "0.04",
     "area": 825615,
-    "areaRank": 34,
+    "areaRank": 35,
     "areaCount": 195,
     "areaShare": "0.61"
   },
@@ -1375,7 +1375,7 @@
     "populationCount": 195,
     "populationShare": "0.04",
     "area": 51209,
-    "areaRank": 125,
+    "areaRank": 126,
     "areaCount": 195,
     "areaShare": "0.04"
   },
@@ -1425,7 +1425,7 @@
     "populationCount": 195,
     "populationShare": "0.03",
     "area": 65300,
-    "areaRank": 121,
+    "areaRank": 122,
     "areaCount": 195,
     "areaShare": "0.05"
   },
@@ -1445,7 +1445,7 @@
     "populationCount": 195,
     "populationShare": "0.03",
     "area": 267668,
-    "areaRank": 76,
+    "areaRank": 77,
     "areaCount": 195,
     "areaShare": "0.20"
   },
@@ -1455,7 +1455,7 @@
     "populationCount": 195,
     "populationShare": "0.03",
     "area": 582000,
-    "areaRank": 46,
+    "areaRank": 48,
     "areaCount": 195,
     "areaShare": "0.43"
   },
@@ -1505,7 +1505,7 @@
     "populationCount": 195,
     "populationShare": "0.02",
     "area": 64559,
-    "areaRank": 122,
+    "areaRank": 123,
     "areaCount": 195,
     "areaShare": "0.05"
   },
@@ -1565,7 +1565,7 @@
     "populationCount": 195,
     "populationShare": "0.02",
     "area": 45227,
-    "areaRank": 129,
+    "areaRank": 130,
     "areaCount": 195,
     "areaShare": "0.03"
   },
@@ -1645,7 +1645,7 @@
     "populationCount": 195,
     "populationShare": "0.01",
     "area": 214969,
-    "areaRank": 83,
+    "areaRank": 84,
     "areaCount": 195,
     "areaShare": "0.16"
   },
@@ -1685,7 +1685,7 @@
     "populationCount": 195,
     "populationShare": "0.01",
     "area": 163820,
-    "areaRank": 90,
+    "areaRank": 91,
     "areaCount": 195,
     "areaShare": "0.12"
   },
@@ -1775,7 +1775,7 @@
     "populationCount": 195,
     "populationShare": "0.00",
     "area": 103000,
-    "areaRank": 106,
+    "areaRank": 107,
     "areaCount": 195,
     "areaShare": "0.08"
   },

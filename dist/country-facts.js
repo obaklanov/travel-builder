@@ -8,17 +8,17 @@ const countryFacts = {
     "populationCount": 195,
     "area": 1002450,
     "areaShare": "0.74",
-    "areaRank": 29,
+    "areaRank": 30,
     "areaCount": 195
   },
   "new-zealand": {
-    "population": 5287479,
+    "population": 5290170,
     "populationShare": "0.06",
     "populationRank": 124,
     "populationCount": 195,
-    "area": 270467,
+    "area": 270479,
     "areaShare": "0.20",
-    "areaRank": 75,
+    "areaRank": 76,
     "areaCount": 195
   },
   "argentina": {
@@ -38,7 +38,7 @@ const countryFacts = {
     "populationCount": 195,
     "area": 301336,
     "areaShare": "0.22",
-    "areaRank": 72,
+    "areaRank": 73,
     "areaCount": 195
   },
   "japan": {
@@ -48,7 +48,7 @@ const countryFacts = {
     "populationCount": 195,
     "area": 377930,
     "areaShare": "0.28",
-    "areaRank": 61,
+    "areaRank": 62,
     "areaCount": 195
   },
   "portugal": {
@@ -58,7 +58,7 @@ const countryFacts = {
     "populationCount": 195,
     "area": 92090,
     "areaShare": "0.07",
-    "areaRank": 109,
+    "areaRank": 110,
     "areaCount": 195
   },
   "mexico": {
@@ -68,7 +68,7 @@ const countryFacts = {
     "populationCount": 195,
     "area": 1964375,
     "areaShare": "1.44",
-    "areaRank": 13,
+    "areaRank": 14,
     "areaCount": 195
   },
   "thailand": {
@@ -78,17 +78,17 @@ const countryFacts = {
     "populationCount": 195,
     "area": 513120,
     "areaShare": "0.38",
-    "areaRank": 50,
+    "areaRank": 51,
     "areaCount": 195
   },
   "united-states": {
-    "population": 349035494,
+    "population": 352600000,
     "populationRank": 3,
     "populationCount": 195,
-    "populationShare": "4.21",
-    "area": 9372610,
+    "populationShare": "4.25",
+    "area": 9383039,
     "areaRank": 4,
-    "areaShare": "6.89",
+    "areaShare": "6.90",
     "areaCount": 195
   },
   "vietnam": {
@@ -97,7 +97,7 @@ const countryFacts = {
     "populationCount": 195,
     "populationShare": "1.23",
     "area": 331212,
-    "areaRank": 66,
+    "areaRank": 67,
     "areaShare": "0.24",
     "areaCount": 195
   },
@@ -107,7 +107,7 @@ const countryFacts = {
     "populationCount": 195,
     "populationShare": "0.65",
     "area": 1141748,
-    "areaRank": 25,
+    "areaRank": 26,
     "areaShare": "0.84",
     "areaCount": 195
   },
@@ -117,7 +117,7 @@ const countryFacts = {
     "populationCount": 195,
     "populationShare": "0.47",
     "area": 446550,
-    "areaRank": 57,
+    "areaRank": 58,
     "areaShare": "0.33",
     "areaCount": 195
   },
@@ -127,7 +127,7 @@ const countryFacts = {
     "populationCount": 195,
     "populationShare": "0.58",
     "area": 505992,
-    "areaRank": 51,
+    "areaRank": 52,
     "areaShare": "0.37",
     "areaCount": 195
   },
@@ -137,7 +137,7 @@ const countryFacts = {
     "populationCount": 195,
     "populationShare": "0.12",
     "area": 131990,
-    "areaRank": 95,
+    "areaRank": 96,
     "areaShare": "0.10",
     "areaCount": 195
   },
@@ -147,7 +147,7 @@ const countryFacts = {
     "populationCount": 195,
     "populationShare": "0.06",
     "area": 51100,
-    "areaRank": 126,
+    "areaRank": 127,
     "areaShare": "0.04",
     "areaCount": 195
   },
@@ -157,7 +157,7 @@ const countryFacts = {
     "populationCount": 195,
     "populationShare": "3.47",
     "area": 1904569,
-    "areaRank": 14,
+    "areaRank": 15,
     "areaShare": "1.40",
     "areaCount": 195
   }

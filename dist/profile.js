@@ -25,7 +25,9 @@
     button.disabled=!user||!storageReady||savingCountries||saved;
     button.textContent=savingCountries?'Saving…':saved?'Already travelled':'Add to travelled';
   }
+  const travelCountryCode=code=>catalogue.find(c=>c.code===code)?.parentCountry||code;
   function showCountryInfo(code) {
+    code=travelCountryCode(code);
     mapCountryCode=code;
     const country=catalogue.find(c=>c.code===code), panel=$("#map-country-info");
     if(!country || !panel)return;
@@ -140,7 +142,7 @@
     const normalise = value => value.normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLocaleLowerCase();
     const query = normalise($('#country-search').value.trim());
     const selectedOnly = $('#selected-only').checked;
-    const matches = catalogue.filter(country => (selectedOnly || query) && (country.classification==='country'||$('#include-territories').checked) && (!selectedOnly || selected.has(country.code)) && (!query || [country.name, country.code, country.iso2, ...(country.aliases || [])].some(value => normalise(value || '').startsWith(query))));
+    const matches = catalogue.filter(country => (selectedOnly || query) && (country.classification==='country'||$('#include-territories').checked) && (!selectedOnly || selected.has(travelCountryCode(country.code))) && (!query || [country.name, country.code, country.iso2, ...(country.aliases || [])].some(value => normalise(value || '').startsWith(query))));
     const list = $('#visited-country-list');
     list.replaceChildren();
     list.closest('fieldset').hidden = !query && !selectedOnly;
@@ -150,10 +152,10 @@
       label.className = 'country-choice';
       const checkbox = document.createElement('input');
       checkbox.type = 'checkbox';
-      checkbox.value = country.code;
-      checkbox.checked = selected.has(country.code);
+      checkbox.value = travelCountryCode(country.code);
+      checkbox.checked = selected.has(travelCountryCode(country.code));
       const name = document.createElement('span');
-      name.textContent = country.name;
+      name.textContent = country.name+(country.parentCountry?' ('+catalogue.find(c=>c.code===country.parentCountry).name+')':'');
       label.append(checkbox, name);
       checkbox.addEventListener('change', () => setCountrySelection(country.code,checkbox.checked,selectedOnly));
       list.append(label);
@@ -167,6 +169,7 @@
   }
 
   function selectMapCountry(code){
+    code=travelCountryCode(code);
     if(!user||!storageReady||!allowedCodes.has(code))return;
     if(!$('#include-territories').checked && catalogue.find(c=>c.code===code)?.classification!=='country'){return;}
     if(mapCountryCode===code){
@@ -182,6 +185,7 @@
   }
 
   function setCountrySelection(code,checked,refreshList=true) {
+    code=travelCountryCode(code);
     if (!user || !storageReady || !allowedCodes.has(code)) return;
     if (checked) selected.add(code); else selected.delete(code);
     setDirty(true);
@@ -191,12 +195,12 @@
   }
 
   async function loadGeography() {
-    const [catalogueResponse, mapResponse, colorResponse] = await Promise.all([fetch('country-catalog.json?v=rankings-195-1'), fetch('profile-country-outlines.json?v=somalia-complete-1'), fetch('country-colors.json?v=scratch-1')]);
+    const [catalogueResponse, mapResponse, colorResponse] = await Promise.all([fetch('country-catalog.json?v=parent-country-facts-1'), fetch('profile-country-outlines.json?v=somalia-complete-1'), fetch('country-colors.json?v=scratch-1')]);
     if (!catalogueResponse.ok || !mapResponse.ok || !colorResponse.ok) throw new Error('Country data unavailable');
     catalogue = await catalogueResponse.json();
     const outlines = await mapResponse.json();
     countryColors = (await colorResponse.json()).colors;
-    try {const response=await fetch('profile-country-info.json?v=rankings-195-1');if(response.ok)countryInfo=await response.json();} catch {}
+    try {const response=await fetch('profile-country-info.json?v=parent-country-facts-1');if(response.ok)countryInfo=await response.json();} catch {}
     window.TRAVEL_SCRATCH?.init(outlines,countryColors,catalogue);
     allowedCodes = new Set(catalogue.map(country => country.code));
     const ns = 'http://www.w3.org/2000/svg';
@@ -215,12 +219,14 @@
       const title = document.createElementNS(ns, 'title');
       title.textContent = feature.properties.name;
       path.append(title);
-      const code = aliases[feature.id] || feature.id;
+      const originalCode = aliases[feature.id] || feature.id;
+      const code = travelCountryCode(originalCode);
+      if(code!==originalCode){title.textContent=feature.properties.name+' ('+catalogue.find(c=>c.code===code).name+')';}
       path.dataset.country = code;
-      path.setAttribute('id','profile-country-' + code);
+      path.setAttribute('id','profile-country-' + originalCode);
       path.setAttribute('role','button');
       path.setAttribute('tabindex','0');
-      path.setAttribute('aria-label',feature.properties.name);
+      path.setAttribute('aria-label',title.textContent);
       path.setAttribute('aria-pressed','false');
       path.addEventListener('click', () => {if(svg.dataset.suppressSelection!=='true'){selectMapCountry(code);}});
       path.addEventListener('keydown', event => {
@@ -286,7 +292,8 @@
     } else {
       storageReady = true;
       profile = data;
-      selected = new Set((data?.visited_countries || []).filter(code => allowedCodes.has(code)));
+      selected = new Set((data?.visited_countries || []).map(travelCountryCode).filter(code => allowedCodes.has(code)));
+      if(data)data.visited_countries=[...new Set((data.visited_countries||[]).map(travelCountryCode))];
       // Preserve earlier saved places outside the current Worldometer catalogue.
       legacySelected = new Set((data?.visited_countries || []).filter(code => !allowedCodes.has(code)));
       message(data ? '' : 'Welcome aboard. Choose the countries and territories you’ve visited, then save your profile.', 'success');
