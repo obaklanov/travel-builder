@@ -1,0 +1,51 @@
+{
+  "purpose": "Editorial guide for the number of mid-level planning regions; do not automatically truncate region data.",
+  "version": "2026-11-01",
+  "weights": {
+    "areaRank": 0.6,
+    "populationRank": 0.4
+  },
+  "formula": "0.6 * areaRank + 0.4 * populationRank; ranks use the shared Worldometer 234-entry catalogue, where rank 1 is largest.",
+  "bands": [
+    {
+      "minBlendedRank": 120,
+      "classification": "small",
+      "suggestedRegions": [
+        2,
+        3
+      ]
+    },
+    {
+      "minBlendedRank": 70,
+      "classification": "medium",
+      "suggestedRegions": [
+        3,
+        4
+      ]
+    },
+    {
+      "minBlendedRank": 0,
+      "classification": "large",
+      "suggestedRegions": [
+        4,
+        6
+      ]
+    }
+  ],
+  "exceptions": [
+    "Preserve distinct seasonal patterns that affect month choice.",
+    "Keep separate island groups where weather or arrival airports differ.",
+    "Merge nearby destinations with similar seasons; retain relevant airport gateways.",
+    "Population and area ranks do not measure climate diversity; final region count is editorial."
+  ],
+  "overrides": {
+    "costa-rica": {
+      "regions": 3,
+      "populationRank": 127,
+      "areaRank": 129,
+      "blendedRank": 128.2,
+      "reason": "Inland destinations, Pacific coast, Caribbean coast; preserve differing coastal rainfall patterns.",
+      "source": "https://www.visitcostarica.com/planning-your-trip/climate"
+    }
+  }
+}
