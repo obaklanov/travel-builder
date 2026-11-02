@@ -8,7 +8,11 @@
     "population": 45047069,
     "populationRank": 36,
     "area": 652230,
-    "areaRank": 41,
+    "areaRank": 40,
+    "populationCount": 195,
+    "populationShare": "0.54",
+    "areaCount": 195,
+    "areaShare": "0.48",
     "classification": "country"
   },
   {
@@ -18,9 +22,13 @@
     "region": "Europe",
     "aliases": [],
     "population": 2751025,
-    "populationRank": 144,
+    "populationRank": 141,
     "area": 28748,
-    "areaRank": 144,
+    "areaRank": 140,
+    "populationCount": 195,
+    "populationShare": "0.03",
+    "areaCount": 195,
+    "areaShare": "0.02",
     "classification": "country"
   },
   {
@@ -33,6 +41,10 @@
     "populationRank": 32,
     "area": 2381741,
     "areaRank": 10,
+    "populationCount": 195,
+    "populationShare": "0.58",
+    "areaCount": 195,
+    "areaShare": "1.75",
     "classification": "country"
   },
   {
@@ -42,9 +54,13 @@
     "region": "Oceania",
     "aliases": [],
     "population": 45319,
-    "populationRank": 210,
+    "populationRank": null,
     "area": 199,
-    "areaRank": 215,
+    "areaRank": null,
+    "populationCount": null,
+    "populationShare": "0.00",
+    "areaCount": null,
+    "areaShare": "0.00",
     "classification": "territory"
   },
   {
@@ -54,9 +70,13 @@
     "region": "Europe",
     "aliases": [],
     "population": 83753,
-    "populationRank": 201,
+    "populationRank": 185,
     "area": 468,
-    "areaRank": 195,
+    "areaRank": 179,
+    "populationCount": 195,
+    "populationShare": "0.00",
+    "areaCount": 195,
+    "areaShare": "0.00",
     "classification": "country"
   },
   {
@@ -68,7 +88,11 @@
     "population": 40215179,
     "populationRank": 39,
     "area": 1246700,
-    "areaRank": 23,
+    "areaRank": 22,
+    "populationCount": 195,
+    "populationShare": "0.48",
+    "areaCount": 195,
+    "areaShare": "0.92",
     "classification": "country"
   },
   {
@@ -78,9 +102,13 @@
     "region": "Americas",
     "aliases": [],
     "population": 14817,
-    "populationRank": 222,
+    "populationRank": null,
     "area": 91,
-    "areaRank": 222,
+    "areaRank": null,
+    "populationCount": null,
+    "populationShare": "0.00",
+    "areaCount": null,
+    "areaShare": "0.00",
     "classification": "territory"
   },
   {
@@ -90,9 +118,13 @@
     "region": "Americas",
     "aliases": [],
     "population": 94626,
-    "populationRank": 199,
+    "populationRank": 184,
     "area": 442,
-    "areaRank": 200,
+    "areaRank": 182,
+    "populationCount": 195,
+    "populationShare": "0.00",
+    "areaCount": 195,
+    "areaShare": "0.00",
     "classification": "country"
   },
   {
@@ -105,6 +137,10 @@
     "populationRank": 35,
     "area": 2780400,
     "areaRank": 8,
+    "populationCount": 195,
+    "populationShare": "0.55",
+    "areaCount": 195,
+    "areaShare": "2.04",
     "classification": "country"
   },
   {
@@ -114,9 +150,13 @@
     "region": "Asia",
     "aliases": [],
     "population": 2930915,
-    "populationRank": 140,
+    "populationRank": 137,
     "area": 29743,
-    "areaRank": 142,
+    "areaRank": 138,
+    "populationCount": 195,
+    "populationShare": "0.04",
+    "areaCount": 195,
+    "areaShare": "0.02",
     "classification": "country"
   },
   {
@@ -126,9 +166,13 @@
     "region": "Americas",
     "aliases": [],
     "population": 108164,
-    "populationRank": 196,
+    "populationRank": null,
     "area": 180,
-    "areaRank": 217,
+    "areaRank": null,
+    "populationCount": null,
+    "populationShare": "0.00",
+    "areaCount": null,
+    "areaShare": "0.00",
     "classification": "territory"
   },
   {
@@ -141,6 +185,10 @@
     "populationRank": 55,
     "area": 7692024,
     "areaRank": 6,
+    "populationCount": 195,
+    "populationShare": "0.33",
+    "areaCount": 195,
+    "areaShare": "5.65",
     "classification": "country"
   },
   {
@@ -150,9 +198,13 @@
     "region": "Europe",
     "aliases": [],
     "population": 9107266,
-    "populationRank": 99,
+    "populationRank": 98,
     "area": 83871,
-    "areaRank": 115,
+    "areaRank": 113,
+    "populationCount": 195,
+    "populationShare": "0.11",
+    "areaCount": 195,
+    "areaShare": "0.06",
     "classification": "country"
   },
   {
@@ -162,9 +214,13 @@
     "region": "Asia",
     "aliases": [],
     "population": 10454855,
-    "populationRank": 93,
+    "populationRank": 92,
     "area": 86600,
-    "areaRank": 114,
+    "areaRank": 112,
+    "populationCount": 195,
+    "populationShare": "0.13",
+    "areaCount": 195,
+    "areaShare": "0.06",
     "classification": "country"
   },
   {
@@ -174,9 +230,13 @@
     "region": "Americas",
     "aliases": [],
     "population": 404628,
-    "populationRank": 177,
+    "populationRank": 171,
     "area": 13943,
-    "areaRank": 160,
+    "areaRank": 155,
+    "populationCount": 195,
+    "populationShare": "0.00",
+    "areaCount": 195,
+    "areaShare": "0.01",
     "classification": "country"
   },
   {
@@ -186,9 +246,13 @@
     "region": "Asia",
     "aliases": [],
     "population": 1675572,
-    "populationRank": 153,
+    "populationRank": 150,
     "area": 765,
-    "areaRank": 187,
+    "areaRank": 173,
+    "populationCount": 195,
+    "populationShare": "0.02",
+    "areaCount": 195,
+    "areaShare": "0.00",
     "classification": "country"
   },
   {
@@ -200,7 +264,11 @@
     "population": 177818044,
     "populationRank": 8,
     "area": 147570,
-    "areaRank": 94,
+    "areaRank": 92,
+    "populationCount": 195,
+    "populationShare": "2.14",
+    "areaCount": 195,
+    "areaShare": "0.11",
     "classification": "country"
   },
   {
@@ -210,9 +278,13 @@
     "region": "Americas",
     "aliases": [],
     "population": 282724,
-    "populationRank": 186,
+    "populationRank": 174,
     "area": 430,
-    "areaRank": 201,
+    "areaRank": 183,
+    "populationCount": 195,
+    "populationShare": "0.00",
+    "areaCount": 195,
+    "areaShare": "0.00",
     "classification": "country"
   },
   {
@@ -222,9 +294,13 @@
     "region": "Europe",
     "aliases": [],
     "population": 8937018,
-    "populationRank": 102,
+    "populationRank": 101,
     "area": 207600,
-    "areaRank": 86,
+    "areaRank": 84,
+    "populationCount": 195,
+    "populationShare": "0.11",
+    "areaCount": 195,
+    "areaShare": "0.15",
     "classification": "country"
   },
   {
@@ -234,9 +310,13 @@
     "region": "Europe",
     "aliases": [],
     "population": 11774642,
-    "populationRank": 83,
+    "populationRank": 82,
     "area": 30528,
-    "areaRank": 140,
+    "areaRank": 136,
+    "populationCount": 195,
+    "populationShare": "0.14",
+    "areaCount": 195,
+    "areaShare": "0.02",
     "classification": "country"
   },
   {
@@ -246,9 +326,13 @@
     "region": "Americas",
     "aliases": [],
     "population": 428644,
-    "populationRank": 176,
+    "populationRank": 170,
     "area": 22966,
-    "areaRank": 151,
+    "areaRank": 147,
+    "populationCount": 195,
+    "populationShare": "0.01",
+    "areaCount": 195,
+    "areaShare": "0.02",
     "classification": "country"
   },
   {
@@ -258,9 +342,13 @@
     "region": "Africa",
     "aliases": [],
     "population": 15170419,
-    "populationRank": 76,
+    "populationRank": 75,
     "area": 112622,
-    "areaRank": 102,
+    "areaRank": 100,
+    "populationCount": 195,
+    "populationShare": "0.18",
+    "areaCount": 195,
+    "areaShare": "0.08",
     "classification": "country"
   },
   {
@@ -270,9 +358,13 @@
     "region": "Americas",
     "aliases": [],
     "population": 64459,
-    "populationRank": 205,
+    "populationRank": null,
     "area": 54,
-    "areaRank": 224,
+    "areaRank": null,
+    "populationCount": null,
+    "populationShare": "0.00",
+    "areaCount": null,
+    "areaShare": "0.00",
     "classification": "territory"
   },
   {
@@ -282,9 +374,13 @@
     "region": "Asia",
     "aliases": [],
     "population": 802214,
-    "populationRank": 166,
+    "populationRank": 162,
     "area": 38394,
-    "areaRank": 136,
+    "areaRank": 133,
+    "populationCount": 195,
+    "populationShare": "0.01",
+    "areaCount": 195,
+    "areaShare": "0.03",
     "classification": "country"
   },
   {
@@ -294,9 +390,13 @@
     "region": "Americas",
     "aliases": [],
     "population": 12749291,
-    "populationRank": 79,
+    "populationRank": 78,
     "area": 1098581,
-    "areaRank": 28,
+    "areaRank": 27,
+    "populationCount": 195,
+    "populationShare": "0.15",
+    "areaCount": 195,
+    "areaShare": "0.81",
     "classification": "country"
   },
   {
@@ -306,9 +406,13 @@
     "region": "Europe",
     "aliases": [],
     "population": 3114242,
-    "populationRank": 138,
+    "populationRank": 135,
     "area": 51209,
-    "areaRank": 128,
+    "areaRank": 125,
+    "populationCount": 195,
+    "populationShare": "0.04",
+    "areaCount": 195,
+    "areaShare": "0.04",
     "classification": "country"
   },
   {
@@ -318,9 +422,13 @@
     "region": "Africa",
     "aliases": [],
     "population": 2603388,
-    "populationRank": 146,
+    "populationRank": 143,
     "area": 582000,
-    "areaRank": 47,
+    "areaRank": 46,
+    "populationCount": 195,
+    "populationShare": "0.03",
+    "areaCount": 195,
+    "areaShare": "0.43",
     "classification": "country"
   },
   {
@@ -333,6 +441,10 @@
     "populationRank": 7,
     "area": 8515767,
     "areaRank": 5,
+    "populationCount": 195,
+    "populationShare": "2.57",
+    "areaCount": 195,
+    "areaShare": "6.26",
     "classification": "country"
   },
   {
@@ -342,9 +454,13 @@
     "region": "Americas",
     "aliases": [],
     "population": 39936,
-    "populationRank": 215,
+    "populationRank": null,
     "area": 151,
-    "areaRank": 219,
+    "areaRank": null,
+    "populationCount": null,
+    "populationShare": "0.00",
+    "areaCount": null,
+    "areaShare": "0.00",
     "classification": "territory"
   },
   {
@@ -354,9 +470,13 @@
     "region": "Asia",
     "aliases": [],
     "population": 469775,
-    "populationRank": 175,
+    "populationRank": 169,
     "area": 5765,
-    "areaRank": 171,
+    "areaRank": 164,
+    "populationCount": 195,
+    "populationShare": "0.01",
+    "areaCount": 195,
+    "areaShare": "0.00",
     "classification": "country"
   },
   {
@@ -366,9 +486,13 @@
     "region": "Europe",
     "aliases": [],
     "population": 6667659,
-    "populationRank": 110,
+    "populationRank": 108,
     "area": 110879,
-    "areaRank": 105,
+    "areaRank": 103,
+    "populationCount": 195,
+    "populationShare": "0.08",
+    "areaCount": 195,
+    "areaShare": "0.08",
     "classification": "country"
   },
   {
@@ -380,7 +504,11 @@
     "population": 24601700,
     "populationRank": 59,
     "area": 272967,
-    "areaRank": 75,
+    "areaRank": 74,
+    "populationCount": 195,
+    "populationShare": "0.30",
+    "areaCount": 195,
+    "areaShare": "0.20",
     "classification": "country"
   },
   {
@@ -390,9 +518,13 @@
     "region": "Africa",
     "aliases": [],
     "population": 14729157,
-    "populationRank": 78,
+    "populationRank": 77,
     "area": 27834,
-    "areaRank": 146,
+    "areaRank": 142,
+    "populationCount": 195,
+    "populationShare": "0.18",
+    "areaCount": 195,
+    "areaShare": "0.02",
     "classification": "country"
   },
   {
@@ -404,9 +536,13 @@
       "Cape Verde"
     ],
     "population": 529630,
-    "populationRank": 174,
+    "populationRank": 168,
     "area": 4033,
-    "areaRank": 174,
+    "areaRank": 166,
+    "populationCount": 195,
+    "populationShare": "0.01",
+    "areaCount": 195,
+    "areaShare": "0.00",
     "classification": "country"
   },
   {
@@ -416,9 +552,13 @@
     "region": "Asia",
     "aliases": [],
     "population": 18051219,
-    "populationRank": 73,
+    "populationRank": 72,
     "area": 181035,
-    "areaRank": 90,
+    "areaRank": 88,
+    "populationCount": 195,
+    "populationShare": "0.22",
+    "areaCount": 195,
+    "areaShare": "0.13",
     "classification": "country"
   },
   {
@@ -430,7 +570,11 @@
     "population": 30640817,
     "populationRank": 51,
     "area": 475442,
-    "areaRank": 54,
+    "areaRank": 53,
+    "populationCount": 195,
+    "populationShare": "0.37",
+    "areaCount": 195,
+    "areaShare": "0.35",
     "classification": "country"
   },
   {
@@ -443,6 +587,10 @@
     "populationRank": 38,
     "area": 9984670,
     "areaRank": 2,
+    "populationCount": 195,
+    "populationShare": "0.49",
+    "areaCount": 195,
+    "areaShare": "7.34",
     "classification": "country"
   },
   {
@@ -452,9 +600,13 @@
     "region": "Americas",
     "aliases": [],
     "population": 31913,
-    "populationRank": 219,
+    "populationRank": null,
     "area": 328,
-    "areaRank": 207,
+    "areaRank": null,
+    "populationCount": null,
+    "populationShare": "0.00",
+    "areaCount": null,
+    "areaShare": "0.00",
     "classification": "territory"
   },
   {
@@ -464,9 +616,13 @@
     "region": "Americas",
     "aliases": [],
     "population": 77196,
-    "populationRank": 203,
+    "populationRank": null,
     "area": 264,
-    "areaRank": 210,
+    "areaRank": null,
+    "populationCount": null,
+    "populationShare": "0.00",
+    "areaCount": null,
+    "areaShare": "0.00",
     "classification": "territory"
   },
   {
@@ -476,9 +632,13 @@
     "region": "Africa",
     "aliases": [],
     "population": 5698984,
-    "populationRank": 118,
+    "populationRank": 116,
     "area": 622984,
-    "areaRank": 43,
+    "areaRank": 42,
+    "populationCount": 195,
+    "populationShare": "0.07",
+    "areaCount": 195,
+    "areaShare": "0.46",
     "classification": "country"
   },
   {
@@ -488,9 +648,13 @@
     "region": "Africa",
     "aliases": [],
     "population": 21560380,
-    "populationRank": 64,
+    "populationRank": 63,
     "area": 1284000,
-    "areaRank": 21,
+    "areaRank": 20,
+    "populationCount": 195,
+    "populationShare": "0.26",
+    "areaCount": 195,
+    "areaShare": "0.94",
     "classification": "country"
   },
   {
@@ -500,9 +664,13 @@
     "region": "Americas",
     "aliases": [],
     "population": 19945850,
-    "populationRank": 67,
+    "populationRank": 66,
     "area": 756102,
-    "areaRank": 38,
+    "areaRank": 37,
+    "populationCount": 195,
+    "populationShare": "0.24",
+    "areaCount": 195,
+    "areaShare": "0.56",
     "classification": "country"
   },
   {
@@ -515,6 +683,10 @@
     "populationRank": 2,
     "area": 9706961,
     "areaRank": 3,
+    "populationCount": 195,
+    "populationShare": "17.03",
+    "areaCount": 195,
+    "areaShare": "7.13",
     "classification": "country"
   },
   {
@@ -526,7 +698,11 @@
     "population": 53936226,
     "populationRank": 28,
     "area": 1141748,
-    "areaRank": 26,
+    "areaRank": 25,
+    "populationCount": 195,
+    "populationShare": "0.65",
+    "areaCount": 195,
+    "areaShare": "0.84",
     "classification": "country"
   },
   {
@@ -536,9 +712,13 @@
     "region": "Africa",
     "aliases": [],
     "population": 899010,
-    "populationRank": 162,
+    "populationRank": 159,
     "area": 1862,
-    "areaRank": 179,
+    "areaRank": 170,
+    "populationCount": 195,
+    "populationShare": "0.01",
+    "areaCount": 195,
+    "areaShare": "0.00",
     "classification": "country"
   },
   {
@@ -550,9 +730,13 @@
       "Republic of the Congo"
     ],
     "population": 6637785,
-    "populationRank": 112,
+    "populationRank": 110,
     "area": 342000,
-    "areaRank": 65,
+    "areaRank": 64,
+    "populationCount": 195,
+    "populationShare": "0.08",
+    "areaCount": 195,
+    "areaShare": "0.25",
     "classification": "country"
   },
   {
@@ -562,9 +746,13 @@
     "region": "Oceania",
     "aliases": [],
     "population": 12826,
-    "populationRank": 223,
+    "populationRank": null,
     "area": 236,
-    "areaRank": 214,
+    "areaRank": null,
+    "populationCount": null,
+    "populationShare": "0.00",
+    "areaCount": null,
+    "areaShare": "0.00",
     "classification": "other"
   },
   {
@@ -574,9 +762,13 @@
     "region": "Americas",
     "aliases": [],
     "population": 5174789,
-    "populationRank": 127,
+    "populationRank": 125,
     "area": 51100,
-    "areaRank": 129,
+    "areaRank": 126,
+    "populationCount": 195,
+    "populationShare": "0.06",
+    "areaCount": 195,
+    "areaShare": "0.04",
     "classification": "country"
   },
   {
@@ -590,7 +782,11 @@
     "population": 33494346,
     "populationRank": 50,
     "area": 322463,
-    "areaRank": 70,
+    "areaRank": 69,
+    "populationCount": 195,
+    "populationShare": "0.40",
+    "areaCount": 195,
+    "areaShare": "0.24",
     "classification": "country"
   },
   {
@@ -600,9 +796,13 @@
     "region": "Europe",
     "aliases": [],
     "population": 3822345,
-    "populationRank": 130,
+    "populationRank": 128,
     "area": 56594,
-    "areaRank": 127,
+    "areaRank": 124,
+    "populationCount": 195,
+    "populationShare": "0.05",
+    "areaCount": 195,
+    "areaShare": "0.04",
     "classification": "country"
   },
   {
@@ -612,9 +812,13 @@
     "region": "Americas",
     "aliases": [],
     "population": 10892659,
-    "populationRank": 90,
+    "populationRank": 89,
     "area": 109884,
-    "areaRank": 106,
+    "areaRank": 104,
+    "populationCount": 195,
+    "populationShare": "0.13",
+    "areaCount": 195,
+    "areaShare": "0.08",
     "classification": "country"
   },
   {
@@ -624,9 +828,13 @@
     "region": "Americas",
     "aliases": [],
     "population": 185440,
-    "populationRank": 189,
+    "populationRank": null,
     "area": 444,
-    "areaRank": 199,
+    "areaRank": null,
+    "populationCount": null,
+    "populationShare": "0.00",
+    "areaCount": null,
+    "areaShare": "0.00",
     "classification": "territory"
   },
   {
@@ -636,9 +844,13 @@
     "region": "Europe",
     "aliases": [],
     "population": 1382334,
-    "populationRank": 156,
+    "populationRank": 153,
     "area": 9251,
-    "areaRank": 168,
+    "areaRank": 162,
+    "populationCount": 195,
+    "populationShare": "0.02",
+    "areaCount": 195,
+    "areaShare": "0.01",
     "classification": "country"
   },
   {
@@ -650,9 +862,13 @@
       "Czechia"
     ],
     "population": 10527781,
-    "populationRank": 92,
+    "populationRank": 91,
     "area": 78865,
-    "areaRank": 118,
+    "areaRank": 115,
+    "populationCount": 195,
+    "populationShare": "0.13",
+    "areaCount": 195,
+    "areaShare": "0.06",
     "classification": "country"
   },
   {
@@ -662,9 +878,13 @@
     "region": "Europe",
     "aliases": [],
     "population": 6023520,
-    "populationRank": 114,
+    "populationRank": 112,
     "area": 43094,
-    "areaRank": 133,
+    "areaRank": 130,
+    "populationCount": 195,
+    "populationShare": "0.07",
+    "areaCount": 195,
+    "areaShare": "0.03",
     "classification": "country"
   },
   {
@@ -674,9 +894,13 @@
     "region": "Africa",
     "aliases": [],
     "population": 1199459,
-    "populationRank": 160,
+    "populationRank": 157,
     "area": 23200,
-    "areaRank": 150,
+    "areaRank": 146,
+    "populationCount": 195,
+    "populationShare": "0.01",
+    "areaCount": 195,
+    "areaShare": "0.02",
     "classification": "country"
   },
   {
@@ -686,9 +910,13 @@
     "region": "Americas",
     "aliases": [],
     "population": 65511,
-    "populationRank": 204,
+    "populationRank": 186,
     "area": 751,
-    "areaRank": 188,
+    "areaRank": 174,
+    "populationCount": 195,
+    "populationShare": "0.00",
+    "areaCount": 195,
+    "areaShare": "0.00",
     "classification": "country"
   },
   {
@@ -698,9 +926,13 @@
     "region": "Americas",
     "aliases": [],
     "population": 11609500,
-    "populationRank": 84,
+    "populationRank": 83,
     "area": 48671,
-    "areaRank": 131,
+    "areaRank": 128,
+    "populationCount": 195,
+    "populationShare": "0.14",
+    "areaCount": 195,
+    "areaShare": "0.04",
     "classification": "country"
   },
   {
@@ -713,6 +945,10 @@
     "populationRank": 15,
     "area": 2344858,
     "areaRank": 11,
+    "populationCount": 195,
+    "populationShare": "1.40",
+    "areaCount": 195,
+    "areaShare": "1.72",
     "classification": "country"
   },
   {
@@ -722,9 +958,13 @@
     "region": "Americas",
     "aliases": [],
     "population": 18444506,
-    "populationRank": 72,
+    "populationRank": 71,
     "area": 276841,
-    "areaRank": 74,
+    "areaRank": 73,
+    "populationCount": 195,
+    "populationShare": "0.22",
+    "areaCount": 195,
+    "areaShare": "0.20",
     "classification": "country"
   },
   {
@@ -736,7 +976,11 @@
     "population": 120101175,
     "populationRank": 13,
     "area": 1002450,
-    "areaRank": 30,
+    "areaRank": 29,
+    "populationCount": 195,
+    "populationShare": "1.45",
+    "areaCount": 195,
+    "areaShare": "0.74",
     "classification": "country"
   },
   {
@@ -746,9 +990,13 @@
     "region": "Americas",
     "aliases": [],
     "population": 6391253,
-    "populationRank": 113,
+    "populationRank": 111,
     "area": 21041,
-    "areaRank": 152,
+    "areaRank": 148,
+    "populationCount": 195,
+    "populationShare": "0.08",
+    "areaCount": 195,
+    "areaShare": "0.02",
     "classification": "country"
   },
   {
@@ -758,9 +1006,13 @@
     "region": "Africa",
     "aliases": [],
     "population": 1984468,
-    "populationRank": 150,
+    "populationRank": 147,
     "area": 28051,
-    "areaRank": 145,
+    "areaRank": 141,
+    "populationCount": 195,
+    "populationShare": "0.02",
+    "areaCount": 195,
+    "areaShare": "0.02",
     "classification": "country"
   },
   {
@@ -770,9 +1022,13 @@
     "region": "Africa",
     "aliases": [],
     "population": 3682669,
-    "populationRank": 132,
+    "populationRank": 130,
     "area": 117600,
-    "areaRank": 101,
+    "areaRank": 99,
+    "populationCount": 195,
+    "populationShare": "0.04",
+    "areaCount": 195,
+    "areaShare": "0.09",
     "classification": "country"
   },
   {
@@ -782,9 +1038,13 @@
     "region": "Europe",
     "aliases": [],
     "population": 1331062,
-    "populationRank": 157,
+    "populationRank": 154,
     "area": 45227,
-    "areaRank": 132,
+    "areaRank": 129,
+    "populationCount": 195,
+    "populationShare": "0.02",
+    "areaCount": 195,
+    "areaShare": "0.03",
     "classification": "country"
   },
   {
@@ -794,9 +1054,13 @@
     "region": "Africa",
     "aliases": [],
     "population": 1269859,
-    "populationRank": 158,
+    "populationRank": 155,
     "area": 17364,
-    "areaRank": 158,
+    "areaRank": 153,
+    "populationCount": 195,
+    "populationShare": "0.02",
+    "areaCount": 195,
+    "areaShare": "0.01",
     "classification": "country"
   },
   {
@@ -808,7 +1072,11 @@
     "population": 138902185,
     "populationRank": 10,
     "area": 1104300,
-    "areaRank": 27,
+    "areaRank": 26,
+    "populationCount": 195,
+    "populationShare": "1.67",
+    "areaCount": 195,
+    "areaShare": "0.81",
     "classification": "country"
   },
   {
@@ -820,9 +1088,13 @@
       "Faroe Islands"
     ],
     "population": 56526,
-    "populationRank": 206,
+    "populationRank": null,
     "area": 1393,
-    "areaRank": 181,
+    "areaRank": null,
+    "populationCount": null,
+    "populationShare": "0.00",
+    "areaCount": null,
+    "areaShare": "0.00",
     "classification": "territory"
   },
   {
@@ -832,9 +1104,13 @@
     "region": "Americas",
     "aliases": [],
     "population": 3465,
-    "populationRank": 231,
+    "populationRank": null,
     "area": 12173,
-    "areaRank": 163,
+    "areaRank": null,
+    "populationCount": null,
+    "populationShare": "0.00",
+    "areaCount": null,
+    "areaShare": "0.01",
     "classification": "territory"
   },
   {
@@ -844,9 +1120,13 @@
     "region": "Oceania",
     "aliases": [],
     "population": 937282,
-    "populationRank": 161,
+    "populationRank": 158,
     "area": 18272,
-    "areaRank": 156,
+    "areaRank": 151,
+    "populationCount": 195,
+    "populationShare": "0.01",
+    "areaCount": 195,
+    "areaShare": "0.01",
     "classification": "country"
   },
   {
@@ -856,9 +1136,13 @@
     "region": "Europe",
     "aliases": [],
     "population": 5621739,
-    "populationRank": 122,
+    "populationRank": 120,
     "area": 338424,
-    "areaRank": 66,
+    "areaRank": 65,
+    "populationCount": 195,
+    "populationShare": "0.07",
+    "areaCount": 195,
+    "areaShare": "0.25",
     "classification": "country"
   },
   {
@@ -870,7 +1154,11 @@
     "population": 66746401,
     "populationRank": 23,
     "area": 551695,
-    "areaRank": 49,
+    "areaRank": 48,
+    "populationCount": 195,
+    "populationShare": "0.80",
+    "areaCount": 195,
+    "areaShare": "0.41",
     "classification": "country"
   },
   {
@@ -880,9 +1168,13 @@
     "region": "Americas",
     "aliases": [],
     "population": 318872,
-    "populationRank": 183,
+    "populationRank": null,
     "area": 83534,
-    "areaRank": 117,
+    "areaRank": null,
+    "populationCount": null,
+    "populationShare": "0.00",
+    "areaCount": null,
+    "areaShare": "0.06",
     "classification": "territory"
   },
   {
@@ -892,9 +1184,13 @@
     "region": "Oceania",
     "aliases": [],
     "population": 283076,
-    "populationRank": 185,
+    "populationRank": null,
     "area": 4167,
-    "areaRank": 173,
+    "areaRank": null,
+    "populationCount": null,
+    "populationShare": "0.00",
+    "areaCount": null,
+    "areaShare": "0.00",
     "classification": "territory"
   },
   {
@@ -904,9 +1200,13 @@
     "region": "Africa",
     "aliases": [],
     "population": 2647399,
-    "populationRank": 145,
+    "populationRank": 142,
     "area": 267668,
-    "areaRank": 77,
+    "areaRank": 76,
+    "populationCount": 195,
+    "populationShare": "0.03",
+    "areaCount": 195,
+    "areaShare": "0.20",
     "classification": "country"
   },
   {
@@ -916,9 +1216,13 @@
     "region": "Africa",
     "aliases": [],
     "population": 2884079,
-    "populationRank": 141,
+    "populationRank": 138,
     "area": 10689,
-    "areaRank": 166,
+    "areaRank": 160,
+    "populationCount": 195,
+    "populationShare": "0.03",
+    "areaCount": 195,
+    "areaShare": "0.01",
     "classification": "country"
   },
   {
@@ -928,9 +1232,13 @@
     "region": "Asia",
     "aliases": [],
     "population": 3804642,
-    "populationRank": 131,
+    "populationRank": 129,
     "area": 69700,
-    "areaRank": 122,
+    "areaRank": 119,
+    "populationCount": 195,
+    "populationShare": "0.05",
+    "areaCount": 195,
+    "areaShare": "0.05",
     "classification": "country"
   },
   {
@@ -942,7 +1250,11 @@
     "population": 83644258,
     "populationRank": 19,
     "area": 357114,
-    "areaRank": 63,
+    "areaRank": 62,
+    "populationCount": 195,
+    "populationShare": "1.01",
+    "areaCount": 195,
+    "areaShare": "0.26",
     "classification": "country"
   },
   {
@@ -954,7 +1266,11 @@
     "population": 35697557,
     "populationRank": 46,
     "area": 238533,
-    "areaRank": 82,
+    "areaRank": 80,
+    "populationCount": 195,
+    "populationShare": "0.43",
+    "areaCount": 195,
+    "areaShare": "0.18",
     "classification": "country"
   },
   {
@@ -964,9 +1280,13 @@
     "region": "Europe",
     "aliases": [],
     "population": 40867,
-    "populationRank": 213,
+    "populationRank": null,
     "area": 6,
-    "areaRank": 232,
+    "areaRank": null,
+    "populationCount": null,
+    "populationShare": "0.00",
+    "areaCount": null,
+    "areaShare": "0.00",
     "classification": "territory"
   },
   {
@@ -976,9 +1296,13 @@
     "region": "Europe",
     "aliases": [],
     "population": 9897115,
-    "populationRank": 96,
+    "populationRank": 95,
     "area": 131990,
-    "areaRank": 97,
+    "areaRank": 95,
+    "populationCount": 195,
+    "populationShare": "0.12",
+    "areaCount": 195,
+    "areaShare": "0.10",
     "classification": "country"
   },
   {
@@ -988,9 +1312,13 @@
     "region": "Americas",
     "aliases": [],
     "population": 55629,
-    "populationRank": 207,
+    "populationRank": null,
     "area": 2166086,
-    "areaRank": 12,
+    "areaRank": null,
+    "populationCount": null,
+    "populationShare": "0.00",
+    "areaCount": null,
+    "areaShare": "1.59",
     "classification": "territory"
   },
   {
@@ -1000,9 +1328,13 @@
     "region": "Americas",
     "aliases": [],
     "population": 117362,
-    "populationRank": 194,
+    "populationRank": 180,
     "area": 344,
-    "areaRank": 206,
+    "areaRank": 185,
+    "populationCount": 195,
+    "populationShare": "0.00",
+    "areaCount": 195,
+    "areaShare": "0.00",
     "classification": "country"
   },
   {
@@ -1012,9 +1344,13 @@
     "region": "Americas",
     "aliases": [],
     "population": 372453,
-    "populationRank": 179,
+    "populationRank": null,
     "area": 1628,
-    "areaRank": 180,
+    "areaRank": null,
+    "populationCount": null,
+    "populationShare": "0.00",
+    "areaCount": null,
+    "areaShare": "0.00",
     "classification": "territory"
   },
   {
@@ -1024,9 +1360,13 @@
     "region": "Oceania",
     "aliases": [],
     "population": 170185,
-    "populationRank": 191,
+    "populationRank": null,
     "area": 549,
-    "areaRank": 194,
+    "areaRank": null,
+    "populationCount": null,
+    "populationShare": "0.00",
+    "areaCount": null,
+    "areaShare": "0.00",
     "classification": "territory"
   },
   {
@@ -1036,9 +1376,13 @@
     "region": "Americas",
     "aliases": [],
     "population": 18967978,
-    "populationRank": 69,
+    "populationRank": 68,
     "area": 108889,
-    "areaRank": 107,
+    "areaRank": 105,
+    "populationCount": 195,
+    "populationShare": "0.23",
+    "areaCount": 195,
+    "areaShare": "0.08",
     "classification": "country"
   },
   {
@@ -1048,9 +1392,13 @@
     "region": "Africa",
     "aliases": [],
     "population": 15441993,
-    "populationRank": 75,
+    "populationRank": 74,
     "area": 245857,
-    "areaRank": 79,
+    "areaRank": 77,
+    "populationCount": 195,
+    "populationShare": "0.19",
+    "areaCount": 195,
+    "areaShare": "0.18",
     "classification": "country"
   },
   {
@@ -1060,9 +1408,13 @@
     "region": "Africa",
     "aliases": [],
     "population": 2297808,
-    "populationRank": 148,
+    "populationRank": 145,
     "area": 36125,
-    "areaRank": 138,
+    "areaRank": 134,
+    "populationCount": 195,
+    "populationShare": "0.03",
+    "areaCount": 195,
+    "areaShare": "0.03",
     "classification": "country"
   },
   {
@@ -1072,9 +1424,13 @@
     "region": "Americas",
     "aliases": [],
     "population": 840890,
-    "populationRank": 165,
+    "populationRank": 161,
     "area": 214969,
-    "areaRank": 85,
+    "areaRank": 83,
+    "populationCount": 195,
+    "populationShare": "0.01",
+    "areaCount": 195,
+    "areaShare": "0.16",
     "classification": "country"
   },
   {
@@ -1084,9 +1440,13 @@
     "region": "Americas",
     "aliases": [],
     "population": 12037506,
-    "populationRank": 82,
+    "populationRank": 81,
     "area": 27750,
-    "areaRank": 147,
+    "areaRank": 143,
+    "populationCount": 195,
+    "populationShare": "0.15",
+    "areaCount": 195,
+    "areaShare": "0.02",
     "classification": "country"
   },
   {
@@ -1098,9 +1458,13 @@
       "Vatican City"
     ],
     "population": 506,
-    "populationRank": 234,
+    "populationRank": 195,
     "area": 0,
-    "areaRank": 234,
+    "areaRank": 195,
+    "populationCount": 195,
+    "populationShare": "0.00",
+    "areaCount": 195,
+    "areaShare": "0.00",
     "classification": "country"
   },
   {
@@ -1110,9 +1474,13 @@
     "region": "Americas",
     "aliases": [],
     "population": 11184760,
-    "populationRank": 87,
+    "populationRank": 86,
     "area": 112492,
-    "areaRank": 103,
+    "areaRank": 101,
+    "populationCount": 195,
+    "populationShare": "0.13",
+    "areaCount": 195,
+    "areaShare": "0.08",
     "classification": "country"
   },
   {
@@ -1122,9 +1490,13 @@
     "region": "Asia",
     "aliases": [],
     "population": 7378602,
-    "populationRank": 107,
+    "populationRank": null,
     "area": 1104,
-    "areaRank": 183,
+    "areaRank": null,
+    "populationCount": null,
+    "populationShare": "0.09",
+    "areaCount": null,
+    "areaShare": "0.00",
     "classification": "territory"
   },
   {
@@ -1134,9 +1506,13 @@
     "region": "Europe",
     "aliases": [],
     "population": 9585818,
-    "populationRank": 98,
+    "populationRank": 97,
     "area": 93028,
-    "areaRank": 110,
+    "areaRank": 108,
+    "populationCount": 195,
+    "populationShare": "0.12",
+    "areaCount": 195,
+    "areaShare": "0.07",
     "classification": "country"
   },
   {
@@ -1146,9 +1522,13 @@
     "region": "Europe",
     "aliases": [],
     "population": 402329,
-    "populationRank": 178,
+    "populationRank": 172,
     "area": 103000,
-    "areaRank": 108,
+    "areaRank": 106,
+    "populationCount": 195,
+    "populationShare": "0.00",
+    "areaCount": 195,
+    "areaShare": "0.08",
     "classification": "country"
   },
   {
@@ -1161,6 +1541,10 @@
     "populationRank": 1,
     "area": 3287590,
     "areaRank": 7,
+    "populationCount": 195,
+    "populationShare": "17.79",
+    "areaCount": 195,
+    "areaShare": "2.42",
     "classification": "country"
   },
   {
@@ -1172,7 +1556,11 @@
     "population": 287886782,
     "populationRank": 4,
     "area": 1904569,
-    "areaRank": 15,
+    "areaRank": 14,
+    "populationCount": 195,
+    "populationShare": "3.47",
+    "areaCount": 195,
+    "areaShare": "1.40",
     "classification": "country"
   },
   {
@@ -1184,7 +1572,11 @@
     "population": 93168497,
     "populationRank": 17,
     "area": 1648195,
-    "areaRank": 18,
+    "areaRank": 17,
+    "populationCount": 195,
+    "populationShare": "1.12",
+    "areaCount": 195,
+    "areaShare": "1.21",
     "classification": "country"
   },
   {
@@ -1196,7 +1588,11 @@
     "population": 48007437,
     "populationRank": 33,
     "area": 438317,
-    "areaRank": 59,
+    "areaRank": 58,
+    "populationCount": 195,
+    "populationShare": "0.58",
+    "areaCount": 195,
+    "areaShare": "0.32",
     "classification": "country"
   },
   {
@@ -1206,9 +1602,13 @@
     "region": "Europe",
     "aliases": [],
     "population": 5356950,
-    "populationRank": 125,
+    "populationRank": 123,
     "area": 70273,
-    "areaRank": 121,
+    "areaRank": 118,
+    "populationCount": 195,
+    "populationShare": "0.06",
+    "areaCount": 195,
+    "areaShare": "0.05",
     "classification": "country"
   },
   {
@@ -1218,9 +1618,13 @@
     "region": "Europe",
     "aliases": [],
     "population": 84055,
-    "populationRank": 200,
+    "populationRank": null,
     "area": 572,
-    "areaRank": 193,
+    "areaRank": null,
+    "populationCount": null,
+    "populationShare": "0.00",
+    "areaCount": null,
+    "areaShare": "0.00",
     "classification": "territory"
   },
   {
@@ -1230,9 +1634,13 @@
     "region": "Asia",
     "aliases": [],
     "population": 9647689,
-    "populationRank": 97,
+    "populationRank": 96,
     "area": 20770,
-    "areaRank": 153,
+    "areaRank": 149,
+    "populationCount": 195,
+    "populationShare": "0.12",
+    "areaCount": 195,
+    "areaShare": "0.02",
     "classification": "country"
   },
   {
@@ -1244,7 +1652,11 @@
     "population": 58926166,
     "populationRank": 25,
     "area": 301336,
-    "areaRank": 73,
+    "areaRank": 72,
+    "populationCount": 195,
+    "populationShare": "0.71",
+    "areaCount": 195,
+    "areaShare": "0.22",
     "classification": "country"
   },
   {
@@ -1254,9 +1666,13 @@
     "region": "Americas",
     "aliases": [],
     "population": 2833403,
-    "populationRank": 142,
+    "populationRank": 139,
     "area": 10991,
-    "areaRank": 165,
+    "areaRank": 159,
+    "populationCount": 195,
+    "populationShare": "0.03",
+    "areaCount": 195,
+    "areaShare": "0.01",
     "classification": "country"
   },
   {
@@ -1268,7 +1684,11 @@
     "population": 122427731,
     "populationRank": 12,
     "area": 377930,
-    "areaRank": 62,
+    "areaRank": 61,
+    "populationCount": 195,
+    "populationShare": "1.48",
+    "areaCount": 195,
+    "areaShare": "0.28",
     "classification": "country"
   },
   {
@@ -1278,9 +1698,13 @@
     "region": "Asia",
     "aliases": [],
     "population": 11589532,
-    "populationRank": 85,
+    "populationRank": 84,
     "area": 89342,
-    "areaRank": 112,
+    "areaRank": 110,
+    "populationCount": 195,
+    "populationShare": "0.14",
+    "areaCount": 195,
+    "areaShare": "0.07",
     "classification": "country"
   },
   {
@@ -1290,9 +1714,13 @@
     "region": "Asia",
     "aliases": [],
     "population": 21083626,
-    "populationRank": 65,
+    "populationRank": 64,
     "area": 2724900,
     "areaRank": 9,
+    "populationCount": 195,
+    "populationShare": "0.25",
+    "areaCount": 195,
+    "areaShare": "2.00",
     "classification": "country"
   },
   {
@@ -1304,7 +1732,11 @@
     "population": 58636412,
     "populationRank": 26,
     "area": 580367,
-    "areaRank": 48,
+    "areaRank": 47,
+    "populationCount": 195,
+    "populationShare": "0.71",
+    "areaCount": 195,
+    "areaShare": "0.43",
     "classification": "country"
   },
   {
@@ -1314,9 +1746,13 @@
     "region": "Oceania",
     "aliases": [],
     "population": 138445,
-    "populationRank": 192,
+    "populationRank": 178,
     "area": 811,
-    "areaRank": 186,
+    "areaRank": 172,
+    "populationCount": 195,
+    "populationShare": "0.00",
+    "areaCount": 195,
+    "areaShare": "0.00",
     "classification": "country"
   },
   {
@@ -1326,9 +1762,13 @@
     "region": "Asia",
     "aliases": [],
     "population": 5102773,
-    "populationRank": 128,
+    "populationRank": 126,
     "area": 17818,
-    "areaRank": 157,
+    "areaRank": 152,
+    "populationCount": 195,
+    "populationShare": "0.06",
+    "areaCount": 195,
+    "areaShare": "0.01",
     "classification": "country"
   },
   {
@@ -1338,9 +1778,13 @@
     "region": "Asia",
     "aliases": [],
     "population": 7400465,
-    "populationRank": 106,
+    "populationRank": 105,
     "area": 199951,
-    "areaRank": 87,
+    "areaRank": 85,
+    "populationCount": 195,
+    "populationShare": "0.09",
+    "areaCount": 195,
+    "areaShare": "0.15",
     "classification": "country"
   },
   {
@@ -1350,9 +1794,13 @@
     "region": "Asia",
     "aliases": [],
     "population": 7974017,
-    "populationRank": 103,
+    "populationRank": 102,
     "area": 236800,
-    "areaRank": 84,
+    "areaRank": 82,
+    "populationCount": 195,
+    "populationShare": "0.10",
+    "areaCount": 195,
+    "areaShare": "0.17",
     "classification": "country"
   },
   {
@@ -1362,9 +1810,13 @@
     "region": "Europe",
     "aliases": [],
     "population": 1835935,
-    "populationRank": 151,
+    "populationRank": 148,
     "area": 64559,
-    "areaRank": 125,
+    "areaRank": 122,
+    "populationCount": 195,
+    "populationShare": "0.02",
+    "areaCount": 195,
+    "areaShare": "0.05",
     "classification": "country"
   },
   {
@@ -1374,9 +1826,13 @@
     "region": "Asia",
     "aliases": [],
     "population": 5897467,
-    "populationRank": 116,
+    "populationRank": 114,
     "area": 10452,
-    "areaRank": 167,
+    "areaRank": 161,
+    "populationCount": 195,
+    "populationShare": "0.07",
+    "areaCount": 195,
+    "areaShare": "0.01",
     "classification": "country"
   },
   {
@@ -1386,9 +1842,13 @@
     "region": "Africa",
     "aliases": [],
     "population": 2389336,
-    "populationRank": 147,
+    "populationRank": 144,
     "area": 30355,
-    "areaRank": 141,
+    "areaRank": 137,
+    "populationCount": 195,
+    "populationShare": "0.03",
+    "areaCount": 195,
+    "areaShare": "0.02",
     "classification": "country"
   },
   {
@@ -1398,9 +1858,13 @@
     "region": "Africa",
     "aliases": [],
     "population": 5853949,
-    "populationRank": 117,
+    "populationRank": 115,
     "area": 111369,
-    "areaRank": 104,
+    "areaRank": 102,
+    "populationCount": 195,
+    "populationShare": "0.07",
+    "areaCount": 195,
+    "areaShare": "0.08",
     "classification": "country"
   },
   {
@@ -1410,9 +1874,13 @@
     "region": "Africa",
     "aliases": [],
     "population": 7539851,
-    "populationRank": 105,
+    "populationRank": 104,
     "area": 1759540,
-    "areaRank": 17,
+    "areaRank": 16,
+    "populationCount": 195,
+    "populationShare": "0.09",
+    "areaCount": 195,
+    "areaShare": "1.29",
     "classification": "country"
   },
   {
@@ -1422,9 +1890,13 @@
     "region": "Europe",
     "aliases": [],
     "population": 40368,
-    "populationRank": 214,
+    "populationRank": 188,
     "area": 160,
-    "areaRank": 218,
+    "areaRank": 190,
+    "populationCount": 195,
+    "populationShare": "0.00",
+    "areaCount": 195,
+    "areaShare": "0.00",
     "classification": "country"
   },
   {
@@ -1434,9 +1906,13 @@
     "region": "Europe",
     "aliases": [],
     "population": 2797338,
-    "populationRank": 143,
+    "populationRank": 140,
     "area": 65300,
-    "areaRank": 124,
+    "areaRank": 121,
+    "populationCount": 195,
+    "populationShare": "0.03",
+    "areaCount": 195,
+    "areaShare": "0.05",
     "classification": "country"
   },
   {
@@ -1446,9 +1922,13 @@
     "region": "Europe",
     "aliases": [],
     "population": 687448,
-    "populationRank": 168,
+    "populationRank": 163,
     "area": 2586,
-    "areaRank": 176,
+    "areaRank": 168,
+    "populationCount": 195,
+    "populationShare": "0.01",
+    "areaCount": 195,
+    "areaShare": "0.00",
     "classification": "country"
   },
   {
@@ -1460,9 +1940,13 @@
       "Macau"
     ],
     "population": 723188,
-    "populationRank": 167,
+    "populationRank": null,
     "area": 30,
-    "areaRank": 227,
+    "areaRank": null,
+    "populationCount": null,
+    "populationShare": "0.01",
+    "areaCount": null,
+    "areaShare": "0.00",
     "classification": "territory"
   },
   {
@@ -1474,7 +1958,11 @@
     "population": 33522052,
     "populationRank": 49,
     "area": 587041,
-    "areaRank": 46,
+    "areaRank": 45,
+    "populationCount": 195,
+    "populationShare": "0.40",
+    "areaCount": 195,
+    "areaShare": "0.43",
     "classification": "country"
   },
   {
@@ -1484,9 +1972,13 @@
     "region": "Africa",
     "aliases": [],
     "population": 22785535,
-    "populationRank": 62,
+    "populationRank": 61,
     "area": 118484,
-    "areaRank": 100,
+    "areaRank": 98,
+    "populationCount": 195,
+    "populationShare": "0.27",
+    "areaCount": 195,
+    "areaShare": "0.09",
     "classification": "country"
   },
   {
@@ -1498,7 +1990,11 @@
     "population": 36385115,
     "populationRank": 45,
     "area": 330803,
-    "areaRank": 68,
+    "areaRank": 67,
+    "populationCount": 195,
+    "populationShare": "0.44",
+    "areaCount": 195,
+    "areaShare": "0.24",
     "classification": "country"
   },
   {
@@ -1508,9 +2004,13 @@
     "region": "Asia",
     "aliases": [],
     "population": 531517,
-    "populationRank": 173,
+    "populationRank": 167,
     "area": 300,
-    "areaRank": 209,
+    "areaRank": 187,
+    "populationCount": 195,
+    "populationShare": "0.01",
+    "areaCount": 195,
+    "areaShare": "0.00",
     "classification": "country"
   },
   {
@@ -1522,7 +2022,11 @@
     "population": 25932275,
     "populationRank": 58,
     "area": 1240192,
-    "areaRank": 24,
+    "areaRank": 23,
+    "populationCount": 195,
+    "populationShare": "0.31",
+    "areaCount": 195,
+    "areaShare": "0.91",
     "classification": "country"
   },
   {
@@ -1532,9 +2036,13 @@
     "region": "Europe",
     "aliases": [],
     "population": 549011,
-    "populationRank": 172,
+    "populationRank": 166,
     "area": 316,
-    "areaRank": 208,
+    "areaRank": 186,
+    "populationCount": 195,
+    "populationShare": "0.01",
+    "areaCount": 195,
+    "areaShare": "0.00",
     "classification": "country"
   },
   {
@@ -1544,9 +2052,13 @@
     "region": "Oceania",
     "aliases": [],
     "population": 35075,
-    "populationRank": 217,
+    "populationRank": 190,
     "area": 181,
-    "areaRank": 216,
+    "areaRank": 189,
+    "populationCount": 195,
+    "populationShare": "0.00",
+    "areaCount": 195,
+    "areaShare": "0.00",
     "classification": "country"
   },
   {
@@ -1556,9 +2068,13 @@
     "region": "Americas",
     "aliases": [],
     "population": 337711,
-    "populationRank": 182,
+    "populationRank": null,
     "area": 1128,
-    "areaRank": 182,
+    "areaRank": null,
+    "populationCount": null,
+    "populationShare": "0.00",
+    "areaCount": null,
+    "areaShare": "0.00",
     "classification": "territory"
   },
   {
@@ -1568,9 +2084,13 @@
     "region": "Africa",
     "aliases": [],
     "population": 5461319,
-    "populationRank": 123,
+    "populationRank": 121,
     "area": 1030700,
-    "areaRank": 29,
+    "areaRank": 28,
+    "populationCount": 195,
+    "populationShare": "0.07",
+    "areaCount": 195,
+    "areaShare": "0.76",
     "classification": "country"
   },
   {
@@ -1580,9 +2100,13 @@
     "region": "Africa",
     "aliases": [],
     "population": 1265059,
-    "populationRank": 159,
+    "populationRank": 156,
     "area": 2040,
-    "areaRank": 178,
+    "areaRank": 169,
+    "populationCount": 195,
+    "populationShare": "0.02",
+    "areaCount": 195,
+    "areaShare": "0.00",
     "classification": "country"
   },
   {
@@ -1592,9 +2116,13 @@
     "region": "Africa",
     "aliases": [],
     "population": 347536,
-    "populationRank": 180,
+    "populationRank": null,
     "area": 374,
-    "areaRank": 204,
+    "areaRank": null,
+    "populationCount": null,
+    "populationShare": "0.00",
+    "areaCount": null,
+    "areaShare": "0.00",
     "classification": "territory"
   },
   {
@@ -1606,7 +2134,11 @@
     "population": 132997658,
     "populationRank": 11,
     "area": 1964375,
-    "areaRank": 14,
+    "areaRank": 13,
+    "populationCount": 195,
+    "populationShare": "1.60",
+    "areaCount": 195,
+    "areaShare": "1.44",
     "classification": "country"
   },
   {
@@ -1616,9 +2148,13 @@
     "region": "Oceania",
     "aliases": [],
     "population": 114183,
-    "populationRank": 195,
+    "populationRank": 181,
     "area": 702,
-    "areaRank": 191,
+    "areaRank": 177,
+    "populationCount": 195,
+    "populationShare": "0.00",
+    "areaCount": 195,
+    "areaShare": "0.00",
     "classification": "country"
   },
   {
@@ -1628,9 +2164,13 @@
     "region": "Europe",
     "aliases": [],
     "population": 2961253,
-    "populationRank": 139,
+    "populationRank": 136,
     "area": 33846,
-    "areaRank": 139,
+    "areaRank": 135,
+    "populationCount": 195,
+    "populationShare": "0.04",
+    "areaCount": 195,
+    "areaShare": "0.02",
     "classification": "country"
   },
   {
@@ -1640,9 +2180,13 @@
     "region": "Europe",
     "aliases": [],
     "population": 38087,
-    "populationRank": 216,
+    "populationRank": 189,
     "area": 2,
-    "areaRank": 233,
+    "areaRank": 194,
+    "populationCount": 195,
+    "populationShare": "0.00",
+    "areaCount": 195,
+    "areaShare": "0.00",
     "classification": "country"
   },
   {
@@ -1652,9 +2196,13 @@
     "region": "Asia",
     "aliases": [],
     "population": 3556798,
-    "populationRank": 133,
+    "populationRank": 131,
     "area": 1564110,
-    "areaRank": 19,
+    "areaRank": 18,
+    "populationCount": 195,
+    "populationShare": "0.04",
+    "areaCount": 195,
+    "areaShare": "1.15",
     "classification": "country"
   },
   {
@@ -1664,9 +2212,13 @@
     "region": "Europe",
     "aliases": [],
     "population": 626233,
-    "populationRank": 170,
+    "populationRank": 165,
     "area": 13812,
-    "areaRank": 161,
+    "areaRank": 156,
+    "populationCount": 195,
+    "populationShare": "0.01",
+    "areaCount": 195,
+    "areaShare": "0.01",
     "classification": "country"
   },
   {
@@ -1676,9 +2228,13 @@
     "region": "Americas",
     "aliases": [],
     "population": 4328,
-    "populationRank": 230,
+    "populationRank": null,
     "area": 102,
-    "areaRank": 221,
+    "areaRank": null,
+    "populationCount": null,
+    "populationShare": "0.00",
+    "areaCount": null,
+    "areaShare": "0.00",
     "classification": "territory"
   },
   {
@@ -1690,7 +2246,11 @@
     "population": 38762441,
     "populationRank": 41,
     "area": 446550,
-    "areaRank": 58,
+    "areaRank": 57,
+    "populationCount": 195,
+    "populationShare": "0.47",
+    "areaCount": 195,
+    "areaShare": "0.33",
     "classification": "country"
   },
   {
@@ -1702,7 +2262,11 @@
     "population": 36639851,
     "populationRank": 44,
     "area": 801590,
-    "areaRank": 36,
+    "areaRank": 35,
+    "populationCount": 195,
+    "populationShare": "0.44",
+    "areaCount": 195,
+    "areaShare": "0.59",
     "classification": "country"
   },
   {
@@ -1714,7 +2278,11 @@
     "population": 55184819,
     "populationRank": 27,
     "area": 676578,
-    "areaRank": 40,
+    "areaRank": 39,
+    "populationCount": 195,
+    "populationShare": "0.66",
+    "areaCount": 195,
+    "areaShare": "0.50",
     "classification": "country"
   },
   {
@@ -1724,9 +2292,13 @@
     "region": "Africa",
     "aliases": [],
     "population": 3153246,
-    "populationRank": 137,
+    "populationRank": 134,
     "area": 825615,
-    "areaRank": 35,
+    "areaRank": 34,
+    "populationCount": 195,
+    "populationShare": "0.04",
+    "areaCount": 195,
+    "areaShare": "0.61",
     "classification": "country"
   },
   {
@@ -1736,9 +2308,13 @@
     "region": "Oceania",
     "aliases": [],
     "population": 12101,
-    "populationRank": 224,
+    "populationRank": 193,
     "area": 21,
-    "areaRank": 229,
+    "areaRank": 193,
+    "populationCount": 195,
+    "populationShare": "0.00",
+    "areaCount": 195,
+    "areaShare": "0.00",
     "classification": "country"
   },
   {
@@ -1750,7 +2326,11 @@
     "population": 29629410,
     "populationRank": 52,
     "area": 147181,
-    "areaRank": 95,
+    "areaRank": 93,
+    "populationCount": 195,
+    "populationShare": "0.36",
+    "areaCount": 195,
+    "areaShare": "0.11",
     "classification": "country"
   },
   {
@@ -1760,9 +2340,13 @@
     "region": "Europe",
     "aliases": [],
     "population": 18448775,
-    "populationRank": 71,
+    "populationRank": 70,
     "area": 41850,
-    "areaRank": 134,
+    "areaRank": 131,
+    "populationCount": 195,
+    "populationShare": "0.22",
+    "areaCount": 195,
+    "areaShare": "0.03",
     "classification": "country"
   },
   {
@@ -1772,9 +2356,13 @@
     "region": "Oceania",
     "aliases": [],
     "population": 297892,
-    "populationRank": 184,
+    "populationRank": null,
     "area": 18575,
-    "areaRank": 155,
+    "areaRank": null,
+    "populationCount": null,
+    "populationShare": "0.00",
+    "areaCount": null,
+    "areaShare": "0.01",
     "classification": "territory"
   },
   {
@@ -1784,9 +2372,13 @@
     "region": "Oceania",
     "aliases": [],
     "population": 5287479,
-    "populationRank": 126,
+    "populationRank": 124,
     "area": 270467,
-    "areaRank": 76,
+    "areaRank": 75,
+    "populationCount": 195,
+    "populationShare": "0.06",
+    "areaCount": 195,
+    "areaShare": "0.20",
     "classification": "country"
   },
   {
@@ -1796,9 +2388,13 @@
     "region": "Americas",
     "aliases": [],
     "population": 7097329,
-    "populationRank": 108,
+    "populationRank": 106,
     "area": 130373,
-    "areaRank": 98,
+    "areaRank": 96,
+    "populationCount": 195,
+    "populationShare": "0.09",
+    "areaCount": 195,
+    "areaShare": "0.10",
     "classification": "country"
   },
   {
@@ -1810,7 +2406,11 @@
     "population": 28814878,
     "populationRank": 53,
     "area": 1267000,
-    "areaRank": 22,
+    "areaRank": 21,
+    "populationCount": 195,
+    "populationShare": "0.35",
+    "areaCount": 195,
+    "areaShare": "0.93",
     "classification": "country"
   },
   {
@@ -1822,7 +2422,11 @@
     "population": 242431832,
     "populationRank": 6,
     "area": 923768,
-    "areaRank": 32,
+    "areaRank": 31,
+    "populationCount": 195,
+    "populationShare": "2.92",
+    "areaCount": 195,
+    "areaShare": "0.68",
     "classification": "country"
   },
   {
@@ -1832,9 +2436,13 @@
     "region": "Oceania",
     "aliases": [],
     "population": 1822,
-    "populationRank": 233,
+    "populationRank": null,
     "area": 260,
-    "areaRank": 212,
+    "areaRank": null,
+    "populationCount": null,
+    "populationShare": "0.00",
+    "areaCount": null,
+    "areaShare": "0.00",
     "classification": "other"
   },
   {
@@ -1846,7 +2454,11 @@
     "population": 26633691,
     "populationRank": 56,
     "area": 120538,
-    "areaRank": 99,
+    "areaRank": 97,
+    "populationCount": 195,
+    "populationShare": "0.32",
+    "areaCount": 195,
+    "areaShare": "0.09",
     "classification": "country"
   },
   {
@@ -1856,9 +2468,13 @@
     "region": "Europe",
     "aliases": [],
     "population": 1804063,
-    "populationRank": 152,
+    "populationRank": 149,
     "area": 25713,
-    "areaRank": 149,
+    "areaRank": 145,
+    "populationCount": 195,
+    "populationShare": "0.02",
+    "areaCount": 195,
+    "areaShare": "0.02",
     "classification": "country"
   },
   {
@@ -1868,9 +2484,13 @@
     "region": "Oceania",
     "aliases": [],
     "population": 42914,
-    "populationRank": 212,
+    "populationRank": null,
     "area": 464,
-    "areaRank": 196,
+    "areaRank": null,
+    "populationCount": null,
+    "populationShare": "0.00",
+    "areaCount": null,
+    "areaShare": "0.00",
     "classification": "territory"
   },
   {
@@ -1880,9 +2500,13 @@
     "region": "Europe",
     "aliases": [],
     "population": 5652989,
-    "populationRank": 121,
+    "populationRank": 119,
     "area": 323802,
-    "areaRank": 69,
+    "areaRank": 68,
+    "populationCount": 195,
+    "populationShare": "0.07",
+    "areaCount": 195,
+    "areaShare": "0.24",
     "classification": "country"
   },
   {
@@ -1892,9 +2516,13 @@
     "region": "Asia",
     "aliases": [],
     "population": 5671458,
-    "populationRank": 120,
+    "populationRank": 118,
     "area": 309500,
-    "areaRank": 72,
+    "areaRank": 71,
+    "populationCount": 195,
+    "populationShare": "0.07",
+    "areaCount": 195,
+    "areaShare": "0.23",
     "classification": "country"
   },
   {
@@ -1906,7 +2534,11 @@
     "population": 259299791,
     "populationRank": 5,
     "area": 881912,
-    "areaRank": 34,
+    "areaRank": 33,
+    "populationCount": 195,
+    "populationShare": "3.12",
+    "areaCount": 195,
+    "areaShare": "0.65",
     "classification": "country"
   },
   {
@@ -1916,9 +2548,13 @@
     "region": "Oceania",
     "aliases": [],
     "population": 17614,
-    "populationRank": 221,
+    "populationRank": 192,
     "area": 459,
-    "areaRank": 197,
+    "areaRank": 180,
+    "populationCount": 195,
+    "populationShare": "0.00",
+    "areaCount": 195,
+    "areaShare": "0.00",
     "classification": "country"
   },
   {
@@ -1928,9 +2564,13 @@
     "region": "Americas",
     "aliases": [],
     "population": 4625718,
-    "populationRank": 129,
+    "populationRank": 127,
     "area": 75417,
-    "areaRank": 119,
+    "areaRank": 116,
+    "populationCount": 195,
+    "populationShare": "0.06",
+    "areaCount": 195,
+    "areaShare": "0.06",
     "classification": "country"
   },
   {
@@ -1940,9 +2580,13 @@
     "region": "Oceania",
     "aliases": [],
     "population": 10947848,
-    "populationRank": 89,
+    "populationRank": 88,
     "area": 462840,
-    "areaRank": 55,
+    "areaRank": 54,
+    "populationCount": 195,
+    "populationShare": "0.13",
+    "areaCount": 195,
+    "areaShare": "0.34",
     "classification": "country"
   },
   {
@@ -1952,9 +2596,13 @@
     "region": "Americas",
     "aliases": [],
     "population": 7095279,
-    "populationRank": 109,
+    "populationRank": 107,
     "area": 406752,
-    "areaRank": 60,
+    "areaRank": 59,
+    "populationCount": 195,
+    "populationShare": "0.09",
+    "areaCount": 195,
+    "areaShare": "0.30",
     "classification": "country"
   },
   {
@@ -1966,7 +2614,11 @@
     "population": 34922148,
     "populationRank": 48,
     "area": 1285216,
-    "areaRank": 20,
+    "areaRank": 19,
+    "populationCount": 195,
+    "populationShare": "0.42",
+    "areaCount": 195,
+    "areaShare": "0.94",
     "classification": "country"
   },
   {
@@ -1978,7 +2630,11 @@
     "population": 117724471,
     "populationRank": 14,
     "area": 342353,
-    "areaRank": 64,
+    "areaRank": 63,
+    "populationCount": 195,
+    "populationShare": "1.42",
+    "areaCount": 195,
+    "areaShare": "0.25",
     "classification": "country"
   },
   {
@@ -1990,7 +2646,11 @@
     "population": 37843188,
     "populationRank": 42,
     "area": 312679,
-    "areaRank": 71,
+    "areaRank": 70,
+    "populationCount": 195,
+    "populationShare": "0.46",
+    "areaCount": 195,
+    "areaShare": "0.23",
     "classification": "country"
   },
   {
@@ -2000,9 +2660,13 @@
     "region": "Europe",
     "aliases": [],
     "population": 10395362,
-    "populationRank": 94,
+    "populationRank": 93,
     "area": 92090,
-    "areaRank": 111,
+    "areaRank": 109,
+    "populationCount": 195,
+    "populationShare": "0.13",
+    "areaCount": 195,
+    "areaShare": "0.07",
     "classification": "country"
   },
   {
@@ -2012,9 +2676,13 @@
     "region": "Americas",
     "aliases": [],
     "population": 3222688,
-    "populationRank": 135,
+    "populationRank": null,
     "area": 8870,
-    "areaRank": 169,
+    "areaRank": null,
+    "populationCount": null,
+    "populationShare": "0.04",
+    "areaCount": null,
+    "areaShare": "0.01",
     "classification": "territory"
   },
   {
@@ -2024,9 +2692,13 @@
     "region": "Asia",
     "aliases": [],
     "population": 3173559,
-    "populationRank": 136,
+    "populationRank": 133,
     "area": 11586,
-    "areaRank": 164,
+    "areaRank": 158,
+    "populationCount": 195,
+    "populationShare": "0.04",
+    "areaCount": 195,
+    "areaShare": "0.01",
     "classification": "country"
   },
   {
@@ -2036,9 +2708,13 @@
     "region": "Africa",
     "aliases": [],
     "population": 886298,
-    "populationRank": 163,
+    "populationRank": null,
     "area": 2511,
-    "areaRank": 177,
+    "areaRank": null,
+    "populationCount": null,
+    "populationShare": "0.01",
+    "areaCount": null,
+    "areaShare": "0.00",
     "classification": "territory"
   },
   {
@@ -2048,9 +2724,13 @@
     "region": "Europe",
     "aliases": [],
     "population": 18800605,
-    "populationRank": 70,
+    "populationRank": 69,
     "area": 238391,
-    "areaRank": 83,
+    "areaRank": 81,
+    "populationCount": 195,
+    "populationShare": "0.23",
+    "areaCount": 195,
+    "areaShare": "0.18",
     "classification": "country"
   },
   {
@@ -2063,6 +2743,10 @@
     "populationRank": 9,
     "area": 17098242,
     "areaRank": 1,
+    "populationCount": 195,
+    "populationShare": "1.73",
+    "areaCount": 195,
+    "areaShare": "12.57",
     "classification": "country"
   },
   {
@@ -2072,9 +2756,13 @@
     "region": "Africa",
     "aliases": [],
     "population": 14889693,
-    "populationRank": 77,
+    "populationRank": 76,
     "area": 26338,
-    "areaRank": 148,
+    "areaRank": 144,
+    "populationCount": 195,
+    "populationShare": "0.18",
+    "areaCount": 195,
+    "areaShare": "0.02",
     "classification": "country"
   },
   {
@@ -2086,9 +2774,13 @@
       "Saint Barthélemy"
     ],
     "population": 11550,
-    "populationRank": 225,
+    "populationRank": null,
     "area": 21,
-    "areaRank": 230,
+    "areaRank": null,
+    "populationCount": null,
+    "populationShare": "0.00",
+    "areaCount": null,
+    "areaShare": "0.00",
     "classification": "territory"
   },
   {
@@ -2100,9 +2792,13 @@
       "Saint Helena, Ascension and Tristan da Cunha"
     ],
     "population": 5147,
-    "populationRank": 229,
+    "populationRank": null,
     "area": 394,
-    "areaRank": 202,
+    "areaRank": null,
+    "populationCount": null,
+    "populationShare": "0.00",
+    "areaCount": null,
+    "areaShare": "0.00",
     "classification": "territory"
   },
   {
@@ -2114,9 +2810,13 @@
       "Saint Kitts and Nevis"
     ],
     "population": 46992,
-    "populationRank": 209,
+    "populationRank": 187,
     "area": 261,
-    "areaRank": 211,
+    "areaRank": 188,
+    "populationCount": 195,
+    "populationShare": "0.00",
+    "areaCount": 195,
+    "areaShare": "0.00",
     "classification": "country"
   },
   {
@@ -2126,9 +2826,13 @@
     "region": "Americas",
     "aliases": [],
     "population": 180488,
-    "populationRank": 190,
+    "populationRank": 177,
     "area": 616,
-    "areaRank": 192,
+    "areaRank": 178,
+    "populationCount": 195,
+    "populationShare": "0.00",
+    "areaCount": 195,
+    "areaShare": "0.00",
     "classification": "country"
   },
   {
@@ -2138,9 +2842,13 @@
     "region": "Americas",
     "aliases": [],
     "population": 23898,
-    "populationRank": 220,
+    "populationRank": null,
     "area": 53,
-    "areaRank": 225,
+    "areaRank": null,
+    "populationCount": null,
+    "populationShare": "0.00",
+    "areaCount": null,
+    "areaShare": "0.00",
     "classification": "territory"
   },
   {
@@ -2152,9 +2860,13 @@
       "Saint Pierre and Miquelon"
     ],
     "population": 5513,
-    "populationRank": 228,
+    "populationRank": null,
     "area": 242,
-    "areaRank": 213,
+    "areaRank": null,
+    "populationCount": null,
+    "populationShare": "0.00",
+    "areaCount": null,
+    "areaShare": "0.00",
     "classification": "territory"
   },
   {
@@ -2164,9 +2876,13 @@
     "region": "Oceania",
     "aliases": [],
     "population": 220528,
-    "populationRank": 188,
+    "populationRank": 176,
     "area": 2842,
-    "areaRank": 175,
+    "areaRank": 167,
+    "populationCount": 195,
+    "populationShare": "0.00",
+    "areaCount": 195,
+    "areaShare": "0.00",
     "classification": "country"
   },
   {
@@ -2176,9 +2892,13 @@
     "region": "Europe",
     "aliases": [],
     "population": 33605,
-    "populationRank": 218,
+    "populationRank": 191,
     "area": 61,
-    "areaRank": 223,
+    "areaRank": 191,
+    "populationCount": 195,
+    "populationShare": "0.00",
+    "areaCount": 195,
+    "areaShare": "0.00",
     "classification": "country"
   },
   {
@@ -2190,9 +2910,13 @@
       "São Tomé and Príncipe"
     ],
     "population": 244994,
-    "populationRank": 187,
+    "populationRank": 175,
     "area": 964,
-    "areaRank": 184,
+    "areaRank": 171,
+    "populationCount": 195,
+    "populationShare": "0.00",
+    "areaCount": 195,
+    "areaShare": "0.00",
     "classification": "country"
   },
   {
@@ -2204,7 +2928,11 @@
     "population": 35165787,
     "populationRank": 47,
     "area": 2149690,
-    "areaRank": 13,
+    "areaRank": 12,
+    "populationCount": 195,
+    "populationShare": "0.42",
+    "areaCount": 195,
+    "areaShare": "1.58",
     "classification": "country"
   },
   {
@@ -2214,9 +2942,13 @@
     "region": "Africa",
     "aliases": [],
     "population": 19366548,
-    "populationRank": 68,
+    "populationRank": 67,
     "area": 196722,
-    "areaRank": 88,
+    "areaRank": 86,
+    "populationCount": 195,
+    "populationShare": "0.23",
+    "areaCount": 195,
+    "areaShare": "0.14",
     "classification": "country"
   },
   {
@@ -2226,9 +2958,13 @@
     "region": "Europe",
     "aliases": [],
     "population": 6641964,
-    "populationRank": 111,
+    "populationRank": 109,
     "area": 88361,
-    "areaRank": 113,
+    "areaRank": 111,
+    "populationCount": 195,
+    "populationShare": "0.08",
+    "areaCount": 195,
+    "areaShare": "0.06",
     "classification": "country"
   },
   {
@@ -2238,9 +2974,13 @@
     "region": "Africa",
     "aliases": [],
     "population": 134959,
-    "populationRank": 193,
+    "populationRank": 179,
     "area": 452,
-    "areaRank": 198,
+    "areaRank": 181,
+    "populationCount": 195,
+    "populationShare": "0.00",
+    "areaCount": 195,
+    "areaShare": "0.00",
     "classification": "country"
   },
   {
@@ -2250,9 +2990,13 @@
     "region": "Africa",
     "aliases": [],
     "population": 8996745,
-    "populationRank": 101,
+    "populationRank": 100,
     "area": 71740,
-    "areaRank": 120,
+    "areaRank": 117,
+    "populationCount": 195,
+    "populationShare": "0.11",
+    "areaCount": 195,
+    "areaShare": "0.05",
     "classification": "country"
   },
   {
@@ -2262,9 +3006,13 @@
     "region": "Asia",
     "aliases": [],
     "population": 5905748,
-    "populationRank": 115,
+    "populationRank": 113,
     "area": 710,
-    "areaRank": 190,
+    "areaRank": 176,
+    "populationCount": 195,
+    "populationShare": "0.07",
+    "areaCount": 195,
+    "areaShare": "0.00",
     "classification": "country"
   },
   {
@@ -2274,9 +3022,13 @@
     "region": "Americas",
     "aliases": [],
     "population": 44447,
-    "populationRank": 211,
+    "populationRank": null,
     "area": 34,
-    "areaRank": 226,
+    "areaRank": null,
+    "populationCount": null,
+    "populationShare": "0.00",
+    "areaCount": null,
+    "areaShare": "0.00",
     "classification": "territory"
   },
   {
@@ -2286,9 +3038,13 @@
     "region": "Europe",
     "aliases": [],
     "population": 5451342,
-    "populationRank": 124,
+    "populationRank": 122,
     "area": 49037,
-    "areaRank": 130,
+    "areaRank": 127,
+    "populationCount": 195,
+    "populationShare": "0.07",
+    "areaCount": 195,
+    "areaShare": "0.04",
     "classification": "country"
   },
   {
@@ -2298,9 +3054,13 @@
     "region": "Europe",
     "aliases": [],
     "population": 2114573,
-    "populationRank": 149,
+    "populationRank": 146,
     "area": 20273,
-    "areaRank": 154,
+    "areaRank": 150,
+    "populationCount": 195,
+    "populationShare": "0.03",
+    "areaCount": 195,
+    "areaShare": "0.01",
     "classification": "country"
   },
   {
@@ -2310,9 +3070,13 @@
     "region": "Oceania",
     "aliases": [],
     "population": 858288,
-    "populationRank": 164,
+    "populationRank": 160,
     "area": 28896,
-    "areaRank": 143,
+    "areaRank": 139,
+    "populationCount": 195,
+    "populationShare": "0.01",
+    "areaCount": 195,
+    "areaShare": "0.02",
     "classification": "country"
   },
   {
@@ -2322,9 +3086,13 @@
     "region": "Africa",
     "aliases": [],
     "population": 20305907,
-    "populationRank": 66,
+    "populationRank": 65,
     "area": 637657,
-    "areaRank": 42,
+    "areaRank": 41,
+    "populationCount": 195,
+    "populationShare": "0.24",
+    "areaCount": 195,
+    "areaShare": "0.47",
     "classification": "country"
   },
   {
@@ -2336,7 +3104,11 @@
     "population": 65453084,
     "populationRank": 24,
     "area": 1221037,
-    "areaRank": 25,
+    "areaRank": 24,
+    "populationCount": 195,
+    "populationShare": "0.79",
+    "areaCount": 195,
+    "areaShare": "0.90",
     "classification": "country"
   },
   {
@@ -2348,7 +3120,11 @@
     "population": 51600388,
     "populationRank": 31,
     "area": 100210,
-    "areaRank": 109,
+    "areaRank": 107,
+    "populationCount": 195,
+    "populationShare": "0.62",
+    "areaCount": 195,
+    "areaShare": "0.07",
     "classification": "country"
   },
   {
@@ -2358,9 +3134,13 @@
     "region": "Africa",
     "aliases": [],
     "population": 12436037,
-    "populationRank": 80,
+    "populationRank": 79,
     "area": 619745,
-    "areaRank": 44,
+    "areaRank": 43,
+    "populationCount": 195,
+    "populationShare": "0.15",
+    "areaCount": 195,
+    "areaShare": "0.46",
     "classification": "country"
   },
   {
@@ -2372,7 +3152,11 @@
     "population": 47850793,
     "populationRank": 34,
     "area": 505992,
-    "areaRank": 52,
+    "areaRank": 51,
+    "populationCount": 195,
+    "populationShare": "0.58",
+    "areaCount": 195,
+    "areaShare": "0.37",
     "classification": "country"
   },
   {
@@ -2384,7 +3168,11 @@
     "population": 23348315,
     "populationRank": 60,
     "area": 65610,
-    "areaRank": 123,
+    "areaRank": 120,
+    "populationCount": 195,
+    "populationShare": "0.28",
+    "areaCount": 195,
+    "areaShare": "0.05",
     "classification": "country"
   },
   {
@@ -2396,9 +3184,13 @@
       "Saint Vincent and the Grenadines"
     ],
     "population": 99245,
-    "populationRank": 198,
+    "populationRank": 183,
     "area": 389,
-    "areaRank": 203,
+    "areaRank": 184,
+    "populationCount": 195,
+    "populationShare": "0.00",
+    "areaCount": 195,
+    "areaShare": "0.00",
     "classification": "country"
   },
   {
@@ -2410,9 +3202,13 @@
       "Palestine"
     ],
     "population": 5692790,
-    "populationRank": 119,
+    "populationRank": 117,
     "area": 6220,
-    "areaRank": 170,
+    "areaRank": 163,
+    "populationCount": 195,
+    "populationShare": "0.07",
+    "areaCount": 195,
+    "areaShare": "0.00",
     "classification": "country"
   },
   {
@@ -2424,7 +3220,11 @@
     "population": 53282719,
     "populationRank": 29,
     "area": 1886068,
-    "areaRank": 16,
+    "areaRank": 15,
+    "populationCount": 195,
+    "populationShare": "0.64",
+    "areaCount": 195,
+    "areaShare": "1.39",
     "classification": "country"
   },
   {
@@ -2434,9 +3234,13 @@
     "region": "Americas",
     "aliases": [],
     "population": 645256,
-    "populationRank": 169,
+    "populationRank": 164,
     "area": 163820,
-    "areaRank": 92,
+    "areaRank": 90,
+    "populationCount": 195,
+    "populationShare": "0.01",
+    "areaCount": 195,
+    "areaShare": "0.12",
     "classification": "country"
   },
   {
@@ -2446,9 +3250,13 @@
     "region": "Europe",
     "aliases": [],
     "population": 10701047,
-    "populationRank": 91,
+    "populationRank": 90,
     "area": 450295,
-    "areaRank": 56,
+    "areaRank": 55,
+    "populationCount": 195,
+    "populationShare": "0.13",
+    "areaCount": 195,
+    "areaShare": "0.33",
     "classification": "country"
   },
   {
@@ -2458,9 +3266,13 @@
     "region": "Europe",
     "aliases": [],
     "population": 9007798,
-    "populationRank": 100,
+    "populationRank": 99,
     "area": 41284,
-    "areaRank": 135,
+    "areaRank": 132,
+    "populationCount": 195,
+    "populationShare": "0.11",
+    "areaCount": 195,
+    "areaShare": "0.03",
     "classification": "country"
   },
   {
@@ -2472,7 +3284,11 @@
     "population": 26472497,
     "populationRank": 57,
     "area": 185180,
-    "areaRank": 89,
+    "areaRank": 87,
+    "populationCount": 195,
+    "populationShare": "0.32",
+    "areaCount": 195,
+    "areaShare": "0.14",
     "classification": "country"
   },
   {
@@ -2482,9 +3298,13 @@
     "region": "Asia",
     "aliases": [],
     "population": 23011292,
-    "populationRank": 61,
+    "populationRank": null,
     "area": 36193,
-    "areaRank": 137,
+    "areaRank": null,
+    "populationCount": null,
+    "populationShare": "0.28",
+    "areaCount": null,
+    "areaShare": "0.03",
     "classification": "other"
   },
   {
@@ -2494,9 +3314,13 @@
     "region": "Asia",
     "aliases": [],
     "population": 10978599,
-    "populationRank": 88,
+    "populationRank": 87,
     "area": 143100,
-    "areaRank": 96,
+    "areaRank": 94,
+    "populationCount": 195,
+    "populationShare": "0.13",
+    "areaCount": 195,
+    "areaShare": "0.11",
     "classification": "country"
   },
   {
@@ -2508,7 +3332,11 @@
     "population": 72563780,
     "populationRank": 20,
     "area": 945087,
-    "areaRank": 31,
+    "areaRank": 30,
+    "populationCount": 195,
+    "populationShare": "0.87",
+    "areaCount": 195,
+    "areaShare": "0.69",
     "classification": "country"
   },
   {
@@ -2520,7 +3348,11 @@
     "population": 71559614,
     "populationRank": 21,
     "area": 513120,
-    "areaRank": 51,
+    "areaRank": 50,
+    "populationCount": 195,
+    "populationShare": "0.86",
+    "areaCount": 195,
+    "areaShare": "0.38",
     "classification": "country"
   },
   {
@@ -2530,9 +3362,13 @@
     "region": "Asia",
     "aliases": [],
     "population": 1436923,
-    "populationRank": 155,
+    "populationRank": 152,
     "area": 14874,
-    "areaRank": 159,
+    "areaRank": 154,
+    "populationCount": 195,
+    "populationShare": "0.02",
+    "areaCount": 195,
+    "areaShare": "0.01",
     "classification": "country"
   },
   {
@@ -2542,9 +3378,13 @@
     "region": "Africa",
     "aliases": [],
     "population": 9930918,
-    "populationRank": 95,
+    "populationRank": 94,
     "area": 56785,
-    "areaRank": 126,
+    "areaRank": 123,
+    "populationCount": 195,
+    "populationShare": "0.12",
+    "areaCount": 195,
+    "areaShare": "0.04",
     "classification": "country"
   },
   {
@@ -2554,9 +3394,13 @@
     "region": "Oceania",
     "aliases": [],
     "population": 2691,
-    "populationRank": 232,
+    "populationRank": null,
     "area": 12,
-    "areaRank": 231,
+    "areaRank": null,
+    "populationCount": null,
+    "populationShare": "0.00",
+    "areaCount": null,
+    "areaShare": "0.00",
     "classification": "territory"
   },
   {
@@ -2566,9 +3410,13 @@
     "region": "Oceania",
     "aliases": [],
     "population": 103291,
-    "populationRank": 197,
+    "populationRank": 182,
     "area": 747,
-    "areaRank": 189,
+    "areaRank": 175,
+    "populationCount": 195,
+    "populationShare": "0.00",
+    "areaCount": 195,
+    "areaShare": "0.00",
     "classification": "country"
   },
   {
@@ -2578,9 +3426,13 @@
     "region": "Americas",
     "aliases": [],
     "population": 1513268,
-    "populationRank": 154,
+    "populationRank": 151,
     "area": 5130,
-    "areaRank": 172,
+    "areaRank": 165,
+    "populationCount": 195,
+    "populationShare": "0.02",
+    "areaCount": 195,
+    "areaShare": "0.00",
     "classification": "country"
   },
   {
@@ -2590,9 +3442,13 @@
     "region": "Africa",
     "aliases": [],
     "population": 12415138,
-    "populationRank": 81,
+    "populationRank": 80,
     "area": 163610,
-    "areaRank": 93,
+    "areaRank": 91,
+    "populationCount": 195,
+    "populationShare": "0.15",
+    "areaCount": 195,
+    "areaShare": "0.12",
     "classification": "country"
   },
   {
@@ -2606,7 +3462,11 @@
     "population": 87926082,
     "populationRank": 18,
     "area": 783562,
-    "areaRank": 37,
+    "areaRank": 36,
+    "populationCount": 195,
+    "populationShare": "1.06",
+    "areaCount": 195,
+    "areaShare": "0.58",
     "classification": "country"
   },
   {
@@ -2616,9 +3476,13 @@
     "region": "Asia",
     "aliases": [],
     "population": 7736632,
-    "populationRank": 104,
+    "populationRank": 103,
     "area": 488100,
-    "areaRank": 53,
+    "areaRank": 52,
+    "populationCount": 195,
+    "populationShare": "0.09",
+    "areaCount": 195,
+    "areaShare": "0.36",
     "classification": "country"
   },
   {
@@ -2630,9 +3494,13 @@
       "Turks and Caicos Islands"
     ],
     "population": 47148,
-    "populationRank": 208,
+    "populationRank": null,
     "area": 948,
-    "areaRank": 185,
+    "areaRank": null,
+    "populationCount": null,
+    "populationShare": "0.00",
+    "areaCount": null,
+    "areaShare": "0.00",
     "classification": "territory"
   },
   {
@@ -2642,9 +3510,13 @@
     "region": "Oceania",
     "aliases": [],
     "population": 9362,
-    "populationRank": 227,
+    "populationRank": 194,
     "area": 26,
-    "areaRank": 228,
+    "areaRank": 192,
+    "populationCount": 195,
+    "populationShare": "0.00",
+    "areaCount": 195,
+    "areaShare": "0.00",
     "classification": "country"
   },
   {
@@ -2656,9 +3528,13 @@
       "United States Virgin Islands"
     ],
     "population": 83400,
-    "populationRank": 202,
+    "populationRank": null,
     "area": 347,
-    "areaRank": 205,
+    "areaRank": null,
+    "populationCount": null,
+    "populationShare": "0.00",
+    "areaCount": null,
+    "areaShare": "0.00",
     "classification": "territory"
   },
   {
@@ -2670,7 +3546,11 @@
     "population": 52761469,
     "populationRank": 30,
     "area": 241550,
-    "areaRank": 81,
+    "areaRank": 79,
+    "populationCount": 195,
+    "populationShare": "0.64",
+    "areaCount": 195,
+    "areaShare": "0.18",
     "classification": "country"
   },
   {
@@ -2682,7 +3562,11 @@
     "population": 39535849,
     "populationRank": 40,
     "area": 603500,
-    "areaRank": 45,
+    "areaRank": 44,
+    "populationCount": 195,
+    "populationShare": "0.48",
+    "areaCount": 195,
+    "areaShare": "0.44",
     "classification": "country"
   },
   {
@@ -2692,9 +3576,13 @@
     "region": "Asia",
     "aliases": [],
     "population": 11574682,
-    "populationRank": 86,
+    "populationRank": 85,
     "area": 83600,
-    "areaRank": 116,
+    "areaRank": 114,
+    "populationCount": 195,
+    "populationShare": "0.14",
+    "areaCount": 195,
+    "areaShare": "0.06",
     "classification": "country"
   },
   {
@@ -2706,7 +3594,11 @@
     "population": 69931528,
     "populationRank": 22,
     "area": 242900,
-    "areaRank": 80,
+    "areaRank": 78,
+    "populationCount": 195,
+    "populationShare": "0.84",
+    "areaCount": 195,
+    "areaShare": "0.18",
     "classification": "country"
   },
   {
@@ -2719,6 +3611,10 @@
     "populationRank": 3,
     "area": 9372610,
     "areaRank": 4,
+    "populationCount": 195,
+    "populationShare": "4.21",
+    "areaCount": 195,
+    "areaShare": "6.89",
     "classification": "country"
   },
   {
@@ -2728,9 +3624,13 @@
     "region": "Americas",
     "aliases": [],
     "population": 3382537,
-    "populationRank": 134,
+    "populationRank": 132,
     "area": 181034,
-    "areaRank": 91,
+    "areaRank": 89,
+    "populationCount": 195,
+    "populationShare": "0.04",
+    "areaCount": 195,
+    "areaShare": "0.13",
     "classification": "country"
   },
   {
@@ -2742,7 +3642,11 @@
     "population": 37724223,
     "populationRank": 43,
     "area": 447400,
-    "areaRank": 57,
+    "areaRank": 56,
+    "populationCount": 195,
+    "populationShare": "0.45",
+    "areaCount": 195,
+    "areaShare": "0.33",
     "classification": "country"
   },
   {
@@ -2752,9 +3656,13 @@
     "region": "Oceania",
     "aliases": [],
     "population": 342564,
-    "populationRank": 181,
+    "populationRank": 173,
     "area": 12189,
-    "areaRank": 162,
+    "areaRank": 157,
+    "populationCount": 195,
+    "populationShare": "0.00",
+    "areaCount": 195,
+    "areaShare": "0.01",
     "classification": "country"
   },
   {
@@ -2766,7 +3674,11 @@
     "population": 28633711,
     "populationRank": 54,
     "area": 916445,
-    "areaRank": 33,
+    "areaRank": 32,
+    "populationCount": 195,
+    "populationShare": "0.35",
+    "areaCount": 195,
+    "areaShare": "0.67",
     "classification": "country"
   },
   {
@@ -2778,7 +3690,11 @@
     "population": 102177431,
     "populationRank": 16,
     "area": 331212,
-    "areaRank": 67,
+    "areaRank": 66,
+    "populationCount": 195,
+    "populationShare": "1.23",
+    "areaCount": 195,
+    "areaShare": "0.24",
     "classification": "country"
   },
   {
@@ -2790,9 +3706,13 @@
       "Wallis and Futuna"
     ],
     "population": 11113,
-    "populationRank": 226,
+    "populationRank": null,
     "area": 142,
-    "areaRank": 220,
+    "areaRank": null,
+    "populationCount": null,
+    "populationShare": "0.00",
+    "areaCount": null,
+    "areaShare": "0.00",
     "classification": "territory"
   },
   {
@@ -2802,9 +3722,13 @@
     "region": "Africa",
     "aliases": [],
     "population": 610813,
-    "populationRank": 171,
+    "populationRank": null,
     "area": 266000,
-    "areaRank": 78,
+    "areaRank": null,
+    "populationCount": null,
+    "populationShare": "0.01",
+    "areaCount": null,
+    "areaShare": "0.20",
     "classification": "other"
   },
   {
@@ -2816,7 +3740,11 @@
     "population": 42961653,
     "populationRank": 37,
     "area": 527968,
-    "areaRank": 50,
+    "areaRank": 49,
+    "populationCount": 195,
+    "populationShare": "0.52",
+    "areaCount": 195,
+    "areaShare": "0.39",
     "classification": "country"
   },
   {
@@ -2826,9 +3754,13 @@
     "region": "Africa",
     "aliases": [],
     "population": 22521915,
-    "populationRank": 63,
+    "populationRank": 62,
     "area": 752612,
-    "areaRank": 39,
+    "areaRank": 38,
+    "populationCount": 195,
+    "populationShare": "0.27",
+    "areaCount": 195,
+    "areaShare": "0.55",
     "classification": "country"
   },
   {
@@ -2838,9 +3770,13 @@
     "region": "Africa",
     "aliases": [],
     "population": 17273580,
-    "populationRank": 74,
+    "populationRank": 73,
     "area": 390757,
-    "areaRank": 61,
+    "areaRank": 60,
+    "populationCount": 195,
+    "populationShare": "0.21",
+    "areaCount": 195,
+    "areaShare": "0.29",
     "classification": "country"
   }
 ]

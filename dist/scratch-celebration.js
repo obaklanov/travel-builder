@@ -269,7 +269,7 @@
   function countryFacts(code){
     const row=facts[code];if(!row)return '';
     const compact=n=>new Intl.NumberFormat('en',{notation:'compact',maximumFractionDigits:1}).format(n);
-    return `Population ${compact(row.population)} · ${row.populationShare}% world · Rank ${row.populationRank}/234\nArea ${row.area===0?'<1':compact(row.area)} km\u00b2 · ${row.areaShare}% world · Rank ${row.areaRank}/234`;
+    return `Population ${compact(row.population)} · ${row.populationShare}% world${row.populationRank ? ' · Rank '+row.populationRank+'/'+row.populationCount : ''}\nArea ${row.area===0?'<1':compact(row.area)} km\u00b2 · ${row.areaShare}% world${row.areaRank ? ' · Rank '+row.areaRank+'/'+row.areaCount : ''}`;
   }
   function cancel(){if(active){active.cancelled=true;active.finish?.();active.sound?.stop();active.sound=null;active.effect?.stop();active.dialog.close();}}
   async function celebrate(codes,onReveal=()=>{}){
