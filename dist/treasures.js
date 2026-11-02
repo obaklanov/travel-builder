@@ -4,6 +4,7 @@ function mexicoTreasures(key){if(key!=='mexico')return '';return '<section class
 
 function clearTreasureDetails(){const panel=document.querySelector('.treasure-inline-details');if(panel){panel.hidden=true;panel.replaceChildren();}document.querySelectorAll('[data-treasure]').forEach(b=>{b.classList.remove('selected');b.setAttribute('aria-pressed','false');});}
 function setupTreasureDetails(){document.querySelectorAll('[data-treasure]').forEach(button=>button.onclick=()=>{
+ if(button.getAttribute('aria-pressed')==='true'){clearTreasureDetails();return;}
  document.querySelectorAll('[data-treasure]').forEach(b=>{b.classList.toggle('selected',b===button);b.setAttribute('aria-pressed',String(b===button));});
  const newKey=button.closest('[data-treasure-country]')?.dataset.treasureCountry;
  const treasureData=newKey?newCountryTreasures[newKey].treasures:button.closest('.argentina-treasures')?argentinaTreasureData:button.closest('.italy-treasures')?italyTreasureData:button.closest('.japan-treasures')?japanTreasureData:button.closest('.portugal-treasures')?portugalTreasureData:button.closest('.thailand-treasures')?thailandTreasureData:mexicoTreasureData;
