@@ -212,3 +212,5 @@ select:not([multiple]):not([size]){appearance:none;-webkit-appearance:none;backg
 
 /* Frame the photograph itself, keeping portrait and panoramic compositions intact. */
 .treasure-inline-details .treasure-photo{width:fit-content;max-width:100%;margin:14px auto 0}.treasure-photo img{width:auto;max-width:100%;height:auto;max-height:300px;object-fit:contain}.treasure-photo figcaption{max-width:100%;overflow-wrap:anywhere}
+
+.destination-photo-credits{margin-top:24px;color:#756b59;font:11px/1.7 var(--sans)}.destination-photo-credits summary{cursor:pointer}.destination-photo-credits ul{padding-left:18px}.destination-photo-credits a{color:inherit}

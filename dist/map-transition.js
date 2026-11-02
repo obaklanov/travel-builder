@@ -17,11 +17,12 @@ async function animateCountryMap(key, name) {
   svg.setAttribute('viewBox','0 0 1000 520');
   svg.setAttribute('preserveAspectRatio',key === 'mexico' ? 'xMidYMax meet' : 'xMidYMid meet');
   svg.setAttribute('aria-hidden','true');
-  const selectedId = {"spain":"ESP","greece":"GRC","costa-rica":"CRI","indonesia":"IDN","united-states":"USA","vietnam":"VNM","colombia":"COL","morocco":"MAR",egypt:'EGY','new-zealand':'NZL',argentina:'ARG',italy:'ITA',japan:'JPN',portugal:'PRT',mexico:'MEX',thailand:'THA'}[key];
+  const selectedId = {"france":"FRA","united-kingdom":"GBR","turkey":"TUR","peru":"PER","brazil":"BRA","south-africa":"ZAF","south-korea":"KOR","australia":"AUS","spain":"ESP","greece":"GRC","costa-rica":"CRI","indonesia":"IDN","united-states":"USA","vietnam":"VNM","colombia":"COL","morocco":"MAR",egypt:'EGY','new-zealand':'NZL',argentina:'ARG',italy:'ITA',japan:'JPN',portugal:'PRT',mexico:'MEX',thailand:'THA'}[key];
   let bounds = [Infinity,Infinity,-Infinity,-Infinity];
   for (const feature of data.features) {
     const selected = feature.id === selectedId;
     let polygons = feature.geometry.type === 'Polygon' ? [feature.geometry.coordinates] : feature.geometry.coordinates;
+    if(selected&&key==='france')polygons=polygons.filter(p=>p[0].some(([lon,lat])=>lon> -7&&lon<11&&lat>40&&lat<52));
     if(selected&&key==='united-states'){
       const area=p=>Math.abs(p[0].reduce((sum,a,i,ring)=>{const b=ring[(i+1)%ring.length];return sum+a[0]*b[1]-b[0]*a[1];},0));
       polygons=[[...polygons].sort((a,b)=>area(b)-area(a))[0]];

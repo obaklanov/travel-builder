@@ -176,5 +176,93 @@ const countryFacts = {
     "areaShare": "1.40",
     "areaCount": 198,
     "populationYear": 2026
+  },
+  "france": {
+    "population": 69642313,
+    "populationYear": 2026,
+    "populationRank": 23,
+    "populationCount": 198,
+    "populationShare": "0.84",
+    "area": 664070,
+    "areaRank": 41,
+    "areaCount": 198,
+    "areaShare": "0.49"
+  },
+  "united-kingdom": {
+    "population": 70312946,
+    "populationYear": 2026,
+    "populationRank": 22,
+    "populationCount": 198,
+    "populationShare": "0.85",
+    "area": 257655,
+    "areaRank": 78,
+    "areaCount": 198,
+    "areaShare": "0.19"
+  },
+  "turkey": {
+    "population": 87926082,
+    "populationYear": 2026,
+    "populationRank": 18,
+    "populationCount": 198,
+    "populationShare": "1.06",
+    "area": 783562,
+    "areaRank": 37,
+    "areaCount": 198,
+    "areaShare": "0.58"
+  },
+  "peru": {
+    "population": 34922148,
+    "populationYear": 2026,
+    "populationRank": 48,
+    "populationCount": 198,
+    "populationShare": "0.42",
+    "area": 1285216,
+    "areaRank": 20,
+    "areaCount": 198,
+    "areaShare": "0.94"
+  },
+  "brazil": {
+    "population": 213562666,
+    "populationYear": 2026,
+    "populationRank": 7,
+    "populationCount": 198,
+    "populationShare": "2.57",
+    "area": 8515767,
+    "areaRank": 5,
+    "areaCount": 198,
+    "areaShare": "6.26"
+  },
+  "south-africa": {
+    "population": 65453084,
+    "populationYear": 2026,
+    "populationRank": 24,
+    "populationCount": 198,
+    "populationShare": "0.79",
+    "area": 1221037,
+    "areaRank": 25,
+    "areaCount": 198,
+    "areaShare": "0.90"
+  },
+  "south-korea": {
+    "population": 51600388,
+    "populationYear": 2026,
+    "populationRank": 31,
+    "populationCount": 198,
+    "populationShare": "0.62",
+    "area": 100210,
+    "areaRank": 108,
+    "areaCount": 198,
+    "areaShare": "0.07"
+  },
+  "australia": {
+    "population": 27227096,
+    "populationYear": 2026,
+    "populationRank": 55,
+    "populationCount": 198,
+    "populationShare": "0.33",
+    "area": 7692024,
+    "areaRank": 6,
+    "areaCount": 198,
+    "areaShare": "5.65"
   }
 };

@@ -1,0 +1,789 @@
+{
+  "notes": "Editorial seasonal sightseeing ratings and illustrative CAD costs, not live quotes. Regions chosen for distinct climate and arrival gateways rather than fixed count.",
+  "countries": {
+    "france": {
+      "name": "France",
+      "code": "FRA",
+      "region": "Europe",
+      "airports": [
+        [
+          "CDG",
+          "Paris"
+        ],
+        [
+          "NCE",
+          "Nice"
+        ],
+        [
+          "LYS",
+          "Lyon"
+        ],
+        [
+          "MRS",
+          "Marseille"
+        ],
+        [
+          "AJA",
+          "Ajaccio"
+        ]
+      ],
+      "base": 900,
+      "hours": 8,
+      "costs": [
+        140,
+        50,
+        20,
+        25
+      ],
+      "regions": [
+        [
+          "Paris & Loire Valley (Center)",
+          "WWABBBBBBAWW"
+        ],
+        [
+          "Normandy & Brittany (North)",
+          "WWAABBBBBAWW"
+        ],
+        [
+          "Provence (South)",
+          "AABBBBAABBAA"
+        ],
+        [
+          "French Riviera (South)",
+          "AABBBBAABBAA"
+        ],
+        [
+          "Alps (East)",
+          "WWAABBBBAAWW"
+        ],
+        [
+          "Corsica (Islands)",
+          "WWABBBBBBAWW"
+        ]
+      ],
+      "gateways": [
+        [
+          "CDG"
+        ],
+        [
+          "CDG"
+        ],
+        [
+          "MRS"
+        ],
+        [
+          "NCE"
+        ],
+        [
+          "LYS"
+        ],
+        [
+          "AJA"
+        ]
+      ],
+      "rewardName": "croissant",
+      "treasures": [
+        {
+          "name": "Eiffel Tower",
+          "subtitle": "Above the Seine",
+          "description": "Paris’s iron tower rises above the Champ de Mars, with viewing decks overlooking the city.",
+          "region": "Île-de-France, France",
+          "lat": 48.8584,
+          "lon": 2.2945,
+          "icon": "eiffel"
+        },
+        {
+          "name": "Mont-Saint-Michel",
+          "subtitle": "An island of stories",
+          "description": "A medieval abbey crowns a tidal island surrounded by the sweeping bay of Mont-Saint-Michel.",
+          "region": "Normandy, France",
+          "lat": 48.6361,
+          "lon": -1.5115,
+          "icon": "abbey"
+        },
+        {
+          "name": "Pont du Gard",
+          "subtitle": "Ancient arches",
+          "description": "A monumental Roman aqueduct spans the Gardon River with three tiers of stone arches.",
+          "region": "Occitanie, France",
+          "lat": 43.9476,
+          "lon": 4.5353,
+          "icon": "aqueduct"
+        }
+      ]
+    },
+    "united-kingdom": {
+      "name": "United Kingdom",
+      "code": "GBR",
+      "region": "Europe",
+      "airports": [
+        [
+          "LHR",
+          "London Heathrow"
+        ],
+        [
+          "EDI",
+          "Edinburgh"
+        ],
+        [
+          "MAN",
+          "Manchester"
+        ],
+        [
+          "BFS",
+          "Belfast"
+        ]
+      ],
+      "base": 950,
+      "hours": 7,
+      "costs": [
+        160,
+        55,
+        25,
+        30
+      ],
+      "regions": [
+        [
+          "London & southern England (South)",
+          "WWABBBBBBAWW"
+        ],
+        [
+          "Edinburgh & Highlands (North)",
+          "WWAABBBBBAWW"
+        ],
+        [
+          "Wales & western England (West)",
+          "WWAABBBBBAWW"
+        ],
+        [
+          "Northern Ireland (West)",
+          "WWAABBBBBAWW"
+        ]
+      ],
+      "gateways": [
+        [
+          "LHR"
+        ],
+        [
+          "EDI"
+        ],
+        [
+          "MAN"
+        ],
+        [
+          "BFS"
+        ]
+      ],
+      "rewardName": "teacup",
+      "treasures": [
+        {
+          "name": "Big Ben",
+          "subtitle": "London’s familiar chime",
+          "description": "The Elizabeth Tower at the Palace of Westminster houses the bell known as Big Ben.",
+          "region": "England, United Kingdom",
+          "lat": 51.5007,
+          "lon": -0.1246,
+          "icon": "clock"
+        },
+        {
+          "name": "Stonehenge",
+          "subtitle": "A circle through time",
+          "description": "An ancient stone circle stands on Salisbury Plain, a remarkable survival of prehistoric Britain.",
+          "region": "England, United Kingdom",
+          "lat": 51.1789,
+          "lon": -1.8262,
+          "icon": "stones"
+        },
+        {
+          "name": "Edinburgh Castle",
+          "subtitle": "A city above the rock",
+          "description": "A historic fortress sits on Castle Rock above Edinburgh’s Old Town.",
+          "region": "Scotland, United Kingdom",
+          "lat": 55.9486,
+          "lon": -3.1999,
+          "icon": "castle"
+        }
+      ]
+    },
+    "turkey": {
+      "name": "Türkiye",
+      "code": "TUR",
+      "region": "Asia",
+      "airports": [
+        [
+          "IST",
+          "Istanbul"
+        ],
+        [
+          "ASR",
+          "Kayseri"
+        ],
+        [
+          "AYT",
+          "Antalya"
+        ],
+        [
+          "ADB",
+          "İzmir"
+        ],
+        [
+          "TZX",
+          "Trabzon"
+        ]
+      ],
+      "base": 1200,
+      "hours": 12,
+      "costs": [
+        80,
+        30,
+        15,
+        20
+      ],
+      "regions": [
+        [
+          "Istanbul & Marmara (West)",
+          "WWABBBAABBAW"
+        ],
+        [
+          "Cappadocia (Center)",
+          "WWABBAABBBAW"
+        ],
+        [
+          "Antalya & Mediterranean coast (South)",
+          "AABBBWAABBAA"
+        ],
+        [
+          "İzmir & Aegean coast (West)",
+          "WWBBBBAABBAW"
+        ],
+        [
+          "Trabzon & Black Sea coast (North)",
+          "WWAABBBBBAWW"
+        ]
+      ],
+      "gateways": [
+        [
+          "IST"
+        ],
+        [
+          "ASR"
+        ],
+        [
+          "AYT"
+        ],
+        [
+          "ADB"
+        ],
+        [
+          "TZX"
+        ]
+      ],
+      "rewardName": "lucky eye",
+      "treasures": [
+        {
+          "name": "Hagia Sophia",
+          "subtitle": "Layers of Istanbul",
+          "description": "An immense domed landmark in Istanbul’s historic centre, with a long history as a church and mosque.",
+          "region": "Istanbul, Türkiye",
+          "lat": 41.0086,
+          "lon": 28.9802,
+          "icon": "dome"
+        },
+        {
+          "name": "Cappadocia (Göreme)",
+          "subtitle": "Fairy chimneys",
+          "description": "Rock-cut spaces and sculpted volcanic formations surround Göreme in Cappadocia. The map marks Göreme Open-Air Museum.",
+          "region": "Nevşehir, Türkiye",
+          "lat": 38.6403,
+          "lon": 34.8453,
+          "icon": "balloon"
+        },
+        {
+          "name": "Pamukkale",
+          "subtitle": "White terraces",
+          "description": "White mineral terraces and thermal waters lie beside the ancient city of Hierapolis.",
+          "region": "Denizli, Türkiye",
+          "lat": 37.9207,
+          "lon": 29.1216,
+          "icon": "terraces"
+        }
+      ]
+    },
+    "peru": {
+      "name": "Peru",
+      "code": "PER",
+      "region": "South America",
+      "airports": [
+        [
+          "LIM",
+          "Lima"
+        ],
+        [
+          "CUZ",
+          "Cusco"
+        ],
+        [
+          "IQT",
+          "Iquitos"
+        ]
+      ],
+      "base": 1050,
+      "hours": 11,
+      "costs": [
+        75,
+        30,
+        15,
+        20
+      ],
+      "regions": [
+        [
+          "Lima & Pacific coast (West)",
+          "BBBAAAWWAABB"
+        ],
+        [
+          "Cusco & Andes (South)",
+          "WWAABBBBBAAW"
+        ],
+        [
+          "Iquitos & Amazon (East)",
+          "WWAAABBBBAAW"
+        ]
+      ],
+      "gateways": [
+        [
+          "LIM"
+        ],
+        [
+          "CUZ"
+        ],
+        [
+          "IQT"
+        ]
+      ],
+      "rewardName": "llama",
+      "treasures": [
+        {
+          "name": "Machu Picchu",
+          "subtitle": "A citadel in the clouds",
+          "description": "An Inca citadel occupies a dramatic ridge above the Urubamba Valley.",
+          "region": "Cusco, Peru",
+          "lat": -13.1631,
+          "lon": -72.545,
+          "icon": "ruins"
+        },
+        {
+          "name": "Nazca Lines",
+          "subtitle": "Drawings across the desert",
+          "description": "Enormous ancient geoglyphs stretch across the desert. The map marks the hummingbird figure.",
+          "region": "Ica, Peru",
+          "lat": -14.6921,
+          "lon": -75.1489,
+          "icon": "bird"
+        },
+        {
+          "name": "Lake Titicaca",
+          "subtitle": "An Andean horizon",
+          "description": "A high-altitude lake shared by Peru and Bolivia. The map marks the Uros islands near Puno on the Peruvian side.",
+          "region": "Puno, Peru",
+          "lat": -15.8183,
+          "lon": -69.9733,
+          "icon": "lake"
+        }
+      ]
+    },
+    "brazil": {
+      "name": "Brazil",
+      "code": "BRA",
+      "region": "South America",
+      "airports": [
+        [
+          "GIG",
+          "Rio de Janeiro"
+        ],
+        [
+          "SSA",
+          "Salvador"
+        ],
+        [
+          "MAO",
+          "Manaus"
+        ],
+        [
+          "IGU",
+          "Foz do Iguaçu"
+        ],
+        [
+          "SLZ",
+          "São Luís"
+        ]
+      ],
+      "base": 1350,
+      "hours": 13,
+      "costs": [
+        90,
+        35,
+        20,
+        25
+      ],
+      "regions": [
+        [
+          "Rio de Janeiro (East)",
+          "AAABBBBBBBAA"
+        ],
+        [
+          "Salvador & Bahia (East)",
+          "BBAAWWAABBBB"
+        ],
+        [
+          "Manaus & Amazon (North)",
+          "WWAAABBBBAAW"
+        ],
+        [
+          "Iguaçu Falls (South)",
+          "AABBBBBBBBAA"
+        ],
+        [
+          "Lençóis Maranhenses (North)",
+          "WWAAABBBBAAW"
+        ]
+      ],
+      "gateways": [
+        [
+          "GIG"
+        ],
+        [
+          "SSA"
+        ],
+        [
+          "MAO"
+        ],
+        [
+          "IGU"
+        ],
+        [
+          "SLZ"
+        ]
+      ],
+      "rewardName": "capybara",
+      "treasures": [
+        {
+          "name": "Christ the Redeemer",
+          "subtitle": "Above Rio",
+          "description": "The outstretched arms of Rio’s famous statue crown Corcovado Mountain above the city.",
+          "region": "Rio de Janeiro, Brazil",
+          "lat": -22.9519,
+          "lon": -43.2105,
+          "icon": "redeemer"
+        },
+        {
+          "name": "Iguaçu Falls (Brazil)",
+          "subtitle": "Water without end",
+          "description": "The Brazilian side of Iguaçu National Park offers sweeping views across the great waterfall system shared with Argentina.",
+          "region": "Paraná, Brazil",
+          "lat": -25.6916,
+          "lon": -54.4368,
+          "icon": "falls"
+        },
+        {
+          "name": "Lençóis Maranhenses",
+          "subtitle": "Dunes & lagoons",
+          "description": "White dunes and seasonal freshwater lagoons form a remarkable coastal landscape. The map marks the Lagoa Azul visitor area.",
+          "region": "Maranhão, Brazil",
+          "lat": -2.7147,
+          "lon": -42.8264,
+          "icon": "dunes"
+        }
+      ]
+    },
+    "south-africa": {
+      "name": "South Africa",
+      "code": "ZAF",
+      "region": "Africa",
+      "airports": [
+        [
+          "CPT",
+          "Cape Town"
+        ],
+        [
+          "JNB",
+          "Johannesburg"
+        ],
+        [
+          "DUR",
+          "Durban"
+        ],
+        [
+          "GRJ",
+          "George"
+        ]
+      ],
+      "base": 1600,
+      "hours": 21,
+      "costs": [
+        90,
+        35,
+        20,
+        25
+      ],
+      "regions": [
+        [
+          "Cape Town & Winelands (South)",
+          "BBBBAWWAABBB"
+        ],
+        [
+          "Kruger & Lowveld (East)",
+          "AAABBBBBBAAA"
+        ],
+        [
+          "Durban & KwaZulu-Natal coast (East)",
+          "AABBBBBBBBAA"
+        ],
+        [
+          "Garden Route (South)",
+          "BBBBBAAABBBB"
+        ]
+      ],
+      "gateways": [
+        [
+          "CPT"
+        ],
+        [
+          "JNB"
+        ],
+        [
+          "DUR"
+        ],
+        [
+          "GRJ"
+        ]
+      ],
+      "rewardName": "penguin",
+      "treasures": [
+        {
+          "name": "Table Mountain",
+          "subtitle": "Cape Town’s great table",
+          "description": "A flat-topped mountain rises above Cape Town, with trails and a cableway leading to wide views.",
+          "region": "Western Cape, South Africa",
+          "lat": -33.9628,
+          "lon": 18.4098,
+          "icon": "table"
+        },
+        {
+          "name": "Kruger National Park",
+          "subtitle": "Into the wild",
+          "description": "One of southern Africa’s great wildlife reserves. The map marks the Skukuza visitor area rather than the entire park.",
+          "region": "Mpumalanga, South Africa",
+          "lat": -24.9959,
+          "lon": 31.5927,
+          "icon": "elephant"
+        },
+        {
+          "name": "Boulders Beach",
+          "subtitle": "Penguins by the sea",
+          "description": "Sheltered coves near Simon’s Town are home to a colony of African penguins.",
+          "region": "Western Cape, South Africa",
+          "lat": -34.1975,
+          "lon": 18.4513,
+          "icon": "penguin"
+        }
+      ]
+    },
+    "south-korea": {
+      "name": "South Korea",
+      "code": "KOR",
+      "region": "Asia",
+      "airports": [
+        [
+          "ICN",
+          "Seoul Incheon"
+        ],
+        [
+          "PUS",
+          "Busan"
+        ],
+        [
+          "CJU",
+          "Jeju"
+        ]
+      ],
+      "base": 1550,
+      "hours": 17,
+      "costs": [
+        110,
+        35,
+        20,
+        25
+      ],
+      "regions": [
+        [
+          "Seoul & central mainland (North)",
+          "WWBBBAAWBBAW"
+        ],
+        [
+          "Busan & southern mainland (South)",
+          "AABBBAAWBBAA"
+        ],
+        [
+          "Jeju (Islands)",
+          "AABBBAWWBBAA"
+        ]
+      ],
+      "gateways": [
+        [
+          "ICN"
+        ],
+        [
+          "PUS"
+        ],
+        [
+          "CJU"
+        ]
+      ],
+      "rewardName": "tiger",
+      "treasures": [
+        {
+          "name": "Gyeongbokgung Palace",
+          "subtitle": "Seoul’s royal heart",
+          "description": "A grand Joseon-era palace complex stands near the mountains at the heart of historic Seoul.",
+          "region": "Seoul, South Korea",
+          "lat": 37.5796,
+          "lon": 126.977,
+          "icon": "palace"
+        },
+        {
+          "name": "Seongsan Ilchulbong",
+          "subtitle": "Sunrise above Jeju",
+          "description": "A volcanic tuff cone rises above Jeju’s eastern coast, with a broad crater at its summit.",
+          "region": "Jeju, South Korea",
+          "lat": 33.4582,
+          "lon": 126.9425,
+          "icon": "crater"
+        },
+        {
+          "name": "Gamcheon Culture Village",
+          "subtitle": "Colour on the hillside",
+          "description": "Colourful houses, narrow lanes and public art climb a steep hillside in Busan.",
+          "region": "Busan, South Korea",
+          "lat": 35.0975,
+          "lon": 129.0106,
+          "icon": "village"
+        }
+      ]
+    },
+    "australia": {
+      "name": "Australia",
+      "code": "AUS",
+      "region": "Oceania",
+      "airports": [
+        [
+          "SYD",
+          "Sydney"
+        ],
+        [
+          "MEL",
+          "Melbourne"
+        ],
+        [
+          "CNS",
+          "Cairns"
+        ],
+        [
+          "AYQ",
+          "Uluru Ayers Rock"
+        ],
+        [
+          "PER",
+          "Perth"
+        ],
+        [
+          "DRW",
+          "Darwin"
+        ]
+      ],
+      "base": 1900,
+      "hours": 24,
+      "costs": [
+        150,
+        50,
+        25,
+        30
+      ],
+      "regions": [
+        [
+          "Sydney & New South Wales (East)",
+          "BBBBAAAABBBB"
+        ],
+        [
+          "Melbourne & Victoria (South)",
+          "BBBBAWWABBBB"
+        ],
+        [
+          "Cairns & Great Barrier Reef (East)",
+          "WWAABBBBBAAW"
+        ],
+        [
+          "Uluru & Red Centre (Center)",
+          "WWABBBBBBAAW"
+        ],
+        [
+          "Perth & southwest (West)",
+          "BBBBAWWABBBB"
+        ],
+        [
+          "Darwin & Top End (North)",
+          "WWAABBBBBAWW"
+        ]
+      ],
+      "gateways": [
+        [
+          "SYD"
+        ],
+        [
+          "MEL"
+        ],
+        [
+          "CNS"
+        ],
+        [
+          "AYQ"
+        ],
+        [
+          "PER"
+        ],
+        [
+          "DRW"
+        ]
+      ],
+      "rewardName": "koala",
+      "treasures": [
+        {
+          "name": "Sydney Opera House",
+          "subtitle": "Sails on the harbour",
+          "description": "Sydney’s sculptural performing-arts centre stands beside the harbour at Bennelong Point.",
+          "region": "New South Wales, Australia",
+          "lat": -33.8568,
+          "lon": 151.2153,
+          "icon": "opera"
+        },
+        {
+          "name": "Uluru",
+          "subtitle": "A living cultural landscape",
+          "description": "A vast sandstone formation in Uluṟu–Kata Tjuṯa National Park, deeply significant to its Aṉangu Traditional Owners.",
+          "region": "Northern Territory, Australia",
+          "lat": -25.3444,
+          "lon": 131.0369,
+          "icon": "uluru"
+        },
+        {
+          "name": "Great Barrier Reef",
+          "subtitle": "A world beneath the water",
+          "description": "A vast coral-reef system off Queensland. The map marks the Green Island visitor area, a gateway near Cairns.",
+          "region": "Queensland, Australia",
+          "lat": -16.759,
+          "lon": 145.971,
+          "icon": "reef"
+        }
+      ]
+    }
+  }
+}

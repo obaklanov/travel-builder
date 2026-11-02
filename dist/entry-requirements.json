@@ -173,5 +173,98 @@
     "checkedAt": "2026-11-01",
     "needsReview": false,
     "checkFailed": false
+  },
+  "france": {
+    "summary": "Visa-free for tourism for up to 90 days in any 180-day period.",
+    "notes": [
+      "The limit covers your combined stays across the Schengen area.",
+      "ETIAS applications are not yet open; check the latest requirements before travel."
+    ],
+    "passport": "Valid for at least 3 months after leaving the Schengen area.",
+    "sourceUrl": "https://travel.gc.ca/destinations/france#entryexit",
+    "checkedAt": "2026-11-01",
+    "needsReview": false,
+    "checkFailed": false
+  },
+  "united-kingdom": {
+    "summary": "ETA required for visa-free tourism for up to 6 months.",
+    "notes": [
+      "Apply for an Electronic Travel Authorisation before travel and use the passport linked to it.",
+      "British or Irish dual citizens cannot apply for an ETA; check the official passport requirements."
+    ],
+    "passport": "Valid for the duration of your stay.",
+    "sourceUrl": "https://travel.gc.ca/destinations/united-kingdom#entryexit",
+    "checkedAt": "2026-11-01",
+    "needsReview": false,
+    "checkFailed": false
+  },
+  "turkey": {
+    "summary": "Visa-free for tourism for up to 90 days in a 180-day period.",
+    "notes": [
+      "Leave Türkiye for at least 90 days before a subsequent 90-day visa-exempt stay."
+    ],
+    "passport": "Valid for at least 150 days from entry, with room for entry and exit stamps.",
+    "sourceUrl": "https://travel.gc.ca/destinations/turkiye#entryexit",
+    "checkedAt": "2026-11-01",
+    "needsReview": false,
+    "checkFailed": false
+  },
+  "peru": {
+    "summary": "Visa-free for tourism for stays of less than 90 days per 365-day period.",
+    "notes": [
+      "Check your authorized stay on your digital entry record when arriving by air; obtain an entry stamp when arriving by land."
+    ],
+    "passport": "Valid for at least 6 months after arrival.",
+    "sourceUrl": "https://travel.gc.ca/destinations/peru#entryexit",
+    "checkedAt": "2026-11-01",
+    "needsReview": false,
+    "checkFailed": false
+  },
+  "brazil": {
+    "summary": "Tourist visa required before travel.",
+    "notes": [
+      "Canadian passport holders can apply for an eVisa.",
+      "For stays longer than 90 days, obtain an extension before your authorized stay expires."
+    ],
+    "passport": "Valid for the duration of your stay.",
+    "sourceUrl": "https://travel.gc.ca/destinations/brazil#entryexit",
+    "checkedAt": "2026-11-01",
+    "needsReview": false,
+    "checkFailed": false
+  },
+  "south-africa": {
+    "summary": "Visa-free for tourism for up to 90 days.",
+    "notes": [
+      "The immigration officer determines your permitted stay; a full 90 days is not automatic."
+    ],
+    "passport": "Valid for at least 30 days after departure, with at least 2 empty visa pages.",
+    "sourceUrl": "https://travel.gc.ca/destinations/south-africa#entryexit",
+    "checkedAt": "2026-11-01",
+    "needsReview": false,
+    "checkFailed": false
+  },
+  "south-korea": {
+    "summary": "Visa-free for tourism for up to 180 days.",
+    "notes": [
+      "Canadians are exempt from K-ETA until December 31, 2026; verify requirements for later travel.",
+      "Submit the required entry declaration online up to 3 days before arrival or on paper on arrival."
+    ],
+    "passport": "Valid beyond your expected departure date.",
+    "sourceUrl": "https://travel.gc.ca/destinations/south-korea#entryexit",
+    "checkedAt": "2026-11-01",
+    "needsReview": false,
+    "checkFailed": false
+  },
+  "australia": {
+    "summary": "Electronic Travel Authority (ETA) required for short tourist visits.",
+    "notes": [
+      "Obtain an ETA before travel and use the passport linked to it.",
+      "Canada’s guidance lists tourist stays of up to 90 days; follow the stay conditions on your ETA."
+    ],
+    "passport": "Valid on the day of entry.",
+    "sourceUrl": "https://travel.gc.ca/destinations/australia#entryexit",
+    "checkedAt": "2026-11-01",
+    "needsReview": false,
+    "checkFailed": false
   }
 }

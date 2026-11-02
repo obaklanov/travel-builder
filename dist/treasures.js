@@ -337,6 +337,298 @@ Object.assign(newCountryTreasures, {
   }
 });
 
+// Eight additional country collections use the same badge and photo behavior.
+Object.assign(newCountryTreasures, {
+  "france": {
+    "name": "France",
+    "rewardName": "croissant",
+    "reward": "<svg class=\"country-reward\" viewBox=\"0 0 100 90\" role=\"img\" aria-label=\"Playful croissant profile reward\" stroke=\"#8c754f\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><ellipse cx=\"50\" cy=\"83\" rx=\"31\" ry=\"4\" fill=\"#806342\" stroke=\"none\" opacity=\".12\"/><path d=\"M18 64q-18-20 1-36l10 12q21-12 42 0l10-12q19 16 1 36l-13-9q-19 13-38 0Z\" fill=\"#dfb36a\"/><path d=\"M30 39l-2 18m14-23-2 28m18-28 2 28m10-23 2 18M17 37l8 7m58-7-8 7\" fill=\"none\"/><path d=\"M35 43q14-7 30 0\" stroke=\"#fff1bc\" fill=\"none\"/></svg>",
+    "treasures": [
+      {
+        "name": "Eiffel Tower",
+        "subtitle": "Above the Seine",
+        "description": "Paris’s iron tower rises above the Champ de Mars, with viewing decks overlooking the city.",
+        "region": "Île-de-France, France",
+        "lat": 48.8584,
+        "lon": 2.2945
+      },
+      {
+        "name": "Mont-Saint-Michel",
+        "subtitle": "An island of stories",
+        "description": "A medieval abbey crowns a tidal island surrounded by the sweeping bay of Mont-Saint-Michel.",
+        "region": "Normandy, France",
+        "lat": 48.6361,
+        "lon": -1.5115
+      },
+      {
+        "name": "Pont du Gard",
+        "subtitle": "Ancient arches",
+        "description": "A monumental Roman aqueduct spans the Gardon River with three tiers of stone arches.",
+        "region": "Occitanie, France",
+        "lat": 43.9476,
+        "lon": 4.5353
+      }
+    ],
+    "icons": [
+      "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M50 8L24 82m26-74 26 74M41 35h18M35 55h30M25 76h50M21 86h58M40 82q10-30 20 0M42 20h16M37 45l26 19m-26 0 26-19\"/></svg>",
+      "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M9 83q41-24 82 0M23 74V47h17V34h21v13h17v27M43 34l9-20 9 20M52 14V6m-4 5h8M20 47l12-13 12 13m15 0 10-13 12 13M30 56v9m18-20v9m19 3v9M45 73V61h14v12\"/></svg>",
+      "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M9 27h82M12 36h76M9 51h82M12 61h76M10 84h80M16 84V68q8-13 16 0v16m2 0V68q8-13 16 0v16m2 0V68q8-13 16 0v16m2 0V68q8-13 16 0v16M16 51V40q5-10 10 0v11m7 0V40q5-10 10 0v11m7 0V40q5-10 10 0v11m7 0V40q5-10 10 0v11M10 89q10-4 20 0t20 0 20 0 20 0\"/></svg>"
+    ]
+  },
+  "united-kingdom": {
+    "name": "United Kingdom",
+    "rewardName": "teacup",
+    "reward": "<svg class=\"country-reward\" viewBox=\"0 0 100 90\" role=\"img\" aria-label=\"Playful teacup profile reward\" stroke=\"#8c754f\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><ellipse cx=\"50\" cy=\"83\" rx=\"31\" ry=\"4\" fill=\"#806342\" stroke=\"none\" opacity=\".12\"/><path d=\"M19 32h51v23q-1 19-25 19T19 55Z\" fill=\"#91b9ae\"/><path d=\"M70 38h8q17 12-2 24h-7\" fill=\"none\" stroke-width=\"5\"/><ellipse cx=\"45\" cy=\"32\" rx=\"25\" ry=\"7\" fill=\"#704b31\"/><path d=\"M35 24q-7-7 0-14m15 14q-7-7 0-14M15 77q30 10 60 0\" fill=\"none\"/><path d=\"M36 47q-1-9 9-4 10-5 9 4-3 8-9 12-6-4-9-12\" fill=\"#d28d82\"/></svg>",
+    "treasures": [
+      {
+        "name": "Big Ben",
+        "subtitle": "London’s familiar chime",
+        "description": "The Elizabeth Tower at the Palace of Westminster houses the bell known as Big Ben.",
+        "region": "England, United Kingdom",
+        "lat": 51.5007,
+        "lon": -0.1246
+      },
+      {
+        "name": "Stonehenge",
+        "subtitle": "A circle through time",
+        "description": "An ancient stone circle stands on Salisbury Plain, a remarkable survival of prehistoric Britain.",
+        "region": "England, United Kingdom",
+        "lat": 51.1789,
+        "lon": -1.8262
+      },
+      {
+        "name": "Edinburgh Castle",
+        "subtitle": "A city above the rock",
+        "description": "A historic fortress sits on Castle Rock above Edinburgh’s Old Town.",
+        "region": "Scotland, United Kingdom",
+        "lat": 55.9486,
+        "lon": -3.1999
+      }
+    ],
+    "icons": [
+      "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M32 86V29h36v57M28 88h44M30 29l20-17 20 17M50 12V5M35 64h30m-26 8v9m11-9v9m11-9v9\"/><circle cx=\"50\" cy=\"45\" r=\"12\"/><path d=\"M50 37v8l6 3\"/></svg>",
+      "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M11 83h79M18 80V40h14v40m-17-43V28h39v9M42 80V39h12v41M61 80V35h14v45M58 32V21h30v11M78 78V35h10v43M10 88q40-8 80 0\"/></svg>",
+      "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M9 85l17-11h48l17 11M19 74V35h15v39m32 0V35h15v39M17 35V24h6v6h5v-6h7v11M64 35V24h7v6h5v-6h7v11M34 73V45h32v28M34 45V36h8v6h16v-6h8v9M44 74V59q6-10 12 0v15M23 44h6m41 0h6\"/></svg>"
+    ]
+  },
+  "turkey": {
+    "name": "Türkiye",
+    "rewardName": "lucky eye",
+    "reward": "<svg class=\"country-reward\" viewBox=\"0 0 100 90\" role=\"img\" aria-label=\"Playful lucky eye profile reward\" stroke=\"#8c754f\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><ellipse cx=\"50\" cy=\"83\" rx=\"31\" ry=\"4\" fill=\"#806342\" stroke=\"none\" opacity=\".12\"/><ellipse cx=\"50\" cy=\"47\" rx=\"36\" ry=\"31\" fill=\"#4d7fa1\"/><ellipse cx=\"50\" cy=\"47\" rx=\"25\" ry=\"23\" fill=\"#f3ecd2\"/><circle cx=\"50\" cy=\"47\" r=\"15\" fill=\"#82b9bd\"/><circle cx=\"50\" cy=\"47\" r=\"8\" fill=\"#374e62\"/><circle cx=\"45\" cy=\"42\" r=\"3\" fill=\"#fff9e8\"/><path d=\"M50 15V8m-4 2 4-5 4 5M12 19v8m-4-4h8\" fill=\"none\"/></svg>",
+    "treasures": [
+      {
+        "name": "Hagia Sophia",
+        "subtitle": "Layers of Istanbul",
+        "description": "An immense domed landmark in Istanbul’s historic centre, with a long history as a church and mosque.",
+        "region": "Istanbul, Türkiye",
+        "lat": 41.0086,
+        "lon": 28.9802
+      },
+      {
+        "name": "Cappadocia (Göreme)",
+        "subtitle": "Fairy chimneys",
+        "description": "Rock-cut spaces and sculpted volcanic formations surround Göreme in Cappadocia. The map marks Göreme Open-Air Museum.",
+        "region": "Nevşehir, Türkiye",
+        "lat": 38.6403,
+        "lon": 34.8453
+      },
+      {
+        "name": "Pamukkale",
+        "subtitle": "White terraces",
+        "description": "White mineral terraces and thermal waters lie beside the ancient city of Hierapolis.",
+        "region": "Denizli, Türkiye",
+        "lat": 37.9207,
+        "lon": 29.1216
+      }
+    ],
+    "icons": [
+      "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M19 80V46h62v34M16 46h68M28 46q0-29 22-29t22 29M50 17V9m-4 5h8M10 80V26m-4 0h8M86 80V26m-4 0h8M9 26l2-10 2 10m72 0 2-10 2 10M35 80V61h10v19m10 0V61h10v19M14 86h72\"/></svg>",
+      "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M14 85l12-27 14 27m15 0 13-25 14 25M26 58V48m42 12V49\"/><path d=\"M33 27a17 17 0 1 1 34 0q-1 12-12 22H45Q34 39 33 27ZM45 49v7h10v-7M50 10q-10 14 0 39m0-39q10 14 0 39M35 29h30\"/></svg>",
+      "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M14 26q25-14 70 0l-6 12q-30-10-58 0l-6 12q35-12 70 0l-6 12q-32-9-58 0l-6 12q37-11 70 0M21 36l-1 6m58-5v6M20 61v6m57-5v6M11 84q35-9 79 0\"/></svg>"
+    ]
+  },
+  "peru": {
+    "name": "Peru",
+    "rewardName": "llama",
+    "reward": "<svg class=\"country-reward\" viewBox=\"0 0 100 90\" role=\"img\" aria-label=\"Playful llama profile reward\" stroke=\"#8c754f\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><ellipse cx=\"50\" cy=\"83\" rx=\"31\" ry=\"4\" fill=\"#806342\" stroke=\"none\" opacity=\".12\"/><path d=\"M34 36V12q6-11 10 0v20m10 4V12q6-11 10 0v22\" fill=\"#dbbf93\"/><path d=\"M25 53q-9 0-9 15v8m7-19q-10-3-13-12\" fill=\"none\"/><path d=\"M23 54q14-9 30 0V37q-10-13-20-3l-8 10 9 6v15h18v15h-9V69H30v11h-9Z\" fill=\"#e5d4ad\"/><path d=\"M25 55h24v11H25Z\" fill=\"#bf8173\"/><path d=\"M29 58l5 5 6-5 6 5\" fill=\"none\" stroke=\"#f3dc91\"/><circle cx=\"42\" cy=\"39\" r=\"2\" fill=\"#574935\"/></svg>",
+    "treasures": [
+      {
+        "name": "Machu Picchu",
+        "subtitle": "A citadel in the clouds",
+        "description": "An Inca citadel occupies a dramatic ridge above the Urubamba Valley.",
+        "region": "Cusco, Peru",
+        "lat": -13.1631,
+        "lon": -72.545
+      },
+      {
+        "name": "Nazca Lines",
+        "subtitle": "Drawings across the desert",
+        "description": "Enormous ancient geoglyphs stretch across the desert. The map marks the hummingbird figure.",
+        "region": "Ica, Peru",
+        "lat": -14.6921,
+        "lon": -75.1489
+      },
+      {
+        "name": "Lake Titicaca",
+        "subtitle": "An Andean horizon",
+        "description": "A high-altitude lake shared by Peru and Bolivia. The map marks the Uros islands near Puno on the Peruvian side.",
+        "region": "Puno, Peru",
+        "lat": -15.8183,
+        "lon": -69.9733
+      }
+    ],
+    "icons": [
+      "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 78l15-20 13 10 16-33 15 25 12-12 13 30M21 78V60h18v18m0 0V49h18v29m0 0V61h18v17M15 85h70M28 60v18m19-28v28m18-17v17M40 49l8-9 10 9M52 35V20l8-10 9 26\"/></svg>",
+      "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M10 49l32-5 12-24 7 3-8 24 20 3 15-9-11 15-24 2-7 25-7-2 5-26-14 7 7-12-27-1M61 23l14-7-13 15M46 48l8 5-9 3M52 26l-8-10m7 6-2-12\"/></svg>",
+      "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M9 37l18-19 16 19 15-24 29 24M28 37h46M13 69q10 6 20 0t20 0 20 0 17 0M13 83q10 6 20 0t20 0 20 0 17 0M26 58h46l-8 9H35ZM48 57V38l14 18M46 40L33 56\"/></svg>"
+    ]
+  },
+  "brazil": {
+    "name": "Brazil",
+    "rewardName": "capybara",
+    "reward": "<svg class=\"country-reward\" viewBox=\"0 0 100 90\" role=\"img\" aria-label=\"Playful capybara profile reward\" stroke=\"#8c754f\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><ellipse cx=\"50\" cy=\"83\" rx=\"31\" ry=\"4\" fill=\"#806342\" stroke=\"none\" opacity=\".12\"/><ellipse cx=\"46\" cy=\"57\" rx=\"31\" ry=\"20\" fill=\"#ba9365\"/><ellipse cx=\"70\" cy=\"43\" rx=\"18\" ry=\"19\" fill=\"#ba9365\"/><circle cx=\"60\" cy=\"26\" r=\"6\" fill=\"#a37b52\"/><circle cx=\"79\" cy=\"28\" r=\"6\" fill=\"#a37b52\"/><path d=\"M28 70v9h12m16-8v8h12\" fill=\"none\" stroke-width=\"5\"/><circle cx=\"73\" cy=\"40\" r=\"2\" fill=\"#483e31\"/><ellipse cx=\"83\" cy=\"48\" rx=\"4\" ry=\"3\" fill=\"#76583e\"/><path d=\"M72 52q5 5 10 0\" fill=\"none\"/></svg>",
+    "treasures": [
+      {
+        "name": "Christ the Redeemer",
+        "subtitle": "Above Rio",
+        "description": "The outstretched arms of Rio’s famous statue crown Corcovado Mountain above the city.",
+        "region": "Rio de Janeiro, Brazil",
+        "lat": -22.9519,
+        "lon": -43.2105
+      },
+      {
+        "name": "Iguaçu Falls (Brazil)",
+        "subtitle": "Water without end",
+        "description": "The Brazilian side of Iguaçu National Park offers sweeping views across the great waterfall system shared with Argentina.",
+        "region": "Paraná, Brazil",
+        "lat": -25.6916,
+        "lon": -54.4368
+      },
+      {
+        "name": "Lençóis Maranhenses",
+        "subtitle": "Dunes & lagoons",
+        "description": "White dunes and seasonal freshwater lagoons form a remarkable coastal landscape. The map marks the Lagoa Azul visitor area.",
+        "region": "Maranhão, Brazil",
+        "lat": -2.7147,
+        "lon": -42.8264
+      }
+    ],
+    "icons": [
+      "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"50\" cy=\"19\" r=\"7\"/><path d=\"M43 29L10 33v8l32-2-8 39h32l-8-39 32 2v-8l-33-4M43 29h14M50 38v31M30 84h40M21 90h58\"/></svg>",
+      "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M9 24l19 6 20-8 20 8 23-5M12 33l16 5v27m7-29v30m10-32v23m10-25v34m11-29v31m10-32v30m9-32v26M7 74q9-7 18 0t18 0 18 0 18 0 14 0M13 85q9-5 18 0t18 0 18 0 18 0\"/></svg>",
+      "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 65q27-41 54-13 16 16 30 3M8 65q39-12 54-13-6 21 30 23M13 85q10-7 20 0t20 0 20 0 17 0\"/><circle cx=\"79\" cy=\"21\" r=\"9\"/></svg>"
+    ]
+  },
+  "south-africa": {
+    "name": "South Africa",
+    "rewardName": "penguin",
+    "reward": "<svg class=\"country-reward\" viewBox=\"0 0 100 90\" role=\"img\" aria-label=\"Playful penguin profile reward\" stroke=\"#8c754f\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><ellipse cx=\"50\" cy=\"83\" rx=\"31\" ry=\"4\" fill=\"#806342\" stroke=\"none\" opacity=\".12\"/><ellipse cx=\"50\" cy=\"51\" rx=\"26\" ry=\"31\" fill=\"#6e7b76\"/><ellipse cx=\"50\" cy=\"57\" rx=\"19\" ry=\"23\" fill=\"#f3ead4\"/><path d=\"M27 46L13 62m60-16 14 16\" fill=\"none\" stroke-width=\"8\"/><path d=\"M31 78l-7 5h20m12 0h20l-7-5M43 39l7 7 7-7Z\" fill=\"#d5a45e\"/><circle cx=\"41\" cy=\"32\" r=\"3\" fill=\"#fff8e4\"/><circle cx=\"59\" cy=\"32\" r=\"3\" fill=\"#fff8e4\"/><circle cx=\"41\" cy=\"32\" r=\"1\" fill=\"#35443d\"/><circle cx=\"59\" cy=\"32\" r=\"1\" fill=\"#35443d\"/></svg>",
+    "treasures": [
+      {
+        "name": "Table Mountain",
+        "subtitle": "Cape Town’s great table",
+        "description": "A flat-topped mountain rises above Cape Town, with trails and a cableway leading to wide views.",
+        "region": "Western Cape, South Africa",
+        "lat": -33.9628,
+        "lon": 18.4098
+      },
+      {
+        "name": "Kruger National Park",
+        "subtitle": "Into the wild",
+        "description": "One of southern Africa’s great wildlife reserves. The map marks the Skukuza visitor area rather than the entire park.",
+        "region": "Mpumalanga, South Africa",
+        "lat": -24.9959,
+        "lon": 31.5927
+      },
+      {
+        "name": "Boulders Beach",
+        "subtitle": "Penguins by the sea",
+        "description": "Sheltered coves near Simon’s Town are home to a colony of African penguins.",
+        "region": "Western Cape, South Africa",
+        "lat": -34.1975,
+        "lon": 18.4513
+      }
+    ],
+    "icons": [
+      "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 75l18-40h45l21 40M26 35l6 17 7-7 8 18 7-10 13 8 4-26M10 84h80M18 27h13m5-6h22m7 5h15\"/></svg>",
+      "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M16 55q-3-29 26-29h20q22 0 22 25v17q-3 16-13 4l-3-19M20 54v28h13V62h21v20h13V47M61 30q-15-5-17 12-2 18 14 18M16 49L8 60M70 54q8 7 13-1\"/><circle cx=\"71\" cy=\"39\" r=\"2\"/></svg>",
+      "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M31 67q-8-18 0-35 3-16 19-16t19 16q8 17 0 35-5 15-19 15T31 67ZM31 43L18 62m51-19 13 19M34 82l-8 6h18m12 0h18l-8-6M40 52q10 8 20 0M46 39l4 5 4-5\"/><circle cx=\"40\" cy=\"33\" r=\"2\"/><circle cx=\"60\" cy=\"33\" r=\"2\"/></svg>"
+    ]
+  },
+  "south-korea": {
+    "name": "South Korea",
+    "rewardName": "tiger",
+    "reward": "<svg class=\"country-reward\" viewBox=\"0 0 100 90\" role=\"img\" aria-label=\"Playful tiger profile reward\" stroke=\"#8c754f\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><ellipse cx=\"50\" cy=\"83\" rx=\"31\" ry=\"4\" fill=\"#806342\" stroke=\"none\" opacity=\".12\"/><circle cx=\"27\" cy=\"29\" r=\"12\" fill=\"#d9a05c\"/><circle cx=\"73\" cy=\"29\" r=\"12\" fill=\"#d9a05c\"/><ellipse cx=\"50\" cy=\"53\" rx=\"33\" ry=\"30\" fill=\"#e6b36d\"/><ellipse cx=\"50\" cy=\"65\" rx=\"20\" ry=\"13\" fill=\"#f3e4c1\"/><path d=\"M39 25l7 13m15-13-7 13M19 44l13 5M18 58l13-2m50-12-13 5m14 9-13-2\" fill=\"none\" stroke-width=\"4\"/><circle cx=\"37\" cy=\"52\" r=\"3\" fill=\"#4e483c\"/><circle cx=\"63\" cy=\"52\" r=\"3\" fill=\"#4e483c\"/><path d=\"M44 63l6 5 6-5Z\" fill=\"#a87562\"/><path d=\"M50 68v6m-8-1q8 7 16 0\" fill=\"none\"/></svg>",
+    "treasures": [
+      {
+        "name": "Gyeongbokgung Palace",
+        "subtitle": "Seoul’s royal heart",
+        "description": "A grand Joseon-era palace complex stands near the mountains at the heart of historic Seoul.",
+        "region": "Seoul, South Korea",
+        "lat": 37.5796,
+        "lon": 126.977
+      },
+      {
+        "name": "Seongsan Ilchulbong",
+        "subtitle": "Sunrise above Jeju",
+        "description": "A volcanic tuff cone rises above Jeju’s eastern coast, with a broad crater at its summit.",
+        "region": "Jeju, South Korea",
+        "lat": 33.4582,
+        "lon": 126.9425
+      },
+      {
+        "name": "Gamcheon Culture Village",
+        "subtitle": "Colour on the hillside",
+        "description": "Colourful houses, narrow lanes and public art climb a steep hillside in Busan.",
+        "region": "Busan, South Korea",
+        "lat": 35.0975,
+        "lon": 129.0106
+      }
+    ],
+    "icons": [
+      "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M10 78h80M16 78V48h68v30M11 48q17 1 21-14h36q4 15 21 14M23 34q15-2 27-15 12 13 27 15M22 54h56M27 55v23m15-23v23m16-23v23m15-23v23M21 85h58\"/></svg>",
+      "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 78l18-33q24-19 48 0l18 33M26 45q24 13 48 0M33 45q17-9 34 0M20 78l12-19m48 19L68 59M10 86q10-5 20 0t20 0 20 0 20 0\"/></svg>",
+      "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 82l21-21 16 8 18-27 29 40M12 75V53h20v22M10 53l12-12 12 12M36 73V43h20v30M34 43l12-12 12 12M64 63V26h19v37M61 26l13-12 12 12M18 59h7m17-10h8m-8 9h8m20-26h7m-7 10h7M7 88h86\"/></svg>"
+    ]
+  },
+  "australia": {
+    "name": "Australia",
+    "rewardName": "koala",
+    "reward": "<svg class=\"country-reward\" viewBox=\"0 0 100 90\" role=\"img\" aria-label=\"Playful koala profile reward\" stroke=\"#8c754f\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><ellipse cx=\"50\" cy=\"83\" rx=\"31\" ry=\"4\" fill=\"#806342\" stroke=\"none\" opacity=\".12\"/><circle cx=\"24\" cy=\"31\" r=\"17\" fill=\"#abb7ad\"/><circle cx=\"76\" cy=\"31\" r=\"17\" fill=\"#abb7ad\"/><circle cx=\"24\" cy=\"31\" r=\"11\" fill=\"#dfd9c4\"/><circle cx=\"76\" cy=\"31\" r=\"11\" fill=\"#dfd9c4\"/><ellipse cx=\"50\" cy=\"50\" rx=\"30\" ry=\"29\" fill=\"#b7c2b6\"/><circle cx=\"37\" cy=\"48\" r=\"3\" fill=\"#45554b\"/><circle cx=\"63\" cy=\"48\" r=\"3\" fill=\"#45554b\"/><ellipse cx=\"50\" cy=\"57\" rx=\"8\" ry=\"11\" fill=\"#607067\"/><path d=\"M42 72q8 5 16 0\" fill=\"none\"/><path d=\"M68 81q12-22 18-30m-9 13q-20-4-13-12 12-3 13 12m5-10q4-18 13-13 4 10-13 13\" fill=\"#90ac7b\"/></svg>",
+    "treasures": [
+      {
+        "name": "Sydney Opera House",
+        "subtitle": "Sails on the harbour",
+        "description": "Sydney’s sculptural performing-arts centre stands beside the harbour at Bennelong Point.",
+        "region": "New South Wales, Australia",
+        "lat": -33.8568,
+        "lon": 151.2153
+      },
+      {
+        "name": "Uluru",
+        "subtitle": "A living cultural landscape",
+        "description": "A vast sandstone formation in Uluṟu–Kata Tjuṯa National Park, deeply significant to its Aṉangu Traditional Owners.",
+        "region": "Northern Territory, Australia",
+        "lat": -25.3444,
+        "lon": 131.0369
+      },
+      {
+        "name": "Great Barrier Reef",
+        "subtitle": "A world beneath the water",
+        "description": "A vast coral-reef system off Queensland. The map marks the Green Island visitor area, a gateway near Cairns.",
+        "region": "Queensland, Australia",
+        "lat": -16.759,
+        "lon": 145.971
+      }
+    ],
+    "icons": [
+      "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 78h84M17 70q-2-23 10-43l26 43M29 70q6-36 27-51l11 51M48 70q15-26 33-33l-6 33M12 82q10 6 20 0t20 0 20 0 20 0M27 27l26 43m3-51L44 70m37-33L61 70\"/></svg>",
+      "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M7 76l5-24 16-8 10-15 20 1 10 11 15 4 9 31ZM27 46l-4 23m21-36-5 39m18-36-4 36m18-27-1 27M8 85h84\"/><circle cx=\"79\" cy=\"16\" r=\"7\"/></svg>",
+      "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 82q10-5 20 0t20 0 20 0 20 0M26 78V48l-12-8m12 21 14-10m-14 3V32m29 46V44l-12-9m12 20 13-8m-13 2V25m25 52V59l9-8\"/><path d=\"M68 24q10-8 18 0-8 8-18 0l-6-6v12Z\"/><circle cx=\"81\" cy=\"23\" r=\"1\"/></svg>"
+    ]
+  }
+});
+
 const treasurePhotos = {
   "Chichén Itzá": {
     "author": "Daniel Schwen",
@@ -950,6 +1242,318 @@ const treasurePhotos = {
     "width": 640,
     "height": 426,
     "bytes": 51114
+  },
+  "Eiffel Tower": {
+    "author": "Albert Bergonzo",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tour_Eiffel_Seine_River_(126580999).jpeg",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalTitle": "File:Tour Eiffel Seine River (126580999).jpeg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/31/Tour_Eiffel_Seine_River_%28126580999%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "src": "images/treasures/france-1-new.webp",
+    "alt": "Eiffel Tower — France",
+    "width": 640,
+    "height": 425,
+    "bytes": 62230
+  },
+  "Mont-Saint-Michel": {
+    "author": "Eric Kilby",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mont_Saint_Michel_and_sheep_-_2026.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalTitle": "File:Mont Saint Michel and sheep - 2026.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Mont_Saint_Michel_and_sheep_-_2026.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "src": "images/treasures/france-2-new.webp",
+    "alt": "Mont-Saint-Michel — France",
+    "width": 640,
+    "height": 383,
+    "bytes": 52498
+  },
+  "Pont du Gard": {
+    "author": "This Photo was taken by Wolfgang Moroder.  \n\nFeel free to use my photos, but please mention me as the author and send me a  message. \n\n\n\nThis image is not in the public domain. Please respect the copyright protection. It may only be used according to the rules mentioned here. This specifically excludes use in social media, if applicable terms of the licenses listed here are not appropriate.\n\n\n\nPlease do not upload an updated image here without consultation with the Author. The author would like to make corrections only at his own source. This ensures that the changes are preserved.Please if you think that any changes should be required, please inform the author.Otherwise you can upload a new image with a new name. Please use one of the templates derivative or extract.",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pont_du_Gard_2017.jpg",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalTitle": "File:Pont du Gard 2017.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/98/Pont_du_Gard_2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "src": "images/treasures/france-3-new.webp",
+    "alt": "Pont du Gard — France",
+    "width": 640,
+    "height": 284,
+    "bytes": 47924
+  },
+  "Big Ben": {
+    "author": "Bill Peloquin",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Big_Ben_London_Daylight_4.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalTitle": "File:Big Ben London Daylight 4.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Big_Ben_London_Daylight_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "src": "images/treasures/united-kingdom-1-new.webp",
+    "alt": "Big Ben and the Palace of Westminster — United Kingdom",
+    "width": 640,
+    "height": 425,
+    "bytes": 51022
+  },
+  "Stonehenge": {
+    "author": "Diego Delso",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stonehenge,_Condado_de_Wiltshire,_Inglaterra,_2014-08-12,_DD_18.JPG",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalTitle": "File:Stonehenge, Condado de Wiltshire, Inglaterra, 2014-08-12, DD 18.JPG",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Stonehenge%2C_Condado_de_Wiltshire%2C_Inglaterra%2C_2014-08-12%2C_DD_18.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "src": "images/treasures/united-kingdom-2-new.webp",
+    "alt": "Stonehenge — United Kingdom",
+    "width": 640,
+    "height": 339,
+    "bytes": 52830
+  },
+  "Edinburgh Castle": {
+    "author": "Peulle",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Edinburgh_Castle_dec.23_(2).jpg",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "originalTitle": "File:Edinburgh Castle dec.23 (2).jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Edinburgh_Castle_dec.23_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "src": "images/treasures/united-kingdom-3-new.webp",
+    "alt": "Edinburgh Castle — United Kingdom",
+    "width": 640,
+    "height": 421,
+    "bytes": 86528
+  },
+  "Hagia Sophia": {
+    "author": "Arild Vågen",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hagia_Sophia_Mars_2013.jpg",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalTitle": "File:Hagia Sophia Mars 2013.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/22/Hagia_Sophia_Mars_2013.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "src": "images/treasures/turkey-1-new.webp",
+    "alt": "Hagia Sophia — Türkiye",
+    "width": 640,
+    "height": 427,
+    "bytes": 63536
+  },
+  "Cappadocia (Göreme)": {
+    "author": "Bernard Gagnon",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hot_air_balloon_in_Cappadocia_02.jpg",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalTitle": "File:Hot air balloon in Cappadocia 02.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Hot_air_balloon_in_Cappadocia_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "src": "images/treasures/turkey-2-new.webp",
+    "alt": "Cappadocia (Göreme) — Türkiye",
+    "width": 640,
+    "height": 422,
+    "bytes": 79096
+  },
+  "Pamukkale": {
+    "author": "Antoine Taveneaux",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pamukkale_30.jpg",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalTitle": "File:Pamukkale 30.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/de/Pamukkale_30.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "src": "images/treasures/turkey-3-new.webp",
+    "alt": "Pamukkale — Türkiye",
+    "width": 640,
+    "height": 351,
+    "bytes": 60202
+  },
+  "Machu Picchu": {
+    "author": "Diego Delso",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Machu_Picchu,_Per%C3%BA,_2015-07-30,_DD_47.JPG",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalTitle": "File:Machu Picchu, Perú, 2015-07-30, DD 47.JPG",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/71/Machu_Picchu%2C_Per%C3%BA%2C_2015-07-30%2C_DD_47.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "src": "images/treasures/peru-1-new.webp",
+    "alt": "Machu Picchu — Peru",
+    "width": 640,
+    "height": 425,
+    "bytes": 75820
+  },
+  "Nazca Lines": {
+    "author": "Diego Delso",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:L%C3%ADneas_de_Nazca,_Nazca,_Per%C3%BA,_2015-07-29,_DD_54.JPG",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalTitle": "File:Líneas de Nazca, Nazca, Perú, 2015-07-29, DD 54.JPG",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/42/L%C3%ADneas_de_Nazca%2C_Nazca%2C_Per%C3%BA%2C_2015-07-29%2C_DD_54.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "src": "images/treasures/peru-2-new.webp",
+    "alt": "Nazca Lines — Peru",
+    "width": 640,
+    "height": 524,
+    "bytes": 174324
+  },
+  "Lake Titicaca": {
+    "author": "Anthony Lacoste",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lake_Titicaca_on_the_Andes_from_Bolivia.jpg",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "originalTitle": "File:Lake Titicaca on the Andes from Bolivia.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Lake_Titicaca_on_the_Andes_from_Bolivia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "src": "images/treasures/peru-3-new.webp",
+    "alt": "Lake Titicaca — Peru",
+    "width": 640,
+    "height": 480,
+    "bytes": 80232
+  },
+  "Christ the Redeemer": {
+    "author": "Mucio Scorzelli",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Corcovado_Blue_Sky_Day2.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalTitle": "File:Corcovado Blue Sky Day2.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Corcovado_Blue_Sky_Day2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "src": "images/treasures/brazil-1-new.webp",
+    "alt": "Christ the Redeemer — Brazil",
+    "width": 640,
+    "height": 407,
+    "bytes": 29458
+  },
+  "Iguaçu Falls (Brazil)": {
+    "author": "Alé2199",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Serene_Igua%C3%A7u_Falls_03.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalTitle": "File:Serene Iguaçu Falls 03.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Serene_Igua%C3%A7u_Falls_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "src": "images/treasures/brazil-2-new.webp",
+    "alt": "Iguaçu Falls (Brazil) — Brazil",
+    "width": 640,
+    "height": 480,
+    "bytes": 63480
+  },
+  "Lençóis Maranhenses": {
+    "author": "Julius Dadalti",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Len%C3%A7%C3%B3is_Maranhenses_2018_(cropped).jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalTitle": "File:Lençóis Maranhenses 2018 (cropped).jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/55/Len%C3%A7%C3%B3is_Maranhenses_2018_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "src": "images/treasures/brazil-3-new.webp",
+    "alt": "Lençóis Maranhenses — Brazil",
+    "width": 640,
+    "height": 461,
+    "bytes": 48672
+  },
+  "Table Mountain": {
+    "author": "Josep M. Gracia",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:CT_-_Table_Mountain_and_Cape_Town_cityscape,_South_Africa,_2017.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalTitle": "File:CT - Table Mountain and Cape Town cityscape, South Africa, 2017.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/85/CT_-_Table_Mountain_and_Cape_Town_cityscape%2C_South_Africa%2C_2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "src": "images/treasures/south-africa-1-new.webp",
+    "alt": "Table Mountain — South Africa",
+    "width": 640,
+    "height": 425,
+    "bytes": 53552
+  },
+  "Kruger National Park": {
+    "author": "Dietmar Rabich",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kruger_National_Park_(ZA),_Elefant_--_2024_--_0649.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalTitle": "File:Kruger National Park (ZA), Elefant -- 2024 -- 0649.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/88/Kruger_National_Park_%28ZA%29%2C_Elefant_--_2024_--_0649.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "src": "images/treasures/south-africa-2-new.webp",
+    "alt": "Kruger National Park — South Africa",
+    "width": 640,
+    "height": 427,
+    "bytes": 115134
+  },
+  "Boulders Beach": {
+    "author": "Satdeep Gill",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Penguins_at_Boulders_Beach_04.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalTitle": "File:Penguins at Boulders Beach 04.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Penguins_at_Boulders_Beach_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "src": "images/treasures/south-africa-3-new.webp",
+    "alt": "Boulders Beach — South Africa",
+    "width": 640,
+    "height": 427,
+    "bytes": 53644
+  },
+  "Gyeongbokgung Palace": {
+    "author": "Frank Schulenburg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gyeonghoeru_(Royal_Banquet_Hall)_at_Gyeongbokgung_Palace,_Seoul.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalTitle": "File:Gyeonghoeru (Royal Banquet Hall) at Gyeongbokgung Palace, Seoul.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Gyeonghoeru_%28Royal_Banquet_Hall%29_at_Gyeongbokgung_Palace%2C_Seoul.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "src": "images/treasures/south-korea-1-new.webp",
+    "alt": "Gyeongbokgung Palace — South Korea",
+    "width": 640,
+    "height": 427,
+    "bytes": 53440
+  },
+  "Seongsan Ilchulbong": {
+    "author": "Korea.net / Korean Culture and Information Service",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Seongsan_Ilchulbong_from_the_air.jpg",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "originalTitle": "File:Seongsan Ilchulbong from the air.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/61/Seongsan_Ilchulbong_from_the_air.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "src": "images/treasures/south-korea-2-new.webp",
+    "alt": "Seongsan Ilchulbong — South Korea",
+    "width": 640,
+    "height": 417,
+    "bytes": 60088
+  },
+  "Gamcheon Culture Village": {
+    "author": "Christophe95",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gamcheon_Culture_Village_1.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalTitle": "File:Gamcheon Culture Village 1.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Gamcheon_Culture_Village_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "src": "images/treasures/south-korea-3-new.webp",
+    "alt": "Gamcheon Culture Village — South Korea",
+    "width": 640,
+    "height": 480,
+    "bytes": 111386
+  },
+  "Sydney Opera House": {
+    "author": "User: (WT-shared) Maklinchi at  wts wikivoyage",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Opera_house9_HDR.jpg",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
+    "originalTitle": "File:Opera house9 HDR.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/01/Opera_house9_HDR.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "src": "images/treasures/australia-1-new.webp",
+    "alt": "Sydney Opera House — Australia",
+    "width": 640,
+    "height": 342,
+    "bytes": 30316
+  },
+  "Uluru": {
+    "author": "Dietmar Rabich",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Petermann_Ranges_(AU),_Uluru-Kata_Tjuta_National_Park,_Uluru_--_2019_--_3679-83.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalTitle": "File:Petermann Ranges (AU), Uluru-Kata Tjuta National Park, Uluru -- 2019 -- 3679-83.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Petermann_Ranges_%28AU%29%2C_Uluru-Kata_Tjuta_National_Park%2C_Uluru_--_2019_--_3679-83.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "src": "images/treasures/australia-2-new.webp",
+    "alt": "Uluru — Australia",
+    "width": 640,
+    "height": 206,
+    "bytes": 26456
+  },
+  "Great Barrier Reef": {
+    "author": "Ank Kumar",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aerial_View_of_Great_Barrier_Reef_(Ank_Kumar)_05.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalTitle": "File:Aerial View of Great Barrier Reef (Ank Kumar) 05.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Aerial_View_of_Great_Barrier_Reef_%28Ank_Kumar%29_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "src": "images/treasures/australia-3-new.webp",
+    "alt": "Great Barrier Reef — Australia",
+    "width": 640,
+    "height": 427,
+    "bytes": 88688
   }
 };
 function appendTreasurePhoto(treasure,panel){

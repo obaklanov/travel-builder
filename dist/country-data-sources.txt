@@ -36,3 +36,6 @@ indonesia: Mahmud Ahsan — https://unsplash.com/photos/brown-and-green-temple-n
 
 Kosovo: World Bank SP.POP.TOTL, 2025: 1,576,876; total area 10,887 km2 (World Bank ESMF, UN Statistics definition). Added separately following Canada recognition; Serbia area reduced by the same amount to avoid duplicate area. Internal UNK code retains compatibility with saved profiles.
 Country-list policy: data/country-classification.json, reviewed 1 Nov 2026. Includes Kosovo and the Cook Islands/Niue (Canada established diplomatic relations in 2023).
+
+Eight additional destination covers and treasure photos: data/eight-country-photo-sources.json records Wikimedia Commons originals, authors and licenses. Cover credits are linked on Destinations; treasure credits appear with each photo. Images resized/converted to WebP; covers cropped by layout.
+New flight costs and daily budgets remain illustrative CAD planning allowances; seasonal ratings are editorial sightseeing guides rather than live climate forecasts.

@@ -3,6 +3,14 @@ const guideDetailArtwork={"entry": "<rect x=\"12\" y=\"7\" width=\"36\" height=\
 function guideDetailIcon(kind){return '<svg class="guide-detail-icon" viewBox="0 0 64 64" aria-hidden="true" focusable="false" stroke-width="1.4" stroke-linejoin="round">'+guideDetailArtwork[kind]+'</svg>';}
 
 const countries = {
+"france":{"name": "France", "region": "Europe", "prompt": "Prepare for your next adventure."},
+"united-kingdom":{"name": "United Kingdom", "region": "Europe", "prompt": "Prepare for your next adventure."},
+"turkey":{"name": "Türkiye", "region": "Asia", "prompt": "Prepare for your next adventure."},
+"peru":{"name": "Peru", "region": "South America", "prompt": "Prepare for your next adventure."},
+"brazil":{"name": "Brazil", "region": "South America", "prompt": "Prepare for your next adventure."},
+"south-africa":{"name": "South Africa", "region": "Africa", "prompt": "Prepare for your next adventure."},
+"south-korea":{"name": "South Korea", "region": "Asia", "prompt": "Prepare for your next adventure."},
+"australia":{"name": "Australia", "region": "Oceania", "prompt": "Prepare for your next adventure."},
 "spain":{"name": "Spain", "region": "Europe", "prompt": "Prepare for your next adventure."},
 "greece":{"name": "Greece", "region": "Europe", "prompt": "Prepare for your next adventure."},
 "costa-rica":{"name": "Costa Rica", "region": "North America", "prompt": "Prepare for your next adventure."},

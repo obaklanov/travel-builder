@@ -1,35 +1,43 @@
-# Canadian Travel Atlas
+# Travel Easy
 
-A travel preparation website for Canadians, with destination starters for Japan, Portugal, Mexico and Thailand.
+A travel-planning website for Canadians with 24 destination guides, trip suggestions, group budgets, saved trips and a personal scratch map.
 
 ## Run locally
 
-Open this folder in VS Code, then run:
+Open this folder in VS Code and run:
 
 ```powershell
 npx.cmd http-server dist -p 8090
 ```
 
-Open http://localhost:8090 in your browser.
+Then open http://localhost:8090.
 
-## Files
+## Main files
 
-- `dist/index.html`: page content and layout
-- `dist/style.css`: styling and responsive layout
-- `dist/app.js`: search, region filters, destination dialogs and checklist
-- `dist/images/`: destination photographs
-- `image-sources.json`: Unsplash image identifiers
-- `download-images.mjs`: script to retrieve the photographs
-- `.openai/hosting.json`: Sites hosting configuration
+- `dist/index.html`: quick trip generation and filters.
+- `dist/destinations.html`: country cards and planning dialogs.
+- `dist/travel-details.js`: seasonal regions, airport routing and shared budget calculations.
+- `dist/treasures.js`: treasure badges, profile-reward artwork and on-click photos.
+- `dist/community-picks.js`: song, book and film recommendations.
+- `dist/profile.html` and `dist/profile.js`: personal atlas and account flow.
+- `dist/saved-trips.js`: saved-trip actions, backed by Supabase.
+- `data/`: source snapshots, country classification, territory relationships and photo credits.
+- `scripts/build-country-data.cjs`: regenerate country facts and rankings from shared sources.
 
-The checklist saves progress in the visitor's browser and can be downloaded as a text file. No backend or build step is required. Country starters link to official Canadian travel information; they are not complete researched guides.
+The public frontend is static HTML, CSS and JavaScript. Accounts and private saved trips use Supabase; public configuration is in `dist/profile-config.js`. Flight and budget figures are illustrative estimates, not live fares. Entry guidance is reviewed against Government of Canada sources and includes its checked date.
 
-## Hosting
+## Destinations
 
-The public website is hosted by GitHub Pages at https://obaklanov.github.io/canadian-travel-atlas/.
+France, United Kingdom, Türkiye, Peru, Brazil, South Africa, South Korea and Australia join the existing 16 destinations. The expansion is recorded in `data/destination-expansion-24.json`. Cover photos use the existing brightness treatment; treasure photos load only when their badge is opened.
 
-Pushing to `main` automatically publishes the `dist` folder through the Publish website workflow. Check the repository's Actions tab for deployment progress.
+The profile map uses a separate Canadian-guided list of 198 countries and self-governing states. This count is independent of the 24 destinations with detailed planning pages.
 
-The earlier private Sites version remains separate at https://canadian-travel-atlas.jocundbud512.chatgpt.site. GitHub pushes do not update that copy.
+## Hosting and updates
 
-Country-map outlines: https://github.com/johan/world.geo.json. Country statistics: Worldometer population (2026) and area tables, retrieved 2026-10-29; see the source notes in each guide.
+Public website: https://obaklanov.github.io/travel-easy/
+
+Pushing to `main` deploys `dist/` through the GitHub Pages workflow. The original Travel Atlas project remains separate.
+
+For an existing database, `supabase-twenty-four-destinations-setup.sql` expands the allowed saved-trip destinations without deleting existing trips. It was applied for this expansion.
+
+Photo attribution is available in the Destinations photo-credit section and below individual treasure photos. Detailed source metadata is retained in `data/treasure-photo-sources.json` and `data/eight-country-photo-sources.json`.

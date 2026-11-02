@@ -285,3 +285,223 @@ Object.assign(communityPicks, {
 });
 Object.assign(verifiedBookExtras, {"spain": [["WorldCat", "https://search.worldcat.org/title/The-shadow-of-the-wind/oclc/1195034569"]], "greece": [["Canongate", "https://canongate.co.uk/books/1609-my-family-and-other-animals/"]], "costa-rica": [], "indonesia": [["OverDrive", "https://www.overdrive.com/media/1456345/the-rainbow-troops"]]});
 Object.assign(verifiedFilmLinks, {"spain": [["Film details", "https://www.premiosgoya.com/pelicula/vicky-cristina-barcelona"]], "greece": [["Official film page", "https://mamma-mia.com/the-movies/the-movie"]], "costa-rica": [["Official film page", "https://amblin.com/movie/jurassic-park/"]], "indonesia": [["Official film page", "https://milesfilms.net/en/laskar-pelangi/"], ["Viewing options", "https://www.justwatch.com/us/movie/the-rainbow-troops"]]});
+
+// Editorial mood picks for eight additional destinations; links checked 2026-11-01.
+Object.assign(communityPicks, {
+  "france": {
+    "song": [
+      "Djadja (2018)",
+      "Aya Nakamura",
+      "A buoyant French pop hit with an easy dance groove.",
+      "https://www.youtube.com/watch?v=iPGgnzc34tY"
+    ],
+    "book": [
+      "The Three Musketeers",
+      "Alexandre Dumas",
+      "Swordplay, intrigue and friendship in a swashbuckling novel set in seventeenth-century France.",
+      "https://penguinrandomhouselibrary.com/book/?isbn=9780307594990"
+    ],
+    "film": [
+      "The Three Musketeers: D’Artagnan (2023)",
+      "Directed by Martin Bourboulon",
+      "Dumas’s fictional heroes race through royal intrigue and daring duels in France."
+    ]
+  },
+  "united-kingdom": {
+    "song": [
+      "Dance the Night (2023)",
+      "Dua Lipa",
+      "Sparkling disco-pop from the London-born singer.",
+      "https://www.youtube.com/watch?v=OiC1rgCPmUQ"
+    ],
+    "book": [
+      "The Hound of the Baskervilles",
+      "Arthur Conan Doyle",
+      "Sherlock Holmes and Watson tackle a chilling fictional mystery on Devon’s wild moors.",
+      "https://www.penguin.co.uk/books/34513/the-hound-of-the-baskervilles-by-doyle-arthur-conan/9780141192437"
+    ],
+    "film": [
+      "Paddington 2 (2017)",
+      "Directed by Paul King",
+      "A stolen book sends Paddington into a warm, wonderfully inventive London adventure."
+    ]
+  },
+  "turkey": {
+    "song": [
+      "Yolla (2017)",
+      "Tarkan",
+      "A lively Turkish pop hit with a dance-ready rhythm.",
+      "https://www.youtube.com/watch?v=_GOZDXq7I-I"
+    ],
+    "book": [
+      "Birds Without Wings",
+      "Louis de Bernières",
+      "A sweeping historical novel follows intertwined lives in an Anatolian town as the Ottoman world changes.",
+      "https://www.penguinrandomhouse.com/books/38303/birds-without-wings-by-louis-de-bernieres/"
+    ],
+    "film": [
+      "The Water Diviner (2014)",
+      "Directed by Russell Crowe",
+      "A fictional Australian father journeys from Istanbul into Anatolia searching for his missing sons after the First World War."
+    ]
+  },
+  "peru": {
+    "song": [
+      "Probablemente (2018)",
+      "Daniela Darcourt",
+      "An energetic salsa hit from the Peruvian singer.",
+      "https://www.youtube.com/watch?v=ME92E6J8ubE"
+    ],
+    "book": [
+      "Turn Right at Machu Picchu",
+      "Mark Adams",
+      "A funny travel memoir follows an unlikely adventurer through Peru’s Andes and Inca history.",
+      "https://www.penguinrandomhouse.com/books/306890/turn-right-at-machu-picchu-by-mark-adams/"
+    ],
+    "film": [
+      "Paddington in Peru (2024)",
+      "Directed by Dougal Wilson",
+      "Paddington and the Browns follow a mysterious map into a playful, fictional Peruvian jungle adventure."
+    ]
+  },
+  "brazil": {
+    "song": [
+      "Envolver (2021)",
+      "Anitta",
+      "A dance-floor favourite from the Brazilian pop star, sung in Spanish.",
+      "https://www.youtube.com/watch?v=hFCjGiawJi4"
+    ],
+    "book": [
+      "The Lost City of Z",
+      "David Grann",
+      "A gripping work of nonfiction investigates Percy Fawcett’s disappearance and the search for a fabled city in the Brazilian Amazon.",
+      "https://www.penguinrandomhouse.com/books/70475/the-lost-city-of-z-by-david-grann/"
+    ],
+    "film": [
+      "Rio (2011)",
+      "Directed by Carlos Saldanha",
+      "A sheltered macaw finds friendship, carnival colour and high-flying adventure in Rio de Janeiro."
+    ]
+  },
+  "south-africa": {
+    "song": [
+      "Jerusalema (2019)",
+      "Master KG feat. Nomcebo",
+      "An uplifting South African dance anthem with a joyful gospel-house pulse.",
+      "https://www.youtube.com/watch?v=fCZVL_8D048"
+    ],
+    "book": [
+      "Jock of the Bushveld",
+      "Percy FitzPatrick",
+      "A classic tale of a courageous dog and his owner’s adventures in South Africa’s bushveld.",
+      "https://www.penguin.co.uk/books/62503/jock-of-the-bushveld-by-fitzpatrick-percy/9780141930060"
+    ],
+    "film": [
+      "Khumba (2013)",
+      "Directed by Anthony Silverston",
+      "A half-striped zebra crosses South Africa’s Karoo in a colourful animated quest for belonging."
+    ]
+  },
+  "south-korea": {
+    "song": [
+      "Dynamite (2020)",
+      "BTS",
+      "Bright disco-pop from the South Korean group, brimming with feel-good energy.",
+      "https://www.youtube.com/watch?v=gdZLi9oWNZg"
+    ],
+    "book": [
+      "The Island of Sea Women",
+      "Lisa See",
+      "A dramatic historical novel about Jeju’s women divers, friendship and courage through turbulent times.",
+      "https://www.simonandschuster.com/books/The-Island-of-Sea-Women/Lisa-See/9781501154867"
+    ],
+    "film": [
+      "Okja (2017)",
+      "Directed by Bong Joon Ho",
+      "A girl leaves her South Korean mountain home on a daring mission to rescue her extraordinary animal friend."
+    ]
+  },
+  "australia": {
+    "song": [
+      "Padam Padam (2023)",
+      "Kylie Minogue",
+      "A pulsing dance-pop hit from the Australian singer.",
+      "https://www.youtube.com/watch?v=p6Cnazi_Fi0"
+    ],
+    "book": [
+      "Tracks",
+      "Robyn Davidson",
+      "A candid memoir of a remarkable journey across the Australian desert with four camels and a dog.",
+      "https://www.bloomsbury.com/uk/tracks-9781408834879/"
+    ],
+    "film": [
+      "Tracks (2013)",
+      "Directed by John Curran",
+      "A dramatisation of Robyn Davidson’s extraordinary trek across the Australian desert."
+    ]
+  }
+});
+Object.assign(verifiedBookExtras, {
+  "france": [],
+  "united-kingdom": [],
+  "turkey": [],
+  "peru": [],
+  "brazil": [],
+  "south-africa": [],
+  "south-korea": [],
+  "australia": []
+});
+Object.assign(verifiedFilmLinks, {
+  "france": [
+    [
+      "Official film page",
+      "https://www.pathefilms.com/fr/films/les-trois-mousquetaires-dartagnan/"
+    ]
+  ],
+  "united-kingdom": [
+    [
+      "Official film page",
+      "https://www.warnerbros.com/movies/paddington-2"
+    ]
+  ],
+  "turkey": [
+    [
+      "Official film page",
+      "https://www.warnerbros.com/movies/water-diviner"
+    ],
+    [
+      "Buy / rent options",
+      "https://moviesanywhere.com/movie/the-water-diviner"
+    ]
+  ],
+  "peru": [
+    [
+      "Official film page",
+      "https://www.sonypictures.com/movies/paddingtoninperu"
+    ]
+  ],
+  "brazil": [
+    [
+      "Disney+",
+      "https://www.disneyplus.com/pt-br/browse/entity-8f2b1ae4-13a8-4378-b853-01d928f45297"
+    ]
+  ],
+  "south-africa": [
+    [
+      "Official film page",
+      "https://www.triggerfish.com/khumba/"
+    ]
+  ],
+  "south-korea": [
+    [
+      "Netflix",
+      "https://www.netflix.com/title/80091936"
+    ]
+  ],
+  "australia": [
+    [
+      "Official distributor",
+      "https://www.transmissionfilms.com.au/films/tracks"
+    ]
+  ]
+});
