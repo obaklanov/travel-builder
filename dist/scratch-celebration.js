@@ -126,12 +126,52 @@
       return 2-1.5*t*t*(3-2*t);
     };
   }
-  function makeStage(feature,color){
+  function contextFrame(box,viewport){
+    const stretch=1.298,margin=Math.max(box.w,box.h)*.2;
+    let w=box.w+margin*2,h=box.h+Math.max(margin,box.h*.24)*2;
+    // Expand the surrounding map to fill the stage without enlarging/cropping land.
+    const ratio=(viewport.width/Math.max(1,viewport.height))*stretch;
+    if(w/h<ratio)w=h*ratio;else h=w/ratio;
+    return {x:box.x+box.w/2-w/2,y:box.y+box.h/2-h/2,w,h};
+  }
+  function contextualPolygons(feature,frame){
+    const polygons=feature.geometry.type==='Polygon'?[feature.geometry.coordinates]:feature.geometry.coordinates;
+    const center=frame.x+frame.w/2,visible=[];
+    for(const polygon of polygons){
+      const rings=polygon.map(ring=>{
+        let previous=center;
+        return ring.map(([lon,lat])=>{
+          while(lon-previous>180)lon-=360;while(lon-previous< -180)lon+=360;
+          previous=lon;return [lon,-lat];
+        });
+      });
+      const xs=rings[0].map(p=>p[0]),ys=rings[0].map(p=>p[1]);
+      const minX=Math.min(...xs),maxX=Math.max(...xs),minY=Math.min(...ys),maxY=Math.max(...ys);
+      if(maxY<frame.y||minY>frame.y+frame.h)continue;
+      for(const offset of [-360,0,360]){
+        if(maxX+offset<frame.x||minX+offset>frame.x+frame.w)continue;
+        visible.push(rings.map(ring=>ring.map(([x,y],i)=>(i?'L':'M')+(x+offset).toFixed(4)+','+y.toFixed(4)).join(' ')+'Z').join(' '));
+      }
+    }
+    return visible;
+  }
+  function appendMapContext(svg,defs,frame){
+    const clip=svgNode('clipPath',{id:'scratch-context-clip',clipPathUnits:'userSpaceOnUse'});
+    clip.append(svgNode('rect',{x:frame.x,y:frame.y,width:frame.w,height:frame.h}));defs.append(clip);
+    const context=svgNode('g',{'class':'scratch-map-context','clip-path':'url(#scratch-context-clip)','pointer-events':'none'});
+    context.append(svgNode('rect',{x:frame.x,y:frame.y,width:frame.w,height:frame.h,fill:'#dce7e2'}));
+    for(const nearby of features.values()){
+      const paths=contextualPolygons(nearby,frame);
+      if(paths.length)context.append(svgNode('path',{d:paths.join(' '),fill:'#e7dfca',stroke:'#f9f5e9','stroke-width':.8,'vector-effect':'non-scaling-stroke','fill-rule':'evenodd','stroke-linejoin':'round','data-context-country':nearby.id}));
+    }
+    svg.append(context);
+  }
+  function makeStage(feature,color,viewport){
     const box=countryShape(feature),padding=Math.max(box.w,box.h)*.11;
-    // Reserve vertical room for the 1.298 stretch plus a small margin at both ends.
-    const verticalPadding=Math.max(padding,box.h*.19);
-    const svg=svgNode('svg',{viewBox:`${box.x-padding} ${box.y-verticalPadding} ${box.w+2*padding} ${box.h+2*verticalPadding}`,'aria-hidden':'true'});
-    const defs=svgNode('defs');
+    const frame=contextFrame(box,viewport);
+    const svg=svgNode('svg',{viewBox:`${frame.x} ${frame.y} ${frame.w} ${frame.h}`,'aria-hidden':'true'});
+    const defs=svgNode('defs');svg.append(defs);
+    appendMapContext(svg,defs,frame);
     const gold=svgNode('linearGradient',{id:'scratch-gold',x1:0,y1:0,x2:1,y2:1});
     for(const [offset,fill] of [['0%','#ecd49d'],['45%','#c5a568'],['72%','#f4dfab'],['100%','#ad8950']])gold.append(svgNode('stop',{offset,'stop-color':fill}));
     // Tiny folded foil surfaces: alternating metallic faces, without glow or trails.
@@ -149,7 +189,7 @@
       stroke.path.setAttribute('stroke-dashoffset',stroke.length);
       reveal.append(stroke.path);
     }
-    defs.append(gold,reveal);svg.append(defs);
+    defs.append(gold,reveal);
     const outline={d:box.d,'fill-rule':'evenodd','stroke-linejoin':'round'};
     svg.append(svgNode('path',{...outline,fill:'url(#scratch-gold)',stroke:'#ad8d53','stroke-width':Math.max(box.w,box.h)*.003}));
     const colourPath=svgNode('path',{...outline,fill:color,stroke:color,'stroke-width':Math.max(box.w,box.h)*.002,mask:'url(#scratch-reveal)'});
@@ -303,7 +343,7 @@
         const code=sequence[index],feature=features.get(code);
         title.textContent=feature.properties.name;details.hidden=true;details.textContent='';
         caption.textContent=window.TRAVEL_SCRATCH_PHRASES?.[code]||('Your '+feature.properties.name+' chapter, uncovered.');
-        const shape=makeStage(feature,colors[code]||'#82afd0');stage.replaceChildren(shape.svg);
+        const shape=makeStage(feature,colors[code]||'#82afd0',stage.getBoundingClientRect());stage.replaceChildren(shape.svg);
         if(flags[code])stage.append(makeFlag(code,feature.properties.name,reduced));
 
         for(const stroke of shape.strokes)stroke.weight=Math.sqrt(stroke.length/Math.max(shape.box.w,shape.box.h))*.55+.006;

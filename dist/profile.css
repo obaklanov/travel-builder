@@ -99,3 +99,8 @@
 
 /* Stretch country artwork and its scratching effects together; leave flags unchanged. */
 .scratch-country-stage > svg{transform:scaleY(1.298)}
+
+/* A quiet atlas excerpt sits behind the active scratch country. */
+.scratch-country-stage{border-radius:10px;background:#dce7e2;box-shadow:inset 0 0 0 1px #a79b7b40}
+.scratch-country-stage > svg{filter:none}
+.scratch-map-context{opacity:.88}
