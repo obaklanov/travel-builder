@@ -45,7 +45,7 @@
   document.querySelector('#builder-clear-exclusions').addEventListener('click',()=>{for(const node of document.querySelectorAll('[name="exclude"]'))node.checked=false;form.dispatchEvent(new Event('change',{bubbles:true}));});
 
   function collect(){const values=Object.fromEntries(definitions.map(def=>[def.id,def.multiple?[...document.querySelectorAll('[name="'+def.id+'"]:checked')].map(n=>n.value):field(def.id).value]));values.priorities=Object.fromEntries([...document.querySelectorAll('[data-priority-for]')].map(button=>[button.dataset.priorityFor,button.getAttribute('aria-checked')==='true'?'must':'prefer']));return values;}
-  function interestLabel(){const values=collect();for(const def of definitions.filter(d=>d.multiple)){const selected=values[def.id];field(def.id).querySelector('summary').textContent=def.id==='exclude'?(selected.length?selected.length+' excluded':'No exclusions'):(selected.length?selected.length+' selected':'No preference');
+  function interestLabel(){const values=collect();for(const def of definitions.filter(d=>d.multiple)){const selected=values[def.id];field(def.id).querySelector('summary').textContent=field(def.id).getAttribute('aria-disabled')==='true'?'Not applicable':def.id==='exclude'?(selected.length?selected.length+' excluded':'No exclusions'):(selected.length?selected.length+' selected':'No preference');
       if(def.id==='exclude'){const summary=document.querySelector('#builder-exclusion-summary');summary.hidden=!selected.length;summary.textContent=selected.map(v=>exclusionLabels.get(v)||v).join('; ');}}}
   try{
     const saved=JSON.parse(localStorage.getItem(storageKey)||localStorage.getItem('travel-builder-filter-preferences-v1')||'null');
@@ -62,8 +62,15 @@
   updateDateBounds();
   if(field('latest').value&&(field('latest').value<field('latest').min||field('latest').value>limits.returnMax))field('latest').value='';
   if(field('month').value&&(field('month').value<field('month').min||field('month').value>field('month').max))field('month').value='';
-  function syncParty(){const rules=engine.partyRules(field('party').value),people=field('people');for(const option of people.options){const excluded=Number(option.value)<rules.min||Number(option.value)>rules.max;option.disabled=excluded;option.hidden=excluded;}people.disabled=rules.locked;if(rules.locked||Number(people.value)<rules.min||Number(people.value)>rules.max)people.value=String(rules.min);people.title=rules.locked?'Traveller count is fixed by your travel party.':'Total adults and children; '+rules.min+'–10 travellers.';}
+  function syncParty(){const rules=engine.partyRules(field('party').value),people=field('people');for(const option of people.options){const excluded=Number(option.value)<rules.min||Number(option.value)>rules.max;option.disabled=excluded;option.hidden=excluded;}people.disabled=rules.locked;if(rules.locked||Number(people.value)<rules.min||Number(people.value)>rules.max)people.value=String(rules.min);people.title=rules.locked?'Traveller count is fixed by your travel party.':'Total adults and children; '+rules.min+'–10 travellers.';
+    const ages=field('childAges'),notApplicable=['Solo','Couple','Friends'].includes(field('party').value),summary=ages.querySelector('summary');
+    ages.setAttribute('aria-disabled',String(notApplicable));summary.setAttribute('aria-disabled',String(notApplicable));summary.tabIndex=notApplicable?-1:0;
+    ages.title=notApplicable?'Children’s ages do not apply to Solo, Couple or Friends trips.':'Optional age bands for children travelling with your group.';
+    for(const checkbox of ages.querySelectorAll('input')){checkbox.disabled=notApplicable;if(notApplicable)checkbox.checked=false;}
+    if(notApplicable)ages.open=false;
+}
   syncParty();
+  field('childAges').querySelector('summary').addEventListener('click',event=>{if(field('childAges').getAttribute('aria-disabled')==='true')event.preventDefault();});
   form.addEventListener('click',event=>{const button=event.target.closest('[data-priority-for]');if(!button)return;const must=button.getAttribute('aria-checked')!=='true';button.setAttribute('aria-checked',String(must));button.textContent=must?'Must have':'Nice to have';form.dispatchEvent(new Event('change',{bubbles:true}));});
   interestLabel();
   function pendingPreferences(values){return definitions.filter(def=>def.pending&&(Array.isArray(values[def.id])?values[def.id].length:values[def.id]&&values[def.id]!=='Any')).map(def=>({label:def.label,value:Array.isArray(values[def.id])?values[def.id].join(', '):field(def.id).selectedOptions?.[0]?.textContent||values[def.id]}));}

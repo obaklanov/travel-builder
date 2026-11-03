@@ -120,3 +120,7 @@
 .builder-home .design-reset-all{font-size:14px;}
 .design-primary-fields .design-label-row,.design-primary-fields .design-primary-wide .design-label-row{min-height:52px;}
 .design-primary-fields{grid-auto-rows:minmax(105px,auto);}
+
+/* Keep inapplicable child-age choices visible but unavailable. */
+.builder-home .design-group .builder-multiselect[aria-disabled="true"] summary{background:#f2f4f6;border-color:#dce1e7;color:#7b8491;cursor:not-allowed;}
+.builder-multiselect[aria-disabled="true"] summary::after{opacity:.35;}
