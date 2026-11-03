@@ -56,3 +56,23 @@
 .builder-home .builder-exclusion-options label[hidden],.builder-exclusion-options section[hidden]{display:none;}
 .builder-exclusion-summary,.builder-exclusion-future{font-size:11px;line-height:1.5;color:#64748b;margin:7px 0 0;}
 .builder-exclusion-summary[hidden]{display:none;}
+
+/* Eight groups surround the action; primary decisions stay visible. */
+.designing-canvas{grid-template-areas:"party where experience" "budget create travel" "needs safety health";}
+.design-group-safety{grid-area:safety;}.design-group-health{grid-area:health;}
+.design-legend{font-size:11px;color:#64748b;margin:0 0 24px;line-height:1.6;}
+.design-label-row{display:flex;align-items:center;justify-content:space-between;gap:5px;flex-wrap:wrap;margin-bottom:6px;}
+.builder-home .design-label-row .builder-field-label{margin:0;}
+.builder-home .builder-slot .design-priority{display:inline-flex;align-items:center;gap:4px;min-height:23px;margin:0;padding:3px 6px;border:1px solid #dce3ec;border-radius:7px;background:#fff;color:#65758a;font:500 9px var(--sans);letter-spacing:0;white-space:nowrap;}
+.builder-home .builder-slot .design-priority::before{content:"";width:6px;height:6px;border:1px solid currentColor;border-radius:50%;}
+.builder-home .builder-slot .design-priority[aria-checked="true"]{color:#2858bb;background:#edf4ff;border-color:#bed0f0;}
+.builder-home .builder-slot .design-priority[aria-checked="true"]::before{background:currentColor;}
+.builder-home .builder-slot .design-priority:focus-visible{outline:3px solid #458be7;outline-offset:2px;}
+.design-fields>.design-wide{grid-column:1/-1;}
+.builder-home #create-filtered-trip:disabled{opacity:.65;cursor:progress;}
+@media(max-width:1100px){.designing-canvas{grid-template-areas:"party where" "budget create" "experience travel" "safety health" "needs needs";}.design-group-needs>.design-fields{grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media(max-width:650px){.designing-canvas{grid-template-areas:"create" "party" "where" "budget" "experience" "travel" "safety" "health" "needs";}.design-label-row{min-height:24px;}.builder-home .builder-slot .design-priority{min-height:28px;}}
+
+.builder-slot:has(#builder-newPlaces){grid-column:1/-1;}
+.design-create{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;}
+.design-create .search-message{max-width:300px;margin:0;color:#8b4b40;font-size:12px;line-height:1.6;text-align:center;}

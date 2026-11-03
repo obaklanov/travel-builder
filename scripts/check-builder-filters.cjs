@@ -30,14 +30,14 @@ const planner=vm.createContext({URLSearchParams,location:{search:'?country=spain
 vm.runInContext(fs.readFileSync(path.join(dist,'travel-details.js'),'utf8'),planner);
 const state=planner.getBudgetState('spain');assert.equal(state.people,2);assert.equal(state.regionChoice.index,2);assert.equal(state.rates[1],99);assert.equal(state.rates[2],0);assert.equal(state.departureDate,'2027-06-01');
 const conf=vm.createContext({window:{}});vm.runInContext(fs.readFileSync(path.join(dist,'travel-builder-filter-options.js'),'utf8'),conf);
-const defs=conf.window.TRAVEL_BUILDER_FILTERS;assert.equal(defs.length,40);assert.equal(new Set(defs.map(d=>d.id)).size,40);
-for(const group of ['party','where','experience','budget','travel','needs'])assert(defs.some(d=>d.group===group));
+const defs=conf.window.TRAVEL_BUILDER_FILTERS;assert.equal(defs.length,52);assert.equal(new Set(defs.map(d=>d.id)).size,52);
+for(const group of ['party','where','experience','budget','travel','needs','safety','health'])assert(defs.some(d=>d.group===group));
 for(const id of ['lodging','food','transport','extras','flightBudget','arrival'])assert(!defs.some(d=>d.id===id),'Planning-only control leaked into Designing');
 assert.equal(match({earliest:'2027-06-12',latest:'2027-06-18'})[0].start,'2027-06-12');
 assert.equal(match({earliest:'2027-06-12',latest:'2027-06-17'}).length,0);
 assert.equal(match({earliest:'2027-07-01',latest:'2027-07-10'}).length,0,'Month and date constraints intersect');
 const html=fs.readFileSync(path.join(dist,'index.html'),'utf8');const ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);assert.equal(new Set(ids).size,ids.length);assert(!html.includes('src="trip-start.js'));
-console.log('PASS: 40 Designing definitions and six groups; route/region/continent filters; budgets and zero allowances; shared group costs; month windows and multi-month seasons; missing data; unsupported preferences; planner handoff; unique HTML IDs.');
+console.log('PASS: 52 Designing definitions and eight groups; route/region/continent filters; budgets and zero allowances; shared group costs; month windows and multi-month seasons; missing data; unsupported preferences; planner handoff; unique HTML IDs.');
 
 assert.equal(match({people:'10'})[0].total,16320,'Ten-person calculation');
 assert.equal(match({people:'11'}).length,0,'Reject unsupported group size');
@@ -62,10 +62,10 @@ assert.equal(engine.candidateMonths({...base,month:'2029-11',dateFlex:'2'},now).
 assert.equal(match({month:'2029-12'}).length,0,'No trips beyond the month horizon');
 
 const durationOptions=defs.find(d=>d.id==='days').options;
-assert.equal(durationOptions.find(([v])=>v==='14')[1],'2 weeks');
-assert.equal(durationOptions.find(([v])=>v==='21')[1],'3 weeks');
-assert.equal(durationOptions.find(([v])=>v==='20')[1],'20 days');
-assert(durationOptions.some(([v])=>v==='90'));
+assert(durationOptions.find(([v])=>v==='13-15')[1].includes('2 weeks'));
+assert(durationOptions.find(([v])=>v==='20-23')[1].includes('3 weeks'));
+assert.equal(durationOptions.find(([v])=>v==='10-12')[1],'10–12 days');
+assert(durationOptions.some(([v])=>v==='61-90'));
 assert.equal(match({days:'14'})[0].days,14);
 assert.equal(match({days:'21'})[0].days,21);
 
@@ -82,3 +82,52 @@ const metro=defs.find(d=>d.id==='metroSize');assert(metro.pending);assert.equal(
 const bands=Object.values(metro.ranges);assert.equal(bands[0].min,0);assert.equal(bands.at(-1).max,null);
 for(let i=1;i<bands.length;i++)assert.equal(bands[i-1].max,bands[i].min,'Contiguous, non-overlapping metro population bands');
 assert.equal(match({metroSize:'5m-plus'}).length,match({}).length,'No unsupported metro matching');
+
+assert(!defs.some(d=>d.id==='bookingFlex'));
+assert.equal(defs.find(d=>d.id==='exclude').primary,false);
+assert.deepEqual(engine.durationValues('10-12'),[10,11,12]);
+assert.deepEqual(engine.durationValues('61-90'),Array.from({length:30},(_,i)=>i+61));
+assert.deepEqual(engine.durationValues('91-100'),[]);
+assert.deepEqual(engine.durationValues('12-10'),[]);
+assert(match({days:'10-12'}).every(t=>t.days>=10&&t.days<=12));
+const coverage=durationOptions.filter(([v])=>v).flatMap(([v])=>engine.durationValues(v));
+assert.equal(new Set(coverage).size,90,'Ranges cover every allowed day');assert.equal(coverage.length,90,'Ranges do not overlap');
+assert.deepEqual(engine.partyRules('Solo'),{min:1,max:1,locked:true});
+assert.deepEqual(engine.partyRules('Couple'),{min:2,max:2,locked:true});
+for(const party of ['Family','Friends','Multigenerational']){assert.equal(engine.partyRules(party).min,2);assert.equal(match({party,people:'1'}).length,0);assert(match({party,people:'2'}).length);}
+assert.equal(match({party:'Solo',people:'2'}).length,0);
+assert.equal(match({party:'Couple',people:'1'}).length,0);
+const f={...base,malaria:'Prefer areas without malaria transmission',priorities:{malaria:'must'}};
+assert.deepEqual(Array.from(engine.unverifiedRequirements(f,defs)),['Malaria risk']);
+assert.equal(engine.match(f,data,routes,now,defs).length,0,'Unverified medical must-have cannot silently pass');
+assert(engine.match({...f,priorities:{malaria:'prefer'}},data,routes,now,defs).length>0);
+assert(match({budget:'total:1000',priorities:{budget:'prefer'}}).length>0,'Nice budget can be exceeded');
+assert(match({budget:'total:1000',priorities:{budget:'prefer'}}).every(t=>t.relaxed.includes('budget')));
+assert(match({flightHours:'1',priorities:{flightHours:'prefer'}}).length>0,'Nice flight-time can be exceeded');
+assert.equal(match({flightHours:'1',priorities:{flightHours:'must'}}).length,0);
+const bandsMap=engine.priceBands(data),otherBand=bandsMap.spain==='lower'?'higher':'lower';
+assert.equal(match({priceLevel:otherBand,priorities:{priceLevel:'must'}}).length,0);
+assert(match({priceLevel:otherBand,priorities:{priceLevel:'prefer'}}).every(t=>t.relaxed.includes('priceLevel')));
+const freshFilters={...base,destination:'',newPlaces:'yes',profileKnown:true,visitedCountryKeys:['spain'],priorities:{newPlaces:'prefer'}};
+const freshMatches=engine.match(freshFilters,data,routes,now);
+assert(freshMatches.some(t=>t.key==='spain'&&t.score===0));assert(freshMatches.some(t=>t.key!=='spain'&&t.score===1));
+assert(engine.match({...freshFilters,priorities:{newPlaces:'must'}},data,routes,now).every(t=>t.key!=='spain'));
+assert.equal(engine.match({...freshFilters,profileKnown:false,priorities:{newPlaces:'must'}},data,routes,now).length,0);
+assert(engine.match({...freshFilters,profileKnown:false},data,routes,now).length>0);
+assert.equal(Object.keys(conf.window.TRAVEL_BUILDER_COUNTRY_CODES).length,Object.keys(countries).length);
+assert(defs.filter(d=>d.group==='safety').some(d=>d.id==='advisory'));
+assert(defs.filter(d=>d.group==='health').some(d=>d.id==='healthcare'));
+const source=fs.readFileSync(path.join(dist,'travel-builder-filters.js'),'utf8');
+const historySource=source.slice(source.indexOf('async function recordedCountries()'),source.indexOf("form.addEventListener('submit'",source.indexOf('async function recordedCountries()'))).trim();
+(async()=>{
+ const requests=[];
+ const client={auth:{getSession:async()=>({data:{session:{user:{id:'test-user'}}}})},from:table=>{requests.push(table);return {select:columns=>{assert.equal(columns,'visited_countries');return {eq:(column,value)=>{assert.equal(column,'id');assert.equal(value,'test-user');return {maybeSingle:async()=>({data:{visited_countries:['FRA','JPN']}})};}};}};}};
+ const context=vm.createContext({window:{TRAVEL_EASY_CLIENT:client,TRAVEL_BUILDER_COUNTRY_CODES:conf.window.TRAVEL_BUILDER_COUNTRY_CODES}});
+ const history=await vm.runInContext('('+historySource+')()',context);assert(history.known);assert(history.keys.includes('france')&&history.keys.includes('japan'));assert.deepEqual(requests,['travel_builder_profiles']);
+ const anonymous=await vm.runInContext('('+historySource+')()',vm.createContext({window:{}}));assert.equal(anonymous.known,false);
+ console.log('PASS: duration range coverage, party rules, hard/soft ranking, unverified-requirement blocking, profile-scoped history reads, price bands, eight groups and removed booking flexibility.');
+})().catch(error=>{console.error(error);process.exitCode=1;});
+
+assert.equal(engine.match({...base,inclusivity:'Prioritize legal protections',priorities:{inclusivity:'must'}},data,routes,now,defs).length,0,'Unverified inclusivity must-have blocks');
+assert(defs.find(d=>d.id==='jetLag').pending);
+assert(defs.find(d=>d.id==='events').pending);

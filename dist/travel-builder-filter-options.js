@@ -1,5 +1,5 @@
 'use strict';
-// Designing-stage filter catalogue. pending fields capture preferences without claiming a verified match.
+// pending fields have no verified destination evidence; must-have pending fields block generation.
 window.TRAVEL_BUILDER_FILTERS = [
   {
     "id": "party",
@@ -13,8 +13,9 @@ window.TRAVEL_BUILDER_FILTERS = [
       "Family",
       "Multigenerational"
     ],
-    "pending": true,
-    "primary": true
+    "pending": false,
+    "primary": true,
+    "help": "Solo fixes the count at one, Couple at two. Friends, Family and Multigenerational start at two."
   },
   {
     "id": "people",
@@ -96,7 +97,9 @@ window.TRAVEL_BUILDER_FILTERS = [
       "Celebration"
     ],
     "pending": true,
-    "primary": false
+    "primary": false,
+    "priority": true,
+    "defaultPriority": "prefer"
   },
   {
     "id": "destination",
@@ -112,10 +115,29 @@ window.TRAVEL_BUILDER_FILTERS = [
     "primary": true
   },
   {
+    "id": "newPlaces",
+    "label": "Prefer somewhere new",
+    "group": "where",
+    "primary": true,
+    "priority": true,
+    "defaultPriority": "prefer",
+    "options": [
+      [
+        "",
+        "No preference"
+      ],
+      [
+        "yes",
+        "Prefer unvisited countries"
+      ]
+    ],
+    "help": "Uses countries recorded as visited in your signed-in Travel Builder profile. City and regional history will follow later."
+  },
+  {
     "id": "exclude",
     "label": "Destinations to exclude",
     "group": "where",
-    "primary": true,
+    "primary": false,
     "multiple": true,
     "options": [],
     "help": "Exclude continents, countries or planning regions. Exclusions override your destination selection. City exclusions will follow when travel hubs are available."
@@ -139,108 +161,48 @@ window.TRAVEL_BUILDER_FILTERS = [
         "Any length"
       ],
       [
-        "1",
-        "1 day"
+        "1-3",
+        "1–3 days"
       ],
       [
-        "2",
-        "2 days"
+        "4-6",
+        "4–6 days"
       ],
       [
-        "3",
-        "3 days"
+        "7-9",
+        "7–9 days"
       ],
       [
-        "4",
-        "4 days"
+        "10-12",
+        "10–12 days"
       ],
       [
-        "5",
-        "5 days"
+        "13-15",
+        "About 2 weeks · 13–15 days"
       ],
       [
-        "6",
-        "6 days"
+        "16-19",
+        "16–19 days"
       ],
       [
-        "7",
-        "7 days"
+        "20-23",
+        "About 3 weeks · 20–23 days"
       ],
       [
-        "8",
-        "8 days"
+        "24-30",
+        "24–30 days"
       ],
       [
-        "9",
-        "9 days"
+        "31-45",
+        "31–45 days"
       ],
       [
-        "10",
-        "10 days"
+        "46-60",
+        "46–60 days"
       ],
       [
-        "12",
-        "12 days"
-      ],
-      [
-        "14",
-        "2 weeks"
-      ],
-      [
-        "16",
-        "16 days"
-      ],
-      [
-        "18",
-        "18 days"
-      ],
-      [
-        "20",
-        "20 days"
-      ],
-      [
-        "21",
-        "3 weeks"
-      ],
-      [
-        "25",
-        "25 days"
-      ],
-      [
-        "30",
-        "30 days"
-      ],
-      [
-        "35",
-        "35 days"
-      ],
-      [
-        "40",
-        "40 days"
-      ],
-      [
-        "45",
-        "45 days"
-      ],
-      [
-        "50",
-        "50 days"
-      ],
-      [
-        "60",
-        "60 days"
-      ],
-      [
-        "70",
-        "70 days"
-      ],
-      [
-        "80",
-        "80 days"
-      ],
-      [
-        "90",
-        "90 days"
+        "61-90",
+        "61–90 days"
       ]
     ]
   },
@@ -311,7 +273,9 @@ window.TRAVEL_BUILDER_FILTERS = [
       ]
     ],
     "help": "Editorial regional sightseeing ratings, not a weather forecast.",
-    "primary": false
+    "primary": false,
+    "priority": true,
+    "defaultPriority": "must"
   },
   {
     "id": "temperature",
@@ -325,7 +289,9 @@ window.TRAVEL_BUILDER_FILTERS = [
       "Warm · 25–30°C",
       "Hot · over 30°C"
     ],
-    "primary": false
+    "primary": false,
+    "priority": true,
+    "defaultPriority": "prefer"
   },
   {
     "id": "rain",
@@ -338,7 +304,9 @@ window.TRAVEL_BUILDER_FILTERS = [
       "Some rain is fine",
       "Rain is fine"
     ],
-    "primary": false
+    "primary": false,
+    "priority": true,
+    "defaultPriority": "prefer"
   },
   {
     "id": "interests",
@@ -363,7 +331,9 @@ window.TRAVEL_BUILDER_FILTERS = [
       "Nightlife"
     ],
     "help": "Select several interests. These preferences are not matched yet.",
-    "primary": true
+    "primary": true,
+    "priority": true,
+    "defaultPriority": "prefer"
   },
   {
     "id": "style",
@@ -377,7 +347,9 @@ window.TRAVEL_BUILDER_FILTERS = [
       "Adventure",
       "Mixed"
     ],
-    "primary": true
+    "primary": true,
+    "priority": true,
+    "defaultPriority": "prefer"
   },
   {
     "id": "pace",
@@ -390,7 +362,9 @@ window.TRAVEL_BUILDER_FILTERS = [
       "A few stops",
       "Frequent movement"
     ],
-    "primary": false
+    "primary": false,
+    "priority": true,
+    "defaultPriority": "prefer"
   },
   {
     "id": "landscape",
@@ -406,7 +380,9 @@ window.TRAVEL_BUILDER_FILTERS = [
       "Islands",
       "Lakes"
     ],
-    "primary": false
+    "primary": false,
+    "priority": true,
+    "defaultPriority": "prefer"
   },
   {
     "id": "urban",
@@ -419,7 +395,9 @@ window.TRAVEL_BUILDER_FILTERS = [
       "Balanced",
       "Mostly countryside"
     ],
-    "primary": false
+    "primary": false,
+    "priority": true,
+    "defaultPriority": "prefer"
   },
   {
     "id": "metroSize",
@@ -483,7 +461,9 @@ window.TRAVEL_BUILDER_FILTERS = [
         "min": 5000000,
         "max": null
       }
-    }
+    },
+    "priority": true,
+    "defaultPriority": "prefer"
   },
   {
     "id": "crowds",
@@ -496,7 +476,9 @@ window.TRAVEL_BUILDER_FILTERS = [
       "Lively / popular"
     ],
     "pending": true,
-    "primary": false
+    "primary": false,
+    "priority": true,
+    "defaultPriority": "prefer"
   },
   {
     "id": "activity",
@@ -510,7 +492,9 @@ window.TRAVEL_BUILDER_FILTERS = [
       "Active",
       "Challenging"
     ],
-    "primary": false
+    "primary": false,
+    "priority": true,
+    "defaultPriority": "prefer"
   },
   {
     "id": "evening",
@@ -523,7 +507,9 @@ window.TRAVEL_BUILDER_FILTERS = [
       "Restaurants and cafés",
       "Nightlife"
     ],
-    "primary": false
+    "primary": false,
+    "priority": true,
+    "defaultPriority": "prefer"
   },
   {
     "id": "budget",
@@ -639,7 +625,9 @@ window.TRAVEL_BUILDER_FILTERS = [
         "$50,000 / person"
       ]
     ],
-    "primary": true
+    "primary": true,
+    "priority": true,
+    "defaultPriority": "must"
   },
   {
     "id": "comfort",
@@ -652,7 +640,9 @@ window.TRAVEL_BUILDER_FILTERS = [
       "Premium"
     ],
     "pending": true,
-    "primary": true
+    "primary": false,
+    "priority": true,
+    "defaultPriority": "prefer"
   },
   {
     "id": "budgetFlex",
@@ -672,7 +662,7 @@ window.TRAVEL_BUILDER_FILTERS = [
         "Up to 20% extra"
       ]
     ],
-    "primary": true
+    "primary": false
   },
   {
     "id": "departure",
@@ -715,7 +705,9 @@ window.TRAVEL_BUILDER_FILTERS = [
     "max": 60,
     "placeholder": "Any · approximate",
     "help": "Maximum estimated one-way journey time, not a live flight schedule.",
-    "primary": true
+    "primary": true,
+    "priority": true,
+    "defaultPriority": "must"
   },
   {
     "id": "stops",
@@ -728,7 +720,9 @@ window.TRAVEL_BUILDER_FILTERS = [
       "Up to 1 connection",
       "Up to 2 connections"
     ],
-    "primary": false
+    "primary": false,
+    "priority": true,
+    "defaultPriority": "prefer"
   },
   {
     "id": "transferLimit",
@@ -741,7 +735,9 @@ window.TRAVEL_BUILDER_FILTERS = [
       "Up to 2 hours"
     ],
     "pending": true,
-    "primary": false
+    "primary": false,
+    "priority": true,
+    "defaultPriority": "prefer"
   },
   {
     "id": "mobility",
@@ -754,12 +750,14 @@ window.TRAVEL_BUILDER_FILTERS = [
       "Rental car",
       "Either"
     ],
-    "primary": false
+    "primary": false,
+    "priority": true,
+    "defaultPriority": "prefer"
   },
   {
     "id": "access",
     "label": "Access needs",
-    "group": "needs",
+    "group": "health",
     "options": [
       "Step-free routes",
       "Limited walking",
@@ -770,7 +768,9 @@ window.TRAVEL_BUILDER_FILTERS = [
     "pending": true,
     "primary": true,
     "multiple": true,
-    "help": "Optional requirements. Accessibility is not verified: a suggested trip must not be treated as confirmed suitable."
+    "help": "Optional requirements. Accessibility is not verified: a suggested trip must not be treated as confirmed suitable.",
+    "priority": true,
+    "defaultPriority": "prefer"
   },
   {
     "id": "passport",
@@ -814,12 +814,14 @@ window.TRAVEL_BUILDER_FILTERS = [
       "Any visa process"
     ],
     "help": "Preference only. Existing Canadian entry summaries still need structured verification before matching.",
-    "primary": false
+    "primary": true,
+    "priority": true,
+    "defaultPriority": "prefer"
   },
   {
     "id": "advisory",
     "label": "Government advisory",
-    "group": "needs",
+    "group": "safety",
     "pending": true,
     "options": [
       "Any",
@@ -827,12 +829,14 @@ window.TRAVEL_BUILDER_FILTERS = [
       "Include increased caution"
     ],
     "help": "Preference only. Regional government advisory levels are not yet available for matching.",
-    "primary": false
+    "primary": true,
+    "priority": true,
+    "defaultPriority": "prefer"
   },
   {
     "id": "diet",
     "label": "Food requirements",
-    "group": "needs",
+    "group": "health",
     "options": [
       "Vegetarian",
       "Vegan",
@@ -844,7 +848,9 @@ window.TRAVEL_BUILDER_FILTERS = [
     "pending": true,
     "primary": false,
     "multiple": true,
-    "help": "Food and allergy suitability is unverified. These preferences do not confirm safe food availability."
+    "help": "Food and allergy suitability is unverified. These preferences do not confirm safe food availability.",
+    "priority": true,
+    "defaultPriority": "prefer"
   },
   {
     "id": "language",
@@ -857,7 +863,9 @@ window.TRAVEL_BUILDER_FILTERS = [
       "Easy independent navigation preferred"
     ],
     "pending": true,
-    "primary": false
+    "primary": false,
+    "priority": true,
+    "defaultPriority": "prefer"
   },
   {
     "id": "work",
@@ -871,19 +879,259 @@ window.TRAVEL_BUILDER_FILTERS = [
     ],
     "pending": true,
     "primary": false,
+    "multiple": true,
+    "priority": true,
+    "defaultPriority": "prefer"
+  },
+  {
+    "id": "priceLevel",
+    "label": "Destination price level",
+    "group": "budget",
+    "options": [
+      [
+        "",
+        "Any price level"
+      ],
+      [
+        "lower",
+        "Lower-cost destinations"
+      ],
+      [
+        "middle",
+        "Mid-range destinations"
+      ],
+      [
+        "higher",
+        "Higher-cost destinations"
+      ]
+    ],
+    "primary": true,
+    "pending": false,
+    "priority": true,
+    "defaultPriority": "prefer",
+    "help": "Relative daily-cost band within the sample catalogue, using country-level allowances and excluding flights. Independent of your total budget."
+  },
+  {
+    "id": "events",
+    "label": "Events & festivals",
+    "group": "experience",
+    "options": [
+      "Cherry blossom",
+      "Diwali",
+      "Carnival",
+      "Lunar New Year",
+      "Christmas markets",
+      "Music festivals",
+      "Food festivals",
+      "Sports events",
+      "Local cultural festivals"
+    ],
+    "primary": false,
+    "pending": true,
+    "priority": true,
+    "defaultPriority": "prefer",
+    "help": "Dates and locations vary by year. Event timing and availability are not verified yet.",
     "multiple": true
   },
   {
-    "id": "bookingFlex",
-    "label": "Booking flexibility",
-    "group": "needs",
+    "id": "jetLag",
+    "label": "Time-zone shift tolerance",
+    "group": "travel",
+    "options": [
+      [
+        "",
+        "Any time-zone shift"
+      ],
+      [
+        "2",
+        "Up to 2 hours"
+      ],
+      [
+        "4",
+        "Up to 4 hours"
+      ],
+      [
+        "6",
+        "Up to 6 hours"
+      ],
+      [
+        "9",
+        "Up to 9 hours"
+      ],
+      [
+        "12",
+        "Up to 12 hours"
+      ]
+    ],
+    "primary": false,
+    "pending": true,
+    "priority": true,
+    "defaultPriority": "prefer",
+    "help": "Difference between departure and destination local time on your travel dates. This is separate from flight duration; time-zone matching is not available yet."
+  },
+  {
+    "id": "soloSafety",
+    "label": "Solo-travel safety",
+    "group": "safety",
     "options": [
       "Any",
-      "Refundable preferred",
-      "Changes allowed preferred"
+      "Prioritize solo-travel safety information",
+      "Prefer well-supported solo travel"
     ],
-    "pending": true,
     "primary": false,
-    "help": "Preference for future bookable options. Cancellation terms are not checked by this destination designer."
+    "pending": true,
+    "priority": true,
+    "defaultPriority": "prefer",
+    "help": "Preference only. Reviewed destination evidence is not available yet."
+  },
+  {
+    "id": "inclusivity",
+    "label": "LGBTQ+ inclusivity",
+    "group": "safety",
+    "options": [
+      "Any",
+      "Prioritize legal protections",
+      "Prioritize welcoming social environment",
+      "Both protections and social environment"
+    ],
+    "primary": true,
+    "pending": true,
+    "priority": true,
+    "defaultPriority": "prefer",
+    "help": "Legal protections and social acceptance are separate, location-specific questions. Neither is verified by current suggestions."
+  },
+  {
+    "id": "dress",
+    "label": "Dress & cultural norms",
+    "group": "safety",
+    "options": [
+      "Any",
+      "Prefer relaxed dress norms",
+      "Comfortable with modest dress expectations",
+      "Show local customs before booking"
+    ],
+    "primary": false,
+    "pending": true,
+    "priority": true,
+    "defaultPriority": "prefer",
+    "help": "Preference only. Reviewed destination evidence is not available yet."
+  },
+  {
+    "id": "alcohol",
+    "label": "Alcohol norms",
+    "group": "safety",
+    "options": [
+      "Any",
+      "Prefer legal alcohol availability",
+      "Prefer alcohol-free settings",
+      "Show local restrictions"
+    ],
+    "primary": false,
+    "pending": true,
+    "priority": true,
+    "defaultPriority": "prefer",
+    "help": "Preference only. Reviewed destination evidence is not available yet."
+  },
+  {
+    "id": "drugLaws",
+    "label": "Drug & medication laws",
+    "group": "safety",
+    "options": [
+      "Any",
+      "Flag strict drug-possession penalties",
+      "Flag prescription-medication restrictions",
+      "Show local rules before booking"
+    ],
+    "primary": false,
+    "pending": true,
+    "priority": true,
+    "defaultPriority": "prefer",
+    "help": "Legal-information preference only. Current suggestions do not verify local laws or medication import rules."
+  },
+  {
+    "id": "vaccines",
+    "label": "Vaccination requirements",
+    "group": "health",
+    "options": [
+      "Any",
+      "Show entry vaccine requirements",
+      "Prefer fewer entry requirements"
+    ],
+    "primary": false,
+    "pending": true,
+    "priority": true,
+    "defaultPriority": "prefer",
+    "help": "Entry requirements and health recommendations are different. Both need current, sourced review; this tool provides no medical clearance."
+  },
+  {
+    "id": "malaria",
+    "label": "Malaria risk",
+    "group": "health",
+    "options": [
+      "Any",
+      "Prefer areas without malaria transmission",
+      "Show regional risk information"
+    ],
+    "primary": false,
+    "pending": true,
+    "priority": true,
+    "defaultPriority": "prefer",
+    "help": "Requires reviewed regional and seasonal health data. Country-level assumptions are not sufficient."
+  },
+  {
+    "id": "healthcare",
+    "label": "Healthcare access",
+    "group": "health",
+    "options": [
+      "Any",
+      "Reliable emergency care nearby",
+      "Advanced hospital access nearby"
+    ],
+    "primary": true,
+    "pending": true,
+    "priority": true,
+    "defaultPriority": "prefer",
+    "help": "Healthcare access must be assessed for the hub and journey time, not assumed from a national ranking."
+  },
+  {
+    "id": "water",
+    "label": "Drinking water",
+    "group": "health",
+    "options": [
+      "Any",
+      "Tap water drinkable preferred",
+      "Treated / bottled water acceptable"
+    ],
+    "primary": false,
+    "pending": true,
+    "priority": true,
+    "defaultPriority": "prefer",
+    "help": "Local, current evidence is required. No drinking-water safety claim is made by the current designer."
   }
 ];
+window.TRAVEL_BUILDER_COUNTRY_CODES = {
+  "france": "FRA",
+  "united-kingdom": "GBR",
+  "turkey": "TUR",
+  "peru": "PER",
+  "brazil": "BRA",
+  "south-africa": "ZAF",
+  "south-korea": "KOR",
+  "australia": "AUS",
+  "spain": "ESP",
+  "greece": "GRC",
+  "costa-rica": "CRI",
+  "indonesia": "IDN",
+  "united-states": "USA",
+  "vietnam": "VNM",
+  "colombia": "COL",
+  "morocco": "MAR",
+  "egypt": "EGY",
+  "new-zealand": "NZL",
+  "argentina": "ARG",
+  "italy": "ITA",
+  "mexico": "MEX",
+  "japan": "JPN",
+  "portugal": "PRT",
+  "thailand": "THA"
+};

@@ -71,3 +71,6 @@ body .easy-search .budget-toggle,body .budget-suggestions-toggle {background-ima
 
 .builder-home .design-group .builder-interest-options{border-color:var(--category-border);}
 .builder-home .design-group .builder-interest-options label:hover{background:var(--category-fill);}
+
+.design-group-safety{--category-fill:#fff0f4;--category-border:#efd0dc;--category-label:#93516b;}
+.design-group-health{--category-fill:#eef9f6;--category-border:#c8e5dc;--category-label:#397965;}
