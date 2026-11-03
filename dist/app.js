@@ -44,7 +44,7 @@ const checklistCountry = new URLSearchParams(window.location.search).get('tripCo
 let activeCountry = countries[checklistCountry] ? checklistCountry : null;
 let done = new Set();
 try {
-  const saved = JSON.parse(localStorage.getItem('canadian-atlas-checklist') || '[]');
+  const saved = JSON.parse(localStorage.getItem('travel-builder-checklist') || '[]');
   if (Array.isArray(saved)) done = new Set(saved.filter(i => Number.isInteger(i) && i >= 0 && i < tasks.length));
 } catch { if(document.querySelector('#storage-note'))document.querySelector('#storage-note').textContent = 'Progress is available for this visit. Download a copy to keep it.'; }
 
@@ -128,7 +128,7 @@ function renderChecklist() {
 }
 function updateProgress() { document.querySelector('#progress').value = done.size;document.querySelector('#progress-text').textContent = `${done.size} / ${tasks.length} READY`; }
 function saveChecklist() {
-  try { localStorage.setItem('canadian-atlas-checklist',JSON.stringify([...done])); }
+  try { localStorage.setItem('travel-builder-checklist',JSON.stringify([...done])); }
   catch { if(document.querySelector('#storage-note'))document.querySelector('#storage-note').textContent = 'Progress is available for this visit. Download a copy to keep it.'; }
   updateProgress();
 }

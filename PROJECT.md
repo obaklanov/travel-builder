@@ -1,12 +1,17 @@
-# Travel Easy — current project map
+# Travel Builder — current project map
+
+> Current direction: build Travel Builder from this copy. Original Week 6 learning notes are historical context.
+> Run ONLY supabase-travel-builder-setup.sql in the Travel Atlas project. Older SQL files are reference material.
+> Database setup, authentication redirects, GitHub push, Pages deployment, and live verification are pending.
+> Application tables and browser storage are separate; Auth users and settings are shared with Travel Atlas.
 
 Updated: 2 November 2026. Start a new development or learning chat with this file and WEEK-6-HANDOFF.md. Historical notes may describe superseded versions.
 
 ## Active project
 
-- Local working copy: `C:/Users/OBakl/OneDrive/Desktop/project 2026/sites/travel-easy`
-- Repository: https://github.com/obaklanov/travel-easy
-- Public site: https://obaklanov.github.io/travel-easy/
+- Local working copy: `C:/Users/OBakl/OneDrive/Desktop/project 2026/sites/travel-builder`
+- Repository: https://github.com/obaklanov/travel-builder
+- Public site: https://obaklanov.github.io/travel-builder/
 - Branch: `main`. Publishing workflow: `.github/workflows/pages.yml` uploads `dist/`.
 - Original Travel Atlas is a separate project. Do not edit it when working on Travel Easy.
 
@@ -14,7 +19,7 @@ Updated: 2 November 2026. Start a new development or learning chat with this fil
 
 The public frontend uses plain HTML, CSS and JavaScript. There is no frontend framework or mandatory compilation step. In this project, `dist/` contains authored code as well as generated data; it is not a disposable build folder.
 
-Supabase project: `ytevjyzzqnapbawmenzz`. Browser configuration is `dist/profile-config.js`; its publishable key is public by design. Secrets and database passwords do not belong in published files. Tables `traveller_profiles` and `travel_easy_trips` use authenticated account access and row-level security. Session key: `travel-easy-auth`.
+Supabase project: `hmecyiinaotnjaxgzkow` (dashboard name: Travel Atlas; shared authentication). Browser configuration is `dist/profile-config.js`; its publishable key is public by design. Secrets and database passwords do not belong in published files. Tables `travel_builder_profiles` and `travel_builder_trips` use authenticated account access and row-level security. Session key: `travel-builder-auth`.
 
 ## Product state
 

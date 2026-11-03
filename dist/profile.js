@@ -285,7 +285,7 @@
     message('Opening your atlas…');
     await geographyReady;
     if (currentRevision !== revision) return;
-    const { data, error } = await client.from('traveller_profiles').select('id,nickname,visited_countries,updated_at').eq('id', user.id).maybeSingle();
+    const { data, error } = await client.from('travel_builder_profiles').select('id,nickname,visited_countries,updated_at').eq('id', user.id).maybeSingle();
     if (currentRevision !== revision) return;
     if (error) {
       message(friendlyError(error), 'error');
@@ -429,7 +429,7 @@
     $('#save-state').textContent = 'Saving…';
     (async () => {
       try {
-        const { data, error } = await client.from('traveller_profiles').upsert({ id, nickname, visited_countries: visited }, { onConflict: 'id' }).select('id,nickname,visited_countries,updated_at').single();
+        const { data, error } = await client.from('travel_builder_profiles').upsert({ id, nickname, visited_countries: visited }, { onConflict: 'id' }).select('id,nickname,visited_countries,updated_at').single();
         if (error) throw error;
         if (user?.id !== id) return;
         const newlyVisited = visited.filter(code => allowedCodes.has(code) && !previouslySaved.has(code));
@@ -487,7 +487,7 @@
     try {
       if (!window.supabase?.createClient || !config?.url || !config?.publishableKey) throw new Error('Account connection unavailable');
       client = window.supabase.createClient(config.url, config.publishableKey, {
-        auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: true, storageKey: 'travel-easy-auth' }
+        auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: true, storageKey: 'travel-builder-auth' }
       });
       window.TRAVEL_EASY_CLIENT = client;
       window.TRAVEL_PROFILE_EDITOR?.init(client,()=>({user,profile}),data=>{

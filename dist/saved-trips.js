@@ -1,6 +1,6 @@
 'use strict';
 (() => {
-  const draftKey = 'travel-easy-pending-trip';
+  const draftKey = 'travel-builder-pending-trip';
   const names = {"france":"France","united-kingdom":"United Kingdom","turkey":"Türkiye","peru":"Peru","brazil":"Brazil","south-africa":"South Africa","south-korea":"South Korea","australia":"Australia","spain":"Spain","greece":"Greece","costa-rica":"Costa Rica","indonesia":"Indonesia","united-states":"United States","vietnam":"Vietnam","colombia":"Colombia","morocco":"Morocco",mexico:'Mexico',thailand:'Thailand',portugal:'Portugal',japan:'Japan',italy:'Italy',argentina:'Argentina',egypt:'Egypt','new-zealand':'New Zealand'};
   const uuid = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
   const validDate = value => /^\d{4}-\d{2}-\d{2}$/.test(value||'') && Number.isFinite(Date.parse(value+'T12:00:00Z')) && new Date(value+'T12:00:00Z').toISOString().slice(0,10) === value;
@@ -21,7 +21,7 @@
         const save=async session=>{
           button.dataset.saving='true';button.disabled=true;status.textContent='Adding your trip…';
           try{
-            const {error}=await client.from('travel_easy_trips').upsert({...trip,user_id:session.user.id},{onConflict:'id'}).select('id').single();
+            const {error}=await client.from('travel_builder_trips').upsert({...trip,user_id:session.user.id},{onConflict:'id'}).select('id').single();
             if(error)throw error;
             const draft=readDraft();if(draft?.id===trip.id)localStorage.removeItem(draftKey);
             // A new suggestion may have been generated while the request was pending.
@@ -102,7 +102,7 @@
         try{
           const {data:auth,error:authError}=await client.auth.getSession();
           if(authError||auth.session?.user.id!==ownerId)throw Error('Account changed');
-          const {data,error}=await client.from('travel_easy_trips').delete().eq('id',trip.id).eq('user_id',ownerId).select('id');
+          const {data,error}=await client.from('travel_builder_trips').delete().eq('id',trip.id).eq('user_id',ownerId).select('id');
           if(error)throw error;if(!data?.some(row=>row.id===trip.id))throw Error('Trip not removed');
           if(revision!==serial)return;
           const pending=readDraft();if(pending?.id===trip.id)localStorage.removeItem(draftKey);
@@ -122,13 +122,13 @@
     try {
       if(trip){
         setNotice('Adding your '+names[trip.country]+' trip…');
-        if(!saving)saving=client.from('travel_easy_trips').upsert({...trip,user_id:session.user.id},{onConflict:'id'}).select('id').single().finally(()=>{saving=null;});
+        if(!saving)saving=client.from('travel_builder_trips').upsert({...trip,user_id:session.user.id},{onConflict:'id'}).select('id').single().finally(()=>{saving=null;});
         const {error}=await saving;if(error)throw error;
         if(version!==serial)return;
         const latest=readDraft();if(latest?.id===trip.id)localStorage.removeItem(draftKey);
         setNotice('Your '+names[trip.country]+' trip has been added to your profile.');
       }
-      const {data,error}=await client.from('travel_easy_trips').select('id,country,origin,origin_label,departure_date,return_date,days,estimated_total,budget,currency,group_size').eq('user_id',session.user.id).order('departure_date');
+      const {data,error}=await client.from('travel_builder_trips').select('id,country,origin,origin_label,departure_date,return_date,days,estimated_total,budget,currency,group_size').eq('user_id',session.user.id).order('departure_date');
       if(version!==serial)return;
       if(error)throw error;render(data||[],session.user.id);
     }catch(error){

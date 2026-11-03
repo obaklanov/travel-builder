@@ -2,7 +2,7 @@
 (() => {
   const config=window.TRAVEL_ATLAS_ACCOUNT;
   if(!window.supabase||!config)return;
-  const client=window.TRAVEL_EASY_CLIENT=window.supabase.createClient(config.url,config.publishableKey,{auth:{persistSession:true,autoRefreshToken:true,detectSessionInUrl:true,storageKey:'travel-easy-auth'}});
+  const client=window.TRAVEL_EASY_CLIENT=window.supabase.createClient(config.url,config.publishableKey,{auth:{persistSession:true,autoRefreshToken:true,detectSessionInUrl:true,storageKey:'travel-builder-auth'}});
   const $=selector=>document.querySelector(selector),dialog=$('#trip-account-dialog');
   let saveTrip=null,mode='signin',busy=false;
   function choose(next){mode=next;$('#trip-account-name-row').hidden=next!=='signup';$('#trip-account-password').autocomplete=next==='signup'?'new-password':'current-password';$('#trip-account-submit').textContent=next==='signup'?'Create free account':'Log in and save trip';for(const key of ['signin','signup'])$('#trip-account-'+key).setAttribute('aria-selected',String(key===next));$('#trip-account-message').textContent='';}

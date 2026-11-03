@@ -24,7 +24,7 @@
       busy=true;$('#save-profile-name').disabled=true;$('#edit-profile-name').disabled=true;tell('#profile-name-feedback','Saving…');
       try{
         const payload={id:user.id,nickname:name,visited_countries:profile?.visited_countries||[]};
-        const query=profile ? client.from('traveller_profiles').update({nickname:name}).eq('id',user.id) : client.from('traveller_profiles').upsert(payload,{onConflict:'id'});
+        const query=profile ? client.from('travel_builder_profiles').update({nickname:name}).eq('id',user.id) : client.from('travel_builder_profiles').upsert(payload,{onConflict:'id'});
         const {data,error}=await query.select('id,nickname,visited_countries,updated_at').single();
         if(error)throw error;if(getState().user?.id!==user.id)return;
         onNameSaved(data);tell('#profile-name-feedback','This name is available. Saved.','success');
