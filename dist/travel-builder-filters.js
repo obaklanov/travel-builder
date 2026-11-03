@@ -62,7 +62,7 @@
   updateDateBounds();
   if(field('latest').value&&(field('latest').value<field('latest').min||field('latest').value>limits.returnMax))field('latest').value='';
   if(field('month').value&&(field('month').value<field('month').min||field('month').value>field('month').max))field('month').value='';
-  function syncParty(){const rules=engine.partyRules(field('party').value),people=field('people');for(const option of people.options)option.disabled=Number(option.value)<rules.min||Number(option.value)>rules.max;people.disabled=rules.locked;if(rules.locked||Number(people.value)<rules.min||Number(people.value)>rules.max)people.value=String(rules.min);people.title=rules.locked?'Traveller count is fixed by your travel party.':'Total adults and children; '+rules.min+'–10 travellers.';}
+  function syncParty(){const rules=engine.partyRules(field('party').value),people=field('people');for(const option of people.options){const excluded=Number(option.value)<rules.min||Number(option.value)>rules.max;option.disabled=excluded;option.hidden=excluded;}people.disabled=rules.locked;if(rules.locked||Number(people.value)<rules.min||Number(people.value)>rules.max)people.value=String(rules.min);people.title=rules.locked?'Traveller count is fixed by your travel party.':'Total adults and children; '+rules.min+'–10 travellers.';}
   syncParty();
   form.addEventListener('click',event=>{const button=event.target.closest('[data-priority-for]');if(!button)return;const must=button.getAttribute('aria-checked')!=='true';button.setAttribute('aria-checked',String(must));button.textContent=must?'Must have':'Nice to have';form.dispatchEvent(new Event('change',{bubbles:true}));});
   interestLabel();
