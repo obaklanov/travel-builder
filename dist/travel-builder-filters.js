@@ -141,21 +141,6 @@
     document.querySelector('#trip-dates').textContent=date.format(new Date(trip.start+'T12:00:00'))+' – '+date.format(new Date(trip.end+'T12:00:00'))+' · '+trip.days+' days · '+trip.people+(trip.people===1?' traveller':' travellers');
     const summary=document.querySelector('#trip-budget-summary');summary.hidden=false;
     summary.textContent='Estimated group total: '+money(trip.total)+' CAD · '+money(trip.total/trip.people)+' per person'+(trip.budget!==null?' · Budget: '+money(trip.budget)+(trip.total>trip.budget?(trip.total<=trip.ceiling?' (within your '+Number(values.budgetFlex)*100+'% flexibility)':' (nice-to-have budget exceeded)'):''):'');
-    const details=document.querySelector('#builder-trip-details');details.replaceChildren();
-    const line=text=>{const p=document.createElement('p');p.textContent=text;details.append(p);};
-    line('Season rating: '+({B:'Best',A:'Average',W:'Worst'}[trip.rating]||'Unknown')+' for the selected region and departure month.');
-    line('This is a Designing estimate. Continue to Planning to review individual budget items and make adjustments.');
-    if(values.childAges.length)line('Children are included in the total traveller count. This preliminary estimate uses the same per-person allowance for adults and children; age-specific suitability and discounts are not verified.');
-    line('Illustrative planning estimates, not live availability. Regional costs use country-level allowances. Insurance, visas and major paid activities are not included.');
-    if(trip.people>4)line('Accommodation is a shared group allowance. Room count and capacity are not verified; review lodging in Planning for this group.');
-    if(values.exclude.length)line('Excluded destinations: '+values.exclude.map(v=>exclusionLabels.get(v)||v).join('; ')+'.');
-    if(values.priceLevel)line('Destination price level: '+({lower:'Lower-cost',middle:'Mid-range',higher:'Higher-cost'}[trip.priceBand])+'. Relative to our sample catalogue using daily country allowances, excluding flights; not live hub prices.');
-    if(trip.relaxed.length)line('Nice-to-have preferences not met: '+trip.relaxed.map(id=>definitions.find(d=>d.id===id)?.label||id).join(', ')+'.');
-    if(values.newPlaces==='yes')line(history.known?(trip.recordedVisited?'This country is already marked visited in your profile; other preferences affected the ranking.':'This country is not marked visited in your profile. Regional and city history is not yet checked.'):(history.reason+' This suggestion has not been checked against your travel history.'));
-    const pending=pendingPreferences(values);
-    if(pending.length){line('Preferences not checked: '+pending.map(p=>p.label+' — '+p.value).join('; ')+'.');line('These preferences are kept in this browser. Saved trips currently keep the country, dates, group size and budget.');}
-    line('Entry eligibility and government advisories have not been checked. Review the official guidance before booking.');
-    const source=document.createElement('a');source.textContent='Official entry requirements and travel advice ↗';source.href='https://travel.gc.ca/destinations/'+(key==='turkey'?'turkiye':key);source.target='_blank';source.rel='noopener noreferrer';details.append(source);
     const add=document.querySelector('#quick-add-trip');add.textContent='Add Now';if(add.dataset.saving!=='true')add.disabled=false;document.querySelector('#quick-add-status').textContent='';document.querySelector('#search-message').textContent='';idea.hidden=false;
     try{localStorage.setItem(storageKey,JSON.stringify(values));localStorage.setItem('travel-builder-last-trip-preferences',JSON.stringify({tripId,filters:values,region:trip.region,matchedAt:new Date().toISOString()}));}catch{}
     for(const def of definitions.filter(d=>d.multiple))field(def.id).open=false;
