@@ -3,13 +3,15 @@
   const iso = date => `${date.getFullYear()}-${String(date.getMonth()+1).padStart(2,'0')}-${String(date.getDate()).padStart(2,'0')}`;
   const regionExclusionId=(country,name)=>'region:'+country+':'+name.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
   function candidateMonths(filters,now) {
+    const currentMonth=now.getFullYear()*12+now.getMonth(),lastMonth=currentMonth+36;
     const base=filters.month?new Date(filters.month+'-01T12:00:00'):(filters.earliest?new Date(filters.earliest.slice(0,7)+'-01T12:00:00'):new Date(now.getFullYear(),now.getMonth(),1,12));
     const upper=filters.latest?new Date(filters.latest+'T12:00:00'):null;
     const range=upper?Math.max(0,(upper.getFullYear()-base.getFullYear())*12+upper.getMonth()-base.getMonth()):2;
     const spread=filters.month?Number(filters.dateFlex||0):Math.min(36,range), start=filters.month?-spread:0, results=[];
     for(let offset=start;offset<=spread;offset++){
       const date=new Date(base.getFullYear(),base.getMonth()+offset,1,12);
-      if(date.getFullYear()*12+date.getMonth()>=now.getFullYear()*12+now.getMonth())results.push(date);
+      const serial=date.getFullYear()*12+date.getMonth();
+      if(serial>=currentMonth&&serial<=lastMonth)results.push(date);
     }
     return results;
   }

@@ -86,3 +86,5 @@ Designing, Planning and saved-trip validation support 1–10 total travellers. E
 Where & When now includes Destinations to exclude, with search and multi-select for continents, countries, and existing planning regions. Exclusions always override inclusion and survive destination changes and reloads. City choices are intentionally unavailable until travel hubs exist. Values are typed: continent:Asia, country:south-korea, region:<country>:<region-name-slug>. Region name slugs are provisional catalogue IDs; database migration must preserve aliases when replacing or renaming them. Supabase does not yet store these preference records, which remain in browser storage.
 
 User confirmed on 3 November 2026 that supabase-travel-builder-group-size-10.sql ran successfully. The database now supports saving groups up to ten (user-confirmed; not independently queried).
+
+Travel month is limited dynamically to the current month through the same month three years ahead, inclusive. Browser validation and the matching engine enforce this rolling window, including month flexibility. Out-of-range saved month selections are cleared on load.

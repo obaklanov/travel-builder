@@ -12,7 +12,10 @@
   const countriesGroup=document.createElement('optgroup');countriesGroup.label='Countries';
   for(const [key,country] of Object.entries(data).sort((a,b)=>a[1].name.localeCompare(b[1].name)))countriesGroup.append(option(key,country.name));
   destination.append(countriesGroup);
-  const today=new Date();field('month').min=`${today.getFullYear()}-${String(today.getMonth()+1).padStart(2,'0')}`;
+  const today=new Date(),lastMonth=new Date(today.getFullYear()+3,today.getMonth(),1);
+  const monthValue=date=>`${date.getFullYear()}-${String(date.getMonth()+1).padStart(2,'0')}`;
+  field('month').min=monthValue(today);field('month').max=monthValue(lastMonth);
+  field('month').title='Choose a month from '+field('month').min+' through '+field('month').max+'.';
   for(const id of ['earliest','latest'])field(id).min=new Date().toLocaleDateString('en-CA');
   function dependentOptions(){
     const country=data[destination.value],region=field('region');
@@ -51,6 +54,7 @@
       for(const id of ['region'])if([...field(id).options].some(o=>o.value===saved[id]))field(id).value=saved[id];
     }else dependentOptions();
   }catch{dependentOptions();}
+  if(field('month').value&&(field('month').value<field('month').min||field('month').value>field('month').max))field('month').value='';
   interestLabel();
   function pendingPreferences(values){return definitions.filter(def=>def.pending&&(Array.isArray(values[def.id])?values[def.id].length:values[def.id]&&values[def.id]!=='Any')).map(def=>({label:def.label,value:Array.isArray(values[def.id])?values[def.id].join(', '):field(def.id).selectedOptions?.[0]?.textContent||values[def.id]}));}
   function markPending(){const pending=pendingPreferences(collect());const note=document.querySelector('#builder-preference-status');note.hidden=!pending.length;note.textContent=pending.length?'Some selected preferences are not checked against destinations yet: '+pending.map(p=>p.label).join(', ')+'.':'';}

@@ -55,3 +55,8 @@ const asia=engine.match({...base,destination:'continent:Asia',exclude:['country:
 assert(asia.length>0);assert(asia.every(t=>t.key!=='south-korea'),'Asia except South Korea');
 assert.equal(engine.match({...base,destination:'continent:Asia',exclude:['country:south-korea','country:japan','country:thailand']},asiaData,routes,now).length,0);
 assert.notEqual(engine.regionExclusionId('spain','Center'),engine.regionExclusionId('japan','Center'),'Region IDs are scoped to country');
+
+assert.equal(engine.candidateMonths({...base,month:'2029-11'},now).length,1,'Three-year boundary included');
+assert.equal(engine.candidateMonths({...base,month:'2029-12'},now).length,0,'Month beyond three years rejected');
+assert.equal(engine.candidateMonths({...base,month:'2029-11',dateFlex:'2'},now).length,3,'Flexibility cannot extend past limit');
+assert.equal(match({month:'2029-12'}).length,0,'No trips beyond the month horizon');
