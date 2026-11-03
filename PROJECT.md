@@ -64,3 +64,7 @@ Active matching uses the 24 existing destinations, country/continent, region/mon
 Fields marked pending are selectable preferences only: vibe, interests, pace, climate, entry process, nationality, stops, advisories and mobility. Selected pending preferences are explicitly listed as not checked before creation and in the preview. No visa or advisory eligibility is inferred from prose. Preferences persist locally; only supported trip fields and group_size are saved to Supabase. Destination links carry region, dates, group and allowance values into the planner. No database migration is needed for this release.
 
 Next session: build a reviewed country → region → hub database, source/review metadata, explicit unknowns, structured entry/advisory records and reliable route coverage. Unknown regional airport metadata is not invented: regions lacking a priced arrival gateway cannot match yet.
+
+## Shared appearance
+
+travel-builder-clean-theme.css loads last on all six HTML pages. It sets white page and panel backgrounds and replaces the old brass dropdown icon with images/select-chevron.svg. Home filter colours are sky blue (where/when), light gold (budget/group), sage (experience/vibe), and lavender (travel/entry). Map geography, photos, and scratch artwork retain their visual content.
