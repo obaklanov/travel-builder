@@ -874,7 +874,6 @@ window.TRAVEL_BUILDER_FILTERS = [
     "group": "needs",
     "options": [
       "Reliable internet",
-      "Dedicated workspace",
       "Work-friendly cafés",
       "Time-zone compatibility"
     ],
