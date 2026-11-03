@@ -149,7 +149,7 @@ function renderTravelDetail(key,kind){
  state.nights=Math.max(0,state.days-1);state.nightsManual=false;
  const flight=getFlightRoutes(key,flightRequest(key,state.days))[0];
  if(!state.flightManual)state.rates[0]=roundBudgetRate(flight.price,0);
- state.rates=state.rates.map(roundBudgetRate);
+ if(!state.builderAllowances)state.rates=state.rates.map(roundBudgetRate);
  panel.innerHTML=`<h3>MONEY. How much do you need?</h3><p class="estimate-note">Sample CAD allowances, to be confirmed. Accommodation is for the whole group; other amounts start per person. Airfare matches FLIGHTS for your departure city; live fares are not connected. Edit amounts to suit your trip. Excludes insurance, visas and major paid activities.</p><div class="departure-controls budget-trip-controls"><div class="budget-route-info"><p class="budget-route-summary">${departureCities.find(([code])=>code===guideDeparture)?.[1]||guideDeparture} (${guideDeparture}) → ${flight.city} (${flight.code})</p></div>${departureDateField(key)}<label>Days <span class="trip-days-control"><input id="trip-days" type="number" min="1" max="90" value="${state.days}"><button type="button" id="trip-days-toggle" aria-label="Suggested trip lengths" aria-expanded="false" aria-controls="trip-days-options"></button><span id="trip-days-options" class="trip-days-options" hidden></span></span></label><label>Nights <input id="trip-nights" type="number" value="${state.nights}" readonly aria-readonly="true"><small>Days − 1</small></label></div><label class="budget-group-label">How many people are travelling in your group? <select id="budget-group-size">${[1,2,3,4].map(n=>`<option value="${n}" ${n===state.people?'selected':''}>${n}</option>`).join('')}</select></label><table class="group-budget-table"><thead><tr><th>Category</th><th>Basis</th><th>Budget per person</th><th># of people</th><th>Total budget</th></tr></thead><tbody>${[[`Flights (round trip, ${guideDeparture} ↔ ${flight.code})`,'one-time'],['Accommodation','per night'],['Food','per day'],['Internal transport','per day'],['Miscellaneous','per day']].map(([n,b],i)=>{const control=budgetAllowanceControl(n,i,state.rates[i]);return `<tr><td>${n}</td><td>${b}</td><td>${i===1?'':control}</td><td class="budget-people">${i===1?'—':state.people}</td><td>${i===1?control:'<span class="budget-line-total"></span>'}</td></tr>`;}).join('')}</tbody></table><output id="budget-total" aria-live="polite"></output>`;
  const daysInput=panel.querySelector('#trip-days'),nightsInput=panel.querySelector('#trip-nights'),rateInputs=[...panel.querySelectorAll('.budget-rate')];
  const update=()=>{
@@ -175,7 +175,20 @@ function renderTravelDetail(key,kind){
 const verifiedFlightOffers = [];
 const flightSearchPolicy = Object.freeze({monthsAhead:3,maxStopsPerDirection:2,maxLayoverMinutes:240,maxQuoteAgeHours:24,currency:'CAD',cabin:'economy'});
 const budgetStates={};
-function getBudgetState(key){return budgetStates[key]??=( {days:initialTripDays(key),nights:initialTripDays(key)-1,nightsManual:false,flightManual:false,people:Math.max(1,Math.min(4,Math.floor(Number(new URLSearchParams(location.search).get('people')))||1)),rates:[travelData[key].base,...travelData[key].costs]} );}
+function getBudgetState(key){
+ if(budgetStates[key])return budgetStates[key];
+ const params=new URLSearchParams(location.search),days=initialTripDays(key);
+ const state={days,nights:days-1,nightsManual:false,flightManual:false,people:Math.max(1,Math.min(4,Math.floor(Number(params.get('people')))||1)),rates:[travelData[key].base,...travelData[key].costs]};
+ if(params.get('country')===key&&params.has('builderRegion')){
+  const index=Number(params.get('builderRegion')),date=params.get('start');
+  if(Number.isInteger(index)&&travelData[key].regions[index]&&validTripDate(date)){
+   state.regionChoice={index,region:travelData[key].regions[index][0],month:date.slice(0,7)};state.departureDate=date;
+   state.rates=state.rates.map((fallback,i)=>{const raw=params.get('builderRate'+i),value=Number(raw);return raw!==null&&Number.isFinite(value)&&value>=0&&value<=100000?value:fallback;});
+   state.flightManual=true;state.builderAllowances=true;
+  }
+ }
+ return budgetStates[key]=state;
+}
 function flightRequest(key,days=30,now=new Date()){
  const start=new Date(now.getFullYear(),now.getMonth()+flightSearchPolicy.monthsAhead,1);
  const lastDay=new Date(start.getFullYear(),start.getMonth()+1,0).getDate();

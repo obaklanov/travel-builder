@@ -54,6 +54,13 @@ Government entry summaries are reviewed snapshots, with source hashes and checke
 
 Understand the existing website, trace its data and actions, then assess cleanup in small reversible changes. Do not begin a rewrite or delete dormant features just because they are not visible. See WEEK-6-HANDOFF.md for the learning plan and evidence-based cleanup procedure.
 
-## Travel Builder homepage layout
 
-The homepage now uses dist/travel-builder.css after the shared Travel Easy styles. It has one central Create my trip submit button, 12 inner filter placeholders (three per side), and 20 outer placeholders (five per side). The disabled placeholders do not affect trip generation yet. Existing duration/budget/destination controls are retained in a hidden container for trip-start.js compatibility until real filters are selected. The existing generator, save flow, and country links remain connected. At 760px and below, filter placeholders become a grid.
+## Travel Builder filters
+
+32 filters are defined in dist/travel-builder-filter-options.js, grouped as Where & When, Budget & Group, Experience & Vibe, and Travel & Entry. Each side has three inner controls and five outer controls. Matching is in travel-builder-engine.js and UI/persistence in travel-builder-filters.js. Home no longer loads trip-start.js; it remains reference code.
+
+Active matching uses the 24 existing destinations, country/continent, region/month ratings, dates, duration, group budget, allowance overrides, five departure hubs, route time/price estimates and available arrival gateways. Month flexibility widens the month window; budget flexibility widens the group ceiling. Seasonal filtering checks every month touched by the suggested trip. Costs remain illustrative country-level allowances, including when a region is selected.
+
+Fields marked pending are selectable preferences only: vibe, interests, pace, climate, entry process, nationality, stops, advisories and mobility. Selected pending preferences are explicitly listed as not checked before creation and in the preview. No visa or advisory eligibility is inferred from prose. Preferences persist locally; only supported trip fields and group_size are saved to Supabase. Destination links carry region, dates, group and allowance values into the planner. No database migration is needed for this release.
+
+Next session: build a reviewed country → region → hub database, source/review metadata, explicit unknowns, structured entry/advisory records and reliable route coverage. Unknown regional airport metadata is not invented: regions lacking a priced arrival gateway cannot match yet.
