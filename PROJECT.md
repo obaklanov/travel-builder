@@ -92,3 +92,5 @@ Travel month is limited dynamically to the current month through the same month 
 Trip length, days is a dropdown using stepped values 1–10, 12, 14, 16, 18, 20, 21, 25–50 in steps of five, then 60–90 in steps of ten. Values 14 and 21 are labelled 2 weeks and 3 weeks, including in the Planning suggestions; stored values and calculations remain in days. Previously saved valid custom day counts are retained on load.
 
 Earliest departure uses a rolling day-specific limit from today through three years ahead (leap-day clamped). Latest return ends 90 days beyond that maximum departure date; its minimum follows the selected earliest departure or today. The browser picker and matching engine both enforce these bounds.
+
+Experience & atmosphere includes Metro area size: <100k, 100k–500k, 500k–1m, 1m–3m, 3m–5m, and >=5m. Ranges are lower-inclusive and upper-exclusive. This is a locally retained preference, not an active match until hub-level metropolitan population is sourced with boundary definition, reference year and review evidence. Do not substitute country population or city-proper counts. Catalogue now contains 40 controls.

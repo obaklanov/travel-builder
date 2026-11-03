@@ -422,6 +422,70 @@ window.TRAVEL_BUILDER_FILTERS = [
     "primary": false
   },
   {
+    "id": "metroSize",
+    "label": "Metro area size",
+    "group": "experience",
+    "pending": true,
+    "primary": false,
+    "help": "Population of the wider metropolitan area, not the country or city proper. Ranges include the lower bound and exclude the upper bound. Matching will use future travel-hub data.",
+    "options": [
+      [
+        "",
+        "Any size"
+      ],
+      [
+        "under-100k",
+        "Under 100,000"
+      ],
+      [
+        "100k-500k",
+        "100,000–500,000"
+      ],
+      [
+        "500k-1m",
+        "500,000–1 million"
+      ],
+      [
+        "1m-3m",
+        "1–3 million"
+      ],
+      [
+        "3m-5m",
+        "3–5 million"
+      ],
+      [
+        "5m-plus",
+        "5 million or more"
+      ]
+    ],
+    "ranges": {
+      "under-100k": {
+        "min": 0,
+        "max": 100000
+      },
+      "100k-500k": {
+        "min": 100000,
+        "max": 500000
+      },
+      "500k-1m": {
+        "min": 500000,
+        "max": 1000000
+      },
+      "1m-3m": {
+        "min": 1000000,
+        "max": 3000000
+      },
+      "3m-5m": {
+        "min": 3000000,
+        "max": 5000000
+      },
+      "5m-plus": {
+        "min": 5000000,
+        "max": null
+      }
+    }
+  },
+  {
     "id": "crowds",
     "label": "Crowd preference",
     "group": "experience",
