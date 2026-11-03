@@ -310,7 +310,7 @@ window.TRAVEL_BUILDER_FILTERS = [
   },
   {
     "id": "interests",
-    "label": "Must-do experiences",
+    "label": "Activities & interests",
     "group": "experience",
     "pending": true,
     "multiple": true,
