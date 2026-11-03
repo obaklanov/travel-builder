@@ -628,7 +628,7 @@ window.TRAVEL_BUILDER_FILTERS = [
       ]
     ],
     "primary": true,
-    "priority": true,
+    "priority": false,
     "defaultPriority": "must"
   },
   {
