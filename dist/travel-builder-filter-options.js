@@ -112,6 +112,15 @@ window.TRAVEL_BUILDER_FILTERS = [
     "primary": true
   },
   {
+    "id": "exclude",
+    "label": "Destinations to exclude",
+    "group": "where",
+    "primary": true,
+    "multiple": true,
+    "options": [],
+    "help": "Exclude continents, countries or planning regions. Exclusions override your destination selection. City exclusions will follow when travel hubs are available."
+  },
+  {
     "id": "month",
     "label": "Travel month",
     "group": "where",

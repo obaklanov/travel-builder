@@ -23,8 +23,25 @@
     region.title=country?'':'Choose a country first';
     if([...region.options].some(o=>o.value===oldRegion))region.value=oldRegion;
   }
+  const exclusionLabels=new Map();
+  const exclusionList=document.querySelector('#builder-exclusion-list');
+  function exclusionGroup(title,options){
+    const section=document.createElement('section'),heading=document.createElement('h3');heading.textContent=title;section.append(heading);
+    for(const [value,text] of options){const label=document.createElement('label'),checkbox=document.createElement('input');checkbox.type='checkbox';checkbox.name='exclude';checkbox.value=value;label.append(checkbox,document.createTextNode(text));label.dataset.search=text.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();section.append(label);exclusionLabels.set(value,text);}
+    exclusionList.append(section);
+  }
+  exclusionGroup('Continents',[...new Set(Object.values(data).map(c=>c.continent))].sort().map(c=>['continent:'+c,c]));
+  const sortedCountries=Object.entries(data).sort((a,b)=>a[1].name.localeCompare(b[1].name));
+  exclusionGroup('Countries',sortedCountries.map(([key,c])=>['country:'+key,c.name]));
+  exclusionGroup('Planning regions',sortedCountries.flatMap(([key,c])=>c.regions.map(([name])=>[engine.regionExclusionId(key,name),c.name+' · '+name])));
+  const exclusionSearch=document.querySelector('#builder-exclusion-search');
+  exclusionSearch.addEventListener('input',()=>{const term=exclusionSearch.value.normalize('NFD').replace(/[\u0300-\u036f]/g,'').trim().toLowerCase();for(const section of exclusionList.children){for(const label of section.querySelectorAll('label'))label.hidden=!label.dataset.search.includes(term);section.hidden=![...section.querySelectorAll('label')].some(l=>!l.hidden);}});
+  exclusionSearch.addEventListener('keydown',event=>{if(event.key==='Enter')event.preventDefault();});
+  document.querySelector('#builder-clear-exclusions').addEventListener('click',()=>{for(const node of document.querySelectorAll('[name="exclude"]'))node.checked=false;form.dispatchEvent(new Event('change',{bubbles:true}));});
+
   function collect(){return Object.fromEntries(definitions.map(def=>[def.id,def.multiple?[...document.querySelectorAll('[name="'+def.id+'"]:checked')].map(n=>n.value):field(def.id).value]));}
-  function interestLabel(){const values=collect();for(const def of definitions.filter(d=>d.multiple)){const selected=values[def.id];field(def.id).querySelector('summary').textContent=selected.length?selected.length+' selected':'No preference';}}
+  function interestLabel(){const values=collect();for(const def of definitions.filter(d=>d.multiple)){const selected=values[def.id];field(def.id).querySelector('summary').textContent=def.id==='exclude'?(selected.length?selected.length+' excluded':'No exclusions'):(selected.length?selected.length+' selected':'No preference');
+      if(def.id==='exclude'){const summary=document.querySelector('#builder-exclusion-summary');summary.hidden=!selected.length;summary.textContent=selected.map(v=>exclusionLabels.get(v)||v).join('; ');}}}
   try{
     const saved=JSON.parse(localStorage.getItem(storageKey)||localStorage.getItem('travel-builder-filter-preferences-v1')||'null');
     if(saved){
@@ -39,13 +56,14 @@
   function markPending(){const pending=pendingPreferences(collect());const note=document.querySelector('#builder-preference-status');note.hidden=!pending.length;note.textContent=pending.length?'Some selected preferences are not checked against destinations yet: '+pending.map(p=>p.label).join(', ')+'.':'';}
   markPending();
   form.addEventListener('change',event=>{
+    if(event.target===exclusionSearch)return;
     if(event.target===destination){field('region').value='';dependentOptions();}
     interestLabel();markPending();
     try{localStorage.setItem(storageKey,JSON.stringify(collect()));}catch{/* Controls still work if browser storage is unavailable. */}
     // A changed filter must not leave an old preview looking like a new match.
     idea.hidden=true;idea.dataset.trip='';document.querySelector('#search-message').textContent='';
   });
-  form.addEventListener('input',()=>{idea.hidden=true;idea.dataset.trip='';});
+  form.addEventListener('input',event=>{if(event.target!==exclusionSearch){idea.hidden=true;idea.dataset.trip='';}});
   document.addEventListener('click',event=>{for(const def of definitions.filter(d=>d.multiple)){const node=field(def.id);if(!node.contains(event.target))node.open=false;}});
   for(const def of definitions.filter(d=>d.multiple))field(def.id).addEventListener('keydown',event=>{if(event.key==='Escape'){field(def.id).open=false;field(def.id).querySelector('summary').focus();}});
   form.addEventListener('submit',event=>{
@@ -58,7 +76,7 @@
     const auto=departureForLocation(locationNode.textContent,Number(locationNode.dataset.latitude)||NaN,Number(locationNode.dataset.longitude)||NaN);
     const origin=values.departure||auto.code,originCity=departureCities.find(([code])=>code===origin)?.[1]||origin;
     const matches=engine.match({...values,origin},data,(key,request)=>getFlightRoutes(key,request));
-    if(!matches.length){idea.hidden=true;idea.dataset.trip='';document.querySelector('#search-message').textContent='No trip matches these settings using our current estimates. Try a larger budget, longer trip, wider month range, another region or airport, or a less restrictive season or flight limit.';return;}
+    if(!matches.length){idea.hidden=true;idea.dataset.trip='';document.querySelector('#search-message').textContent='No trip matches these settings using our current estimates. Try fewer exclusions, a larger budget, longer trip, wider date range, another region, or a less restrictive season or flight limit.';return;}
     let keys=[...new Set(matches.map(m=>m.key))];if(keys.length>1)keys=keys.filter(k=>k!==previousCountry);
     const key=keys[Math.floor(Math.random()*keys.length)],pool=matches.filter(m=>m.key===key),trip=pool[Math.floor(Math.random()*pool.length)];previousCountry=key;
     const tripId=crypto.randomUUID(),params=new URLSearchParams({country:key,returnTo:'home',origin,days:String(trip.days),start:trip.start,end:trip.end,tripId,from:originCity,people:String(trip.people),builderRegion:String(trip.regionIndex)});
@@ -80,6 +98,7 @@
     if(values.childAges.length)line('Children are included in the total traveller count. This preliminary estimate uses the same per-person allowance for adults and children; age-specific suitability and discounts are not verified.');
     line('Illustrative planning estimates, not live availability. Regional costs use country-level allowances. Insurance, visas and major paid activities are not included.');
     if(trip.people>4)line('Accommodation is a shared group allowance. Room count and capacity are not verified; review lodging in Planning for this group.');
+    if(values.exclude.length)line('Excluded destinations: '+values.exclude.map(v=>exclusionLabels.get(v)||v).join('; ')+'.');
     const pending=pendingPreferences(values);
     if(pending.length){line('Preferences not checked: '+pending.map(p=>p.label+' — '+p.value).join('; ')+'.');line('These preferences are kept in this browser. Saved trips currently keep the country, dates, group size and budget.');}
     line('Entry eligibility and government advisories have not been checked. Review the official guidance before booking.');

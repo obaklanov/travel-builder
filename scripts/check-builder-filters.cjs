@@ -30,17 +30,28 @@ const planner=vm.createContext({URLSearchParams,location:{search:'?country=spain
 vm.runInContext(fs.readFileSync(path.join(dist,'travel-details.js'),'utf8'),planner);
 const state=planner.getBudgetState('spain');assert.equal(state.people,2);assert.equal(state.regionChoice.index,2);assert.equal(state.rates[1],99);assert.equal(state.rates[2],0);assert.equal(state.departureDate,'2027-06-01');
 const conf=vm.createContext({window:{}});vm.runInContext(fs.readFileSync(path.join(dist,'travel-builder-filter-options.js'),'utf8'),conf);
-const defs=conf.window.TRAVEL_BUILDER_FILTERS;assert.equal(defs.length,38);assert.equal(new Set(defs.map(d=>d.id)).size,38);
+const defs=conf.window.TRAVEL_BUILDER_FILTERS;assert.equal(defs.length,39);assert.equal(new Set(defs.map(d=>d.id)).size,39);
 for(const group of ['party','where','experience','budget','travel','needs'])assert(defs.some(d=>d.group===group));
 for(const id of ['lodging','food','transport','extras','flightBudget','arrival'])assert(!defs.some(d=>d.id===id),'Planning-only control leaked into Designing');
 assert.equal(match({earliest:'2027-06-12',latest:'2027-06-18'})[0].start,'2027-06-12');
 assert.equal(match({earliest:'2027-06-12',latest:'2027-06-17'}).length,0);
 assert.equal(match({earliest:'2027-07-01',latest:'2027-07-10'}).length,0,'Month and date constraints intersect');
 const html=fs.readFileSync(path.join(dist,'index.html'),'utf8');const ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);assert.equal(new Set(ids).size,ids.length);assert(!html.includes('src="trip-start.js'));
-console.log('PASS: 38 Designing definitions and six groups; route/region/continent filters; budgets and zero allowances; shared group costs; month windows and multi-month seasons; missing data; unsupported preferences; planner handoff; unique HTML IDs.');
+console.log('PASS: 39 Designing definitions and six groups; route/region/continent filters; budgets and zero allowances; shared group costs; month windows and multi-month seasons; missing data; unsupported preferences; planner handoff; unique HTML IDs.');
 
 assert.equal(match({people:'10'})[0].total,16320,'Ten-person calculation');
 assert.equal(match({people:'11'}).length,0,'Reject unsupported group size');
 assert.equal(match({people:'2.5'}).length,0,'Reject fractional group size');
 assert.equal(defs.find(d=>d.id==='people').options.length,10);
 assert.equal(defs.find(d=>d.id==='people').options.at(-1)[0],'10');
+
+assert.equal(match({exclude:['country:spain']}).length,0,'Exclusion overrides selected country');
+assert.equal(match({exclude:['continent:Europe']}).length,0,'Continent exclusion');
+const madrid=engine.regionExclusionId('spain',data.spain.regions[0][0]);
+const remaining=match({exclude:[madrid]});assert(remaining.length>0);assert(remaining.every(t=>t.regionIndex!==0),'Region exclusion retains other regions');
+assert.equal(match({region:'0',exclude:[madrid]}).length,0,'Region exclusion overrides region selection');
+const asiaData=Object.fromEntries(['japan','south-korea','thailand'].map(key=>[key,{...data[key],continent:'Asia'}]));
+const asia=engine.match({...base,destination:'continent:Asia',exclude:['country:south-korea']},asiaData,routes,now);
+assert(asia.length>0);assert(asia.every(t=>t.key!=='south-korea'),'Asia except South Korea');
+assert.equal(engine.match({...base,destination:'continent:Asia',exclude:['country:south-korea','country:japan','country:thailand']},asiaData,routes,now).length,0);
+assert.notEqual(engine.regionExclusionId('spain','Center'),engine.regionExclusionId('japan','Center'),'Region IDs are scoped to country');

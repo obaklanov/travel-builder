@@ -1,6 +1,7 @@
 'use strict';
 (() => {
   const iso = date => `${date.getFullYear()}-${String(date.getMonth()+1).padStart(2,'0')}-${String(date.getDate()).padStart(2,'0')}`;
+  const regionExclusionId=(country,name)=>'region:'+country+':'+name.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
   function candidateMonths(filters,now) {
     const base=filters.month?new Date(filters.month+'-01T12:00:00'):(filters.earliest?new Date(filters.earliest.slice(0,7)+'-01T12:00:00'):new Date(now.getFullYear(),now.getMonth(),1,12));
     const upper=filters.latest?new Date(filters.latest+'T12:00:00'):null;
@@ -16,11 +17,14 @@
   function match(filters,data,routes,now=new Date()) {
     const results=[],people=Number(filters.people||1),budget=filters.budget?Number(filters.budget.split(':')[1])*(filters.budget.startsWith('person:')?people:1):null;
     if(!Number.isInteger(people)||people<1||people>10)return [];
+    const excluded=new Set(Array.isArray(filters.exclude)?filters.exclude:[]);
     const ceiling=budget===null?Infinity:budget*(1+Number(filters.budgetFlex||0));
     for(const [key,country] of Object.entries(data)){
+      if(excluded.has('country:'+key)||excluded.has('continent:'+country.continent))continue;
       if(filters.destination&&!filters.destination.startsWith('continent:')&&filters.destination!==key)continue;
       if(filters.destination?.startsWith('continent:')&&country.continent!==filters.destination.slice(10))continue;
       for(let regionIndex=0;regionIndex<country.regions.length;regionIndex++){
+        if(excluded.has(regionExclusionId(key,country.regions[regionIndex][0])))continue;
         if(filters.region!==''&&filters.region!==undefined&&Number(filters.region)!==regionIndex)continue;
         for(const month of candidateMonths(filters,now)){
           const rating=country.regions[regionIndex][1][month.getMonth()];
@@ -51,7 +55,7 @@
     }
     return results;
   }
-  const engine={match,total,candidateMonths};
+  const engine={match,total,candidateMonths,regionExclusionId};
   if(typeof module!=='undefined'&&module.exports)module.exports=engine;
   else window.TRAVEL_BUILDER_ENGINE=engine;
 })();

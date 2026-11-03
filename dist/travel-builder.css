@@ -45,3 +45,14 @@
 @media(max-width:1100px){.designing-canvas{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-areas:'where party' 'create create' 'experience budget' 'travel needs';gap:20px;}.design-create{min-height:130px;padding:0;}.builder-home #create-filtered-trip{min-height:100px;}}
 @media(max-width:650px){.builder-home .easy-hero{padding:28px 16px 40px;}.builder-home .easy-hero h1{font-size:clamp(30.8px,6.3vw,45.5px);letter-spacing:-1.4px;margin-bottom:25px;}.designing-canvas{grid-template-columns:minmax(0,1fr);grid-template-areas:'create' 'where' 'party' 'experience' 'budget' 'travel' 'needs';gap:18px;}.design-group{padding:16px;}.design-create{position:sticky;top:12px;bottom:auto;z-index:8;min-height:0;}.builder-home #create-filtered-trip{width:100%;max-width:330px;min-height:60px;border-radius:18px;font-size:20px;box-shadow:0 4px 24px #1e3a5f30;}.builder-interest-options{width:220px;}.design-fields>.builder-slot:nth-child(even) .builder-interest-options{left:auto;right:0;}}
 @media(prefers-reduced-motion:reduce){.builder-home .builder-multiselect summary::after{transition:none;}}
+
+/* Typed exclusions are searchable independently of the included destination. */
+.builder-exclude-slot{grid-column:1/-1;}
+.builder-home .builder-exclusion-options{width:310px;max-width:calc(100vw - 64px);max-height:370px;padding:12px;}
+.builder-home .builder-exclusion-options .builder-exclusion-search-label{font-size:11px;padding:0 0 6px;display:block;}
+.builder-home .builder-exclusion-options input[type="search"]{width:100%;min-height:38px;height:auto;padding:9px;border-radius:8px;background:#fff;font-size:12px;}
+.builder-home #builder-clear-exclusions{display:block;min-height:28px;padding:5px 0;margin:7px 0;background:none;color:#3568d4;font-size:11px;text-align:left;border-radius:0;}
+.builder-exclusion-options h3{font:600 11px var(--sans);margin:14px 7px 5px;color:#466685;}
+.builder-home .builder-exclusion-options label[hidden],.builder-exclusion-options section[hidden]{display:none;}
+.builder-exclusion-summary,.builder-exclusion-future{font-size:11px;line-height:1.5;color:#64748b;margin:7px 0 0;}
+.builder-exclusion-summary[hidden]{display:none;}
