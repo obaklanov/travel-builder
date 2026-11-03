@@ -319,6 +319,7 @@ window.TRAVEL_BUILDER_FILTERS = [
     "options": [
       "Food experiences",
       "History and heritage",
+      "City walks & neighbourhoods",
       "Hiking",
       "Beaches and swimming",
       "Wildlife",
