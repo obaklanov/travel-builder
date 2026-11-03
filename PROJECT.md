@@ -53,3 +53,7 @@ Government entry summaries are reviewed snapshots, with source hashes and checke
 ## Week 6 direction
 
 Understand the existing website, trace its data and actions, then assess cleanup in small reversible changes. Do not begin a rewrite or delete dormant features just because they are not visible. See WEEK-6-HANDOFF.md for the learning plan and evidence-based cleanup procedure.
+
+## Travel Builder homepage layout
+
+The homepage now uses dist/travel-builder.css after the shared Travel Easy styles. It has one central Create my trip submit button, 12 inner filter placeholders (three per side), and 20 outer placeholders (five per side). The disabled placeholders do not affect trip generation yet. Existing duration/budget/destination controls are retained in a hidden container for trip-start.js compatibility until real filters are selected. The existing generator, save flow, and country links remain connected. At 760px and below, filter placeholders become a grid.
