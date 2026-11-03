@@ -130,7 +130,7 @@ window.TRAVEL_BUILDER_FILTERS = [
   },
   {
     "id": "days",
-    "label": "Trip length (days)",
+    "label": "Trip length, days",
     "group": "where",
     "primary": true,
     "options": [
