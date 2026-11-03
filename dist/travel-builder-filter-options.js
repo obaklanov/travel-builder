@@ -36,10 +36,34 @@ window.TRAVEL_BUILDER_FILTERS = [
       [
         "4",
         "4 people"
+      ],
+      [
+        "5",
+        "5 people"
+      ],
+      [
+        "6",
+        "6 people"
+      ],
+      [
+        "7",
+        "7 people"
+      ],
+      [
+        "8",
+        "8 people"
+      ],
+      [
+        "9",
+        "9 people"
+      ],
+      [
+        "10",
+        "10 people"
       ]
     ],
     "primary": true,
-    "help": "Includes adults and children. Current estimates support 1–4 travellers and use equal per-person allowances; child discounts are not verified."
+    "help": "Includes adults and children. Current estimates support 1–10 travellers and use equal per-person allowances; child discounts are not verified."
   },
   {
     "id": "childAges",

@@ -15,6 +15,7 @@
   function total(rates,days,people){return rates[0]*people+rates[1]*Math.max(0,days-1)+(rates[2]+rates[3]+rates[4])*days*people;}
   function match(filters,data,routes,now=new Date()) {
     const results=[],people=Number(filters.people||1),budget=filters.budget?Number(filters.budget.split(':')[1])*(filters.budget.startsWith('person:')?people:1):null;
+    if(!Number.isInteger(people)||people<1||people>10)return [];
     const ceiling=budget===null?Infinity:budget*(1+Number(filters.budgetFlex||0));
     for(const [key,country] of Object.entries(data)){
       if(filters.destination&&!filters.destination.startsWith('continent:')&&filters.destination!==key)continue;

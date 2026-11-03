@@ -56,7 +56,7 @@ create table if not exists public.travel_builder_trips (
  estimated_total numeric(12,2) not null check (estimated_total >= 0),
  budget numeric(12,2) check (budget > 0),
  currency text not null default 'CAD' check (currency = 'CAD'),
- group_size integer not null default 1 check (group_size between 1 and 4),
+ group_size integer not null default 1 check (group_size between 1 and 10),
  created_at timestamptz not null default now(),
  check (return_date = departure_date + days - 1)
 );

@@ -76,3 +76,7 @@ Designing finds suitable trips from broad traveller preferences; Planning adjust
 New preferences include travel party, child age bands, occasion, must-do activities, crowds, comfort, access, food requirements, language/navigation, work/connectivity, transfer tolerance and booking flexibility. They are unverified preferences pending destination data. Earliest departure and latest return actively constrain the whole suggested trip; a month, if set, intersects the allowed date window. Traveller count still supports 1–4 total people; children are included, with no assumed child discounts. Preferences migrate from v1 to travel-builder-design-preferences-v2; removed allowance values are not reused.
 
 Architecture work remains: agree place structure; dataset boundaries; raw/draft/published lifecycle; website contract; history/recovery. Do not populate a large destination database before agreeing those five steps.
+
+## Groups up to ten
+
+Designing, Planning and saved-trip validation support 1–10 total travellers. Existing equal per-person allowances and one shared group accommodation allowance remain estimates; larger groups are prompted to review room capacity in Planning. Existing Supabase project must run supabase-travel-builder-group-size-10.sql to widen its trip constraint; frontend publication alone cannot update the database. The initial setup file also reflects the 1–10 limit.

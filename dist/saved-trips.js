@@ -5,6 +5,7 @@
   const uuid = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
   const validDate = value => /^\d{4}-\d{2}-\d{2}$/.test(value||'') && Number.isFinite(Date.parse(value+'T12:00:00Z')) && new Date(value+'T12:00:00Z').toISOString().slice(0,10) === value;
   function validTrip(trip) {
+    if(trip?.group_size!==undefined&&(!Number.isInteger(trip.group_size)||trip.group_size<1||trip.group_size>10))return false;
     if (!trip || !uuid.test(trip.id) || !names[trip.country] || !['YYZ','YVR','YUL','YYC','YEG'].includes(trip.origin)) return false;
     if (typeof trip.origin_label !== 'string' || !trip.origin_label.trim() || trip.origin_label.length > 160) return false;
     if (!validDate(trip.departure_date) || !validDate(trip.return_date) || !Number.isInteger(trip.days) || trip.days<1 || trip.days>365) return false;
@@ -29,7 +30,7 @@
               status.replaceChildren(document.createTextNode('Added to your planned trips. '));
               const link=document.createElement('a');link.href='profile.html#planned-trips';link.textContent='View planned trips →';status.append(link);button.textContent='Added';
             }
-          }catch(error){status.textContent='This trip could not be added. Please try adding it again.';error.tripSave=true;throw error;}
+          }catch(error){status.textContent=error.code==='23514'&&(trip.group_size||1)>4?'Saving groups above four needs the Travel Builder database update. This trip has not been saved.':'This trip could not be added. Please try adding it again.';error.tripSave=true;throw error;}
           finally{button.dataset.saving='false';button.disabled=button.textContent==='Added';}
         };
         button.disabled=true;

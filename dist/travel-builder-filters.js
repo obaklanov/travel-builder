@@ -79,6 +79,7 @@
     line('This is a Designing estimate. Continue to Planning to review individual budget items and make adjustments.');
     if(values.childAges.length)line('Children are included in the total traveller count. This preliminary estimate uses the same per-person allowance for adults and children; age-specific suitability and discounts are not verified.');
     line('Illustrative planning estimates, not live availability. Regional costs use country-level allowances. Insurance, visas and major paid activities are not included.');
+    if(trip.people>4)line('Accommodation is a shared group allowance. Room count and capacity are not verified; review lodging in Planning for this group.');
     const pending=pendingPreferences(values);
     if(pending.length){line('Preferences not checked: '+pending.map(p=>p.label+' — '+p.value).join('; ')+'.');line('These preferences are kept in this browser. Saved trips currently keep the country, dates, group size and budget.');}
     line('Entry eligibility and government advisories have not been checked. Review the official guidance before booking.');

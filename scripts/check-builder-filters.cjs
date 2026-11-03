@@ -38,3 +38,9 @@ assert.equal(match({earliest:'2027-06-12',latest:'2027-06-17'}).length,0);
 assert.equal(match({earliest:'2027-07-01',latest:'2027-07-10'}).length,0,'Month and date constraints intersect');
 const html=fs.readFileSync(path.join(dist,'index.html'),'utf8');const ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);assert.equal(new Set(ids).size,ids.length);assert(!html.includes('src="trip-start.js'));
 console.log('PASS: 38 Designing definitions and six groups; route/region/continent filters; budgets and zero allowances; shared group costs; month windows and multi-month seasons; missing data; unsupported preferences; planner handoff; unique HTML IDs.');
+
+assert.equal(match({people:'10'})[0].total,16320,'Ten-person calculation');
+assert.equal(match({people:'11'}).length,0,'Reject unsupported group size');
+assert.equal(match({people:'2.5'}).length,0,'Reject fractional group size');
+assert.equal(defs.find(d=>d.id==='people').options.length,10);
+assert.equal(defs.find(d=>d.id==='people').options.at(-1)[0],'10');
