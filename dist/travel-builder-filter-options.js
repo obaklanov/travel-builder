@@ -861,8 +861,7 @@ window.TRAVEL_BUILDER_FILTERS = [
     "options": [
       "Any",
       "English widely useful",
-      "Comfortable with language differences",
-      "Easy independent navigation preferred"
+      "Comfortable with language differences"
     ],
     "pending": true,
     "primary": true,
