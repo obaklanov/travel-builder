@@ -94,9 +94,9 @@
 .designing-canvas{grid-template-columns:repeat(3,minmax(0,1fr));align-items:start;gap:24px;}
 .design-group>.design-primary-fields>.builder-slot{grid-column:auto;}
 .design-group>.design-primary-fields>.design-primary-wide{grid-column:1/-1;}
-.design-primary-fields{grid-auto-rows:minmax(86px,auto);gap:12px;}
-.design-primary-fields .design-label-row{min-height:34px;align-content:center;}
-.design-primary-fields .design-primary-wide .design-label-row{min-height:34px;}
+.design-primary-fields{grid-auto-rows:minmax(95px,auto);gap:12px;}
+.design-primary-fields .design-label-row{min-height:44px;align-content:center;}
+.design-primary-fields .design-primary-wide .design-label-row{min-height:44px;}
 .design-group>.design-more{margin-top:16px;}
 .design-reset-footer{margin-top:7px;}
 .design-create{min-height:310px;align-self:stretch;}
