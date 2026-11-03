@@ -2,9 +2,17 @@
 (() => {
   const iso = date => `${date.getFullYear()}-${String(date.getMonth()+1).padStart(2,'0')}-${String(date.getDate()).padStart(2,'0')}`;
   const regionExclusionId=(country,name)=>'region:'+country+':'+name.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+  function dateLimits(now=new Date()){
+    const first=new Date(now.getFullYear(),now.getMonth(),now.getDate(),12);
+    const year=first.getFullYear()+3,month=first.getMonth(),day=Math.min(first.getDate(),new Date(year,month+1,0).getDate());
+    const departure=new Date(year,month,day,12),lastReturn=new Date(departure);lastReturn.setDate(lastReturn.getDate()+90);
+    return {min:iso(first),departureMax:iso(departure),returnMax:iso(lastReturn)};
+  }
   function candidateMonths(filters,now) {
     const currentMonth=now.getFullYear()*12+now.getMonth(),lastMonth=currentMonth+36;
     const base=filters.month?new Date(filters.month+'-01T12:00:00'):(filters.earliest?new Date(filters.earliest.slice(0,7)+'-01T12:00:00'):new Date(now.getFullYear(),now.getMonth(),1,12));
+    const baseSerial=base.getFullYear()*12+base.getMonth();
+    if(filters.month&&(baseSerial<currentMonth||baseSerial>lastMonth))return [];
     const upper=filters.latest?new Date(filters.latest+'T12:00:00'):null;
     const range=upper?Math.max(0,(upper.getFullYear()-base.getFullYear())*12+upper.getMonth()-base.getMonth()):2;
     const spread=filters.month?Number(filters.dateFlex||0):Math.min(36,range), start=filters.month?-spread:0, results=[];
@@ -17,6 +25,10 @@
   }
   function total(rates,days,people){return rates[0]*people+rates[1]*Math.max(0,days-1)+(rates[2]+rates[3]+rates[4])*days*people;}
   function match(filters,data,routes,now=new Date()) {
+    const limits=dateLimits(now);
+    if(filters.earliest&&(filters.earliest<limits.min||filters.earliest>limits.departureMax))return [];
+    if(filters.latest&&(filters.latest<limits.min||filters.latest>limits.returnMax))return [];
+    if(filters.earliest&&filters.latest&&filters.earliest>filters.latest)return [];
     const results=[],people=Number(filters.people||1),budget=filters.budget?Number(filters.budget.split(':')[1])*(filters.budget.startsWith('person:')?people:1):null;
     if(!Number.isInteger(people)||people<1||people>10)return [];
     const excluded=new Set(Array.isArray(filters.exclude)?filters.exclude:[]);
@@ -34,10 +46,11 @@
           const start=new Date(month);if(start.getMonth()===now.getMonth()&&start.getFullYear()===now.getFullYear())start.setDate(now.getDate());
           if(filters.earliest&&iso(start)<filters.earliest)start.setTime(new Date(filters.earliest+'T12:00:00').getTime());
           if(start.getMonth()!==month.getMonth()||start.getFullYear()!==month.getFullYear())continue;
+          if(iso(start)>limits.departureMax)continue;
           const lengths=filters.days?[Number(filters.days)]:[7,10,14,21];
           for(const days of lengths){
             const end=new Date(start);end.setDate(end.getDate()+days-1);
-            if(filters.latest&&iso(end)>filters.latest)continue;
+            if(iso(end)>limits.returnMax||(filters.latest&&iso(end)>filters.latest))continue;
             // A trip crossing a month boundary must satisfy every touched month's rating.
             if(filters.season){let cursor=new Date(start.getFullYear(),start.getMonth(),1,12),suitable=true;while(cursor<=end){if(!filters.season.includes(country.regions[regionIndex][1][cursor.getMonth()])){suitable=false;break;}cursor.setMonth(cursor.getMonth()+1);}if(!suitable)continue;}
             for(const route of routes(key,{origin:filters.origin,regionIndex,departureDate:iso(start),returnDate:iso(end)})){
@@ -57,7 +70,7 @@
     }
     return results;
   }
-  const engine={match,total,candidateMonths,regionExclusionId};
+  const engine={match,total,candidateMonths,regionExclusionId,dateLimits};
   if(typeof module!=='undefined'&&module.exports)module.exports=engine;
   else window.TRAVEL_BUILDER_ENGINE=engine;
 })();

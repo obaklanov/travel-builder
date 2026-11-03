@@ -16,7 +16,9 @@
   const monthValue=date=>`${date.getFullYear()}-${String(date.getMonth()+1).padStart(2,'0')}`;
   field('month').min=monthValue(today);field('month').max=monthValue(lastMonth);
   field('month').title='Choose a month from '+field('month').min+' through '+field('month').max+'.';
-  for(const id of ['earliest','latest'])field(id).min=new Date().toLocaleDateString('en-CA');
+  const limits=engine.dateLimits(today);
+  function updateDateBounds(){field('earliest').min=limits.min;field('earliest').max=limits.departureMax;field('latest').min=field('earliest').value||limits.min;field('latest').max=limits.returnMax;field('earliest').title='Choose a departure from '+limits.min+' through '+limits.departureMax+'.';field('latest').title='Return no later than '+limits.returnMax+' (three years ahead plus 90 days).';}
+  updateDateBounds();
   function dependentOptions(){
     const country=data[destination.value],region=field('region');
     const oldRegion=region.value;
@@ -55,6 +57,9 @@
       for(const id of ['region'])if([...field(id).options].some(o=>o.value===saved[id]))field(id).value=saved[id];
     }else dependentOptions();
   }catch{dependentOptions();}
+  if(field('earliest').value&&(field('earliest').value<limits.min||field('earliest').value>limits.departureMax))field('earliest').value='';
+  updateDateBounds();
+  if(field('latest').value&&(field('latest').value<field('latest').min||field('latest').value>limits.returnMax))field('latest').value='';
   if(field('month').value&&(field('month').value<field('month').min||field('month').value>field('month').max))field('month').value='';
   interestLabel();
   function pendingPreferences(values){return definitions.filter(def=>def.pending&&(Array.isArray(values[def.id])?values[def.id].length:values[def.id]&&values[def.id]!=='Any')).map(def=>({label:def.label,value:Array.isArray(values[def.id])?values[def.id].join(', '):field(def.id).selectedOptions?.[0]?.textContent||values[def.id]}));}
@@ -62,6 +67,7 @@
   markPending();
   form.addEventListener('change',event=>{
     if(event.target===exclusionSearch)return;
+    if(event.target===field('earliest'))updateDateBounds();
     if(event.target===destination){field('region').value='';dependentOptions();}
     interestLabel();markPending();
     try{localStorage.setItem(storageKey,JSON.stringify(collect()));}catch{/* Controls still work if browser storage is unavailable. */}

@@ -68,3 +68,12 @@ assert.equal(durationOptions.find(([v])=>v==='20')[1],'20 days');
 assert(durationOptions.some(([v])=>v==='90'));
 assert.equal(match({days:'14'})[0].days,14);
 assert.equal(match({days:'21'})[0].days,21);
+
+const dateBounds=engine.dateLimits(new Date('2026-11-03T12:00:00'));
+assert.equal(dateBounds.departureMax,'2029-11-03');
+assert.equal(dateBounds.returnMax,'2030-02-01');
+assert.equal(engine.dateLimits(new Date('2028-02-29T12:00:00')).departureMax,'2031-02-28','Leap-year date clamp');
+assert.equal(match({month:'2029-11',earliest:'2029-11-03'}).length,0,'Earliest exceeds rolling limit for Nov 2 test clock');
+assert.equal(match({month:'2029-11',earliest:'2029-11-02',days:'90'})[0].start,'2029-11-02');
+assert.equal(match({latest:'2030-02-01'}).length,0,'Return exceeds rolling 90-day extension for Nov 2 test clock');
+assert.equal(engine.candidateMonths({...base,month:'2029-12',dateFlex:'2'},now).length,0,'Invalid base month cannot use flexibility to bypass limit');
