@@ -68,3 +68,11 @@ Next session: build a reviewed country → region → hub database, source/revie
 ## Shared appearance
 
 travel-builder-clean-theme.css loads last on all six HTML pages. It sets white page and panel backgrounds and replaces the old brass dropdown icon with images/select-chevron.svg. Home filter colours are sky blue (where/when), light gold (budget/group), sage (experience/vibe), and lavender (travel/entry). Map geography, photos, and scratch artwork retain their visual content.
+
+## Designing and Planning
+
+Designing finds suitable trips from broad traveller preferences; Planning adjusts individual items. The Designing catalogue now has 38 controls in six uneven groups: party (4), where/when (10), experience (8), budget/comfort (3), travel convenience (5), practical needs (8). There is no fixed eight-controls-per-group requirement. Main choices show first; More options exposes the complete list. Individual lodging/food/local transport/extras/flight allowances and arrival airport have been removed from Designing. The country planner retains its budget editor.
+
+New preferences include travel party, child age bands, occasion, must-do activities, crowds, comfort, access, food requirements, language/navigation, work/connectivity, transfer tolerance and booking flexibility. They are unverified preferences pending destination data. Earliest departure and latest return actively constrain the whole suggested trip; a month, if set, intersects the allowed date window. Traveller count still supports 1–4 total people; children are included, with no assumed child discounts. Preferences migrate from v1 to travel-builder-design-preferences-v2; removed allowance values are not reused.
+
+Architecture work remains: agree place structure; dataset boundaries; raw/draft/published lifecycle; website contract; history/recovery. Do not populate a large destination database before agreeing those five steps.

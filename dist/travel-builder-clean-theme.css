@@ -57,3 +57,17 @@ body .easy-search .budget-toggle,body .budget-suggestions-toggle {background-ima
 .builder-home .builder-trip-details p {color:#64748b;}
 @media (forced-colors:active) {body select:not([multiple]):not([size]) {appearance:auto; background-image:none;}}
 @media (prefers-reduced-motion:reduce) {.builder-home .builder-ring .builder-slot select,.builder-home .builder-ring .builder-slot input,.builder-home .builder-ring .builder-multiselect summary,.builder-home .builder-multiselect summary::after {transition:none;}}
+
+/* Designing groups extend the four-colour palette without changing the shared white theme. */
+.design-group-where {--category-fill:#edf6ff;--category-border:#c9dff4;--category-label:#36678f;}
+.design-group-budget {--category-fill:#fff6d8;--category-border:#ead89a;--category-label:#8a6a21;}
+.design-group-experience {--category-fill:#edf7f0;--category-border:#cce2d4;--category-label:#47725a;}
+.design-group-needs {--category-fill:#f3efff;--category-border:#dcd3f1;--category-label:#71628f;}
+.design-group-party {--category-fill:#fff0ea;--category-border:#f0d2c5;--category-label:#9a604b;}
+.design-group-travel {--category-fill:#eaf7f7;--category-border:#c7e3e3;--category-label:#39777c;}
+.builder-home .design-group .builder-slot select,.builder-home .design-group .builder-slot input:not([type="checkbox"]),.builder-home .design-group .builder-multiselect summary {background-color:var(--category-fill);border-color:var(--category-border);color:#273548;}
+.builder-home .design-group .builder-field-label,.builder-home .design-group .builder-pending-mark,.builder-home .design-group legend,.builder-home .design-group .design-more>summary {color:var(--category-label);}
+.builder-home .design-group .builder-slot select:disabled {background-color:var(--category-fill);opacity:.65;cursor:not-allowed;}
+
+.builder-home .design-group .builder-interest-options{border-color:var(--category-border);}
+.builder-home .design-group .builder-interest-options label:hover{background:var(--category-fill);}

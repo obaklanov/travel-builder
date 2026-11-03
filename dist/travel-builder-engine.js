@@ -2,8 +2,10 @@
 (() => {
   const iso = date => `${date.getFullYear()}-${String(date.getMonth()+1).padStart(2,'0')}-${String(date.getDate()).padStart(2,'0')}`;
   function candidateMonths(filters,now) {
-    const base=filters.month?new Date(filters.month+'-01T12:00:00'):new Date(now.getFullYear(),now.getMonth(),1,12);
-    const spread=filters.month?Number(filters.dateFlex||0):2, start=filters.month?-spread:0, results=[];
+    const base=filters.month?new Date(filters.month+'-01T12:00:00'):(filters.earliest?new Date(filters.earliest.slice(0,7)+'-01T12:00:00'):new Date(now.getFullYear(),now.getMonth(),1,12));
+    const upper=filters.latest?new Date(filters.latest+'T12:00:00'):null;
+    const range=upper?Math.max(0,(upper.getFullYear()-base.getFullYear())*12+upper.getMonth()-base.getMonth()):2;
+    const spread=filters.month?Number(filters.dateFlex||0):Math.min(36,range), start=filters.month?-spread:0, results=[];
     for(let offset=start;offset<=spread;offset++){
       const date=new Date(base.getFullYear(),base.getMonth()+offset,1,12);
       if(date.getFullYear()*12+date.getMonth()>=now.getFullYear()*12+now.getMonth())results.push(date);
@@ -23,9 +25,12 @@
           const rating=country.regions[regionIndex][1][month.getMonth()];
           if(filters.season&&!filters.season.includes(rating))continue;
           const start=new Date(month);if(start.getMonth()===now.getMonth()&&start.getFullYear()===now.getFullYear())start.setDate(now.getDate());
+          if(filters.earliest&&iso(start)<filters.earliest)start.setTime(new Date(filters.earliest+'T12:00:00').getTime());
+          if(start.getMonth()!==month.getMonth()||start.getFullYear()!==month.getFullYear())continue;
           const lengths=filters.days?[Number(filters.days)]:[7,10,14,21];
           for(const days of lengths){
             const end=new Date(start);end.setDate(end.getDate()+days-1);
+            if(filters.latest&&iso(end)>filters.latest)continue;
             // A trip crossing a month boundary must satisfy every touched month's rating.
             if(filters.season){let cursor=new Date(start.getFullYear(),start.getMonth(),1,12),suitable=true;while(cursor<=end){if(!filters.season.includes(country.regions[regionIndex][1][cursor.getMonth()])){suitable=false;break;}cursor.setMonth(cursor.getMonth()+1);}if(!suitable)continue;}
             for(const route of routes(key,{origin:filters.origin,regionIndex,departureDate:iso(start),returnDate:iso(end)})){
