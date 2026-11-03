@@ -208,7 +208,7 @@ window.TRAVEL_BUILDER_FILTERS = [
   },
   {
     "id": "earliest",
-    "label": "Earliest departure",
+    "label": "Specific departure days",
     "group": "where",
     "type": "date",
     "help": "Trip must start on or after this date. Combined with your month and duration, if specified.",
@@ -216,7 +216,7 @@ window.TRAVEL_BUILDER_FILTERS = [
   },
   {
     "id": "latest",
-    "label": "Latest return",
+    "label": "Specific return days",
     "group": "where",
     "type": "date",
     "help": "The whole trip must finish on or before this date.",
