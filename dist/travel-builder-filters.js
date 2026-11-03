@@ -71,6 +71,7 @@
   markPending();
   form.addEventListener('change',event=>{
     if(event.target===exclusionSearch)return;
+    document.querySelector('#builder-reset-status').textContent='';
     revision++;if(event.target===field('party'))syncParty();
     if(event.target===field('earliest'))updateDateBounds();
     if(event.target===destination){field('region').value='';dependentOptions();}
@@ -82,6 +83,25 @@
   form.addEventListener('input',event=>{if(event.target!==exclusionSearch){revision++;idea.hidden=true;idea.dataset.trip='';}});
   document.addEventListener('click',event=>{for(const def of definitions.filter(d=>d.multiple)){const node=field(def.id);if(!node.contains(event.target))node.open=false;}});
   for(const def of definitions.filter(d=>d.multiple))field(def.id).addEventListener('keydown',event=>{if(event.key==='Escape'){field(def.id).open=false;field(def.id).querySelector('summary').focus();}});
+  function resetFilters(group){
+    const affected=definitions.filter(def=>!group||def.group===group);
+    for(const def of affected){
+      if(def.multiple){for(const node of document.querySelectorAll('[name="'+def.id+'"]'))node.checked=false;field(def.id).open=false;}
+      else field(def.id).value=def.type?'':(Array.isArray(def.options[0])?String(def.options[0][0]):def.options[0]==='Any'?'':String(def.options[0]));
+      const priority=document.querySelector('[data-priority-for="'+def.id+'"]');
+      if(priority){const must=def.defaultPriority==='must';priority.setAttribute('aria-checked',String(must));priority.textContent=must?'Must have':'Nice to have';}
+    }
+    if(!group||group==='where'){dependentOptions();updateDateBounds();exclusionSearch.value='';exclusionSearch.dispatchEvent(new Event('input',{bubbles:true}));}
+    if(!group||group==='party')syncParty();
+    for(const card of document.querySelectorAll('.design-group'))if(!group||card.classList.contains('design-group-'+group))for(const more of card.querySelectorAll('.design-more'))more.open=false;
+    if(!group)previousCountry=null;
+    // Use the normal change path to cancel pending generation, clear the preview, refresh labels and save defaults.
+    form.dispatchEvent(new Event('change',{bubbles:true}));
+    const card=group?document.querySelector('.design-group-'+group):null;
+    document.querySelector('#builder-reset-status').textContent=card?'Reset '+card.querySelector('legend').textContent+' filters.':'All filters reset to their defaults.';
+  }
+  form.addEventListener('click',event=>{const category=event.target.closest('[data-reset-category]');if(category)resetFilters(category.dataset.resetCategory);else if(event.target.closest('#builder-reset-all'))resetFilters();});
+
   async function recordedCountries(){
     const client=window.TRAVEL_EASY_CLIENT;if(!client)return {known:false,keys:[],reason:'Sign in and save visited countries in your Travel Builder profile.'};
     try{const session=await client.auth.getSession();if(session.error||!session.data.session)return {known:false,keys:[],reason:'Sign in to use visited countries from your profile.'};
