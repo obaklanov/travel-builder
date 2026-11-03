@@ -370,12 +370,12 @@ function budgetAllowanceControl(name,index,value){
 
 function setupTripDaySuggestions(panel,input){
  const toggle=panel.querySelector('#trip-days-toggle'),list=panel.querySelector('#trip-days-options');
- const presets=[...Array.from({length:10},(_,i)=>i+1),12,14,16,18,20,25,30,35,40,45,50,60,70,80,90];
+ const presets=[...Array.from({length:10},(_,i)=>i+1),12,14,16,18,20,21,25,30,35,40,45,50,60,70,80,90];
  const close=()=>{list.hidden=true;toggle.setAttribute('aria-expanded','false');};
  toggle.onclick=()=>{
   if(!list.hidden){close();return;}
   list.replaceChildren();
-  presets.forEach(days=>{const option=document.createElement('button');option.type='button';option.textContent=days+' '+(days===1?'day':'days');if(days===Number(input.value))option.className='current';option.onclick=event=>{input.value=String(days);input.oninput();close();if(event.detail===0)input.focus();};list.append(option);});
+  presets.forEach(days=>{const option=document.createElement('button');option.type='button';option.textContent=days===14?'2 weeks':days===21?'3 weeks':days+' '+(days===1?'day':'days');if(days===Number(input.value))option.className='current';option.onclick=event=>{input.value=String(days);input.oninput();close();if(event.detail===0)input.focus();};list.append(option);});
   list.hidden=false;toggle.setAttribute('aria-expanded','true');
   const options=[...list.children],selected=list.querySelector('.current')||options.reduce((best,item,i)=>Math.abs(presets[i]-Number(input.value))<Math.abs(presets[options.indexOf(best)]-Number(input.value))?item:best,options[0]);
   list.scrollTop=Math.max(0,selected.offsetTop-(list.clientHeight-selected.offsetHeight)/2);

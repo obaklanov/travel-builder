@@ -60,3 +60,11 @@ assert.equal(engine.candidateMonths({...base,month:'2029-11'},now).length,1,'Thr
 assert.equal(engine.candidateMonths({...base,month:'2029-12'},now).length,0,'Month beyond three years rejected');
 assert.equal(engine.candidateMonths({...base,month:'2029-11',dateFlex:'2'},now).length,3,'Flexibility cannot extend past limit');
 assert.equal(match({month:'2029-12'}).length,0,'No trips beyond the month horizon');
+
+const durationOptions=defs.find(d=>d.id==='days').options;
+assert.equal(durationOptions.find(([v])=>v==='14')[1],'2 weeks');
+assert.equal(durationOptions.find(([v])=>v==='21')[1],'3 weeks');
+assert.equal(durationOptions.find(([v])=>v==='20')[1],'20 days');
+assert(durationOptions.some(([v])=>v==='90'));
+assert.equal(match({days:'14'})[0].days,14);
+assert.equal(match({days:'21'})[0].days,21);

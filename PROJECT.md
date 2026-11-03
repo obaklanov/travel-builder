@@ -88,3 +88,5 @@ Where & When now includes Destinations to exclude, with search and multi-select 
 User confirmed on 3 November 2026 that supabase-travel-builder-group-size-10.sql ran successfully. The database now supports saving groups up to ten (user-confirmed; not independently queried).
 
 Travel month is limited dynamically to the current month through the same month three years ahead, inclusive. Browser validation and the matching engine enforce this rolling window, including month flexibility. Out-of-range saved month selections are cleared on load.
+
+Trip length (days) is a dropdown using stepped values 1–10, 12, 14, 16, 18, 20, 21, 25–50 in steps of five, then 60–90 in steps of ten. Values 14 and 21 are labelled 2 weeks and 3 weeks, including in the Planning suggestions; stored values and calculations remain in days. Previously saved valid custom day counts are retained on load.

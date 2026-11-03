@@ -130,13 +130,119 @@ window.TRAVEL_BUILDER_FILTERS = [
   },
   {
     "id": "days",
-    "label": "Trip length",
+    "label": "Trip length (days)",
     "group": "where",
-    "type": "number",
-    "min": 1,
-    "max": 90,
-    "placeholder": "Any · 1–90 days",
-    "primary": true
+    "primary": true,
+    "options": [
+      [
+        "",
+        "Any length"
+      ],
+      [
+        "1",
+        "1 day"
+      ],
+      [
+        "2",
+        "2 days"
+      ],
+      [
+        "3",
+        "3 days"
+      ],
+      [
+        "4",
+        "4 days"
+      ],
+      [
+        "5",
+        "5 days"
+      ],
+      [
+        "6",
+        "6 days"
+      ],
+      [
+        "7",
+        "7 days"
+      ],
+      [
+        "8",
+        "8 days"
+      ],
+      [
+        "9",
+        "9 days"
+      ],
+      [
+        "10",
+        "10 days"
+      ],
+      [
+        "12",
+        "12 days"
+      ],
+      [
+        "14",
+        "2 weeks"
+      ],
+      [
+        "16",
+        "16 days"
+      ],
+      [
+        "18",
+        "18 days"
+      ],
+      [
+        "20",
+        "20 days"
+      ],
+      [
+        "21",
+        "3 weeks"
+      ],
+      [
+        "25",
+        "25 days"
+      ],
+      [
+        "30",
+        "30 days"
+      ],
+      [
+        "35",
+        "35 days"
+      ],
+      [
+        "40",
+        "40 days"
+      ],
+      [
+        "45",
+        "45 days"
+      ],
+      [
+        "50",
+        "50 days"
+      ],
+      [
+        "60",
+        "60 days"
+      ],
+      [
+        "70",
+        "70 days"
+      ],
+      [
+        "80",
+        "80 days"
+      ],
+      [
+        "90",
+        "90 days"
+      ]
+    ]
   },
   {
     "id": "earliest",
