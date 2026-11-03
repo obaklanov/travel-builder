@@ -104,7 +104,7 @@
 @media(max-width:650px){.designing-canvas{grid-template-columns:minmax(0,1fr);gap:18px;}.design-create{min-height:0;}.design-primary-fields .design-label-row{min-height:40px;}.design-primary-fields{grid-auto-rows:minmax(92px,auto);}}
 
 /* Larger filter typography: +2px throughout the category controls. */
-.design-group>legend{font-size:14px;}
+.design-group>legend{font-size:16px;}
 .builder-home .builder-slot .builder-field-label{font-size:13px;}
 .builder-home .builder-slot select,.builder-home .builder-slot input,.builder-home .builder-multiselect summary{font-size:15px;}
 .builder-home .builder-slot input::placeholder{font-size:13px;}
