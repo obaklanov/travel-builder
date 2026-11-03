@@ -1,7 +1,6 @@
 /* Travel Builder homepage. Shared Travel Easy styling remains the foundation. */
 .builder-home .easy-hero {max-width:1400px; padding:45px 28px 64px;}
-.builder-home .easy-hero h1 {margin-bottom:18px;}
-.builder-home .easy-intro {margin-bottom:16px;}
+.builder-home .easy-hero h1 {font-size:clamp(33.6px,4.62vw,57.4px); letter-spacing:-2.66px; margin-bottom:18px;}
 .builder-home .builder-search {max-width:none; text-align:center;}
 .builder-canvas {position:relative; height:520px; max-width:1260px; margin:0 auto; isolation:isolate;}
 .builder-ring {position:absolute; inset:0; min-width:0; margin:0; padding:0; border:0; pointer-events:none;}
@@ -13,7 +12,6 @@
 .builder-home #create-filtered-trip {position:absolute; left:50%; top:51%; transform:translate(-50%,-50%); display:flex; align-items:center; justify-content:center; gap:20px; width:clamp(220px,23vw,300px); min-height:142px; margin:0; padding:28px; border-radius:30px; background:#3568d4; color:white; font-size:24px; font-weight:600; letter-spacing:-.6px; box-shadow:0 12px 28px #3568d41a; transition:background .18s,box-shadow .18s;}
 .builder-home #create-filtered-trip:hover {background:#2858bb; box-shadow:0 15px 32px #3568d42b;}
 .builder-create span {font-size:26px; font-weight:400;}
-.builder-filter-note {margin:8px 0 0; color:#817765; font-size:13px; line-height:1.5;}
 .builder-home .search-message:empty {display:none;}
 .builder-home .trip-idea {margin:30px auto 0;}
 @media (min-width:761px) and (max-width:1000px) {
@@ -24,14 +22,12 @@
 }
 @media (max-width:760px) {
   .builder-home .easy-hero {padding:40px 18px 56px;}
-  .builder-home .easy-hero h1 {font-size:clamp(44px,9vw,65px); letter-spacing:-2px;}
-  .builder-home .easy-intro {font-size:17px; margin-bottom:28px;}
+  .builder-home .easy-hero h1 {font-size:clamp(30.8px,6.3vw,45.5px); letter-spacing:-1.4px;}
   .builder-canvas {height:auto; display:flex; flex-direction:column; gap:24px;}
   .builder-home #create-filtered-trip {position:static; transform:none; align-self:center; order:-1; width:min(100%,280px); min-height:100px; border-radius:25px; font-size:23px;}
   .builder-ring {position:static; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:10px;}
   .builder-slot,.builder-home .builder-ring-outer .builder-slot {position:static; transform:none; width:auto; min-width:0;}
   .builder-home .builder-slot select {min-height:46px; padding-left:10px; padding-right:16px; font-size:12px;}
   .builder-home .builder-ring-outer select {min-height:43px; font-size:12px;}
-  .builder-filter-note {margin-top:24px;}
 }
 @media (prefers-reduced-motion:reduce) {.builder-home #create-filtered-trip {transition:none;}}
