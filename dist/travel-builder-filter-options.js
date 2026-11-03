@@ -178,7 +178,7 @@ window.TRAVEL_BUILDER_FILTERS = [
       ],
       [
         "13-15",
-        "About 2 weeks · 13–15 days"
+        "About 2 weeks"
       ],
       [
         "16-19",
@@ -186,7 +186,7 @@ window.TRAVEL_BUILDER_FILTERS = [
       ],
       [
         "20-23",
-        "About 3 weeks · 20–23 days"
+        "About 3 weeks"
       ],
       [
         "24-30",
