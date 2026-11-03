@@ -102,3 +102,21 @@
 .design-create{min-height:310px;align-self:stretch;}
 @media(max-width:1100px){.designing-canvas{grid-template-columns:repeat(2,minmax(0,1fr));}.design-group-needs{max-width:none;}.design-create{min-height:280px;}}
 @media(max-width:650px){.designing-canvas{grid-template-columns:minmax(0,1fr);gap:18px;}.design-create{min-height:0;}.design-primary-fields .design-label-row{min-height:40px;}.design-primary-fields{grid-auto-rows:minmax(92px,auto);}}
+
+/* Larger filter typography: +2px throughout the category controls. */
+.design-group>legend{font-size:14px;}
+.builder-home .builder-slot .builder-field-label{font-size:13px;}
+.builder-home .builder-slot select,.builder-home .builder-slot input,.builder-home .builder-multiselect summary{font-size:15px;}
+.builder-home .builder-slot input::placeholder{font-size:13px;}
+.builder-home .builder-slot .design-priority{font-size:11px;}
+.design-more>summary{font-size:14px;}
+.design-more>summary span{font-size:12px;}
+.builder-pending-mark{font-size:13px;}
+.builder-home .builder-interest-options label{font-size:14px;}
+.builder-home .builder-exclusion-options .builder-exclusion-search-label{font-size:13px;}
+.builder-home .builder-exclusion-options input[type="search"]{font-size:14px;}
+.builder-home #builder-clear-exclusions,.builder-exclusion-options h3,.builder-exclusion-summary,.builder-exclusion-future{font-size:13px;}
+.builder-home .design-reset-category{font-size:13px;}
+.builder-home .design-reset-all{font-size:14px;}
+.design-primary-fields .design-label-row,.design-primary-fields .design-primary-wide .design-label-row{min-height:52px;}
+.design-primary-fields{grid-auto-rows:minmax(105px,auto);}
