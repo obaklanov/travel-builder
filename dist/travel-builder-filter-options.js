@@ -97,7 +97,7 @@ window.TRAVEL_BUILDER_FILTERS = [
       "Celebration"
     ],
     "pending": true,
-    "primary": false,
+    "primary": true,
     "priority": true,
     "defaultPriority": "prefer"
   },
@@ -118,7 +118,7 @@ window.TRAVEL_BUILDER_FILTERS = [
     "id": "newPlaces",
     "label": "Prefer somewhere new",
     "group": "where",
-    "primary": true,
+    "primary": false,
     "priority": true,
     "defaultPriority": "prefer",
     "options": [
@@ -211,14 +211,16 @@ window.TRAVEL_BUILDER_FILTERS = [
     "label": "Earliest departure",
     "group": "where",
     "type": "date",
-    "help": "Trip must start on or after this date. Combined with your month and duration, if specified."
+    "help": "Trip must start on or after this date. Combined with your month and duration, if specified.",
+    "primary": false
   },
   {
     "id": "latest",
     "label": "Latest return",
     "group": "where",
     "type": "date",
-    "help": "The whole trip must finish on or before this date."
+    "help": "The whole trip must finish on or before this date.",
+    "primary": false
   },
   {
     "id": "region",
@@ -362,7 +364,7 @@ window.TRAVEL_BUILDER_FILTERS = [
       "A few stops",
       "Frequent movement"
     ],
-    "primary": false,
+    "primary": true,
     "priority": true,
     "defaultPriority": "prefer"
   },
@@ -640,7 +642,7 @@ window.TRAVEL_BUILDER_FILTERS = [
       "Premium"
     ],
     "pending": true,
-    "primary": false,
+    "primary": true,
     "priority": true,
     "defaultPriority": "prefer"
   },
@@ -720,7 +722,7 @@ window.TRAVEL_BUILDER_FILTERS = [
       "Up to 1 connection",
       "Up to 2 connections"
     ],
-    "primary": false,
+    "primary": true,
     "priority": true,
     "defaultPriority": "prefer"
   },
@@ -846,7 +848,7 @@ window.TRAVEL_BUILDER_FILTERS = [
       "Food-allergy information"
     ],
     "pending": true,
-    "primary": false,
+    "primary": true,
     "multiple": true,
     "help": "Food and allergy suitability is unverified. These preferences do not confirm safe food availability.",
     "priority": true,
@@ -863,7 +865,7 @@ window.TRAVEL_BUILDER_FILTERS = [
       "Easy independent navigation preferred"
     ],
     "pending": true,
-    "primary": false,
+    "primary": true,
     "priority": true,
     "defaultPriority": "prefer"
   },
@@ -978,7 +980,7 @@ window.TRAVEL_BUILDER_FILTERS = [
       "Prioritize solo-travel safety information",
       "Prefer well-supported solo travel"
     ],
-    "primary": false,
+    "primary": true,
     "pending": true,
     "priority": true,
     "defaultPriority": "prefer",

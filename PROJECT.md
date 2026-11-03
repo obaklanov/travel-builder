@@ -108,3 +108,7 @@ Destination price bands are terciles of unique country daily-cost sums in the sa
 ## Filter reset actions
 
 Every category has Reset category, and Reset all filters sits above the grid outside the cards. Resets restore catalogue defaults and importance modes, clear affected multi-selects/exclusions, update dependent region/date/party controls, close affected More options, invalidate the preview and any pending profile-based generation through the normal revision path, and write current defaults to the local preferences key. Category resets preserve other categories. They do not sign out, clear profile history, delete saved trips or call Supabase. Reset all writes defaults rather than deleting the storage key so legacy preferences cannot reappear on reload.
+
+## Balanced filter overview
+
+Each of the eight category cards shows three controls across two rows (one full-width control and one pair). Other controls remain under More options; all selections, importance switches and category resets retain their original behavior. The central Create action completes the nine-position desktop grid. Cards grow naturally when expanded rather than clipping their contents.
