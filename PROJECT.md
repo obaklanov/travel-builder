@@ -112,3 +112,5 @@ Every category has Reset category, and Reset all filters sits above the grid out
 ## Balanced filter overview
 
 Each of the eight category cards shows three controls across two rows (one full-width control and one pair). Other controls remain under More options; all selections, importance switches and category resets retain their original behavior. The central Create action completes the nine-position desktop grid. Cards grow naturally when expanded rather than clipping their contents.
+
+Reset category and Reset all filters now set every affected importance switch to Nice to have, including budget and journey time. The normal change path persists these choices after reload; category resets preserve importance settings in other categories.

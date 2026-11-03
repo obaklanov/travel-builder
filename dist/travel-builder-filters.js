@@ -89,7 +89,7 @@
       if(def.multiple){for(const node of document.querySelectorAll('[name="'+def.id+'"]'))node.checked=false;field(def.id).open=false;}
       else field(def.id).value=def.type?'':(Array.isArray(def.options[0])?String(def.options[0][0]):def.options[0]==='Any'?'':String(def.options[0]));
       const priority=document.querySelector('[data-priority-for="'+def.id+'"]');
-      if(priority){const must=def.defaultPriority==='must';priority.setAttribute('aria-checked',String(must));priority.textContent=must?'Must have':'Nice to have';}
+      if(priority){priority.setAttribute('aria-checked','false');priority.textContent='Nice to have';}
     }
     if(!group||group==='where'){dependentOptions();updateDateBounds();exclusionSearch.value='';exclusionSearch.dispatchEvent(new Event('input',{bubbles:true}));}
     if(!group||group==='party')syncParty();
