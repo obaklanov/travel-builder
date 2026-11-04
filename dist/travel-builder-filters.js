@@ -38,7 +38,25 @@
   exclusionGroup('Countries',sortedCountries.map(([key,c])=>['country:'+key,c.name]));
   exclusionGroup('Planning regions',sortedCountries.flatMap(([key,c])=>c.regions.map(([name])=>[engine.regionExclusionId(key,name),c.name+' · '+name])));
   const exclusionSearch=document.querySelector('#builder-exclusion-search');
-  exclusionSearch.addEventListener('input',()=>{const term=exclusionSearch.value.normalize('NFD').replace(/[\u0300-\u036f]/g,'').trim().toLowerCase();for(const section of exclusionList.children){for(const label of section.querySelectorAll('label'))label.hidden=!label.dataset.search.includes(term);section.hidden=![...section.querySelectorAll('label')].some(l=>!l.hidden);}});
+  const exclusionEmpty=document.createElement('p');exclusionEmpty.className='vaccine-choice-help';exclusionEmpty.setAttribute('role','status');exclusionList.after(exclusionEmpty);
+  function syncExclusions(){
+    const selected=[...destinationList.querySelectorAll('input:checked')].map(n=>n.value),term=exclusionSearch.value.normalize('NFD').replace(/[\u0300-\u036f]/g,'').trim().toLowerCase();let available=0,visible=0;
+    for(const section of exclusionList.children){
+      for(const label of section.querySelectorAll('label')){
+        const checkbox=label.querySelector('input'),value=checkbox.value;
+        const allowed=!selected.length||selected.some(parent=>{
+          if(parent.startsWith('continent:')){const continent=parent.slice(10);return Object.entries(data).some(([key,c])=>c.continent===continent&&(value==='country:'+key||value.startsWith('region:'+key+':')));}
+          return data[parent]&&value.startsWith('region:'+parent+':');
+        });
+        checkbox.disabled=!allowed;if(!allowed)checkbox.checked=false;
+        label.hidden=!allowed||!label.dataset.search.includes(term);if(allowed)available++;if(!label.hidden)visible++;
+      }
+      section.hidden=![...section.querySelectorAll('label')].some(label=>!label.hidden);
+    }
+    exclusionEmpty.hidden=visible>0;
+    exclusionEmpty.textContent=available?'No matching destinations.':'No smaller destinations are available to exclude within this selection yet.';
+  }
+  exclusionSearch.addEventListener('input',syncExclusions);
   exclusionSearch.addEventListener('keydown',event=>{if(event.key==='Enter')event.preventDefault();});
   document.querySelector('#builder-clear-exclusions').addEventListener('click',()=>{for(const node of document.querySelectorAll('[name="exclude"]'))node.checked=false;form.dispatchEvent(new Event('change',{bubbles:true}));});
 
@@ -78,7 +96,7 @@
   syncParty();
   syncTripAction();
   form.addEventListener('click',event=>{const button=event.target.closest('[data-priority-for]');if(!button)return;const must=button.getAttribute('aria-checked')!=='true';button.setAttribute('aria-checked',String(must));button.textContent=must?'Must have':'Nice to have';form.dispatchEvent(new Event('change',{bubbles:true}));});
-  interestLabel();
+  syncExclusions();interestLabel();
   function showPlaceSizeReview(){document.querySelector('#builder-placeSize-review').hidden=!placeSizeReviewRequired;}
   showPlaceSizeReview();
   function pendingPreferences(values){return definitions.filter(def=>def.pending&&(Array.isArray(values[def.id])?values[def.id].length:values[def.id]&&values[def.id]!=='Any')).map(def=>({label:def.label,value:Array.isArray(values[def.id])?values[def.id].join(', '):field(def.id).selectedOptions?.[0]?.textContent||values[def.id]}));}
@@ -91,7 +109,7 @@
     revision++;if(event.target===field('placeSize'))placeSizeReviewRequired=false;showPlaceSizeReview();if(event.target===field('party')||event.target===field('people'))syncParty();
     if(event.target===field('earliest'))updateDateBounds();
     if(event.target===destination||event.target.name==='destination'){}
-    interestLabel();markPending();
+    syncExclusions();interestLabel();markPending();
     try{localStorage.setItem(storageKey,JSON.stringify(collect()));}catch{/* Controls still work if browser storage is unavailable. */}
     // A changed filter must not leave an old preview looking like a new match.
     idea.hidden=true;idea.dataset.trip='';document.querySelector('#search-message').textContent='';
