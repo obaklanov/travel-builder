@@ -269,3 +269,7 @@
 .design-create{min-height:260px;}
 @media(max-width:1100px){.designing-canvas{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-areas:"party where" "experience weather" "budget create" "travel needs" "safety health";}.design-group{min-height:280px;}}
 @media(max-width:650px){.designing-canvas{grid-template-columns:minmax(0,1fr);grid-template-areas:"create" "where" "party" "budget" "experience" "weather" "travel" "needs" "safety" "health";}.design-group{min-height:0;}.design-group>.design-more{margin-top:12px;}.design-create{min-height:0;}}
+
+/* Give the central action more presence within its available space. */
+@media(min-width:1101px){.builder-home #create-filtered-trip{width:min(90%,540px);min-height:210px;border-radius:34px;font-size:30px;padding:34px;}}
+@media(min-width:651px) and (max-width:1100px){.builder-home #create-filtered-trip{width:100%;max-width:420px;min-height:170px;font-size:27px;}}
