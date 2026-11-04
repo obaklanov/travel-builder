@@ -43,8 +43,8 @@
     const out=new Map(),center=f.days?(lengths[0]+lengths.at(-1))/2:14;
     for(const [key,country] of Object.entries(data)){
       if(excluded.has('country:'+key)||excluded.has('continent:'+country.continent))continue;
-      if(f.destination&&!f.destination.startsWith('continent:')&&f.destination!==key)continue;
-      if(f.destination?.startsWith('continent:')&&country.continent!==f.destination.slice(10))continue;
+      const destinations=Array.isArray(f.destination)?f.destination:(f.destination?[f.destination]:[]);
+      if(destinations.length&&!destinations.some(value=>value===key||value==='continent:'+country.continent))continue;
       if(f.newPlaces==='yes'&&f.profileKnown&&hard('newPlaces')&&visited.has(key))continue;
       if(f.priceLevel&&hard('priceLevel')&&bands[key]!==f.priceLevel)continue;
       for(let regionIndex=0;regionIndex<country.regions.length;regionIndex++){

@@ -45,9 +45,9 @@ window.TRAVEL_BUILDER_FILTERS = [
         "Anywhere"
       ]
     ],
-    "help": "Choose a country, continent, or let us choose.",
+    "help": "Choose one or more countries or continents. No selections means anywhere. Exclusions take precedence.",
     "primary": true,
-    "presentation": "search"
+    "multiple": true
   },
   {
     "id": "newPlaces",
@@ -167,33 +167,6 @@ window.TRAVEL_BUILDER_FILTERS = [
     ],
     "help": "Regions depend on the selected country. Country-level cost estimates still apply.",
     "primary": true
-  },
-  {
-    "id": "dateFlex",
-    "label": "Month flexibility",
-    "group": "where",
-    "options": [
-      [
-        "0",
-        "Selected month"
-      ],
-      [
-        "1",
-        "±1 month"
-      ],
-      [
-        "2",
-        "±2 months"
-      ]
-    ],
-    "help": "We may suggest a future date in any month inside this window.",
-    "primary": false,
-    "presentation": "segments",
-    "shortLabels": {
-      "0": "Exact",
-      "1": "±1 mo",
-      "2": "±2 mo"
-    }
   },
   {
     "id": "season",
