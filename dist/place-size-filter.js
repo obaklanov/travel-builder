@@ -10,7 +10,7 @@
     const index=choices.findIndex(choice=>choice.value===field.value),selected=index>=0;
     range.value=String(selected?index+1:3);
     range.setAttribute('aria-valuetext',selected?choices[index].label:'No preference; move the slider to choose');
-    caption.textContent=selected?(index+1)+' · '+choices[index].label:'No preference';
+    caption.textContent=selected?choices[index].label:'No preference';
     any.setAttribute('aria-pressed',String(!selected));
     scene.classList.toggle('is-unset',!selected);
     scene.setAttribute('aria-label',selected?choices[index].label+' illustration':'No place size preference');
