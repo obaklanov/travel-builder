@@ -67,7 +67,7 @@ window.TRAVEL_BUILDER_FILTERS = [
         "10 people"
       ]
     ],
-    "primary": true,
+    "primary": false,
     "help": "Includes adults and children. Current estimates support 1–10 travellers and use equal per-person allowances; child discounts are not verified.",
     "presentation": "stepper"
   },
@@ -102,7 +102,7 @@ window.TRAVEL_BUILDER_FILTERS = [
       "Celebration"
     ],
     "pending": true,
-    "primary": true,
+    "primary": false,
     "priority": true,
     "defaultPriority": "prefer"
   },
@@ -348,7 +348,7 @@ window.TRAVEL_BUILDER_FILTERS = [
       "Wildlife"
     ],
     "help": "Select several interests. These preferences are not matched yet.",
-    "primary": true,
+    "primary": false,
     "priority": true,
     "defaultPriority": "prefer",
     "presentation": "tags"
@@ -365,7 +365,7 @@ window.TRAVEL_BUILDER_FILTERS = [
       "Adventure",
       "Mixed"
     ],
-    "primary": true,
+    "primary": false,
     "priority": true,
     "defaultPriority": "prefer",
     "presentation": "segments",
@@ -388,7 +388,7 @@ window.TRAVEL_BUILDER_FILTERS = [
       "A few stops",
       "Frequent movement"
     ],
-    "primary": true,
+    "primary": false,
     "priority": true,
     "defaultPriority": "prefer",
     "presentation": "segments",
@@ -422,7 +422,7 @@ window.TRAVEL_BUILDER_FILTERS = [
     "label": "Place size",
     "group": "experience",
     "pending": true,
-    "primary": false,
+    "primary": true,
     "priority": true,
     "defaultPriority": "prefer",
     "options": [
