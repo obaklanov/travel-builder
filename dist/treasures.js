@@ -1542,18 +1542,13 @@ const treasurePhotos = {
     "bytes": 30316
   },
   "Uluru": {
-    "author": "Dietmar Rabich",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Petermann_Ranges_(AU),_Uluru-Kata_Tjuta_National_Park,_Uluru_--_2019_--_3679-83.jpg",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "originalTitle": "File:Petermann Ranges (AU), Uluru-Kata Tjuta National Park, Uluru -- 2019 -- 3679-83.jpg",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Petermann_Ranges_%28AU%29%2C_Uluru-Kata_Tjuta_National_Park%2C_Uluru_--_2019_--_3679-83.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "src": "images/treasures/australia-2-new.webp",
-    "alt": "Uluru — Australia",
-    "width": 640,
-    "height": 206,
-    "bytes": 26456
-  },
+  "src": "images/treasures/uluru-supplied.png",
+  "alt": "Uluru rising above red earth and green scrub beneath a bright blue sky",
+  "width": 1048,
+  "height": 707,
+  "suppliedByOwner": true,
+  "suppliedAt": "2026-11-04"
+},
   "Great Barrier Reef": {
     "author": "Ank Kumar",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aerial_View_of_Great_Barrier_Reef_(Ank_Kumar)_05.jpg",
@@ -1573,6 +1568,7 @@ function appendTreasurePhoto(treasure,panel){
  const figure=document.createElement('figure');figure.className='treasure-photo';
  const image=document.createElement('img');image.alt=photo.alt;image.width=photo.width;image.height=photo.height;image.decoding='async';image.src=photo.src;
  image.onerror=()=>figure.remove();
+ if(photo.suppliedByOwner){const caption=document.createElement('figcaption');caption.textContent='Photo supplied by the site owner.';figure.append(image,caption);panel.append(figure);return;}
  const caption=document.createElement('figcaption'),source=document.createElement('a'),license=document.createElement('a');
  source.href=photo.sourceUrl;source.textContent='Photo: '+photo.author;source.target='_blank';source.rel='noopener noreferrer';
  license.href=photo.licenseUrl;license.textContent=photo.license;license.target='_blank';license.rel='noopener noreferrer';
