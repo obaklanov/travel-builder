@@ -286,3 +286,9 @@
 .builder-home #create-filtered-trip:focus-visible{outline:3px solid #3979c5;outline-offset:5px;}
 @media(max-width:650px){.builder-home #create-filtered-trip{grid-template-columns:minmax(0,1fr) 42px;gap:12px;min-height:72px;padding:15px 24px;border-radius:18px;text-align:center;}.trip-ticket-plane{padding-left:12px;}.trip-ticket-plane svg{width:30px;height:30px;}.trip-ticket-route{display:none;}}
 @media(prefers-reduced-motion:reduce){.builder-home #create-filtered-trip,.trip-ticket-plane svg{transition:none;}.builder-home #create-filtered-trip:hover,.builder-home #create-filtered-trip:hover .trip-ticket-plane svg{transform:none;}}
+
+/* A compact destination cover gives each generated idea a recognizable place. */
+.builder-home .trip-idea{display:flow-root;}.builder-home .trip-idea[hidden]{display:none;}
+.trip-idea-photo{float:right;width:200px;height:140px;margin:0 0 16px 22px;object-fit:cover;border-radius:12px;border:1px solid #e2e8f0;}.trip-idea-photo[hidden]{display:none;}
+.trip-idea .trip-preview-actions{clear:both;}
+@media(max-width:550px){.trip-idea-photo{width:120px;height:90px;margin:0 0 12px 14px;border-radius:9px;}}

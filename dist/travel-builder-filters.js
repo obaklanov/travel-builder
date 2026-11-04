@@ -150,6 +150,8 @@
     document.querySelector('#trip-guide').href='destinations.html?'+params.toString();
     const payload={id:tripId,country:key,origin,origin_label:originCity,departure_date:trip.start,return_date:trip.end,days:trip.days,estimated_total:trip.total,group_size:trip.people,budget:trip.budget,currency:'CAD'};
     idea.dataset.trip=JSON.stringify(payload);
+    const photo=document.querySelector('#trip-idea-photo'),cover=window.TRAVEL_DESTINATION_PHOTOS?.[key];
+    photo.hidden=!cover;photo.onerror=()=>{photo.hidden=true;};if(cover){photo.alt=cover.alt;photo.src=cover.src;}else photo.removeAttribute('src');
     document.querySelector('#trip-idea-title').textContent=data[key].name+' · '+trip.region;
     document.querySelector('#trip-origin').textContent='From '+originCity+' ('+origin+') to '+trip.route.city+' ('+trip.route.code+') · approx. '+trip.route.time+' hours one way';
     const date=new Intl.DateTimeFormat('en-CA',{month:'short',day:'numeric',year:'numeric'});
