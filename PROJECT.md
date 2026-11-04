@@ -128,3 +128,5 @@ Philippines cover updated on 4 November 2026 to the beach photograph supplied by
 Laos, Philippines, Malaysia and Brunei now each have three treasure badges, lazy-loaded licensed photos, descriptions, approximate landmark coordinates and Google Maps links. Sources, image licenses and decorative SVG artwork are retained in data/destination-treasures-28.json. New sections describe places to discover; they do not claim profile reward collection is implemented. Malaysia and Brunei front covers were replaced with photographs supplied by the site owner, matching the earlier Philippines cover replacement. Licensed originals are retained as separate treasure photos with their own attribution.
 
 Australia front cover and Uluru treasure photo replaced on 4 November 2026 with images supplied by the site owner. Supplied treasure images show a source caption without attributing the previous photographer or license.
+
+South Africa front cover replaced on 4 November 2026 with the Cape Town/Table Mountain image supplied by the site owner.

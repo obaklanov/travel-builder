@@ -66,17 +66,12 @@
       "bytes": 53176
     },
     "south-africa": {
-      "author": "Josep M. Gracia",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:CT_-_Table_Mountain_and_Cape_Town_cityscape,_South_Africa,_2017.jpg",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "originalTitle": "File:CT - Table Mountain and Cape Town cityscape, South Africa, 2017.jpg",
-      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/85/CT_-_Table_Mountain_and_Cape_Town_cityscape%2C_South_Africa%2C_2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "src": "images/south-africa-cover.webp",
-      "alt": "Table Mountain — South Africa",
-      "width": 800,
-      "height": 500,
-      "bytes": 85654
+      "src": "images/south-africa-supplied-cover.png",
+      "alt": "Cape Town, Table Mountain and the Atlantic coastline beneath a clear blue sky",
+      "width": 1172,
+      "height": 657,
+      "suppliedByOwner": true,
+      "suppliedAt": "2026-11-04"
     },
     "south-korea": {
       "author": "Frank Schulenburg",
