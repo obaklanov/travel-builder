@@ -6,5 +6,13 @@
     "height": 701,
     "suppliedByOwner": true,
     "suppliedAt": "2026-11-04"
+  },
+  "thailand": {
+    "src": "images/thailand-supplied-cover.png",
+    "alt": "A sandy Thai beach framed by limestone cliffs and turquoise water",
+    "width": 1004,
+    "height": 653,
+    "suppliedByOwner": true,
+    "suppliedAt": "2026-11-04"
   }
 }
