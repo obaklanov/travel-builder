@@ -241,7 +241,7 @@ window.TRAVEL_BUILDER_FILTERS = [
       ]
     ],
     "help": "Regions depend on the selected country. Country-level cost estimates still apply.",
-    "primary": false
+    "primary": true
   },
   {
     "id": "dateFlex",
@@ -289,7 +289,7 @@ window.TRAVEL_BUILDER_FILTERS = [
       ]
     ],
     "help": "Editorial regional sightseeing ratings, not a weather forecast.",
-    "primary": true,
+    "primary": false,
     "priority": true,
     "defaultPriority": "must"
   },
@@ -320,7 +320,7 @@ window.TRAVEL_BUILDER_FILTERS = [
       "Some rain is fine",
       "Rain is fine"
     ],
-    "primary": true,
+    "primary": false,
     "priority": true,
     "defaultPriority": "prefer"
   },
@@ -629,7 +629,7 @@ window.TRAVEL_BUILDER_FILTERS = [
       "Premium"
     ],
     "pending": true,
-    "primary": true,
+    "primary": false,
     "priority": true,
     "defaultPriority": "prefer",
     "presentation": "comfort",
@@ -723,7 +723,7 @@ window.TRAVEL_BUILDER_FILTERS = [
       "Up to 1 connection",
       "Up to 2 connections"
     ],
-    "primary": true,
+    "primary": false,
     "priority": true,
     "defaultPriority": "prefer"
   },
@@ -779,7 +779,7 @@ window.TRAVEL_BUILDER_FILTERS = [
     "help": "Optional requirements. Accessibility is not verified: a suggested trip must not be treated as confirmed suitable.",
     "priority": true,
     "defaultPriority": "prefer",
-    "presentation": "checklist"
+    "presentation": "tags"
   },
   {
     "id": "passport",
@@ -823,7 +823,7 @@ window.TRAVEL_BUILDER_FILTERS = [
       "Any visa process"
     ],
     "help": "Preference only. Existing Canadian entry summaries still need structured verification before matching.",
-    "primary": true,
+    "primary": false,
     "priority": true,
     "defaultPriority": "prefer",
     "presentation": "radios"
@@ -857,7 +857,7 @@ window.TRAVEL_BUILDER_FILTERS = [
       "Food-allergy information"
     ],
     "pending": true,
-    "primary": true,
+    "primary": false,
     "multiple": true,
     "help": "Food and allergy suitability is unverified. These preferences do not confirm safe food availability.",
     "priority": true,
@@ -997,7 +997,7 @@ window.TRAVEL_BUILDER_FILTERS = [
       "Prioritize solo-travel safety information",
       "Prefer well-supported solo travel"
     ],
-    "primary": true,
+    "primary": false,
     "pending": true,
     "priority": true,
     "defaultPriority": "prefer",
