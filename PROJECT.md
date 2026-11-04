@@ -138,3 +138,5 @@ South Korea front cover replaced on 4 November 2026 with the image supplied by t
 Spain front cover replaced on 4 November 2026 with the image supplied by the site owner.
 
 France front cover replaced on 4 November 2026 with the image supplied by the site owner.
+
+United Kingdom front cover replaced on 4 November 2026 with the image supplied by the site owner.

@@ -9,17 +9,12 @@
       "suppliedAt": "2026-11-04"
     },
     "united-kingdom": {
-      "author": "Bill Peloquin",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Big_Ben_London_Daylight_4.jpg",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "originalTitle": "File:Big Ben London Daylight 4.jpg",
-      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Big_Ben_London_Daylight_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "src": "images/united-kingdom-big-ben.webp",
-      "alt": "Big Ben and the Palace of Westminster in London beneath a blue sky",
-      "width": 640,
-      "height": 425,
-      "bytes": 51022
+      "src": "images/united-kingdom-supplied-cover.png",
+      "alt": "Tower Bridge spanning the River Thames in London",
+      "width": 1070,
+      "height": 682,
+      "suppliedByOwner": true,
+      "suppliedAt": "2026-11-04"
     },
     "turkey": {
       "author": "Bernard Gagnon",
