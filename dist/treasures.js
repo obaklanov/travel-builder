@@ -1618,7 +1618,7 @@ Object.assign(newCountryTreasures,{
       "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 24h26l7-9h29l13 13M40 25v22q-4 10-15 11h-7m31-34v31q-2 10-13 15m24-45v42q2 8 11 9m-43-5H12m3-14h21m35-14h15M11 81q10-6 20 0t20 0 20 0 20 0M18 90q8-4 16 0t16 0 16 0 16 0M76 18l5-8m-2 20 11-4\"/></svg>",
       "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M10 80V49q2-31 40-35 38 4 40 35v31M22 79V50q3-21 28-24 25 3 28 24v29M35 77V60m-7 20h15M32 60q3-8 6 0m20 17V54m-7 26h15M55 54q3-8 6 0M47 44v-8m0 16v-4M10 86h80M34 24l3 15m27-14-4 16\"/></svg>"
     ],
-    "rewardLabel": "TREASURES OF LAOS — Three places to discover."
+    "rewardLabel": "TREASURES OF LAOS — Collect all three. Earn your profile lotus."
   },
   "philippines": {
     "name": "Philippines",
@@ -1661,7 +1661,7 @@ Object.assign(newCountryTreasures,{
       "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M7 77q12-42 27 0m-3 0q19-59 38 0m-7 0q16-48 31 0M9 59q10-27 21-2m0-13q15-39 30 0m7 1q12-26 23 4M10 86h80M16 91h68\"/><circle cx=\"77\" cy=\"18\" r=\"7\"/></svg>",
       "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 76q19 2 26-11t27-12 31-7M8 63q18 2 24-10t27-11 33-9M10 48q14 5 22-5t24-11 33-12M13 36q14 2 24-8t29-9M9 88q24 1 32-11t25-12 27-6M29 77v-9m18-3v-9m24-5v-9M16 55v-8m31-2v-9M70 31v-9M66 80h20v-9l-10-7-10 7Zm9-1v-6\"/></svg>"
     ],
-    "rewardLabel": "TREASURES OF PHILIPPINES — Three places to discover."
+    "rewardLabel": "TREASURES OF PHILIPPINES — Collect all three. Earn your profile jeepney."
   },
   "malaysia": {
     "name": "Malaysia",
@@ -1704,7 +1704,7 @@ Object.assign(newCountryTreasures,{
       "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 84h84M15 77h70M20 69h60M25 61h50M30 53h40M35 45h30M40 37h20M45 29h10M9 80l6-39 17-25 18 5 18-9 20 30 4 38M22 33l7 6m47-5-7 7M47 29v-9h6v9M46 20l4-6 4 6M14 88h72\"/></svg>",
       "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 81l19-26 12 10 13-41 11 13 9-24 24 68M37 65l13-13 11 8m-11-36 2 18 9-5m9-24 1 21 8-7M7 89h86M16 77l9-9m40 7 7-16 11 18\"/><path d=\"M12 39h20m49 5h11\"/></svg>"
     ],
-    "rewardLabel": "TREASURES OF MALAYSIA — Three places to discover."
+    "rewardLabel": "TREASURES OF MALAYSIA — Collect all three. Earn your profile hornbill."
   },
   "brunei": {
     "name": "Brunei",
@@ -1747,6 +1747,6 @@ Object.assign(newCountryTreasures,{
       "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M10 59V39h30v20m-34-20 19-17 19 17M57 59V32h32v27m-36-27 20-18 20 18M15 59v18m20-18v18m27-18v18m22-18v18M10 64h79M40 49h17M21 59V46h8v13m39-15h10v9M8 85q10-5 20 0t20 0 20 0 20 0\"/></svg>",
       "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 78V44m-10 7 10-14 10 14m-18 0 8-16 8 16M80 78V38m-12 9 12-20 12 20m-21-11 9-18 9 18M31 77V24h8v53m22 0V24h8v53M29 24h12m18 0h12M39 33q11 12 22 0m-22 8q11 11 22 0M34 29v42m30-42v42M30 45h10m20 0h10M30 57h10m20 0h10M11 86h78\"/></svg>"
     ],
-    "rewardLabel": "TREASURES OF BRUNEI — Three places to discover."
+    "rewardLabel": "TREASURES OF BRUNEI — Collect all three. Earn your profile proboscis monkey."
   }
 });
