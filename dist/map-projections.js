@@ -17,7 +17,9 @@
     // Trim the side ocean bands in the initial frame; retain all paths for zoom/pan.
     const cutoff=Math.max(left-pad,projection([-161,20.5])[0]-pad);
     const frameWidth=right+pad-cutoff,west=cutoff+frameWidth*.07,east=right+pad-frameWidth*.05;
-    const viewBox=[west,top-pad,east-west,bottom-top+pad*2].map(n=>n.toFixed(3)).join(' ');
+    // Shift the cropped frame east without changing scale, to keep the North Island visible.
+    const shift=(east-west)*.015;
+    const viewBox=[west+shift,top-pad,east-west,bottom-top+pad*2].map(n=>n.toFixed(3)).join(' ');
     return {viewBox,fullViewBox,path:f=>path(feature(f))};
   }
   function country(input){
