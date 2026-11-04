@@ -314,7 +314,7 @@ window.TRAVEL_BUILDER_FILTERS = [
   {
     "id": "landscape",
     "label": "Landscape",
-    "group": "experience",
+    "group": "weather",
     "pending": true,
     "options": [
       "Any",
@@ -332,7 +332,7 @@ window.TRAVEL_BUILDER_FILTERS = [
   {
     "id": "placeSize",
     "label": "City size",
-    "group": "experience",
+    "group": "city",
     "pending": true,
     "primary": true,
     "priority": true,
@@ -407,7 +407,7 @@ window.TRAVEL_BUILDER_FILTERS = [
   {
     "id": "evening",
     "label": "Evening atmosphere",
-    "group": "experience",
+    "group": "city",
     "pending": true,
     "options": [
       "Any",
@@ -1123,7 +1123,7 @@ window.TRAVEL_BUILDER_FILTERS = [
   {
     "id": "advisory",
     "label": "Safety level",
-    "group": "safety",
+    "group": "city",
     "pending": true,
     "options": [
       [
@@ -1158,20 +1158,22 @@ window.TRAVEL_BUILDER_FILTERS = [
   },
   {
     "id": "diet",
-    "label": "Food requirements",
+    "label": "Food preferences",
     "group": "health",
     "options": [
-      "Vegetarian",
-      "Vegan",
-      "Halal options",
-      "Kosher options",
-      "Gluten-free options",
-      "Food-allergy information"
-    ],
+      "Known for baked goods & desserts",
+      "Known for barbecue & grilled dishes",
+      "Known for meat dishes",
+      "Known for noodles & rice dishes",
+      "Known for seafood",
+      "Known for spicy food",
+      "Known for street food",
+      "Known for vegetarian dishes"
+],
     "pending": true,
     "primary": false,
     "multiple": true,
-    "help": "Food and allergy suitability is unverified. These preferences do not confirm safe food availability.",
+    "help": "Cuisine preferences require reviewed destination or city data and are not verified yet.",
     "priority": true,
     "defaultPriority": "prefer",
     "presentation": "tags"
@@ -1179,7 +1181,7 @@ window.TRAVEL_BUILDER_FILTERS = [
   {
     "id": "language",
     "label": "English use",
-    "group": "needs",
+    "group": "city",
     "options": [
       [
         "",
@@ -1498,7 +1500,7 @@ window.TRAVEL_BUILDER_FILTERS = [
   {
     "id": "walkability",
     "label": "Public-space walkability",
-    "group": "experience",
+    "group": "city",
     "options": [
       [
         "",

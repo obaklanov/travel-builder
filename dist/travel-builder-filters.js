@@ -111,7 +111,7 @@
     if(!group||group==='party')syncParty();
     for(const card of document.querySelectorAll('.design-group'))if(!group||card.classList.contains('design-group-'+group))for(const more of card.querySelectorAll('.design-more'))more.open=false;
     if(!group)previousCountry=null;
-    if(!group||group==='experience')placeSizeReviewRequired=false;
+    if(!group||group==='city')placeSizeReviewRequired=false;
     // Use the normal change path to cancel pending generation, clear the preview, refresh labels and save defaults.
     form.dispatchEvent(new Event('change',{bubbles:true}));
     const card=group?document.querySelector('.design-group-'+group):null;

@@ -339,3 +339,9 @@
 .design-create>.link-next-base-slot{box-sizing:border-box;width:min(90%,540px);--category-fill:#edf5ff;--category-border:#a7c4f2;--category-label:#3f67a1;}
 @media(max-width:1100px){.design-create>.link-next-base-slot{width:100%;max-width:420px;}}
 @media(max-width:650px){.design-create>.link-next-base-slot{max-width:330px;padding:9px 12px;}}
+
+/* Destination character controls share one City category. */
+.design-group-city{grid-area:city;--category-fill:#edf7f0;--category-border:#cce2d4;--category-label:#47725a;}
+.designing-canvas{grid-template-areas:"party party party where where where weather weather weather city city city" "budget budget budget create create create create create create travel travel travel" "experience experience experience needs needs needs safety safety safety health health health";}
+@media(max-width:1100px){.designing-canvas{grid-template-areas:"party where" "city weather" "budget create" "travel experience" "needs safety" "health health";}}
+@media(max-width:650px){.designing-canvas{grid-template-areas:"create" "where" "party" "budget" "city" "weather" "experience" "travel" "needs" "safety" "health";}}
