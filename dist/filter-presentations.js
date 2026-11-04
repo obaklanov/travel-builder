@@ -91,6 +91,9 @@
   const expand=button('Show all options');expand.id='builder-toggle-extras';expand.classList.add('variant-expand-all');const extras=()=>[...document.querySelectorAll('.design-more')];document.querySelector('#builder-reset-all').before(expand);
   function syncExpand(){const all=extras().every(el=>el.open);expand.textContent=all?'Hide extra options':'Show all options';expand.setAttribute('aria-expanded',String(all));}
   expand.addEventListener('click',()=>{const open=!extras().every(el=>el.open);for(const el of extras())el.open=open;syncExpand();});for(const el of extras())el.addEventListener('toggle',syncExpand);
+  // Treat the essential top-row disclosures as one group when a user activates a summary.
+  const essentialExtras=[...document.querySelectorAll('.design-essential > .design-more')];
+  for(const details of essentialExtras){const summary=details.querySelector('summary');summary.addEventListener('click',event=>{event.preventDefault();const open=!details.open;for(const peer of essentialExtras)peer.open=open;syncExpand();});}
   form.addEventListener('change',event=>{if(event.target===form){for(const details of form.querySelectorAll('.variant-search-picker,.variant-duration-picker'))details.open=false;}for(const sync of syncers)sync(event);syncExpand();});
   for(const sync of syncers)sync();syncExpand();document.body.classList.add('filter-showcase');
 })();
