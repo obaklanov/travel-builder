@@ -5,6 +5,12 @@
   const cloud='<path d="M28 55a12 12 0 0 1-1-24 17 17 0 0 1 32-5 14 14 0 1 1 6 29Z" fill="#dce8f4" stroke="#819db8" stroke-width="2"/>';
   function picture(id,index){
     let art='';
+    if(id==='humidity'){
+      const drops=[0,1,2,4,6][index];art='<circle cx="50" cy="40" r="33" fill="'+['#f4dfb5','#efe5cb','#d9e9de','#d0e8ee','#bedeea'][index]+'"/><path d="M18 68h64" stroke="#88a29a" stroke-width="2"/>';
+      if(index<2)art+='<circle cx="50" cy="31" r="12" fill="#ecc56b"/><path d="m32 63 9-8 10 8 9-8 11 8" fill="none" stroke="#bc9a68" stroke-width="2"/>';
+      for(let i=0;i<drops;i++){const x=28+(i%3)*22,y=18+Math.floor(i/3)*24;art+='<path d="M'+x+' '+y+'q-10 13 0 16 10-3 0-16Z" fill="#79b5cb" stroke="#5a96af"/>';}
+      return '<svg viewBox="0 0 100 84" aria-hidden="true">'+art+'</svg>';
+    }
     if(id==='advisory'){
       const colour=['#79a990','#a5b27f','#d1b16a','#d79463','#bc786b'][index];
       const face=index<2?'M44 33q6 6 12 0':index===2?'M44 36h12':'M44 38q6-6 12 0';
@@ -24,19 +30,19 @@
     }
     return '<svg viewBox="0 0 100 84" aria-hidden="true">'+art+'</svg>';
   }
-  for(const [id,names] of [['temperature',['Cool','Mild','Warm','Hot']],['rain',['Dry','Some rain','Rain is fine']],['advisory',['1','2','3','4','5']]]){
+  for(const [id,names] of [['temperature',['Cool','Mild','Warm','Hot']],['rain',['Dry','Some rain','Rain is fine']],['humidity',['1','2','3','4','5']],['advisory',['1','2','3','4','5']]]){
     const field=document.querySelector('#builder-'+id),slot=field.closest('.builder-slot'),label=slot.querySelector('.builder-field-label'),choices=[...field.options].slice(1);
     field.hidden=true;field.classList.add('variant-source');field.setAttribute('aria-hidden','true');slot.classList.add('weather-scale-slot');
     const wrap=document.createElement('div');wrap.className='weather-scale';
     const scene=document.createElement('div');scene.className='weather-scale-scene';
     const caption=document.createElement('output');caption.className='weather-scale-caption';caption.setAttribute('aria-live','polite');
-    const range=document.createElement('input');range.type='range';range.min='1';range.max=String(choices.length);range.step='1';range.className='weather-scale-range';range.id='builder-'+id+'-range';range.setAttribute('aria-label',id==='rain'?'Rain tolerance':id==='advisory'?'Safety level':'Temperature');label.htmlFor=range.id;
+    const range=document.createElement('input');range.type='range';range.min='1';range.max=String(choices.length);range.step='1';range.className='weather-scale-range';range.id='builder-'+id+'-range';range.setAttribute('aria-label',id==='humidity'?'Humidity':id==='rain'?'Rain tolerance':id==='advisory'?'Safety level':'Temperature');label.htmlFor=range.id;
     const steps=document.createElement('div');steps.className='weather-scale-steps';steps.style.setProperty('--weather-steps',choices.length);
     function choose(i){field.value=choices[i].value;field.dispatchEvent(new Event('change',{bubbles:true}));}
     const buttons=choices.map((choice,i)=>{const button=document.createElement('button');button.type='button';button.className='variant-button';button.innerHTML=picture(id,i)+'<span>'+names[i]+'</span>';button.title=choice.textContent;button.setAttribute('aria-label',choice.textContent);button.addEventListener('click',()=>choose(i));steps.append(button);return button;});
     const any=document.createElement('button');any.type='button';any.className='variant-button weather-scale-any';any.textContent='No preference';any.addEventListener('click',()=>{field.value='';field.dispatchEvent(new Event('change',{bubbles:true}));});
     range.addEventListener('input',()=>choose(Number(range.value)-1));range.addEventListener('pointerdown',()=>{if(!field.value)choose(Number(range.value)-1);});range.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();choose(Number(range.value)-1);}});
     function sync(){const index=choices.findIndex(c=>c.value===field.value),selected=index>=0,current=selected?index:1;range.value=String(current+1);range.setAttribute('aria-valuetext',selected?choices[index].textContent:'No preference; move to choose');scene.innerHTML=picture(id,current);scene.classList.toggle('is-unset',!selected);caption.textContent=selected?choices[index].textContent:'No preference';any.setAttribute('aria-pressed',String(!selected));buttons.forEach((b,i)=>b.setAttribute('aria-pressed',String(selected&&i===index)));}
-    wrap.append(scene,caption,range);if(id!=='advisory')wrap.append(steps);wrap.append(any);field.after(wrap);form.addEventListener('change',sync);sync();
+    wrap.append(scene,caption,range);if(id!=='advisory'&&id!=='humidity')wrap.append(steps);wrap.append(any);field.after(wrap);form.addEventListener('change',sync);sync();
   }
 })();

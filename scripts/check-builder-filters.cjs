@@ -83,7 +83,7 @@ assert.equal(engine.match({...base,placeSize:'over-5m',priorities:{placeSize:'mu
 assert(engine.match({...base,placeSize:'under-500k',priorities:{placeSize:'prefer'}},data,routes,now,defs).length>0,'Unverified preferred size permits provisional suggestions');
 
 assert(!defs.some(d=>d.id==='bookingFlex'));
-assert.equal(defs.find(d=>d.id==='exclude').primary,false);
+assert.equal(defs.find(d=>d.id==='exclude').primary,true);
 assert.deepEqual(engine.durationValues('10-12'),[10,11,12]);
 assert.deepEqual(engine.durationValues('61-90'),Array.from({length:30},(_,i)=>i+61));
 assert.deepEqual(engine.durationValues('91-100'),[]);
@@ -141,3 +141,8 @@ assert.equal(match({fitnessBudget:'-1'}).length,0);
 
 assert.equal(match({fitnessBudget:'70',people:'2'})[0].total,match({people:'2'})[0].total+70,'Group fitness allowance is added once');
 assert.equal(match({fitnessBudget:'70',people:'2',days:'14'})[0].fitnessTotal,140,'Two weeks doubles the group allowance');
+
+const selectedRegion=engine.regionExclusionId('spain',data.spain.regions[2][0]);
+assert(match({destination:[selectedRegion]}).length>0);
+assert(match({destination:[selectedRegion]}).every(t=>t.key==='spain'&&t.regionIndex===2),'Region inclusion narrows country');
+assert.equal(match({destination:[selectedRegion],exclude:[selectedRegion]}).length,0);

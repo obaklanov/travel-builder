@@ -45,10 +45,11 @@
     for(const [key,country] of Object.entries(data)){
       if(excluded.has('country:'+key)||excluded.has('continent:'+country.continent))continue;
       const destinations=Array.isArray(f.destination)?f.destination:(f.destination?[f.destination]:[]);
-      if(destinations.length&&!destinations.some(value=>value===key||value==='continent:'+country.continent))continue;
+      if(destinations.length&&!destinations.some(value=>value===key||value==='continent:'+country.continent||value.startsWith('region:'+key+':')))continue;
       if(f.newPlaces==='yes'&&f.profileKnown&&hard('newPlaces')&&visited.has(key))continue;
       if(f.priceLevel&&hard('priceLevel')&&bands[key]!==f.priceLevel)continue;
       for(let regionIndex=0;regionIndex<country.regions.length;regionIndex++){
+        if(destinations.length&&!destinations.some(value=>value===key||value==='continent:'+country.continent||value===regionExclusionId(key,country.regions[regionIndex][0])))continue;
         if(excluded.has(regionExclusionId(key,country.regions[regionIndex][0])))continue;
         if(f.region!==''&&f.region!==undefined&&Number(f.region)!==regionIndex)continue;
         for(const month of candidateMonths(f,now)){

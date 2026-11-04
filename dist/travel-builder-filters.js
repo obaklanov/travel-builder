@@ -14,10 +14,11 @@
   function destinationGroup(title,options){const section=document.createElement('section'),heading=document.createElement('h3');heading.textContent=title;section.append(heading);for(const [value,text] of options){const label=document.createElement('label'),checkbox=document.createElement('input');checkbox.type='checkbox';checkbox.name='destination';checkbox.value=value;label.append(checkbox,document.createTextNode(text));label.dataset.search=text.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();section.append(label);destinationLabels.set(value,text);}destinationList.append(section);}
   destinationGroup('Continents',[...new Set(Object.values(data).map(c=>c.continent))].sort().map(c=>['continent:'+c,c]));
   destinationGroup('Countries',Object.entries(data).sort((a,b)=>a[1].name.localeCompare(b[1].name)).map(([key,c])=>[key,c.name]));
+  destinationGroup('Regions',Object.entries(data).sort((a,b)=>a[1].name.localeCompare(b[1].name)).flatMap(([key,c])=>c.regions.map(([name])=>[engine.regionExclusionId(key,name),c.name+' · '+name])));
   const destinationSearch=document.querySelector('#builder-destination-search');
   destinationSearch.addEventListener('input',()=>{const term=destinationSearch.value.normalize('NFD').replace(/[\u0300-\u036f]/g,'').trim().toLowerCase();for(const section of destinationList.children){for(const label of section.querySelectorAll('label'))label.hidden=!label.dataset.search.includes(term);section.hidden=![...section.querySelectorAll('label')].some(l=>!l.hidden);}});
   destinationSearch.addEventListener('keydown',event=>{if(event.key==='Enter')event.preventDefault();});
-  document.querySelector('#builder-clear-destinations').addEventListener('click',()=>{for(const checkbox of destinationList.querySelectorAll('input'))checkbox.checked=false;field('region').value='';dependentOptions();form.dispatchEvent(new Event('change',{bubbles:true}));});
+  document.querySelector('#builder-clear-destinations').addEventListener('click',()=>{for(const checkbox of destinationList.querySelectorAll('input'))checkbox.checked=false;form.dispatchEvent(new Event('change',{bubbles:true}));});
   const today=new Date(),lastMonth=new Date(today.getFullYear()+3,today.getMonth(),1);
   const monthValue=date=>`${date.getFullYear()}-${String(date.getMonth()+1).padStart(2,'0')}`;
   field('month').min=monthValue(today);field('month').max=monthValue(lastMonth);
@@ -25,15 +26,6 @@
   const limits=engine.dateLimits(today);
   function updateDateBounds(){field('earliest').min=limits.min;field('earliest').max=limits.departureMax;field('latest').min=field('earliest').value||limits.min;field('latest').max=limits.returnMax;field('earliest').title='Choose a departure from '+limits.min+' through '+limits.departureMax+'.';field('latest').title='Return no later than '+limits.returnMax+' (three years ahead plus 90 days).';}
   updateDateBounds();
-  function dependentOptions(){
-    const selected=[...destinationList.querySelectorAll('input:checked')].map(n=>n.value),country=selected.length===1?data[selected[0]]:null,region=field('region');
-    const oldRegion=region.value;
-    region.replaceChildren(option('','Any region'));
-    if(country){country.regions.forEach(([name],i)=>region.append(option(String(i),name)));}
-    region.disabled=!country;
-    region.title=country?'':'Select one country to choose a planning region';
-    if([...region.options].some(o=>o.value===oldRegion))region.value=oldRegion;
-  }
   const exclusionLabels=new Map();
   const exclusionList=document.querySelector('#builder-exclusion-list');
   function exclusionGroup(title,options){
@@ -58,6 +50,7 @@
     if(saved){
       if(!Object.hasOwn(saved,'lastStop'))saved.lastStop=saved.linkNextBase==='yes'?'no':'yes';
       if(typeof saved.destination==='string')saved.destination=saved.destination?[saved.destination]:[];
+      if(Array.isArray(saved.destination)&&saved.destination.length===1&&saved.region!==''&&saved.region!==undefined){const key=saved.destination[0],name=data[key]?.regions[Number(saved.region)]?.[0];if(name)saved.destination=[engine.regionExclusionId(key,name)];}
       if(!['Solo','Couple'].includes(saved.party))saved.party=Number(saved.people)>1?'Couple':'Solo';
       placeSizeReviewRequired=Boolean(['village','town','city','large-city','metropolis'].includes(saved.placeSize)||saved.placeSizeReviewRequired||(!Object.hasOwn(saved,'placeSize')&&(saved.urban||saved.metroSize)));
       if(/^\d+$/.test(saved.days||'')){const day=Number(saved.days),choice=definitions.find(d=>d.id==='days').options.find(([value])=>{const span=engine.durationValues(value);return value&&span.includes(day);});saved.days=choice?choice[0]:'';}
@@ -68,11 +61,10 @@
       if(saved.alcohol==='Prefer legal alcohol availability')saved.alcohol='yes';
       if(typeof saved.transferLimit==='string')saved.transferLimit=['Up to 30 minutes','Up to 1 hour','Up to 2 hours'].includes(saved.transferLimit)?['Under 2 hours']:[];
       if(Array.isArray(saved.interests)){const renamed={Food:'Food experiences',History:'History and heritage',Art:'Art and museums',Beaches:'Beaches and swimming'};saved.interests=saved.interests.map(v=>renamed[v]||v);}
-      for(const def of definitions.filter(d=>!['region'].includes(d.id))){const value=saved[def.id];if(def.multiple){for(const checkbox of document.querySelectorAll('[name="'+def.id+'"]'))checkbox.checked=Array.isArray(value)&&value.includes(checkbox.value);}else if(typeof value==='string'){const node=field(def.id);if(node.tagName!=='SELECT'||[...node.options].some(o=>o.value===value))node.value=value;}}
-      dependentOptions();
-      for(const id of ['region'])if([...field(id).options].some(o=>o.value===saved[id]))field(id).value=saved[id];
-    }else dependentOptions();
-  }catch{dependentOptions();}
+      for(const def of definitions){const value=saved[def.id];if(def.multiple){for(const checkbox of document.querySelectorAll('[name="'+def.id+'"]'))checkbox.checked=Array.isArray(value)&&value.includes(checkbox.value);}else if(typeof value==='string'){const node=field(def.id);if(node.tagName!=='SELECT'||[...node.options].some(o=>o.value===value))node.value=value;}}
+
+    }
+  }catch{}
   if(!field('passport').value)field('passport').value='CA';
   if(!field('departure').value)field('departure').value='YYZ';
   if(!field('days').value)field('days').value='7-9';
@@ -98,7 +90,7 @@
     document.querySelector('#builder-reset-status').textContent='';
     revision++;if(event.target===field('placeSize'))placeSizeReviewRequired=false;showPlaceSizeReview();if(event.target===field('party')||event.target===field('people'))syncParty();
     if(event.target===field('earliest'))updateDateBounds();
-    if(event.target===destination||event.target.name==='destination'){field('region').value='';dependentOptions();}
+    if(event.target===destination||event.target.name==='destination'){}
     interestLabel();markPending();
     try{localStorage.setItem(storageKey,JSON.stringify(collect()));}catch{/* Controls still work if browser storage is unavailable. */}
     // A changed filter must not leave an old preview looking like a new match.
@@ -115,7 +107,7 @@
       const priority=document.querySelector('[data-priority-for="'+def.id+'"]');
       if(priority){priority.setAttribute('aria-checked','false');priority.textContent='Nice to have';}
     }
-    if(!group||group==='where'){dependentOptions();updateDateBounds();destinationSearch.value='';destinationSearch.dispatchEvent(new Event('input',{bubbles:true}));exclusionSearch.value='';exclusionSearch.dispatchEvent(new Event('input',{bubbles:true}));}
+    if(!group||group==='where'){updateDateBounds();destinationSearch.value='';destinationSearch.dispatchEvent(new Event('input',{bubbles:true}));exclusionSearch.value='';exclusionSearch.dispatchEvent(new Event('input',{bubbles:true}));}
     if(!group||group==='party')syncParty();
     for(const card of document.querySelectorAll('.design-group'))if(!group||card.classList.contains('design-group-'+group))for(const more of card.querySelectorAll('.design-more'))more.open=false;
     if(!group)previousCountry=null;

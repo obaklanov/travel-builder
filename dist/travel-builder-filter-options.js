@@ -45,7 +45,7 @@ window.TRAVEL_BUILDER_FILTERS = [
         "Anywhere"
       ]
     ],
-    "help": "Choose one or more countries or continents. No selections means anywhere. Exclusions take precedence.",
+    "help": "Select countries, continents or individual planning regions. All selected places are alternatives; exclusions take precedence.",
     "primary": true,
     "multiple": true
   },
@@ -72,7 +72,7 @@ window.TRAVEL_BUILDER_FILTERS = [
     "id": "exclude",
     "label": "Destinations to exclude",
     "group": "where",
-    "primary": false,
+    "primary": true,
     "multiple": true,
     "options": [],
     "help": "Exclude continents, countries or planning regions. Exclusions override your destination selection. City exclusions will follow when travel hubs are available."
@@ -156,19 +156,6 @@ window.TRAVEL_BUILDER_FILTERS = [
     "primary": false
   },
   {
-    "id": "region",
-    "label": "Planning region",
-    "group": "where",
-    "options": [
-      [
-        "",
-        "Any region"
-      ]
-    ],
-    "help": "Regions depend on the selected country. Country-level cost estimates still apply.",
-    "primary": true
-  },
-  {
     "id": "season",
     "label": "Best time to visit",
     "group": "weather",
@@ -207,6 +194,40 @@ window.TRAVEL_BUILDER_FILTERS = [
     "priority": true,
     "defaultPriority": "prefer"
   },
+{
+  "id": "humidity",
+  "label": "Humidity",
+  "group": "weather",
+  "primary": false,
+  "pending": true,
+  "options": [
+    [
+      "",
+      "No preference"
+    ],
+    [
+      "very-dry",
+      "1 · Very dry"
+    ],
+    [
+      "dry",
+      "2 · Dry"
+    ],
+    [
+      "balanced",
+      "3 · Balanced"
+    ],
+    [
+      "humid",
+      "4 · Humid"
+    ],
+    [
+      "very-humid",
+      "5 · Very humid"
+    ]
+  ],
+  "help": "Requires reviewed local monthly humidity data; this preference is not verified yet."
+},
   {
     "id": "rain",
     "label": "Rain tolerance",
