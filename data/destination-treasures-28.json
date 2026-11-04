@@ -1,0 +1,332 @@
+{
+  "reviewedAt": "2026-11-04",
+  "notes": "Three sourced highlights per new country. Decorative badges follow the existing artwork style; no profile-collection persistence is introduced. Map coordinates are approximate landmark points, not navigation directions.",
+  "countries": {
+    "laos": {
+      "name": "Laos",
+      "rewardName": "lotus",
+      "reward": "<svg class=\"country-reward\" viewBox=\"0 0 100 90\" role=\"img\" aria-label=\"Decorative lotus badge\" stroke=\"#8c754f\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><ellipse cx=\"50\" cy=\"82\" rx=\"32\" ry=\"4\" fill=\"#806342\" stroke=\"none\" opacity=\".12\"/><path d=\"M50 69Q21 56 26 28q18 4 24 22 6-18 24-22 5 28-24 41Z\" fill=\"#e9ac99\"/><path d=\"M50 70Q14 69 10 47q25-8 40 23 15-31 40-23-4 22-40 23Z\" fill=\"#e8bd77\"/><path d=\"M50 67Q32 39 50 15q18 24 0 52Z\" fill=\"#f3d5a1\"/><path d=\"M20 76q30-14 60 0\" fill=\"none\" stroke=\"#7d9e83\" stroke-width=\"5\"/></svg>",
+      "treasures": [
+        {
+          "name": "Wat Xieng Thong",
+          "subtitle": "Golden-city heritage",
+          "description": "A Luang Prabang temple complex known for sweeping layered roofs, gilded decoration and colourful mosaic work.",
+          "region": "Luang Prabang, Laos",
+          "lat": 19.8974,
+          "lon": 102.1431,
+          "type": "temple",
+          "sourceUrl": "https://www.tourismlaos.org/2816-2/"
+        },
+        {
+          "name": "Kuang Si Falls",
+          "subtitle": "Turquoise cascades",
+          "description": "Forest waterfalls spill over limestone terraces into a series of blue-green pools near Luang Prabang.",
+          "region": "Luang Prabang Province, Laos",
+          "lat": 19.7498,
+          "lon": 101.991,
+          "type": "falls",
+          "sourceUrl": "https://tourismluangprabang.org/things-to-do/nature/kuang-si-waterfall/"
+        },
+        {
+          "name": "Pak Ou Caves",
+          "subtitle": "Sanctuaries above the Mekong",
+          "description": "Riverside limestone caves hold collections of Buddha images above the meeting of the Mekong and Nam Ou rivers.",
+          "region": "Luang Prabang Province, Laos",
+          "lat": 20.0494,
+          "lon": 102.2106,
+          "type": "cave",
+          "sourceUrl": "https://www.tourismluangprabang.org/wp-content/uploads/2022/07/Pakou-Brochure-backs-a3-eng.pdf"
+        }
+      ],
+      "icons": [
+        "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 81h76M20 74V51h60v23M14 51q20-3 36-25 16 22 36 25ZM23 40q15-3 27-19 12 16 27 19M34 27l16-13 16 13M50 14V6M43 75V58h14v17M27 59v9m46-9v9M18 86h64\"/></svg>",
+        "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 24h26l7-9h29l13 13M40 25v22q-4 10-15 11h-7m31-34v31q-2 10-13 15m24-45v42q2 8 11 9m-43-5H12m3-14h21m35-14h15M11 81q10-6 20 0t20 0 20 0 20 0M18 90q8-4 16 0t16 0 16 0 16 0M76 18l5-8m-2 20 11-4\"/></svg>",
+        "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M10 80V49q2-31 40-35 38 4 40 35v31M22 79V50q3-21 28-24 25 3 28 24v29M35 77V60m-7 20h15M32 60q3-8 6 0m20 17V54m-7 26h15M55 54q3-8 6 0M47 44v-8m0 16v-4M10 86h80M34 24l3 15m27-14-4 16\"/></svg>"
+      ],
+      "rewardLabel": "TREASURES OF LAOS — Three places to discover."
+    },
+    "philippines": {
+      "name": "Philippines",
+      "rewardName": "jeepney",
+      "reward": "<svg class=\"country-reward\" viewBox=\"0 0 100 90\" role=\"img\" aria-label=\"Decorative jeepney badge\" stroke=\"#8c754f\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><ellipse cx=\"50\" cy=\"82\" rx=\"32\" ry=\"4\" fill=\"#806342\" stroke=\"none\" opacity=\".12\"/><path d=\"M15 39h67l8 16v18H10V50Z\" fill=\"#e3b95d\"/><path d=\"M23 28h45l11 13H17Z\" fill=\"#72aaa2\"/><path d=\"M27 34h15v11H24Zm19 0h14l8 11H46Z\" fill=\"#eaf3e8\"/><path d=\"M12 52h75v15H12Z\" fill=\"#d68d70\"/><path d=\"M43 53h26v12H43Z\" fill=\"#d9d3b5\"/><path d=\"M46 57h20m-20 4h20\" fill=\"none\"/><circle cx=\"24\" cy=\"72\" r=\"9\" fill=\"#52635e\"/><circle cx=\"24\" cy=\"72\" r=\"4\" fill=\"#e6d7b4\"/><circle cx=\"75\" cy=\"72\" r=\"9\" fill=\"#52635e\"/><circle cx=\"75\" cy=\"72\" r=\"4\" fill=\"#e6d7b4\"/><circle cx=\"18\" cy=\"58\" r=\"4\" fill=\"#fff1b0\"/><circle cx=\"80\" cy=\"58\" r=\"4\" fill=\"#fff1b0\"/></svg>",
+      "treasures": [
+        {
+          "name": "El Nido",
+          "subtitle": "Limestone & lagoons",
+          "description": "Palawan’s coast around El Nido combines limestone cliffs, sheltered coves and clear-water island scenery.",
+          "region": "Palawan, Philippines",
+          "lat": 11.1815,
+          "lon": 119.3967,
+          "type": "lagoon",
+          "sourceUrl": "https://philippines.travel/destinations/el-nido"
+        },
+        {
+          "name": "Chocolate Hills",
+          "subtitle": "Bohol’s rolling landscape",
+          "description": "Grass-covered limestone hills rise across inland Bohol, with colours that shift between green and brown through the seasons.",
+          "region": "Bohol, Philippines",
+          "lat": 9.8297,
+          "lon": 124.1396,
+          "type": "hills",
+          "sourceUrl": "https://pais.bmb.gov.ph/home/info/DENRR700010"
+        },
+        {
+          "name": "Batad Rice Terraces",
+          "subtitle": "Living mountain heritage",
+          "description": "An amphitheatre of rice terraces surrounds Batad village, part of the UNESCO-listed rice terraces of the Philippine Cordilleras.",
+          "region": "Ifugao, Philippines",
+          "lat": 16.9343,
+          "lon": 121.1363,
+          "type": "terraces",
+          "sourceUrl": "https://whc.unesco.org/en/list/722/"
+        }
+      ],
+      "icons": [
+        "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M10 75l4-35 13-18 13 11 4 24m46 18-5-44-16-17-13 15-2 25M15 61q35-16 70 0M13 75q8-4 16 0t16 0 16 0 16 0 12 0M23 43l6-11m44 3 6 18M21 85q9-4 18 0t18 0 18 0M33 65h29l-6 6H39Zm15-1V45l11 15H48\"/></svg>",
+        "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M7 77q12-42 27 0m-3 0q19-59 38 0m-7 0q16-48 31 0M9 59q10-27 21-2m0-13q15-39 30 0m7 1q12-26 23 4M10 86h80M16 91h68\"/><circle cx=\"77\" cy=\"18\" r=\"7\"/></svg>",
+        "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 76q19 2 26-11t27-12 31-7M8 63q18 2 24-10t27-11 33-9M10 48q14 5 22-5t24-11 33-12M13 36q14 2 24-8t29-9M9 88q24 1 32-11t25-12 27-6M29 77v-9m18-3v-9m24-5v-9M16 55v-8m31-2v-9M70 31v-9M66 80h20v-9l-10-7-10 7Zm9-1v-6\"/></svg>"
+      ],
+      "rewardLabel": "TREASURES OF PHILIPPINES — Three places to discover."
+    },
+    "malaysia": {
+      "name": "Malaysia",
+      "rewardName": "hornbill",
+      "reward": "<svg class=\"country-reward\" viewBox=\"0 0 100 90\" role=\"img\" aria-label=\"Decorative hornbill badge\" stroke=\"#8c754f\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><ellipse cx=\"50\" cy=\"82\" rx=\"32\" ry=\"4\" fill=\"#806342\" stroke=\"none\" opacity=\".12\"/><path d=\"M24 65q-8-16 7-29l12-8q13-9 22 6l-6 19q-12 23-35 12Z\" fill=\"#53645c\"/><path d=\"M40 37q-1-19 16-22 18-2 22 16L62 42Z\" fill=\"#e3c677\"/><path d=\"M63 27q24-5 28 10-16 8-31 3Z\" fill=\"#e3ac54\"/><path d=\"M52 23q1-14 20-12l6 13Z\" fill=\"#bd8863\"/><path d=\"M32 62l-13 16 20-6 10-9Z\" fill=\"#e4dcc3\"/><path d=\"M34 45q-7 14 10 15\" fill=\"none\" stroke=\"#f4e8c5\" stroke-width=\"5\"/><circle cx=\"62\" cy=\"25\" r=\"2\" fill=\"#3c433b\"/><path d=\"M47 69v8m12-13v13m-18 1h27\" fill=\"none\"/></svg>",
+      "treasures": [
+        {
+          "name": "Petronas Twin Towers",
+          "subtitle": "Kuala Lumpur’s skyline",
+          "description": "Twin steel-and-glass towers linked by a skybridge rise above Kuala Lumpur City Centre.",
+          "region": "Kuala Lumpur, Malaysia",
+          "lat": 3.1579,
+          "lon": 101.7117,
+          "type": "towers",
+          "sourceUrl": "https://www.petronastwintowers.com.my/"
+        },
+        {
+          "name": "Batu Caves",
+          "subtitle": "Temples in limestone",
+          "description": "A Hindu temple complex occupies limestone caves north of Kuala Lumpur, approached by a long staircase beside a towering Murugan statue.",
+          "region": "Selangor, Malaysia",
+          "lat": 3.2374,
+          "lon": 101.684,
+          "type": "stairs",
+          "sourceUrl": "https://selangor.travel/listing/batu-caves/"
+        },
+        {
+          "name": "Mount Kinabalu",
+          "subtitle": "Above Borneo’s forests",
+          "description": "Granite peaks rise above the forests of Kinabalu Park in Sabah, a UNESCO World Heritage site.",
+          "region": "Sabah, Malaysia",
+          "lat": 6.075,
+          "lon": 116.558,
+          "type": "mountain",
+          "sourceUrl": "https://www.sabahparks.org.my/kinabalu-park/"
+        }
+      ],
+      "icons": [
+        "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M22 83V42h20v41m16 0V42h20v41M25 42V31h14v11M61 42V31h14v11M28 31V22h8v9m28 0v-9h8v9M32 22V8m36 14V8M42 54h16v7H42M18 88h64M26 49h12m-12 8h12m-12 8h12m-12 8h12m24-24h12m-12 8h12m-12 8h12m-12 8h12\"/></svg>",
+        "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 84h84M15 77h70M20 69h60M25 61h50M30 53h40M35 45h30M40 37h20M45 29h10M9 80l6-39 17-25 18 5 18-9 20 30 4 38M22 33l7 6m47-5-7 7M47 29v-9h6v9M46 20l4-6 4 6M14 88h72\"/></svg>",
+        "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 81l19-26 12 10 13-41 11 13 9-24 24 68M37 65l13-13 11 8m-11-36 2 18 9-5m9-24 1 21 8-7M7 89h86M16 77l9-9m40 7 7-16 11 18\"/><path d=\"M12 39h20m49 5h11\"/></svg>"
+      ],
+      "rewardLabel": "TREASURES OF MALAYSIA — Three places to discover."
+    },
+    "brunei": {
+      "name": "Brunei",
+      "rewardName": "proboscis monkey",
+      "reward": "<svg class=\"country-reward\" viewBox=\"0 0 100 90\" role=\"img\" aria-label=\"Decorative proboscis monkey badge\" stroke=\"#8c754f\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><ellipse cx=\"50\" cy=\"82\" rx=\"32\" ry=\"4\" fill=\"#806342\" stroke=\"none\" opacity=\".12\"/><circle cx=\"22\" cy=\"39\" r=\"11\" fill=\"#ad805d\"/><circle cx=\"78\" cy=\"39\" r=\"11\" fill=\"#ad805d\"/><ellipse cx=\"50\" cy=\"45\" rx=\"31\" ry=\"33\" fill=\"#bd8b62\"/><path d=\"M28 37q22-21 44 0v17Q69 76 50 76T28 54Z\" fill=\"#e8caa1\"/><path d=\"M46 34q-9 13-7 27 1 13 14 8 9-3 4-13l-2-22Z\" fill=\"#d9a17f\"/><circle cx=\"37\" cy=\"39\" r=\"2.4\" fill=\"#433c33\"/><circle cx=\"64\" cy=\"39\" r=\"2.4\" fill=\"#433c33\"/><path d=\"M42 73q10 4 17-2\" fill=\"none\"/></svg>",
+      "treasures": [
+        {
+          "name": "Omar Ali Saifuddien Mosque",
+          "subtitle": "A golden dome by the lagoon",
+          "description": "A gold-domed mosque and ceremonial lagoon form a landmark in the heart of Bandar Seri Begawan.",
+          "region": "Bandar Seri Begawan, Brunei",
+          "lat": 4.8898,
+          "lon": 114.9395,
+          "type": "mosque",
+          "sourceUrl": "https://www.bruneitourism.com/wp-content/uploads/2022/02/brunei-muara.pdf"
+        },
+        {
+          "name": "Kampong Ayer",
+          "subtitle": "Life above the river",
+          "description": "Water-village neighbourhoods built on stilts spread across the Brunei River, connected by walkways and water taxis.",
+          "region": "Brunei-Muara, Brunei",
+          "lat": 4.8825,
+          "lon": 114.9425,
+          "type": "village",
+          "sourceUrl": "https://www.bruneitourism.com/places/kampong-ayer/"
+        },
+        {
+          "name": "Ulu Temburong National Park",
+          "subtitle": "Rainforest from above",
+          "description": "Protected rainforest in eastern Brunei offers river journeys, forest trails and a canopy walkway above the trees.",
+          "region": "Temburong, Brunei",
+          "lat": 4.478,
+          "lon": 115.2077,
+          "type": "rainforest",
+          "sourceUrl": "https://www.bruneitourism.com/temburong/"
+        }
+      ],
+      "icons": [
+        "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M18 79V51h64v28M27 51q0-23 23-28 23 5 23 28M50 23V12m-4 2q8 5 9-4M38 79V62q12-15 24 0v17M11 79V25h8v54M8 25l7-10 7 10M81 79V25h8v54M78 25l7-10 7 10M9 85h82M26 59v10m48-10v10\"/></svg>",
+        "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M10 59V39h30v20m-34-20 19-17 19 17M57 59V32h32v27m-36-27 20-18 20 18M15 59v18m20-18v18m27-18v18m22-18v18M10 64h79M40 49h17M21 59V46h8v13m39-15h10v9M8 85q10-5 20 0t20 0 20 0 20 0\"/></svg>",
+        "<svg viewBox=\"0 0 100 100\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 78V44m-10 7 10-14 10 14m-18 0 8-16 8 16M80 78V38m-12 9 12-20 12 20m-21-11 9-18 9 18M31 77V24h8v53m22 0V24h8v53M29 24h12m18 0h12M39 33q11 12 22 0m-22 8q11 11 22 0M34 29v42m30-42v42M30 45h10m20 0h10M30 57h10m20 0h10M11 86h78\"/></svg>"
+      ],
+      "rewardLabel": "TREASURES OF BRUNEI — Three places to discover."
+    }
+  },
+  "photos": {
+    "Wat Xieng Thong": {
+      "src": "images/treasures/laos-1.jpg",
+      "alt": "Wat Xieng Thong — Laos",
+      "author": "Basile Morin",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Temple_Wat_Xieng_Thong_-_Luang_Prabang_-_Laos.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "originalTitle": "File:Temple Wat Xieng Thong - Luang Prabang - Laos.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Temple_Wat_Xieng_Thong_-_Luang_Prabang_-_Laos.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "width": 800,
+      "height": 476,
+      "bytes": 205636
+    },
+    "Pak Ou Caves": {
+      "src": "images/treasures/laos-3.jpg",
+      "alt": "Pak Ou Caves — Laos",
+      "author": "Bjørn Christian Tørrissen",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pak-Ou-Caves-2017.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "originalTitle": "File:Pak-Ou-Caves-2017.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Pak-Ou-Caves-2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "width": 800,
+      "height": 640,
+      "bytes": 224597
+    },
+    "Chocolate Hills": {
+      "src": "images/treasures/philippines-2.jpg",
+      "alt": "Chocolate Hills — Philippines",
+      "author": "Vyacheslav Argenberg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bohol_Hills,_Chocolate_Hills,_Philippines.jpg",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "originalTitle": "File:Bohol Hills, Chocolate Hills, Philippines.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Bohol_Hills%2C_Chocolate_Hills%2C_Philippines.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "width": 800,
+      "height": 533,
+      "bytes": 148437
+    },
+    "Batad Rice Terraces": {
+      "src": "images/treasures/philippines-3.jpg",
+      "alt": "Batad Rice Terraces — Philippines",
+      "author": "CEphoto, Uwe Aranas",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Banaue_Philippines_Batad-Rice-Terraces-02.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "originalTitle": "File:Banaue Philippines Batad-Rice-Terraces-02.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/11/Banaue_Philippines_Batad-Rice-Terraces-02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "width": 800,
+      "height": 533,
+      "bytes": 287223
+    },
+    "Batu Caves": {
+      "src": "images/treasures/malaysia-2.jpg",
+      "alt": "Batu Caves — Malaysia",
+      "author": "CEphoto, Uwe Aranas",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gombak_Selangor_Batu-Caves-01.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "originalTitle": "File:Gombak Selangor Batu-Caves-01.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/56/Gombak_Selangor_Batu-Caves-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "width": 800,
+      "height": 1200,
+      "bytes": 728697
+    },
+    "Mount Kinabalu": {
+      "src": "images/treasures/malaysia-3.jpg",
+      "alt": "Mount Kinabalu — Malaysia",
+      "author": "kallerna",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:St._John%27s_Peak_Mount_Kinabalu_3.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "originalTitle": "File:St. John's Peak Mount Kinabalu 3.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/75/St._John%27s_Peak_Mount_Kinabalu_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "width": 800,
+      "height": 400,
+      "bytes": 125826
+    },
+    "Kampong Ayer": {
+      "src": "images/treasures/brunei-2.jpg",
+      "alt": "Kampong Ayer — Brunei",
+      "author": "the Tourism Development Department of Brunei",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kampong_Ayer_Brunei_Darussalam.jpg",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "originalTitle": "File:Kampong Ayer Brunei Darussalam.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Kampong_Ayer_Brunei_Darussalam.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "width": 800,
+      "height": 583,
+      "bytes": 255213
+    },
+    "Ulu Temburong National Park": {
+      "src": "images/treasures/brunei-3.jpg",
+      "alt": "Ulu Temburong National Park — Brunei",
+      "author": "Pangalau",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ulu_Temburong_Canopy_Walk_2013_12.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "originalTitle": "File:Ulu Temburong Canopy Walk 2013 12.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/58/Ulu_Temburong_Canopy_Walk_2013_12.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "width": 800,
+      "height": 533,
+      "bytes": 296637
+    },
+    "Kuang Si Falls": {
+      "src": "images/laos-cover.jpg",
+      "alt": "Kuang Si Falls — Laos",
+      "author": "Basile Morin",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kuang_Si_Falls_and_its_emerald_water_pools_in_Luang_Prabang_province_Laos.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "originalTitle": "Kuang Si Falls and its emerald water pools in Luang Prabang province Laos.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Kuang_Si_Falls_and_its_emerald_water_pools_in_Luang_Prabang_province_Laos.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "width": 1000,
+      "height": 667
+    },
+    "El Nido": {
+      "src": "images/philippines-cover.jpg",
+      "alt": "El Nido — Philippines",
+      "author": "choypictures",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:El_Nido_in_Palawan.jpg",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "originalTitle": "El Nido in Palawan.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d3/El_Nido_in_Palawan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "width": 1000,
+      "height": 667
+    },
+    "Petronas Twin Towers": {
+      "src": "images/malaysia-cover.jpg",
+      "alt": "Petronas Twin Towers — Malaysia",
+      "author": "Shesmax",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Petronas_Twin_Towers._Aerial_view._2019-11-30_15-05-22.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "originalTitle": "Petronas Twin Towers. Aerial view. 2019-11-30 15-05-22.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/09/Petronas_Twin_Towers._Aerial_view._2019-11-30_15-05-22.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "width": 1000,
+      "height": 667
+    },
+    "Omar Ali Saifuddien Mosque": {
+      "src": "images/brunei-cover.jpg",
+      "alt": "Omar Ali Saifuddien Mosque — Brunei",
+      "author": "Mx. Granger",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Omar_Ali_Saifuddien_Mosque.jpg",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "originalTitle": "Omar Ali Saifuddien Mosque.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/Omar_Ali_Saifuddien_Mosque.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "width": 1000,
+      "height": 622
+    }
+  }
+}

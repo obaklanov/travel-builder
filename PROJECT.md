@@ -122,3 +122,7 @@ The planner now covers 28 countries: Laos, Philippines, Malaysia and Brunei join
 Existing Supabase installations must run supabase-travel-builder-destinations-28.sql to widen only the Builder trip country constraint. Frontend and initial setup support the four keys; this file does not alter Auth, RLS, grants or saved trips. Deployment cannot apply this SQL automatically.
 
 Philippines cover updated on 4 November 2026 to the beach photograph supplied by the site owner. The original Commons photo credit no longer applies to the displayed cover. User confirmed running supabase-travel-builder-destinations-28.sql.
+
+## New-country treasures (4 November 2026)
+
+Laos, Philippines, Malaysia and Brunei now each have three treasure badges, lazy-loaded licensed photos, descriptions, approximate landmark coordinates and Google Maps links. Sources, image licenses and decorative SVG artwork are retained in data/destination-treasures-28.json. New sections describe places to discover; they do not claim profile reward collection is implemented. Malaysia and Brunei front covers were replaced with photographs supplied by the site owner, matching the earlier Philippines cover replacement. Licensed originals are retained as separate treasure photos with their own attribution.

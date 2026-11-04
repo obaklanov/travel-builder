@@ -19,25 +19,19 @@
     "height": 652
   },
   "malaysia": {
-    "title": "Petronas Twin Towers. Aerial view. 2019-11-30 15-05-22.jpg",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Petronas_Twin_Towers._Aerial_view._2019-11-30_15-05-22.jpg",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/09/Petronas_Twin_Towers._Aerial_view._2019-11-30_15-05-22.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Petronas_Twin_Towers._Aerial_view._2019-11-30_15-05-22.jpg/1280px-Petronas_Twin_Towers._Aerial_view._2019-11-30_15-05-22.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "width": 1000,
-    "height": 667,
-    "author": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Shesmax&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Shesmax (page does not exist)\">Shesmax</a>",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    "source": "Image supplied by the site owner for the destination cover",
+    "suppliedAt": "2026-11-04",
+    "src": "images/malaysia-supplied-cover.png",
+    "alt": "The illuminated Petronas Twin Towers and Kuala Lumpur skyline at dusk",
+    "width": 965,
+    "height": 649
   },
   "brunei": {
-    "title": "Omar Ali Saifuddien Mosque.jpg",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Omar_Ali_Saifuddien_Mosque.jpg",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/Omar_Ali_Saifuddien_Mosque.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Omar_Ali_Saifuddien_Mosque.jpg/1280px-Omar_Ali_Saifuddien_Mosque.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "width": 1000,
-    "height": 622,
-    "author": "<a href=\"//commons.wikimedia.org/wiki/User:Mx._Granger\" title=\"User:Mx. Granger\">Mx. Granger</a>",
-    "license": "CC0",
-    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    "source": "Image supplied by the site owner for the destination cover",
+    "suppliedAt": "2026-11-04",
+    "src": "images/brunei-supplied-cover.png",
+    "alt": "Omar Ali Saifuddien Mosque reflected in its lagoon beneath a blue and cloudy sky",
+    "width": 979,
+    "height": 642
   }
 }
