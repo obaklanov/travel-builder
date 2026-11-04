@@ -67,7 +67,7 @@ window.TRAVEL_BUILDER_FILTERS = [
         "10 people"
       ]
     ],
-    "primary": false,
+    "primary": true,
     "help": "Includes adults and children. Current estimates support 1–10 travellers and use equal per-person allowances; child discounts are not verified.",
     "presentation": "stepper"
   },

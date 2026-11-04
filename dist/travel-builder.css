@@ -169,10 +169,10 @@
 .variant-segments>.variant-button:last-child:nth-child(odd){grid-column:1/-1;}
 .variant-comfort .variant-button{flex-direction:column;min-height:50px;gap:3px;font-size:12px;}
 .variant-comfort-mark{font-size:10px;letter-spacing:1px;}
-.variant-stepper{display:flex;align-items:center;justify-content:space-between;gap:4px;min-height:45px;padding:0 3px;border:1px solid var(--category-border);border-radius:10px;background:var(--category-fill);}
-.builder-home .variant-stepper .variant-button{flex:0 0 35px;min-height:39px;padding:4px;border:0;background:transparent;font-size:23px;}
-.variant-stepper output{flex:1;text-align:center;font-size:20px;font-weight:600;color:#273548;}
-.variant-stepper[aria-disabled="true"]{opacity:.65;}
+.variant-stepper-control{display:flex;align-items:center;justify-content:space-between;gap:4px;min-height:45px;padding:0 3px;border:1px solid var(--category-border);border-radius:10px;background:var(--category-fill);}
+.builder-home .variant-stepper-control .variant-button{flex:0 0 35px;min-height:39px;padding:4px;border:0;background:transparent;font-size:23px;}
+.variant-stepper-control output{flex:1;text-align:center;font-size:20px;font-weight:600;color:#273548;}
+.variant-stepper-control[aria-disabled="true"]{opacity:.65;}
 .variant-radios{display:grid;gap:4px;}
 .builder-home .variant-radio{display:flex;align-items:flex-start;gap:8px;min-height:31px;padding:5px 0;margin:0;color:#34455a;font-size:13px;line-height:1.4;cursor:pointer;}
 .builder-home .variant-radio input[type="radio"]{appearance:auto;flex:0 0 16px;width:16px;min-width:16px;height:16px;min-height:16px;margin:1px 0 0;padding:0;border:0;accent-color:var(--category-label,#45627d);}
@@ -232,7 +232,7 @@
 .builder-home .variant-expand-all{min-height:36px;padding:8px 13px;border-color:#d7e0eb;color:#53677f;font-size:12px;}
 .filter-showcase .design-reset-toolbar{flex-wrap:wrap;}
 .filter-showcase .design-reset-toolbar p:not(:empty){flex-basis:100%;}
-@media(max-width:650px){.builder-home .variant-button{min-height:40px;}.builder-home .variant-radio,.builder-home .variant-inline-options label{min-height:40px;}.builder-home .variant-slot input.variant-range{height:44px;min-height:44px;}.variant-dual-track{height:44px;}.variant-dual-bar{top:20px;}.builder-home .variant-money-modes .variant-button{min-height:36px;}.builder-home .variant-stepper .variant-button{min-height:43px;}}
+@media(max-width:650px){.builder-home .variant-button{min-height:40px;}.builder-home .variant-radio,.builder-home .variant-inline-options label{min-height:40px;}.builder-home .variant-slot input.variant-range{height:44px;min-height:44px;}.variant-dual-track{height:44px;}.variant-dual-bar{top:20px;}.builder-home .variant-money-modes .variant-button{min-height:36px;}.builder-home .variant-stepper-control .variant-button{min-height:43px;}}
 @media(prefers-reduced-motion:reduce){.variant-switch input::before{transition:none;}}
 
 .variant-search-heading{margin:8px 0 3px;padding:10px 10px 5px;border-top:1px solid #e2e8f0;color:#65758a;font-size:12px;font-weight:600;}
@@ -294,3 +294,9 @@
 @media(max-width:550px){.trip-idea-photo{width:120px;height:90px;margin:0 0 12px 14px;border-radius:9px;}}
 
 .design-group .group-passport-slot[hidden]{display:none!important;}
+
+/* A stable row separates the field label from its counter controls. */
+.design-group-party .builder-slot:has(#builder-people){display:grid;grid-template-columns:minmax(0,1fr) 128px;align-items:center;gap:10px;}
+.design-group-party .builder-slot:has(#builder-people) .design-label-row{min-height:0;margin:0;}
+.design-group-party .variant-stepper-control{width:128px;box-sizing:border-box;}
+.design-group-party .variant-count{min-width:28px;font-variant-numeric:tabular-nums;}

@@ -26,7 +26,7 @@
     if(def.id==='party'){slot.classList.add('design-primary-wide');document.querySelector('#builder-occasion').closest('.builder-slot').classList.remove('design-primary-wide');}
   }
   function stepper(def){
-    const {field,label}=source(def),group=node('div','variant-stepper');labelled(group,label);
+    const {field,label}=source(def),group=node('div','variant-stepper-control');labelled(group,label);
     const minus=button('−','Remove one traveller'),plus=button('+','Add one traveller'),count=node('output','variant-count');count.setAttribute('aria-live','polite');
     const allowed=()=>choices(field).filter(c=>!c.option.disabled&&!c.option.hidden).map(c=>Number(c.value));
     function move(direction){if(field.disabled)return;const options=allowed(),index=options.indexOf(Number(field.value)),next=options[index+direction];if(next!==undefined){field.value=String(next);emit(field);}}
