@@ -247,3 +247,11 @@
 
 /* Keep each set of experience choices visually grouped with its label. */
 .design-group-experience .variant-slot:has(#builder-style),.design-group-experience .variant-slot:has(#builder-pace){box-sizing:border-box;padding:10px;border:1px solid var(--category-border);border-radius:12px;background:#fff;align-self:stretch;}
+
+.weather-scale{display:grid;justify-items:center;gap:9px;padding:12px;border:1px solid var(--category-border);border-radius:12px;background:#fff;}
+.weather-scale-scene{height:74px;width:100px;}.weather-scale-scene svg{height:100%;width:100%;}.weather-scale-scene.is-unset{opacity:.55;}
+.weather-scale-caption{min-height:22px;color:var(--category-label);font-size:14px;text-align:center;}
+.weather-scale-range{width:100%;min-height:44px;padding:0!important;border:0!important;accent-color:#6382ad;background:transparent!important;}
+.weather-scale-steps{display:grid;grid-template-columns:repeat(var(--weather-steps),minmax(0,1fr));gap:5px;width:100%;}
+.builder-home .weather-scale-steps .variant-button{flex-direction:column;gap:3px;min-height:68px;padding:6px 2px;font-size:11px;}
+.weather-scale-steps svg{width:40px;height:35px;}.builder-home .weather-scale-any{font-size:12px;min-height:32px;}

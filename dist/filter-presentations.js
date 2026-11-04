@@ -39,7 +39,7 @@
     field.after(group);syncers.push(()=>{for(const input of group.querySelectorAll('input'))input.checked=input.value===field.value;});
   }
   function binary(def){
-    const {field,label}=source(def),row=node('label','variant-switch'),input=node('input');input.type='checkbox';input.setAttribute('role','switch');input.setAttribute('aria-label',def.label);label.removeAttribute('for');row.append(input);field.after(row);
+    const {field,label}=source(def),row=node('label','variant-switch'),input=node('input');input.id='variant-'+def.id+'-switch';input.type='checkbox';input.setAttribute('role','switch');input.setAttribute('aria-label',def.label);label.removeAttribute('for');row.append(input);field.after(row);
     input.addEventListener('change',event=>{event.stopPropagation();field.value=input.checked?'yes':'';emit(field);});syncers.push(()=>{input.checked=field.value==='yes';});
   }
   function checklist(def){
@@ -48,7 +48,7 @@
   function tags(def){const field=document.querySelector('#builder-'+def.id);field.classList.add('variant-tag-picker');field.querySelector('.builder-interest-options').classList.add('variant-tags');}
   function searchSelect(def){
     const {field,label}=source(def),picker=node('details','variant-search-picker'),summary=node('summary'),panel=node('div','variant-search-panel'),search=node('input'),list=node('div','variant-search-list');
-    search.type='search';search.placeholder='Search destinations';search.setAttribute('aria-label','Search destinations');search.autocomplete='off';list.id='variant-destination-list';list.setAttribute('role','listbox');list.setAttribute('aria-label',def.label+' options');summary.setAttribute('aria-haspopup','listbox');label.removeAttribute('for');panel.append(search,list);picker.append(summary,panel);field.after(picker);
+    search.id='variant-destination-search';search.type='search';search.placeholder='Search destinations';search.setAttribute('aria-label','Search destinations');search.autocomplete='off';list.id='variant-destination-list';list.setAttribute('role','listbox');list.setAttribute('aria-label',def.label+' options');summary.setAttribute('aria-haspopup','listbox');label.removeAttribute('for');panel.append(search,list);picker.append(summary,panel);field.after(picker);
     const normalize=s=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]/g,'');
     function paint(){const term=normalize(search.value);list.replaceChildren();let currentGroup=null;for(const choice of choices(field).filter(c=>!c.option.disabled&&normalize(c.label+' '+c.value).includes(term))){const group=choice.option.parentElement.tagName==='OPTGROUP'?choice.option.parentElement.label:'';if(group&&group!==currentGroup){const heading=node('div','variant-search-heading',group);heading.setAttribute('role','presentation');list.append(heading);}currentGroup=group;const b=button(choice.label);if(group)b.classList.add('variant-search-country');b.dataset.variantValue=choice.value;b.setAttribute('role','option');b.setAttribute('aria-selected',String(field.value===choice.value));b.tabIndex=field.value===choice.value?0:-1;b.addEventListener('click',()=>{field.value=choice.value;emit(field);picker.open=false;summary.focus();});list.append(b);}if(!list.children.length)list.append(node('p','variant-empty','No destinations found'));}
     search.addEventListener('input',event=>{event.stopPropagation();paint();});search.addEventListener('change',event=>event.stopPropagation());
