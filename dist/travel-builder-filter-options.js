@@ -370,22 +370,16 @@ window.TRAVEL_BUILDER_FILTERS = [
     "label": "Fitness budget · CAD/week total",
     "group": "budget",
     "pending": false,
+    "type": "number",
+    "defaultValue": "0",
     "options": [
       [
         "0",
         "No fitness allowance"
       ],
       [
-        "25",
-        "$25 total / week"
-      ],
-      [
         "50",
         "$50 total / week"
-      ],
-      [
-        "75",
-        "$75 total / week"
       ],
       [
         "100",
