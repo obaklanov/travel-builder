@@ -350,3 +350,9 @@
 .designing-canvas{grid-template-areas:"party party party where where where weather weather weather city city city" "budget budget budget create create create create create create travel travel travel" "experience experience experience experience needs needs needs needs health health health health";}
 @media(max-width:1100px){.designing-canvas{grid-template-areas:"party where" "city weather" "budget create" "travel experience" "needs health";}}
 @media(max-width:650px){.designing-canvas{grid-template-areas:"create" "where" "party" "budget" "city" "weather" "experience" "travel" "needs" "health";}}
+
+/* The four core categories lead the page; customization follows the trip action. */
+.designing-canvas{grid-template-areas:"party party party where where where travel travel travel budget budget budget" "create create create create create create create create create create create create" "weather weather weather weather city city city city experience experience experience experience" "needs needs needs needs needs needs health health health health health health";}
+.design-create{min-height:0;padding:8px 0 14px;gap:12px;}
+@media(max-width:1100px){.designing-canvas{grid-template-areas:"party where" "travel budget" "create create" "weather city" "experience needs" "health health";}}
+@media(max-width:650px){.designing-canvas{grid-template-areas:"party" "where" "travel" "budget" "create" "weather" "city" "experience" "needs" "health";}.design-create{position:static;}}
