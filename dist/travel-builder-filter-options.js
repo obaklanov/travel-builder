@@ -1366,7 +1366,7 @@ window.TRAVEL_BUILDER_FILTERS = [
   {
     "id": "dress",
     "label": "Women’s dress requirements",
-    "group": "safety",
+    "group": "experience",
     "options": [
       [
         "",

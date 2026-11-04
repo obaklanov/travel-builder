@@ -345,3 +345,8 @@
 .designing-canvas{grid-template-areas:"party party party where where where weather weather weather city city city" "budget budget budget create create create create create create travel travel travel" "experience experience experience needs needs needs safety safety safety health health health";}
 @media(max-width:1100px){.designing-canvas{grid-template-areas:"party where" "city weather" "budget create" "travel experience" "needs safety" "health health";}}
 @media(max-width:650px){.designing-canvas{grid-template-areas:"create" "where" "party" "budget" "city" "weather" "experience" "travel" "needs" "safety" "health";}}
+
+/* Local rules merged into Experience & atmosphere. */
+.designing-canvas{grid-template-areas:"party party party where where where weather weather weather city city city" "budget budget budget create create create create create create travel travel travel" "experience experience experience experience needs needs needs needs health health health health";}
+@media(max-width:1100px){.designing-canvas{grid-template-areas:"party where" "city weather" "budget create" "travel experience" "needs health";}}
+@media(max-width:650px){.designing-canvas{grid-template-areas:"create" "where" "party" "budget" "city" "weather" "experience" "travel" "needs" "health";}}
