@@ -669,7 +669,7 @@ window.TRAVEL_BUILDER_FILTERS = [
   {
     "id": "passport",
     "label": "Passport",
-    "group": "needs",
+    "group": "party",
     "pending": true,
     "options": [
       [
@@ -803,7 +803,7 @@ window.TRAVEL_BUILDER_FILTERS = [
   {
     "id": "passport2",
     "label": "Passport 2 · optional",
-    "group": "needs",
+    "group": "party",
     "pending": true,
     "options": [
       [
@@ -937,7 +937,7 @@ window.TRAVEL_BUILDER_FILTERS = [
   {
     "id": "passport3",
     "label": "Passport 3 · optional",
-    "group": "needs",
+    "group": "party",
     "pending": true,
     "options": [
       [
