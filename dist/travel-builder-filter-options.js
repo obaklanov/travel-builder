@@ -616,7 +616,7 @@ window.TRAVEL_BUILDER_FILTERS = [
     "primary": true,
     "priority": false,
     "defaultPriority": "must",
-    "presentation": "money"
+    "presentation": "dropdown"
   },
   {
     "id": "comfort",
