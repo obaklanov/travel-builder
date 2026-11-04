@@ -207,6 +207,7 @@
     const svg = document.createElementNS(ns, 'svg');
     const mapProjection=window.TRAVEL_MAP_PROJECTIONS.overview(outlines.features);
     svg.setAttribute('viewBox',mapProjection.viewBox);
+    svg.dataset.mapExtent=mapProjection.fullViewBox;
     svg.setAttribute('role','group');
     svg.setAttribute('aria-label','Select travelled countries on the map');
     const aliases = { SDS: 'SSD', KOS: 'UNK' };

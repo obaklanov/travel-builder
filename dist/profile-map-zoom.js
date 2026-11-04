@@ -3,12 +3,13 @@
   function attach(svg,container,card){
     const [x,y,w,h]=svg.getAttribute('viewBox').trim().split(/\s+/).map(Number);
     const base={x,y,w,h},maxZoom=64;
+    const [ex,ey,ew,eh]=(svg.dataset.mapExtent||svg.getAttribute('viewBox')).trim().split(/\s+/).map(Number),extent={x:ex,y:ey,w:ew,h:eh};
     let box={...base},drag=null,suppressClick=false;
     const buttons={in:card.querySelector('[data-map-zoom="in"]'),out:card.querySelector('[data-map-zoom="out"]'),reset:card.querySelector('[data-map-zoom="reset"]')};
     const status=card.querySelector('#map-zoom-level');
     const level=()=>base.w/box.w;
     function render(){
-      box.x=Math.max(base.x,Math.min(base.x+base.w-box.w,box.x));box.y=Math.max(base.y,Math.min(base.y+base.h-box.h,box.y));
+      box.x=Math.max(extent.x,Math.min(extent.x+extent.w-box.w,box.x));box.y=Math.max(extent.y,Math.min(extent.y+extent.h-box.h,box.y));
       svg.setAttribute('viewBox',`${box.x} ${box.y} ${box.w} ${box.h}`);
       const zoom=level();status.textContent=Math.round(zoom*100)+'%';
       buttons.in.disabled=zoom>=maxZoom-.001;buttons.out.disabled=zoom<=1.001;buttons.reset.disabled=zoom<=1.001;
