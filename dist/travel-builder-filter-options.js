@@ -799,7 +799,8 @@ window.TRAVEL_BUILDER_FILTERS = [
       ]
     ],
     "help": "Nationality is recorded as a preference. Entry eligibility is not checked yet.",
-    "primary": true
+    "primary": true,
+    "defaultValue": "CA"
   },
   {
     "id": "passport2",

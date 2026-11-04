@@ -73,6 +73,7 @@
       for(const id of ['region'])if([...field(id).options].some(o=>o.value===saved[id]))field(id).value=saved[id];
     }else dependentOptions();
   }catch{dependentOptions();}
+  if(!field('passport').value)field('passport').value='CA';
   if(!field('departure').value)field('departure').value='YYZ';
   if(!field('days').value)field('days').value='7-9';
   if(field('earliest').value&&(field('earliest').value<limits.min||field('earliest').value>limits.departureMax))field('earliest').value='';
