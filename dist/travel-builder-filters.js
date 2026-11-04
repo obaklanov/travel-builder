@@ -171,7 +171,7 @@
     const fitnessSummary=document.querySelector('#trip-fitness-summary');fitnessSummary.hidden=!trip.fitnessWeekly;fitnessSummary.textContent=trip.fitnessWeekly?'Includes '+money(trip.fitnessTotal)+' CAD for fitness · '+money(trip.fitnessWeekly)+' per person / week':'';
     const nextBase=values.lastStop==='no'?{previousTripId:tripId,country:key,region:trip.region,origin:trip.route.code,originCity:trip.route.city,start:trip.end,people:trip.people}:null;
     const nextBaseNote=document.querySelector('#trip-next-base');nextBaseNote.hidden=!nextBase;nextBaseNote.textContent=nextBase?'Next base starts from '+nextBase.originCity+' ('+nextBase.origin+') · '+date.format(new Date(nextBase.start+'T12:00:00')):'';
-    const add=document.querySelector('#quick-add-trip');add.textContent='Add Now';if(add.dataset.saving!=='true')add.disabled=false;document.querySelector('#quick-add-status').textContent='';document.querySelector('#search-message').textContent='';idea.hidden=false;
+    const add=document.querySelector('#quick-add-trip');add.textContent=values.lastStop==='no'?'Add Now - Continue to next destination':'Add Now - Final Stop';if(add.dataset.saving!=='true')add.disabled=false;document.querySelector('#quick-add-status').textContent='';document.querySelector('#search-message').textContent='';idea.hidden=false;
     try{localStorage.setItem(storageKey,JSON.stringify(values));localStorage.setItem('travel-builder-last-trip-preferences',JSON.stringify({tripId,filters:values,region:trip.region,nextBase,matchedAt:new Date().toISOString()}));}catch{}
     for(const def of definitions.filter(d=>d.multiple))closeMultiple(field(def.id));
     idea.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});
