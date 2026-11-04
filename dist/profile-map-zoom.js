@@ -1,7 +1,8 @@
 'use strict';
 (() => {
   function attach(svg,container,card){
-    const base={x:0,y:10,w:1000,h:465},maxZoom=64;
+    const [x,y,w,h]=svg.getAttribute('viewBox').trim().split(/\s+/).map(Number);
+    const base={x,y,w,h},maxZoom=64;
     let box={...base},drag=null,suppressClick=false;
     const buttons={in:card.querySelector('[data-map-zoom="in"]'),out:card.querySelector('[data-map-zoom="out"]'),reset:card.querySelector('[data-map-zoom="reset"]')};
     const status=card.querySelector('#map-zoom-level');

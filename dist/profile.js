@@ -205,7 +205,8 @@
     allowedCodes = new Set(catalogue.map(country => country.code));
     const ns = 'http://www.w3.org/2000/svg';
     const svg = document.createElementNS(ns, 'svg');
-    svg.setAttribute('viewBox', '0 10 1000 465');
+    const mapProjection=window.TRAVEL_MAP_PROJECTIONS.overview(outlines.features);
+    svg.setAttribute('viewBox',mapProjection.viewBox);
     svg.setAttribute('role','group');
     svg.setAttribute('aria-label','Select travelled countries on the map');
     const aliases = { SDS: 'SSD', KOS: 'UNK' };
@@ -214,7 +215,7 @@
       if (feature.id === 'ATA' || !['Polygon', 'MultiPolygon'].includes(geometry.type)) continue;
       const polygons = geometry.type === 'Polygon' ? [geometry.coordinates] : geometry.coordinates;
       const path = document.createElementNS(ns, 'path');
-      path.setAttribute('d', polygons.map(polygon => polygon.map(ring => ring.map(([lon, lat], i) => (i ? 'L' : 'M') + ((lon + 180) * 1000 / 360).toFixed(2) + ',' + ((90 - lat) * 1000 / 360).toFixed(2)).join(' ') + 'Z').join(' ')).join(' '));
+      path.setAttribute('d',mapProjection.path(feature));
       path.setAttribute('fill-rule', 'evenodd');
       const title = document.createElementNS(ns, 'title');
       title.textContent = feature.properties.name;

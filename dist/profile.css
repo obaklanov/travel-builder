@@ -97,8 +97,8 @@
 
 .scratch-flag-cloth{animation:none;transform:none;}
 
-/* Stretch country artwork and its scratching effects together; leave flags unchanged. */
-.scratch-country-stage > svg{transform:scaleY(1.298)}
+/* Preserve the local projection aspect ratio across country artwork and effects. */
+.scratch-country-stage > svg{transform:none}
 
 /* A quiet atlas excerpt sits behind the active scratch country. */
 .scratch-country-stage{border-radius:10px;background:#dce7e2;box-shadow:inset 0 0 0 1px #a79b7b40}

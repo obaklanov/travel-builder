@@ -4,32 +4,7 @@
   let features=new Map(),colors={},flags={},facts={},active=null;
   function svgNode(tag,attrs={}){const node=document.createElementNS(ns,tag);for(const [key,value] of Object.entries(attrs))node.setAttribute(key,String(value));return node;}
   function countryShape(feature){
-    const allPolygons=feature.geometry.type==='Polygon'?[feature.geometry.coordinates]:feature.geometry.coordinates;
-    const area=polygon=>Math.abs(polygon[0].reduce((sum,p,i,ring)=>{const q=ring[(i+1)%ring.length];return sum+p[0]*q[1]-q[0]*p[1];},0)/2);
-    const mainland=[...allPolygons].sort((a,b)=>area(b)-area(a))[0];
-    const xs=mainland[0].map(p=>p[0]),ys=mainland[0].map(p=>p[1]);
-    const west=Math.min(...xs)-5,east=Math.max(...xs)+5,south=Math.min(...ys)-5,north=Math.max(...ys)+5;
-    // Focus on the main geographic cluster; all territories still fill on the world map.
-    const mainlandArea=area(mainland);
-    const polygons=allPolygons.filter(p=>{
-      if(p===mainland)return true;
-      // Tiny distant islets should not shrink the mainland close-up.
-      const nearMainland=p[0].some(([x,y])=>x>=west+4.5&&x<=east-4.5&&y>=south+4.5&&y<=north-4.5);
-      // Keep major separated land areas in the same broad region (Malaysia,
-      // New Zealand, archipelagos), without framing faraway overseas territories.
-      const substantialRegionalPart=area(p)>=mainlandArea*.05 && p[0].some(([x,y])=>x>=west-20&&x<=east+20&&y>=south-20&&y<=north+20);
-      return substantialRegionalPart || ((area(p)>=mainlandArea*.001||nearMainland) && p[0].some(([x,y])=>x>=west&&x<=east&&y>=south&&y<=north));
-    });
-    const biggest=[...polygons].sort((a,b)=>b[0].length-a[0].length)[0];
-    const center=biggest[0].reduce((sum,p)=>sum+p[0],0)/biggest[0].length;
-    let minX=Infinity,minY=Infinity,maxX=-Infinity,maxY=-Infinity;
-    const land=polygons.map(polygon=>polygon.map(ring=>ring.map(([longitude,latitude])=>{let lon=longitude;while(lon-center>180)lon-=360;while(lon-center< -180)lon+=360;return [lon,-latitude];})));
-    const d=polygons.map(polygon=>polygon.map(ring=>ring.map(([longitude,latitude],i)=>{
-      let lon=longitude;while(lon-center>180)lon-=360;while(lon-center< -180)lon+=360;
-      const x=lon,y=-latitude;minX=Math.min(minX,x);minY=Math.min(minY,y);maxX=Math.max(maxX,x);maxY=Math.max(maxY,y);
-      return (i?'L':'M')+x.toFixed(4)+','+y.toFixed(4);
-    }).join(' ')+'Z').join(' ')).join(' ');
-    return {d,land,x:minX,y:minY,w:Math.max(.001,maxX-minX),h:Math.max(.001,maxY-minY)};
+    return window.TRAVEL_MAP_PROJECTIONS.country(feature);
   }
   function landStrokes(box){
     // Intersect diagonal scanlines with actual land rings, including lake holes.
@@ -127,33 +102,16 @@
     };
   }
   function contextFrame(box,viewport){
-    const stretch=1.298,margin=Math.max(box.w,box.h)*.2;
+    const margin=Math.max(box.w,box.h)*.2;
     let w=box.w+margin*2,h=box.h+Math.max(margin,box.h*.24)*2;
     // Expand the surrounding map to fill the stage without enlarging/cropping land.
-    const ratio=(viewport.width/Math.max(1,viewport.height))*stretch;
+    const ratio=viewport.width/Math.max(1,viewport.height);
     if(w/h<ratio)w=h*ratio;else h=w/ratio;
-    return {x:box.x+box.w/2-w/2,y:box.y+box.h/2-h/2,w,h};
+    return {x:box.x+box.w/2-w/2,y:box.y+box.h/2-h/2,w,h,projection:box.projection};
   }
   function contextualPolygons(feature,frame){
-    const polygons=feature.geometry.type==='Polygon'?[feature.geometry.coordinates]:feature.geometry.coordinates;
-    const center=frame.x+frame.w/2,visible=[];
-    for(const polygon of polygons){
-      const rings=polygon.map(ring=>{
-        let previous=center;
-        return ring.map(([lon,lat])=>{
-          while(lon-previous>180)lon-=360;while(lon-previous< -180)lon+=360;
-          previous=lon;return [lon,-lat];
-        });
-      });
-      const xs=rings[0].map(p=>p[0]),ys=rings[0].map(p=>p[1]);
-      const minX=Math.min(...xs),maxX=Math.max(...xs),minY=Math.min(...ys),maxY=Math.max(...ys);
-      if(maxY<frame.y||minY>frame.y+frame.h)continue;
-      for(const offset of [-360,0,360]){
-        if(maxX+offset<frame.x||minX+offset>frame.x+frame.w)continue;
-        visible.push(rings.map(ring=>ring.map(([x,y],i)=>(i?'L':'M')+(x+offset).toFixed(4)+','+y.toFixed(4)).join(' ')+'Z').join(' '));
-      }
-    }
-    return visible;
+    const path=window.TRAVEL_MAP_PROJECTIONS.context(feature,frame);
+    return path?[path]:[];
   }
   function appendMapContext(svg,defs,frame){
     const clip=svgNode('clipPath',{id:'scratch-context-clip',clipPathUnits:'userSpaceOnUse'});
@@ -358,7 +316,7 @@
           const scale=source?Math.max(.035,Math.min(.22,source.width/target.width)):.12;
           const dx=source?Math.max(-innerWidth,Math.min(innerWidth,source.left+source.width/2-target.left-target.width/2)):0;
           const dy=source?Math.max(-innerHeight*.6,Math.min(innerHeight*.6,source.top+source.height/2-target.top-target.height/2)):90;
-          await shape.svg.animate([{transform:`translate(${dx}px,${dy}px) scale(${scale}) scaleY(1.298)`,opacity:.25},{transform:'translate(0,0) scale(1) scaleY(1.298)',opacity:1}],{duration:620,easing:'cubic-bezier(.2,.75,.2,1)',fill:'both'}).finished;
+          await shape.svg.animate([{transform:`translate(${dx}px,${dy}px) scale(${scale})`,opacity:.25},{transform:'translate(0,0) scale(1)',opacity:1}],{duration:620,easing:'cubic-bezier(.2,.75,.2,1)',fill:'both'}).finished;
         }
         if(run.cancelled)break;
         if(reduced){shape.colourPath.removeAttribute('mask');caption.textContent=feature.properties.name+' · '+(facts[code]?.region||'');details.textContent=countryFacts(code);details.hidden=false;onReveal(code);await new Promise(resolve=>{run.finish=resolve;skip.textContent='Close';});run.finish=null;}
