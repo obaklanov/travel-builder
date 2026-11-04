@@ -326,3 +326,5 @@
 .design-group-safety .weather-scale-steps .variant-button{font-size:13px;}.design-group-safety .weather-scale-caption{min-height:24px;}
 
 .vaccine-choice-help{margin:0 0 8px;font-size:12px;line-height:1.5;color:var(--category-label);}
+
+.yes-no-choice>.variant-segments{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;}
