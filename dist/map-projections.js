@@ -14,9 +14,10 @@
     const path=d3.geoPath(projection).digits(2);
     const [[left,top],[right,bottom]]=path.bounds(land),pad=3;
     const fullViewBox=[left-pad,top-pad,right-left+pad*2,bottom-top+pad*2].map(n=>n.toFixed(3)).join(' ');
-    // Start just west of the main Hawaiian islands; retain all paths for panning.
+    // Trim the side ocean bands in the initial frame; retain all paths for zoom/pan.
     const cutoff=Math.max(left-pad,projection([-161,20.5])[0]-pad);
-    const viewBox=[cutoff,top-pad,right+pad-cutoff,bottom-top+pad*2].map(n=>n.toFixed(3)).join(' ');
+    const frameWidth=right+pad-cutoff,west=cutoff+frameWidth*.07,east=right+pad-frameWidth*.05;
+    const viewBox=[west,top-pad,east-west,bottom-top+pad*2].map(n=>n.toFixed(3)).join(' ');
     return {viewBox,fullViewBox,path:f=>path(feature(f))};
   }
   function country(input){
