@@ -66,12 +66,14 @@
   updateDateBounds();
   if(field('latest').value&&(field('latest').value<field('latest').min||field('latest').value>limits.returnMax))field('latest').value='';
   if(field('month').value&&(field('month').value<field('month').min||field('month').value>field('month').max))field('month').value='';
+  function syncPassports(){const count=Number(field('people').value);for(const n of [2,3]){const node=field('passport'+n),visible=count>=n;node.closest('.builder-slot').hidden=!visible;node.disabled=!visible;if(!visible)node.value='';}}
   function syncParty(){const rules=engine.partyRules(field('party').value),people=field('people');for(const option of people.options){const excluded=Number(option.value)<rules.min||Number(option.value)>rules.max;option.disabled=excluded;option.hidden=excluded;}people.disabled=rules.locked;if(rules.locked||Number(people.value)<rules.min||Number(people.value)>rules.max)people.value=String(rules.min);people.title=rules.locked?'Traveller count is fixed by your travel party.':'Total adults and children; '+rules.min+'–10 travellers.';
     const ages=field('childAges'),notApplicable=['Solo','Couple','Friends'].includes(field('party').value),summary=ages.querySelector('summary');
     ages.setAttribute('aria-disabled',String(notApplicable));summary.setAttribute('aria-disabled',String(notApplicable));summary.tabIndex=notApplicable?-1:0;
     ages.title=notApplicable?'Children’s ages do not apply to Solo, Couple or Friends trips.':'Optional age bands for children travelling with your group.';
     for(const checkbox of ages.querySelectorAll('input')){checkbox.disabled=notApplicable;if(notApplicable)checkbox.checked=false;}
     if(notApplicable)ages.open=false;
+    syncPassports();
 }
   syncParty();
   field('childAges').querySelector('summary').addEventListener('click',event=>{if(field('childAges').getAttribute('aria-disabled')==='true')event.preventDefault();});
@@ -85,7 +87,7 @@
   form.addEventListener('change',event=>{
     if(event.target===exclusionSearch)return;
     document.querySelector('#builder-reset-status').textContent='';
-    revision++;if(event.target===field('placeSize'))placeSizeReviewRequired=false;showPlaceSizeReview();if(event.target===field('party'))syncParty();
+    revision++;if(event.target===field('placeSize'))placeSizeReviewRequired=false;showPlaceSizeReview();if(event.target===field('party')||event.target===field('people'))syncParty();
     if(event.target===field('earliest'))updateDateBounds();
     if(event.target===destination){field('region').value='';dependentOptions();}
     interestLabel();markPending();

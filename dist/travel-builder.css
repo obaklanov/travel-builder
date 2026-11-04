@@ -292,3 +292,5 @@
 .trip-idea-photo{float:right;width:200px;height:140px;margin:0 0 16px 22px;object-fit:cover;border-radius:12px;border:1px solid #e2e8f0;}.trip-idea-photo[hidden]{display:none;}
 .trip-idea .trip-preview-actions{clear:both;}
 @media(max-width:550px){.trip-idea-photo{width:120px;height:90px;margin:0 0 12px 14px;border-radius:9px;}}
+
+.design-group .group-passport-slot[hidden]{display:none!important;}

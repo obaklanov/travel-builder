@@ -812,6 +812,66 @@ window.TRAVEL_BUILDER_FILTERS = [
     "primary": true
   },
   {
+    "id": "passport2",
+    "label": "Passport 2 · optional",
+    "group": "needs",
+    "pending": true,
+    "options": [
+      [
+        "",
+        "Not specified"
+      ],
+      [
+        "CA",
+        "Canadian"
+      ],
+      [
+        "US",
+        "United States"
+      ],
+      [
+        "GB",
+        "United Kingdom"
+      ],
+      [
+        "OTHER",
+        "Other passport"
+      ]
+    ],
+    "help": "Add another passport nationality used by your group. Entry eligibility is not checked yet.",
+    "primary": true
+  },
+  {
+    "id": "passport3",
+    "label": "Passport 3 · optional",
+    "group": "needs",
+    "pending": true,
+    "options": [
+      [
+        "",
+        "Not specified"
+      ],
+      [
+        "CA",
+        "Canadian"
+      ],
+      [
+        "US",
+        "United States"
+      ],
+      [
+        "GB",
+        "United Kingdom"
+      ],
+      [
+        "OTHER",
+        "Other passport"
+      ]
+    ],
+    "help": "Add another passport nationality used by your group. Entry eligibility is not checked yet.",
+    "primary": true
+  },
+  {
     "id": "entry",
     "label": "Entry process",
     "group": "needs",
