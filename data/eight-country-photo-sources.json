@@ -69,17 +69,12 @@
       "suppliedAt": "2026-11-04"
     },
     "south-korea": {
-      "author": "Frank Schulenburg",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gyeonghoeru_(Royal_Banquet_Hall)_at_Gyeongbokgung_Palace,_Seoul.jpg",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "originalTitle": "File:Gyeonghoeru (Royal Banquet Hall) at Gyeongbokgung Palace, Seoul.jpg",
-      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Gyeonghoeru_%28Royal_Banquet_Hall%29_at_Gyeongbokgung_Palace%2C_Seoul.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "src": "images/south-korea-cover.webp",
-      "alt": "Gyeongbokgung Palace — South Korea",
-      "width": 800,
-      "height": 500,
-      "bytes": 87354
+      "src": "images/south-korea-supplied-cover.png",
+      "alt": "An illuminated palace hall in Seoul beneath a deep blue night sky",
+      "width": 1077,
+      "height": 707,
+      "suppliedByOwner": true,
+      "suppliedAt": "2026-11-04"
     },
     "australia": {
       "src": "images/australia-supplied-cover.png",
