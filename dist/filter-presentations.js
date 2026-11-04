@@ -39,7 +39,7 @@
     field.after(group);syncers.push(()=>{for(const input of group.querySelectorAll('input'))input.checked=input.value===field.value;});
   }
   function binary(def){
-    const {field,label}=source(def),row=node('label','variant-switch'),input=node('input');input.type='checkbox';input.setAttribute('role','switch');input.setAttribute('aria-label',def.label);label.removeAttribute('for');row.append(input,node('span','','Prioritize somewhere unvisited'));field.after(row);
+    const {field,label}=source(def),row=node('label','variant-switch'),input=node('input');input.type='checkbox';input.setAttribute('role','switch');input.setAttribute('aria-label',def.label);label.removeAttribute('for');row.append(input);field.after(row);
     input.addEventListener('change',event=>{event.stopPropagation();field.value=input.checked?'yes':'';emit(field);});syncers.push(()=>{input.checked=field.value==='yes';});
   }
   function checklist(def){

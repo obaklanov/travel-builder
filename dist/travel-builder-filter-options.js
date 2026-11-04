@@ -122,7 +122,7 @@ window.TRAVEL_BUILDER_FILTERS = [
   },
   {
     "id": "newPlaces",
-    "label": "Prefer somewhere new",
+    "label": "Prioritize somewhere unvisited",
     "group": "where",
     "primary": false,
     "priority": true,
