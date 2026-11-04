@@ -272,8 +272,8 @@ window.TRAVEL_BUILDER_FILTERS = [
   },
   {
     "id": "season",
-    "label": "Season suitability",
-    "group": "where",
+    "label": "Best time to visit",
+    "group": "weather",
     "options": [
       [
         "",
@@ -289,14 +289,14 @@ window.TRAVEL_BUILDER_FILTERS = [
       ]
     ],
     "help": "Editorial regional sightseeing ratings, not a weather forecast.",
-    "primary": false,
+    "primary": true,
     "priority": true,
     "defaultPriority": "must"
   },
   {
     "id": "temperature",
     "label": "Temperature",
-    "group": "where",
+    "group": "weather",
     "pending": true,
     "options": [
       "Any",
@@ -305,14 +305,14 @@ window.TRAVEL_BUILDER_FILTERS = [
       "Warm · 25–30°C",
       "Hot · over 30°C"
     ],
-    "primary": false,
+    "primary": true,
     "priority": true,
     "defaultPriority": "prefer"
   },
   {
     "id": "rain",
     "label": "Rain tolerance",
-    "group": "where",
+    "group": "weather",
     "pending": true,
     "options": [
       "Any",
@@ -320,7 +320,7 @@ window.TRAVEL_BUILDER_FILTERS = [
       "Some rain is fine",
       "Rain is fine"
     ],
-    "primary": false,
+    "primary": true,
     "priority": true,
     "defaultPriority": "prefer"
   },
