@@ -134,3 +134,5 @@ South Africa front cover replaced on 4 November 2026 with the Cape Town/Table Mo
 Brazil front cover replaced on 4 November 2026 with the image supplied by the site owner.
 
 South Korea front cover replaced on 4 November 2026 with the image supplied by the site owner.
+
+Spain front cover replaced on 4 November 2026 with the image supplied by the site owner.
