@@ -142,3 +142,5 @@ France front cover replaced on 4 November 2026 with the image supplied by the si
 United Kingdom front cover replaced on 4 November 2026 with the image supplied by the site owner.
 
 Thailand front cover replaced on 4 November 2026 with the image supplied by the site owner.
+
+Italy front cover replaced on 4 November 2026 with the image supplied by the site owner.

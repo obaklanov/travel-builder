@@ -14,5 +14,13 @@
     "height": 653,
     "suppliedByOwner": true,
     "suppliedAt": "2026-11-04"
+  },
+  "italy": {
+    "src": "images/italy-supplied-cover.png",
+    "alt": "Sunlight beside the Colosseum and ancient paving stones in Rome",
+    "width": 937,
+    "height": 702,
+    "suppliedByOwner": true,
+    "suppliedAt": "2026-11-04"
   }
 }
