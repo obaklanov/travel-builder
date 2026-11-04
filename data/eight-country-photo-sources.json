@@ -1,17 +1,12 @@
 {
   "covers": {
     "france": {
-      "author": "Albert Bergonzo",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tour_Eiffel_Seine_River_(126580999).jpeg",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "originalTitle": "File:Tour Eiffel Seine River (126580999).jpeg",
-      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/31/Tour_Eiffel_Seine_River_%28126580999%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "src": "images/france-cover.webp",
-      "alt": "Eiffel Tower — France",
-      "width": 800,
-      "height": 500,
-      "bytes": 94204
+      "src": "images/france-supplied-cover.png",
+      "alt": "The Eiffel Tower above Paris at sunset",
+      "width": 713,
+      "height": 634,
+      "suppliedByOwner": true,
+      "suppliedAt": "2026-11-04"
     },
     "united-kingdom": {
       "author": "Bill Peloquin",
