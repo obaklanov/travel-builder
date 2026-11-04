@@ -76,3 +76,10 @@ body .easy-search .budget-toggle,body .budget-suggestions-toggle {background-ima
 .design-group-health{--category-fill:#eef9f6;--category-border:#c8e5dc;--category-label:#397965;}
 
 .design-group-city{--category-fill:#edf7f0;--category-border:#cce2d4;--category-label:#47725a;}
+
+/* Companion ticket control: same palette and finish as the trip action. */
+.builder-home .design-create>.link-next-base-slot{background:linear-gradient(120deg,#34539f,#478bab);border:1px solid #527bb3;border-radius:18px;box-shadow:0 8px 24px #29487518;--category-label:#fff;padding:14px 18px;}
+.builder-home .design-create .link-next-base-slot .builder-field-label{color:#fff;font-weight:600;}
+.builder-home .design-create .link-next-base-slot .variant-button{background:#ffffff12;color:#fff;border:1px solid #ffffff80;border-radius:9px;min-height:36px;}
+.builder-home .design-create .link-next-base-slot .variant-button[aria-pressed="true"]{background:#fff;color:#35589c;border-color:#fff;box-shadow:0 2px 7px #17365820;}
+.builder-home .design-create .link-next-base-slot .variant-button:focus-visible{outline:3px solid #f6d98c;outline-offset:3px;}

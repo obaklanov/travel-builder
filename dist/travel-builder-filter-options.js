@@ -1156,6 +1156,24 @@ window.TRAVEL_BUILDER_FILTERS = [
     "priority": true,
     "defaultPriority": "prefer"
   },
+{
+  "id": "venomousWildlife",
+  "label": "Venomous wildlife",
+  "group": "health",
+  "options": [
+    "Scorpions",
+    "Venomous marine life",
+    "Venomous snakes",
+    "Venomous spiders"
+  ],
+  "pending": true,
+  "primary": false,
+  "multiple": true,
+  "priority": true,
+  "defaultPriority": "prefer",
+  "presentation": "tags",
+  "help": "Select wildlife exposure you prefer to avoid. Requires reviewed regional and seasonal exposure data; presence alone does not measure risk."
+},
   {
     "id": "diet",
     "label": "Food preferences",
