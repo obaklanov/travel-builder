@@ -300,3 +300,8 @@
 .design-group-party .builder-slot:has(#builder-people) .design-label-row{min-height:0;margin:0;}
 .design-group-party .variant-stepper-control{width:128px;box-sizing:border-box;}
 .design-group-party .variant-count{min-width:28px;font-variant-numeric:tabular-nums;}
+
+.design-group-party .variant-tiles{grid-template-columns:repeat(2,minmax(0,1fr));}
+.builder-home .design-group-party .variant-tiles .variant-button{min-height:90px;font-size:14px;}
+.traveller-count-display{display:block;box-sizing:border-box;width:128px;padding:12px 5px;border:1px solid var(--category-border);border-radius:10px;background:var(--category-fill);font-size:15px;text-align:center;color:#273548;}
+.design-group-party>.design-reset-footer{margin-top:auto;padding-top:16px;}

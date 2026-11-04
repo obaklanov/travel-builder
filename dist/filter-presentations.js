@@ -23,16 +23,9 @@
       b.append(node('span','',short));b.addEventListener('click',()=>{field.value=choice.value;emit(field);});group.append(b);
     }
     field.after(group);syncers.push(()=>{for(const b of group.children)b.setAttribute('aria-pressed',String(b.dataset.variantValue===field.value));});
-    if(def.id==='party'){slot.classList.add('design-primary-wide');document.querySelector('#builder-occasion').closest('.builder-slot').classList.remove('design-primary-wide');}
+    if(def.id==='party'){slot.classList.add('design-primary-wide');}
   }
-  function stepper(def){
-    const {field,label}=source(def),group=node('div','variant-stepper-control');labelled(group,label);
-    const minus=button('−','Remove one traveller'),plus=button('+','Add one traveller'),count=node('output','variant-count');count.setAttribute('aria-live','polite');
-    const allowed=()=>choices(field).filter(c=>!c.option.disabled&&!c.option.hidden).map(c=>Number(c.value));
-    function move(direction){if(field.disabled)return;const options=allowed(),index=options.indexOf(Number(field.value)),next=options[index+direction];if(next!==undefined){field.value=String(next);emit(field);}}
-    minus.addEventListener('click',()=>move(-1));plus.addEventListener('click',()=>move(1));group.append(minus,count,plus);field.after(group);
-    syncers.push(()=>{const options=allowed(),value=Number(field.value);count.textContent=String(value);count.setAttribute('aria-label',value+(value===1?' traveller':' travellers'));minus.disabled=field.disabled||value<=Math.min(...options);plus.disabled=field.disabled||value>=Math.max(...options);group.setAttribute('aria-disabled',String(field.disabled));});
-  }
+  function travellers(def){const {field,label}=source(def),group=node('output','traveller-count-display');group.setAttribute('aria-labelledby',label.id);group.setAttribute('aria-live','polite');field.after(group);syncers.push(()=>{group.textContent=field.value==='2'?'2 travellers':'1 traveller';});}
   function radios(def){
     const {field,label}=source(def),group=node('div','variant-radios');group.setAttribute('role','radiogroup');group.setAttribute('aria-labelledby',label.id);label.removeAttribute('for');
     for(const choice of choices(field)){const row=node('label','variant-radio'),input=node('input');input.type='radio';input.name='variant-'+def.id;input.value=choice.value;row.append(input,node('span','',choice.label));input.addEventListener('change',event=>{event.stopPropagation();if(input.checked){field.value=input.value;emit(field);}});group.append(row);}
@@ -83,7 +76,7 @@
     const {field,label}=source(def),wrap=node('div','variant-journey'),top=node('div','variant-range-caption'),value=node('output'),any=button('Any','Any journey time'),range=node('input'),ends=node('div','variant-range-ends');range.type='range';range.min='1';range.max='60';range.step='1';range.className='variant-range';range.id='variant-flightHours-range';range.setAttribute('aria-label','Maximum journey time');label.htmlFor=range.id;top.append(value,any);ends.append(node('span','','1 hour'),node('span','','60 hours'));wrap.append(top,range,ends);field.after(wrap);
     const choose=()=>{field.value=range.value;emit(field);};range.addEventListener('input',choose);range.addEventListener('pointerdown',()=>{if(!field.value)choose();});range.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();choose();}});any.addEventListener('click',()=>{field.value='';emit(field);});syncers.push(()=>{range.value=field.value||'12';value.textContent=field.value?field.value+' h max':'Any duration';range.setAttribute('aria-valuetext',field.value?field.value+' hours maximum':'Any duration; move to choose');wrap.classList.toggle('is-unset',!field.value);});
   }
-  const builders={tiles:singleChoices,segments:singleChoices,comfort:singleChoices,stepper,radios,switch:binary,checklist,tags,search:searchSelect,money,duration,journey};
+  const builders={tiles:singleChoices,segments:singleChoices,comfort:singleChoices,travellers,radios,switch:binary,checklist,tags,search:searchSelect,money,duration,journey};
   for(const def of definitions)if(builders[def.presentation])builders[def.presentation](def);
   const expand=button('Show all options');expand.id='builder-toggle-extras';expand.classList.add('variant-expand-all');const extras=()=>[...document.querySelectorAll('.design-more')];document.querySelector('#builder-reset-all').before(expand);
   function syncExpand(){const all=extras().every(el=>el.open);expand.textContent=all?'Hide extra options':'Show all options';expand.setAttribute('aria-expanded',String(all));}

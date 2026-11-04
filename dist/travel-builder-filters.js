@@ -51,6 +51,7 @@
   try{
     const saved=JSON.parse(localStorage.getItem(storageKey)||localStorage.getItem('travel-builder-filter-preferences-v1')||'null');
     if(saved){
+      if(!['Solo','Couple'].includes(saved.party))saved.party=Number(saved.people)>1?'Couple':'Solo';
       placeSizeReviewRequired=Boolean(saved.placeSizeReviewRequired||(!Object.hasOwn(saved,'placeSize')&&(saved.urban||saved.metroSize)));
       if(/^\d+$/.test(saved.days||'')){const day=Number(saved.days),choice=definitions.find(d=>d.id==='days').options.find(([value])=>{const span=engine.durationValues(value);return value&&span.includes(day);});saved.days=choice?choice[0]:'';}
       if(saved.priorities)for(const button of document.querySelectorAll('[data-priority-for]')){const mode=saved.priorities[button.dataset.priorityFor];if(['must','prefer'].includes(mode)){button.setAttribute('aria-checked',String(mode==='must'));button.textContent=mode==='must'?'Must have':'Nice to have';}}
@@ -67,16 +68,8 @@
   if(field('latest').value&&(field('latest').value<field('latest').min||field('latest').value>limits.returnMax))field('latest').value='';
   if(field('month').value&&(field('month').value<field('month').min||field('month').value>field('month').max))field('month').value='';
   function syncPassports(){const count=Number(field('people').value);for(const n of [2,3]){const node=field('passport'+n),visible=count>=n;node.closest('.builder-slot').hidden=!visible;node.disabled=!visible;if(!visible)node.value='';}}
-  function syncParty(){const rules=engine.partyRules(field('party').value),people=field('people');for(const option of people.options){const excluded=Number(option.value)<rules.min||Number(option.value)>rules.max;option.disabled=excluded;option.hidden=excluded;}people.disabled=rules.locked;if(rules.locked||Number(people.value)<rules.min||Number(people.value)>rules.max)people.value=String(rules.min);people.title=rules.locked?'Traveller count is fixed by your travel party.':'Total adults and children; '+rules.min+'–10 travellers.';
-    const ages=field('childAges'),notApplicable=['Solo','Couple','Friends'].includes(field('party').value),summary=ages.querySelector('summary');
-    ages.setAttribute('aria-disabled',String(notApplicable));summary.setAttribute('aria-disabled',String(notApplicable));summary.tabIndex=notApplicable?-1:0;
-    ages.title=notApplicable?'Children’s ages do not apply to Solo, Couple or Friends trips.':'Optional age bands for children travelling with your group.';
-    for(const checkbox of ages.querySelectorAll('input')){checkbox.disabled=notApplicable;if(notApplicable)checkbox.checked=false;}
-    if(notApplicable)ages.open=false;
-    syncPassports();
-}
+  function syncParty(){const people=field('people');people.value=field('party').value==='Couple'?'2':'1';people.disabled=true;people.title='Automatically set by Solo or Couple.';syncPassports();}
   syncParty();
-  field('childAges').querySelector('summary').addEventListener('click',event=>{if(field('childAges').getAttribute('aria-disabled')==='true')event.preventDefault();});
   form.addEventListener('click',event=>{const button=event.target.closest('[data-priority-for]');if(!button)return;const must=button.getAttribute('aria-checked')!=='true';button.setAttribute('aria-checked',String(must));button.textContent=must?'Must have':'Nice to have';form.dispatchEvent(new Event('change',{bubbles:true}));});
   interestLabel();
   function showPlaceSizeReview(){document.querySelector('#builder-placeSize-review').hidden=!placeSizeReviewRequired;}

@@ -6,16 +6,12 @@ window.TRAVEL_BUILDER_FILTERS = [
     "label": "Travel party",
     "group": "party",
     "options": [
-      "Any",
       "Solo",
-      "Couple",
-      "Friends",
-      "Family",
-      "Multigenerational"
+      "Couple"
     ],
     "pending": false,
     "primary": true,
-    "help": "Solo fixes the count at one, Couple at two. Friends, Family and Multigenerational start at two.",
+    "help": "Solo travels with one person; Couple travels with two.",
     "presentation": "tiles",
     "shortLabels": {
       "Multigenerational": "Multi-gen"
@@ -33,78 +29,11 @@ window.TRAVEL_BUILDER_FILTERS = [
       [
         "2",
         "2 people"
-      ],
-      [
-        "3",
-        "3 people"
-      ],
-      [
-        "4",
-        "4 people"
-      ],
-      [
-        "5",
-        "5 people"
-      ],
-      [
-        "6",
-        "6 people"
-      ],
-      [
-        "7",
-        "7 people"
-      ],
-      [
-        "8",
-        "8 people"
-      ],
-      [
-        "9",
-        "9 people"
-      ],
-      [
-        "10",
-        "10 people"
       ]
     ],
     "primary": true,
-    "help": "Includes adults and children. Current estimates support 1–10 travellers and use equal per-person allowances; child discounts are not verified.",
-    "presentation": "stepper"
-  },
-  {
-    "id": "childAges",
-    "label": "Children’s ages",
-    "group": "party",
-    "options": [
-      "Under 2",
-      "2–5",
-      "6–11",
-      "12–17"
-    ],
-    "pending": true,
-    "primary": false,
-    "multiple": true,
-    "help": "Optional age bands. Child suitability and child-specific prices are not verified yet."
-  },
-  {
-    "id": "occasion",
-    "label": "Purpose / occasion",
-    "group": "party",
-    "options": [
-      "Any",
-      "General holiday",
-      "Romantic getaway",
-      "Honeymoon",
-      "Family time",
-      "Visit friends / family",
-      "Festival or event",
-      "Sports event",
-      "Celebration"
-    ],
-    "pending": true,
-    "primary": false,
-    "priority": true,
-    "defaultPriority": "prefer"
+    "help": "Automatically set by Solo or Couple.",
+    "presentation": "travellers"
   },
   {
     "id": "destination",
@@ -641,32 +570,6 @@ window.TRAVEL_BUILDER_FILTERS = [
     }
   },
   {
-    "id": "budgetFlex",
-    "label": "Budget flexibility",
-    "group": "budget",
-    "options": [
-      [
-        "0",
-        "Strict ceiling"
-      ],
-      [
-        "0.1",
-        "Up to 10% extra"
-      ],
-      [
-        "0.2",
-        "Up to 20% extra"
-      ]
-    ],
-    "primary": false,
-    "presentation": "segments",
-    "shortLabels": {
-      "0": "Strict",
-      "0.1": "+10%",
-      "0.2": "+20%"
-    }
-  },
-  {
     "id": "departure",
     "label": "Departure airport",
     "group": "travel",
@@ -792,16 +695,120 @@ window.TRAVEL_BUILDER_FILTERS = [
         "Not specified"
       ],
       [
+        "AR",
+        "Argentina"
+      ],
+      [
+        "AU",
+        "Australia"
+      ],
+      [
+        "BR",
+        "Brazil"
+      ],
+      [
+        "BN",
+        "Brunei"
+      ],
+      [
         "CA",
-        "Canadian"
+        "Canada"
+      ],
+      [
+        "CO",
+        "Colombia"
+      ],
+      [
+        "CR",
+        "Costa Rica"
+      ],
+      [
+        "EG",
+        "Egypt"
+      ],
+      [
+        "FR",
+        "France"
+      ],
+      [
+        "GR",
+        "Greece"
+      ],
+      [
+        "ID",
+        "Indonesia"
+      ],
+      [
+        "IT",
+        "Italy"
+      ],
+      [
+        "JP",
+        "Japan"
+      ],
+      [
+        "LA",
+        "Laos"
+      ],
+      [
+        "MY",
+        "Malaysia"
+      ],
+      [
+        "MX",
+        "Mexico"
+      ],
+      [
+        "MA",
+        "Morocco"
+      ],
+      [
+        "NZ",
+        "New Zealand"
+      ],
+      [
+        "PE",
+        "Peru"
+      ],
+      [
+        "PH",
+        "Philippines"
+      ],
+      [
+        "PT",
+        "Portugal"
+      ],
+      [
+        "ZA",
+        "South Africa"
+      ],
+      [
+        "KR",
+        "South Korea"
+      ],
+      [
+        "ES",
+        "Spain"
+      ],
+      [
+        "TH",
+        "Thailand"
+      ],
+      [
+        "TR",
+        "Türkiye"
+      ],
+      [
+        "GB",
+        "United Kingdom"
       ],
       [
         "US",
         "United States"
       ],
       [
-        "GB",
-        "United Kingdom"
+        "VN",
+        "Vietnam"
       ],
       [
         "OTHER",
@@ -822,16 +829,120 @@ window.TRAVEL_BUILDER_FILTERS = [
         "Not specified"
       ],
       [
+        "AR",
+        "Argentina"
+      ],
+      [
+        "AU",
+        "Australia"
+      ],
+      [
+        "BR",
+        "Brazil"
+      ],
+      [
+        "BN",
+        "Brunei"
+      ],
+      [
         "CA",
-        "Canadian"
+        "Canada"
+      ],
+      [
+        "CO",
+        "Colombia"
+      ],
+      [
+        "CR",
+        "Costa Rica"
+      ],
+      [
+        "EG",
+        "Egypt"
+      ],
+      [
+        "FR",
+        "France"
+      ],
+      [
+        "GR",
+        "Greece"
+      ],
+      [
+        "ID",
+        "Indonesia"
+      ],
+      [
+        "IT",
+        "Italy"
+      ],
+      [
+        "JP",
+        "Japan"
+      ],
+      [
+        "LA",
+        "Laos"
+      ],
+      [
+        "MY",
+        "Malaysia"
+      ],
+      [
+        "MX",
+        "Mexico"
+      ],
+      [
+        "MA",
+        "Morocco"
+      ],
+      [
+        "NZ",
+        "New Zealand"
+      ],
+      [
+        "PE",
+        "Peru"
+      ],
+      [
+        "PH",
+        "Philippines"
+      ],
+      [
+        "PT",
+        "Portugal"
+      ],
+      [
+        "ZA",
+        "South Africa"
+      ],
+      [
+        "KR",
+        "South Korea"
+      ],
+      [
+        "ES",
+        "Spain"
+      ],
+      [
+        "TH",
+        "Thailand"
+      ],
+      [
+        "TR",
+        "Türkiye"
+      ],
+      [
+        "GB",
+        "United Kingdom"
       ],
       [
         "US",
         "United States"
       ],
       [
-        "GB",
-        "United Kingdom"
+        "VN",
+        "Vietnam"
       ],
       [
         "OTHER",
@@ -852,16 +963,120 @@ window.TRAVEL_BUILDER_FILTERS = [
         "Not specified"
       ],
       [
+        "AR",
+        "Argentina"
+      ],
+      [
+        "AU",
+        "Australia"
+      ],
+      [
+        "BR",
+        "Brazil"
+      ],
+      [
+        "BN",
+        "Brunei"
+      ],
+      [
         "CA",
-        "Canadian"
+        "Canada"
+      ],
+      [
+        "CO",
+        "Colombia"
+      ],
+      [
+        "CR",
+        "Costa Rica"
+      ],
+      [
+        "EG",
+        "Egypt"
+      ],
+      [
+        "FR",
+        "France"
+      ],
+      [
+        "GR",
+        "Greece"
+      ],
+      [
+        "ID",
+        "Indonesia"
+      ],
+      [
+        "IT",
+        "Italy"
+      ],
+      [
+        "JP",
+        "Japan"
+      ],
+      [
+        "LA",
+        "Laos"
+      ],
+      [
+        "MY",
+        "Malaysia"
+      ],
+      [
+        "MX",
+        "Mexico"
+      ],
+      [
+        "MA",
+        "Morocco"
+      ],
+      [
+        "NZ",
+        "New Zealand"
+      ],
+      [
+        "PE",
+        "Peru"
+      ],
+      [
+        "PH",
+        "Philippines"
+      ],
+      [
+        "PT",
+        "Portugal"
+      ],
+      [
+        "ZA",
+        "South Africa"
+      ],
+      [
+        "KR",
+        "South Korea"
+      ],
+      [
+        "ES",
+        "Spain"
+      ],
+      [
+        "TH",
+        "Thailand"
+      ],
+      [
+        "TR",
+        "Türkiye"
+      ],
+      [
+        "GB",
+        "United Kingdom"
       ],
       [
         "US",
         "United States"
       ],
       [
-        "GB",
-        "United Kingdom"
+        "VN",
+        "Vietnam"
       ],
       [
         "OTHER",
