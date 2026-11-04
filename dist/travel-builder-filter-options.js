@@ -257,9 +257,7 @@ window.TRAVEL_BUILDER_FILTERS = [
     "options": [
       "Any",
       "Relaxing",
-      "Exploring",
-      "Adventure",
-      "Mixed"
+      "Exploring"
     ],
     "primary": false,
     "priority": true,
@@ -268,9 +266,7 @@ window.TRAVEL_BUILDER_FILTERS = [
     "shortLabels": {
       "": "Any",
       "Relaxing": "Relax",
-      "Exploring": "Explore",
-      "Adventure": "Adventure",
-      "Mixed": "Mixed"
+      "Exploring": "Explore"
     }
   },
   {
