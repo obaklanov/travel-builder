@@ -12,7 +12,9 @@
     const land={type:'FeatureCollection',features:features.filter(f=>f.id!=='ATA').map(feature)};
     const projection=d3.geoNaturalEarth1().precision(.1).fitExtent([[12,12],[988,508]],land);
     const path=d3.geoPath(projection).digits(2);
-    return {viewBox:'0 0 1000 520',path:f=>path(feature(f))};
+    const [[left,top],[right,bottom]]=path.bounds(land),pad=3;
+    const viewBox=[left-pad,top-pad,right-left+pad*2,bottom-top+pad*2].map(n=>n.toFixed(3)).join(' ');
+    return {viewBox,path:f=>path(feature(f))};
   }
   function country(input){
     const f=feature(input),all=f.geometry.type==='Polygon'?[f.geometry.coordinates]:f.geometry.coordinates;
