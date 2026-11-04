@@ -8,7 +8,7 @@
 .design-group-party{grid-area:party;}.design-group-where{grid-area:where;}.design-group-experience{grid-area:experience;}.design-group-budget{grid-area:budget;}.design-group-needs{grid-area:needs;}.design-group-travel{grid-area:travel;}
 .design-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px 12px;}
 .design-fields>.builder-slot:only-child{grid-column:1/-1;}
-.design-group-where>.design-fields>.builder-slot:first-child,.design-group-experience>.design-fields>.builder-slot:first-child{grid-column:1/-1;}
+.design-group-experience>.design-fields>.builder-slot:first-child{grid-column:1/-1;}
 .design-group-budget .builder-slot:first-child{grid-column:1/-1;}
 .builder-slot{position:relative;min-width:0;text-align:left;}
 .builder-home .builder-slot .builder-field-label{display:block;margin:0 0 6px;font-size:11px;font-weight:600;line-height:1.4;}
