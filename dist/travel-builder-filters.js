@@ -8,6 +8,7 @@
   let previousCountry=null,revision=0,placeSizeReviewRequired=false;
   function option(value,label){const node=document.createElement('option');node.value=value;node.textContent=label;return node;}
   function closeMultiple(node){if(node.dataset.inline!=='true')node.open=false;}
+  const airportSuggestions=document.querySelector('#builder-airport-suggestions'),airports=new Map(departureCities);for(const country of Object.values(travelData))for(const [code,city] of country.airports)if(!airports.has(code))airports.set(code,city);for(const [code,city] of [...airports].sort((a,b)=>a[1].localeCompare(b[1]))){const suggestion=option(code,city+' · '+code);suggestion.label=city+' · '+code;airportSuggestions.append(suggestion);}field('departure').addEventListener('input',()=>{field('departure').value=field('departure').value.toUpperCase();});
   const destination=field('destination');
   const destinationLabels=new Map(),destinationList=document.querySelector('#builder-destination-list');
   function destinationGroup(title,options){const section=document.createElement('section'),heading=document.createElement('h3');heading.textContent=title;section.append(heading);for(const [value,text] of options){const label=document.createElement('label'),checkbox=document.createElement('input');checkbox.type='checkbox';checkbox.name='destination';checkbox.value=value;label.append(checkbox,document.createTextNode(text));label.dataset.search=text.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();section.append(label);destinationLabels.set(value,text);}destinationList.append(section);}
@@ -71,6 +72,7 @@
       for(const id of ['region'])if([...field(id).options].some(o=>o.value===saved[id]))field(id).value=saved[id];
     }else dependentOptions();
   }catch{dependentOptions();}
+  if(!field('departure').value)field('departure').value='YYZ';
   if(!field('days').value)field('days').value='7-9';
   if(field('earliest').value&&(field('earliest').value<limits.min||field('earliest').value>limits.departureMax))field('earliest').value='';
   updateDateBounds();
@@ -135,21 +137,21 @@
     const values=collect(),locationNode=document.querySelector('#location-label');
     if(values.earliest&&values.latest&&values.earliest>values.latest){document.querySelector('#search-message').textContent='Latest return must be on or after earliest departure.';return;}
     if(values.party==='Solo'&&values.people!=='1'){document.querySelector('#search-message').textContent='A solo trip needs one traveller. Change the traveller count or travel party.';return;}
-    if(values.childAges.length&&values.party==='Solo'){document.querySelector('#search-message').textContent='Choose a family or other travel party when including children.';return;}
     const unverified=engine.unverifiedRequirements(values,definitions);
     if(unverified.length){document.querySelector('#search-message').textContent='Cannot verify these must-have requirements yet: '+unverified.join(', ')+'. Use Nice to have for provisional suggestions, or keep the requirements and wait for verified data.';return;}
     const current=++revision,create=document.querySelector('#create-filtered-trip');let history={known:false,keys:[]};
     if(values.newPlaces==='yes'){create.disabled=true;try{history=await recordedCountries();}finally{create.disabled=false;}if(current!==revision)return;}
     if(values.newPlaces==='yes'&&!history.known){document.querySelector('#search-message').textContent=history.reason+' Sign in and record your visited countries to use Unvisited countries only.';return;}
     const auto=departureForLocation(locationNode.textContent,Number(locationNode.dataset.latitude)||NaN,Number(locationNode.dataset.longitude)||NaN);
-    const origin=values.departure||auto.code,originCity=departureCities.find(([code])=>code===origin)?.[1]||origin;
+    const origin=(values.departure||'YYZ').trim().toUpperCase(),originCity=airports.get(origin)||origin;
     const matches=engine.match({...values,origin,profileKnown:history.known,visitedCountryKeys:history.keys},data,(key,request)=>getFlightRoutes(key,request),new Date(),definitions);
-    if(!matches.length){idea.hidden=true;idea.dataset.trip='';document.querySelector('#search-message').textContent='No trip matches these settings using our current estimates. Try fewer exclusions, a larger budget, longer trip, wider date range, another region, or a less restrictive season or flight limit.';return;}
+    if(!matches.length){idea.hidden=true;idea.dataset.trip='';document.querySelector('#search-message').textContent=!departureCities.some(([code])=>code===origin)?'Airport '+origin+' is accepted, but route estimates from there are not available yet. Choose Toronto (YYZ) or another supported Canadian airport to generate an estimated trip.':'No trip matches these settings using our current estimates. Try fewer exclusions, a larger budget, longer trip, wider date range, another region, or a less restrictive season or flight limit.';return;}
     const bestScore=Math.max(...matches.map(m=>m.score));const ranked=matches.filter(m=>m.score===bestScore);
     let keys=[...new Set(ranked.map(m=>m.key))];if(keys.length>1)keys=keys.filter(k=>k!==previousCountry);
     const key=keys[Math.floor(Math.random()*keys.length)],pool=ranked.filter(m=>m.key===key),trip=pool[Math.floor(Math.random()*pool.length)];previousCountry=key;
     const tripId=crypto.randomUUID(),params=new URLSearchParams({country:key,returnTo:'home',origin,days:String(trip.days),start:trip.start,end:trip.end,tripId,from:originCity,people:String(trip.people),builderRegion:String(trip.regionIndex)});
     trip.rates.forEach((rate,index)=>params.set('builderRate'+index,String(rate)));
+    if(trip.fitnessWeekly)params.set('fitnessWeekly',String(trip.fitnessWeekly));
     if(trip.budget!==null){params.set('budget',String(trip.budget));params.set('currency','CAD');}
     document.querySelector('#trip-guide').href='destinations.html?'+params.toString();
     const payload={id:tripId,country:key,origin,origin_label:originCity,departure_date:trip.start,return_date:trip.end,days:trip.days,estimated_total:trip.total,group_size:trip.people,budget:trip.budget,currency:'CAD'};
@@ -162,8 +164,11 @@
     document.querySelector('#trip-dates').textContent=date.format(new Date(trip.start+'T12:00:00'))+' – '+date.format(new Date(trip.end+'T12:00:00'))+' · '+trip.days+' days · '+trip.people+(trip.people===1?' traveller':' travellers');
     const summary=document.querySelector('#trip-budget-summary');summary.hidden=false;
     summary.textContent='Estimated group total: '+money(trip.total)+' CAD · '+money(trip.total/trip.people)+' per person'+(trip.budget!==null?' · Budget: '+money(trip.budget)+(trip.total>trip.budget?(trip.total<=trip.ceiling?' (within your '+Number(values.budgetFlex)*100+'% flexibility)':' (nice-to-have budget exceeded)'):''):'');
+    const fitnessSummary=document.querySelector('#trip-fitness-summary');fitnessSummary.hidden=!trip.fitnessWeekly;fitnessSummary.textContent=trip.fitnessWeekly?'Includes '+money(trip.fitnessTotal)+' CAD for fitness · '+money(trip.fitnessWeekly)+' per person / week':'';
+    const nextBase=values.linkNextBase==='yes'?{previousTripId:tripId,country:key,region:trip.region,origin:trip.route.code,originCity:trip.route.city,start:trip.end,people:trip.people}:null;
+    const nextBaseNote=document.querySelector('#trip-next-base');nextBaseNote.hidden=!nextBase;nextBaseNote.textContent=nextBase?'Next base starts from '+nextBase.originCity+' ('+nextBase.origin+') · '+date.format(new Date(nextBase.start+'T12:00:00')):'';
     const add=document.querySelector('#quick-add-trip');add.textContent='Add Now';if(add.dataset.saving!=='true')add.disabled=false;document.querySelector('#quick-add-status').textContent='';document.querySelector('#search-message').textContent='';idea.hidden=false;
-    try{localStorage.setItem(storageKey,JSON.stringify(values));localStorage.setItem('travel-builder-last-trip-preferences',JSON.stringify({tripId,filters:values,region:trip.region,matchedAt:new Date().toISOString()}));}catch{}
+    try{localStorage.setItem(storageKey,JSON.stringify(values));localStorage.setItem('travel-builder-last-trip-preferences',JSON.stringify({tripId,filters:values,region:trip.region,nextBase,matchedAt:new Date().toISOString()}));}catch{}
     for(const def of definitions.filter(d=>d.multiple))closeMultiple(field(def.id));
     idea.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});
   });

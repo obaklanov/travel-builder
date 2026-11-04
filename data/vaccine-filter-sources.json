@@ -1,0 +1,21 @@
+{
+  "reviewed": "2026-11-04",
+  "scope": "Willingness to accept vaccination documentation requirements, not vaccination history or medical recommendations. Country-level matching remains unverified.",
+  "sources": [
+    {
+      "url": "https://www.cdc.gov/yellow-book/hcp/preparing-international-travelers/travel-health-advice-for-resource-limited-travelers.html",
+      "supports": [
+        "Yellow fever: conditional requirements",
+        "Meningococcal: pilgrimage-specific requirements",
+        "Polio: conditional departure documentation"
+      ]
+    },
+    {
+      "url": "https://www.canada.ca/en/public-health/services/publications/healthy-living/canadian-immunization-guide-part-3-vaccination-specific-populations/page-9-immunization-travellers.html",
+      "supports": [
+        "Required versus recommended vaccines",
+        "Itinerary- and purpose-dependent requirements"
+      ]
+    }
+  ]
+}

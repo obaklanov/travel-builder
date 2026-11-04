@@ -5,6 +5,15 @@
   const cloud='<path d="M28 55a12 12 0 0 1-1-24 17 17 0 0 1 32-5 14 14 0 1 1 6 29Z" fill="#dce8f4" stroke="#819db8" stroke-width="2"/>';
   function picture(id,index){
     let art='';
+    if(id==='advisory'){
+      const colour=['#79a990','#a5b27f','#d1b16a','#d79463','#bc786b'][index];
+      const face=index<2?'M44 33q6 6 12 0':index===2?'M44 36h12':'M44 38q6-6 12 0';
+      art='<circle cx="50" cy="40" r="33" fill="'+colour+'" opacity=".14"/><path d="M32 75V55q0-13 18-13t18 13v20Z" fill="'+(index===4?'#fff':colour)+'" stroke="#455650" stroke-width="2"/><circle cx="50" cy="27" r="13" fill="#ecd5b8" stroke="#455650" stroke-width="2"/><path d="M43 25h1m12 0h1'+face+'" fill="none" stroke="#455650" stroke-width="2" stroke-linecap="round"/>';
+      if(index===0)art+='<path d="M72 54q18-14 12-25-15 5-12 25m0 0 8-16" fill="#b6cfac" stroke="#648668" stroke-width="1.5"/>';
+      if(index>1)art+='<path d="m17 23 8-14 8 14Z" fill="#efd196" stroke="#9c7852"/><path d="M25 13v4m0 3v.2" stroke="#805c3e" stroke-width="1.8"/>';
+      if(index===4)art+='<path d="M33 54h34m-34 8h34m-34 8h34" stroke="#303b38" stroke-width="5"/><path d="M23 10v67m18-67v67m18-67v67m18-67v67M20 10h60m-60 67h60" stroke="#69746f" stroke-width="3"/>';
+      return '<svg viewBox="0 0 100 84" aria-hidden="true">'+art+'</svg>';
+    }
     if(id==='temperature'){
       art=sun+'<path d="M29 29v28a10 10 0 1 0 14 0V29a7 7 0 0 0-14 0Z" fill="#fff" stroke="#7892ac" stroke-width="2"/><path d="M36 35v29" stroke="'+['#79b5df','#88bb9d','#e7ac57','#df7665'][index]+'" stroke-width="6" stroke-linecap="round"/><circle cx="36" cy="65" r="6" fill="'+['#79b5df','#88bb9d','#e7ac57','#df7665'][index]+'"/>';
       if(index===0)art+='<path d="M75 50v18m-8-14 16 10m-16 0 16-10" stroke="#79b5df" stroke-width="2"/>';
@@ -15,13 +24,13 @@
     }
     return '<svg viewBox="0 0 100 84" aria-hidden="true">'+art+'</svg>';
   }
-  for(const [id,names] of [['temperature',['Cool','Mild','Warm','Hot']],['rain',['Dry','Some rain','Rain is fine']]]){
+  for(const [id,names] of [['temperature',['Cool','Mild','Warm','Hot']],['rain',['Dry','Some rain','Rain is fine']],['advisory',['1','2','3','4','5']]]){
     const field=document.querySelector('#builder-'+id),slot=field.closest('.builder-slot'),label=slot.querySelector('.builder-field-label'),choices=[...field.options].slice(1);
     field.hidden=true;field.classList.add('variant-source');field.setAttribute('aria-hidden','true');slot.classList.add('weather-scale-slot');
     const wrap=document.createElement('div');wrap.className='weather-scale';
     const scene=document.createElement('div');scene.className='weather-scale-scene';
     const caption=document.createElement('output');caption.className='weather-scale-caption';caption.setAttribute('aria-live','polite');
-    const range=document.createElement('input');range.type='range';range.min='1';range.max=String(choices.length);range.step='1';range.className='weather-scale-range';range.id='builder-'+id+'-range';range.setAttribute('aria-label',id==='rain'?'Rain tolerance':'Temperature');label.htmlFor=range.id;
+    const range=document.createElement('input');range.type='range';range.min='1';range.max=String(choices.length);range.step='1';range.className='weather-scale-range';range.id='builder-'+id+'-range';range.setAttribute('aria-label',id==='rain'?'Rain tolerance':id==='advisory'?'Safety level':'Temperature');label.htmlFor=range.id;
     const steps=document.createElement('div');steps.className='weather-scale-steps';steps.style.setProperty('--weather-steps',choices.length);
     function choose(i){field.value=choices[i].value;field.dispatchEvent(new Event('change',{bubbles:true}));}
     const buttons=choices.map((choice,i)=>{const button=document.createElement('button');button.type='button';button.className='variant-button';button.innerHTML=picture(id,i)+'<span>'+names[i]+'</span>';button.title=choice.textContent;button.setAttribute('aria-label',choice.textContent);button.addEventListener('click',()=>choose(i));steps.append(button);return button;});

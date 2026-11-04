@@ -270,26 +270,24 @@ window.TRAVEL_BUILDER_FILTERS = [
     }
   },
   {
-    "id": "pace",
-    "label": "Travel pace",
-    "group": "experience",
-    "pending": true,
+    "id": "linkNextBase",
+    "label": "Link to next base",
+    "group": "where",
+    "pending": false,
     "options": [
-      "Any",
-      "One base",
-      "A few stops",
-      "Frequent movement"
+      [
+        "",
+        "No"
+      ],
+      [
+        "yes",
+        "Yes"
+      ]
     ],
-    "primary": false,
-    "priority": true,
-    "defaultPriority": "prefer",
+    "primary": true,
+    "priority": false,
     "presentation": "segments",
-    "shortLabels": {
-      "": "Any",
-      "One base": "One base",
-      "A few stops": "Few stops",
-      "Frequent movement": "Frequent"
-    }
+    "help": "Carry the previous leg’s arrival point and end date into a next-base design."
   },
   {
     "id": "landscape",
@@ -346,35 +344,43 @@ window.TRAVEL_BUILDER_FILTERS = [
     "help": "Metropolitan-area population bands. Population data for destination hubs is not yet verified."
   },
   {
-    "id": "crowds",
-    "label": "Crowd preference",
-    "group": "experience",
+    "id": "fitnessBudget",
+    "label": "Fitness budget · CAD/person/week",
+    "group": "budget",
+    "pending": false,
     "options": [
-      "Any",
-      "Quiet / less crowded",
-      "Balanced",
-      "Lively / popular"
+      [
+        "0",
+        "No fitness allowance"
+      ],
+      [
+        "25",
+        "$25 / person / week"
+      ],
+      [
+        "50",
+        "$50 / person / week"
+      ],
+      [
+        "75",
+        "$75 / person / week"
+      ],
+      [
+        "100",
+        "$100 / person / week"
+      ],
+      [
+        "150",
+        "$150 / person / week"
+      ],
+      [
+        "200",
+        "$200 / person / week"
+      ]
     ],
-    "pending": true,
     "primary": false,
-    "priority": true,
-    "defaultPriority": "prefer"
-  },
-  {
-    "id": "activity",
-    "label": "Activity level",
-    "group": "experience",
-    "pending": true,
-    "options": [
-      "Any",
-      "Easy-going",
-      "Moderate",
-      "Active",
-      "Challenging"
-    ],
-    "primary": false,
-    "priority": true,
-    "defaultPriority": "prefer"
+    "priority": false,
+    "help": "Your exercise allowance per person per week, prorated by days and included in the trip total."
   },
   {
     "id": "evening",
@@ -562,7 +568,10 @@ window.TRAVEL_BUILDER_FILTERS = [
         "Edmonton · YEG"
       ]
     ],
-    "primary": true
+    "primary": true,
+    "type": "text",
+    "defaultValue": "YYZ",
+    "help": "Enter any three-letter IATA airport code. Defaults to Toronto (YYZ). Route estimates depend on available data."
   },
   {
     "id": "flightHours",
@@ -615,18 +624,28 @@ window.TRAVEL_BUILDER_FILTERS = [
   },
   {
     "id": "mobility",
-    "label": "Getting around",
+    "label": "Metro / subway",
     "group": "travel",
     "pending": true,
     "options": [
-      "Any",
-      "Public transport",
-      "Rental car",
-      "Either"
+      [
+        "",
+        "No preference"
+      ],
+      [
+        "yes",
+        "Yes"
+      ],
+      [
+        "no",
+        "No"
+      ]
     ],
     "primary": false,
     "priority": true,
-    "defaultPriority": "prefer"
+    "defaultPriority": "prefer",
+    "presentation": "yesNo",
+    "help": "Whether the destination city has a metro or subway system. City-level data is not verified yet."
   },
   {
     "id": "access",
@@ -1080,19 +1099,39 @@ window.TRAVEL_BUILDER_FILTERS = [
   },
   {
     "id": "advisory",
-    "label": "Government advisory",
+    "label": "Safety level",
     "group": "safety",
     "pending": true,
     "options": [
-      "Any",
-      "Normal precautions only",
-      "Include increased caution"
+      [
+        "",
+        "No preference"
+      ],
+      [
+        "1",
+        "1 · Very low risk"
+      ],
+      [
+        "2",
+        "2 · Low risk"
+      ],
+      [
+        "3",
+        "3 · Moderate risk"
+      ],
+      [
+        "4",
+        "4 · High risk"
+      ],
+      [
+        "5",
+        "5 · Very high risk"
+      ]
     ],
-    "help": "Preference only. Regional government advisory levels are not yet available for matching.",
+    "help": "Preferred maximum travel-risk level. This five-step preference is unverified and is not an official government advisory scale.",
     "primary": true,
     "priority": true,
-    "defaultPriority": "prefer",
-    "presentation": "radios"
+    "defaultPriority": "prefer"
   },
   {
     "id": "diet",
@@ -1212,23 +1251,50 @@ window.TRAVEL_BUILDER_FILTERS = [
     "label": "Events & festivals",
     "group": "experience",
     "options": [
-      "Cherry blossom",
-      "Diwali",
+      "Art festivals",
+      "Bastille Day",
       "Carnival",
-      "Lunar New Year",
+      "Cherry blossom",
       "Christmas markets",
-      "Music festivals",
+      "Día de los Muertos",
+      "Diwali",
+      "Dragon Boat Festival",
+      "Eid al-Adha",
+      "Eid al-Fitr",
+      "Film festivals",
       "Food festivals",
+      "Gion Matsuri",
+      "Holi",
+      "Inti Raymi",
+      "Lantern festivals",
+      "Local cultural festivals",
+      "Loi Krathong",
+      "Lunar New Year",
+      "Mid-Autumn Festival",
+      "Music festivals",
+      "New Year celebrations",
+      "Notting Hill Carnival",
+      "Oktoberfest",
+      "Pride celebrations",
+      "Rio Carnival",
+      "Running of the Bulls",
+      "Semana Santa",
+      "Songkran",
       "Sports events",
-      "Local cultural festivals"
+      "St Patrick’s Day",
+      "Stargazing festivals",
+      "Tanabata",
+      "Thaipusam",
+      "Tulip festivals",
+      "Vesak",
+      "Winter light festivals"
     ],
     "primary": false,
     "pending": true,
     "priority": true,
     "defaultPriority": "prefer",
-    "help": "Dates and locations vary by year. Event timing and availability are not verified yet.",
-    "multiple": true,
-    "presentation": "tags"
+    "help": "Select events or festival types. Exact dates, places and access are not yet verified.",
+    "multiple": true
   },
   {
     "id": "jetLag",
@@ -1237,27 +1303,15 @@ window.TRAVEL_BUILDER_FILTERS = [
     "options": [
       [
         "",
-        "Any time-zone shift"
+        "Any"
       ],
       [
-        "2",
-        "Up to 2 hours"
+        "under-4",
+        "Under 4 hours"
       ],
       [
-        "4",
-        "Up to 4 hours"
-      ],
-      [
-        "6",
-        "Up to 6 hours"
-      ],
-      [
-        "9",
-        "Up to 9 hours"
-      ],
-      [
-        "12",
-        "Up to 12 hours"
+        "under-8",
+        "Under 8 hours"
       ]
     ],
     "primary": false,
@@ -1267,55 +1321,8 @@ window.TRAVEL_BUILDER_FILTERS = [
     "help": "Difference between departure and destination local time on your travel dates. This is separate from flight duration; time-zone matching is not available yet."
   },
   {
-    "id": "soloSafety",
-    "label": "Solo-travel safety",
-    "group": "safety",
-    "options": [
-      "Any",
-      "Prioritize solo-travel safety information",
-      "Prefer well-supported solo travel"
-    ],
-    "primary": false,
-    "pending": true,
-    "priority": true,
-    "defaultPriority": "prefer",
-    "help": "Preference only. Reviewed destination evidence is not available yet."
-  },
-  {
-    "id": "inclusivity",
-    "label": "LGBTQ+ inclusivity",
-    "group": "safety",
-    "options": [
-      "Any",
-      "Prioritize legal protections",
-      "Prioritize welcoming social environment",
-      "Both protections and social environment"
-    ],
-    "primary": true,
-    "pending": true,
-    "priority": true,
-    "defaultPriority": "prefer",
-    "help": "Legal protections and social acceptance are separate, location-specific questions. Neither is verified by current suggestions."
-  },
-  {
     "id": "dress",
-    "label": "Dress & cultural norms",
-    "group": "safety",
-    "options": [
-      "Any",
-      "Prefer relaxed dress norms",
-      "Comfortable with modest dress expectations",
-      "Show local customs before booking"
-    ],
-    "primary": false,
-    "pending": true,
-    "priority": true,
-    "defaultPriority": "prefer",
-    "help": "Preference only. Reviewed destination evidence is not available yet."
-  },
-  {
-    "id": "alcohol",
-    "label": "Alcohol legal",
+    "label": "Women’s dress requirements",
     "group": "safety",
     "options": [
       [
@@ -1323,52 +1330,102 @@ window.TRAVEL_BUILDER_FILTERS = [
         "No preference"
       ],
       [
-        "yes",
-        "Legal availability preferred"
-      ]
-    ],
-    "primary": false,
-    "pending": true,
-    "priority": true,
-    "defaultPriority": "prefer",
-    "help": "On requests legal availability; off means no preference. Legal status is unverified and can vary by substance and locality.",
-    "presentation": "switch"
-  },
-  {
-    "id": "drugLaws",
-    "label": "Recreational drugs legal",
-    "group": "safety",
-    "options": [
-      [
-        "",
-        "No preference"
+        "none",
+        "No specific requirements"
       ],
       [
-        "yes",
-        "Legal availability preferred"
+        "modest",
+        "Modest clothing acceptable"
+      ],
+      [
+        "head-covering",
+        "Head covering acceptable"
+      ],
+      [
+        "full-covering",
+        "Full-body covering acceptable"
       ]
     ],
     "primary": false,
     "pending": true,
     "priority": true,
     "defaultPriority": "prefer",
-    "help": "On requests legal availability; off means no preference. Legal status is unverified and can vary by substance and locality.",
-    "presentation": "switch"
+    "help": "Preference about mandatory clothing for women. Legal rules, local customs and religious-site rules must be reviewed separately. Destination evidence is not yet verified."
   },
   {
-    "id": "vaccines",
-    "label": "Vaccination requirements",
+    "id": "vaccineYellowFever",
+    "label": "Yellow fever requirement",
     "group": "health",
     "options": [
-      "Any",
-      "Show entry vaccine requirements",
-      "Prefer fewer entry requirements"
+      [
+        "",
+        "No preference"
+      ],
+      [
+        "yes",
+        "Yes"
+      ],
+      [
+        "no",
+        "No"
+      ]
     ],
     "primary": false,
     "pending": true,
     "priority": true,
     "defaultPriority": "prefer",
-    "help": "Entry requirements and health recommendations are different. Both need current, sourced review; this tool provides no medical clearance."
+    "help": "Accept this vaccination requirement? Yes means acceptable; No means avoid a requirement. This is a preference, not vaccination history. Route- and purpose-specific requirements are not yet verified.",
+    "presentation": "yesNo"
+  },
+  {
+    "id": "vaccinePolio",
+    "label": "Polio requirement",
+    "group": "health",
+    "options": [
+      [
+        "",
+        "No preference"
+      ],
+      [
+        "yes",
+        "Yes"
+      ],
+      [
+        "no",
+        "No"
+      ]
+    ],
+    "primary": false,
+    "pending": true,
+    "priority": true,
+    "defaultPriority": "prefer",
+    "help": "Accept this vaccination requirement? Yes means acceptable; No means avoid a requirement. This is a preference, not vaccination history. Route- and purpose-specific requirements are not yet verified.",
+    "presentation": "yesNo"
+  },
+  {
+    "id": "vaccineMeningococcal",
+    "label": "Meningococcal requirement",
+    "group": "health",
+    "options": [
+      [
+        "",
+        "No preference"
+      ],
+      [
+        "yes",
+        "Yes"
+      ],
+      [
+        "no",
+        "No"
+      ]
+    ],
+    "primary": false,
+    "pending": true,
+    "priority": true,
+    "defaultPriority": "prefer",
+    "help": "Accept this vaccination requirement? Yes means acceptable; No means avoid a requirement. This is a preference, not vaccination history. Route- and purpose-specific requirements are not yet verified.",
+    "presentation": "yesNo"
   },
   {
     "id": "malaria",
@@ -1414,6 +1471,35 @@ window.TRAVEL_BUILDER_FILTERS = [
     "priority": true,
     "defaultPriority": "prefer",
     "help": "Local, current evidence is required. No drinking-water safety claim is made by the current designer."
+  },
+  {
+    "id": "walkability",
+    "label": "Public-space walkability",
+    "group": "experience",
+    "options": [
+      [
+        "",
+        "No preference"
+      ],
+      [
+        "1",
+        "1 · Car-dominated"
+      ],
+      [
+        "2",
+        "2 · Mixed"
+      ],
+      [
+        "3",
+        "3 · Walkable"
+      ]
+    ],
+    "pending": true,
+    "primary": false,
+    "priority": true,
+    "defaultPriority": "prefer",
+    "presentation": "threePosition",
+    "help": "City-level preference for pedestrian access and public-space design. Verified local evidence is not yet available."
   }
 ];
 window.TRAVEL_BUILDER_COUNTRY_CODES = {
