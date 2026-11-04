@@ -234,3 +234,6 @@
 .filter-showcase .design-reset-toolbar p:not(:empty){flex-basis:100%;}
 @media(max-width:650px){.builder-home .variant-button{min-height:40px;}.builder-home .variant-radio,.builder-home .variant-inline-options label{min-height:40px;}.builder-home .variant-slot input.variant-range{height:44px;min-height:44px;}.variant-dual-track{height:44px;}.variant-dual-bar{top:20px;}.builder-home .variant-money-modes .variant-button{min-height:36px;}.builder-home .variant-stepper .variant-button{min-height:43px;}}
 @media(prefers-reduced-motion:reduce){.variant-switch input::before{transition:none;}}
+
+.variant-search-heading{margin:8px 0 3px;padding:10px 10px 5px;border-top:1px solid #e2e8f0;color:#65758a;font-size:12px;font-weight:600;}
+.builder-home .variant-search-list .variant-search-country{padding-left:26px;}
