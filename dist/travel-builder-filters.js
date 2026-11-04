@@ -5,7 +5,7 @@
   const field=id=>document.querySelector('#builder-'+id),storageKey='travel-builder-design-preferences-v2';
   const data=Object.fromEntries(Object.entries(travelData).map(([key,value])=>[key,{...value,name:countries[key].name,continent:/Asia$/.test(countries[key].region)?'Asia':countries[key].region}]));
   const money=n=>new Intl.NumberFormat('en-CA',{style:'currency',currency:'CAD',maximumFractionDigits:0}).format(n);
-  let previousCountry=null,revision=0;
+  let previousCountry=null,revision=0,placeSizeReviewRequired=false;
   function option(value,label){const node=document.createElement('option');node.value=value;node.textContent=label;return node;}
   const destination=field('destination');
   for(const continent of [...new Set(Object.values(data).map(c=>c.continent))].sort())destination.append(option('continent:'+continent,continent));
@@ -44,12 +44,13 @@
   exclusionSearch.addEventListener('keydown',event=>{if(event.key==='Enter')event.preventDefault();});
   document.querySelector('#builder-clear-exclusions').addEventListener('click',()=>{for(const node of document.querySelectorAll('[name="exclude"]'))node.checked=false;form.dispatchEvent(new Event('change',{bubbles:true}));});
 
-  function collect(){const values=Object.fromEntries(definitions.map(def=>[def.id,def.multiple?[...document.querySelectorAll('[name="'+def.id+'"]:checked')].map(n=>n.value):field(def.id).value]));values.priorities=Object.fromEntries([...document.querySelectorAll('[data-priority-for]')].map(button=>[button.dataset.priorityFor,button.getAttribute('aria-checked')==='true'?'must':'prefer']));return values;}
+  function collect(){const values=Object.fromEntries(definitions.map(def=>[def.id,def.multiple?[...document.querySelectorAll('[name="'+def.id+'"]:checked')].map(n=>n.value):field(def.id).value]));values.placeSizeReviewRequired=placeSizeReviewRequired;values.priorities=Object.fromEntries([...document.querySelectorAll('[data-priority-for]')].map(button=>[button.dataset.priorityFor,button.getAttribute('aria-checked')==='true'?'must':'prefer']));return values;}
   function interestLabel(){const values=collect();for(const def of definitions.filter(d=>d.multiple)){const selected=values[def.id];field(def.id).querySelector('summary').textContent=field(def.id).getAttribute('aria-disabled')==='true'?'Not applicable':def.id==='exclude'?(selected.length?selected.length+' excluded':'No exclusions'):(selected.length?selected.length+' selected':'No preference');
       if(def.id==='exclude'){const summary=document.querySelector('#builder-exclusion-summary');summary.hidden=!selected.length;summary.textContent=selected.map(v=>exclusionLabels.get(v)||v).join('; ');}}}
   try{
     const saved=JSON.parse(localStorage.getItem(storageKey)||localStorage.getItem('travel-builder-filter-preferences-v1')||'null');
     if(saved){
+      placeSizeReviewRequired=Boolean(saved.placeSizeReviewRequired||(!Object.hasOwn(saved,'placeSize')&&(saved.urban||saved.metroSize)));
       if(/^\d+$/.test(saved.days||'')){const day=Number(saved.days),choice=definitions.find(d=>d.id==='days').options.find(([value])=>{const span=engine.durationValues(value);return value&&span.includes(day);});saved.days=choice?choice[0]:'';}
       if(saved.priorities)for(const button of document.querySelectorAll('[data-priority-for]')){const mode=saved.priorities[button.dataset.priorityFor];if(['must','prefer'].includes(mode)){button.setAttribute('aria-checked',String(mode==='must'));button.textContent=mode==='must'?'Must have':'Nice to have';}}
       if(Array.isArray(saved.interests)){const renamed={Food:'Food experiences',History:'History and heritage',Art:'Art and museums',Beaches:'Beaches and swimming'};saved.interests=saved.interests.map(v=>renamed[v]||v);}
@@ -73,13 +74,15 @@
   field('childAges').querySelector('summary').addEventListener('click',event=>{if(field('childAges').getAttribute('aria-disabled')==='true')event.preventDefault();});
   form.addEventListener('click',event=>{const button=event.target.closest('[data-priority-for]');if(!button)return;const must=button.getAttribute('aria-checked')!=='true';button.setAttribute('aria-checked',String(must));button.textContent=must?'Must have':'Nice to have';form.dispatchEvent(new Event('change',{bubbles:true}));});
   interestLabel();
+  function showPlaceSizeReview(){document.querySelector('#builder-placeSize-review').hidden=!placeSizeReviewRequired;}
+  showPlaceSizeReview();
   function pendingPreferences(values){return definitions.filter(def=>def.pending&&(Array.isArray(values[def.id])?values[def.id].length:values[def.id]&&values[def.id]!=='Any')).map(def=>({label:def.label,value:Array.isArray(values[def.id])?values[def.id].join(', '):field(def.id).selectedOptions?.[0]?.textContent||values[def.id]}));}
   function markPending(){const pending=pendingPreferences(collect());const note=document.querySelector('#builder-preference-status');note.hidden=!pending.length;note.textContent=pending.length?'Unverified preferences: '+pending.map(p=>p.label).join(', ')+'. Any marked Must have must be verified before a trip can be created.':'';}
   markPending();
   form.addEventListener('change',event=>{
     if(event.target===exclusionSearch)return;
     document.querySelector('#builder-reset-status').textContent='';
-    revision++;if(event.target===field('party'))syncParty();
+    revision++;if(event.target===field('placeSize'))placeSizeReviewRequired=false;showPlaceSizeReview();if(event.target===field('party'))syncParty();
     if(event.target===field('earliest'))updateDateBounds();
     if(event.target===destination){field('region').value='';dependentOptions();}
     interestLabel();markPending();
@@ -102,6 +105,7 @@
     if(!group||group==='party')syncParty();
     for(const card of document.querySelectorAll('.design-group'))if(!group||card.classList.contains('design-group-'+group))for(const more of card.querySelectorAll('.design-more'))more.open=false;
     if(!group)previousCountry=null;
+    if(!group||group==='experience')placeSizeReviewRequired=false;
     // Use the normal change path to cancel pending generation, clear the preview, refresh labels and save defaults.
     form.dispatchEvent(new Event('change',{bubbles:true}));
     const card=group?document.querySelector('.design-group-'+group):null;
@@ -120,6 +124,7 @@
   form.addEventListener('submit',async event=>{
     event.preventDefault();
     if(!form.reportValidity())return;
+    if(placeSizeReviewRequired){document.querySelector('#search-message').textContent='Choose a Place size or No preference under Experience & atmosphere → More options to replace your previous location-size setting.';return;}
     const values=collect(),locationNode=document.querySelector('#location-label');
     if(values.earliest&&values.latest&&values.earliest>values.latest){document.querySelector('#search-message').textContent='Latest return must be on or after earliest departure.';return;}
     if(values.party==='Solo'&&values.people!=='1'){document.querySelector('#search-message').textContent='A solo trip needs one traveller. Change the traveller count or travel party.';return;}

@@ -30,14 +30,14 @@ const planner=vm.createContext({URLSearchParams,location:{search:'?country=spain
 vm.runInContext(fs.readFileSync(path.join(dist,'travel-details.js'),'utf8'),planner);
 const state=planner.getBudgetState('spain');assert.equal(state.people,2);assert.equal(state.regionChoice.index,2);assert.equal(state.rates[1],99);assert.equal(state.rates[2],0);assert.equal(state.departureDate,'2027-06-01');
 const conf=vm.createContext({window:{}});vm.runInContext(fs.readFileSync(path.join(dist,'travel-builder-filter-options.js'),'utf8'),conf);
-const defs=conf.window.TRAVEL_BUILDER_FILTERS;assert.equal(defs.length,52);assert.equal(new Set(defs.map(d=>d.id)).size,52);
+const defs=conf.window.TRAVEL_BUILDER_FILTERS;assert.equal(defs.length,51);assert.equal(new Set(defs.map(d=>d.id)).size,51);
 for(const group of ['party','where','experience','budget','travel','needs','safety','health'])assert(defs.some(d=>d.group===group));
 for(const id of ['lodging','food','transport','extras','flightBudget','arrival'])assert(!defs.some(d=>d.id===id),'Planning-only control leaked into Designing');
 assert.equal(match({earliest:'2027-06-12',latest:'2027-06-18'})[0].start,'2027-06-12');
 assert.equal(match({earliest:'2027-06-12',latest:'2027-06-17'}).length,0);
 assert.equal(match({earliest:'2027-07-01',latest:'2027-07-10'}).length,0,'Month and date constraints intersect');
 const html=fs.readFileSync(path.join(dist,'index.html'),'utf8');const ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);assert.equal(new Set(ids).size,ids.length);assert(!html.includes('src="trip-start.js'));
-console.log('PASS: 52 Designing definitions and eight groups; route/region/continent filters; budgets and zero allowances; shared group costs; month windows and multi-month seasons; missing data; unsupported preferences; planner handoff; unique HTML IDs.');
+console.log('PASS: 51 Designing definitions and eight groups; route/region/continent filters; budgets and zero allowances; shared group costs; month windows and multi-month seasons; missing data; unsupported preferences; planner handoff; unique HTML IDs.');
 
 assert.equal(match({people:'10'})[0].total,16320,'Ten-person calculation');
 assert.equal(match({people:'11'}).length,0,'Reject unsupported group size');
@@ -78,10 +78,9 @@ assert.equal(match({month:'2029-11',earliest:'2029-11-02',days:'90'})[0].start,'
 assert.equal(match({latest:'2030-02-01'}).length,0,'Return exceeds rolling 90-day extension for Nov 2 test clock');
 assert.equal(engine.candidateMonths({...base,month:'2029-12',dateFlex:'2'},now).length,0,'Invalid base month cannot use flexibility to bypass limit');
 
-const metro=defs.find(d=>d.id==='metroSize');assert(metro.pending);assert.equal(metro.options.length,7);
-const bands=Object.values(metro.ranges);assert.equal(bands[0].min,0);assert.equal(bands.at(-1).max,null);
-for(let i=1;i<bands.length;i++)assert.equal(bands[i-1].max,bands[i].min,'Contiguous, non-overlapping metro population bands');
-assert.equal(match({metroSize:'5m-plus'}).length,match({}).length,'No unsupported metro matching');
+const placeSize=defs.find(d=>d.id==='placeSize');assert(placeSize.pending);assert.equal(placeSize.options.length,6);
+assert.equal(engine.match({...base,placeSize:'metropolis',priorities:{placeSize:'must'}},data,routes,now,defs).length,0,'Unverified place-size requirement cannot silently pass');
+assert(engine.match({...base,placeSize:'village',priorities:{placeSize:'prefer'}},data,routes,now,defs).length>0,'Unverified preferred size permits provisional suggestions');
 
 assert(!defs.some(d=>d.id==='bookingFlex'));
 assert.equal(defs.find(d=>d.id==='exclude').primary,false);

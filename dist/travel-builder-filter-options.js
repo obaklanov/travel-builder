@@ -388,85 +388,40 @@ window.TRAVEL_BUILDER_FILTERS = [
     "defaultPriority": "prefer"
   },
   {
-    "id": "urban",
-    "label": "City or countryside",
+    "id": "placeSize",
+    "label": "Place size",
     "group": "experience",
     "pending": true,
-    "options": [
-      "Any",
-      "Mostly city",
-      "Balanced",
-      "Mostly countryside"
-    ],
     "primary": false,
     "priority": true,
-    "defaultPriority": "prefer"
-  },
-  {
-    "id": "metroSize",
-    "label": "Metro area size",
-    "group": "experience",
-    "pending": true,
-    "primary": false,
-    "help": "Population of the wider metropolitan area, not the country or city proper. Ranges include the lower bound and exclude the upper bound. Matching will use future travel-hub data.",
+    "defaultPriority": "prefer",
     "options": [
       [
         "",
-        "Any size"
+        "No preference"
       ],
       [
-        "under-100k",
-        "Under 100,000"
+        "village",
+        "Village"
       ],
       [
-        "100k-500k",
-        "100,000–500,000"
+        "town",
+        "Small town"
       ],
       [
-        "500k-1m",
-        "500,000–1 million"
+        "city",
+        "City"
       ],
       [
-        "1m-3m",
-        "1–3 million"
+        "large-city",
+        "Large city"
       ],
       [
-        "3m-5m",
-        "3–5 million"
-      ],
-      [
-        "5m-plus",
-        "5 million or more"
+        "metropolis",
+        "Metropolis"
       ]
     ],
-    "ranges": {
-      "under-100k": {
-        "min": 0,
-        "max": 100000
-      },
-      "100k-500k": {
-        "min": 100000,
-        "max": 500000
-      },
-      "500k-1m": {
-        "min": 500000,
-        "max": 1000000
-      },
-      "1m-3m": {
-        "min": 1000000,
-        "max": 3000000
-      },
-      "3m-5m": {
-        "min": 3000000,
-        "max": 5000000
-      },
-      "5m-plus": {
-        "min": 5000000,
-        "max": null
-      }
-    },
-    "priority": true,
-    "defaultPriority": "prefer"
+    "help": "Preferred size of the place you stay: village to metropolis. Destination hub matching is not verified yet. This is a preferred size, not a maximum population limit."
   },
   {
     "id": "crowds",

@@ -146,3 +146,7 @@ Thailand front cover replaced on 4 November 2026 with the image supplied by the 
 Italy front cover replaced on 4 November 2026 with the image supplied by the site owner.
 
 New Zealand front cover replaced on 4 November 2026 with the image supplied by the site owner.
+
+## Illustrated Place size filter
+
+Experience & atmosphere → More options has a five-step illustrated Place size slider: village, small town, city, large city and metropolis. It replaces city/countryside and metro population dropdowns; these qualitative steps are not population bands. No preference stores an empty value. A hidden select preserves the shared collection/reset/persistence contract; place-size-filter.js connects a native keyboard-accessible range, five clickable labels and local SVG scenes. Selected sizes remain unverified until hub-level data exists: Must have blocks unverified matching, Nice to have records a provisional preference. Previous urban/metro choices require an explicit new size or No preference before generation; that review requirement persists until resolved or reset. No SQL change is needed.
