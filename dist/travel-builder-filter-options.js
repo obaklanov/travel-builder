@@ -647,7 +647,7 @@ window.TRAVEL_BUILDER_FILTERS = [
   {
     "id": "mobility",
     "label": "Metro / subway",
-    "group": "travel",
+    "group": "city",
     "pending": true,
     "options": [
       [
