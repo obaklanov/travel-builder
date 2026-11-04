@@ -244,3 +244,6 @@
 .design-group-weather>.design-fields{grid-template-columns:repeat(3,minmax(0,1fr));}
 @media(max-width:1100px){.designing-canvas{grid-template-areas:"party where" "budget create" "experience travel" "safety health" "needs weather";}.design-group-weather>.design-fields{grid-template-columns:repeat(2,minmax(0,1fr));}}
 @media(max-width:650px){.designing-canvas{grid-template-areas:"create" "party" "where" "weather" "budget" "experience" "travel" "safety" "health" "needs";}}
+
+/* Keep each set of experience choices visually grouped with its label. */
+.design-group-experience .variant-slot:has(#builder-style),.design-group-experience .variant-slot:has(#builder-pace){box-sizing:border-box;padding:10px;border:1px solid var(--category-border);border-radius:12px;background:#fff;align-self:stretch;}
