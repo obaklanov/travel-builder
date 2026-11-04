@@ -1342,7 +1342,7 @@ window.TRAVEL_BUILDER_FILTERS = [
   {
     "id": "jetLag",
     "label": "Time-zone shift tolerance",
-    "group": "travel",
+    "group": "needs",
     "options": [
       [
         "",
