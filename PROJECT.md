@@ -130,3 +130,5 @@ Laos, Philippines, Malaysia and Brunei now each have three treasure badges, lazy
 Australia front cover and Uluru treasure photo replaced on 4 November 2026 with images supplied by the site owner. Supplied treasure images show a source caption without attributing the previous photographer or license.
 
 South Africa front cover replaced on 4 November 2026 with the Cape Town/Table Mountain image supplied by the site owner.
+
+Brazil front cover replaced on 4 November 2026 with the image supplied by the site owner.
