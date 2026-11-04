@@ -17,7 +17,12 @@ async function animateCountryMap(key, name) {
   svg.setAttribute('viewBox','0 0 1000 520');
   svg.setAttribute('preserveAspectRatio',key === 'mexico' ? 'xMidYMax meet' : 'xMidYMid meet');
   svg.setAttribute('aria-hidden','true');
-  const selectedId = {"france":"FRA","united-kingdom":"GBR","turkey":"TUR","peru":"PER","brazil":"BRA","south-africa":"ZAF","south-korea":"KOR","australia":"AUS","spain":"ESP","greece":"GRC","costa-rica":"CRI","indonesia":"IDN","united-states":"USA","vietnam":"VNM","colombia":"COL","morocco":"MAR",egypt:'EGY','new-zealand':'NZL',argentina:'ARG',italy:'ITA',japan:'JPN',portugal:'PRT',mexico:'MEX',thailand:'THA'}[key];
+  const selectedId = {
+"laos":"LAO",
+"philippines":"PHL",
+"malaysia":"MYS",
+"brunei":"BRN",
+"france":"FRA","united-kingdom":"GBR","turkey":"TUR","peru":"PER","brazil":"BRA","south-africa":"ZAF","south-korea":"KOR","australia":"AUS","spain":"ESP","greece":"GRC","costa-rica":"CRI","indonesia":"IDN","united-states":"USA","vietnam":"VNM","colombia":"COL","morocco":"MAR",egypt:'EGY','new-zealand':'NZL',argentina:'ARG',italy:'ITA',japan:'JPN',portugal:'PRT',mexico:'MEX',thailand:'THA'}[key];
   let bounds = [Infinity,Infinity,-Infinity,-Infinity];
   for (const feature of data.features) {
     const selected = feature.id === selectedId;

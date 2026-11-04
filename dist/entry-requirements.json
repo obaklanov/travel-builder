@@ -266,5 +266,51 @@
     "checkedAt": "2026-11-01",
     "needsReview": false,
     "checkFailed": false
+  },
+  "laos": {
+    "summary": "Tourist visa required for regular Canadian passport holders.",
+    "notes": [
+      "An eVisa or visa on arrival may be available at eligible entry points. Confirm that your arrival point accepts your visa."
+    ],
+    "passport": "Valid for at least six months beyond your expected departure from Laos.",
+    "sourceUrl": "https://travel.gc.ca/destinations/laos#entryexit",
+    "checkedAt": "2026-11-04",
+    "needsReview": false,
+    "checkFailed": false
+  },
+  "philippines": {
+    "summary": "Visa-free tourism for up to 30 days for regular Canadian passport holders.",
+    "notes": [
+      "Complete the official eTravel registration within 72 hours before travel. An extension requires authorization before your permitted stay ends.",
+      "Officials may ask for a return or onward ticket."
+    ],
+    "passport": "Valid for at least six months beyond your expected departure from Philippines.",
+    "sourceUrl": "https://travel.gc.ca/destinations/philippines#entryexit",
+    "checkedAt": "2026-11-04",
+    "needsReview": false,
+    "checkFailed": false
+  },
+  "malaysia": {
+    "summary": "Visa-free tourism for up to 90 days for regular Canadian passport holders.",
+    "notes": [
+      "Complete the free official Malaysia Digital Arrival Card within three days before arrival. Use the official immigration website."
+    ],
+    "passport": "Valid for at least six months beyond your expected departure from Malaysia.",
+    "sourceUrl": "https://travel.gc.ca/destinations/malaysia#entryexit",
+    "checkedAt": "2026-11-04",
+    "needsReview": false,
+    "checkFailed": false
+  },
+  "brunei": {
+    "summary": "Visa-free tourism for stays of up to 90 days for regular Canadian passport holders.",
+    "notes": [
+      "Register for the E-Arrival Card before arrival. Check the official guidance for current arrival declarations.",
+      "Carry proof of medical insurance covering the entire visit; entry conditions and permitted stay depend on the documents presented."
+    ],
+    "passport": "Valid for at least six months beyond your expected departure from Brunei.",
+    "sourceUrl": "https://travel.gc.ca/destinations/brunei#entryexit",
+    "checkedAt": "2026-11-04",
+    "needsReview": false,
+    "checkFailed": false
   }
 }

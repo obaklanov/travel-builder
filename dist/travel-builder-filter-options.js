@@ -1111,6 +1111,11 @@ window.TRAVEL_BUILDER_FILTERS = [
   }
 ];
 window.TRAVEL_BUILDER_COUNTRY_CODES = {
+"laos":"LAO",
+"philippines":"PHL",
+"malaysia":"MYS",
+"brunei":"BRN",
+
   "france": "FRA",
   "united-kingdom": "GBR",
   "turkey": "TUR",

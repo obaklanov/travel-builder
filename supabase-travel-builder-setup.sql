@@ -47,7 +47,7 @@ create trigger travel_builder_profile_updated before update on public.travel_bui
 create table if not exists public.travel_builder_trips (
  id uuid primary key,
  user_id uuid not null references auth.users(id) on delete cascade,
- country text not null check (country in ('mexico','japan','portugal','italy','argentina','thailand','egypt','new-zealand','united-states','vietnam','colombia','morocco','spain','greece','costa-rica','indonesia','france','united-kingdom','turkey','peru','brazil','south-africa','south-korea','australia')),
+ country text not null check (country in ('mexico','japan','portugal','italy','argentina','thailand','egypt','new-zealand','united-states','vietnam','colombia','morocco','spain','greece','costa-rica','indonesia','france','united-kingdom','turkey','peru','brazil','south-africa','south-korea','australia','laos','philippines','malaysia','brunei')),
  origin text not null check (origin in ('YYZ','YVR','YUL','YYC','YEG')),
  origin_label text not null check (length(origin_label) between 1 and 160),
  departure_date date not null,

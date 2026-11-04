@@ -3,6 +3,11 @@ const guideDetailArtwork={"entry": "<rect x=\"12\" y=\"7\" width=\"36\" height=\
 function guideDetailIcon(kind){return '<svg class="guide-detail-icon" viewBox="0 0 64 64" aria-hidden="true" focusable="false" stroke-width="1.4" stroke-linejoin="round">'+guideDetailArtwork[kind]+'</svg>';}
 
 const countries = {
+"laos":{"name":"Laos","region":"Asia","prompt":"Prepare for your next adventure."},
+"philippines":{"name":"Philippines","region":"Asia","prompt":"Prepare for your next adventure."},
+"malaysia":{"name":"Malaysia","region":"Asia","prompt":"Prepare for your next adventure."},
+"brunei":{"name":"Brunei","region":"Asia","prompt":"Prepare for your next adventure."},
+
 "france":{"name": "France", "region": "Europe", "prompt": "Prepare for your next adventure."},
 "united-kingdom":{"name": "United Kingdom", "region": "Europe", "prompt": "Prepare for your next adventure."},
 "turkey":{"name": "Türkiye", "region": "Asia", "prompt": "Prepare for your next adventure."},

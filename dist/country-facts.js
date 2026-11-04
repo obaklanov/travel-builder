@@ -264,5 +264,49 @@ const countryFacts = {
     "areaRank": 6,
     "areaCount": 198,
     "areaShare": "5.65"
+  },
+  "laos": {
+    "population": 7974017,
+    "populationYear": 2026,
+    "populationRank": 102,
+    "populationCount": 198,
+    "populationShare": "0.10",
+    "area": 236800,
+    "areaRank": 83,
+    "areaCount": 198,
+    "areaShare": "0.17"
+  },
+  "philippines": {
+    "population": 117724471,
+    "populationYear": 2026,
+    "populationRank": 14,
+    "populationCount": 198,
+    "populationShare": "1.42",
+    "area": 342353,
+    "areaRank": 64,
+    "areaCount": 198,
+    "areaShare": "0.25"
+  },
+  "malaysia": {
+    "population": 36385115,
+    "populationYear": 2026,
+    "populationRank": 45,
+    "populationCount": 198,
+    "populationShare": "0.44",
+    "area": 330803,
+    "areaRank": 68,
+    "areaCount": 198,
+    "areaShare": "0.24"
+  },
+  "brunei": {
+    "population": 469775,
+    "populationYear": 2026,
+    "populationRank": 170,
+    "populationCount": 198,
+    "populationShare": "0.01",
+    "area": 5765,
+    "areaRank": 165,
+    "areaCount": 198,
+    "areaShare": "0.00"
   }
 };

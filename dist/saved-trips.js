@@ -1,7 +1,12 @@
 'use strict';
 (() => {
   const draftKey = 'travel-builder-pending-trip';
-  const names = {"france":"France","united-kingdom":"United Kingdom","turkey":"Türkiye","peru":"Peru","brazil":"Brazil","south-africa":"South Africa","south-korea":"South Korea","australia":"Australia","spain":"Spain","greece":"Greece","costa-rica":"Costa Rica","indonesia":"Indonesia","united-states":"United States","vietnam":"Vietnam","colombia":"Colombia","morocco":"Morocco",mexico:'Mexico',thailand:'Thailand',portugal:'Portugal',japan:'Japan',italy:'Italy',argentina:'Argentina',egypt:'Egypt','new-zealand':'New Zealand'};
+  const names = {
+"laos":"Laos",
+"philippines":"Philippines",
+"malaysia":"Malaysia",
+"brunei":"Brunei",
+"france":"France","united-kingdom":"United Kingdom","turkey":"Türkiye","peru":"Peru","brazil":"Brazil","south-africa":"South Africa","south-korea":"South Korea","australia":"Australia","spain":"Spain","greece":"Greece","costa-rica":"Costa Rica","indonesia":"Indonesia","united-states":"United States","vietnam":"Vietnam","colombia":"Colombia","morocco":"Morocco",mexico:'Mexico',thailand:'Thailand',portugal:'Portugal',japan:'Japan',italy:'Italy',argentina:'Argentina',egypt:'Egypt','new-zealand':'New Zealand'};
   const uuid = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
   const validDate = value => /^\d{4}-\d{2}-\d{2}$/.test(value||'') && Number.isFinite(Date.parse(value+'T12:00:00Z')) && new Date(value+'T12:00:00Z').toISOString().slice(0,10) === value;
   function validTrip(trip) {

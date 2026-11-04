@@ -1,0 +1,311 @@
+{
+  "checkedAt": "2026-11-04",
+  "notes": "Additions to the 24-country planner. Costs in CAD and route prices/times are explicitly illustrative planning allowances, not sourced market averages or live fares. B/A/W month ratings are editorial sightseeing judgments based on the linked official climate sources, not guarantees or measured climate values. Gateway airports may require onward travel. Entry summaries apply only to regular Canadian passports and tourism. No new medical, safety or inclusivity matching evidence is inferred. Existing profile population/area/geometry catalogue is reused.",
+  "countries": {
+    "laos": {
+      "name": "Laos",
+      "code": "LAO",
+      "iso2": "LA",
+      "region": "Asia",
+      "airports": [
+        [
+          "VTE",
+          "Vientiane Wattay"
+        ],
+        [
+          "LPQ",
+          "Luang Prabang"
+        ],
+        [
+          "PKZ",
+          "Pakse"
+        ]
+      ],
+      "base": 1700,
+      "hours": 24,
+      "costs": [
+        55,
+        22,
+        15,
+        18
+      ],
+      "regions": [
+        [
+          "Luang Prabang & northern Laos / North",
+          "BBAAWWWWWWBB"
+        ],
+        [
+          "Vientiane & Vang Vieng / Center",
+          "BBAAWWWWWWBB"
+        ],
+        [
+          "Pakse & Bolaven Plateau / South",
+          "BBAAWWWWWWBB"
+        ]
+      ],
+      "gateways": [
+        [
+          "LPQ"
+        ],
+        [
+          "VTE"
+        ],
+        [
+          "PKZ"
+        ]
+      ],
+      "seasonSources": [
+        {
+          "label": "Luang Prabang Tourism: climate",
+          "url": "https://tourismluangprabang.org/travel-guide/basic-information/"
+        },
+        {
+          "label": "Lao Ministry of Public Works: seasonal climate",
+          "url": "https://mpwt.gov.la/download_project?id=129"
+        }
+      ],
+      "seasonNote": "Editorial sightseeing ratings: cooler dry months are favoured; heat, seasonal haze and monsoon conditions can change suitability. Southern regions use the broad national wet/dry pattern.",
+      "alt": "Turquoise pools and waterfalls at Kuang Si near Luang Prabang, Laos",
+      "entry": {
+        "summary": "Tourist visa required for regular Canadian passport holders.",
+        "notes": [
+          "An eVisa or visa on arrival may be available at eligible entry points. Confirm that your arrival point accepts your visa."
+        ]
+      }
+    },
+    "philippines": {
+      "name": "Philippines",
+      "code": "PHL",
+      "iso2": "PH",
+      "region": "Asia",
+      "airports": [
+        [
+          "MNL",
+          "Manila Ninoy Aquino"
+        ],
+        [
+          "CEB",
+          "Mactan–Cebu"
+        ],
+        [
+          "PPS",
+          "Puerto Princesa"
+        ],
+        [
+          "MPH",
+          "Caticlan / Boracay"
+        ]
+      ],
+      "base": 1550,
+      "hours": 21,
+      "costs": [
+        75,
+        28,
+        18,
+        22
+      ],
+      "regions": [
+        [
+          "Manila & western Luzon / North",
+          "BBBBAWWWWWAB"
+        ],
+        [
+          "Cebu & Bohol / Visayas",
+          "BBBAAWWWWAAB"
+        ],
+        [
+          "Palawan / West",
+          "BBBBAWWWWWAB"
+        ],
+        [
+          "Boracay & Panay / Visayas",
+          "BBBBAWWWWWAB"
+        ]
+      ],
+      "gateways": [
+        [
+          "MNL"
+        ],
+        [
+          "CEB"
+        ],
+        [
+          "PPS"
+        ],
+        [
+          "MPH"
+        ]
+      ],
+      "seasonSources": [
+        {
+          "label": "PAGASA: Philippine climate",
+          "url": "https://www.pagasa.dost.gov.ph/information/climate-philippines"
+        },
+        {
+          "label": "Philippine Department of Tourism: regional weather",
+          "url": "https://www.tourismphilippines.com.au/facts/weatherandclimate"
+        }
+      ],
+      "seasonNote": "Editorial ratings favour the cooler dry-season months for general sightseeing and island visits. Rainfall varies within each region; typhoons and sea conditions can disrupt travel outside these broad averages.",
+      "alt": "Traditional outrigger boats beneath limestone cliffs in El Nido, Palawan, Philippines",
+      "entry": {
+        "summary": "Visa-free tourism for up to 30 days for regular Canadian passport holders.",
+        "notes": [
+          "Complete the official eTravel registration within 72 hours before travel. An extension requires authorization before your permitted stay ends.",
+          "Officials may ask for a return or onward ticket."
+        ]
+      }
+    },
+    "malaysia": {
+      "name": "Malaysia",
+      "code": "MYS",
+      "iso2": "MY",
+      "region": "Asia",
+      "airports": [
+        [
+          "KUL",
+          "Kuala Lumpur"
+        ],
+        [
+          "PEN",
+          "Penang"
+        ],
+        [
+          "LGK",
+          "Langkawi"
+        ],
+        [
+          "TGG",
+          "Kuala Terengganu"
+        ],
+        [
+          "BKI",
+          "Kota Kinabalu"
+        ],
+        [
+          "KCH",
+          "Kuching"
+        ]
+      ],
+      "base": 1650,
+      "hours": 23,
+      "costs": [
+        80,
+        28,
+        18,
+        22
+      ],
+      "regions": [
+        [
+          "Kuala Lumpur & Malacca / West",
+          "ABBAABBAAAAA"
+        ],
+        [
+          "Penang & Langkawi / Northwest",
+          "BBBAAAAAWWAB"
+        ],
+        [
+          "Terengganu & east-coast islands / East",
+          "WWABBBBBAAWW"
+        ],
+        [
+          "Kota Kinabalu & western Sabah / Borneo",
+          "AABBBAAAAAWW"
+        ],
+        [
+          "Kuching & western Sarawak / Borneo",
+          "WWAAABBBBAWW"
+        ]
+      ],
+      "gateways": [
+        [
+          "KUL"
+        ],
+        [
+          "PEN",
+          "LGK"
+        ],
+        [
+          "TGG"
+        ],
+        [
+          "BKI"
+        ],
+        [
+          "KCH"
+        ]
+      ],
+      "seasonSources": [
+        {
+          "label": "METMalaysia: regional climate",
+          "url": "https://www.met.gov.my/en/pendidikan/iklim-malaysia/"
+        },
+        {
+          "label": "METMalaysia: monsoon seasons",
+          "url": "https://www.met.gov.my/en/pendidikan/fenomena-cuaca/"
+        }
+      ],
+      "seasonNote": "Editorial regional sightseeing ratings reflect differing monsoon exposure, not a weather forecast. East-coast island access can be seasonal; confirm local boat and accommodation operations.",
+      "alt": "Petronas Twin Towers and the Kuala Lumpur skyline, Malaysia",
+      "entry": {
+        "summary": "Visa-free tourism for up to 90 days for regular Canadian passport holders.",
+        "notes": [
+          "Complete the free official Malaysia Digital Arrival Card within three days before arrival. Use the official immigration website."
+        ]
+      }
+    },
+    "brunei": {
+      "name": "Brunei",
+      "code": "BRN",
+      "iso2": "BN",
+      "region": "Asia",
+      "airports": [
+        [
+          "BWN",
+          "Bandar Seri Begawan / Brunei International"
+        ]
+      ],
+      "base": 1900,
+      "hours": 26,
+      "costs": [
+        100,
+        32,
+        25,
+        25
+      ],
+      "regions": [
+        [
+          "Bandar Seri Begawan & Kampong Ayer / Brunei-Muara",
+          "WBBAABBBAAWW"
+        ],
+        [
+          "Temburong rainforest / East",
+          "WBBAABBBAAWW"
+        ]
+      ],
+      "gateways": [
+        [
+          "BWN"
+        ],
+        [
+          "BWN"
+        ]
+      ],
+      "seasonSources": [
+        {
+          "label": "Brunei Meteorological Department: climate",
+          "url": "https://met.gov.bn/SitePages/climate.aspx"
+        }
+      ],
+      "seasonNote": "Editorial outdoor sightseeing ratings favour the relatively drier February–March period and June–August. Rain is possible year-round. Temburong requires onward ground travel and local arrangements from Brunei International Airport.",
+      "alt": "Golden domes of the Omar Ali Saifuddien Mosque in Bandar Seri Begawan, Brunei",
+      "entry": {
+        "summary": "Visa-free tourism for stays of up to 90 days for regular Canadian passport holders.",
+        "notes": [
+          "Register for the E-Arrival Card before arrival. Check the official guidance for current arrival declarations.",
+          "Carry proof of medical insurance covering the entire visit; entry conditions and permitted stay depend on the documents presented."
+        ]
+      }
+    }
+  }
+}

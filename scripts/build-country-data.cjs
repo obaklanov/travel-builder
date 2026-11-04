@@ -36,7 +36,12 @@ fs.writeFileSync(path.join(root,'dist/country-catalog.json'),JSON.stringify(cata
 const factPath=path.join(root,'dist/country-facts.js');
 const context=vm.createContext({});
 vm.runInContext(fs.readFileSync(factPath,'utf8')+'\nthis.facts=countryFacts;',context);
-const keys={"france":"FRA","united-kingdom":"GBR","turkey":"TUR","peru":"PER","brazil":"BRA","south-africa":"ZAF","south-korea":"KOR","australia":"AUS","spain":"ESP","greece":"GRC","costa-rica":"CRI","indonesia":"IDN","united-states":"USA","vietnam":"VNM","colombia":"COL","morocco":"MAR",egypt:'EGY','new-zealand':'NZL',argentina:'ARG',italy:'ITA',japan:'JPN',portugal:'PRT',mexico:'MEX',thailand:'THA'};
+const keys={
+"laos":"LAO",
+"philippines":"PHL",
+"malaysia":"MYS",
+"brunei":"BRN",
+"france":"FRA","united-kingdom":"GBR","turkey":"TUR","peru":"PER","brazil":"BRA","south-africa":"ZAF","south-korea":"KOR","australia":"AUS","spain":"ESP","greece":"GRC","costa-rica":"CRI","indonesia":"IDN","united-states":"USA","vietnam":"VNM","colombia":"COL","morocco":"MAR",egypt:'EGY','new-zealand':'NZL',argentina:'ARG',italy:'ITA',japan:'JPN',portugal:'PRT',mexico:'MEX',thailand:'THA'};
 for(const [key,code] of Object.entries(keys)){
  const row=countries.find(c=>c.code===code);if(!row)throw Error('Missing country '+key);context.facts[key] ||= {};
  Object.assign(context.facts[key],profileFacts[code]);

@@ -114,3 +114,9 @@ Every category has Reset category, and Reset all filters sits above the grid out
 Each of the eight category cards shows three controls across two rows (one full-width control and one pair). Other controls remain under More options; all selections, importance switches and category resets retain their original behavior. The central Create action completes the nine-position desktop grid. Cards grow naturally when expanded rather than clipping their contents.
 
 Reset category and Reset all filters now set every affected importance switch to Nice to have, including budget and journey time. The normal change path persists these choices after reload; category resets preserve importance settings in other categories.
+
+## Four Southeast Asian additions (4 November 2026)
+
+The planner now covers 28 countries: Laos, Philippines, Malaysia and Brunei join the previous 24. They appear in Home destination/exclusion/region filters and Destinations, with country facts/maps, regional arrival gateways, editorial seasonal ratings, illustrative CAD estimates, Canadian entry summaries and official advice links. Population, area and visited-country history reuse existing ISO3 catalogue entries; this does not add countries to the profile catalogue. Sources and prototype assumptions: data/destination-expansion-28.json; licensed cover attribution: data/destination-expansion-28-photos.json and About. New treasures and mood recommendations are not invented.
+
+Existing Supabase installations must run supabase-travel-builder-destinations-28.sql to widen only the Builder trip country constraint. Frontend and initial setup support the four keys; this file does not alter Auth, RLS, grants or saved trips. Deployment cannot apply this SQL automatically.
