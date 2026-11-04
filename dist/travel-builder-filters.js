@@ -55,6 +55,9 @@
       placeSizeReviewRequired=Boolean(saved.placeSizeReviewRequired||(!Object.hasOwn(saved,'placeSize')&&(saved.urban||saved.metroSize)));
       if(/^\d+$/.test(saved.days||'')){const day=Number(saved.days),choice=definitions.find(d=>d.id==='days').options.find(([value])=>{const span=engine.durationValues(value);return value&&span.includes(day);});saved.days=choice?choice[0]:'';}
       if(saved.priorities)for(const button of document.querySelectorAll('[data-priority-for]')){const mode=saved.priorities[button.dataset.priorityFor];if(['must','prefer'].includes(mode)){button.setAttribute('aria-checked',String(mode==='must'));button.textContent=mode==='must'?'Must have':'Nice to have';}}
+      if(saved.entry==='Visa-free preferred')saved.entry='visa-free';
+      if(saved.entry==='Online application acceptable')saved.entry='evisa-arrival';
+      if(saved.language==='English widely useful')saved.language='widely-spoken';
       if(saved.alcohol==='Prefer legal alcohol availability')saved.alcohol='yes';
       if(typeof saved.transferLimit==='string')saved.transferLimit=['Up to 30 minutes','Up to 1 hour','Up to 2 hours'].includes(saved.transferLimit)?['Under 2 hours']:[];
       if(Array.isArray(saved.interests)){const renamed={Food:'Food experiences',History:'History and heritage',Art:'Art and museums',Beaches:'Beaches and swimming'};saved.interests=saved.interests.map(v=>renamed[v]||v);}
@@ -63,6 +66,7 @@
       for(const id of ['region'])if([...field(id).options].some(o=>o.value===saved[id]))field(id).value=saved[id];
     }else dependentOptions();
   }catch{dependentOptions();}
+  if(!field('days').value)field('days').value='7-9';
   if(field('earliest').value&&(field('earliest').value<limits.min||field('earliest').value>limits.departureMax))field('earliest').value='';
   updateDateBounds();
   if(field('latest').value&&(field('latest').value<field('latest').min||field('latest').value>limits.returnMax))field('latest').value='';
@@ -95,7 +99,7 @@
     const affected=definitions.filter(def=>!group||def.group===group);
     for(const def of affected){
       if(def.multiple){for(const node of document.querySelectorAll('[name="'+def.id+'"]'))node.checked=false;closeMultiple(field(def.id));}
-      else field(def.id).value=def.type?'':(Array.isArray(def.options[0])?String(def.options[0][0]):def.options[0]==='Any'?'':String(def.options[0]));
+      else field(def.id).value=def.defaultValue??(def.type?'':(Array.isArray(def.options[0])?String(def.options[0][0]):def.options[0]==='Any'?'':String(def.options[0])));
       const priority=document.querySelector('[data-priority-for="'+def.id+'"]');
       if(priority){priority.setAttribute('aria-checked','false');priority.textContent='Nice to have';}
     }
@@ -131,7 +135,7 @@
     if(unverified.length){document.querySelector('#search-message').textContent='Cannot verify these must-have requirements yet: '+unverified.join(', ')+'. Use Nice to have for provisional suggestions, or keep the requirements and wait for verified data.';return;}
     const current=++revision,create=document.querySelector('#create-filtered-trip');let history={known:false,keys:[]};
     if(values.newPlaces==='yes'){create.disabled=true;try{history=await recordedCountries();}finally{create.disabled=false;}if(current!==revision)return;}
-    if(values.newPlaces==='yes'&&values.priorities.newPlaces==='must'&&!history.known){document.querySelector('#search-message').textContent=history.reason+' We cannot verify a must-have unvisited destination without that history.';return;}
+    if(values.newPlaces==='yes'&&!history.known){document.querySelector('#search-message').textContent=history.reason+' Sign in and record your visited countries to use Unvisited countries only.';return;}
     const auto=departureForLocation(locationNode.textContent,Number(locationNode.dataset.latitude)||NaN,Number(locationNode.dataset.longitude)||NaN);
     const origin=values.departure||auto.code,originCity=departureCities.find(([code])=>code===origin)?.[1]||origin;
     const matches=engine.match({...values,origin,profileKnown:history.known,visitedCountryKeys:history.keys},data,(key,request)=>getFlightRoutes(key,request),new Date(),definitions);

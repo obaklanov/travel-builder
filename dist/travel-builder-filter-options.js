@@ -51,11 +51,10 @@ window.TRAVEL_BUILDER_FILTERS = [
   },
   {
     "id": "newPlaces",
-    "label": "Prioritize somewhere unvisited",
+    "label": "Unvisited countries only",
     "group": "where",
     "primary": false,
-    "priority": true,
-    "defaultPriority": "prefer",
+    "priority": false,
     "options": [
       [
         "",
@@ -66,7 +65,7 @@ window.TRAVEL_BUILDER_FILTERS = [
         "Prefer unvisited countries"
       ]
     ],
-    "help": "Uses countries recorded as visited in your signed-in Travel Builder profile. City and regional history will follow later.",
+    "help": "When on, exclude countries recorded as visited in your signed-in profile. Requires available profile history.",
     "presentation": "switch"
   },
   {
@@ -92,10 +91,6 @@ window.TRAVEL_BUILDER_FILTERS = [
     "group": "where",
     "primary": true,
     "options": [
-      [
-        "",
-        "Any length"
-      ],
       [
         "1-3",
         "1–3 days"
@@ -141,7 +136,8 @@ window.TRAVEL_BUILDER_FILTERS = [
         "61–90 days"
       ]
     ],
-    "presentation": "duration"
+    "presentation": "duration",
+    "defaultValue": "7-9"
   },
   {
     "id": "earliest",
@@ -1092,16 +1088,28 @@ window.TRAVEL_BUILDER_FILTERS = [
     "group": "needs",
     "pending": true,
     "options": [
-      "Any",
-      "Visa-free preferred",
-      "Online application acceptable",
-      "Any visa process"
+      [
+        "",
+        "No preference"
+      ],
+      [
+        "visa-free",
+        "Visa-free"
+      ],
+      [
+        "evisa-arrival",
+        "E-visa / on arrival"
+      ],
+      [
+        "visa-required",
+        "Visa required"
+      ]
     ],
     "help": "Preference only. Existing Canadian entry summaries still need structured verification before matching.",
     "primary": false,
     "priority": true,
     "defaultPriority": "prefer",
-    "presentation": "radios"
+    "presentation": "threePosition"
   },
   {
     "id": "advisory",
@@ -1141,33 +1149,61 @@ window.TRAVEL_BUILDER_FILTERS = [
   },
   {
     "id": "language",
-    "label": "Language / navigation",
+    "label": "English use",
     "group": "needs",
     "options": [
-      "Any",
-      "English widely useful",
-      "Comfortable with language differences"
+      [
+        "",
+        "No preference"
+      ],
+      [
+        "official",
+        "Official language"
+      ],
+      [
+        "widely-spoken",
+        "Widely spoken"
+      ],
+      [
+        "limited",
+        "Limited use"
+      ]
     ],
     "pending": true,
     "primary": true,
     "priority": true,
-    "defaultPriority": "prefer"
+    "defaultPriority": "prefer",
+    "presentation": "threePosition",
+    "help": "English-language preference. Official status and everyday use are separate facts; destination evidence is not verified yet."
   },
   {
     "id": "work",
-    "label": "Work & connectivity",
+    "label": "Internet speed",
     "group": "needs",
     "options": [
-      "Reliable internet",
-      "Work-friendly cafés",
-      "Time-zone compatibility"
+      [
+        "",
+        "No preference"
+      ],
+      [
+        "slow",
+        "Slow"
+      ],
+      [
+        "moderate",
+        "Moderate"
+      ],
+      [
+        "fast",
+        "Fast"
+      ]
     ],
     "pending": true,
     "primary": false,
-    "multiple": true,
     "priority": true,
     "defaultPriority": "prefer",
-    "presentation": "checklist"
+    "presentation": "threePosition",
+    "help": "Preferred destination internet speed. Hub-level evidence is not yet verified; this does not guarantee accommodation Wi-Fi."
   },
   {
     "id": "priceLevel",

@@ -305,3 +305,7 @@
 .builder-home .design-group-party .variant-tiles .variant-button{min-height:90px;font-size:14px;}
 .traveller-count-display{display:block;box-sizing:border-box;width:128px;padding:12px 5px;border:1px solid var(--category-border);border-radius:10px;background:var(--category-fill);font-size:15px;text-align:center;color:#273548;}
 .design-group-party>.design-reset-footer{margin-top:auto;padding-top:16px;}
+
+.preference-scale{display:grid;justify-items:center;gap:9px;padding:12px;border:1px solid var(--category-border);border-radius:12px;background:#fff;}
+.preference-scale-caption{font-size:14px;color:var(--category-label);}.preference-scale input[type="range"]{width:100%;height:38px;min-height:38px;padding:0!important;border:0!important;background:transparent!important;accent-color:#8770b3;}
+.preference-scale-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px;width:100%;}.builder-home .preference-scale-steps .variant-button{min-height:44px;padding:7px 4px;font-size:12px;}.builder-home .preference-scale>.variant-button{min-height:30px;font-size:12px;}
