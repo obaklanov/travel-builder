@@ -56,6 +56,7 @@
   try{
     const saved=JSON.parse(localStorage.getItem(storageKey)||localStorage.getItem('travel-builder-filter-preferences-v1')||'null');
     if(saved){
+      if(!Object.hasOwn(saved,'lastStop'))saved.lastStop=saved.linkNextBase==='yes'?'no':'yes';
       if(typeof saved.destination==='string')saved.destination=saved.destination?[saved.destination]:[];
       if(!['Solo','Couple'].includes(saved.party))saved.party=Number(saved.people)>1?'Couple':'Solo';
       placeSizeReviewRequired=Boolean(['village','town','city','large-city','metropolis'].includes(saved.placeSize)||saved.placeSizeReviewRequired||(!Object.hasOwn(saved,'placeSize')&&(saved.urban||saved.metroSize)));
@@ -165,7 +166,7 @@
     const summary=document.querySelector('#trip-budget-summary');summary.hidden=false;
     summary.textContent='Estimated group total: '+money(trip.total)+' CAD · '+money(trip.total/trip.people)+' per person'+(trip.budget!==null?' · Budget: '+money(trip.budget)+(trip.total>trip.budget?(trip.total<=trip.ceiling?' (within your '+Number(values.budgetFlex)*100+'% flexibility)':' (nice-to-have budget exceeded)'):''):'');
     const fitnessSummary=document.querySelector('#trip-fitness-summary');fitnessSummary.hidden=!trip.fitnessWeekly;fitnessSummary.textContent=trip.fitnessWeekly?'Includes '+money(trip.fitnessTotal)+' CAD for fitness · '+money(trip.fitnessWeekly)+' per person / week':'';
-    const nextBase=values.linkNextBase==='yes'?{previousTripId:tripId,country:key,region:trip.region,origin:trip.route.code,originCity:trip.route.city,start:trip.end,people:trip.people}:null;
+    const nextBase=values.lastStop==='no'?{previousTripId:tripId,country:key,region:trip.region,origin:trip.route.code,originCity:trip.route.city,start:trip.end,people:trip.people}:null;
     const nextBaseNote=document.querySelector('#trip-next-base');nextBaseNote.hidden=!nextBase;nextBaseNote.textContent=nextBase?'Next base starts from '+nextBase.originCity+' ('+nextBase.origin+') · '+date.format(new Date(nextBase.start+'T12:00:00')):'';
     const add=document.querySelector('#quick-add-trip');add.textContent='Add Now';if(add.dataset.saving!=='true')add.disabled=false;document.querySelector('#quick-add-status').textContent='';document.querySelector('#search-message').textContent='';idea.hidden=false;
     try{localStorage.setItem(storageKey,JSON.stringify(values));localStorage.setItem('travel-builder-last-trip-preferences',JSON.stringify({tripId,filters:values,region:trip.region,nextBase,matchedAt:new Date().toISOString()}));}catch{}

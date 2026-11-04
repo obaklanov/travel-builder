@@ -270,24 +270,25 @@ window.TRAVEL_BUILDER_FILTERS = [
     }
   },
   {
-    "id": "linkNextBase",
-    "label": "Link to next base",
+    "id": "lastStop",
+    "label": "Last stop?",
     "group": "where",
     "pending": false,
     "options": [
       [
-        "",
-        "No"
-      ],
-      [
         "yes",
         "Yes"
+      ],
+      [
+        "no",
+        "No"
       ]
     ],
     "primary": true,
     "priority": false,
     "presentation": "segments",
-    "help": "Carry the previous leg’s arrival point and end date into a next-base design."
+    "help": "Yes ends this trip here. No carries its arrival point and end date into the next-base design.",
+    "defaultValue": "yes"
   },
   {
     "id": "landscape",
