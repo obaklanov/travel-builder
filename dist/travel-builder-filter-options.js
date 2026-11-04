@@ -732,15 +732,20 @@ window.TRAVEL_BUILDER_FILTERS = [
     "label": "Airport transfer",
     "group": "travel",
     "options": [
-      "Any",
-      "Up to 30 minutes",
-      "Up to 1 hour",
-      "Up to 2 hours"
+      "Under 2 hours",
+      "2–4 hours",
+      "4–6 hours",
+      "6–12 hours",
+      "12–24 hours",
+      "Over 24 hours"
     ],
     "pending": true,
     "primary": false,
     "priority": true,
-    "defaultPriority": "prefer"
+    "defaultPriority": "prefer",
+    "multiple": true,
+    "presentation": "tags",
+    "help": "Select one or more airport-to-destination transfer time ranges. Transfer times are not verified yet."
   },
   {
     "id": "mobility",
