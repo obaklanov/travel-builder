@@ -7,6 +7,7 @@
   const money=n=>new Intl.NumberFormat('en-CA',{style:'currency',currency:'CAD',maximumFractionDigits:0}).format(n);
   let previousCountry=null,revision=0,placeSizeReviewRequired=false;
   function option(value,label){const node=document.createElement('option');node.value=value;node.textContent=label;return node;}
+  function closeMultiple(node){if(node.dataset.inline!=='true')node.open=false;}
   const destination=field('destination');
   for(const continent of [...new Set(Object.values(data).map(c=>c.continent))].sort())destination.append(option('continent:'+continent,continent));
   const countriesGroup=document.createElement('optgroup');countriesGroup.label='Countries';
@@ -91,12 +92,12 @@
     idea.hidden=true;idea.dataset.trip='';document.querySelector('#search-message').textContent='';
   });
   form.addEventListener('input',event=>{if(event.target!==exclusionSearch){revision++;idea.hidden=true;idea.dataset.trip='';}});
-  document.addEventListener('click',event=>{for(const def of definitions.filter(d=>d.multiple)){const node=field(def.id);if(!node.contains(event.target))node.open=false;}});
-  for(const def of definitions.filter(d=>d.multiple))field(def.id).addEventListener('keydown',event=>{if(event.key==='Escape'){field(def.id).open=false;field(def.id).querySelector('summary').focus();}});
+  document.addEventListener('click',event=>{for(const def of definitions.filter(d=>d.multiple)){const node=field(def.id);if(!node.contains(event.target))closeMultiple(node);}});
+  for(const def of definitions.filter(d=>d.multiple))field(def.id).addEventListener('keydown',event=>{if(event.key==='Escape'&&field(def.id).dataset.inline!=='true'){closeMultiple(field(def.id));field(def.id).querySelector('summary').focus();}});
   function resetFilters(group){
     const affected=definitions.filter(def=>!group||def.group===group);
     for(const def of affected){
-      if(def.multiple){for(const node of document.querySelectorAll('[name="'+def.id+'"]'))node.checked=false;field(def.id).open=false;}
+      if(def.multiple){for(const node of document.querySelectorAll('[name="'+def.id+'"]'))node.checked=false;closeMultiple(field(def.id));}
       else field(def.id).value=def.type?'':(Array.isArray(def.options[0])?String(def.options[0][0]):def.options[0]==='Any'?'':String(def.options[0]));
       const priority=document.querySelector('[data-priority-for="'+def.id+'"]');
       if(priority){priority.setAttribute('aria-checked','false');priority.textContent='Nice to have';}
@@ -155,7 +156,7 @@
     summary.textContent='Estimated group total: '+money(trip.total)+' CAD · '+money(trip.total/trip.people)+' per person'+(trip.budget!==null?' · Budget: '+money(trip.budget)+(trip.total>trip.budget?(trip.total<=trip.ceiling?' (within your '+Number(values.budgetFlex)*100+'% flexibility)':' (nice-to-have budget exceeded)'):''):'');
     const add=document.querySelector('#quick-add-trip');add.textContent='Add Now';if(add.dataset.saving!=='true')add.disabled=false;document.querySelector('#quick-add-status').textContent='';document.querySelector('#search-message').textContent='';idea.hidden=false;
     try{localStorage.setItem(storageKey,JSON.stringify(values));localStorage.setItem('travel-builder-last-trip-preferences',JSON.stringify({tripId,filters:values,region:trip.region,matchedAt:new Date().toISOString()}));}catch{}
-    for(const def of definitions.filter(d=>d.multiple))field(def.id).open=false;
+    for(const def of definitions.filter(d=>d.multiple))closeMultiple(field(def.id));
     idea.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});
   });
 })();

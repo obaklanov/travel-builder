@@ -15,7 +15,11 @@ window.TRAVEL_BUILDER_FILTERS = [
     ],
     "pending": false,
     "primary": true,
-    "help": "Solo fixes the count at one, Couple at two. Friends, Family and Multigenerational start at two."
+    "help": "Solo fixes the count at one, Couple at two. Friends, Family and Multigenerational start at two.",
+    "presentation": "tiles",
+    "shortLabels": {
+      "Multigenerational": "Multi-gen"
+    }
   },
   {
     "id": "people",
@@ -64,7 +68,8 @@ window.TRAVEL_BUILDER_FILTERS = [
       ]
     ],
     "primary": true,
-    "help": "Includes adults and children. Current estimates support 1–10 travellers and use equal per-person allowances; child discounts are not verified."
+    "help": "Includes adults and children. Current estimates support 1–10 travellers and use equal per-person allowances; child discounts are not verified.",
+    "presentation": "stepper"
   },
   {
     "id": "childAges",
@@ -112,7 +117,8 @@ window.TRAVEL_BUILDER_FILTERS = [
       ]
     ],
     "help": "Choose a country, continent, or let us choose.",
-    "primary": true
+    "primary": true,
+    "presentation": "search"
   },
   {
     "id": "newPlaces",
@@ -131,7 +137,8 @@ window.TRAVEL_BUILDER_FILTERS = [
         "Prefer unvisited countries"
       ]
     ],
-    "help": "Uses countries recorded as visited in your signed-in Travel Builder profile. City and regional history will follow later."
+    "help": "Uses countries recorded as visited in your signed-in Travel Builder profile. City and regional history will follow later.",
+    "presentation": "switch"
   },
   {
     "id": "exclude",
@@ -204,7 +211,8 @@ window.TRAVEL_BUILDER_FILTERS = [
         "61-90",
         "61–90 days"
       ]
-    ]
+    ],
+    "presentation": "duration"
   },
   {
     "id": "earliest",
@@ -254,7 +262,13 @@ window.TRAVEL_BUILDER_FILTERS = [
       ]
     ],
     "help": "We may suggest a future date in any month inside this window.",
-    "primary": false
+    "primary": false,
+    "presentation": "segments",
+    "shortLabels": {
+      "0": "Exact",
+      "1": "±1 mo",
+      "2": "±2 mo"
+    }
   },
   {
     "id": "season",
@@ -336,7 +350,8 @@ window.TRAVEL_BUILDER_FILTERS = [
     "help": "Select several interests. These preferences are not matched yet.",
     "primary": true,
     "priority": true,
-    "defaultPriority": "prefer"
+    "defaultPriority": "prefer",
+    "presentation": "tags"
   },
   {
     "id": "style",
@@ -352,7 +367,15 @@ window.TRAVEL_BUILDER_FILTERS = [
     ],
     "primary": true,
     "priority": true,
-    "defaultPriority": "prefer"
+    "defaultPriority": "prefer",
+    "presentation": "segments",
+    "shortLabels": {
+      "": "Any",
+      "Relaxing": "Relax",
+      "Exploring": "Explore",
+      "Adventure": "Adventure",
+      "Mixed": "Mixed"
+    }
   },
   {
     "id": "pace",
@@ -367,7 +390,14 @@ window.TRAVEL_BUILDER_FILTERS = [
     ],
     "primary": true,
     "priority": true,
-    "defaultPriority": "prefer"
+    "defaultPriority": "prefer",
+    "presentation": "segments",
+    "shortLabels": {
+      "": "Any",
+      "One base": "One base",
+      "A few stops": "Few stops",
+      "Frequent movement": "Frequent"
+    }
   },
   {
     "id": "landscape",
@@ -585,7 +615,8 @@ window.TRAVEL_BUILDER_FILTERS = [
     ],
     "primary": true,
     "priority": false,
-    "defaultPriority": "must"
+    "defaultPriority": "must",
+    "presentation": "money"
   },
   {
     "id": "comfort",
@@ -600,7 +631,14 @@ window.TRAVEL_BUILDER_FILTERS = [
     "pending": true,
     "primary": true,
     "priority": true,
-    "defaultPriority": "prefer"
+    "defaultPriority": "prefer",
+    "presentation": "comfort",
+    "shortLabels": {
+      "": "Any",
+      "Basic / simple": "Simple",
+      "Comfortable": "Comfort",
+      "Premium": "Premium"
+    }
   },
   {
     "id": "budgetFlex",
@@ -620,7 +658,13 @@ window.TRAVEL_BUILDER_FILTERS = [
         "Up to 20% extra"
       ]
     ],
-    "primary": false
+    "primary": false,
+    "presentation": "segments",
+    "shortLabels": {
+      "0": "Strict",
+      "0.1": "+10%",
+      "0.2": "+20%"
+    }
   },
   {
     "id": "departure",
@@ -665,7 +709,8 @@ window.TRAVEL_BUILDER_FILTERS = [
     "help": "Maximum estimated one-way journey time, not a live flight schedule.",
     "primary": true,
     "priority": true,
-    "defaultPriority": "must"
+    "defaultPriority": "must",
+    "presentation": "journey"
   },
   {
     "id": "stops",
@@ -728,7 +773,8 @@ window.TRAVEL_BUILDER_FILTERS = [
     "multiple": true,
     "help": "Optional requirements. Accessibility is not verified: a suggested trip must not be treated as confirmed suitable.",
     "priority": true,
-    "defaultPriority": "prefer"
+    "defaultPriority": "prefer",
+    "presentation": "checklist"
   },
   {
     "id": "passport",
@@ -774,7 +820,8 @@ window.TRAVEL_BUILDER_FILTERS = [
     "help": "Preference only. Existing Canadian entry summaries still need structured verification before matching.",
     "primary": true,
     "priority": true,
-    "defaultPriority": "prefer"
+    "defaultPriority": "prefer",
+    "presentation": "radios"
   },
   {
     "id": "advisory",
@@ -789,7 +836,8 @@ window.TRAVEL_BUILDER_FILTERS = [
     "help": "Preference only. Regional government advisory levels are not yet available for matching.",
     "primary": true,
     "priority": true,
-    "defaultPriority": "prefer"
+    "defaultPriority": "prefer",
+    "presentation": "radios"
   },
   {
     "id": "diet",
@@ -808,7 +856,8 @@ window.TRAVEL_BUILDER_FILTERS = [
     "multiple": true,
     "help": "Food and allergy suitability is unverified. These preferences do not confirm safe food availability.",
     "priority": true,
-    "defaultPriority": "prefer"
+    "defaultPriority": "prefer",
+    "presentation": "tags"
   },
   {
     "id": "language",
@@ -837,7 +886,8 @@ window.TRAVEL_BUILDER_FILTERS = [
     "primary": false,
     "multiple": true,
     "priority": true,
-    "defaultPriority": "prefer"
+    "defaultPriority": "prefer",
+    "presentation": "checklist"
   },
   {
     "id": "priceLevel",
@@ -865,7 +915,14 @@ window.TRAVEL_BUILDER_FILTERS = [
     "pending": false,
     "priority": true,
     "defaultPriority": "prefer",
-    "help": "Relative daily-cost band within the sample catalogue, using country-level allowances and excluding flights. Independent of your total budget."
+    "help": "Relative daily-cost band within the sample catalogue, using country-level allowances and excluding flights. Independent of your total budget.",
+    "presentation": "segments",
+    "shortLabels": {
+      "": "Any",
+      "lower": "$ Lower",
+      "middle": "$$ Mid",
+      "higher": "$$$ Higher"
+    }
   },
   {
     "id": "events",
@@ -887,7 +944,8 @@ window.TRAVEL_BUILDER_FILTERS = [
     "priority": true,
     "defaultPriority": "prefer",
     "help": "Dates and locations vary by year. Event timing and availability are not verified yet.",
-    "multiple": true
+    "multiple": true,
+    "presentation": "tags"
   },
   {
     "id": "jetLag",
