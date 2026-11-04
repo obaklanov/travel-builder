@@ -273,3 +273,16 @@
 /* Give the central action more presence within its available space. */
 @media(min-width:1101px){.builder-home #create-filtered-trip{width:min(90%,540px);min-height:210px;border-radius:34px;font-size:30px;padding:34px;}}
 @media(min-width:651px) and (max-width:1100px){.builder-home #create-filtered-trip{width:100%;max-width:420px;min-height:170px;font-size:27px;}}
+
+/* A quiet boarding-pass treatment for the primary journey action. */
+.builder-home #create-filtered-trip{position:relative;isolation:isolate;overflow:hidden;display:grid;grid-template-columns:minmax(0,1fr) 88px;column-gap:20px;row-gap:20px;align-items:center;text-align:left;padding:35px 40px;border:1px solid #356baf;border-radius:26px;background:linear-gradient(125deg,#234f99 0%,#326ec0 55%,#348baf 100%);box-shadow:0 14px 32px #244d9026,inset 0 1px 0 #ffffff30;color:#fff;transition:transform .18s,box-shadow .18s;}
+.builder-home #create-filtered-trip::before,.builder-home #create-filtered-trip::after{content:"";position:absolute;top:calc(50% - 10px);width:20px;height:20px;border-radius:50%;background:#fff;z-index:2;}
+.builder-home #create-filtered-trip::before{left:-11px;}.builder-home #create-filtered-trip::after{right:-11px;}
+.trip-ticket-label{font-size:inherit;line-height:1.15;letter-spacing:-.7px;}
+.trip-ticket-plane{position:relative;display:grid;place-items:center;align-self:stretch;border-left:1px dashed #ffffff65;padding-left:22px;}
+.trip-ticket-plane svg{width:49px;height:49px;filter:drop-shadow(0 3px 5px #14356c30);transition:transform .2s;}
+.trip-ticket-route{grid-column:1/-1;display:block;max-width:100%;height:30px;color:#d1ecffb3;}.trip-ticket-route svg{display:block;width:100%;height:100%;}
+.builder-home #create-filtered-trip:hover{background:linear-gradient(125deg,#20498e,#2d66b6 55%,#2a819f);box-shadow:0 18px 35px #244d9035;transform:translateY(-2px);}.builder-home #create-filtered-trip:hover .trip-ticket-plane svg{transform:translate(3px,-3px);}
+.builder-home #create-filtered-trip:focus-visible{outline:3px solid #3979c5;outline-offset:5px;}
+@media(max-width:650px){.builder-home #create-filtered-trip{grid-template-columns:minmax(0,1fr) 42px;gap:12px;min-height:72px;padding:15px 24px;border-radius:18px;text-align:center;}.trip-ticket-plane{padding-left:12px;}.trip-ticket-plane svg{width:30px;height:30px;}.trip-ticket-route{display:none;}}
+@media(prefers-reduced-motion:reduce){.builder-home #create-filtered-trip,.trip-ticket-plane svg{transition:none;}.builder-home #create-filtered-trip:hover,.builder-home #create-filtered-trip:hover .trip-ticket-plane svg{transform:none;}}
