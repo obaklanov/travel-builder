@@ -346,7 +346,7 @@ window.TRAVEL_BUILDER_FILTERS = [
   },
   {
     "id": "fitnessBudget",
-    "label": "Fitness budget · CAD/person/week",
+    "label": "Fitness budget · CAD/week total",
     "group": "budget",
     "pending": false,
     "options": [
@@ -356,32 +356,32 @@ window.TRAVEL_BUILDER_FILTERS = [
       ],
       [
         "25",
-        "$25 / person / week"
+        "$25 total / week"
       ],
       [
         "50",
-        "$50 / person / week"
+        "$50 total / week"
       ],
       [
         "75",
-        "$75 / person / week"
+        "$75 total / week"
       ],
       [
         "100",
-        "$100 / person / week"
+        "$100 total / week"
       ],
       [
         "150",
-        "$150 / person / week"
+        "$150 total / week"
       ],
       [
         "200",
-        "$200 / person / week"
+        "$200 total / week"
       ]
     ],
     "primary": false,
     "priority": false,
-    "help": "Your exercise allowance per person per week, prorated by days and included in the trip total."
+    "help": "Weekly fitness allowance for the whole group. Prorated by trip days and included once in the group total."
   },
   {
     "id": "evening",

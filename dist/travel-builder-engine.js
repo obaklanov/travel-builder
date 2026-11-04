@@ -67,10 +67,10 @@
               if(f.flightHours&&hard('flightHours')&&!flightFits)continue;
               if(f.flightBudget&&route.price>Number(f.flightBudget))continue;
               const rates=[route.price,...country.costs];for(const [id,i] of [['lodging',1],['food',2],['transport',3],['extras',4]])if(f[id]!==''&&f[id]!==undefined)rates[i]=Number(f[id]);
-              rates[4]+=fitnessWeekly/7;const amount=Math.round(total(rates,days,people)*100)/100;if(budget!==null&&hard('budget')&&amount>ceiling)continue;
+              rates[4]+=fitnessWeekly/(7*people);const amount=Math.round(total(rates,days,people)*100)/100;if(budget!==null&&hard('budget')&&amount>ceiling)continue;
               let score=0;const relaxed=[];
               for(const [id,active,fits] of [['budget',budget!==null,amount<=ceiling],['flightHours',!!f.flightHours,flightFits],['season',!!f.season,seasonFits],['priceLevel',!!f.priceLevel,bands[key]===f.priceLevel],['newPlaces',f.newPlaces==='yes'&&f.profileKnown,!visited.has(key)]])if(active&&!hard(id)){if(fits)score++;else relaxed.push(id);}
-              const candidate={key,regionIndex,region:country.regions[regionIndex][0],rating:country.regions[regionIndex][1][month.getMonth()],route,days,start:iso(start),end:iso(end),people,rates,fitnessWeekly,fitnessTotal:Math.round(fitnessWeekly*days*people/7*100)/100,total:amount,budget,ceiling,score,relaxed,priceBand:bands[key],recordedVisited:visited.has(key)};
+              const candidate={key,regionIndex,region:country.regions[regionIndex][0],rating:country.regions[regionIndex][1][month.getMonth()],route,days,start:iso(start),end:iso(end),people,rates,fitnessWeekly,fitnessTotal:Math.round(fitnessWeekly*days/7*100)/100,total:amount,budget,ceiling,score,relaxed,priceBand:bands[key],recordedVisited:visited.has(key)};
               // Keep one representative duration per region/month/arrival to bound memory for broad ranges.
               const id=[key,regionIndex,iso(start).slice(0,7),route.code].join('|'),previous=out.get(id);
               if(!previous||candidate.score>previous.score||(candidate.score===previous.score&&Math.abs(days-center)<Math.abs(previous.days-center)))out.set(id,candidate);

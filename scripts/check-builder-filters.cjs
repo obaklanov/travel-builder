@@ -135,6 +135,9 @@ assert(match({destination:['spain','japan']}).every(t=>['spain','japan'].include
 assert(match({destination:['continent:Europe','japan'],exclude:['country:spain']}).every(t=>t.key!=='spain'));
 
 assert.equal(match({fitnessBudget:'70'})[0].total,first.total+70);
-assert.equal(match({fitnessBudget:'70',people:'2'})[0].fitnessTotal,140);
+assert.equal(match({fitnessBudget:'70',people:'2'})[0].fitnessTotal,70);
 assert.equal(match({fitnessBudget:'70',budget:'total:2300'}).length,0,'Fitness counts against strict ceiling');
 assert.equal(match({fitnessBudget:'-1'}).length,0);
+
+assert.equal(match({fitnessBudget:'70',people:'2'})[0].total,match({people:'2'})[0].total+70,'Group fitness allowance is added once');
+assert.equal(match({fitnessBudget:'70',people:'2',days:'14'})[0].fitnessTotal,140,'Two weeks doubles the group allowance');

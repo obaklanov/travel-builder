@@ -156,7 +156,7 @@
     const key=keys[Math.floor(Math.random()*keys.length)],pool=ranked.filter(m=>m.key===key),trip=pool[Math.floor(Math.random()*pool.length)];previousCountry=key;
     const tripId=crypto.randomUUID(),params=new URLSearchParams({country:key,returnTo:'home',origin,days:String(trip.days),start:trip.start,end:trip.end,tripId,from:originCity,people:String(trip.people),builderRegion:String(trip.regionIndex)});
     trip.rates.forEach((rate,index)=>params.set('builderRate'+index,String(rate)));
-    if(trip.fitnessWeekly)params.set('fitnessWeekly',String(trip.fitnessWeekly));
+    if(trip.fitnessWeekly){params.set('fitnessWeekly',String(trip.fitnessWeekly));params.set('fitnessBasis','group-week');}
     if(trip.budget!==null){params.set('budget',String(trip.budget));params.set('currency','CAD');}
     document.querySelector('#trip-guide').href='destinations.html?'+params.toString();
     const payload={id:tripId,country:key,origin,origin_label:originCity,departure_date:trip.start,return_date:trip.end,days:trip.days,estimated_total:trip.total,group_size:trip.people,budget:trip.budget,currency:'CAD'};
@@ -169,7 +169,7 @@
     document.querySelector('#trip-dates').textContent=date.format(new Date(trip.start+'T12:00:00'))+' – '+date.format(new Date(trip.end+'T12:00:00'))+' · '+trip.days+' days · '+trip.people+(trip.people===1?' traveller':' travellers');
     const summary=document.querySelector('#trip-budget-summary');summary.hidden=false;
     summary.textContent='Estimated group total: '+money(trip.total)+' CAD · '+money(trip.total/trip.people)+' per person'+(trip.budget!==null?' · Budget: '+money(trip.budget)+(trip.total>trip.budget?(trip.total<=trip.ceiling?' (within your '+Number(values.budgetFlex)*100+'% flexibility)':' (nice-to-have budget exceeded)'):''):'');
-    const fitnessSummary=document.querySelector('#trip-fitness-summary');fitnessSummary.hidden=!trip.fitnessWeekly;fitnessSummary.textContent=trip.fitnessWeekly?'Includes '+money(trip.fitnessTotal)+' CAD for fitness · '+money(trip.fitnessWeekly)+' per person / week':'';
+    const fitnessSummary=document.querySelector('#trip-fitness-summary');fitnessSummary.hidden=!trip.fitnessWeekly;fitnessSummary.textContent=trip.fitnessWeekly?'Includes '+money(trip.fitnessTotal)+' CAD for fitness · '+money(trip.fitnessWeekly)+' total / week':'';
     const nextBase=values.lastStop==='no'?{previousTripId:tripId,country:key,region:trip.region,origin:trip.route.code,originCity:trip.route.city,start:trip.end,people:trip.people}:null;
     const nextBaseNote=document.querySelector('#trip-next-base');nextBaseNote.hidden=!nextBase;nextBaseNote.textContent=nextBase?'Next base starts from '+nextBase.originCity+' ('+nextBase.origin+') · '+date.format(new Date(nextBase.start+'T12:00:00')):'';
     const add=document.querySelector('#quick-add-trip');add.textContent=values.lastStop==='no'?'Add Now - Continue to next destination':'Add Now - Final Stop';if(add.dataset.saving!=='true')add.disabled=false;document.querySelector('#quick-add-status').textContent='';document.querySelector('#search-message').textContent='';idea.hidden=false;
