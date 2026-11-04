@@ -79,9 +79,11 @@
   updateDateBounds();
   if(field('latest').value&&(field('latest').value<field('latest').min||field('latest').value>limits.returnMax))field('latest').value='';
   if(field('month').value&&(field('month').value<field('month').min||field('month').value>field('month').max))field('month').value='';
+  function syncTripAction(){const button=document.querySelector('#create-filtered-trip'),next=field('lastStop').value==='no';button.querySelector('.trip-ticket-label').textContent=next?'Save and design next part of the trip':'Finish designing trip';button.dataset.tripAction=next?'continue':'finish';}
   function syncPassports(){const count=Number(field('people').value);for(const n of [2,3]){const node=field('passport'+n),visible=count>=n;node.closest('.builder-slot').hidden=!visible;node.disabled=!visible;if(!visible)node.value='';}}
   function syncParty(){const people=field('people');people.value=field('party').value==='Couple'?'2':'1';people.disabled=true;people.title='Automatically set by Solo or Couple.';syncPassports();}
   syncParty();
+  syncTripAction();
   form.addEventListener('click',event=>{const button=event.target.closest('[data-priority-for]');if(!button)return;const must=button.getAttribute('aria-checked')!=='true';button.setAttribute('aria-checked',String(must));button.textContent=must?'Must have':'Nice to have';form.dispatchEvent(new Event('change',{bubbles:true}));});
   interestLabel();
   function showPlaceSizeReview(){document.querySelector('#builder-placeSize-review').hidden=!placeSizeReviewRequired;}
@@ -90,6 +92,7 @@
   function markPending(){const pending=pendingPreferences(collect());const note=document.querySelector('#builder-preference-status');note.hidden=!pending.length;note.textContent=pending.length?'Unverified preferences: '+pending.map(p=>p.label).join(', ')+'. Any marked Must have must be verified before a trip can be created.':'';}
   markPending();
   form.addEventListener('change',event=>{
+    syncTripAction();
     if(event.target===exclusionSearch)return;
     document.querySelector('#builder-reset-status').textContent='';
     revision++;if(event.target===field('placeSize'))placeSizeReviewRequired=false;showPlaceSizeReview();if(event.target===field('party')||event.target===field('people'))syncParty();
