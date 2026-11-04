@@ -11,15 +11,12 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
   },
   "philippines": {
-    "title": "El Nido in Palawan.jpg",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:El_Nido_in_Palawan.jpg",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d3/El_Nido_in_Palawan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/El_Nido_in_Palawan.jpg/1280px-El_Nido_in_Palawan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "width": 1000,
-    "height": 667,
-    "author": "choypictures",
-    "license": "CC0",
-    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    "source": "Image supplied by the site owner for the Philippines destination cover",
+    "suppliedAt": "2026-11-04",
+    "src": "images/philippines-beach-cover.png",
+    "alt": "A sandy Philippine beach with palm trees, limestone cliffs and clear turquoise water",
+    "width": 1160,
+    "height": 652
   },
   "malaysia": {
     "title": "Petronas Twin Towers. Aerial view. 2019-11-30 15-05-22.jpg",
