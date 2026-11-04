@@ -22,5 +22,13 @@
     "height": 702,
     "suppliedByOwner": true,
     "suppliedAt": "2026-11-04"
+  },
+  "new-zealand": {
+    "src": "images/new-zealand-supplied-cover.png",
+    "alt": "A stone church beside a turquoise New Zealand lake and snow-capped mountains",
+    "width": 1139,
+    "height": 703,
+    "suppliedByOwner": true,
+    "suppliedAt": "2026-11-04"
   }
 }

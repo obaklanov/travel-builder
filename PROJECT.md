@@ -144,3 +144,5 @@ United Kingdom front cover replaced on 4 November 2026 with the image supplied b
 Thailand front cover replaced on 4 November 2026 with the image supplied by the site owner.
 
 Italy front cover replaced on 4 November 2026 with the image supplied by the site owner.
+
+New Zealand front cover replaced on 4 November 2026 with the image supplied by the site owner.
