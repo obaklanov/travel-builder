@@ -43,6 +43,6 @@
     const any=document.createElement('button');any.type='button';any.className='variant-button weather-scale-any';any.textContent='No preference';any.addEventListener('click',()=>{field.value='';field.dispatchEvent(new Event('change',{bubbles:true}));});
     range.addEventListener('input',()=>choose(Number(range.value)-1));range.addEventListener('pointerdown',()=>{if(!field.value)choose(Number(range.value)-1);});range.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();choose(Number(range.value)-1);}});
     function sync(){const index=choices.findIndex(c=>c.value===field.value),selected=index>=0,current=selected?index:1;range.value=String(current+1);range.setAttribute('aria-valuetext',selected?choices[index].textContent:'No preference; move to choose');scene.innerHTML=picture(id,current);scene.classList.toggle('is-unset',!selected);caption.textContent=selected?choices[index].textContent:'No preference';any.setAttribute('aria-pressed',String(!selected));buttons.forEach((b,i)=>b.setAttribute('aria-pressed',String(selected&&i===index)));}
-    wrap.append(scene,caption,range);if(id==='rain')wrap.append(steps);wrap.append(any);field.after(wrap);form.addEventListener('change',sync);sync();
+    wrap.append(scene,caption,range);wrap.append(any);field.after(wrap);form.addEventListener('change',sync);sync();
   }
 })();
