@@ -239,10 +239,8 @@ window.TRAVEL_BUILDER_FILTERS = [
       "Hiking",
       "History and heritage",
       "Nightlife",
-      "Shopping",
       "Skiing / snow sports",
       "Theme parks",
-      "Wellness",
       "Wildlife"
     ],
     "help": "Select several interests. These preferences are not matched yet.",
@@ -317,7 +315,7 @@ window.TRAVEL_BUILDER_FILTERS = [
   },
   {
     "id": "placeSize",
-    "label": "Place size",
+    "label": "City size",
     "group": "experience",
     "pending": true,
     "primary": true,
@@ -329,27 +327,27 @@ window.TRAVEL_BUILDER_FILTERS = [
         "No preference"
       ],
       [
-        "village",
-        "Village"
+        "under-500k",
+        "Under 500,000"
       ],
       [
-        "town",
-        "Small town"
+        "500k-1m",
+        "500,000–1,000,000"
       ],
       [
-        "city",
-        "City"
+        "1m-3m",
+        "1,000,000–3,000,000"
       ],
       [
-        "large-city",
-        "Large city"
+        "3m-5m",
+        "3,000,000–5,000,000"
       ],
       [
-        "metropolis",
-        "Metropolis"
+        "over-5m",
+        "Over 5,000,000"
       ]
     ],
-    "help": "Preferred size of the place you stay: village to metropolis. Destination hub matching is not verified yet. This is a preferred size, not a maximum population limit."
+    "help": "Metropolitan-area population bands. Population data for destination hubs is not yet verified."
   },
   {
     "id": "crowds",

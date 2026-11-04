@@ -57,7 +57,7 @@
     if(saved){
       if(typeof saved.destination==='string')saved.destination=saved.destination?[saved.destination]:[];
       if(!['Solo','Couple'].includes(saved.party))saved.party=Number(saved.people)>1?'Couple':'Solo';
-      placeSizeReviewRequired=Boolean(saved.placeSizeReviewRequired||(!Object.hasOwn(saved,'placeSize')&&(saved.urban||saved.metroSize)));
+      placeSizeReviewRequired=Boolean(['village','town','city','large-city','metropolis'].includes(saved.placeSize)||saved.placeSizeReviewRequired||(!Object.hasOwn(saved,'placeSize')&&(saved.urban||saved.metroSize)));
       if(/^\d+$/.test(saved.days||'')){const day=Number(saved.days),choice=definitions.find(d=>d.id==='days').options.find(([value])=>{const span=engine.durationValues(value);return value&&span.includes(day);});saved.days=choice?choice[0]:'';}
       if(saved.priorities)for(const button of document.querySelectorAll('[data-priority-for]')){const mode=saved.priorities[button.dataset.priorityFor];if(['must','prefer'].includes(mode)){button.setAttribute('aria-checked',String(mode==='must'));button.textContent=mode==='must'?'Must have':'Nice to have';}}
       if(saved.entry==='Visa-free preferred')saved.entry='visa-free';

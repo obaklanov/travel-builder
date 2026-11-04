@@ -79,8 +79,8 @@ assert.equal(match({latest:'2030-02-01'}).length,0,'Return exceeds rolling 90-da
 assert.equal(engine.candidateMonths({...base,month:'2029-12',dateFlex:'2'},now).length,0,'Invalid base month cannot use flexibility to bypass limit');
 
 const placeSize=defs.find(d=>d.id==='placeSize');assert(placeSize.pending);assert.equal(placeSize.options.length,6);
-assert.equal(engine.match({...base,placeSize:'metropolis',priorities:{placeSize:'must'}},data,routes,now,defs).length,0,'Unverified place-size requirement cannot silently pass');
-assert(engine.match({...base,placeSize:'village',priorities:{placeSize:'prefer'}},data,routes,now,defs).length>0,'Unverified preferred size permits provisional suggestions');
+assert.equal(engine.match({...base,placeSize:'over-5m',priorities:{placeSize:'must'}},data,routes,now,defs).length,0,'Unverified place-size requirement cannot silently pass');
+assert(engine.match({...base,placeSize:'under-500k',priorities:{placeSize:'prefer'}},data,routes,now,defs).length>0,'Unverified preferred size permits provisional suggestions');
 
 assert(!defs.some(d=>d.id==='bookingFlex'));
 assert.equal(defs.find(d=>d.id==='exclude').primary,false);
