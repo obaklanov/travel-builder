@@ -54,6 +54,7 @@
       placeSizeReviewRequired=Boolean(saved.placeSizeReviewRequired||(!Object.hasOwn(saved,'placeSize')&&(saved.urban||saved.metroSize)));
       if(/^\d+$/.test(saved.days||'')){const day=Number(saved.days),choice=definitions.find(d=>d.id==='days').options.find(([value])=>{const span=engine.durationValues(value);return value&&span.includes(day);});saved.days=choice?choice[0]:'';}
       if(saved.priorities)for(const button of document.querySelectorAll('[data-priority-for]')){const mode=saved.priorities[button.dataset.priorityFor];if(['must','prefer'].includes(mode)){button.setAttribute('aria-checked',String(mode==='must'));button.textContent=mode==='must'?'Must have':'Nice to have';}}
+      if(saved.alcohol==='Prefer legal alcohol availability')saved.alcohol='yes';
       if(typeof saved.transferLimit==='string')saved.transferLimit=['Up to 30 minutes','Up to 1 hour','Up to 2 hours'].includes(saved.transferLimit)?['Under 2 hours']:[];
       if(Array.isArray(saved.interests)){const renamed={Food:'Food experiences',History:'History and heritage',Art:'Art and museums',Beaches:'Beaches and swimming'};saved.interests=saved.interests.map(v=>renamed[v]||v);}
       for(const def of definitions.filter(d=>!['region'].includes(d.id))){const value=saved[def.id];if(def.multiple){for(const checkbox of document.querySelectorAll('[name="'+def.id+'"]'))checkbox.checked=Array.isArray(value)&&value.includes(checkbox.value);}else if(typeof value==='string'){const node=field(def.id);if(node.tagName!=='SELECT'||[...node.options].some(o=>o.value===value))node.value=value;}}

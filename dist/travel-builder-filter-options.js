@@ -1037,35 +1037,45 @@ window.TRAVEL_BUILDER_FILTERS = [
   },
   {
     "id": "alcohol",
-    "label": "Alcohol norms",
+    "label": "Alcohol legal",
     "group": "safety",
     "options": [
-      "Any",
-      "Prefer legal alcohol availability",
-      "Prefer alcohol-free settings",
-      "Show local restrictions"
+      [
+        "",
+        "No preference"
+      ],
+      [
+        "yes",
+        "Legal availability preferred"
+      ]
     ],
     "primary": false,
     "pending": true,
     "priority": true,
     "defaultPriority": "prefer",
-    "help": "Preference only. Reviewed destination evidence is not available yet."
+    "help": "On requests legal availability; off means no preference. Legal status is unverified and can vary by substance and locality.",
+    "presentation": "switch"
   },
   {
     "id": "drugLaws",
-    "label": "Drug & medication laws",
+    "label": "Recreational drugs legal",
     "group": "safety",
     "options": [
-      "Any",
-      "Flag strict drug-possession penalties",
-      "Flag prescription-medication restrictions",
-      "Show local rules before booking"
+      [
+        "",
+        "No preference"
+      ],
+      [
+        "yes",
+        "Legal availability preferred"
+      ]
     ],
     "primary": false,
     "pending": true,
     "priority": true,
     "defaultPriority": "prefer",
-    "help": "Legal-information preference only. Current suggestions do not verify local laws or medication import rules."
+    "help": "On requests legal availability; off means no preference. Legal status is unverified and can vary by substance and locality.",
+    "presentation": "switch"
   },
   {
     "id": "vaccines",
