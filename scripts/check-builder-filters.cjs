@@ -30,14 +30,14 @@ const planner=vm.createContext({URLSearchParams,location:{search:'?country=spain
 vm.runInContext(fs.readFileSync(path.join(dist,'travel-details.js'),'utf8'),planner);
 const state=planner.getBudgetState('spain');assert.equal(state.people,2);assert.equal(state.regionChoice.index,2);assert.equal(state.rates[1],99);assert.equal(state.rates[2],0);assert.equal(state.departureDate,'2027-06-01');
 const conf=vm.createContext({window:{}});vm.runInContext(fs.readFileSync(path.join(dist,'travel-builder-filter-options.js'),'utf8'),conf);
-const defs=conf.window.TRAVEL_BUILDER_FILTERS;assert.equal(defs.length,48);assert.equal(new Set(defs.map(d=>d.id)).size,48);
+const defs=conf.window.TRAVEL_BUILDER_FILTERS;assert.equal(defs.length,46);assert.equal(new Set(defs.map(d=>d.id)).size,46);
 for(const group of ['party','where','experience','budget','travel','needs','health','weather','city'])assert(defs.some(d=>d.group===group));
 for(const id of ['lodging','food','transport','extras','flightBudget','arrival'])assert(!defs.some(d=>d.id===id),'Planning-only control leaked into Designing');
 assert.equal(match({earliest:'2027-06-12',latest:'2027-06-18'})[0].start,'2027-06-12');
 assert.equal(match({earliest:'2027-06-12',latest:'2027-06-17'}).length,0);
 assert.equal(match({earliest:'2027-07-01',latest:'2027-07-10'}).length,0,'Month and date constraints intersect');
 const html=fs.readFileSync(path.join(dist,'index.html'),'utf8');const ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);assert.equal(new Set(ids).size,ids.length);assert(!html.includes('src="trip-start.js'));
-console.log('PASS: 48 Designing definitions and nine groups; route/region/continent filters; budgets and zero allowances; shared group costs; month windows and multi-month seasons; missing data; unsupported preferences; planner handoff; unique HTML IDs.');
+console.log('PASS: 46 Designing definitions and nine groups; route/region/continent filters; budgets and zero allowances; shared group costs; month windows and multi-month seasons; missing data; unsupported preferences; planner handoff; unique HTML IDs.');
 
 assert.equal(match({people:'10'})[0].total,16320,'Ten-person calculation');
 assert.equal(match({people:'11'}).length,0,'Reject unsupported group size');
@@ -115,7 +115,7 @@ assert.equal(engine.match({...freshFilters,profileKnown:false,priorities:{newPla
 assert(engine.match({...freshFilters,profileKnown:false},data,routes,now).length>0);
 assert.equal(Object.keys(conf.window.TRAVEL_BUILDER_COUNTRY_CODES).length,Object.keys(countries).length);
 assert(defs.filter(d=>d.group==='city').some(d=>d.id==='advisory'));
-assert(defs.filter(d=>d.group==='health').some(d=>d.id==='healthcare'));
+assert(!defs.some(d=>['access','healthcare'].includes(d.id)));
 const source=fs.readFileSync(path.join(dist,'travel-builder-filters.js'),'utf8');
 const historySource=source.slice(source.indexOf('async function recordedCountries()'),source.indexOf("form.addEventListener('submit'",source.indexOf('async function recordedCountries()'))).trim();
 (async()=>{

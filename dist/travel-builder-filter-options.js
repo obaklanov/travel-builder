@@ -664,25 +664,6 @@ window.TRAVEL_BUILDER_FILTERS = [
     "help": "Whether the destination city has a metro or subway system. City-level data is not verified yet."
   },
   {
-    "id": "access",
-    "label": "Access needs",
-    "group": "health",
-    "options": [
-      "Step-free routes",
-      "Limited walking",
-      "Avoid many stairs",
-      "Wheelchair access",
-      "Quiet / low-sensory spaces"
-    ],
-    "pending": true,
-    "primary": true,
-    "multiple": true,
-    "help": "Optional requirements. Accessibility is not verified: a suggested trip must not be treated as confirmed suitable.",
-    "priority": true,
-    "defaultPriority": "prefer",
-    "presentation": "tags"
-  },
-  {
     "id": "passport",
     "label": "Passport",
     "group": "party",
@@ -1478,21 +1459,6 @@ window.TRAVEL_BUILDER_FILTERS = [
     "priority": true,
     "defaultPriority": "prefer",
     "help": "Requires reviewed regional and seasonal health data. Country-level assumptions are not sufficient."
-  },
-  {
-    "id": "healthcare",
-    "label": "Healthcare access",
-    "group": "health",
-    "options": [
-      "Any",
-      "Reliable emergency care nearby",
-      "Advanced hospital access nearby"
-    ],
-    "primary": true,
-    "pending": true,
-    "priority": true,
-    "defaultPriority": "prefer",
-    "help": "Healthcare access must be assessed for the hub and journey time, not assumed from a national ranking."
   },
   {
     "id": "water",
