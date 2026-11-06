@@ -4,7 +4,7 @@ Version 3 — 6 November 2026. Portugal (5 bases), Colombia (10 bases), Italy (1
 
 Compare each base only with its own 12 calendar months. Rank 1–4 BEST, 5–8 AVERAGE, 9–12 WORST, for each climate component, the combined climate score, and the final tourist score. Equal values use January–December order; forcing equal-sized bands can separate identical or near-identical months. BEST is relative, not an absolute weather or safety guarantee.
 
-Temperature: smallest absolute distance from editable target 22°C. Rain: lowest average mm/calendar day, including dry days. Humidity: smallest distance from editable 55% RH target (comfort, not health). Each rank becomes 100 × (12 − rank) / 11. This replaces clipped absolute scores so very wet bases still distinguish wetter and drier months.
+Temperature: smallest absolute distance from editable target 20°C. Rain: smallest absolute distance from 5 mm/calendar day, including dry days. Humidity: smallest distance from editable 55% RH target (comfort, not health). Each rank becomes 100 × (12 − rank) / 11. This replaces clipped absolute scores so very wet bases still distinguish wetter and drier months.
 
 Climate = 50% temperature + 30% rain + 20% humidity rank scores. Tourist score = 60% climate + 13⅓% crowds + 13⅓% festivals + 13⅓% prices. Rank the resulting scores within the base and year, descending, to label four/four/four months. Preserve full precision until display.
 
@@ -19,3 +19,5 @@ Sources: https://open-meteo.com/en/docs/historical-weather-api ; per-base API qu
 Data flow: data/seasonality-inputs.json → scripts/build-seasonality.cjs → dist/seasonality-ratings.js → country tables and Designing matcher. Run scripts/check-seasonality.cjs after rebuild. Workbook edits do not automatically update the site.
 
 Italy: climate retrieved 6 November 2026 at each named destination’s coordinates. Existing six planner indices retained, seven added. Only selected sourced events are included. Crowd/price month orders are provisional urban, coastal/island and mountain seasonal proxies, not measured values. Ortisei uses the agreed general comfort model, not a ski-suitability model; airport-to-town transfers are required and are not part of flight samples.
+
+Targets updated: 20°C daily mean and 5 mm/calendar day rain. Absolute deviations are symmetric: 13°C and 27°C each differ by 7°C; 0 and 10 mm/day each differ by 5 mm/day. Equal deviations remain tied in preference, then calendar order breaks ties to preserve the four/four/four quota. These are owner-selected preferences, not universal ideal-weather standards.

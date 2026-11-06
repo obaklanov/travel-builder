@@ -32,14 +32,11 @@
     "overall": "Rank the weighted tourist score within each base and year. First four BEST, middle four AVERAGE, last four WORST. BEST is relative, not a guarantee of ideal weather.",
     "calendar": "Typical recurring months, not guaranteed event schedules. Carnival and Santo Cristo follow Easter; Easter demand shifts are approximations. Confirm event dates before travel.",
     "limitations": "Crowd and price inputs are provisional editorial proxies and must be replaced by measured monthly data when available. Full-month averages hide short holiday spikes; climate grid cells can miss coastal and mountain microclimates.",
-    "idealDailyMeanC": [
-      18,
-      26
-    ],
     "ranking": "Within each base only: ranks 1–4 BEST, 5–8 AVERAGE, 9–12 WORST. Equal values use January–December order to enforce exactly four per band.",
-    "temperatureTargetC": 22,
+    "temperatureTargetC": 20,
     "humidityTargetPct": 55,
-    "climateScoring": "Temperature: distance from 22°C; rain: lower mm/day; humidity: distance from 55%. Rank each across this base’s 12 months; score = 100 × (12 − rank) / 11. Climate is the 50/30/20 weighted component score."
+    "climateScoring": "Temperature: absolute distance from 20°C; rain: absolute distance from 5 mm/calendar day; humidity: absolute distance from 55%. Rank each across this base’s 12 months; score = 100 × (12 − rank) / 11. Equal deviations are equally preferred before calendar-order tie-breaking to preserve 4/4/4 bands. Climate is the 50/30/20 weighted component score.",
+    "rainTargetMmPerDay": 5
   },
   "profiles": [
     {
@@ -3361,7 +3358,7 @@
       "gridLongitude": 11.75,
       "elevation": 1239,
       "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=46.5758&longitude=11.6718&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FRome&models=era5",
-      "climateReviewNote": "Mountain grid-cell estimates do not capture every valley or slope. The general 22°C comfort model favours warmer months; it is not a ski-season or lift-opening suitability model.",
+      "climateReviewNote": "Mountain grid-cell estimates do not capture every valley or slope. The general 20°C comfort model favours warmer months; it is not a ski-season or lift-opening suitability model.",
       "months": [
         {
           "sampleDays": 310,
