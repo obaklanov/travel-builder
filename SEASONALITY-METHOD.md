@@ -6,7 +6,7 @@ Compare each base only with its own 12 calendar months. Rank 1–4 BEST, 5–8 A
 
 Temperature: smallest absolute distance from editable target 20°C. Rain: smallest absolute distance from 5 mm/calendar day, including dry days. Humidity: smallest distance from editable 55% RH target (comfort, not health). Each rank becomes 100 × (12 − rank) / 11. This replaces clipped absolute scores so very wet bases still distinguish wetter and drier months.
 
-Climate = 50% temperature + 30% rain + 20% humidity rank scores. Tourist score = 60% climate + 13⅓% crowds + 13⅓% festivals + 13⅓% prices. Rank the resulting scores within the base and year, descending, to label four/four/four months. Preserve full precision until display.
+Climate = 50% temperature + 30% rain + 20% humidity rank scores. Tourist score = 60% climate + 20% festivals + 10% crowds + 10% prices. Rank the resulting scores within the base and year, descending, to label four/four/four months. Preserve full precision until display.
 
 Crowd and price low-to-high orders are provisional editorial accommodation-demand proxies, not measured percentiles, prices or occupancy. Easter month and listed flagship-event months add two demand-rank positions before re-ranking. Convert these ranks to the same continuous 0–100 scale. Prices and crowds are correlated.
 
