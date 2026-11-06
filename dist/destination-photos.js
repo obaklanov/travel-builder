@@ -25,8 +25,8 @@ window.TRAVEL_DESTINATION_PHOTOS = {
     "alt": "A yellow tram on a narrow street in Lisbon"
   },
   "mexico": {
-    "src": "images/mexico.jpg?v=chichen-itza-1",
-    "alt": "The Temple of Kukulcán at Chichén Itzá, Yucatán, Mexico"
+    "src": "images/mexico-cover.png",
+    "alt": "El Castillo pyramid at Chichen Itza beneath a blue sky in Mexico"
   },
   "thailand": {
     "src": "images/thailand-supplied-cover.png",
