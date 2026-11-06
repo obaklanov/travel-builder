@@ -12,9 +12,9 @@ assert.equal(model.eventMonths({rule:'easter'},2027)[0],3);assert.equal(model.ev
 assert.equal(model.temperatureTargetC(),19);assert.equal(model.temperatureTargetC('beach'),25);assert.equal(model.temperatureTargetC('winter'),-5);assert.throws(()=>model.temperatureTargetC('unknown'));
 const typeFixture=[-12,-5,0,5,12,19,25,30,35,40,45,50].map(meanDailyC=>({meanDailyC,meanRainMmPerDay:5,meanRelativeHumidityPct:55}));
 assert.equal(model.climateScores(typeFixture)[5].temperatureRank,1);assert.equal(model.climateScores(typeFixture,'beach')[6].temperatureRank,1);assert.equal(model.climateScores(typeFixture,'winter')[1].temperatureRank,1);
-const classified=Object.values(model.out.countries).flatMap(c=>c.profiles);assert.equal(classified.filter(p=>p.climateType==='beach').length,11);assert.equal(classified.filter(p=>p.climateType==='winter').length,2);assert.equal(classified.filter(p=>p.climateType==='standard').length,53);
+const classified=Object.values(model.out.countries).flatMap(c=>c.profiles);assert.equal(classified.filter(p=>p.climateType==='beach').length,11);assert.equal(classified.filter(p=>p.climateType==='winter').length,2);assert.equal(classified.filter(p=>p.climateType==='standard').length,51);
 for(const country of Object.values(model.out.countries))for(const [index,p] of country.profiles.entries()){assert.equal(p.temperatureTargetC,model.temperatureTargetC(p.climateType));if(p.climateType==='all-season')continue;const expected=model.ranksOf(p.months.map(m=>Math.abs(m.meanDailyC-p.temperatureTargetC)));for(const year of Object.values(country.years))year[index].forEach((m,i)=>assert.equal(m.climateRanks.temperature,expected[i]));}
-console.log('PASS: standard/beach/winter resolve to 19/25/-5°C; correct temperature ranks for every profile and year; 11 beach, 2 winter, 5 All season, 53 standard.');
+console.log('PASS: standard/beach/winter resolve to 19/25/-5°C; correct temperature ranks for every profile and year; 11 beach, 2 winter, 7 All season, 51 standard.');
 
 const cartagena=model.out.countries.colombia.profiles.find(p=>p.id==='cartagena');assert.equal(cartagena.climateType,'standard');assert.equal(cartagena.temperatureTargetC,19);
 
@@ -23,4 +23,6 @@ const neutral=Array.from({length:12},(_,i)=>({meanDailyC:0,meanRainMmPerDay:i,me
 for(const t of [-6,20,25,200]){const changed=model.climateScores(neutral.map(m=>({...m,meanDailyC:t})),'all-season');changed.forEach((m,i)=>assert(Math.abs(m.total-Math.max(0,baseAllSeason[i].total-model.allSeasonTemperaturePenalty(t)))<1e-10));}
 assert.equal(model.resolvedClimateType({country:'united-kingdom',id:'edinburgh',climateType:'standard'}),'all-season');assert.equal(model.resolvedClimateType({country:'france',id:'strasbourg'}),'all-season');console.log('PASS: All season inclusive limits, 2 points/degree outside, unchanged scores within range, floor at zero, and owner-approved future assignments.');
 
-assert.equal(classified.filter(p=>p.climateType==='all-season').length,5);
+assert.equal(classified.filter(p=>p.climateType==='all-season').length,7);
+
+for(const [key,id] of [['portugal','porto'],['italy','venice']]){const p=model.out.countries[key].profiles.find(p=>p.id===id);assert.equal(p.climateType,'all-season');assert.equal(p.temperatureTargetC,null);}

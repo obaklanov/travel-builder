@@ -45,3 +45,5 @@ Integrated owner-approved assignments: Strasbourg, Edinburgh, Inverness, Fort Wi
 ## UK and France rollout — 6 November 2026
 
 13 UK and 16 French destinations added (71 scored bases overall). 2016–2025 ERA5 daily data use Europe/London and Europe/Paris local days respectively. All season: Edinburgh, Inverness, Fort William, Portree and Strasbourg. Beach: St Ives, Nice, Biarritz and Ajaccio. Annecy and Marseille remain standard mixed-purpose destinations. Earlier country classifications are unchanged. Climate is a model estimate; crowd and price monthly orderings are editorial proxies, not measured values. Festival records link selected official sources and use typical months rather than confirmed future schedules. Gateways can be outside the town or country (Annecy via Geneva); ground transfers and live flight service are not yet modelled.
+
+Porto and Venice reclassified as All season by owner approval on 6 November 2026. Same inclusive −5°C to 19°C interval and 2 climate points/°C outside it. Recalculated monthly scores retain 4/4/4 final bands. Current totals: 11 beach, 2 winter, 7 All season, 51 standard.

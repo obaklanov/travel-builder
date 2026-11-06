@@ -145,7 +145,7 @@
           "treasures": [
             "Grand Canal"
           ],
-          "climateType": "standard"
+          "climateType": "all-season"
         },
         {
           "name": "Florence",
@@ -733,6 +733,18 @@
       "climateType": "all-season",
       "reason": "Owner-selected all-season destination, approved 6 November 2026.",
       "status": "Integrated with UK/France climate rollout."
+    },
+    "portugal:porto": {
+      "name": "Porto",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season classification, 6 November 2026.",
+      "status": "Integrated with monthly climate profiles, 6 November 2026."
+    },
+    "italy:venice": {
+      "name": "Venice",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season classification, 6 November 2026.",
+      "status": "Integrated with monthly climate profiles, 6 November 2026."
     }
   }
 }

@@ -379,8 +379,8 @@
       "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur.",
       "climateMeanTemperatureSource": "https://archive-api.open-meteo.com/v1/archive?latitude=41.1579&longitude=-8.6291&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean&timezone=auto&models=era5",
       "climateRainAmountSource": "https://archive-api.open-meteo.com/v1/archive?latitude=41.1579&longitude=-8.6291&start_date=2016-01-01&end_date=2025-12-31&daily=rain_sum&timezone=auto&models=era5",
-      "climateType": "standard",
-      "climateTypeReason": "General sightseeing / mixed-purpose destination; no specialised beach or winter target assigned.",
+      "climateType": "all-season",
+      "climateTypeReason": "Owner-approved All season classification, 6 November 2026.",
       "climateTypeSources": []
     },
     {
@@ -2929,8 +2929,8 @@
         }
       ],
       "eventCoverage": "Selected recurring events only; months extrapolated from sourced typical/recent editions, not confirmed 2027–2032 dates. Zero means none listed, not none happening.",
-      "climateType": "standard",
-      "climateTypeReason": "General sightseeing / mixed-purpose destination; no specialised beach or winter target assigned.",
+      "climateType": "all-season",
+      "climateTypeReason": "Owner-approved All season classification, 6 November 2026.",
       "climateTypeSources": []
     },
     {
@@ -12086,6 +12086,18 @@
       "name": "Portree",
       "climateType": "all-season",
       "reason": "Owner-selected all-season destination, approved 6 November 2026.",
+      "status": "Integrated with monthly climate profiles, 6 November 2026."
+    },
+    "portugal:porto": {
+      "name": "Porto",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season classification, 6 November 2026.",
+      "status": "Integrated with monthly climate profiles, 6 November 2026."
+    },
+    "italy:venice": {
+      "name": "Venice",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season classification, 6 November 2026.",
       "status": "Integrated with monthly climate profiles, 6 November 2026."
     }
   }
