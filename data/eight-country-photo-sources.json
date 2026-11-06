@@ -220,18 +220,12 @@
       "bytes": 174324
     },
     "Lake Titicaca": {
-      "author": "Anthony Lacoste",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lake_Titicaca_on_the_Andes_from_Bolivia.jpg",
-      "license": "CC BY 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-      "originalTitle": "File:Lake Titicaca on the Andes from Bolivia.jpg",
-      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Lake_Titicaca_on_the_Andes_from_Bolivia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "src": "images/treasures/peru-3-new.webp",
-      "alt": "Lake Titicaca — Peru",
-      "width": 640,
-      "height": 480,
-      "bytes": 80232
-    },
+  "src": "images/treasures/peru-titicaca-owner.png",
+  "alt": "Deep-blue Lake Titicaca beside terraced hills, with snow-capped Andean mountains in the distance",
+  "width": 1415,
+  "height": 657,
+  "suppliedByOwner": true
+},
     "Christ the Redeemer": {
       "author": "Mucio Scorzelli",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Corcovado_Blue_Sky_Day2.jpg",
