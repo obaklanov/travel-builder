@@ -1133,7 +1133,7 @@ window.TRAVEL_BUILDER_FILTERS = [
   },
 {
   "id": "venomousWildlife",
-  "label": "Venomous wildlife",
+  "label": "Wildlife exposure you prefer to avoid",
   "group": "health",
   "options": [
     "Scorpions",
@@ -1142,7 +1142,7 @@ window.TRAVEL_BUILDER_FILTERS = [
     "Venomous spiders"
   ],
   "pending": true,
-  "primary": false,
+  "primary": true,
   "multiple": true,
   "priority": true,
   "defaultPriority": "prefer",
@@ -1164,7 +1164,7 @@ window.TRAVEL_BUILDER_FILTERS = [
       "Known for vegetarian dishes"
 ],
     "pending": true,
-    "primary": false,
+    "primary": true,
     "multiple": true,
     "help": "Cuisine preferences require reviewed destination or city data and are not verified yet.",
     "priority": true,
