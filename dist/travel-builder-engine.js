@@ -59,7 +59,7 @@
           for(const days of lengths){
             const end=new Date(start);end.setDate(end.getDate()+days-1);
             if(iso(end)>limits.returnMax||(f.latest&&iso(end)>f.latest))continue;
-            let seasonFits=true;if(f.season){const cursor=new Date(start.getFullYear(),start.getMonth(),1,12);while(cursor<=end){if(!f.season.includes(country.regions[regionIndex][1][cursor.getMonth()]))seasonFits=false;cursor.setMonth(cursor.getMonth()+1);}}
+            let seasonFits=true;if(f.season){const cursor=new Date(start.getFullYear(),start.getMonth(),1,12);while(cursor<=end){if(!f.season.includes((country.seasonByYear?.[cursor.getFullYear()]?.[regionIndex]||country.regions[regionIndex][1])[cursor.getMonth()]))seasonFits=false;cursor.setMonth(cursor.getMonth()+1);}}
             if(f.season&&hard('season')&&!seasonFits)continue;
             for(const route of routes(key,{origin:f.origin,regionIndex,departureDate:iso(start),returnDate:iso(end)})){
               if(f.arrival&&route.code!==f.arrival)continue;
@@ -71,7 +71,7 @@
               rates[4]+=fitnessWeekly/(7*people);const amount=Math.round(total(rates,days,people)*100)/100;if(budget!==null&&hard('budget')&&amount>ceiling)continue;
               let score=0;const relaxed=[];
               for(const [id,active,fits] of [['budget',budget!==null,amount<=ceiling],['flightHours',!!f.flightHours,flightFits],['season',!!f.season,seasonFits],['priceLevel',!!f.priceLevel,bands[key]===f.priceLevel],['newPlaces',f.newPlaces==='yes'&&f.profileKnown,!visited.has(key)]])if(active&&!hard(id)){if(fits)score++;else relaxed.push(id);}
-              const candidate={key,regionIndex,region:country.regions[regionIndex][0],rating:country.regions[regionIndex][1][month.getMonth()],route,days,start:iso(start),end:iso(end),people,rates,fitnessWeekly,fitnessTotal:Math.round(fitnessWeekly*days/7*100)/100,total:amount,budget,ceiling,score,relaxed,priceBand:bands[key],recordedVisited:visited.has(key)};
+              const candidate={key,regionIndex,region:country.regions[regionIndex][0],rating:(country.seasonByYear?.[month.getFullYear()]?.[regionIndex]||country.regions[regionIndex][1])[month.getMonth()],route,days,start:iso(start),end:iso(end),people,rates,fitnessWeekly,fitnessTotal:Math.round(fitnessWeekly*days/7*100)/100,total:amount,budget,ceiling,score,relaxed,priceBand:bands[key],recordedVisited:visited.has(key)};
               // Keep one representative duration per region/month/arrival to bound memory for broad ranges.
               const id=[key,regionIndex,iso(start).slice(0,7),route.code].join('|'),previous=out.get(id);
               if(!previous||candidate.score>previous.score||(candidate.score===previous.score&&Math.abs(days-center)<Math.abs(previous.days-center)))out.set(id,candidate);

@@ -124,6 +124,21 @@ travelData.colombia.seasonNote='Existing four seasonal patterns are legacy edito
 travelData.colombia.seasonSources=[{label:'Colombia Travel: destination regions',url:'https://colombia.travel/en/where-to-go'}];
 // Display geographic qualifiers consistently in brackets.
 for(const data of Object.values(travelData))data.regions.forEach(region=>{region[0]=region[0].replace(/ \/ (North|South|Center|West|East|Islands)$/, ' ($1)');});
+// Weighted tourist-season profiles, generated from reviewed inputs.
+const scoredSeasonality=typeof window!=='undefined'?window.TRAVEL_SEASONALITY:null;
+if(scoredSeasonality)for(const [key,scored] of Object.entries(scoredSeasonality.countries)){
+ const d=travelData[key];d.scoredSeasonality=scored;d.seasonByYear=Object.fromEntries(Object.entries(scored.years).map(([year,regions])=>[year,regions.map(months=>months.map(m=>m.rating).join(''))]));
+ const year=new Date().getFullYear();d.regions.forEach((region,i)=>{region[1]=d.seasonByYear[year]?.[i]||region[1];});
+ d.seasonSources=undefined;
+}
+function refreshScoredSeasonTable(key,panel,monthValue){
+ const d=travelData[key],year=Number(monthValue.slice(0,4)),profiles=d.scoredSeasonality?.years[year];if(!profiles)return;
+ panel.querySelector('.season-table').dataset.seasonYear=String(year);
+ panel.querySelectorAll('.season-table tbody tr').forEach((row,i)=>row.querySelectorAll('td').forEach((cell,m)=>{
+  const result=profiles[i][m],text={B:'BEST',A:'AVERAGE',W:'WORST'}[result.rating],button=cell.querySelector('button');cell.className=text.toLowerCase();if(button){button.textContent=text;button.setAttribute('aria-label',d.regions[i][0]+', '+(m+1)+'/'+year+': '+text);}
+  const climate=d.scoredSeasonality.profiles[i].months[m];cell.title=year+' tourist score '+result.score+'/100. Climate '+result.factors.climate+', crowds '+result.factors.crowds+', festivals '+result.factors.festivals+', prices '+result.factors.prices+'. Historical daytime high '+climate.meanDailyHighC+'°C; rainy days '+Math.round(climate.rainyDayFraction*100)+'%; relative humidity '+climate.meanRelativeHumidityPct+'%. '+(result.events.length?'Listed events: '+result.events.join(', ')+'. ':'No major event listed. ')+'Crowds and prices are provisional editorial estimates. Event dates require confirmation.';
+ }));
+}
 const departureCities=[['YYZ','Toronto'],['YVR','Vancouver'],['YUL','Montréal'],['YYC','Calgary'],['YEG','Edmonton']];
 let guideDeparture=departureCities.some(([code])=>code===new URLSearchParams(location.search).get('origin'))?new URLSearchParams(location.search).get('origin'):'YYZ';
 function renderTravelDetail(key,kind){
@@ -155,6 +170,11 @@ function renderTravelDetail(key,kind){
 
  if(d.seasonSources){const note=document.createElement('p');note.className='estimate-note';note.textContent=d.seasonNote;panel.append(note);for(const source of d.seasonSources){const p=document.createElement('p'),link=document.createElement('a');link.href=source.url;link.textContent=source.label+' ↗';link.target='_blank';link.rel='noopener noreferrer';p.append(link);panel.append(p);}}
  setupSeasonChoice(key,panel);
+ if(d.scoredSeasonality){
+  const explanation=document.createElement('details');explanation.className='season-score-method';const title=document.createElement('summary');title.textContent='How these tourist ratings are calculated';const copy=document.createElement('p');copy.textContent='Climate 40% · Crowds 20% · Festivals 20% · Prices 20%. BEST: 65–100; AVERAGE: 40–64.99; WORST: below 40. Climate uses 2016–2025 ERA5 weather estimates via Open-Meteo. Rain means historical days with at least 1 mm precipitation, not a forecast. Crowds and accommodation prices use provisional editorial seasonal rankings, not measured occupancy or prices. Festivals use selected recurring events; dates may change. WORST means a lower preference match, not unsafe travel.';explanation.append(title,copy);
+  const links=new Map([['https://open-meteo.com/en/docs/historical-weather-api','Climate data: Open-Meteo / Copernicus ERA5 (CC BY 4.0)']]);for(const profile of d.scoredSeasonality.profiles){for(const url of [...profile.crowds.sourceUrls,...profile.prices.sourceUrls])links.set(url,'Seasonal crowd / price guidance');for(const event of profile.events)links.set(event.sourceUrl,event.name);}
+  for(const [url,label] of links){const line=document.createElement('p'),link=document.createElement('a');link.href=url;link.textContent=label+' ↗';link.target='_blank';link.rel='noopener noreferrer';line.append(link);explanation.append(line);}panel.append(explanation);
+ }
  }else if(kind==='insurance'){
  panel.innerHTML=`<h3>Travel insurance</h3><p>Start with emergency medical cover, then assess trip cancellation, interruption and baggage cover against your bookings and existing benefits.</p><ul><li>Check medical evacuation and repatriation.</li><li>Confirm pre-existing condition and stability clauses in writing.</li><li>Check deductibles, activity exclusions, destination advisories and coverage for the full trip.</li><li>Check whether the insurer pays hospitals directly and offers 24-hour assistance.</li></ul><p class="estimate-note">Price requires a personal quote: age, health, destination, duration, deductible and coverage all matter. For this prototype only, allow CAD $5/day as a planning placeholder, not an insurer quote or coverage recommendation.</p><p><a href="https://travel.gc.ca/travelling/documents/travel-insurance" target="_blank" rel="noopener noreferrer">Government of Canada: choosing coverage ↗</a></p>`;
  }else{
@@ -332,9 +352,10 @@ function setupSeasonChoice(key,panel){
   [...row.querySelectorAll('td')].forEach((cell,month)=>{
    const text=cell.textContent;const button=document.createElement('button');button.type='button';button.className='season-cell-choice';button.textContent=text;
    button.setAttribute('aria-label',d.regions[index][0]+', '+['January','February','March','April','May','June','July','August','September','October','November','December'][month]+': '+text);
-   button.onclick=()=>{box.querySelector('#travel-region').value=String(index);const now=new Date(),year=now.getFullYear()+(month<now.getMonth()?1:0);box.querySelector('#travel-month').value=year+'-'+String(month+1).padStart(2,'0');box.querySelector('.season-choice-status').textContent='Selected '+d.regions[index][0]+'. Confirm below the selectors to continue.';};cell.replaceChildren(button);
+   button.onclick=()=>{box.querySelector('#travel-region').value=String(index);const now=new Date(),selectedYear=Number(box.querySelector('#travel-month').value.slice(0,4)),year=Math.max(selectedYear||now.getFullYear(),now.getFullYear()+(month<now.getMonth()?1:0));box.querySelector('#travel-month').value=year+'-'+String(month+1).padStart(2,'0');refreshScoredSeasonTable(key,panel,box.querySelector('#travel-month').value);box.querySelector('.season-choice-status').textContent='Selected '+d.regions[index][0]+'. Confirm below the selectors to continue.';};cell.replaceChildren(button);
   });
  });
+ const seasonMonthInput=box.querySelector('#travel-month');refreshScoredSeasonTable(key,panel,seasonMonthInput.value);seasonMonthInput.addEventListener('change',()=>refreshScoredSeasonTable(key,panel,seasonMonthInput.value));
  box.onsubmit=event=>{
   event.preventDefault();const region=box.querySelector('#travel-region'),month=box.querySelector('#travel-month');
   if(!region.value||!/^\d{4}-\d{2}$/.test(month.value)||month.value<new Date().toISOString().slice(0,7)||month.value>'2028-12'){box.querySelector('.season-choice-status').textContent='Choose a region and a travel month between now and December 2028.';return;}

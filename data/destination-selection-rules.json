@@ -30,7 +30,8 @@
         "Ponta Delgada (Azores)",
         "Funchal (Madeira)"
       ],
-      "liveLabelsUpdated": true
+      "liveLabelsUpdated": true,
+      "seasonalityStatus": "Weighted model implemented: historical climate validated; crowd/price rankings and selected-event coverage are provisional."
     },
     "colombia": {
       "destinations": [
@@ -113,14 +114,8 @@
         ]
       },
       "liveIntegrationPending": false,
-      "seasonReviewPending": [
-        "Santa Marta",
-        "Cali",
-        "Barranquilla",
-        "Bucaramanga",
-        "San Andrés",
-        "Leticia"
-      ]
+      "seasonReviewPending": [],
+      "seasonalityStatus": "Weighted model implemented: historical climate validated; crowd/price rankings and selected-event coverage are provisional."
     }
   }
 }

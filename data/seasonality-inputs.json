@@ -1,0 +1,2145 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-11-06",
+  "climate": {
+    "period": "2016-01-01/2025-12-31",
+    "model": "ERA5 via Open-Meteo",
+    "sourceUrl": "https://open-meteo.com/en/docs/historical-weather-api",
+    "attribution": "Weather data by Open-Meteo (CC BY 4.0), based on Copernicus ERA5 reanalysis. Model estimates, not station observations or forecasts.",
+    "rainDefinition": "Fraction of historical days with at least 1 mm total precipitation; not a forecast rain probability.",
+    "humidityDefinition": "Daily mean outdoor relative humidity; comfort preference only, not a health assessment."
+  },
+  "method": {
+    "weights": {
+      "climate": 0.4,
+      "crowds": 0.2,
+      "festivals": 0.2,
+      "prices": 0.2
+    },
+    "climateWeights": {
+      "temperature": 0.5,
+      "rain": 0.3,
+      "humidity": 0.2
+    },
+    "idealDailyHighC": [
+      18,
+      26
+    ],
+    "preferredRelativeHumidityPct": [
+      40,
+      70
+    ],
+    "maxIdealRainyDayFraction": 0.2,
+    "temperaturePenaltyPerDegree": 8,
+    "rainPenaltyScale": 0.8,
+    "humidityPenaltyPerPoint": 3,
+    "bestThreshold": 65,
+    "averageThreshold": 40,
+    "crowdBands": "First six ranked months BEST; next three AVERAGE; last three WORST. Rankings are editorial proxies, not observed percent-of-capacity figures.",
+    "priceBands": "Same six/three/three ordinal bands, based on accommodation-demand guidance; no live prices.",
+    "festivalScore": "Listed flagship event or two regional events: 100; one regional event: 50; no listed event: 0. Prominence is editorial.",
+    "overall": "Weighted score >=65 BEST; >=40 AVERAGE; otherwise WORST. Absolute thresholds; no forced BEST/WORST quotas.",
+    "calendar": "Typical recurring months, not guaranteed event schedules. Carnival and Santo Cristo follow Easter; Easter demand shifts are approximations. Confirm event dates before travel.",
+    "limitations": "Crowd and price inputs are provisional editorial proxies and must be replaced by measured monthly data when available. Full-month averages hide short holiday spikes; climate grid cells can miss coastal and mountain microclimates."
+  },
+  "profiles": [
+    {
+      "id": "lisbon",
+      "country": "portugal",
+      "regionIndex": 0,
+      "latitude": 38.7223,
+      "longitude": -9.1393,
+      "gridLatitude": 38.75,
+      "gridLongitude": -9.25,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=38.7223&longitude=-9.1393&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_max,relative_humidity_2m_mean,precipitation_sum&timezone=auto&models=era5",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 14.51,
+          "meanRelativeHumidityPct": 80.16,
+          "rainyDayFraction": 0.2548
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyHighC": 15.33,
+          "meanRelativeHumidityPct": 79.1,
+          "rainyDayFraction": 0.2509
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 15.98,
+          "meanRelativeHumidityPct": 77.52,
+          "rainyDayFraction": 0.3323
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyHighC": 17.76,
+          "meanRelativeHumidityPct": 77.59,
+          "rainyDayFraction": 0.3433
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 20.16,
+          "meanRelativeHumidityPct": 75.26,
+          "rainyDayFraction": 0.1452
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyHighC": 21.96,
+          "meanRelativeHumidityPct": 76.57,
+          "rainyDayFraction": 0.0967
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 23.94,
+          "meanRelativeHumidityPct": 75.66,
+          "rainyDayFraction": 0.0194
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 24.56,
+          "meanRelativeHumidityPct": 75.7,
+          "rainyDayFraction": 0.0097
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyHighC": 23.36,
+          "meanRelativeHumidityPct": 76.2,
+          "rainyDayFraction": 0.1033
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 21.34,
+          "meanRelativeHumidityPct": 79.14,
+          "rainyDayFraction": 0.2613
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyHighC": 17.32,
+          "meanRelativeHumidityPct": 81.56,
+          "rainyDayFraction": 0.3367
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 15.4,
+          "meanRelativeHumidityPct": 82.77,
+          "rainyDayFraction": 0.2613
+        }
+      ],
+      "crowds": {
+        "basis": "provisional editorial ordering of months, not measured visitor percentiles",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          12,
+          3,
+          4,
+          10,
+          5,
+          9,
+          6,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.ricksteves.com/europe/portugal/best-time-to-go-to-portugal"
+        ]
+      },
+      "prices": {
+        "basis": "provisional accommodation-demand proxy; no measured hotel-price index or airfare data",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          12,
+          3,
+          4,
+          10,
+          5,
+          9,
+          6,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.ricksteves.com/europe/portugal/best-time-to-go-to-portugal"
+        ]
+      },
+      "events": [
+        {
+          "name": "Popular Saints / Santo António",
+          "months": [
+            6
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://visitportugal.com/en/content/portugals-top-10-cultural-features"
+        }
+      ],
+      "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur."
+    },
+    {
+      "id": "porto",
+      "country": "portugal",
+      "regionIndex": 1,
+      "latitude": 41.1579,
+      "longitude": -8.6291,
+      "gridLatitude": 41.25,
+      "gridLongitude": -8.5,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=41.1579&longitude=-8.6291&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_max,relative_humidity_2m_mean,precipitation_sum&timezone=auto&models=era5",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 13.76,
+          "meanRelativeHumidityPct": 82.52,
+          "rainyDayFraction": 0.3806
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyHighC": 15.14,
+          "meanRelativeHumidityPct": 78.89,
+          "rainyDayFraction": 0.3569
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 16.01,
+          "meanRelativeHumidityPct": 77.15,
+          "rainyDayFraction": 0.4323
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyHighC": 18.4,
+          "meanRelativeHumidityPct": 76.28,
+          "rainyDayFraction": 0.39
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 21.05,
+          "meanRelativeHumidityPct": 75.32,
+          "rainyDayFraction": 0.3129
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyHighC": 23.05,
+          "meanRelativeHumidityPct": 78.31,
+          "rainyDayFraction": 0.28
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 26.2,
+          "meanRelativeHumidityPct": 73.93,
+          "rainyDayFraction": 0.0935
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 26.57,
+          "meanRelativeHumidityPct": 73.61,
+          "rainyDayFraction": 0.0742
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyHighC": 24.32,
+          "meanRelativeHumidityPct": 75.18,
+          "rainyDayFraction": 0.2433
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 21.3,
+          "meanRelativeHumidityPct": 80.12,
+          "rainyDayFraction": 0.4097
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyHighC": 16.57,
+          "meanRelativeHumidityPct": 83.9,
+          "rainyDayFraction": 0.48
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 14.38,
+          "meanRelativeHumidityPct": 85.17,
+          "rainyDayFraction": 0.4548
+        }
+      ],
+      "crowds": {
+        "basis": "provisional editorial ordering of months, not measured visitor percentiles",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          12,
+          3,
+          4,
+          10,
+          5,
+          6,
+          9,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.ricksteves.com/europe/portugal/best-time-to-go-to-portugal"
+        ]
+      },
+      "prices": {
+        "basis": "provisional accommodation-demand proxy; no measured hotel-price index or airfare data",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          12,
+          3,
+          4,
+          10,
+          5,
+          6,
+          9,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.ricksteves.com/europe/portugal/best-time-to-go-to-portugal"
+        ]
+      },
+      "events": [
+        {
+          "name": "São João",
+          "months": [
+            6
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://visitportugal.com/en/content/portugals-top-10-cultural-features"
+        }
+      ],
+      "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur."
+    },
+    {
+      "id": "faro",
+      "country": "portugal",
+      "regionIndex": 2,
+      "latitude": 37.0194,
+      "longitude": -7.9322,
+      "gridLatitude": 37,
+      "gridLongitude": -8,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=37.0194&longitude=-7.9322&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_max,relative_humidity_2m_mean,precipitation_sum&timezone=auto&models=era5",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 15.13,
+          "meanRelativeHumidityPct": 74.92,
+          "rainyDayFraction": 0.1774
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyHighC": 15.45,
+          "meanRelativeHumidityPct": 76.65,
+          "rainyDayFraction": 0.1661
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 15.93,
+          "meanRelativeHumidityPct": 75.67,
+          "rainyDayFraction": 0.2839
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyHighC": 17.4,
+          "meanRelativeHumidityPct": 76.03,
+          "rainyDayFraction": 0.2167
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 19.88,
+          "meanRelativeHumidityPct": 73.35,
+          "rainyDayFraction": 0.1065
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyHighC": 22.27,
+          "meanRelativeHumidityPct": 72.1,
+          "rainyDayFraction": 0.0433
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 24.59,
+          "meanRelativeHumidityPct": 69.32,
+          "rainyDayFraction": 0.0032
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 25.24,
+          "meanRelativeHumidityPct": 67.96,
+          "rainyDayFraction": 0.0032
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyHighC": 22.94,
+          "meanRelativeHumidityPct": 73.78,
+          "rainyDayFraction": 0.0433
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 21.02,
+          "meanRelativeHumidityPct": 77.41,
+          "rainyDayFraction": 0.1677
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyHighC": 17.95,
+          "meanRelativeHumidityPct": 76.5,
+          "rainyDayFraction": 0.2267
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 16.08,
+          "meanRelativeHumidityPct": 77.38,
+          "rainyDayFraction": 0.2129
+        }
+      ],
+      "crowds": {
+        "basis": "provisional editorial ordering of months, not measured visitor percentiles",
+        "lowToHigh": [
+          1,
+          2,
+          12,
+          11,
+          3,
+          4,
+          10,
+          5,
+          6,
+          9,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.ricksteves.com/europe/portugal/best-time-to-go-to-portugal"
+        ]
+      },
+      "prices": {
+        "basis": "provisional accommodation-demand proxy; no measured hotel-price index or airfare data",
+        "lowToHigh": [
+          1,
+          2,
+          12,
+          11,
+          3,
+          4,
+          10,
+          5,
+          6,
+          9,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.ricksteves.com/europe/portugal/best-time-to-go-to-portugal"
+        ]
+      },
+      "events": [
+        {
+          "name": "Festival F",
+          "months": [
+            9
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://www.visitportugal.com/en/content/festival-f"
+        },
+        {
+          "name": "Folkfaro",
+          "months": [
+            8
+          ],
+          "prominence": 1,
+          "sourceUrl": "https://rotaliterariadoalgarve.tcn.pt/download/booklet/rla-07-faro-en.pdf"
+        }
+      ],
+      "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur."
+    },
+    {
+      "id": "funchal",
+      "country": "portugal",
+      "regionIndex": 3,
+      "latitude": 32.6669,
+      "longitude": -16.9241,
+      "gridLatitude": 32.75,
+      "gridLongitude": -17,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=32.6669&longitude=-16.9241&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_max,relative_humidity_2m_mean,precipitation_sum&timezone=auto&models=era5",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 16.43,
+          "meanRelativeHumidityPct": 79.7,
+          "rainyDayFraction": 0.2839
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyHighC": 16.35,
+          "meanRelativeHumidityPct": 78.98,
+          "rainyDayFraction": 0.2792
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 16.47,
+          "meanRelativeHumidityPct": 78.84,
+          "rainyDayFraction": 0.3742
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyHighC": 17.6,
+          "meanRelativeHumidityPct": 78.11,
+          "rainyDayFraction": 0.33
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 19.21,
+          "meanRelativeHumidityPct": 75.68,
+          "rainyDayFraction": 0.2258
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyHighC": 21.25,
+          "meanRelativeHumidityPct": 75.41,
+          "rainyDayFraction": 0.1967
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 23.45,
+          "meanRelativeHumidityPct": 73.7,
+          "rainyDayFraction": 0.0484
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 24.68,
+          "meanRelativeHumidityPct": 73.48,
+          "rainyDayFraction": 0.0548
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyHighC": 23.32,
+          "meanRelativeHumidityPct": 75.01,
+          "rainyDayFraction": 0.2133
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 22.05,
+          "meanRelativeHumidityPct": 77.18,
+          "rainyDayFraction": 0.3645
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyHighC": 19.02,
+          "meanRelativeHumidityPct": 79.12,
+          "rainyDayFraction": 0.3533
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 17.3,
+          "meanRelativeHumidityPct": 80.4,
+          "rainyDayFraction": 0.3355
+        }
+      ],
+      "crowds": {
+        "basis": "provisional editorial ordering of months, not measured visitor percentiles",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          10,
+          4,
+          9,
+          6,
+          5,
+          7,
+          8,
+          12
+        ],
+        "sourceUrls": [
+          "https://www.ricksteves.com/europe/portugal/best-time-to-go-to-portugal",
+          "https://www.visitmadeira.com/en/travel-info/faq/"
+        ]
+      },
+      "prices": {
+        "basis": "provisional accommodation-demand proxy; no measured hotel-price index or airfare data",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          10,
+          4,
+          9,
+          6,
+          5,
+          7,
+          8,
+          12
+        ],
+        "sourceUrls": [
+          "https://www.ricksteves.com/europe/portugal/best-time-to-go-to-portugal"
+        ]
+      },
+      "events": [
+        {
+          "name": "Flower Festival",
+          "months": [
+            4,
+            5
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://visitmadeira.com/en/whats-on/"
+        },
+        {
+          "name": "Atlantic Festival",
+          "months": [
+            6
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://visitmadeira.com/en/whats-on/"
+        },
+        {
+          "name": "Wine Festival",
+          "months": [
+            8,
+            9
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://visitmadeira.com/en/whats-on/"
+        },
+        {
+          "name": "Christmas and New Year",
+          "months": [
+            12
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://visitmadeira.com/en/whats-on/"
+        },
+        {
+          "name": "Epiphany",
+          "months": [
+            1
+          ],
+          "prominence": 1,
+          "sourceUrl": "https://visitmadeira.com/en/whats-on/"
+        },
+        {
+          "name": "Nature Festival",
+          "months": [
+            10
+          ],
+          "prominence": 1,
+          "sourceUrl": "https://visitmadeira.com/en/whats-on/"
+        },
+        {
+          "name": "Carnival",
+          "months": [],
+          "prominence": 2,
+          "sourceUrl": "https://visitmadeira.com/en/whats-on/",
+          "rule": "carnival"
+        }
+      ],
+      "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur."
+    },
+    {
+      "id": "ponta-delgada",
+      "country": "portugal",
+      "regionIndex": 4,
+      "latitude": 37.739,
+      "longitude": -25.6687,
+      "gridLatitude": 37.75,
+      "gridLongitude": -25.75,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=37.739&longitude=-25.6687&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_max,relative_humidity_2m_mean,precipitation_sum&timezone=auto&models=era5",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 16.39,
+          "meanRelativeHumidityPct": 80.4,
+          "rainyDayFraction": 0.471
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyHighC": 15.74,
+          "meanRelativeHumidityPct": 78.34,
+          "rainyDayFraction": 0.4382
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 15.56,
+          "meanRelativeHumidityPct": 78.09,
+          "rainyDayFraction": 0.4161
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyHighC": 15.98,
+          "meanRelativeHumidityPct": 80.44,
+          "rainyDayFraction": 0.4233
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 17.36,
+          "meanRelativeHumidityPct": 81.72,
+          "rainyDayFraction": 0.371
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyHighC": 19.29,
+          "meanRelativeHumidityPct": 82.08,
+          "rainyDayFraction": 0.2233
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 21.47,
+          "meanRelativeHumidityPct": 81.98,
+          "rainyDayFraction": 0.1258
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 23,
+          "meanRelativeHumidityPct": 80.75,
+          "rainyDayFraction": 0.2258
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyHighC": 22.37,
+          "meanRelativeHumidityPct": 78.23,
+          "rainyDayFraction": 0.3467
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 20.8,
+          "meanRelativeHumidityPct": 78.64,
+          "rainyDayFraction": 0.4452
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyHighC": 18.63,
+          "meanRelativeHumidityPct": 77.88,
+          "rainyDayFraction": 0.4333
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 17.24,
+          "meanRelativeHumidityPct": 78.1,
+          "rainyDayFraction": 0.4581
+        }
+      ],
+      "crowds": {
+        "basis": "provisional editorial ordering of months, not measured visitor percentiles",
+        "lowToHigh": [
+          1,
+          2,
+          12,
+          11,
+          3,
+          4,
+          10,
+          5,
+          6,
+          9,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.ricksteves.com/europe/portugal/best-time-to-go-to-portugal",
+          "https://pocketguideazores.com/guides/azores-in-summer/"
+        ]
+      },
+      "prices": {
+        "basis": "provisional accommodation-demand proxy; no measured hotel-price index or airfare data",
+        "lowToHigh": [
+          1,
+          2,
+          12,
+          11,
+          3,
+          4,
+          10,
+          5,
+          6,
+          9,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.ricksteves.com/europe/portugal/best-time-to-go-to-portugal"
+        ]
+      },
+      "events": [
+        {
+          "name": "Senhor Santo Cristo",
+          "months": [],
+          "prominence": 2,
+          "sourceUrl": "https://turismo.azores.gov.pt/sao-miguel/",
+          "rule": "easter-plus-35"
+        }
+      ],
+      "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur."
+    },
+    {
+      "id": "cartagena",
+      "country": "colombia",
+      "regionIndex": 0,
+      "latitude": 10.391,
+      "longitude": -75.4794,
+      "gridLatitude": 10.5,
+      "gridLongitude": -75.5,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=10.391&longitude=-75.4794&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_max,relative_humidity_2m_mean,precipitation_sum&timezone=auto&models=era5",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 31.23,
+          "meanRelativeHumidityPct": 76.2,
+          "rainyDayFraction": 0.0935
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyHighC": 31.62,
+          "meanRelativeHumidityPct": 73.57,
+          "rainyDayFraction": 0.0424
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 31.65,
+          "meanRelativeHumidityPct": 75.22,
+          "rainyDayFraction": 0.1129
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyHighC": 31.21,
+          "meanRelativeHumidityPct": 80.01,
+          "rainyDayFraction": 0.4767
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 30.59,
+          "meanRelativeHumidityPct": 84.23,
+          "rainyDayFraction": 0.7968
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyHighC": 30.35,
+          "meanRelativeHumidityPct": 84.99,
+          "rainyDayFraction": 0.8567
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 30.62,
+          "meanRelativeHumidityPct": 84.79,
+          "rainyDayFraction": 0.8097
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 30.36,
+          "meanRelativeHumidityPct": 85.5,
+          "rainyDayFraction": 0.8935
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyHighC": 30.1,
+          "meanRelativeHumidityPct": 85.56,
+          "rainyDayFraction": 0.9367
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 29.74,
+          "meanRelativeHumidityPct": 85.45,
+          "rainyDayFraction": 0.9194
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyHighC": 29.66,
+          "meanRelativeHumidityPct": 85.25,
+          "rainyDayFraction": 0.82
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 30.66,
+          "meanRelativeHumidityPct": 81.08,
+          "rainyDayFraction": 0.2677
+        }
+      ],
+      "crowds": {
+        "basis": "provisional editorial ordering of months, not measured visitor percentiles",
+        "lowToHigh": [
+          5,
+          9,
+          10,
+          11,
+          2,
+          3,
+          8,
+          4,
+          6,
+          7,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://colombia.io/en/plan-your-trip/when-to-go"
+        ]
+      },
+      "prices": {
+        "basis": "provisional accommodation-demand proxy; no measured hotel-price index or airfare data",
+        "lowToHigh": [
+          5,
+          9,
+          10,
+          11,
+          2,
+          3,
+          8,
+          4,
+          6,
+          7,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://colombia.io/en/plan-your-trip/when-to-go"
+        ]
+      },
+      "events": [
+        {
+          "name": "Cartagena Music Festival",
+          "months": [
+            1
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://colombia.travel/en/fairs-and-festivals/cartagena-music-festival"
+        },
+        {
+          "name": "Hay Festival",
+          "months": [
+            1
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://colombia.travel/en/fairs-and-festivals/hay-festival-cartagena"
+        }
+      ],
+      "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur."
+    },
+    {
+      "id": "medellin",
+      "country": "colombia",
+      "regionIndex": 1,
+      "latitude": 6.2442,
+      "longitude": -75.5812,
+      "gridLatitude": 6.25,
+      "gridLongitude": -75.5,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=6.2442&longitude=-75.5812&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_max,relative_humidity_2m_mean,precipitation_sum&timezone=auto&models=era5",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 26.96,
+          "meanRelativeHumidityPct": 81.75,
+          "rainyDayFraction": 0.5935
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyHighC": 26.82,
+          "meanRelativeHumidityPct": 83.2,
+          "rainyDayFraction": 0.7597
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 26.58,
+          "meanRelativeHumidityPct": 85.3,
+          "rainyDayFraction": 0.9097
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyHighC": 26.6,
+          "meanRelativeHumidityPct": 86.74,
+          "rainyDayFraction": 0.93
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 27.05,
+          "meanRelativeHumidityPct": 86.3,
+          "rainyDayFraction": 0.929
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyHighC": 27.13,
+          "meanRelativeHumidityPct": 84.48,
+          "rainyDayFraction": 0.89
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 28.05,
+          "meanRelativeHumidityPct": 79.49,
+          "rainyDayFraction": 0.8323
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 28.27,
+          "meanRelativeHumidityPct": 77.82,
+          "rainyDayFraction": 0.7742
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyHighC": 27.8,
+          "meanRelativeHumidityPct": 81.66,
+          "rainyDayFraction": 0.8833
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 26.44,
+          "meanRelativeHumidityPct": 86.58,
+          "rainyDayFraction": 0.9548
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyHighC": 25.9,
+          "meanRelativeHumidityPct": 87.66,
+          "rainyDayFraction": 0.93
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 26.28,
+          "meanRelativeHumidityPct": 84.96,
+          "rainyDayFraction": 0.7129
+        }
+      ],
+      "crowds": {
+        "basis": "provisional editorial ordering of months, not measured visitor percentiles",
+        "lowToHigh": [
+          2,
+          3,
+          5,
+          9,
+          10,
+          11,
+          4,
+          6,
+          7,
+          1,
+          12,
+          8
+        ],
+        "sourceUrls": [
+          "https://colombia.io/en/plan-your-trip/when-to-go"
+        ]
+      },
+      "prices": {
+        "basis": "provisional accommodation-demand proxy; no measured hotel-price index or airfare data",
+        "lowToHigh": [
+          2,
+          3,
+          5,
+          9,
+          10,
+          11,
+          4,
+          6,
+          7,
+          1,
+          12,
+          8
+        ],
+        "sourceUrls": [
+          "https://colombia.io/en/plan-your-trip/when-to-go"
+        ]
+      },
+      "events": [
+        {
+          "name": "Flower Festival",
+          "months": [
+            8
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://colombia.travel/en/medellin/medellin-flower-festival"
+        }
+      ],
+      "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur."
+    },
+    {
+      "id": "bogota",
+      "country": "colombia",
+      "regionIndex": 2,
+      "latitude": 4.711,
+      "longitude": -74.0721,
+      "gridLatitude": 4.75,
+      "gridLongitude": -74,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=4.711&longitude=-74.0721&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_max,relative_humidity_2m_mean,precipitation_sum&timezone=auto&models=era5",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 20.79,
+          "meanRelativeHumidityPct": 75.76,
+          "rainyDayFraction": 0.4419
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyHighC": 20.89,
+          "meanRelativeHumidityPct": 76.89,
+          "rainyDayFraction": 0.6396
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 20.08,
+          "meanRelativeHumidityPct": 81.25,
+          "rainyDayFraction": 0.7516
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyHighC": 19.8,
+          "meanRelativeHumidityPct": 82.71,
+          "rainyDayFraction": 0.7233
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 19.68,
+          "meanRelativeHumidityPct": 82.68,
+          "rainyDayFraction": 0.6677
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyHighC": 19.05,
+          "meanRelativeHumidityPct": 81.39,
+          "rainyDayFraction": 0.53
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 18.8,
+          "meanRelativeHumidityPct": 80.2,
+          "rainyDayFraction": 0.4484
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 19.29,
+          "meanRelativeHumidityPct": 77.58,
+          "rainyDayFraction": 0.3613
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyHighC": 19.95,
+          "meanRelativeHumidityPct": 76.3,
+          "rainyDayFraction": 0.4433
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 20.17,
+          "meanRelativeHumidityPct": 79.16,
+          "rainyDayFraction": 0.6839
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyHighC": 20.07,
+          "meanRelativeHumidityPct": 83.07,
+          "rainyDayFraction": 0.74
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 20.21,
+          "meanRelativeHumidityPct": 79.31,
+          "rainyDayFraction": 0.4806
+        }
+      ],
+      "crowds": {
+        "basis": "provisional editorial ordering of months, not measured visitor percentiles",
+        "lowToHigh": [
+          2,
+          5,
+          9,
+          10,
+          11,
+          3,
+          8,
+          6,
+          7,
+          4,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://colombia.io/en/plan-your-trip/when-to-go"
+        ]
+      },
+      "prices": {
+        "basis": "provisional accommodation-demand proxy; no measured hotel-price index or airfare data",
+        "lowToHigh": [
+          2,
+          5,
+          9,
+          10,
+          11,
+          3,
+          8,
+          6,
+          7,
+          4,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://colombia.io/en/plan-your-trip/when-to-go"
+        ]
+      },
+      "events": [
+        {
+          "name": "International Book Fair",
+          "months": [
+            4,
+            5
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://colombia.travel/en/fairs-and-festivals/international-book-fair"
+        }
+      ],
+      "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur."
+    },
+    {
+      "id": "salento",
+      "country": "colombia",
+      "regionIndex": 3,
+      "latitude": 4.637,
+      "longitude": -75.5703,
+      "gridLatitude": 4.75,
+      "gridLongitude": -75.5,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=4.637&longitude=-75.5703&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_max,relative_humidity_2m_mean,precipitation_sum&timezone=auto&models=era5",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 22.91,
+          "meanRelativeHumidityPct": 85.18,
+          "rainyDayFraction": 0.9677
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyHighC": 22.86,
+          "meanRelativeHumidityPct": 86.31,
+          "rainyDayFraction": 0.9682
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 22.71,
+          "meanRelativeHumidityPct": 88.65,
+          "rainyDayFraction": 0.9903
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyHighC": 22.77,
+          "meanRelativeHumidityPct": 89.58,
+          "rainyDayFraction": 0.9967
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 23.04,
+          "meanRelativeHumidityPct": 89.97,
+          "rainyDayFraction": 0.9968
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyHighC": 22.65,
+          "meanRelativeHumidityPct": 89.7,
+          "rainyDayFraction": 1
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 22.49,
+          "meanRelativeHumidityPct": 88.76,
+          "rainyDayFraction": 1
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 22.38,
+          "meanRelativeHumidityPct": 86.7,
+          "rainyDayFraction": 1
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyHighC": 22.53,
+          "meanRelativeHumidityPct": 86.86,
+          "rainyDayFraction": 1
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 22.5,
+          "meanRelativeHumidityPct": 88.96,
+          "rainyDayFraction": 0.9774
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyHighC": 22.6,
+          "meanRelativeHumidityPct": 88.51,
+          "rainyDayFraction": 0.98
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 22.4,
+          "meanRelativeHumidityPct": 86.83,
+          "rainyDayFraction": 0.9839
+        }
+      ],
+      "crowds": {
+        "basis": "provisional editorial ordering of months, not measured visitor percentiles",
+        "lowToHigh": [
+          2,
+          3,
+          5,
+          9,
+          10,
+          11,
+          8,
+          4,
+          6,
+          7,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://colombia.io/en/plan-your-trip/when-to-go"
+        ]
+      },
+      "prices": {
+        "basis": "provisional accommodation-demand proxy; no measured hotel-price index or airfare data",
+        "lowToHigh": [
+          2,
+          3,
+          5,
+          9,
+          10,
+          11,
+          8,
+          4,
+          6,
+          7,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://colombia.io/en/plan-your-trip/when-to-go"
+        ]
+      },
+      "events": [
+        {
+          "name": "Anniversary festivities",
+          "months": [
+            1
+          ],
+          "prominence": 1,
+          "sourceUrl": "https://elquindio.com/informacion-local/salento/ferias-y-fiestas"
+        }
+      ],
+      "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur."
+    },
+    {
+      "id": "santa-marta",
+      "country": "colombia",
+      "regionIndex": 4,
+      "latitude": 11.2408,
+      "longitude": -74.199,
+      "gridLatitude": 11,
+      "gridLongitude": -74.25,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=11.2408&longitude=-74.199&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_max,relative_humidity_2m_mean,precipitation_sum&timezone=auto&models=era5",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 29.22,
+          "meanRelativeHumidityPct": 75.51,
+          "rainyDayFraction": 0.0935
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyHighC": 29.52,
+          "meanRelativeHumidityPct": 73.95,
+          "rainyDayFraction": 0.0389
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 29.58,
+          "meanRelativeHumidityPct": 75.66,
+          "rainyDayFraction": 0.1355
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyHighC": 29.59,
+          "meanRelativeHumidityPct": 79.21,
+          "rainyDayFraction": 0.4767
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 29.76,
+          "meanRelativeHumidityPct": 82.12,
+          "rainyDayFraction": 0.7355
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyHighC": 29.83,
+          "meanRelativeHumidityPct": 80.62,
+          "rainyDayFraction": 0.7467
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 29.96,
+          "meanRelativeHumidityPct": 79.03,
+          "rainyDayFraction": 0.5645
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 29.78,
+          "meanRelativeHumidityPct": 80.94,
+          "rainyDayFraction": 0.6548
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyHighC": 29.57,
+          "meanRelativeHumidityPct": 83.09,
+          "rainyDayFraction": 0.8033
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 29.19,
+          "meanRelativeHumidityPct": 83.68,
+          "rainyDayFraction": 0.8484
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyHighC": 29.12,
+          "meanRelativeHumidityPct": 81.7,
+          "rainyDayFraction": 0.74
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 29.51,
+          "meanRelativeHumidityPct": 76.39,
+          "rainyDayFraction": 0.2355
+        }
+      ],
+      "crowds": {
+        "basis": "provisional editorial ordering of months, not measured visitor percentiles",
+        "lowToHigh": [
+          2,
+          3,
+          5,
+          9,
+          10,
+          11,
+          8,
+          4,
+          6,
+          7,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://colombia.io/en/plan-your-trip/when-to-go"
+        ]
+      },
+      "prices": {
+        "basis": "provisional accommodation-demand proxy; no measured hotel-price index or airfare data",
+        "lowToHigh": [
+          2,
+          3,
+          5,
+          9,
+          10,
+          11,
+          8,
+          4,
+          6,
+          7,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://colombia.io/en/plan-your-trip/when-to-go"
+        ]
+      },
+      "events": [
+        {
+          "name": "Festival of the Sea",
+          "months": [
+            7
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://colombia.travel/en/santa-marta/fiestas-del-mar"
+        }
+      ],
+      "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur."
+    },
+    {
+      "id": "cali",
+      "country": "colombia",
+      "regionIndex": 5,
+      "latitude": 3.4516,
+      "longitude": -76.532,
+      "gridLatitude": 3.5,
+      "gridLongitude": -76.5,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=3.4516&longitude=-76.532&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_max,relative_humidity_2m_mean,precipitation_sum&timezone=auto&models=era5",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 27.05,
+          "meanRelativeHumidityPct": 84.34,
+          "rainyDayFraction": 0.7484
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyHighC": 27.07,
+          "meanRelativeHumidityPct": 84.5,
+          "rainyDayFraction": 0.8728
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 27.05,
+          "meanRelativeHumidityPct": 84.08,
+          "rainyDayFraction": 0.8548
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyHighC": 27.19,
+          "meanRelativeHumidityPct": 83.73,
+          "rainyDayFraction": 0.7933
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 27.46,
+          "meanRelativeHumidityPct": 83.46,
+          "rainyDayFraction": 0.6871
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyHighC": 27.38,
+          "meanRelativeHumidityPct": 82.58,
+          "rainyDayFraction": 0.6167
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 27.8,
+          "meanRelativeHumidityPct": 81.25,
+          "rainyDayFraction": 0.4774
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 27.74,
+          "meanRelativeHumidityPct": 81.19,
+          "rainyDayFraction": 0.5258
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyHighC": 27.46,
+          "meanRelativeHumidityPct": 82.27,
+          "rainyDayFraction": 0.64
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 26.63,
+          "meanRelativeHumidityPct": 83.92,
+          "rainyDayFraction": 0.8323
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyHighC": 26.58,
+          "meanRelativeHumidityPct": 84.55,
+          "rainyDayFraction": 0.88
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 26.51,
+          "meanRelativeHumidityPct": 85.17,
+          "rainyDayFraction": 0.8226
+        }
+      ],
+      "crowds": {
+        "basis": "provisional editorial ordering of months, not measured visitor percentiles",
+        "lowToHigh": [
+          2,
+          3,
+          5,
+          9,
+          10,
+          11,
+          8,
+          4,
+          6,
+          7,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://colombia.io/en/plan-your-trip/when-to-go"
+        ]
+      },
+      "prices": {
+        "basis": "provisional accommodation-demand proxy; no measured hotel-price index or airfare data",
+        "lowToHigh": [
+          2,
+          3,
+          5,
+          9,
+          10,
+          11,
+          8,
+          4,
+          6,
+          7,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://colombia.io/en/plan-your-trip/when-to-go"
+        ]
+      },
+      "events": [
+        {
+          "name": "Cali Fair",
+          "months": [
+            12
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://colombia.travel/en/fairs-and-festivals/cali-fair"
+        },
+        {
+          "name": "Petronio Álvarez",
+          "months": [
+            8
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://colombia.travel/es/ferias-y-fiestas/festival-petronio-alvarez"
+        }
+      ],
+      "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur."
+    },
+    {
+      "id": "barranquilla",
+      "country": "colombia",
+      "regionIndex": 6,
+      "latitude": 10.9685,
+      "longitude": -74.7813,
+      "gridLatitude": 10.75,
+      "gridLongitude": -74.75,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=10.9685&longitude=-74.7813&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_max,relative_humidity_2m_mean,precipitation_sum&timezone=auto&models=era5",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 32.49,
+          "meanRelativeHumidityPct": 73.98,
+          "rainyDayFraction": 0.0452
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyHighC": 32.65,
+          "meanRelativeHumidityPct": 71.78,
+          "rainyDayFraction": 0.0318
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 32.91,
+          "meanRelativeHumidityPct": 73.42,
+          "rainyDayFraction": 0.0903
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyHighC": 33.08,
+          "meanRelativeHumidityPct": 77.48,
+          "rainyDayFraction": 0.4467
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 32.63,
+          "meanRelativeHumidityPct": 83.13,
+          "rainyDayFraction": 0.7452
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyHighC": 32.3,
+          "meanRelativeHumidityPct": 84.56,
+          "rainyDayFraction": 0.7767
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 32.51,
+          "meanRelativeHumidityPct": 82.75,
+          "rainyDayFraction": 0.6032
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 32.44,
+          "meanRelativeHumidityPct": 84.93,
+          "rainyDayFraction": 0.7548
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyHighC": 32.14,
+          "meanRelativeHumidityPct": 86.89,
+          "rainyDayFraction": 0.9033
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 31.67,
+          "meanRelativeHumidityPct": 87.16,
+          "rainyDayFraction": 0.9194
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyHighC": 31.44,
+          "meanRelativeHumidityPct": 85.86,
+          "rainyDayFraction": 0.7267
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 32.14,
+          "meanRelativeHumidityPct": 78.34,
+          "rainyDayFraction": 0.1871
+        }
+      ],
+      "crowds": {
+        "basis": "provisional editorial ordering of months, not measured visitor percentiles",
+        "lowToHigh": [
+          5,
+          9,
+          10,
+          11,
+          3,
+          8,
+          4,
+          6,
+          7,
+          1,
+          12,
+          2
+        ],
+        "sourceUrls": [
+          "https://colombia.io/en/plan-your-trip/when-to-go"
+        ]
+      },
+      "prices": {
+        "basis": "provisional accommodation-demand proxy; no measured hotel-price index or airfare data",
+        "lowToHigh": [
+          5,
+          9,
+          10,
+          11,
+          3,
+          8,
+          4,
+          6,
+          7,
+          1,
+          12,
+          2
+        ],
+        "sourceUrls": [
+          "https://colombia.io/en/plan-your-trip/when-to-go"
+        ]
+      },
+      "events": [
+        {
+          "name": "Carnival",
+          "months": [],
+          "prominence": 2,
+          "sourceUrl": "https://carnavaldebarranquilla.org/carnaval-de-barranquilla-2027/",
+          "rule": "carnival"
+        }
+      ],
+      "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur."
+    },
+    {
+      "id": "bucaramanga",
+      "country": "colombia",
+      "regionIndex": 7,
+      "latitude": 7.1193,
+      "longitude": -73.1227,
+      "gridLatitude": 7.25,
+      "gridLongitude": -73.25,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=7.1193&longitude=-73.1227&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_max,relative_humidity_2m_mean,precipitation_sum&timezone=auto&models=era5",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 25.58,
+          "meanRelativeHumidityPct": 84.04,
+          "rainyDayFraction": 0.7742
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyHighC": 26.31,
+          "meanRelativeHumidityPct": 81.89,
+          "rainyDayFraction": 0.8127
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 25.8,
+          "meanRelativeHumidityPct": 84.77,
+          "rainyDayFraction": 0.9419
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyHighC": 25.57,
+          "meanRelativeHumidityPct": 85.86,
+          "rainyDayFraction": 1
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 25.64,
+          "meanRelativeHumidityPct": 85.6,
+          "rainyDayFraction": 1
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyHighC": 25.08,
+          "meanRelativeHumidityPct": 85.62,
+          "rainyDayFraction": 1
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 25.24,
+          "meanRelativeHumidityPct": 84.75,
+          "rainyDayFraction": 1
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 25.33,
+          "meanRelativeHumidityPct": 84.37,
+          "rainyDayFraction": 1
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyHighC": 25.44,
+          "meanRelativeHumidityPct": 84.63,
+          "rainyDayFraction": 1
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 25.24,
+          "meanRelativeHumidityPct": 86.59,
+          "rainyDayFraction": 0.9903
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyHighC": 25.14,
+          "meanRelativeHumidityPct": 87.11,
+          "rainyDayFraction": 0.9933
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 25.38,
+          "meanRelativeHumidityPct": 85.63,
+          "rainyDayFraction": 0.9484
+        }
+      ],
+      "crowds": {
+        "basis": "provisional editorial ordering of months, not measured visitor percentiles",
+        "lowToHigh": [
+          2,
+          3,
+          5,
+          8,
+          10,
+          11,
+          4,
+          6,
+          7,
+          1,
+          12,
+          9
+        ],
+        "sourceUrls": [
+          "https://colombia.io/en/plan-your-trip/when-to-go"
+        ]
+      },
+      "prices": {
+        "basis": "provisional accommodation-demand proxy; no measured hotel-price index or airfare data",
+        "lowToHigh": [
+          2,
+          3,
+          5,
+          8,
+          10,
+          11,
+          4,
+          6,
+          7,
+          1,
+          12,
+          9
+        ],
+        "sourceUrls": [
+          "https://colombia.io/en/plan-your-trip/when-to-go"
+        ]
+      },
+      "events": [
+        {
+          "name": "Feria Bonita",
+          "months": [
+            9
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://calendarioferiasyfiestas.fontur.com.co/en/agenda/bonita-fair"
+        }
+      ],
+      "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur."
+    },
+    {
+      "id": "san-andres",
+      "country": "colombia",
+      "regionIndex": 8,
+      "latitude": 12.5847,
+      "longitude": -81.7006,
+      "gridLatitude": 12.5,
+      "gridLongitude": -81.75,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=12.5847&longitude=-81.7006&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_max,relative_humidity_2m_mean,precipitation_sum&timezone=auto&models=era5",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 27.01,
+          "meanRelativeHumidityPct": 80.62,
+          "rainyDayFraction": 0.5323
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyHighC": 26.81,
+          "meanRelativeHumidityPct": 79.59,
+          "rainyDayFraction": 0.3781
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 26.96,
+          "meanRelativeHumidityPct": 79.49,
+          "rainyDayFraction": 0.2484
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyHighC": 27.44,
+          "meanRelativeHumidityPct": 80.79,
+          "rainyDayFraction": 0.3067
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 28.03,
+          "meanRelativeHumidityPct": 83.68,
+          "rainyDayFraction": 0.6452
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyHighC": 28.21,
+          "meanRelativeHumidityPct": 84.18,
+          "rainyDayFraction": 0.87
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 28.14,
+          "meanRelativeHumidityPct": 84.77,
+          "rainyDayFraction": 0.8097
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 28.35,
+          "meanRelativeHumidityPct": 84.08,
+          "rainyDayFraction": 0.8129
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyHighC": 28.51,
+          "meanRelativeHumidityPct": 82.92,
+          "rainyDayFraction": 0.8233
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 28.22,
+          "meanRelativeHumidityPct": 83.37,
+          "rainyDayFraction": 0.8871
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyHighC": 27.81,
+          "meanRelativeHumidityPct": 84.67,
+          "rainyDayFraction": 0.8867
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 27.48,
+          "meanRelativeHumidityPct": 83.05,
+          "rainyDayFraction": 0.7355
+        }
+      ],
+      "crowds": {
+        "basis": "provisional editorial ordering of months, not measured visitor percentiles",
+        "lowToHigh": [
+          2,
+          3,
+          5,
+          9,
+          10,
+          11,
+          8,
+          4,
+          6,
+          7,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://colombia.io/en/plan-your-trip/when-to-go"
+        ]
+      },
+      "prices": {
+        "basis": "provisional accommodation-demand proxy; no measured hotel-price index or airfare data",
+        "lowToHigh": [
+          2,
+          3,
+          5,
+          9,
+          10,
+          11,
+          8,
+          4,
+          6,
+          7,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://colombia.io/en/plan-your-trip/when-to-go"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur."
+    },
+    {
+      "id": "leticia",
+      "country": "colombia",
+      "regionIndex": 9,
+      "latitude": -4.2153,
+      "longitude": -69.9406,
+      "gridLatitude": -4.25,
+      "gridLongitude": -70,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=-4.2153&longitude=-69.9406&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_max,relative_humidity_2m_mean,precipitation_sum&timezone=auto&models=era5",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 29.69,
+          "meanRelativeHumidityPct": 89.12,
+          "rainyDayFraction": 0.8806
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyHighC": 29.59,
+          "meanRelativeHumidityPct": 90.01,
+          "rainyDayFraction": 0.9505
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 29.85,
+          "meanRelativeHumidityPct": 89.81,
+          "rainyDayFraction": 0.9323
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyHighC": 29.64,
+          "meanRelativeHumidityPct": 89.54,
+          "rainyDayFraction": 0.9333
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 29.29,
+          "meanRelativeHumidityPct": 89.56,
+          "rainyDayFraction": 0.8742
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyHighC": 29.23,
+          "meanRelativeHumidityPct": 88.91,
+          "rainyDayFraction": 0.7567
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 29.7,
+          "meanRelativeHumidityPct": 87.47,
+          "rainyDayFraction": 0.5742
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 30.6,
+          "meanRelativeHumidityPct": 86.24,
+          "rainyDayFraction": 0.5581
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyHighC": 31.28,
+          "meanRelativeHumidityPct": 86.32,
+          "rainyDayFraction": 0.6867
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 30.8,
+          "meanRelativeHumidityPct": 87.25,
+          "rainyDayFraction": 0.7645
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyHighC": 30.41,
+          "meanRelativeHumidityPct": 88.01,
+          "rainyDayFraction": 0.8667
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyHighC": 29.55,
+          "meanRelativeHumidityPct": 89.66,
+          "rainyDayFraction": 0.9355
+        }
+      ],
+      "crowds": {
+        "basis": "provisional editorial ordering of months, not measured visitor percentiles",
+        "lowToHigh": [
+          2,
+          3,
+          5,
+          9,
+          10,
+          11,
+          4,
+          6,
+          8,
+          1,
+          12,
+          7
+        ],
+        "sourceUrls": [
+          "https://colombia.io/en/plan-your-trip/when-to-go"
+        ]
+      },
+      "prices": {
+        "basis": "provisional accommodation-demand proxy; no measured hotel-price index or airfare data",
+        "lowToHigh": [
+          2,
+          3,
+          5,
+          9,
+          10,
+          11,
+          4,
+          6,
+          8,
+          1,
+          12,
+          7
+        ],
+        "sourceUrls": [
+          "https://colombia.io/en/plan-your-trip/when-to-go"
+        ]
+      },
+      "events": [
+        {
+          "name": "Amazon Fellowship Festival",
+          "months": [
+            7
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://colombia.travel/en/leticia"
+        },
+        {
+          "name": "Pirarucú de Oro",
+          "months": [
+            11
+          ],
+          "prominence": 1,
+          "sourceUrl": "https://colombia.travel/es/leticia"
+        }
+      ],
+      "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur."
+    }
+  ]
+}
