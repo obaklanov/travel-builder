@@ -8,7 +8,16 @@
     "attribution": "Weather data by Open-Meteo (CC BY 4.0), based on Copernicus ERA5 reanalysis. Model estimates, not station observations or forecasts.",
     "rainDefinition": "Historical total rain (rain_sum) divided by all calendar days, including dry days; expressed in mm/day. Not rain probability or hourly intensity.",
     "humidityDefinition": "Daily mean outdoor relative humidity; comfort preference only, not a health assessment.",
-    "temperatureDefinition": "Mean of actual daily mean 2-m temperatures, aggregated by local calendar month; not the mean of daily maxima."
+    "temperatureDefinition": "Mean of actual daily mean 2-m temperatures, aggregated by local calendar month; not the mean of daily maxima.",
+    "countryOverrides": {
+      "peru": {
+        "model": "NASA POWER/MERRA-2",
+        "period": "2016–2025",
+        "timeStandard": "Local solar time",
+        "sourceUrl": "https://power.larc.nasa.gov/docs/services/api/temporal/daily/",
+        "rainDefinition": "PRECTOTCORR total precipitation, including snow, averaged across all calendar days in mm/day. Alternative to ERA5 rain-only data due daily API quota; not directly identical."
+      }
+    }
   },
   "method": {
     "weights": {
@@ -12056,6 +12065,1535 @@
       },
       "events": [],
       "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Nice Carnival may cross February/March; those months are a broad seasonal approximation."
+    },
+    {
+      "country": "peru",
+      "id": "lima",
+      "name": "Lima",
+      "area": "Central coast",
+      "latitude": -12.0464,
+      "longitude": -77.0428,
+      "airports": [
+        [
+          "LIM",
+          "Lima"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 0,
+      "gridLatitude": null,
+      "gridLongitude": null,
+      "elevation": 1194.76,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-77.0428&latitude=-12.0464&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; standard 19°C target.",
+      "climateTypeSources": [
+        "https://www.peru.travel/es/destinos"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 19.66,
+          "meanDailyHighC": 23.59,
+          "meanRainMmPerDay": 0.1951,
+          "meanRelativeHumidityPct": 75.09,
+          "rainyDayFraction": 0.0387
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 20.28,
+          "meanDailyHighC": 24.09,
+          "meanRainMmPerDay": 0.4577,
+          "meanRelativeHumidityPct": 76.04,
+          "rainyDayFraction": 0.106
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 20.25,
+          "meanDailyHighC": 24.18,
+          "meanRainMmPerDay": 0.4438,
+          "meanRelativeHumidityPct": 75.07,
+          "rainyDayFraction": 0.129
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 19.54,
+          "meanDailyHighC": 23.87,
+          "meanRainMmPerDay": 0.1055,
+          "meanRelativeHumidityPct": 71.91,
+          "rainyDayFraction": 0.02
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.54,
+          "meanDailyHighC": 23.15,
+          "meanRainMmPerDay": 0.0475,
+          "meanRelativeHumidityPct": 66.24,
+          "rainyDayFraction": 0.0065
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 17.39,
+          "meanDailyHighC": 22.29,
+          "meanRainMmPerDay": 0.1245,
+          "meanRelativeHumidityPct": 65.12,
+          "rainyDayFraction": 0.0133
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.1,
+          "meanDailyHighC": 22.16,
+          "meanRainMmPerDay": 0.0402,
+          "meanRelativeHumidityPct": 63.45,
+          "rainyDayFraction": 0.0065
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.28,
+          "meanDailyHighC": 22.17,
+          "meanRainMmPerDay": 0.0474,
+          "meanRelativeHumidityPct": 60.54,
+          "rainyDayFraction": 0.0097
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 17.68,
+          "meanDailyHighC": 22.24,
+          "meanRainMmPerDay": 0.0256,
+          "meanRelativeHumidityPct": 60.64,
+          "rainyDayFraction": 0
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.89,
+          "meanDailyHighC": 22.31,
+          "meanRainMmPerDay": 0.0475,
+          "meanRelativeHumidityPct": 62.28,
+          "rainyDayFraction": 0.0065
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 18.08,
+          "meanDailyHighC": 22.34,
+          "meanRainMmPerDay": 0.0515,
+          "meanRelativeHumidityPct": 65.84,
+          "rainyDayFraction": 0.0033
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.71,
+          "meanDailyHighC": 22.69,
+          "meanRainMmPerDay": 0.1705,
+          "meanRelativeHumidityPct": 71.4,
+          "rainyDayFraction": 0.0258
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Andean dry-season, northern-beach or urban/Amazon context. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          5,
+          6,
+          9,
+          10,
+          4,
+          8,
+          11,
+          3,
+          7,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.peru.travel/es/destinos"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          5,
+          6,
+          9,
+          10,
+          4,
+          8,
+          11,
+          3,
+          7,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.peru.travel/es/destinos"
+        ]
+      },
+      "events": [
+        {
+          "name": "Señor de los Milagros",
+          "months": [
+            10
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://www.peru.travel/es/eventos/senor-de-los-milagros"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "peru",
+      "id": "cusco",
+      "name": "Cusco",
+      "area": "Southern Andes",
+      "latitude": -13.532,
+      "longitude": -71.9675,
+      "airports": [
+        [
+          "CUZ",
+          "Cusco"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 1,
+      "gridLatitude": null,
+      "gridLongitude": null,
+      "elevation": 3739.76,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-71.9675&latitude=-13.532&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; standard 19°C target.",
+      "climateTypeSources": [
+        "https://www.peru.travel/es/destinos"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 8.75,
+          "meanDailyHighC": 14.53,
+          "meanRainMmPerDay": 3.1761,
+          "meanRelativeHumidityPct": 81.98,
+          "rainyDayFraction": 0.6452
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 8.66,
+          "meanDailyHighC": 14.35,
+          "meanRainMmPerDay": 6.5939,
+          "meanRelativeHumidityPct": 84,
+          "rainyDayFraction": 0.7597
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 8.59,
+          "meanDailyHighC": 14.34,
+          "meanRainMmPerDay": 3.2298,
+          "meanRelativeHumidityPct": 84.61,
+          "rainyDayFraction": 0.6
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 8.76,
+          "meanDailyHighC": 14.4,
+          "meanRainMmPerDay": 1.4272,
+          "meanRelativeHumidityPct": 83.75,
+          "rainyDayFraction": 0.2467
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 8.29,
+          "meanDailyHighC": 14.48,
+          "meanRainMmPerDay": 0.2902,
+          "meanRelativeHumidityPct": 80.85,
+          "rainyDayFraction": 0.0677
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 7.76,
+          "meanDailyHighC": 14.62,
+          "meanRainMmPerDay": 0.7327,
+          "meanRelativeHumidityPct": 78.19,
+          "rainyDayFraction": 0.0867
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 7.91,
+          "meanDailyHighC": 15.34,
+          "meanRainMmPerDay": 0.222,
+          "meanRelativeHumidityPct": 74.38,
+          "rainyDayFraction": 0.0452
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 8.33,
+          "meanDailyHighC": 15.81,
+          "meanRainMmPerDay": 0.2008,
+          "meanRelativeHumidityPct": 72.67,
+          "rainyDayFraction": 0.0387
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 9.07,
+          "meanDailyHighC": 16.14,
+          "meanRainMmPerDay": 0.4336,
+          "meanRelativeHumidityPct": 72.51,
+          "rainyDayFraction": 0.1
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 9.47,
+          "meanDailyHighC": 16.28,
+          "meanRainMmPerDay": 1.7857,
+          "meanRelativeHumidityPct": 73.5,
+          "rainyDayFraction": 0.3419
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 9.37,
+          "meanDailyHighC": 15.88,
+          "meanRainMmPerDay": 3.0908,
+          "meanRelativeHumidityPct": 75.75,
+          "rainyDayFraction": 0.4267
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 8.94,
+          "meanDailyHighC": 14.73,
+          "meanRainMmPerDay": 4.1569,
+          "meanRelativeHumidityPct": 80.47,
+          "rainyDayFraction": 0.6065
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Andean dry-season, northern-beach or urban/Amazon context. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          2,
+          1,
+          3,
+          12,
+          11,
+          4,
+          10,
+          9,
+          5,
+          8,
+          6,
+          7
+        ],
+        "sourceUrls": [
+          "https://www.peru.travel/es/destinos"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          2,
+          1,
+          3,
+          12,
+          11,
+          4,
+          10,
+          9,
+          5,
+          8,
+          6,
+          7
+        ],
+        "sourceUrls": [
+          "https://www.peru.travel/es/destinos"
+        ]
+      },
+      "events": [
+        {
+          "name": "Inti Raymi",
+          "months": [
+            6
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://www.peru.travel/es/eventos/inti-raymi"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "peru",
+      "id": "iquitos",
+      "name": "Iquitos",
+      "area": "Northern Amazon",
+      "latitude": -3.7437,
+      "longitude": -73.2516,
+      "airports": [
+        [
+          "IQT",
+          "Iquitos"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 2,
+      "gridLatitude": null,
+      "gridLongitude": null,
+      "elevation": 115.02,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-73.2516&latitude=-3.7437&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; standard 19°C target.",
+      "climateTypeSources": [
+        "https://www.peru.travel/es/destinos"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.89,
+          "meanDailyHighC": 28.54,
+          "meanRainMmPerDay": 9.4574,
+          "meanRelativeHumidityPct": 90.82,
+          "rainyDayFraction": 0.6645
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 26.11,
+          "meanDailyHighC": 28.75,
+          "meanRainMmPerDay": 9.4198,
+          "meanRelativeHumidityPct": 90.79,
+          "rainyDayFraction": 0.6537
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.02,
+          "meanDailyHighC": 28.6,
+          "meanRainMmPerDay": 11.0018,
+          "meanRelativeHumidityPct": 90.47,
+          "rainyDayFraction": 0.7032
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.94,
+          "meanDailyHighC": 28.53,
+          "meanRainMmPerDay": 10.5806,
+          "meanRelativeHumidityPct": 90.56,
+          "rainyDayFraction": 0.7167
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.79,
+          "meanDailyHighC": 28.38,
+          "meanRainMmPerDay": 8.6337,
+          "meanRelativeHumidityPct": 90.54,
+          "rainyDayFraction": 0.6774
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.27,
+          "meanDailyHighC": 27.95,
+          "meanRainMmPerDay": 7.6209,
+          "meanRelativeHumidityPct": 89.86,
+          "rainyDayFraction": 0.6
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.27,
+          "meanDailyHighC": 28.13,
+          "meanRainMmPerDay": 5.4156,
+          "meanRelativeHumidityPct": 88.12,
+          "rainyDayFraction": 0.5097
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.69,
+          "meanDailyHighC": 28.71,
+          "meanRainMmPerDay": 4.5468,
+          "meanRelativeHumidityPct": 87.79,
+          "rainyDayFraction": 0.4516
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 26.06,
+          "meanDailyHighC": 29.03,
+          "meanRainMmPerDay": 4.7575,
+          "meanRelativeHumidityPct": 88.4,
+          "rainyDayFraction": 0.4667
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.09,
+          "meanDailyHighC": 28.99,
+          "meanRainMmPerDay": 7.7205,
+          "meanRelativeHumidityPct": 89.7,
+          "rainyDayFraction": 0.5935
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 26.08,
+          "meanDailyHighC": 28.79,
+          "meanRainMmPerDay": 8.5766,
+          "meanRelativeHumidityPct": 90.74,
+          "rainyDayFraction": 0.6433
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.9,
+          "meanDailyHighC": 28.49,
+          "meanRainMmPerDay": 8.3929,
+          "meanRelativeHumidityPct": 91.63,
+          "rainyDayFraction": 0.7065
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Andean dry-season, northern-beach or urban/Amazon context. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          5,
+          6,
+          9,
+          10,
+          4,
+          8,
+          11,
+          3,
+          7,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.peru.travel/es/destinos"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          5,
+          6,
+          9,
+          10,
+          4,
+          8,
+          11,
+          3,
+          7,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.peru.travel/es/destinos"
+        ]
+      },
+      "events": [
+        {
+          "name": "Fiesta de San Juan",
+          "months": [
+            6
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://www.bcrp.gob.pe/docs/Sucursales/Iquitos/Loreto-Atractivos.pdf"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "peru",
+      "id": "arequipa",
+      "name": "Arequipa",
+      "area": "Southern highlands",
+      "latitude": -16.409,
+      "longitude": -71.5375,
+      "airports": [
+        [
+          "AQP",
+          "Arequipa"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 3,
+      "gridLatitude": null,
+      "gridLongitude": null,
+      "elevation": 3330.29,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-71.5375&latitude=-16.409&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; standard 19°C target.",
+      "climateTypeSources": [
+        "https://www.peru.travel/es/destinos"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 11.88,
+          "meanDailyHighC": 19.18,
+          "meanRainMmPerDay": 1.0936,
+          "meanRelativeHumidityPct": 66.58,
+          "rainyDayFraction": 0.3355
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 11.87,
+          "meanDailyHighC": 19.01,
+          "meanRainMmPerDay": 1.582,
+          "meanRelativeHumidityPct": 70.29,
+          "rainyDayFraction": 0.3675
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 11.81,
+          "meanDailyHighC": 19.08,
+          "meanRainMmPerDay": 1.0666,
+          "meanRelativeHumidityPct": 70.7,
+          "rainyDayFraction": 0.2806
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 11.58,
+          "meanDailyHighC": 19.79,
+          "meanRainMmPerDay": 0.3035,
+          "meanRelativeHumidityPct": 56.63,
+          "rainyDayFraction": 0.1033
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 10.72,
+          "meanDailyHighC": 19.28,
+          "meanRainMmPerDay": 0.1424,
+          "meanRelativeHumidityPct": 42.76,
+          "rainyDayFraction": 0.029
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 9.79,
+          "meanDailyHighC": 18.53,
+          "meanRainMmPerDay": 0.3199,
+          "meanRelativeHumidityPct": 38.66,
+          "rainyDayFraction": 0.0133
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 10.16,
+          "meanDailyHighC": 19.13,
+          "meanRainMmPerDay": 0.2752,
+          "meanRelativeHumidityPct": 33.95,
+          "rainyDayFraction": 0.0129
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 10.37,
+          "meanDailyHighC": 19.51,
+          "meanRainMmPerDay": 0.0193,
+          "meanRelativeHumidityPct": 32.3,
+          "rainyDayFraction": 0.0065
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 11.75,
+          "meanDailyHighC": 20.56,
+          "meanRainMmPerDay": 0.3338,
+          "meanRelativeHumidityPct": 36.24,
+          "rainyDayFraction": 0.0467
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 12.08,
+          "meanDailyHighC": 20.74,
+          "meanRainMmPerDay": 0.3983,
+          "meanRelativeHumidityPct": 40.55,
+          "rainyDayFraction": 0.0774
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 12.46,
+          "meanDailyHighC": 20.92,
+          "meanRainMmPerDay": 0.217,
+          "meanRelativeHumidityPct": 44.59,
+          "rainyDayFraction": 0.0633
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 12.25,
+          "meanDailyHighC": 20.02,
+          "meanRainMmPerDay": 0.6271,
+          "meanRelativeHumidityPct": 55.68,
+          "rainyDayFraction": 0.1452
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Andean dry-season, northern-beach or urban/Amazon context. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          2,
+          1,
+          3,
+          12,
+          11,
+          4,
+          10,
+          9,
+          5,
+          8,
+          6,
+          7
+        ],
+        "sourceUrls": [
+          "https://www.peru.travel/es/destinos"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          2,
+          1,
+          3,
+          12,
+          11,
+          4,
+          10,
+          9,
+          5,
+          8,
+          6,
+          7
+        ],
+        "sourceUrls": [
+          "https://www.peru.travel/es/destinos"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "peru",
+      "id": "puno",
+      "name": "Puno",
+      "area": "Lake Titicaca",
+      "latitude": -15.8402,
+      "longitude": -70.0219,
+      "airports": [
+        [
+          "JUL",
+          "Juliaca"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 4,
+      "gridLatitude": null,
+      "gridLongitude": null,
+      "elevation": 4105.46,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-70.0219&latitude=-15.8402&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; standard 19°C target.",
+      "climateTypeSources": [
+        "https://www.peru.travel/es/destinos"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 9.57,
+          "meanDailyHighC": 15.91,
+          "meanRainMmPerDay": 2.6466,
+          "meanRelativeHumidityPct": 65.69,
+          "rainyDayFraction": 0.5323
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 9.35,
+          "meanDailyHighC": 15.59,
+          "meanRainMmPerDay": 3.0911,
+          "meanRelativeHumidityPct": 69.78,
+          "rainyDayFraction": 0.6431
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 9.17,
+          "meanDailyHighC": 15.25,
+          "meanRainMmPerDay": 2.6932,
+          "meanRelativeHumidityPct": 70.99,
+          "rainyDayFraction": 0.4935
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 8.59,
+          "meanDailyHighC": 15.48,
+          "meanRainMmPerDay": 1.1822,
+          "meanRelativeHumidityPct": 63.77,
+          "rainyDayFraction": 0.22
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 7.04,
+          "meanDailyHighC": 14.73,
+          "meanRainMmPerDay": 0.5757,
+          "meanRelativeHumidityPct": 55.5,
+          "rainyDayFraction": 0.0968
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 5.75,
+          "meanDailyHighC": 13.76,
+          "meanRainMmPerDay": 0.4477,
+          "meanRelativeHumidityPct": 53.48,
+          "rainyDayFraction": 0.0367
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 6.06,
+          "meanDailyHighC": 13.8,
+          "meanRainMmPerDay": 0.9634,
+          "meanRelativeHumidityPct": 52.78,
+          "rainyDayFraction": 0.0226
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 6.69,
+          "meanDailyHighC": 14.7,
+          "meanRainMmPerDay": 0.0778,
+          "meanRelativeHumidityPct": 49.51,
+          "rainyDayFraction": 0.0129
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 8.25,
+          "meanDailyHighC": 15.52,
+          "meanRainMmPerDay": 0.5452,
+          "meanRelativeHumidityPct": 55.33,
+          "rainyDayFraction": 0.11
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 9.08,
+          "meanDailyHighC": 16.21,
+          "meanRainMmPerDay": 1.5642,
+          "meanRelativeHumidityPct": 55.35,
+          "rainyDayFraction": 0.1871
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 10.08,
+          "meanDailyHighC": 17.17,
+          "meanRainMmPerDay": 0.9402,
+          "meanRelativeHumidityPct": 53.66,
+          "rainyDayFraction": 0.1767
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 9.79,
+          "meanDailyHighC": 16.37,
+          "meanRainMmPerDay": 2.1897,
+          "meanRelativeHumidityPct": 60.93,
+          "rainyDayFraction": 0.3903
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Andean dry-season, northern-beach or urban/Amazon context. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          2,
+          1,
+          3,
+          12,
+          11,
+          4,
+          10,
+          9,
+          5,
+          8,
+          6,
+          7
+        ],
+        "sourceUrls": [
+          "https://www.peru.travel/es/destinos"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          2,
+          1,
+          3,
+          12,
+          11,
+          4,
+          10,
+          9,
+          5,
+          8,
+          6,
+          7
+        ],
+        "sourceUrls": [
+          "https://www.peru.travel/es/destinos"
+        ]
+      },
+      "events": [
+        {
+          "name": "Virgen de la Candelaria",
+          "months": [
+            2
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://ich.unesco.org/en/RL/festivity-of-virgen-de-la-candelaria-of-puno-00956"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "peru",
+      "id": "nazca",
+      "name": "Nazca",
+      "area": "Southern desert",
+      "latitude": -14.8359,
+      "longitude": -74.9328,
+      "airports": [
+        [
+          "LIM",
+          "Lima"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 5,
+      "gridLatitude": null,
+      "gridLongitude": null,
+      "elevation": 866.03,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-74.9328&latitude=-14.8359&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; standard 19°C target.",
+      "climateTypeSources": [
+        "https://www.peru.travel/es/destinos"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 21.87,
+          "meanDailyHighC": 27.26,
+          "meanRainMmPerDay": 0.4667,
+          "meanRelativeHumidityPct": 69.04,
+          "rainyDayFraction": 0.129
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 22.56,
+          "meanDailyHighC": 27.9,
+          "meanRainMmPerDay": 0.7421,
+          "meanRelativeHumidityPct": 70.14,
+          "rainyDayFraction": 0.1837
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 22.43,
+          "meanDailyHighC": 28.01,
+          "meanRainMmPerDay": 0.4126,
+          "meanRelativeHumidityPct": 69.36,
+          "rainyDayFraction": 0.1226
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 20.92,
+          "meanDailyHighC": 26.69,
+          "meanRainMmPerDay": 0.2335,
+          "meanRelativeHumidityPct": 67.35,
+          "rainyDayFraction": 0.0467
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 19.26,
+          "meanDailyHighC": 25.12,
+          "meanRainMmPerDay": 0.2636,
+          "meanRelativeHumidityPct": 63.97,
+          "rainyDayFraction": 0.0774
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 17.73,
+          "meanDailyHighC": 23.37,
+          "meanRainMmPerDay": 0.406,
+          "meanRelativeHumidityPct": 64.24,
+          "rainyDayFraction": 0.0567
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.36,
+          "meanDailyHighC": 23.13,
+          "meanRainMmPerDay": 0.2076,
+          "meanRelativeHumidityPct": 62.91,
+          "rainyDayFraction": 0.0548
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.45,
+          "meanDailyHighC": 23.42,
+          "meanRainMmPerDay": 0.157,
+          "meanRelativeHumidityPct": 59.71,
+          "rainyDayFraction": 0.0516
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 18.09,
+          "meanDailyHighC": 24.11,
+          "meanRainMmPerDay": 0.1779,
+          "meanRelativeHumidityPct": 58.83,
+          "rainyDayFraction": 0.0467
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.96,
+          "meanDailyHighC": 25.21,
+          "meanRainMmPerDay": 0.1791,
+          "meanRelativeHumidityPct": 58.92,
+          "rainyDayFraction": 0.0161
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 19.56,
+          "meanDailyHighC": 25.77,
+          "meanRainMmPerDay": 0.1762,
+          "meanRelativeHumidityPct": 60.84,
+          "rainyDayFraction": 0.0367
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 20.57,
+          "meanDailyHighC": 26.3,
+          "meanRainMmPerDay": 0.2817,
+          "meanRelativeHumidityPct": 65.82,
+          "rainyDayFraction": 0.0581
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Andean dry-season, northern-beach or urban/Amazon context. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          5,
+          6,
+          9,
+          10,
+          4,
+          8,
+          11,
+          3,
+          7,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.peru.travel/es/destinos"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          5,
+          6,
+          9,
+          10,
+          4,
+          8,
+          11,
+          3,
+          7,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.peru.travel/es/destinos"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "peru",
+      "id": "trujillo",
+      "name": "Trujillo",
+      "area": "Northern coast",
+      "latitude": -8.1116,
+      "longitude": -79.0287,
+      "airports": [
+        [
+          "TRU",
+          "Trujillo"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 6,
+      "gridLatitude": null,
+      "gridLongitude": null,
+      "elevation": 1872.38,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-79.0287&latitude=-8.1116&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; standard 19°C target.",
+      "climateTypeSources": [
+        "https://www.peru.travel/es/destinos"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.89,
+          "meanDailyHighC": 24.1,
+          "meanRainMmPerDay": 1.1113,
+          "meanRelativeHumidityPct": 72.92,
+          "rainyDayFraction": 0.2742
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 18.24,
+          "meanDailyHighC": 24.3,
+          "meanRainMmPerDay": 1.1826,
+          "meanRelativeHumidityPct": 75.14,
+          "rainyDayFraction": 0.3887
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.23,
+          "meanDailyHighC": 24.19,
+          "meanRainMmPerDay": 1.3974,
+          "meanRelativeHumidityPct": 74.9,
+          "rainyDayFraction": 0.4419
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 18.24,
+          "meanDailyHighC": 24.34,
+          "meanRainMmPerDay": 0.9258,
+          "meanRelativeHumidityPct": 73.06,
+          "rainyDayFraction": 0.2567
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.61,
+          "meanDailyHighC": 25.08,
+          "meanRainMmPerDay": 0.397,
+          "meanRelativeHumidityPct": 66.33,
+          "rainyDayFraction": 0.1323
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 17.93,
+          "meanDailyHighC": 24.95,
+          "meanRainMmPerDay": 0.4512,
+          "meanRelativeHumidityPct": 61.51,
+          "rainyDayFraction": 0.0467
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.99,
+          "meanDailyHighC": 25.47,
+          "meanRainMmPerDay": 0.291,
+          "meanRelativeHumidityPct": 57.9,
+          "rainyDayFraction": 0.029
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.43,
+          "meanDailyHighC": 25.65,
+          "meanRainMmPerDay": 0.0846,
+          "meanRelativeHumidityPct": 55.36,
+          "rainyDayFraction": 0.0194
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 18.78,
+          "meanDailyHighC": 25.52,
+          "meanRainMmPerDay": 0.2428,
+          "meanRelativeHumidityPct": 56.49,
+          "rainyDayFraction": 0.0833
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.23,
+          "meanDailyHighC": 24.43,
+          "meanRainMmPerDay": 0.7737,
+          "meanRelativeHumidityPct": 61.2,
+          "rainyDayFraction": 0.2581
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 17.83,
+          "meanDailyHighC": 24.15,
+          "meanRainMmPerDay": 0.8085,
+          "meanRelativeHumidityPct": 61.92,
+          "rainyDayFraction": 0.2333
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.64,
+          "meanDailyHighC": 23.72,
+          "meanRainMmPerDay": 0.9939,
+          "meanRelativeHumidityPct": 69.79,
+          "rainyDayFraction": 0.3419
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Andean dry-season, northern-beach or urban/Amazon context. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          5,
+          6,
+          9,
+          10,
+          4,
+          8,
+          11,
+          3,
+          7,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.peru.travel/es/destinos"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          5,
+          6,
+          9,
+          10,
+          4,
+          8,
+          11,
+          3,
+          7,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.peru.travel/es/destinos"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "peru",
+      "id": "mancora",
+      "name": "Máncora",
+      "area": "Northern beaches",
+      "latitude": -4.1078,
+      "longitude": -81.0475,
+      "airports": [
+        [
+          "TYL",
+          "Talara"
+        ],
+        [
+          "TBP",
+          "Tumbes"
+        ],
+        [
+          "PIU",
+          "Piura"
+        ]
+      ],
+      "climateType": "beach",
+      "regionIndex": 7,
+      "gridLatitude": null,
+      "gridLongitude": null,
+      "elevation": 20.6,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-81.0475&latitude=-4.1078&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Approved beach-oriented holiday base; 25°C target.",
+      "climateTypeSources": [
+        "https://www.peru.travel/es/destinos"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.23,
+          "meanDailyHighC": 26.3,
+          "meanRainMmPerDay": 0.793,
+          "meanRelativeHumidityPct": 83,
+          "rainyDayFraction": 0.1871
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 25.59,
+          "meanDailyHighC": 27.3,
+          "meanRainMmPerDay": 3.1034,
+          "meanRelativeHumidityPct": 82.51,
+          "rainyDayFraction": 0.4982
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.87,
+          "meanDailyHighC": 27.66,
+          "meanRainMmPerDay": 3.1801,
+          "meanRelativeHumidityPct": 80.86,
+          "rainyDayFraction": 0.3935
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 24.56,
+          "meanDailyHighC": 26.89,
+          "meanRainMmPerDay": 1.883,
+          "meanRelativeHumidityPct": 81.47,
+          "rainyDayFraction": 0.3033
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 23.45,
+          "meanDailyHighC": 26.04,
+          "meanRainMmPerDay": 0.5127,
+          "meanRelativeHumidityPct": 82.04,
+          "rainyDayFraction": 0.1
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 22.5,
+          "meanDailyHighC": 25.1,
+          "meanRainMmPerDay": 0.4073,
+          "meanRelativeHumidityPct": 81.87,
+          "rainyDayFraction": 0.0933
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 21.86,
+          "meanDailyHighC": 24.58,
+          "meanRainMmPerDay": 0.2377,
+          "meanRelativeHumidityPct": 81.36,
+          "rainyDayFraction": 0.0419
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 21.23,
+          "meanDailyHighC": 23.92,
+          "meanRainMmPerDay": 0.1335,
+          "meanRelativeHumidityPct": 81.28,
+          "rainyDayFraction": 0.0258
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 21.25,
+          "meanDailyHighC": 23.92,
+          "meanRainMmPerDay": 0.0751,
+          "meanRelativeHumidityPct": 80.65,
+          "rainyDayFraction": 0.0133
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 21.42,
+          "meanDailyHighC": 23.97,
+          "meanRainMmPerDay": 0.1398,
+          "meanRelativeHumidityPct": 80.94,
+          "rainyDayFraction": 0.029
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 21.58,
+          "meanDailyHighC": 23.9,
+          "meanRainMmPerDay": 0.1436,
+          "meanRelativeHumidityPct": 82.11,
+          "rainyDayFraction": 0.03
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 22.64,
+          "meanDailyHighC": 24.85,
+          "meanRainMmPerDay": 0.341,
+          "meanRelativeHumidityPct": 83.43,
+          "rainyDayFraction": 0.0742
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Andean dry-season, northern-beach or urban/Amazon context. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          6,
+          5,
+          9,
+          10,
+          4,
+          11,
+          8,
+          7,
+          3,
+          12,
+          2,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.peru.travel/es/destinos"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          6,
+          5,
+          9,
+          10,
+          4,
+          11,
+          8,
+          7,
+          3,
+          12,
+          2,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.peru.travel/es/destinos"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "peru",
+      "id": "puerto-maldonado",
+      "name": "Puerto Maldonado",
+      "area": "Southern Amazon",
+      "latitude": -12.5933,
+      "longitude": -69.1891,
+      "airports": [
+        [
+          "PEM",
+          "Puerto Maldonado"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 8,
+      "gridLatitude": null,
+      "gridLongitude": null,
+      "elevation": 243.34,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-69.1891&latitude=-12.5933&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; standard 19°C target.",
+      "climateTypeSources": [
+        "https://www.peru.travel/es/destinos"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.49,
+          "meanDailyHighC": 28.27,
+          "meanRainMmPerDay": 11.0796,
+          "meanRelativeHumidityPct": 91.76,
+          "rainyDayFraction": 0.7387
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 25.38,
+          "meanDailyHighC": 28.09,
+          "meanRainMmPerDay": 10.99,
+          "meanRelativeHumidityPct": 92.54,
+          "rainyDayFraction": 0.8057
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.32,
+          "meanDailyHighC": 28.14,
+          "meanRainMmPerDay": 10.2169,
+          "meanRelativeHumidityPct": 92.18,
+          "rainyDayFraction": 0.6065
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 24.93,
+          "meanDailyHighC": 28.05,
+          "meanRainMmPerDay": 6.0384,
+          "meanRelativeHumidityPct": 91.47,
+          "rainyDayFraction": 0.52
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.03,
+          "meanDailyHighC": 27.54,
+          "meanRainMmPerDay": 2.6841,
+          "meanRelativeHumidityPct": 90.56,
+          "rainyDayFraction": 0.329
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 23.31,
+          "meanDailyHighC": 27.17,
+          "meanRainMmPerDay": 2.4747,
+          "meanRelativeHumidityPct": 89.82,
+          "rainyDayFraction": 0.2167
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 23.19,
+          "meanDailyHighC": 27.79,
+          "meanRainMmPerDay": 1.6459,
+          "meanRelativeHumidityPct": 85.79,
+          "rainyDayFraction": 0.1452
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.71,
+          "meanDailyHighC": 30.23,
+          "meanRainMmPerDay": 1.2999,
+          "meanRelativeHumidityPct": 76.4,
+          "rainyDayFraction": 0.1548
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 27.49,
+          "meanDailyHighC": 33.4,
+          "meanRainMmPerDay": 2.2076,
+          "meanRelativeHumidityPct": 69.44,
+          "rainyDayFraction": 0.2633
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.8,
+          "meanDailyHighC": 32.88,
+          "meanRainMmPerDay": 5.2257,
+          "meanRelativeHumidityPct": 73.64,
+          "rainyDayFraction": 0.4742
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 26.83,
+          "meanDailyHighC": 30.84,
+          "meanRainMmPerDay": 8.2945,
+          "meanRelativeHumidityPct": 81.45,
+          "rainyDayFraction": 0.5267
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.77,
+          "meanDailyHighC": 28.66,
+          "meanRainMmPerDay": 13.6567,
+          "meanRelativeHumidityPct": 90.45,
+          "rainyDayFraction": 0.7484
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Andean dry-season, northern-beach or urban/Amazon context. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          5,
+          6,
+          9,
+          10,
+          4,
+          8,
+          11,
+          3,
+          7,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.peru.travel/es/destinos"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          5,
+          6,
+          9,
+          10,
+          4,
+          8,
+          11,
+          3,
+          7,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.peru.travel/es/destinos"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
     }
   ],
   "destinationTypeAssignments": {

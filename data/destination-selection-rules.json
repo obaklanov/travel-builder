@@ -1,6 +1,6 @@
 {
   "updated": "2026-11-06",
-  "status": "Approved Portugal, Colombia, Italy, Spain, UK and France destinations integrated; historical climate and provisional crowd/price/event inputs.",
+  "status": "Approved Portugal, Colombia, Italy, Spain, UK, France and Peru destinations integrated.",
   "coveragePolicy": {
     "expandedCoverage": [
       "South America",
@@ -698,6 +698,112 @@
           "climateType": "beach",
           "airportCandidates": [
             "BIQ"
+          ]
+        }
+      ]
+    },
+    "peru": {
+      "approvedAt": "2026-11-06",
+      "liveLabelsUpdated": true,
+      "excludedProposals": [
+        "Paracas",
+        "Huaraz",
+        "Chachapoyas"
+      ],
+      "indexCompatibility": "Existing Lima, Cusco, Iquitos positions retained.",
+      "airportPolicy": "Gateway airport is separate from the stay. Puno via Juliaca; Nazca via Lima followed by a long ground journey. Máncora via Talara, Tumbes or Piura. Transfers are not included in sample fares or journey hours.",
+      "seasonalityStatus": "Historical 2016–2025 NASA POWER/MERRA-2; current climate-type rules, 60/20/10/10 weights and 4/4/4 bands. Crowd and price inputs are provisional editorial orders; event coverage is partial.",
+      "destinations": [
+        {
+          "name": "Lima",
+          "area": "Central coast",
+          "climateType": "standard",
+          "airportCandidates": [
+            "LIM"
+          ]
+        },
+        {
+          "name": "Cusco",
+          "area": "Southern Andes",
+          "climateType": "standard",
+          "airportCandidates": [
+            "CUZ"
+          ],
+          "nearbyPlaces": [
+            "Sacred Valley"
+          ],
+          "treasures": [
+            "Machu Picchu"
+          ]
+        },
+        {
+          "name": "Iquitos",
+          "area": "Northern Amazon",
+          "climateType": "standard",
+          "airportCandidates": [
+            "IQT"
+          ]
+        },
+        {
+          "name": "Arequipa",
+          "area": "Southern highlands",
+          "climateType": "standard",
+          "airportCandidates": [
+            "AQP"
+          ]
+        },
+        {
+          "name": "Puno",
+          "area": "Lake Titicaca",
+          "climateType": "standard",
+          "airportCandidates": [
+            "JUL"
+          ],
+          "treasures": [
+            "Lake Titicaca"
+          ]
+        },
+        {
+          "name": "Nazca",
+          "area": "Southern desert",
+          "climateType": "standard",
+          "airportCandidates": [
+            "LIM"
+          ],
+          "treasures": [
+            "Nazca Lines"
+          ]
+        },
+        {
+          "name": "Trujillo",
+          "area": "Northern coast",
+          "climateType": "standard",
+          "airportCandidates": [
+            "TRU"
+          ],
+          "nearbyPlaces": [
+            "Huanchaco"
+          ]
+        },
+        {
+          "name": "Máncora",
+          "area": "Northern beaches",
+          "climateType": "beach",
+          "airportCandidates": [
+            "TYL",
+            "TBP",
+            "PIU"
+          ]
+        },
+        {
+          "name": "Puerto Maldonado",
+          "area": "Southern Amazon",
+          "climateType": "standard",
+          "airportCandidates": [
+            "PEM"
+          ],
+          "nearbyPlaces": [
+            "Tambopata"
           ]
         }
       ]
