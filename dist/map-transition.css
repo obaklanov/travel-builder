@@ -111,3 +111,6 @@
 .detail-panel .season-table .season-cell-choice{display:block;min-height:46px;padding:14px 4px}
 
 .season-climate-type{display:block;margin-top:4px;font:500 10px var(--sans);color:#42647c}
+
+/* Readable table text in the country detail panels, including expanded season tables. */
+.detail-panel table,.detail-panel table th,.detail-panel table td{font-size:12px}
