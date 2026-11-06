@@ -1290,18 +1290,12 @@ const treasurePhotos = {
     "bytes": 47924
   },
   "Big Ben": {
-    "author": "Bill Peloquin",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Big_Ben_London_Daylight_4.jpg",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "originalTitle": "File:Big Ben London Daylight 4.jpg",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Big_Ben_London_Daylight_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "src": "images/treasures/united-kingdom-1-new.webp",
-    "alt": "Big Ben and the Palace of Westminster — United Kingdom",
-    "width": 640,
-    "height": 425,
-    "bytes": 51022
-  },
+    "src": "images/treasures/uk-big-ben-owner.png",
+    "alt": "Big Ben, the Palace of Westminster and Westminster Bridge beside the River Thames at sunset",
+    "width": 1173,
+    "height": 760,
+    "suppliedByOwner": true
+},
   "Stonehenge": {
     "author": "Diego Delso",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stonehenge,_Condado_de_Wiltshire,_Inglaterra,_2014-08-12,_DD_18.JPG",
