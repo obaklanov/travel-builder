@@ -61,14 +61,14 @@
     "destinationTypePolicy": "Exactly one active primary climate type per base. Beach means a beach-oriented holiday base; winter means a well-established ski/winter-holiday base. A coast or Christmas market alone does not classify every mixed-purpose city. This editorial assignment is reviewable and is not a claim that the base has only one season. All season uses a temperature comfort interval, not a single target. Named owner-approved assignments override a later imported profile default. All season has no forced temperature-component bands; rain, humidity, combined climate and final tourist ratings retain within-base ranks.",
     "allSeason": {
       "temperatureRangeC": [
-        -5,
+        5,
         25
       ],
       "penaltyPointsPerDegree": 5,
-      "rainWeight": 0.8,
-      "humidityWeight": 0.2,
-      "formula": "MAX(0, rain rank score × 0.80 + humidity rank score × 0.20 − 5 × MAX(−5 − daily mean °C, 0, daily mean °C − 25)). Rain target 0 mm/day. Inclusive neutral range; no temperature rank.",
-      "rainTargetMmPerDay": 0
+      "rainWeight": 0.6,
+      "humidityWeight": 0.4,
+      "formula": "MAX(0, rain rank score × 0.60 + humidity rank score × 0.40 − 5 × MAX(5 − daily mean °C, 0, daily mean °C − 25)). Rain target 5 mm/day. Inclusive neutral range; no temperature rank.",
+      "rainTargetMmPerDay": 5
     },
     "beachTemperatureWeightMultiplier": 2,
     "beach": {
@@ -7359,7 +7359,7 @@
       "gridLongitude": -3.25,
       "elevation": 69,
       "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=55.9533&longitude=-3.1883&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FLondon&models=era5",
-      "climateTypeReason": "Owner-approved All season destination; temperature neutral from −5 to 25°C.",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
       "climateTypeSources": [
         "https://www.visitbritain.com/en/destinations"
       ],
@@ -8933,7 +8933,7 @@
       "gridLongitude": -4.25,
       "elevation": 15,
       "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=57.4778&longitude=-4.2247&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FLondon&models=era5",
-      "climateTypeReason": "Owner-approved All season destination; temperature neutral from −5 to 25°C.",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
       "climateTypeSources": [
         "https://www.visitbritain.com/en/destinations"
       ],
@@ -9111,7 +9111,7 @@
       "gridLongitude": -5,
       "elevation": 7,
       "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=56.8198&longitude=-5.1052&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FLondon&models=era5",
-      "climateTypeReason": "Owner-approved All season destination; temperature neutral from −5 to 25°C.",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
       "climateTypeSources": [
         "https://www.visitbritain.com/en/destinations"
       ],
@@ -9280,7 +9280,7 @@
       "gridLongitude": -6,
       "elevation": 17,
       "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=57.4125&longitude=-6.1942&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FLondon&models=era5",
-      "climateTypeReason": "Owner-approved All season destination; temperature neutral from −5 to 25°C.",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
       "climateTypeSources": [
         "https://www.visitbritain.com/en/destinations"
       ],
@@ -10809,7 +10809,7 @@
       "gridLongitude": 7.75,
       "elevation": 142,
       "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=48.5734&longitude=7.7521&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FParis&models=era5",
-      "climateTypeReason": "Owner-approved All season destination; temperature neutral from −5 to 25°C.",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
       "climateTypeSources": [
         "https://www.france.fr/en/destination/?page=1"
       ],
@@ -14210,7 +14210,7 @@
       "gridLongitude": -72.2648,
       "elevation": 868.68,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-72.2648&latitude=-50.3378&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Owner-approved All season destination; temperature neutral from −5 to 25°C.",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
       "climateTypeSources": [
         "https://www.argentina.travel/en/news/what-to-do-in-argentinas-most-sought-after-tourist-destinations"
       ],
@@ -14375,7 +14375,7 @@
       "gridLongitude": -68.303,
       "elevation": 268.93,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-68.303&latitude=-54.8019&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Owner-approved All season destination; temperature neutral from −5 to 25°C.",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
       "climateTypeSources": [
         "https://www.argentina.travel/en/news/what-to-do-in-argentinas-most-sought-after-tourist-destinations"
       ],
@@ -15419,13 +15419,13 @@
     "argentina:el-calafate": {
       "name": "El Calafate",
       "climateType": "all-season",
-      "reason": "Owner-approved broader All season concept: temperature neutral from −5 to 25°C; rain-focused climate score.",
+      "reason": "Owner-approved broader All season concept: temperature neutral from +5 to +25°C; rain-focused climate score.",
       "status": "Integrated with Argentina rollout, 6 November 2026."
     },
     "argentina:ushuaia": {
       "name": "Ushuaia",
       "climateType": "all-season",
-      "reason": "Owner-approved broader All season concept: temperature neutral from −5 to 25°C; rain-focused climate score.",
+      "reason": "Owner-approved broader All season concept: temperature neutral from +5 to +25°C; rain-focused climate score.",
       "status": "Integrated with Argentina rollout, 6 November 2026."
     }
   }

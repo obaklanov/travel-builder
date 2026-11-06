@@ -983,13 +983,13 @@
     "argentina:el-calafate": {
       "name": "El Calafate",
       "climateType": "all-season",
-      "reason": "Owner-approved broader All season concept: temperature neutral from −5 to 25°C; rain-focused climate score.",
+      "reason": "Owner-approved broader All season concept: temperature neutral from +5 to +25°C; rain-focused climate score.",
       "status": "Integrated with Argentina rollout, 6 November 2026."
     },
     "argentina:ushuaia": {
       "name": "Ushuaia",
       "climateType": "all-season",
-      "reason": "Owner-approved broader All season concept: temperature neutral from −5 to 25°C; rain-focused climate score.",
+      "reason": "Owner-approved broader All season concept: temperature neutral from +5 to +25°C; rain-focused climate score.",
       "status": "Integrated with Argentina rollout, 6 November 2026."
     }
   }
