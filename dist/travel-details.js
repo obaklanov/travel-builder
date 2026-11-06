@@ -51,7 +51,7 @@ const regionGeographyLabels={
     "Cartagena / North",
     "Medellín / West",
     "Bogotá / Center",
-    "Coffee region / Center"
+    "Salento (Coffee region)"
   ],
   "morocco": [
     "Marrakech / Center",
@@ -115,6 +115,13 @@ const regionGeographyLabels={
   ]
 };
 for(const [key,labels] of Object.entries(regionGeographyLabels))travelData[key].regions.forEach((region,index)=>{region[0]=labels[index];});
+// Approved Colombia destinations. Existing four indices stay stable for saved links.
+travelData.colombia.regions.push(...['Santa Marta (Caribbean coast)','Cali (Southwest)','Barranquilla (Caribbean coast)','Bucaramanga (Santander)','San Andrés (Caribbean islands)'].map(name=>[name,'????????????']));
+travelData.colombia.regions[0][0]='Cartagena (Caribbean coast)';
+travelData.colombia.regions[1][0]='Medellín (Antioquia)';
+travelData.colombia.regions[2][0]='Bogotá (Central highlands)';
+travelData.colombia.seasonNote='Existing four seasonal patterns are legacy editorial estimates. Season ratings for the five newly added destinations are pending review. Country-level cost and flight samples remain estimates; airport-to-town transfers are not yet included.';
+travelData.colombia.seasonSources=[{label:'Colombia Travel: destination regions',url:'https://colombia.travel/en/where-to-go'}];
 // Display geographic qualifiers consistently in brackets.
 for(const data of Object.values(travelData))data.regions.forEach(region=>{region[0]=region[0].replace(/ \/ (North|South|Center|West|East|Islands)$/, ' ($1)');});
 const departureCities=[['YYZ','Toronto'],['YVR','Vancouver'],['YUL','Montréal'],['YYC','Calgary'],['YEG','Edmonton']];
@@ -144,7 +151,7 @@ function renderTravelDetail(key,kind){
  panel.querySelector('.trip-region-summary').textContent=getBudgetState(key).regionChoice.region+' · '+travelMonthLabel(request.departureDate.slice(0,7));
  panel.querySelector('#route-results').innerHTML=`<div class="table-scroll"><table><thead><tr><th>Arrival hub</th><th>Return CAD</th><th>Journey out</th><th>Dates & fares</th></tr></thead><tbody>${routes.map(r=>`<tr><td>${r.city} (${r.code})</td><td>${r.verified?'':'Sample '}$${r.price}</td><td>${r.verified?'':'~'}${r.time} h</td><td><a class="flight-search-button" target="_blank" rel="noopener noreferrer" aria-label="Search flights from ${request.origin} to ${r.code}" href="${flightSearchUrl(request,r.code)}">Search flights ↗</a></td></tr>`).join('')}</tbody></table></div><p>Check stops, layovers and baggage in Google Flights.</p>`;};panel.querySelector('select').onchange=update;bindDepartureDate(key,panel,update);update();
  }else if(kind==='season'){
- panel.innerHTML=`<h3>WHEN. What month best to go?</h3><div class="table-scroll"><table class="season-table"><colgroup><col class="season-region-col">${Array.from({length:12},()=>'<col class="season-month-col">').join('')}</colgroup><thead><tr><th>Region</th>${['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'].map(m=>`<th>${m}</th>`).join('')}</tr></thead><tbody>${d.regions.map(([region,months])=>`<tr><th>${region}</th>${[...months].map(c=>{const text={B:'BEST',A:'AVERAGE',W:'WORST'}[c];return `<td class="${text.toLowerCase()}">${text}</td>`}).join('')}</tr>`).join('')}</tbody></table></div><p><a href="https://climateknowledgeportal.worldbank.org/" target="_blank" rel="noopener noreferrer">Explore World Bank climate data ↗</a></p>`;
+ panel.innerHTML=`<h3>WHEN. What month best to go?</h3><div class="table-scroll"><table class="season-table"><colgroup><col class="season-region-col">${Array.from({length:12},()=>'<col class="season-month-col">').join('')}</colgroup><thead><tr><th>Region</th>${['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'].map(m=>`<th>${m}</th>`).join('')}</tr></thead><tbody>${d.regions.map(([region,months])=>`<tr><th>${region}</th>${[...months].map(c=>{const text={B:'BEST',A:'AVERAGE',W:'WORST'}[c]||'PENDING';return `<td class="${text.toLowerCase()}">${text}</td>`}).join('')}</tr>`).join('')}</tbody></table></div><p><a href="https://climateknowledgeportal.worldbank.org/" target="_blank" rel="noopener noreferrer">Explore World Bank climate data ↗</a></p>`;
 
  if(d.seasonSources){const note=document.createElement('p');note.className='estimate-note';note.textContent=d.seasonNote;panel.append(note);for(const source of d.seasonSources){const p=document.createElement('p'),link=document.createElement('a');link.href=source.url;link.textContent=source.label+' ↗';link.target='_blank';link.rel='noopener noreferrer';p.append(link);panel.append(p);}}
  setupSeasonChoice(key,panel);
@@ -310,7 +317,7 @@ const regionGateways = {
 "philippines":[["MNL"],["CEB"],["PPS"],["MPH"]],
 "malaysia":[["KUL"],["PEN","LGK"],["TGG"],["BKI"],["KCH"]],
 "brunei":[["BWN"],["BWN"]],
-"france":[["CDG"], ["CDG"], ["MRS"], ["NCE"], ["LYS"], ["AJA"]],"united-kingdom":[["LHR"], ["EDI"], ["MAN"], ["BFS"]],"turkey":[["IST"], ["ASR"], ["AYT"], ["ADB"], ["TZX"]],"peru":[["LIM"], ["CUZ"], ["IQT"]],"brazil":[["GIG"], ["SSA"], ["MAO"], ["IGU"], ["SLZ"]],"south-africa":[["CPT"], ["JNB"], ["DUR"], ["GRJ"]],"south-korea":[["ICN"], ["PUS"], ["CJU"]],"australia":[["SYD"], ["MEL"], ["CNS"], ["AYQ"], ["PER"], ["DRW"]],"spain":[["MAD"], ["BCN"], ["AGP"], ["BIO"], ["PMI"], ["TFS"]],"greece":[["ATH"], ["SKG"], ["JTR"], ["HER"], ["CFU"]],"costa-rica": [["SJO"],["SJO","LIR"],["SJO"]],"indonesia":[["DPS"], ["CGK"], ["YIA"], ["LOP"], ["LBJ"]],"united-states": [["JFK"], ["MIA"], ["LAX"], ["LAX"], ["SEA"]], "vietnam": [["HAN"], ["DAD"], ["SGN"], ["PQC"]], "colombia": [["CTG"], ["MDE"], ["BOG"], ["PEI"]], "morocco": [["RAK"], ["FEZ"], ["AGA"], ["CMN"]], "egypt": [["CAI"], ["LXR"], ["HRG"], ["CAI"]], "new-zealand": [["AKL"], ["AKL"], ["WLG"], ["ZQN"], ["ZQN"]], "argentina": [["EZE"], ["IGR"], ["MDZ"], ["FTE"], ["BRC"], ["SLA"]], "italy": [["FCO"], ["VCE"], ["FLR"], ["NAP"], ["CTA"], ["VCE"]], "mexico": [["CUN"], ["MEX"], ["OAX"], ["PVR"], ["SJD"]], "japan": [["HND", "NRT", "KIX"], ["CTS"], ["OKA"]], "portugal": [["LIS"], ["OPO"], ["FAO"], ["FNC"], ["PDL"]], "thailand": [["BKK"], ["CNX"], ["HKT"], ["USM"]]};
+"france":[["CDG"], ["CDG"], ["MRS"], ["NCE"], ["LYS"], ["AJA"]],"united-kingdom":[["LHR"], ["EDI"], ["MAN"], ["BFS"]],"turkey":[["IST"], ["ASR"], ["AYT"], ["ADB"], ["TZX"]],"peru":[["LIM"], ["CUZ"], ["IQT"]],"brazil":[["GIG"], ["SSA"], ["MAO"], ["IGU"], ["SLZ"]],"south-africa":[["CPT"], ["JNB"], ["DUR"], ["GRJ"]],"south-korea":[["ICN"], ["PUS"], ["CJU"]],"australia":[["SYD"], ["MEL"], ["CNS"], ["AYQ"], ["PER"], ["DRW"]],"spain":[["MAD"], ["BCN"], ["AGP"], ["BIO"], ["PMI"], ["TFS"]],"greece":[["ATH"], ["SKG"], ["JTR"], ["HER"], ["CFU"]],"costa-rica": [["SJO"],["SJO","LIR"],["SJO"]],"indonesia":[["DPS"], ["CGK"], ["YIA"], ["LOP"], ["LBJ"]],"united-states": [["JFK"], ["MIA"], ["LAX"], ["LAX"], ["SEA"]], "vietnam": [["HAN"], ["DAD"], ["SGN"], ["PQC"]], "colombia": [["CTG"], ["MDE"], ["BOG"], ["PEI","AXM"], ["SMR"], ["CLO"], ["BAQ"], ["BGA"], ["ADZ"]], "morocco": [["RAK"], ["FEZ"], ["AGA"], ["CMN"]], "egypt": [["CAI"], ["LXR"], ["HRG"], ["CAI"]], "new-zealand": [["AKL"], ["AKL"], ["WLG"], ["ZQN"], ["ZQN"]], "argentina": [["EZE"], ["IGR"], ["MDZ"], ["FTE"], ["BRC"], ["SLA"]], "italy": [["FCO"], ["VCE"], ["FLR"], ["NAP"], ["CTA"], ["VCE"]], "mexico": [["CUN"], ["MEX"], ["OAX"], ["PVR"], ["SJD"]], "japan": [["HND", "NRT", "KIX"], ["CTS"], ["OKA"]], "portugal": [["LIS"], ["OPO"], ["FAO"], ["FNC"], ["PDL"]], "thailand": [["BKK"], ["CNX"], ["HKT"], ["USM"]]};
 function regionalAirports(key,request){
  const codes=regionGateways[key]?.[request.regionIndex];
  return codes?travelData[key].airports.filter(([code])=>codes.includes(code)):travelData[key].airports;
@@ -339,7 +346,7 @@ function setupSeasonChoice(key,panel){
  };
 }
 
-for(const [key,airports] of Object.entries({"united-states": [["SEA", "Seattle"]], "vietnam": [["PQC", "Phu Quoc"]], "colombia": [["PEI", "Pereira"]], "argentina": [["IGR", "Puerto Iguazú"], ["FTE", "El Calafate"], ["SLA", "Salta"]], "italy": [["FLR", "Florence"], ["CTA", "Catania"]], "mexico": [["OAX", "Oaxaca"], ["PVR", "Puerto Vallarta"]], "japan": [["CTS", "Sapporo New Chitose"], ["OKA", "Okinawa Naha"]], "portugal": [["FNC", "Funchal"]]}))travelData[key].airports.push(...airports);
+for(const [key,airports] of Object.entries({"united-states": [["SEA", "Seattle"]], "vietnam": [["PQC", "Phu Quoc"]], "colombia": [["PEI", "Pereira"], ["AXM", "Armenia"], ["SMR", "Santa Marta"], ["BAQ", "Barranquilla"], ["BGA", "Bucaramanga"], ["ADZ", "San Andrés"]], "argentina": [["IGR", "Puerto Iguazú"], ["FTE", "El Calafate"], ["SLA", "Salta"]], "italy": [["FLR", "Florence"], ["CTA", "Catania"]], "mexico": [["OAX", "Oaxaca"], ["PVR", "Puerto Vallarta"]], "japan": [["CTS", "Sapporo New Chitose"], ["OKA", "Okinawa Naha"]], "portugal": [["FNC", "Funchal"]]}))travelData[key].airports.push(...airports);
 
 function roundBudgetRate(value,index){const step=index===0?10:5;return Math.max(0,Math.min(100000,Math.round((Number(value)||0)/step)*step));}
 function budgetSuggestedAmounts(value,index){

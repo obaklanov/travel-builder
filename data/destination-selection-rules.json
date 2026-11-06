@@ -1,6 +1,6 @@
 {
   "updated": "2026-11-06",
-  "status": "User-approved destination selection; detailed hub data and live planner integration pending",
+  "status": "Approved lists connected to live destination selectors; new Colombia seasonal ratings and detailed hub data pending review",
   "coveragePolicy": {
     "expandedCoverage": [
       "South America",
@@ -100,7 +100,14 @@
           "https://satena.com/en/vuelos-nacionales/providencia"
         ]
       },
-      "liveIntegrationPending": true
+      "liveIntegrationPending": false,
+      "seasonReviewPending": [
+        "Santa Marta",
+        "Cali",
+        "Barranquilla",
+        "Bucaramanga",
+        "San Andrés"
+      ]
     }
   }
 }
