@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "reviewedAt": "2026-11-06",
   "climate": {
     "period": "2016-01-01/2025-12-31",
@@ -33,10 +33,15 @@
     "calendar": "Typical recurring months, not guaranteed event schedules. Carnival and Santo Cristo follow Easter; Easter demand shifts are approximations. Confirm event dates before travel.",
     "limitations": "Crowd and price inputs are provisional editorial proxies and must be replaced by measured monthly data when available. Full-month averages hide short holiday spikes; climate grid cells can miss coastal and mountain microclimates.",
     "ranking": "Within each base only: ranks 1–4 BEST, 5–8 AVERAGE, 9–12 WORST. Equal values use January–December order to enforce exactly four per band.",
-    "temperatureTargetC": 20,
     "humidityTargetPct": 55,
-    "climateScoring": "Temperature: absolute distance from 20°C; rain: absolute distance from 5 mm/calendar day; humidity: absolute distance from 55%. Rank each across this base’s 12 months; score = 100 × (12 − rank) / 11. Equal deviations are equally preferred before calendar-order tie-breaking to preserve 4/4/4 bands. Climate is the 50/30/20 weighted component score.",
-    "rainTargetMmPerDay": 5
+    "climateScoring": "Temperature: absolute distance from base-type target (standard 19°C, beach 25°C, winter −5°C); rain: absolute distance from 5 mm/calendar day; humidity: absolute distance from 55%. Rank only the base’s own 12 months; rank score = 100 × (12 − rank) / 11. Climate is 50% temperature, 30% rain, 20% humidity. Symmetric deviations, then calendar-order tie-breaking, preserve 4/4/4 bands.",
+    "rainTargetMmPerDay": 5,
+    "temperatureTargetsC": {
+      "standard": 19,
+      "beach": 25,
+      "winter": -5
+    },
+    "destinationTypePolicy": "Exactly one active primary climate type per base. Beach means a beach-oriented holiday base; winter means a well-established ski/winter-holiday base. A coast or Christmas market alone does not classify every mixed-purpose city. This editorial assignment is reviewable and is not a claim that the base has only one season."
   },
   "profiles": [
     {
@@ -198,7 +203,10 @@
       ],
       "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur.",
       "climateMeanTemperatureSource": "https://archive-api.open-meteo.com/v1/archive?latitude=38.7223&longitude=-9.1393&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean&timezone=auto&models=era5",
-      "climateRainAmountSource": "https://archive-api.open-meteo.com/v1/archive?latitude=38.7223&longitude=-9.1393&start_date=2016-01-01&end_date=2025-12-31&daily=rain_sum&timezone=auto&models=era5"
+      "climateRainAmountSource": "https://archive-api.open-meteo.com/v1/archive?latitude=38.7223&longitude=-9.1393&start_date=2016-01-01&end_date=2025-12-31&daily=rain_sum&timezone=auto&models=era5",
+      "climateType": "standard",
+      "climateTypeReason": "General sightseeing / mixed-purpose destination; no specialised beach or winter target assigned.",
+      "climateTypeSources": []
     },
     {
       "id": "porto",
@@ -359,7 +367,10 @@
       ],
       "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur.",
       "climateMeanTemperatureSource": "https://archive-api.open-meteo.com/v1/archive?latitude=41.1579&longitude=-8.6291&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean&timezone=auto&models=era5",
-      "climateRainAmountSource": "https://archive-api.open-meteo.com/v1/archive?latitude=41.1579&longitude=-8.6291&start_date=2016-01-01&end_date=2025-12-31&daily=rain_sum&timezone=auto&models=era5"
+      "climateRainAmountSource": "https://archive-api.open-meteo.com/v1/archive?latitude=41.1579&longitude=-8.6291&start_date=2016-01-01&end_date=2025-12-31&daily=rain_sum&timezone=auto&models=era5",
+      "climateType": "standard",
+      "climateTypeReason": "General sightseeing / mixed-purpose destination; no specialised beach or winter target assigned.",
+      "climateTypeSources": []
     },
     {
       "id": "faro",
@@ -528,7 +539,12 @@
       ],
       "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur.",
       "climateMeanTemperatureSource": "https://archive-api.open-meteo.com/v1/archive?latitude=37.0194&longitude=-7.9322&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean&timezone=auto&models=era5",
-      "climateRainAmountSource": "https://archive-api.open-meteo.com/v1/archive?latitude=37.0194&longitude=-7.9322&start_date=2016-01-01&end_date=2025-12-31&daily=rain_sum&timezone=auto&models=era5"
+      "climateRainAmountSource": "https://archive-api.open-meteo.com/v1/archive?latitude=37.0194&longitude=-7.9322&start_date=2016-01-01&end_date=2025-12-31&daily=rain_sum&timezone=auto&models=era5",
+      "climateType": "beach",
+      "climateTypeReason": "Represents Algarve beach-oriented stays and Faro / Ria Formosa island beaches; the historic city itself is not a purpose-built resort.",
+      "climateTypeSources": [
+        "https://www.visitportugal.com/sites/default/files/N4.BRO_New3_Algarve_TurismoNatureza_EN_1.pdf"
+      ]
     },
     {
       "id": "funchal",
@@ -739,7 +755,10 @@
       ],
       "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur.",
       "climateMeanTemperatureSource": "https://archive-api.open-meteo.com/v1/archive?latitude=32.6669&longitude=-16.9241&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean&timezone=auto&models=era5",
-      "climateRainAmountSource": "https://archive-api.open-meteo.com/v1/archive?latitude=32.6669&longitude=-16.9241&start_date=2016-01-01&end_date=2025-12-31&daily=rain_sum&timezone=auto&models=era5"
+      "climateRainAmountSource": "https://archive-api.open-meteo.com/v1/archive?latitude=32.6669&longitude=-16.9241&start_date=2016-01-01&end_date=2025-12-31&daily=rain_sum&timezone=auto&models=era5",
+      "climateType": "standard",
+      "climateTypeReason": "General sightseeing / mixed-purpose destination; no specialised beach or winter target assigned.",
+      "climateTypeSources": []
     },
     {
       "id": "ponta-delgada",
@@ -900,7 +919,10 @@
       ],
       "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur.",
       "climateMeanTemperatureSource": "https://archive-api.open-meteo.com/v1/archive?latitude=37.739&longitude=-25.6687&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean&timezone=auto&models=era5",
-      "climateRainAmountSource": "https://archive-api.open-meteo.com/v1/archive?latitude=37.739&longitude=-25.6687&start_date=2016-01-01&end_date=2025-12-31&daily=rain_sum&timezone=auto&models=era5"
+      "climateRainAmountSource": "https://archive-api.open-meteo.com/v1/archive?latitude=37.739&longitude=-25.6687&start_date=2016-01-01&end_date=2025-12-31&daily=rain_sum&timezone=auto&models=era5",
+      "climateType": "standard",
+      "climateTypeReason": "General sightseeing / mixed-purpose destination; no specialised beach or winter target assigned.",
+      "climateTypeSources": []
     },
     {
       "id": "cartagena",
@@ -1069,7 +1091,12 @@
       ],
       "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur.",
       "climateMeanTemperatureSource": "https://archive-api.open-meteo.com/v1/archive?latitude=10.391&longitude=-75.4794&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean&timezone=auto&models=era5",
-      "climateRainAmountSource": "https://archive-api.open-meteo.com/v1/archive?latitude=10.391&longitude=-75.4794&start_date=2016-01-01&end_date=2025-12-31&daily=rain_sum&timezone=auto&models=era5"
+      "climateRainAmountSource": "https://archive-api.open-meteo.com/v1/archive?latitude=10.391&longitude=-75.4794&start_date=2016-01-01&end_date=2025-12-31&daily=rain_sum&timezone=auto&models=era5",
+      "climateType": "beach",
+      "climateTypeReason": "Caribbean sun-and-sand travel in Cartagena and surrounding beach/island areas, alongside the historic city.",
+      "climateTypeSources": [
+        "https://colombia.travel/en/cartagena/sun-and-sand"
+      ]
     },
     {
       "id": "medellin",
@@ -1230,7 +1257,10 @@
       ],
       "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur.",
       "climateMeanTemperatureSource": "https://archive-api.open-meteo.com/v1/archive?latitude=6.2442&longitude=-75.5812&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean&timezone=auto&models=era5",
-      "climateRainAmountSource": "https://archive-api.open-meteo.com/v1/archive?latitude=6.2442&longitude=-75.5812&start_date=2016-01-01&end_date=2025-12-31&daily=rain_sum&timezone=auto&models=era5"
+      "climateRainAmountSource": "https://archive-api.open-meteo.com/v1/archive?latitude=6.2442&longitude=-75.5812&start_date=2016-01-01&end_date=2025-12-31&daily=rain_sum&timezone=auto&models=era5",
+      "climateType": "standard",
+      "climateTypeReason": "General sightseeing / mixed-purpose destination; no specialised beach or winter target assigned.",
+      "climateTypeSources": []
     },
     {
       "id": "bogota",
@@ -1392,7 +1422,10 @@
       ],
       "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur.",
       "climateMeanTemperatureSource": "https://archive-api.open-meteo.com/v1/archive?latitude=4.711&longitude=-74.0721&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean&timezone=auto&models=era5",
-      "climateRainAmountSource": "https://archive-api.open-meteo.com/v1/archive?latitude=4.711&longitude=-74.0721&start_date=2016-01-01&end_date=2025-12-31&daily=rain_sum&timezone=auto&models=era5"
+      "climateRainAmountSource": "https://archive-api.open-meteo.com/v1/archive?latitude=4.711&longitude=-74.0721&start_date=2016-01-01&end_date=2025-12-31&daily=rain_sum&timezone=auto&models=era5",
+      "climateType": "standard",
+      "climateTypeReason": "General sightseeing / mixed-purpose destination; no specialised beach or winter target assigned.",
+      "climateTypeSources": []
     },
     {
       "id": "salento",
@@ -1554,7 +1587,10 @@
       "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur.",
       "climateMeanTemperatureSource": "https://archive-api.open-meteo.com/v1/archive?latitude=4.637&longitude=-75.5703&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean&timezone=auto&models=era5",
       "climateRainAmountSource": "https://archive-api.open-meteo.com/v1/archive?latitude=4.637&longitude=-75.5703&start_date=2016-01-01&end_date=2025-12-31&daily=rain_sum&timezone=auto&models=era5",
-      "climateReviewNote": "Unusually high modelled rainfall; verify against local observations. Grid estimates are not validated station climatology."
+      "climateReviewNote": "Unusually high modelled rainfall; verify against local observations. Grid estimates are not validated station climatology.",
+      "climateType": "standard",
+      "climateTypeReason": "General sightseeing / mixed-purpose destination; no specialised beach or winter target assigned.",
+      "climateTypeSources": []
     },
     {
       "id": "santa-marta",
@@ -1715,7 +1751,12 @@
       ],
       "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur.",
       "climateMeanTemperatureSource": "https://archive-api.open-meteo.com/v1/archive?latitude=11.2408&longitude=-74.199&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean&timezone=auto&models=era5",
-      "climateRainAmountSource": "https://archive-api.open-meteo.com/v1/archive?latitude=11.2408&longitude=-74.199&start_date=2016-01-01&end_date=2025-12-31&daily=rain_sum&timezone=auto&models=era5"
+      "climateRainAmountSource": "https://archive-api.open-meteo.com/v1/archive?latitude=11.2408&longitude=-74.199&start_date=2016-01-01&end_date=2025-12-31&daily=rain_sum&timezone=auto&models=era5",
+      "climateType": "beach",
+      "climateTypeReason": "Coastal destination serving nearby Caribbean beaches and Tayrona.",
+      "climateTypeSources": [
+        "https://colombia.travel/en/santa-marta/enjoy-beaches"
+      ]
     },
     {
       "id": "cali",
@@ -1884,7 +1925,10 @@
       ],
       "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur.",
       "climateMeanTemperatureSource": "https://archive-api.open-meteo.com/v1/archive?latitude=3.4516&longitude=-76.532&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean&timezone=auto&models=era5",
-      "climateRainAmountSource": "https://archive-api.open-meteo.com/v1/archive?latitude=3.4516&longitude=-76.532&start_date=2016-01-01&end_date=2025-12-31&daily=rain_sum&timezone=auto&models=era5"
+      "climateRainAmountSource": "https://archive-api.open-meteo.com/v1/archive?latitude=3.4516&longitude=-76.532&start_date=2016-01-01&end_date=2025-12-31&daily=rain_sum&timezone=auto&models=era5",
+      "climateType": "standard",
+      "climateTypeReason": "General sightseeing / mixed-purpose destination; no specialised beach or winter target assigned.",
+      "climateTypeSources": []
     },
     {
       "id": "barranquilla",
@@ -2044,7 +2088,10 @@
       ],
       "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur.",
       "climateMeanTemperatureSource": "https://archive-api.open-meteo.com/v1/archive?latitude=10.9685&longitude=-74.7813&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean&timezone=auto&models=era5",
-      "climateRainAmountSource": "https://archive-api.open-meteo.com/v1/archive?latitude=10.9685&longitude=-74.7813&start_date=2016-01-01&end_date=2025-12-31&daily=rain_sum&timezone=auto&models=era5"
+      "climateRainAmountSource": "https://archive-api.open-meteo.com/v1/archive?latitude=10.9685&longitude=-74.7813&start_date=2016-01-01&end_date=2025-12-31&daily=rain_sum&timezone=auto&models=era5",
+      "climateType": "standard",
+      "climateTypeReason": "General sightseeing / mixed-purpose destination; no specialised beach or winter target assigned.",
+      "climateTypeSources": []
     },
     {
       "id": "bucaramanga",
@@ -2206,7 +2253,10 @@
       "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur.",
       "climateMeanTemperatureSource": "https://archive-api.open-meteo.com/v1/archive?latitude=7.1193&longitude=-73.1227&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean&timezone=auto&models=era5",
       "climateRainAmountSource": "https://archive-api.open-meteo.com/v1/archive?latitude=7.1193&longitude=-73.1227&start_date=2016-01-01&end_date=2025-12-31&daily=rain_sum&timezone=auto&models=era5",
-      "climateReviewNote": "Unusually high modelled rainfall; verify against local observations. Grid estimates are not validated station climatology."
+      "climateReviewNote": "Unusually high modelled rainfall; verify against local observations. Grid estimates are not validated station climatology.",
+      "climateType": "standard",
+      "climateTypeReason": "General sightseeing / mixed-purpose destination; no specialised beach or winter target assigned.",
+      "climateTypeSources": []
     },
     {
       "id": "san-andres",
@@ -2358,7 +2408,12 @@
       "events": [],
       "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur.",
       "climateMeanTemperatureSource": "https://archive-api.open-meteo.com/v1/archive?latitude=12.5847&longitude=-81.7006&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean&timezone=auto&models=era5",
-      "climateRainAmountSource": "https://archive-api.open-meteo.com/v1/archive?latitude=12.5847&longitude=-81.7006&start_date=2016-01-01&end_date=2025-12-31&daily=rain_sum&timezone=auto&models=era5"
+      "climateRainAmountSource": "https://archive-api.open-meteo.com/v1/archive?latitude=12.5847&longitude=-81.7006&start_date=2016-01-01&end_date=2025-12-31&daily=rain_sum&timezone=auto&models=era5",
+      "climateType": "beach",
+      "climateTypeReason": "Island destination principally associated with Caribbean beaches and marine recreation.",
+      "climateTypeSources": [
+        "https://colombia.travel/en/san-andres-island?page=1"
+      ]
     },
     {
       "id": "leticia",
@@ -2527,7 +2582,10 @@
       ],
       "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur.",
       "climateMeanTemperatureSource": "https://archive-api.open-meteo.com/v1/archive?latitude=-4.2153&longitude=-69.9406&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean&timezone=auto&models=era5",
-      "climateRainAmountSource": "https://archive-api.open-meteo.com/v1/archive?latitude=-4.2153&longitude=-69.9406&start_date=2016-01-01&end_date=2025-12-31&daily=rain_sum&timezone=auto&models=era5"
+      "climateRainAmountSource": "https://archive-api.open-meteo.com/v1/archive?latitude=-4.2153&longitude=-69.9406&start_date=2016-01-01&end_date=2025-12-31&daily=rain_sum&timezone=auto&models=era5",
+      "climateType": "standard",
+      "climateTypeReason": "General sightseeing / mixed-purpose destination; no specialised beach or winter target assigned.",
+      "climateTypeSources": []
     },
     {
       "id": "rome",
@@ -2692,7 +2750,10 @@
           "sourceUrl": "https://turismoroma.it/it/node/174011"
         }
       ],
-      "eventCoverage": "Selected recurring events only; months extrapolated from sourced typical/recent editions, not confirmed 2027–2032 dates. Zero means none listed, not none happening."
+      "eventCoverage": "Selected recurring events only; months extrapolated from sourced typical/recent editions, not confirmed 2027–2032 dates. Zero means none listed, not none happening.",
+      "climateType": "standard",
+      "climateTypeReason": "General sightseeing / mixed-purpose destination; no specialised beach or winter target assigned.",
+      "climateTypeSources": []
     },
     {
       "id": "venice",
@@ -2858,7 +2919,10 @@
           "sourceUrl": "https://www.italia.it/en/italy/things-to-do/italian-carnival-from-north-to-south"
         }
       ],
-      "eventCoverage": "Selected recurring events only; months extrapolated from sourced typical/recent editions, not confirmed 2027–2032 dates. Zero means none listed, not none happening."
+      "eventCoverage": "Selected recurring events only; months extrapolated from sourced typical/recent editions, not confirmed 2027–2032 dates. Zero means none listed, not none happening.",
+      "climateType": "standard",
+      "climateTypeReason": "General sightseeing / mixed-purpose destination; no specialised beach or winter target assigned.",
+      "climateTypeSources": []
     },
     {
       "id": "florence",
@@ -3023,7 +3087,10 @@
           "sourceUrl": "https://www.feelflorence.it/en/events/san-giovanni-patron-saint-florence"
         }
       ],
-      "eventCoverage": "Selected recurring events only; months extrapolated from sourced typical/recent editions, not confirmed 2027–2032 dates. Zero means none listed, not none happening."
+      "eventCoverage": "Selected recurring events only; months extrapolated from sourced typical/recent editions, not confirmed 2027–2032 dates. Zero means none listed, not none happening.",
+      "climateType": "standard",
+      "climateTypeReason": "General sightseeing / mixed-purpose destination; no specialised beach or winter target assigned.",
+      "climateTypeSources": []
     },
     {
       "id": "naples",
@@ -3179,7 +3246,10 @@
         ]
       },
       "events": [],
-      "eventCoverage": "Selected recurring events only; months extrapolated from sourced typical/recent editions, not confirmed 2027–2032 dates. Zero means none listed, not none happening."
+      "eventCoverage": "Selected recurring events only; months extrapolated from sourced typical/recent editions, not confirmed 2027–2032 dates. Zero means none listed, not none happening.",
+      "climateType": "standard",
+      "climateTypeReason": "General sightseeing / mixed-purpose destination; no specialised beach or winter target assigned.",
+      "climateTypeSources": []
     },
     {
       "id": "catania",
@@ -3344,7 +3414,10 @@
           "sourceUrl": "https://www.visitsicily.info/en/feast-of-santagatha-in-catania/"
         }
       ],
-      "eventCoverage": "Selected recurring events only; months extrapolated from sourced typical/recent editions, not confirmed 2027–2032 dates. Zero means none listed, not none happening."
+      "eventCoverage": "Selected recurring events only; months extrapolated from sourced typical/recent editions, not confirmed 2027–2032 dates. Zero means none listed, not none happening.",
+      "climateType": "standard",
+      "climateTypeReason": "General sightseeing / mixed-purpose destination; no specialised beach or winter target assigned.",
+      "climateTypeSources": []
     },
     {
       "id": "ortisei",
@@ -3358,7 +3431,7 @@
       "gridLongitude": 11.75,
       "elevation": 1239,
       "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=46.5758&longitude=11.6718&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FRome&models=era5",
-      "climateReviewNote": "Mountain grid-cell estimates do not capture every valley or slope. The general 20°C comfort model favours warmer months; it is not a ski-season or lift-opening suitability model.",
+      "climateReviewNote": "Mountain grid-cell estimates cannot capture every valley or slope. Winter type uses a −5°C air-temperature target; snowfall, snow cover and lift opening are not scored.",
       "months": [
         {
           "sampleDays": 310,
@@ -3507,7 +3580,12 @@
           "sourceUrl": "https://www.valgardena.it/en/detail/base/events/ortisei-the-christmas-village-nadel-urtijeei/8D0EF01E2C0E4258AC17FFC59838540E/"
         }
       ],
-      "eventCoverage": "Selected recurring events only; months extrapolated from sourced typical/recent editions, not confirmed 2027–2032 dates. Zero means none listed, not none happening."
+      "eventCoverage": "Selected recurring events only; months extrapolated from sourced typical/recent editions, not confirmed 2027–2032 dates. Zero means none listed, not none happening.",
+      "climateType": "winter",
+      "climateTypeReason": "Established Val Gardena ski destination, including the Seceda–Ortisei descent; also offers summer hiking.",
+      "climateTypeSources": [
+        "https://www.valgardena.it/en/winter-holidays-dolomites/ski-resort-val-gardena/?season=winter"
+      ]
     },
     {
       "id": "milan",
@@ -3672,7 +3750,10 @@
           "sourceUrl": "https://www.yesmilano.it/en/design"
         }
       ],
-      "eventCoverage": "Selected recurring events only; months extrapolated from sourced typical/recent editions, not confirmed 2027–2032 dates. Zero means none listed, not none happening."
+      "eventCoverage": "Selected recurring events only; months extrapolated from sourced typical/recent editions, not confirmed 2027–2032 dates. Zero means none listed, not none happening.",
+      "climateType": "standard",
+      "climateTypeReason": "General sightseeing / mixed-purpose destination; no specialised beach or winter target assigned.",
+      "climateTypeSources": []
     },
     {
       "id": "turin",
@@ -3828,7 +3909,10 @@
         ]
       },
       "events": [],
-      "eventCoverage": "Selected recurring events only; months extrapolated from sourced typical/recent editions, not confirmed 2027–2032 dates. Zero means none listed, not none happening."
+      "eventCoverage": "Selected recurring events only; months extrapolated from sourced typical/recent editions, not confirmed 2027–2032 dates. Zero means none listed, not none happening.",
+      "climateType": "standard",
+      "climateTypeReason": "General sightseeing / mixed-purpose destination; no specialised beach or winter target assigned.",
+      "climateTypeSources": []
     },
     {
       "id": "bologna",
@@ -3993,7 +4077,10 @@
           "sourceUrl": "https://www.bolognawelcome.com/en/events/cinema-and-theater/il-cinema-ritrovato-eng"
         }
       ],
-      "eventCoverage": "Selected recurring events only; months extrapolated from sourced typical/recent editions, not confirmed 2027–2032 dates. Zero means none listed, not none happening."
+      "eventCoverage": "Selected recurring events only; months extrapolated from sourced typical/recent editions, not confirmed 2027–2032 dates. Zero means none listed, not none happening.",
+      "climateType": "standard",
+      "climateTypeReason": "General sightseeing / mixed-purpose destination; no specialised beach or winter target assigned.",
+      "climateTypeSources": []
     },
     {
       "id": "la-spezia",
@@ -4149,7 +4236,10 @@
         ]
       },
       "events": [],
-      "eventCoverage": "Selected recurring events only; months extrapolated from sourced typical/recent editions, not confirmed 2027–2032 dates. Zero means none listed, not none happening."
+      "eventCoverage": "Selected recurring events only; months extrapolated from sourced typical/recent editions, not confirmed 2027–2032 dates. Zero means none listed, not none happening.",
+      "climateType": "standard",
+      "climateTypeReason": "General sightseeing / mixed-purpose destination; no specialised beach or winter target assigned.",
+      "climateTypeSources": []
     },
     {
       "id": "bari",
@@ -4305,7 +4395,10 @@
         ]
       },
       "events": [],
-      "eventCoverage": "Selected recurring events only; months extrapolated from sourced typical/recent editions, not confirmed 2027–2032 dates. Zero means none listed, not none happening."
+      "eventCoverage": "Selected recurring events only; months extrapolated from sourced typical/recent editions, not confirmed 2027–2032 dates. Zero means none listed, not none happening.",
+      "climateType": "standard",
+      "climateTypeReason": "General sightseeing / mixed-purpose destination; no specialised beach or winter target assigned.",
+      "climateTypeSources": []
     },
     {
       "id": "palermo",
@@ -4470,7 +4563,10 @@
           "sourceUrl": "https://www.visitsicily.info/en/the-feast-of-santa-rosalia/"
         }
       ],
-      "eventCoverage": "Selected recurring events only; months extrapolated from sourced typical/recent editions, not confirmed 2027–2032 dates. Zero means none listed, not none happening."
+      "eventCoverage": "Selected recurring events only; months extrapolated from sourced typical/recent editions, not confirmed 2027–2032 dates. Zero means none listed, not none happening.",
+      "climateType": "standard",
+      "climateTypeReason": "General sightseeing / mixed-purpose destination; no specialised beach or winter target assigned.",
+      "climateTypeSources": []
     },
     {
       "id": "cagliari",
@@ -4635,7 +4731,12 @@
           "sourceUrl": "https://cagliariturismo.comune.cagliari.it/it/vivicagliari/carcere-di-santefisio"
         }
       ],
-      "eventCoverage": "Selected recurring events only; months extrapolated from sourced typical/recent editions, not confirmed 2027–2032 dates. Zero means none listed, not none happening."
+      "eventCoverage": "Selected recurring events only; months extrapolated from sourced typical/recent editions, not confirmed 2027–2032 dates. Zero means none listed, not none happening.",
+      "climateType": "beach",
+      "climateTypeReason": "Representative southern Sardinian coastal stay with Poetto beach; also a cultural city.",
+      "climateTypeSources": [
+        "https://sardegnaturismo.it/en/explore/poetto?language=it"
+      ]
     },
     {
       "id": "madrid",
@@ -4798,7 +4899,10 @@
           "sourceUrl": "https://www.esmadrid.com/en/san-isidro"
         }
       ],
-      "eventCoverage": "Selected recurring festivals only; approximate typical months, not confirmed 2026–2032 schedules. No listed event does not mean none occur."
+      "eventCoverage": "Selected recurring festivals only; approximate typical months, not confirmed 2026–2032 schedules. No listed event does not mean none occur.",
+      "climateType": "standard",
+      "climateTypeReason": "General sightseeing / mixed-purpose destination; no specialised beach or winter target assigned.",
+      "climateTypeSources": []
     },
     {
       "id": "barcelona",
@@ -4961,7 +5065,10 @@
           "sourceUrl": "https://www.barcelona.cat/lamerce/en"
         }
       ],
-      "eventCoverage": "Selected recurring festivals only; approximate typical months, not confirmed 2026–2032 schedules. No listed event does not mean none occur."
+      "eventCoverage": "Selected recurring festivals only; approximate typical months, not confirmed 2026–2032 schedules. No listed event does not mean none occur.",
+      "climateType": "standard",
+      "climateTypeReason": "General sightseeing / mixed-purpose destination; no specialised beach or winter target assigned.",
+      "climateTypeSources": []
     },
     {
       "id": "malaga",
@@ -5124,7 +5231,12 @@
           "sourceUrl": "https://www.spain.info/en/calendar/fair-malaga/"
         }
       ],
-      "eventCoverage": "Selected recurring festivals only; approximate typical months, not confirmed 2026–2032 schedules. No listed event does not mean none occur."
+      "eventCoverage": "Selected recurring festivals only; approximate typical months, not confirmed 2026–2032 schedules. No listed event does not mean none occur.",
+      "climateType": "beach",
+      "climateTypeReason": "Costa del Sol beach-oriented city destination.",
+      "climateTypeSources": [
+        "https://www.malaga.eu/la-ciudad/playas/index.html"
+      ]
     },
     {
       "id": "bilbao",
@@ -5287,7 +5399,10 @@
           "sourceUrl": "https://tourism.euskadi.eus/en/calendar-events/semana-grande-of-bilbao/webtur00-evento/en/"
         }
       ],
-      "eventCoverage": "Selected recurring festivals only; approximate typical months, not confirmed 2026–2032 schedules. No listed event does not mean none occur."
+      "eventCoverage": "Selected recurring festivals only; approximate typical months, not confirmed 2026–2032 schedules. No listed event does not mean none occur.",
+      "climateType": "standard",
+      "climateTypeReason": "General sightseeing / mixed-purpose destination; no specialised beach or winter target assigned.",
+      "climateTypeSources": []
     },
     {
       "id": "palma",
@@ -5450,7 +5565,12 @@
           "sourceUrl": "https://www.illesbalears.travel/en/mallorca/sant-antoni-and-sant-sebastia"
         }
       ],
-      "eventCoverage": "Selected recurring festivals only; approximate typical months, not confirmed 2026–2032 schedules. No listed event does not mean none occur."
+      "eventCoverage": "Selected recurring festivals only; approximate typical months, not confirmed 2026–2032 schedules. No listed event does not mean none occur.",
+      "climateType": "beach",
+      "climateTypeReason": "Representative Mallorca beach-oriented island stay, including Palma Bay.",
+      "climateTypeSources": [
+        "https://visitpalma.com/en/beaches/"
+      ]
     },
     {
       "id": "puerto-de-la-cruz",
@@ -5614,7 +5734,12 @@
           "rule": "carnival"
         }
       ],
-      "eventCoverage": "Selected recurring festivals only; approximate typical months, not confirmed 2026–2032 schedules. No listed event does not mean none occur."
+      "eventCoverage": "Selected recurring festivals only; approximate typical months, not confirmed 2026–2032 schedules. No listed event does not mean none occur.",
+      "climateType": "beach",
+      "climateTypeReason": "Established northern Tenerife coastal holiday destination with Playa Jardín.",
+      "climateTypeSources": [
+        "https://empresas.puertodelacruz.es/node/66"
+      ]
     },
     {
       "id": "valencia",
@@ -5777,7 +5902,10 @@
           "sourceUrl": "https://www.valencia.es/es/-/nuestras-fiestas"
         }
       ],
-      "eventCoverage": "Selected recurring festivals only; approximate typical months, not confirmed 2026–2032 schedules. No listed event does not mean none occur."
+      "eventCoverage": "Selected recurring festivals only; approximate typical months, not confirmed 2026–2032 schedules. No listed event does not mean none occur.",
+      "climateType": "standard",
+      "climateTypeReason": "General sightseeing / mixed-purpose destination; no specialised beach or winter target assigned.",
+      "climateTypeSources": []
     },
     {
       "id": "seville",
@@ -5941,7 +6069,10 @@
           "rule": "easter"
         }
       ],
-      "eventCoverage": "Selected recurring festivals only; approximate typical months, not confirmed 2026–2032 schedules. No listed event does not mean none occur."
+      "eventCoverage": "Selected recurring festivals only; approximate typical months, not confirmed 2026–2032 schedules. No listed event does not mean none occur.",
+      "climateType": "standard",
+      "climateTypeReason": "General sightseeing / mixed-purpose destination; no specialised beach or winter target assigned.",
+      "climateTypeSources": []
     },
     {
       "id": "granada",
@@ -6105,7 +6236,10 @@
           "sourceUrl": "https://www.spain.info/export/sites/gcc/gcc/.content/comun/documentos/Granada-EN.pdf"
         }
       ],
-      "eventCoverage": "Selected recurring festivals only; approximate typical months, not confirmed 2026–2032 schedules. No listed event does not mean none occur."
+      "eventCoverage": "Selected recurring festivals only; approximate typical months, not confirmed 2026–2032 schedules. No listed event does not mean none occur.",
+      "climateType": "standard",
+      "climateTypeReason": "General sightseeing / mixed-purpose destination; no specialised beach or winter target assigned.",
+      "climateTypeSources": []
     },
     {
       "id": "oviedo",
@@ -6268,7 +6402,10 @@
           "sourceUrl": "https://www.turismoasturias.es/en/agenda-de-asturias/fiestas/-/calendarsuite/event/san-mateo-fiestas-en-oviedo/17840880/jr0cMeS144cd"
         }
       ],
-      "eventCoverage": "Selected recurring festivals only; approximate typical months, not confirmed 2026–2032 schedules. No listed event does not mean none occur."
+      "eventCoverage": "Selected recurring festivals only; approximate typical months, not confirmed 2026–2032 schedules. No listed event does not mean none occur.",
+      "climateType": "standard",
+      "climateTypeReason": "General sightseeing / mixed-purpose destination; no specialised beach or winter target assigned.",
+      "climateTypeSources": []
     },
     {
       "id": "santiago-de-compostela",
@@ -6431,7 +6568,10 @@
           "sourceUrl": "https://www.santiagoturismo.com/festas-e-tradicions/festas-do-apostolo-santiago"
         }
       ],
-      "eventCoverage": "Selected recurring festivals only; approximate typical months, not confirmed 2026–2032 schedules. No listed event does not mean none occur."
+      "eventCoverage": "Selected recurring festivals only; approximate typical months, not confirmed 2026–2032 schedules. No listed event does not mean none occur.",
+      "climateType": "standard",
+      "climateTypeReason": "General sightseeing / mixed-purpose destination; no specialised beach or winter target assigned.",
+      "climateTypeSources": []
     },
     {
       "id": "salamanca",
@@ -6585,7 +6725,10 @@
         ]
       },
       "events": [],
-      "eventCoverage": "Selected recurring festivals only; approximate typical months, not confirmed 2026–2032 schedules. No listed event does not mean none occur."
+      "eventCoverage": "Selected recurring festivals only; approximate typical months, not confirmed 2026–2032 schedules. No listed event does not mean none occur.",
+      "climateType": "standard",
+      "climateTypeReason": "General sightseeing / mixed-purpose destination; no specialised beach or winter target assigned.",
+      "climateTypeSources": []
     },
     {
       "id": "zaragoza",
@@ -6748,7 +6891,10 @@
           "sourceUrl": "https://www.zaragoza.es/ciudad/turismo/en/agenda/fiestaspilar.htm"
         }
       ],
-      "eventCoverage": "Selected recurring festivals only; approximate typical months, not confirmed 2026–2032 schedules. No listed event does not mean none occur."
+      "eventCoverage": "Selected recurring festivals only; approximate typical months, not confirmed 2026–2032 schedules. No listed event does not mean none occur.",
+      "climateType": "standard",
+      "climateTypeReason": "General sightseeing / mixed-purpose destination; no specialised beach or winter target assigned.",
+      "climateTypeSources": []
     },
     {
       "id": "jaca",
@@ -6762,7 +6908,7 @@
       "gridLongitude": -0.5,
       "elevation": 825,
       "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=42.5716&longitude=-0.5495&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FRome&models=era5",
-      "climateReviewNote": "Mountain grid-cell estimates and the general 20°C comfort model do not represent ski conditions or lift opening.",
+      "climateReviewNote": "Jaca town weather is not the high-altitude weather of its ski areas. Winter type uses −5°C; snow reliability and lift opening are not scored.",
       "months": [
         {
           "sampleDays": 310,
@@ -6902,7 +7048,12 @@
         ]
       },
       "events": [],
-      "eventCoverage": "Selected recurring festivals only; approximate typical months, not confirmed 2026–2032 schedules. No listed event does not mean none occur."
+      "eventCoverage": "Selected recurring festivals only; approximate typical months, not confirmed 2026–2032 schedules. No listed event does not mean none occur.",
+      "climateType": "winter",
+      "climateTypeReason": "Pyrenean gateway to nearby ski resorts and a winter-sports destination; also offers summer activities.",
+      "climateTypeSources": [
+        "https://www.jaca.es/sites/default/files/monumentos_jaca_ingles.pdf"
+      ]
     }
   ]
 }

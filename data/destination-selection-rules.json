@@ -131,7 +131,8 @@
           ],
           "treasures": [
             "Colosseum"
-          ]
+          ],
+          "climateType": "standard"
         },
         {
           "name": "Venice",
@@ -142,7 +143,8 @@
           ],
           "treasures": [
             "Grand Canal"
-          ]
+          ],
+          "climateType": "standard"
         },
         {
           "name": "Florence",
@@ -156,21 +158,24 @@
           ],
           "nearbyPlaces": [
             "Pisa"
-          ]
+          ],
+          "climateType": "standard"
         },
         {
           "name": "Naples",
           "area": "Campania",
           "airportCandidates": [
             "NAP"
-          ]
+          ],
+          "climateType": "standard"
         },
         {
           "name": "Catania",
           "area": "Eastern Sicily",
           "airportCandidates": [
             "CTA"
-          ]
+          ],
+          "climateType": "standard"
         },
         {
           "name": "Ortisei",
@@ -183,7 +188,8 @@
           "arrivalNote": "No town airport: compare Bolzano, Innsbruck or Verona plus ground transfer.",
           "sourceUrls": [
             "https://www.valgardena.it/en/holidays-dolomites/arrival/by-plane-or-helicopter/"
-          ]
+          ],
+          "climateType": "winter"
         },
         {
           "name": "Milan",
@@ -192,21 +198,24 @@
             "MXP",
             "LIN",
             "BGY"
-          ]
+          ],
+          "climateType": "standard"
         },
         {
           "name": "Turin",
           "area": "Piedmont",
           "airportCandidates": [
             "TRN"
-          ]
+          ],
+          "climateType": "standard"
         },
         {
           "name": "Bologna",
           "area": "Emilia-Romagna",
           "airportCandidates": [
             "BLQ"
-          ]
+          ],
+          "climateType": "standard"
         },
         {
           "name": "La Spezia",
@@ -217,28 +226,32 @@
           ],
           "nearbyPlaces": [
             "Cinque Terre"
-          ]
+          ],
+          "climateType": "standard"
         },
         {
           "name": "Bari",
           "area": "Puglia",
           "airportCandidates": [
             "BRI"
-          ]
+          ],
+          "climateType": "standard"
         },
         {
           "name": "Palermo",
           "area": "Western Sicily",
           "airportCandidates": [
             "PMO"
-          ]
+          ],
+          "climateType": "standard"
         },
         {
           "name": "Cagliari",
           "area": "Sardinia",
           "airportCandidates": [
             "CAG"
-          ]
+          ],
+          "climateType": "beach"
         }
       ],
       "indexCompatibility": "Existing first six region indices retained: Rome, Venice, Florence, Naples, Catania (formerly broad Sicily) and Ortisei (formerly broad Dolomites)."
@@ -258,7 +271,8 @@
           "nearbyPlaces": [
             "Toledo",
             "Segovia"
-          ]
+          ],
+          "climateType": "standard"
         },
         {
           "name": "Barcelona",
@@ -268,14 +282,16 @@
           ],
           "treasures": [
             "Sagrada Família"
-          ]
+          ],
+          "climateType": "standard"
         },
         {
           "name": "Málaga",
           "area": "Costa del Sol",
           "airportCandidates": [
             "AGP"
-          ]
+          ],
+          "climateType": "beach"
         },
         {
           "name": "Bilbao",
@@ -285,14 +301,16 @@
           ],
           "nearbyPlaces": [
             "San Sebastián"
-          ]
+          ],
+          "climateType": "standard"
         },
         {
           "name": "Palma",
           "area": "Mallorca",
           "airportCandidates": [
             "PMI"
-          ]
+          ],
+          "climateType": "beach"
         },
         {
           "name": "Puerto de la Cruz",
@@ -303,14 +321,16 @@
           ],
           "treasures": [
             "Mount Teide"
-          ]
+          ],
+          "climateType": "beach"
         },
         {
           "name": "Valencia",
           "area": "East coast",
           "airportCandidates": [
             "VLC"
-          ]
+          ],
+          "climateType": "standard"
         },
         {
           "name": "Seville",
@@ -320,7 +340,8 @@
           ],
           "nearbyPlaces": [
             "Córdoba"
-          ]
+          ],
+          "climateType": "standard"
         },
         {
           "name": "Granada",
@@ -331,21 +352,24 @@
           ],
           "treasures": [
             "Alhambra"
-          ]
+          ],
+          "climateType": "standard"
         },
         {
           "name": "Oviedo",
           "area": "Asturias",
           "airportCandidates": [
             "OVD"
-          ]
+          ],
+          "climateType": "standard"
         },
         {
           "name": "Santiago de Compostela",
           "area": "Galicia",
           "airportCandidates": [
             "SCQ"
-          ]
+          ],
+          "climateType": "standard"
         },
         {
           "name": "Salamanca",
@@ -353,14 +377,16 @@
           "airportCandidates": [
             "MAD",
             "VLL"
-          ]
+          ],
+          "climateType": "standard"
         },
         {
           "name": "Zaragoza",
           "area": "Aragon",
           "airportCandidates": [
             "ZAZ"
-          ]
+          ],
+          "climateType": "standard"
         },
         {
           "name": "Jaca",
@@ -368,7 +394,8 @@
           "airportCandidates": [
             "ZAZ",
             "BCN"
-          ]
+          ],
+          "climateType": "winter"
         }
       ]
     }
