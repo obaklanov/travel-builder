@@ -176,10 +176,12 @@ function renderTravelDetail(key,kind){
  const toolbar=document.createElement('div');toolbar.className='season-table-toolbar';
  const expand=document.createElement('button');expand.type='button';expand.className='season-table-expand';expand.textContent='Expand · all 12 months ↗';expand.setAttribute('aria-expanded','false');
  toolbar.append(expand);frame.prepend(toolbar);
- const collapse=()=>{frame.classList.remove('is-expanded');expand.setAttribute('aria-expanded','false');expand.textContent='Expand · all 12 months ↗';};
- expand.onclick=()=>{const open=frame.classList.toggle('is-expanded');expand.setAttribute('aria-expanded',String(open));expand.textContent=open?'Close expanded table ×':'Expand · all 12 months ↗';};
+ const backdrop=document.createElement('div');backdrop.className='season-table-backdrop';backdrop.hidden=true;backdrop.setAttribute('aria-hidden','true');frame.before(backdrop);
+ const collapse=()=>{backdrop.hidden=true;frame.classList.remove('is-expanded');expand.setAttribute('aria-expanded','false');expand.textContent='Expand · all 12 months ↗';};
+ backdrop.onclick=()=>{collapse();expand.focus();};
+ expand.onclick=()=>{const open=frame.classList.toggle('is-expanded');backdrop.hidden=!open;expand.setAttribute('aria-expanded',String(open));expand.textContent=open?'Close expanded table ×':'Expand · all 12 months ↗';};
  frame.addEventListener('keydown',event=>{if(event.key==='Escape'&&frame.classList.contains('is-expanded')){event.preventDefault();event.stopPropagation();collapse();expand.focus();}});
- setupSeasonChoice(key,panel);
+ setupSeasonChoice(key,panel,()=>{collapse();panel.querySelector('#travel-region').focus();});
  if(d.scoredSeasonality){
   const explanation=document.createElement('details');explanation.className='season-score-method';const title=document.createElement('summary');title.textContent='How these tourist ratings are calculated';const copy=document.createElement('p');copy.textContent='Each base is compared only with its own 12 months: exactly four BEST, four AVERAGE and four WORST. Temperature ranks by closeness to 22°C, rain by lowest mm/day, humidity by closeness to 55%. Component rank scores run from 100 to 0; climate combines temperature 50%, rain 30%, humidity 20%. Overall: climate 50%, crowds, festivals and prices 16⅔% each. Final bands follow within-base weighted-score rank, not absolute thresholds. Ties use calendar-month order. BEST means relatively better for this base, not necessarily ideal weather. Crowd and price rankings are editorial proxies; festivals retain evidence-based 100/50/0 scores, without inventing events for empty months. Climate is 2016–2025 ERA5 model data; Salento and Bucaramanga rainfall remains pending local validation.';explanation.append(title,copy);
   const links=new Map([['https://open-meteo.com/en/docs/historical-weather-api','Climate data: Open-Meteo / Copernicus ERA5 (CC BY 4.0)']]);for(const profile of d.scoredSeasonality.profiles){for(const url of [...profile.crowds.sourceUrls,...profile.prices.sourceUrls])links.set(url,'Seasonal crowd / price guidance');for(const event of profile.events)links.set(event.sourceUrl,event.name);}
@@ -353,7 +355,7 @@ function regionalAirports(key,request){
  return codes?travelData[key].airports.filter(([code])=>codes.includes(code)):travelData[key].airports;
 }
 function travelMonthLabel(value){return new Date(value+'-01T12:00:00').toLocaleDateString('en-CA',{month:'long',year:'numeric'});}
-function setupSeasonChoice(key,panel){
+function setupSeasonChoice(key,panel,onSelect=()=>{}){
  const state=getBudgetState(key),d=travelData[key],current=flightRequest(key,state.days).departureDate;
  const box=document.createElement('form');box.className='season-choice';
  box.innerHTML='<div class="departure-controls"><label>Travel region <select id="travel-region" required><option value="">Choose a region</option>'+d.regions.map(([region],i)=>'<option value="'+i+'" '+(state.regionChoice?.index===i?'selected':'')+'>'+region+'</option>').join('')+'</select></label><label>Travel month <input type="month" id="travel-month" max="2028-12" min="'+new Date().toISOString().slice(0,7)+'" value="'+(state.regionChoice?.month||current.slice(0,7))+'" required></label></div><button type="submit" class="season-confirm">Use this region and month →</button><p class="season-choice-status" role="status"></p>';
@@ -362,19 +364,20 @@ function setupSeasonChoice(key,panel){
   [...row.querySelectorAll('td')].forEach((cell,month)=>{
    const text=cell.textContent;const button=document.createElement('button');button.type='button';button.className='season-cell-choice';button.textContent=text;
    button.setAttribute('aria-label',d.regions[index][0]+', '+['January','February','March','April','May','June','July','August','September','October','November','December'][month]+': '+text);
-   button.onclick=()=>{box.querySelector('#travel-region').value=String(index);const now=new Date(),selectedYear=Number(box.querySelector('#travel-month').value.slice(0,4)),year=Math.max(selectedYear||now.getFullYear(),now.getFullYear()+(month<now.getMonth()?1:0));box.querySelector('#travel-month').value=year+'-'+String(month+1).padStart(2,'0');refreshScoredSeasonTable(key,panel,box.querySelector('#travel-month').value);box.querySelector('.season-choice-status').textContent='Selected '+d.regions[index][0]+'. Confirm below the selectors to continue.';};cell.replaceChildren(button);
+   button.onclick=()=>{box.querySelector('#travel-region').value=String(index);const now=new Date(),selectedYear=Number(box.querySelector('#travel-month').value.slice(0,4)),year=Math.max(selectedYear||now.getFullYear(),now.getFullYear()+(month<now.getMonth()?1:0));box.querySelector('#travel-month').value=year+'-'+String(month+1).padStart(2,'0');refreshScoredSeasonTable(key,panel,box.querySelector('#travel-month').value);saveSelection();onSelect();box.querySelector('.season-choice-status').textContent='Selected '+d.regions[index][0]+' · '+travelMonthLabel(box.querySelector('#travel-month').value)+'.';};cell.replaceChildren(button);cell.onclick=event=>{if(event.target===cell)button.onclick();};
   });
  });
  const seasonMonthInput=box.querySelector('#travel-month');refreshScoredSeasonTable(key,panel,seasonMonthInput.value);seasonMonthInput.addEventListener('change',()=>refreshScoredSeasonTable(key,panel,seasonMonthInput.value));
- box.onsubmit=event=>{
-  event.preventDefault();const region=box.querySelector('#travel-region'),month=box.querySelector('#travel-month');
-  if(!region.value||!/^\d{4}-\d{2}$/.test(month.value)||month.value<new Date().toISOString().slice(0,7)||month.value>'2028-12'){box.querySelector('.season-choice-status').textContent='Choose a region and a travel month between now and December 2028.';return;}
+ function saveSelection(){
+  const region=box.querySelector('#travel-region'),month=box.querySelector('#travel-month');
+  if(!region.value||!/^\d{4}-\d{2}$/.test(month.value)||month.value<new Date().toISOString().slice(0,7)||month.value>'2028-12'){box.querySelector('.season-choice-status').textContent='Choose a region and a travel month between now and December 2028.';return false;}
   const index=Number(region.value),oldDay=Number(current.slice(8)),[year,m]=month.value.split('-').map(Number);
   const now=new Date(),minimum=month.value===now.toISOString().slice(0,7)?now.getDate():1;
   const day=Math.max(minimum,Math.min(oldDay,new Date(year,m,0).getDate()));
   state.departureDate=month.value+'-'+String(day).padStart(2,'0');state.regionChoice={index,region:d.regions[index][0],month:month.value};
-  renderTravelDetail(key,'flights');
- };
+  return true;
+ }
+ box.onsubmit=event=>{event.preventDefault();if(saveSelection())renderTravelDetail(key,'flights');};
 }
 
 for(const [key,airports] of Object.entries({"united-states": [["SEA", "Seattle"]], "vietnam": [["PQC", "Phu Quoc"]], "colombia": [["PEI", "Pereira"], ["AXM", "Armenia"], ["SMR", "Santa Marta"], ["BAQ", "Barranquilla"], ["BGA", "Bucaramanga"], ["ADZ", "San Andrés"], ["LET", "Leticia"]], "argentina": [["IGR", "Puerto Iguazú"], ["FTE", "El Calafate"], ["SLA", "Salta"]], "italy": [["FLR", "Florence"], ["CTA", "Catania"]], "mexico": [["OAX", "Oaxaca"], ["PVR", "Puerto Vallarta"]], "japan": [["CTS", "Sapporo New Chitose"], ["OKA", "Okinawa Naha"]], "portugal": [["FNC", "Funchal"]]}))travelData[key].airports.push(...airports);

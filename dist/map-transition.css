@@ -105,3 +105,7 @@
 .season-table-frame.is-expanded .season-table{min-width:900px}
 .season-table-frame.is-expanded .season-table thead{position:sticky;top:0;background:#f3f7fd;z-index:1}
 @media(max-width:700px){.season-table-frame.is-expanded{inset:65px 8px auto;padding:10px}.season-table-frame.is-expanded .season-table{min-width:900px}}
+
+.season-table-backdrop:not([hidden]){position:fixed;inset:0;z-index:99;background:rgba(24,41,64,.12)}
+.detail-panel .season-table td{padding:0}
+.detail-panel .season-table .season-cell-choice{display:block;min-height:46px;padding:14px 4px}
