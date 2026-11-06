@@ -107,6 +107,12 @@
       },
       "bestMinimumSnowCoverFraction": 0.8,
       "missingDataPolicy": "PENDING and excluded from Winter recommendations until mountain temperature, snowfall and snow-cover evidence are complete."
+    },
+    "climateTypeLabels": {
+      "standard": "Warm living",
+      "all-season": "All season",
+      "beach": "Beach",
+      "winter": "Winter"
     }
   },
   "profiles": [
@@ -1159,7 +1165,7 @@
       "climateMeanTemperatureSource": "https://archive-api.open-meteo.com/v1/archive?latitude=10.391&longitude=-75.4794&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean&timezone=auto&models=era5",
       "climateRainAmountSource": "https://archive-api.open-meteo.com/v1/archive?latitude=10.391&longitude=-75.4794&start_date=2016-01-01&end_date=2025-12-31&daily=rain_sum&timezone=auto&models=era5",
       "climateType": "standard",
-      "climateTypeReason": "Owner-approved standard classification: Cartagena’s exceptional historic architecture and cultural city experience take priority over its coastal / beach setting.",
+      "climateTypeReason": "Owner-approved Warm living classification: Cartagena’s exceptional historic architecture and cultural city experience take priority over its coastal / beach setting.",
       "climateTypeSources": []
     },
     {
@@ -7172,7 +7178,7 @@
       "gridLongitude": -0.25,
       "elevation": 16,
       "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=51.5074&longitude=-0.1278&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FLondon&models=era5",
-      "climateTypeReason": "Mixed-purpose cultural or scenic base; standard 19°C target.",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 19°C target.",
       "climateTypeSources": [
         "https://www.visitbritain.com/en/destinations"
       ],
@@ -7538,7 +7544,7 @@
       "gridLongitude": -2.25,
       "elevation": 52,
       "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=53.4808&longitude=-2.2426&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FLondon&models=era5",
-      "climateTypeReason": "Mixed-purpose cultural or scenic base; standard 19°C target.",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 19°C target.",
       "climateTypeSources": [
         "https://www.visitbritain.com/en/destinations"
       ],
@@ -7716,7 +7722,7 @@
       "gridLongitude": -6,
       "elevation": 13,
       "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=54.5973&longitude=-5.9301&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FLondon&models=era5",
-      "climateTypeReason": "Mixed-purpose cultural or scenic base; standard 19°C target.",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 19°C target.",
       "climateTypeSources": [
         "https://www.visitbritain.com/en/destinations"
       ],
@@ -7891,7 +7897,7 @@
       "gridLongitude": -2.25,
       "elevation": 33,
       "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=51.3811&longitude=-2.359&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FLondon&models=era5",
-      "climateTypeReason": "Mixed-purpose cultural or scenic base; standard 19°C target.",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 19°C target.",
       "climateTypeSources": [
         "https://www.visitbritain.com/en/destinations"
       ],
@@ -8069,7 +8075,7 @@
       "gridLongitude": -1,
       "elevation": 22,
       "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=53.959&longitude=-1.0815&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FLondon&models=era5",
-      "climateTypeReason": "Mixed-purpose cultural or scenic base; standard 19°C target.",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 19°C target.",
       "climateTypeSources": [
         "https://www.visitbritain.com/en/destinations"
       ],
@@ -8243,7 +8249,7 @@
       "gridLongitude": -3,
       "elevation": 122,
       "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=54.3809&longitude=-2.907&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FLondon&models=era5",
-      "climateTypeReason": "Mixed-purpose cultural or scenic base; standard 19°C target.",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 19°C target.",
       "climateTypeSources": [
         "https://www.visitbritain.com/en/destinations"
       ],
@@ -8586,7 +8592,7 @@
       "gridLongitude": -3.25,
       "elevation": 14,
       "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=51.4816&longitude=-3.1791&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FLondon&models=era5",
-      "climateTypeReason": "Mixed-purpose cultural or scenic base; standard 19°C target.",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 19°C target.",
       "climateTypeSources": [
         "https://www.visitbritain.com/en/destinations"
       ],
@@ -8755,7 +8761,7 @@
       "gridLongitude": -3.75,
       "elevation": 13,
       "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=53.2801&longitude=-3.828&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FLondon&models=era5",
-      "climateTypeReason": "Mixed-purpose cultural or scenic base; standard 19°C target.",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 19°C target.",
       "climateTypeSources": [
         "https://www.visitbritain.com/en/destinations"
       ],
@@ -9436,7 +9442,7 @@
       "gridLongitude": 2.25,
       "elevation": 36,
       "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=48.8566&longitude=2.3522&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FParis&models=era5",
-      "climateTypeReason": "Mixed-purpose cultural or scenic base; standard 19°C target.",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 19°C target.",
       "climateTypeSources": [
         "https://www.france.fr/en/destination/?page=1"
       ],
@@ -9614,7 +9620,7 @@
       "gridLongitude": -0.75,
       "elevation": 49,
       "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=49.2765&longitude=-0.7025&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FParis&models=era5",
-      "climateTypeReason": "Mixed-purpose cultural or scenic base; standard 19°C target.",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 19°C target.",
       "climateTypeSources": [
         "https://www.france.fr/en/destination/?page=1"
       ],
@@ -9779,7 +9785,7 @@
       "gridLongitude": 5.25,
       "elevation": 6,
       "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=43.2965&longitude=5.3698&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FParis&models=era5",
-      "climateTypeReason": "Mixed-purpose cultural or scenic base; standard 19°C target.",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 19°C target.",
       "climateTypeSources": [
         "https://www.france.fr/en/destination/?page=1"
       ],
@@ -10119,7 +10125,7 @@
       "gridLongitude": 4.75,
       "elevation": 184,
       "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=45.764&longitude=4.8357&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FParis&models=era5",
-      "climateTypeReason": "Mixed-purpose cultural or scenic base; standard 19°C target.",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 19°C target.",
       "climateTypeSources": [
         "https://www.france.fr/en/destination/?page=1"
       ],
@@ -10458,7 +10464,7 @@
       "gridLongitude": -2,
       "elevation": 23,
       "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=48.6493&longitude=-2.0257&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FParis&models=era5",
-      "climateTypeReason": "Mixed-purpose cultural or scenic base; standard 19°C target.",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 19°C target.",
       "climateTypeSources": [
         "https://www.france.fr/en/destination/?page=1"
       ],
@@ -10627,7 +10633,7 @@
       "gridLongitude": 0.75,
       "elevation": 58,
       "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=47.3941&longitude=0.6848&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FParis&models=era5",
-      "climateTypeReason": "Mixed-purpose cultural or scenic base; standard 19°C target.",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 19°C target.",
       "climateTypeSources": [
         "https://www.france.fr/en/destination/?page=1"
       ],
@@ -10975,7 +10981,7 @@
       "gridLongitude": 5,
       "elevation": 250,
       "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=47.322&longitude=5.0415&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FParis&models=era5",
-      "climateTypeReason": "Mixed-purpose cultural or scenic base; standard 19°C target.",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 19°C target.",
       "climateTypeSources": [
         "https://www.france.fr/en/destination/?page=1"
       ],
@@ -11144,7 +11150,7 @@
       "gridLongitude": 6.25,
       "elevation": 449,
       "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=45.8992&longitude=6.1294&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FParis&models=era5",
-      "climateTypeReason": "Mixed-purpose cultural or scenic base; standard 19°C target.",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 19°C target.",
       "climateTypeSources": [
         "https://www.france.fr/en/destination/?page=1"
       ],
@@ -11322,7 +11328,7 @@
       "gridLongitude": 4.75,
       "elevation": 29,
       "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=43.9493&longitude=4.8055&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FParis&models=era5",
-      "climateTypeReason": "Mixed-purpose cultural or scenic base; standard 19°C target.",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 19°C target.",
       "climateTypeSources": [
         "https://www.france.fr/en/destination/?page=1"
       ],
@@ -11496,7 +11502,7 @@
       "gridLongitude": -0.5,
       "elevation": 16,
       "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=44.8378&longitude=-0.5792&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FParis&models=era5",
-      "climateTypeReason": "Mixed-purpose cultural or scenic base; standard 19°C target.",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 19°C target.",
       "climateTypeSources": [
         "https://www.france.fr/en/destination/?page=1"
       ],
@@ -11665,7 +11671,7 @@
       "gridLongitude": 1.25,
       "elevation": 145,
       "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=44.889&longitude=1.2167&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FParis&models=era5",
-      "climateTypeReason": "Mixed-purpose cultural or scenic base; standard 19°C target.",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 19°C target.",
       "climateTypeSources": [
         "https://www.france.fr/en/destination/?page=1"
       ],
@@ -11830,7 +11836,7 @@
       "gridLongitude": 1.5,
       "elevation": 153,
       "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=43.6047&longitude=1.4442&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FParis&models=era5",
-      "climateTypeReason": "Mixed-purpose cultural or scenic base; standard 19°C target.",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 19°C target.",
       "climateTypeSources": [
         "https://www.france.fr/en/destination/?page=1"
       ],
@@ -12160,7 +12166,7 @@
       "gridLongitude": null,
       "elevation": 1194.76,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-77.0428&latitude=-12.0464&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Mixed-purpose cultural or scenic base; standard 19°C target.",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 19°C target.",
       "climateTypeSources": [
         "https://www.peru.travel/es/destinos"
       ],
@@ -12334,7 +12340,7 @@
       "gridLongitude": null,
       "elevation": 3739.76,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-71.9675&latitude=-13.532&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Mixed-purpose cultural or scenic base; standard 19°C target.",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 19°C target.",
       "climateTypeSources": [
         "https://www.peru.travel/es/destinos"
       ],
@@ -12508,7 +12514,7 @@
       "gridLongitude": null,
       "elevation": 115.02,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-73.2516&latitude=-3.7437&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Mixed-purpose cultural or scenic base; standard 19°C target.",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 19°C target.",
       "climateTypeSources": [
         "https://www.peru.travel/es/destinos"
       ],
@@ -12682,7 +12688,7 @@
       "gridLongitude": null,
       "elevation": 3330.29,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-71.5375&latitude=-16.409&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Mixed-purpose cultural or scenic base; standard 19°C target.",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 19°C target.",
       "climateTypeSources": [
         "https://www.peru.travel/es/destinos"
       ],
@@ -12847,7 +12853,7 @@
       "gridLongitude": null,
       "elevation": 4105.46,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-70.0219&latitude=-15.8402&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Mixed-purpose cultural or scenic base; standard 19°C target.",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 19°C target.",
       "climateTypeSources": [
         "https://www.peru.travel/es/destinos"
       ],
@@ -13021,7 +13027,7 @@
       "gridLongitude": null,
       "elevation": 866.03,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-74.9328&latitude=-14.8359&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Mixed-purpose cultural or scenic base; standard 19°C target.",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 19°C target.",
       "climateTypeSources": [
         "https://www.peru.travel/es/destinos"
       ],
@@ -13186,7 +13192,7 @@
       "gridLongitude": null,
       "elevation": 1872.38,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-79.0287&latitude=-8.1116&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Mixed-purpose cultural or scenic base; standard 19°C target.",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 19°C target.",
       "climateTypeSources": [
         "https://www.peru.travel/es/destinos"
       ],
@@ -13524,7 +13530,7 @@
       "gridLongitude": null,
       "elevation": 243.34,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-69.1891&latitude=-12.5933&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Mixed-purpose cultural or scenic base; standard 19°C target.",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 19°C target.",
       "climateTypeSources": [
         "https://www.peru.travel/es/destinos"
       ],

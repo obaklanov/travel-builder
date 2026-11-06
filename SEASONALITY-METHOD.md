@@ -63,3 +63,6 @@ All 170 existing bases screened; 53 rain-sensitive entries each receive two expl
 
 ## All season revision — 6 November 2026
 Supersedes earlier All season settings: inclusive −5°C to +25°C has zero temperature impact. Outside, deduct 5 climate points per °C; floor at zero. Climate = 80% within-base rain rank score (target 0 mm/day) + 20% humidity rank score (target 55%) minus that penalty. No temperature ranking. Overall 60% climate / 20% festivals / 10% crowds / 10% prices unchanged. Reviewed rain exclusions still override numeric ratings and recommendations.
+
+## Category naming — 6 November 2026
+The former Standard display category is now Warm living (19°C target). Stable internal key standard retained for compatibility. Human-readable labels are centralized in method.climateTypeLabels and generated for profiles; Warm living badges now appear alongside other climate-type badges. No score or classification changes. Rain target remains the existing 5 mm/day for Warm living; this rename does not change it to the 0 mm/day target used by Beach and All season.
