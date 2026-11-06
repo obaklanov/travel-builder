@@ -461,18 +461,12 @@
     "bytes": 10610
   },
   "Sagrada Família": {
-    "author": "Bernard Gagnon",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sagrada_Familia_01.jpg",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "originalTitle": "File:Sagrada Familia 01.jpg",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Sagrada_Familia_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "src": "images/treasures/spain-sagrada-landscape.webp",
-    "alt": "Sagrada Família in a wider landscape view",
-    "width": 640,
-    "height": 430,
-    "bytes": 42308
-  },
+  "src": "images/treasures/spain-sagrada-owner.png",
+  "alt": "Illuminated Sagrada Família in Barcelona beneath a purple dusk sky",
+  "width": 938,
+  "height": 704,
+  "suppliedByOwner": true
+},
   "Alhambra": {
     "author": "Jebulon",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dawn_Charles_V_Palace_Alhambra_Granada_Andalusia_Spain.jpg",
