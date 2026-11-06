@@ -26,3 +26,5 @@ assert.equal(model.resolvedClimateType({country:'united-kingdom',id:'edinburgh',
 assert.equal(classified.filter(p=>p.climateType==='all-season').length,7);
 
 for(const [key,id] of [['portugal','porto'],['italy','venice']]){const p=model.out.countries[key].profiles.find(p=>p.id===id);assert.equal(p.climateType,'all-season');assert.equal(p.temperatureTargetC,null);}
+
+for(const p of Object.values(model.out.countries).flatMap(c=>c.profiles).filter(p=>p.climateType==='beach'))for(const m of model.climateScores(p.months,'beach'))assert(Math.abs(m.total-(m.temperature*2/3+m.rain*.2+m.humidity*2/15))<1e-10);

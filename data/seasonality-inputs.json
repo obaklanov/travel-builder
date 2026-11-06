@@ -34,7 +34,7 @@
     "limitations": "Crowd and price inputs are provisional editorial proxies and must be replaced by measured monthly data when available. Full-month averages hide short holiday spikes; climate grid cells can miss coastal and mountain microclimates.",
     "ranking": "Within each base only: ranks 1–4 BEST, 5–8 AVERAGE, 9–12 WORST. Equal values use January–December order to enforce exactly four per band.",
     "humidityTargetPct": 55,
-    "climateScoring": "Temperature: absolute distance from base-type target (standard 19°C, beach 25°C, winter −5°C); rain: absolute distance from 5 mm/calendar day; humidity: absolute distance from 55%. Rank only the base’s own 12 months; rank score = 100 × (12 − rank) / 11. Climate is 50% temperature, 30% rain, 20% humidity. Symmetric deviations, then calendar-order tie-breaking, preserve 4/4/4 bands.",
+    "climateScoring": "Temperature: absolute distance from base-type target (standard 19°C, beach 25°C, winter −5°C); rain: absolute distance from 5 mm/calendar day; humidity: absolute distance from 55%. Rank only the base’s own 12 months; rank score = 100 × (12 − rank) / 11. Climate is 50% temperature, 30% rain, 20% humidity. Symmetric deviations, then calendar-order tie-breaking, preserve 4/4/4 bands. Beach destinations double the temperature component weight before normalizing: temperature 2/3, rain 1/5, humidity 2/15. Multiplying deviation values before ranking alone would not change ranks.",
     "rainTargetMmPerDay": 5,
     "temperatureTargetsC": {
       "standard": 19,
@@ -52,7 +52,8 @@
       "rainWeight": 0.6,
       "humidityWeight": 0.4,
       "formula": "MAX(0, rain rank score × 0.60 + humidity rank score × 0.40 − 2 × MAX(−5 − daily mean °C, 0, daily mean °C − 19)). Inclusive range; temperature ranks are not used for this type."
-    }
+    },
+    "beachTemperatureWeightMultiplier": 2
   },
   "profiles": [
     {

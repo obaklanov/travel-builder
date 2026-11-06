@@ -15,7 +15,8 @@ function climateScores(months,type="standard"){
  const method=input.method,target=temperatureTargetC(type),allSeason=type==='all-season';
  const tr=allSeason?null:ranksOf(months.map(m=>deviation(m.meanDailyC,target))),rr=ranksOf(months.map(m=>deviation(m.meanRainMmPerDay,method.rainTargetMmPerDay))),hr=ranksOf(months.map(m=>deviation(m.meanRelativeHumidityPct,method.humidityTargetPct)));
  return months.map((m,i)=>{const temperature=allSeason?null:rankScore(tr[i]),rain=rankScore(rr[i]),humidity=rankScore(hr[i]),temperaturePenalty=allSeason?allSeasonTemperaturePenalty(m.meanDailyC):0;
-  const total=allSeason?clamp(rain*method.allSeason.rainWeight+humidity*method.allSeason.humidityWeight-temperaturePenalty):temperature*method.climateWeights.temperature+rain*method.climateWeights.rain+humidity*method.climateWeights.humidity;
+  const multiplier=type==='beach'?method.beachTemperatureWeightMultiplier:1,normalizer=method.climateWeights.temperature*multiplier+method.climateWeights.rain+method.climateWeights.humidity;
+  const total=allSeason?clamp(rain*method.allSeason.rainWeight+humidity*method.allSeason.humidityWeight-temperaturePenalty):(temperature*method.climateWeights.temperature*multiplier+rain*method.climateWeights.rain+humidity*method.climateWeights.humidity)/normalizer;
   return {temperature,rain,humidity,temperaturePenalty,temperatureRank:allSeason?null:tr[i],rainRank:rr[i],humidityRank:hr[i],total};
  });
 }
