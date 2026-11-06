@@ -79,6 +79,33 @@
         "average": 40
       },
       "ratingPolicy": "No forced quota. Below 16°C is UNSUITABLE and ineligible for recommendations. Otherwise BEST >=60, AVERAGE >=40, WORST <40 overall points."
+    },
+    "winter": {
+      "weights": {
+        "climate": 0.8,
+        "festivals": 0.1,
+        "crowds": 0.05,
+        "prices": 0.05
+      },
+      "climateWeights": {
+        "temperature": 0.5,
+        "snowCover": 0.3,
+        "snowfall": 0.2
+      },
+      "temperatureTargetC": -5,
+      "temperaturePointsPerDegree": 5,
+      "warmPenaltyThresholdC": 0,
+      "warmPenaltyPointsPerDegree": 10,
+      "maximumMeanTemperatureC": 5,
+      "fullSnowfallCmPerMonth": 60,
+      "snowDepthThresholdCm": 20,
+      "fullSnowCoverFraction": 0.8,
+      "ratingThresholds": {
+        "best": 60,
+        "average": 40
+      },
+      "bestMinimumSnowCoverFraction": 0.8,
+      "missingDataPolicy": "PENDING and excluded from Winter recommendations until mountain temperature, snowfall and snow-cover evidence are complete."
     }
   },
   "profiles": [
@@ -3621,7 +3648,22 @@
       "climateTypeReason": "Established Val Gardena ski destination, including the Seceda–Ortisei descent; also offers summer hiking.",
       "climateTypeSources": [
         "https://www.valgardena.it/en/winter-holidays-dolomites/ski-resort-val-gardena/?season=winter"
-      ]
+      ],
+      "winterClimate": {
+        "status": "pending",
+        "reason": "Open-Meteo daily API limit reached on 2026-11-06; mountain snow records not yet collected.",
+        "period": "2016–2025",
+        "model": "ERA5 via Open-Meteo",
+        "reference": {
+          "name": "Seceda mountain activity area",
+          "latitude": 46.6,
+          "longitude": 11.73,
+          "timezone": "Europe/Rome",
+          "sourceUrl": "https://www.seceda.it/en/winter"
+        },
+        "referencePolicy": "Representative mountain area separate from accommodation town. Grid elevation and snow-depth representativeness must be reviewed before marking complete.",
+        "months": null
+      }
     },
     {
       "id": "milan",
@@ -7089,7 +7131,22 @@
       "climateTypeReason": "Pyrenean gateway to nearby ski resorts and a winter-sports destination; also offers summer activities.",
       "climateTypeSources": [
         "https://www.jaca.es/sites/default/files/monumentos_jaca_ingles.pdf"
-      ]
+      ],
+      "winterClimate": {
+        "status": "pending",
+        "reason": "Open-Meteo daily API limit reached on 2026-11-06; mountain snow records not yet collected.",
+        "period": "2016–2025",
+        "model": "ERA5 via Open-Meteo",
+        "reference": {
+          "name": "Astún mountain activity area",
+          "latitude": 42.81,
+          "longitude": -0.505,
+          "timezone": "Europe/Madrid",
+          "sourceUrl": "https://www.spain.info/es/esquiar/estacion-esqui-astun/"
+        },
+        "referencePolicy": "Representative mountain area separate from accommodation town. Grid elevation and snow-depth representativeness must be reviewed before marking complete.",
+        "months": null
+      }
     },
     {
       "country": "united-kingdom",

@@ -60,6 +60,7 @@
             const end=new Date(start);end.setDate(end.getDate()+days-1);
             if(iso(end)>limits.returnMax||(f.latest&&iso(end)>f.latest))continue;
             const beachProfile=country.scoredSeasonality?.profiles?.[regionIndex];if(beachProfile?.climateType==='beach'){let cold=false;const cursor=new Date(start.getFullYear(),start.getMonth(),1,12);while(cursor<=end){if(beachProfile.months[cursor.getMonth()].meanDailyC<16)cold=true;cursor.setMonth(cursor.getMonth()+1);}if(cold)continue;}
+            const winterProfile=country.scoredSeasonality?.profiles?.[regionIndex];if(winterProfile?.climateType==='winter'){let unsuitable=false;const cursor=new Date(start.getFullYear(),start.getMonth(),1,12);while(cursor<=end){const snow=winterProfile.winterClimate?.months?.[cursor.getMonth()];if(!snow||!Number.isFinite(snow.meanDailyC)||!Number.isFinite(snow.meanMonthlySnowfallCm)||!Number.isFinite(snow.snowCoverFraction)||snow.meanDailyC>5)unsuitable=true;cursor.setMonth(cursor.getMonth()+1);}if(unsuitable)continue;}
             let seasonFits=true;if(f.season){const cursor=new Date(start.getFullYear(),start.getMonth(),1,12);while(cursor<=end){if(!f.season.includes((country.seasonByYear?.[cursor.getFullYear()]?.[regionIndex]||country.regions[regionIndex][1])[cursor.getMonth()]))seasonFits=false;cursor.setMonth(cursor.getMonth()+1);}}
             if(f.season&&hard('season')&&!seasonFits)continue;
             for(const route of routes(key,{origin:f.origin,regionIndex,departureDate:iso(start),returnDate:iso(end)})){
