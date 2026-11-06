@@ -1383,18 +1383,12 @@ const treasurePhotos = {
   "suppliedByOwner": true
 },
   "Christ the Redeemer": {
-    "author": "Mucio Scorzelli",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Corcovado_Blue_Sky_Day2.jpg",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "originalTitle": "File:Corcovado Blue Sky Day2.jpg",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Corcovado_Blue_Sky_Day2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "src": "images/treasures/brazil-1-new.webp",
-    "alt": "Christ the Redeemer — Brazil",
-    "width": 640,
-    "height": 407,
-    "bytes": 29458
-  },
+  "src": "images/treasures/brazil-christ-owner.png",
+  "alt": "Christ the Redeemer overlooking Rio de Janeiro and Guanabara Bay in warm evening light",
+  "width": 1421,
+  "height": 769,
+  "suppliedByOwner": true
+},
   "Iguaçu Falls (Brazil)": {
     "author": "Alé2199",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Serene_Igua%C3%A7u_Falls_03.jpg",

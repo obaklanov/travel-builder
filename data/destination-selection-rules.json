@@ -1,6 +1,6 @@
 {
   "updated": "2026-11-06",
-  "status": "Approved Portugal, Colombia, Italy and Spain lists integrated; historical climate model and provisional crowd/price/event inputs.",
+  "status": "Approved Portugal, Colombia, Italy, Spain, UK and France destinations integrated; historical climate and provisional crowd/price/event inputs.",
   "coveragePolicy": {
     "expandedCoverage": [
       "South America",
@@ -399,6 +399,340 @@
           "climateType": "winter"
         }
       ]
+    },
+    "united-kingdom": {
+      "approvedAt": "2026-11-06",
+      "liveLabelsUpdated": true,
+      "indexCompatibility": "First four retained as London, Edinburgh, Manchester (previous western region), Belfast.",
+      "seasonalityStatus": "2016–2025 ERA5 daily means, 60% climate / 20% festivals / 10% crowds / 10% prices, relative 4/4/4 final bands. Crowd/price ranks provisional; events partial.",
+      "airportPolicy": "Destination town and arrival airport are separate. Gateway options require onward transport; no live service, fare or ground-transfer duration is asserted.",
+      "destinations": [
+        {
+          "name": "London",
+          "area": "Southeast England",
+          "climateType": "standard",
+          "airportCandidates": [
+            "LHR",
+            "LGW"
+          ],
+          "nearbyPlaces": [
+            "Windsor"
+          ],
+          "treasures": [
+            "Big Ben"
+          ]
+        },
+        {
+          "name": "Edinburgh",
+          "area": "Southeast Scotland",
+          "climateType": "all-season",
+          "airportCandidates": [
+            "EDI"
+          ],
+          "nearbyPlaces": [
+            "Glasgow"
+          ],
+          "treasures": [
+            "Edinburgh Castle"
+          ]
+        },
+        {
+          "name": "Manchester",
+          "area": "Northwest England",
+          "climateType": "standard",
+          "airportCandidates": [
+            "MAN"
+          ],
+          "nearbyPlaces": [
+            "Liverpool"
+          ]
+        },
+        {
+          "name": "Belfast",
+          "area": "Northern Ireland",
+          "climateType": "standard",
+          "airportCandidates": [
+            "BFS",
+            "BHD"
+          ]
+        },
+        {
+          "name": "Bath",
+          "area": "Southwest England",
+          "climateType": "standard",
+          "airportCandidates": [
+            "BRS"
+          ],
+          "treasures": [
+            "Stonehenge"
+          ]
+        },
+        {
+          "name": "York",
+          "area": "Yorkshire",
+          "climateType": "standard",
+          "airportCandidates": [
+            "LBA",
+            "MAN"
+          ]
+        },
+        {
+          "name": "Windermere",
+          "area": "Lake District",
+          "climateType": "standard",
+          "airportCandidates": [
+            "MAN"
+          ]
+        },
+        {
+          "name": "St Ives",
+          "area": "Cornwall",
+          "climateType": "beach",
+          "airportCandidates": [
+            "NQY"
+          ]
+        },
+        {
+          "name": "Cardiff",
+          "area": "South Wales",
+          "climateType": "standard",
+          "airportCandidates": [
+            "CWL",
+            "BRS"
+          ]
+        },
+        {
+          "name": "Conwy",
+          "area": "North Wales",
+          "climateType": "standard",
+          "airportCandidates": [
+            "MAN",
+            "LPL"
+          ]
+        },
+        {
+          "name": "Inverness",
+          "area": "Northern Highlands",
+          "climateType": "all-season",
+          "airportCandidates": [
+            "INV"
+          ]
+        },
+        {
+          "name": "Fort William",
+          "area": "Western Highlands",
+          "climateType": "all-season",
+          "airportCandidates": [
+            "INV",
+            "GLA"
+          ]
+        },
+        {
+          "name": "Portree",
+          "area": "Isle of Skye",
+          "climateType": "all-season",
+          "airportCandidates": [
+            "INV",
+            "GLA"
+          ]
+        }
+      ]
+    },
+    "france": {
+      "approvedAt": "2026-11-06",
+      "liveLabelsUpdated": true,
+      "indexCompatibility": "First six retained as Paris, Bayeux (Normandy), Marseille (Provence), Nice, Lyon (Alps gateway), Ajaccio.",
+      "seasonalityStatus": "2016–2025 ERA5 daily means, 60% climate / 20% festivals / 10% crowds / 10% prices, relative 4/4/4 final bands. Crowd/price ranks provisional; events partial.",
+      "airportPolicy": "Destination town and arrival airport are separate. Gateway options require onward transport; no live service, fare or ground-transfer duration is asserted.",
+      "destinations": [
+        {
+          "name": "Paris",
+          "area": "Île-de-France",
+          "climateType": "standard",
+          "airportCandidates": [
+            "CDG",
+            "ORY"
+          ],
+          "nearbyPlaces": [
+            "Versailles"
+          ],
+          "treasures": [
+            "Eiffel Tower"
+          ]
+        },
+        {
+          "name": "Bayeux",
+          "area": "Normandy",
+          "climateType": "standard",
+          "airportCandidates": [
+            "CFR",
+            "CDG"
+          ]
+        },
+        {
+          "name": "Marseille",
+          "area": "Mediterranean coast",
+          "climateType": "standard",
+          "airportCandidates": [
+            "MRS"
+          ]
+        },
+        {
+          "name": "Nice",
+          "area": "French Riviera",
+          "climateType": "beach",
+          "airportCandidates": [
+            "NCE"
+          ],
+          "nearbyPlaces": [
+            "Cannes",
+            "Antibes"
+          ]
+        },
+        {
+          "name": "Lyon",
+          "area": "Rhône region",
+          "climateType": "standard",
+          "airportCandidates": [
+            "LYS"
+          ]
+        },
+        {
+          "name": "Ajaccio",
+          "area": "Corsica",
+          "climateType": "beach",
+          "airportCandidates": [
+            "AJA"
+          ]
+        },
+        {
+          "name": "Saint-Malo",
+          "area": "Brittany",
+          "climateType": "standard",
+          "airportCandidates": [
+            "RNS"
+          ],
+          "treasures": [
+            "Mont-Saint-Michel"
+          ]
+        },
+        {
+          "name": "Tours",
+          "area": "Loire Valley",
+          "climateType": "standard",
+          "airportCandidates": [
+            "CDG",
+            "ORY"
+          ]
+        },
+        {
+          "name": "Strasbourg",
+          "area": "Alsace",
+          "climateType": "all-season",
+          "airportCandidates": [
+            "SXB",
+            "BSL"
+          ],
+          "nearbyPlaces": [
+            "Colmar"
+          ]
+        },
+        {
+          "name": "Dijon",
+          "area": "Burgundy",
+          "climateType": "standard",
+          "airportCandidates": [
+            "LYS",
+            "CDG"
+          ]
+        },
+        {
+          "name": "Annecy",
+          "area": "French Alps",
+          "climateType": "standard",
+          "airportCandidates": [
+            "GVA",
+            "LYS"
+          ]
+        },
+        {
+          "name": "Avignon",
+          "area": "Provence",
+          "climateType": "standard",
+          "airportCandidates": [
+            "MRS",
+            "MPL"
+          ],
+          "treasures": [
+            "Pont du Gard"
+          ]
+        },
+        {
+          "name": "Bordeaux",
+          "area": "Southwest",
+          "climateType": "standard",
+          "airportCandidates": [
+            "BOD"
+          ]
+        },
+        {
+          "name": "Sarlat-la-Canéda",
+          "area": "Dordogne",
+          "climateType": "standard",
+          "airportCandidates": [
+            "BVE",
+            "EGC"
+          ]
+        },
+        {
+          "name": "Toulouse",
+          "area": "Occitanie",
+          "climateType": "standard",
+          "airportCandidates": [
+            "TLS"
+          ]
+        },
+        {
+          "name": "Biarritz",
+          "area": "French Basque coast",
+          "climateType": "beach",
+          "airportCandidates": [
+            "BIQ"
+          ]
+        }
+      ]
+    }
+  },
+  "climateTypeAssignments": {
+    "france:strasbourg": {
+      "name": "Strasbourg",
+      "climateType": "all-season",
+      "reason": "Owner-selected all-season destination, approved 6 November 2026.",
+      "status": "Integrated with UK/France climate rollout."
+    },
+    "united-kingdom:edinburgh": {
+      "name": "Edinburgh",
+      "climateType": "all-season",
+      "reason": "Owner-selected all-season destination, approved 6 November 2026.",
+      "status": "Integrated with UK/France climate rollout."
+    },
+    "united-kingdom:inverness": {
+      "name": "Inverness",
+      "climateType": "all-season",
+      "reason": "Owner-selected all-season destination, approved 6 November 2026.",
+      "status": "Integrated with UK/France climate rollout."
+    },
+    "united-kingdom:fort-william": {
+      "name": "Fort William",
+      "climateType": "all-season",
+      "reason": "Owner-selected all-season destination, approved 6 November 2026.",
+      "status": "Integrated with UK/France climate rollout."
+    },
+    "united-kingdom:portree": {
+      "name": "Portree",
+      "climateType": "all-season",
+      "reason": "Owner-selected all-season destination, approved 6 November 2026.",
+      "status": "Integrated with UK/France climate rollout."
     }
   }
 }

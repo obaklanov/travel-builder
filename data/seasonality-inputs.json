@@ -1,5 +1,5 @@
 {
-  "version": 4,
+  "version": 5,
   "reviewedAt": "2026-11-06",
   "climate": {
     "period": "2016-01-01/2025-12-31",
@@ -39,9 +39,20 @@
     "temperatureTargetsC": {
       "standard": 19,
       "beach": 25,
-      "winter": -5
+      "winter": -5,
+      "all-season": null
     },
-    "destinationTypePolicy": "Exactly one active primary climate type per base. Beach means a beach-oriented holiday base; winter means a well-established ski/winter-holiday base. A coast or Christmas market alone does not classify every mixed-purpose city. This editorial assignment is reviewable and is not a claim that the base has only one season."
+    "destinationTypePolicy": "Exactly one active primary climate type per base. Beach means a beach-oriented holiday base; winter means a well-established ski/winter-holiday base. A coast or Christmas market alone does not classify every mixed-purpose city. This editorial assignment is reviewable and is not a claim that the base has only one season. All season uses a temperature comfort interval, not a single target. Named owner-approved assignments override a later imported profile default. All season has no forced temperature-component bands; rain, humidity, combined climate and final tourist ratings retain within-base ranks.",
+    "allSeason": {
+      "temperatureRangeC": [
+        -5,
+        19
+      ],
+      "penaltyPointsPerDegree": 2,
+      "rainWeight": 0.6,
+      "humidityWeight": 0.4,
+      "formula": "MAX(0, rain rank score × 0.60 + humidity rank score × 0.40 − 2 × MAX(−5 − daily mean °C, 0, daily mean °C − 19)). Inclusive range; temperature ranks are not used for this type."
+    }
   },
   "profiles": [
     {
@@ -7052,6 +7063,5030 @@
       "climateTypeSources": [
         "https://www.jaca.es/sites/default/files/monumentos_jaca_ingles.pdf"
       ]
+    },
+    {
+      "country": "united-kingdom",
+      "id": "london",
+      "name": "London",
+      "area": "Southeast England",
+      "latitude": 51.5074,
+      "longitude": -0.1278,
+      "airports": [
+        [
+          "LHR",
+          "London Heathrow"
+        ],
+        [
+          "LGW",
+          "London Gatwick"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 0,
+      "gridLatitude": 51.5,
+      "gridLongitude": -0.25,
+      "elevation": 16,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=51.5074&longitude=-0.1278&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FLondon&models=era5",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; standard 19°C target.",
+      "climateTypeSources": [
+        "https://www.visitbritain.com/en/destinations"
+      ],
+      "climateReviewNote": null,
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 5.27,
+          "meanDailyHighC": 7.84,
+          "meanRainMmPerDay": 1.81,
+          "meanRelativeHumidityPct": 87.17,
+          "rainyDayFraction": 0.3645
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 6.49,
+          "meanDailyHighC": 9.3,
+          "meanRainMmPerDay": 1.724,
+          "meanRelativeHumidityPct": 83.47,
+          "rainyDayFraction": 0.364
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 7.86,
+          "meanDailyHighC": 11.2,
+          "meanRainMmPerDay": 1.689,
+          "meanRelativeHumidityPct": 79.75,
+          "rainyDayFraction": 0.4161
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 9.88,
+          "meanDailyHighC": 14.01,
+          "meanRainMmPerDay": 1.3653,
+          "meanRelativeHumidityPct": 73.21,
+          "rainyDayFraction": 0.3233
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 13.55,
+          "meanDailyHighC": 17.74,
+          "meanRainMmPerDay": 1.719,
+          "meanRelativeHumidityPct": 73.61,
+          "rainyDayFraction": 0.3194
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 16.9,
+          "meanDailyHighC": 21.07,
+          "meanRainMmPerDay": 2.057,
+          "meanRelativeHumidityPct": 73.55,
+          "rainyDayFraction": 0.3067
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.7,
+          "meanDailyHighC": 22.78,
+          "meanRainMmPerDay": 1.7665,
+          "meanRelativeHumidityPct": 71.99,
+          "rainyDayFraction": 0.3194
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.21,
+          "meanDailyHighC": 22.35,
+          "meanRainMmPerDay": 1.6952,
+          "meanRelativeHumidityPct": 74.94,
+          "rainyDayFraction": 0.2935
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 15.71,
+          "meanDailyHighC": 19.69,
+          "meanRainMmPerDay": 1.877,
+          "meanRelativeHumidityPct": 79.32,
+          "rainyDayFraction": 0.3567
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 12.35,
+          "meanDailyHighC": 15.46,
+          "meanRainMmPerDay": 2.3135,
+          "meanRelativeHumidityPct": 85.07,
+          "rainyDayFraction": 0.371
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 8.36,
+          "meanDailyHighC": 10.95,
+          "meanRainMmPerDay": 2.1883,
+          "meanRelativeHumidityPct": 87.56,
+          "rainyDayFraction": 0.3833
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 6.89,
+          "meanDailyHighC": 9.09,
+          "meanRainMmPerDay": 1.9974,
+          "meanRelativeHumidityPct": 89.27,
+          "rainyDayFraction": 0.3742
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for urban, rural/coastal or Christmas-market context. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          8,
+          12,
+          4,
+          7,
+          10,
+          6,
+          9,
+          5
+        ],
+        "sourceUrls": [
+          "https://www.visitbritain.com/en/destinations"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          8,
+          12,
+          4,
+          7,
+          10,
+          6,
+          9,
+          5
+        ],
+        "sourceUrls": [
+          "https://www.visitbritain.com/en/destinations"
+        ]
+      },
+      "events": [
+        {
+          "name": "Notting Hill Carnival",
+          "months": [
+            8
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://nhcarnival.org/faqs"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Nice Carnival may cross February/March; those months are a broad seasonal approximation."
+    },
+    {
+      "country": "united-kingdom",
+      "id": "edinburgh",
+      "name": "Edinburgh",
+      "area": "Southeast Scotland",
+      "latitude": 55.9533,
+      "longitude": -3.1883,
+      "airports": [
+        [
+          "EDI",
+          "Edinburgh"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 1,
+      "gridLatitude": 56,
+      "gridLongitude": -3.25,
+      "elevation": 69,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=55.9533&longitude=-3.1883&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FLondon&models=era5",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from −5 to 19°C.",
+      "climateTypeSources": [
+        "https://www.visitbritain.com/en/destinations"
+      ],
+      "climateReviewNote": null,
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 4.88,
+          "meanDailyHighC": 6.96,
+          "meanRainMmPerDay": 1.9265,
+          "meanRelativeHumidityPct": 85.09,
+          "rainyDayFraction": 0.3903
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 5.64,
+          "meanDailyHighC": 7.97,
+          "meanRainMmPerDay": 2.183,
+          "meanRelativeHumidityPct": 81.93,
+          "rainyDayFraction": 0.4841
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 6.63,
+          "meanDailyHighC": 9.63,
+          "meanRainMmPerDay": 1.9894,
+          "meanRelativeHumidityPct": 80.21,
+          "rainyDayFraction": 0.4484
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 8.26,
+          "meanDailyHighC": 11.73,
+          "meanRainMmPerDay": 1.4037,
+          "meanRelativeHumidityPct": 76.14,
+          "rainyDayFraction": 0.3567
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 11.74,
+          "meanDailyHighC": 15.43,
+          "meanRainMmPerDay": 1.6129,
+          "meanRelativeHumidityPct": 76.55,
+          "rainyDayFraction": 0.3516
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 14.21,
+          "meanDailyHighC": 17.58,
+          "meanRainMmPerDay": 2.0697,
+          "meanRelativeHumidityPct": 77.29,
+          "rainyDayFraction": 0.4067
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 15.84,
+          "meanDailyHighC": 19.11,
+          "meanRainMmPerDay": 2.3042,
+          "meanRelativeHumidityPct": 79.23,
+          "rainyDayFraction": 0.471
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 15.44,
+          "meanDailyHighC": 18.65,
+          "meanRainMmPerDay": 2.2961,
+          "meanRelativeHumidityPct": 80.46,
+          "rainyDayFraction": 0.4548
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 13.48,
+          "meanDailyHighC": 16.67,
+          "meanRainMmPerDay": 2.1767,
+          "meanRelativeHumidityPct": 81.43,
+          "rainyDayFraction": 0.4167
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 10.66,
+          "meanDailyHighC": 13.2,
+          "meanRainMmPerDay": 2.8919,
+          "meanRelativeHumidityPct": 83.85,
+          "rainyDayFraction": 0.4774
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 7.16,
+          "meanDailyHighC": 9.49,
+          "meanRainMmPerDay": 2.3493,
+          "meanRelativeHumidityPct": 85.34,
+          "rainyDayFraction": 0.4433
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 5.85,
+          "meanDailyHighC": 7.86,
+          "meanRainMmPerDay": 2.43,
+          "meanRelativeHumidityPct": 86.64,
+          "rainyDayFraction": 0.4677
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for urban, rural/coastal or Christmas-market context. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          8,
+          12,
+          4,
+          7,
+          10,
+          6,
+          9,
+          5
+        ],
+        "sourceUrls": [
+          "https://www.visitbritain.com/en/destinations"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          8,
+          12,
+          4,
+          7,
+          10,
+          6,
+          9,
+          5
+        ],
+        "sourceUrls": [
+          "https://www.visitbritain.com/en/destinations"
+        ]
+      },
+      "events": [
+        {
+          "name": "Edinburgh Festival Fringe",
+          "months": [
+            8
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://www.edfringe.com/"
+        },
+        {
+          "name": "Edinburgh Christmas",
+          "months": [
+            11,
+            12
+          ],
+          "prominence": 1,
+          "sourceUrl": "https://edinburgh.org/festivals/"
+        },
+        {
+          "name": "Hogmanay",
+          "months": [
+            12,
+            1
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://edinburgh.org/festivals/"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Nice Carnival may cross February/March; those months are a broad seasonal approximation."
+    },
+    {
+      "country": "united-kingdom",
+      "id": "manchester",
+      "name": "Manchester",
+      "area": "Northwest England",
+      "latitude": 53.4808,
+      "longitude": -2.2426,
+      "airports": [
+        [
+          "MAN",
+          "Manchester"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 2,
+      "gridLatitude": 53.5,
+      "gridLongitude": -2.25,
+      "elevation": 52,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=53.4808&longitude=-2.2426&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FLondon&models=era5",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; standard 19°C target.",
+      "climateTypeSources": [
+        "https://www.visitbritain.com/en/destinations"
+      ],
+      "climateReviewNote": null,
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 4.9,
+          "meanDailyHighC": 7.24,
+          "meanRainMmPerDay": 2.8948,
+          "meanRelativeHumidityPct": 89.09,
+          "rainyDayFraction": 0.4871
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 5.9,
+          "meanDailyHighC": 8.53,
+          "meanRainMmPerDay": 3.1286,
+          "meanRelativeHumidityPct": 85.02,
+          "rainyDayFraction": 0.5371
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 7.06,
+          "meanDailyHighC": 10.44,
+          "meanRainMmPerDay": 2.6245,
+          "meanRelativeHumidityPct": 81.35,
+          "rainyDayFraction": 0.4516
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 8.96,
+          "meanDailyHighC": 13.02,
+          "meanRainMmPerDay": 1.8727,
+          "meanRelativeHumidityPct": 75.26,
+          "rainyDayFraction": 0.39
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 12.56,
+          "meanDailyHighC": 16.73,
+          "meanRainMmPerDay": 2.0113,
+          "meanRelativeHumidityPct": 75.9,
+          "rainyDayFraction": 0.3774
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 15.38,
+          "meanDailyHighC": 19.24,
+          "meanRainMmPerDay": 3.0153,
+          "meanRelativeHumidityPct": 77.39,
+          "rainyDayFraction": 0.5067
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 16.6,
+          "meanDailyHighC": 20.18,
+          "meanRainMmPerDay": 3.1187,
+          "meanRelativeHumidityPct": 80.03,
+          "rainyDayFraction": 0.5
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 16.27,
+          "meanDailyHighC": 19.84,
+          "meanRainMmPerDay": 2.7226,
+          "meanRelativeHumidityPct": 81.14,
+          "rainyDayFraction": 0.5032
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 14.15,
+          "meanDailyHighC": 17.63,
+          "meanRainMmPerDay": 3.2177,
+          "meanRelativeHumidityPct": 84.15,
+          "rainyDayFraction": 0.47
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 11.17,
+          "meanDailyHighC": 13.94,
+          "meanRainMmPerDay": 3.5568,
+          "meanRelativeHumidityPct": 87.03,
+          "rainyDayFraction": 0.4935
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 7.51,
+          "meanDailyHighC": 9.9,
+          "meanRainMmPerDay": 2.8907,
+          "meanRelativeHumidityPct": 89.42,
+          "rainyDayFraction": 0.5433
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 6.12,
+          "meanDailyHighC": 8.25,
+          "meanRainMmPerDay": 3.221,
+          "meanRelativeHumidityPct": 90.6,
+          "rainyDayFraction": 0.5032
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for urban, rural/coastal or Christmas-market context. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          8,
+          12,
+          4,
+          7,
+          10,
+          6,
+          9,
+          5
+        ],
+        "sourceUrls": [
+          "https://www.visitbritain.com/en/destinations"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          8,
+          12,
+          4,
+          7,
+          10,
+          6,
+          9,
+          5
+        ],
+        "sourceUrls": [
+          "https://www.visitbritain.com/en/destinations"
+        ]
+      },
+      "events": [
+        {
+          "name": "Manchester Village Pride",
+          "months": [
+            8
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://www.visitmanchester.com/ideas-and-inspiration/blog/post/city-wide-pride-activities-in-manchester/"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Nice Carnival may cross February/March; those months are a broad seasonal approximation."
+    },
+    {
+      "country": "united-kingdom",
+      "id": "belfast",
+      "name": "Belfast",
+      "area": "Northern Ireland",
+      "latitude": 54.5973,
+      "longitude": -5.9301,
+      "airports": [
+        [
+          "BFS",
+          "Belfast International"
+        ],
+        [
+          "BHD",
+          "Belfast City"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 3,
+      "gridLatitude": 54.5,
+      "gridLongitude": -6,
+      "elevation": 13,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=54.5973&longitude=-5.9301&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FLondon&models=era5",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; standard 19°C target.",
+      "climateTypeSources": [
+        "https://www.visitbritain.com/en/destinations"
+      ],
+      "climateReviewNote": null,
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 6.11,
+          "meanDailyHighC": 8.01,
+          "meanRainMmPerDay": 2.0003,
+          "meanRelativeHumidityPct": 85.97,
+          "rainyDayFraction": 0.3935
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 6.62,
+          "meanDailyHighC": 8.75,
+          "meanRainMmPerDay": 2.4322,
+          "meanRelativeHumidityPct": 82.99,
+          "rainyDayFraction": 0.47
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 7.38,
+          "meanDailyHighC": 9.94,
+          "meanRainMmPerDay": 2.1719,
+          "meanRelativeHumidityPct": 81.48,
+          "rainyDayFraction": 0.4677
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 8.92,
+          "meanDailyHighC": 11.65,
+          "meanRainMmPerDay": 1.9137,
+          "meanRelativeHumidityPct": 78.49,
+          "rainyDayFraction": 0.3867
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 12.07,
+          "meanDailyHighC": 15.13,
+          "meanRainMmPerDay": 1.9097,
+          "meanRelativeHumidityPct": 78.06,
+          "rainyDayFraction": 0.4097
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 14.49,
+          "meanDailyHighC": 17.35,
+          "meanRainMmPerDay": 2.4413,
+          "meanRelativeHumidityPct": 79.04,
+          "rainyDayFraction": 0.5
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 15.72,
+          "meanDailyHighC": 18.5,
+          "meanRainMmPerDay": 2.67,
+          "meanRelativeHumidityPct": 81.01,
+          "rainyDayFraction": 0.471
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 15.7,
+          "meanDailyHighC": 18.39,
+          "meanRainMmPerDay": 2.9419,
+          "meanRelativeHumidityPct": 82.2,
+          "rainyDayFraction": 0.4935
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 13.93,
+          "meanDailyHighC": 16.52,
+          "meanRainMmPerDay": 2.8617,
+          "meanRelativeHumidityPct": 83.32,
+          "rainyDayFraction": 0.48
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 11.52,
+          "meanDailyHighC": 13.66,
+          "meanRainMmPerDay": 2.8345,
+          "meanRelativeHumidityPct": 84.05,
+          "rainyDayFraction": 0.471
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 8.48,
+          "meanDailyHighC": 10.44,
+          "meanRainMmPerDay": 2.6607,
+          "meanRelativeHumidityPct": 85.84,
+          "rainyDayFraction": 0.4333
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 7.15,
+          "meanDailyHighC": 8.94,
+          "meanRainMmPerDay": 2.7119,
+          "meanRelativeHumidityPct": 87.46,
+          "rainyDayFraction": 0.4645
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for urban, rural/coastal or Christmas-market context. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          8,
+          12,
+          4,
+          7,
+          10,
+          6,
+          9,
+          5
+        ],
+        "sourceUrls": [
+          "https://www.visitbritain.com/en/destinations"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          8,
+          12,
+          4,
+          7,
+          10,
+          6,
+          9,
+          5
+        ],
+        "sourceUrls": [
+          "https://www.visitbritain.com/en/destinations"
+        ]
+      },
+      "events": [
+        {
+          "name": "Belfast International Arts Festival",
+          "months": [
+            10,
+            11
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://belfastinternationalartsfestival.com/about-us/"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Nice Carnival may cross February/March; those months are a broad seasonal approximation."
+    },
+    {
+      "country": "united-kingdom",
+      "id": "bath",
+      "name": "Bath",
+      "area": "Southwest England",
+      "latitude": 51.3811,
+      "longitude": -2.359,
+      "airports": [
+        [
+          "BRS",
+          "Bristol"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 4,
+      "gridLatitude": 51.5,
+      "gridLongitude": -2.25,
+      "elevation": 33,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=51.3811&longitude=-2.359&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FLondon&models=era5",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; standard 19°C target.",
+      "climateTypeSources": [
+        "https://www.visitbritain.com/en/destinations"
+      ],
+      "climateReviewNote": null,
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 5.46,
+          "meanDailyHighC": 8.04,
+          "meanRainMmPerDay": 2.0677,
+          "meanRelativeHumidityPct": 87.86,
+          "rainyDayFraction": 0.371
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 6.6,
+          "meanDailyHighC": 9.4,
+          "meanRainMmPerDay": 2.1731,
+          "meanRelativeHumidityPct": 84.46,
+          "rainyDayFraction": 0.3852
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 7.78,
+          "meanDailyHighC": 11.09,
+          "meanRainMmPerDay": 2.1619,
+          "meanRelativeHumidityPct": 80.9,
+          "rainyDayFraction": 0.4387
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 9.77,
+          "meanDailyHighC": 13.84,
+          "meanRainMmPerDay": 1.72,
+          "meanRelativeHumidityPct": 74.79,
+          "rainyDayFraction": 0.3433
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 13.32,
+          "meanDailyHighC": 17.44,
+          "meanRainMmPerDay": 2.0145,
+          "meanRelativeHumidityPct": 75.46,
+          "rainyDayFraction": 0.3581
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 16.32,
+          "meanDailyHighC": 20.29,
+          "meanRainMmPerDay": 1.9563,
+          "meanRelativeHumidityPct": 76.37,
+          "rainyDayFraction": 0.3667
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.09,
+          "meanDailyHighC": 22.08,
+          "meanRainMmPerDay": 1.8368,
+          "meanRelativeHumidityPct": 74.84,
+          "rainyDayFraction": 0.3323
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.5,
+          "meanDailyHighC": 21.44,
+          "meanRainMmPerDay": 1.9768,
+          "meanRelativeHumidityPct": 77.85,
+          "rainyDayFraction": 0.3194
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 15.17,
+          "meanDailyHighC": 19,
+          "meanRainMmPerDay": 2.4573,
+          "meanRelativeHumidityPct": 81.76,
+          "rainyDayFraction": 0.39
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 12.09,
+          "meanDailyHighC": 15.13,
+          "meanRainMmPerDay": 2.9429,
+          "meanRelativeHumidityPct": 86.03,
+          "rainyDayFraction": 0.4387
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 8.39,
+          "meanDailyHighC": 11.01,
+          "meanRainMmPerDay": 2.567,
+          "meanRelativeHumidityPct": 88.11,
+          "rainyDayFraction": 0.4033
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 7.05,
+          "meanDailyHighC": 9.2,
+          "meanRainMmPerDay": 2.5123,
+          "meanRelativeHumidityPct": 89.66,
+          "rainyDayFraction": 0.4355
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for urban, rural/coastal or Christmas-market context. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          8,
+          12,
+          4,
+          7,
+          10,
+          6,
+          9,
+          5
+        ],
+        "sourceUrls": [
+          "https://www.visitbritain.com/en/destinations"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          8,
+          12,
+          4,
+          7,
+          10,
+          6,
+          9,
+          5
+        ],
+        "sourceUrls": [
+          "https://www.visitbritain.com/en/destinations"
+        ]
+      },
+      "events": [
+        {
+          "name": "Jane Austen Festival",
+          "months": [
+            9
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://www.visitbath.co.uk/blog/read/2026/03/baths-festival-lineup-for-2026-b211"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Nice Carnival may cross February/March; those months are a broad seasonal approximation."
+    },
+    {
+      "country": "united-kingdom",
+      "id": "york",
+      "name": "York",
+      "area": "Yorkshire",
+      "latitude": 53.959,
+      "longitude": -1.0815,
+      "airports": [
+        [
+          "LBA",
+          "Leeds Bradford"
+        ],
+        [
+          "MAN",
+          "Manchester"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 5,
+      "gridLatitude": 54,
+      "gridLongitude": -1,
+      "elevation": 22,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=53.959&longitude=-1.0815&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FLondon&models=era5",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; standard 19°C target.",
+      "climateTypeSources": [
+        "https://www.visitbritain.com/en/destinations"
+      ],
+      "climateReviewNote": null,
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 4.49,
+          "meanDailyHighC": 7.07,
+          "meanRainMmPerDay": 1.7606,
+          "meanRelativeHumidityPct": 87.04,
+          "rainyDayFraction": 0.3677
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 5.7,
+          "meanDailyHighC": 8.68,
+          "meanRainMmPerDay": 1.9141,
+          "meanRelativeHumidityPct": 82.97,
+          "rainyDayFraction": 0.3852
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 6.97,
+          "meanDailyHighC": 10.61,
+          "meanRainMmPerDay": 1.9052,
+          "meanRelativeHumidityPct": 79.89,
+          "rainyDayFraction": 0.4097
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 8.62,
+          "meanDailyHighC": 12.84,
+          "meanRainMmPerDay": 1.4907,
+          "meanRelativeHumidityPct": 75.16,
+          "rainyDayFraction": 0.3267
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 12.33,
+          "meanDailyHighC": 16.55,
+          "meanRainMmPerDay": 1.8016,
+          "meanRelativeHumidityPct": 75.99,
+          "rainyDayFraction": 0.3581
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 15.33,
+          "meanDailyHighC": 19.37,
+          "meanRainMmPerDay": 2.276,
+          "meanRelativeHumidityPct": 75.63,
+          "rainyDayFraction": 0.37
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.11,
+          "meanDailyHighC": 21.22,
+          "meanRainMmPerDay": 2.4519,
+          "meanRelativeHumidityPct": 75.58,
+          "rainyDayFraction": 0.429
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 16.74,
+          "meanDailyHighC": 20.79,
+          "meanRainMmPerDay": 2.0013,
+          "meanRelativeHumidityPct": 76.23,
+          "rainyDayFraction": 0.3774
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 14.32,
+          "meanDailyHighC": 18.27,
+          "meanRainMmPerDay": 2.179,
+          "meanRelativeHumidityPct": 80.91,
+          "rainyDayFraction": 0.41
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 11.13,
+          "meanDailyHighC": 14.24,
+          "meanRainMmPerDay": 2.4697,
+          "meanRelativeHumidityPct": 84.93,
+          "rainyDayFraction": 0.4419
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 7.35,
+          "meanDailyHighC": 9.95,
+          "meanRainMmPerDay": 2.1073,
+          "meanRelativeHumidityPct": 87.84,
+          "rainyDayFraction": 0.4
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 5.71,
+          "meanDailyHighC": 8.03,
+          "meanRainMmPerDay": 2.2326,
+          "meanRelativeHumidityPct": 89.15,
+          "rainyDayFraction": 0.4129
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for urban, rural/coastal or Christmas-market context. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          8,
+          12,
+          4,
+          7,
+          10,
+          6,
+          9,
+          5
+        ],
+        "sourceUrls": [
+          "https://www.visitbritain.com/en/destinations"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          8,
+          12,
+          4,
+          7,
+          10,
+          6,
+          9,
+          5
+        ],
+        "sourceUrls": [
+          "https://www.visitbritain.com/en/destinations"
+        ]
+      },
+      "events": [
+        {
+          "name": "JORVIK Viking Festival",
+          "months": [
+            2
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://visityork.org/blog/jorvik-viking-festival-2025"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Nice Carnival may cross February/March; those months are a broad seasonal approximation."
+    },
+    {
+      "country": "united-kingdom",
+      "id": "windermere",
+      "name": "Windermere",
+      "area": "Lake District",
+      "latitude": 54.3809,
+      "longitude": -2.907,
+      "airports": [
+        [
+          "MAN",
+          "Manchester"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 6,
+      "gridLatitude": 54.5,
+      "gridLongitude": -3,
+      "elevation": 122,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=54.3809&longitude=-2.907&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FLondon&models=era5",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; standard 19°C target.",
+      "climateTypeSources": [
+        "https://www.visitbritain.com/en/destinations"
+      ],
+      "climateReviewNote": "Town-point ERA5 grid estimate; nearby mountain and coastal microclimates can differ. This is not a snow or mountain-conditions forecast.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 4.48,
+          "meanDailyHighC": 6.5,
+          "meanRainMmPerDay": 4.1461,
+          "meanRelativeHumidityPct": 90.06,
+          "rainyDayFraction": 0.4968
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 5.23,
+          "meanDailyHighC": 7.41,
+          "meanRainMmPerDay": 4.6587,
+          "meanRelativeHumidityPct": 87.14,
+          "rainyDayFraction": 0.5654
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 6.29,
+          "meanDailyHighC": 9.15,
+          "meanRainMmPerDay": 3.44,
+          "meanRelativeHumidityPct": 84.35,
+          "rainyDayFraction": 0.4903
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 8.1,
+          "meanDailyHighC": 11.69,
+          "meanRainMmPerDay": 2.4137,
+          "meanRelativeHumidityPct": 78.17,
+          "rainyDayFraction": 0.42
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 11.69,
+          "meanDailyHighC": 15.36,
+          "meanRainMmPerDay": 2.3652,
+          "meanRelativeHumidityPct": 79.12,
+          "rainyDayFraction": 0.429
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 14.38,
+          "meanDailyHighC": 17.58,
+          "meanRainMmPerDay": 3.363,
+          "meanRelativeHumidityPct": 80.93,
+          "rainyDayFraction": 0.55
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 15.57,
+          "meanDailyHighC": 18.51,
+          "meanRainMmPerDay": 3.689,
+          "meanRelativeHumidityPct": 83.88,
+          "rainyDayFraction": 0.5645
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 15.35,
+          "meanDailyHighC": 18.13,
+          "meanRainMmPerDay": 4.1103,
+          "meanRelativeHumidityPct": 85.11,
+          "rainyDayFraction": 0.5968
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 13.36,
+          "meanDailyHighC": 16.27,
+          "meanRainMmPerDay": 4.533,
+          "meanRelativeHumidityPct": 86.41,
+          "rainyDayFraction": 0.5633
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 10.55,
+          "meanDailyHighC": 12.9,
+          "meanRainMmPerDay": 4.5361,
+          "meanRelativeHumidityPct": 88.25,
+          "rainyDayFraction": 0.5677
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 7.04,
+          "meanDailyHighC": 9.22,
+          "meanRainMmPerDay": 4.3093,
+          "meanRelativeHumidityPct": 89.82,
+          "rainyDayFraction": 0.5633
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 5.73,
+          "meanDailyHighC": 7.57,
+          "meanRainMmPerDay": 4.6826,
+          "meanRelativeHumidityPct": 91.31,
+          "rainyDayFraction": 0.5742
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for urban, rural/coastal or Christmas-market context. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          12,
+          4,
+          10,
+          5,
+          9,
+          6,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.visitbritain.com/en/destinations"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          12,
+          4,
+          10,
+          5,
+          9,
+          6,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.visitbritain.com/en/destinations"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Nice Carnival may cross February/March; those months are a broad seasonal approximation."
+    },
+    {
+      "country": "united-kingdom",
+      "id": "st-ives",
+      "name": "St Ives",
+      "area": "Cornwall",
+      "latitude": 50.2111,
+      "longitude": -5.4804,
+      "airports": [
+        [
+          "NQY",
+          "Cornwall Newquay"
+        ]
+      ],
+      "climateType": "beach",
+      "regionIndex": 7,
+      "gridLatitude": 50.25,
+      "gridLongitude": -5.5,
+      "elevation": 18,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=50.2111&longitude=-5.4804&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FLondon&models=era5",
+      "climateTypeReason": "Approved beach-oriented holiday base; 25°C target.",
+      "climateTypeSources": [
+        "https://www.visitbritain.com/en/destinations"
+      ],
+      "climateReviewNote": null,
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 8.18,
+          "meanDailyHighC": 9.59,
+          "meanRainMmPerDay": 2.9526,
+          "meanRelativeHumidityPct": 80.87,
+          "rainyDayFraction": 0.471
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 8.36,
+          "meanDailyHighC": 9.79,
+          "meanRainMmPerDay": 2.8576,
+          "meanRelativeHumidityPct": 81.22,
+          "rainyDayFraction": 0.5088
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 8.66,
+          "meanDailyHighC": 10.27,
+          "meanRainMmPerDay": 2.5823,
+          "meanRelativeHumidityPct": 80.73,
+          "rainyDayFraction": 0.5
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 10.03,
+          "meanDailyHighC": 11.95,
+          "meanRainMmPerDay": 1.8567,
+          "meanRelativeHumidityPct": 78.4,
+          "rainyDayFraction": 0.3433
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 12.5,
+          "meanDailyHighC": 14.43,
+          "meanRainMmPerDay": 1.5632,
+          "meanRelativeHumidityPct": 80.94,
+          "rainyDayFraction": 0.3419
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 14.99,
+          "meanDailyHighC": 16.76,
+          "meanRainMmPerDay": 2.0937,
+          "meanRelativeHumidityPct": 81.51,
+          "rainyDayFraction": 0.3767
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 16.61,
+          "meanDailyHighC": 18.33,
+          "meanRainMmPerDay": 1.7465,
+          "meanRelativeHumidityPct": 81.93,
+          "rainyDayFraction": 0.3419
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 16.69,
+          "meanDailyHighC": 18.35,
+          "meanRainMmPerDay": 1.7503,
+          "meanRelativeHumidityPct": 82.67,
+          "rainyDayFraction": 0.3419
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 15.38,
+          "meanDailyHighC": 17.07,
+          "meanRainMmPerDay": 2.9177,
+          "meanRelativeHumidityPct": 82.77,
+          "rainyDayFraction": 0.4567
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 13.21,
+          "meanDailyHighC": 14.68,
+          "meanRainMmPerDay": 3.2842,
+          "meanRelativeHumidityPct": 83.28,
+          "rainyDayFraction": 0.4677
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 10.69,
+          "meanDailyHighC": 12.02,
+          "meanRainMmPerDay": 3.9163,
+          "meanRelativeHumidityPct": 82.29,
+          "rainyDayFraction": 0.6067
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 9.49,
+          "meanDailyHighC": 10.74,
+          "meanRainMmPerDay": 3.6271,
+          "meanRelativeHumidityPct": 82.85,
+          "rainyDayFraction": 0.5419
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for urban, rural/coastal or Christmas-market context. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          12,
+          4,
+          10,
+          5,
+          9,
+          6,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.visitbritain.com/en/destinations"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          12,
+          4,
+          10,
+          5,
+          9,
+          6,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.visitbritain.com/en/destinations"
+        ]
+      },
+      "events": [
+        {
+          "name": "St Ives September Festival",
+          "months": [
+            9
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://www.stivesseptemberfestival.co.uk/"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Nice Carnival may cross February/March; those months are a broad seasonal approximation."
+    },
+    {
+      "country": "united-kingdom",
+      "id": "cardiff",
+      "name": "Cardiff",
+      "area": "South Wales",
+      "latitude": 51.4816,
+      "longitude": -3.1791,
+      "airports": [
+        [
+          "CWL",
+          "Cardiff"
+        ],
+        [
+          "BRS",
+          "Bristol"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 8,
+      "gridLatitude": 51.5,
+      "gridLongitude": -3.25,
+      "elevation": 14,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=51.4816&longitude=-3.1791&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FLondon&models=era5",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; standard 19°C target.",
+      "climateTypeSources": [
+        "https://www.visitbritain.com/en/destinations"
+      ],
+      "climateReviewNote": null,
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 6.13,
+          "meanDailyHighC": 8.29,
+          "meanRainMmPerDay": 2.9216,
+          "meanRelativeHumidityPct": 86.64,
+          "rainyDayFraction": 0.429
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 6.88,
+          "meanDailyHighC": 9.12,
+          "meanRainMmPerDay": 3.176,
+          "meanRelativeHumidityPct": 84.51,
+          "rainyDayFraction": 0.4452
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 7.81,
+          "meanDailyHighC": 10.49,
+          "meanRainMmPerDay": 2.8048,
+          "meanRelativeHumidityPct": 81.78,
+          "rainyDayFraction": 0.4774
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 9.78,
+          "meanDailyHighC": 13.09,
+          "meanRainMmPerDay": 2.0043,
+          "meanRelativeHumidityPct": 76.27,
+          "rainyDayFraction": 0.3733
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 13.2,
+          "meanDailyHighC": 16.48,
+          "meanRainMmPerDay": 2.1477,
+          "meanRelativeHumidityPct": 76.95,
+          "rainyDayFraction": 0.3806
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 16.02,
+          "meanDailyHighC": 19.03,
+          "meanRainMmPerDay": 2.2903,
+          "meanRelativeHumidityPct": 78.16,
+          "rainyDayFraction": 0.3867
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.69,
+          "meanDailyHighC": 20.65,
+          "meanRainMmPerDay": 2.3306,
+          "meanRelativeHumidityPct": 77.72,
+          "rainyDayFraction": 0.3806
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.37,
+          "meanDailyHighC": 20.27,
+          "meanRainMmPerDay": 2.4894,
+          "meanRelativeHumidityPct": 79.74,
+          "rainyDayFraction": 0.3677
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 15.38,
+          "meanDailyHighC": 18.26,
+          "meanRainMmPerDay": 3.537,
+          "meanRelativeHumidityPct": 82.43,
+          "rainyDayFraction": 0.43
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 12.53,
+          "meanDailyHighC": 14.87,
+          "meanRainMmPerDay": 3.8916,
+          "meanRelativeHumidityPct": 85.25,
+          "rainyDayFraction": 0.4968
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 9.09,
+          "meanDailyHighC": 11.24,
+          "meanRainMmPerDay": 3.7473,
+          "meanRelativeHumidityPct": 86.24,
+          "rainyDayFraction": 0.5
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 7.63,
+          "meanDailyHighC": 9.41,
+          "meanRainMmPerDay": 3.8239,
+          "meanRelativeHumidityPct": 88.33,
+          "rainyDayFraction": 0.4935
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for urban, rural/coastal or Christmas-market context. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          8,
+          12,
+          4,
+          7,
+          10,
+          6,
+          9,
+          5
+        ],
+        "sourceUrls": [
+          "https://www.visitbritain.com/en/destinations"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          8,
+          12,
+          4,
+          7,
+          10,
+          6,
+          9,
+          5
+        ],
+        "sourceUrls": [
+          "https://www.visitbritain.com/en/destinations"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Nice Carnival may cross February/March; those months are a broad seasonal approximation."
+    },
+    {
+      "country": "united-kingdom",
+      "id": "conwy",
+      "name": "Conwy",
+      "area": "North Wales",
+      "latitude": 53.2801,
+      "longitude": -3.828,
+      "airports": [
+        [
+          "MAN",
+          "Manchester"
+        ],
+        [
+          "LPL",
+          "Liverpool"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 9,
+      "gridLatitude": 53.25,
+      "gridLongitude": -3.75,
+      "elevation": 13,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=53.2801&longitude=-3.828&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FLondon&models=era5",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; standard 19°C target.",
+      "climateTypeSources": [
+        "https://www.visitbritain.com/en/destinations"
+      ],
+      "climateReviewNote": null,
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 6.27,
+          "meanDailyHighC": 8.34,
+          "meanRainMmPerDay": 2.831,
+          "meanRelativeHumidityPct": 85.77,
+          "rainyDayFraction": 0.4839
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 6.94,
+          "meanDailyHighC": 9.25,
+          "meanRainMmPerDay": 2.8445,
+          "meanRelativeHumidityPct": 82.94,
+          "rainyDayFraction": 0.4841
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 7.72,
+          "meanDailyHighC": 10.63,
+          "meanRainMmPerDay": 2.4923,
+          "meanRelativeHumidityPct": 81.37,
+          "rainyDayFraction": 0.4839
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 9.63,
+          "meanDailyHighC": 13.19,
+          "meanRainMmPerDay": 2.1727,
+          "meanRelativeHumidityPct": 76.25,
+          "rainyDayFraction": 0.45
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 12.96,
+          "meanDailyHighC": 16.6,
+          "meanRainMmPerDay": 2.0326,
+          "meanRelativeHumidityPct": 76.92,
+          "rainyDayFraction": 0.4161
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 15.67,
+          "meanDailyHighC": 19.01,
+          "meanRainMmPerDay": 2.9903,
+          "meanRelativeHumidityPct": 78.31,
+          "rainyDayFraction": 0.47
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 16.87,
+          "meanDailyHighC": 20.08,
+          "meanRainMmPerDay": 2.7561,
+          "meanRelativeHumidityPct": 80.05,
+          "rainyDayFraction": 0.4806
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 16.78,
+          "meanDailyHighC": 19.88,
+          "meanRainMmPerDay": 2.3623,
+          "meanRelativeHumidityPct": 80.91,
+          "rainyDayFraction": 0.4613
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 14.79,
+          "meanDailyHighC": 17.84,
+          "meanRainMmPerDay": 3.2973,
+          "meanRelativeHumidityPct": 83.22,
+          "rainyDayFraction": 0.5333
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 11.99,
+          "meanDailyHighC": 14.47,
+          "meanRainMmPerDay": 3.0255,
+          "meanRelativeHumidityPct": 85.05,
+          "rainyDayFraction": 0.4839
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 8.73,
+          "meanDailyHighC": 10.88,
+          "meanRainMmPerDay": 3.1023,
+          "meanRelativeHumidityPct": 86.4,
+          "rainyDayFraction": 0.5367
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 7.45,
+          "meanDailyHighC": 9.36,
+          "meanRainMmPerDay": 3.1571,
+          "meanRelativeHumidityPct": 87.37,
+          "rainyDayFraction": 0.5387
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for urban, rural/coastal or Christmas-market context. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          12,
+          4,
+          10,
+          5,
+          9,
+          6,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.visitbritain.com/en/destinations"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          12,
+          4,
+          10,
+          5,
+          9,
+          6,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.visitbritain.com/en/destinations"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Nice Carnival may cross February/March; those months are a broad seasonal approximation."
+    },
+    {
+      "country": "united-kingdom",
+      "id": "inverness",
+      "name": "Inverness",
+      "area": "Northern Highlands",
+      "latitude": 57.4778,
+      "longitude": -4.2247,
+      "airports": [
+        [
+          "INV",
+          "Inverness"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 10,
+      "gridLatitude": 57.5,
+      "gridLongitude": -4.25,
+      "elevation": 15,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=57.4778&longitude=-4.2247&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FLondon&models=era5",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from −5 to 19°C.",
+      "climateTypeSources": [
+        "https://www.visitbritain.com/en/destinations"
+      ],
+      "climateReviewNote": null,
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 4.79,
+          "meanDailyHighC": 6.94,
+          "meanRainMmPerDay": 2.5323,
+          "meanRelativeHumidityPct": 86.38,
+          "rainyDayFraction": 0.4484
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 5.4,
+          "meanDailyHighC": 7.95,
+          "meanRainMmPerDay": 2.7633,
+          "meanRelativeHumidityPct": 82.22,
+          "rainyDayFraction": 0.5265
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 6.54,
+          "meanDailyHighC": 9.8,
+          "meanRainMmPerDay": 2.1655,
+          "meanRelativeHumidityPct": 80.55,
+          "rainyDayFraction": 0.5097
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 8.56,
+          "meanDailyHighC": 12.45,
+          "meanRainMmPerDay": 1.9117,
+          "meanRelativeHumidityPct": 76.45,
+          "rainyDayFraction": 0.4133
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 12.12,
+          "meanDailyHighC": 16.06,
+          "meanRainMmPerDay": 2.2194,
+          "meanRelativeHumidityPct": 75.95,
+          "rainyDayFraction": 0.4194
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 14.63,
+          "meanDailyHighC": 18.1,
+          "meanRainMmPerDay": 2.313,
+          "meanRelativeHumidityPct": 76.19,
+          "rainyDayFraction": 0.4867
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 16.11,
+          "meanDailyHighC": 19.45,
+          "meanRainMmPerDay": 2.4432,
+          "meanRelativeHumidityPct": 77.73,
+          "rainyDayFraction": 0.4903
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 15.58,
+          "meanDailyHighC": 18.95,
+          "meanRainMmPerDay": 2.2842,
+          "meanRelativeHumidityPct": 79.41,
+          "rainyDayFraction": 0.4774
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 13.55,
+          "meanDailyHighC": 16.88,
+          "meanRainMmPerDay": 2.559,
+          "meanRelativeHumidityPct": 81.4,
+          "rainyDayFraction": 0.5067
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 10.46,
+          "meanDailyHighC": 13.18,
+          "meanRainMmPerDay": 3.1358,
+          "meanRelativeHumidityPct": 84.36,
+          "rainyDayFraction": 0.5484
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 6.93,
+          "meanDailyHighC": 9.43,
+          "meanRainMmPerDay": 2.386,
+          "meanRelativeHumidityPct": 87.86,
+          "rainyDayFraction": 0.4933
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 5.67,
+          "meanDailyHighC": 7.8,
+          "meanRainMmPerDay": 2.9616,
+          "meanRelativeHumidityPct": 88,
+          "rainyDayFraction": 0.5355
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for urban, rural/coastal or Christmas-market context. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          12,
+          4,
+          10,
+          5,
+          9,
+          6,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.visitbritain.com/en/destinations"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          12,
+          4,
+          10,
+          5,
+          9,
+          6,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.visitbritain.com/en/destinations"
+        ]
+      },
+      "events": [
+        {
+          "name": "Inverness Highland Games",
+          "months": [
+            7
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://www.visitinvernesslochness.com/highland-games"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Nice Carnival may cross February/March; those months are a broad seasonal approximation."
+    },
+    {
+      "country": "united-kingdom",
+      "id": "fort-william",
+      "name": "Fort William",
+      "area": "Western Highlands",
+      "latitude": 56.8198,
+      "longitude": -5.1052,
+      "airports": [
+        [
+          "INV",
+          "Inverness"
+        ],
+        [
+          "GLA",
+          "Glasgow"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 11,
+      "gridLatitude": 56.75,
+      "gridLongitude": -5,
+      "elevation": 7,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=56.8198&longitude=-5.1052&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FLondon&models=era5",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from −5 to 19°C.",
+      "climateTypeSources": [
+        "https://www.visitbritain.com/en/destinations"
+      ],
+      "climateReviewNote": "Town-point ERA5 grid estimate; nearby mountain and coastal microclimates can differ. This is not a snow or mountain-conditions forecast.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 4.91,
+          "meanDailyHighC": 6.92,
+          "meanRainMmPerDay": 5.8723,
+          "meanRelativeHumidityPct": 92.11,
+          "rainyDayFraction": 0.5903
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 5.48,
+          "meanDailyHighC": 7.72,
+          "meanRainMmPerDay": 7.3233,
+          "meanRelativeHumidityPct": 88.63,
+          "rainyDayFraction": 0.6749
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 6.65,
+          "meanDailyHighC": 9.65,
+          "meanRainMmPerDay": 4.7294,
+          "meanRelativeHumidityPct": 85.11,
+          "rainyDayFraction": 0.5839
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 8.72,
+          "meanDailyHighC": 12.46,
+          "meanRainMmPerDay": 2.7953,
+          "meanRelativeHumidityPct": 78.67,
+          "rainyDayFraction": 0.4833
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 12.35,
+          "meanDailyHighC": 16.05,
+          "meanRainMmPerDay": 3.3613,
+          "meanRelativeHumidityPct": 78.66,
+          "rainyDayFraction": 0.4742
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 14.71,
+          "meanDailyHighC": 17.94,
+          "meanRainMmPerDay": 4.4747,
+          "meanRelativeHumidityPct": 81.67,
+          "rainyDayFraction": 0.64
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 15.72,
+          "meanDailyHighC": 18.73,
+          "meanRainMmPerDay": 4.3384,
+          "meanRelativeHumidityPct": 84.73,
+          "rainyDayFraction": 0.6419
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 15.51,
+          "meanDailyHighC": 18.55,
+          "meanRainMmPerDay": 5.3145,
+          "meanRelativeHumidityPct": 86.03,
+          "rainyDayFraction": 0.6742
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 13.48,
+          "meanDailyHighC": 16.51,
+          "meanRainMmPerDay": 5.389,
+          "meanRelativeHumidityPct": 87.61,
+          "rainyDayFraction": 0.6267
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 10.67,
+          "meanDailyHighC": 13.12,
+          "meanRainMmPerDay": 6.6032,
+          "meanRelativeHumidityPct": 89.24,
+          "rainyDayFraction": 0.6806
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 7.25,
+          "meanDailyHighC": 9.58,
+          "meanRainMmPerDay": 5.1757,
+          "meanRelativeHumidityPct": 91.51,
+          "rainyDayFraction": 0.57
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 5.97,
+          "meanDailyHighC": 7.91,
+          "meanRainMmPerDay": 6.5742,
+          "meanRelativeHumidityPct": 92.95,
+          "rainyDayFraction": 0.6355
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for urban, rural/coastal or Christmas-market context. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          12,
+          4,
+          10,
+          5,
+          9,
+          6,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.visitbritain.com/en/destinations"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          12,
+          4,
+          10,
+          5,
+          9,
+          6,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.visitbritain.com/en/destinations"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Nice Carnival may cross February/March; those months are a broad seasonal approximation."
+    },
+    {
+      "country": "united-kingdom",
+      "id": "portree",
+      "name": "Portree",
+      "area": "Isle of Skye",
+      "latitude": 57.4125,
+      "longitude": -6.1942,
+      "airports": [
+        [
+          "INV",
+          "Inverness"
+        ],
+        [
+          "GLA",
+          "Glasgow"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 12,
+      "gridLatitude": 57.25,
+      "gridLongitude": -6,
+      "elevation": 17,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=57.4125&longitude=-6.1942&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FLondon&models=era5",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from −5 to 19°C.",
+      "climateTypeSources": [
+        "https://www.visitbritain.com/en/destinations"
+      ],
+      "climateReviewNote": "Town-point ERA5 grid estimate; nearby mountain and coastal microclimates can differ. This is not a snow or mountain-conditions forecast.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 6.16,
+          "meanDailyHighC": 7.83,
+          "meanRainMmPerDay": 5.369,
+          "meanRelativeHumidityPct": 82.91,
+          "rainyDayFraction": 0.7226
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 6.35,
+          "meanDailyHighC": 8.08,
+          "meanRainMmPerDay": 5.9961,
+          "meanRelativeHumidityPct": 80,
+          "rainyDayFraction": 0.7102
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 7.04,
+          "meanDailyHighC": 9.14,
+          "meanRainMmPerDay": 4.3316,
+          "meanRelativeHumidityPct": 79.48,
+          "rainyDayFraction": 0.571
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 8.74,
+          "meanDailyHighC": 11.28,
+          "meanRainMmPerDay": 2.5137,
+          "meanRelativeHumidityPct": 76.32,
+          "rainyDayFraction": 0.46
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 11.54,
+          "meanDailyHighC": 14.05,
+          "meanRainMmPerDay": 2.8887,
+          "meanRelativeHumidityPct": 78.59,
+          "rainyDayFraction": 0.4613
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 13.62,
+          "meanDailyHighC": 15.78,
+          "meanRainMmPerDay": 3.7223,
+          "meanRelativeHumidityPct": 81.81,
+          "rainyDayFraction": 0.5933
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 14.66,
+          "meanDailyHighC": 16.7,
+          "meanRainMmPerDay": 4.0032,
+          "meanRelativeHumidityPct": 84.36,
+          "rainyDayFraction": 0.6516
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 14.76,
+          "meanDailyHighC": 16.85,
+          "meanRainMmPerDay": 5.0694,
+          "meanRelativeHumidityPct": 84.49,
+          "rainyDayFraction": 0.6258
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 13.4,
+          "meanDailyHighC": 15.45,
+          "meanRainMmPerDay": 5.4687,
+          "meanRelativeHumidityPct": 83.33,
+          "rainyDayFraction": 0.6767
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 11.12,
+          "meanDailyHighC": 12.88,
+          "meanRainMmPerDay": 7.0542,
+          "meanRelativeHumidityPct": 81.77,
+          "rainyDayFraction": 0.7
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 8.33,
+          "meanDailyHighC": 10.04,
+          "meanRainMmPerDay": 5.74,
+          "meanRelativeHumidityPct": 82.16,
+          "rainyDayFraction": 0.68
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 7.05,
+          "meanDailyHighC": 8.72,
+          "meanRainMmPerDay": 6.561,
+          "meanRelativeHumidityPct": 83.77,
+          "rainyDayFraction": 0.7129
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for urban, rural/coastal or Christmas-market context. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          12,
+          4,
+          10,
+          5,
+          9,
+          6,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.visitbritain.com/en/destinations"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          12,
+          4,
+          10,
+          5,
+          9,
+          6,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.visitbritain.com/en/destinations"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Nice Carnival may cross February/March; those months are a broad seasonal approximation."
+    },
+    {
+      "country": "france",
+      "id": "paris",
+      "name": "Paris",
+      "area": "Île-de-France",
+      "latitude": 48.8566,
+      "longitude": 2.3522,
+      "airports": [
+        [
+          "CDG",
+          "Paris Charles de Gaulle"
+        ],
+        [
+          "ORY",
+          "Paris Orly"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 0,
+      "gridLatitude": 48.75,
+      "gridLongitude": 2.25,
+      "elevation": 36,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=48.8566&longitude=2.3522&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FParis&models=era5",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; standard 19°C target.",
+      "climateTypeSources": [
+        "https://www.france.fr/en/destination/?page=1"
+      ],
+      "climateReviewNote": null,
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 5.04,
+          "meanDailyHighC": 7.49,
+          "meanRainMmPerDay": 2.1419,
+          "meanRelativeHumidityPct": 88.04,
+          "rainyDayFraction": 0.4
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 6.53,
+          "meanDailyHighC": 9.93,
+          "meanRainMmPerDay": 1.7463,
+          "meanRelativeHumidityPct": 81.61,
+          "rainyDayFraction": 0.371
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 8.7,
+          "meanDailyHighC": 12.92,
+          "meanRainMmPerDay": 2.199,
+          "meanRelativeHumidityPct": 75.95,
+          "rainyDayFraction": 0.429
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 11.41,
+          "meanDailyHighC": 16.29,
+          "meanRainMmPerDay": 1.6777,
+          "meanRelativeHumidityPct": 70.13,
+          "rainyDayFraction": 0.3233
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 15.05,
+          "meanDailyHighC": 19.87,
+          "meanRainMmPerDay": 2.3171,
+          "meanRelativeHumidityPct": 72.05,
+          "rainyDayFraction": 0.3935
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 19.26,
+          "meanDailyHighC": 24.17,
+          "meanRainMmPerDay": 2.3723,
+          "meanRelativeHumidityPct": 71.24,
+          "rainyDayFraction": 0.3933
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 20.86,
+          "meanDailyHighC": 26.01,
+          "meanRainMmPerDay": 1.6248,
+          "meanRelativeHumidityPct": 65.66,
+          "rainyDayFraction": 0.271
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 20.56,
+          "meanDailyHighC": 25.98,
+          "meanRainMmPerDay": 1.6252,
+          "meanRelativeHumidityPct": 68.34,
+          "rainyDayFraction": 0.2806
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 17.19,
+          "meanDailyHighC": 22.32,
+          "meanRainMmPerDay": 1.831,
+          "meanRelativeHumidityPct": 74.21,
+          "rainyDayFraction": 0.32
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 13.26,
+          "meanDailyHighC": 17.36,
+          "meanRainMmPerDay": 2.5565,
+          "meanRelativeHumidityPct": 82.92,
+          "rainyDayFraction": 0.4
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 8.33,
+          "meanDailyHighC": 11.21,
+          "meanRainMmPerDay": 1.999,
+          "meanRelativeHumidityPct": 87.77,
+          "rainyDayFraction": 0.3867
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 6.29,
+          "meanDailyHighC": 8.65,
+          "meanRainMmPerDay": 2.3558,
+          "meanRelativeHumidityPct": 89.56,
+          "rainyDayFraction": 0.4065
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for urban, rural/coastal or Christmas-market context. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          8,
+          12,
+          4,
+          7,
+          10,
+          6,
+          9,
+          5
+        ],
+        "sourceUrls": [
+          "https://www.france.fr/en/destination/?page=1"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          8,
+          12,
+          4,
+          7,
+          10,
+          6,
+          9,
+          5
+        ],
+        "sourceUrls": [
+          "https://www.france.fr/en/destination/?page=1"
+        ]
+      },
+      "events": [
+        {
+          "name": "Bastille Day",
+          "months": [
+            7
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://parisjetaime.com/eng/article/what-to-do-in-paris-on-13-and-14-july-a501"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Nice Carnival may cross February/March; those months are a broad seasonal approximation."
+    },
+    {
+      "country": "france",
+      "id": "bayeux",
+      "name": "Bayeux",
+      "area": "Normandy",
+      "latitude": 49.2765,
+      "longitude": -0.7025,
+      "airports": [
+        [
+          "CFR",
+          "Caen"
+        ],
+        [
+          "CDG",
+          "Paris Charles de Gaulle"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 1,
+      "gridLatitude": 49.25,
+      "gridLongitude": -0.75,
+      "elevation": 49,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=49.2765&longitude=-0.7025&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FParis&models=era5",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; standard 19°C target.",
+      "climateTypeSources": [
+        "https://www.france.fr/en/destination/?page=1"
+      ],
+      "climateReviewNote": null,
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 6.22,
+          "meanDailyHighC": 8.36,
+          "meanRainMmPerDay": 2.4726,
+          "meanRelativeHumidityPct": 86.75,
+          "rainyDayFraction": 0.4452
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 7.16,
+          "meanDailyHighC": 9.66,
+          "meanRainMmPerDay": 1.9304,
+          "meanRelativeHumidityPct": 82.98,
+          "rainyDayFraction": 0.3781
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 8.57,
+          "meanDailyHighC": 11.61,
+          "meanRainMmPerDay": 1.9516,
+          "meanRelativeHumidityPct": 79.8,
+          "rainyDayFraction": 0.4387
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 10.53,
+          "meanDailyHighC": 14.12,
+          "meanRainMmPerDay": 1.497,
+          "meanRelativeHumidityPct": 75.8,
+          "rainyDayFraction": 0.33
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 13.63,
+          "meanDailyHighC": 17.04,
+          "meanRainMmPerDay": 1.8426,
+          "meanRelativeHumidityPct": 78.1,
+          "rainyDayFraction": 0.3355
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 16.97,
+          "meanDailyHighC": 20.55,
+          "meanRainMmPerDay": 2.2477,
+          "meanRelativeHumidityPct": 78.69,
+          "rainyDayFraction": 0.37
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.67,
+          "meanDailyHighC": 22.34,
+          "meanRainMmPerDay": 1.6326,
+          "meanRelativeHumidityPct": 76.88,
+          "rainyDayFraction": 0.2903
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.49,
+          "meanDailyHighC": 22.18,
+          "meanRainMmPerDay": 1.6774,
+          "meanRelativeHumidityPct": 79.34,
+          "rainyDayFraction": 0.2806
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 16.4,
+          "meanDailyHighC": 19.94,
+          "meanRainMmPerDay": 2.0067,
+          "meanRelativeHumidityPct": 81.73,
+          "rainyDayFraction": 0.3967
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 13.26,
+          "meanDailyHighC": 16.28,
+          "meanRainMmPerDay": 2.4765,
+          "meanRelativeHumidityPct": 85.17,
+          "rainyDayFraction": 0.4194
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 9.42,
+          "meanDailyHighC": 11.74,
+          "meanRainMmPerDay": 2.5023,
+          "meanRelativeHumidityPct": 86.75,
+          "rainyDayFraction": 0.4833
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 7.47,
+          "meanDailyHighC": 9.49,
+          "meanRainMmPerDay": 2.4081,
+          "meanRelativeHumidityPct": 87.84,
+          "rainyDayFraction": 0.4355
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for urban, rural/coastal or Christmas-market context. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          12,
+          4,
+          10,
+          5,
+          9,
+          6,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.france.fr/en/destination/?page=1"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          12,
+          4,
+          10,
+          5,
+          9,
+          6,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.france.fr/en/destination/?page=1"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Nice Carnival may cross February/March; those months are a broad seasonal approximation."
+    },
+    {
+      "country": "france",
+      "id": "marseille",
+      "name": "Marseille",
+      "area": "Mediterranean coast",
+      "latitude": 43.2965,
+      "longitude": 5.3698,
+      "airports": [
+        [
+          "MRS",
+          "Marseille"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 2,
+      "gridLatitude": 43.5,
+      "gridLongitude": 5.25,
+      "elevation": 6,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=43.2965&longitude=5.3698&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FParis&models=era5",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; standard 19°C target.",
+      "climateTypeSources": [
+        "https://www.france.fr/en/destination/?page=1"
+      ],
+      "climateReviewNote": null,
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 7.95,
+          "meanDailyHighC": 12.7,
+          "meanRainMmPerDay": 1.1345,
+          "meanRelativeHumidityPct": 76.14,
+          "rainyDayFraction": 0.1968
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 9.82,
+          "meanDailyHighC": 14.86,
+          "meanRainMmPerDay": 1.4668,
+          "meanRelativeHumidityPct": 73.6,
+          "rainyDayFraction": 0.2191
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 12.1,
+          "meanDailyHighC": 17.29,
+          "meanRainMmPerDay": 1.7494,
+          "meanRelativeHumidityPct": 67.68,
+          "rainyDayFraction": 0.2161
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 15.17,
+          "meanDailyHighC": 20.36,
+          "meanRainMmPerDay": 1.8223,
+          "meanRelativeHumidityPct": 63.84,
+          "rainyDayFraction": 0.2467
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.97,
+          "meanDailyHighC": 23.98,
+          "meanRainMmPerDay": 2.1384,
+          "meanRelativeHumidityPct": 65.37,
+          "rainyDayFraction": 0.2742
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 24.21,
+          "meanDailyHighC": 29.62,
+          "meanRainMmPerDay": 1.0553,
+          "meanRelativeHumidityPct": 61.29,
+          "rainyDayFraction": 0.19
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.8,
+          "meanDailyHighC": 32.76,
+          "meanRainMmPerDay": 0.3645,
+          "meanRelativeHumidityPct": 54.75,
+          "rainyDayFraction": 0.0581
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.12,
+          "meanDailyHighC": 32.26,
+          "meanRainMmPerDay": 0.9613,
+          "meanRelativeHumidityPct": 57.63,
+          "rainyDayFraction": 0.0935
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 21.69,
+          "meanDailyHighC": 27.35,
+          "meanRainMmPerDay": 2.1373,
+          "meanRelativeHumidityPct": 67.03,
+          "rainyDayFraction": 0.1833
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.56,
+          "meanDailyHighC": 22.71,
+          "meanRainMmPerDay": 2.64,
+          "meanRelativeHumidityPct": 75.05,
+          "rainyDayFraction": 0.2452
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 12.06,
+          "meanDailyHighC": 16.7,
+          "meanRainMmPerDay": 2.637,
+          "meanRelativeHumidityPct": 78.36,
+          "rainyDayFraction": 0.32
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 8.88,
+          "meanDailyHighC": 13.66,
+          "meanRainMmPerDay": 1.7394,
+          "meanRelativeHumidityPct": 80.53,
+          "rainyDayFraction": 0.2419
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for urban, rural/coastal or Christmas-market context. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          8,
+          12,
+          4,
+          7,
+          10,
+          6,
+          9,
+          5
+        ],
+        "sourceUrls": [
+          "https://www.france.fr/en/destination/?page=1"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          8,
+          12,
+          4,
+          7,
+          10,
+          6,
+          9,
+          5
+        ],
+        "sourceUrls": [
+          "https://www.france.fr/en/destination/?page=1"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Nice Carnival may cross February/March; those months are a broad seasonal approximation."
+    },
+    {
+      "country": "france",
+      "id": "nice",
+      "name": "Nice",
+      "area": "French Riviera",
+      "latitude": 43.7102,
+      "longitude": 7.262,
+      "airports": [
+        [
+          "NCE",
+          "Nice"
+        ]
+      ],
+      "climateType": "beach",
+      "regionIndex": 3,
+      "gridLatitude": 43.75,
+      "gridLongitude": 7.25,
+      "elevation": 29,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=43.7102&longitude=7.262&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FParis&models=era5",
+      "climateTypeReason": "Approved beach-oriented holiday base; 25°C target.",
+      "climateTypeSources": [
+        "https://www.france.fr/en/destination/?page=1"
+      ],
+      "climateReviewNote": null,
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 10.09,
+          "meanDailyHighC": 13.51,
+          "meanRainMmPerDay": 1.7061,
+          "meanRelativeHumidityPct": 72.13,
+          "rainyDayFraction": 0.2129
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 11.06,
+          "meanDailyHighC": 14.56,
+          "meanRainMmPerDay": 2.1371,
+          "meanRelativeHumidityPct": 73.67,
+          "rainyDayFraction": 0.258
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 12.54,
+          "meanDailyHighC": 16.21,
+          "meanRainMmPerDay": 2.6871,
+          "meanRelativeHumidityPct": 69.99,
+          "rainyDayFraction": 0.2581
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 15.11,
+          "meanDailyHighC": 18.39,
+          "meanRainMmPerDay": 2.472,
+          "meanRelativeHumidityPct": 72.21,
+          "rainyDayFraction": 0.3433
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.57,
+          "meanDailyHighC": 21.66,
+          "meanRainMmPerDay": 2.2984,
+          "meanRelativeHumidityPct": 76.53,
+          "rainyDayFraction": 0.4548
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 23.32,
+          "meanDailyHighC": 26.35,
+          "meanRainMmPerDay": 1.6737,
+          "meanRelativeHumidityPct": 78.17,
+          "rainyDayFraction": 0.32
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.86,
+          "meanDailyHighC": 28.92,
+          "meanRainMmPerDay": 0.639,
+          "meanRelativeHumidityPct": 76.41,
+          "rainyDayFraction": 0.1774
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.03,
+          "meanDailyHighC": 29.34,
+          "meanRainMmPerDay": 1.2129,
+          "meanRelativeHumidityPct": 73.6,
+          "rainyDayFraction": 0.2484
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 22.26,
+          "meanDailyHighC": 25.64,
+          "meanRainMmPerDay": 1.9377,
+          "meanRelativeHumidityPct": 74.66,
+          "rainyDayFraction": 0.3033
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.48,
+          "meanDailyHighC": 21.73,
+          "meanRainMmPerDay": 4.1019,
+          "meanRelativeHumidityPct": 78.87,
+          "rainyDayFraction": 0.3129
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 13.77,
+          "meanDailyHighC": 17.07,
+          "meanRainMmPerDay": 4.0263,
+          "meanRelativeHumidityPct": 75.76,
+          "rainyDayFraction": 0.3267
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 10.93,
+          "meanDailyHighC": 14.45,
+          "meanRainMmPerDay": 2.6516,
+          "meanRelativeHumidityPct": 75.99,
+          "rainyDayFraction": 0.2581
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for urban, rural/coastal or Christmas-market context. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          12,
+          4,
+          10,
+          5,
+          9,
+          6,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.france.fr/en/destination/?page=1"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          12,
+          4,
+          10,
+          5,
+          9,
+          6,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.france.fr/en/destination/?page=1"
+        ]
+      },
+      "events": [
+        {
+          "name": "Nice Carnival",
+          "months": [
+            2,
+            3
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://www.explorenicecotedazur.com/app/uploads/2026/05/gb-dp-nice-pages-compressed.pdf"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Nice Carnival may cross February/March; those months are a broad seasonal approximation."
+    },
+    {
+      "country": "france",
+      "id": "lyon",
+      "name": "Lyon",
+      "area": "Rhône region",
+      "latitude": 45.764,
+      "longitude": 4.8357,
+      "airports": [
+        [
+          "LYS",
+          "Lyon"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 4,
+      "gridLatitude": 45.75,
+      "gridLongitude": 4.75,
+      "elevation": 184,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=45.764&longitude=4.8357&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FParis&models=era5",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; standard 19°C target.",
+      "climateTypeSources": [
+        "https://www.france.fr/en/destination/?page=1"
+      ],
+      "climateReviewNote": null,
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 5.11,
+          "meanDailyHighC": 8.27,
+          "meanRainMmPerDay": 2.301,
+          "meanRelativeHumidityPct": 83.07,
+          "rainyDayFraction": 0.4516
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 7.16,
+          "meanDailyHighC": 11.58,
+          "meanRainMmPerDay": 1.7675,
+          "meanRelativeHumidityPct": 77.41,
+          "rainyDayFraction": 0.3322
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 9.62,
+          "meanDailyHighC": 14.62,
+          "meanRainMmPerDay": 2.3084,
+          "meanRelativeHumidityPct": 71.15,
+          "rainyDayFraction": 0.3774
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 12.74,
+          "meanDailyHighC": 18.04,
+          "meanRainMmPerDay": 2.4023,
+          "meanRelativeHumidityPct": 66.43,
+          "rainyDayFraction": 0.35
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 16.46,
+          "meanDailyHighC": 21.53,
+          "meanRainMmPerDay": 3.3042,
+          "meanRelativeHumidityPct": 69.61,
+          "rainyDayFraction": 0.4484
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 21.61,
+          "meanDailyHighC": 27.1,
+          "meanRainMmPerDay": 2.9383,
+          "meanRelativeHumidityPct": 66.71,
+          "rainyDayFraction": 0.4033
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 23.39,
+          "meanDailyHighC": 29.37,
+          "meanRainMmPerDay": 2.2465,
+          "meanRelativeHumidityPct": 60.92,
+          "rainyDayFraction": 0.3097
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 23.25,
+          "meanDailyHighC": 29.61,
+          "meanRainMmPerDay": 2.1274,
+          "meanRelativeHumidityPct": 61.34,
+          "rainyDayFraction": 0.2548
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 18.79,
+          "meanDailyHighC": 24.62,
+          "meanRainMmPerDay": 2.6213,
+          "meanRelativeHumidityPct": 69.21,
+          "rainyDayFraction": 0.3167
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 14.33,
+          "meanDailyHighC": 19.08,
+          "meanRainMmPerDay": 3.1623,
+          "meanRelativeHumidityPct": 79.19,
+          "rainyDayFraction": 0.3355
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 8.79,
+          "meanDailyHighC": 12.27,
+          "meanRainMmPerDay": 3.3107,
+          "meanRelativeHumidityPct": 84.6,
+          "rainyDayFraction": 0.4233
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 5.92,
+          "meanDailyHighC": 8.96,
+          "meanRainMmPerDay": 2.9471,
+          "meanRelativeHumidityPct": 87.58,
+          "rainyDayFraction": 0.4645
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for urban, rural/coastal or Christmas-market context. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          8,
+          12,
+          4,
+          7,
+          10,
+          6,
+          9,
+          5
+        ],
+        "sourceUrls": [
+          "https://www.france.fr/en/destination/?page=1"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          8,
+          12,
+          4,
+          7,
+          10,
+          6,
+          9,
+          5
+        ],
+        "sourceUrls": [
+          "https://www.france.fr/en/destination/?page=1"
+        ]
+      },
+      "events": [
+        {
+          "name": "Fête des Lumières",
+          "months": [
+            12
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://www.fetedeslumieres.lyon.fr/en/page/dates-and-opening-hours"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Nice Carnival may cross February/March; those months are a broad seasonal approximation."
+    },
+    {
+      "country": "france",
+      "id": "ajaccio",
+      "name": "Ajaccio",
+      "area": "Corsica",
+      "latitude": 41.9192,
+      "longitude": 8.7386,
+      "airports": [
+        [
+          "AJA",
+          "Ajaccio"
+        ]
+      ],
+      "climateType": "beach",
+      "regionIndex": 5,
+      "gridLatitude": 42,
+      "gridLongitude": 8.75,
+      "elevation": 9,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=41.9192&longitude=8.7386&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FParis&models=era5",
+      "climateTypeReason": "Approved beach-oriented holiday base; 25°C target.",
+      "climateTypeSources": [
+        "https://www.france.fr/en/destination/?page=1"
+      ],
+      "climateReviewNote": null,
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 11.63,
+          "meanDailyHighC": 13.12,
+          "meanRainMmPerDay": 3.4548,
+          "meanRelativeHumidityPct": 76.82,
+          "rainyDayFraction": 0.4516
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 12.25,
+          "meanDailyHighC": 13.99,
+          "meanRainMmPerDay": 3.1703,
+          "meanRelativeHumidityPct": 76.7,
+          "rainyDayFraction": 0.3534
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 13.08,
+          "meanDailyHighC": 14.78,
+          "meanRainMmPerDay": 2.8726,
+          "meanRelativeHumidityPct": 75.57,
+          "rainyDayFraction": 0.3774
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 15.36,
+          "meanDailyHighC": 17.04,
+          "meanRainMmPerDay": 2.1353,
+          "meanRelativeHumidityPct": 74.28,
+          "rainyDayFraction": 0.32
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.39,
+          "meanDailyHighC": 19.96,
+          "meanRainMmPerDay": 2.5306,
+          "meanRelativeHumidityPct": 77.57,
+          "rainyDayFraction": 0.3323
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 23.28,
+          "meanDailyHighC": 24.93,
+          "meanRainMmPerDay": 1.0437,
+          "meanRelativeHumidityPct": 75.12,
+          "rainyDayFraction": 0.18
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.93,
+          "meanDailyHighC": 27.52,
+          "meanRainMmPerDay": 0.3755,
+          "meanRelativeHumidityPct": 71.72,
+          "rainyDayFraction": 0.0806
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.16,
+          "meanDailyHighC": 27.81,
+          "meanRainMmPerDay": 0.6435,
+          "meanRelativeHumidityPct": 71.02,
+          "rainyDayFraction": 0.1548
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 22.92,
+          "meanDailyHighC": 24.67,
+          "meanRainMmPerDay": 1.72,
+          "meanRelativeHumidityPct": 73.7,
+          "rainyDayFraction": 0.2467
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 19.86,
+          "meanDailyHighC": 21.68,
+          "meanRainMmPerDay": 2.8439,
+          "meanRelativeHumidityPct": 74.8,
+          "rainyDayFraction": 0.3194
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 15.7,
+          "meanDailyHighC": 17.39,
+          "meanRainMmPerDay": 4.977,
+          "meanRelativeHumidityPct": 76.02,
+          "rainyDayFraction": 0.4933
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 13.07,
+          "meanDailyHighC": 14.64,
+          "meanRainMmPerDay": 4.4655,
+          "meanRelativeHumidityPct": 78.15,
+          "rainyDayFraction": 0.4613
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for urban, rural/coastal or Christmas-market context. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          12,
+          4,
+          10,
+          5,
+          9,
+          6,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.france.fr/en/destination/?page=1"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          12,
+          4,
+          10,
+          5,
+          9,
+          6,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.france.fr/en/destination/?page=1"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Nice Carnival may cross February/March; those months are a broad seasonal approximation."
+    },
+    {
+      "country": "france",
+      "id": "saint-malo",
+      "name": "Saint-Malo",
+      "area": "Brittany",
+      "latitude": 48.6493,
+      "longitude": -2.0257,
+      "airports": [
+        [
+          "RNS",
+          "Rennes"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 6,
+      "gridLatitude": 48.5,
+      "gridLongitude": -2,
+      "elevation": 23,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=48.6493&longitude=-2.0257&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FParis&models=era5",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; standard 19°C target.",
+      "climateTypeSources": [
+        "https://www.france.fr/en/destination/?page=1"
+      ],
+      "climateReviewNote": null,
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 6.58,
+          "meanDailyHighC": 9.17,
+          "meanRainMmPerDay": 2.3687,
+          "meanRelativeHumidityPct": 86,
+          "rainyDayFraction": 0.4161
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 7.62,
+          "meanDailyHighC": 10.73,
+          "meanRainMmPerDay": 1.9191,
+          "meanRelativeHumidityPct": 81.9,
+          "rainyDayFraction": 0.3958
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 9.05,
+          "meanDailyHighC": 12.66,
+          "meanRainMmPerDay": 1.9406,
+          "meanRelativeHumidityPct": 78.96,
+          "rainyDayFraction": 0.4194
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 11.04,
+          "meanDailyHighC": 15.33,
+          "meanRainMmPerDay": 1.8827,
+          "meanRelativeHumidityPct": 75.09,
+          "rainyDayFraction": 0.3767
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 14.08,
+          "meanDailyHighC": 18.18,
+          "meanRainMmPerDay": 1.881,
+          "meanRelativeHumidityPct": 76.77,
+          "rainyDayFraction": 0.3452
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 17.19,
+          "meanDailyHighC": 21.42,
+          "meanRainMmPerDay": 2.4683,
+          "meanRelativeHumidityPct": 78.07,
+          "rainyDayFraction": 0.38
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.71,
+          "meanDailyHighC": 23.04,
+          "meanRainMmPerDay": 1.7442,
+          "meanRelativeHumidityPct": 76.14,
+          "rainyDayFraction": 0.3097
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.6,
+          "meanDailyHighC": 23.1,
+          "meanRainMmPerDay": 1.6226,
+          "meanRelativeHumidityPct": 77.82,
+          "rainyDayFraction": 0.2903
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 16.65,
+          "meanDailyHighC": 20.9,
+          "meanRainMmPerDay": 2.0237,
+          "meanRelativeHumidityPct": 79.62,
+          "rainyDayFraction": 0.36
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 13.49,
+          "meanDailyHighC": 17.19,
+          "meanRainMmPerDay": 2.5597,
+          "meanRelativeHumidityPct": 83.8,
+          "rainyDayFraction": 0.3968
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 9.69,
+          "meanDailyHighC": 12.61,
+          "meanRainMmPerDay": 2.5527,
+          "meanRelativeHumidityPct": 85.71,
+          "rainyDayFraction": 0.47
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 7.81,
+          "meanDailyHighC": 10.23,
+          "meanRainMmPerDay": 2.4935,
+          "meanRelativeHumidityPct": 87.57,
+          "rainyDayFraction": 0.4548
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for urban, rural/coastal or Christmas-market context. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          12,
+          4,
+          10,
+          5,
+          9,
+          6,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.france.fr/en/destination/?page=1"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          12,
+          4,
+          10,
+          5,
+          9,
+          6,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.france.fr/en/destination/?page=1"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Nice Carnival may cross February/March; those months are a broad seasonal approximation."
+    },
+    {
+      "country": "france",
+      "id": "tours",
+      "name": "Tours",
+      "area": "Loire Valley",
+      "latitude": 47.3941,
+      "longitude": 0.6848,
+      "airports": [
+        [
+          "CDG",
+          "Paris Charles de Gaulle"
+        ],
+        [
+          "ORY",
+          "Paris Orly"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 7,
+      "gridLatitude": 47.5,
+      "gridLongitude": 0.75,
+      "elevation": 58,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=47.3941&longitude=0.6848&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FParis&models=era5",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; standard 19°C target.",
+      "climateTypeSources": [
+        "https://www.france.fr/en/destination/?page=1"
+      ],
+      "climateReviewNote": null,
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 5.55,
+          "meanDailyHighC": 8.26,
+          "meanRainMmPerDay": 2.2335,
+          "meanRelativeHumidityPct": 87.66,
+          "rainyDayFraction": 0.3677
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 6.96,
+          "meanDailyHighC": 10.61,
+          "meanRainMmPerDay": 1.9078,
+          "meanRelativeHumidityPct": 81.85,
+          "rainyDayFraction": 0.3781
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 9.08,
+          "meanDailyHighC": 13.43,
+          "meanRainMmPerDay": 2.2723,
+          "meanRelativeHumidityPct": 76.22,
+          "rainyDayFraction": 0.3935
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 11.77,
+          "meanDailyHighC": 16.83,
+          "meanRainMmPerDay": 1.574,
+          "meanRelativeHumidityPct": 70.32,
+          "rainyDayFraction": 0.3133
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 15.36,
+          "meanDailyHighC": 20.28,
+          "meanRainMmPerDay": 2.4077,
+          "meanRelativeHumidityPct": 71.56,
+          "rainyDayFraction": 0.3839
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 19.71,
+          "meanDailyHighC": 24.81,
+          "meanRainMmPerDay": 2.0803,
+          "meanRelativeHumidityPct": 69.48,
+          "rainyDayFraction": 0.3267
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 21.42,
+          "meanDailyHighC": 26.88,
+          "meanRainMmPerDay": 0.9758,
+          "meanRelativeHumidityPct": 63.04,
+          "rainyDayFraction": 0.2065
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 21.07,
+          "meanDailyHighC": 26.81,
+          "meanRainMmPerDay": 1.2013,
+          "meanRelativeHumidityPct": 65.31,
+          "rainyDayFraction": 0.2194
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 17.71,
+          "meanDailyHighC": 23.17,
+          "meanRainMmPerDay": 1.644,
+          "meanRelativeHumidityPct": 71.59,
+          "rainyDayFraction": 0.2867
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 13.67,
+          "meanDailyHighC": 18.18,
+          "meanRainMmPerDay": 2.6658,
+          "meanRelativeHumidityPct": 81.88,
+          "rainyDayFraction": 0.3742
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 8.74,
+          "meanDailyHighC": 12.11,
+          "meanRainMmPerDay": 2.2277,
+          "meanRelativeHumidityPct": 87.38,
+          "rainyDayFraction": 0.4133
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 6.69,
+          "meanDailyHighC": 9.27,
+          "meanRainMmPerDay": 2.1435,
+          "meanRelativeHumidityPct": 89.48,
+          "rainyDayFraction": 0.3903
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for urban, rural/coastal or Christmas-market context. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          12,
+          4,
+          10,
+          5,
+          9,
+          6,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.france.fr/en/destination/?page=1"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          12,
+          4,
+          10,
+          5,
+          9,
+          6,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.france.fr/en/destination/?page=1"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Nice Carnival may cross February/March; those months are a broad seasonal approximation."
+    },
+    {
+      "country": "france",
+      "id": "strasbourg",
+      "name": "Strasbourg",
+      "area": "Alsace",
+      "latitude": 48.5734,
+      "longitude": 7.7521,
+      "airports": [
+        [
+          "SXB",
+          "Strasbourg"
+        ],
+        [
+          "BSL",
+          "EuroAirport Basel Mulhouse"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 8,
+      "gridLatitude": 48.5,
+      "gridLongitude": 7.75,
+      "elevation": 142,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=48.5734&longitude=7.7521&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FParis&models=era5",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from −5 to 19°C.",
+      "climateTypeSources": [
+        "https://www.france.fr/en/destination/?page=1"
+      ],
+      "climateReviewNote": null,
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 3.73,
+          "meanDailyHighC": 6.39,
+          "meanRainMmPerDay": 2.4465,
+          "meanRelativeHumidityPct": 83.58,
+          "rainyDayFraction": 0.4677
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 5.66,
+          "meanDailyHighC": 9.47,
+          "meanRainMmPerDay": 2.3498,
+          "meanRelativeHumidityPct": 77.9,
+          "rainyDayFraction": 0.4134
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 8.04,
+          "meanDailyHighC": 12.78,
+          "meanRainMmPerDay": 2.0294,
+          "meanRelativeHumidityPct": 71.48,
+          "rainyDayFraction": 0.3774
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 11.36,
+          "meanDailyHighC": 16.56,
+          "meanRainMmPerDay": 2.1193,
+          "meanRelativeHumidityPct": 67.51,
+          "rainyDayFraction": 0.3767
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 15.48,
+          "meanDailyHighC": 20.46,
+          "meanRainMmPerDay": 2.6887,
+          "meanRelativeHumidityPct": 69.29,
+          "rainyDayFraction": 0.4065
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 20.53,
+          "meanDailyHighC": 25.76,
+          "meanRainMmPerDay": 2.972,
+          "meanRelativeHumidityPct": 67.99,
+          "rainyDayFraction": 0.4267
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 21.52,
+          "meanDailyHighC": 26.86,
+          "meanRainMmPerDay": 2.5165,
+          "meanRelativeHumidityPct": 65.34,
+          "rainyDayFraction": 0.4097
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 21.27,
+          "meanDailyHighC": 26.78,
+          "meanRainMmPerDay": 2.3032,
+          "meanRelativeHumidityPct": 69.23,
+          "rainyDayFraction": 0.3839
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 17.22,
+          "meanDailyHighC": 22.61,
+          "meanRainMmPerDay": 2.1887,
+          "meanRelativeHumidityPct": 73.63,
+          "rainyDayFraction": 0.3333
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 12.65,
+          "meanDailyHighC": 17.09,
+          "meanRainMmPerDay": 2.3794,
+          "meanRelativeHumidityPct": 81.66,
+          "rainyDayFraction": 0.3903
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 7.12,
+          "meanDailyHighC": 10.13,
+          "meanRainMmPerDay": 2.5367,
+          "meanRelativeHumidityPct": 85.42,
+          "rainyDayFraction": 0.4567
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 4.69,
+          "meanDailyHighC": 7.17,
+          "meanRainMmPerDay": 2.431,
+          "meanRelativeHumidityPct": 86.67,
+          "rainyDayFraction": 0.4613
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for urban, rural/coastal or Christmas-market context. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          3,
+          10,
+          4,
+          5,
+          9,
+          6,
+          7,
+          8,
+          11,
+          12
+        ],
+        "sourceUrls": [
+          "https://www.france.fr/en/destination/?page=1"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          1,
+          2,
+          3,
+          10,
+          4,
+          5,
+          9,
+          6,
+          7,
+          8,
+          11,
+          12
+        ],
+        "sourceUrls": [
+          "https://www.france.fr/en/destination/?page=1"
+        ]
+      },
+      "events": [
+        {
+          "name": "Strasbourg Christmas Market",
+          "months": [
+            11,
+            12
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://www.strasbourg.eu/en/web/noel"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Nice Carnival may cross February/March; those months are a broad seasonal approximation."
+    },
+    {
+      "country": "france",
+      "id": "dijon",
+      "name": "Dijon",
+      "area": "Burgundy",
+      "latitude": 47.322,
+      "longitude": 5.0415,
+      "airports": [
+        [
+          "LYS",
+          "Lyon"
+        ],
+        [
+          "CDG",
+          "Paris Charles de Gaulle"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 9,
+      "gridLatitude": 47.25,
+      "gridLongitude": 5,
+      "elevation": 250,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=47.322&longitude=5.0415&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FParis&models=era5",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; standard 19°C target.",
+      "climateTypeSources": [
+        "https://www.france.fr/en/destination/?page=1"
+      ],
+      "climateReviewNote": null,
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 3.66,
+          "meanDailyHighC": 6.37,
+          "meanRainMmPerDay": 2.3977,
+          "meanRelativeHumidityPct": 86.85,
+          "rainyDayFraction": 0.4097
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 5.69,
+          "meanDailyHighC": 9.56,
+          "meanRainMmPerDay": 2.1505,
+          "meanRelativeHumidityPct": 80.4,
+          "rainyDayFraction": 0.3958
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 8.11,
+          "meanDailyHighC": 12.85,
+          "meanRainMmPerDay": 2.3903,
+          "meanRelativeHumidityPct": 73.57,
+          "rainyDayFraction": 0.4
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 11.14,
+          "meanDailyHighC": 16.34,
+          "meanRainMmPerDay": 2.3767,
+          "meanRelativeHumidityPct": 68.44,
+          "rainyDayFraction": 0.37
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 14.94,
+          "meanDailyHighC": 19.86,
+          "meanRainMmPerDay": 2.9732,
+          "meanRelativeHumidityPct": 71.87,
+          "rainyDayFraction": 0.4355
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 19.84,
+          "meanDailyHighC": 25.21,
+          "meanRainMmPerDay": 3.3483,
+          "meanRelativeHumidityPct": 69.63,
+          "rainyDayFraction": 0.4367
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 21.33,
+          "meanDailyHighC": 27.03,
+          "meanRainMmPerDay": 1.9723,
+          "meanRelativeHumidityPct": 63.54,
+          "rainyDayFraction": 0.3161
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 21.14,
+          "meanDailyHighC": 27.2,
+          "meanRainMmPerDay": 1.9961,
+          "meanRelativeHumidityPct": 65.57,
+          "rainyDayFraction": 0.3
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 17.11,
+          "meanDailyHighC": 22.8,
+          "meanRainMmPerDay": 2.529,
+          "meanRelativeHumidityPct": 71.62,
+          "rainyDayFraction": 0.3333
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 12.73,
+          "meanDailyHighC": 17.33,
+          "meanRainMmPerDay": 2.9677,
+          "meanRelativeHumidityPct": 81.83,
+          "rainyDayFraction": 0.3774
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 7.17,
+          "meanDailyHighC": 10.33,
+          "meanRainMmPerDay": 2.7593,
+          "meanRelativeHumidityPct": 87.61,
+          "rainyDayFraction": 0.4533
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 4.69,
+          "meanDailyHighC": 7.19,
+          "meanRainMmPerDay": 2.7603,
+          "meanRelativeHumidityPct": 89.61,
+          "rainyDayFraction": 0.4323
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for urban, rural/coastal or Christmas-market context. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          8,
+          12,
+          4,
+          7,
+          10,
+          6,
+          9,
+          5
+        ],
+        "sourceUrls": [
+          "https://www.france.fr/en/destination/?page=1"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          8,
+          12,
+          4,
+          7,
+          10,
+          6,
+          9,
+          5
+        ],
+        "sourceUrls": [
+          "https://www.france.fr/en/destination/?page=1"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Nice Carnival may cross February/March; those months are a broad seasonal approximation."
+    },
+    {
+      "country": "france",
+      "id": "annecy",
+      "name": "Annecy",
+      "area": "French Alps",
+      "latitude": 45.8992,
+      "longitude": 6.1294,
+      "airports": [
+        [
+          "GVA",
+          "Geneva"
+        ],
+        [
+          "LYS",
+          "Lyon"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 10,
+      "gridLatitude": 46,
+      "gridLongitude": 6.25,
+      "elevation": 449,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=45.8992&longitude=6.1294&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FParis&models=era5",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; standard 19°C target.",
+      "climateTypeSources": [
+        "https://www.france.fr/en/destination/?page=1"
+      ],
+      "climateReviewNote": "Town-point ERA5 grid estimate; nearby mountain and coastal microclimates can differ. This is not a snow or mountain-conditions forecast.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 3.13,
+          "meanDailyHighC": 7.21,
+          "meanRainMmPerDay": 4.9703,
+          "meanRelativeHumidityPct": 78.65,
+          "rainyDayFraction": 0.4613
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 5.59,
+          "meanDailyHighC": 10.44,
+          "meanRainMmPerDay": 3.6473,
+          "meanRelativeHumidityPct": 75.6,
+          "rainyDayFraction": 0.4064
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 8.29,
+          "meanDailyHighC": 13.35,
+          "meanRainMmPerDay": 4.0761,
+          "meanRelativeHumidityPct": 71.48,
+          "rainyDayFraction": 0.4323
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 11.64,
+          "meanDailyHighC": 17.05,
+          "meanRainMmPerDay": 3.7827,
+          "meanRelativeHumidityPct": 68.69,
+          "rainyDayFraction": 0.45
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 15.22,
+          "meanDailyHighC": 20.03,
+          "meanRainMmPerDay": 5.9906,
+          "meanRelativeHumidityPct": 75.24,
+          "rainyDayFraction": 0.5774
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 20.21,
+          "meanDailyHighC": 25.3,
+          "meanRainMmPerDay": 5.1757,
+          "meanRelativeHumidityPct": 74.44,
+          "rainyDayFraction": 0.55
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 21.76,
+          "meanDailyHighC": 27.22,
+          "meanRainMmPerDay": 3.9681,
+          "meanRelativeHumidityPct": 70.07,
+          "rainyDayFraction": 0.4355
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 21.41,
+          "meanDailyHighC": 27.14,
+          "meanRainMmPerDay": 3.3061,
+          "meanRelativeHumidityPct": 70.83,
+          "rainyDayFraction": 0.3742
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 17.08,
+          "meanDailyHighC": 22.25,
+          "meanRainMmPerDay": 3.919,
+          "meanRelativeHumidityPct": 78.24,
+          "rainyDayFraction": 0.4133
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 12.95,
+          "meanDailyHighC": 18.03,
+          "meanRainMmPerDay": 4.1177,
+          "meanRelativeHumidityPct": 80.44,
+          "rainyDayFraction": 0.3903
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 7.32,
+          "meanDailyHighC": 11.47,
+          "meanRainMmPerDay": 4.9103,
+          "meanRelativeHumidityPct": 82.35,
+          "rainyDayFraction": 0.4633
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 4.28,
+          "meanDailyHighC": 8.14,
+          "meanRainMmPerDay": 5.6871,
+          "meanRelativeHumidityPct": 80.61,
+          "rainyDayFraction": 0.4516
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for urban, rural/coastal or Christmas-market context. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          12,
+          4,
+          10,
+          5,
+          9,
+          6,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.france.fr/en/destination/?page=1"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          12,
+          4,
+          10,
+          5,
+          9,
+          6,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.france.fr/en/destination/?page=1"
+        ]
+      },
+      "events": [
+        {
+          "name": "Annecy International Animation Film Festival",
+          "months": [
+            6
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://www.annecyfestival.com/en"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Nice Carnival may cross February/March; those months are a broad seasonal approximation."
+    },
+    {
+      "country": "france",
+      "id": "avignon",
+      "name": "Avignon",
+      "area": "Provence",
+      "latitude": 43.9493,
+      "longitude": 4.8055,
+      "airports": [
+        [
+          "MRS",
+          "Marseille"
+        ],
+        [
+          "MPL",
+          "Montpellier"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 11,
+      "gridLatitude": 44,
+      "gridLongitude": 4.75,
+      "elevation": 29,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=43.9493&longitude=4.8055&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FParis&models=era5",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; standard 19°C target.",
+      "climateTypeSources": [
+        "https://www.france.fr/en/destination/?page=1"
+      ],
+      "climateReviewNote": null,
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 7.45,
+          "meanDailyHighC": 11.68,
+          "meanRainMmPerDay": 1.2326,
+          "meanRelativeHumidityPct": 71.95,
+          "rainyDayFraction": 0.2323
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 9.47,
+          "meanDailyHighC": 14.48,
+          "meanRainMmPerDay": 1.4802,
+          "meanRelativeHumidityPct": 69.55,
+          "rainyDayFraction": 0.212
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 11.75,
+          "meanDailyHighC": 17.21,
+          "meanRainMmPerDay": 2.0871,
+          "meanRelativeHumidityPct": 63.75,
+          "rainyDayFraction": 0.2419
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 14.87,
+          "meanDailyHighC": 20.44,
+          "meanRainMmPerDay": 1.9067,
+          "meanRelativeHumidityPct": 59.19,
+          "rainyDayFraction": 0.2567
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.78,
+          "meanDailyHighC": 24.33,
+          "meanRainMmPerDay": 2.3155,
+          "meanRelativeHumidityPct": 60.25,
+          "rainyDayFraction": 0.2839
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 24.19,
+          "meanDailyHighC": 30.21,
+          "meanRainMmPerDay": 1.5213,
+          "meanRelativeHumidityPct": 56.2,
+          "rainyDayFraction": 0.2133
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.75,
+          "meanDailyHighC": 33.21,
+          "meanRainMmPerDay": 0.7284,
+          "meanRelativeHumidityPct": 49.19,
+          "rainyDayFraction": 0.1258
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.96,
+          "meanDailyHighC": 32.68,
+          "meanRainMmPerDay": 1.5913,
+          "meanRelativeHumidityPct": 52.31,
+          "rainyDayFraction": 0.0968
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 21.28,
+          "meanDailyHighC": 27.39,
+          "meanRainMmPerDay": 2.736,
+          "meanRelativeHumidityPct": 61.31,
+          "rainyDayFraction": 0.1833
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 16.87,
+          "meanDailyHighC": 22.2,
+          "meanRainMmPerDay": 3.5261,
+          "meanRelativeHumidityPct": 71.04,
+          "rainyDayFraction": 0.271
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 11.21,
+          "meanDailyHighC": 15.75,
+          "meanRainMmPerDay": 2.9747,
+          "meanRelativeHumidityPct": 74.85,
+          "rainyDayFraction": 0.3233
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 8.05,
+          "meanDailyHighC": 12.51,
+          "meanRainMmPerDay": 2.05,
+          "meanRelativeHumidityPct": 77.25,
+          "rainyDayFraction": 0.3
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for urban, rural/coastal or Christmas-market context. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          8,
+          12,
+          4,
+          7,
+          10,
+          6,
+          9,
+          5
+        ],
+        "sourceUrls": [
+          "https://www.france.fr/en/destination/?page=1"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          8,
+          12,
+          4,
+          7,
+          10,
+          6,
+          9,
+          5
+        ],
+        "sourceUrls": [
+          "https://www.france.fr/en/destination/?page=1"
+        ]
+      },
+      "events": [
+        {
+          "name": "Festival d’Avignon",
+          "months": [
+            7
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://festival-avignon.com/en/edition-2026/programme/by-date"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Nice Carnival may cross February/March; those months are a broad seasonal approximation."
+    },
+    {
+      "country": "france",
+      "id": "bordeaux",
+      "name": "Bordeaux",
+      "area": "Southwest",
+      "latitude": 44.8378,
+      "longitude": -0.5792,
+      "airports": [
+        [
+          "BOD",
+          "Bordeaux"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 12,
+      "gridLatitude": 44.75,
+      "gridLongitude": -0.5,
+      "elevation": 16,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=44.8378&longitude=-0.5792&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FParis&models=era5",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; standard 19°C target.",
+      "climateTypeSources": [
+        "https://www.france.fr/en/destination/?page=1"
+      ],
+      "climateReviewNote": null,
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 6.93,
+          "meanDailyHighC": 10.62,
+          "meanRainMmPerDay": 2.7103,
+          "meanRelativeHumidityPct": 85.64,
+          "rainyDayFraction": 0.3871
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 8.8,
+          "meanDailyHighC": 13.68,
+          "meanRainMmPerDay": 2.3975,
+          "meanRelativeHumidityPct": 80.86,
+          "rainyDayFraction": 0.3534
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 10.85,
+          "meanDailyHighC": 15.75,
+          "meanRainMmPerDay": 2.4177,
+          "meanRelativeHumidityPct": 74.27,
+          "rainyDayFraction": 0.4032
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 13.46,
+          "meanDailyHighC": 18.83,
+          "meanRainMmPerDay": 2.1553,
+          "meanRelativeHumidityPct": 69.17,
+          "rainyDayFraction": 0.3667
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 16.8,
+          "meanDailyHighC": 22.01,
+          "meanRainMmPerDay": 2.7455,
+          "meanRelativeHumidityPct": 71.16,
+          "rainyDayFraction": 0.3935
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 20.63,
+          "meanDailyHighC": 25.82,
+          "meanRainMmPerDay": 3.0853,
+          "meanRelativeHumidityPct": 72.12,
+          "rainyDayFraction": 0.43
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 22.41,
+          "meanDailyHighC": 28.05,
+          "meanRainMmPerDay": 1.0281,
+          "meanRelativeHumidityPct": 67.13,
+          "rainyDayFraction": 0.2032
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 22.49,
+          "meanDailyHighC": 28.79,
+          "meanRainMmPerDay": 1.2529,
+          "meanRelativeHumidityPct": 66.81,
+          "rainyDayFraction": 0.2129
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 19.32,
+          "meanDailyHighC": 25.39,
+          "meanRainMmPerDay": 1.942,
+          "meanRelativeHumidityPct": 70.83,
+          "rainyDayFraction": 0.3133
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 15.46,
+          "meanDailyHighC": 20.97,
+          "meanRainMmPerDay": 2.5977,
+          "meanRelativeHumidityPct": 79.55,
+          "rainyDayFraction": 0.3226
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 10.32,
+          "meanDailyHighC": 14.77,
+          "meanRainMmPerDay": 2.899,
+          "meanRelativeHumidityPct": 85.43,
+          "rainyDayFraction": 0.4033
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 8.2,
+          "meanDailyHighC": 11.87,
+          "meanRainMmPerDay": 2.8423,
+          "meanRelativeHumidityPct": 88.57,
+          "rainyDayFraction": 0.4129
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for urban, rural/coastal or Christmas-market context. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          8,
+          12,
+          4,
+          7,
+          10,
+          6,
+          9,
+          5
+        ],
+        "sourceUrls": [
+          "https://www.france.fr/en/destination/?page=1"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          8,
+          12,
+          4,
+          7,
+          10,
+          6,
+          9,
+          5
+        ],
+        "sourceUrls": [
+          "https://www.france.fr/en/destination/?page=1"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Nice Carnival may cross February/March; those months are a broad seasonal approximation."
+    },
+    {
+      "country": "france",
+      "id": "sarlat",
+      "name": "Sarlat-la-Canéda",
+      "area": "Dordogne",
+      "latitude": 44.889,
+      "longitude": 1.2167,
+      "airports": [
+        [
+          "BVE",
+          "Brive Dordogne Valley"
+        ],
+        [
+          "EGC",
+          "Bergerac"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 13,
+      "gridLatitude": 45,
+      "gridLongitude": 1.25,
+      "elevation": 145,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=44.889&longitude=1.2167&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FParis&models=era5",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; standard 19°C target.",
+      "climateTypeSources": [
+        "https://www.france.fr/en/destination/?page=1"
+      ],
+      "climateReviewNote": null,
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 5.79,
+          "meanDailyHighC": 9.36,
+          "meanRainMmPerDay": 2.7806,
+          "meanRelativeHumidityPct": 84.2,
+          "rainyDayFraction": 0.4097
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 7.87,
+          "meanDailyHighC": 12.58,
+          "meanRainMmPerDay": 2.4671,
+          "meanRelativeHumidityPct": 78.59,
+          "rainyDayFraction": 0.3569
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 10.1,
+          "meanDailyHighC": 15.08,
+          "meanRainMmPerDay": 2.7897,
+          "meanRelativeHumidityPct": 72.07,
+          "rainyDayFraction": 0.4194
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 12.9,
+          "meanDailyHighC": 18.28,
+          "meanRainMmPerDay": 2.6687,
+          "meanRelativeHumidityPct": 67.61,
+          "rainyDayFraction": 0.38
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 16.24,
+          "meanDailyHighC": 21.41,
+          "meanRainMmPerDay": 2.7484,
+          "meanRelativeHumidityPct": 71.39,
+          "rainyDayFraction": 0.3968
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 20.64,
+          "meanDailyHighC": 25.91,
+          "meanRainMmPerDay": 3.078,
+          "meanRelativeHumidityPct": 71.18,
+          "rainyDayFraction": 0.3967
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 22.48,
+          "meanDailyHighC": 28.25,
+          "meanRainMmPerDay": 1.3068,
+          "meanRelativeHumidityPct": 65.37,
+          "rainyDayFraction": 0.1968
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 22.54,
+          "meanDailyHighC": 28.83,
+          "meanRainMmPerDay": 1.3732,
+          "meanRelativeHumidityPct": 64.65,
+          "rainyDayFraction": 0.2129
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 18.63,
+          "meanDailyHighC": 24.63,
+          "meanRainMmPerDay": 2.47,
+          "meanRelativeHumidityPct": 70.73,
+          "rainyDayFraction": 0.32
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 14.79,
+          "meanDailyHighC": 20.09,
+          "meanRainMmPerDay": 3.2061,
+          "meanRelativeHumidityPct": 79.15,
+          "rainyDayFraction": 0.3484
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 9.54,
+          "meanDailyHighC": 13.78,
+          "meanRainMmPerDay": 3.2417,
+          "meanRelativeHumidityPct": 84.28,
+          "rainyDayFraction": 0.4367
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 6.87,
+          "meanDailyHighC": 10.64,
+          "meanRainMmPerDay": 3.0358,
+          "meanRelativeHumidityPct": 87.07,
+          "rainyDayFraction": 0.4097
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for urban, rural/coastal or Christmas-market context. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          12,
+          4,
+          10,
+          5,
+          9,
+          6,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.france.fr/en/destination/?page=1"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          12,
+          4,
+          10,
+          5,
+          9,
+          6,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.france.fr/en/destination/?page=1"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Nice Carnival may cross February/March; those months are a broad seasonal approximation."
+    },
+    {
+      "country": "france",
+      "id": "toulouse",
+      "name": "Toulouse",
+      "area": "Occitanie",
+      "latitude": 43.6047,
+      "longitude": 1.4442,
+      "airports": [
+        [
+          "TLS",
+          "Toulouse"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 14,
+      "gridLatitude": 43.5,
+      "gridLongitude": 1.5,
+      "elevation": 153,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=43.6047&longitude=1.4442&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FParis&models=era5",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; standard 19°C target.",
+      "climateTypeSources": [
+        "https://www.france.fr/en/destination/?page=1"
+      ],
+      "climateReviewNote": null,
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 6.5,
+          "meanDailyHighC": 10.37,
+          "meanRainMmPerDay": 2.2797,
+          "meanRelativeHumidityPct": 83.05,
+          "rainyDayFraction": 0.3806
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 8.78,
+          "meanDailyHighC": 13.56,
+          "meanRainMmPerDay": 1.9032,
+          "meanRelativeHumidityPct": 78.51,
+          "rainyDayFraction": 0.3004
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 10.68,
+          "meanDailyHighC": 15.43,
+          "meanRainMmPerDay": 2.1997,
+          "meanRelativeHumidityPct": 73.68,
+          "rainyDayFraction": 0.4097
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 13.24,
+          "meanDailyHighC": 18.28,
+          "meanRainMmPerDay": 2.2647,
+          "meanRelativeHumidityPct": 70.46,
+          "rainyDayFraction": 0.35
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 16.66,
+          "meanDailyHighC": 21.66,
+          "meanRainMmPerDay": 2.8448,
+          "meanRelativeHumidityPct": 72.52,
+          "rainyDayFraction": 0.4161
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 21.36,
+          "meanDailyHighC": 26.68,
+          "meanRainMmPerDay": 2.5087,
+          "meanRelativeHumidityPct": 69.87,
+          "rainyDayFraction": 0.36
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 23.65,
+          "meanDailyHighC": 29.33,
+          "meanRainMmPerDay": 1.6187,
+          "meanRelativeHumidityPct": 63.67,
+          "rainyDayFraction": 0.2258
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 23.92,
+          "meanDailyHighC": 30.19,
+          "meanRainMmPerDay": 1.589,
+          "meanRelativeHumidityPct": 61.55,
+          "rainyDayFraction": 0.2452
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 19.97,
+          "meanDailyHighC": 25.92,
+          "meanRainMmPerDay": 1.7293,
+          "meanRelativeHumidityPct": 67.6,
+          "rainyDayFraction": 0.3
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 16.02,
+          "meanDailyHighC": 21.46,
+          "meanRainMmPerDay": 1.9645,
+          "meanRelativeHumidityPct": 75.87,
+          "rainyDayFraction": 0.2968
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 10.45,
+          "meanDailyHighC": 14.72,
+          "meanRainMmPerDay": 2.8117,
+          "meanRelativeHumidityPct": 82.99,
+          "rainyDayFraction": 0.4633
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 8.11,
+          "meanDailyHighC": 12.03,
+          "meanRainMmPerDay": 2.471,
+          "meanRelativeHumidityPct": 85.24,
+          "rainyDayFraction": 0.3871
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for urban, rural/coastal or Christmas-market context. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          8,
+          12,
+          4,
+          7,
+          10,
+          6,
+          9,
+          5
+        ],
+        "sourceUrls": [
+          "https://www.france.fr/en/destination/?page=1"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          8,
+          12,
+          4,
+          7,
+          10,
+          6,
+          9,
+          5
+        ],
+        "sourceUrls": [
+          "https://www.france.fr/en/destination/?page=1"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Nice Carnival may cross February/March; those months are a broad seasonal approximation."
+    },
+    {
+      "country": "france",
+      "id": "biarritz",
+      "name": "Biarritz",
+      "area": "French Basque coast",
+      "latitude": 43.4832,
+      "longitude": -1.5586,
+      "airports": [
+        [
+          "BIQ",
+          "Biarritz"
+        ]
+      ],
+      "climateType": "beach",
+      "regionIndex": 15,
+      "gridLatitude": 43.5,
+      "gridLongitude": -1.5,
+      "elevation": 18,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=43.4832&longitude=-1.5586&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FParis&models=era5",
+      "climateTypeReason": "Approved beach-oriented holiday base; 25°C target.",
+      "climateTypeSources": [
+        "https://www.france.fr/en/destination/?page=1"
+      ],
+      "climateReviewNote": null,
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 9.49,
+          "meanDailyHighC": 12.15,
+          "meanRainMmPerDay": 4.9477,
+          "meanRelativeHumidityPct": 78.74,
+          "rainyDayFraction": 0.4968
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 10.88,
+          "meanDailyHighC": 14.12,
+          "meanRainMmPerDay": 3.658,
+          "meanRelativeHumidityPct": 77.08,
+          "rainyDayFraction": 0.4134
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 12.06,
+          "meanDailyHighC": 15.21,
+          "meanRainMmPerDay": 3.7026,
+          "meanRelativeHumidityPct": 74.2,
+          "rainyDayFraction": 0.4871
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 13.82,
+          "meanDailyHighC": 17,
+          "meanRainMmPerDay": 2.9937,
+          "meanRelativeHumidityPct": 75.04,
+          "rainyDayFraction": 0.4367
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 16.35,
+          "meanDailyHighC": 19.35,
+          "meanRainMmPerDay": 3.1455,
+          "meanRelativeHumidityPct": 78.98,
+          "rainyDayFraction": 0.4742
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 19.61,
+          "meanDailyHighC": 22.42,
+          "meanRainMmPerDay": 3.2617,
+          "meanRelativeHumidityPct": 81.3,
+          "rainyDayFraction": 0.4367
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 21.39,
+          "meanDailyHighC": 24.11,
+          "meanRainMmPerDay": 1.5829,
+          "meanRelativeHumidityPct": 79.9,
+          "rainyDayFraction": 0.2968
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 21.77,
+          "meanDailyHighC": 24.89,
+          "meanRainMmPerDay": 2.0387,
+          "meanRelativeHumidityPct": 80.04,
+          "rainyDayFraction": 0.3355
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 19.95,
+          "meanDailyHighC": 23.31,
+          "meanRainMmPerDay": 3.4193,
+          "meanRelativeHumidityPct": 78.96,
+          "rainyDayFraction": 0.3933
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.33,
+          "meanDailyHighC": 20.65,
+          "meanRainMmPerDay": 3.4829,
+          "meanRelativeHumidityPct": 78.54,
+          "rainyDayFraction": 0.4
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 13.01,
+          "meanDailyHighC": 15.81,
+          "meanRainMmPerDay": 6.4183,
+          "meanRelativeHumidityPct": 79.17,
+          "rainyDayFraction": 0.54
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 11.06,
+          "meanDailyHighC": 13.66,
+          "meanRainMmPerDay": 5.1042,
+          "meanRelativeHumidityPct": 80.86,
+          "rainyDayFraction": 0.4484
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for urban, rural/coastal or Christmas-market context. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          12,
+          4,
+          10,
+          5,
+          9,
+          6,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.france.fr/en/destination/?page=1"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          12,
+          4,
+          10,
+          5,
+          9,
+          6,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.france.fr/en/destination/?page=1"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Nice Carnival may cross February/March; those months are a broad seasonal approximation."
     }
-  ]
+  ],
+  "destinationTypeAssignments": {
+    "france:strasbourg": {
+      "name": "Strasbourg",
+      "climateType": "all-season",
+      "reason": "Owner-selected all-season destination, approved 6 November 2026.",
+      "status": "Integrated with monthly climate profiles, 6 November 2026."
+    },
+    "united-kingdom:edinburgh": {
+      "name": "Edinburgh",
+      "climateType": "all-season",
+      "reason": "Owner-selected all-season destination, approved 6 November 2026.",
+      "status": "Integrated with monthly climate profiles, 6 November 2026."
+    },
+    "united-kingdom:inverness": {
+      "name": "Inverness",
+      "climateType": "all-season",
+      "reason": "Owner-selected all-season destination, approved 6 November 2026.",
+      "status": "Integrated with monthly climate profiles, 6 November 2026."
+    },
+    "united-kingdom:fort-william": {
+      "name": "Fort William",
+      "climateType": "all-season",
+      "reason": "Owner-selected all-season destination, approved 6 November 2026.",
+      "status": "Integrated with monthly climate profiles, 6 November 2026."
+    },
+    "united-kingdom:portree": {
+      "name": "Portree",
+      "climateType": "all-season",
+      "reason": "Owner-selected all-season destination, approved 6 November 2026.",
+      "status": "Integrated with monthly climate profiles, 6 November 2026."
+    }
+  }
 }
