@@ -92,3 +92,16 @@
 .mate-reward{display:block;width:76px;height:68px;flex:0 0 76px;filter:drop-shadow(0 4px 4px #77502133)}.argentina-treasures .treasure-badge strong{font-size:clamp(11px,1.15vw,16px)}.destination-card[data-country="argentina"] .card-image img{object-position:50% 50%}@media(max-width:700px){.mate-reward{width:61px;height:55px;flex-basis:61px}.argentina-treasures .treasure-badge strong{font-size:12px}}
 
 .scarab-reward,.kiwi-reward{display:block;width:76px;height:68px;flex:0 0 76px;filter:drop-shadow(0 4px 4px #77502133)}[data-treasure-country] .treasure-badge strong{font-size:clamp(11px,1.15vw,16px)}.region-filters{flex-wrap:wrap}.destination-toolbar{flex-wrap:wrap;row-gap:12px}@media(max-width:700px){.scarab-reward,.kiwi-reward{width:61px;height:55px;flex-basis:61px}[data-treasure-country] .treasure-badge strong{font-size:12px}}
+
+/* Brighter seasonal ratings and temporary full-width comparison. */
+.detail-panel .season-table .best{background:#a9e5ba;color:#164b2b}
+.detail-panel .season-table .average{background:#ffe492;color:#654b0c}
+.detail-panel .season-table .worst{background:#f5b6ac;color:#752f29}
+.season-table-toolbar{display:flex;justify-content:flex-end;padding:0 0 10px}
+.detail-panel .season-table-expand{font:500 12px var(--sans);padding:8px 12px;border:1px solid #b9c9e4;border-radius:8px;background:#fff;color:#315491;cursor:pointer}
+.season-table-expand:focus-visible{outline:3px solid #709ce4;outline-offset:2px}
+.season-table-frame.is-expanded{position:fixed;inset:70px 24px auto;z-index:100;background:#fff;padding:18px;border:1px solid #bccbe0;border-radius:12px;box-shadow:0 16px 70px #17243d55;max-height:calc(100dvh - 110px);overflow:auto}
+.season-table-frame.is-expanded .table-scroll{max-height:calc(100dvh - 190px);overflow:auto}
+.season-table-frame.is-expanded .season-table{min-width:900px}
+.season-table-frame.is-expanded .season-table thead{position:sticky;top:0;background:#f3f7fd;z-index:1}
+@media(max-width:700px){.season-table-frame.is-expanded{inset:65px 8px auto;padding:10px}.season-table-frame.is-expanded .season-table{min-width:900px}}

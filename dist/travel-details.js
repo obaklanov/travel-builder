@@ -169,6 +169,16 @@ function renderTravelDetail(key,kind){
  panel.innerHTML=`<h3>WHEN. What month best to go?</h3><div class="table-scroll"><table class="season-table"><colgroup><col class="season-region-col">${Array.from({length:12},()=>'<col class="season-month-col">').join('')}</colgroup><thead><tr><th>Region</th>${['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'].map(m=>`<th>${m}</th>`).join('')}</tr></thead><tbody>${d.regions.map(([region,months])=>`<tr><th>${region}</th>${[...months].map(c=>{const text={B:'BEST',A:'AVERAGE',W:'WORST'}[c]||'PENDING';return `<td class="${text.toLowerCase()}">${text}</td>`}).join('')}</tr>`).join('')}</tbody></table></div><p><a href="https://climateknowledgeportal.worldbank.org/" target="_blank" rel="noopener noreferrer">Explore World Bank climate data ↗</a></p>`;
 
  if(d.seasonSources){const note=document.createElement('p');note.className='estimate-note';note.textContent=d.seasonNote;panel.append(note);for(const source of d.seasonSources){const p=document.createElement('p'),link=document.createElement('a');link.href=source.url;link.textContent=source.label+' ↗';link.target='_blank';link.rel='noopener noreferrer';p.append(link);panel.append(p);}}
+
+ const scroll=panel.querySelector('.table-scroll');
+ const frame=document.createElement('div');frame.className='season-table-frame';
+ scroll.before(frame);frame.append(scroll);
+ const toolbar=document.createElement('div');toolbar.className='season-table-toolbar';
+ const expand=document.createElement('button');expand.type='button';expand.className='season-table-expand';expand.textContent='Expand · all 12 months ↗';expand.setAttribute('aria-expanded','false');
+ toolbar.append(expand);frame.prepend(toolbar);
+ const collapse=()=>{frame.classList.remove('is-expanded');expand.setAttribute('aria-expanded','false');expand.textContent='Expand · all 12 months ↗';};
+ expand.onclick=()=>{const open=frame.classList.toggle('is-expanded');expand.setAttribute('aria-expanded',String(open));expand.textContent=open?'Close expanded table ×':'Expand · all 12 months ↗';};
+ frame.addEventListener('keydown',event=>{if(event.key==='Escape'&&frame.classList.contains('is-expanded')){event.preventDefault();event.stopPropagation();collapse();expand.focus();}});
  setupSeasonChoice(key,panel);
  if(d.scoredSeasonality){
   const explanation=document.createElement('details');explanation.className='season-score-method';const title=document.createElement('summary');title.textContent='How these tourist ratings are calculated';const copy=document.createElement('p');copy.textContent='Climate 50% · Crowds 16⅔% · Festivals 16⅔% · Prices 16⅔%. BEST: 65–100; AVERAGE: 40–64.99; WORST: below 40. Climate uses 2016–2025 ERA5 weather estimates via Open-Meteo. Temperature is the historical daily mean. Rain is the average amount in mm per calendar day, including dry days; it is not a rain forecast or hourly intensity. The initial preferred rainfall ceiling is 2 mm/day, with zero rain score at 10 mm/day. Crowds and accommodation prices use provisional editorial seasonal rankings, not measured occupancy or prices. Festivals use selected recurring events; dates may change. WORST means a lower preference match, not unsafe travel.';explanation.append(title,copy);
