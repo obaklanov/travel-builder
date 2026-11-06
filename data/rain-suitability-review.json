@@ -7,9 +7,9 @@
     "persistentWetDayFraction": 0.6,
     "excludedMonthsPerVulnerableBase": 2,
     "selection": "Vulnerable if any month averages >=8 mm/day, or >=6 mm/day with >=60% wet days where wet-day data exist. Mark its two largest mean daily rainfall/precipitation months unsuitable. Equal values use calendar order. Reviewed regional/station overrides take precedence where coarse model grids conflict with official guidance; these are identified per base.",
-    "scope": "174 existing destinations. Product preference, not abnormal-weather diagnosis, flood forecast or official advisory.",
+    "scope": "179 existing destinations. Product preference, not abnormal-weather diagnosis, flood forecast or official advisory.",
     "limitations": "Model estimates and representative points; broad regions can contain different climates. NASA supplementary records are total precipitation including snow, not rain-only; cross-check Colombia estimates separately. Unflagged does not mean free of rain or weather hazards.",
-    "reviewedVulnerableCount": 53
+    "reviewedVulnerableCount": 55
   },
   "bases": [
     {
@@ -4464,74 +4464,73 @@
     {
       "country": "brazil",
       "regionIndex": 0,
-      "label": "Rio de Janeiro (East)",
-      "id": "brazil-0",
-      "latitude": -22.91,
-      "longitude": -43.17,
-      "needsRainFetch": true,
-      "referenceNote": "Representative point for a broad legacy region; does not describe every linked place.",
+      "label": "Rio de Janeiro (Southeast)",
+      "id": "rio-de-janeiro",
+      "latitude": -22.9068,
+      "longitude": -43.1729,
+      "referenceNote": "Named town point; regional excursions and local microclimates can differ.",
       "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
-      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR&community=AG&longitude=-43.17&latitude=-22.91&start=2016&end=2025&format=JSON",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-43.1729&latitude=-22.9068&start=20160101&end=20251231&format=JSON&time-standard=LST",
       "months": [
         {
           "month": 1,
-          "meanMmPerDay": 8.438,
-          "wetDayFraction": null
+          "meanMmPerDay": 8.4368,
+          "wetDayFraction": 0.7129
         },
         {
           "month": 2,
-          "meanMmPerDay": 8.235,
-          "wetDayFraction": null
+          "meanMmPerDay": 8.2361,
+          "wetDayFraction": 0.6996
         },
         {
           "month": 3,
           "meanMmPerDay": 6.057,
-          "wetDayFraction": null
+          "wetDayFraction": 0.5968
         },
         {
           "month": 4,
-          "meanMmPerDay": 3.928,
-          "wetDayFraction": null
+          "meanMmPerDay": 3.927,
+          "wetDayFraction": 0.4167
         },
         {
           "month": 5,
-          "meanMmPerDay": 1.996,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.9948,
+          "wetDayFraction": 0.2419
         },
         {
           "month": 6,
-          "meanMmPerDay": 1.494,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.4946,
+          "wetDayFraction": 0.2433
         },
         {
           "month": 7,
-          "meanMmPerDay": 0.683,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.6818,
+          "wetDayFraction": 0.1258
         },
         {
           "month": 8,
-          "meanMmPerDay": 1.746,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.7456,
+          "wetDayFraction": 0.2419
         },
         {
           "month": 9,
-          "meanMmPerDay": 2.046,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.0459,
+          "wetDayFraction": 0.2667
         },
         {
           "month": 10,
-          "meanMmPerDay": 4.661,
-          "wetDayFraction": null
+          "meanMmPerDay": 4.6605,
+          "wetDayFraction": 0.5677
         },
         {
           "month": 11,
-          "meanMmPerDay": 7.597,
-          "wetDayFraction": null
+          "meanMmPerDay": 7.5959,
+          "wetDayFraction": 0.6233
         },
         {
           "month": 12,
-          "meanMmPerDay": 8.764,
-          "wetDayFraction": null
+          "meanMmPerDay": 8.7629,
+          "wetDayFraction": 0.6774
         }
       ],
       "vulnerable": true,
@@ -4544,151 +4543,149 @@
     {
       "country": "brazil",
       "regionIndex": 1,
-      "label": "Salvador & Bahia (East)",
-      "id": "brazil-1",
-      "latitude": -12.98,
-      "longitude": -38.5,
-      "needsRainFetch": true,
-      "referenceNote": "Representative point for a broad legacy region; does not describe every linked place.",
+      "label": "Salvador (Bahia)",
+      "id": "salvador",
+      "latitude": -12.9777,
+      "longitude": -38.5016,
+      "referenceNote": "Named town point; regional excursions and local microclimates can differ.",
       "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
-      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR&community=AG&longitude=-38.5&latitude=-12.98&start=2016&end=2025&format=JSON",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-38.5016&latitude=-12.9777&start=20160101&end=20251231&format=JSON&time-standard=LST",
       "months": [
         {
           "month": 1,
-          "meanMmPerDay": 2.444,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.4443,
+          "wetDayFraction": 0.4516
         },
         {
           "month": 2,
-          "meanMmPerDay": 2.1002,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.1006,
+          "wetDayFraction": 0.5088
         },
         {
           "month": 3,
-          "meanMmPerDay": 2.504,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.5033,
+          "wetDayFraction": 0.5484
         },
         {
           "month": 4,
-          "meanMmPerDay": 3.782,
-          "wetDayFraction": null
+          "meanMmPerDay": 3.7815,
+          "wetDayFraction": 0.6633
         },
         {
           "month": 5,
-          "meanMmPerDay": 3.538,
-          "wetDayFraction": null
+          "meanMmPerDay": 3.5403,
+          "wetDayFraction": 0.6516
         },
         {
           "month": 6,
-          "meanMmPerDay": 2.929,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.9289,
+          "wetDayFraction": 0.7067
         },
         {
           "month": 7,
-          "meanMmPerDay": 2.711,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.7096,
+          "wetDayFraction": 0.6516
         },
         {
           "month": 8,
-          "meanMmPerDay": 2.283,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.2826,
+          "wetDayFraction": 0.5
         },
         {
           "month": 9,
-          "meanMmPerDay": 1.457,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.4581,
+          "wetDayFraction": 0.44
         },
         {
           "month": 10,
-          "meanMmPerDay": 1.378,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.379,
+          "wetDayFraction": 0.3355
         },
         {
           "month": 11,
-          "meanMmPerDay": 2.597,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.5962,
+          "wetDayFraction": 0.44
         },
         {
           "month": 12,
-          "meanMmPerDay": 2.06,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.0613,
+          "wetDayFraction": 0.3484
         }
       ],
       "vulnerable": false,
       "excludedMonths": [],
-      "reason": "Screening threshold not met at representative point."
+      "reason": "Screening threshold not met at named town point."
     },
     {
       "country": "brazil",
       "regionIndex": 2,
-      "label": "Manaus & Amazon (North)",
-      "id": "brazil-2",
-      "latitude": -3.1,
-      "longitude": -60.02,
-      "needsRainFetch": true,
-      "referenceNote": "Representative point for a broad legacy region; does not describe every linked place.",
+      "label": "Manaus (Amazonas)",
+      "id": "manaus",
+      "latitude": -3.119,
+      "longitude": -60.0217,
+      "referenceNote": "Named town point; regional excursions and local microclimates can differ.",
       "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
-      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR&community=AG&longitude=-60.02&latitude=-3.1&start=2016&end=2025&format=JSON",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-60.0217&latitude=-3.119&start=20160101&end=20251231&format=JSON&time-standard=LST",
       "months": [
         {
           "month": 1,
-          "meanMmPerDay": 6.717,
-          "wetDayFraction": null
+          "meanMmPerDay": 6.7162,
+          "wetDayFraction": 0.8097
         },
         {
           "month": 2,
-          "meanMmPerDay": 7.2491,
-          "wetDayFraction": null
+          "meanMmPerDay": 7.2495,
+          "wetDayFraction": 0.841
         },
         {
           "month": 3,
-          "meanMmPerDay": 8.713,
-          "wetDayFraction": null
+          "meanMmPerDay": 8.712,
+          "wetDayFraction": 0.8419
         },
         {
           "month": 4,
-          "meanMmPerDay": 8.031,
-          "wetDayFraction": null
+          "meanMmPerDay": 8.0306,
+          "wetDayFraction": 0.8933
         },
         {
           "month": 5,
-          "meanMmPerDay": 6.372,
-          "wetDayFraction": null
+          "meanMmPerDay": 6.3729,
+          "wetDayFraction": 0.8548
         },
         {
           "month": 6,
-          "meanMmPerDay": 4.436,
-          "wetDayFraction": null
+          "meanMmPerDay": 4.4359,
+          "wetDayFraction": 0.7133
         },
         {
           "month": 7,
-          "meanMmPerDay": 2.585,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.5849,
+          "wetDayFraction": 0.4871
         },
         {
           "month": 8,
-          "meanMmPerDay": 1.903,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.9026,
+          "wetDayFraction": 0.4129
         },
         {
           "month": 9,
-          "meanMmPerDay": 2.661,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.6607,
+          "wetDayFraction": 0.4967
         },
         {
           "month": 10,
-          "meanMmPerDay": 3.39,
-          "wetDayFraction": null
+          "meanMmPerDay": 3.3906,
+          "wetDayFraction": 0.5419
         },
         {
           "month": 11,
-          "meanMmPerDay": 4.735,
-          "wetDayFraction": null
+          "meanMmPerDay": 4.7349,
+          "wetDayFraction": 0.6233
         },
         {
           "month": 12,
-          "meanMmPerDay": 8.016,
-          "wetDayFraction": null
+          "meanMmPerDay": 8.0157,
+          "wetDayFraction": 0.8581
         }
       ],
       "vulnerable": true,
@@ -4701,151 +4698,149 @@
     {
       "country": "brazil",
       "regionIndex": 3,
-      "label": "Iguaçu Falls (South)",
-      "id": "brazil-3",
-      "latitude": -25.55,
-      "longitude": -54.59,
-      "needsRainFetch": true,
-      "referenceNote": "Representative point for a broad legacy region; does not describe every linked place.",
+      "label": "Foz do Iguaçu (South)",
+      "id": "foz-do-iguacu",
+      "latitude": -25.5163,
+      "longitude": -54.5854,
+      "referenceNote": "Named town point; regional excursions and local microclimates can differ.",
       "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
-      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR&community=AG&longitude=-54.59&latitude=-25.55&start=2016&end=2025&format=JSON",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-54.5854&latitude=-25.5163&start=20160101&end=20251231&format=JSON&time-standard=LST",
       "months": [
         {
           "month": 1,
-          "meanMmPerDay": 5.159,
-          "wetDayFraction": null
+          "meanMmPerDay": 5.1578,
+          "wetDayFraction": 0.5774
         },
         {
           "month": 2,
-          "meanMmPerDay": 4.888,
-          "wetDayFraction": null
+          "meanMmPerDay": 4.8877,
+          "wetDayFraction": 0.5336
         },
         {
           "month": 3,
-          "meanMmPerDay": 3.834,
-          "wetDayFraction": null
+          "meanMmPerDay": 3.8329,
+          "wetDayFraction": 0.4032
         },
         {
           "month": 4,
-          "meanMmPerDay": 3.296,
-          "wetDayFraction": null
+          "meanMmPerDay": 3.2959,
+          "wetDayFraction": 0.3067
         },
         {
           "month": 5,
-          "meanMmPerDay": 4.747,
-          "wetDayFraction": null
+          "meanMmPerDay": 4.7467,
+          "wetDayFraction": 0.3452
         },
         {
           "month": 6,
-          "meanMmPerDay": 3.349,
-          "wetDayFraction": null
+          "meanMmPerDay": 3.3503,
+          "wetDayFraction": 0.3133
         },
         {
           "month": 7,
-          "meanMmPerDay": 1.996,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.9955,
+          "wetDayFraction": 0.1677
         },
         {
           "month": 8,
-          "meanMmPerDay": 2.954,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.9545,
+          "wetDayFraction": 0.2387
         },
         {
           "month": 9,
-          "meanMmPerDay": 3.349,
-          "wetDayFraction": null
+          "meanMmPerDay": 3.3496,
+          "wetDayFraction": 0.28
         },
         {
           "month": 10,
-          "meanMmPerDay": 7.976,
-          "wetDayFraction": null
+          "meanMmPerDay": 7.9754,
+          "wetDayFraction": 0.4903
         },
         {
           "month": 11,
-          "meanMmPerDay": 4.609,
-          "wetDayFraction": null
+          "meanMmPerDay": 4.6077,
+          "wetDayFraction": 0.36
         },
         {
           "month": 12,
-          "meanMmPerDay": 4.588,
-          "wetDayFraction": null
+          "meanMmPerDay": 4.5872,
+          "wetDayFraction": 0.4452
         }
       ],
       "vulnerable": false,
       "excludedMonths": [],
-      "reason": "Screening threshold not met at representative point."
+      "reason": "Screening threshold not met at named town point."
     },
     {
       "country": "brazil",
       "regionIndex": 4,
-      "label": "Lençóis Maranhenses (North)",
-      "id": "brazil-4",
-      "latitude": -2.75,
-      "longitude": -42.83,
-      "needsRainFetch": true,
-      "referenceNote": "Representative point for a broad legacy region; does not describe every linked place.",
+      "label": "Barreirinhas (Lençóis Maranhenses)",
+      "id": "barreirinhas",
+      "latitude": -2.7461,
+      "longitude": -42.8266,
+      "referenceNote": "Named town point; regional excursions and local microclimates can differ.",
       "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
-      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR&community=AG&longitude=-42.83&latitude=-2.75&start=2016&end=2025&format=JSON",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-42.8266&latitude=-2.7461&start=20160101&end=20251231&format=JSON&time-standard=LST",
       "months": [
         {
           "month": 1,
-          "meanMmPerDay": 5.713,
-          "wetDayFraction": null
+          "meanMmPerDay": 5.7131,
+          "wetDayFraction": 0.8516
         },
         {
           "month": 2,
-          "meanMmPerDay": 8.8166,
-          "wetDayFraction": null
+          "meanMmPerDay": 8.8164,
+          "wetDayFraction": 0.9293
         },
         {
           "month": 3,
-          "meanMmPerDay": 10.003,
-          "wetDayFraction": null
+          "meanMmPerDay": 10.0025,
+          "wetDayFraction": 0.9742
         },
         {
           "month": 4,
-          "meanMmPerDay": 8.72,
-          "wetDayFraction": null
+          "meanMmPerDay": 8.7206,
+          "wetDayFraction": 0.96
         },
         {
           "month": 5,
-          "meanMmPerDay": 5.54,
-          "wetDayFraction": null
+          "meanMmPerDay": 5.5406,
+          "wetDayFraction": 0.8516
         },
         {
           "month": 6,
-          "meanMmPerDay": 3.654,
-          "wetDayFraction": null
+          "meanMmPerDay": 3.6534,
+          "wetDayFraction": 0.7367
         },
         {
           "month": 7,
-          "meanMmPerDay": 1.981,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.9792,
+          "wetDayFraction": 0.4452
         },
         {
           "month": 8,
-          "meanMmPerDay": 0.797,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.7965,
+          "wetDayFraction": 0.2065
         },
         {
           "month": 9,
-          "meanMmPerDay": 0.373,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.3713,
+          "wetDayFraction": 0.0967
         },
         {
           "month": 10,
-          "meanMmPerDay": 0.266,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.2658,
+          "wetDayFraction": 0.0742
         },
         {
           "month": 11,
-          "meanMmPerDay": 0.795,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.7949,
+          "wetDayFraction": 0.1833
         },
         {
           "month": 12,
-          "meanMmPerDay": 2.056,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.0556,
+          "wetDayFraction": 0.4194
         }
       ],
       "vulnerable": true,
@@ -4854,6 +4849,392 @@
         2
       ],
       "reason": "Heavy or persistent wet-season screening threshold met; two wettest months excluded."
+    },
+    {
+      "country": "brazil",
+      "regionIndex": 5,
+      "label": "São Paulo (Southeast)",
+      "id": "sao-paulo",
+      "latitude": -23.5505,
+      "longitude": -46.6333,
+      "referenceNote": "Named town point; regional excursions and local microclimates can differ.",
+      "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-46.6333&latitude=-23.5505&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "months": [
+        {
+          "month": 1,
+          "meanMmPerDay": 6.4217,
+          "wetDayFraction": 0.771
+        },
+        {
+          "month": 2,
+          "meanMmPerDay": 5.6243,
+          "wetDayFraction": 0.6643
+        },
+        {
+          "month": 3,
+          "meanMmPerDay": 4.6044,
+          "wetDayFraction": 0.6226
+        },
+        {
+          "month": 4,
+          "meanMmPerDay": 1.9271,
+          "wetDayFraction": 0.3067
+        },
+        {
+          "month": 5,
+          "meanMmPerDay": 1.7082,
+          "wetDayFraction": 0.2452
+        },
+        {
+          "month": 6,
+          "meanMmPerDay": 1.895,
+          "wetDayFraction": 0.2533
+        },
+        {
+          "month": 7,
+          "meanMmPerDay": 0.8358,
+          "wetDayFraction": 0.1161
+        },
+        {
+          "month": 8,
+          "meanMmPerDay": 1.2232,
+          "wetDayFraction": 0.2226
+        },
+        {
+          "month": 9,
+          "meanMmPerDay": 1.5737,
+          "wetDayFraction": 0.27
+        },
+        {
+          "month": 10,
+          "meanMmPerDay": 3.5495,
+          "wetDayFraction": 0.5065
+        },
+        {
+          "month": 11,
+          "meanMmPerDay": 3.9554,
+          "wetDayFraction": 0.49
+        },
+        {
+          "month": 12,
+          "meanMmPerDay": 4.3942,
+          "wetDayFraction": 0.6355
+        }
+      ],
+      "vulnerable": true,
+      "excludedMonths": [
+        1,
+        2
+      ],
+      "reason": "Heavy or persistent wet-season screening threshold met; two wettest months excluded."
+    },
+    {
+      "country": "brazil",
+      "regionIndex": 6,
+      "label": "Recife & Olinda (Northeast)",
+      "id": "recife-olinda",
+      "latitude": -8.0476,
+      "longitude": -34.877,
+      "referenceNote": "Named town point; regional excursions and local microclimates can differ.",
+      "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-34.877&latitude=-8.0476&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "months": [
+        {
+          "month": 1,
+          "meanMmPerDay": 2.403,
+          "wetDayFraction": 0.5355
+        },
+        {
+          "month": 2,
+          "meanMmPerDay": 2.9788,
+          "wetDayFraction": 0.5972
+        },
+        {
+          "month": 3,
+          "meanMmPerDay": 4.0609,
+          "wetDayFraction": 0.7097
+        },
+        {
+          "month": 4,
+          "meanMmPerDay": 5.4805,
+          "wetDayFraction": 0.81
+        },
+        {
+          "month": 5,
+          "meanMmPerDay": 7.616,
+          "wetDayFraction": 0.8419
+        },
+        {
+          "month": 6,
+          "meanMmPerDay": 7.4604,
+          "wetDayFraction": 0.85
+        },
+        {
+          "month": 7,
+          "meanMmPerDay": 5.8536,
+          "wetDayFraction": 0.8581
+        },
+        {
+          "month": 8,
+          "meanMmPerDay": 3.0939,
+          "wetDayFraction": 0.6677
+        },
+        {
+          "month": 9,
+          "meanMmPerDay": 1.7033,
+          "wetDayFraction": 0.4733
+        },
+        {
+          "month": 10,
+          "meanMmPerDay": 0.8148,
+          "wetDayFraction": 0.2677
+        },
+        {
+          "month": 11,
+          "meanMmPerDay": 0.9102,
+          "wetDayFraction": 0.1867
+        },
+        {
+          "month": 12,
+          "meanMmPerDay": 1.3649,
+          "wetDayFraction": 0.3613
+        }
+      ],
+      "vulnerable": true,
+      "excludedMonths": [
+        5,
+        6
+      ],
+      "reason": "Heavy or persistent wet-season screening threshold met; two wettest months excluded."
+    },
+    {
+      "country": "brazil",
+      "regionIndex": 7,
+      "label": "Florianópolis (South)",
+      "id": "florianopolis",
+      "latitude": -27.5954,
+      "longitude": -48.548,
+      "referenceNote": "Named town point; regional excursions and local microclimates can differ.",
+      "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-48.548&latitude=-27.5954&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "months": [
+        {
+          "month": 1,
+          "meanMmPerDay": 5.4245,
+          "wetDayFraction": 0.671
+        },
+        {
+          "month": 2,
+          "meanMmPerDay": 4.1067,
+          "wetDayFraction": 0.6113
+        },
+        {
+          "month": 3,
+          "meanMmPerDay": 3.9445,
+          "wetDayFraction": 0.5484
+        },
+        {
+          "month": 4,
+          "meanMmPerDay": 2.6776,
+          "wetDayFraction": 0.43
+        },
+        {
+          "month": 5,
+          "meanMmPerDay": 3.6791,
+          "wetDayFraction": 0.3677
+        },
+        {
+          "month": 6,
+          "meanMmPerDay": 3.5511,
+          "wetDayFraction": 0.3567
+        },
+        {
+          "month": 7,
+          "meanMmPerDay": 2.0895,
+          "wetDayFraction": 0.2548
+        },
+        {
+          "month": 8,
+          "meanMmPerDay": 2.7399,
+          "wetDayFraction": 0.3323
+        },
+        {
+          "month": 9,
+          "meanMmPerDay": 3.5069,
+          "wetDayFraction": 0.4267
+        },
+        {
+          "month": 10,
+          "meanMmPerDay": 4.9968,
+          "wetDayFraction": 0.5742
+        },
+        {
+          "month": 11,
+          "meanMmPerDay": 4.5042,
+          "wetDayFraction": 0.5033
+        },
+        {
+          "month": 12,
+          "meanMmPerDay": 4.7688,
+          "wetDayFraction": 0.6
+        }
+      ],
+      "vulnerable": false,
+      "excludedMonths": [],
+      "reason": "Screening threshold not met at named town point."
+    },
+    {
+      "country": "brazil",
+      "regionIndex": 8,
+      "label": "Bonito (Central-West)",
+      "id": "bonito",
+      "latitude": -21.1261,
+      "longitude": -56.4836,
+      "referenceNote": "Named town point; regional excursions and local microclimates can differ.",
+      "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-56.4836&latitude=-21.1261&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "months": [
+        {
+          "month": 1,
+          "meanMmPerDay": 4.7621,
+          "wetDayFraction": 0.5581
+        },
+        {
+          "month": 2,
+          "meanMmPerDay": 4.6471,
+          "wetDayFraction": 0.5689
+        },
+        {
+          "month": 3,
+          "meanMmPerDay": 3.1654,
+          "wetDayFraction": 0.4387
+        },
+        {
+          "month": 4,
+          "meanMmPerDay": 3.1144,
+          "wetDayFraction": 0.3467
+        },
+        {
+          "month": 5,
+          "meanMmPerDay": 2.6812,
+          "wetDayFraction": 0.3032
+        },
+        {
+          "month": 6,
+          "meanMmPerDay": 1.6746,
+          "wetDayFraction": 0.2833
+        },
+        {
+          "month": 7,
+          "meanMmPerDay": 0.6462,
+          "wetDayFraction": 0.1194
+        },
+        {
+          "month": 8,
+          "meanMmPerDay": 1.9413,
+          "wetDayFraction": 0.2677
+        },
+        {
+          "month": 9,
+          "meanMmPerDay": 1.7967,
+          "wetDayFraction": 0.26
+        },
+        {
+          "month": 10,
+          "meanMmPerDay": 3.4038,
+          "wetDayFraction": 0.3742
+        },
+        {
+          "month": 11,
+          "meanMmPerDay": 3.0405,
+          "wetDayFraction": 0.4033
+        },
+        {
+          "month": 12,
+          "meanMmPerDay": 4.1942,
+          "wetDayFraction": 0.5484
+        }
+      ],
+      "vulnerable": false,
+      "excludedMonths": [],
+      "reason": "Screening threshold not met at named town point."
+    },
+    {
+      "country": "brazil",
+      "regionIndex": 9,
+      "label": "Poconé (Northern Pantanal)",
+      "id": "pocone",
+      "latitude": -16.2567,
+      "longitude": -56.6228,
+      "referenceNote": "Named town point; regional excursions and local microclimates can differ.",
+      "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-56.6228&latitude=-16.2567&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "months": [
+        {
+          "month": 1,
+          "meanMmPerDay": 3.6696,
+          "wetDayFraction": 0.671
+        },
+        {
+          "month": 2,
+          "meanMmPerDay": 4.412,
+          "wetDayFraction": 0.7032
+        },
+        {
+          "month": 3,
+          "meanMmPerDay": 3.5398,
+          "wetDayFraction": 0.6097
+        },
+        {
+          "month": 4,
+          "meanMmPerDay": 2.1352,
+          "wetDayFraction": 0.3933
+        },
+        {
+          "month": 5,
+          "meanMmPerDay": 1.1058,
+          "wetDayFraction": 0.1742
+        },
+        {
+          "month": 6,
+          "meanMmPerDay": 0.6014,
+          "wetDayFraction": 0.0833
+        },
+        {
+          "month": 7,
+          "meanMmPerDay": 0.1945,
+          "wetDayFraction": 0.0774
+        },
+        {
+          "month": 8,
+          "meanMmPerDay": 0.5126,
+          "wetDayFraction": 0.0935
+        },
+        {
+          "month": 9,
+          "meanMmPerDay": 0.68,
+          "wetDayFraction": 0.1167
+        },
+        {
+          "month": 10,
+          "meanMmPerDay": 2.4304,
+          "wetDayFraction": 0.3742
+        },
+        {
+          "month": 11,
+          "meanMmPerDay": 3.7883,
+          "wetDayFraction": 0.5067
+        },
+        {
+          "month": 12,
+          "meanMmPerDay": 4.3527,
+          "wetDayFraction": 0.6613
+        }
+      ],
+      "vulnerable": false,
+      "excludedMonths": [],
+      "reason": "Screening threshold not met at named town point."
     },
     {
       "country": "south-africa",

@@ -23,6 +23,13 @@
         "timeStandard": "Local solar time",
         "sourceUrl": "https://power.larc.nasa.gov/docs/services/api/temporal/daily/",
         "rainDefinition": "PRECTOTCORR total precipitation, including snow, averaged across all calendar days in mm/day. Alternative to ERA5 rain-only data due daily API quota; not directly identical."
+      },
+      "brazil": {
+        "model": "NASA POWER/MERRA-2",
+        "period": "2016–2025",
+        "timeStandard": "Local solar time",
+        "sourceUrl": "https://power.larc.nasa.gov/docs/services/api/temporal/daily/",
+        "rainDefinition": "PRECTOTCORR total precipitation, including snow, averaged across all calendar days in mm/day. Alternative to ERA5 rain-only data due daily API quota; not directly identical."
       }
     }
   },
@@ -15371,6 +15378,1692 @@
       },
       "events": [],
       "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "brazil",
+      "id": "rio-de-janeiro",
+      "name": "Rio de Janeiro",
+      "area": "Southeast",
+      "latitude": -22.9068,
+      "longitude": -43.1729,
+      "airports": [
+        [
+          "GIG",
+          "Rio de Janeiro Galeão"
+        ],
+        [
+          "SDU",
+          "Rio de Janeiro Santos Dumont"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 0,
+      "gridLatitude": -22.9068,
+      "gridLongitude": -43.1729,
+      "elevation": 80.76,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-43.1729&latitude=-22.9068&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeSources": [
+        "https://www.gov.br/turismo/pt-br/assuntos/ultimas-noticia/viajando-na-epoca-certa/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.71,
+          "meanDailyHighC": 28.46,
+          "meanRainMmPerDay": 8.4368,
+          "meanRelativeHumidityPct": 84.25,
+          "rainyDayFraction": 0.7129
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 25.79,
+          "meanDailyHighC": 28.54,
+          "meanRainMmPerDay": 8.2361,
+          "meanRelativeHumidityPct": 84.13,
+          "rainyDayFraction": 0.6996
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.44,
+          "meanDailyHighC": 28.04,
+          "meanRainMmPerDay": 6.057,
+          "meanRelativeHumidityPct": 84.1,
+          "rainyDayFraction": 0.5968
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 24.04,
+          "meanDailyHighC": 26.57,
+          "meanRainMmPerDay": 3.927,
+          "meanRelativeHumidityPct": 82.11,
+          "rainyDayFraction": 0.4167
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 22.46,
+          "meanDailyHighC": 25.3,
+          "meanRainMmPerDay": 1.9948,
+          "meanRelativeHumidityPct": 80.9,
+          "rainyDayFraction": 0.2419
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 21.44,
+          "meanDailyHighC": 24.69,
+          "meanRainMmPerDay": 1.4946,
+          "meanRelativeHumidityPct": 80.34,
+          "rainyDayFraction": 0.2433
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 20.88,
+          "meanDailyHighC": 24.37,
+          "meanRainMmPerDay": 0.6818,
+          "meanRelativeHumidityPct": 78.38,
+          "rainyDayFraction": 0.1258
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 21.09,
+          "meanDailyHighC": 24.99,
+          "meanRainMmPerDay": 1.7456,
+          "meanRelativeHumidityPct": 77.11,
+          "rainyDayFraction": 0.2419
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 22.45,
+          "meanDailyHighC": 26.6,
+          "meanRainMmPerDay": 2.0459,
+          "meanRelativeHumidityPct": 77.13,
+          "rainyDayFraction": 0.2667
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 23,
+          "meanDailyHighC": 26.53,
+          "meanRainMmPerDay": 4.6605,
+          "meanRelativeHumidityPct": 80.67,
+          "rainyDayFraction": 0.5677
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 23.24,
+          "meanDailyHighC": 26.3,
+          "meanRainMmPerDay": 7.5959,
+          "meanRelativeHumidityPct": 81.8,
+          "rainyDayFraction": 0.6233
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.71,
+          "meanDailyHighC": 27.68,
+          "meanRainMmPerDay": 8.7629,
+          "meanRelativeHumidityPct": 83.33,
+          "rainyDayFraction": 0.6774
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Brazilian coastal, urban, rainforest, lagoon and wildlife contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          5,
+          6,
+          8,
+          9,
+          4,
+          10,
+          3,
+          11,
+          7,
+          12,
+          2,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.gov.br/turismo/pt-br/assuntos/ultimas-noticia/viajando-na-epoca-certa/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          5,
+          6,
+          8,
+          9,
+          4,
+          10,
+          3,
+          11,
+          7,
+          12,
+          2,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.gov.br/turismo/pt-br/assuntos/ultimas-noticia/viajando-na-epoca-certa/"
+        ]
+      },
+      "events": [
+        {
+          "name": "Carnival",
+          "months": [],
+          "prominence": 2,
+          "sourceUrl": "https://antigo.turismo.gov.br/images/pdf/revista_partiu_brasil.pdf",
+          "rule": "carnival"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "brazil",
+      "id": "salvador",
+      "name": "Salvador",
+      "area": "Bahia",
+      "latitude": -12.9777,
+      "longitude": -38.5016,
+      "airports": [
+        [
+          "SSA",
+          "Salvador"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 1,
+      "gridLatitude": -12.9777,
+      "gridLongitude": -38.5016,
+      "elevation": 53.16,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-38.5016&latitude=-12.9777&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeSources": [
+        "https://www.gov.br/turismo/pt-br/assuntos/ultimas-noticia/viajando-na-epoca-certa/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.32,
+          "meanDailyHighC": 31.16,
+          "meanRainMmPerDay": 2.4443,
+          "meanRelativeHumidityPct": 73.53,
+          "rainyDayFraction": 0.4516
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 27.65,
+          "meanDailyHighC": 31.53,
+          "meanRainMmPerDay": 2.1006,
+          "meanRelativeHumidityPct": 73.69,
+          "rainyDayFraction": 0.5088
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.66,
+          "meanDailyHighC": 31.42,
+          "meanRainMmPerDay": 2.5033,
+          "meanRelativeHumidityPct": 74.45,
+          "rainyDayFraction": 0.5484
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 27.15,
+          "meanDailyHighC": 30.61,
+          "meanRainMmPerDay": 3.7815,
+          "meanRelativeHumidityPct": 77.46,
+          "rainyDayFraction": 0.6633
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.93,
+          "meanDailyHighC": 28.99,
+          "meanRainMmPerDay": 3.5403,
+          "meanRelativeHumidityPct": 79.34,
+          "rainyDayFraction": 0.6516
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 24.95,
+          "meanDailyHighC": 27.95,
+          "meanRainMmPerDay": 2.9289,
+          "meanRelativeHumidityPct": 78.69,
+          "rainyDayFraction": 0.7067
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.07,
+          "meanDailyHighC": 27.12,
+          "meanRainMmPerDay": 2.7096,
+          "meanRelativeHumidityPct": 77.58,
+          "rainyDayFraction": 0.6516
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.07,
+          "meanDailyHighC": 27.49,
+          "meanRainMmPerDay": 2.2826,
+          "meanRelativeHumidityPct": 76.94,
+          "rainyDayFraction": 0.5
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 24.78,
+          "meanDailyHighC": 28.53,
+          "meanRainMmPerDay": 1.4581,
+          "meanRelativeHumidityPct": 74.73,
+          "rainyDayFraction": 0.44
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.2,
+          "meanDailyHighC": 30.31,
+          "meanRainMmPerDay": 1.379,
+          "meanRelativeHumidityPct": 72.91,
+          "rainyDayFraction": 0.3355
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 26.74,
+          "meanDailyHighC": 30.72,
+          "meanRainMmPerDay": 2.5962,
+          "meanRelativeHumidityPct": 73.98,
+          "rainyDayFraction": 0.44
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.19,
+          "meanDailyHighC": 31.21,
+          "meanRainMmPerDay": 2.0613,
+          "meanRelativeHumidityPct": 72.66,
+          "rainyDayFraction": 0.3484
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Brazilian coastal, urban, rainforest, lagoon and wildlife contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          5,
+          6,
+          8,
+          9,
+          4,
+          10,
+          3,
+          11,
+          7,
+          12,
+          2,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.gov.br/turismo/pt-br/assuntos/ultimas-noticia/viajando-na-epoca-certa/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          5,
+          6,
+          8,
+          9,
+          4,
+          10,
+          3,
+          11,
+          7,
+          12,
+          2,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.gov.br/turismo/pt-br/assuntos/ultimas-noticia/viajando-na-epoca-certa/"
+        ]
+      },
+      "events": [
+        {
+          "name": "Carnival",
+          "months": [],
+          "prominence": 2,
+          "sourceUrl": "https://antigo.turismo.gov.br/images/pdf/revista_partiu_brasil.pdf",
+          "rule": "carnival"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "brazil",
+      "id": "manaus",
+      "name": "Manaus",
+      "area": "Amazonas",
+      "latitude": -3.119,
+      "longitude": -60.0217,
+      "airports": [
+        [
+          "MAO",
+          "Manaus"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 2,
+      "gridLatitude": -3.119,
+      "gridLongitude": -60.0217,
+      "elevation": 51.37,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-60.0217&latitude=-3.119&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://www.gov.br/turismo/pt-br/assuntos/ultimas-noticia/viajando-na-epoca-certa/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates. River/flood levels, access and wildlife-viewing conditions need separate checks; monthly rainfall alone does not establish suitability.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.68,
+          "meanDailyHighC": 29.22,
+          "meanRainMmPerDay": 6.7162,
+          "meanRelativeHumidityPct": 86.54,
+          "rainyDayFraction": 0.8097
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 26.53,
+          "meanDailyHighC": 29.01,
+          "meanRainMmPerDay": 7.2495,
+          "meanRelativeHumidityPct": 88.14,
+          "rainyDayFraction": 0.841
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.44,
+          "meanDailyHighC": 28.77,
+          "meanRainMmPerDay": 8.712,
+          "meanRelativeHumidityPct": 89.02,
+          "rainyDayFraction": 0.8419
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 26.36,
+          "meanDailyHighC": 28.49,
+          "meanRainMmPerDay": 8.0306,
+          "meanRelativeHumidityPct": 89.26,
+          "rainyDayFraction": 0.8933
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.47,
+          "meanDailyHighC": 28.63,
+          "meanRainMmPerDay": 6.3729,
+          "meanRelativeHumidityPct": 89.27,
+          "rainyDayFraction": 0.8548
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 26.32,
+          "meanDailyHighC": 28.6,
+          "meanRainMmPerDay": 4.4359,
+          "meanRelativeHumidityPct": 88.59,
+          "rainyDayFraction": 0.7133
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.78,
+          "meanDailyHighC": 29.32,
+          "meanRainMmPerDay": 2.5849,
+          "meanRelativeHumidityPct": 84.63,
+          "rainyDayFraction": 0.4871
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.27,
+          "meanDailyHighC": 31.69,
+          "meanRainMmPerDay": 1.9026,
+          "meanRelativeHumidityPct": 76.13,
+          "rainyDayFraction": 0.4129
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 29.53,
+          "meanDailyHighC": 33.43,
+          "meanRainMmPerDay": 2.6607,
+          "meanRelativeHumidityPct": 70.15,
+          "rainyDayFraction": 0.4967
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 29.47,
+          "meanDailyHighC": 33.24,
+          "meanRainMmPerDay": 3.3906,
+          "meanRelativeHumidityPct": 71.52,
+          "rainyDayFraction": 0.5419
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 28.96,
+          "meanDailyHighC": 32.38,
+          "meanRainMmPerDay": 4.7349,
+          "meanRelativeHumidityPct": 74.65,
+          "rainyDayFraction": 0.6233
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.07,
+          "meanDailyHighC": 29.65,
+          "meanRainMmPerDay": 8.0157,
+          "meanRelativeHumidityPct": 85.15,
+          "rainyDayFraction": 0.8581
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Brazilian coastal, urban, rainforest, lagoon and wildlife contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          3,
+          4,
+          5,
+          2,
+          6,
+          1,
+          12,
+          7,
+          11,
+          8,
+          10,
+          9
+        ],
+        "sourceUrls": [
+          "https://www.gov.br/turismo/pt-br/assuntos/ultimas-noticia/viajando-na-epoca-certa/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          3,
+          4,
+          5,
+          2,
+          6,
+          1,
+          12,
+          7,
+          11,
+          8,
+          10,
+          9
+        ],
+        "sourceUrls": [
+          "https://www.gov.br/turismo/pt-br/assuntos/ultimas-noticia/viajando-na-epoca-certa/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "brazil",
+      "id": "foz-do-iguacu",
+      "name": "Foz do Iguaçu",
+      "area": "South",
+      "latitude": -25.5163,
+      "longitude": -54.5854,
+      "airports": [
+        [
+          "IGU",
+          "Foz do Iguaçu"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 3,
+      "gridLatitude": -25.5163,
+      "gridLongitude": -54.5854,
+      "elevation": 247.46,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-54.5854&latitude=-25.5163&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://www.gov.br/turismo/pt-br/assuntos/ultimas-noticia/viajando-na-epoca-certa/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.73,
+          "meanDailyHighC": 32.09,
+          "meanRainMmPerDay": 5.1578,
+          "meanRelativeHumidityPct": 71.48,
+          "rainyDayFraction": 0.5774
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 27.08,
+          "meanDailyHighC": 31.59,
+          "meanRainMmPerDay": 4.8877,
+          "meanRelativeHumidityPct": 72.16,
+          "rainyDayFraction": 0.5336
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.26,
+          "meanDailyHighC": 31.23,
+          "meanRainMmPerDay": 3.8329,
+          "meanRelativeHumidityPct": 72.48,
+          "rainyDayFraction": 0.4032
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 23.53,
+          "meanDailyHighC": 28.75,
+          "meanRainMmPerDay": 3.2959,
+          "meanRelativeHumidityPct": 73.88,
+          "rainyDayFraction": 0.3067
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 19.66,
+          "meanDailyHighC": 24.52,
+          "meanRainMmPerDay": 4.7467,
+          "meanRelativeHumidityPct": 78.42,
+          "rainyDayFraction": 0.3452
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 17.37,
+          "meanDailyHighC": 21.85,
+          "meanRainMmPerDay": 3.3503,
+          "meanRelativeHumidityPct": 81.88,
+          "rainyDayFraction": 0.3133
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.15,
+          "meanDailyHighC": 22.28,
+          "meanRainMmPerDay": 1.9955,
+          "meanRelativeHumidityPct": 77.28,
+          "rainyDayFraction": 0.1677
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.9,
+          "meanDailyHighC": 24.59,
+          "meanRainMmPerDay": 2.9545,
+          "meanRelativeHumidityPct": 72.59,
+          "rainyDayFraction": 0.2387
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 22.51,
+          "meanDailyHighC": 28.4,
+          "meanRainMmPerDay": 3.3496,
+          "meanRelativeHumidityPct": 69.49,
+          "rainyDayFraction": 0.28
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 23.96,
+          "meanDailyHighC": 29.03,
+          "meanRainMmPerDay": 7.9754,
+          "meanRelativeHumidityPct": 74.56,
+          "rainyDayFraction": 0.4903
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.24,
+          "meanDailyHighC": 30.28,
+          "meanRainMmPerDay": 4.6077,
+          "meanRelativeHumidityPct": 70.93,
+          "rainyDayFraction": 0.36
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.17,
+          "meanDailyHighC": 31.94,
+          "meanRainMmPerDay": 4.5872,
+          "meanRelativeHumidityPct": 68.64,
+          "rainyDayFraction": 0.4452
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Brazilian coastal, urban, rainforest, lagoon and wildlife contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          5,
+          6,
+          8,
+          9,
+          4,
+          10,
+          3,
+          11,
+          7,
+          12,
+          2,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.gov.br/turismo/pt-br/assuntos/ultimas-noticia/viajando-na-epoca-certa/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          5,
+          6,
+          8,
+          9,
+          4,
+          10,
+          3,
+          11,
+          7,
+          12,
+          2,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.gov.br/turismo/pt-br/assuntos/ultimas-noticia/viajando-na-epoca-certa/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "brazil",
+      "id": "barreirinhas",
+      "name": "Barreirinhas",
+      "area": "Lençóis Maranhenses",
+      "latitude": -2.7461,
+      "longitude": -42.8266,
+      "airports": [
+        [
+          "SLZ",
+          "São Luís"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 4,
+      "gridLatitude": -2.7461,
+      "gridLongitude": -42.8266,
+      "elevation": 12.88,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-42.8266&latitude=-2.7461&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://www.gov.br/turismo/pt-br/assuntos/ultimas-noticia/viajando-na-epoca-certa/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates. Lagoon availability is not modeled by this climate score: fuller lagoons usually follow the rainy season (especially May–September), and vary by year. Verify local lagoon conditions.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.25,
+          "meanDailyHighC": 30.25,
+          "meanRainMmPerDay": 5.7131,
+          "meanRelativeHumidityPct": 81.53,
+          "rainyDayFraction": 0.8516
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 27.08,
+          "meanDailyHighC": 29.98,
+          "meanRainMmPerDay": 8.8164,
+          "meanRelativeHumidityPct": 83.59,
+          "rainyDayFraction": 0.9293
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.94,
+          "meanDailyHighC": 29.8,
+          "meanRainMmPerDay": 10.0025,
+          "meanRelativeHumidityPct": 85.19,
+          "rainyDayFraction": 0.9742
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 27.08,
+          "meanDailyHighC": 29.86,
+          "meanRainMmPerDay": 8.7206,
+          "meanRelativeHumidityPct": 85.56,
+          "rainyDayFraction": 0.96
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.29,
+          "meanDailyHighC": 30.12,
+          "meanRainMmPerDay": 5.5406,
+          "meanRelativeHumidityPct": 85.08,
+          "rainyDayFraction": 0.8516
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 27.16,
+          "meanDailyHighC": 30.33,
+          "meanRainMmPerDay": 3.6534,
+          "meanRelativeHumidityPct": 82.78,
+          "rainyDayFraction": 0.7367
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.08,
+          "meanDailyHighC": 30.78,
+          "meanRainMmPerDay": 1.9792,
+          "meanRelativeHumidityPct": 79.84,
+          "rainyDayFraction": 0.4452
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.35,
+          "meanDailyHighC": 31.68,
+          "meanRainMmPerDay": 0.7965,
+          "meanRelativeHumidityPct": 76.51,
+          "rainyDayFraction": 0.2065
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 27.81,
+          "meanDailyHighC": 32.41,
+          "meanRainMmPerDay": 0.3713,
+          "meanRelativeHumidityPct": 73.9,
+          "rainyDayFraction": 0.0967
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.14,
+          "meanDailyHighC": 32.39,
+          "meanRainMmPerDay": 0.2658,
+          "meanRelativeHumidityPct": 73.07,
+          "rainyDayFraction": 0.0742
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 28.23,
+          "meanDailyHighC": 32.06,
+          "meanRainMmPerDay": 0.7949,
+          "meanRelativeHumidityPct": 73.66,
+          "rainyDayFraction": 0.1833
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28,
+          "meanDailyHighC": 31.38,
+          "meanRainMmPerDay": 2.0556,
+          "meanRelativeHumidityPct": 76.26,
+          "rainyDayFraction": 0.4194
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Brazilian coastal, urban, rainforest, lagoon and wildlife contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          3,
+          4,
+          2,
+          1,
+          12,
+          11,
+          10,
+          5,
+          9,
+          6,
+          8,
+          7
+        ],
+        "sourceUrls": [
+          "https://www.gov.br/turismo/pt-br/assuntos/ultimas-noticia/viajando-na-epoca-certa/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          3,
+          4,
+          2,
+          1,
+          12,
+          11,
+          10,
+          5,
+          9,
+          6,
+          8,
+          7
+        ],
+        "sourceUrls": [
+          "https://www.gov.br/turismo/pt-br/assuntos/ultimas-noticia/viajando-na-epoca-certa/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "brazil",
+      "id": "sao-paulo",
+      "name": "São Paulo",
+      "area": "Southeast",
+      "latitude": -23.5505,
+      "longitude": -46.6333,
+      "airports": [
+        [
+          "GRU",
+          "São Paulo Guarulhos"
+        ],
+        [
+          "CGH",
+          "São Paulo Congonhas"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 5,
+      "gridLatitude": -23.5505,
+      "gridLongitude": -46.6333,
+      "elevation": 790.19,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-46.6333&latitude=-23.5505&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://www.gov.br/turismo/pt-br/assuntos/ultimas-noticia/viajando-na-epoca-certa/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 22.83,
+          "meanDailyHighC": 27.96,
+          "meanRainMmPerDay": 6.4217,
+          "meanRelativeHumidityPct": 81.44,
+          "rainyDayFraction": 0.771
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 22.65,
+          "meanDailyHighC": 27.95,
+          "meanRainMmPerDay": 5.6243,
+          "meanRelativeHumidityPct": 81.75,
+          "rainyDayFraction": 0.6643
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 22.25,
+          "meanDailyHighC": 27.6,
+          "meanRainMmPerDay": 4.6044,
+          "meanRelativeHumidityPct": 83.04,
+          "rainyDayFraction": 0.6226
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 20.27,
+          "meanDailyHighC": 26.17,
+          "meanRainMmPerDay": 1.9271,
+          "meanRelativeHumidityPct": 81.45,
+          "rainyDayFraction": 0.3067
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18,
+          "meanDailyHighC": 24.35,
+          "meanRainMmPerDay": 1.7082,
+          "meanRelativeHumidityPct": 78.86,
+          "rainyDayFraction": 0.2452
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 16.73,
+          "meanDailyHighC": 23.09,
+          "meanRainMmPerDay": 1.895,
+          "meanRelativeHumidityPct": 78.93,
+          "rainyDayFraction": 0.2533
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 16.27,
+          "meanDailyHighC": 23.54,
+          "meanRainMmPerDay": 0.8358,
+          "meanRelativeHumidityPct": 73.78,
+          "rainyDayFraction": 0.1161
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.5,
+          "meanDailyHighC": 25.03,
+          "meanRainMmPerDay": 1.2232,
+          "meanRelativeHumidityPct": 71.81,
+          "rainyDayFraction": 0.2226
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 20.43,
+          "meanDailyHighC": 28.91,
+          "meanRainMmPerDay": 1.5737,
+          "meanRelativeHumidityPct": 68.23,
+          "rainyDayFraction": 0.27
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 21.14,
+          "meanDailyHighC": 28.46,
+          "meanRainMmPerDay": 3.5495,
+          "meanRelativeHumidityPct": 74.53,
+          "rainyDayFraction": 0.5065
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 21.26,
+          "meanDailyHighC": 28.07,
+          "meanRainMmPerDay": 3.9554,
+          "meanRelativeHumidityPct": 75.11,
+          "rainyDayFraction": 0.49
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 22.8,
+          "meanDailyHighC": 29.04,
+          "meanRainMmPerDay": 4.3942,
+          "meanRelativeHumidityPct": 76.34,
+          "rainyDayFraction": 0.6355
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Brazilian coastal, urban, rainforest, lagoon and wildlife contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          1,
+          7,
+          2,
+          12,
+          6,
+          8,
+          3,
+          4,
+          11,
+          5,
+          9,
+          10
+        ],
+        "sourceUrls": [
+          "https://www.gov.br/turismo/pt-br/assuntos/ultimas-noticia/viajando-na-epoca-certa/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          1,
+          7,
+          2,
+          12,
+          6,
+          8,
+          3,
+          4,
+          11,
+          5,
+          9,
+          10
+        ],
+        "sourceUrls": [
+          "https://www.gov.br/turismo/pt-br/assuntos/ultimas-noticia/viajando-na-epoca-certa/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "brazil",
+      "id": "recife-olinda",
+      "name": "Recife & Olinda",
+      "area": "Northeast",
+      "latitude": -8.0476,
+      "longitude": -34.877,
+      "airports": [
+        [
+          "REC",
+          "Recife"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 6,
+      "gridLatitude": -8.0476,
+      "gridLongitude": -34.877,
+      "elevation": 67.48,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-34.877&latitude=-8.0476&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeSources": [
+        "https://www.gov.br/turismo/pt-br/assuntos/ultimas-noticia/viajando-na-epoca-certa/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.48,
+          "meanDailyHighC": 31.25,
+          "meanRainMmPerDay": 2.403,
+          "meanRelativeHumidityPct": 72.99,
+          "rainyDayFraction": 0.5355
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 27.64,
+          "meanDailyHighC": 31.33,
+          "meanRainMmPerDay": 2.9788,
+          "meanRelativeHumidityPct": 74.2,
+          "rainyDayFraction": 0.5972
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.69,
+          "meanDailyHighC": 31.26,
+          "meanRainMmPerDay": 4.0609,
+          "meanRelativeHumidityPct": 76.06,
+          "rainyDayFraction": 0.7097
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 27.2,
+          "meanDailyHighC": 30.34,
+          "meanRainMmPerDay": 5.4805,
+          "meanRelativeHumidityPct": 79.68,
+          "rainyDayFraction": 0.81
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.39,
+          "meanDailyHighC": 29.18,
+          "meanRainMmPerDay": 7.616,
+          "meanRelativeHumidityPct": 82.29,
+          "rainyDayFraction": 0.8419
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.34,
+          "meanDailyHighC": 27.88,
+          "meanRainMmPerDay": 7.4604,
+          "meanRelativeHumidityPct": 83.5,
+          "rainyDayFraction": 0.85
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.49,
+          "meanDailyHighC": 27.07,
+          "meanRainMmPerDay": 5.8536,
+          "meanRelativeHumidityPct": 83.39,
+          "rainyDayFraction": 0.8581
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.44,
+          "meanDailyHighC": 27.48,
+          "meanRainMmPerDay": 3.0939,
+          "meanRelativeHumidityPct": 80.2,
+          "rainyDayFraction": 0.6677
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.09,
+          "meanDailyHighC": 28.55,
+          "meanRainMmPerDay": 1.7033,
+          "meanRelativeHumidityPct": 76.87,
+          "rainyDayFraction": 0.4733
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.26,
+          "meanDailyHighC": 30.11,
+          "meanRainMmPerDay": 0.8148,
+          "meanRelativeHumidityPct": 73.15,
+          "rainyDayFraction": 0.2677
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 27.1,
+          "meanDailyHighC": 31.09,
+          "meanRainMmPerDay": 0.9102,
+          "meanRelativeHumidityPct": 70.81,
+          "rainyDayFraction": 0.1867
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.42,
+          "meanDailyHighC": 31.28,
+          "meanRainMmPerDay": 1.3649,
+          "meanRelativeHumidityPct": 71.06,
+          "rainyDayFraction": 0.3613
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Brazilian coastal, urban, rainforest, lagoon and wildlife contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          5,
+          6,
+          8,
+          9,
+          4,
+          10,
+          3,
+          11,
+          7,
+          12,
+          2,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.gov.br/turismo/pt-br/assuntos/ultimas-noticia/viajando-na-epoca-certa/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          5,
+          6,
+          8,
+          9,
+          4,
+          10,
+          3,
+          11,
+          7,
+          12,
+          2,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.gov.br/turismo/pt-br/assuntos/ultimas-noticia/viajando-na-epoca-certa/"
+        ]
+      },
+      "events": [
+        {
+          "name": "Carnival",
+          "months": [],
+          "prominence": 2,
+          "sourceUrl": "https://antigo.turismo.gov.br/images/pdf/revista_partiu_brasil.pdf",
+          "rule": "carnival"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "brazil",
+      "id": "florianopolis",
+      "name": "Florianópolis",
+      "area": "South",
+      "latitude": -27.5954,
+      "longitude": -48.548,
+      "airports": [
+        [
+          "FLN",
+          "Florianópolis"
+        ]
+      ],
+      "climateType": "beach",
+      "regionIndex": 7,
+      "gridLatitude": -27.5954,
+      "gridLongitude": -48.548,
+      "elevation": 210.76,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-48.548&latitude=-27.5954&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Approved beach-oriented holiday base; 25°C target.",
+      "climateTypeSources": [
+        "https://www.gov.br/turismo/pt-br/assuntos/ultimas-noticia/viajando-na-epoca-certa/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.88,
+          "meanDailyHighC": 28.95,
+          "meanRainMmPerDay": 5.4245,
+          "meanRelativeHumidityPct": 78.51,
+          "rainyDayFraction": 0.671
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 24.9,
+          "meanDailyHighC": 28.98,
+          "meanRainMmPerDay": 4.1067,
+          "meanRelativeHumidityPct": 77.54,
+          "rainyDayFraction": 0.6113
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.08,
+          "meanDailyHighC": 28.22,
+          "meanRainMmPerDay": 3.9445,
+          "meanRelativeHumidityPct": 78.6,
+          "rainyDayFraction": 0.5484
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 21.93,
+          "meanDailyHighC": 26.18,
+          "meanRainMmPerDay": 2.6776,
+          "meanRelativeHumidityPct": 78.8,
+          "rainyDayFraction": 0.43
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.98,
+          "meanDailyHighC": 23.17,
+          "meanRainMmPerDay": 3.6791,
+          "meanRelativeHumidityPct": 79.96,
+          "rainyDayFraction": 0.3677
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 16.89,
+          "meanDailyHighC": 21.2,
+          "meanRainMmPerDay": 3.5511,
+          "meanRelativeHumidityPct": 81.72,
+          "rainyDayFraction": 0.3567
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 16.04,
+          "meanDailyHighC": 20.66,
+          "meanRainMmPerDay": 2.0895,
+          "meanRelativeHumidityPct": 82.32,
+          "rainyDayFraction": 0.2548
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 16.52,
+          "meanDailyHighC": 21.04,
+          "meanRainMmPerDay": 2.7399,
+          "meanRelativeHumidityPct": 82.99,
+          "rainyDayFraction": 0.3323
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 18.51,
+          "meanDailyHighC": 22.93,
+          "meanRainMmPerDay": 3.5069,
+          "meanRelativeHumidityPct": 82.88,
+          "rainyDayFraction": 0.4267
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 19.8,
+          "meanDailyHighC": 23.81,
+          "meanRainMmPerDay": 4.9968,
+          "meanRelativeHumidityPct": 82.37,
+          "rainyDayFraction": 0.5742
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 21.24,
+          "meanDailyHighC": 25.63,
+          "meanRainMmPerDay": 4.5042,
+          "meanRelativeHumidityPct": 78.6,
+          "rainyDayFraction": 0.5033
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 23.49,
+          "meanDailyHighC": 27.94,
+          "meanRainMmPerDay": 4.7688,
+          "meanRelativeHumidityPct": 77.66,
+          "rainyDayFraction": 0.6
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Brazilian coastal, urban, rainforest, lagoon and wildlife contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          5,
+          6,
+          8,
+          9,
+          4,
+          10,
+          3,
+          11,
+          7,
+          12,
+          2,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.gov.br/turismo/pt-br/assuntos/ultimas-noticia/viajando-na-epoca-certa/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          5,
+          6,
+          8,
+          9,
+          4,
+          10,
+          3,
+          11,
+          7,
+          12,
+          2,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.gov.br/turismo/pt-br/assuntos/ultimas-noticia/viajando-na-epoca-certa/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "brazil",
+      "id": "bonito",
+      "name": "Bonito",
+      "area": "Central-West",
+      "latitude": -21.1261,
+      "longitude": -56.4836,
+      "airports": [
+        [
+          "BYO",
+          "Bonito"
+        ],
+        [
+          "CGR",
+          "Campo Grande"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 8,
+      "gridLatitude": -21.1261,
+      "gridLongitude": -56.4836,
+      "elevation": 282.58,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-56.4836&latitude=-21.1261&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeSources": [
+        "https://www.gov.br/turismo/pt-br/assuntos/ultimas-noticia/viajando-na-epoca-certa/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.51,
+          "meanDailyHighC": 34.16,
+          "meanRainMmPerDay": 4.7621,
+          "meanRelativeHumidityPct": 68.11,
+          "rainyDayFraction": 0.5581
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 27.64,
+          "meanDailyHighC": 33.04,
+          "meanRainMmPerDay": 4.6471,
+          "meanRelativeHumidityPct": 71.64,
+          "rainyDayFraction": 0.5689
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.57,
+          "meanDailyHighC": 33.41,
+          "meanRainMmPerDay": 3.1654,
+          "meanRelativeHumidityPct": 69.86,
+          "rainyDayFraction": 0.4387
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.46,
+          "meanDailyHighC": 31.84,
+          "meanRainMmPerDay": 3.1144,
+          "meanRelativeHumidityPct": 70.47,
+          "rainyDayFraction": 0.3467
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 22.15,
+          "meanDailyHighC": 28.99,
+          "meanRainMmPerDay": 2.6812,
+          "meanRelativeHumidityPct": 70.17,
+          "rainyDayFraction": 0.3032
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 20.41,
+          "meanDailyHighC": 27.61,
+          "meanRainMmPerDay": 1.6746,
+          "meanRelativeHumidityPct": 70.51,
+          "rainyDayFraction": 0.2833
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 20.83,
+          "meanDailyHighC": 29.41,
+          "meanRainMmPerDay": 0.6462,
+          "meanRelativeHumidityPct": 57.8,
+          "rainyDayFraction": 0.1194
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 23.03,
+          "meanDailyHighC": 31.47,
+          "meanRainMmPerDay": 1.9413,
+          "meanRelativeHumidityPct": 54.15,
+          "rainyDayFraction": 0.2677
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 26.72,
+          "meanDailyHighC": 35.14,
+          "meanRainMmPerDay": 1.7967,
+          "meanRelativeHumidityPct": 51.47,
+          "rainyDayFraction": 0.26
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.2,
+          "meanDailyHighC": 35.42,
+          "meanRainMmPerDay": 3.4038,
+          "meanRelativeHumidityPct": 59.01,
+          "rainyDayFraction": 0.3742
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 28.37,
+          "meanDailyHighC": 35.14,
+          "meanRainMmPerDay": 3.0405,
+          "meanRelativeHumidityPct": 60.24,
+          "rainyDayFraction": 0.4033
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.64,
+          "meanDailyHighC": 34.57,
+          "meanRainMmPerDay": 4.1942,
+          "meanRelativeHumidityPct": 65.7,
+          "rainyDayFraction": 0.5484
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Brazilian coastal, urban, rainforest, lagoon and wildlife contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          2,
+          3,
+          1,
+          12,
+          4,
+          11,
+          5,
+          6,
+          10,
+          7,
+          9,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.gov.br/turismo/pt-br/assuntos/ultimas-noticia/viajando-na-epoca-certa/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          2,
+          3,
+          1,
+          12,
+          4,
+          11,
+          5,
+          6,
+          10,
+          7,
+          9,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.gov.br/turismo/pt-br/assuntos/ultimas-noticia/viajando-na-epoca-certa/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "brazil",
+      "id": "pocone",
+      "name": "Poconé",
+      "area": "Northern Pantanal",
+      "latitude": -16.2567,
+      "longitude": -56.6228,
+      "airports": [
+        [
+          "CGB",
+          "Cuiabá"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 9,
+      "gridLatitude": -16.2567,
+      "gridLongitude": -56.6228,
+      "elevation": 121.17,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-56.6228&latitude=-16.2567&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://www.gov.br/turismo/pt-br/assuntos/ultimas-noticia/viajando-na-epoca-certa/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates. River/flood levels, access and wildlife-viewing conditions need separate checks; monthly rainfall alone does not establish suitability.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 29.21,
+          "meanDailyHighC": 34.22,
+          "meanRainMmPerDay": 3.6696,
+          "meanRelativeHumidityPct": 68.49,
+          "rainyDayFraction": 0.671
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 29.05,
+          "meanDailyHighC": 34.13,
+          "meanRainMmPerDay": 4.412,
+          "meanRelativeHumidityPct": 69.67,
+          "rainyDayFraction": 0.7032
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.84,
+          "meanDailyHighC": 33.93,
+          "meanRainMmPerDay": 3.5398,
+          "meanRelativeHumidityPct": 70.32,
+          "rainyDayFraction": 0.6097
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 28.35,
+          "meanDailyHighC": 33.95,
+          "meanRainMmPerDay": 2.1352,
+          "meanRelativeHumidityPct": 66.72,
+          "rainyDayFraction": 0.3933
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.92,
+          "meanDailyHighC": 33.92,
+          "meanRainMmPerDay": 1.1058,
+          "meanRelativeHumidityPct": 56.95,
+          "rainyDayFraction": 0.1742
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 26.22,
+          "meanDailyHighC": 33.91,
+          "meanRainMmPerDay": 0.6014,
+          "meanRelativeHumidityPct": 50.84,
+          "rainyDayFraction": 0.0833
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.54,
+          "meanDailyHighC": 35.15,
+          "meanRainMmPerDay": 0.1945,
+          "meanRelativeHumidityPct": 38.33,
+          "rainyDayFraction": 0.0774
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.69,
+          "meanDailyHighC": 37.07,
+          "meanRainMmPerDay": 0.5126,
+          "meanRelativeHumidityPct": 36.09,
+          "rainyDayFraction": 0.0935
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 31.98,
+          "meanDailyHighC": 39.86,
+          "meanRainMmPerDay": 0.68,
+          "meanRelativeHumidityPct": 35.78,
+          "rainyDayFraction": 0.1167
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 32.06,
+          "meanDailyHighC": 38.68,
+          "meanRainMmPerDay": 2.4304,
+          "meanRelativeHumidityPct": 49.22,
+          "rainyDayFraction": 0.3742
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 30.45,
+          "meanDailyHighC": 36.18,
+          "meanRainMmPerDay": 3.7883,
+          "meanRelativeHumidityPct": 58.89,
+          "rainyDayFraction": 0.5067
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 29.4,
+          "meanDailyHighC": 34.33,
+          "meanRainMmPerDay": 4.3527,
+          "meanRelativeHumidityPct": 68.65,
+          "rainyDayFraction": 0.6613
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Brazilian coastal, urban, rainforest, lagoon and wildlife contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          2,
+          3,
+          1,
+          12,
+          4,
+          11,
+          5,
+          6,
+          10,
+          7,
+          9,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.gov.br/turismo/pt-br/assuntos/ultimas-noticia/viajando-na-epoca-certa/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          2,
+          3,
+          1,
+          12,
+          4,
+          11,
+          5,
+          6,
+          10,
+          7,
+          9,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.gov.br/turismo/pt-br/assuntos/ultimas-noticia/viajando-na-epoca-certa/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
     }
   ],
   "destinationTypeAssignments": {
@@ -15427,6 +17120,66 @@
       "climateType": "all-season",
       "reason": "Owner-approved broader All season concept: temperature neutral from +5 to +25°C; rain-focused climate score.",
       "status": "Integrated with Argentina rollout, 6 November 2026."
+    },
+    "brazil:rio-de-janeiro": {
+      "name": "Rio de Janeiro",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Owner-approved Brazil rollout, 6 November 2026."
+    },
+    "brazil:salvador": {
+      "name": "Salvador",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Owner-approved Brazil rollout, 6 November 2026."
+    },
+    "brazil:manaus": {
+      "name": "Manaus",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Owner-approved Brazil rollout, 6 November 2026."
+    },
+    "brazil:foz-do-iguacu": {
+      "name": "Foz do Iguaçu",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Owner-approved Brazil rollout, 6 November 2026."
+    },
+    "brazil:barreirinhas": {
+      "name": "Barreirinhas",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Owner-approved Brazil rollout, 6 November 2026."
+    },
+    "brazil:sao-paulo": {
+      "name": "São Paulo",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Owner-approved Brazil rollout, 6 November 2026."
+    },
+    "brazil:recife-olinda": {
+      "name": "Recife & Olinda",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Owner-approved Brazil rollout, 6 November 2026."
+    },
+    "brazil:florianopolis": {
+      "name": "Florianópolis",
+      "climateType": "beach",
+      "reason": "Approved beach-oriented holiday base; 25°C target.",
+      "status": "Owner-approved Brazil rollout, 6 November 2026."
+    },
+    "brazil:bonito": {
+      "name": "Bonito",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Owner-approved Brazil rollout, 6 November 2026."
+    },
+    "brazil:pocone": {
+      "name": "Poconé",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Owner-approved Brazil rollout, 6 November 2026."
     }
   }
 }

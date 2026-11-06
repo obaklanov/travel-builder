@@ -935,6 +935,119 @@
           ]
         }
       ]
+    },
+    "brazil": {
+      "approvedAt": "2026-11-06",
+      "liveLabelsUpdated": true,
+      "indexCompatibility": "Existing Rio, Salvador, Manaus, Iguacu and Lencois slots retained at 0–4, with city-based labels. Five new destinations appended.",
+      "seasonalityStatus": "2016–2025 NASA POWER/MERRA-2 local solar daily climate; total precipitation includes snow. Crowd and price inputs are provisional editorial proxies. Carnival follows Easter; other event coverage is incomplete. Lagoon availability and flood-dependent access are not inferred from the climate score.",
+      "destinations": [
+        {
+          "name": "Rio de Janeiro",
+          "area": "Southeast",
+          "climateType": "standard",
+          "climateTypeLabel": "Warm living",
+          "airportCandidates": [
+            "GIG",
+            "SDU"
+          ],
+          "treasures": [
+            "Christ the Redeemer"
+          ]
+        },
+        {
+          "name": "Salvador",
+          "area": "Bahia",
+          "climateType": "standard",
+          "climateTypeLabel": "Warm living",
+          "airportCandidates": [
+            "SSA"
+          ]
+        },
+        {
+          "name": "Manaus",
+          "area": "Amazonas",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "MAO"
+          ]
+        },
+        {
+          "name": "Foz do Iguaçu",
+          "area": "South",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "IGU"
+          ],
+          "treasures": [
+            "Iguazu Falls"
+          ]
+        },
+        {
+          "name": "Barreirinhas",
+          "area": "Lençóis Maranhenses",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "SLZ"
+          ],
+          "treasures": [
+            "Lençóis Maranhenses"
+          ],
+          "accessNote": "São Luís airport requires onward road transfer. Lagoon fullness requires a separate seasonal check."
+        },
+        {
+          "name": "São Paulo",
+          "area": "Southeast",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "GRU",
+            "CGH"
+          ]
+        },
+        {
+          "name": "Recife & Olinda",
+          "area": "Northeast",
+          "climateType": "standard",
+          "climateTypeLabel": "Warm living",
+          "airportCandidates": [
+            "REC"
+          ]
+        },
+        {
+          "name": "Florianópolis",
+          "area": "South",
+          "climateType": "beach",
+          "climateTypeLabel": "Beach",
+          "airportCandidates": [
+            "FLN"
+          ]
+        },
+        {
+          "name": "Bonito",
+          "area": "Central-West",
+          "climateType": "standard",
+          "climateTypeLabel": "Warm living",
+          "airportCandidates": [
+            "BYO",
+            "CGR"
+          ],
+          "accessNote": "Bonito or Campo Grande airports; onward ground transfer varies by gateway."
+        },
+        {
+          "name": "Poconé",
+          "area": "Northern Pantanal",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "CGB"
+          ],
+          "accessNote": "Cuiabá airport requires onward road travel; Pantanal excursions and lodging can be farther along the Transpantaneira."
+        }
+      ]
     }
   },
   "climateTypeAssignments": {
@@ -991,6 +1104,66 @@
       "climateType": "all-season",
       "reason": "Owner-approved broader All season concept: temperature neutral from +5 to +25°C; rain-focused climate score.",
       "status": "Integrated with Argentina rollout, 6 November 2026."
+    },
+    "brazil:rio-de-janeiro": {
+      "name": "Rio de Janeiro",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Owner-approved Brazil rollout, 6 November 2026."
+    },
+    "brazil:salvador": {
+      "name": "Salvador",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Owner-approved Brazil rollout, 6 November 2026."
+    },
+    "brazil:manaus": {
+      "name": "Manaus",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Owner-approved Brazil rollout, 6 November 2026."
+    },
+    "brazil:foz-do-iguacu": {
+      "name": "Foz do Iguaçu",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Owner-approved Brazil rollout, 6 November 2026."
+    },
+    "brazil:barreirinhas": {
+      "name": "Barreirinhas",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Owner-approved Brazil rollout, 6 November 2026."
+    },
+    "brazil:sao-paulo": {
+      "name": "São Paulo",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Owner-approved Brazil rollout, 6 November 2026."
+    },
+    "brazil:recife-olinda": {
+      "name": "Recife & Olinda",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Owner-approved Brazil rollout, 6 November 2026."
+    },
+    "brazil:florianopolis": {
+      "name": "Florianópolis",
+      "climateType": "beach",
+      "reason": "Approved beach-oriented holiday base; 25°C target.",
+      "status": "Owner-approved Brazil rollout, 6 November 2026."
+    },
+    "brazil:bonito": {
+      "name": "Bonito",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Owner-approved Brazil rollout, 6 November 2026."
+    },
+    "brazil:pocone": {
+      "name": "Poconé",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Owner-approved Brazil rollout, 6 November 2026."
     }
   }
 }

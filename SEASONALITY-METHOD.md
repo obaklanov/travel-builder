@@ -73,3 +73,8 @@ Argentina deployed with ten destinations on 6 November 2026. Seven Warm living, 
 ## All season autumn comfort update — 2026-11-06
 
 This supersedes the earlier All season settings. Daily mean temperatures from +5°C through +25°C inclusive have no effect. Outside that interval, subtract 5 climate points per degree, flooring the climate score at zero. Climate combines 60% within-base rain rank and 40% within-base humidity rank. Rain targets 5 mm/calendar day, matching Warm living; humidity targets 55%. Overall weights remain 60% climate, 20% festivals, 10% crowds and 10% prices. Existing reviewed rain exclusions remain unchanged. Applies to all nine current All season bases.
+
+
+## Brazil rollout — 6 November 2026
+
+Ten approved destinations: Rio, Salvador, Recife & Olinda and Bonito Warm living; São Paulo, Manaus, Foz do Iguaçu, Barreirinhas and Poconé All season; Florianópolis Beach. Current +5–25°C All season rules apply. Historical climate uses NASA POWER/MERRA-2 2016–2025 local solar daily values, including total precipitation. Crowd/price orders are provisional editorial estimates, not measured arrivals or room rates. Selected Carnival events use the Easter-relative rule; absent events mean incomplete evidence coverage, not no events. Barreirinhas lagoon fullness and Manaus/Pantanal flood/access conditions require separate review and are not modeled as numeric climate inputs. Airports SLZ, CGR and CGB can require substantial onward ground transfers; route costs and hours remain illustrative. Rain screening updated for all ten Brazil bases; audit now covers 179 destinations. Existing first-five indices preserved.
