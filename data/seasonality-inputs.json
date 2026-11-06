@@ -16,6 +16,13 @@
         "timeStandard": "Local solar time",
         "sourceUrl": "https://power.larc.nasa.gov/docs/services/api/temporal/daily/",
         "rainDefinition": "PRECTOTCORR total precipitation, including snow, averaged across all calendar days in mm/day. Alternative to ERA5 rain-only data due daily API quota; not directly identical."
+      },
+      "argentina": {
+        "model": "NASA POWER/MERRA-2",
+        "period": "2016–2025",
+        "timeStandard": "Local solar time",
+        "sourceUrl": "https://power.larc.nasa.gov/docs/services/api/temporal/daily/",
+        "rainDefinition": "PRECTOTCORR total precipitation, including snow, averaged across all calendar days in mm/day. Alternative to ERA5 rain-only data due daily API quota; not directly identical."
       }
     }
   },
@@ -13675,6 +13682,1695 @@
       },
       "events": [],
       "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "argentina",
+      "id": "buenos-aires",
+      "name": "Buenos Aires",
+      "area": "Capital region",
+      "latitude": -34.6037,
+      "longitude": -58.3816,
+      "airports": [
+        [
+          "EZE",
+          "Buenos Aires Ezeiza"
+        ],
+        [
+          "AEP",
+          "Buenos Aires Aeroparque"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 0,
+      "gridLatitude": -34.6037,
+      "gridLongitude": -58.3816,
+      "elevation": 6.58,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-58.3816&latitude=-34.6037&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeSources": [
+        "https://www.argentina.travel/en/news/what-to-do-in-argentinas-most-sought-after-tourist-destinations"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.36,
+          "meanDailyHighC": 28.29,
+          "meanRainMmPerDay": 2.4035,
+          "meanRelativeHumidityPct": 66.71,
+          "rainyDayFraction": 0.2839
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 24.78,
+          "meanDailyHighC": 27.58,
+          "meanRainMmPerDay": 3.4118,
+          "meanRelativeHumidityPct": 68.94,
+          "rainyDayFraction": 0.2827
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 22.65,
+          "meanDailyHighC": 25.26,
+          "meanRainMmPerDay": 3.5825,
+          "meanRelativeHumidityPct": 71.96,
+          "rainyDayFraction": 0.271
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 19.13,
+          "meanDailyHighC": 21.54,
+          "meanRainMmPerDay": 3.1874,
+          "meanRelativeHumidityPct": 75.53,
+          "rainyDayFraction": 0.2633
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 15.2,
+          "meanDailyHighC": 17.38,
+          "meanRainMmPerDay": 2.6104,
+          "meanRelativeHumidityPct": 78.54,
+          "rainyDayFraction": 0.2065
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 12.22,
+          "meanDailyHighC": 14.45,
+          "meanRainMmPerDay": 1.462,
+          "meanRelativeHumidityPct": 80.75,
+          "rainyDayFraction": 0.1467
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 11.29,
+          "meanDailyHighC": 13.6,
+          "meanRainMmPerDay": 2.0033,
+          "meanRelativeHumidityPct": 81.38,
+          "rainyDayFraction": 0.2065
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 12.7,
+          "meanDailyHighC": 15.43,
+          "meanRainMmPerDay": 2.2168,
+          "meanRelativeHumidityPct": 78.35,
+          "rainyDayFraction": 0.1677
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 14.94,
+          "meanDailyHighC": 17.67,
+          "meanRainMmPerDay": 2.3501,
+          "meanRelativeHumidityPct": 76.52,
+          "rainyDayFraction": 0.1767
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.79,
+          "meanDailyHighC": 20.58,
+          "meanRainMmPerDay": 2.3066,
+          "meanRelativeHumidityPct": 72.91,
+          "rainyDayFraction": 0.2613
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 21.17,
+          "meanDailyHighC": 24.21,
+          "meanRainMmPerDay": 2.6479,
+          "meanRelativeHumidityPct": 68.88,
+          "rainyDayFraction": 0.26
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 23.59,
+          "meanDailyHighC": 26.7,
+          "meanRainMmPerDay": 2.7254,
+          "meanRelativeHumidityPct": 66.16,
+          "rainyDayFraction": 0.271
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Andean dry-season, northern-beach or urban/Amazon context. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          6,
+          7,
+          5,
+          8,
+          9,
+          4,
+          10,
+          3,
+          11,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.argentina.travel/en/news/what-to-do-in-argentinas-most-sought-after-tourist-destinations"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          6,
+          7,
+          5,
+          8,
+          9,
+          4,
+          10,
+          3,
+          11,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.argentina.travel/en/news/what-to-do-in-argentinas-most-sought-after-tourist-destinations"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "argentina",
+      "id": "puerto-iguazu",
+      "name": "Puerto Iguazú",
+      "area": "Northeast",
+      "latitude": -25.5972,
+      "longitude": -54.5786,
+      "airports": [
+        [
+          "IGR",
+          "Puerto Iguazú"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 1,
+      "gridLatitude": -25.5972,
+      "gridLongitude": -54.5786,
+      "elevation": 247.46,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-54.5786&latitude=-25.5972&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeSources": [
+        "https://www.argentina.travel/en/news/what-to-do-in-argentinas-most-sought-after-tourist-destinations"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.73,
+          "meanDailyHighC": 32.09,
+          "meanRainMmPerDay": 5.1578,
+          "meanRelativeHumidityPct": 71.48,
+          "rainyDayFraction": 0.5774
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 27.08,
+          "meanDailyHighC": 31.59,
+          "meanRainMmPerDay": 4.8877,
+          "meanRelativeHumidityPct": 72.16,
+          "rainyDayFraction": 0.5336
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.26,
+          "meanDailyHighC": 31.23,
+          "meanRainMmPerDay": 3.8329,
+          "meanRelativeHumidityPct": 72.48,
+          "rainyDayFraction": 0.4032
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 23.53,
+          "meanDailyHighC": 28.75,
+          "meanRainMmPerDay": 3.2959,
+          "meanRelativeHumidityPct": 73.88,
+          "rainyDayFraction": 0.3067
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 19.66,
+          "meanDailyHighC": 24.52,
+          "meanRainMmPerDay": 4.7467,
+          "meanRelativeHumidityPct": 78.42,
+          "rainyDayFraction": 0.3452
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 17.37,
+          "meanDailyHighC": 21.85,
+          "meanRainMmPerDay": 3.3503,
+          "meanRelativeHumidityPct": 81.88,
+          "rainyDayFraction": 0.3133
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.15,
+          "meanDailyHighC": 22.28,
+          "meanRainMmPerDay": 1.9955,
+          "meanRelativeHumidityPct": 77.28,
+          "rainyDayFraction": 0.1677
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.9,
+          "meanDailyHighC": 24.59,
+          "meanRainMmPerDay": 2.9545,
+          "meanRelativeHumidityPct": 72.59,
+          "rainyDayFraction": 0.2387
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 22.51,
+          "meanDailyHighC": 28.4,
+          "meanRainMmPerDay": 3.3496,
+          "meanRelativeHumidityPct": 69.49,
+          "rainyDayFraction": 0.28
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 23.96,
+          "meanDailyHighC": 29.03,
+          "meanRainMmPerDay": 7.9754,
+          "meanRelativeHumidityPct": 74.56,
+          "rainyDayFraction": 0.4903
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.24,
+          "meanDailyHighC": 30.28,
+          "meanRainMmPerDay": 4.6077,
+          "meanRelativeHumidityPct": 70.93,
+          "rainyDayFraction": 0.36
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.17,
+          "meanDailyHighC": 31.94,
+          "meanRainMmPerDay": 4.5872,
+          "meanRelativeHumidityPct": 68.64,
+          "rainyDayFraction": 0.4452
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Andean dry-season, northern-beach or urban/Amazon context. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          6,
+          7,
+          5,
+          8,
+          9,
+          4,
+          10,
+          3,
+          11,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.argentina.travel/en/news/what-to-do-in-argentinas-most-sought-after-tourist-destinations"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          6,
+          7,
+          5,
+          8,
+          9,
+          4,
+          10,
+          3,
+          11,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.argentina.travel/en/news/what-to-do-in-argentinas-most-sought-after-tourist-destinations"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "argentina",
+      "id": "mendoza",
+      "name": "Mendoza",
+      "area": "Western wine region",
+      "latitude": -32.8895,
+      "longitude": -68.8458,
+      "airports": [
+        [
+          "MDZ",
+          "Mendoza"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 2,
+      "gridLatitude": -32.8895,
+      "gridLongitude": -68.8458,
+      "elevation": 917.6,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-68.8458&latitude=-32.8895&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeSources": [
+        "https://www.argentina.travel/en/news/what-to-do-in-argentinas-most-sought-after-tourist-destinations"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.85,
+          "meanDailyHighC": 33.1,
+          "meanRainMmPerDay": 1.7369,
+          "meanRelativeHumidityPct": 41.48,
+          "rainyDayFraction": 0.2839
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 24.66,
+          "meanDailyHighC": 32.04,
+          "meanRainMmPerDay": 1.4996,
+          "meanRelativeHumidityPct": 44.96,
+          "rainyDayFraction": 0.265
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 21.62,
+          "meanDailyHighC": 29.22,
+          "meanRainMmPerDay": 1.0439,
+          "meanRelativeHumidityPct": 47.78,
+          "rainyDayFraction": 0.1774
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 16.84,
+          "meanDailyHighC": 24.49,
+          "meanRainMmPerDay": 1.3014,
+          "meanRelativeHumidityPct": 53.17,
+          "rainyDayFraction": 0.1067
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 11.82,
+          "meanDailyHighC": 19.04,
+          "meanRainMmPerDay": 0.6075,
+          "meanRelativeHumidityPct": 59.25,
+          "rainyDayFraction": 0.1161
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 8.37,
+          "meanDailyHighC": 15.78,
+          "meanRainMmPerDay": 0.5713,
+          "meanRelativeHumidityPct": 57.27,
+          "rainyDayFraction": 0.0567
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 8.08,
+          "meanDailyHighC": 16.04,
+          "meanRainMmPerDay": 0.3719,
+          "meanRelativeHumidityPct": 55.62,
+          "rainyDayFraction": 0.0387
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 10.85,
+          "meanDailyHighC": 19.26,
+          "meanRainMmPerDay": 0.2904,
+          "meanRelativeHumidityPct": 46.21,
+          "rainyDayFraction": 0.0226
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 14.39,
+          "meanDailyHighC": 23.01,
+          "meanRainMmPerDay": 0.1345,
+          "meanRelativeHumidityPct": 41.04,
+          "rainyDayFraction": 0.03
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.94,
+          "meanDailyHighC": 26.23,
+          "meanRainMmPerDay": 0.5824,
+          "meanRelativeHumidityPct": 38.03,
+          "rainyDayFraction": 0.0968
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 22.14,
+          "meanDailyHighC": 30.13,
+          "meanRainMmPerDay": 0.8461,
+          "meanRelativeHumidityPct": 36.63,
+          "rainyDayFraction": 0.1467
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.67,
+          "meanDailyHighC": 32.33,
+          "meanRainMmPerDay": 0.9337,
+          "meanRelativeHumidityPct": 36.78,
+          "rainyDayFraction": 0.1871
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Andean dry-season, northern-beach or urban/Amazon context. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          6,
+          7,
+          5,
+          8,
+          9,
+          4,
+          10,
+          3,
+          11,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.argentina.travel/en/news/what-to-do-in-argentinas-most-sought-after-tourist-destinations"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          6,
+          7,
+          5,
+          8,
+          9,
+          4,
+          10,
+          3,
+          11,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.argentina.travel/en/news/what-to-do-in-argentinas-most-sought-after-tourist-destinations"
+        ]
+      },
+      "events": [
+        {
+          "name": "Fiesta Nacional de la Vendimia",
+          "months": [
+            3
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://www.argentina.gob.ar/jefatura/turismo/viaja-por-argentina/celebrar-la-vendimia-en-mendoza"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "argentina",
+      "id": "el-calafate",
+      "name": "El Calafate",
+      "area": "Southern Patagonia",
+      "latitude": -50.3378,
+      "longitude": -72.2648,
+      "airports": [
+        [
+          "FTE",
+          "El Calafate"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 3,
+      "gridLatitude": -50.3378,
+      "gridLongitude": -72.2648,
+      "elevation": 868.68,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-72.2648&latitude=-50.3378&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from −5 to 25°C.",
+      "climateTypeSources": [
+        "https://www.argentina.travel/en/news/what-to-do-in-argentinas-most-sought-after-tourist-destinations"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 6.51,
+          "meanDailyHighC": 10.68,
+          "meanRainMmPerDay": 1.2351,
+          "meanRelativeHumidityPct": 75.52,
+          "rainyDayFraction": 0.4065
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 6.62,
+          "meanDailyHighC": 10.94,
+          "meanRainMmPerDay": 1.3273,
+          "meanRelativeHumidityPct": 76.75,
+          "rainyDayFraction": 0.3922
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 4.55,
+          "meanDailyHighC": 8.49,
+          "meanRainMmPerDay": 1.4341,
+          "meanRelativeHumidityPct": 80.29,
+          "rainyDayFraction": 0.4065
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 2.06,
+          "meanDailyHighC": 5.67,
+          "meanRainMmPerDay": 1.3198,
+          "meanRelativeHumidityPct": 84.67,
+          "rainyDayFraction": 0.3867
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": -0.7,
+          "meanDailyHighC": 2.16,
+          "meanRainMmPerDay": 1.5372,
+          "meanRelativeHumidityPct": 90.35,
+          "rainyDayFraction": 0.3581
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": -3.83,
+          "meanDailyHighC": -1.1,
+          "meanRainMmPerDay": 1.5114,
+          "meanRelativeHumidityPct": 93.13,
+          "rainyDayFraction": 0.43
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": -4.52,
+          "meanDailyHighC": -1.58,
+          "meanRainMmPerDay": 1.224,
+          "meanRelativeHumidityPct": 92.72,
+          "rainyDayFraction": 0.3645
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": -3,
+          "meanDailyHighC": -0.05,
+          "meanRainMmPerDay": 1.3459,
+          "meanRelativeHumidityPct": 90.4,
+          "rainyDayFraction": 0.3968
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": -0.71,
+          "meanDailyHighC": 2.51,
+          "meanRainMmPerDay": 1.0734,
+          "meanRelativeHumidityPct": 84.46,
+          "rainyDayFraction": 0.3067
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 2.12,
+          "meanDailyHighC": 5.83,
+          "meanRainMmPerDay": 1.0359,
+          "meanRelativeHumidityPct": 78.04,
+          "rainyDayFraction": 0.3258
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 4.41,
+          "meanDailyHighC": 8.64,
+          "meanRainMmPerDay": 1.125,
+          "meanRelativeHumidityPct": 75.07,
+          "rainyDayFraction": 0.3333
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 5.65,
+          "meanDailyHighC": 9.94,
+          "meanRainMmPerDay": 1.3995,
+          "meanRelativeHumidityPct": 74.82,
+          "rainyDayFraction": 0.4516
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Andean dry-season, northern-beach or urban/Amazon context. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          6,
+          5,
+          9,
+          8,
+          7,
+          4,
+          10,
+          11,
+          3,
+          12,
+          2,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.argentina.travel/en/news/what-to-do-in-argentinas-most-sought-after-tourist-destinations"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          6,
+          5,
+          9,
+          8,
+          7,
+          4,
+          10,
+          11,
+          3,
+          12,
+          2,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.argentina.travel/en/news/what-to-do-in-argentinas-most-sought-after-tourist-destinations"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "argentina",
+      "id": "ushuaia",
+      "name": "Ushuaia",
+      "area": "Tierra del Fuego",
+      "latitude": -54.8019,
+      "longitude": -68.303,
+      "airports": [
+        [
+          "USH",
+          "Ushuaia"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 4,
+      "gridLatitude": -54.8019,
+      "gridLongitude": -68.303,
+      "elevation": 268.93,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-68.303&latitude=-54.8019&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from −5 to 25°C.",
+      "climateTypeSources": [
+        "https://www.argentina.travel/en/news/what-to-do-in-argentinas-most-sought-after-tourist-destinations"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 7.62,
+          "meanDailyHighC": 10.75,
+          "meanRainMmPerDay": 2.1808,
+          "meanRelativeHumidityPct": 77.96,
+          "rainyDayFraction": 0.6677
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 7.58,
+          "meanDailyHighC": 10.93,
+          "meanRainMmPerDay": 2.7481,
+          "meanRelativeHumidityPct": 79.66,
+          "rainyDayFraction": 0.6078
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 6.05,
+          "meanDailyHighC": 9.18,
+          "meanRainMmPerDay": 2.3649,
+          "meanRelativeHumidityPct": 82.87,
+          "rainyDayFraction": 0.5613
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 3.75,
+          "meanDailyHighC": 6.38,
+          "meanRainMmPerDay": 1.8353,
+          "meanRelativeHumidityPct": 88.3,
+          "rainyDayFraction": 0.5033
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 2.1,
+          "meanDailyHighC": 3.98,
+          "meanRainMmPerDay": 1.6459,
+          "meanRelativeHumidityPct": 92.33,
+          "rainyDayFraction": 0.4677
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": -0.01,
+          "meanDailyHighC": 1.59,
+          "meanRainMmPerDay": 1.6249,
+          "meanRelativeHumidityPct": 93.27,
+          "rainyDayFraction": 0.4833
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": -0.56,
+          "meanDailyHighC": 1.14,
+          "meanRainMmPerDay": 1.3358,
+          "meanRelativeHumidityPct": 92.77,
+          "rainyDayFraction": 0.4419
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 0.15,
+          "meanDailyHighC": 2.23,
+          "meanRainMmPerDay": 1.4615,
+          "meanRelativeHumidityPct": 90.61,
+          "rainyDayFraction": 0.4355
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 1.78,
+          "meanDailyHighC": 4.44,
+          "meanRainMmPerDay": 1.2684,
+          "meanRelativeHumidityPct": 85.54,
+          "rainyDayFraction": 0.39
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 3.88,
+          "meanDailyHighC": 7,
+          "meanRainMmPerDay": 1.3208,
+          "meanRelativeHumidityPct": 81.57,
+          "rainyDayFraction": 0.4323
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 5.78,
+          "meanDailyHighC": 9.05,
+          "meanRainMmPerDay": 2.8214,
+          "meanRelativeHumidityPct": 78.91,
+          "rainyDayFraction": 0.5633
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 6.88,
+          "meanDailyHighC": 10.11,
+          "meanRainMmPerDay": 2.068,
+          "meanRelativeHumidityPct": 77.47,
+          "rainyDayFraction": 0.6419
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Andean dry-season, northern-beach or urban/Amazon context. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          6,
+          5,
+          9,
+          8,
+          7,
+          4,
+          10,
+          11,
+          3,
+          12,
+          2,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.argentina.travel/en/news/what-to-do-in-argentinas-most-sought-after-tourist-destinations"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          6,
+          5,
+          9,
+          8,
+          7,
+          4,
+          10,
+          11,
+          3,
+          12,
+          2,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.argentina.travel/en/news/what-to-do-in-argentinas-most-sought-after-tourist-destinations"
+        ]
+      },
+      "events": [
+        {
+          "name": "Fiesta de la Noche Más Larga",
+          "months": [
+            6
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://chicos.legistdf.gob.ar/en-ushuaia-se-festeja-la-noche-mas-larga-21-de-junio/"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "argentina",
+      "id": "salta",
+      "name": "Salta",
+      "area": "Northwest",
+      "latitude": -24.7859,
+      "longitude": -65.4117,
+      "airports": [
+        [
+          "SLA",
+          "Salta"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 5,
+      "gridLatitude": -24.7859,
+      "gridLongitude": -65.4117,
+      "elevation": 2168.53,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-65.4117&latitude=-24.7859&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeSources": [
+        "https://www.argentina.travel/en/news/what-to-do-in-argentinas-most-sought-after-tourist-destinations"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.13,
+          "meanDailyHighC": 23.86,
+          "meanRainMmPerDay": 6.2414,
+          "meanRelativeHumidityPct": 73.78,
+          "rainyDayFraction": 0.5355
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 17.34,
+          "meanDailyHighC": 23.01,
+          "meanRainMmPerDay": 5.4634,
+          "meanRelativeHumidityPct": 77.13,
+          "rainyDayFraction": 0.5477
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 16.07,
+          "meanDailyHighC": 21.85,
+          "meanRainMmPerDay": 4.5855,
+          "meanRelativeHumidityPct": 79.01,
+          "rainyDayFraction": 0.4742
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 13.85,
+          "meanDailyHighC": 20.57,
+          "meanRainMmPerDay": 3.1096,
+          "meanRelativeHumidityPct": 73.95,
+          "rainyDayFraction": 0.2933
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 11.01,
+          "meanDailyHighC": 18.78,
+          "meanRainMmPerDay": 0.3101,
+          "meanRelativeHumidityPct": 63.03,
+          "rainyDayFraction": 0.0871
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 9.37,
+          "meanDailyHighC": 18.16,
+          "meanRainMmPerDay": 0.1796,
+          "meanRelativeHumidityPct": 53.23,
+          "rainyDayFraction": 0.05
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 9.68,
+          "meanDailyHighC": 18.53,
+          "meanRainMmPerDay": 0.0684,
+          "meanRelativeHumidityPct": 49.13,
+          "rainyDayFraction": 0.0161
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 10.89,
+          "meanDailyHighC": 20.11,
+          "meanRainMmPerDay": 0.0756,
+          "meanRelativeHumidityPct": 42.51,
+          "rainyDayFraction": 0.0226
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 13.56,
+          "meanDailyHighC": 22.59,
+          "meanRainMmPerDay": 0.1723,
+          "meanRelativeHumidityPct": 46.02,
+          "rainyDayFraction": 0.0533
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 15.79,
+          "meanDailyHighC": 24.17,
+          "meanRainMmPerDay": 0.9108,
+          "meanRelativeHumidityPct": 51.43,
+          "rainyDayFraction": 0.1452
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 17.39,
+          "meanDailyHighC": 24.72,
+          "meanRainMmPerDay": 2.5535,
+          "meanRelativeHumidityPct": 59.56,
+          "rainyDayFraction": 0.3133
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.9,
+          "meanDailyHighC": 24.36,
+          "meanRainMmPerDay": 3.9932,
+          "meanRelativeHumidityPct": 68.54,
+          "rainyDayFraction": 0.4774
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Andean dry-season, northern-beach or urban/Amazon context. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          2,
+          1,
+          12,
+          3,
+          11,
+          4,
+          10,
+          9,
+          5,
+          8,
+          6,
+          7
+        ],
+        "sourceUrls": [
+          "https://www.argentina.travel/en/news/what-to-do-in-argentinas-most-sought-after-tourist-destinations"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          2,
+          1,
+          12,
+          3,
+          11,
+          4,
+          10,
+          9,
+          5,
+          8,
+          6,
+          7
+        ],
+        "sourceUrls": [
+          "https://www.argentina.travel/en/news/what-to-do-in-argentinas-most-sought-after-tourist-destinations"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "argentina",
+      "id": "purmamarca",
+      "name": "Purmamarca",
+      "area": "Jujuy highlands",
+      "latitude": -23.7464,
+      "longitude": -65.4985,
+      "airports": [
+        [
+          "JUJ",
+          "Jujuy"
+        ],
+        [
+          "SLA",
+          "Salta"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 6,
+      "gridLatitude": -23.7464,
+      "gridLongitude": -65.4985,
+      "elevation": 3608.27,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-65.4985&latitude=-23.7464&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeSources": [
+        "https://www.argentina.travel/en/news/what-to-do-in-argentinas-most-sought-after-tourist-destinations"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 11.08,
+          "meanDailyHighC": 18.99,
+          "meanRainMmPerDay": 5.0116,
+          "meanRelativeHumidityPct": 67.99,
+          "rainyDayFraction": 0.6129
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 10.56,
+          "meanDailyHighC": 18.34,
+          "meanRainMmPerDay": 4.6626,
+          "meanRelativeHumidityPct": 71.55,
+          "rainyDayFraction": 0.6042
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 9.8,
+          "meanDailyHighC": 18.26,
+          "meanRainMmPerDay": 4.2801,
+          "meanRelativeHumidityPct": 70.49,
+          "rainyDayFraction": 0.5
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 7.21,
+          "meanDailyHighC": 17.33,
+          "meanRainMmPerDay": 2.6948,
+          "meanRelativeHumidityPct": 61.7,
+          "rainyDayFraction": 0.38
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 4.35,
+          "meanDailyHighC": 15.23,
+          "meanRainMmPerDay": 0.3203,
+          "meanRelativeHumidityPct": 50.13,
+          "rainyDayFraction": 0.0774
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 2.79,
+          "meanDailyHighC": 13.63,
+          "meanRainMmPerDay": 0.1202,
+          "meanRelativeHumidityPct": 40.33,
+          "rainyDayFraction": 0.04
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 3.31,
+          "meanDailyHighC": 14.58,
+          "meanRainMmPerDay": 0.0762,
+          "meanRelativeHumidityPct": 37.15,
+          "rainyDayFraction": 0.0161
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 4,
+          "meanDailyHighC": 15.58,
+          "meanRainMmPerDay": 0.0581,
+          "meanRelativeHumidityPct": 35.98,
+          "rainyDayFraction": 0.0194
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 6.89,
+          "meanDailyHighC": 18.57,
+          "meanRainMmPerDay": 0.2043,
+          "meanRelativeHumidityPct": 38.66,
+          "rainyDayFraction": 0.0533
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 9.07,
+          "meanDailyHighC": 20.33,
+          "meanRainMmPerDay": 1.2105,
+          "meanRelativeHumidityPct": 42.38,
+          "rainyDayFraction": 0.2065
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 10.41,
+          "meanDailyHighC": 20.58,
+          "meanRainMmPerDay": 2.3659,
+          "meanRelativeHumidityPct": 50.03,
+          "rainyDayFraction": 0.36
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 11.22,
+          "meanDailyHighC": 20.16,
+          "meanRainMmPerDay": 3.4408,
+          "meanRelativeHumidityPct": 59.43,
+          "rainyDayFraction": 0.5161
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Andean dry-season, northern-beach or urban/Amazon context. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          2,
+          1,
+          12,
+          3,
+          11,
+          4,
+          10,
+          9,
+          5,
+          8,
+          6,
+          7
+        ],
+        "sourceUrls": [
+          "https://www.argentina.travel/en/news/what-to-do-in-argentinas-most-sought-after-tourist-destinations"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          2,
+          1,
+          12,
+          3,
+          11,
+          4,
+          10,
+          9,
+          5,
+          8,
+          6,
+          7
+        ],
+        "sourceUrls": [
+          "https://www.argentina.travel/en/news/what-to-do-in-argentinas-most-sought-after-tourist-destinations"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "argentina",
+      "id": "cordoba",
+      "name": "Córdoba",
+      "area": "Central Argentina",
+      "latitude": -31.4201,
+      "longitude": -64.1888,
+      "airports": [
+        [
+          "COR",
+          "Córdoba"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 7,
+      "gridLatitude": -31.4201,
+      "gridLongitude": -64.1888,
+      "elevation": 662.17,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-64.1888&latitude=-31.4201&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeSources": [
+        "https://www.argentina.travel/en/news/what-to-do-in-argentinas-most-sought-after-tourist-destinations"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 23.7,
+          "meanDailyHighC": 31.58,
+          "meanRainMmPerDay": 4.254,
+          "meanRelativeHumidityPct": 62.46,
+          "rainyDayFraction": 0.4
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 22.66,
+          "meanDailyHighC": 30.36,
+          "meanRainMmPerDay": 3.9067,
+          "meanRelativeHumidityPct": 65.62,
+          "rainyDayFraction": 0.3675
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 20.56,
+          "meanDailyHighC": 28.36,
+          "meanRainMmPerDay": 2.8439,
+          "meanRelativeHumidityPct": 68.24,
+          "rainyDayFraction": 0.2677
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 16.76,
+          "meanDailyHighC": 24.48,
+          "meanRainMmPerDay": 1.6744,
+          "meanRelativeHumidityPct": 72.37,
+          "rainyDayFraction": 0.2367
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 12.8,
+          "meanDailyHighC": 20.46,
+          "meanRainMmPerDay": 0.8289,
+          "meanRelativeHumidityPct": 72.73,
+          "rainyDayFraction": 0.1226
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 10.02,
+          "meanDailyHighC": 18.4,
+          "meanRainMmPerDay": 0.9083,
+          "meanRelativeHumidityPct": 69.08,
+          "rainyDayFraction": 0.05
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 9.97,
+          "meanDailyHighC": 18.76,
+          "meanRainMmPerDay": 0.1885,
+          "meanRelativeHumidityPct": 66.17,
+          "rainyDayFraction": 0.0387
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 12.25,
+          "meanDailyHighC": 21.57,
+          "meanRainMmPerDay": 0.3335,
+          "meanRelativeHumidityPct": 54.17,
+          "rainyDayFraction": 0.0387
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 15.41,
+          "meanDailyHighC": 24.82,
+          "meanRainMmPerDay": 0.7014,
+          "meanRelativeHumidityPct": 51.37,
+          "rainyDayFraction": 0.09
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.05,
+          "meanDailyHighC": 26.85,
+          "meanRainMmPerDay": 1.8036,
+          "meanRelativeHumidityPct": 52.2,
+          "rainyDayFraction": 0.2258
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 20.88,
+          "meanDailyHighC": 29.38,
+          "meanRainMmPerDay": 3.2966,
+          "meanRelativeHumidityPct": 55.37,
+          "rainyDayFraction": 0.3167
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 22.98,
+          "meanDailyHighC": 31.19,
+          "meanRainMmPerDay": 3.378,
+          "meanRelativeHumidityPct": 56.4,
+          "rainyDayFraction": 0.3419
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Andean dry-season, northern-beach or urban/Amazon context. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          6,
+          7,
+          5,
+          8,
+          9,
+          4,
+          10,
+          3,
+          11,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.argentina.travel/en/news/what-to-do-in-argentinas-most-sought-after-tourist-destinations"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          6,
+          7,
+          5,
+          8,
+          9,
+          4,
+          10,
+          3,
+          11,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.argentina.travel/en/news/what-to-do-in-argentinas-most-sought-after-tourist-destinations"
+        ]
+      },
+      "events": [
+        {
+          "name": "Cosquín National Folklore Festival (regional excursion)",
+          "months": [
+            1
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://www.argentina.travel/en/activities/cosquin"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "argentina",
+      "id": "puerto-madryn",
+      "name": "Puerto Madryn",
+      "area": "Patagonian coast",
+      "latitude": -42.7692,
+      "longitude": -65.0385,
+      "airports": [
+        [
+          "PMY",
+          "Puerto Madryn"
+        ],
+        [
+          "REL",
+          "Trelew"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 8,
+      "gridLatitude": -42.7692,
+      "gridLongitude": -65.0385,
+      "elevation": 58.87,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-65.0385&latitude=-42.7692&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeSources": [
+        "https://www.argentina.travel/en/news/what-to-do-in-argentinas-most-sought-after-tourist-destinations"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 21.13,
+          "meanDailyHighC": 27.16,
+          "meanRainMmPerDay": 0.6046,
+          "meanRelativeHumidityPct": 45.77,
+          "rainyDayFraction": 0.0903
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 20.41,
+          "meanDailyHighC": 26.41,
+          "meanRainMmPerDay": 0.6261,
+          "meanRelativeHumidityPct": 49.01,
+          "rainyDayFraction": 0.1025
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.86,
+          "meanDailyHighC": 23.53,
+          "meanRainMmPerDay": 1.7489,
+          "meanRelativeHumidityPct": 53.51,
+          "rainyDayFraction": 0.1129
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 13.96,
+          "meanDailyHighC": 19.04,
+          "meanRainMmPerDay": 1.3565,
+          "meanRelativeHumidityPct": 61.62,
+          "rainyDayFraction": 0.1
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 9.7,
+          "meanDailyHighC": 14.26,
+          "meanRainMmPerDay": 1.7461,
+          "meanRelativeHumidityPct": 70.59,
+          "rainyDayFraction": 0.1
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 6.42,
+          "meanDailyHighC": 10.43,
+          "meanRainMmPerDay": 1.5719,
+          "meanRelativeHumidityPct": 76.98,
+          "rainyDayFraction": 0.1533
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 5.95,
+          "meanDailyHighC": 10.4,
+          "meanRainMmPerDay": 0.7128,
+          "meanRelativeHumidityPct": 77.92,
+          "rainyDayFraction": 0.1419
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 7.84,
+          "meanDailyHighC": 12.7,
+          "meanRainMmPerDay": 0.4736,
+          "meanRelativeHumidityPct": 71.77,
+          "rainyDayFraction": 0.1097
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 10.21,
+          "meanDailyHighC": 15.5,
+          "meanRainMmPerDay": 0.6254,
+          "meanRelativeHumidityPct": 64.97,
+          "rainyDayFraction": 0.1133
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 13.31,
+          "meanDailyHighC": 19.14,
+          "meanRainMmPerDay": 0.4086,
+          "meanRelativeHumidityPct": 56.21,
+          "rainyDayFraction": 0.0935
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 16.89,
+          "meanDailyHighC": 22.85,
+          "meanRainMmPerDay": 1.0233,
+          "meanRelativeHumidityPct": 51.22,
+          "rainyDayFraction": 0.1267
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 19.36,
+          "meanDailyHighC": 25.35,
+          "meanRainMmPerDay": 0.5284,
+          "meanRelativeHumidityPct": 47.32,
+          "rainyDayFraction": 0.0871
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Andean dry-season, northern-beach or urban/Amazon context. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          6,
+          5,
+          9,
+          8,
+          7,
+          4,
+          10,
+          11,
+          3,
+          12,
+          2,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.argentina.travel/en/news/what-to-do-in-argentinas-most-sought-after-tourist-destinations"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          6,
+          5,
+          9,
+          8,
+          7,
+          4,
+          10,
+          11,
+          3,
+          12,
+          2,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.argentina.travel/en/news/what-to-do-in-argentinas-most-sought-after-tourist-destinations"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "argentina",
+      "id": "mar-del-plata",
+      "name": "Mar del Plata",
+      "area": "Atlantic coast",
+      "latitude": -38.0055,
+      "longitude": -57.5426,
+      "airports": [
+        [
+          "MDQ",
+          "Mar del Plata"
+        ]
+      ],
+      "climateType": "beach",
+      "regionIndex": 9,
+      "gridLatitude": -38.0055,
+      "gridLongitude": -57.5426,
+      "elevation": 23.45,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-57.5426&latitude=-38.0055&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Approved beach-oriented holiday base; 25°C target.",
+      "climateTypeSources": [
+        "https://www.argentina.travel/en/news/what-to-do-in-argentinas-most-sought-after-tourist-destinations"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 20.64,
+          "meanDailyHighC": 24.66,
+          "meanRainMmPerDay": 4.4217,
+          "meanRelativeHumidityPct": 73.11,
+          "rainyDayFraction": 0.3613
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 20.47,
+          "meanDailyHighC": 24.13,
+          "meanRainMmPerDay": 5.4265,
+          "meanRelativeHumidityPct": 75.72,
+          "rainyDayFraction": 0.4205
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.86,
+          "meanDailyHighC": 22.18,
+          "meanRainMmPerDay": 4.279,
+          "meanRelativeHumidityPct": 77.48,
+          "rainyDayFraction": 0.3774
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 16.03,
+          "meanDailyHighC": 18.96,
+          "meanRainMmPerDay": 4.1055,
+          "meanRelativeHumidityPct": 80.22,
+          "rainyDayFraction": 0.36
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 12.49,
+          "meanDailyHighC": 15.06,
+          "meanRainMmPerDay": 2.7763,
+          "meanRelativeHumidityPct": 82.13,
+          "rainyDayFraction": 0.3226
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 9.69,
+          "meanDailyHighC": 12.29,
+          "meanRainMmPerDay": 2.2128,
+          "meanRelativeHumidityPct": 84.76,
+          "rainyDayFraction": 0.2967
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 8.48,
+          "meanDailyHighC": 11.1,
+          "meanRainMmPerDay": 2.4517,
+          "meanRelativeHumidityPct": 85.71,
+          "rainyDayFraction": 0.3226
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 9.15,
+          "meanDailyHighC": 12.32,
+          "meanRainMmPerDay": 1.9128,
+          "meanRelativeHumidityPct": 84.26,
+          "rainyDayFraction": 0.2613
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 10.57,
+          "meanDailyHighC": 13.93,
+          "meanRainMmPerDay": 2.7972,
+          "meanRelativeHumidityPct": 82.69,
+          "rainyDayFraction": 0.2433
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 12.86,
+          "meanDailyHighC": 16.44,
+          "meanRainMmPerDay": 3.0382,
+          "meanRelativeHumidityPct": 79.34,
+          "rainyDayFraction": 0.2935
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 15.83,
+          "meanDailyHighC": 19.61,
+          "meanRainMmPerDay": 4.3224,
+          "meanRelativeHumidityPct": 76.43,
+          "rainyDayFraction": 0.3467
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.46,
+          "meanDailyHighC": 22.59,
+          "meanRainMmPerDay": 4.6765,
+          "meanRelativeHumidityPct": 73.36,
+          "rainyDayFraction": 0.371
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Andean dry-season, northern-beach or urban/Amazon context. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          6,
+          5,
+          9,
+          8,
+          7,
+          4,
+          10,
+          11,
+          3,
+          12,
+          2,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.argentina.travel/en/news/what-to-do-in-argentinas-most-sought-after-tourist-destinations"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          6,
+          5,
+          9,
+          8,
+          7,
+          4,
+          10,
+          11,
+          3,
+          12,
+          2,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.argentina.travel/en/news/what-to-do-in-argentinas-most-sought-after-tourist-destinations"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
     }
   ],
   "destinationTypeAssignments": {
@@ -13719,6 +15415,18 @@
       "climateType": "all-season",
       "reason": "Owner-approved All season classification, 6 November 2026.",
       "status": "Integrated with monthly climate profiles, 6 November 2026."
+    },
+    "argentina:el-calafate": {
+      "name": "El Calafate",
+      "climateType": "all-season",
+      "reason": "Owner-approved broader All season concept: temperature neutral from −5 to 25°C; rain-focused climate score.",
+      "status": "Integrated with Argentina rollout, 6 November 2026."
+    },
+    "argentina:ushuaia": {
+      "name": "Ushuaia",
+      "climateType": "all-season",
+      "reason": "Owner-approved broader All season concept: temperature neutral from −5 to 25°C; rain-focused climate score.",
+      "status": "Integrated with Argentina rollout, 6 November 2026."
     }
   }
 }

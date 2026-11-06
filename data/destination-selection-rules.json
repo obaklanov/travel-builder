@@ -7,7 +7,12 @@
       "Europe"
     ],
     "reason": "Owner has greater personal interest in these regions. Colombia is intentionally more detailed; do not apply its destination count globally.",
-    "otherRegions": "Use a selective representative list with Treasure access and distinct geographic experiences."
+    "otherRegions": "Use a selective representative list with Treasure access and distinct geographic experiences.",
+    "latinAmerica": {
+      "targetBasesForLargerCountries": 10,
+      "smallerCountries": "Use fewer destinations for smaller countries such as Uruguay and Paraguay.",
+      "interpretation": "Guideline, not a rigid quota. Prioritize distinct experiences and Treasure access; consolidate nearby places."
+    }
   },
   "rules": [
     "Use City (geographic area) as the display label; do not display the term base.",
@@ -807,6 +812,129 @@
           ]
         }
       ]
+    },
+    "argentina": {
+      "approvedAt": "2026-11-06",
+      "liveLabelsUpdated": true,
+      "excludedProposals": [
+        "Bariloche",
+        "El Chaltén",
+        "Colonia Carlos Pellegrini"
+      ],
+      "indexCompatibility": "Buenos Aires, Iguazú, Mendoza, El Calafate and Salta retain indices 0,1,2,3,5. Removed Bariloche slot 4 now holds Ushuaia.",
+      "seasonalityStatus": "2016–2025 NASA POWER/MERRA-2 local solar daily data; total precipitation includes snow. Current Warm living, All season and Beach rules. Crowd/price orders remain editorial proxies; selected official events use typical months, not confirmed future calendars.",
+      "destinations": [
+        {
+          "name": "Buenos Aires",
+          "area": "Capital region",
+          "climateType": "standard",
+          "climateTypeLabel": "Warm living",
+          "airportCandidates": [
+            "EZE",
+            "AEP"
+          ],
+          "treasures": [
+            "Plaza de Mayo"
+          ]
+        },
+        {
+          "name": "Puerto Iguazú",
+          "area": "Northeast",
+          "climateType": "standard",
+          "climateTypeLabel": "Warm living",
+          "airportCandidates": [
+            "IGR"
+          ],
+          "treasures": [
+            "Iguazú Falls"
+          ]
+        },
+        {
+          "name": "Mendoza",
+          "area": "Western wine region",
+          "climateType": "standard",
+          "climateTypeLabel": "Warm living",
+          "airportCandidates": [
+            "MDZ"
+          ]
+        },
+        {
+          "name": "El Calafate",
+          "area": "Southern Patagonia",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "FTE"
+          ],
+          "treasures": [
+            "Perito Moreno Glacier"
+          ]
+        },
+        {
+          "name": "Ushuaia",
+          "area": "Tierra del Fuego",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "USH"
+          ]
+        },
+        {
+          "name": "Salta",
+          "area": "Northwest",
+          "climateType": "standard",
+          "climateTypeLabel": "Warm living",
+          "airportCandidates": [
+            "SLA"
+          ],
+          "nearbyPlaces": [
+            "Cafayate"
+          ]
+        },
+        {
+          "name": "Purmamarca",
+          "area": "Jujuy highlands",
+          "climateType": "standard",
+          "climateTypeLabel": "Warm living",
+          "airportCandidates": [
+            "JUJ",
+            "SLA"
+          ],
+          "nearbyPlaces": [
+            "Tilcara",
+            "Humahuaca",
+            "Salinas Grandes"
+          ]
+        },
+        {
+          "name": "Córdoba",
+          "area": "Central Argentina",
+          "climateType": "standard",
+          "climateTypeLabel": "Warm living",
+          "airportCandidates": [
+            "COR"
+          ]
+        },
+        {
+          "name": "Puerto Madryn",
+          "area": "Patagonian coast",
+          "climateType": "standard",
+          "climateTypeLabel": "Warm living",
+          "airportCandidates": [
+            "PMY",
+            "REL"
+          ]
+        },
+        {
+          "name": "Mar del Plata",
+          "area": "Atlantic coast",
+          "climateType": "beach",
+          "climateTypeLabel": "Beach",
+          "airportCandidates": [
+            "MDQ"
+          ]
+        }
+      ]
     }
   },
   "climateTypeAssignments": {
@@ -851,6 +979,18 @@
       "climateType": "all-season",
       "reason": "Owner-approved All season classification, 6 November 2026.",
       "status": "Integrated with monthly climate profiles, 6 November 2026."
+    },
+    "argentina:el-calafate": {
+      "name": "El Calafate",
+      "climateType": "all-season",
+      "reason": "Owner-approved broader All season concept: temperature neutral from −5 to 25°C; rain-focused climate score.",
+      "status": "Integrated with Argentina rollout, 6 November 2026."
+    },
+    "argentina:ushuaia": {
+      "name": "Ushuaia",
+      "climateType": "all-season",
+      "reason": "Owner-approved broader All season concept: temperature neutral from −5 to 25°C; rain-focused climate score.",
+      "status": "Integrated with Argentina rollout, 6 November 2026."
     }
   }
 }

@@ -7,7 +7,7 @@
     "persistentWetDayFraction": 0.6,
     "excludedMonthsPerVulnerableBase": 2,
     "selection": "Vulnerable if any month averages >=8 mm/day, or >=6 mm/day with >=60% wet days where wet-day data exist. Mark its two largest mean daily rainfall/precipitation months unsuitable. Equal values use calendar order. Reviewed regional/station overrides take precedence where coarse model grids conflict with official guidance; these are identified per base.",
-    "scope": "170 existing destinations. Product preference, not abnormal-weather diagnosis, flood forecast or official advisory.",
+    "scope": "174 existing destinations. Product preference, not abnormal-weather diagnosis, flood forecast or official advisory.",
     "limitations": "Model estimates and representative points; broad regions can contain different climates. NASA supplementary records are total precipitation including snow, not rain-only; cross-check Colombia estimates separately. Unflagged does not mean free of rain or weather hazards.",
     "reviewedVulnerableCount": 53
   },
@@ -10511,468 +10511,6 @@
       }
     },
     {
-      "country": "argentina",
-      "regionIndex": 0,
-      "label": "Buenos Aires (East)",
-      "id": "argentina-0",
-      "latitude": -34.6,
-      "longitude": -58.38,
-      "needsRainFetch": true,
-      "referenceNote": "Representative point for a broad legacy region; does not describe every linked place.",
-      "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
-      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR&community=AG&longitude=-58.38&latitude=-34.6&start=2016&end=2025&format=JSON",
-      "months": [
-        {
-          "month": 1,
-          "meanMmPerDay": 2.404,
-          "wetDayFraction": null
-        },
-        {
-          "month": 2,
-          "meanMmPerDay": 3.4122,
-          "wetDayFraction": null
-        },
-        {
-          "month": 3,
-          "meanMmPerDay": 3.583,
-          "wetDayFraction": null
-        },
-        {
-          "month": 4,
-          "meanMmPerDay": 3.186,
-          "wetDayFraction": null
-        },
-        {
-          "month": 5,
-          "meanMmPerDay": 2.611,
-          "wetDayFraction": null
-        },
-        {
-          "month": 6,
-          "meanMmPerDay": 1.462,
-          "wetDayFraction": null
-        },
-        {
-          "month": 7,
-          "meanMmPerDay": 2.005,
-          "wetDayFraction": null
-        },
-        {
-          "month": 8,
-          "meanMmPerDay": 2.217,
-          "wetDayFraction": null
-        },
-        {
-          "month": 9,
-          "meanMmPerDay": 2.349,
-          "wetDayFraction": null
-        },
-        {
-          "month": 10,
-          "meanMmPerDay": 2.306,
-          "wetDayFraction": null
-        },
-        {
-          "month": 11,
-          "meanMmPerDay": 2.649,
-          "wetDayFraction": null
-        },
-        {
-          "month": 12,
-          "meanMmPerDay": 2.723,
-          "wetDayFraction": null
-        }
-      ],
-      "vulnerable": false,
-      "excludedMonths": [],
-      "reason": "Screening threshold not met at representative point."
-    },
-    {
-      "country": "argentina",
-      "regionIndex": 1,
-      "label": "Iguazú (North)",
-      "id": "argentina-1",
-      "latitude": -25.6,
-      "longitude": -54.58,
-      "needsRainFetch": true,
-      "referenceNote": "Representative point for a broad legacy region; does not describe every linked place.",
-      "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
-      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR&community=AG&longitude=-54.58&latitude=-25.6&start=2016&end=2025&format=JSON",
-      "months": [
-        {
-          "month": 1,
-          "meanMmPerDay": 5.159,
-          "wetDayFraction": null
-        },
-        {
-          "month": 2,
-          "meanMmPerDay": 4.888,
-          "wetDayFraction": null
-        },
-        {
-          "month": 3,
-          "meanMmPerDay": 3.834,
-          "wetDayFraction": null
-        },
-        {
-          "month": 4,
-          "meanMmPerDay": 3.296,
-          "wetDayFraction": null
-        },
-        {
-          "month": 5,
-          "meanMmPerDay": 4.747,
-          "wetDayFraction": null
-        },
-        {
-          "month": 6,
-          "meanMmPerDay": 3.349,
-          "wetDayFraction": null
-        },
-        {
-          "month": 7,
-          "meanMmPerDay": 1.996,
-          "wetDayFraction": null
-        },
-        {
-          "month": 8,
-          "meanMmPerDay": 2.954,
-          "wetDayFraction": null
-        },
-        {
-          "month": 9,
-          "meanMmPerDay": 3.349,
-          "wetDayFraction": null
-        },
-        {
-          "month": 10,
-          "meanMmPerDay": 7.976,
-          "wetDayFraction": null
-        },
-        {
-          "month": 11,
-          "meanMmPerDay": 4.609,
-          "wetDayFraction": null
-        },
-        {
-          "month": 12,
-          "meanMmPerDay": 4.588,
-          "wetDayFraction": null
-        }
-      ],
-      "vulnerable": false,
-      "excludedMonths": [],
-      "reason": "Screening threshold not met at representative point."
-    },
-    {
-      "country": "argentina",
-      "regionIndex": 2,
-      "label": "Mendoza (West)",
-      "id": "argentina-2",
-      "latitude": -32.89,
-      "longitude": -68.85,
-      "needsRainFetch": true,
-      "referenceNote": "Representative point for a broad legacy region; does not describe every linked place.",
-      "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
-      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR&community=AG&longitude=-68.85&latitude=-32.89&start=2016&end=2025&format=JSON",
-      "months": [
-        {
-          "month": 1,
-          "meanMmPerDay": 1.737,
-          "wetDayFraction": null
-        },
-        {
-          "month": 2,
-          "meanMmPerDay": 1.4996,
-          "wetDayFraction": null
-        },
-        {
-          "month": 3,
-          "meanMmPerDay": 1.044,
-          "wetDayFraction": null
-        },
-        {
-          "month": 4,
-          "meanMmPerDay": 1.302,
-          "wetDayFraction": null
-        },
-        {
-          "month": 5,
-          "meanMmPerDay": 0.607,
-          "wetDayFraction": null
-        },
-        {
-          "month": 6,
-          "meanMmPerDay": 0.571,
-          "wetDayFraction": null
-        },
-        {
-          "month": 7,
-          "meanMmPerDay": 0.372,
-          "wetDayFraction": null
-        },
-        {
-          "month": 8,
-          "meanMmPerDay": 0.29,
-          "wetDayFraction": null
-        },
-        {
-          "month": 9,
-          "meanMmPerDay": 0.134,
-          "wetDayFraction": null
-        },
-        {
-          "month": 10,
-          "meanMmPerDay": 0.581,
-          "wetDayFraction": null
-        },
-        {
-          "month": 11,
-          "meanMmPerDay": 0.846,
-          "wetDayFraction": null
-        },
-        {
-          "month": 12,
-          "meanMmPerDay": 0.933,
-          "wetDayFraction": null
-        }
-      ],
-      "vulnerable": false,
-      "excludedMonths": [],
-      "reason": "Screening threshold not met at representative point."
-    },
-    {
-      "country": "argentina",
-      "regionIndex": 3,
-      "label": "El Calafate (South)",
-      "id": "argentina-3",
-      "latitude": -50.34,
-      "longitude": -72.26,
-      "needsRainFetch": true,
-      "referenceNote": "Representative point for a broad legacy region; does not describe every linked place.",
-      "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
-      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR&community=AG&longitude=-72.26&latitude=-50.34&start=2016&end=2025&format=JSON",
-      "months": [
-        {
-          "month": 1,
-          "meanMmPerDay": 1.236,
-          "wetDayFraction": null
-        },
-        {
-          "month": 2,
-          "meanMmPerDay": 1.3269,
-          "wetDayFraction": null
-        },
-        {
-          "month": 3,
-          "meanMmPerDay": 1.434,
-          "wetDayFraction": null
-        },
-        {
-          "month": 4,
-          "meanMmPerDay": 1.319,
-          "wetDayFraction": null
-        },
-        {
-          "month": 5,
-          "meanMmPerDay": 1.536,
-          "wetDayFraction": null
-        },
-        {
-          "month": 6,
-          "meanMmPerDay": 1.512,
-          "wetDayFraction": null
-        },
-        {
-          "month": 7,
-          "meanMmPerDay": 1.224,
-          "wetDayFraction": null
-        },
-        {
-          "month": 8,
-          "meanMmPerDay": 1.347,
-          "wetDayFraction": null
-        },
-        {
-          "month": 9,
-          "meanMmPerDay": 1.073,
-          "wetDayFraction": null
-        },
-        {
-          "month": 10,
-          "meanMmPerDay": 1.034,
-          "wetDayFraction": null
-        },
-        {
-          "month": 11,
-          "meanMmPerDay": 1.125,
-          "wetDayFraction": null
-        },
-        {
-          "month": 12,
-          "meanMmPerDay": 1.4,
-          "wetDayFraction": null
-        }
-      ],
-      "vulnerable": false,
-      "excludedMonths": [],
-      "reason": "Screening threshold not met at representative point."
-    },
-    {
-      "country": "argentina",
-      "regionIndex": 4,
-      "label": "Bariloche (South)",
-      "id": "argentina-4",
-      "latitude": -41.13,
-      "longitude": -71.31,
-      "needsRainFetch": true,
-      "referenceNote": "Representative point for a broad legacy region; does not describe every linked place.",
-      "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
-      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR&community=AG&longitude=-71.31&latitude=-41.13&start=2016&end=2025&format=JSON",
-      "months": [
-        {
-          "month": 1,
-          "meanMmPerDay": 0.718,
-          "wetDayFraction": null
-        },
-        {
-          "month": 2,
-          "meanMmPerDay": 0.5054,
-          "wetDayFraction": null
-        },
-        {
-          "month": 3,
-          "meanMmPerDay": 0.96,
-          "wetDayFraction": null
-        },
-        {
-          "month": 4,
-          "meanMmPerDay": 1.95,
-          "wetDayFraction": null
-        },
-        {
-          "month": 5,
-          "meanMmPerDay": 2.607,
-          "wetDayFraction": null
-        },
-        {
-          "month": 6,
-          "meanMmPerDay": 5.264,
-          "wetDayFraction": null
-        },
-        {
-          "month": 7,
-          "meanMmPerDay": 3.874,
-          "wetDayFraction": null
-        },
-        {
-          "month": 8,
-          "meanMmPerDay": 3.146,
-          "wetDayFraction": null
-        },
-        {
-          "month": 9,
-          "meanMmPerDay": 1.847,
-          "wetDayFraction": null
-        },
-        {
-          "month": 10,
-          "meanMmPerDay": 1.395,
-          "wetDayFraction": null
-        },
-        {
-          "month": 11,
-          "meanMmPerDay": 0.918,
-          "wetDayFraction": null
-        },
-        {
-          "month": 12,
-          "meanMmPerDay": 0.494,
-          "wetDayFraction": null
-        }
-      ],
-      "vulnerable": false,
-      "excludedMonths": [],
-      "reason": "Screening threshold not met at representative point."
-    },
-    {
-      "country": "argentina",
-      "regionIndex": 5,
-      "label": "Salta (North)",
-      "id": "argentina-5",
-      "latitude": -24.79,
-      "longitude": -65.41,
-      "needsRainFetch": true,
-      "referenceNote": "Representative point for a broad legacy region; does not describe every linked place.",
-      "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
-      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR&community=AG&longitude=-65.41&latitude=-24.79&start=2016&end=2025&format=JSON",
-      "months": [
-        {
-          "month": 1,
-          "meanMmPerDay": 6.241,
-          "wetDayFraction": null
-        },
-        {
-          "month": 2,
-          "meanMmPerDay": 5.4648,
-          "wetDayFraction": null
-        },
-        {
-          "month": 3,
-          "meanMmPerDay": 4.584,
-          "wetDayFraction": null
-        },
-        {
-          "month": 4,
-          "meanMmPerDay": 3.109,
-          "wetDayFraction": null
-        },
-        {
-          "month": 5,
-          "meanMmPerDay": 0.308,
-          "wetDayFraction": null
-        },
-        {
-          "month": 6,
-          "meanMmPerDay": 0.178,
-          "wetDayFraction": null
-        },
-        {
-          "month": 7,
-          "meanMmPerDay": 0.069,
-          "wetDayFraction": null
-        },
-        {
-          "month": 8,
-          "meanMmPerDay": 0.077,
-          "wetDayFraction": null
-        },
-        {
-          "month": 9,
-          "meanMmPerDay": 0.173,
-          "wetDayFraction": null
-        },
-        {
-          "month": 10,
-          "meanMmPerDay": 0.91,
-          "wetDayFraction": null
-        },
-        {
-          "month": 11,
-          "meanMmPerDay": 2.554,
-          "wetDayFraction": null
-        },
-        {
-          "month": 12,
-          "meanMmPerDay": 3.994,
-          "wetDayFraction": null
-        }
-      ],
-      "vulnerable": false,
-      "excludedMonths": [],
-      "reason": "Screening threshold not met at representative point."
-    },
-    {
       "country": "italy",
       "regionIndex": 0,
       "label": "Rome (Lazio)",
@@ -13299,6 +12837,766 @@
         12
       ],
       "reason": "Heavy or persistent wet-season screening threshold met; two wettest months excluded."
+    },
+    {
+      "country": "argentina",
+      "regionIndex": 0,
+      "label": "Buenos Aires (Capital region)",
+      "id": "buenos-aires",
+      "latitude": -34.6037,
+      "longitude": -58.3816,
+      "referenceNote": "Named accommodation-town point; local mountain/coastal conditions can differ.",
+      "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-58.3816&latitude=-34.6037&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "months": [
+        {
+          "month": 1,
+          "meanMmPerDay": 2.4035,
+          "wetDayFraction": 0.2839
+        },
+        {
+          "month": 2,
+          "meanMmPerDay": 3.4118,
+          "wetDayFraction": 0.2827
+        },
+        {
+          "month": 3,
+          "meanMmPerDay": 3.5825,
+          "wetDayFraction": 0.271
+        },
+        {
+          "month": 4,
+          "meanMmPerDay": 3.1874,
+          "wetDayFraction": 0.2633
+        },
+        {
+          "month": 5,
+          "meanMmPerDay": 2.6104,
+          "wetDayFraction": 0.2065
+        },
+        {
+          "month": 6,
+          "meanMmPerDay": 1.462,
+          "wetDayFraction": 0.1467
+        },
+        {
+          "month": 7,
+          "meanMmPerDay": 2.0033,
+          "wetDayFraction": 0.2065
+        },
+        {
+          "month": 8,
+          "meanMmPerDay": 2.2168,
+          "wetDayFraction": 0.1677
+        },
+        {
+          "month": 9,
+          "meanMmPerDay": 2.3501,
+          "wetDayFraction": 0.1767
+        },
+        {
+          "month": 10,
+          "meanMmPerDay": 2.3066,
+          "wetDayFraction": 0.2613
+        },
+        {
+          "month": 11,
+          "meanMmPerDay": 2.6479,
+          "wetDayFraction": 0.26
+        },
+        {
+          "month": 12,
+          "meanMmPerDay": 2.7254,
+          "wetDayFraction": 0.271
+        }
+      ],
+      "vulnerable": false,
+      "excludedMonths": [],
+      "reason": "Screening threshold not met at named town point."
+    },
+    {
+      "country": "argentina",
+      "regionIndex": 1,
+      "label": "Puerto Iguazú (Northeast)",
+      "id": "puerto-iguazu",
+      "latitude": -25.5972,
+      "longitude": -54.5786,
+      "referenceNote": "Named accommodation-town point; local mountain/coastal conditions can differ.",
+      "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-54.5786&latitude=-25.5972&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "months": [
+        {
+          "month": 1,
+          "meanMmPerDay": 5.1578,
+          "wetDayFraction": 0.5774
+        },
+        {
+          "month": 2,
+          "meanMmPerDay": 4.8877,
+          "wetDayFraction": 0.5336
+        },
+        {
+          "month": 3,
+          "meanMmPerDay": 3.8329,
+          "wetDayFraction": 0.4032
+        },
+        {
+          "month": 4,
+          "meanMmPerDay": 3.2959,
+          "wetDayFraction": 0.3067
+        },
+        {
+          "month": 5,
+          "meanMmPerDay": 4.7467,
+          "wetDayFraction": 0.3452
+        },
+        {
+          "month": 6,
+          "meanMmPerDay": 3.3503,
+          "wetDayFraction": 0.3133
+        },
+        {
+          "month": 7,
+          "meanMmPerDay": 1.9955,
+          "wetDayFraction": 0.1677
+        },
+        {
+          "month": 8,
+          "meanMmPerDay": 2.9545,
+          "wetDayFraction": 0.2387
+        },
+        {
+          "month": 9,
+          "meanMmPerDay": 3.3496,
+          "wetDayFraction": 0.28
+        },
+        {
+          "month": 10,
+          "meanMmPerDay": 7.9754,
+          "wetDayFraction": 0.4903
+        },
+        {
+          "month": 11,
+          "meanMmPerDay": 4.6077,
+          "wetDayFraction": 0.36
+        },
+        {
+          "month": 12,
+          "meanMmPerDay": 4.5872,
+          "wetDayFraction": 0.4452
+        }
+      ],
+      "vulnerable": false,
+      "excludedMonths": [],
+      "reason": "Screening threshold not met at named town point."
+    },
+    {
+      "country": "argentina",
+      "regionIndex": 2,
+      "label": "Mendoza (Western wine region)",
+      "id": "mendoza",
+      "latitude": -32.8895,
+      "longitude": -68.8458,
+      "referenceNote": "Named accommodation-town point; local mountain/coastal conditions can differ.",
+      "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-68.8458&latitude=-32.8895&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "months": [
+        {
+          "month": 1,
+          "meanMmPerDay": 1.7369,
+          "wetDayFraction": 0.2839
+        },
+        {
+          "month": 2,
+          "meanMmPerDay": 1.4996,
+          "wetDayFraction": 0.265
+        },
+        {
+          "month": 3,
+          "meanMmPerDay": 1.0439,
+          "wetDayFraction": 0.1774
+        },
+        {
+          "month": 4,
+          "meanMmPerDay": 1.3014,
+          "wetDayFraction": 0.1067
+        },
+        {
+          "month": 5,
+          "meanMmPerDay": 0.6075,
+          "wetDayFraction": 0.1161
+        },
+        {
+          "month": 6,
+          "meanMmPerDay": 0.5713,
+          "wetDayFraction": 0.0567
+        },
+        {
+          "month": 7,
+          "meanMmPerDay": 0.3719,
+          "wetDayFraction": 0.0387
+        },
+        {
+          "month": 8,
+          "meanMmPerDay": 0.2904,
+          "wetDayFraction": 0.0226
+        },
+        {
+          "month": 9,
+          "meanMmPerDay": 0.1345,
+          "wetDayFraction": 0.03
+        },
+        {
+          "month": 10,
+          "meanMmPerDay": 0.5824,
+          "wetDayFraction": 0.0968
+        },
+        {
+          "month": 11,
+          "meanMmPerDay": 0.8461,
+          "wetDayFraction": 0.1467
+        },
+        {
+          "month": 12,
+          "meanMmPerDay": 0.9337,
+          "wetDayFraction": 0.1871
+        }
+      ],
+      "vulnerable": false,
+      "excludedMonths": [],
+      "reason": "Screening threshold not met at named town point."
+    },
+    {
+      "country": "argentina",
+      "regionIndex": 3,
+      "label": "El Calafate (Southern Patagonia)",
+      "id": "el-calafate",
+      "latitude": -50.3378,
+      "longitude": -72.2648,
+      "referenceNote": "Named accommodation-town point; local mountain/coastal conditions can differ.",
+      "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-72.2648&latitude=-50.3378&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "months": [
+        {
+          "month": 1,
+          "meanMmPerDay": 1.2351,
+          "wetDayFraction": 0.4065
+        },
+        {
+          "month": 2,
+          "meanMmPerDay": 1.3273,
+          "wetDayFraction": 0.3922
+        },
+        {
+          "month": 3,
+          "meanMmPerDay": 1.4341,
+          "wetDayFraction": 0.4065
+        },
+        {
+          "month": 4,
+          "meanMmPerDay": 1.3198,
+          "wetDayFraction": 0.3867
+        },
+        {
+          "month": 5,
+          "meanMmPerDay": 1.5372,
+          "wetDayFraction": 0.3581
+        },
+        {
+          "month": 6,
+          "meanMmPerDay": 1.5114,
+          "wetDayFraction": 0.43
+        },
+        {
+          "month": 7,
+          "meanMmPerDay": 1.224,
+          "wetDayFraction": 0.3645
+        },
+        {
+          "month": 8,
+          "meanMmPerDay": 1.3459,
+          "wetDayFraction": 0.3968
+        },
+        {
+          "month": 9,
+          "meanMmPerDay": 1.0734,
+          "wetDayFraction": 0.3067
+        },
+        {
+          "month": 10,
+          "meanMmPerDay": 1.0359,
+          "wetDayFraction": 0.3258
+        },
+        {
+          "month": 11,
+          "meanMmPerDay": 1.125,
+          "wetDayFraction": 0.3333
+        },
+        {
+          "month": 12,
+          "meanMmPerDay": 1.3995,
+          "wetDayFraction": 0.4516
+        }
+      ],
+      "vulnerable": false,
+      "excludedMonths": [],
+      "reason": "Screening threshold not met at named town point."
+    },
+    {
+      "country": "argentina",
+      "regionIndex": 4,
+      "label": "Ushuaia (Tierra del Fuego)",
+      "id": "ushuaia",
+      "latitude": -54.8019,
+      "longitude": -68.303,
+      "referenceNote": "Named accommodation-town point; local mountain/coastal conditions can differ.",
+      "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-68.303&latitude=-54.8019&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "months": [
+        {
+          "month": 1,
+          "meanMmPerDay": 2.1808,
+          "wetDayFraction": 0.6677
+        },
+        {
+          "month": 2,
+          "meanMmPerDay": 2.7481,
+          "wetDayFraction": 0.6078
+        },
+        {
+          "month": 3,
+          "meanMmPerDay": 2.3649,
+          "wetDayFraction": 0.5613
+        },
+        {
+          "month": 4,
+          "meanMmPerDay": 1.8353,
+          "wetDayFraction": 0.5033
+        },
+        {
+          "month": 5,
+          "meanMmPerDay": 1.6459,
+          "wetDayFraction": 0.4677
+        },
+        {
+          "month": 6,
+          "meanMmPerDay": 1.6249,
+          "wetDayFraction": 0.4833
+        },
+        {
+          "month": 7,
+          "meanMmPerDay": 1.3358,
+          "wetDayFraction": 0.4419
+        },
+        {
+          "month": 8,
+          "meanMmPerDay": 1.4615,
+          "wetDayFraction": 0.4355
+        },
+        {
+          "month": 9,
+          "meanMmPerDay": 1.2684,
+          "wetDayFraction": 0.39
+        },
+        {
+          "month": 10,
+          "meanMmPerDay": 1.3208,
+          "wetDayFraction": 0.4323
+        },
+        {
+          "month": 11,
+          "meanMmPerDay": 2.8214,
+          "wetDayFraction": 0.5633
+        },
+        {
+          "month": 12,
+          "meanMmPerDay": 2.068,
+          "wetDayFraction": 0.6419
+        }
+      ],
+      "vulnerable": false,
+      "excludedMonths": [],
+      "reason": "Screening threshold not met at named town point."
+    },
+    {
+      "country": "argentina",
+      "regionIndex": 5,
+      "label": "Salta (Northwest)",
+      "id": "salta",
+      "latitude": -24.7859,
+      "longitude": -65.4117,
+      "referenceNote": "Named accommodation-town point; local mountain/coastal conditions can differ.",
+      "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-65.4117&latitude=-24.7859&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "months": [
+        {
+          "month": 1,
+          "meanMmPerDay": 6.2414,
+          "wetDayFraction": 0.5355
+        },
+        {
+          "month": 2,
+          "meanMmPerDay": 5.4634,
+          "wetDayFraction": 0.5477
+        },
+        {
+          "month": 3,
+          "meanMmPerDay": 4.5855,
+          "wetDayFraction": 0.4742
+        },
+        {
+          "month": 4,
+          "meanMmPerDay": 3.1096,
+          "wetDayFraction": 0.2933
+        },
+        {
+          "month": 5,
+          "meanMmPerDay": 0.3101,
+          "wetDayFraction": 0.0871
+        },
+        {
+          "month": 6,
+          "meanMmPerDay": 0.1796,
+          "wetDayFraction": 0.05
+        },
+        {
+          "month": 7,
+          "meanMmPerDay": 0.0684,
+          "wetDayFraction": 0.0161
+        },
+        {
+          "month": 8,
+          "meanMmPerDay": 0.0756,
+          "wetDayFraction": 0.0226
+        },
+        {
+          "month": 9,
+          "meanMmPerDay": 0.1723,
+          "wetDayFraction": 0.0533
+        },
+        {
+          "month": 10,
+          "meanMmPerDay": 0.9108,
+          "wetDayFraction": 0.1452
+        },
+        {
+          "month": 11,
+          "meanMmPerDay": 2.5535,
+          "wetDayFraction": 0.3133
+        },
+        {
+          "month": 12,
+          "meanMmPerDay": 3.9932,
+          "wetDayFraction": 0.4774
+        }
+      ],
+      "vulnerable": false,
+      "excludedMonths": [],
+      "reason": "Screening threshold not met at named town point."
+    },
+    {
+      "country": "argentina",
+      "regionIndex": 6,
+      "label": "Purmamarca (Jujuy highlands)",
+      "id": "purmamarca",
+      "latitude": -23.7464,
+      "longitude": -65.4985,
+      "referenceNote": "Named accommodation-town point; local mountain/coastal conditions can differ.",
+      "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-65.4985&latitude=-23.7464&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "months": [
+        {
+          "month": 1,
+          "meanMmPerDay": 5.0116,
+          "wetDayFraction": 0.6129
+        },
+        {
+          "month": 2,
+          "meanMmPerDay": 4.6626,
+          "wetDayFraction": 0.6042
+        },
+        {
+          "month": 3,
+          "meanMmPerDay": 4.2801,
+          "wetDayFraction": 0.5
+        },
+        {
+          "month": 4,
+          "meanMmPerDay": 2.6948,
+          "wetDayFraction": 0.38
+        },
+        {
+          "month": 5,
+          "meanMmPerDay": 0.3203,
+          "wetDayFraction": 0.0774
+        },
+        {
+          "month": 6,
+          "meanMmPerDay": 0.1202,
+          "wetDayFraction": 0.04
+        },
+        {
+          "month": 7,
+          "meanMmPerDay": 0.0762,
+          "wetDayFraction": 0.0161
+        },
+        {
+          "month": 8,
+          "meanMmPerDay": 0.0581,
+          "wetDayFraction": 0.0194
+        },
+        {
+          "month": 9,
+          "meanMmPerDay": 0.2043,
+          "wetDayFraction": 0.0533
+        },
+        {
+          "month": 10,
+          "meanMmPerDay": 1.2105,
+          "wetDayFraction": 0.2065
+        },
+        {
+          "month": 11,
+          "meanMmPerDay": 2.3659,
+          "wetDayFraction": 0.36
+        },
+        {
+          "month": 12,
+          "meanMmPerDay": 3.4408,
+          "wetDayFraction": 0.5161
+        }
+      ],
+      "vulnerable": false,
+      "excludedMonths": [],
+      "reason": "Screening threshold not met at named town point."
+    },
+    {
+      "country": "argentina",
+      "regionIndex": 7,
+      "label": "Córdoba (Central Argentina)",
+      "id": "cordoba",
+      "latitude": -31.4201,
+      "longitude": -64.1888,
+      "referenceNote": "Named accommodation-town point; local mountain/coastal conditions can differ.",
+      "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-64.1888&latitude=-31.4201&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "months": [
+        {
+          "month": 1,
+          "meanMmPerDay": 4.254,
+          "wetDayFraction": 0.4
+        },
+        {
+          "month": 2,
+          "meanMmPerDay": 3.9067,
+          "wetDayFraction": 0.3675
+        },
+        {
+          "month": 3,
+          "meanMmPerDay": 2.8439,
+          "wetDayFraction": 0.2677
+        },
+        {
+          "month": 4,
+          "meanMmPerDay": 1.6744,
+          "wetDayFraction": 0.2367
+        },
+        {
+          "month": 5,
+          "meanMmPerDay": 0.8289,
+          "wetDayFraction": 0.1226
+        },
+        {
+          "month": 6,
+          "meanMmPerDay": 0.9083,
+          "wetDayFraction": 0.05
+        },
+        {
+          "month": 7,
+          "meanMmPerDay": 0.1885,
+          "wetDayFraction": 0.0387
+        },
+        {
+          "month": 8,
+          "meanMmPerDay": 0.3335,
+          "wetDayFraction": 0.0387
+        },
+        {
+          "month": 9,
+          "meanMmPerDay": 0.7014,
+          "wetDayFraction": 0.09
+        },
+        {
+          "month": 10,
+          "meanMmPerDay": 1.8036,
+          "wetDayFraction": 0.2258
+        },
+        {
+          "month": 11,
+          "meanMmPerDay": 3.2966,
+          "wetDayFraction": 0.3167
+        },
+        {
+          "month": 12,
+          "meanMmPerDay": 3.378,
+          "wetDayFraction": 0.3419
+        }
+      ],
+      "vulnerable": false,
+      "excludedMonths": [],
+      "reason": "Screening threshold not met at named town point."
+    },
+    {
+      "country": "argentina",
+      "regionIndex": 8,
+      "label": "Puerto Madryn (Patagonian coast)",
+      "id": "puerto-madryn",
+      "latitude": -42.7692,
+      "longitude": -65.0385,
+      "referenceNote": "Named accommodation-town point; local mountain/coastal conditions can differ.",
+      "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-65.0385&latitude=-42.7692&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "months": [
+        {
+          "month": 1,
+          "meanMmPerDay": 0.6046,
+          "wetDayFraction": 0.0903
+        },
+        {
+          "month": 2,
+          "meanMmPerDay": 0.6261,
+          "wetDayFraction": 0.1025
+        },
+        {
+          "month": 3,
+          "meanMmPerDay": 1.7489,
+          "wetDayFraction": 0.1129
+        },
+        {
+          "month": 4,
+          "meanMmPerDay": 1.3565,
+          "wetDayFraction": 0.1
+        },
+        {
+          "month": 5,
+          "meanMmPerDay": 1.7461,
+          "wetDayFraction": 0.1
+        },
+        {
+          "month": 6,
+          "meanMmPerDay": 1.5719,
+          "wetDayFraction": 0.1533
+        },
+        {
+          "month": 7,
+          "meanMmPerDay": 0.7128,
+          "wetDayFraction": 0.1419
+        },
+        {
+          "month": 8,
+          "meanMmPerDay": 0.4736,
+          "wetDayFraction": 0.1097
+        },
+        {
+          "month": 9,
+          "meanMmPerDay": 0.6254,
+          "wetDayFraction": 0.1133
+        },
+        {
+          "month": 10,
+          "meanMmPerDay": 0.4086,
+          "wetDayFraction": 0.0935
+        },
+        {
+          "month": 11,
+          "meanMmPerDay": 1.0233,
+          "wetDayFraction": 0.1267
+        },
+        {
+          "month": 12,
+          "meanMmPerDay": 0.5284,
+          "wetDayFraction": 0.0871
+        }
+      ],
+      "vulnerable": false,
+      "excludedMonths": [],
+      "reason": "Screening threshold not met at named town point."
+    },
+    {
+      "country": "argentina",
+      "regionIndex": 9,
+      "label": "Mar del Plata (Atlantic coast)",
+      "id": "mar-del-plata",
+      "latitude": -38.0055,
+      "longitude": -57.5426,
+      "referenceNote": "Named accommodation-town point; local mountain/coastal conditions can differ.",
+      "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-57.5426&latitude=-38.0055&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "months": [
+        {
+          "month": 1,
+          "meanMmPerDay": 4.4217,
+          "wetDayFraction": 0.3613
+        },
+        {
+          "month": 2,
+          "meanMmPerDay": 5.4265,
+          "wetDayFraction": 0.4205
+        },
+        {
+          "month": 3,
+          "meanMmPerDay": 4.279,
+          "wetDayFraction": 0.3774
+        },
+        {
+          "month": 4,
+          "meanMmPerDay": 4.1055,
+          "wetDayFraction": 0.36
+        },
+        {
+          "month": 5,
+          "meanMmPerDay": 2.7763,
+          "wetDayFraction": 0.3226
+        },
+        {
+          "month": 6,
+          "meanMmPerDay": 2.2128,
+          "wetDayFraction": 0.2967
+        },
+        {
+          "month": 7,
+          "meanMmPerDay": 2.4517,
+          "wetDayFraction": 0.3226
+        },
+        {
+          "month": 8,
+          "meanMmPerDay": 1.9128,
+          "wetDayFraction": 0.2613
+        },
+        {
+          "month": 9,
+          "meanMmPerDay": 2.7972,
+          "wetDayFraction": 0.2433
+        },
+        {
+          "month": 10,
+          "meanMmPerDay": 3.0382,
+          "wetDayFraction": 0.2935
+        },
+        {
+          "month": 11,
+          "meanMmPerDay": 4.3224,
+          "wetDayFraction": 0.3467
+        },
+        {
+          "month": 12,
+          "meanMmPerDay": 4.6765,
+          "wetDayFraction": 0.371
+        }
+      ],
+      "vulnerable": false,
+      "excludedMonths": [],
+      "reason": "Screening threshold not met at named town point."
     }
   ]
 }
