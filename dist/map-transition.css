@@ -100,11 +100,11 @@
 .season-table-toolbar{display:flex;justify-content:flex-end;padding:0 0 10px}
 .detail-panel .season-table-expand{font:500 12px var(--sans);padding:8px 12px;border:1px solid #b9c9e4;border-radius:8px;background:#fff;color:#315491;cursor:pointer}
 .season-table-expand:focus-visible{outline:3px solid #709ce4;outline-offset:2px}
-.season-table-frame.is-expanded{position:fixed;inset:70px 24px auto;z-index:100;background:#fff;padding:18px;border:1px solid #bccbe0;border-radius:12px;box-shadow:0 16px 70px #17243d55;max-height:calc(100dvh - 110px);overflow:auto}
-.season-table-frame.is-expanded .table-scroll{max-height:calc(100dvh - 190px);overflow:auto}
+.season-table-frame.is-expanded{position:fixed;inset:50% auto auto 50%;transform:translate(-50%,-50%);width:calc(100vw - 48px);box-sizing:border-box;z-index:100;background:#fff;padding:18px;border:1px solid #bccbe0;border-radius:12px;box-shadow:0 16px 70px #17243d55;max-height:calc(100dvh - 48px);overflow:auto}
+.season-table-frame.is-expanded .table-scroll{max-height:calc(100dvh - 130px);overflow:auto}
 .season-table-frame.is-expanded .season-table{min-width:900px}
 .season-table-frame.is-expanded .season-table thead{position:sticky;top:0;background:#f3f7fd;z-index:1}
-@media(max-width:700px){.season-table-frame.is-expanded{inset:65px 8px auto;padding:10px}.season-table-frame.is-expanded .season-table{min-width:900px}}
+@media(max-width:700px){.season-table-frame.is-expanded{width:calc(100vw - 16px);max-height:calc(100dvh - 16px);padding:10px}.season-table-frame.is-expanded .season-table{min-width:900px}}
 
 .season-table-backdrop:not([hidden]){position:fixed;inset:0;z-index:99;background:rgba(24,41,64,.12)}
 .detail-panel .season-table td{padding:0}
