@@ -107,6 +107,20 @@
         "timeStandard": "Local solar time",
         "sourceUrl": "https://power.larc.nasa.gov/docs/services/api/temporal/daily/",
         "rainDefinition": "PRECTOTCORR total precipitation, including snow, averaged across all calendar days in mm/day. Alternative to ERA5 rain-only data due daily API quota; not directly identical."
+      },
+      "egypt": {
+        "model": "NASA POWER/MERRA-2",
+        "period": "2016–2025",
+        "timeStandard": "Local solar time",
+        "sourceUrl": "https://power.larc.nasa.gov/docs/services/api/temporal/daily/",
+        "rainDefinition": "PRECTOTCORR total precipitation, including snow, averaged across all calendar days in mm/day. Alternative to ERA5 rain-only data due daily API quota; not directly identical."
+      },
+      "morocco": {
+        "model": "NASA POWER/MERRA-2",
+        "period": "2016–2025",
+        "timeStandard": "Local solar time",
+        "sourceUrl": "https://power.larc.nasa.gov/docs/services/api/temporal/daily/",
+        "rainDefinition": "PRECTOTCORR total precipitation, including snow, averaged across all calendar days in mm/day. Alternative to ERA5 rain-only data due daily API quota; not directly identical."
       }
     }
   },
@@ -28434,6 +28448,2009 @@
       },
       "events": [],
       "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "egypt",
+      "id": "cairo",
+      "name": "Cairo",
+      "area": "Giza and capital region",
+      "latitude": 30.0444,
+      "longitude": 31.2357,
+      "airports": [
+        [
+          "CAI",
+          "Cairo International"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 0,
+      "gridLatitude": 30.0444,
+      "gridLongitude": 31.2357,
+      "elevation": 135.44,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=31.2357&latitude=30.0444&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeSources": [
+        "https://www.experienceegypt.eg/en/region/12/the-nile"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 12.16,
+          "meanDailyHighC": 18.99,
+          "meanRainMmPerDay": 0.7403,
+          "meanRelativeHumidityPct": 64.82,
+          "rainyDayFraction": 0.1097
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 13.33,
+          "meanDailyHighC": 20.68,
+          "meanRainMmPerDay": 0.4055,
+          "meanRelativeHumidityPct": 63.1,
+          "rainyDayFraction": 0.0848
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 16.6,
+          "meanDailyHighC": 24.74,
+          "meanRainMmPerDay": 0.8981,
+          "meanRelativeHumidityPct": 55.47,
+          "rainyDayFraction": 0.0935
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 21.03,
+          "meanDailyHighC": 29.81,
+          "meanRainMmPerDay": 0.5289,
+          "meanRelativeHumidityPct": 47.23,
+          "rainyDayFraction": 0.0467
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.69,
+          "meanDailyHighC": 34.51,
+          "meanRainMmPerDay": 0.0339,
+          "meanRelativeHumidityPct": 40.08,
+          "rainyDayFraction": 0.0097
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 29.19,
+          "meanDailyHighC": 37.84,
+          "meanRainMmPerDay": 0.0365,
+          "meanRelativeHumidityPct": 40.05,
+          "rainyDayFraction": 0.01
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 30.64,
+          "meanDailyHighC": 39.13,
+          "meanRainMmPerDay": 0.0325,
+          "meanRelativeHumidityPct": 42.1,
+          "rainyDayFraction": 0.0129
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 30.36,
+          "meanDailyHighC": 38.7,
+          "meanRainMmPerDay": 0.0114,
+          "meanRelativeHumidityPct": 45.26,
+          "rainyDayFraction": 0.0032
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 28.11,
+          "meanDailyHighC": 36.24,
+          "meanRainMmPerDay": 0.0422,
+          "meanRelativeHumidityPct": 50.09,
+          "rainyDayFraction": 0.02
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.01,
+          "meanDailyHighC": 31.49,
+          "meanRainMmPerDay": 0.4223,
+          "meanRelativeHumidityPct": 56.7,
+          "rainyDayFraction": 0.0581
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 19.22,
+          "meanDailyHighC": 26.14,
+          "meanRainMmPerDay": 1.0588,
+          "meanRelativeHumidityPct": 61.02,
+          "rainyDayFraction": 0.0667
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 14.4,
+          "meanDailyHighC": 20.93,
+          "meanRainMmPerDay": 0.4589,
+          "meanRelativeHumidityPct": 66.82,
+          "rainyDayFraction": 0.0645
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Egyptian heritage/desert/coastal and Moroccan city/desert/coastal contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          7,
+          8,
+          6,
+          9,
+          5,
+          4,
+          10,
+          3,
+          11,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.experienceegypt.eg/en/region/12/the-nile"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          7,
+          8,
+          6,
+          9,
+          5,
+          4,
+          10,
+          3,
+          11,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.experienceegypt.eg/en/region/12/the-nile"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "egypt",
+      "id": "luxor",
+      "name": "Luxor",
+      "area": "Nile Valley",
+      "latitude": 25.6872,
+      "longitude": 32.6396,
+      "airports": [
+        [
+          "LXR",
+          "Luxor"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 1,
+      "gridLatitude": 25.6872,
+      "gridLongitude": 32.6396,
+      "elevation": 248.37,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=32.6396&latitude=25.6872&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeSources": [
+        "https://www.experienceegypt.eg/en/region/12/the-nile"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 13.28,
+          "meanDailyHighC": 21.95,
+          "meanRainMmPerDay": 0.0278,
+          "meanRelativeHumidityPct": 45.15,
+          "rainyDayFraction": 0.0065
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 15.22,
+          "meanDailyHighC": 24.22,
+          "meanRainMmPerDay": 0.0079,
+          "meanRelativeHumidityPct": 39.02,
+          "rainyDayFraction": 0
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 20.18,
+          "meanDailyHighC": 29.39,
+          "meanRainMmPerDay": 0.0025,
+          "meanRelativeHumidityPct": 27.07,
+          "rainyDayFraction": 0
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.35,
+          "meanDailyHighC": 34.64,
+          "meanRainMmPerDay": 0.0003,
+          "meanRelativeHumidityPct": 20.24,
+          "rainyDayFraction": 0
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 29.83,
+          "meanDailyHighC": 38.76,
+          "meanRainMmPerDay": 0.012,
+          "meanRelativeHumidityPct": 17.76,
+          "rainyDayFraction": 0.0032
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 32.65,
+          "meanDailyHighC": 41.22,
+          "meanRainMmPerDay": 0.0004,
+          "meanRelativeHumidityPct": 18.41,
+          "rainyDayFraction": 0
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 33.08,
+          "meanDailyHighC": 41.1,
+          "meanRainMmPerDay": 0,
+          "meanRelativeHumidityPct": 20.41,
+          "rainyDayFraction": 0
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 33.3,
+          "meanDailyHighC": 41.57,
+          "meanRainMmPerDay": 0.0187,
+          "meanRelativeHumidityPct": 22.17,
+          "rainyDayFraction": 0.0065
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 30.75,
+          "meanDailyHighC": 39.55,
+          "meanRainMmPerDay": 0,
+          "meanRelativeHumidityPct": 25.69,
+          "rainyDayFraction": 0
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.53,
+          "meanDailyHighC": 35.36,
+          "meanRainMmPerDay": 0.0008,
+          "meanRelativeHumidityPct": 30.91,
+          "rainyDayFraction": 0
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 20.64,
+          "meanDailyHighC": 29.04,
+          "meanRainMmPerDay": 0.0006,
+          "meanRelativeHumidityPct": 40.18,
+          "rainyDayFraction": 0
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 15.45,
+          "meanDailyHighC": 23.83,
+          "meanRainMmPerDay": 0.0025,
+          "meanRelativeHumidityPct": 48.32,
+          "rainyDayFraction": 0
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Egyptian heritage/desert/coastal and Moroccan city/desert/coastal contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          7,
+          8,
+          6,
+          9,
+          5,
+          4,
+          10,
+          3,
+          11,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.experienceegypt.eg/en/region/12/the-nile"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          7,
+          8,
+          6,
+          9,
+          5,
+          4,
+          10,
+          3,
+          11,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.experienceegypt.eg/en/region/12/the-nile"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "egypt",
+      "id": "hurghada",
+      "name": "Hurghada",
+      "area": "Red Sea",
+      "latitude": 27.2579,
+      "longitude": 33.8116,
+      "airports": [
+        [
+          "HRG",
+          "Hurghada"
+        ]
+      ],
+      "climateType": "beach",
+      "regionIndex": 2,
+      "gridLatitude": 27.2579,
+      "gridLongitude": 33.8116,
+      "elevation": 42.16,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=33.8116&latitude=27.2579&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Approved beach-oriented holiday base; 25°C target.",
+      "climateTypeSources": [
+        "https://www.experienceegypt.eg/en/region/12/the-nile"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.22,
+          "meanDailyHighC": 21.35,
+          "meanRainMmPerDay": 0.0326,
+          "meanRelativeHumidityPct": 57.25,
+          "rainyDayFraction": 0.0097
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 18.73,
+          "meanDailyHighC": 22.01,
+          "meanRainMmPerDay": 0.0554,
+          "meanRelativeHumidityPct": 55.9,
+          "rainyDayFraction": 0.0177
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 21.11,
+          "meanDailyHighC": 24.75,
+          "meanRainMmPerDay": 0.0179,
+          "meanRelativeHumidityPct": 52.03,
+          "rainyDayFraction": 0.0032
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 24.27,
+          "meanDailyHighC": 28.13,
+          "meanRainMmPerDay": 0.0089,
+          "meanRelativeHumidityPct": 47.81,
+          "rainyDayFraction": 0
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.63,
+          "meanDailyHighC": 31.54,
+          "meanRainMmPerDay": 0.007,
+          "meanRelativeHumidityPct": 44.35,
+          "rainyDayFraction": 0.0032
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 30.03,
+          "meanDailyHighC": 33.81,
+          "meanRainMmPerDay": 0,
+          "meanRelativeHumidityPct": 44.7,
+          "rainyDayFraction": 0
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 31.41,
+          "meanDailyHighC": 34.87,
+          "meanRainMmPerDay": 0,
+          "meanRelativeHumidityPct": 45.52,
+          "rainyDayFraction": 0
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 31.67,
+          "meanDailyHighC": 35.17,
+          "meanRainMmPerDay": 0.0015,
+          "meanRelativeHumidityPct": 48.48,
+          "rainyDayFraction": 0
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 29.87,
+          "meanDailyHighC": 33.58,
+          "meanRainMmPerDay": 0.0041,
+          "meanRelativeHumidityPct": 52.87,
+          "rainyDayFraction": 0.0033
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.23,
+          "meanDailyHighC": 30.76,
+          "meanRainMmPerDay": 0.0952,
+          "meanRelativeHumidityPct": 56.79,
+          "rainyDayFraction": 0.0065
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 24.02,
+          "meanDailyHighC": 27.1,
+          "meanRainMmPerDay": 0.0254,
+          "meanRelativeHumidityPct": 57.08,
+          "rainyDayFraction": 0.0067
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 20.38,
+          "meanDailyHighC": 23.39,
+          "meanRainMmPerDay": 0.0122,
+          "meanRelativeHumidityPct": 57.65,
+          "rainyDayFraction": 0.0032
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Egyptian heritage/desert/coastal and Moroccan city/desert/coastal contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          7,
+          8,
+          6,
+          9,
+          5,
+          4,
+          10,
+          3,
+          11,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.experienceegypt.eg/en/region/12/the-nile"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          7,
+          8,
+          6,
+          9,
+          5,
+          4,
+          10,
+          3,
+          11,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.experienceegypt.eg/en/region/12/the-nile"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "egypt",
+      "id": "farafra",
+      "name": "Farafra",
+      "area": "White Desert",
+      "latitude": 27.059,
+      "longitude": 27.97,
+      "airports": [
+        [
+          "CAI",
+          "Cairo International"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 3,
+      "gridLatitude": 27.059,
+      "gridLongitude": 27.97,
+      "elevation": 137.49,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=27.97&latitude=27.059&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://www.experienceegypt.eg/en/region/12/the-nile"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates. Cairo is a distant gateway requiring substantial overland travel. White Desert trips need locally arranged transport/guiding and confirmation of current access. Oasis weather is not an excursion safety assessment.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 11.52,
+          "meanDailyHighC": 18.76,
+          "meanRainMmPerDay": 0.0522,
+          "meanRelativeHumidityPct": 55.54,
+          "rainyDayFraction": 0.0097
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 13.06,
+          "meanDailyHighC": 20.6,
+          "meanRainMmPerDay": 0.2486,
+          "meanRelativeHumidityPct": 49.38,
+          "rainyDayFraction": 0.0035
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.41,
+          "meanDailyHighC": 25.5,
+          "meanRainMmPerDay": 0.0605,
+          "meanRelativeHumidityPct": 37.06,
+          "rainyDayFraction": 0.0129
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 22.6,
+          "meanDailyHighC": 31.15,
+          "meanRainMmPerDay": 0.0008,
+          "meanRelativeHumidityPct": 27.71,
+          "rainyDayFraction": 0
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.35,
+          "meanDailyHighC": 35.43,
+          "meanRainMmPerDay": 0.001,
+          "meanRelativeHumidityPct": 23.94,
+          "rainyDayFraction": 0
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 30.49,
+          "meanDailyHighC": 38.14,
+          "meanRainMmPerDay": 0.0177,
+          "meanRelativeHumidityPct": 24.44,
+          "rainyDayFraction": 0.0033
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 31.4,
+          "meanDailyHighC": 38.64,
+          "meanRainMmPerDay": 0,
+          "meanRelativeHumidityPct": 25.82,
+          "rainyDayFraction": 0
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 31.54,
+          "meanDailyHighC": 38.69,
+          "meanRainMmPerDay": 0.0011,
+          "meanRelativeHumidityPct": 28.02,
+          "rainyDayFraction": 0
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 28.58,
+          "meanDailyHighC": 35.86,
+          "meanRainMmPerDay": 0,
+          "meanRelativeHumidityPct": 34,
+          "rainyDayFraction": 0
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 23.88,
+          "meanDailyHighC": 31.07,
+          "meanRainMmPerDay": 0.0064,
+          "meanRelativeHumidityPct": 41.26,
+          "rainyDayFraction": 0
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 18.32,
+          "meanDailyHighC": 25.3,
+          "meanRainMmPerDay": 0.1058,
+          "meanRelativeHumidityPct": 49.32,
+          "rainyDayFraction": 0.0167
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 13.51,
+          "meanDailyHighC": 20.38,
+          "meanRainMmPerDay": 0.0549,
+          "meanRelativeHumidityPct": 58.95,
+          "rainyDayFraction": 0.0129
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Egyptian heritage/desert/coastal and Moroccan city/desert/coastal contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          7,
+          8,
+          6,
+          9,
+          5,
+          4,
+          10,
+          3,
+          11,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.experienceegypt.eg/en/region/12/the-nile"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          7,
+          8,
+          6,
+          9,
+          5,
+          4,
+          10,
+          3,
+          11,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.experienceegypt.eg/en/region/12/the-nile"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "egypt",
+      "id": "abu-simbel",
+      "name": "Abu Simbel",
+      "area": "Lake Nasser",
+      "latitude": 22.3457,
+      "longitude": 31.6157,
+      "airports": [
+        [
+          "ABS",
+          "Abu Simbel"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 4,
+      "gridLatitude": 22.3457,
+      "gridLongitude": 31.6157,
+      "elevation": 226.54,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=31.6157&latitude=22.3457&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeSources": [
+        "https://www.experienceegypt.eg/en/region/12/the-nile"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates. Verify current ABS flight connections and local accommodation. Aswan is about 300 km away and is not treated as a nearby shared base.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 15.64,
+          "meanDailyHighC": 23.39,
+          "meanRainMmPerDay": 0.0016,
+          "meanRelativeHumidityPct": 40.71,
+          "rainyDayFraction": 0
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 17.46,
+          "meanDailyHighC": 25.47,
+          "meanRainMmPerDay": 0.0008,
+          "meanRelativeHumidityPct": 34.85,
+          "rainyDayFraction": 0
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 22.6,
+          "meanDailyHighC": 30.88,
+          "meanRainMmPerDay": 0.0009,
+          "meanRelativeHumidityPct": 25.64,
+          "rainyDayFraction": 0
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 27.53,
+          "meanDailyHighC": 35.83,
+          "meanRainMmPerDay": 0.0004,
+          "meanRelativeHumidityPct": 20.6,
+          "rainyDayFraction": 0
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 31.73,
+          "meanDailyHighC": 39.56,
+          "meanRainMmPerDay": 0.0016,
+          "meanRelativeHumidityPct": 19.13,
+          "rainyDayFraction": 0
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 34.25,
+          "meanDailyHighC": 41.63,
+          "meanRainMmPerDay": 0,
+          "meanRelativeHumidityPct": 19.26,
+          "rainyDayFraction": 0
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 34.69,
+          "meanDailyHighC": 41.44,
+          "meanRainMmPerDay": 0.0021,
+          "meanRelativeHumidityPct": 21.27,
+          "rainyDayFraction": 0
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 35.21,
+          "meanDailyHighC": 41.79,
+          "meanRainMmPerDay": 0.017,
+          "meanRelativeHumidityPct": 23.76,
+          "rainyDayFraction": 0.0032
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 32.88,
+          "meanDailyHighC": 40.16,
+          "meanRainMmPerDay": 0,
+          "meanRelativeHumidityPct": 24.29,
+          "rainyDayFraction": 0
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.81,
+          "meanDailyHighC": 36.33,
+          "meanRainMmPerDay": 0.0021,
+          "meanRelativeHumidityPct": 28.51,
+          "rainyDayFraction": 0
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 22.69,
+          "meanDailyHighC": 30,
+          "meanRainMmPerDay": 0.0007,
+          "meanRelativeHumidityPct": 37.02,
+          "rainyDayFraction": 0
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.77,
+          "meanDailyHighC": 25.22,
+          "meanRainMmPerDay": 0.0122,
+          "meanRelativeHumidityPct": 43.03,
+          "rainyDayFraction": 0.0032
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Egyptian heritage/desert/coastal and Moroccan city/desert/coastal contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          7,
+          8,
+          6,
+          9,
+          5,
+          4,
+          10,
+          3,
+          11,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.experienceegypt.eg/en/region/12/the-nile"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          7,
+          8,
+          6,
+          9,
+          5,
+          4,
+          10,
+          3,
+          11,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.experienceegypt.eg/en/region/12/the-nile"
+        ]
+      },
+      "events": [
+        {
+          "name": "Abu Simbel solar alignment",
+          "months": [
+            2,
+            10
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://egymonuments.gov.eg/en/archaeological-sites/abu-simbel"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "egypt",
+      "id": "aswan",
+      "name": "Aswan",
+      "area": "Upper Nile",
+      "latitude": 24.0889,
+      "longitude": 32.8998,
+      "airports": [
+        [
+          "ASW",
+          "Aswan"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 5,
+      "gridLatitude": 24.0889,
+      "gridLongitude": 32.8998,
+      "elevation": 253.64,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=32.8998&latitude=24.0889&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeSources": [
+        "https://www.experienceegypt.eg/en/region/12/the-nile"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 14.94,
+          "meanDailyHighC": 24.03,
+          "meanRainMmPerDay": 0.0248,
+          "meanRelativeHumidityPct": 41.02,
+          "rainyDayFraction": 0.0032
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 16.87,
+          "meanDailyHighC": 26.19,
+          "meanRainMmPerDay": 0.0066,
+          "meanRelativeHumidityPct": 35.02,
+          "rainyDayFraction": 0
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 21.95,
+          "meanDailyHighC": 31.46,
+          "meanRainMmPerDay": 0.0005,
+          "meanRelativeHumidityPct": 24.1,
+          "rainyDayFraction": 0
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 27.08,
+          "meanDailyHighC": 36.51,
+          "meanRainMmPerDay": 0.0002,
+          "meanRelativeHumidityPct": 17.54,
+          "rainyDayFraction": 0
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 31.52,
+          "meanDailyHighC": 40.53,
+          "meanRainMmPerDay": 0.0089,
+          "meanRelativeHumidityPct": 15.24,
+          "rainyDayFraction": 0.0032
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 34.23,
+          "meanDailyHighC": 42.97,
+          "meanRainMmPerDay": 0.0039,
+          "meanRelativeHumidityPct": 15.31,
+          "rainyDayFraction": 0.0033
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 34.61,
+          "meanDailyHighC": 42.76,
+          "meanRainMmPerDay": 0,
+          "meanRelativeHumidityPct": 17.51,
+          "rainyDayFraction": 0
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 35.1,
+          "meanDailyHighC": 43.18,
+          "meanRainMmPerDay": 0.0085,
+          "meanRelativeHumidityPct": 19.37,
+          "rainyDayFraction": 0.0032
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 32.71,
+          "meanDailyHighC": 41.45,
+          "meanRainMmPerDay": 0.0001,
+          "meanRelativeHumidityPct": 21.05,
+          "rainyDayFraction": 0
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.62,
+          "meanDailyHighC": 37.37,
+          "meanRainMmPerDay": 0.006,
+          "meanRelativeHumidityPct": 26.26,
+          "rainyDayFraction": 0.0032
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 22.37,
+          "meanDailyHighC": 30.79,
+          "meanRainMmPerDay": 0.0002,
+          "meanRelativeHumidityPct": 36.64,
+          "rainyDayFraction": 0
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.19,
+          "meanDailyHighC": 25.87,
+          "meanRainMmPerDay": 0.009,
+          "meanRelativeHumidityPct": 43.73,
+          "rainyDayFraction": 0
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Egyptian heritage/desert/coastal and Moroccan city/desert/coastal contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          7,
+          8,
+          6,
+          9,
+          5,
+          4,
+          10,
+          3,
+          11,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.experienceegypt.eg/en/region/12/the-nile"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          7,
+          8,
+          6,
+          9,
+          5,
+          4,
+          10,
+          3,
+          11,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.experienceegypt.eg/en/region/12/the-nile"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "morocco",
+      "id": "marrakech",
+      "name": "Marrakech",
+      "area": "Inland Morocco",
+      "latitude": 31.6295,
+      "longitude": -7.9811,
+      "airports": [
+        [
+          "RAK",
+          "Marrakech Menara"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 0,
+      "gridLatitude": 31.6295,
+      "gridLongitude": -7.9811,
+      "elevation": 836.94,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-7.9811&latitude=31.6295&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeSources": [
+        "https://www.visitmorocco.com/en"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 11.1,
+          "meanDailyHighC": 18.97,
+          "meanRainMmPerDay": 0.6891,
+          "meanRelativeHumidityPct": 52.27,
+          "rainyDayFraction": 0.1097
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 12.6,
+          "meanDailyHighC": 20.57,
+          "meanRainMmPerDay": 1.1686,
+          "meanRelativeHumidityPct": 52.3,
+          "rainyDayFraction": 0.1731
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 14.12,
+          "meanDailyHighC": 22.07,
+          "meanRainMmPerDay": 1.562,
+          "meanRelativeHumidityPct": 56.61,
+          "rainyDayFraction": 0.2452
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 17.11,
+          "meanDailyHighC": 25.41,
+          "meanRainMmPerDay": 0.8208,
+          "meanRelativeHumidityPct": 54.7,
+          "rainyDayFraction": 0.1433
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 21.1,
+          "meanDailyHighC": 29.81,
+          "meanRainMmPerDay": 0.4193,
+          "meanRelativeHumidityPct": 48.11,
+          "rainyDayFraction": 0.0903
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 24.4,
+          "meanDailyHighC": 33.27,
+          "meanRainMmPerDay": 0.4403,
+          "meanRelativeHumidityPct": 43.82,
+          "rainyDayFraction": 0.0267
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 29.46,
+          "meanDailyHighC": 38.8,
+          "meanRainMmPerDay": 0.332,
+          "meanRelativeHumidityPct": 32.1,
+          "rainyDayFraction": 0.0194
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 29.78,
+          "meanDailyHighC": 38.81,
+          "meanRainMmPerDay": 0.2083,
+          "meanRelativeHumidityPct": 31.57,
+          "rainyDayFraction": 0.0581
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 24.96,
+          "meanDailyHighC": 33.41,
+          "meanRainMmPerDay": 0.4507,
+          "meanRelativeHumidityPct": 43.04,
+          "rainyDayFraction": 0.0733
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 21.47,
+          "meanDailyHighC": 29.24,
+          "meanRainMmPerDay": 0.6948,
+          "meanRelativeHumidityPct": 44.13,
+          "rainyDayFraction": 0.1419
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 15.85,
+          "meanDailyHighC": 23.28,
+          "meanRainMmPerDay": 1.0116,
+          "meanRelativeHumidityPct": 48.97,
+          "rainyDayFraction": 0.1633
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 12.08,
+          "meanDailyHighC": 19.53,
+          "meanRainMmPerDay": 1.2446,
+          "meanRelativeHumidityPct": 56.12,
+          "rainyDayFraction": 0.1806
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Egyptian heritage/desert/coastal and Moroccan city/desert/coastal contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          7,
+          8,
+          1,
+          2,
+          12,
+          6,
+          11,
+          9,
+          3,
+          5,
+          4,
+          10
+        ],
+        "sourceUrls": [
+          "https://www.visitmorocco.com/en"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          7,
+          8,
+          1,
+          2,
+          12,
+          6,
+          11,
+          9,
+          3,
+          5,
+          4,
+          10
+        ],
+        "sourceUrls": [
+          "https://www.visitmorocco.com/en"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "morocco",
+      "id": "fes",
+      "name": "Fes",
+      "area": "Northern interior",
+      "latitude": 34.0331,
+      "longitude": -5.0003,
+      "airports": [
+        [
+          "FEZ",
+          "Fes Saiss"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 1,
+      "gridLatitude": 34.0331,
+      "gridLongitude": -5.0003,
+      "elevation": 575.32,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-5.0003&latitude=34.0331&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeSources": [
+        "https://www.visitmorocco.com/en"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 10.89,
+          "meanDailyHighC": 17.75,
+          "meanRainMmPerDay": 2.2627,
+          "meanRelativeHumidityPct": 65.62,
+          "rainyDayFraction": 0.2484
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 12.49,
+          "meanDailyHighC": 19.84,
+          "meanRainMmPerDay": 2.2966,
+          "meanRelativeHumidityPct": 63.82,
+          "rainyDayFraction": 0.265
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 13.74,
+          "meanDailyHighC": 20.75,
+          "meanRainMmPerDay": 3.7433,
+          "meanRelativeHumidityPct": 67.83,
+          "rainyDayFraction": 0.3806
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 16.88,
+          "meanDailyHighC": 24.21,
+          "meanRainMmPerDay": 1.9777,
+          "meanRelativeHumidityPct": 64.66,
+          "rainyDayFraction": 0.2633
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 20.82,
+          "meanDailyHighC": 28.7,
+          "meanRainMmPerDay": 0.9996,
+          "meanRelativeHumidityPct": 57.66,
+          "rainyDayFraction": 0.1871
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 24.93,
+          "meanDailyHighC": 33.36,
+          "meanRainMmPerDay": 0.2365,
+          "meanRelativeHumidityPct": 50.12,
+          "rainyDayFraction": 0.0633
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 29.76,
+          "meanDailyHighC": 38.84,
+          "meanRainMmPerDay": 0.0933,
+          "meanRelativeHumidityPct": 36.48,
+          "rainyDayFraction": 0.029
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 30.25,
+          "meanDailyHighC": 39.08,
+          "meanRainMmPerDay": 0.2418,
+          "meanRelativeHumidityPct": 35.03,
+          "rainyDayFraction": 0.0613
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.69,
+          "meanDailyHighC": 33.74,
+          "meanRainMmPerDay": 0.6051,
+          "meanRelativeHumidityPct": 45.48,
+          "rainyDayFraction": 0.1267
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 21.65,
+          "meanDailyHighC": 29.21,
+          "meanRainMmPerDay": 2.0602,
+          "meanRelativeHumidityPct": 49.15,
+          "rainyDayFraction": 0.1935
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 15.39,
+          "meanDailyHighC": 22.3,
+          "meanRainMmPerDay": 1.8634,
+          "meanRelativeHumidityPct": 60.2,
+          "rainyDayFraction": 0.2667
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 12.15,
+          "meanDailyHighC": 18.81,
+          "meanRainMmPerDay": 2.9559,
+          "meanRelativeHumidityPct": 67.54,
+          "rainyDayFraction": 0.2935
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Egyptian heritage/desert/coastal and Moroccan city/desert/coastal contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          7,
+          8,
+          1,
+          2,
+          12,
+          6,
+          11,
+          9,
+          3,
+          5,
+          4,
+          10
+        ],
+        "sourceUrls": [
+          "https://www.visitmorocco.com/en"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          7,
+          8,
+          1,
+          2,
+          12,
+          6,
+          11,
+          9,
+          3,
+          5,
+          4,
+          10
+        ],
+        "sourceUrls": [
+          "https://www.visitmorocco.com/en"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "morocco",
+      "id": "essaouira",
+      "name": "Essaouira",
+      "area": "Atlantic coast",
+      "latitude": 31.5085,
+      "longitude": -9.7595,
+      "airports": [
+        [
+          "ESU",
+          "Essaouira Mogador"
+        ],
+        [
+          "RAK",
+          "Marrakech Menara"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 2,
+      "gridLatitude": 31.5085,
+      "gridLongitude": -9.7595,
+      "elevation": 72.73,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-9.7595&latitude=31.5085&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://www.visitmorocco.com/en"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 16.28,
+          "meanDailyHighC": 18.36,
+          "meanRainMmPerDay": 0.5098,
+          "meanRelativeHumidityPct": 71.24,
+          "rainyDayFraction": 0.0935
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 16.35,
+          "meanDailyHighC": 18.54,
+          "meanRainMmPerDay": 1.0671,
+          "meanRelativeHumidityPct": 72.97,
+          "rainyDayFraction": 0.159
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 16.59,
+          "meanDailyHighC": 18.7,
+          "meanRainMmPerDay": 0.8393,
+          "meanRelativeHumidityPct": 75.78,
+          "rainyDayFraction": 0.1935
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 17.62,
+          "meanDailyHighC": 19.76,
+          "meanRainMmPerDay": 0.362,
+          "meanRelativeHumidityPct": 77.24,
+          "rainyDayFraction": 0.0833
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.81,
+          "meanDailyHighC": 21.01,
+          "meanRainMmPerDay": 0.3648,
+          "meanRelativeHumidityPct": 79.06,
+          "rainyDayFraction": 0.0516
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 20.04,
+          "meanDailyHighC": 22.04,
+          "meanRainMmPerDay": 0.0841,
+          "meanRelativeHumidityPct": 81.15,
+          "rainyDayFraction": 0.0133
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 21.21,
+          "meanDailyHighC": 23.52,
+          "meanRainMmPerDay": 0.1015,
+          "meanRelativeHumidityPct": 81.58,
+          "rainyDayFraction": 0.029
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 21.94,
+          "meanDailyHighC": 24.43,
+          "meanRainMmPerDay": 0.0726,
+          "meanRelativeHumidityPct": 80.41,
+          "rainyDayFraction": 0.0097
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 21.35,
+          "meanDailyHighC": 23.6,
+          "meanRainMmPerDay": 0.2531,
+          "meanRelativeHumidityPct": 81.59,
+          "rainyDayFraction": 0.06
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 20.93,
+          "meanDailyHighC": 23.23,
+          "meanRainMmPerDay": 0.5215,
+          "meanRelativeHumidityPct": 76.77,
+          "rainyDayFraction": 0.1129
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 18.82,
+          "meanDailyHighC": 20.91,
+          "meanRainMmPerDay": 1.2032,
+          "meanRelativeHumidityPct": 73.88,
+          "rainyDayFraction": 0.1733
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.2,
+          "meanDailyHighC": 19.17,
+          "meanRainMmPerDay": 1.0089,
+          "meanRelativeHumidityPct": 72.63,
+          "rainyDayFraction": 0.1903
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Egyptian heritage/desert/coastal and Moroccan city/desert/coastal contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          12,
+          3,
+          10,
+          4,
+          5,
+          9,
+          6,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.visitmorocco.com/en"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          12,
+          3,
+          10,
+          4,
+          5,
+          9,
+          6,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.visitmorocco.com/en"
+        ]
+      },
+      "events": [
+        {
+          "name": "Gnaoua and World Music Festival",
+          "months": [
+            6
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://www.festival-gnaoua.net/"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "morocco",
+      "id": "merzouga",
+      "name": "Merzouga",
+      "area": "Erg Chebbi Sahara",
+      "latitude": 31.0994,
+      "longitude": -4.0127,
+      "airports": [
+        [
+          "ERH",
+          "Errachidia"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 3,
+      "gridLatitude": 31.0994,
+      "gridLongitude": -4.0127,
+      "elevation": 827.73,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-4.0127&latitude=31.0994&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://www.visitmorocco.com/en"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates. ERH requires substantial onward ground travel. Dune/camp weather, night temperatures and desert excursion conditions can differ from town monthly averages.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 9.71,
+          "meanDailyHighC": 17.83,
+          "meanRainMmPerDay": 0.1529,
+          "meanRelativeHumidityPct": 43.45,
+          "rainyDayFraction": 0.0226
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 12.03,
+          "meanDailyHighC": 20.06,
+          "meanRainMmPerDay": 0.2602,
+          "meanRelativeHumidityPct": 40.2,
+          "rainyDayFraction": 0.0459
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 15.84,
+          "meanDailyHighC": 24.13,
+          "meanRainMmPerDay": 0.244,
+          "meanRelativeHumidityPct": 35.58,
+          "rainyDayFraction": 0.0387
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 20.52,
+          "meanDailyHighC": 28.75,
+          "meanRainMmPerDay": 0.3388,
+          "meanRelativeHumidityPct": 30.25,
+          "rainyDayFraction": 0.03
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.39,
+          "meanDailyHighC": 33.44,
+          "meanRainMmPerDay": 0.0785,
+          "meanRelativeHumidityPct": 25.23,
+          "rainyDayFraction": 0.029
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 30.52,
+          "meanDailyHighC": 38.6,
+          "meanRainMmPerDay": 0.0235,
+          "meanRelativeHumidityPct": 19.26,
+          "rainyDayFraction": 0.0067
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 34.68,
+          "meanDailyHighC": 42.57,
+          "meanRainMmPerDay": 0.001,
+          "meanRelativeHumidityPct": 14.09,
+          "rainyDayFraction": 0
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 33.69,
+          "meanDailyHighC": 41.22,
+          "meanRainMmPerDay": 0.074,
+          "meanRelativeHumidityPct": 18.49,
+          "rainyDayFraction": 0.0194
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 28.59,
+          "meanDailyHighC": 35.86,
+          "meanRainMmPerDay": 0.4308,
+          "meanRelativeHumidityPct": 28.24,
+          "rainyDayFraction": 0.0867
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 22.3,
+          "meanDailyHighC": 29.69,
+          "meanRainMmPerDay": 0.2175,
+          "meanRelativeHumidityPct": 33.55,
+          "rainyDayFraction": 0.0323
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 15.42,
+          "meanDailyHighC": 23.05,
+          "meanRainMmPerDay": 0.136,
+          "meanRelativeHumidityPct": 39.5,
+          "rainyDayFraction": 0.0267
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 10.81,
+          "meanDailyHighC": 18.41,
+          "meanRainMmPerDay": 0.2827,
+          "meanRelativeHumidityPct": 50.35,
+          "rainyDayFraction": 0.0419
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Egyptian heritage/desert/coastal and Moroccan city/desert/coastal contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          7,
+          8,
+          1,
+          2,
+          12,
+          6,
+          11,
+          9,
+          3,
+          5,
+          4,
+          10
+        ],
+        "sourceUrls": [
+          "https://www.visitmorocco.com/en"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          7,
+          8,
+          1,
+          2,
+          12,
+          6,
+          11,
+          9,
+          3,
+          5,
+          4,
+          10
+        ],
+        "sourceUrls": [
+          "https://www.visitmorocco.com/en"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "morocco",
+      "id": "ouarzazate",
+      "name": "Ouarzazate",
+      "area": "Southern kasbah region",
+      "latitude": 30.9335,
+      "longitude": -6.937,
+      "airports": [
+        [
+          "OZZ",
+          "Ouarzazate"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 4,
+      "gridLatitude": 30.9335,
+      "gridLongitude": -6.937,
+      "elevation": 1556.79,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-6.937&latitude=30.9335&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeSources": [
+        "https://www.visitmorocco.com/en"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates. Aït Ben Haddou is a separate nearby excursion from the town.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 7.18,
+          "meanDailyHighC": 15.43,
+          "meanRainMmPerDay": 0.4357,
+          "meanRelativeHumidityPct": 46.51,
+          "rainyDayFraction": 0.1
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 8.66,
+          "meanDailyHighC": 16.7,
+          "meanRainMmPerDay": 0.7851,
+          "meanRelativeHumidityPct": 46.11,
+          "rainyDayFraction": 0.1519
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 11.36,
+          "meanDailyHighC": 19.82,
+          "meanRainMmPerDay": 0.9922,
+          "meanRelativeHumidityPct": 45.68,
+          "rainyDayFraction": 0.1968
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 15.45,
+          "meanDailyHighC": 24.08,
+          "meanRainMmPerDay": 0.6104,
+          "meanRelativeHumidityPct": 41.22,
+          "rainyDayFraction": 0.1067
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 19.89,
+          "meanDailyHighC": 28.39,
+          "meanRainMmPerDay": 0.3108,
+          "meanRelativeHumidityPct": 34.55,
+          "rainyDayFraction": 0.0935
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 24.53,
+          "meanDailyHighC": 33.3,
+          "meanRainMmPerDay": 0.3668,
+          "meanRelativeHumidityPct": 28.66,
+          "rainyDayFraction": 0.0467
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.86,
+          "meanDailyHighC": 37.07,
+          "meanRainMmPerDay": 0.2769,
+          "meanRelativeHumidityPct": 20.79,
+          "rainyDayFraction": 0.0452
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.02,
+          "meanDailyHighC": 35.92,
+          "meanRainMmPerDay": 0.3291,
+          "meanRelativeHumidityPct": 24.86,
+          "rainyDayFraction": 0.0645
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 23.12,
+          "meanDailyHighC": 31.03,
+          "meanRainMmPerDay": 0.6254,
+          "meanRelativeHumidityPct": 34.4,
+          "rainyDayFraction": 0.1367
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.01,
+          "meanDailyHighC": 25.65,
+          "meanRainMmPerDay": 0.651,
+          "meanRelativeHumidityPct": 40.44,
+          "rainyDayFraction": 0.1387
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 12.07,
+          "meanDailyHighC": 19.89,
+          "meanRainMmPerDay": 0.5273,
+          "meanRelativeHumidityPct": 45.47,
+          "rainyDayFraction": 0.12
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 8.09,
+          "meanDailyHighC": 16.04,
+          "meanRainMmPerDay": 0.7558,
+          "meanRelativeHumidityPct": 52.06,
+          "rainyDayFraction": 0.171
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Egyptian heritage/desert/coastal and Moroccan city/desert/coastal contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          7,
+          8,
+          1,
+          2,
+          12,
+          6,
+          11,
+          9,
+          3,
+          5,
+          4,
+          10
+        ],
+        "sourceUrls": [
+          "https://www.visitmorocco.com/en"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          7,
+          8,
+          1,
+          2,
+          12,
+          6,
+          11,
+          9,
+          3,
+          5,
+          4,
+          10
+        ],
+        "sourceUrls": [
+          "https://www.visitmorocco.com/en"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "morocco",
+      "id": "chefchaouen",
+      "name": "Chefchaouen",
+      "area": "Rif mountains",
+      "latitude": 35.1688,
+      "longitude": -5.2636,
+      "airports": [
+        [
+          "TNG",
+          "Tangier Ibn Battouta"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 5,
+      "gridLatitude": 35.1688,
+      "gridLongitude": -5.2636,
+      "elevation": 756.97,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-5.2636&latitude=35.1688&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://www.visitmorocco.com/en"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates. TNG requires onward ground travel into the Rif; town weather does not describe every mountain trail.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 8.63,
+          "meanDailyHighC": 14.43,
+          "meanRainMmPerDay": 2.7364,
+          "meanRelativeHumidityPct": 79.73,
+          "rainyDayFraction": 0.3097
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 10,
+          "meanDailyHighC": 16.18,
+          "meanRainMmPerDay": 2.6827,
+          "meanRelativeHumidityPct": 77.81,
+          "rainyDayFraction": 0.3145
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 11.2,
+          "meanDailyHighC": 16.93,
+          "meanRainMmPerDay": 5.7207,
+          "meanRelativeHumidityPct": 76.98,
+          "rainyDayFraction": 0.4258
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 13.85,
+          "meanDailyHighC": 20.1,
+          "meanRainMmPerDay": 2.5558,
+          "meanRelativeHumidityPct": 73.69,
+          "rainyDayFraction": 0.3233
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.55,
+          "meanDailyHighC": 24.54,
+          "meanRainMmPerDay": 1.6313,
+          "meanRelativeHumidityPct": 67.35,
+          "rainyDayFraction": 0.1774
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 22.26,
+          "meanDailyHighC": 30.34,
+          "meanRainMmPerDay": 0.3163,
+          "meanRelativeHumidityPct": 58.48,
+          "rainyDayFraction": 0.0667
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.37,
+          "meanDailyHighC": 36.58,
+          "meanRainMmPerDay": 0.0537,
+          "meanRelativeHumidityPct": 42.64,
+          "rainyDayFraction": 0.0129
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.88,
+          "meanDailyHighC": 36.89,
+          "meanRainMmPerDay": 0.1165,
+          "meanRelativeHumidityPct": 40.99,
+          "rainyDayFraction": 0.0387
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 23.13,
+          "meanDailyHighC": 31.28,
+          "meanRainMmPerDay": 0.5657,
+          "meanRelativeHumidityPct": 53.74,
+          "rainyDayFraction": 0.1033
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.67,
+          "meanDailyHighC": 26.05,
+          "meanRainMmPerDay": 3.1234,
+          "meanRelativeHumidityPct": 62.76,
+          "rainyDayFraction": 0.2484
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 12.78,
+          "meanDailyHighC": 18.92,
+          "meanRainMmPerDay": 3.1911,
+          "meanRelativeHumidityPct": 75.46,
+          "rainyDayFraction": 0.3567
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 9.93,
+          "meanDailyHighC": 15.43,
+          "meanRainMmPerDay": 4.3321,
+          "meanRelativeHumidityPct": 81.39,
+          "rainyDayFraction": 0.3645
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Egyptian heritage/desert/coastal and Moroccan city/desert/coastal contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          7,
+          8,
+          1,
+          2,
+          12,
+          6,
+          11,
+          9,
+          3,
+          5,
+          4,
+          10
+        ],
+        "sourceUrls": [
+          "https://www.visitmorocco.com/en"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          7,
+          8,
+          1,
+          2,
+          12,
+          6,
+          11,
+          9,
+          3,
+          5,
+          4,
+          10
+        ],
+        "sourceUrls": [
+          "https://www.visitmorocco.com/en"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
     }
   ],
   "destinationTypeAssignments": {
@@ -28952,6 +30969,78 @@
       "climateType": "all-season",
       "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
       "status": "Authorized autonomous Türkiye/Vietnam rollout, 6 November 2026."
+    },
+    "egypt:cairo": {
+      "name": "Cairo",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Authorized autonomous Egypt/Morocco rollout, 6 November 2026."
+    },
+    "egypt:luxor": {
+      "name": "Luxor",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Authorized autonomous Egypt/Morocco rollout, 6 November 2026."
+    },
+    "egypt:hurghada": {
+      "name": "Hurghada",
+      "climateType": "beach",
+      "reason": "Approved beach-oriented holiday base; 25°C target.",
+      "status": "Authorized autonomous Egypt/Morocco rollout, 6 November 2026."
+    },
+    "egypt:farafra": {
+      "name": "Farafra",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous Egypt/Morocco rollout, 6 November 2026."
+    },
+    "egypt:abu-simbel": {
+      "name": "Abu Simbel",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Authorized autonomous Egypt/Morocco rollout, 6 November 2026."
+    },
+    "egypt:aswan": {
+      "name": "Aswan",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Authorized autonomous Egypt/Morocco rollout, 6 November 2026."
+    },
+    "morocco:marrakech": {
+      "name": "Marrakech",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Authorized autonomous Egypt/Morocco rollout, 6 November 2026."
+    },
+    "morocco:fes": {
+      "name": "Fes",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Authorized autonomous Egypt/Morocco rollout, 6 November 2026."
+    },
+    "morocco:essaouira": {
+      "name": "Essaouira",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous Egypt/Morocco rollout, 6 November 2026."
+    },
+    "morocco:merzouga": {
+      "name": "Merzouga",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous Egypt/Morocco rollout, 6 November 2026."
+    },
+    "morocco:ouarzazate": {
+      "name": "Ouarzazate",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Authorized autonomous Egypt/Morocco rollout, 6 November 2026."
+    },
+    "morocco:chefchaouen": {
+      "name": "Chefchaouen",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous Egypt/Morocco rollout, 6 November 2026."
     }
   }
 }

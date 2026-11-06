@@ -1948,6 +1948,161 @@
           ]
         }
       ]
+    },
+    "egypt": {
+      "approvedAt": "2026-11-06",
+      "authorization": "User authorized continuing selection and deployment of the next two countries.",
+      "liveLabelsUpdated": true,
+      "indexCompatibility": "Original Cairo, combined Luxor/Aswan/Abu Simbel, Hurghada and White Desert positions retained as Cairo, Luxor, Hurghada and Farafra. Abu Simbel and Aswan appended.",
+      "seasonalityStatus": "NASA POWER/MERRA-2 2016–2025 local-solar daily climate; total precipitation. Crowd/price orders are editorial proxies. Solar-alignment and Gnaoua typical-month events are partial evidence, not guaranteed trip-date availability. Current scoring rules unchanged.",
+      "destinations": [
+        {
+          "name": "Cairo",
+          "area": "Giza and capital region",
+          "climateType": "standard",
+          "climateTypeLabel": "Warm living",
+          "airportCandidates": [
+            "CAI"
+          ],
+          "treasures": [
+            "Pyramids of Giza"
+          ]
+        },
+        {
+          "name": "Luxor",
+          "area": "Nile Valley",
+          "climateType": "standard",
+          "climateTypeLabel": "Warm living",
+          "airportCandidates": [
+            "LXR"
+          ],
+          "nearbyPlaces": [
+            "Karnak",
+            "Valley of the Kings"
+          ]
+        },
+        {
+          "name": "Hurghada",
+          "area": "Red Sea",
+          "climateType": "beach",
+          "climateTypeLabel": "Beach",
+          "airportCandidates": [
+            "HRG"
+          ]
+        },
+        {
+          "name": "Farafra",
+          "area": "White Desert",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "CAI"
+          ],
+          "treasures": [
+            "White Desert"
+          ],
+          "accessNote": "CAI is a distant gateway; substantial ground transfer and locally arranged excursion/access confirmation required."
+        },
+        {
+          "name": "Abu Simbel",
+          "area": "Lake Nasser",
+          "climateType": "standard",
+          "climateTypeLabel": "Warm living",
+          "airportCandidates": [
+            "ABS"
+          ],
+          "treasures": [
+            "Abu Simbel"
+          ],
+          "accessNote": "Separate overnight base; Aswan is about 300 km away. Confirm current flight connections and local lodging."
+        },
+        {
+          "name": "Aswan",
+          "area": "Upper Nile",
+          "climateType": "standard",
+          "climateTypeLabel": "Warm living",
+          "airportCandidates": [
+            "ASW"
+          ]
+        }
+      ]
+    },
+    "morocco": {
+      "approvedAt": "2026-11-06",
+      "authorization": "User authorized continuing selection and deployment of the next two countries.",
+      "liveLabelsUpdated": true,
+      "indexCompatibility": "Original Marrakech, Fes, Essaouira and Merzouga positions retained. Ouarzazate and Chefchaouen appended.",
+      "seasonalityStatus": "NASA POWER/MERRA-2 2016–2025 local-solar daily climate; total precipitation. Crowd/price orders are editorial proxies. Solar-alignment and Gnaoua typical-month events are partial evidence, not guaranteed trip-date availability. Current scoring rules unchanged.",
+      "destinations": [
+        {
+          "name": "Marrakech",
+          "area": "Inland Morocco",
+          "climateType": "standard",
+          "climateTypeLabel": "Warm living",
+          "airportCandidates": [
+            "RAK"
+          ],
+          "treasures": [
+            "Jemaa el-Fnaa"
+          ]
+        },
+        {
+          "name": "Fes",
+          "area": "Northern interior",
+          "climateType": "standard",
+          "climateTypeLabel": "Warm living",
+          "airportCandidates": [
+            "FEZ"
+          ]
+        },
+        {
+          "name": "Essaouira",
+          "area": "Atlantic coast",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "ESU",
+            "RAK"
+          ],
+          "coverageNote": "Mixed heritage/coastal stay, All season rather than a swimming-only beach base."
+        },
+        {
+          "name": "Merzouga",
+          "area": "Erg Chebbi Sahara",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "ERH"
+          ],
+          "treasures": [
+            "Erg Chebbi"
+          ],
+          "accessNote": "ERH plus substantial ground travel and separately arranged dune/camp excursion."
+        },
+        {
+          "name": "Ouarzazate",
+          "area": "Southern kasbah region",
+          "climateType": "standard",
+          "climateTypeLabel": "Warm living",
+          "airportCandidates": [
+            "OZZ"
+          ],
+          "treasures": [
+            "Aït Ben Haddou"
+          ],
+          "accessNote": "Nearby site requires ground excursion."
+        },
+        {
+          "name": "Chefchaouen",
+          "area": "Rif mountains",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "TNG"
+          ],
+          "accessNote": "TNG plus onward ground transfer."
+        }
+      ]
     }
   },
   "climateTypeAssignments": {
@@ -2466,6 +2621,78 @@
       "climateType": "all-season",
       "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
       "status": "Authorized autonomous Türkiye/Vietnam rollout, 6 November 2026."
+    },
+    "egypt:cairo": {
+      "name": "Cairo",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Authorized autonomous Egypt/Morocco rollout, 6 November 2026."
+    },
+    "egypt:luxor": {
+      "name": "Luxor",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Authorized autonomous Egypt/Morocco rollout, 6 November 2026."
+    },
+    "egypt:hurghada": {
+      "name": "Hurghada",
+      "climateType": "beach",
+      "reason": "Approved beach-oriented holiday base; 25°C target.",
+      "status": "Authorized autonomous Egypt/Morocco rollout, 6 November 2026."
+    },
+    "egypt:farafra": {
+      "name": "Farafra",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous Egypt/Morocco rollout, 6 November 2026."
+    },
+    "egypt:abu-simbel": {
+      "name": "Abu Simbel",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Authorized autonomous Egypt/Morocco rollout, 6 November 2026."
+    },
+    "egypt:aswan": {
+      "name": "Aswan",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Authorized autonomous Egypt/Morocco rollout, 6 November 2026."
+    },
+    "morocco:marrakech": {
+      "name": "Marrakech",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Authorized autonomous Egypt/Morocco rollout, 6 November 2026."
+    },
+    "morocco:fes": {
+      "name": "Fes",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Authorized autonomous Egypt/Morocco rollout, 6 November 2026."
+    },
+    "morocco:essaouira": {
+      "name": "Essaouira",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous Egypt/Morocco rollout, 6 November 2026."
+    },
+    "morocco:merzouga": {
+      "name": "Merzouga",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous Egypt/Morocco rollout, 6 November 2026."
+    },
+    "morocco:ouarzazate": {
+      "name": "Ouarzazate",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Authorized autonomous Egypt/Morocco rollout, 6 November 2026."
+    },
+    "morocco:chefchaouen": {
+      "name": "Chefchaouen",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous Egypt/Morocco rollout, 6 November 2026."
     }
   }
 }

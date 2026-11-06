@@ -7,7 +7,7 @@
     "persistentWetDayFraction": 0.6,
     "excludedMonthsPerVulnerableBase": 2,
     "selection": "Vulnerable if any month averages >=8 mm/day, or >=6 mm/day with >=60% wet days where wet-day data exist. Mark its two largest mean daily rainfall/precipitation months unsuitable. Equal values use calendar order. Reviewed regional/station overrides take precedence where coarse model grids conflict with official guidance; these are identified per base.",
-    "scope": "203 existing destinations. Product preference, not abnormal-weather diagnosis, flood forecast or official advisory.",
+    "scope": "207 existing destinations. Product preference, not abnormal-weather diagnosis, flood forecast or official advisory.",
     "limitations": "Model estimates and representative points; broad regions can contain different climates. NASA supplementary records are total precipitation including snow, not rain-only; cross-check Colombia estimates separately. Unflagged does not mean free of rain or weather hazards.",
     "reviewedVulnerableCount": 72
   },
@@ -11173,618 +11173,914 @@
     {
       "country": "morocco",
       "regionIndex": 0,
-      "label": "Marrakech (Center)",
-      "id": "morocco-0",
-      "latitude": 31.63,
-      "longitude": -7.98,
-      "needsRainFetch": true,
-      "referenceNote": "Representative point for a broad legacy region; does not describe every linked place.",
+      "label": "Marrakech (Inland Morocco)",
+      "id": "marrakech",
+      "latitude": 31.6295,
+      "longitude": -7.9811,
+      "referenceNote": "Named town point; excursions, mountain elevations and desert camps can differ.",
       "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
-      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR&community=AG&longitude=-7.98&latitude=31.63&start=2016&end=2025&format=JSON",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-7.9811&latitude=31.6295&start=20160101&end=20251231&format=JSON&time-standard=LST",
       "months": [
         {
           "month": 1,
-          "meanMmPerDay": 0.689,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.6891,
+          "wetDayFraction": 0.1097
         },
         {
           "month": 2,
           "meanMmPerDay": 1.1686,
-          "wetDayFraction": null
+          "wetDayFraction": 0.1731
         },
         {
           "month": 3,
           "meanMmPerDay": 1.562,
-          "wetDayFraction": null
+          "wetDayFraction": 0.2452
         },
         {
           "month": 4,
-          "meanMmPerDay": 0.821,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.8208,
+          "wetDayFraction": 0.1433
         },
         {
           "month": 5,
-          "meanMmPerDay": 0.419,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.4193,
+          "wetDayFraction": 0.0903
         },
         {
           "month": 6,
-          "meanMmPerDay": 0.44,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.4403,
+          "wetDayFraction": 0.0267
         },
         {
           "month": 7,
-          "meanMmPerDay": 0.333,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.332,
+          "wetDayFraction": 0.0194
         },
         {
           "month": 8,
-          "meanMmPerDay": 0.207,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.2083,
+          "wetDayFraction": 0.0581
         },
         {
           "month": 9,
-          "meanMmPerDay": 0.451,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.4507,
+          "wetDayFraction": 0.0733
         },
         {
           "month": 10,
-          "meanMmPerDay": 0.696,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.6948,
+          "wetDayFraction": 0.1419
         },
         {
           "month": 11,
-          "meanMmPerDay": 1.011,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.0116,
+          "wetDayFraction": 0.1633
         },
         {
           "month": 12,
-          "meanMmPerDay": 1.246,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.2446,
+          "wetDayFraction": 0.1806
         }
       ],
       "vulnerable": false,
       "excludedMonths": [],
-      "reason": "Screening threshold not met at representative point."
+      "reason": "Screening threshold not met at named town point."
     },
     {
       "country": "morocco",
       "regionIndex": 1,
-      "label": "Fes (North)",
-      "id": "morocco-1",
-      "latitude": 34.03,
-      "longitude": -5,
-      "needsRainFetch": true,
-      "referenceNote": "Representative point for a broad legacy region; does not describe every linked place.",
+      "label": "Fes (Northern interior)",
+      "id": "fes",
+      "latitude": 34.0331,
+      "longitude": -5.0003,
+      "referenceNote": "Named town point; excursions, mountain elevations and desert camps can differ.",
       "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
-      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR&community=AG&longitude=-5&latitude=34.03&start=2016&end=2025&format=JSON",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-5.0003&latitude=34.0331&start=20160101&end=20251231&format=JSON&time-standard=LST",
       "months": [
         {
           "month": 1,
-          "meanMmPerDay": 2.265,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.2627,
+          "wetDayFraction": 0.2484
         },
         {
           "month": 2,
-          "meanMmPerDay": 2.2963,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.2966,
+          "wetDayFraction": 0.265
         },
         {
           "month": 3,
-          "meanMmPerDay": 3.743,
-          "wetDayFraction": null
+          "meanMmPerDay": 3.7433,
+          "wetDayFraction": 0.3806
         },
         {
           "month": 4,
-          "meanMmPerDay": 1.977,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.9777,
+          "wetDayFraction": 0.2633
         },
         {
           "month": 5,
-          "meanMmPerDay": 1,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.9996,
+          "wetDayFraction": 0.1871
         },
         {
           "month": 6,
-          "meanMmPerDay": 0.235,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.2365,
+          "wetDayFraction": 0.0633
         },
         {
           "month": 7,
-          "meanMmPerDay": 0.093,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.0933,
+          "wetDayFraction": 0.029
         },
         {
           "month": 8,
-          "meanMmPerDay": 0.241,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.2418,
+          "wetDayFraction": 0.0613
         },
         {
           "month": 9,
-          "meanMmPerDay": 0.606,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.6051,
+          "wetDayFraction": 0.1267
         },
         {
           "month": 10,
-          "meanMmPerDay": 2.06,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.0602,
+          "wetDayFraction": 0.1935
         },
         {
           "month": 11,
-          "meanMmPerDay": 1.863,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.8634,
+          "wetDayFraction": 0.2667
         },
         {
           "month": 12,
-          "meanMmPerDay": 2.957,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.9559,
+          "wetDayFraction": 0.2935
         }
       ],
       "vulnerable": false,
       "excludedMonths": [],
-      "reason": "Screening threshold not met at representative point."
+      "reason": "Screening threshold not met at named town point."
     },
     {
       "country": "morocco",
       "regionIndex": 2,
-      "label": "Essaouira (West)",
-      "id": "morocco-2",
-      "latitude": 31.51,
-      "longitude": -9.77,
-      "needsRainFetch": true,
-      "referenceNote": "Representative point for a broad legacy region; does not describe every linked place.",
+      "label": "Essaouira (Atlantic coast)",
+      "id": "essaouira",
+      "latitude": 31.5085,
+      "longitude": -9.7595,
+      "referenceNote": "Named town point; excursions, mountain elevations and desert camps can differ.",
       "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
-      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR&community=AG&longitude=-9.77&latitude=31.51&start=2016&end=2025&format=JSON",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-9.7595&latitude=31.5085&start=20160101&end=20251231&format=JSON&time-standard=LST",
       "months": [
         {
           "month": 1,
-          "meanMmPerDay": 0.512,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.5098,
+          "wetDayFraction": 0.0935
         },
         {
           "month": 2,
-          "meanMmPerDay": 1.0686,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.0671,
+          "wetDayFraction": 0.159
         },
         {
           "month": 3,
-          "meanMmPerDay": 0.84,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.8393,
+          "wetDayFraction": 0.1935
         },
         {
           "month": 4,
-          "meanMmPerDay": 0.361,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.362,
+          "wetDayFraction": 0.0833
         },
         {
           "month": 5,
-          "meanMmPerDay": 0.364,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.3648,
+          "wetDayFraction": 0.0516
         },
         {
           "month": 6,
-          "meanMmPerDay": 0.084,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.0841,
+          "wetDayFraction": 0.0133
         },
         {
           "month": 7,
-          "meanMmPerDay": 0.102,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.1015,
+          "wetDayFraction": 0.029
         },
         {
           "month": 8,
-          "meanMmPerDay": 0.073,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.0726,
+          "wetDayFraction": 0.0097
         },
         {
           "month": 9,
-          "meanMmPerDay": 0.253,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.2531,
+          "wetDayFraction": 0.06
         },
         {
           "month": 10,
-          "meanMmPerDay": 0.521,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.5215,
+          "wetDayFraction": 0.1129
         },
         {
           "month": 11,
-          "meanMmPerDay": 1.202,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.2032,
+          "wetDayFraction": 0.1733
         },
         {
           "month": 12,
-          "meanMmPerDay": 1.009,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.0089,
+          "wetDayFraction": 0.1903
         }
       ],
       "vulnerable": false,
       "excludedMonths": [],
-      "reason": "Screening threshold not met at representative point."
+      "reason": "Screening threshold not met at named town point."
     },
     {
       "country": "morocco",
       "regionIndex": 3,
-      "label": "Merzouga (East)",
-      "id": "morocco-3",
-      "latitude": 31.1,
-      "longitude": -4.01,
-      "needsRainFetch": true,
-      "referenceNote": "Representative point for a broad legacy region; does not describe every linked place.",
+      "label": "Merzouga (Erg Chebbi Sahara)",
+      "id": "merzouga",
+      "latitude": 31.0994,
+      "longitude": -4.0127,
+      "referenceNote": "Named town point; excursions, mountain elevations and desert camps can differ.",
       "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
-      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR&community=AG&longitude=-4.01&latitude=31.1&start=2016&end=2025&format=JSON",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-4.0127&latitude=31.0994&start=20160101&end=20251231&format=JSON&time-standard=LST",
       "months": [
         {
           "month": 1,
-          "meanMmPerDay": 0.152,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.1529,
+          "wetDayFraction": 0.0226
         },
         {
           "month": 2,
-          "meanMmPerDay": 0.2594,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.2602,
+          "wetDayFraction": 0.0459
         },
         {
           "month": 3,
-          "meanMmPerDay": 0.243,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.244,
+          "wetDayFraction": 0.0387
         },
         {
           "month": 4,
-          "meanMmPerDay": 0.34,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.3388,
+          "wetDayFraction": 0.03
         },
         {
           "month": 5,
-          "meanMmPerDay": 0.077,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.0785,
+          "wetDayFraction": 0.029
         },
         {
           "month": 6,
-          "meanMmPerDay": 0.024,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.0235,
+          "wetDayFraction": 0.0067
         },
         {
           "month": 7,
-          "meanMmPerDay": 0,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.001,
+          "wetDayFraction": 0
         },
         {
           "month": 8,
           "meanMmPerDay": 0.074,
-          "wetDayFraction": null
+          "wetDayFraction": 0.0194
         },
         {
           "month": 9,
-          "meanMmPerDay": 0.431,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.4308,
+          "wetDayFraction": 0.0867
         },
         {
           "month": 10,
-          "meanMmPerDay": 0.218,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.2175,
+          "wetDayFraction": 0.0323
         },
         {
           "month": 11,
           "meanMmPerDay": 0.136,
-          "wetDayFraction": null
+          "wetDayFraction": 0.0267
         },
         {
           "month": 12,
-          "meanMmPerDay": 0.282,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.2827,
+          "wetDayFraction": 0.0419
         }
       ],
       "vulnerable": false,
       "excludedMonths": [],
-      "reason": "Screening threshold not met at representative point."
+      "reason": "Screening threshold not met at named town point."
+    },
+    {
+      "country": "morocco",
+      "regionIndex": 4,
+      "label": "Ouarzazate (Southern kasbah region)",
+      "id": "ouarzazate",
+      "latitude": 30.9335,
+      "longitude": -6.937,
+      "referenceNote": "Named town point; excursions, mountain elevations and desert camps can differ.",
+      "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-6.937&latitude=30.9335&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "months": [
+        {
+          "month": 1,
+          "meanMmPerDay": 0.4357,
+          "wetDayFraction": 0.1
+        },
+        {
+          "month": 2,
+          "meanMmPerDay": 0.7851,
+          "wetDayFraction": 0.1519
+        },
+        {
+          "month": 3,
+          "meanMmPerDay": 0.9922,
+          "wetDayFraction": 0.1968
+        },
+        {
+          "month": 4,
+          "meanMmPerDay": 0.6104,
+          "wetDayFraction": 0.1067
+        },
+        {
+          "month": 5,
+          "meanMmPerDay": 0.3108,
+          "wetDayFraction": 0.0935
+        },
+        {
+          "month": 6,
+          "meanMmPerDay": 0.3668,
+          "wetDayFraction": 0.0467
+        },
+        {
+          "month": 7,
+          "meanMmPerDay": 0.2769,
+          "wetDayFraction": 0.0452
+        },
+        {
+          "month": 8,
+          "meanMmPerDay": 0.3291,
+          "wetDayFraction": 0.0645
+        },
+        {
+          "month": 9,
+          "meanMmPerDay": 0.6254,
+          "wetDayFraction": 0.1367
+        },
+        {
+          "month": 10,
+          "meanMmPerDay": 0.651,
+          "wetDayFraction": 0.1387
+        },
+        {
+          "month": 11,
+          "meanMmPerDay": 0.5273,
+          "wetDayFraction": 0.12
+        },
+        {
+          "month": 12,
+          "meanMmPerDay": 0.7558,
+          "wetDayFraction": 0.171
+        }
+      ],
+      "vulnerable": false,
+      "excludedMonths": [],
+      "reason": "Screening threshold not met at named town point."
+    },
+    {
+      "country": "morocco",
+      "regionIndex": 5,
+      "label": "Chefchaouen (Rif mountains)",
+      "id": "chefchaouen",
+      "latitude": 35.1688,
+      "longitude": -5.2636,
+      "referenceNote": "Named town point; excursions, mountain elevations and desert camps can differ.",
+      "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-5.2636&latitude=35.1688&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "months": [
+        {
+          "month": 1,
+          "meanMmPerDay": 2.7364,
+          "wetDayFraction": 0.3097
+        },
+        {
+          "month": 2,
+          "meanMmPerDay": 2.6827,
+          "wetDayFraction": 0.3145
+        },
+        {
+          "month": 3,
+          "meanMmPerDay": 5.7207,
+          "wetDayFraction": 0.4258
+        },
+        {
+          "month": 4,
+          "meanMmPerDay": 2.5558,
+          "wetDayFraction": 0.3233
+        },
+        {
+          "month": 5,
+          "meanMmPerDay": 1.6313,
+          "wetDayFraction": 0.1774
+        },
+        {
+          "month": 6,
+          "meanMmPerDay": 0.3163,
+          "wetDayFraction": 0.0667
+        },
+        {
+          "month": 7,
+          "meanMmPerDay": 0.0537,
+          "wetDayFraction": 0.0129
+        },
+        {
+          "month": 8,
+          "meanMmPerDay": 0.1165,
+          "wetDayFraction": 0.0387
+        },
+        {
+          "month": 9,
+          "meanMmPerDay": 0.5657,
+          "wetDayFraction": 0.1033
+        },
+        {
+          "month": 10,
+          "meanMmPerDay": 3.1234,
+          "wetDayFraction": 0.2484
+        },
+        {
+          "month": 11,
+          "meanMmPerDay": 3.1911,
+          "wetDayFraction": 0.3567
+        },
+        {
+          "month": 12,
+          "meanMmPerDay": 4.3321,
+          "wetDayFraction": 0.3645
+        }
+      ],
+      "vulnerable": false,
+      "excludedMonths": [],
+      "reason": "Screening threshold not met at named town point."
     },
     {
       "country": "egypt",
       "regionIndex": 0,
-      "label": "Cairo & Giza (North)",
-      "id": "egypt-0",
-      "latitude": 30.04,
-      "longitude": 31.24,
-      "needsRainFetch": true,
-      "referenceNote": "Representative point for a broad legacy region; does not describe every linked place.",
+      "label": "Cairo (Giza and capital region)",
+      "id": "cairo",
+      "latitude": 30.0444,
+      "longitude": 31.2357,
+      "referenceNote": "Named town point; excursions, mountain elevations and desert camps can differ.",
       "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
-      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR&community=AG&longitude=31.24&latitude=30.04&start=2016&end=2025&format=JSON",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=31.2357&latitude=30.0444&start=20160101&end=20251231&format=JSON&time-standard=LST",
       "months": [
         {
           "month": 1,
-          "meanMmPerDay": 0.742,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.7403,
+          "wetDayFraction": 0.1097
         },
         {
           "month": 2,
-          "meanMmPerDay": 0.4066,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.4055,
+          "wetDayFraction": 0.0848
         },
         {
           "month": 3,
-          "meanMmPerDay": 0.899,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.8981,
+          "wetDayFraction": 0.0935
         },
         {
           "month": 4,
-          "meanMmPerDay": 0.527,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.5289,
+          "wetDayFraction": 0.0467
         },
         {
           "month": 5,
-          "meanMmPerDay": 0.035,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.0339,
+          "wetDayFraction": 0.0097
         },
         {
           "month": 6,
-          "meanMmPerDay": 0.037,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.0365,
+          "wetDayFraction": 0.01
         },
         {
           "month": 7,
-          "meanMmPerDay": 0.032,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.0325,
+          "wetDayFraction": 0.0129
         },
         {
           "month": 8,
-          "meanMmPerDay": 0.012,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.0114,
+          "wetDayFraction": 0.0032
         },
         {
           "month": 9,
-          "meanMmPerDay": 0.042,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.0422,
+          "wetDayFraction": 0.02
         },
         {
           "month": 10,
-          "meanMmPerDay": 0.422,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.4223,
+          "wetDayFraction": 0.0581
         },
         {
           "month": 11,
-          "meanMmPerDay": 1.058,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.0588,
+          "wetDayFraction": 0.0667
         },
         {
           "month": 12,
-          "meanMmPerDay": 0.459,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.4589,
+          "wetDayFraction": 0.0645
         }
       ],
       "vulnerable": false,
       "excludedMonths": [],
-      "reason": "Screening threshold not met at representative point."
+      "reason": "Screening threshold not met at named town point."
     },
     {
       "country": "egypt",
       "regionIndex": 1,
-      "label": "Luxor, Aswan & Abu Simbel (South)",
-      "id": "egypt-1",
-      "latitude": 25.69,
-      "longitude": 32.64,
-      "needsRainFetch": true,
-      "referenceNote": "Representative point for a broad legacy region; does not describe every linked place.",
+      "label": "Luxor (Nile Valley)",
+      "id": "luxor",
+      "latitude": 25.6872,
+      "longitude": 32.6396,
+      "referenceNote": "Named town point; excursions, mountain elevations and desert camps can differ.",
       "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
-      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR&community=AG&longitude=32.64&latitude=25.69&start=2016&end=2025&format=JSON",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=32.6396&latitude=25.6872&start=20160101&end=20251231&format=JSON&time-standard=LST",
       "months": [
         {
           "month": 1,
-          "meanMmPerDay": 0.027,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.0278,
+          "wetDayFraction": 0.0065
         },
         {
           "month": 2,
-          "meanMmPerDay": 0.008,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.0079,
+          "wetDayFraction": 0
         },
         {
           "month": 3,
-          "meanMmPerDay": 0.002,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.0025,
+          "wetDayFraction": 0
         },
         {
           "month": 4,
-          "meanMmPerDay": 0,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.0003,
+          "wetDayFraction": 0
         },
         {
           "month": 5,
           "meanMmPerDay": 0.012,
-          "wetDayFraction": null
+          "wetDayFraction": 0.0032
         },
         {
           "month": 6,
-          "meanMmPerDay": 0,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.0004,
+          "wetDayFraction": 0
         },
         {
           "month": 7,
           "meanMmPerDay": 0,
-          "wetDayFraction": null
+          "wetDayFraction": 0
         },
         {
           "month": 8,
-          "meanMmPerDay": 0.019,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.0187,
+          "wetDayFraction": 0.0065
         },
         {
           "month": 9,
           "meanMmPerDay": 0,
-          "wetDayFraction": null
+          "wetDayFraction": 0
         },
         {
           "month": 10,
-          "meanMmPerDay": 0.001,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.0008,
+          "wetDayFraction": 0
         },
         {
           "month": 11,
-          "meanMmPerDay": 0,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.0006,
+          "wetDayFraction": 0
         },
         {
           "month": 12,
-          "meanMmPerDay": 0.002,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.0025,
+          "wetDayFraction": 0
         }
       ],
       "vulnerable": false,
       "excludedMonths": [],
-      "reason": "Screening threshold not met at representative point."
+      "reason": "Screening threshold not met at named town point."
     },
     {
       "country": "egypt",
       "regionIndex": 2,
-      "label": "Hurghada (East)",
-      "id": "egypt-2",
-      "latitude": 27.26,
-      "longitude": 33.81,
-      "needsRainFetch": true,
-      "referenceNote": "Representative point for a broad legacy region; does not describe every linked place.",
+      "label": "Hurghada (Red Sea)",
+      "id": "hurghada",
+      "latitude": 27.2579,
+      "longitude": 33.8116,
+      "referenceNote": "Named town point; excursions, mountain elevations and desert camps can differ.",
       "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
-      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR&community=AG&longitude=33.81&latitude=27.26&start=2016&end=2025&format=JSON",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=33.8116&latitude=27.2579&start=20160101&end=20251231&format=JSON&time-standard=LST",
       "months": [
         {
           "month": 1,
-          "meanMmPerDay": 0.033,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.0326,
+          "wetDayFraction": 0.0097
         },
         {
           "month": 2,
-          "meanMmPerDay": 0.0561,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.0554,
+          "wetDayFraction": 0.0177
         },
         {
           "month": 3,
-          "meanMmPerDay": 0.018,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.0179,
+          "wetDayFraction": 0.0032
         },
         {
           "month": 4,
-          "meanMmPerDay": 0.008,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.0089,
+          "wetDayFraction": 0
         },
         {
           "month": 5,
-          "meanMmPerDay": 0.006,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.007,
+          "wetDayFraction": 0.0032
         },
         {
           "month": 6,
           "meanMmPerDay": 0,
-          "wetDayFraction": null
+          "wetDayFraction": 0
         },
         {
           "month": 7,
           "meanMmPerDay": 0,
-          "wetDayFraction": null
+          "wetDayFraction": 0
         },
         {
           "month": 8,
-          "meanMmPerDay": 0.001,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.0015,
+          "wetDayFraction": 0
         },
         {
           "month": 9,
-          "meanMmPerDay": 0.004,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.0041,
+          "wetDayFraction": 0.0033
         },
         {
           "month": 10,
-          "meanMmPerDay": 0.095,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.0952,
+          "wetDayFraction": 0.0065
         },
         {
           "month": 11,
-          "meanMmPerDay": 0.025,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.0254,
+          "wetDayFraction": 0.0067
         },
         {
           "month": 12,
-          "meanMmPerDay": 0.013,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.0122,
+          "wetDayFraction": 0.0032
         }
       ],
       "vulnerable": false,
       "excludedMonths": [],
-      "reason": "Screening threshold not met at representative point."
+      "reason": "Screening threshold not met at named town point."
     },
     {
       "country": "egypt",
       "regionIndex": 3,
-      "label": "White Desert & Farafra (West)",
-      "id": "egypt-3",
-      "latitude": 27.06,
+      "label": "Farafra (White Desert)",
+      "id": "farafra",
+      "latitude": 27.059,
       "longitude": 27.97,
-      "needsRainFetch": true,
-      "referenceNote": "Representative point for a broad legacy region; does not describe every linked place.",
+      "referenceNote": "Named town point; excursions, mountain elevations and desert camps can differ.",
       "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
-      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR&community=AG&longitude=27.97&latitude=27.06&start=2016&end=2025&format=JSON",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=27.97&latitude=27.059&start=20160101&end=20251231&format=JSON&time-standard=LST",
       "months": [
         {
           "month": 1,
-          "meanMmPerDay": 0.052,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.0522,
+          "wetDayFraction": 0.0097
         },
         {
           "month": 2,
-          "meanMmPerDay": 0.2496,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.2486,
+          "wetDayFraction": 0.0035
         },
         {
           "month": 3,
-          "meanMmPerDay": 0.059,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.0605,
+          "wetDayFraction": 0.0129
         },
         {
           "month": 4,
-          "meanMmPerDay": 0,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.0008,
+          "wetDayFraction": 0
         },
         {
           "month": 5,
           "meanMmPerDay": 0.001,
-          "wetDayFraction": null
+          "wetDayFraction": 0
         },
         {
           "month": 6,
-          "meanMmPerDay": 0.018,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.0177,
+          "wetDayFraction": 0.0033
         },
         {
           "month": 7,
           "meanMmPerDay": 0,
-          "wetDayFraction": null
+          "wetDayFraction": 0
         },
         {
           "month": 8,
-          "meanMmPerDay": 0.001,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.0011,
+          "wetDayFraction": 0
         },
         {
           "month": 9,
           "meanMmPerDay": 0,
-          "wetDayFraction": null
+          "wetDayFraction": 0
         },
         {
           "month": 10,
-          "meanMmPerDay": 0.005,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.0064,
+          "wetDayFraction": 0
         },
         {
           "month": 11,
-          "meanMmPerDay": 0.105,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.1058,
+          "wetDayFraction": 0.0167
         },
         {
           "month": 12,
-          "meanMmPerDay": 0.055,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.0549,
+          "wetDayFraction": 0.0129
         }
       ],
       "vulnerable": false,
       "excludedMonths": [],
-      "reason": "Screening threshold not met at representative point."
+      "reason": "Screening threshold not met at named town point."
+    },
+    {
+      "country": "egypt",
+      "regionIndex": 4,
+      "label": "Abu Simbel (Lake Nasser)",
+      "id": "abu-simbel",
+      "latitude": 22.3457,
+      "longitude": 31.6157,
+      "referenceNote": "Named town point; excursions, mountain elevations and desert camps can differ.",
+      "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=31.6157&latitude=22.3457&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "months": [
+        {
+          "month": 1,
+          "meanMmPerDay": 0.0016,
+          "wetDayFraction": 0
+        },
+        {
+          "month": 2,
+          "meanMmPerDay": 0.0008,
+          "wetDayFraction": 0
+        },
+        {
+          "month": 3,
+          "meanMmPerDay": 0.0009,
+          "wetDayFraction": 0
+        },
+        {
+          "month": 4,
+          "meanMmPerDay": 0.0004,
+          "wetDayFraction": 0
+        },
+        {
+          "month": 5,
+          "meanMmPerDay": 0.0016,
+          "wetDayFraction": 0
+        },
+        {
+          "month": 6,
+          "meanMmPerDay": 0,
+          "wetDayFraction": 0
+        },
+        {
+          "month": 7,
+          "meanMmPerDay": 0.0021,
+          "wetDayFraction": 0
+        },
+        {
+          "month": 8,
+          "meanMmPerDay": 0.017,
+          "wetDayFraction": 0.0032
+        },
+        {
+          "month": 9,
+          "meanMmPerDay": 0,
+          "wetDayFraction": 0
+        },
+        {
+          "month": 10,
+          "meanMmPerDay": 0.0021,
+          "wetDayFraction": 0
+        },
+        {
+          "month": 11,
+          "meanMmPerDay": 0.0007,
+          "wetDayFraction": 0
+        },
+        {
+          "month": 12,
+          "meanMmPerDay": 0.0122,
+          "wetDayFraction": 0.0032
+        }
+      ],
+      "vulnerable": false,
+      "excludedMonths": [],
+      "reason": "Screening threshold not met at named town point."
+    },
+    {
+      "country": "egypt",
+      "regionIndex": 5,
+      "label": "Aswan (Upper Nile)",
+      "id": "aswan",
+      "latitude": 24.0889,
+      "longitude": 32.8998,
+      "referenceNote": "Named town point; excursions, mountain elevations and desert camps can differ.",
+      "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=32.8998&latitude=24.0889&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "months": [
+        {
+          "month": 1,
+          "meanMmPerDay": 0.0248,
+          "wetDayFraction": 0.0032
+        },
+        {
+          "month": 2,
+          "meanMmPerDay": 0.0066,
+          "wetDayFraction": 0
+        },
+        {
+          "month": 3,
+          "meanMmPerDay": 0.0005,
+          "wetDayFraction": 0
+        },
+        {
+          "month": 4,
+          "meanMmPerDay": 0.0002,
+          "wetDayFraction": 0
+        },
+        {
+          "month": 5,
+          "meanMmPerDay": 0.0089,
+          "wetDayFraction": 0.0032
+        },
+        {
+          "month": 6,
+          "meanMmPerDay": 0.0039,
+          "wetDayFraction": 0.0033
+        },
+        {
+          "month": 7,
+          "meanMmPerDay": 0,
+          "wetDayFraction": 0
+        },
+        {
+          "month": 8,
+          "meanMmPerDay": 0.0085,
+          "wetDayFraction": 0.0032
+        },
+        {
+          "month": 9,
+          "meanMmPerDay": 0.0001,
+          "wetDayFraction": 0
+        },
+        {
+          "month": 10,
+          "meanMmPerDay": 0.006,
+          "wetDayFraction": 0.0032
+        },
+        {
+          "month": 11,
+          "meanMmPerDay": 0.0002,
+          "wetDayFraction": 0
+        },
+        {
+          "month": 12,
+          "meanMmPerDay": 0.009,
+          "wetDayFraction": 0
+        }
+      ],
+      "vulnerable": false,
+      "excludedMonths": [],
+      "reason": "Screening threshold not met at named town point."
     },
     {
       "country": "new-zealand",
