@@ -1310,18 +1310,12 @@ const treasurePhotos = {
     "bytes": 52830
   },
   "Edinburgh Castle": {
-    "author": "Peulle",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Edinburgh_Castle_dec.23_(2).jpg",
-    "license": "CC BY 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-    "originalTitle": "File:Edinburgh Castle dec.23 (2).jpg",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Edinburgh_Castle_dec.23_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "src": "images/treasures/united-kingdom-3-new.webp",
-    "alt": "Edinburgh Castle — United Kingdom",
-    "width": 640,
-    "height": 421,
-    "bytes": 86528
-  },
+    "src": "images/treasures/uk-edinburgh-castle-owner.png",
+    "alt": "Edinburgh Castle above its rocky slopes in Edinburgh, Scotland",
+    "width": 1312,
+    "height": 778,
+    "suppliedByOwner": true
+},
   "Hagia Sophia": {
     "author": "Arild Vågen",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hagia_Sophia_Mars_2013.jpg",
