@@ -1594,6 +1594,167 @@
           "accessNote": "MNL is a distant gateway requiring a long overland transfer. Batad local access/walking and rice crop cycles need separate planning."
         }
       ]
+    },
+    "south-korea": {
+      "approvedAt": "2026-11-06",
+      "authorization": "User authorized continuing selection and deployment of the next two countries.",
+      "liveLabelsUpdated": true,
+      "indexCompatibility": "Original Seoul, Busan and Jeju slots retained as Seoul, Busan and Seogwipo. Gyeongju and Sokcho appended.",
+      "seasonalityStatus": "NASA POWER/MERRA-2 2016–2025 local solar daily climate, total precipitation including snow. Crowd/price orders remain provisional editorial estimates. Selected BIFF/Songkran events use typical months and future dates need confirmation. Current class/daylight/rain rules unchanged.",
+      "destinations": [
+        {
+          "name": "Seoul",
+          "area": "Capital region",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "ICN",
+            "GMP"
+          ],
+          "treasures": [
+            "Gyeongbokgung Palace"
+          ]
+        },
+        {
+          "name": "Busan",
+          "area": "Southeast",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "PUS"
+          ],
+          "treasures": [
+            "Gamcheon Culture Village"
+          ]
+        },
+        {
+          "name": "Seogwipo",
+          "area": "Jeju Island",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "CJU"
+          ],
+          "treasures": [
+            "Seongsan Ilchulbong"
+          ],
+          "accessNote": "CJU and onward ground transfer; Seongsan is an east-coast excursion."
+        },
+        {
+          "name": "Gyeongju",
+          "area": "Southeast heritage region",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "PUS"
+          ],
+          "nearbyPlaces": [
+            "Bulguksa",
+            "Seokguram"
+          ],
+          "accessNote": "PUS followed by onward ground/rail transfer; separate cultural stay from Busan."
+        },
+        {
+          "name": "Sokcho",
+          "area": "Seoraksan coast",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "ICN"
+          ],
+          "nearbyPlaces": [
+            "Seoraksan National Park"
+          ],
+          "accessNote": "ICN followed by substantial overland transfer. Do not infer mountain trail access from coastal city climate."
+        }
+      ]
+    },
+    "thailand": {
+      "approvedAt": "2026-11-06",
+      "authorization": "User authorized continuing selection and deployment of the next two countries.",
+      "liveLabelsUpdated": true,
+      "indexCompatibility": "Original Bangkok, Chiang Mai, Phuket and Ko Samui slots retained as Bangkok, Chiang Mai, Kata and Chaweng. Ao Nang and Sukhothai appended.",
+      "seasonalityStatus": "NASA POWER/MERRA-2 2016–2025 local solar daily climate, total precipitation including snow. Crowd/price orders remain provisional editorial estimates. Selected BIFF/Songkran events use typical months and future dates need confirmation. Current class/daylight/rain rules unchanged.",
+      "destinations": [
+        {
+          "name": "Bangkok",
+          "area": "Central Thailand",
+          "climateType": "standard",
+          "climateTypeLabel": "Warm living",
+          "airportCandidates": [
+            "BKK",
+            "DMK"
+          ],
+          "treasures": [
+            "Grand Palace"
+          ],
+          "nearbyPlaces": [
+            "Ayutthaya"
+          ]
+        },
+        {
+          "name": "Chiang Mai",
+          "area": "North",
+          "climateType": "standard",
+          "climateTypeLabel": "Warm living",
+          "airportCandidates": [
+            "CNX"
+          ],
+          "treasures": [
+            "Doi Inthanon"
+          ],
+          "accessNote": "Mountain excursion; local elevation/weather and smoke/haze need separate checks."
+        },
+        {
+          "name": "Kata",
+          "area": "Phuket",
+          "climateType": "beach",
+          "climateTypeLabel": "Beach",
+          "airportCandidates": [
+            "HKT"
+          ],
+          "treasures": [
+            "Maya Bay"
+          ],
+          "accessNote": "Maya Bay is reached by separately arranged boat excursion; park closures and sea conditions apply."
+        },
+        {
+          "name": "Chaweng",
+          "area": "Ko Samui",
+          "climateType": "beach",
+          "climateTypeLabel": "Beach",
+          "airportCandidates": [
+            "USM"
+          ]
+        },
+        {
+          "name": "Ao Nang",
+          "area": "Krabi",
+          "climateType": "beach",
+          "climateTypeLabel": "Beach",
+          "airportCandidates": [
+            "KBV"
+          ],
+          "treasures": [
+            "Maya Bay"
+          ],
+          "nearbyPlaces": [
+            "Railay"
+          ],
+          "accessNote": "KBV plus transfer; Maya Bay is an optional marine excursion, not a local beach."
+        },
+        {
+          "name": "Sukhothai",
+          "area": "Northern heritage region",
+          "climateType": "standard",
+          "climateTypeLabel": "Warm living",
+          "airportCandidates": [
+            "THS",
+            "PHS"
+          ],
+          "accessNote": "THS or PHS followed by onward ground travel; historical park access planned locally."
+        }
+      ]
     }
   },
   "climateTypeAssignments": {
@@ -1962,6 +2123,72 @@
       "climateType": "all-season",
       "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
       "status": "Authorized autonomous Malaysia/Philippines rollout, 6 November 2026."
+    },
+    "south-korea:seoul": {
+      "name": "Seoul",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous South Korea/Thailand rollout, 6 November 2026."
+    },
+    "south-korea:busan": {
+      "name": "Busan",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous South Korea/Thailand rollout, 6 November 2026."
+    },
+    "south-korea:seogwipo": {
+      "name": "Seogwipo",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous South Korea/Thailand rollout, 6 November 2026."
+    },
+    "south-korea:gyeongju": {
+      "name": "Gyeongju",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous South Korea/Thailand rollout, 6 November 2026."
+    },
+    "south-korea:sokcho": {
+      "name": "Sokcho",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous South Korea/Thailand rollout, 6 November 2026."
+    },
+    "thailand:bangkok": {
+      "name": "Bangkok",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Authorized autonomous South Korea/Thailand rollout, 6 November 2026."
+    },
+    "thailand:chiang-mai": {
+      "name": "Chiang Mai",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Authorized autonomous South Korea/Thailand rollout, 6 November 2026."
+    },
+    "thailand:kata": {
+      "name": "Kata",
+      "climateType": "beach",
+      "reason": "Approved beach-oriented holiday base; 25°C target.",
+      "status": "Authorized autonomous South Korea/Thailand rollout, 6 November 2026."
+    },
+    "thailand:chaweng": {
+      "name": "Chaweng",
+      "climateType": "beach",
+      "reason": "Approved beach-oriented holiday base; 25°C target.",
+      "status": "Authorized autonomous South Korea/Thailand rollout, 6 November 2026."
+    },
+    "thailand:ao-nang": {
+      "name": "Ao Nang",
+      "climateType": "beach",
+      "reason": "Approved beach-oriented holiday base; 25°C target.",
+      "status": "Authorized autonomous South Korea/Thailand rollout, 6 November 2026."
+    },
+    "thailand:sukhothai": {
+      "name": "Sukhothai",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Authorized autonomous South Korea/Thailand rollout, 6 November 2026."
     }
   }
 }

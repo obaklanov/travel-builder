@@ -79,6 +79,20 @@
         "timeStandard": "Local solar time",
         "sourceUrl": "https://power.larc.nasa.gov/docs/services/api/temporal/daily/",
         "rainDefinition": "PRECTOTCORR total precipitation, including snow, averaged across all calendar days in mm/day. Alternative to ERA5 rain-only data due daily API quota; not directly identical."
+      },
+      "south-korea": {
+        "model": "NASA POWER/MERRA-2",
+        "period": "2016–2025",
+        "timeStandard": "Local solar time",
+        "sourceUrl": "https://power.larc.nasa.gov/docs/services/api/temporal/daily/",
+        "rainDefinition": "PRECTOTCORR total precipitation, including snow, averaged across all calendar days in mm/day. Alternative to ERA5 rain-only data due daily API quota; not directly identical."
+      },
+      "thailand": {
+        "model": "NASA POWER/MERRA-2",
+        "period": "2016–2025",
+        "timeStandard": "Local solar time",
+        "sourceUrl": "https://power.larc.nasa.gov/docs/services/api/temporal/daily/",
+        "rainDefinition": "PRECTOTCORR total precipitation, including snow, averaged across all calendar days in mm/day. Alternative to ERA5 rain-only data due daily API quota; not directly identical."
       }
     }
   },
@@ -24192,6 +24206,1869 @@
       },
       "events": [],
       "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "south-korea",
+      "id": "seoul",
+      "name": "Seoul",
+      "area": "Capital region",
+      "latitude": 37.5665,
+      "longitude": 126.978,
+      "airports": [
+        [
+          "ICN",
+          "Seoul Incheon"
+        ],
+        [
+          "GMP",
+          "Seoul Gimpo"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 0,
+      "gridLatitude": 37.5665,
+      "gridLongitude": 126.978,
+      "elevation": 73.25,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=126.978&latitude=37.5665&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://english.visitkorea.or.kr/svc/contents/infoHtmlView.do?menuSn=177&vcontsId=145437"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": -2.42,
+          "meanDailyHighC": 1.5,
+          "meanRainMmPerDay": 0.6469,
+          "meanRelativeHumidityPct": 75.26,
+          "rainyDayFraction": 0.1129
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": -0.53,
+          "meanDailyHighC": 3.82,
+          "meanRainMmPerDay": 0.9419,
+          "meanRelativeHumidityPct": 73.81,
+          "rainyDayFraction": 0.1343
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 5.08,
+          "meanDailyHighC": 10.58,
+          "meanRainMmPerDay": 1.4248,
+          "meanRelativeHumidityPct": 74.88,
+          "rainyDayFraction": 0.1806
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 10.91,
+          "meanDailyHighC": 16.56,
+          "meanRainMmPerDay": 2.1623,
+          "meanRelativeHumidityPct": 73.42,
+          "rainyDayFraction": 0.24
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 16.21,
+          "meanDailyHighC": 21.57,
+          "meanRainMmPerDay": 3.1913,
+          "meanRelativeHumidityPct": 74.48,
+          "rainyDayFraction": 0.2774
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 21.41,
+          "meanDailyHighC": 26.09,
+          "meanRainMmPerDay": 4.6746,
+          "meanRelativeHumidityPct": 76.09,
+          "rainyDayFraction": 0.36
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.24,
+          "meanDailyHighC": 28.7,
+          "meanRainMmPerDay": 9.8085,
+          "meanRelativeHumidityPct": 83.06,
+          "rainyDayFraction": 0.5871
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.95,
+          "meanDailyHighC": 29.26,
+          "meanRainMmPerDay": 8.4652,
+          "meanRelativeHumidityPct": 81.76,
+          "rainyDayFraction": 0.5742
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 21.44,
+          "meanDailyHighC": 25.47,
+          "meanRainMmPerDay": 5.4113,
+          "meanRelativeHumidityPct": 78.93,
+          "rainyDayFraction": 0.3933
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 14.47,
+          "meanDailyHighC": 18.86,
+          "meanRainMmPerDay": 2.9127,
+          "meanRelativeHumidityPct": 75.58,
+          "rainyDayFraction": 0.3097
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 7.06,
+          "meanDailyHighC": 11.51,
+          "meanRainMmPerDay": 1.8502,
+          "meanRelativeHumidityPct": 74.99,
+          "rainyDayFraction": 0.22
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": -0.55,
+          "meanDailyHighC": 3.21,
+          "meanRainMmPerDay": 0.9606,
+          "meanRelativeHumidityPct": 76.06,
+          "rainyDayFraction": 0.1516
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Korean city/nature and Thai cultural/Andaman/Gulf contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          12,
+          6,
+          7,
+          8,
+          3,
+          9,
+          5,
+          4,
+          11,
+          10
+        ],
+        "sourceUrls": [
+          "https://english.visitkorea.or.kr/svc/contents/infoHtmlView.do?menuSn=177&vcontsId=145437"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          1,
+          2,
+          12,
+          6,
+          7,
+          8,
+          3,
+          9,
+          5,
+          4,
+          11,
+          10
+        ],
+        "sourceUrls": [
+          "https://english.visitkorea.or.kr/svc/contents/infoHtmlView.do?menuSn=177&vcontsId=145437"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "south-korea",
+      "id": "busan",
+      "name": "Busan",
+      "area": "Southeast",
+      "latitude": 35.1796,
+      "longitude": 129.0756,
+      "airports": [
+        [
+          "PUS",
+          "Busan Gimhae"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 1,
+      "gridLatitude": 35.1796,
+      "gridLongitude": 129.0756,
+      "elevation": 0.98,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=129.0756&latitude=35.1796&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://english.visitkorea.or.kr/svc/contents/infoHtmlView.do?menuSn=177&vcontsId=145437"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 7.58,
+          "meanDailyHighC": 9.43,
+          "meanRainMmPerDay": 1.2074,
+          "meanRelativeHumidityPct": 71.68,
+          "rainyDayFraction": 0.1355
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 8.29,
+          "meanDailyHighC": 10.14,
+          "meanRainMmPerDay": 1.642,
+          "meanRelativeHumidityPct": 69.23,
+          "rainyDayFraction": 0.2226
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 11.6,
+          "meanDailyHighC": 13.06,
+          "meanRainMmPerDay": 2.619,
+          "meanRelativeHumidityPct": 70.93,
+          "rainyDayFraction": 0.271
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 14.53,
+          "meanDailyHighC": 15.7,
+          "meanRainMmPerDay": 3.6879,
+          "meanRelativeHumidityPct": 75.86,
+          "rainyDayFraction": 0.25
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.41,
+          "meanDailyHighC": 18.35,
+          "meanRainMmPerDay": 3.1665,
+          "meanRelativeHumidityPct": 82.66,
+          "rainyDayFraction": 0.2645
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 20.89,
+          "meanDailyHighC": 21.52,
+          "meanRainMmPerDay": 6.7444,
+          "meanRelativeHumidityPct": 87.95,
+          "rainyDayFraction": 0.3733
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.8,
+          "meanDailyHighC": 25.3,
+          "meanRainMmPerDay": 7.6453,
+          "meanRelativeHumidityPct": 91.53,
+          "rainyDayFraction": 0.5613
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.4,
+          "meanDailyHighC": 27.96,
+          "meanRainMmPerDay": 6.61,
+          "meanRelativeHumidityPct": 84.88,
+          "rainyDayFraction": 0.5355
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 24.79,
+          "meanDailyHighC": 25.46,
+          "meanRainMmPerDay": 8.1753,
+          "meanRelativeHumidityPct": 79.23,
+          "rainyDayFraction": 0.4967
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 20.53,
+          "meanDailyHighC": 21.5,
+          "meanRainMmPerDay": 2.8763,
+          "meanRelativeHumidityPct": 71.22,
+          "rainyDayFraction": 0.2548
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 15.61,
+          "meanDailyHighC": 17.09,
+          "meanRainMmPerDay": 1.2641,
+          "meanRelativeHumidityPct": 67.9,
+          "rainyDayFraction": 0.15
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 9.55,
+          "meanDailyHighC": 11.43,
+          "meanRainMmPerDay": 1.1549,
+          "meanRelativeHumidityPct": 72.26,
+          "rainyDayFraction": 0.1484
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Korean city/nature and Thai cultural/Andaman/Gulf contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          12,
+          6,
+          7,
+          8,
+          3,
+          9,
+          5,
+          4,
+          11,
+          10
+        ],
+        "sourceUrls": [
+          "https://english.visitkorea.or.kr/svc/contents/infoHtmlView.do?menuSn=177&vcontsId=145437"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          1,
+          2,
+          12,
+          6,
+          7,
+          8,
+          3,
+          9,
+          5,
+          4,
+          11,
+          10
+        ],
+        "sourceUrls": [
+          "https://english.visitkorea.or.kr/svc/contents/infoHtmlView.do?menuSn=177&vcontsId=145437"
+        ]
+      },
+      "events": [
+        {
+          "name": "Busan International Film Festival",
+          "months": [
+            10
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://www.biff.kr/eng/"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "south-korea",
+      "id": "seogwipo",
+      "name": "Seogwipo",
+      "area": "Jeju Island",
+      "latitude": 33.2541,
+      "longitude": 126.56,
+      "airports": [
+        [
+          "CJU",
+          "Jeju International"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 2,
+      "gridLatitude": 33.2541,
+      "gridLongitude": 126.56,
+      "elevation": 53.71,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=126.56&latitude=33.2541&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://english.visitkorea.or.kr/svc/contents/infoHtmlView.do?menuSn=177&vcontsId=145437"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates. CJU requires onward travel across Jeju. Seongsan is an east-coast excursion; island microclimates and wind differ.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 8.02,
+          "meanDailyHighC": 9.23,
+          "meanRainMmPerDay": 1.7918,
+          "meanRelativeHumidityPct": 76.07,
+          "rainyDayFraction": 0.2548
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 8.19,
+          "meanDailyHighC": 9.57,
+          "meanRainMmPerDay": 2.4377,
+          "meanRelativeHumidityPct": 74.49,
+          "rainyDayFraction": 0.2756
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 10.85,
+          "meanDailyHighC": 12.28,
+          "meanRainMmPerDay": 3.0273,
+          "meanRelativeHumidityPct": 75.49,
+          "rainyDayFraction": 0.2839
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 13.92,
+          "meanDailyHighC": 15.24,
+          "meanRainMmPerDay": 4.1418,
+          "meanRelativeHumidityPct": 79.24,
+          "rainyDayFraction": 0.2767
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.01,
+          "meanDailyHighC": 18.28,
+          "meanRainMmPerDay": 3.9692,
+          "meanRelativeHumidityPct": 83.48,
+          "rainyDayFraction": 0.3129
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 21.14,
+          "meanDailyHighC": 22.18,
+          "meanRainMmPerDay": 6.6074,
+          "meanRelativeHumidityPct": 88.08,
+          "rainyDayFraction": 0.3767
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.8,
+          "meanDailyHighC": 26.59,
+          "meanRainMmPerDay": 7.7466,
+          "meanRelativeHumidityPct": 89.23,
+          "rainyDayFraction": 0.5806
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.81,
+          "meanDailyHighC": 28.65,
+          "meanRainMmPerDay": 5.8468,
+          "meanRelativeHumidityPct": 82.68,
+          "rainyDayFraction": 0.5129
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 24.73,
+          "meanDailyHighC": 25.59,
+          "meanRainMmPerDay": 7.2552,
+          "meanRelativeHumidityPct": 80.51,
+          "rainyDayFraction": 0.4867
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 19.96,
+          "meanDailyHighC": 20.95,
+          "meanRainMmPerDay": 3.7859,
+          "meanRelativeHumidityPct": 74.46,
+          "rainyDayFraction": 0.2484
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 15.05,
+          "meanDailyHighC": 16.35,
+          "meanRainMmPerDay": 2.118,
+          "meanRelativeHumidityPct": 72.91,
+          "rainyDayFraction": 0.2267
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 10.01,
+          "meanDailyHighC": 11.36,
+          "meanRainMmPerDay": 1.4361,
+          "meanRelativeHumidityPct": 74.75,
+          "rainyDayFraction": 0.2161
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Korean city/nature and Thai cultural/Andaman/Gulf contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          12,
+          6,
+          7,
+          8,
+          3,
+          9,
+          5,
+          4,
+          11,
+          10
+        ],
+        "sourceUrls": [
+          "https://english.visitkorea.or.kr/svc/contents/infoHtmlView.do?menuSn=177&vcontsId=145437"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          1,
+          2,
+          12,
+          6,
+          7,
+          8,
+          3,
+          9,
+          5,
+          4,
+          11,
+          10
+        ],
+        "sourceUrls": [
+          "https://english.visitkorea.or.kr/svc/contents/infoHtmlView.do?menuSn=177&vcontsId=145437"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "south-korea",
+      "id": "gyeongju",
+      "name": "Gyeongju",
+      "area": "Southeast heritage region",
+      "latitude": 35.8562,
+      "longitude": 129.2247,
+      "airports": [
+        [
+          "PUS",
+          "Busan Gimhae"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 3,
+      "gridLatitude": 35.8562,
+      "gridLongitude": 129.2247,
+      "elevation": 119.54,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=129.2247&latitude=35.8562&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://english.visitkorea.or.kr/svc/contents/infoHtmlView.do?menuSn=177&vcontsId=145437"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates. PUS requires onward ground or rail transfer to Gyeongju.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 1.99,
+          "meanDailyHighC": 5.45,
+          "meanRainMmPerDay": 1.0771,
+          "meanRelativeHumidityPct": 72.71,
+          "rainyDayFraction": 0.1323
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 3.52,
+          "meanDailyHighC": 7.27,
+          "meanRainMmPerDay": 1.3348,
+          "meanRelativeHumidityPct": 69.3,
+          "rainyDayFraction": 0.1625
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 8.35,
+          "meanDailyHighC": 12.37,
+          "meanRainMmPerDay": 2.1641,
+          "meanRelativeHumidityPct": 70.14,
+          "rainyDayFraction": 0.2323
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 12.96,
+          "meanDailyHighC": 17.23,
+          "meanRainMmPerDay": 2.919,
+          "meanRelativeHumidityPct": 69.82,
+          "rainyDayFraction": 0.2367
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.36,
+          "meanDailyHighC": 21.62,
+          "meanRainMmPerDay": 2.4744,
+          "meanRelativeHumidityPct": 70.99,
+          "rainyDayFraction": 0.2516
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 21.68,
+          "meanDailyHighC": 25.37,
+          "meanRainMmPerDay": 4.1681,
+          "meanRelativeHumidityPct": 74.46,
+          "rainyDayFraction": 0.3433
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.15,
+          "meanDailyHighC": 28,
+          "meanRainMmPerDay": 7.0455,
+          "meanRelativeHumidityPct": 83.04,
+          "rainyDayFraction": 0.529
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.45,
+          "meanDailyHighC": 29.13,
+          "meanRainMmPerDay": 5.5981,
+          "meanRelativeHumidityPct": 80.68,
+          "rainyDayFraction": 0.471
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 22.36,
+          "meanDailyHighC": 24.77,
+          "meanRainMmPerDay": 6.2316,
+          "meanRelativeHumidityPct": 79.73,
+          "rainyDayFraction": 0.4633
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 16.87,
+          "meanDailyHighC": 19.73,
+          "meanRainMmPerDay": 3.4329,
+          "meanRelativeHumidityPct": 73.84,
+          "rainyDayFraction": 0.3032
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 10.68,
+          "meanDailyHighC": 14.34,
+          "meanRainMmPerDay": 1.2227,
+          "meanRelativeHumidityPct": 71.17,
+          "rainyDayFraction": 0.1733
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 3.68,
+          "meanDailyHighC": 7.14,
+          "meanRainMmPerDay": 1.1173,
+          "meanRelativeHumidityPct": 73.77,
+          "rainyDayFraction": 0.1581
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Korean city/nature and Thai cultural/Andaman/Gulf contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          12,
+          6,
+          7,
+          8,
+          3,
+          9,
+          5,
+          4,
+          11,
+          10
+        ],
+        "sourceUrls": [
+          "https://english.visitkorea.or.kr/svc/contents/infoHtmlView.do?menuSn=177&vcontsId=145437"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          1,
+          2,
+          12,
+          6,
+          7,
+          8,
+          3,
+          9,
+          5,
+          4,
+          11,
+          10
+        ],
+        "sourceUrls": [
+          "https://english.visitkorea.or.kr/svc/contents/infoHtmlView.do?menuSn=177&vcontsId=145437"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "south-korea",
+      "id": "sokcho",
+      "name": "Sokcho",
+      "area": "Seoraksan coast",
+      "latitude": 38.207,
+      "longitude": 128.5918,
+      "airports": [
+        [
+          "ICN",
+          "Seoul Incheon"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 4,
+      "gridLatitude": 38.207,
+      "gridLongitude": 128.5918,
+      "elevation": 203.02,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=128.5918&latitude=38.207&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://english.visitkorea.or.kr/svc/contents/infoHtmlView.do?menuSn=177&vcontsId=145437"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates. ICN is a distant gateway with substantial onward ground travel. City weather does not represent Seoraksan summit/trail conditions.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 0.27,
+          "meanDailyHighC": 3.02,
+          "meanRainMmPerDay": 0.8801,
+          "meanRelativeHumidityPct": 74.07,
+          "rainyDayFraction": 0.129
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 1.46,
+          "meanDailyHighC": 4.41,
+          "meanRainMmPerDay": 1.2385,
+          "meanRelativeHumidityPct": 71.12,
+          "rainyDayFraction": 0.1625
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 6.39,
+          "meanDailyHighC": 9.76,
+          "meanRainMmPerDay": 1.9685,
+          "meanRelativeHumidityPct": 70.37,
+          "rainyDayFraction": 0.2258
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 11.22,
+          "meanDailyHighC": 14.94,
+          "meanRainMmPerDay": 2.56,
+          "meanRelativeHumidityPct": 69.64,
+          "rainyDayFraction": 0.2533
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 16.08,
+          "meanDailyHighC": 19.89,
+          "meanRainMmPerDay": 2.852,
+          "meanRelativeHumidityPct": 69.9,
+          "rainyDayFraction": 0.2742
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 20.67,
+          "meanDailyHighC": 24.02,
+          "meanRainMmPerDay": 3.9704,
+          "meanRelativeHumidityPct": 74.1,
+          "rainyDayFraction": 0.3667
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.09,
+          "meanDailyHighC": 26.63,
+          "meanRainMmPerDay": 10.2334,
+          "meanRelativeHumidityPct": 83.04,
+          "rainyDayFraction": 0.5516
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.95,
+          "meanDailyHighC": 27.23,
+          "meanRainMmPerDay": 9.8427,
+          "meanRelativeHumidityPct": 82.31,
+          "rainyDayFraction": 0.5839
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 20.72,
+          "meanDailyHighC": 23.01,
+          "meanRainMmPerDay": 8.7954,
+          "meanRelativeHumidityPct": 78.8,
+          "rainyDayFraction": 0.4467
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 15.16,
+          "meanDailyHighC": 17.65,
+          "meanRainMmPerDay": 5.6662,
+          "meanRelativeHumidityPct": 73.57,
+          "rainyDayFraction": 0.3645
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 9.08,
+          "meanDailyHighC": 12.01,
+          "meanRainMmPerDay": 1.4816,
+          "meanRelativeHumidityPct": 72.56,
+          "rainyDayFraction": 0.1967
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 2.1,
+          "meanDailyHighC": 4.8,
+          "meanRainMmPerDay": 1.3502,
+          "meanRelativeHumidityPct": 76.62,
+          "rainyDayFraction": 0.1323
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Korean city/nature and Thai cultural/Andaman/Gulf contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          12,
+          6,
+          7,
+          8,
+          3,
+          9,
+          5,
+          4,
+          11,
+          10
+        ],
+        "sourceUrls": [
+          "https://english.visitkorea.or.kr/svc/contents/infoHtmlView.do?menuSn=177&vcontsId=145437"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          1,
+          2,
+          12,
+          6,
+          7,
+          8,
+          3,
+          9,
+          5,
+          4,
+          11,
+          10
+        ],
+        "sourceUrls": [
+          "https://english.visitkorea.or.kr/svc/contents/infoHtmlView.do?menuSn=177&vcontsId=145437"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "thailand",
+      "id": "bangkok",
+      "name": "Bangkok",
+      "area": "Central Thailand",
+      "latitude": 13.7563,
+      "longitude": 100.5018,
+      "airports": [
+        [
+          "BKK",
+          "Bangkok Suvarnabhumi"
+        ],
+        [
+          "DMK",
+          "Bangkok Don Mueang"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 0,
+      "gridLatitude": 13.7563,
+      "gridLongitude": 100.5018,
+      "elevation": 4.48,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=100.5018&latitude=13.7563&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeSources": [
+        "https://www.tourismthailand.org/Destinations"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.41,
+          "meanDailyHighC": 33.18,
+          "meanRainMmPerDay": 0.5443,
+          "meanRelativeHumidityPct": 65.6,
+          "rainyDayFraction": 0.0968
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 28.62,
+          "meanDailyHighC": 35.75,
+          "meanRainMmPerDay": 0.7181,
+          "meanRelativeHumidityPct": 60.36,
+          "rainyDayFraction": 0.1413
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 30.65,
+          "meanDailyHighC": 37.5,
+          "meanRainMmPerDay": 1.1055,
+          "meanRelativeHumidityPct": 61.89,
+          "rainyDayFraction": 0.2226
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 31.21,
+          "meanDailyHighC": 37.31,
+          "meanRainMmPerDay": 2.4117,
+          "meanRelativeHumidityPct": 64.78,
+          "rainyDayFraction": 0.3767
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 29.97,
+          "meanDailyHighC": 34.48,
+          "meanRainMmPerDay": 6.022,
+          "meanRelativeHumidityPct": 74.99,
+          "rainyDayFraction": 0.7387
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 28.61,
+          "meanDailyHighC": 32.62,
+          "meanRainMmPerDay": 5.3012,
+          "meanRelativeHumidityPct": 79.81,
+          "rainyDayFraction": 0.7933
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.87,
+          "meanDailyHighC": 31.72,
+          "meanRainMmPerDay": 6.9117,
+          "meanRelativeHumidityPct": 82.21,
+          "rainyDayFraction": 0.8774
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.85,
+          "meanDailyHighC": 31.74,
+          "meanRainMmPerDay": 6.7961,
+          "meanRelativeHumidityPct": 82.42,
+          "rainyDayFraction": 0.8581
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 27.39,
+          "meanDailyHighC": 30.72,
+          "meanRainMmPerDay": 10.3345,
+          "meanRelativeHumidityPct": 85.99,
+          "rainyDayFraction": 0.9333
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.14,
+          "meanDailyHighC": 30.58,
+          "meanRainMmPerDay": 7.1972,
+          "meanRelativeHumidityPct": 85.71,
+          "rainyDayFraction": 0.7806
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 26.08,
+          "meanDailyHighC": 30.42,
+          "meanRainMmPerDay": 1.6793,
+          "meanRelativeHumidityPct": 82.18,
+          "rainyDayFraction": 0.3267
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.86,
+          "meanDailyHighC": 30.47,
+          "meanRainMmPerDay": 0.2913,
+          "meanRelativeHumidityPct": 74.57,
+          "rainyDayFraction": 0.0645
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Korean city/nature and Thai cultural/Andaman/Gulf contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          9,
+          8,
+          7,
+          6,
+          5,
+          10,
+          4,
+          3,
+          2,
+          11,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://www.tourismthailand.org/Destinations"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          9,
+          8,
+          7,
+          6,
+          5,
+          10,
+          4,
+          3,
+          2,
+          11,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://www.tourismthailand.org/Destinations"
+        ]
+      },
+      "events": [
+        {
+          "name": "Songkran",
+          "months": [
+            4
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://www.tatnews.org/2026/03/songkran-festival-2026-to-proceed-nationwide-welcoming-global-visitors-to-thailands-unesco-recognised-new-year-celebration/"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "thailand",
+      "id": "chiang-mai",
+      "name": "Chiang Mai",
+      "area": "North",
+      "latitude": 18.7883,
+      "longitude": 98.9853,
+      "airports": [
+        [
+          "CNX",
+          "Chiang Mai"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 1,
+      "gridLatitude": 18.7883,
+      "gridLongitude": 98.9853,
+      "elevation": 759.08,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=98.9853&latitude=18.7883&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeSources": [
+        "https://www.tourismthailand.org/Destinations"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates. Doi Inthanon is a separate mountain excursion. Seasonal smoke/haze is not included in these temperature/rain/humidity scores.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 19.13,
+          "meanDailyHighC": 25.43,
+          "meanRainMmPerDay": 0.6225,
+          "meanRelativeHumidityPct": 71.53,
+          "rainyDayFraction": 0.0903
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 21.2,
+          "meanDailyHighC": 28.91,
+          "meanRainMmPerDay": 0.5354,
+          "meanRelativeHumidityPct": 60.8,
+          "rainyDayFraction": 0.0883
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.99,
+          "meanDailyHighC": 33.23,
+          "meanRainMmPerDay": 0.416,
+          "meanRelativeHumidityPct": 52.19,
+          "rainyDayFraction": 0.1
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 27.12,
+          "meanDailyHighC": 34.3,
+          "meanRainMmPerDay": 2.5405,
+          "meanRelativeHumidityPct": 57.34,
+          "rainyDayFraction": 0.3567
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.35,
+          "meanDailyHighC": 32.06,
+          "meanRainMmPerDay": 6.4745,
+          "meanRelativeHumidityPct": 73.03,
+          "rainyDayFraction": 0.671
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.01,
+          "meanDailyHighC": 29.93,
+          "meanRainMmPerDay": 4.6843,
+          "meanRelativeHumidityPct": 81.29,
+          "rainyDayFraction": 0.7233
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.51,
+          "meanDailyHighC": 28.93,
+          "meanRainMmPerDay": 6.6401,
+          "meanRelativeHumidityPct": 84.29,
+          "rainyDayFraction": 0.8
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 23.93,
+          "meanDailyHighC": 28.01,
+          "meanRainMmPerDay": 8.3757,
+          "meanRelativeHumidityPct": 87.57,
+          "rainyDayFraction": 0.8548
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 23.81,
+          "meanDailyHighC": 27.55,
+          "meanRainMmPerDay": 8.3607,
+          "meanRelativeHumidityPct": 89.48,
+          "rainyDayFraction": 0.7967
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 22.81,
+          "meanDailyHighC": 26.6,
+          "meanRainMmPerDay": 5.0867,
+          "meanRelativeHumidityPct": 89.12,
+          "rainyDayFraction": 0.6097
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 20.92,
+          "meanDailyHighC": 25.29,
+          "meanRainMmPerDay": 1.5273,
+          "meanRelativeHumidityPct": 86.3,
+          "rainyDayFraction": 0.2433
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 19.03,
+          "meanDailyHighC": 24.24,
+          "meanRainMmPerDay": 0.4608,
+          "meanRelativeHumidityPct": 81.42,
+          "rainyDayFraction": 0.0839
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Korean city/nature and Thai cultural/Andaman/Gulf contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          9,
+          8,
+          7,
+          6,
+          5,
+          10,
+          4,
+          3,
+          2,
+          11,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://www.tourismthailand.org/Destinations"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          9,
+          8,
+          7,
+          6,
+          5,
+          10,
+          4,
+          3,
+          2,
+          11,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://www.tourismthailand.org/Destinations"
+        ]
+      },
+      "events": [
+        {
+          "name": "Songkran",
+          "months": [
+            4
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://www.tatnews.org/2026/03/songkran-festival-2026-to-proceed-nationwide-welcoming-global-visitors-to-thailands-unesco-recognised-new-year-celebration/"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "thailand",
+      "id": "kata",
+      "name": "Kata",
+      "area": "Phuket",
+      "latitude": 7.8201,
+      "longitude": 98.2993,
+      "airports": [
+        [
+          "HKT",
+          "Phuket"
+        ]
+      ],
+      "climateType": "beach",
+      "regionIndex": 2,
+      "gridLatitude": 7.8201,
+      "gridLongitude": 98.2993,
+      "elevation": 10.57,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=98.2993&latitude=7.8201&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Approved beach-oriented holiday base; 25°C target.",
+      "climateTypeSources": [
+        "https://www.tourismthailand.org/Destinations"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates. Airport-to-base ground transfers, marine conditions, park closures and boat operations require separate current checks. Maya Bay access is an excursion, not guaranteed by the climate score.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.23,
+          "meanDailyHighC": 28.41,
+          "meanRainMmPerDay": 3.3489,
+          "meanRelativeHumidityPct": 81.95,
+          "rainyDayFraction": 0.4516
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 27.68,
+          "meanDailyHighC": 29.07,
+          "meanRainMmPerDay": 1.8269,
+          "meanRelativeHumidityPct": 79.33,
+          "rainyDayFraction": 0.318
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.68,
+          "meanDailyHighC": 30.19,
+          "meanRainMmPerDay": 2.2802,
+          "meanRelativeHumidityPct": 76.85,
+          "rainyDayFraction": 0.4
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 29.01,
+          "meanDailyHighC": 30.07,
+          "meanRainMmPerDay": 5.0055,
+          "meanRelativeHumidityPct": 79.25,
+          "rainyDayFraction": 0.7167
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.94,
+          "meanDailyHighC": 29.6,
+          "meanRainMmPerDay": 10.2502,
+          "meanRelativeHumidityPct": 81.74,
+          "rainyDayFraction": 0.971
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 28.43,
+          "meanDailyHighC": 29.03,
+          "meanRainMmPerDay": 8.8489,
+          "meanRelativeHumidityPct": 82.11,
+          "rainyDayFraction": 0.95
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.22,
+          "meanDailyHighC": 28.77,
+          "meanRainMmPerDay": 9.1416,
+          "meanRelativeHumidityPct": 82.81,
+          "rainyDayFraction": 0.9161
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.99,
+          "meanDailyHighC": 28.58,
+          "meanRainMmPerDay": 10.5136,
+          "meanRelativeHumidityPct": 83.42,
+          "rainyDayFraction": 0.9452
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 27.68,
+          "meanDailyHighC": 28.33,
+          "meanRainMmPerDay": 12.006,
+          "meanRelativeHumidityPct": 83.46,
+          "rainyDayFraction": 0.9567
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.51,
+          "meanDailyHighC": 28.18,
+          "meanRainMmPerDay": 11.142,
+          "meanRelativeHumidityPct": 84.26,
+          "rainyDayFraction": 0.9516
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 27.58,
+          "meanDailyHighC": 28.34,
+          "meanRainMmPerDay": 10.2699,
+          "meanRelativeHumidityPct": 84.18,
+          "rainyDayFraction": 0.93
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.28,
+          "meanDailyHighC": 28.33,
+          "meanRainMmPerDay": 6.9019,
+          "meanRelativeHumidityPct": 83.23,
+          "rainyDayFraction": 0.671
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Korean city/nature and Thai cultural/Andaman/Gulf contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          9,
+          8,
+          7,
+          6,
+          5,
+          10,
+          4,
+          3,
+          2,
+          11,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://www.tourismthailand.org/Destinations"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          9,
+          8,
+          7,
+          6,
+          5,
+          10,
+          4,
+          3,
+          2,
+          11,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://www.tourismthailand.org/Destinations"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "thailand",
+      "id": "chaweng",
+      "name": "Chaweng",
+      "area": "Ko Samui",
+      "latitude": 9.5308,
+      "longitude": 100.0644,
+      "airports": [
+        [
+          "USM",
+          "Ko Samui"
+        ]
+      ],
+      "climateType": "beach",
+      "regionIndex": 3,
+      "gridLatitude": 9.5308,
+      "gridLongitude": 100.0644,
+      "elevation": 19.29,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=100.0644&latitude=9.5308&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Approved beach-oriented holiday base; 25°C target.",
+      "climateTypeSources": [
+        "https://www.tourismthailand.org/Destinations"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates. Airport-to-base ground transfers, marine conditions, park closures and boat operations require separate current checks. Maya Bay access is an excursion, not guaranteed by the climate score.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.11,
+          "meanDailyHighC": 27.77,
+          "meanRainMmPerDay": 5.0313,
+          "meanRelativeHumidityPct": 79.61,
+          "rainyDayFraction": 0.4516
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 27.35,
+          "meanDailyHighC": 28.1,
+          "meanRainMmPerDay": 2.9576,
+          "meanRelativeHumidityPct": 78.86,
+          "rainyDayFraction": 0.3216
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.16,
+          "meanDailyHighC": 29.02,
+          "meanRainMmPerDay": 1.5613,
+          "meanRelativeHumidityPct": 77.78,
+          "rainyDayFraction": 0.2161
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 29.35,
+          "meanDailyHighC": 30.2,
+          "meanRainMmPerDay": 3.5884,
+          "meanRelativeHumidityPct": 75.98,
+          "rainyDayFraction": 0.4233
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 29.68,
+          "meanDailyHighC": 30.46,
+          "meanRainMmPerDay": 6.2398,
+          "meanRelativeHumidityPct": 76.8,
+          "rainyDayFraction": 0.8419
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 29.03,
+          "meanDailyHighC": 29.91,
+          "meanRainMmPerDay": 5.8883,
+          "meanRelativeHumidityPct": 78.17,
+          "rainyDayFraction": 0.8667
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.65,
+          "meanDailyHighC": 29.51,
+          "meanRainMmPerDay": 5.9698,
+          "meanRelativeHumidityPct": 79.52,
+          "rainyDayFraction": 0.8613
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.48,
+          "meanDailyHighC": 29.37,
+          "meanRainMmPerDay": 5.437,
+          "meanRelativeHumidityPct": 80.09,
+          "rainyDayFraction": 0.9161
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 28.21,
+          "meanDailyHighC": 29.04,
+          "meanRainMmPerDay": 6.5871,
+          "meanRelativeHumidityPct": 80.18,
+          "rainyDayFraction": 0.8667
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.08,
+          "meanDailyHighC": 28.69,
+          "meanRainMmPerDay": 8.4308,
+          "meanRelativeHumidityPct": 80.81,
+          "rainyDayFraction": 0.9194
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 27.96,
+          "meanDailyHighC": 28.46,
+          "meanRainMmPerDay": 14.8677,
+          "meanRelativeHumidityPct": 81.55,
+          "rainyDayFraction": 0.87
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.36,
+          "meanDailyHighC": 27.95,
+          "meanRainMmPerDay": 11.9485,
+          "meanRelativeHumidityPct": 80.11,
+          "rainyDayFraction": 0.6226
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Korean city/nature and Thai cultural/Andaman/Gulf contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          11,
+          10,
+          9,
+          6,
+          5,
+          12,
+          7,
+          8,
+          4,
+          3,
+          2,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.tourismthailand.org/Destinations"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          11,
+          10,
+          9,
+          6,
+          5,
+          12,
+          7,
+          8,
+          4,
+          3,
+          2,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.tourismthailand.org/Destinations"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "thailand",
+      "id": "ao-nang",
+      "name": "Ao Nang",
+      "area": "Krabi",
+      "latitude": 8.0367,
+      "longitude": 98.8237,
+      "airports": [
+        [
+          "KBV",
+          "Krabi"
+        ]
+      ],
+      "climateType": "beach",
+      "regionIndex": 4,
+      "gridLatitude": 8.0367,
+      "gridLongitude": 98.8237,
+      "elevation": 30.99,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=98.8237&latitude=8.0367&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Approved beach-oriented holiday base; 25°C target.",
+      "climateTypeSources": [
+        "https://www.tourismthailand.org/Destinations"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates. Airport-to-base ground transfers, marine conditions, park closures and boat operations require separate current checks. Maya Bay access is an excursion, not guaranteed by the climate score.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.43,
+          "meanDailyHighC": 28.58,
+          "meanRainMmPerDay": 3.5165,
+          "meanRelativeHumidityPct": 85.36,
+          "rainyDayFraction": 0.3903
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 26.88,
+          "meanDailyHighC": 29.45,
+          "meanRainMmPerDay": 1.5583,
+          "meanRelativeHumidityPct": 82.34,
+          "rainyDayFraction": 0.2367
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.23,
+          "meanDailyHighC": 31.18,
+          "meanRainMmPerDay": 1.7745,
+          "meanRelativeHumidityPct": 77.6,
+          "rainyDayFraction": 0.3129
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 28.81,
+          "meanDailyHighC": 31.1,
+          "meanRainMmPerDay": 4.5956,
+          "meanRelativeHumidityPct": 79.39,
+          "rainyDayFraction": 0.6367
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.45,
+          "meanDailyHighC": 29.9,
+          "meanRainMmPerDay": 9.2343,
+          "meanRelativeHumidityPct": 84.2,
+          "rainyDayFraction": 0.9419
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 27.8,
+          "meanDailyHighC": 29.03,
+          "meanRainMmPerDay": 8.175,
+          "meanRelativeHumidityPct": 85.4,
+          "rainyDayFraction": 0.8767
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.61,
+          "meanDailyHighC": 28.78,
+          "meanRainMmPerDay": 8.2949,
+          "meanRelativeHumidityPct": 85.97,
+          "rainyDayFraction": 0.8
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.38,
+          "meanDailyHighC": 28.63,
+          "meanRainMmPerDay": 9.6358,
+          "meanRelativeHumidityPct": 86.63,
+          "rainyDayFraction": 0.8645
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 27.09,
+          "meanDailyHighC": 28.45,
+          "meanRainMmPerDay": 11.4992,
+          "meanRelativeHumidityPct": 86.6,
+          "rainyDayFraction": 0.91
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.05,
+          "meanDailyHighC": 28.42,
+          "meanRainMmPerDay": 10.7632,
+          "meanRelativeHumidityPct": 86.94,
+          "rainyDayFraction": 0.9548
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 26.96,
+          "meanDailyHighC": 28.5,
+          "meanRainMmPerDay": 9.9305,
+          "meanRelativeHumidityPct": 87.78,
+          "rainyDayFraction": 0.9167
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.47,
+          "meanDailyHighC": 28.4,
+          "meanRainMmPerDay": 5.6927,
+          "meanRelativeHumidityPct": 86.96,
+          "rainyDayFraction": 0.6161
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Korean city/nature and Thai cultural/Andaman/Gulf contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          9,
+          8,
+          7,
+          6,
+          5,
+          10,
+          4,
+          3,
+          2,
+          11,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://www.tourismthailand.org/Destinations"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          9,
+          8,
+          7,
+          6,
+          5,
+          10,
+          4,
+          3,
+          2,
+          11,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://www.tourismthailand.org/Destinations"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "thailand",
+      "id": "sukhothai",
+      "name": "Sukhothai",
+      "area": "Northern heritage region",
+      "latitude": 17.0077,
+      "longitude": 99.823,
+      "airports": [
+        [
+          "THS",
+          "Sukhothai"
+        ],
+        [
+          "PHS",
+          "Phitsanulok"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 5,
+      "gridLatitude": 17.0077,
+      "gridLongitude": 99.823,
+      "elevation": 85.97,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=99.823&latitude=17.0077&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeSources": [
+        "https://www.tourismthailand.org/Destinations"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.91,
+          "meanDailyHighC": 31.97,
+          "meanRainMmPerDay": 0.3655,
+          "meanRelativeHumidityPct": 58.76,
+          "rainyDayFraction": 0.0774
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 27.58,
+          "meanDailyHighC": 35.12,
+          "meanRainMmPerDay": 0.8011,
+          "meanRelativeHumidityPct": 49.45,
+          "rainyDayFraction": 0.1131
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 31.36,
+          "meanDailyHighC": 38.48,
+          "meanRainMmPerDay": 0.6825,
+          "meanRelativeHumidityPct": 44.5,
+          "rainyDayFraction": 0.1613
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 32.63,
+          "meanDailyHighC": 38.77,
+          "meanRainMmPerDay": 2.627,
+          "meanRelativeHumidityPct": 50.09,
+          "rainyDayFraction": 0.3267
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 30.53,
+          "meanDailyHighC": 35.12,
+          "meanRainMmPerDay": 6.1127,
+          "meanRelativeHumidityPct": 67.99,
+          "rainyDayFraction": 0.6613
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 28.51,
+          "meanDailyHighC": 32.57,
+          "meanRainMmPerDay": 4.5396,
+          "meanRelativeHumidityPct": 78.43,
+          "rainyDayFraction": 0.7533
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.83,
+          "meanDailyHighC": 31.69,
+          "meanRainMmPerDay": 6.1156,
+          "meanRelativeHumidityPct": 80.95,
+          "rainyDayFraction": 0.8097
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.44,
+          "meanDailyHighC": 31.11,
+          "meanRainMmPerDay": 7.3808,
+          "meanRelativeHumidityPct": 83.6,
+          "rainyDayFraction": 0.8097
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 27.36,
+          "meanDailyHighC": 30.66,
+          "meanRainMmPerDay": 9.3766,
+          "meanRelativeHumidityPct": 85.7,
+          "rainyDayFraction": 0.86
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.91,
+          "meanDailyHighC": 30.54,
+          "meanRainMmPerDay": 5.8523,
+          "meanRelativeHumidityPct": 83.42,
+          "rainyDayFraction": 0.6387
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.34,
+          "meanDailyHighC": 29.94,
+          "meanRainMmPerDay": 1.3353,
+          "meanRelativeHumidityPct": 78.78,
+          "rainyDayFraction": 0.19
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 23.54,
+          "meanDailyHighC": 29.62,
+          "meanRainMmPerDay": 0.1965,
+          "meanRelativeHumidityPct": 70.31,
+          "rainyDayFraction": 0.029
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Korean city/nature and Thai cultural/Andaman/Gulf contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          9,
+          8,
+          7,
+          6,
+          5,
+          10,
+          4,
+          3,
+          2,
+          11,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://www.tourismthailand.org/Destinations"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          9,
+          8,
+          7,
+          6,
+          5,
+          10,
+          4,
+          3,
+          2,
+          11,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://www.tourismthailand.org/Destinations"
+        ]
+      },
+      "events": [
+        {
+          "name": "Songkran",
+          "months": [
+            4
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://www.tatnews.org/2026/03/songkran-festival-2026-to-proceed-nationwide-welcoming-global-visitors-to-thailands-unesco-recognised-new-year-celebration/"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
     }
   ],
   "destinationTypeAssignments": {
@@ -24560,6 +26437,72 @@
       "climateType": "all-season",
       "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
       "status": "Authorized autonomous Malaysia/Philippines rollout, 6 November 2026."
+    },
+    "south-korea:seoul": {
+      "name": "Seoul",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous South Korea/Thailand rollout, 6 November 2026."
+    },
+    "south-korea:busan": {
+      "name": "Busan",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous South Korea/Thailand rollout, 6 November 2026."
+    },
+    "south-korea:seogwipo": {
+      "name": "Seogwipo",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous South Korea/Thailand rollout, 6 November 2026."
+    },
+    "south-korea:gyeongju": {
+      "name": "Gyeongju",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous South Korea/Thailand rollout, 6 November 2026."
+    },
+    "south-korea:sokcho": {
+      "name": "Sokcho",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous South Korea/Thailand rollout, 6 November 2026."
+    },
+    "thailand:bangkok": {
+      "name": "Bangkok",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Authorized autonomous South Korea/Thailand rollout, 6 November 2026."
+    },
+    "thailand:chiang-mai": {
+      "name": "Chiang Mai",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Authorized autonomous South Korea/Thailand rollout, 6 November 2026."
+    },
+    "thailand:kata": {
+      "name": "Kata",
+      "climateType": "beach",
+      "reason": "Approved beach-oriented holiday base; 25°C target.",
+      "status": "Authorized autonomous South Korea/Thailand rollout, 6 November 2026."
+    },
+    "thailand:chaweng": {
+      "name": "Chaweng",
+      "climateType": "beach",
+      "reason": "Approved beach-oriented holiday base; 25°C target.",
+      "status": "Authorized autonomous South Korea/Thailand rollout, 6 November 2026."
+    },
+    "thailand:ao-nang": {
+      "name": "Ao Nang",
+      "climateType": "beach",
+      "reason": "Approved beach-oriented holiday base; 25°C target.",
+      "status": "Authorized autonomous South Korea/Thailand rollout, 6 November 2026."
+    },
+    "thailand:sukhothai": {
+      "name": "Sukhothai",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Authorized autonomous South Korea/Thailand rollout, 6 November 2026."
     }
   }
 }
