@@ -121,6 +121,20 @@
         "timeStandard": "Local solar time",
         "sourceUrl": "https://power.larc.nasa.gov/docs/services/api/temporal/daily/",
         "rainDefinition": "PRECTOTCORR total precipitation, including snow, averaged across all calendar days in mm/day. Alternative to ERA5 rain-only data due daily API quota; not directly identical."
+      },
+      "australia": {
+        "model": "NASA POWER/MERRA-2",
+        "period": "2016–2025",
+        "timeStandard": "Local solar time",
+        "sourceUrl": "https://power.larc.nasa.gov/docs/services/api/temporal/daily/",
+        "rainDefinition": "PRECTOTCORR total precipitation, including snow, averaged across all calendar days in mm/day. Alternative to ERA5 rain-only data due daily API quota; not directly identical."
+      },
+      "new-zealand": {
+        "model": "NASA POWER/MERRA-2",
+        "period": "2016–2025",
+        "timeStandard": "Local solar time",
+        "sourceUrl": "https://power.larc.nasa.gov/docs/services/api/temporal/daily/",
+        "rainDefinition": "PRECTOTCORR total precipitation, including snow, averaged across all calendar days in mm/day. Alternative to ERA5 rain-only data due daily API quota; not directly identical."
       }
     }
   },
@@ -30451,6 +30465,2503 @@
       },
       "events": [],
       "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "australia",
+      "id": "sydney",
+      "name": "Sydney",
+      "area": "New South Wales",
+      "latitude": -33.8688,
+      "longitude": 151.2093,
+      "airports": [
+        [
+          "SYD",
+          "Sydney"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 0,
+      "gridLatitude": -33.8688,
+      "gridLongitude": 151.2093,
+      "elevation": 31.72,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=151.2093&latitude=-33.8688&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeSources": [
+        "https://www.australia.com/en"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 23.1,
+          "meanDailyHighC": 25.84,
+          "meanRainMmPerDay": 3.3388,
+          "meanRelativeHumidityPct": 77.04,
+          "rainyDayFraction": 0.4613
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 23.16,
+          "meanDailyHighC": 25.68,
+          "meanRainMmPerDay": 4.0592,
+          "meanRelativeHumidityPct": 74.94,
+          "rainyDayFraction": 0.4311
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 22.31,
+          "meanDailyHighC": 24.59,
+          "meanRainMmPerDay": 5.3174,
+          "meanRelativeHumidityPct": 76.35,
+          "rainyDayFraction": 0.5065
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 20.11,
+          "meanDailyHighC": 22.5,
+          "meanRainMmPerDay": 1.8688,
+          "meanRelativeHumidityPct": 73.63,
+          "rainyDayFraction": 0.2567
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.39,
+          "meanDailyHighC": 19.88,
+          "meanRainMmPerDay": 1.35,
+          "meanRelativeHumidityPct": 71.57,
+          "rainyDayFraction": 0.2452
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 14.88,
+          "meanDailyHighC": 17.17,
+          "meanRainMmPerDay": 1.7495,
+          "meanRelativeHumidityPct": 73.94,
+          "rainyDayFraction": 0.2433
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 14.44,
+          "meanDailyHighC": 17.1,
+          "meanRainMmPerDay": 1.752,
+          "meanRelativeHumidityPct": 70.94,
+          "rainyDayFraction": 0.1806
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 14.94,
+          "meanDailyHighC": 17.76,
+          "meanRainMmPerDay": 1.5045,
+          "meanRelativeHumidityPct": 69.83,
+          "rainyDayFraction": 0.2097
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 16.81,
+          "meanDailyHighC": 20.04,
+          "meanRainMmPerDay": 1.2642,
+          "meanRelativeHumidityPct": 67.46,
+          "rainyDayFraction": 0.1967
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.63,
+          "meanDailyHighC": 21.8,
+          "meanRainMmPerDay": 2.1598,
+          "meanRelativeHumidityPct": 70.18,
+          "rainyDayFraction": 0.3129
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 20.02,
+          "meanDailyHighC": 23.06,
+          "meanRainMmPerDay": 2.6496,
+          "meanRelativeHumidityPct": 71.82,
+          "rainyDayFraction": 0.3233
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 21.78,
+          "meanDailyHighC": 24.95,
+          "meanRainMmPerDay": 2.1986,
+          "meanRelativeHumidityPct": 73.73,
+          "rainyDayFraction": 0.3419
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Australian and New Zealand southern-hemisphere city/scenic/coastal contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          6,
+          7,
+          8,
+          5,
+          9,
+          4,
+          10,
+          3,
+          11,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.australia.com/en"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          6,
+          7,
+          8,
+          5,
+          9,
+          4,
+          10,
+          3,
+          11,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.australia.com/en"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "australia",
+      "id": "melbourne",
+      "name": "Melbourne",
+      "area": "Victoria",
+      "latitude": -37.8136,
+      "longitude": 144.9631,
+      "airports": [
+        [
+          "MEL",
+          "Melbourne"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 1,
+      "gridLatitude": -37.8136,
+      "gridLongitude": 144.9631,
+      "elevation": 58.74,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=144.9631&latitude=-37.8136&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://www.australia.com/en"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 20.42,
+          "meanDailyHighC": 26.15,
+          "meanRainMmPerDay": 2.4297,
+          "meanRelativeHumidityPct": 67.71,
+          "rainyDayFraction": 0.2935
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 19.83,
+          "meanDailyHighC": 25.27,
+          "meanRainMmPerDay": 1.2502,
+          "meanRelativeHumidityPct": 67.11,
+          "rainyDayFraction": 0.1908
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.9,
+          "meanDailyHighC": 24.17,
+          "meanRainMmPerDay": 1.8411,
+          "meanRelativeHumidityPct": 69.31,
+          "rainyDayFraction": 0.2742
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 15.78,
+          "meanDailyHighC": 20.27,
+          "meanRainMmPerDay": 2.1592,
+          "meanRelativeHumidityPct": 74.02,
+          "rainyDayFraction": 0.2533
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 12.67,
+          "meanDailyHighC": 16.59,
+          "meanRainMmPerDay": 1.8126,
+          "meanRelativeHumidityPct": 78.3,
+          "rainyDayFraction": 0.371
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 10.18,
+          "meanDailyHighC": 13.58,
+          "meanRainMmPerDay": 2.0189,
+          "meanRelativeHumidityPct": 83.72,
+          "rainyDayFraction": 0.4133
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 9.47,
+          "meanDailyHighC": 12.97,
+          "meanRainMmPerDay": 1.9844,
+          "meanRelativeHumidityPct": 83.87,
+          "rainyDayFraction": 0.4484
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 10.19,
+          "meanDailyHighC": 13.94,
+          "meanRainMmPerDay": 2.018,
+          "meanRelativeHumidityPct": 80.74,
+          "rainyDayFraction": 0.4387
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 11.88,
+          "meanDailyHighC": 16.06,
+          "meanRainMmPerDay": 1.9301,
+          "meanRelativeHumidityPct": 76.53,
+          "rainyDayFraction": 0.39
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 13.97,
+          "meanDailyHighC": 18.65,
+          "meanRainMmPerDay": 3.0987,
+          "meanRelativeHumidityPct": 73.36,
+          "rainyDayFraction": 0.4258
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 16.06,
+          "meanDailyHighC": 20.88,
+          "meanRainMmPerDay": 2.9712,
+          "meanRelativeHumidityPct": 72.05,
+          "rainyDayFraction": 0.4067
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.15,
+          "meanDailyHighC": 23.6,
+          "meanRainMmPerDay": 2.1619,
+          "meanRelativeHumidityPct": 68.28,
+          "rainyDayFraction": 0.2968
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Australian and New Zealand southern-hemisphere city/scenic/coastal contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          6,
+          7,
+          8,
+          5,
+          9,
+          4,
+          10,
+          3,
+          11,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.australia.com/en"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          6,
+          7,
+          8,
+          5,
+          9,
+          4,
+          10,
+          3,
+          11,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.australia.com/en"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "australia",
+      "id": "cairns",
+      "name": "Cairns",
+      "area": "Tropical Queensland",
+      "latitude": -16.9186,
+      "longitude": 145.7781,
+      "airports": [
+        [
+          "CNS",
+          "Cairns"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 2,
+      "gridLatitude": -16.9186,
+      "gridLongitude": 145.7781,
+      "elevation": 404.05,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=145.7781&latitude=-16.9186&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://www.australia.com/en"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates. Town weather is not a reef marine-conditions or swimming safety assessment.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.35,
+          "meanDailyHighC": 28.61,
+          "meanRainMmPerDay": 10.1919,
+          "meanRelativeHumidityPct": 85.74,
+          "rainyDayFraction": 0.7032
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 25.21,
+          "meanDailyHighC": 28.29,
+          "meanRainMmPerDay": 8.6059,
+          "meanRelativeHumidityPct": 86.87,
+          "rainyDayFraction": 0.6996
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.55,
+          "meanDailyHighC": 27.38,
+          "meanRainMmPerDay": 9.4334,
+          "meanRelativeHumidityPct": 88.27,
+          "rainyDayFraction": 0.6839
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 23.23,
+          "meanDailyHighC": 26.35,
+          "meanRainMmPerDay": 4.7303,
+          "meanRelativeHumidityPct": 86.23,
+          "rainyDayFraction": 0.5167
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 21.42,
+          "meanDailyHighC": 24.82,
+          "meanRainMmPerDay": 2.1704,
+          "meanRelativeHumidityPct": 84.5,
+          "rainyDayFraction": 0.3968
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 20.01,
+          "meanDailyHighC": 23.97,
+          "meanRainMmPerDay": 0.919,
+          "meanRelativeHumidityPct": 81.94,
+          "rainyDayFraction": 0.23
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 19.7,
+          "meanDailyHighC": 24.15,
+          "meanRainMmPerDay": 1.2809,
+          "meanRelativeHumidityPct": 79.54,
+          "rainyDayFraction": 0.2258
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 20.28,
+          "meanDailyHighC": 25.43,
+          "meanRainMmPerDay": 0.6424,
+          "meanRelativeHumidityPct": 74.17,
+          "rainyDayFraction": 0.171
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 21.89,
+          "meanDailyHighC": 27.08,
+          "meanRainMmPerDay": 0.9607,
+          "meanRelativeHumidityPct": 72.97,
+          "rainyDayFraction": 0.2
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 23.99,
+          "meanDailyHighC": 29.65,
+          "meanRainMmPerDay": 1.1515,
+          "meanRelativeHumidityPct": 71.67,
+          "rainyDayFraction": 0.1677
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.32,
+          "meanDailyHighC": 30.79,
+          "meanRainMmPerDay": 1.3828,
+          "meanRelativeHumidityPct": 71.04,
+          "rainyDayFraction": 0.2167
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.79,
+          "meanDailyHighC": 30.43,
+          "meanRainMmPerDay": 6.4074,
+          "meanRelativeHumidityPct": 77.33,
+          "rainyDayFraction": 0.4677
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Australian and New Zealand southern-hemisphere city/scenic/coastal contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          2,
+          1,
+          3,
+          12,
+          11,
+          4,
+          10,
+          5,
+          9,
+          6,
+          8,
+          7
+        ],
+        "sourceUrls": [
+          "https://www.australia.com/en"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          2,
+          1,
+          3,
+          12,
+          11,
+          4,
+          10,
+          5,
+          9,
+          6,
+          8,
+          7
+        ],
+        "sourceUrls": [
+          "https://www.australia.com/en"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "australia",
+      "id": "yulara",
+      "name": "Yulara",
+      "area": "Uluru and Red Centre",
+      "latitude": -25.2406,
+      "longitude": 130.9889,
+      "airports": [
+        [
+          "AYQ",
+          "Uluru Ayers Rock"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 3,
+      "gridLatitude": -25.2406,
+      "gridLongitude": 130.9889,
+      "elevation": 478.74,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=130.9889&latitude=-25.2406&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://www.australia.com/en"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates. Uluru excursions have separate heat/access restrictions; monthly averages do not determine trail safety.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 32.31,
+          "meanDailyHighC": 39.58,
+          "meanRainMmPerDay": 0.7003,
+          "meanRelativeHumidityPct": 29,
+          "rainyDayFraction": 0.1323
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 31.09,
+          "meanDailyHighC": 38.9,
+          "meanRainMmPerDay": 0.4833,
+          "meanRelativeHumidityPct": 25.95,
+          "rainyDayFraction": 0.0601
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 29.15,
+          "meanDailyHighC": 36.75,
+          "meanRainMmPerDay": 0.4606,
+          "meanRelativeHumidityPct": 29.82,
+          "rainyDayFraction": 0.0645
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 23.11,
+          "meanDailyHighC": 31.12,
+          "meanRainMmPerDay": 0.2242,
+          "meanRelativeHumidityPct": 31.94,
+          "rainyDayFraction": 0.0233
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 16.99,
+          "meanDailyHighC": 25.05,
+          "meanRainMmPerDay": 0.1696,
+          "meanRelativeHumidityPct": 39.04,
+          "rainyDayFraction": 0.0355
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 13.5,
+          "meanDailyHighC": 21.64,
+          "meanRainMmPerDay": 0.4533,
+          "meanRelativeHumidityPct": 45.5,
+          "rainyDayFraction": 0.0467
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 13.34,
+          "meanDailyHighC": 22.12,
+          "meanRainMmPerDay": 0.1065,
+          "meanRelativeHumidityPct": 42.2,
+          "rainyDayFraction": 0.0194
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 16.16,
+          "meanDailyHighC": 25.23,
+          "meanRainMmPerDay": 0.1128,
+          "meanRelativeHumidityPct": 33.96,
+          "rainyDayFraction": 0.0323
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 20.69,
+          "meanDailyHighC": 29.79,
+          "meanRainMmPerDay": 0.2595,
+          "meanRelativeHumidityPct": 27.99,
+          "rainyDayFraction": 0.05
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.68,
+          "meanDailyHighC": 34.52,
+          "meanRainMmPerDay": 0.4605,
+          "meanRelativeHumidityPct": 25.48,
+          "rainyDayFraction": 0.0806
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 28.22,
+          "meanDailyHighC": 36.31,
+          "meanRainMmPerDay": 0.8618,
+          "meanRelativeHumidityPct": 28.43,
+          "rainyDayFraction": 0.1433
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 31.14,
+          "meanDailyHighC": 38.89,
+          "meanRainMmPerDay": 0.4021,
+          "meanRelativeHumidityPct": 25.45,
+          "rainyDayFraction": 0.0548
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Australian and New Zealand southern-hemisphere city/scenic/coastal contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          2,
+          1,
+          3,
+          12,
+          11,
+          4,
+          10,
+          5,
+          9,
+          6,
+          8,
+          7
+        ],
+        "sourceUrls": [
+          "https://www.australia.com/en"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          2,
+          1,
+          3,
+          12,
+          11,
+          4,
+          10,
+          5,
+          9,
+          6,
+          8,
+          7
+        ],
+        "sourceUrls": [
+          "https://www.australia.com/en"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "australia",
+      "id": "perth",
+      "name": "Perth",
+      "area": "Western Australia",
+      "latitude": -31.9523,
+      "longitude": 115.8613,
+      "airports": [
+        [
+          "PER",
+          "Perth"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 4,
+      "gridLatitude": -31.9523,
+      "gridLongitude": 115.8613,
+      "elevation": 16.76,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=115.8613&latitude=-31.9523&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeSources": [
+        "https://www.australia.com/en"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 23.19,
+          "meanDailyHighC": 26.9,
+          "meanRainMmPerDay": 0.7556,
+          "meanRelativeHumidityPct": 63.8,
+          "rainyDayFraction": 0.0806
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 23.44,
+          "meanDailyHighC": 27.19,
+          "meanRainMmPerDay": 0.6683,
+          "meanRelativeHumidityPct": 64.49,
+          "rainyDayFraction": 0.0636
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 22.76,
+          "meanDailyHighC": 26.19,
+          "meanRainMmPerDay": 0.6746,
+          "meanRelativeHumidityPct": 66.66,
+          "rainyDayFraction": 0.1097
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 20.6,
+          "meanDailyHighC": 23.65,
+          "meanRainMmPerDay": 0.8651,
+          "meanRelativeHumidityPct": 67.4,
+          "rainyDayFraction": 0.1267
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.64,
+          "meanDailyHighC": 21.41,
+          "meanRainMmPerDay": 1.655,
+          "meanRelativeHumidityPct": 68.04,
+          "rainyDayFraction": 0.2484
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 16.88,
+          "meanDailyHighC": 19,
+          "meanRainMmPerDay": 2.9453,
+          "meanRelativeHumidityPct": 71.01,
+          "rainyDayFraction": 0.4133
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 16,
+          "meanDailyHighC": 17.93,
+          "meanRainMmPerDay": 3.4709,
+          "meanRelativeHumidityPct": 73.05,
+          "rainyDayFraction": 0.4677
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 15.56,
+          "meanDailyHighC": 17.74,
+          "meanRainMmPerDay": 2.7831,
+          "meanRelativeHumidityPct": 73.47,
+          "rainyDayFraction": 0.3806
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 16.16,
+          "meanDailyHighC": 18.68,
+          "meanRainMmPerDay": 1.3749,
+          "meanRelativeHumidityPct": 73.45,
+          "rainyDayFraction": 0.2733
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.35,
+          "meanDailyHighC": 20.13,
+          "meanRainMmPerDay": 1.0885,
+          "meanRelativeHumidityPct": 71.67,
+          "rainyDayFraction": 0.2226
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 19.51,
+          "meanDailyHighC": 22.84,
+          "meanRainMmPerDay": 0.4621,
+          "meanRelativeHumidityPct": 67.16,
+          "rainyDayFraction": 0.0967
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 22.06,
+          "meanDailyHighC": 25.74,
+          "meanRainMmPerDay": 0.3176,
+          "meanRelativeHumidityPct": 63.28,
+          "rainyDayFraction": 0.0774
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Australian and New Zealand southern-hemisphere city/scenic/coastal contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          6,
+          7,
+          8,
+          5,
+          9,
+          4,
+          10,
+          3,
+          11,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.australia.com/en"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          6,
+          7,
+          8,
+          5,
+          9,
+          4,
+          10,
+          3,
+          11,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.australia.com/en"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "australia",
+      "id": "darwin",
+      "name": "Darwin",
+      "area": "Northern Territory",
+      "latitude": -12.4634,
+      "longitude": 130.8456,
+      "airports": [
+        [
+          "DRW",
+          "Darwin"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 5,
+      "gridLatitude": -12.4634,
+      "gridLongitude": 130.8456,
+      "elevation": 9.51,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=130.8456&latitude=-12.4634&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://www.australia.com/en"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 29.13,
+          "meanDailyHighC": 30.36,
+          "meanRainMmPerDay": 10.0427,
+          "meanRelativeHumidityPct": 80.3,
+          "rainyDayFraction": 0.929
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 28.84,
+          "meanDailyHighC": 30.12,
+          "meanRainMmPerDay": 9.3785,
+          "meanRelativeHumidityPct": 81.43,
+          "rainyDayFraction": 0.8869
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 29.08,
+          "meanDailyHighC": 30.57,
+          "meanRainMmPerDay": 7.1637,
+          "meanRelativeHumidityPct": 79.7,
+          "rainyDayFraction": 0.8677
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 28.71,
+          "meanDailyHighC": 31.15,
+          "meanRainMmPerDay": 2.8589,
+          "meanRelativeHumidityPct": 74.14,
+          "rainyDayFraction": 0.4833
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.36,
+          "meanDailyHighC": 31.06,
+          "meanRainMmPerDay": 0.3998,
+          "meanRelativeHumidityPct": 67.24,
+          "rainyDayFraction": 0.1
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 26.57,
+          "meanDailyHighC": 30.61,
+          "meanRainMmPerDay": 0.0813,
+          "meanRelativeHumidityPct": 59.49,
+          "rainyDayFraction": 0.0133
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.34,
+          "meanDailyHighC": 30.51,
+          "meanRainMmPerDay": 0.0664,
+          "meanRelativeHumidityPct": 55.29,
+          "rainyDayFraction": 0.0161
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.47,
+          "meanDailyHighC": 31.55,
+          "meanRainMmPerDay": 0.0861,
+          "meanRelativeHumidityPct": 54.68,
+          "rainyDayFraction": 0.0161
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 29.12,
+          "meanDailyHighC": 32.84,
+          "meanRainMmPerDay": 0.754,
+          "meanRelativeHumidityPct": 60.85,
+          "rainyDayFraction": 0.17
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 30.24,
+          "meanDailyHighC": 33.21,
+          "meanRainMmPerDay": 2.1096,
+          "meanRelativeHumidityPct": 65.18,
+          "rainyDayFraction": 0.4613
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 30.37,
+          "meanDailyHighC": 32.59,
+          "meanRainMmPerDay": 4.6038,
+          "meanRelativeHumidityPct": 69.05,
+          "rainyDayFraction": 0.8267
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 29.93,
+          "meanDailyHighC": 31.51,
+          "meanRainMmPerDay": 8.2929,
+          "meanRelativeHumidityPct": 75.7,
+          "rainyDayFraction": 0.8903
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Australian and New Zealand southern-hemisphere city/scenic/coastal contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          2,
+          1,
+          3,
+          12,
+          11,
+          4,
+          10,
+          5,
+          9,
+          6,
+          8,
+          7
+        ],
+        "sourceUrls": [
+          "https://www.australia.com/en"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          2,
+          1,
+          3,
+          12,
+          11,
+          4,
+          10,
+          5,
+          9,
+          6,
+          8,
+          7
+        ],
+        "sourceUrls": [
+          "https://www.australia.com/en"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "australia",
+      "id": "hobart",
+      "name": "Hobart",
+      "area": "Tasmania",
+      "latitude": -42.8821,
+      "longitude": 147.3272,
+      "airports": [
+        [
+          "HBA",
+          "Hobart"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 6,
+      "gridLatitude": -42.8821,
+      "gridLongitude": 147.3272,
+      "elevation": 99.75,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=147.3272&latitude=-42.8821&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://www.australia.com/en"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.07,
+          "meanDailyHighC": 21.78,
+          "meanRainMmPerDay": 1.5897,
+          "meanRelativeHumidityPct": 68.49,
+          "rainyDayFraction": 0.2258
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 16.4,
+          "meanDailyHighC": 21.02,
+          "meanRainMmPerDay": 1.5074,
+          "meanRelativeHumidityPct": 68.99,
+          "rainyDayFraction": 0.2827
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 15.52,
+          "meanDailyHighC": 20.03,
+          "meanRainMmPerDay": 1.7693,
+          "meanRelativeHumidityPct": 72.78,
+          "rainyDayFraction": 0.2935
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 13.2,
+          "meanDailyHighC": 17.18,
+          "meanRainMmPerDay": 1.4211,
+          "meanRelativeHumidityPct": 76.58,
+          "rainyDayFraction": 0.27
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 10.77,
+          "meanDailyHighC": 14.11,
+          "meanRainMmPerDay": 1.6378,
+          "meanRelativeHumidityPct": 81.32,
+          "rainyDayFraction": 0.3645
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 8.99,
+          "meanDailyHighC": 12.04,
+          "meanRainMmPerDay": 1.8585,
+          "meanRelativeHumidityPct": 85.84,
+          "rainyDayFraction": 0.3667
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 8.43,
+          "meanDailyHighC": 11.57,
+          "meanRainMmPerDay": 1.546,
+          "meanRelativeHumidityPct": 84.52,
+          "rainyDayFraction": 0.3871
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 8.71,
+          "meanDailyHighC": 12.07,
+          "meanRainMmPerDay": 1.8164,
+          "meanRelativeHumidityPct": 82.76,
+          "rainyDayFraction": 0.4194
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 9.8,
+          "meanDailyHighC": 13.55,
+          "meanRainMmPerDay": 1.7752,
+          "meanRelativeHumidityPct": 78.32,
+          "rainyDayFraction": 0.4033
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 11.38,
+          "meanDailyHighC": 15.28,
+          "meanRainMmPerDay": 2.8565,
+          "meanRelativeHumidityPct": 75.63,
+          "rainyDayFraction": 0.4419
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 13.25,
+          "meanDailyHighC": 17.39,
+          "meanRainMmPerDay": 2.4422,
+          "meanRelativeHumidityPct": 73.85,
+          "rainyDayFraction": 0.45
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 15,
+          "meanDailyHighC": 19.38,
+          "meanRainMmPerDay": 2.3509,
+          "meanRelativeHumidityPct": 70.34,
+          "rainyDayFraction": 0.3645
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Australian and New Zealand southern-hemisphere city/scenic/coastal contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          6,
+          7,
+          8,
+          5,
+          9,
+          4,
+          10,
+          3,
+          11,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.australia.com/en"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          6,
+          7,
+          8,
+          5,
+          9,
+          4,
+          10,
+          3,
+          11,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.australia.com/en"
+        ]
+      },
+      "events": [
+        {
+          "name": "Dark Mofo",
+          "months": [
+            6
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://www.hobartcity.com.au/Things-To-Do/Upcoming-events/Dark-Mofo"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "australia",
+      "id": "surfers-paradise",
+      "name": "Surfers Paradise",
+      "area": "Gold Coast",
+      "latitude": -28.0027,
+      "longitude": 153.4299,
+      "airports": [
+        [
+          "OOL",
+          "Gold Coast"
+        ]
+      ],
+      "climateType": "beach",
+      "regionIndex": 7,
+      "gridLatitude": -28.0027,
+      "gridLongitude": 153.4299,
+      "elevation": 127.2,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=153.4299&latitude=-28.0027&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Approved beach-oriented holiday base; 25°C target.",
+      "climateTypeSources": [
+        "https://www.australia.com/en"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.22,
+          "meanDailyHighC": 30.09,
+          "meanRainMmPerDay": 3.7288,
+          "meanRelativeHumidityPct": 70.81,
+          "rainyDayFraction": 0.4484
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 25.03,
+          "meanDailyHighC": 29.7,
+          "meanRainMmPerDay": 5.629,
+          "meanRelativeHumidityPct": 71.51,
+          "rainyDayFraction": 0.523
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 23.71,
+          "meanDailyHighC": 27.85,
+          "meanRainMmPerDay": 6.3766,
+          "meanRelativeHumidityPct": 77.13,
+          "rainyDayFraction": 0.6194
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 20.95,
+          "meanDailyHighC": 25.34,
+          "meanRainMmPerDay": 1.9268,
+          "meanRelativeHumidityPct": 75.22,
+          "rainyDayFraction": 0.3567
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.2,
+          "meanDailyHighC": 23,
+          "meanRainMmPerDay": 1.9266,
+          "meanRelativeHumidityPct": 73.77,
+          "rainyDayFraction": 0.3387
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 15.52,
+          "meanDailyHighC": 20.49,
+          "meanRainMmPerDay": 1.7107,
+          "meanRelativeHumidityPct": 73.84,
+          "rainyDayFraction": 0.2267
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 15.04,
+          "meanDailyHighC": 20.45,
+          "meanRainMmPerDay": 1.1449,
+          "meanRelativeHumidityPct": 71.93,
+          "rainyDayFraction": 0.1968
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 16.41,
+          "meanDailyHighC": 22.22,
+          "meanRainMmPerDay": 0.886,
+          "meanRelativeHumidityPct": 67.84,
+          "rainyDayFraction": 0.1613
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 19.04,
+          "meanDailyHighC": 24.98,
+          "meanRainMmPerDay": 0.8992,
+          "meanRelativeHumidityPct": 65.18,
+          "rainyDayFraction": 0.1933
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 21.28,
+          "meanDailyHighC": 26.87,
+          "meanRainMmPerDay": 2.8801,
+          "meanRelativeHumidityPct": 67.43,
+          "rainyDayFraction": 0.3516
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 22.99,
+          "meanDailyHighC": 28.49,
+          "meanRainMmPerDay": 2.9477,
+          "meanRelativeHumidityPct": 66.1,
+          "rainyDayFraction": 0.37
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.55,
+          "meanDailyHighC": 29.71,
+          "meanRainMmPerDay": 3.7267,
+          "meanRelativeHumidityPct": 69.38,
+          "rainyDayFraction": 0.4484
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Australian and New Zealand southern-hemisphere city/scenic/coastal contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          6,
+          7,
+          8,
+          5,
+          9,
+          4,
+          10,
+          3,
+          11,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.australia.com/en"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          6,
+          7,
+          8,
+          5,
+          9,
+          4,
+          10,
+          3,
+          11,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.australia.com/en"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "new-zealand",
+      "id": "auckland",
+      "name": "Auckland",
+      "area": "North Island",
+      "latitude": -36.8509,
+      "longitude": 174.7645,
+      "airports": [
+        [
+          "AKL",
+          "Auckland"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 0,
+      "gridLatitude": -36.8509,
+      "gridLongitude": 174.7645,
+      "elevation": 50.23,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=174.7645&latitude=-36.8509&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://www.newzealand.com/nz/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 20.25,
+          "meanDailyHighC": 23.51,
+          "meanRainMmPerDay": 3.0314,
+          "meanRelativeHumidityPct": 75.09,
+          "rainyDayFraction": 0.3032
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 20.81,
+          "meanDailyHighC": 24.16,
+          "meanRainMmPerDay": 2.9517,
+          "meanRelativeHumidityPct": 74.97,
+          "rainyDayFraction": 0.311
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 19.24,
+          "meanDailyHighC": 22.44,
+          "meanRainMmPerDay": 2.5655,
+          "meanRelativeHumidityPct": 75.78,
+          "rainyDayFraction": 0.3613
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 17.38,
+          "meanDailyHighC": 20.19,
+          "meanRainMmPerDay": 3.5501,
+          "meanRelativeHumidityPct": 79.35,
+          "rainyDayFraction": 0.4567
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 15.01,
+          "meanDailyHighC": 17.52,
+          "meanRainMmPerDay": 4.0412,
+          "meanRelativeHumidityPct": 81.98,
+          "rainyDayFraction": 0.5065
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 12.97,
+          "meanDailyHighC": 15.18,
+          "meanRainMmPerDay": 4.7173,
+          "meanRelativeHumidityPct": 85.41,
+          "rainyDayFraction": 0.56
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 12.02,
+          "meanDailyHighC": 14.26,
+          "meanRainMmPerDay": 5.167,
+          "meanRelativeHumidityPct": 85.2,
+          "rainyDayFraction": 0.5452
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 11.92,
+          "meanDailyHighC": 14.37,
+          "meanRainMmPerDay": 3.7682,
+          "meanRelativeHumidityPct": 83.73,
+          "rainyDayFraction": 0.5419
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 13.09,
+          "meanDailyHighC": 15.67,
+          "meanRainMmPerDay": 3.7617,
+          "meanRelativeHumidityPct": 81.98,
+          "rainyDayFraction": 0.51
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 14.71,
+          "meanDailyHighC": 17.42,
+          "meanRainMmPerDay": 3.0947,
+          "meanRelativeHumidityPct": 80.52,
+          "rainyDayFraction": 0.4548
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 16.92,
+          "meanDailyHighC": 19.96,
+          "meanRainMmPerDay": 3.065,
+          "meanRelativeHumidityPct": 77.73,
+          "rainyDayFraction": 0.4067
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 19.1,
+          "meanDailyHighC": 22.25,
+          "meanRainMmPerDay": 2.705,
+          "meanRelativeHumidityPct": 75.9,
+          "rainyDayFraction": 0.371
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Australian and New Zealand southern-hemisphere city/scenic/coastal contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          6,
+          7,
+          8,
+          5,
+          9,
+          4,
+          10,
+          3,
+          11,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.newzealand.com/nz/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          6,
+          7,
+          8,
+          5,
+          9,
+          4,
+          10,
+          3,
+          11,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.newzealand.com/nz/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "new-zealand",
+      "id": "rotorua",
+      "name": "Rotorua",
+      "area": "Central North Island",
+      "latitude": -38.1368,
+      "longitude": 176.2497,
+      "airports": [
+        [
+          "ROT",
+          "Rotorua"
+        ],
+        [
+          "AKL",
+          "Auckland"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 1,
+      "gridLatitude": -38.1368,
+      "gridLongitude": 176.2497,
+      "elevation": 287.29,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=176.2497&latitude=-38.1368&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://www.newzealand.com/nz/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates. Hobbiton near Matamata is a separate ground excursion; AKL is an alternative gateway requiring onward transfer.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 19.04,
+          "meanDailyHighC": 23.82,
+          "meanRainMmPerDay": 2.4968,
+          "meanRelativeHumidityPct": 71.82,
+          "rainyDayFraction": 0.3226
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 19.25,
+          "meanDailyHighC": 23.95,
+          "meanRainMmPerDay": 3.1845,
+          "meanRelativeHumidityPct": 73.51,
+          "rainyDayFraction": 0.3498
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.1,
+          "meanDailyHighC": 21.69,
+          "meanRainMmPerDay": 2.8447,
+          "meanRelativeHumidityPct": 75.92,
+          "rainyDayFraction": 0.3355
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 14.75,
+          "meanDailyHighC": 18.7,
+          "meanRainMmPerDay": 3.2609,
+          "meanRelativeHumidityPct": 81.11,
+          "rainyDayFraction": 0.4033
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 12.02,
+          "meanDailyHighC": 15.45,
+          "meanRainMmPerDay": 3.7482,
+          "meanRelativeHumidityPct": 85.12,
+          "rainyDayFraction": 0.4065
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 9.97,
+          "meanDailyHighC": 12.82,
+          "meanRainMmPerDay": 4.8933,
+          "meanRelativeHumidityPct": 88.94,
+          "rainyDayFraction": 0.4733
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 8.96,
+          "meanDailyHighC": 11.77,
+          "meanRainMmPerDay": 4.632,
+          "meanRelativeHumidityPct": 89.16,
+          "rainyDayFraction": 0.4613
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 9.16,
+          "meanDailyHighC": 12.44,
+          "meanRainMmPerDay": 3.1484,
+          "meanRelativeHumidityPct": 86.7,
+          "rainyDayFraction": 0.4677
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 10.68,
+          "meanDailyHighC": 14.2,
+          "meanRainMmPerDay": 3.9277,
+          "meanRelativeHumidityPct": 84.3,
+          "rainyDayFraction": 0.4533
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 12.65,
+          "meanDailyHighC": 16.33,
+          "meanRainMmPerDay": 3.0339,
+          "meanRelativeHumidityPct": 82.08,
+          "rainyDayFraction": 0.4032
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 15.18,
+          "meanDailyHighC": 19.12,
+          "meanRainMmPerDay": 3.1565,
+          "meanRelativeHumidityPct": 78.96,
+          "rainyDayFraction": 0.41
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.56,
+          "meanDailyHighC": 21.85,
+          "meanRainMmPerDay": 3.1452,
+          "meanRelativeHumidityPct": 75.65,
+          "rainyDayFraction": 0.4032
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Australian and New Zealand southern-hemisphere city/scenic/coastal contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          6,
+          7,
+          8,
+          5,
+          9,
+          4,
+          10,
+          3,
+          11,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.newzealand.com/nz/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          6,
+          7,
+          8,
+          5,
+          9,
+          4,
+          10,
+          3,
+          11,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.newzealand.com/nz/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "new-zealand",
+      "id": "wellington",
+      "name": "Wellington",
+      "area": "Lower North Island",
+      "latitude": -41.2866,
+      "longitude": 174.7756,
+      "airports": [
+        [
+          "WLG",
+          "Wellington"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 2,
+      "gridLatitude": -41.2866,
+      "gridLongitude": 174.7756,
+      "elevation": 70.62,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=174.7756&latitude=-41.2866&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://www.newzealand.com/nz/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 16.87,
+          "meanDailyHighC": 19.07,
+          "meanRainMmPerDay": 1.6886,
+          "meanRelativeHumidityPct": 80.94,
+          "rainyDayFraction": 0.2742
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 17.24,
+          "meanDailyHighC": 19.49,
+          "meanRainMmPerDay": 3.2397,
+          "meanRelativeHumidityPct": 80.46,
+          "rainyDayFraction": 0.2792
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 15.91,
+          "meanDailyHighC": 17.98,
+          "meanRainMmPerDay": 2.5282,
+          "meanRelativeHumidityPct": 81.82,
+          "rainyDayFraction": 0.329
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 14.42,
+          "meanDailyHighC": 16.33,
+          "meanRainMmPerDay": 2.674,
+          "meanRelativeHumidityPct": 83.35,
+          "rainyDayFraction": 0.31
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 12.87,
+          "meanDailyHighC": 14.5,
+          "meanRainMmPerDay": 2.8811,
+          "meanRelativeHumidityPct": 84.58,
+          "rainyDayFraction": 0.3613
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 11.26,
+          "meanDailyHighC": 12.62,
+          "meanRainMmPerDay": 3.2192,
+          "meanRelativeHumidityPct": 85.82,
+          "rainyDayFraction": 0.4467
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 10.36,
+          "meanDailyHighC": 11.85,
+          "meanRainMmPerDay": 3.5407,
+          "meanRelativeHumidityPct": 85,
+          "rainyDayFraction": 0.4806
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 10.25,
+          "meanDailyHighC": 11.85,
+          "meanRainMmPerDay": 3.2306,
+          "meanRelativeHumidityPct": 84.9,
+          "rainyDayFraction": 0.4419
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 11.07,
+          "meanDailyHighC": 12.73,
+          "meanRainMmPerDay": 2.9638,
+          "meanRelativeHumidityPct": 84.07,
+          "rainyDayFraction": 0.44
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 12.24,
+          "meanDailyHighC": 14.16,
+          "meanRainMmPerDay": 2.3167,
+          "meanRelativeHumidityPct": 83.75,
+          "rainyDayFraction": 0.3903
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 13.97,
+          "meanDailyHighC": 15.85,
+          "meanRainMmPerDay": 2.7823,
+          "meanRelativeHumidityPct": 84.01,
+          "rainyDayFraction": 0.38
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 15.64,
+          "meanDailyHighC": 17.58,
+          "meanRainMmPerDay": 3.1453,
+          "meanRelativeHumidityPct": 83.29,
+          "rainyDayFraction": 0.4065
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Australian and New Zealand southern-hemisphere city/scenic/coastal contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          6,
+          7,
+          8,
+          5,
+          9,
+          4,
+          10,
+          3,
+          11,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.newzealand.com/nz/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          6,
+          7,
+          8,
+          5,
+          9,
+          4,
+          10,
+          3,
+          11,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.newzealand.com/nz/"
+        ]
+      },
+      "events": [
+        {
+          "name": "CubaDupa",
+          "months": [
+            3
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://www.cubadupa.co.nz/faq/"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "new-zealand",
+      "id": "queenstown",
+      "name": "Queenstown",
+      "area": "Southern Lakes",
+      "latitude": -45.0312,
+      "longitude": 168.6626,
+      "airports": [
+        [
+          "ZQN",
+          "Queenstown"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 3,
+      "gridLatitude": -45.0312,
+      "gridLongitude": 168.6626,
+      "elevation": 962.79,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=168.6626&latitude=-45.0312&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://www.newzealand.com/nz/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 12.11,
+          "meanDailyHighC": 17.25,
+          "meanRainMmPerDay": 3.2125,
+          "meanRelativeHumidityPct": 76.06,
+          "rainyDayFraction": 0.4677
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 11.67,
+          "meanDailyHighC": 17.03,
+          "meanRainMmPerDay": 3.5989,
+          "meanRelativeHumidityPct": 76.98,
+          "rainyDayFraction": 0.4488
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 9.84,
+          "meanDailyHighC": 15.05,
+          "meanRainMmPerDay": 2.9352,
+          "meanRelativeHumidityPct": 80.83,
+          "rainyDayFraction": 0.471
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 6.53,
+          "meanDailyHighC": 11.05,
+          "meanRainMmPerDay": 3.5695,
+          "meanRelativeHumidityPct": 87.05,
+          "rainyDayFraction": 0.5567
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 3.96,
+          "meanDailyHighC": 7.67,
+          "meanRainMmPerDay": 3.7101,
+          "meanRelativeHumidityPct": 91.38,
+          "rainyDayFraction": 0.5548
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 1.55,
+          "meanDailyHighC": 4.54,
+          "meanRainMmPerDay": 2.8358,
+          "meanRelativeHumidityPct": 93.53,
+          "rainyDayFraction": 0.4967
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 0.65,
+          "meanDailyHighC": 3.59,
+          "meanRainMmPerDay": 3.5114,
+          "meanRelativeHumidityPct": 93.74,
+          "rainyDayFraction": 0.6032
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 1.67,
+          "meanDailyHighC": 5.28,
+          "meanRainMmPerDay": 2.9365,
+          "meanRelativeHumidityPct": 91.31,
+          "rainyDayFraction": 0.6097
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 3.34,
+          "meanDailyHighC": 7.51,
+          "meanRainMmPerDay": 4.3295,
+          "meanRelativeHumidityPct": 86.77,
+          "rainyDayFraction": 0.5867
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 5.53,
+          "meanDailyHighC": 10.09,
+          "meanRainMmPerDay": 4.0439,
+          "meanRelativeHumidityPct": 83.58,
+          "rainyDayFraction": 0.6387
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 8.47,
+          "meanDailyHighC": 13.26,
+          "meanRainMmPerDay": 3.5711,
+          "meanRelativeHumidityPct": 80.04,
+          "rainyDayFraction": 0.5633
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 10.4,
+          "meanDailyHighC": 15.21,
+          "meanRainMmPerDay": 3.5599,
+          "meanRelativeHumidityPct": 78.71,
+          "rainyDayFraction": 0.6161
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Australian and New Zealand southern-hemisphere city/scenic/coastal contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          5,
+          6,
+          9,
+          10,
+          4,
+          11,
+          3,
+          8,
+          7,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.newzealand.com/nz/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          5,
+          6,
+          9,
+          10,
+          4,
+          11,
+          3,
+          8,
+          7,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.newzealand.com/nz/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "new-zealand",
+      "id": "te-anau",
+      "name": "Te Anau",
+      "area": "Fiordland",
+      "latitude": -45.4145,
+      "longitude": 167.718,
+      "airports": [
+        [
+          "ZQN",
+          "Queenstown"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 4,
+      "gridLatitude": -45.4145,
+      "gridLongitude": 167.718,
+      "elevation": 671.78,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=167.718&latitude=-45.4145&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://www.newzealand.com/nz/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates. Town climate differs from the exceptionally wet Milford Sound excursion. Reviewed December/January exclusions are retained for that Fiordland excursion, not a claim about Te Anau town rainfall.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 11.8,
+          "meanDailyHighC": 16.02,
+          "meanRainMmPerDay": 7.14,
+          "meanRelativeHumidityPct": 83.88,
+          "rainyDayFraction": 0.5903
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 11.43,
+          "meanDailyHighC": 15.6,
+          "meanRainMmPerDay": 8.0974,
+          "meanRelativeHumidityPct": 85.18,
+          "rainyDayFraction": 0.6113
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 10.16,
+          "meanDailyHighC": 14.14,
+          "meanRainMmPerDay": 7.3159,
+          "meanRelativeHumidityPct": 87.65,
+          "rainyDayFraction": 0.6194
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 7.84,
+          "meanDailyHighC": 11.05,
+          "meanRainMmPerDay": 7.9597,
+          "meanRelativeHumidityPct": 91.58,
+          "rainyDayFraction": 0.74
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 5.93,
+          "meanDailyHighC": 8.48,
+          "meanRainMmPerDay": 7.1627,
+          "meanRelativeHumidityPct": 94.05,
+          "rainyDayFraction": 0.7581
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 3.83,
+          "meanDailyHighC": 6.32,
+          "meanRainMmPerDay": 5.7897,
+          "meanRelativeHumidityPct": 94.41,
+          "rainyDayFraction": 0.65
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 3.17,
+          "meanDailyHighC": 5.51,
+          "meanRainMmPerDay": 7.1264,
+          "meanRelativeHumidityPct": 94.41,
+          "rainyDayFraction": 0.7387
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 3.72,
+          "meanDailyHighC": 6.46,
+          "meanRainMmPerDay": 6.5963,
+          "meanRelativeHumidityPct": 92.91,
+          "rainyDayFraction": 0.7581
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 4.79,
+          "meanDailyHighC": 8.07,
+          "meanRainMmPerDay": 8.268,
+          "meanRelativeHumidityPct": 90.24,
+          "rainyDayFraction": 0.7433
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 6.42,
+          "meanDailyHighC": 10.16,
+          "meanRainMmPerDay": 8.5703,
+          "meanRelativeHumidityPct": 87.45,
+          "rainyDayFraction": 0.7548
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 8.8,
+          "meanDailyHighC": 12.8,
+          "meanRainMmPerDay": 7.6626,
+          "meanRelativeHumidityPct": 84.94,
+          "rainyDayFraction": 0.6267
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 10.46,
+          "meanDailyHighC": 14.38,
+          "meanRainMmPerDay": 8.4095,
+          "meanRelativeHumidityPct": 84.17,
+          "rainyDayFraction": 0.7226
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Australian and New Zealand southern-hemisphere city/scenic/coastal contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          6,
+          7,
+          8,
+          5,
+          9,
+          4,
+          10,
+          3,
+          11,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.newzealand.com/nz/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          6,
+          7,
+          8,
+          5,
+          9,
+          4,
+          10,
+          3,
+          11,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.newzealand.com/nz/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "new-zealand",
+      "id": "christchurch",
+      "name": "Christchurch",
+      "area": "Canterbury",
+      "latitude": -43.5321,
+      "longitude": 172.6362,
+      "airports": [
+        [
+          "CHC",
+          "Christchurch"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 5,
+      "gridLatitude": -43.5321,
+      "gridLongitude": 172.6362,
+      "elevation": 76.4,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=172.6362&latitude=-43.5321&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://www.newzealand.com/nz/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.57,
+          "meanDailyHighC": 23.74,
+          "meanRainMmPerDay": 2.6324,
+          "meanRelativeHumidityPct": 69.94,
+          "rainyDayFraction": 0.4097
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 17.49,
+          "meanDailyHighC": 23.79,
+          "meanRainMmPerDay": 2.6442,
+          "meanRelativeHumidityPct": 70.18,
+          "rainyDayFraction": 0.3534
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 15.19,
+          "meanDailyHighC": 21.27,
+          "meanRainMmPerDay": 2.3896,
+          "meanRelativeHumidityPct": 75.01,
+          "rainyDayFraction": 0.4065
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 12.25,
+          "meanDailyHighC": 17.97,
+          "meanRainMmPerDay": 3.1291,
+          "meanRelativeHumidityPct": 80.41,
+          "rainyDayFraction": 0.43
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 9.56,
+          "meanDailyHighC": 14.61,
+          "meanRainMmPerDay": 3.1206,
+          "meanRelativeHumidityPct": 85.85,
+          "rainyDayFraction": 0.4774
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 7.18,
+          "meanDailyHighC": 11.15,
+          "meanRainMmPerDay": 2.6874,
+          "meanRelativeHumidityPct": 90.12,
+          "rainyDayFraction": 0.5167
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 6.44,
+          "meanDailyHighC": 10.75,
+          "meanRainMmPerDay": 3.6972,
+          "meanRelativeHumidityPct": 89.32,
+          "rainyDayFraction": 0.5097
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 7.15,
+          "meanDailyHighC": 11.97,
+          "meanRainMmPerDay": 2.5887,
+          "meanRelativeHumidityPct": 87.38,
+          "rainyDayFraction": 0.4774
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 9.03,
+          "meanDailyHighC": 14.18,
+          "meanRainMmPerDay": 2.3762,
+          "meanRelativeHumidityPct": 83,
+          "rainyDayFraction": 0.5067
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 11.15,
+          "meanDailyHighC": 16.58,
+          "meanRainMmPerDay": 3.0141,
+          "meanRelativeHumidityPct": 80.51,
+          "rainyDayFraction": 0.4935
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 13.7,
+          "meanDailyHighC": 19.2,
+          "meanRainMmPerDay": 2.7627,
+          "meanRelativeHumidityPct": 77.59,
+          "rainyDayFraction": 0.44
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 16.02,
+          "meanDailyHighC": 21.6,
+          "meanRainMmPerDay": 3.0509,
+          "meanRelativeHumidityPct": 72.8,
+          "rainyDayFraction": 0.4903
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Australian and New Zealand southern-hemisphere city/scenic/coastal contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          6,
+          7,
+          8,
+          5,
+          9,
+          4,
+          10,
+          3,
+          11,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.newzealand.com/nz/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          6,
+          7,
+          8,
+          5,
+          9,
+          4,
+          10,
+          3,
+          11,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.newzealand.com/nz/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "new-zealand",
+      "id": "franz-josef",
+      "name": "Franz Josef",
+      "area": "West Coast glaciers",
+      "latitude": -43.387,
+      "longitude": 170.183,
+      "airports": [
+        [
+          "HKK",
+          "Hokitika"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 6,
+      "gridLatitude": -43.387,
+      "gridLongitude": 170.183,
+      "elevation": 770.12,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=170.183&latitude=-43.387&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://www.newzealand.com/nz/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates. HKK requires a substantial onward road transfer. Glacier and mountain access require current local checks.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 12.41,
+          "meanDailyHighC": 15.08,
+          "meanRainMmPerDay": 5.5576,
+          "meanRelativeHumidityPct": 84.18,
+          "rainyDayFraction": 0.5065
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 12.4,
+          "meanDailyHighC": 15.07,
+          "meanRainMmPerDay": 5.4292,
+          "meanRelativeHumidityPct": 84.23,
+          "rainyDayFraction": 0.477
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 11.28,
+          "meanDailyHighC": 13.97,
+          "meanRainMmPerDay": 4.975,
+          "meanRelativeHumidityPct": 85.36,
+          "rainyDayFraction": 0.5
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 8.97,
+          "meanDailyHighC": 11.38,
+          "meanRainMmPerDay": 6.0475,
+          "meanRelativeHumidityPct": 86.56,
+          "rainyDayFraction": 0.5233
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 7.15,
+          "meanDailyHighC": 9.25,
+          "meanRainMmPerDay": 6.174,
+          "meanRelativeHumidityPct": 88.16,
+          "rainyDayFraction": 0.5742
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 5.07,
+          "meanDailyHighC": 7.13,
+          "meanRainMmPerDay": 4.8909,
+          "meanRelativeHumidityPct": 86.69,
+          "rainyDayFraction": 0.5267
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 4.16,
+          "meanDailyHighC": 6.16,
+          "meanRainMmPerDay": 6.4785,
+          "meanRelativeHumidityPct": 87.67,
+          "rainyDayFraction": 0.5742
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 4.56,
+          "meanDailyHighC": 6.63,
+          "meanRainMmPerDay": 5.5951,
+          "meanRelativeHumidityPct": 87.74,
+          "rainyDayFraction": 0.571
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 5.6,
+          "meanDailyHighC": 7.99,
+          "meanRainMmPerDay": 6.4968,
+          "meanRelativeHumidityPct": 86.73,
+          "rainyDayFraction": 0.5933
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 7.11,
+          "meanDailyHighC": 9.54,
+          "meanRainMmPerDay": 6.8231,
+          "meanRelativeHumidityPct": 86.82,
+          "rainyDayFraction": 0.6581
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 9.33,
+          "meanDailyHighC": 11.88,
+          "meanRainMmPerDay": 5.9022,
+          "meanRelativeHumidityPct": 85.54,
+          "rainyDayFraction": 0.5533
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 10.98,
+          "meanDailyHighC": 13.53,
+          "meanRainMmPerDay": 6.2044,
+          "meanRelativeHumidityPct": 85.19,
+          "rainyDayFraction": 0.6032
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Australian and New Zealand southern-hemisphere city/scenic/coastal contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          6,
+          7,
+          8,
+          5,
+          9,
+          4,
+          10,
+          3,
+          11,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.newzealand.com/nz/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          6,
+          7,
+          8,
+          5,
+          9,
+          4,
+          10,
+          3,
+          11,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.newzealand.com/nz/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
     }
   ],
   "destinationTypeAssignments": {
@@ -31041,6 +33552,96 @@
       "climateType": "all-season",
       "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
       "status": "Authorized autonomous Egypt/Morocco rollout, 6 November 2026."
+    },
+    "australia:sydney": {
+      "name": "Sydney",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Authorized autonomous Australia/New Zealand rollout, 6 November 2026."
+    },
+    "australia:melbourne": {
+      "name": "Melbourne",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous Australia/New Zealand rollout, 6 November 2026."
+    },
+    "australia:cairns": {
+      "name": "Cairns",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous Australia/New Zealand rollout, 6 November 2026."
+    },
+    "australia:yulara": {
+      "name": "Yulara",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous Australia/New Zealand rollout, 6 November 2026."
+    },
+    "australia:perth": {
+      "name": "Perth",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Authorized autonomous Australia/New Zealand rollout, 6 November 2026."
+    },
+    "australia:darwin": {
+      "name": "Darwin",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous Australia/New Zealand rollout, 6 November 2026."
+    },
+    "australia:hobart": {
+      "name": "Hobart",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous Australia/New Zealand rollout, 6 November 2026."
+    },
+    "australia:surfers-paradise": {
+      "name": "Surfers Paradise",
+      "climateType": "beach",
+      "reason": "Approved beach-oriented holiday base; 25°C target.",
+      "status": "Authorized autonomous Australia/New Zealand rollout, 6 November 2026."
+    },
+    "new-zealand:auckland": {
+      "name": "Auckland",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous Australia/New Zealand rollout, 6 November 2026."
+    },
+    "new-zealand:rotorua": {
+      "name": "Rotorua",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous Australia/New Zealand rollout, 6 November 2026."
+    },
+    "new-zealand:wellington": {
+      "name": "Wellington",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous Australia/New Zealand rollout, 6 November 2026."
+    },
+    "new-zealand:queenstown": {
+      "name": "Queenstown",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous Australia/New Zealand rollout, 6 November 2026."
+    },
+    "new-zealand:te-anau": {
+      "name": "Te Anau",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous Australia/New Zealand rollout, 6 November 2026."
+    },
+    "new-zealand:christchurch": {
+      "name": "Christchurch",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous Australia/New Zealand rollout, 6 November 2026."
+    },
+    "new-zealand:franz-josef": {
+      "name": "Franz Josef",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous Australia/New Zealand rollout, 6 November 2026."
     }
   }
 }

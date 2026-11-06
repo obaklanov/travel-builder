@@ -7,9 +7,9 @@
     "persistentWetDayFraction": 0.6,
     "excludedMonthsPerVulnerableBase": 2,
     "selection": "Vulnerable if any month averages >=8 mm/day, or >=6 mm/day with >=60% wet days where wet-day data exist. Mark its two largest mean daily rainfall/precipitation months unsuitable. Equal values use calendar order. Reviewed regional/station overrides take precedence where coarse model grids conflict with official guidance; these are identified per base.",
-    "scope": "207 existing destinations. Product preference, not abnormal-weather diagnosis, flood forecast or official advisory.",
+    "scope": "211 existing destinations. Product preference, not abnormal-weather diagnosis, flood forecast or official advisory.",
     "limitations": "Model estimates and representative points; broad regions can contain different climates. NASA supplementary records are total precipitation including snow, not rain-only; cross-check Colombia estimates separately. Unflagged does not mean free of rain or weather hazards.",
-    "reviewedVulnerableCount": 72
+    "reviewedVulnerableCount": 74
   },
   "bases": [
     {
@@ -6388,228 +6388,225 @@
     {
       "country": "australia",
       "regionIndex": 0,
-      "label": "Sydney & New South Wales (East)",
-      "id": "australia-0",
-      "latitude": -33.87,
-      "longitude": 151.21,
-      "needsRainFetch": true,
-      "referenceNote": "Representative point for a broad legacy region; does not describe every linked place.",
+      "label": "Sydney (New South Wales)",
+      "id": "sydney",
+      "latitude": -33.8688,
+      "longitude": 151.2093,
+      "referenceNote": "Named town point; excursions, mountain elevations and desert camps can differ.",
       "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
-      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR&community=AG&longitude=151.21&latitude=-33.87&start=2016&end=2025&format=JSON",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=151.2093&latitude=-33.8688&start=20160101&end=20251231&format=JSON&time-standard=LST",
       "months": [
         {
           "month": 1,
-          "meanMmPerDay": 3.339,
-          "wetDayFraction": null
+          "meanMmPerDay": 3.3388,
+          "wetDayFraction": 0.4613
         },
         {
           "month": 2,
-          "meanMmPerDay": 4.0607,
-          "wetDayFraction": null
+          "meanMmPerDay": 4.0592,
+          "wetDayFraction": 0.4311
         },
         {
           "month": 3,
-          "meanMmPerDay": 5.318,
-          "wetDayFraction": null
+          "meanMmPerDay": 5.3174,
+          "wetDayFraction": 0.5065
         },
         {
           "month": 4,
-          "meanMmPerDay": 1.869,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.8688,
+          "wetDayFraction": 0.2567
         },
         {
           "month": 5,
           "meanMmPerDay": 1.35,
-          "wetDayFraction": null
+          "wetDayFraction": 0.2452
         },
         {
           "month": 6,
-          "meanMmPerDay": 1.749,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.7495,
+          "wetDayFraction": 0.2433
         },
         {
           "month": 7,
           "meanMmPerDay": 1.752,
-          "wetDayFraction": null
+          "wetDayFraction": 0.1806
         },
         {
           "month": 8,
-          "meanMmPerDay": 1.505,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.5045,
+          "wetDayFraction": 0.2097
         },
         {
           "month": 9,
-          "meanMmPerDay": 1.263,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.2642,
+          "wetDayFraction": 0.1967
         },
         {
           "month": 10,
-          "meanMmPerDay": 2.16,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.1598,
+          "wetDayFraction": 0.3129
         },
         {
           "month": 11,
-          "meanMmPerDay": 2.65,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.6496,
+          "wetDayFraction": 0.3233
         },
         {
           "month": 12,
-          "meanMmPerDay": 2.198,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.1986,
+          "wetDayFraction": 0.3419
         }
       ],
       "vulnerable": false,
       "excludedMonths": [],
-      "reason": "Screening threshold not met at representative point."
+      "reason": "Screening threshold not met at named town point."
     },
     {
       "country": "australia",
       "regionIndex": 1,
-      "label": "Melbourne & Victoria (South)",
-      "id": "australia-1",
-      "latitude": -37.81,
-      "longitude": 144.96,
-      "needsRainFetch": true,
-      "referenceNote": "Representative point for a broad legacy region; does not describe every linked place.",
+      "label": "Melbourne (Victoria)",
+      "id": "melbourne",
+      "latitude": -37.8136,
+      "longitude": 144.9631,
+      "referenceNote": "Named town point; excursions, mountain elevations and desert camps can differ.",
       "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
-      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR&community=AG&longitude=144.96&latitude=-37.81&start=2016&end=2025&format=JSON",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=144.9631&latitude=-37.8136&start=20160101&end=20251231&format=JSON&time-standard=LST",
       "months": [
         {
           "month": 1,
-          "meanMmPerDay": 2.43,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.4297,
+          "wetDayFraction": 0.2935
         },
         {
           "month": 2,
-          "meanMmPerDay": 1.2508,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.2502,
+          "wetDayFraction": 0.1908
         },
         {
           "month": 3,
-          "meanMmPerDay": 1.841,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.8411,
+          "wetDayFraction": 0.2742
         },
         {
           "month": 4,
-          "meanMmPerDay": 2.159,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.1592,
+          "wetDayFraction": 0.2533
         },
         {
           "month": 5,
-          "meanMmPerDay": 1.812,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.8126,
+          "wetDayFraction": 0.371
         },
         {
           "month": 6,
-          "meanMmPerDay": 2.019,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.0189,
+          "wetDayFraction": 0.4133
         },
         {
           "month": 7,
-          "meanMmPerDay": 1.985,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.9844,
+          "wetDayFraction": 0.4484
         },
         {
           "month": 8,
-          "meanMmPerDay": 2.017,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.018,
+          "wetDayFraction": 0.4387
         },
         {
           "month": 9,
-          "meanMmPerDay": 1.929,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.9301,
+          "wetDayFraction": 0.39
         },
         {
           "month": 10,
-          "meanMmPerDay": 3.099,
-          "wetDayFraction": null
+          "meanMmPerDay": 3.0987,
+          "wetDayFraction": 0.4258
         },
         {
           "month": 11,
-          "meanMmPerDay": 2.973,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.9712,
+          "wetDayFraction": 0.4067
         },
         {
           "month": 12,
-          "meanMmPerDay": 2.162,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.1619,
+          "wetDayFraction": 0.2968
         }
       ],
       "vulnerable": false,
       "excludedMonths": [],
-      "reason": "Screening threshold not met at representative point."
+      "reason": "Screening threshold not met at named town point."
     },
     {
       "country": "australia",
       "regionIndex": 2,
-      "label": "Cairns & Great Barrier Reef (East)",
-      "id": "australia-2",
-      "latitude": -16.92,
-      "longitude": 145.77,
-      "needsRainFetch": true,
-      "referenceNote": "Representative point for a broad legacy region; does not describe every linked place.",
+      "label": "Cairns (Tropical Queensland)",
+      "id": "cairns",
+      "latitude": -16.9186,
+      "longitude": 145.7781,
+      "referenceNote": "Named town point; excursions, mountain elevations and desert camps can differ.",
       "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
-      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR&community=AG&longitude=145.77&latitude=-16.92&start=2016&end=2025&format=JSON",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=145.7781&latitude=-16.9186&start=20160101&end=20251231&format=JSON&time-standard=LST",
       "months": [
         {
           "month": 1,
-          "meanMmPerDay": 10.191,
-          "wetDayFraction": null
+          "meanMmPerDay": 10.1919,
+          "wetDayFraction": 0.7032
         },
         {
           "month": 2,
-          "meanMmPerDay": 8.6052,
-          "wetDayFraction": null
+          "meanMmPerDay": 8.6059,
+          "wetDayFraction": 0.6996
         },
         {
           "month": 3,
-          "meanMmPerDay": 9.434,
-          "wetDayFraction": null
+          "meanMmPerDay": 9.4334,
+          "wetDayFraction": 0.6839
         },
         {
           "month": 4,
-          "meanMmPerDay": 4.73,
-          "wetDayFraction": null
+          "meanMmPerDay": 4.7303,
+          "wetDayFraction": 0.5167
         },
         {
           "month": 5,
-          "meanMmPerDay": 2.169,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.1704,
+          "wetDayFraction": 0.3968
         },
         {
           "month": 6,
-          "meanMmPerDay": 0.92,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.919,
+          "wetDayFraction": 0.23
         },
         {
           "month": 7,
-          "meanMmPerDay": 1.28,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.2809,
+          "wetDayFraction": 0.2258
         },
         {
           "month": 8,
-          "meanMmPerDay": 0.642,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.6424,
+          "wetDayFraction": 0.171
         },
         {
           "month": 9,
-          "meanMmPerDay": 0.961,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.9607,
+          "wetDayFraction": 0.2
         },
         {
           "month": 10,
-          "meanMmPerDay": 1.151,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.1515,
+          "wetDayFraction": 0.1677
         },
         {
           "month": 11,
-          "meanMmPerDay": 1.383,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.3828,
+          "wetDayFraction": 0.2167
         },
         {
           "month": 12,
-          "meanMmPerDay": 6.408,
-          "wetDayFraction": null
+          "meanMmPerDay": 6.4074,
+          "wetDayFraction": 0.4677
         }
       ],
       "vulnerable": true,
@@ -6622,233 +6619,385 @@
     {
       "country": "australia",
       "regionIndex": 3,
-      "label": "Uluru & Red Centre (Center)",
-      "id": "australia-3",
-      "latitude": -25.34,
-      "longitude": 131.03,
-      "needsRainFetch": true,
-      "referenceNote": "Representative point for a broad legacy region; does not describe every linked place.",
+      "label": "Yulara (Uluru and Red Centre)",
+      "id": "yulara",
+      "latitude": -25.2406,
+      "longitude": 130.9889,
+      "referenceNote": "Named town point; excursions, mountain elevations and desert camps can differ.",
       "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
-      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR&community=AG&longitude=131.03&latitude=-25.34&start=2016&end=2025&format=JSON",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=130.9889&latitude=-25.2406&start=20160101&end=20251231&format=JSON&time-standard=LST",
       "months": [
         {
           "month": 1,
-          "meanMmPerDay": 0.677,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.7003,
+          "wetDayFraction": 0.1323
         },
         {
           "month": 2,
-          "meanMmPerDay": 0.3991,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.4833,
+          "wetDayFraction": 0.0601
         },
         {
           "month": 3,
-          "meanMmPerDay": 0.455,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.4606,
+          "wetDayFraction": 0.0645
         },
         {
           "month": 4,
-          "meanMmPerDay": 0.19,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.2242,
+          "wetDayFraction": 0.0233
         },
         {
           "month": 5,
-          "meanMmPerDay": 0.166,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.1696,
+          "wetDayFraction": 0.0355
         },
         {
           "month": 6,
-          "meanMmPerDay": 0.449,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.4533,
+          "wetDayFraction": 0.0467
         },
         {
           "month": 7,
-          "meanMmPerDay": 0.1,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.1065,
+          "wetDayFraction": 0.0194
         },
         {
           "month": 8,
-          "meanMmPerDay": 0.126,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.1128,
+          "wetDayFraction": 0.0323
         },
         {
           "month": 9,
-          "meanMmPerDay": 0.261,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.2595,
+          "wetDayFraction": 0.05
         },
         {
           "month": 10,
-          "meanMmPerDay": 0.418,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.4605,
+          "wetDayFraction": 0.0806
         },
         {
           "month": 11,
-          "meanMmPerDay": 0.834,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.8618,
+          "wetDayFraction": 0.1433
         },
         {
           "month": 12,
-          "meanMmPerDay": 0.432,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.4021,
+          "wetDayFraction": 0.0548
         }
       ],
       "vulnerable": false,
       "excludedMonths": [],
-      "reason": "Screening threshold not met at representative point."
+      "reason": "Screening threshold not met at named town point."
     },
     {
       "country": "australia",
       "regionIndex": 4,
-      "label": "Perth & southwest (West)",
-      "id": "australia-4",
-      "latitude": -31.95,
-      "longitude": 115.86,
-      "needsRainFetch": true,
-      "referenceNote": "Representative point for a broad legacy region; does not describe every linked place.",
+      "label": "Perth (Western Australia)",
+      "id": "perth",
+      "latitude": -31.9523,
+      "longitude": 115.8613,
+      "referenceNote": "Named town point; excursions, mountain elevations and desert camps can differ.",
       "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
-      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR&community=AG&longitude=115.86&latitude=-31.95&start=2016&end=2025&format=JSON",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=115.8613&latitude=-31.9523&start=20160101&end=20251231&format=JSON&time-standard=LST",
       "months": [
         {
           "month": 1,
-          "meanMmPerDay": 0.757,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.7556,
+          "wetDayFraction": 0.0806
         },
         {
           "month": 2,
-          "meanMmPerDay": 0.668,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.6683,
+          "wetDayFraction": 0.0636
         },
         {
           "month": 3,
-          "meanMmPerDay": 0.674,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.6746,
+          "wetDayFraction": 0.1097
         },
         {
           "month": 4,
-          "meanMmPerDay": 0.865,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.8651,
+          "wetDayFraction": 0.1267
         },
         {
           "month": 5,
           "meanMmPerDay": 1.655,
-          "wetDayFraction": null
+          "wetDayFraction": 0.2484
         },
         {
           "month": 6,
-          "meanMmPerDay": 2.944,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.9453,
+          "wetDayFraction": 0.4133
         },
         {
           "month": 7,
-          "meanMmPerDay": 3.472,
-          "wetDayFraction": null
+          "meanMmPerDay": 3.4709,
+          "wetDayFraction": 0.4677
         },
         {
           "month": 8,
-          "meanMmPerDay": 2.783,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.7831,
+          "wetDayFraction": 0.3806
         },
         {
           "month": 9,
-          "meanMmPerDay": 1.373,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.3749,
+          "wetDayFraction": 0.2733
         },
         {
           "month": 10,
-          "meanMmPerDay": 1.088,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.0885,
+          "wetDayFraction": 0.2226
         },
         {
           "month": 11,
-          "meanMmPerDay": 0.462,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.4621,
+          "wetDayFraction": 0.0967
         },
         {
           "month": 12,
-          "meanMmPerDay": 0.318,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.3176,
+          "wetDayFraction": 0.0774
         }
       ],
       "vulnerable": false,
       "excludedMonths": [],
-      "reason": "Screening threshold not met at representative point."
+      "reason": "Screening threshold not met at named town point."
     },
     {
       "country": "australia",
       "regionIndex": 5,
-      "label": "Darwin & Top End (North)",
-      "id": "australia-5",
-      "latitude": -12.46,
-      "longitude": 130.84,
-      "needsRainFetch": true,
-      "referenceNote": "Representative point for a broad legacy region; does not describe every linked place.",
+      "label": "Darwin (Northern Territory)",
+      "id": "darwin",
+      "latitude": -12.4634,
+      "longitude": 130.8456,
+      "referenceNote": "Named town point; excursions, mountain elevations and desert camps can differ.",
       "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
-      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR&community=AG&longitude=130.84&latitude=-12.46&start=2016&end=2025&format=JSON",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=130.8456&latitude=-12.4634&start=20160101&end=20251231&format=JSON&time-standard=LST",
       "months": [
         {
           "month": 1,
-          "meanMmPerDay": 10.042,
-          "wetDayFraction": null
+          "meanMmPerDay": 10.0427,
+          "wetDayFraction": 0.929
         },
         {
           "month": 2,
-          "meanMmPerDay": 9.3774,
-          "wetDayFraction": null
+          "meanMmPerDay": 9.3785,
+          "wetDayFraction": 0.8869
         },
         {
           "month": 3,
-          "meanMmPerDay": 7.164,
-          "wetDayFraction": null
+          "meanMmPerDay": 7.1637,
+          "wetDayFraction": 0.8677
         },
         {
           "month": 4,
-          "meanMmPerDay": 2.857,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.8589,
+          "wetDayFraction": 0.4833
         },
         {
           "month": 5,
-          "meanMmPerDay": 0.402,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.3998,
+          "wetDayFraction": 0.1
         },
         {
           "month": 6,
-          "meanMmPerDay": 0.08,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.0813,
+          "wetDayFraction": 0.0133
         },
         {
           "month": 7,
-          "meanMmPerDay": 0.066,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.0664,
+          "wetDayFraction": 0.0161
         },
         {
           "month": 8,
-          "meanMmPerDay": 0.087,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.0861,
+          "wetDayFraction": 0.0161
         },
         {
           "month": 9,
-          "meanMmPerDay": 0.756,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.754,
+          "wetDayFraction": 0.17
         },
         {
           "month": 10,
-          "meanMmPerDay": 2.112,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.1096,
+          "wetDayFraction": 0.4613
         },
         {
           "month": 11,
-          "meanMmPerDay": 4.604,
-          "wetDayFraction": null
+          "meanMmPerDay": 4.6038,
+          "wetDayFraction": 0.8267
         },
         {
           "month": 12,
-          "meanMmPerDay": 8.291,
-          "wetDayFraction": null
+          "meanMmPerDay": 8.2929,
+          "wetDayFraction": 0.8903
         }
       ],
       "vulnerable": true,
       "excludedMonths": [
         1,
+        2
+      ],
+      "reason": "Heavy or persistent wet-season screening threshold met; two wettest months excluded."
+    },
+    {
+      "country": "australia",
+      "regionIndex": 6,
+      "label": "Hobart (Tasmania)",
+      "id": "hobart",
+      "latitude": -42.8821,
+      "longitude": 147.3272,
+      "referenceNote": "Named town point; excursions, mountain elevations and desert camps can differ.",
+      "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=147.3272&latitude=-42.8821&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "months": [
+        {
+          "month": 1,
+          "meanMmPerDay": 1.5897,
+          "wetDayFraction": 0.2258
+        },
+        {
+          "month": 2,
+          "meanMmPerDay": 1.5074,
+          "wetDayFraction": 0.2827
+        },
+        {
+          "month": 3,
+          "meanMmPerDay": 1.7693,
+          "wetDayFraction": 0.2935
+        },
+        {
+          "month": 4,
+          "meanMmPerDay": 1.4211,
+          "wetDayFraction": 0.27
+        },
+        {
+          "month": 5,
+          "meanMmPerDay": 1.6378,
+          "wetDayFraction": 0.3645
+        },
+        {
+          "month": 6,
+          "meanMmPerDay": 1.8585,
+          "wetDayFraction": 0.3667
+        },
+        {
+          "month": 7,
+          "meanMmPerDay": 1.546,
+          "wetDayFraction": 0.3871
+        },
+        {
+          "month": 8,
+          "meanMmPerDay": 1.8164,
+          "wetDayFraction": 0.4194
+        },
+        {
+          "month": 9,
+          "meanMmPerDay": 1.7752,
+          "wetDayFraction": 0.4033
+        },
+        {
+          "month": 10,
+          "meanMmPerDay": 2.8565,
+          "wetDayFraction": 0.4419
+        },
+        {
+          "month": 11,
+          "meanMmPerDay": 2.4422,
+          "wetDayFraction": 0.45
+        },
+        {
+          "month": 12,
+          "meanMmPerDay": 2.3509,
+          "wetDayFraction": 0.3645
+        }
+      ],
+      "vulnerable": false,
+      "excludedMonths": [],
+      "reason": "Screening threshold not met at named town point."
+    },
+    {
+      "country": "australia",
+      "regionIndex": 7,
+      "label": "Surfers Paradise (Gold Coast)",
+      "id": "surfers-paradise",
+      "latitude": -28.0027,
+      "longitude": 153.4299,
+      "referenceNote": "Named town point; excursions, mountain elevations and desert camps can differ.",
+      "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=153.4299&latitude=-28.0027&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "months": [
+        {
+          "month": 1,
+          "meanMmPerDay": 3.7288,
+          "wetDayFraction": 0.4484
+        },
+        {
+          "month": 2,
+          "meanMmPerDay": 5.629,
+          "wetDayFraction": 0.523
+        },
+        {
+          "month": 3,
+          "meanMmPerDay": 6.3766,
+          "wetDayFraction": 0.6194
+        },
+        {
+          "month": 4,
+          "meanMmPerDay": 1.9268,
+          "wetDayFraction": 0.3567
+        },
+        {
+          "month": 5,
+          "meanMmPerDay": 1.9266,
+          "wetDayFraction": 0.3387
+        },
+        {
+          "month": 6,
+          "meanMmPerDay": 1.7107,
+          "wetDayFraction": 0.2267
+        },
+        {
+          "month": 7,
+          "meanMmPerDay": 1.1449,
+          "wetDayFraction": 0.1968
+        },
+        {
+          "month": 8,
+          "meanMmPerDay": 0.886,
+          "wetDayFraction": 0.1613
+        },
+        {
+          "month": 9,
+          "meanMmPerDay": 0.8992,
+          "wetDayFraction": 0.1933
+        },
+        {
+          "month": 10,
+          "meanMmPerDay": 2.8801,
+          "wetDayFraction": 0.3516
+        },
+        {
+          "month": 11,
+          "meanMmPerDay": 2.9477,
+          "wetDayFraction": 0.37
+        },
+        {
+          "month": 12,
+          "meanMmPerDay": 3.7267,
+          "wetDayFraction": 0.4484
+        }
+      ],
+      "vulnerable": true,
+      "excludedMonths": [
+        3,
         2
       ],
       "reason": "Heavy or persistent wet-season screening threshold met; two wettest months excluded."
@@ -12085,382 +12234,377 @@
     {
       "country": "new-zealand",
       "regionIndex": 0,
-      "label": "Auckland & Northland (North)",
-      "id": "new-zealand-0",
-      "latitude": -36.85,
-      "longitude": 174.76,
-      "needsRainFetch": true,
-      "referenceNote": "Representative point for a broad legacy region; does not describe every linked place.",
+      "label": "Auckland (North Island)",
+      "id": "auckland",
+      "latitude": -36.8509,
+      "longitude": 174.7645,
+      "referenceNote": "Named town point; excursions, mountain elevations and desert camps can differ.",
       "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
-      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR&community=AG&longitude=174.76&latitude=-36.85&start=2016&end=2025&format=JSON",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=174.7645&latitude=-36.8509&start=20160101&end=20251231&format=JSON&time-standard=LST",
       "months": [
         {
           "month": 1,
-          "meanMmPerDay": 3.033,
-          "wetDayFraction": null
+          "meanMmPerDay": 3.0314,
+          "wetDayFraction": 0.3032
         },
         {
           "month": 2,
-          "meanMmPerDay": 2.9527,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.9517,
+          "wetDayFraction": 0.311
         },
         {
           "month": 3,
-          "meanMmPerDay": 2.567,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.5655,
+          "wetDayFraction": 0.3613
         },
         {
           "month": 4,
-          "meanMmPerDay": 3.551,
-          "wetDayFraction": null
+          "meanMmPerDay": 3.5501,
+          "wetDayFraction": 0.4567
         },
         {
           "month": 5,
-          "meanMmPerDay": 4.043,
-          "wetDayFraction": null
+          "meanMmPerDay": 4.0412,
+          "wetDayFraction": 0.5065
         },
         {
           "month": 6,
-          "meanMmPerDay": 4.717,
-          "wetDayFraction": null
+          "meanMmPerDay": 4.7173,
+          "wetDayFraction": 0.56
         },
         {
           "month": 7,
           "meanMmPerDay": 5.167,
-          "wetDayFraction": null
+          "wetDayFraction": 0.5452
         },
         {
           "month": 8,
-          "meanMmPerDay": 3.768,
-          "wetDayFraction": null
+          "meanMmPerDay": 3.7682,
+          "wetDayFraction": 0.5419
         },
         {
           "month": 9,
-          "meanMmPerDay": 3.761,
-          "wetDayFraction": null
+          "meanMmPerDay": 3.7617,
+          "wetDayFraction": 0.51
         },
         {
           "month": 10,
-          "meanMmPerDay": 3.095,
-          "wetDayFraction": null
+          "meanMmPerDay": 3.0947,
+          "wetDayFraction": 0.4548
         },
         {
           "month": 11,
           "meanMmPerDay": 3.065,
-          "wetDayFraction": null
+          "wetDayFraction": 0.4067
         },
         {
           "month": 12,
-          "meanMmPerDay": 2.702,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.705,
+          "wetDayFraction": 0.371
         }
       ],
       "vulnerable": false,
       "excludedMonths": [],
-      "reason": "Screening threshold not met at representative point."
+      "reason": "Screening threshold not met at named town point."
     },
     {
       "country": "new-zealand",
       "regionIndex": 1,
-      "label": "Waikato, Hobbiton & Rotorua (North)",
-      "id": "new-zealand-1",
-      "latitude": -38.14,
-      "longitude": 176.25,
-      "needsRainFetch": true,
-      "referenceNote": "Representative point for a broad legacy region; does not describe every linked place.",
+      "label": "Rotorua (Central North Island)",
+      "id": "rotorua",
+      "latitude": -38.1368,
+      "longitude": 176.2497,
+      "referenceNote": "Named town point; excursions, mountain elevations and desert camps can differ.",
       "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
-      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR&community=AG&longitude=176.25&latitude=-38.14&start=2016&end=2025&format=JSON",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=176.2497&latitude=-38.1368&start=20160101&end=20251231&format=JSON&time-standard=LST",
       "months": [
         {
           "month": 1,
-          "meanMmPerDay": 2.497,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.4968,
+          "wetDayFraction": 0.3226
         },
         {
           "month": 2,
-          "meanMmPerDay": 3.1857,
-          "wetDayFraction": null
+          "meanMmPerDay": 3.1845,
+          "wetDayFraction": 0.3498
         },
         {
           "month": 3,
-          "meanMmPerDay": 2.844,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.8447,
+          "wetDayFraction": 0.3355
         },
         {
           "month": 4,
-          "meanMmPerDay": 3.26,
-          "wetDayFraction": null
+          "meanMmPerDay": 3.2609,
+          "wetDayFraction": 0.4033
         },
         {
           "month": 5,
-          "meanMmPerDay": 3.749,
-          "wetDayFraction": null
+          "meanMmPerDay": 3.7482,
+          "wetDayFraction": 0.4065
         },
         {
           "month": 6,
-          "meanMmPerDay": 4.893,
-          "wetDayFraction": null
+          "meanMmPerDay": 4.8933,
+          "wetDayFraction": 0.4733
         },
         {
           "month": 7,
-          "meanMmPerDay": 4.631,
-          "wetDayFraction": null
+          "meanMmPerDay": 4.632,
+          "wetDayFraction": 0.4613
         },
         {
           "month": 8,
-          "meanMmPerDay": 3.147,
-          "wetDayFraction": null
+          "meanMmPerDay": 3.1484,
+          "wetDayFraction": 0.4677
         },
         {
           "month": 9,
-          "meanMmPerDay": 3.927,
-          "wetDayFraction": null
+          "meanMmPerDay": 3.9277,
+          "wetDayFraction": 0.4533
         },
         {
           "month": 10,
-          "meanMmPerDay": 3.034,
-          "wetDayFraction": null
+          "meanMmPerDay": 3.0339,
+          "wetDayFraction": 0.4032
         },
         {
           "month": 11,
-          "meanMmPerDay": 3.157,
-          "wetDayFraction": null
+          "meanMmPerDay": 3.1565,
+          "wetDayFraction": 0.41
         },
         {
           "month": 12,
-          "meanMmPerDay": 3.145,
-          "wetDayFraction": null
+          "meanMmPerDay": 3.1452,
+          "wetDayFraction": 0.4032
         }
       ],
       "vulnerable": false,
       "excludedMonths": [],
-      "reason": "Screening threshold not met at representative point."
+      "reason": "Screening threshold not met at named town point."
     },
     {
       "country": "new-zealand",
       "regionIndex": 2,
-      "label": "Wellington (Center)",
-      "id": "new-zealand-2",
-      "latitude": -41.29,
-      "longitude": 174.78,
-      "needsRainFetch": true,
-      "referenceNote": "Representative point for a broad legacy region; does not describe every linked place.",
+      "label": "Wellington (Lower North Island)",
+      "id": "wellington",
+      "latitude": -41.2866,
+      "longitude": 174.7756,
+      "referenceNote": "Named town point; excursions, mountain elevations and desert camps can differ.",
       "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
-      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR&community=AG&longitude=174.78&latitude=-41.29&start=2016&end=2025&format=JSON",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=174.7756&latitude=-41.2866&start=20160101&end=20251231&format=JSON&time-standard=LST",
       "months": [
         {
           "month": 1,
-          "meanMmPerDay": 1.688,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.6886,
+          "wetDayFraction": 0.2742
         },
         {
           "month": 2,
-          "meanMmPerDay": 3.2398,
-          "wetDayFraction": null
+          "meanMmPerDay": 3.2397,
+          "wetDayFraction": 0.2792
         },
         {
           "month": 3,
-          "meanMmPerDay": 2.529,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.5282,
+          "wetDayFraction": 0.329
         },
         {
           "month": 4,
           "meanMmPerDay": 2.674,
-          "wetDayFraction": null
+          "wetDayFraction": 0.31
         },
         {
           "month": 5,
-          "meanMmPerDay": 2.881,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.8811,
+          "wetDayFraction": 0.3613
         },
         {
           "month": 6,
-          "meanMmPerDay": 3.219,
-          "wetDayFraction": null
+          "meanMmPerDay": 3.2192,
+          "wetDayFraction": 0.4467
         },
         {
           "month": 7,
-          "meanMmPerDay": 3.542,
-          "wetDayFraction": null
+          "meanMmPerDay": 3.5407,
+          "wetDayFraction": 0.4806
         },
         {
           "month": 8,
-          "meanMmPerDay": 3.23,
-          "wetDayFraction": null
+          "meanMmPerDay": 3.2306,
+          "wetDayFraction": 0.4419
         },
         {
           "month": 9,
-          "meanMmPerDay": 2.964,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.9638,
+          "wetDayFraction": 0.44
         },
         {
           "month": 10,
-          "meanMmPerDay": 2.316,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.3167,
+          "wetDayFraction": 0.3903
         },
         {
           "month": 11,
-          "meanMmPerDay": 2.782,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.7823,
+          "wetDayFraction": 0.38
         },
         {
           "month": 12,
-          "meanMmPerDay": 3.144,
-          "wetDayFraction": null
+          "meanMmPerDay": 3.1453,
+          "wetDayFraction": 0.4065
         }
       ],
       "vulnerable": false,
       "excludedMonths": [],
-      "reason": "Screening threshold not met at representative point."
+      "reason": "Screening threshold not met at named town point."
     },
     {
       "country": "new-zealand",
       "regionIndex": 3,
-      "label": "Queenstown & Southern Lakes (South)",
-      "id": "new-zealand-3",
-      "latitude": -45.03,
-      "longitude": 168.66,
-      "needsRainFetch": true,
-      "referenceNote": "Representative point for a broad legacy region; does not describe every linked place.",
+      "label": "Queenstown (Southern Lakes)",
+      "id": "queenstown",
+      "latitude": -45.0312,
+      "longitude": 168.6626,
+      "referenceNote": "Named town point; excursions, mountain elevations and desert camps can differ.",
       "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
-      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR&community=AG&longitude=168.66&latitude=-45.03&start=2016&end=2025&format=JSON",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=168.6626&latitude=-45.0312&start=20160101&end=20251231&format=JSON&time-standard=LST",
       "months": [
         {
           "month": 1,
-          "meanMmPerDay": 3.212,
-          "wetDayFraction": null
+          "meanMmPerDay": 3.2125,
+          "wetDayFraction": 0.4677
         },
         {
           "month": 2,
-          "meanMmPerDay": 3.5991,
-          "wetDayFraction": null
+          "meanMmPerDay": 3.5989,
+          "wetDayFraction": 0.4488
         },
         {
           "month": 3,
-          "meanMmPerDay": 2.935,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.9352,
+          "wetDayFraction": 0.471
         },
         {
           "month": 4,
-          "meanMmPerDay": 3.57,
-          "wetDayFraction": null
+          "meanMmPerDay": 3.5695,
+          "wetDayFraction": 0.5567
         },
         {
           "month": 5,
-          "meanMmPerDay": 3.712,
-          "wetDayFraction": null
+          "meanMmPerDay": 3.7101,
+          "wetDayFraction": 0.5548
         },
         {
           "month": 6,
-          "meanMmPerDay": 2.836,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.8358,
+          "wetDayFraction": 0.4967
         },
         {
           "month": 7,
-          "meanMmPerDay": 3.511,
-          "wetDayFraction": null
+          "meanMmPerDay": 3.5114,
+          "wetDayFraction": 0.6032
         },
         {
           "month": 8,
-          "meanMmPerDay": 2.937,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.9365,
+          "wetDayFraction": 0.6097
         },
         {
           "month": 9,
-          "meanMmPerDay": 4.329,
-          "wetDayFraction": null
+          "meanMmPerDay": 4.3295,
+          "wetDayFraction": 0.5867
         },
         {
           "month": 10,
-          "meanMmPerDay": 4.044,
-          "wetDayFraction": null
+          "meanMmPerDay": 4.0439,
+          "wetDayFraction": 0.6387
         },
         {
           "month": 11,
-          "meanMmPerDay": 3.571,
-          "wetDayFraction": null
+          "meanMmPerDay": 3.5711,
+          "wetDayFraction": 0.5633
         },
         {
           "month": 12,
-          "meanMmPerDay": 3.559,
-          "wetDayFraction": null
+          "meanMmPerDay": 3.5599,
+          "wetDayFraction": 0.6161
         }
       ],
       "vulnerable": false,
       "excludedMonths": [],
-      "reason": "Screening threshold not met at representative point."
+      "reason": "Screening threshold not met at named town point."
     },
     {
       "country": "new-zealand",
       "regionIndex": 4,
-      "label": "Milford Sound & Fiordland (South)",
-      "id": "new-zealand-4",
-      "latitude": -44.67,
-      "longitude": 167.93,
-      "needsRainFetch": true,
-      "referenceNote": "Representative point for a broad legacy region; does not describe every linked place.",
+      "label": "Te Anau (Fiordland)",
+      "id": "te-anau",
+      "latitude": -45.4145,
+      "longitude": 167.718,
+      "referenceNote": "Named town point; excursions, mountain elevations and desert camps can differ.",
       "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
-      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR&community=AG&longitude=167.93&latitude=-44.67&start=2016&end=2025&format=JSON",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=167.718&latitude=-45.4145&start=20160101&end=20251231&format=JSON&time-standard=LST",
       "months": [
         {
           "month": 1,
-          "meanMmPerDay": 5.966,
-          "wetDayFraction": null
+          "meanMmPerDay": 7.14,
+          "wetDayFraction": 0.5903
         },
         {
           "month": 2,
-          "meanMmPerDay": 6.2064,
-          "wetDayFraction": null
+          "meanMmPerDay": 8.0974,
+          "wetDayFraction": 0.6113
         },
         {
           "month": 3,
-          "meanMmPerDay": 5.463,
-          "wetDayFraction": null
+          "meanMmPerDay": 7.3159,
+          "wetDayFraction": 0.6194
         },
         {
           "month": 4,
-          "meanMmPerDay": 6.125,
-          "wetDayFraction": null
+          "meanMmPerDay": 7.9597,
+          "wetDayFraction": 0.74
         },
         {
           "month": 5,
-          "meanMmPerDay": 6.113,
-          "wetDayFraction": null
+          "meanMmPerDay": 7.1627,
+          "wetDayFraction": 0.7581
         },
         {
           "month": 6,
-          "meanMmPerDay": 4.841,
-          "wetDayFraction": null
+          "meanMmPerDay": 5.7897,
+          "wetDayFraction": 0.65
         },
         {
           "month": 7,
-          "meanMmPerDay": 6.028,
-          "wetDayFraction": null
+          "meanMmPerDay": 7.1264,
+          "wetDayFraction": 0.7387
         },
         {
           "month": 8,
-          "meanMmPerDay": 5.468,
-          "wetDayFraction": null
+          "meanMmPerDay": 6.5963,
+          "wetDayFraction": 0.7581
         },
         {
           "month": 9,
-          "meanMmPerDay": 7.453,
-          "wetDayFraction": null
+          "meanMmPerDay": 8.268,
+          "wetDayFraction": 0.7433
         },
         {
           "month": 10,
-          "meanMmPerDay": 7.065,
-          "wetDayFraction": null
+          "meanMmPerDay": 8.5703,
+          "wetDayFraction": 0.7548
         },
         {
           "month": 11,
-          "meanMmPerDay": 6.035,
-          "wetDayFraction": null
+          "meanMmPerDay": 7.6626,
+          "wetDayFraction": 0.6267
         },
         {
           "month": 12,
-          "meanMmPerDay": 6.513,
-          "wetDayFraction": null
+          "meanMmPerDay": 8.4095,
+          "wetDayFraction": 0.7226
         }
       ],
       "vulnerable": true,
@@ -12468,13 +12612,168 @@
         12,
         1
       ],
-      "reason": "Milford Sound is an exceptionally wet location missed by the coarse rain-shadow grid. DOC report identifies December and January as wettest; applies to Milford/Fiordland entry, not nearby Queenstown.",
+      "reason": "Milford excursion official review overrides the drier Te Anau town grid.",
       "selectionEvidence": {
-        "basis": "Milford Sound is an exceptionally wet location missed by the coarse rain-shadow grid. DOC report identifies December and January as wettest; applies to Milford/Fiordland entry, not nearby Queenstown.",
+        "basis": "Retained official Milford Sound wettest-month review for the excursion represented by Te Anau (Fiordland), not Te Anau town rainfall.",
         "sourceUrls": [
           "https://www.doc.govt.nz/globalassets/documents/our-work/milford-opportunities-project/stage-2/mop-transport-and-access-report-2021.pdf"
         ]
       }
+    },
+    {
+      "country": "new-zealand",
+      "regionIndex": 5,
+      "label": "Christchurch (Canterbury)",
+      "id": "christchurch",
+      "latitude": -43.5321,
+      "longitude": 172.6362,
+      "referenceNote": "Named town point; excursions, mountain elevations and desert camps can differ.",
+      "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=172.6362&latitude=-43.5321&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "months": [
+        {
+          "month": 1,
+          "meanMmPerDay": 2.6324,
+          "wetDayFraction": 0.4097
+        },
+        {
+          "month": 2,
+          "meanMmPerDay": 2.6442,
+          "wetDayFraction": 0.3534
+        },
+        {
+          "month": 3,
+          "meanMmPerDay": 2.3896,
+          "wetDayFraction": 0.4065
+        },
+        {
+          "month": 4,
+          "meanMmPerDay": 3.1291,
+          "wetDayFraction": 0.43
+        },
+        {
+          "month": 5,
+          "meanMmPerDay": 3.1206,
+          "wetDayFraction": 0.4774
+        },
+        {
+          "month": 6,
+          "meanMmPerDay": 2.6874,
+          "wetDayFraction": 0.5167
+        },
+        {
+          "month": 7,
+          "meanMmPerDay": 3.6972,
+          "wetDayFraction": 0.5097
+        },
+        {
+          "month": 8,
+          "meanMmPerDay": 2.5887,
+          "wetDayFraction": 0.4774
+        },
+        {
+          "month": 9,
+          "meanMmPerDay": 2.3762,
+          "wetDayFraction": 0.5067
+        },
+        {
+          "month": 10,
+          "meanMmPerDay": 3.0141,
+          "wetDayFraction": 0.4935
+        },
+        {
+          "month": 11,
+          "meanMmPerDay": 2.7627,
+          "wetDayFraction": 0.44
+        },
+        {
+          "month": 12,
+          "meanMmPerDay": 3.0509,
+          "wetDayFraction": 0.4903
+        }
+      ],
+      "vulnerable": false,
+      "excludedMonths": [],
+      "reason": "Screening threshold not met at named town point."
+    },
+    {
+      "country": "new-zealand",
+      "regionIndex": 6,
+      "label": "Franz Josef (West Coast glaciers)",
+      "id": "franz-josef",
+      "latitude": -43.387,
+      "longitude": 170.183,
+      "referenceNote": "Named town point; excursions, mountain elevations and desert camps can differ.",
+      "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=170.183&latitude=-43.387&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "months": [
+        {
+          "month": 1,
+          "meanMmPerDay": 5.5576,
+          "wetDayFraction": 0.5065
+        },
+        {
+          "month": 2,
+          "meanMmPerDay": 5.4292,
+          "wetDayFraction": 0.477
+        },
+        {
+          "month": 3,
+          "meanMmPerDay": 4.975,
+          "wetDayFraction": 0.5
+        },
+        {
+          "month": 4,
+          "meanMmPerDay": 6.0475,
+          "wetDayFraction": 0.5233
+        },
+        {
+          "month": 5,
+          "meanMmPerDay": 6.174,
+          "wetDayFraction": 0.5742
+        },
+        {
+          "month": 6,
+          "meanMmPerDay": 4.8909,
+          "wetDayFraction": 0.5267
+        },
+        {
+          "month": 7,
+          "meanMmPerDay": 6.4785,
+          "wetDayFraction": 0.5742
+        },
+        {
+          "month": 8,
+          "meanMmPerDay": 5.5951,
+          "wetDayFraction": 0.571
+        },
+        {
+          "month": 9,
+          "meanMmPerDay": 6.4968,
+          "wetDayFraction": 0.5933
+        },
+        {
+          "month": 10,
+          "meanMmPerDay": 6.8231,
+          "wetDayFraction": 0.6581
+        },
+        {
+          "month": 11,
+          "meanMmPerDay": 5.9022,
+          "wetDayFraction": 0.5533
+        },
+        {
+          "month": 12,
+          "meanMmPerDay": 6.2044,
+          "wetDayFraction": 0.6032
+        }
+      ],
+      "vulnerable": true,
+      "excludedMonths": [
+        10,
+        9
+      ],
+      "reason": "Heavy or persistent wet-season screening threshold met; two wettest months excluded."
     },
     {
       "country": "italy",

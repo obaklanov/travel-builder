@@ -2103,6 +2103,181 @@
           "accessNote": "TNG plus onward ground transfer."
         }
       ]
+    },
+    "australia": {
+      "approvedAt": "2026-11-06",
+      "authorization": "User authorized continuing selection and deployment of the next two countries.",
+      "liveLabelsUpdated": true,
+      "indexCompatibility": "Original six Australian and five New Zealand positions retained as named towns; new places appended.",
+      "seasonalityStatus": "NASA POWER/MERRA-2 2016–2025 local-solar daily climate; total precipitation. Crowd/price orders are editorial proxies. Dark Mofo and CubaDupa typical-month events are partial evidence, not guaranteed trip-date availability. Current scoring rules unchanged.",
+      "destinations": [
+        {
+          "name": "Sydney",
+          "area": "New South Wales",
+          "climateType": "standard",
+          "climateTypeLabel": "Warm living",
+          "airportCandidates": [
+            "SYD"
+          ],
+          "treasures": [
+            "Sydney Opera House"
+          ]
+        },
+        {
+          "name": "Melbourne",
+          "area": "Victoria",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "MEL"
+          ]
+        },
+        {
+          "name": "Cairns",
+          "area": "Tropical Queensland",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "CNS"
+          ],
+          "treasures": [
+            "Great Barrier Reef"
+          ]
+        },
+        {
+          "name": "Yulara",
+          "area": "Uluru and Red Centre",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "AYQ"
+          ],
+          "treasures": [
+            "Uluru"
+          ]
+        },
+        {
+          "name": "Perth",
+          "area": "Western Australia",
+          "climateType": "standard",
+          "climateTypeLabel": "Warm living",
+          "airportCandidates": [
+            "PER"
+          ]
+        },
+        {
+          "name": "Darwin",
+          "area": "Northern Territory",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "DRW"
+          ]
+        },
+        {
+          "name": "Hobart",
+          "area": "Tasmania",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "HBA"
+          ]
+        },
+        {
+          "name": "Surfers Paradise",
+          "area": "Gold Coast",
+          "climateType": "beach",
+          "climateTypeLabel": "Beach",
+          "airportCandidates": [
+            "OOL"
+          ]
+        }
+      ]
+    },
+    "new-zealand": {
+      "approvedAt": "2026-11-06",
+      "authorization": "User authorized continuing selection and deployment of the next two countries.",
+      "liveLabelsUpdated": true,
+      "indexCompatibility": "Original six Australian and five New Zealand positions retained as named towns; new places appended.",
+      "seasonalityStatus": "NASA POWER/MERRA-2 2016–2025 local-solar daily climate; total precipitation. Crowd/price orders are editorial proxies. Dark Mofo and CubaDupa typical-month events are partial evidence, not guaranteed trip-date availability. Current scoring rules unchanged.",
+      "destinations": [
+        {
+          "name": "Auckland",
+          "area": "North Island",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "AKL"
+          ],
+          "treasures": [
+            "Sky Tower"
+          ]
+        },
+        {
+          "name": "Rotorua",
+          "area": "Central North Island",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "ROT",
+            "AKL"
+          ],
+          "treasures": [
+            "Hobbiton"
+          ],
+          "accessNote": "Separate excursion near Matamata; ROT or AKL with ground transfer."
+        },
+        {
+          "name": "Wellington",
+          "area": "Lower North Island",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "WLG"
+          ]
+        },
+        {
+          "name": "Queenstown",
+          "area": "Southern Lakes",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "ZQN"
+          ]
+        },
+        {
+          "name": "Te Anau",
+          "area": "Fiordland",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "ZQN"
+          ],
+          "treasures": [
+            "Milford Sound"
+          ],
+          "accessNote": "ZQN plus ground transfer to Te Anau, then separate Milford excursion; reviewed rain exclusions refer to Milford."
+        },
+        {
+          "name": "Christchurch",
+          "area": "Canterbury",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "CHC"
+          ]
+        },
+        {
+          "name": "Franz Josef",
+          "area": "West Coast glaciers",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "HKK"
+          ],
+          "accessNote": "HKK plus substantial ground transfer; mountain access separately verified."
+        }
+      ]
     }
   },
   "climateTypeAssignments": {
@@ -2693,6 +2868,96 @@
       "climateType": "all-season",
       "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
       "status": "Authorized autonomous Egypt/Morocco rollout, 6 November 2026."
+    },
+    "australia:sydney": {
+      "name": "Sydney",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Authorized autonomous Australia/New Zealand rollout, 6 November 2026."
+    },
+    "australia:melbourne": {
+      "name": "Melbourne",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous Australia/New Zealand rollout, 6 November 2026."
+    },
+    "australia:cairns": {
+      "name": "Cairns",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous Australia/New Zealand rollout, 6 November 2026."
+    },
+    "australia:yulara": {
+      "name": "Yulara",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous Australia/New Zealand rollout, 6 November 2026."
+    },
+    "australia:perth": {
+      "name": "Perth",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Authorized autonomous Australia/New Zealand rollout, 6 November 2026."
+    },
+    "australia:darwin": {
+      "name": "Darwin",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous Australia/New Zealand rollout, 6 November 2026."
+    },
+    "australia:hobart": {
+      "name": "Hobart",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous Australia/New Zealand rollout, 6 November 2026."
+    },
+    "australia:surfers-paradise": {
+      "name": "Surfers Paradise",
+      "climateType": "beach",
+      "reason": "Approved beach-oriented holiday base; 25°C target.",
+      "status": "Authorized autonomous Australia/New Zealand rollout, 6 November 2026."
+    },
+    "new-zealand:auckland": {
+      "name": "Auckland",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous Australia/New Zealand rollout, 6 November 2026."
+    },
+    "new-zealand:rotorua": {
+      "name": "Rotorua",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous Australia/New Zealand rollout, 6 November 2026."
+    },
+    "new-zealand:wellington": {
+      "name": "Wellington",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous Australia/New Zealand rollout, 6 November 2026."
+    },
+    "new-zealand:queenstown": {
+      "name": "Queenstown",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous Australia/New Zealand rollout, 6 November 2026."
+    },
+    "new-zealand:te-anau": {
+      "name": "Te Anau",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous Australia/New Zealand rollout, 6 November 2026."
+    },
+    "new-zealand:christchurch": {
+      "name": "Christchurch",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous Australia/New Zealand rollout, 6 November 2026."
+    },
+    "new-zealand:franz-josef": {
+      "name": "Franz Josef",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous Australia/New Zealand rollout, 6 November 2026."
     }
   }
 }
