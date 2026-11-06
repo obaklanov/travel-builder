@@ -78,3 +78,10 @@ This supersedes the earlier All season settings. Daily mean temperatures from +5
 ## Brazil rollout — 6 November 2026
 
 Ten approved destinations: Rio, Salvador, Recife & Olinda and Bonito Warm living; São Paulo, Manaus, Foz do Iguaçu, Barreirinhas and Poconé All season; Florianópolis Beach. Current +5–25°C All season rules apply. Historical climate uses NASA POWER/MERRA-2 2016–2025 local solar daily values, including total precipitation. Crowd/price orders are provisional editorial estimates, not measured arrivals or room rates. Selected Carnival events use the Easter-relative rule; absent events mean incomplete evidence coverage, not no events. Barreirinhas lagoon fullness and Manaus/Pantanal flood/access conditions require separate review and are not modeled as numeric climate inputs. Airports SLZ, CGR and CGB can require substantial onward ground transfers; route costs and hours remain illustrative. Rain screening updated for all ten Brazil bases; audit now covers 179 destinations. Existing first-five indices preserved.
+
+
+## Warm living daylight preference — 6 November 2026
+
+Warm living only: calculate average astronomical sunrise-to-sunset daylight for each calendar month, using daily NOAA fractional-year solar declination and a 90.833° sunrise zenith at the named base latitude. Recalculate for each scoring year, including leap years. Select the three shortest months (ties use calendar order). Subtract 5 points from the overall tourist score, floor zero, before ranking. These months cannot be BEST: a BEST label is capped to AVERAGE. No replacement BEST months are promoted; the earlier exact final 4/4/4 quota is superseded for affected Warm living bases. Rain UNSUITABLE overrides remain last and authoritative. Component ranks and all weights remain unchanged. All season, Beach and Winter have no daylight adjustment. Approximate daylight excludes twilight, terrain, clouds and actual sunshine. Near-equator differences may be small, but the same fixed product preference applies.
+
+Formula source: https://gml.noaa.gov/grad/solcalc/solareqns.PDF

@@ -114,3 +114,7 @@
 
 /* Readable table text in the country detail panels, including expanded season tables. */
 .detail-panel table,.detail-panel table th,.detail-panel table td{font-size:12px}
+
+/* Increase destination-column names and classification subtitles by 2px. */
+.detail-panel .season-table tbody th:first-child{font-size:14px}
+.detail-panel .season-table tbody th:first-child .season-climate-type{font-size:12px}

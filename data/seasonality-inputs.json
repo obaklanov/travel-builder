@@ -127,6 +127,14 @@
       "all-season": "All season",
       "beach": "Beach",
       "winter": "Winter"
+    },
+    "warmLivingDaylight": {
+      "shortestMonths": 3,
+      "penaltyTouristPoints": 5,
+      "maximumRating": "A",
+      "definition": "Warm living only: each year, average astronomical sunrise-to-sunset daylight across all days of each month at the base latitude. The three shortest months lose 5 overall tourist points (floor zero), and cannot be BEST. Other climate types are unchanged. No replacement BEST months are promoted to preserve a quota.",
+      "sourceUrl": "https://gml.noaa.gov/grad/solcalc/solareqns.PDF",
+      "limitations": "Approximate astronomical daylight, not measured sunshine, cloud cover, twilight or terrain shading. Fixed small preference penalty, including bases near the equator where seasonal differences are small."
     }
   },
   "profiles": [
