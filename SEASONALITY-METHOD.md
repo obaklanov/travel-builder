@@ -28,6 +28,8 @@ Spain: 14 approved destinations and 168 ERA5 climate records, retrieved 6 Novemb
 
 Each of the 42 climate-scored bases has one primary type. Default standard is 19°C, beach is 25°C and winter is −5°C. Values live centrally in method.temperatureTargetsC; profile.climateType selects the target. Exactly one type is active, so incompatible targets are not averaged.
 
-Initial beach assignments: Faro, Cartagena, Santa Marta, San Andrés, Cagliari, Málaga, Palma, Puerto de la Cruz. Winter: Ortisei and Jaca. Remaining 32 bases use standard. Assignments are editorial and sources/reasons are stored per profile. Faro and several city/island gateways represent the wider beach-oriented stay, not necessarily a beach next to every hotel. A Christmas market alone does not classify every city as winter; review purpose and visitor appeal.
+Initial beach assignments: Faro, Santa Marta, San Andrés, Cagliari, Málaga, Palma, Puerto de la Cruz. Winter: Ortisei and Jaca. Remaining 33 bases use standard. Assignments are editorial and sources/reasons are stored per profile. Faro and several city/island gateways represent the wider beach-oriented stay, not necessarily a beach next to every hotel. A Christmas market alone does not classify every city as winter; review purpose and visitor appeal.
 
 Temperature rank is based on ABS(monthly daily mean − type target), independently for each base’s 12 months. Other climate components, the 60/20/10/10 tourist weights, and final 4/4/4 bands are unchanged. These types do not model sea temperature, snowfall or activity availability. The other countries still using legacy seasonal strings are not silently converted without monthly climate data.
+
+Cartagena classification approved by owner as standard (19°C): its exceptional historic architecture and cultural city appeal take priority over the coastal setting. Current totals: 7 beach, 2 winter, 33 standard.

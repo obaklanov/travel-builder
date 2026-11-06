@@ -12,6 +12,8 @@ assert.equal(model.eventMonths({rule:'easter'},2027)[0],3);assert.equal(model.ev
 assert.equal(model.temperatureTargetC(),19);assert.equal(model.temperatureTargetC('beach'),25);assert.equal(model.temperatureTargetC('winter'),-5);assert.throws(()=>model.temperatureTargetC('unknown'));
 const typeFixture=[-12,-5,0,5,12,19,25,30,35,40,45,50].map(meanDailyC=>({meanDailyC,meanRainMmPerDay:5,meanRelativeHumidityPct:55}));
 assert.equal(model.climateScores(typeFixture)[5].temperatureRank,1);assert.equal(model.climateScores(typeFixture,'beach')[6].temperatureRank,1);assert.equal(model.climateScores(typeFixture,'winter')[1].temperatureRank,1);
-const classified=Object.values(model.out.countries).flatMap(c=>c.profiles);assert.equal(classified.filter(p=>p.climateType==='beach').length,8);assert.equal(classified.filter(p=>p.climateType==='winter').length,2);assert.equal(classified.filter(p=>p.climateType==='standard').length,32);
+const classified=Object.values(model.out.countries).flatMap(c=>c.profiles);assert.equal(classified.filter(p=>p.climateType==='beach').length,7);assert.equal(classified.filter(p=>p.climateType==='winter').length,2);assert.equal(classified.filter(p=>p.climateType==='standard').length,33);
 for(const country of Object.values(model.out.countries))for(const [index,p] of country.profiles.entries()){assert.equal(p.temperatureTargetC,model.temperatureTargetC(p.climateType));const expected=model.ranksOf(p.months.map(m=>Math.abs(m.meanDailyC-p.temperatureTargetC)));for(const year of Object.values(country.years))year[index].forEach((m,i)=>assert.equal(m.climateRanks.temperature,expected[i]));}
-console.log('PASS: standard/beach/winter resolve to 19/25/-5°C; correct temperature ranks for every profile and year; 8 beach, 2 winter, 32 standard.');
+console.log('PASS: standard/beach/winter resolve to 19/25/-5°C; correct temperature ranks for every profile and year; 7 beach, 2 winter, 33 standard.');
+
+const cartagena=model.out.countries.colombia.profiles.find(p=>p.id==='cartagena');assert.equal(cartagena.climateType,'standard');assert.equal(cartagena.temperatureTargetC,19);

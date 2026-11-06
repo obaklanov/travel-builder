@@ -51,7 +51,8 @@
           "area": "Caribbean coast",
           "treasures": [
             "Cartagena Walled City"
-          ]
+          ],
+          "climateType": "standard"
         },
         {
           "name": "Salento",
