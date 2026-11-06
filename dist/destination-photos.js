@@ -53,7 +53,7 @@ window.TRAVEL_DESTINATION_PHOTOS = {
     "alt": "New York City skyline with the Empire State Building at sunset"
   },
   "vietnam": {
-    "src": "images/vietnam.jpg",
+    "src": "images/vietnam-cover.png",
     "alt": "Cruise boats among the limestone islands of Ha Long Bay, Vietnam"
   },
   "colombia": {
