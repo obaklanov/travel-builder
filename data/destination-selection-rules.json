@@ -1755,6 +1755,199 @@
           "accessNote": "THS or PHS followed by onward ground travel; historical park access planned locally."
         }
       ]
+    },
+    "turkey": {
+      "approvedAt": "2026-11-06",
+      "authorization": "User authorized continuing selection and deployment of the next two countries.",
+      "liveLabelsUpdated": true,
+      "indexCompatibility": "Original Istanbul, Cappadocia, Antalya, Izmir and Trabzon positions retained with named-base labels. Pamukkale and Ölüdeniz appended.",
+      "seasonalityStatus": "NASA POWER/MERRA-2 2016–2025 local-solar daily climate; total precipitation including snow. Crowd/price orders are provisional editorial proxies. Events are partial typical-month evidence; monthly Hoi An lantern nights require exact lunar-date confirmation. Current scoring rules unchanged.",
+      "destinations": [
+        {
+          "name": "Istanbul",
+          "area": "Marmara",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "IST",
+            "SAW"
+          ],
+          "treasures": [
+            "Hagia Sophia"
+          ]
+        },
+        {
+          "name": "Göreme",
+          "area": "Cappadocia",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "ASR",
+            "NAV"
+          ],
+          "treasures": [
+            "Cappadocia (Göreme)"
+          ],
+          "accessNote": "ASR/NAV require onward ground transfer; balloon operations require current wind/aviation checks."
+        },
+        {
+          "name": "Antalya",
+          "area": "Mediterranean coast",
+          "climateType": "standard",
+          "climateTypeLabel": "Warm living",
+          "airportCandidates": [
+            "AYT"
+          ],
+          "coverageNote": "Warm living heritage city, rather than a beach-only resort base."
+        },
+        {
+          "name": "İzmir",
+          "area": "Aegean coast",
+          "climateType": "standard",
+          "climateTypeLabel": "Warm living",
+          "airportCandidates": [
+            "ADB"
+          ],
+          "nearbyPlaces": [
+            "Ephesus",
+            "Selçuk"
+          ]
+        },
+        {
+          "name": "Trabzon",
+          "area": "Black Sea",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "TZX"
+          ]
+        },
+        {
+          "name": "Pamukkale",
+          "area": "Denizli",
+          "climateType": "standard",
+          "climateTypeLabel": "Warm living",
+          "airportCandidates": [
+            "DNZ"
+          ],
+          "treasures": [
+            "Pamukkale"
+          ],
+          "nearbyPlaces": [
+            "Hierapolis"
+          ],
+          "accessNote": "DNZ plus onward ground transfer."
+        },
+        {
+          "name": "Ölüdeniz",
+          "area": "Lycian coast",
+          "climateType": "beach",
+          "climateTypeLabel": "Beach",
+          "airportCandidates": [
+            "DLM"
+          ],
+          "nearbyPlaces": [
+            "Fethiye"
+          ],
+          "accessNote": "DLM plus onward ground transfer."
+        }
+      ]
+    },
+    "vietnam": {
+      "approvedAt": "2026-11-06",
+      "authorization": "User authorized continuing selection and deployment of the next two countries.",
+      "liveLabelsUpdated": true,
+      "indexCompatibility": "Original Hanoi, Da Nang/Hoi An, Ho Chi Minh City and Phu Quoc positions retained as Hanoi, Hoi An, Ho Chi Minh City and Dương Đông. Ha Long, Ninh Binh and Da Lat appended.",
+      "seasonalityStatus": "NASA POWER/MERRA-2 2016–2025 local-solar daily climate; total precipitation including snow. Crowd/price orders are provisional editorial proxies. Events are partial typical-month evidence; monthly Hoi An lantern nights require exact lunar-date confirmation. Current scoring rules unchanged.",
+      "destinations": [
+        {
+          "name": "Hanoi",
+          "area": "North",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "HAN"
+          ]
+        },
+        {
+          "name": "Hoi An",
+          "area": "Central Vietnam",
+          "climateType": "standard",
+          "climateTypeLabel": "Warm living",
+          "airportCandidates": [
+            "DAD"
+          ],
+          "treasures": [
+            "Hoi An Ancient Town"
+          ],
+          "nearbyPlaces": [
+            "Da Nang",
+            "My Son"
+          ],
+          "accessNote": "DAD plus onward ground transfer; local flood conditions and lunar event dates checked separately."
+        },
+        {
+          "name": "Ho Chi Minh City",
+          "area": "South",
+          "climateType": "standard",
+          "climateTypeLabel": "Warm living",
+          "airportCandidates": [
+            "SGN"
+          ],
+          "nearbyPlaces": [
+            "Mekong Delta"
+          ],
+          "coverageNote": "Delta excursions require local transport; city climate does not represent every delta area."
+        },
+        {
+          "name": "Dương Đông",
+          "area": "Phú Quốc",
+          "climateType": "beach",
+          "climateTypeLabel": "Beach",
+          "airportCandidates": [
+            "PQC"
+          ]
+        },
+        {
+          "name": "Ha Long",
+          "area": "Quảng Ninh",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "HPH",
+            "HAN"
+          ],
+          "treasures": [
+            "Ha Long Bay"
+          ],
+          "accessNote": "HPH/HAN plus onward travel; cruise/sea conditions checked separately."
+        },
+        {
+          "name": "Ninh Binh",
+          "area": "Trang An region",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "HAN"
+          ],
+          "treasures": [
+            "Trang An"
+          ],
+          "nearbyPlaces": [
+            "Tam Coc"
+          ],
+          "accessNote": "HAN plus substantial ground transfer and local boat arrangements."
+        },
+        {
+          "name": "Da Lat",
+          "area": "Central Highlands",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "DLI"
+          ]
+        }
+      ]
     }
   },
   "climateTypeAssignments": {
@@ -2189,6 +2382,90 @@
       "climateType": "standard",
       "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
       "status": "Authorized autonomous South Korea/Thailand rollout, 6 November 2026."
+    },
+    "turkey:istanbul": {
+      "name": "Istanbul",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous Türkiye/Vietnam rollout, 6 November 2026."
+    },
+    "turkey:goreme": {
+      "name": "Göreme",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous Türkiye/Vietnam rollout, 6 November 2026."
+    },
+    "turkey:antalya": {
+      "name": "Antalya",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Authorized autonomous Türkiye/Vietnam rollout, 6 November 2026."
+    },
+    "turkey:izmir": {
+      "name": "İzmir",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Authorized autonomous Türkiye/Vietnam rollout, 6 November 2026."
+    },
+    "turkey:trabzon": {
+      "name": "Trabzon",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous Türkiye/Vietnam rollout, 6 November 2026."
+    },
+    "turkey:pamukkale": {
+      "name": "Pamukkale",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Authorized autonomous Türkiye/Vietnam rollout, 6 November 2026."
+    },
+    "turkey:oludeniz": {
+      "name": "Ölüdeniz",
+      "climateType": "beach",
+      "reason": "Approved beach-oriented holiday base; 25°C target.",
+      "status": "Authorized autonomous Türkiye/Vietnam rollout, 6 November 2026."
+    },
+    "vietnam:hanoi": {
+      "name": "Hanoi",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous Türkiye/Vietnam rollout, 6 November 2026."
+    },
+    "vietnam:hoi-an": {
+      "name": "Hoi An",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Authorized autonomous Türkiye/Vietnam rollout, 6 November 2026."
+    },
+    "vietnam:ho-chi-minh-city": {
+      "name": "Ho Chi Minh City",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Authorized autonomous Türkiye/Vietnam rollout, 6 November 2026."
+    },
+    "vietnam:duong-dong": {
+      "name": "Dương Đông",
+      "climateType": "beach",
+      "reason": "Approved beach-oriented holiday base; 25°C target.",
+      "status": "Authorized autonomous Türkiye/Vietnam rollout, 6 November 2026."
+    },
+    "vietnam:ha-long": {
+      "name": "Ha Long",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous Türkiye/Vietnam rollout, 6 November 2026."
+    },
+    "vietnam:ninh-binh": {
+      "name": "Ninh Binh",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous Türkiye/Vietnam rollout, 6 November 2026."
+    },
+    "vietnam:da-lat": {
+      "name": "Da Lat",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous Türkiye/Vietnam rollout, 6 November 2026."
     }
   }
 }

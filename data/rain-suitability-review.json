@@ -7,9 +7,9 @@
     "persistentWetDayFraction": 0.6,
     "excludedMonthsPerVulnerableBase": 2,
     "selection": "Vulnerable if any month averages >=8 mm/day, or >=6 mm/day with >=60% wet days where wet-day data exist. Mark its two largest mean daily rainfall/precipitation months unsuitable. Equal values use calendar order. Reviewed regional/station overrides take precedence where coarse model grids conflict with official guidance; these are identified per base.",
-    "scope": "198 existing destinations. Product preference, not abnormal-weather diagnosis, flood forecast or official advisory.",
+    "scope": "203 existing destinations. Product preference, not abnormal-weather diagnosis, flood forecast or official advisory.",
     "limitations": "Model estimates and representative points; broad regions can contain different climates. NASA supplementary records are total precipitation including snow, not rain-only; cross-check Colombia estimates separately. Unflagged does not mean free of rain or weather hazards.",
-    "reviewedVulnerableCount": 69
+    "reviewedVulnerableCount": 72
   },
   "bases": [
     {
@@ -3682,387 +3682,534 @@
     {
       "country": "turkey",
       "regionIndex": 0,
-      "label": "Istanbul & Marmara (West)",
-      "id": "turkey-0",
-      "latitude": 41.01,
-      "longitude": 28.98,
-      "needsRainFetch": true,
-      "referenceNote": "Representative point for a broad legacy region; does not describe every linked place.",
+      "label": "Istanbul (Marmara)",
+      "id": "istanbul",
+      "latitude": 41.0082,
+      "longitude": 28.9784,
+      "referenceNote": "Named town point; mountains, excursions, bay cruises and island coasts can differ.",
       "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
-      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR&community=AG&longitude=28.98&latitude=41.01&start=2016&end=2025&format=JSON",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=28.9784&latitude=41.0082&start=20160101&end=20251231&format=JSON&time-standard=LST",
       "months": [
         {
           "month": 1,
-          "meanMmPerDay": 2.906,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.9043,
+          "wetDayFraction": 0.4258
         },
         {
           "month": 2,
-          "meanMmPerDay": 2.293,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.2914,
+          "wetDayFraction": 0.3887
         },
         {
           "month": 3,
-          "meanMmPerDay": 1.79,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.7895,
+          "wetDayFraction": 0.3355
         },
         {
           "month": 4,
-          "meanMmPerDay": 1.354,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.353,
+          "wetDayFraction": 0.2467
         },
         {
           "month": 5,
-          "meanMmPerDay": 1.475,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.473,
+          "wetDayFraction": 0.2742
         },
         {
           "month": 6,
-          "meanMmPerDay": 1.23,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.2296,
+          "wetDayFraction": 0.2633
         },
         {
           "month": 7,
-          "meanMmPerDay": 0.924,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.9237,
+          "wetDayFraction": 0.1419
         },
         {
           "month": 8,
-          "meanMmPerDay": 0.556,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.5565,
+          "wetDayFraction": 0.0839
         },
         {
           "month": 9,
-          "meanMmPerDay": 1.244,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.2434,
+          "wetDayFraction": 0.2
         },
         {
           "month": 10,
-          "meanMmPerDay": 1.568,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.5683,
+          "wetDayFraction": 0.2452
         },
         {
           "month": 11,
-          "meanMmPerDay": 2.437,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.4371,
+          "wetDayFraction": 0.3333
         },
         {
           "month": 12,
-          "meanMmPerDay": 2.636,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.6359,
+          "wetDayFraction": 0.4194
         }
       ],
       "vulnerable": false,
       "excludedMonths": [],
-      "reason": "Screening threshold not met at representative point."
+      "reason": "Screening threshold not met at named town point."
     },
     {
       "country": "turkey",
       "regionIndex": 1,
-      "label": "Cappadocia (Center)",
-      "id": "turkey-1",
-      "latitude": 38.64,
-      "longitude": 34.83,
-      "needsRainFetch": true,
-      "referenceNote": "Representative point for a broad legacy region; does not describe every linked place.",
+      "label": "Göreme (Cappadocia)",
+      "id": "goreme",
+      "latitude": 38.6431,
+      "longitude": 34.8289,
+      "referenceNote": "Named town point; mountains, excursions, bay cruises and island coasts can differ.",
       "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
-      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR&community=AG&longitude=34.83&latitude=38.64&start=2016&end=2025&format=JSON",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=34.8289&latitude=38.6431&start=20160101&end=20251231&format=JSON&time-standard=LST",
       "months": [
         {
           "month": 1,
-          "meanMmPerDay": 1.592,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.5917,
+          "wetDayFraction": 0.3129
         },
         {
           "month": 2,
-          "meanMmPerDay": 1.0457,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.044,
+          "wetDayFraction": 0.2332
         },
         {
           "month": 3,
-          "meanMmPerDay": 1.618,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.6172,
+          "wetDayFraction": 0.3613
         },
         {
           "month": 4,
-          "meanMmPerDay": 1.185,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.1854,
+          "wetDayFraction": 0.31
         },
         {
           "month": 5,
-          "meanMmPerDay": 1.67,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.6705,
+          "wetDayFraction": 0.3613
         },
         {
           "month": 6,
-          "meanMmPerDay": 1.29,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.2899,
+          "wetDayFraction": 0.2833
         },
         {
           "month": 7,
-          "meanMmPerDay": 0.174,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.1734,
+          "wetDayFraction": 0.0484
         },
         {
           "month": 8,
-          "meanMmPerDay": 0.258,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.2583,
+          "wetDayFraction": 0.071
         },
         {
           "month": 9,
-          "meanMmPerDay": 0.488,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.4897,
+          "wetDayFraction": 0.09
         },
         {
           "month": 10,
-          "meanMmPerDay": 0.436,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.4357,
+          "wetDayFraction": 0.0935
         },
         {
           "month": 11,
-          "meanMmPerDay": 0.88,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.8799,
+          "wetDayFraction": 0.16
         },
         {
           "month": 12,
-          "meanMmPerDay": 1.439,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.4384,
+          "wetDayFraction": 0.2935
         }
       ],
       "vulnerable": false,
       "excludedMonths": [],
-      "reason": "Screening threshold not met at representative point."
+      "reason": "Screening threshold not met at named town point."
     },
     {
       "country": "turkey",
       "regionIndex": 2,
-      "label": "Antalya & Mediterranean coast (South)",
-      "id": "turkey-2",
-      "latitude": 36.9,
-      "longitude": 30.71,
-      "needsRainFetch": true,
-      "referenceNote": "Representative point for a broad legacy region; does not describe every linked place.",
+      "label": "Antalya (Mediterranean coast)",
+      "id": "antalya",
+      "latitude": 36.8969,
+      "longitude": 30.7133,
+      "referenceNote": "Named town point; mountains, excursions, bay cruises and island coasts can differ.",
       "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
-      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR&community=AG&longitude=30.71&latitude=36.9&start=2016&end=2025&format=JSON",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=30.7133&latitude=36.8969&start=20160101&end=20251231&format=JSON&time-standard=LST",
       "months": [
         {
           "month": 1,
-          "meanMmPerDay": 4.872,
-          "wetDayFraction": null
+          "meanMmPerDay": 4.871,
+          "wetDayFraction": 0.4355
         },
         {
           "month": 2,
-          "meanMmPerDay": 2.3105,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.3118,
+          "wetDayFraction": 0.2756
         },
         {
           "month": 3,
-          "meanMmPerDay": 2.111,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.113,
+          "wetDayFraction": 0.2742
         },
         {
           "month": 4,
-          "meanMmPerDay": 1.033,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.0336,
+          "wetDayFraction": 0.2167
         },
         {
           "month": 5,
-          "meanMmPerDay": 1.443,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.4442,
+          "wetDayFraction": 0.2839
         },
         {
           "month": 6,
-          "meanMmPerDay": 0.885,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.8838,
+          "wetDayFraction": 0.2167
         },
         {
           "month": 7,
-          "meanMmPerDay": 0.213,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.2127,
+          "wetDayFraction": 0.0581
         },
         {
           "month": 8,
-          "meanMmPerDay": 0.196,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.1964,
+          "wetDayFraction": 0.0677
         },
         {
           "month": 9,
           "meanMmPerDay": 0.43,
-          "wetDayFraction": null
+          "wetDayFraction": 0.1167
         },
         {
           "month": 10,
-          "meanMmPerDay": 0.884,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.8843,
+          "wetDayFraction": 0.1548
         },
         {
           "month": 11,
-          "meanMmPerDay": 2.61,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.6099,
+          "wetDayFraction": 0.2833
         },
         {
           "month": 12,
-          "meanMmPerDay": 5.162,
-          "wetDayFraction": null
+          "meanMmPerDay": 5.1624,
+          "wetDayFraction": 0.4194
         }
       ],
       "vulnerable": false,
       "excludedMonths": [],
-      "reason": "Screening threshold not met at representative point."
+      "reason": "Screening threshold not met at named town point."
     },
     {
       "country": "turkey",
       "regionIndex": 3,
-      "label": "İzmir & Aegean coast (West)",
-      "id": "turkey-3",
-      "latitude": 38.42,
-      "longitude": 27.14,
-      "needsRainFetch": true,
-      "referenceNote": "Representative point for a broad legacy region; does not describe every linked place.",
+      "label": "İzmir (Aegean coast)",
+      "id": "izmir",
+      "latitude": 38.4237,
+      "longitude": 27.1428,
+      "referenceNote": "Named town point; mountains, excursions, bay cruises and island coasts can differ.",
       "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
-      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR&community=AG&longitude=27.14&latitude=38.42&start=2016&end=2025&format=JSON",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=27.1428&latitude=38.4237&start=20160101&end=20251231&format=JSON&time-standard=LST",
       "months": [
         {
           "month": 1,
-          "meanMmPerDay": 4.817,
-          "wetDayFraction": null
+          "meanMmPerDay": 4.8156,
+          "wetDayFraction": 0.3903
         },
         {
           "month": 2,
           "meanMmPerDay": 2.5849,
-          "wetDayFraction": null
+          "wetDayFraction": 0.3039
         },
         {
           "month": 3,
-          "meanMmPerDay": 2.029,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.0291,
+          "wetDayFraction": 0.271
         },
         {
           "month": 4,
           "meanMmPerDay": 1.223,
-          "wetDayFraction": null
+          "wetDayFraction": 0.2
         },
         {
           "month": 5,
-          "meanMmPerDay": 0.745,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.7468,
+          "wetDayFraction": 0.1581
         },
         {
           "month": 6,
-          "meanMmPerDay": 0.702,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.7018,
+          "wetDayFraction": 0.14
         },
         {
           "month": 7,
-          "meanMmPerDay": 0.096,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.0962,
+          "wetDayFraction": 0.029
         },
         {
           "month": 8,
-          "meanMmPerDay": 0.09,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.0904,
+          "wetDayFraction": 0.0226
         },
         {
           "month": 9,
-          "meanMmPerDay": 0.41,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.4106,
+          "wetDayFraction": 0.0533
         },
         {
           "month": 10,
-          "meanMmPerDay": 0.849,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.8488,
+          "wetDayFraction": 0.129
         },
         {
           "month": 11,
-          "meanMmPerDay": 2.61,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.6093,
+          "wetDayFraction": 0.28
         },
         {
           "month": 12,
-          "meanMmPerDay": 3.382,
-          "wetDayFraction": null
+          "meanMmPerDay": 3.3803,
+          "wetDayFraction": 0.3387
         }
       ],
       "vulnerable": false,
       "excludedMonths": [],
-      "reason": "Screening threshold not met at representative point."
+      "reason": "Screening threshold not met at named town point."
     },
     {
       "country": "turkey",
       "regionIndex": 4,
-      "label": "Trabzon & Black Sea coast (North)",
-      "id": "turkey-4",
-      "latitude": 41,
-      "longitude": 39.72,
-      "needsRainFetch": true,
-      "referenceNote": "Representative point for a broad legacy region; does not describe every linked place.",
+      "label": "Trabzon (Black Sea)",
+      "id": "trabzon",
+      "latitude": 41.0027,
+      "longitude": 39.7168,
+      "referenceNote": "Named town point; mountains, excursions, bay cruises and island coasts can differ.",
       "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
-      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR&community=AG&longitude=39.72&latitude=41&start=2016&end=2025&format=JSON",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=39.7168&latitude=41.0027&start=20160101&end=20251231&format=JSON&time-standard=LST",
       "months": [
         {
           "month": 1,
-          "meanMmPerDay": 3.149,
-          "wetDayFraction": null
+          "meanMmPerDay": 3.1477,
+          "wetDayFraction": 0.4548
         },
         {
           "month": 2,
-          "meanMmPerDay": 2.2034,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.2039,
+          "wetDayFraction": 0.3781
         },
         {
           "month": 3,
-          "meanMmPerDay": 2.664,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.6636,
+          "wetDayFraction": 0.4387
         },
         {
           "month": 4,
-          "meanMmPerDay": 1.807,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.8082,
+          "wetDayFraction": 0.35
         },
         {
           "month": 5,
-          "meanMmPerDay": 2.235,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.2353,
+          "wetDayFraction": 0.4516
         },
         {
           "month": 6,
-          "meanMmPerDay": 2.143,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.1421,
+          "wetDayFraction": 0.3767
         },
         {
           "month": 7,
-          "meanMmPerDay": 1.701,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.7002,
+          "wetDayFraction": 0.3484
         },
         {
           "month": 8,
-          "meanMmPerDay": 1.453,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.4544,
+          "wetDayFraction": 0.3161
         },
         {
           "month": 9,
-          "meanMmPerDay": 3.07,
-          "wetDayFraction": null
+          "meanMmPerDay": 3.0695,
+          "wetDayFraction": 0.43
         },
         {
           "month": 10,
-          "meanMmPerDay": 3.381,
-          "wetDayFraction": null
+          "meanMmPerDay": 3.3823,
+          "wetDayFraction": 0.4323
         },
         {
           "month": 11,
-          "meanMmPerDay": 2.977,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.9778,
+          "wetDayFraction": 0.33
         },
         {
           "month": 12,
-          "meanMmPerDay": 3.08,
-          "wetDayFraction": null
+          "meanMmPerDay": 3.0813,
+          "wetDayFraction": 0.3903
         }
       ],
       "vulnerable": false,
       "excludedMonths": [],
-      "reason": "Screening threshold not met at representative point."
+      "reason": "Screening threshold not met at named town point."
+    },
+    {
+      "country": "turkey",
+      "regionIndex": 5,
+      "label": "Pamukkale (Denizli)",
+      "id": "pamukkale",
+      "latitude": 37.9164,
+      "longitude": 29.1187,
+      "referenceNote": "Named town point; mountains, excursions, bay cruises and island coasts can differ.",
+      "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=29.1187&latitude=37.9164&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "months": [
+        {
+          "month": 1,
+          "meanMmPerDay": 2.6536,
+          "wetDayFraction": 0.3516
+        },
+        {
+          "month": 2,
+          "meanMmPerDay": 1.2848,
+          "wetDayFraction": 0.2332
+        },
+        {
+          "month": 3,
+          "meanMmPerDay": 1.7096,
+          "wetDayFraction": 0.2968
+        },
+        {
+          "month": 4,
+          "meanMmPerDay": 1.2777,
+          "wetDayFraction": 0.2567
+        },
+        {
+          "month": 5,
+          "meanMmPerDay": 1.824,
+          "wetDayFraction": 0.3419
+        },
+        {
+          "month": 6,
+          "meanMmPerDay": 1.581,
+          "wetDayFraction": 0.3267
+        },
+        {
+          "month": 7,
+          "meanMmPerDay": 0.4048,
+          "wetDayFraction": 0.0903
+        },
+        {
+          "month": 8,
+          "meanMmPerDay": 0.4665,
+          "wetDayFraction": 0.1226
+        },
+        {
+          "month": 9,
+          "meanMmPerDay": 0.5551,
+          "wetDayFraction": 0.1333
+        },
+        {
+          "month": 10,
+          "meanMmPerDay": 0.7804,
+          "wetDayFraction": 0.1419
+        },
+        {
+          "month": 11,
+          "meanMmPerDay": 1.4428,
+          "wetDayFraction": 0.2367
+        },
+        {
+          "month": 12,
+          "meanMmPerDay": 2.2855,
+          "wetDayFraction": 0.3355
+        }
+      ],
+      "vulnerable": false,
+      "excludedMonths": [],
+      "reason": "Screening threshold not met at named town point."
+    },
+    {
+      "country": "turkey",
+      "regionIndex": 6,
+      "label": "Ölüdeniz (Lycian coast)",
+      "id": "oludeniz",
+      "latitude": 36.5493,
+      "longitude": 29.1153,
+      "referenceNote": "Named town point; mountains, excursions, bay cruises and island coasts can differ.",
+      "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=29.1153&latitude=36.5493&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "months": [
+        {
+          "month": 1,
+          "meanMmPerDay": 5.9948,
+          "wetDayFraction": 0.5129
+        },
+        {
+          "month": 2,
+          "meanMmPerDay": 2.5537,
+          "wetDayFraction": 0.3569
+        },
+        {
+          "month": 3,
+          "meanMmPerDay": 2.1769,
+          "wetDayFraction": 0.2903
+        },
+        {
+          "month": 4,
+          "meanMmPerDay": 1.1765,
+          "wetDayFraction": 0.1967
+        },
+        {
+          "month": 5,
+          "meanMmPerDay": 0.7549,
+          "wetDayFraction": 0.1677
+        },
+        {
+          "month": 6,
+          "meanMmPerDay": 0.4076,
+          "wetDayFraction": 0.11
+        },
+        {
+          "month": 7,
+          "meanMmPerDay": 0.1559,
+          "wetDayFraction": 0.0194
+        },
+        {
+          "month": 8,
+          "meanMmPerDay": 0.156,
+          "wetDayFraction": 0.0516
+        },
+        {
+          "month": 9,
+          "meanMmPerDay": 0.5433,
+          "wetDayFraction": 0.1
+        },
+        {
+          "month": 10,
+          "meanMmPerDay": 1.4178,
+          "wetDayFraction": 0.1742
+        },
+        {
+          "month": 11,
+          "meanMmPerDay": 3.1475,
+          "wetDayFraction": 0.3267
+        },
+        {
+          "month": 12,
+          "meanMmPerDay": 6.5244,
+          "wetDayFraction": 0.4613
+        }
+      ],
+      "vulnerable": false,
+      "excludedMonths": [],
+      "reason": "Screening threshold not met at named town point."
     },
     {
       "country": "peru",
@@ -9668,74 +9815,73 @@
     {
       "country": "vietnam",
       "regionIndex": 0,
-      "label": "Hanoi & Ha Long Bay (North)",
-      "id": "vietnam-0",
-      "latitude": 21.03,
-      "longitude": 105.85,
-      "needsRainFetch": true,
-      "referenceNote": "Representative point for a broad legacy region; does not describe every linked place.",
+      "label": "Hanoi (North)",
+      "id": "hanoi",
+      "latitude": 21.0285,
+      "longitude": 105.8542,
+      "referenceNote": "Named town point; mountains, excursions, bay cruises and island coasts can differ.",
       "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
-      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR&community=AG&longitude=105.85&latitude=21.03&start=2016&end=2025&format=JSON",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=105.8542&latitude=21.0285&start=20160101&end=20251231&format=JSON&time-standard=LST",
       "months": [
         {
           "month": 1,
-          "meanMmPerDay": 1.531,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.5325,
+          "wetDayFraction": 0.1903
         },
         {
           "month": 2,
-          "meanMmPerDay": 1.5405,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.5407,
+          "wetDayFraction": 0.2367
         },
         {
           "month": 3,
-          "meanMmPerDay": 1.773,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.7725,
+          "wetDayFraction": 0.3226
         },
         {
           "month": 4,
-          "meanMmPerDay": 3.202,
-          "wetDayFraction": null
+          "meanMmPerDay": 3.2044,
+          "wetDayFraction": 0.4567
         },
         {
           "month": 5,
-          "meanMmPerDay": 5.768,
-          "wetDayFraction": null
+          "meanMmPerDay": 5.7682,
+          "wetDayFraction": 0.6581
         },
         {
           "month": 6,
-          "meanMmPerDay": 8.115,
-          "wetDayFraction": null
+          "meanMmPerDay": 8.1148,
+          "wetDayFraction": 0.7767
         },
         {
           "month": 7,
-          "meanMmPerDay": 9.899,
-          "wetDayFraction": null
+          "meanMmPerDay": 9.8995,
+          "wetDayFraction": 0.8097
         },
         {
           "month": 8,
-          "meanMmPerDay": 12.146,
-          "wetDayFraction": null
+          "meanMmPerDay": 12.1433,
+          "wetDayFraction": 0.8129
         },
         {
           "month": 9,
-          "meanMmPerDay": 9.517,
-          "wetDayFraction": null
+          "meanMmPerDay": 9.5174,
+          "wetDayFraction": 0.71
         },
         {
           "month": 10,
-          "meanMmPerDay": 6.099,
-          "wetDayFraction": null
+          "meanMmPerDay": 6.0993,
+          "wetDayFraction": 0.471
         },
         {
           "month": 11,
-          "meanMmPerDay": 1.226,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.2262,
+          "wetDayFraction": 0.2367
         },
         {
           "month": 12,
-          "meanMmPerDay": 0.594,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.5935,
+          "wetDayFraction": 0.1097
         }
       ],
       "vulnerable": true,
@@ -9748,74 +9894,73 @@
     {
       "country": "vietnam",
       "regionIndex": 1,
-      "label": "Da Nang & Hoi An (Center)",
-      "id": "vietnam-1",
-      "latitude": 15.88,
-      "longitude": 108.33,
-      "needsRainFetch": true,
-      "referenceNote": "Representative point for a broad legacy region; does not describe every linked place.",
+      "label": "Hoi An (Central Vietnam)",
+      "id": "hoi-an",
+      "latitude": 15.8801,
+      "longitude": 108.338,
+      "referenceNote": "Named town point; mountains, excursions, bay cruises and island coasts can differ.",
       "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
-      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR&community=AG&longitude=108.33&latitude=15.88&start=2016&end=2025&format=JSON",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=108.338&latitude=15.8801&start=20160101&end=20251231&format=JSON&time-standard=LST",
       "months": [
         {
           "month": 1,
-          "meanMmPerDay": 3.6,
-          "wetDayFraction": null
+          "meanMmPerDay": 3.601,
+          "wetDayFraction": 0.5548
         },
         {
           "month": 2,
-          "meanMmPerDay": 1.835,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.8351,
+          "wetDayFraction": 0.311
         },
         {
           "month": 3,
-          "meanMmPerDay": 1.413,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.4148,
+          "wetDayFraction": 0.229
         },
         {
           "month": 4,
-          "meanMmPerDay": 2.827,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.8285,
+          "wetDayFraction": 0.26
         },
         {
           "month": 5,
-          "meanMmPerDay": 3.264,
-          "wetDayFraction": null
+          "meanMmPerDay": 3.2642,
+          "wetDayFraction": 0.5032
         },
         {
           "month": 6,
-          "meanMmPerDay": 4.794,
-          "wetDayFraction": null
+          "meanMmPerDay": 4.7937,
+          "wetDayFraction": 0.5167
         },
         {
           "month": 7,
-          "meanMmPerDay": 5.132,
-          "wetDayFraction": null
+          "meanMmPerDay": 5.1301,
+          "wetDayFraction": 0.6839
         },
         {
           "month": 8,
-          "meanMmPerDay": 5.35,
-          "wetDayFraction": null
+          "meanMmPerDay": 5.3506,
+          "wetDayFraction": 0.7484
         },
         {
           "month": 9,
-          "meanMmPerDay": 16.219,
-          "wetDayFraction": null
+          "meanMmPerDay": 16.2189,
+          "wetDayFraction": 0.8133
         },
         {
           "month": 10,
-          "meanMmPerDay": 28.663,
-          "wetDayFraction": null
+          "meanMmPerDay": 28.6614,
+          "wetDayFraction": 0.8742
         },
         {
           "month": 11,
-          "meanMmPerDay": 17.9,
-          "wetDayFraction": null
+          "meanMmPerDay": 17.8992,
+          "wetDayFraction": 0.8067
         },
         {
           "month": 12,
-          "meanMmPerDay": 13.196,
-          "wetDayFraction": null
+          "meanMmPerDay": 13.1943,
+          "wetDayFraction": 0.7871
         }
       ],
       "vulnerable": true,
@@ -9828,74 +9973,73 @@
     {
       "country": "vietnam",
       "regionIndex": 2,
-      "label": "Ho Chi Minh City & Mekong Delta (South)",
-      "id": "vietnam-2",
-      "latitude": 10.82,
-      "longitude": 106.63,
-      "needsRainFetch": true,
-      "referenceNote": "Representative point for a broad legacy region; does not describe every linked place.",
+      "label": "Ho Chi Minh City (South)",
+      "id": "ho-chi-minh-city",
+      "latitude": 10.8231,
+      "longitude": 106.6297,
+      "referenceNote": "Named town point; mountains, excursions, bay cruises and island coasts can differ.",
       "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
-      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR&community=AG&longitude=106.63&latitude=10.82&start=2016&end=2025&format=JSON",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=106.6297&latitude=10.8231&start=20160101&end=20251231&format=JSON&time-standard=LST",
       "months": [
         {
           "month": 1,
-          "meanMmPerDay": 0.346,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.3455,
+          "wetDayFraction": 0.0806
         },
         {
           "month": 2,
-          "meanMmPerDay": 0.0912,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.0906,
+          "wetDayFraction": 0.0283
         },
         {
           "month": 3,
-          "meanMmPerDay": 0.521,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.5217,
+          "wetDayFraction": 0.0839
         },
         {
           "month": 4,
-          "meanMmPerDay": 1.243,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.2421,
+          "wetDayFraction": 0.21
         },
         {
           "month": 5,
-          "meanMmPerDay": 5.627,
-          "wetDayFraction": null
+          "meanMmPerDay": 5.626,
+          "wetDayFraction": 0.6774
         },
         {
           "month": 6,
-          "meanMmPerDay": 8.764,
-          "wetDayFraction": null
+          "meanMmPerDay": 8.7631,
+          "wetDayFraction": 0.8167
         },
         {
           "month": 7,
-          "meanMmPerDay": 8.04,
-          "wetDayFraction": null
+          "meanMmPerDay": 8.0409,
+          "wetDayFraction": 0.8548
         },
         {
           "month": 8,
-          "meanMmPerDay": 6.472,
-          "wetDayFraction": null
+          "meanMmPerDay": 6.4726,
+          "wetDayFraction": 0.7968
         },
         {
           "month": 9,
-          "meanMmPerDay": 6.917,
-          "wetDayFraction": null
+          "meanMmPerDay": 6.9183,
+          "wetDayFraction": 0.8467
         },
         {
           "month": 10,
-          "meanMmPerDay": 8.159,
-          "wetDayFraction": null
+          "meanMmPerDay": 8.1589,
+          "wetDayFraction": 0.8419
         },
         {
           "month": 11,
-          "meanMmPerDay": 3.617,
-          "wetDayFraction": null
+          "meanMmPerDay": 3.6162,
+          "wetDayFraction": 0.5467
         },
         {
           "month": 12,
-          "meanMmPerDay": 1.516,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.5156,
+          "wetDayFraction": 0.2226
         }
       ],
       "vulnerable": true,
@@ -9908,80 +10052,316 @@
     {
       "country": "vietnam",
       "regionIndex": 3,
-      "label": "Phu Quoc (Islands)",
-      "id": "vietnam-3",
-      "latitude": 10.29,
-      "longitude": 103.98,
-      "needsRainFetch": true,
-      "referenceNote": "Representative point for a broad legacy region; does not describe every linked place.",
+      "label": "Dương Đông (Phú Quốc)",
+      "id": "duong-dong",
+      "latitude": 10.2174,
+      "longitude": 103.9591,
+      "referenceNote": "Named town point; mountains, excursions, bay cruises and island coasts can differ.",
       "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
-      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR&community=AG&longitude=103.98&latitude=10.29&start=2016&end=2025&format=JSON",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=103.9591&latitude=10.2174&start=20160101&end=20251231&format=JSON&time-standard=LST",
       "months": [
         {
           "month": 1,
-          "meanMmPerDay": 0.974,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.9014,
+          "wetDayFraction": 0.2581
         },
         {
           "month": 2,
-          "meanMmPerDay": 0.7166,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.5231,
+          "wetDayFraction": 0.1519
         },
         {
           "month": 3,
-          "meanMmPerDay": 1.62,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.0583,
+          "wetDayFraction": 0.2903
         },
         {
           "month": 4,
-          "meanMmPerDay": 3.453,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.9934,
+          "wetDayFraction": 0.5667
         },
         {
           "month": 5,
-          "meanMmPerDay": 6.652,
-          "wetDayFraction": null
+          "meanMmPerDay": 5.6997,
+          "wetDayFraction": 0.8968
         },
         {
           "month": 6,
-          "meanMmPerDay": 9.513,
-          "wetDayFraction": null
+          "meanMmPerDay": 8.3283,
+          "wetDayFraction": 0.96
         },
         {
           "month": 7,
-          "meanMmPerDay": 10.672,
-          "wetDayFraction": null
+          "meanMmPerDay": 9.0789,
+          "wetDayFraction": 0.9581
         },
         {
           "month": 8,
-          "meanMmPerDay": 9.9,
-          "wetDayFraction": null
+          "meanMmPerDay": 7.7549,
+          "wetDayFraction": 0.929
         },
         {
           "month": 9,
-          "meanMmPerDay": 11.872,
-          "wetDayFraction": null
+          "meanMmPerDay": 9.6465,
+          "wetDayFraction": 0.9567
         },
         {
           "month": 10,
-          "meanMmPerDay": 8.34,
-          "wetDayFraction": null
+          "meanMmPerDay": 8.2394,
+          "wetDayFraction": 0.9613
         },
         {
           "month": 11,
-          "meanMmPerDay": 4.94,
-          "wetDayFraction": null
+          "meanMmPerDay": 5.8771,
+          "wetDayFraction": 0.86
         },
         {
           "month": 12,
-          "meanMmPerDay": 1.652,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.5169,
+          "wetDayFraction": 0.5065
         }
       ],
       "vulnerable": true,
       "excludedMonths": [
         9,
         7
+      ],
+      "reason": "Heavy or persistent wet-season screening threshold met; two wettest months excluded."
+    },
+    {
+      "country": "vietnam",
+      "regionIndex": 4,
+      "label": "Ha Long (Quảng Ninh)",
+      "id": "ha-long",
+      "latitude": 20.9712,
+      "longitude": 107.0448,
+      "referenceNote": "Named town point; mountains, excursions, bay cruises and island coasts can differ.",
+      "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=107.0448&latitude=20.9712&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "months": [
+        {
+          "month": 1,
+          "meanMmPerDay": 1.8991,
+          "wetDayFraction": 0.2581
+        },
+        {
+          "month": 2,
+          "meanMmPerDay": 1.736,
+          "wetDayFraction": 0.2438
+        },
+        {
+          "month": 3,
+          "meanMmPerDay": 1.7902,
+          "wetDayFraction": 0.3613
+        },
+        {
+          "month": 4,
+          "meanMmPerDay": 2.8223,
+          "wetDayFraction": 0.4067
+        },
+        {
+          "month": 5,
+          "meanMmPerDay": 5.7683,
+          "wetDayFraction": 0.6839
+        },
+        {
+          "month": 6,
+          "meanMmPerDay": 9.5568,
+          "wetDayFraction": 0.9133
+        },
+        {
+          "month": 7,
+          "meanMmPerDay": 11.0198,
+          "wetDayFraction": 0.8581
+        },
+        {
+          "month": 8,
+          "meanMmPerDay": 14.424,
+          "wetDayFraction": 0.9161
+        },
+        {
+          "month": 9,
+          "meanMmPerDay": 10.7409,
+          "wetDayFraction": 0.77
+        },
+        {
+          "month": 10,
+          "meanMmPerDay": 6.293,
+          "wetDayFraction": 0.4903
+        },
+        {
+          "month": 11,
+          "meanMmPerDay": 1.236,
+          "wetDayFraction": 0.2867
+        },
+        {
+          "month": 12,
+          "meanMmPerDay": 0.5983,
+          "wetDayFraction": 0.1194
+        }
+      ],
+      "vulnerable": true,
+      "excludedMonths": [
+        8,
+        7
+      ],
+      "reason": "Heavy or persistent wet-season screening threshold met; two wettest months excluded."
+    },
+    {
+      "country": "vietnam",
+      "regionIndex": 5,
+      "label": "Ninh Binh (Trang An region)",
+      "id": "ninh-binh",
+      "latitude": 20.2506,
+      "longitude": 105.9745,
+      "referenceNote": "Named town point; mountains, excursions, bay cruises and island coasts can differ.",
+      "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=105.9745&latitude=20.2506&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "months": [
+        {
+          "month": 1,
+          "meanMmPerDay": 1.5983,
+          "wetDayFraction": 0.2194
+        },
+        {
+          "month": 2,
+          "meanMmPerDay": 1.3471,
+          "wetDayFraction": 0.2509
+        },
+        {
+          "month": 3,
+          "meanMmPerDay": 1.667,
+          "wetDayFraction": 0.3258
+        },
+        {
+          "month": 4,
+          "meanMmPerDay": 2.8999,
+          "wetDayFraction": 0.41
+        },
+        {
+          "month": 5,
+          "meanMmPerDay": 5.4204,
+          "wetDayFraction": 0.7032
+        },
+        {
+          "month": 6,
+          "meanMmPerDay": 7.2894,
+          "wetDayFraction": 0.8467
+        },
+        {
+          "month": 7,
+          "meanMmPerDay": 10.263,
+          "wetDayFraction": 0.8387
+        },
+        {
+          "month": 8,
+          "meanMmPerDay": 12.1759,
+          "wetDayFraction": 0.9032
+        },
+        {
+          "month": 9,
+          "meanMmPerDay": 11.9865,
+          "wetDayFraction": 0.7733
+        },
+        {
+          "month": 10,
+          "meanMmPerDay": 7.9653,
+          "wetDayFraction": 0.5613
+        },
+        {
+          "month": 11,
+          "meanMmPerDay": 1.6901,
+          "wetDayFraction": 0.32
+        },
+        {
+          "month": 12,
+          "meanMmPerDay": 0.7587,
+          "wetDayFraction": 0.1387
+        }
+      ],
+      "vulnerable": true,
+      "excludedMonths": [
+        8,
+        9
+      ],
+      "reason": "Heavy or persistent wet-season screening threshold met; two wettest months excluded."
+    },
+    {
+      "country": "vietnam",
+      "regionIndex": 6,
+      "label": "Da Lat (Central Highlands)",
+      "id": "da-lat",
+      "latitude": 11.9404,
+      "longitude": 108.4583,
+      "referenceNote": "Named town point; mountains, excursions, bay cruises and island coasts can differ.",
+      "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=108.4583&latitude=11.9404&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "months": [
+        {
+          "month": 1,
+          "meanMmPerDay": 1.5122,
+          "wetDayFraction": 0.229
+        },
+        {
+          "month": 2,
+          "meanMmPerDay": 0.6539,
+          "wetDayFraction": 0.1378
+        },
+        {
+          "month": 3,
+          "meanMmPerDay": 0.8165,
+          "wetDayFraction": 0.1097
+        },
+        {
+          "month": 4,
+          "meanMmPerDay": 1.5898,
+          "wetDayFraction": 0.2433
+        },
+        {
+          "month": 5,
+          "meanMmPerDay": 6.073,
+          "wetDayFraction": 0.7452
+        },
+        {
+          "month": 6,
+          "meanMmPerDay": 5.8331,
+          "wetDayFraction": 0.8567
+        },
+        {
+          "month": 7,
+          "meanMmPerDay": 6.6473,
+          "wetDayFraction": 0.9065
+        },
+        {
+          "month": 8,
+          "meanMmPerDay": 6.7074,
+          "wetDayFraction": 0.8645
+        },
+        {
+          "month": 9,
+          "meanMmPerDay": 10.4285,
+          "wetDayFraction": 0.9333
+        },
+        {
+          "month": 10,
+          "meanMmPerDay": 10.6345,
+          "wetDayFraction": 0.871
+        },
+        {
+          "month": 11,
+          "meanMmPerDay": 10.8503,
+          "wetDayFraction": 0.68
+        },
+        {
+          "month": 12,
+          "meanMmPerDay": 5.9376,
+          "wetDayFraction": 0.5032
+        }
+      ],
+      "vulnerable": true,
+      "excludedMonths": [
+        11,
+        10
       ],
       "reason": "Heavy or persistent wet-season screening threshold met; two wettest months excluded."
     },

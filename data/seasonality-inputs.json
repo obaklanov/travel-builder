@@ -93,6 +93,20 @@
         "timeStandard": "Local solar time",
         "sourceUrl": "https://power.larc.nasa.gov/docs/services/api/temporal/daily/",
         "rainDefinition": "PRECTOTCORR total precipitation, including snow, averaged across all calendar days in mm/day. Alternative to ERA5 rain-only data due daily API quota; not directly identical."
+      },
+      "turkey": {
+        "model": "NASA POWER/MERRA-2",
+        "period": "2016–2025",
+        "timeStandard": "Local solar time",
+        "sourceUrl": "https://power.larc.nasa.gov/docs/services/api/temporal/daily/",
+        "rainDefinition": "PRECTOTCORR total precipitation, including snow, averaged across all calendar days in mm/day. Alternative to ERA5 rain-only data due daily API quota; not directly identical."
+      },
+      "vietnam": {
+        "model": "NASA POWER/MERRA-2",
+        "period": "2016–2025",
+        "timeStandard": "Local solar time",
+        "sourceUrl": "https://power.larc.nasa.gov/docs/services/api/temporal/daily/",
+        "rainDefinition": "PRECTOTCORR total precipitation, including snow, averaged across all calendar days in mm/day. Alternative to ERA5 rain-only data due daily API quota; not directly identical."
       }
     }
   },
@@ -26069,6 +26083,2357 @@
         }
       ],
       "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "turkey",
+      "id": "istanbul",
+      "name": "Istanbul",
+      "area": "Marmara",
+      "latitude": 41.0082,
+      "longitude": 28.9784,
+      "airports": [
+        [
+          "IST",
+          "Istanbul"
+        ],
+        [
+          "SAW",
+          "Istanbul Sabiha Gökçen"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 0,
+      "gridLatitude": 41.0082,
+      "gridLongitude": 28.9784,
+      "elevation": 59.56,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=28.9784&latitude=41.0082&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://goturkiye.com/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 6.59,
+          "meanDailyHighC": 9.12,
+          "meanRainMmPerDay": 2.9043,
+          "meanRelativeHumidityPct": 82.79,
+          "rainyDayFraction": 0.4258
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 7.34,
+          "meanDailyHighC": 10.3,
+          "meanRainMmPerDay": 2.2914,
+          "meanRelativeHumidityPct": 81.39,
+          "rainyDayFraction": 0.3887
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 9.04,
+          "meanDailyHighC": 12.35,
+          "meanRainMmPerDay": 1.7895,
+          "meanRelativeHumidityPct": 79.31,
+          "rainyDayFraction": 0.3355
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 12.69,
+          "meanDailyHighC": 16.63,
+          "meanRainMmPerDay": 1.353,
+          "meanRelativeHumidityPct": 75.89,
+          "rainyDayFraction": 0.2467
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.31,
+          "meanDailyHighC": 21.01,
+          "meanRainMmPerDay": 1.473,
+          "meanRelativeHumidityPct": 74.2,
+          "rainyDayFraction": 0.2742
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 22.75,
+          "meanDailyHighC": 26.45,
+          "meanRainMmPerDay": 1.2296,
+          "meanRelativeHumidityPct": 70.06,
+          "rainyDayFraction": 0.2633
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.55,
+          "meanDailyHighC": 29.38,
+          "meanRainMmPerDay": 0.9237,
+          "meanRelativeHumidityPct": 65.5,
+          "rainyDayFraction": 0.1419
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.84,
+          "meanDailyHighC": 29.56,
+          "meanRainMmPerDay": 0.5565,
+          "meanRelativeHumidityPct": 66.54,
+          "rainyDayFraction": 0.0839
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 22.57,
+          "meanDailyHighC": 26.08,
+          "meanRainMmPerDay": 1.2434,
+          "meanRelativeHumidityPct": 66.58,
+          "rainyDayFraction": 0.2
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.48,
+          "meanDailyHighC": 20.79,
+          "meanRainMmPerDay": 1.5683,
+          "meanRelativeHumidityPct": 74.35,
+          "rainyDayFraction": 0.2452
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 13.48,
+          "meanDailyHighC": 16.37,
+          "meanRainMmPerDay": 2.4371,
+          "meanRelativeHumidityPct": 78.41,
+          "rainyDayFraction": 0.3333
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 9.09,
+          "meanDailyHighC": 11.6,
+          "meanRainMmPerDay": 2.6359,
+          "meanRelativeHumidityPct": 82.85,
+          "rainyDayFraction": 0.4194
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Turkish city/heritage/coastal and Vietnamese regional sightseeing contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          12,
+          11,
+          3,
+          10,
+          4,
+          5,
+          9,
+          6,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://goturkiye.com/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          1,
+          2,
+          12,
+          11,
+          3,
+          10,
+          4,
+          5,
+          9,
+          6,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://goturkiye.com/"
+        ]
+      },
+      "events": [
+        {
+          "name": "Istanbul Music Festival",
+          "months": [
+            6
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://muzik.iksv.org/en/news/the-54th-istanbul-music-festival-to-present-a-rich-programme-in-june"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "turkey",
+      "id": "goreme",
+      "name": "Göreme",
+      "area": "Cappadocia",
+      "latitude": 38.6431,
+      "longitude": 34.8289,
+      "airports": [
+        [
+          "ASR",
+          "Kayseri"
+        ],
+        [
+          "NAV",
+          "Nevşehir Kapadokya"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 1,
+      "gridLatitude": 38.6431,
+      "gridLongitude": 34.8289,
+      "elevation": 1352.61,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=34.8289&latitude=38.6431&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://goturkiye.com/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates. Balloon operations depend on current wind and aviation approval, not monthly climate scores.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": -0.85,
+          "meanDailyHighC": 4.57,
+          "meanRainMmPerDay": 1.5917,
+          "meanRelativeHumidityPct": 78.47,
+          "rainyDayFraction": 0.3129
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 0.92,
+          "meanDailyHighC": 6.93,
+          "meanRainMmPerDay": 1.044,
+          "meanRelativeHumidityPct": 74.08,
+          "rainyDayFraction": 0.2332
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 4.52,
+          "meanDailyHighC": 10.86,
+          "meanRainMmPerDay": 1.6172,
+          "meanRelativeHumidityPct": 67.87,
+          "rainyDayFraction": 0.3613
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 10.1,
+          "meanDailyHighC": 16.95,
+          "meanRainMmPerDay": 1.1854,
+          "meanRelativeHumidityPct": 60.34,
+          "rainyDayFraction": 0.31
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 14.49,
+          "meanDailyHighC": 21.22,
+          "meanRainMmPerDay": 1.6705,
+          "meanRelativeHumidityPct": 58.64,
+          "rainyDayFraction": 0.3613
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 19.18,
+          "meanDailyHighC": 26.22,
+          "meanRainMmPerDay": 1.2899,
+          "meanRelativeHumidityPct": 54.57,
+          "rainyDayFraction": 0.2833
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 22.54,
+          "meanDailyHighC": 30.64,
+          "meanRainMmPerDay": 0.1734,
+          "meanRelativeHumidityPct": 44.3,
+          "rainyDayFraction": 0.0484
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 23.34,
+          "meanDailyHighC": 31.59,
+          "meanRainMmPerDay": 0.2583,
+          "meanRelativeHumidityPct": 40.89,
+          "rainyDayFraction": 0.071
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 18.88,
+          "meanDailyHighC": 26.69,
+          "meanRainMmPerDay": 0.4897,
+          "meanRelativeHumidityPct": 43.76,
+          "rainyDayFraction": 0.09
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 12.92,
+          "meanDailyHighC": 20.45,
+          "meanRainMmPerDay": 0.4357,
+          "meanRelativeHumidityPct": 52.26,
+          "rainyDayFraction": 0.0935
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 6.7,
+          "meanDailyHighC": 13.78,
+          "meanRainMmPerDay": 0.8799,
+          "meanRelativeHumidityPct": 62.92,
+          "rainyDayFraction": 0.16
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 1.75,
+          "meanDailyHighC": 7.58,
+          "meanRainMmPerDay": 1.4384,
+          "meanRelativeHumidityPct": 76.53,
+          "rainyDayFraction": 0.2935
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Turkish city/heritage/coastal and Vietnamese regional sightseeing contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          12,
+          11,
+          3,
+          10,
+          4,
+          5,
+          9,
+          6,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://goturkiye.com/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          1,
+          2,
+          12,
+          11,
+          3,
+          10,
+          4,
+          5,
+          9,
+          6,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://goturkiye.com/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "turkey",
+      "id": "antalya",
+      "name": "Antalya",
+      "area": "Mediterranean coast",
+      "latitude": 36.8969,
+      "longitude": 30.7133,
+      "airports": [
+        [
+          "AYT",
+          "Antalya"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 2,
+      "gridLatitude": 36.8969,
+      "gridLongitude": 30.7133,
+      "elevation": 455.92,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=30.7133&latitude=36.8969&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeSources": [
+        "https://goturkiye.com/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 7.78,
+          "meanDailyHighC": 12.43,
+          "meanRainMmPerDay": 4.871,
+          "meanRelativeHumidityPct": 76.31,
+          "rainyDayFraction": 0.4355
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 8.86,
+          "meanDailyHighC": 13.89,
+          "meanRainMmPerDay": 2.3118,
+          "meanRelativeHumidityPct": 73.22,
+          "rainyDayFraction": 0.2756
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 11.22,
+          "meanDailyHighC": 16.78,
+          "meanRainMmPerDay": 2.113,
+          "meanRelativeHumidityPct": 69.9,
+          "rainyDayFraction": 0.2742
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 15.62,
+          "meanDailyHighC": 21.45,
+          "meanRainMmPerDay": 1.0336,
+          "meanRelativeHumidityPct": 65.18,
+          "rainyDayFraction": 0.2167
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 20.14,
+          "meanDailyHighC": 25.97,
+          "meanRainMmPerDay": 1.4442,
+          "meanRelativeHumidityPct": 60.9,
+          "rainyDayFraction": 0.2839
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.37,
+          "meanDailyHighC": 31.6,
+          "meanRainMmPerDay": 0.8838,
+          "meanRelativeHumidityPct": 52.64,
+          "rainyDayFraction": 0.2167
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 29.42,
+          "meanDailyHighC": 36.43,
+          "meanRainMmPerDay": 0.2127,
+          "meanRelativeHumidityPct": 42.36,
+          "rainyDayFraction": 0.0581
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 29.42,
+          "meanDailyHighC": 36.38,
+          "meanRainMmPerDay": 0.1964,
+          "meanRelativeHumidityPct": 45.02,
+          "rainyDayFraction": 0.0677
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.86,
+          "meanDailyHighC": 32.91,
+          "meanRainMmPerDay": 0.43,
+          "meanRelativeHumidityPct": 47.21,
+          "rainyDayFraction": 0.1167
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 20.38,
+          "meanDailyHighC": 27.06,
+          "meanRainMmPerDay": 0.8843,
+          "meanRelativeHumidityPct": 53.81,
+          "rainyDayFraction": 0.1548
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 14.78,
+          "meanDailyHighC": 20.46,
+          "meanRainMmPerDay": 2.6099,
+          "meanRelativeHumidityPct": 63.82,
+          "rainyDayFraction": 0.2833
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 10.11,
+          "meanDailyHighC": 14.56,
+          "meanRainMmPerDay": 5.1624,
+          "meanRelativeHumidityPct": 75.5,
+          "rainyDayFraction": 0.4194
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Turkish city/heritage/coastal and Vietnamese regional sightseeing contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          12,
+          11,
+          3,
+          10,
+          4,
+          5,
+          9,
+          6,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://goturkiye.com/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          1,
+          2,
+          12,
+          11,
+          3,
+          10,
+          4,
+          5,
+          9,
+          6,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://goturkiye.com/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "turkey",
+      "id": "izmir",
+      "name": "İzmir",
+      "area": "Aegean coast",
+      "latitude": 38.4237,
+      "longitude": 27.1428,
+      "airports": [
+        [
+          "ADB",
+          "İzmir Adnan Menderes"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 3,
+      "gridLatitude": 38.4237,
+      "gridLongitude": 27.1428,
+      "elevation": 127.14,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=27.1428&latitude=38.4237&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeSources": [
+        "https://goturkiye.com/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 8.71,
+          "meanDailyHighC": 12.44,
+          "meanRainMmPerDay": 4.8156,
+          "meanRelativeHumidityPct": 80.78,
+          "rainyDayFraction": 0.3903
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 9.67,
+          "meanDailyHighC": 13.86,
+          "meanRainMmPerDay": 2.5849,
+          "meanRelativeHumidityPct": 78.98,
+          "rainyDayFraction": 0.3039
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 11.61,
+          "meanDailyHighC": 16.26,
+          "meanRainMmPerDay": 2.0291,
+          "meanRelativeHumidityPct": 75.36,
+          "rainyDayFraction": 0.271
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 15.43,
+          "meanDailyHighC": 20.75,
+          "meanRainMmPerDay": 1.223,
+          "meanRelativeHumidityPct": 70.16,
+          "rainyDayFraction": 0.2
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 19.72,
+          "meanDailyHighC": 24.94,
+          "meanRainMmPerDay": 0.7468,
+          "meanRelativeHumidityPct": 65.69,
+          "rainyDayFraction": 0.1581
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 24.88,
+          "meanDailyHighC": 30.42,
+          "meanRainMmPerDay": 0.7018,
+          "meanRelativeHumidityPct": 59.16,
+          "rainyDayFraction": 0.14
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.97,
+          "meanDailyHighC": 34.15,
+          "meanRainMmPerDay": 0.0962,
+          "meanRelativeHumidityPct": 51.21,
+          "rainyDayFraction": 0.029
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.19,
+          "meanDailyHighC": 34.43,
+          "meanRainMmPerDay": 0.0904,
+          "meanRelativeHumidityPct": 51.93,
+          "rainyDayFraction": 0.0226
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 24.24,
+          "meanDailyHighC": 30.23,
+          "meanRainMmPerDay": 0.4106,
+          "meanRelativeHumidityPct": 56.59,
+          "rainyDayFraction": 0.0533
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.88,
+          "meanDailyHighC": 24.67,
+          "meanRainMmPerDay": 0.8488,
+          "meanRelativeHumidityPct": 66.27,
+          "rainyDayFraction": 0.129
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 14.66,
+          "meanDailyHighC": 19.51,
+          "meanRainMmPerDay": 2.6093,
+          "meanRelativeHumidityPct": 74.1,
+          "rainyDayFraction": 0.28
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 10.55,
+          "meanDailyHighC": 14.36,
+          "meanRainMmPerDay": 3.3803,
+          "meanRelativeHumidityPct": 80.73,
+          "rainyDayFraction": 0.3387
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Turkish city/heritage/coastal and Vietnamese regional sightseeing contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          12,
+          11,
+          3,
+          10,
+          4,
+          5,
+          9,
+          6,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://goturkiye.com/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          1,
+          2,
+          12,
+          11,
+          3,
+          10,
+          4,
+          5,
+          9,
+          6,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://goturkiye.com/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "turkey",
+      "id": "trabzon",
+      "name": "Trabzon",
+      "area": "Black Sea",
+      "latitude": 41.0027,
+      "longitude": 39.7168,
+      "airports": [
+        [
+          "TZX",
+          "Trabzon"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 4,
+      "gridLatitude": 41.0027,
+      "gridLongitude": 39.7168,
+      "elevation": 155.92,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=39.7168&latitude=41.0027&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://goturkiye.com/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates. Coastal-town weather does not represent Black Sea highland elevations or mountain access.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 8.5,
+          "meanDailyHighC": 11.2,
+          "meanRainMmPerDay": 3.1477,
+          "meanRelativeHumidityPct": 68.12,
+          "rainyDayFraction": 0.4548
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 8.55,
+          "meanDailyHighC": 11.55,
+          "meanRainMmPerDay": 2.2039,
+          "meanRelativeHumidityPct": 68.8,
+          "rainyDayFraction": 0.3781
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 10.33,
+          "meanDailyHighC": 13.59,
+          "meanRainMmPerDay": 2.6636,
+          "meanRelativeHumidityPct": 69.95,
+          "rainyDayFraction": 0.4387
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 13.95,
+          "meanDailyHighC": 17.42,
+          "meanRainMmPerDay": 1.8082,
+          "meanRelativeHumidityPct": 68.22,
+          "rainyDayFraction": 0.35
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.63,
+          "meanDailyHighC": 20.58,
+          "meanRainMmPerDay": 2.2353,
+          "meanRelativeHumidityPct": 70.39,
+          "rainyDayFraction": 0.4516
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 22.04,
+          "meanDailyHighC": 24.33,
+          "meanRainMmPerDay": 2.1421,
+          "meanRelativeHumidityPct": 74.31,
+          "rainyDayFraction": 0.3767
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.16,
+          "meanDailyHighC": 26.28,
+          "meanRainMmPerDay": 1.7002,
+          "meanRelativeHumidityPct": 74.49,
+          "rainyDayFraction": 0.3484
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.94,
+          "meanDailyHighC": 27.11,
+          "meanRainMmPerDay": 1.4544,
+          "meanRelativeHumidityPct": 75.93,
+          "rainyDayFraction": 0.3161
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 22.45,
+          "meanDailyHighC": 24.84,
+          "meanRainMmPerDay": 3.0695,
+          "meanRelativeHumidityPct": 73.44,
+          "rainyDayFraction": 0.43
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.84,
+          "meanDailyHighC": 21.59,
+          "meanRainMmPerDay": 3.3823,
+          "meanRelativeHumidityPct": 70.79,
+          "rainyDayFraction": 0.4323
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 15.14,
+          "meanDailyHighC": 17.97,
+          "meanRainMmPerDay": 2.9778,
+          "meanRelativeHumidityPct": 66.03,
+          "rainyDayFraction": 0.33
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 11.14,
+          "meanDailyHighC": 13.88,
+          "meanRainMmPerDay": 3.0813,
+          "meanRelativeHumidityPct": 67.12,
+          "rainyDayFraction": 0.3903
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Turkish city/heritage/coastal and Vietnamese regional sightseeing contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          12,
+          11,
+          3,
+          10,
+          4,
+          5,
+          9,
+          6,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://goturkiye.com/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          1,
+          2,
+          12,
+          11,
+          3,
+          10,
+          4,
+          5,
+          9,
+          6,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://goturkiye.com/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "turkey",
+      "id": "pamukkale",
+      "name": "Pamukkale",
+      "area": "Denizli",
+      "latitude": 37.9164,
+      "longitude": 29.1187,
+      "airports": [
+        [
+          "DNZ",
+          "Denizli Çardak"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 5,
+      "gridLatitude": 37.9164,
+      "gridLongitude": 29.1187,
+      "elevation": 823.25,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=29.1187&latitude=37.9164&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeSources": [
+        "https://goturkiye.com/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 3.22,
+          "meanDailyHighC": 9.18,
+          "meanRainMmPerDay": 2.6536,
+          "meanRelativeHumidityPct": 78.28,
+          "rainyDayFraction": 0.3516
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 4.97,
+          "meanDailyHighC": 11.82,
+          "meanRainMmPerDay": 1.2848,
+          "meanRelativeHumidityPct": 72.32,
+          "rainyDayFraction": 0.2332
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 7.97,
+          "meanDailyHighC": 15.01,
+          "meanRainMmPerDay": 1.7096,
+          "meanRelativeHumidityPct": 67.07,
+          "rainyDayFraction": 0.2968
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 13.2,
+          "meanDailyHighC": 20.54,
+          "meanRainMmPerDay": 1.2777,
+          "meanRelativeHumidityPct": 60.12,
+          "rainyDayFraction": 0.2567
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.84,
+          "meanDailyHighC": 24.89,
+          "meanRainMmPerDay": 1.824,
+          "meanRelativeHumidityPct": 56.33,
+          "rainyDayFraction": 0.3419
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 22.73,
+          "meanDailyHighC": 29.96,
+          "meanRainMmPerDay": 1.581,
+          "meanRelativeHumidityPct": 51.88,
+          "rainyDayFraction": 0.3267
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.5,
+          "meanDailyHighC": 34.75,
+          "meanRainMmPerDay": 0.4048,
+          "meanRelativeHumidityPct": 40.79,
+          "rainyDayFraction": 0.0903
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.92,
+          "meanDailyHighC": 35.08,
+          "meanRainMmPerDay": 0.4665,
+          "meanRelativeHumidityPct": 40.26,
+          "rainyDayFraction": 0.1226
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 22.34,
+          "meanDailyHighC": 30.38,
+          "meanRainMmPerDay": 0.5551,
+          "meanRelativeHumidityPct": 43.11,
+          "rainyDayFraction": 0.1333
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 16.14,
+          "meanDailyHighC": 24,
+          "meanRainMmPerDay": 0.7804,
+          "meanRelativeHumidityPct": 53,
+          "rainyDayFraction": 0.1419
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 10.22,
+          "meanDailyHighC": 17.6,
+          "meanRainMmPerDay": 1.4428,
+          "meanRelativeHumidityPct": 64.79,
+          "rainyDayFraction": 0.2367
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 5.37,
+          "meanDailyHighC": 11.68,
+          "meanRainMmPerDay": 2.2855,
+          "meanRelativeHumidityPct": 77.88,
+          "rainyDayFraction": 0.3355
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Turkish city/heritage/coastal and Vietnamese regional sightseeing contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          12,
+          11,
+          3,
+          10,
+          4,
+          5,
+          9,
+          6,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://goturkiye.com/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          1,
+          2,
+          12,
+          11,
+          3,
+          10,
+          4,
+          5,
+          9,
+          6,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://goturkiye.com/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "turkey",
+      "id": "oludeniz",
+      "name": "Ölüdeniz",
+      "area": "Lycian coast",
+      "latitude": 36.5493,
+      "longitude": 29.1153,
+      "airports": [
+        [
+          "DLM",
+          "Dalaman"
+        ]
+      ],
+      "climateType": "beach",
+      "regionIndex": 6,
+      "gridLatitude": 36.5493,
+      "gridLongitude": 29.1153,
+      "elevation": 628.68,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=29.1153&latitude=36.5493&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Approved beach-oriented holiday base; 25°C target.",
+      "climateTypeSources": [
+        "https://goturkiye.com/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 8.06,
+          "meanDailyHighC": 11.07,
+          "meanRainMmPerDay": 5.9948,
+          "meanRelativeHumidityPct": 79.15,
+          "rainyDayFraction": 0.5129
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 8.77,
+          "meanDailyHighC": 12.3,
+          "meanRainMmPerDay": 2.5537,
+          "meanRelativeHumidityPct": 75.72,
+          "rainyDayFraction": 0.3569
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 10.56,
+          "meanDailyHighC": 14.58,
+          "meanRainMmPerDay": 2.1769,
+          "meanRelativeHumidityPct": 71.83,
+          "rainyDayFraction": 0.2903
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 14.56,
+          "meanDailyHighC": 18.84,
+          "meanRainMmPerDay": 1.1765,
+          "meanRelativeHumidityPct": 67.54,
+          "rainyDayFraction": 0.1967
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 19.02,
+          "meanDailyHighC": 23.67,
+          "meanRainMmPerDay": 0.7549,
+          "meanRelativeHumidityPct": 61.27,
+          "rainyDayFraction": 0.1677
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 24.13,
+          "meanDailyHighC": 29.26,
+          "meanRainMmPerDay": 0.4076,
+          "meanRelativeHumidityPct": 53.32,
+          "rainyDayFraction": 0.11
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.94,
+          "meanDailyHighC": 33.46,
+          "meanRainMmPerDay": 0.1559,
+          "meanRelativeHumidityPct": 44.09,
+          "rainyDayFraction": 0.0194
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.51,
+          "meanDailyHighC": 33.03,
+          "meanRainMmPerDay": 0.156,
+          "meanRelativeHumidityPct": 48.99,
+          "rainyDayFraction": 0.0516
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 24.24,
+          "meanDailyHighC": 29.77,
+          "meanRainMmPerDay": 0.5433,
+          "meanRelativeHumidityPct": 50.93,
+          "rainyDayFraction": 0.1
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 19.25,
+          "meanDailyHighC": 24.25,
+          "meanRainMmPerDay": 1.4178,
+          "meanRelativeHumidityPct": 58.79,
+          "rainyDayFraction": 0.1742
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 14.44,
+          "meanDailyHighC": 18.68,
+          "meanRainMmPerDay": 3.1475,
+          "meanRelativeHumidityPct": 68.45,
+          "rainyDayFraction": 0.3267
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 10.2,
+          "meanDailyHighC": 13.39,
+          "meanRainMmPerDay": 6.5244,
+          "meanRelativeHumidityPct": 77.99,
+          "rainyDayFraction": 0.4613
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Turkish city/heritage/coastal and Vietnamese regional sightseeing contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          12,
+          11,
+          3,
+          10,
+          4,
+          5,
+          9,
+          6,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://goturkiye.com/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          1,
+          2,
+          12,
+          11,
+          3,
+          10,
+          4,
+          5,
+          9,
+          6,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://goturkiye.com/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "vietnam",
+      "id": "hanoi",
+      "name": "Hanoi",
+      "area": "North",
+      "latitude": 21.0285,
+      "longitude": 105.8542,
+      "airports": [
+        [
+          "HAN",
+          "Hanoi Noi Bai"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 0,
+      "gridLatitude": 21.0285,
+      "gridLongitude": 105.8542,
+      "elevation": 87.73,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=105.8542&latitude=21.0285&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://vietnam.travel/place-to-go/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 16.28,
+          "meanDailyHighC": 21.41,
+          "meanRainMmPerDay": 1.5325,
+          "meanRelativeHumidityPct": 82.98,
+          "rainyDayFraction": 0.1903
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 17.77,
+          "meanDailyHighC": 23.44,
+          "meanRainMmPerDay": 1.5407,
+          "meanRelativeHumidityPct": 81.79,
+          "rainyDayFraction": 0.2367
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 21.86,
+          "meanDailyHighC": 27.59,
+          "meanRainMmPerDay": 1.7725,
+          "meanRelativeHumidityPct": 82.35,
+          "rainyDayFraction": 0.3226
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.06,
+          "meanDailyHighC": 30.5,
+          "meanRainMmPerDay": 3.2044,
+          "meanRelativeHumidityPct": 81.83,
+          "rainyDayFraction": 0.4567
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.39,
+          "meanDailyHighC": 31.8,
+          "meanRainMmPerDay": 5.7682,
+          "meanRelativeHumidityPct": 83.42,
+          "rainyDayFraction": 0.6581
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 28.8,
+          "meanDailyHighC": 32.59,
+          "meanRainMmPerDay": 8.1148,
+          "meanRelativeHumidityPct": 84.44,
+          "rainyDayFraction": 0.7767
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.64,
+          "meanDailyHighC": 32.2,
+          "meanRainMmPerDay": 9.8995,
+          "meanRelativeHumidityPct": 85.48,
+          "rainyDayFraction": 0.8097
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.22,
+          "meanDailyHighC": 31.54,
+          "meanRainMmPerDay": 12.1433,
+          "meanRelativeHumidityPct": 86.45,
+          "rainyDayFraction": 0.8129
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 27.27,
+          "meanDailyHighC": 30.8,
+          "meanRainMmPerDay": 9.5174,
+          "meanRelativeHumidityPct": 86.17,
+          "rainyDayFraction": 0.71
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 23.73,
+          "meanDailyHighC": 27.62,
+          "meanRainMmPerDay": 6.0993,
+          "meanRelativeHumidityPct": 85.42,
+          "rainyDayFraction": 0.471
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 20.64,
+          "meanDailyHighC": 25.22,
+          "meanRainMmPerDay": 1.2262,
+          "meanRelativeHumidityPct": 83.27,
+          "rainyDayFraction": 0.2367
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 16.26,
+          "meanDailyHighC": 21.28,
+          "meanRainMmPerDay": 0.5935,
+          "meanRelativeHumidityPct": 80.58,
+          "rainyDayFraction": 0.1097
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Turkish city/heritage/coastal and Vietnamese regional sightseeing contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          8,
+          7,
+          6,
+          9,
+          5,
+          10,
+          4,
+          3,
+          11,
+          2,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://vietnam.travel/place-to-go/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          8,
+          7,
+          6,
+          9,
+          5,
+          10,
+          4,
+          3,
+          11,
+          2,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://vietnam.travel/place-to-go/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "vietnam",
+      "id": "hoi-an",
+      "name": "Hoi An",
+      "area": "Central Vietnam",
+      "latitude": 15.8801,
+      "longitude": 108.338,
+      "airports": [
+        [
+          "DAD",
+          "Da Nang"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 1,
+      "gridLatitude": 15.8801,
+      "gridLongitude": 108.338,
+      "elevation": 155.61,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=108.338&latitude=15.8801&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeSources": [
+        "https://vietnam.travel/place-to-go/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates. Local river flooding and storm disruption require separate checks. Lantern nights follow the lunar calendar; a monthly event listing does not guarantee an event on the chosen trip dates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 21.23,
+          "meanDailyHighC": 24,
+          "meanRainMmPerDay": 3.601,
+          "meanRelativeHumidityPct": 87.21,
+          "rainyDayFraction": 0.5548
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 21.58,
+          "meanDailyHighC": 24.97,
+          "meanRainMmPerDay": 1.8351,
+          "meanRelativeHumidityPct": 86.71,
+          "rainyDayFraction": 0.311
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 23.84,
+          "meanDailyHighC": 27.85,
+          "meanRainMmPerDay": 1.4148,
+          "meanRelativeHumidityPct": 86.12,
+          "rainyDayFraction": 0.229
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 26.11,
+          "meanDailyHighC": 30.32,
+          "meanRainMmPerDay": 2.8285,
+          "meanRelativeHumidityPct": 84.25,
+          "rainyDayFraction": 0.26
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.84,
+          "meanDailyHighC": 31.63,
+          "meanRainMmPerDay": 3.2642,
+          "meanRelativeHumidityPct": 83.15,
+          "rainyDayFraction": 0.5032
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 28.72,
+          "meanDailyHighC": 32.3,
+          "meanRainMmPerDay": 4.7937,
+          "meanRelativeHumidityPct": 79.84,
+          "rainyDayFraction": 0.5167
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.39,
+          "meanDailyHighC": 31.87,
+          "meanRainMmPerDay": 5.1301,
+          "meanRelativeHumidityPct": 80.25,
+          "rainyDayFraction": 0.6839
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.52,
+          "meanDailyHighC": 32.03,
+          "meanRainMmPerDay": 5.3506,
+          "meanRelativeHumidityPct": 79.23,
+          "rainyDayFraction": 0.7484
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 27.67,
+          "meanDailyHighC": 30.56,
+          "meanRainMmPerDay": 16.2189,
+          "meanRelativeHumidityPct": 82.62,
+          "rainyDayFraction": 0.8133
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.02,
+          "meanDailyHighC": 28.37,
+          "meanRainMmPerDay": 28.6614,
+          "meanRelativeHumidityPct": 86.37,
+          "rainyDayFraction": 0.8742
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 24.32,
+          "meanDailyHighC": 26.57,
+          "meanRainMmPerDay": 17.8992,
+          "meanRelativeHumidityPct": 87.75,
+          "rainyDayFraction": 0.8067
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 22.02,
+          "meanDailyHighC": 24.2,
+          "meanRainMmPerDay": 13.1943,
+          "meanRelativeHumidityPct": 88.04,
+          "rainyDayFraction": 0.7871
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Turkish city/heritage/coastal and Vietnamese regional sightseeing contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          11,
+          10,
+          9,
+          12,
+          1,
+          8,
+          2,
+          7,
+          3,
+          6,
+          4,
+          5
+        ],
+        "sourceUrls": [
+          "https://vietnam.travel/place-to-go/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          11,
+          10,
+          9,
+          12,
+          1,
+          8,
+          2,
+          7,
+          3,
+          6,
+          4,
+          5
+        ],
+        "sourceUrls": [
+          "https://vietnam.travel/place-to-go/"
+        ]
+      },
+      "events": [
+        {
+          "name": "Full-moon lantern nights (monthly)",
+          "months": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "prominence": 1,
+          "sourceUrl": "https://www.britishcouncil.vn/sites/default/files/city_profile_vietnam.pdf"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "vietnam",
+      "id": "ho-chi-minh-city",
+      "name": "Ho Chi Minh City",
+      "area": "South",
+      "latitude": 10.8231,
+      "longitude": 106.6297,
+      "airports": [
+        [
+          "SGN",
+          "Ho Chi Minh City Tan Son Nhat"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 2,
+      "gridLatitude": 10.8231,
+      "gridLongitude": 106.6297,
+      "elevation": 46.81,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=106.6297&latitude=10.8231&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeSources": [
+        "https://vietnam.travel/place-to-go/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.32,
+          "meanDailyHighC": 32.21,
+          "meanRainMmPerDay": 0.3455,
+          "meanRelativeHumidityPct": 73.51,
+          "rainyDayFraction": 0.0806
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 28.14,
+          "meanDailyHighC": 35.69,
+          "meanRainMmPerDay": 0.0906,
+          "meanRelativeHumidityPct": 62.78,
+          "rainyDayFraction": 0.0283
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 29.97,
+          "meanDailyHighC": 38.06,
+          "meanRainMmPerDay": 0.5217,
+          "meanRelativeHumidityPct": 59.16,
+          "rainyDayFraction": 0.0839
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 31,
+          "meanDailyHighC": 38.17,
+          "meanRainMmPerDay": 1.2421,
+          "meanRelativeHumidityPct": 61.53,
+          "rainyDayFraction": 0.21
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 29.76,
+          "meanDailyHighC": 34.73,
+          "meanRainMmPerDay": 5.626,
+          "meanRelativeHumidityPct": 73.58,
+          "rainyDayFraction": 0.6774
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 27.52,
+          "meanDailyHighC": 31.02,
+          "meanRainMmPerDay": 8.7631,
+          "meanRelativeHumidityPct": 85.61,
+          "rainyDayFraction": 0.8167
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.91,
+          "meanDailyHighC": 30.2,
+          "meanRainMmPerDay": 8.0409,
+          "meanRelativeHumidityPct": 87.86,
+          "rainyDayFraction": 0.8548
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.9,
+          "meanDailyHighC": 30.24,
+          "meanRainMmPerDay": 6.4726,
+          "meanRelativeHumidityPct": 88.37,
+          "rainyDayFraction": 0.7968
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 26.76,
+          "meanDailyHighC": 30.04,
+          "meanRainMmPerDay": 6.9183,
+          "meanRelativeHumidityPct": 88.38,
+          "rainyDayFraction": 0.8467
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.69,
+          "meanDailyHighC": 30.09,
+          "meanRainMmPerDay": 8.1589,
+          "meanRelativeHumidityPct": 87.9,
+          "rainyDayFraction": 0.8419
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 26.48,
+          "meanDailyHighC": 30.42,
+          "meanRainMmPerDay": 3.6162,
+          "meanRelativeHumidityPct": 86.09,
+          "rainyDayFraction": 0.5467
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.64,
+          "meanDailyHighC": 30.21,
+          "meanRainMmPerDay": 1.5156,
+          "meanRelativeHumidityPct": 82.02,
+          "rainyDayFraction": 0.2226
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Turkish city/heritage/coastal and Vietnamese regional sightseeing contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          8,
+          7,
+          6,
+          9,
+          5,
+          10,
+          4,
+          3,
+          11,
+          2,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://vietnam.travel/place-to-go/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          8,
+          7,
+          6,
+          9,
+          5,
+          10,
+          4,
+          3,
+          11,
+          2,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://vietnam.travel/place-to-go/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "vietnam",
+      "id": "duong-dong",
+      "name": "Dương Đông",
+      "area": "Phú Quốc",
+      "latitude": 10.2174,
+      "longitude": 103.9591,
+      "airports": [
+        [
+          "PQC",
+          "Phú Quốc"
+        ]
+      ],
+      "climateType": "beach",
+      "regionIndex": 3,
+      "gridLatitude": 10.2174,
+      "gridLongitude": 103.9591,
+      "elevation": 3.23,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=103.9591&latitude=10.2174&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Approved beach-oriented holiday base; 25°C target.",
+      "climateTypeSources": [
+        "https://vietnam.travel/place-to-go/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.37,
+          "meanDailyHighC": 28.35,
+          "meanRainMmPerDay": 0.9014,
+          "meanRelativeHumidityPct": 75.5,
+          "rainyDayFraction": 0.2581
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 27.66,
+          "meanDailyHighC": 28.71,
+          "meanRainMmPerDay": 0.5231,
+          "meanRelativeHumidityPct": 74.75,
+          "rainyDayFraction": 0.1519
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.26,
+          "meanDailyHighC": 29.01,
+          "meanRainMmPerDay": 1.0583,
+          "meanRelativeHumidityPct": 76.53,
+          "rainyDayFraction": 0.2903
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 29.31,
+          "meanDailyHighC": 29.87,
+          "meanRainMmPerDay": 2.9934,
+          "meanRelativeHumidityPct": 76.99,
+          "rainyDayFraction": 0.5667
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 29.79,
+          "meanDailyHighC": 30.21,
+          "meanRainMmPerDay": 5.6997,
+          "meanRelativeHumidityPct": 78.34,
+          "rainyDayFraction": 0.8968
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 29.15,
+          "meanDailyHighC": 29.53,
+          "meanRainMmPerDay": 8.3283,
+          "meanRelativeHumidityPct": 80.41,
+          "rainyDayFraction": 0.96
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.74,
+          "meanDailyHighC": 29.11,
+          "meanRainMmPerDay": 9.0789,
+          "meanRelativeHumidityPct": 81.38,
+          "rainyDayFraction": 0.9581
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.56,
+          "meanDailyHighC": 28.91,
+          "meanRainMmPerDay": 7.7549,
+          "meanRelativeHumidityPct": 82.12,
+          "rainyDayFraction": 0.929
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 28.29,
+          "meanDailyHighC": 28.67,
+          "meanRainMmPerDay": 9.6465,
+          "meanRelativeHumidityPct": 82.41,
+          "rainyDayFraction": 0.9567
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.26,
+          "meanDailyHighC": 28.72,
+          "meanRainMmPerDay": 8.2394,
+          "meanRelativeHumidityPct": 81.86,
+          "rainyDayFraction": 0.9613
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 28.15,
+          "meanDailyHighC": 28.76,
+          "meanRainMmPerDay": 5.8771,
+          "meanRelativeHumidityPct": 81.11,
+          "rainyDayFraction": 0.86
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.47,
+          "meanDailyHighC": 28.37,
+          "meanRainMmPerDay": 2.5169,
+          "meanRelativeHumidityPct": 78.51,
+          "rainyDayFraction": 0.5065
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Turkish city/heritage/coastal and Vietnamese regional sightseeing contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          8,
+          9,
+          7,
+          6,
+          10,
+          5,
+          4,
+          11,
+          3,
+          2,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://vietnam.travel/place-to-go/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          8,
+          9,
+          7,
+          6,
+          10,
+          5,
+          4,
+          11,
+          3,
+          2,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://vietnam.travel/place-to-go/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "vietnam",
+      "id": "ha-long",
+      "name": "Ha Long",
+      "area": "Quảng Ninh",
+      "latitude": 20.9712,
+      "longitude": 107.0448,
+      "airports": [
+        [
+          "HPH",
+          "Haiphong Cat Bi"
+        ],
+        [
+          "HAN",
+          "Hanoi Noi Bai"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 4,
+      "gridLatitude": 20.9712,
+      "gridLongitude": 107.0448,
+      "elevation": 100.24,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=107.0448&latitude=20.9712&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://vietnam.travel/place-to-go/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates. HPH/HAN require onward ground transfer; cruise operations and storm restrictions require current checks.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 16.42,
+          "meanDailyHighC": 20.55,
+          "meanRainMmPerDay": 1.8991,
+          "meanRelativeHumidityPct": 81.57,
+          "rainyDayFraction": 0.2581
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 17.38,
+          "meanDailyHighC": 21.71,
+          "meanRainMmPerDay": 1.736,
+          "meanRelativeHumidityPct": 82.09,
+          "rainyDayFraction": 0.2438
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 20.8,
+          "meanDailyHighC": 24.9,
+          "meanRainMmPerDay": 1.7902,
+          "meanRelativeHumidityPct": 84.66,
+          "rainyDayFraction": 0.3613
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 23.99,
+          "meanDailyHighC": 27.76,
+          "meanRainMmPerDay": 2.8223,
+          "meanRelativeHumidityPct": 84.69,
+          "rainyDayFraction": 0.4067
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.85,
+          "meanDailyHighC": 29.91,
+          "meanRainMmPerDay": 5.7683,
+          "meanRelativeHumidityPct": 85.87,
+          "rainyDayFraction": 0.6839
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 28.6,
+          "meanDailyHighC": 30.85,
+          "meanRainMmPerDay": 9.5568,
+          "meanRelativeHumidityPct": 87.24,
+          "rainyDayFraction": 0.9133
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.61,
+          "meanDailyHighC": 30.88,
+          "meanRainMmPerDay": 11.0198,
+          "meanRelativeHumidityPct": 86.63,
+          "rainyDayFraction": 0.8581
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.29,
+          "meanDailyHighC": 30.46,
+          "meanRainMmPerDay": 14.424,
+          "meanRelativeHumidityPct": 87.18,
+          "rainyDayFraction": 0.9161
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 27.6,
+          "meanDailyHighC": 30.22,
+          "meanRainMmPerDay": 10.7409,
+          "meanRelativeHumidityPct": 85.1,
+          "rainyDayFraction": 0.77
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.31,
+          "meanDailyHighC": 27.56,
+          "meanRainMmPerDay": 6.293,
+          "meanRelativeHumidityPct": 82.69,
+          "rainyDayFraction": 0.4903
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 21.23,
+          "meanDailyHighC": 25.01,
+          "meanRainMmPerDay": 1.236,
+          "meanRelativeHumidityPct": 81.17,
+          "rainyDayFraction": 0.2867
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 16.98,
+          "meanDailyHighC": 21.13,
+          "meanRainMmPerDay": 0.5983,
+          "meanRelativeHumidityPct": 77.69,
+          "rainyDayFraction": 0.1194
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Turkish city/heritage/coastal and Vietnamese regional sightseeing contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          8,
+          7,
+          6,
+          9,
+          5,
+          10,
+          4,
+          3,
+          11,
+          2,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://vietnam.travel/place-to-go/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          8,
+          7,
+          6,
+          9,
+          5,
+          10,
+          4,
+          3,
+          11,
+          2,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://vietnam.travel/place-to-go/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "vietnam",
+      "id": "ninh-binh",
+      "name": "Ninh Binh",
+      "area": "Trang An region",
+      "latitude": 20.2506,
+      "longitude": 105.9745,
+      "airports": [
+        [
+          "HAN",
+          "Hanoi Noi Bai"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 5,
+      "gridLatitude": 20.2506,
+      "gridLongitude": 105.9745,
+      "elevation": 7.77,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=105.9745&latitude=20.2506&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://vietnam.travel/place-to-go/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates. HAN requires substantial onward ground travel; Trang An boat access and river conditions need separate checks.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.35,
+          "meanDailyHighC": 21.5,
+          "meanRainMmPerDay": 1.5983,
+          "meanRelativeHumidityPct": 82.92,
+          "rainyDayFraction": 0.2194
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 18.34,
+          "meanDailyHighC": 22.79,
+          "meanRainMmPerDay": 1.3471,
+          "meanRelativeHumidityPct": 82.92,
+          "rainyDayFraction": 0.2509
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 21.68,
+          "meanDailyHighC": 26.12,
+          "meanRainMmPerDay": 1.667,
+          "meanRelativeHumidityPct": 85.07,
+          "rainyDayFraction": 0.3258
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 24.81,
+          "meanDailyHighC": 29.03,
+          "meanRainMmPerDay": 2.8999,
+          "meanRelativeHumidityPct": 84.84,
+          "rainyDayFraction": 0.41
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.61,
+          "meanDailyHighC": 30.99,
+          "meanRainMmPerDay": 5.4204,
+          "meanRelativeHumidityPct": 85.47,
+          "rainyDayFraction": 0.7032
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 29.23,
+          "meanDailyHighC": 31.97,
+          "meanRainMmPerDay": 7.2894,
+          "meanRelativeHumidityPct": 85.6,
+          "rainyDayFraction": 0.8467
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 29.15,
+          "meanDailyHighC": 31.88,
+          "meanRainMmPerDay": 10.263,
+          "meanRelativeHumidityPct": 85.51,
+          "rainyDayFraction": 0.8387
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.77,
+          "meanDailyHighC": 31.32,
+          "meanRainMmPerDay": 12.1759,
+          "meanRelativeHumidityPct": 86.26,
+          "rainyDayFraction": 0.9032
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 28.02,
+          "meanDailyHighC": 30.87,
+          "meanRainMmPerDay": 11.9865,
+          "meanRelativeHumidityPct": 85.31,
+          "rainyDayFraction": 0.7733
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.76,
+          "meanDailyHighC": 28.04,
+          "meanRainMmPerDay": 7.9653,
+          "meanRelativeHumidityPct": 84.56,
+          "rainyDayFraction": 0.5613
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 21.81,
+          "meanDailyHighC": 25.66,
+          "meanRainMmPerDay": 1.6901,
+          "meanRelativeHumidityPct": 82.96,
+          "rainyDayFraction": 0.32
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.74,
+          "meanDailyHighC": 21.83,
+          "meanRainMmPerDay": 0.7587,
+          "meanRelativeHumidityPct": 79.83,
+          "rainyDayFraction": 0.1387
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Turkish city/heritage/coastal and Vietnamese regional sightseeing contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          8,
+          7,
+          6,
+          9,
+          5,
+          10,
+          4,
+          3,
+          11,
+          2,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://vietnam.travel/place-to-go/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          8,
+          7,
+          6,
+          9,
+          5,
+          10,
+          4,
+          3,
+          11,
+          2,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://vietnam.travel/place-to-go/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "vietnam",
+      "id": "da-lat",
+      "name": "Da Lat",
+      "area": "Central Highlands",
+      "latitude": 11.9404,
+      "longitude": 108.4583,
+      "airports": [
+        [
+          "DLI",
+          "Da Lat Lien Khuong"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 6,
+      "gridLatitude": 11.9404,
+      "gridLongitude": 108.4583,
+      "elevation": 658.7,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=108.4583&latitude=11.9404&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://vietnam.travel/place-to-go/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates. DLI requires onward transfer. Daily historic town averages can miss elevation differences and local rainfall.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 20.1,
+          "meanDailyHighC": 24.33,
+          "meanRainMmPerDay": 1.5122,
+          "meanRelativeHumidityPct": 88.71,
+          "rainyDayFraction": 0.229
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 20.5,
+          "meanDailyHighC": 25.48,
+          "meanRainMmPerDay": 0.6539,
+          "meanRelativeHumidityPct": 85.89,
+          "rainyDayFraction": 0.1378
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 22.29,
+          "meanDailyHighC": 27.92,
+          "meanRainMmPerDay": 0.8165,
+          "meanRelativeHumidityPct": 82.77,
+          "rainyDayFraction": 0.1097
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 24.31,
+          "meanDailyHighC": 29.98,
+          "meanRainMmPerDay": 1.5898,
+          "meanRelativeHumidityPct": 80.45,
+          "rainyDayFraction": 0.2433
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.09,
+          "meanDailyHighC": 29.6,
+          "meanRainMmPerDay": 6.073,
+          "meanRelativeHumidityPct": 83.42,
+          "rainyDayFraction": 0.7452
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 24.49,
+          "meanDailyHighC": 28.31,
+          "meanRainMmPerDay": 5.8331,
+          "meanRelativeHumidityPct": 86.13,
+          "rainyDayFraction": 0.8567
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.06,
+          "meanDailyHighC": 27.83,
+          "meanRainMmPerDay": 6.6473,
+          "meanRelativeHumidityPct": 86.73,
+          "rainyDayFraction": 0.9065
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.23,
+          "meanDailyHighC": 28.14,
+          "meanRainMmPerDay": 6.7074,
+          "meanRelativeHumidityPct": 86.45,
+          "rainyDayFraction": 0.8645
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 23.8,
+          "meanDailyHighC": 27.51,
+          "meanRainMmPerDay": 10.4285,
+          "meanRelativeHumidityPct": 88.78,
+          "rainyDayFraction": 0.9333
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 22.92,
+          "meanDailyHighC": 26.39,
+          "meanRainMmPerDay": 10.6345,
+          "meanRelativeHumidityPct": 90.83,
+          "rainyDayFraction": 0.871
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 22.06,
+          "meanDailyHighC": 25.35,
+          "meanRainMmPerDay": 10.8503,
+          "meanRelativeHumidityPct": 91.75,
+          "rainyDayFraction": 0.68
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 20.63,
+          "meanDailyHighC": 24.02,
+          "meanRainMmPerDay": 5.9376,
+          "meanRelativeHumidityPct": 91.03,
+          "rainyDayFraction": 0.5032
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Turkish city/heritage/coastal and Vietnamese regional sightseeing contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          8,
+          7,
+          6,
+          9,
+          5,
+          10,
+          4,
+          3,
+          11,
+          2,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://vietnam.travel/place-to-go/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          8,
+          7,
+          6,
+          9,
+          5,
+          10,
+          4,
+          3,
+          11,
+          2,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://vietnam.travel/place-to-go/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
     }
   ],
   "destinationTypeAssignments": {
@@ -26503,6 +28868,90 @@
       "climateType": "standard",
       "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
       "status": "Authorized autonomous South Korea/Thailand rollout, 6 November 2026."
+    },
+    "turkey:istanbul": {
+      "name": "Istanbul",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous Türkiye/Vietnam rollout, 6 November 2026."
+    },
+    "turkey:goreme": {
+      "name": "Göreme",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous Türkiye/Vietnam rollout, 6 November 2026."
+    },
+    "turkey:antalya": {
+      "name": "Antalya",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Authorized autonomous Türkiye/Vietnam rollout, 6 November 2026."
+    },
+    "turkey:izmir": {
+      "name": "İzmir",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Authorized autonomous Türkiye/Vietnam rollout, 6 November 2026."
+    },
+    "turkey:trabzon": {
+      "name": "Trabzon",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous Türkiye/Vietnam rollout, 6 November 2026."
+    },
+    "turkey:pamukkale": {
+      "name": "Pamukkale",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Authorized autonomous Türkiye/Vietnam rollout, 6 November 2026."
+    },
+    "turkey:oludeniz": {
+      "name": "Ölüdeniz",
+      "climateType": "beach",
+      "reason": "Approved beach-oriented holiday base; 25°C target.",
+      "status": "Authorized autonomous Türkiye/Vietnam rollout, 6 November 2026."
+    },
+    "vietnam:hanoi": {
+      "name": "Hanoi",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous Türkiye/Vietnam rollout, 6 November 2026."
+    },
+    "vietnam:hoi-an": {
+      "name": "Hoi An",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Authorized autonomous Türkiye/Vietnam rollout, 6 November 2026."
+    },
+    "vietnam:ho-chi-minh-city": {
+      "name": "Ho Chi Minh City",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Authorized autonomous Türkiye/Vietnam rollout, 6 November 2026."
+    },
+    "vietnam:duong-dong": {
+      "name": "Dương Đông",
+      "climateType": "beach",
+      "reason": "Approved beach-oriented holiday base; 25°C target.",
+      "status": "Authorized autonomous Türkiye/Vietnam rollout, 6 November 2026."
+    },
+    "vietnam:ha-long": {
+      "name": "Ha Long",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous Türkiye/Vietnam rollout, 6 November 2026."
+    },
+    "vietnam:ninh-binh": {
+      "name": "Ninh Binh",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous Türkiye/Vietnam rollout, 6 November 2026."
+    },
+    "vietnam:da-lat": {
+      "name": "Da Lat",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous Türkiye/Vietnam rollout, 6 November 2026."
     }
   }
 }
