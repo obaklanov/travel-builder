@@ -65,6 +65,20 @@
         "timeStandard": "Local solar time",
         "sourceUrl": "https://power.larc.nasa.gov/docs/services/api/temporal/daily/",
         "rainDefinition": "PRECTOTCORR total precipitation, including snow, averaged across all calendar days in mm/day. Alternative to ERA5 rain-only data due daily API quota; not directly identical."
+      },
+      "malaysia": {
+        "model": "NASA POWER/MERRA-2",
+        "period": "2016–2025",
+        "timeStandard": "Local solar time",
+        "sourceUrl": "https://power.larc.nasa.gov/docs/services/api/temporal/daily/",
+        "rainDefinition": "PRECTOTCORR total precipitation, including snow, averaged across all calendar days in mm/day. Alternative to ERA5 rain-only data due daily API quota; not directly identical."
+      },
+      "philippines": {
+        "model": "NASA POWER/MERRA-2",
+        "period": "2016–2025",
+        "timeStandard": "Local solar time",
+        "sourceUrl": "https://power.larc.nasa.gov/docs/services/api/temporal/daily/",
+        "rainDefinition": "PRECTOTCORR total precipitation, including snow, averaged across all calendar days in mm/day. Alternative to ERA5 rain-only data due daily API quota; not directly identical."
       }
     }
   },
@@ -22180,6 +22194,2004 @@
       },
       "events": [],
       "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "malaysia",
+      "id": "kuala-lumpur",
+      "name": "Kuala Lumpur",
+      "area": "West",
+      "latitude": 3.139,
+      "longitude": 101.6869,
+      "airports": [
+        [
+          "KUL",
+          "Kuala Lumpur International"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 0,
+      "gridLatitude": 3.139,
+      "gridLongitude": 101.6869,
+      "elevation": 231.94,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=101.6869&latitude=3.139&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeSources": [
+        "https://www.malaysia.travel/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.03,
+          "meanDailyHighC": 28.9,
+          "meanRainMmPerDay": 8.0589,
+          "meanRelativeHumidityPct": 88.02,
+          "rainyDayFraction": 0.7258
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 25.34,
+          "meanDailyHighC": 29.99,
+          "meanRainMmPerDay": 4.8132,
+          "meanRelativeHumidityPct": 85.59,
+          "rainyDayFraction": 0.6078
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.13,
+          "meanDailyHighC": 30.6,
+          "meanRainMmPerDay": 6.2905,
+          "meanRelativeHumidityPct": 84.62,
+          "rainyDayFraction": 0.7032
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 26.57,
+          "meanDailyHighC": 30.65,
+          "meanRainMmPerDay": 7.0279,
+          "meanRelativeHumidityPct": 85.11,
+          "rainyDayFraction": 0.8333
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.65,
+          "meanDailyHighC": 30.29,
+          "meanRainMmPerDay": 6.8689,
+          "meanRelativeHumidityPct": 86.7,
+          "rainyDayFraction": 0.8258
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.95,
+          "meanDailyHighC": 29.36,
+          "meanRainMmPerDay": 7.0769,
+          "meanRelativeHumidityPct": 87.01,
+          "rainyDayFraction": 0.7833
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.7,
+          "meanDailyHighC": 29.05,
+          "meanRainMmPerDay": 5.3638,
+          "meanRelativeHumidityPct": 87.6,
+          "rainyDayFraction": 0.6677
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.64,
+          "meanDailyHighC": 29.13,
+          "meanRainMmPerDay": 6.1661,
+          "meanRelativeHumidityPct": 87.22,
+          "rainyDayFraction": 0.8161
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.66,
+          "meanDailyHighC": 29.26,
+          "meanRainMmPerDay": 6.9233,
+          "meanRelativeHumidityPct": 86.6,
+          "rainyDayFraction": 0.83
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.73,
+          "meanDailyHighC": 29.4,
+          "meanRainMmPerDay": 8.0092,
+          "meanRelativeHumidityPct": 86.81,
+          "rainyDayFraction": 0.8613
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.51,
+          "meanDailyHighC": 28.9,
+          "meanRainMmPerDay": 11.6101,
+          "meanRelativeHumidityPct": 88.66,
+          "rainyDayFraction": 0.9367
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.13,
+          "meanDailyHighC": 28.62,
+          "meanRainMmPerDay": 11.0599,
+          "meanRelativeHumidityPct": 89.09,
+          "rainyDayFraction": 0.8581
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Malaysian city/coastal and Philippine urban/island/highland contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          9,
+          10,
+          11,
+          5,
+          6,
+          4,
+          3,
+          7,
+          8,
+          2,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://www.malaysia.travel/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          9,
+          10,
+          11,
+          5,
+          6,
+          4,
+          3,
+          7,
+          8,
+          2,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://www.malaysia.travel/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "malaysia",
+      "id": "george-town",
+      "name": "George Town",
+      "area": "Penang",
+      "latitude": 5.4141,
+      "longitude": 100.3288,
+      "airports": [
+        [
+          "PEN",
+          "Penang International"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 1,
+      "gridLatitude": 5.4141,
+      "gridLongitude": 100.3288,
+      "elevation": 193.57,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=100.3288&latitude=5.4141&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeSources": [
+        "https://www.malaysia.travel/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.64,
+          "meanDailyHighC": 29.41,
+          "meanRainMmPerDay": 4.5066,
+          "meanRelativeHumidityPct": 84.34,
+          "rainyDayFraction": 0.6129
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 25.96,
+          "meanDailyHighC": 30.23,
+          "meanRainMmPerDay": 3.1617,
+          "meanRelativeHumidityPct": 81.52,
+          "rainyDayFraction": 0.4558
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.94,
+          "meanDailyHighC": 30.98,
+          "meanRainMmPerDay": 3.5384,
+          "meanRelativeHumidityPct": 80.07,
+          "rainyDayFraction": 0.6258
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 27.37,
+          "meanDailyHighC": 30.6,
+          "meanRainMmPerDay": 6.9471,
+          "meanRelativeHumidityPct": 82.45,
+          "rainyDayFraction": 0.8533
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.32,
+          "meanDailyHighC": 29.99,
+          "meanRainMmPerDay": 8.6771,
+          "meanRelativeHumidityPct": 84.59,
+          "rainyDayFraction": 0.9452
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 26.86,
+          "meanDailyHighC": 29.44,
+          "meanRainMmPerDay": 5.7517,
+          "meanRelativeHumidityPct": 83.59,
+          "rainyDayFraction": 0.88
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.72,
+          "meanDailyHighC": 29.31,
+          "meanRainMmPerDay": 5.8359,
+          "meanRelativeHumidityPct": 83.41,
+          "rainyDayFraction": 0.8129
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.53,
+          "meanDailyHighC": 29.16,
+          "meanRainMmPerDay": 6.6577,
+          "meanRelativeHumidityPct": 83.84,
+          "rainyDayFraction": 0.9097
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 26.31,
+          "meanDailyHighC": 29.12,
+          "meanRainMmPerDay": 8.9633,
+          "meanRelativeHumidityPct": 84.29,
+          "rainyDayFraction": 0.94
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.18,
+          "meanDailyHighC": 28.98,
+          "meanRainMmPerDay": 9.6089,
+          "meanRelativeHumidityPct": 85.55,
+          "rainyDayFraction": 0.9323
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 26.07,
+          "meanDailyHighC": 28.89,
+          "meanRainMmPerDay": 14.5225,
+          "meanRelativeHumidityPct": 86.89,
+          "rainyDayFraction": 0.99
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.66,
+          "meanDailyHighC": 28.98,
+          "meanRainMmPerDay": 7.9524,
+          "meanRelativeHumidityPct": 86.53,
+          "rainyDayFraction": 0.8355
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Malaysian city/coastal and Philippine urban/island/highland contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          9,
+          10,
+          11,
+          5,
+          6,
+          4,
+          3,
+          7,
+          8,
+          2,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://www.malaysia.travel/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          9,
+          10,
+          11,
+          5,
+          6,
+          4,
+          3,
+          7,
+          8,
+          2,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://www.malaysia.travel/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "malaysia",
+      "id": "kuala-terengganu",
+      "name": "Kuala Terengganu",
+      "area": "East Coast",
+      "latitude": 5.3296,
+      "longitude": 103.137,
+      "airports": [
+        [
+          "TGG",
+          "Kuala Terengganu"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 2,
+      "gridLatitude": 5.3296,
+      "gridLongitude": 103.137,
+      "elevation": 32.49,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=103.137&latitude=5.3296&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeSources": [
+        "https://www.malaysia.travel/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates. Heritage-city base; offshore island access and seasonal boat/accommodation operations need separate checks.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.27,
+          "meanDailyHighC": 27.5,
+          "meanRainMmPerDay": 9.6623,
+          "meanRelativeHumidityPct": 85.22,
+          "rainyDayFraction": 0.7097
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 26.28,
+          "meanDailyHighC": 27.75,
+          "meanRainMmPerDay": 4.708,
+          "meanRelativeHumidityPct": 83.15,
+          "rainyDayFraction": 0.5053
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.14,
+          "meanDailyHighC": 28.79,
+          "meanRainMmPerDay": 2.0627,
+          "meanRelativeHumidityPct": 81.36,
+          "rainyDayFraction": 0.3452
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 28.41,
+          "meanDailyHighC": 30.06,
+          "meanRainMmPerDay": 4.2568,
+          "meanRelativeHumidityPct": 80.13,
+          "rainyDayFraction": 0.52
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 29.08,
+          "meanDailyHighC": 30.64,
+          "meanRainMmPerDay": 5.1648,
+          "meanRelativeHumidityPct": 79.55,
+          "rainyDayFraction": 0.8161
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 28.62,
+          "meanDailyHighC": 30.19,
+          "meanRainMmPerDay": 6.4162,
+          "meanRelativeHumidityPct": 79,
+          "rainyDayFraction": 0.8833
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.41,
+          "meanDailyHighC": 29.96,
+          "meanRainMmPerDay": 5.4939,
+          "meanRelativeHumidityPct": 80,
+          "rainyDayFraction": 0.8355
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.31,
+          "meanDailyHighC": 29.94,
+          "meanRainMmPerDay": 6.8427,
+          "meanRelativeHumidityPct": 79.94,
+          "rainyDayFraction": 0.8935
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 28.12,
+          "meanDailyHighC": 29.77,
+          "meanRainMmPerDay": 7.5617,
+          "meanRelativeHumidityPct": 79.81,
+          "rainyDayFraction": 0.91
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.93,
+          "meanDailyHighC": 29.42,
+          "meanRainMmPerDay": 7.443,
+          "meanRelativeHumidityPct": 80.97,
+          "rainyDayFraction": 0.9097
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 27.42,
+          "meanDailyHighC": 28.54,
+          "meanRainMmPerDay": 25.1922,
+          "meanRelativeHumidityPct": 84.57,
+          "rainyDayFraction": 0.99
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.61,
+          "meanDailyHighC": 27.65,
+          "meanRainMmPerDay": 22.2475,
+          "meanRelativeHumidityPct": 86.09,
+          "rainyDayFraction": 0.8581
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Malaysian city/coastal and Philippine urban/island/highland contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          11,
+          12,
+          1,
+          10,
+          2,
+          9,
+          3,
+          4,
+          5,
+          8,
+          6,
+          7
+        ],
+        "sourceUrls": [
+          "https://www.malaysia.travel/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          11,
+          12,
+          1,
+          10,
+          2,
+          9,
+          3,
+          4,
+          5,
+          8,
+          6,
+          7
+        ],
+        "sourceUrls": [
+          "https://www.malaysia.travel/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "malaysia",
+      "id": "kota-kinabalu",
+      "name": "Kota Kinabalu",
+      "area": "Sabah",
+      "latitude": 5.9804,
+      "longitude": 116.0735,
+      "airports": [
+        [
+          "BKI",
+          "Kota Kinabalu"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 3,
+      "gridLatitude": 5.9804,
+      "gridLongitude": 116.0735,
+      "elevation": 467.57,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=116.0735&latitude=5.9804&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://www.malaysia.travel/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates. Kinabalu Park requires an onward excursion; coastal city climate is not the mountain summit climate or climbing-access guidance.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.44,
+          "meanDailyHighC": 27.22,
+          "meanRainMmPerDay": 7.5958,
+          "meanRelativeHumidityPct": 87.25,
+          "rainyDayFraction": 0.7581
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 24.22,
+          "meanDailyHighC": 27.43,
+          "meanRainMmPerDay": 4.8098,
+          "meanRelativeHumidityPct": 86.54,
+          "rainyDayFraction": 0.5548
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.76,
+          "meanDailyHighC": 28.06,
+          "meanRainMmPerDay": 3.8881,
+          "meanRelativeHumidityPct": 85.18,
+          "rainyDayFraction": 0.5129
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.52,
+          "meanDailyHighC": 28.63,
+          "meanRainMmPerDay": 4.4559,
+          "meanRelativeHumidityPct": 83.57,
+          "rainyDayFraction": 0.66
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.91,
+          "meanDailyHighC": 28.51,
+          "meanRainMmPerDay": 6.9514,
+          "meanRelativeHumidityPct": 83.96,
+          "rainyDayFraction": 0.8194
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.17,
+          "meanDailyHighC": 27.44,
+          "meanRainMmPerDay": 8.5815,
+          "meanRelativeHumidityPct": 84.71,
+          "rainyDayFraction": 0.8367
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.92,
+          "meanDailyHighC": 27.3,
+          "meanRainMmPerDay": 8.0299,
+          "meanRelativeHumidityPct": 84.22,
+          "rainyDayFraction": 0.7581
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.03,
+          "meanDailyHighC": 27.47,
+          "meanRainMmPerDay": 8.5419,
+          "meanRelativeHumidityPct": 84.23,
+          "rainyDayFraction": 0.8419
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 24.84,
+          "meanDailyHighC": 27.34,
+          "meanRainMmPerDay": 9.2514,
+          "meanRelativeHumidityPct": 85.2,
+          "rainyDayFraction": 0.8433
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.78,
+          "meanDailyHighC": 27.25,
+          "meanRainMmPerDay": 9.3778,
+          "meanRelativeHumidityPct": 86.28,
+          "rainyDayFraction": 0.9323
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 24.94,
+          "meanDailyHighC": 27.52,
+          "meanRainMmPerDay": 9.3,
+          "meanRelativeHumidityPct": 85.94,
+          "rainyDayFraction": 0.9367
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.74,
+          "meanDailyHighC": 27.23,
+          "meanRainMmPerDay": 9.2746,
+          "meanRelativeHumidityPct": 86.8,
+          "rainyDayFraction": 0.9323
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Malaysian city/coastal and Philippine urban/island/highland contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          9,
+          10,
+          11,
+          5,
+          6,
+          4,
+          3,
+          7,
+          8,
+          2,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://www.malaysia.travel/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          9,
+          10,
+          11,
+          5,
+          6,
+          4,
+          3,
+          7,
+          8,
+          2,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://www.malaysia.travel/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "malaysia",
+      "id": "kuching",
+      "name": "Kuching",
+      "area": "Sarawak",
+      "latitude": 1.5535,
+      "longitude": 110.3593,
+      "airports": [
+        [
+          "KCH",
+          "Kuching"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 4,
+      "gridLatitude": 1.5535,
+      "gridLongitude": 110.3593,
+      "elevation": 41.92,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=110.3593&latitude=1.5535&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://www.malaysia.travel/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.42,
+          "meanDailyHighC": 28.71,
+          "meanRainMmPerDay": 16.0616,
+          "meanRelativeHumidityPct": 89.1,
+          "rainyDayFraction": 0.9516
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 26.26,
+          "meanDailyHighC": 28.65,
+          "meanRainMmPerDay": 15.6653,
+          "meanRelativeHumidityPct": 88.68,
+          "rainyDayFraction": 0.8657
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.77,
+          "meanDailyHighC": 29.28,
+          "meanRainMmPerDay": 11.8509,
+          "meanRelativeHumidityPct": 87.04,
+          "rainyDayFraction": 0.871
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 27.46,
+          "meanDailyHighC": 29.79,
+          "meanRainMmPerDay": 9.2723,
+          "meanRelativeHumidityPct": 84.96,
+          "rainyDayFraction": 0.8633
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.83,
+          "meanDailyHighC": 29.96,
+          "meanRainMmPerDay": 8.3754,
+          "meanRelativeHumidityPct": 84.92,
+          "rainyDayFraction": 0.9097
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 27.29,
+          "meanDailyHighC": 29.43,
+          "meanRainMmPerDay": 9.3175,
+          "meanRelativeHumidityPct": 84.74,
+          "rainyDayFraction": 0.8867
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.21,
+          "meanDailyHighC": 29.57,
+          "meanRainMmPerDay": 6.7398,
+          "meanRelativeHumidityPct": 84.73,
+          "rainyDayFraction": 0.7323
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.17,
+          "meanDailyHighC": 29.56,
+          "meanRainMmPerDay": 8.7466,
+          "meanRelativeHumidityPct": 84.43,
+          "rainyDayFraction": 0.8323
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 27.09,
+          "meanDailyHighC": 29.61,
+          "meanRainMmPerDay": 8.4098,
+          "meanRelativeHumidityPct": 84.7,
+          "rainyDayFraction": 0.8467
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.09,
+          "meanDailyHighC": 29.63,
+          "meanRainMmPerDay": 9.1118,
+          "meanRelativeHumidityPct": 85.41,
+          "rainyDayFraction": 0.9419
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 26.98,
+          "meanDailyHighC": 29.34,
+          "meanRainMmPerDay": 11.2502,
+          "meanRelativeHumidityPct": 86.53,
+          "rainyDayFraction": 0.9733
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.65,
+          "meanDailyHighC": 28.93,
+          "meanRainMmPerDay": 14.1002,
+          "meanRelativeHumidityPct": 88.17,
+          "rainyDayFraction": 0.9355
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Malaysian city/coastal and Philippine urban/island/highland contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          12,
+          11,
+          3,
+          10,
+          4,
+          9,
+          5,
+          8,
+          7,
+          6
+        ],
+        "sourceUrls": [
+          "https://www.malaysia.travel/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          1,
+          2,
+          12,
+          11,
+          3,
+          10,
+          4,
+          9,
+          5,
+          8,
+          7,
+          6
+        ],
+        "sourceUrls": [
+          "https://www.malaysia.travel/"
+        ]
+      },
+      "events": [
+        {
+          "name": "Rainforest World Music Festival (Sarawak Cultural Village)",
+          "months": [
+            6
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://www.sarawaktourism.com/web/attachment/show/?docid=SktQaWFxK1c3SE5nNDM5QXU2NDF3dz09Ojpa3_8Fk38bTTRoxvpygiic"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "malaysia",
+      "id": "pantai-cenang",
+      "name": "Pantai Cenang",
+      "area": "Langkawi",
+      "latitude": 6.2941,
+      "longitude": 99.7226,
+      "airports": [
+        [
+          "LGK",
+          "Langkawi"
+        ]
+      ],
+      "climateType": "beach",
+      "regionIndex": 5,
+      "gridLatitude": 6.2941,
+      "gridLongitude": 99.7226,
+      "elevation": 45.26,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=99.7226&latitude=6.2941&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Approved beach-oriented holiday base; 25°C target.",
+      "climateTypeSources": [
+        "https://www.malaysia.travel/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.88,
+          "meanDailyHighC": 30.37,
+          "meanRainMmPerDay": 2.7244,
+          "meanRelativeHumidityPct": 81.7,
+          "rainyDayFraction": 0.3774
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 27.45,
+          "meanDailyHighC": 31.76,
+          "meanRainMmPerDay": 1.3804,
+          "meanRelativeHumidityPct": 77.33,
+          "rainyDayFraction": 0.2155
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.56,
+          "meanDailyHighC": 32.85,
+          "meanRainMmPerDay": 2.5959,
+          "meanRelativeHumidityPct": 74.84,
+          "rainyDayFraction": 0.371
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 28.95,
+          "meanDailyHighC": 31.87,
+          "meanRainMmPerDay": 5.3709,
+          "meanRelativeHumidityPct": 77.91,
+          "rainyDayFraction": 0.7467
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.82,
+          "meanDailyHighC": 30.79,
+          "meanRainMmPerDay": 8.5216,
+          "meanRelativeHumidityPct": 80.83,
+          "rainyDayFraction": 0.9226
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 28.37,
+          "meanDailyHighC": 30.12,
+          "meanRainMmPerDay": 6.3295,
+          "meanRelativeHumidityPct": 80.47,
+          "rainyDayFraction": 0.84
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.16,
+          "meanDailyHighC": 29.9,
+          "meanRainMmPerDay": 6.6584,
+          "meanRelativeHumidityPct": 81.03,
+          "rainyDayFraction": 0.7677
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.98,
+          "meanDailyHighC": 29.71,
+          "meanRainMmPerDay": 7.841,
+          "meanRelativeHumidityPct": 81.27,
+          "rainyDayFraction": 0.8323
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 27.63,
+          "meanDailyHighC": 29.49,
+          "meanRainMmPerDay": 10.0581,
+          "meanRelativeHumidityPct": 82,
+          "rainyDayFraction": 0.8733
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.39,
+          "meanDailyHighC": 29.25,
+          "meanRainMmPerDay": 10.5261,
+          "meanRelativeHumidityPct": 83.77,
+          "rainyDayFraction": 0.9161
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 27.16,
+          "meanDailyHighC": 29.19,
+          "meanRainMmPerDay": 11.7998,
+          "meanRelativeHumidityPct": 85.81,
+          "rainyDayFraction": 0.94
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.61,
+          "meanDailyHighC": 29.22,
+          "meanRainMmPerDay": 4.639,
+          "meanRelativeHumidityPct": 85.73,
+          "rainyDayFraction": 0.6032
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Malaysian city/coastal and Philippine urban/island/highland contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          9,
+          10,
+          11,
+          5,
+          6,
+          4,
+          3,
+          7,
+          8,
+          2,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://www.malaysia.travel/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          9,
+          10,
+          11,
+          5,
+          6,
+          4,
+          3,
+          7,
+          8,
+          2,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://www.malaysia.travel/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "philippines",
+      "id": "manila",
+      "name": "Manila",
+      "area": "Metro Manila",
+      "latitude": 14.5995,
+      "longitude": 120.9842,
+      "airports": [
+        [
+          "MNL",
+          "Manila Ninoy Aquino"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 0,
+      "gridLatitude": 14.5995,
+      "gridLongitude": 120.9842,
+      "elevation": 201.16,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=120.9842&latitude=14.5995&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeSources": [
+        "https://genevapm.dfa.gov.ph/resources/visit-the-philippines"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 23.92,
+          "meanDailyHighC": 27.48,
+          "meanRainMmPerDay": 6.1624,
+          "meanRelativeHumidityPct": 87.18,
+          "rainyDayFraction": 0.7903
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 24.06,
+          "meanDailyHighC": 28.23,
+          "meanRainMmPerDay": 6.5452,
+          "meanRelativeHumidityPct": 84.71,
+          "rainyDayFraction": 0.6466
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.52,
+          "meanDailyHighC": 30.37,
+          "meanRainMmPerDay": 4.3456,
+          "meanRelativeHumidityPct": 80.95,
+          "rainyDayFraction": 0.4677
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 27.37,
+          "meanDailyHighC": 32.71,
+          "meanRainMmPerDay": 4.4217,
+          "meanRelativeHumidityPct": 76.49,
+          "rainyDayFraction": 0.52
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.25,
+          "meanDailyHighC": 32.77,
+          "meanRainMmPerDay": 5.6973,
+          "meanRelativeHumidityPct": 78.54,
+          "rainyDayFraction": 0.8323
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 27.43,
+          "meanDailyHighC": 30.81,
+          "meanRainMmPerDay": 9.3461,
+          "meanRelativeHumidityPct": 83.69,
+          "rainyDayFraction": 0.9167
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.73,
+          "meanDailyHighC": 29.56,
+          "meanRainMmPerDay": 12.2905,
+          "meanRelativeHumidityPct": 87.05,
+          "rainyDayFraction": 0.9484
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.57,
+          "meanDailyHighC": 29.38,
+          "meanRainMmPerDay": 8.8917,
+          "meanRelativeHumidityPct": 87.37,
+          "rainyDayFraction": 0.9
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 26.51,
+          "meanDailyHighC": 29.56,
+          "meanRainMmPerDay": 11.3166,
+          "meanRelativeHumidityPct": 87.59,
+          "rainyDayFraction": 0.9033
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.24,
+          "meanDailyHighC": 29.32,
+          "meanRainMmPerDay": 13.441,
+          "meanRelativeHumidityPct": 88.26,
+          "rainyDayFraction": 0.9258
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.65,
+          "meanDailyHighC": 28.74,
+          "meanRainMmPerDay": 12.4322,
+          "meanRelativeHumidityPct": 89.48,
+          "rainyDayFraction": 0.8933
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.79,
+          "meanDailyHighC": 27.79,
+          "meanRainMmPerDay": 14.0185,
+          "meanRelativeHumidityPct": 89.67,
+          "rainyDayFraction": 0.9097
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Malaysian city/coastal and Philippine urban/island/highland contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          8,
+          9,
+          7,
+          6,
+          10,
+          5,
+          11,
+          2,
+          3,
+          1,
+          4,
+          12
+        ],
+        "sourceUrls": [
+          "https://genevapm.dfa.gov.ph/resources/visit-the-philippines"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          8,
+          9,
+          7,
+          6,
+          10,
+          5,
+          11,
+          2,
+          3,
+          1,
+          4,
+          12
+        ],
+        "sourceUrls": [
+          "https://genevapm.dfa.gov.ph/resources/visit-the-philippines"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "philippines",
+      "id": "cebu-city",
+      "name": "Cebu City",
+      "area": "Central Visayas",
+      "latitude": 10.3157,
+      "longitude": 123.8854,
+      "airports": [
+        [
+          "CEB",
+          "Mactan–Cebu"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 1,
+      "gridLatitude": 10.3157,
+      "gridLongitude": 123.8854,
+      "elevation": 98.77,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=123.8854&latitude=10.3157&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeSources": [
+        "https://genevapm.dfa.gov.ph/resources/visit-the-philippines"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.16,
+          "meanDailyHighC": 28.08,
+          "meanRainMmPerDay": 5.9591,
+          "meanRelativeHumidityPct": 86.81,
+          "rainyDayFraction": 0.6903
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 26.06,
+          "meanDailyHighC": 28.38,
+          "meanRainMmPerDay": 4.6835,
+          "meanRelativeHumidityPct": 84.55,
+          "rainyDayFraction": 0.636
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.87,
+          "meanDailyHighC": 29.58,
+          "meanRainMmPerDay": 2.8971,
+          "meanRelativeHumidityPct": 81.5,
+          "rainyDayFraction": 0.4516
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 28.07,
+          "meanDailyHighC": 30.97,
+          "meanRainMmPerDay": 3.468,
+          "meanRelativeHumidityPct": 77.97,
+          "rainyDayFraction": 0.3667
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.86,
+          "meanDailyHighC": 31.33,
+          "meanRainMmPerDay": 4.5335,
+          "meanRelativeHumidityPct": 77.65,
+          "rainyDayFraction": 0.6387
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 28.16,
+          "meanDailyHighC": 29.99,
+          "meanRainMmPerDay": 7.5738,
+          "meanRelativeHumidityPct": 79.86,
+          "rainyDayFraction": 0.8467
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.61,
+          "meanDailyHighC": 29.28,
+          "meanRainMmPerDay": 7.7447,
+          "meanRelativeHumidityPct": 82.78,
+          "rainyDayFraction": 0.8065
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.59,
+          "meanDailyHighC": 29.35,
+          "meanRainMmPerDay": 7.5923,
+          "meanRelativeHumidityPct": 82.82,
+          "rainyDayFraction": 0.7355
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 27.56,
+          "meanDailyHighC": 29.27,
+          "meanRainMmPerDay": 8.0528,
+          "meanRelativeHumidityPct": 83.27,
+          "rainyDayFraction": 0.8033
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.56,
+          "meanDailyHighC": 29.13,
+          "meanRainMmPerDay": 9.7984,
+          "meanRelativeHumidityPct": 83.94,
+          "rainyDayFraction": 0.9097
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 27.29,
+          "meanDailyHighC": 28.89,
+          "meanRainMmPerDay": 5.9657,
+          "meanRelativeHumidityPct": 85.87,
+          "rainyDayFraction": 0.81
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.82,
+          "meanDailyHighC": 28.44,
+          "meanRainMmPerDay": 7.6444,
+          "meanRelativeHumidityPct": 87.43,
+          "rainyDayFraction": 0.8323
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Malaysian city/coastal and Philippine urban/island/highland contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          8,
+          9,
+          7,
+          6,
+          10,
+          5,
+          11,
+          2,
+          3,
+          1,
+          4,
+          12
+        ],
+        "sourceUrls": [
+          "https://genevapm.dfa.gov.ph/resources/visit-the-philippines"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          8,
+          9,
+          7,
+          6,
+          10,
+          5,
+          11,
+          2,
+          3,
+          1,
+          4,
+          12
+        ],
+        "sourceUrls": [
+          "https://genevapm.dfa.gov.ph/resources/visit-the-philippines"
+        ]
+      },
+      "events": [
+        {
+          "name": "Sinulog Festival",
+          "months": [
+            1
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://tpb.gov.ph/events/sinulog-festival/"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "philippines",
+      "id": "el-nido",
+      "name": "El Nido",
+      "area": "Palawan",
+      "latitude": 11.179,
+      "longitude": 119.392,
+      "airports": [
+        [
+          "ENI",
+          "El Nido Lio"
+        ]
+      ],
+      "climateType": "beach",
+      "regionIndex": 2,
+      "gridLatitude": 11.179,
+      "gridLongitude": 119.392,
+      "elevation": 20.57,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=119.392&latitude=11.179&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Approved beach-oriented holiday base; 25°C target.",
+      "climateTypeSources": [
+        "https://genevapm.dfa.gov.ph/resources/visit-the-philippines"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates. Boat operations, sea conditions and tropical-storm disruption require current local checks, separate from monthly climate scores.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.37,
+          "meanDailyHighC": 28.12,
+          "meanRainMmPerDay": 1.9373,
+          "meanRelativeHumidityPct": 80.73,
+          "rainyDayFraction": 0.3903
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 27.07,
+          "meanDailyHighC": 28.02,
+          "meanRainMmPerDay": 1.2698,
+          "meanRelativeHumidityPct": 79.45,
+          "rainyDayFraction": 0.2862
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.85,
+          "meanDailyHighC": 28.99,
+          "meanRainMmPerDay": 0.9662,
+          "meanRelativeHumidityPct": 77.63,
+          "rainyDayFraction": 0.1774
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 29.12,
+          "meanDailyHighC": 30.29,
+          "meanRainMmPerDay": 1.1244,
+          "meanRelativeHumidityPct": 74.63,
+          "rainyDayFraction": 0.27
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 29.67,
+          "meanDailyHighC": 30.6,
+          "meanRainMmPerDay": 4.1035,
+          "meanRelativeHumidityPct": 76.03,
+          "rainyDayFraction": 0.7161
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 28.9,
+          "meanDailyHighC": 29.57,
+          "meanRainMmPerDay": 8.6654,
+          "meanRelativeHumidityPct": 78.61,
+          "rainyDayFraction": 0.9667
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.48,
+          "meanDailyHighC": 29.11,
+          "meanRainMmPerDay": 11.4541,
+          "meanRelativeHumidityPct": 81.08,
+          "rainyDayFraction": 0.9677
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.43,
+          "meanDailyHighC": 29.1,
+          "meanRainMmPerDay": 9.2242,
+          "meanRelativeHumidityPct": 80.79,
+          "rainyDayFraction": 0.9194
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 28.26,
+          "meanDailyHighC": 28.9,
+          "meanRainMmPerDay": 10.2621,
+          "meanRelativeHumidityPct": 81.55,
+          "rainyDayFraction": 0.9333
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.37,
+          "meanDailyHighC": 28.96,
+          "meanRainMmPerDay": 8.8428,
+          "meanRelativeHumidityPct": 81.63,
+          "rainyDayFraction": 0.9065
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 28.46,
+          "meanDailyHighC": 29.04,
+          "meanRainMmPerDay": 5.1181,
+          "meanRelativeHumidityPct": 81.88,
+          "rainyDayFraction": 0.7733
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.06,
+          "meanDailyHighC": 28.65,
+          "meanRainMmPerDay": 4.4225,
+          "meanRelativeHumidityPct": 82.04,
+          "rainyDayFraction": 0.7032
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Malaysian city/coastal and Philippine urban/island/highland contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          8,
+          9,
+          7,
+          6,
+          10,
+          5,
+          11,
+          2,
+          3,
+          1,
+          4,
+          12
+        ],
+        "sourceUrls": [
+          "https://genevapm.dfa.gov.ph/resources/visit-the-philippines"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          8,
+          9,
+          7,
+          6,
+          10,
+          5,
+          11,
+          2,
+          3,
+          1,
+          4,
+          12
+        ],
+        "sourceUrls": [
+          "https://genevapm.dfa.gov.ph/resources/visit-the-philippines"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "philippines",
+      "id": "boracay",
+      "name": "Boracay",
+      "area": "Western Visayas",
+      "latitude": 11.9674,
+      "longitude": 121.9248,
+      "airports": [
+        [
+          "MPH",
+          "Caticlan Boracay"
+        ]
+      ],
+      "climateType": "beach",
+      "regionIndex": 3,
+      "gridLatitude": 11.9674,
+      "gridLongitude": 121.9248,
+      "elevation": 19.8,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=121.9248&latitude=11.9674&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Approved beach-oriented holiday base; 25°C target.",
+      "climateTypeSources": [
+        "https://genevapm.dfa.gov.ph/resources/visit-the-philippines"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates. Boat operations, sea conditions and tropical-storm disruption require current local checks, separate from monthly climate scores.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.72,
+          "meanDailyHighC": 27.49,
+          "meanRainMmPerDay": 3.506,
+          "meanRelativeHumidityPct": 83.68,
+          "rainyDayFraction": 0.5968
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 26.58,
+          "meanDailyHighC": 27.54,
+          "meanRainMmPerDay": 2.5265,
+          "meanRelativeHumidityPct": 81.84,
+          "rainyDayFraction": 0.5442
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.38,
+          "meanDailyHighC": 28.5,
+          "meanRainMmPerDay": 1.3098,
+          "meanRelativeHumidityPct": 80.02,
+          "rainyDayFraction": 0.2903
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 28.61,
+          "meanDailyHighC": 29.82,
+          "meanRainMmPerDay": 1.8353,
+          "meanRelativeHumidityPct": 77.47,
+          "rainyDayFraction": 0.3
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 29.46,
+          "meanDailyHighC": 30.53,
+          "meanRainMmPerDay": 7.1839,
+          "meanRelativeHumidityPct": 78.01,
+          "rainyDayFraction": 0.7387
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 28.87,
+          "meanDailyHighC": 29.58,
+          "meanRainMmPerDay": 10.5648,
+          "meanRelativeHumidityPct": 80.77,
+          "rainyDayFraction": 0.9567
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.39,
+          "meanDailyHighC": 28.96,
+          "meanRainMmPerDay": 16.0213,
+          "meanRelativeHumidityPct": 83.13,
+          "rainyDayFraction": 0.9613
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.29,
+          "meanDailyHighC": 28.89,
+          "meanRainMmPerDay": 11.6708,
+          "meanRelativeHumidityPct": 83.15,
+          "rainyDayFraction": 0.929
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 28.21,
+          "meanDailyHighC": 28.83,
+          "meanRainMmPerDay": 12.9203,
+          "meanRelativeHumidityPct": 83.62,
+          "rainyDayFraction": 0.9033
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.34,
+          "meanDailyHighC": 28.95,
+          "meanRainMmPerDay": 14.0452,
+          "meanRelativeHumidityPct": 82.85,
+          "rainyDayFraction": 0.9548
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 28.17,
+          "meanDailyHighC": 28.79,
+          "meanRainMmPerDay": 6.889,
+          "meanRelativeHumidityPct": 83.79,
+          "rainyDayFraction": 0.8367
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.57,
+          "meanDailyHighC": 28.21,
+          "meanRainMmPerDay": 7.8598,
+          "meanRelativeHumidityPct": 84.74,
+          "rainyDayFraction": 0.7774
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Malaysian city/coastal and Philippine urban/island/highland contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          8,
+          9,
+          7,
+          6,
+          10,
+          5,
+          11,
+          2,
+          3,
+          1,
+          4,
+          12
+        ],
+        "sourceUrls": [
+          "https://genevapm.dfa.gov.ph/resources/visit-the-philippines"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          8,
+          9,
+          7,
+          6,
+          10,
+          5,
+          11,
+          2,
+          3,
+          1,
+          4,
+          12
+        ],
+        "sourceUrls": [
+          "https://genevapm.dfa.gov.ph/resources/visit-the-philippines"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "philippines",
+      "id": "panglao",
+      "name": "Panglao",
+      "area": "Bohol",
+      "latitude": 9.5546,
+      "longitude": 123.774,
+      "airports": [
+        [
+          "TAG",
+          "Bohol–Panglao"
+        ]
+      ],
+      "climateType": "beach",
+      "regionIndex": 4,
+      "gridLatitude": 9.5546,
+      "gridLongitude": 123.774,
+      "elevation": 56.33,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=123.774&latitude=9.5546&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Approved beach-oriented holiday base; 25°C target.",
+      "climateTypeSources": [
+        "https://genevapm.dfa.gov.ph/resources/visit-the-philippines"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates. Boat operations, sea conditions and tropical-storm disruption require current local checks, separate from monthly climate scores.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.92,
+          "meanDailyHighC": 28.16,
+          "meanRainMmPerDay": 5.1462,
+          "meanRelativeHumidityPct": 84.09,
+          "rainyDayFraction": 0.6645
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 26.75,
+          "meanDailyHighC": 28.27,
+          "meanRainMmPerDay": 3.4937,
+          "meanRelativeHumidityPct": 82.33,
+          "rainyDayFraction": 0.5618
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.32,
+          "meanDailyHighC": 28.96,
+          "meanRainMmPerDay": 2.2766,
+          "meanRelativeHumidityPct": 80.8,
+          "rainyDayFraction": 0.3935
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 28.23,
+          "meanDailyHighC": 29.84,
+          "meanRainMmPerDay": 2.1543,
+          "meanRelativeHumidityPct": 78.38,
+          "rainyDayFraction": 0.4067
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.85,
+          "meanDailyHighC": 30.03,
+          "meanRainMmPerDay": 4.0458,
+          "meanRelativeHumidityPct": 78.08,
+          "rainyDayFraction": 0.7032
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 28.5,
+          "meanDailyHighC": 29.39,
+          "meanRainMmPerDay": 6.4832,
+          "meanRelativeHumidityPct": 77.89,
+          "rainyDayFraction": 0.8433
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.2,
+          "meanDailyHighC": 29.05,
+          "meanRainMmPerDay": 6.6453,
+          "meanRelativeHumidityPct": 79.6,
+          "rainyDayFraction": 0.8871
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.22,
+          "meanDailyHighC": 29.08,
+          "meanRainMmPerDay": 6.5651,
+          "meanRelativeHumidityPct": 79.37,
+          "rainyDayFraction": 0.8581
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 28.2,
+          "meanDailyHighC": 29.08,
+          "meanRainMmPerDay": 5.7442,
+          "meanRelativeHumidityPct": 79.64,
+          "rainyDayFraction": 0.85
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.26,
+          "meanDailyHighC": 29.06,
+          "meanRainMmPerDay": 7.6831,
+          "meanRelativeHumidityPct": 80.19,
+          "rainyDayFraction": 0.9419
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 28.09,
+          "meanDailyHighC": 29.02,
+          "meanRainMmPerDay": 6.3295,
+          "meanRelativeHumidityPct": 82.26,
+          "rainyDayFraction": 0.8667
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.61,
+          "meanDailyHighC": 28.59,
+          "meanRainMmPerDay": 7.0709,
+          "meanRelativeHumidityPct": 83.96,
+          "rainyDayFraction": 0.8484
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Malaysian city/coastal and Philippine urban/island/highland contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          8,
+          9,
+          7,
+          6,
+          10,
+          5,
+          11,
+          2,
+          3,
+          1,
+          4,
+          12
+        ],
+        "sourceUrls": [
+          "https://genevapm.dfa.gov.ph/resources/visit-the-philippines"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          8,
+          9,
+          7,
+          6,
+          10,
+          5,
+          11,
+          2,
+          3,
+          1,
+          4,
+          12
+        ],
+        "sourceUrls": [
+          "https://genevapm.dfa.gov.ph/resources/visit-the-philippines"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "philippines",
+      "id": "banaue",
+      "name": "Banaue",
+      "area": "Ifugao highlands",
+      "latitude": 16.9186,
+      "longitude": 121.0575,
+      "airports": [
+        [
+          "MNL",
+          "Manila Ninoy Aquino"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 5,
+      "gridLatitude": 16.9186,
+      "gridLongitude": 121.0575,
+      "elevation": 693.02,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=121.0575&latitude=16.9186&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://genevapm.dfa.gov.ph/resources/visit-the-philippines"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates. Manila is a distant gateway requiring a substantial overland journey. Batad requires a local excursion and walking. Rice-terrace appearance follows crop cycles, not climate score alone.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 19.89,
+          "meanDailyHighC": 24.4,
+          "meanRainMmPerDay": 3.1736,
+          "meanRelativeHumidityPct": 90.06,
+          "rainyDayFraction": 0.4452
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 20.41,
+          "meanDailyHighC": 25.65,
+          "meanRainMmPerDay": 2.5318,
+          "meanRelativeHumidityPct": 86.95,
+          "rainyDayFraction": 0.424
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 22.6,
+          "meanDailyHighC": 28.77,
+          "meanRainMmPerDay": 1.9625,
+          "meanRelativeHumidityPct": 80.93,
+          "rainyDayFraction": 0.3548
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 24.95,
+          "meanDailyHighC": 31.75,
+          "meanRainMmPerDay": 2.2713,
+          "meanRelativeHumidityPct": 75.18,
+          "rainyDayFraction": 0.4633
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.75,
+          "meanDailyHighC": 31.47,
+          "meanRainMmPerDay": 7.6311,
+          "meanRelativeHumidityPct": 78.15,
+          "rainyDayFraction": 0.8032
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.05,
+          "meanDailyHighC": 29.38,
+          "meanRainMmPerDay": 9.5474,
+          "meanRelativeHumidityPct": 83.74,
+          "rainyDayFraction": 0.9
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.49,
+          "meanDailyHighC": 28.38,
+          "meanRainMmPerDay": 14.2606,
+          "meanRelativeHumidityPct": 86.16,
+          "rainyDayFraction": 0.9452
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.34,
+          "meanDailyHighC": 28.17,
+          "meanRainMmPerDay": 12.9012,
+          "meanRelativeHumidityPct": 86.99,
+          "rainyDayFraction": 0.9323
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 24.08,
+          "meanDailyHighC": 28.06,
+          "meanRainMmPerDay": 11.9945,
+          "meanRelativeHumidityPct": 87.73,
+          "rainyDayFraction": 0.9033
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 23.13,
+          "meanDailyHighC": 27.01,
+          "meanRainMmPerDay": 11.9169,
+          "meanRelativeHumidityPct": 90.3,
+          "rainyDayFraction": 0.771
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 22.37,
+          "meanDailyHighC": 26.21,
+          "meanRainMmPerDay": 10.9987,
+          "meanRelativeHumidityPct": 91.54,
+          "rainyDayFraction": 0.69
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 21.02,
+          "meanDailyHighC": 24.82,
+          "meanRainMmPerDay": 11.0186,
+          "meanRelativeHumidityPct": 92.26,
+          "rainyDayFraction": 0.671
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Malaysian city/coastal and Philippine urban/island/highland contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          8,
+          9,
+          7,
+          6,
+          10,
+          5,
+          11,
+          2,
+          3,
+          1,
+          4,
+          12
+        ],
+        "sourceUrls": [
+          "https://genevapm.dfa.gov.ph/resources/visit-the-philippines"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          8,
+          9,
+          7,
+          6,
+          10,
+          5,
+          11,
+          2,
+          3,
+          1,
+          4,
+          12
+        ],
+        "sourceUrls": [
+          "https://genevapm.dfa.gov.ph/resources/visit-the-philippines"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
     }
   ],
   "destinationTypeAssignments": {
@@ -22476,6 +24488,78 @@
       "climateType": "all-season",
       "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
       "status": "Owner-approved Japan/Laos rollout, 6 November 2026."
+    },
+    "malaysia:kuala-lumpur": {
+      "name": "Kuala Lumpur",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Authorized autonomous Malaysia/Philippines rollout, 6 November 2026."
+    },
+    "malaysia:george-town": {
+      "name": "George Town",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Authorized autonomous Malaysia/Philippines rollout, 6 November 2026."
+    },
+    "malaysia:kuala-terengganu": {
+      "name": "Kuala Terengganu",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Authorized autonomous Malaysia/Philippines rollout, 6 November 2026."
+    },
+    "malaysia:kota-kinabalu": {
+      "name": "Kota Kinabalu",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous Malaysia/Philippines rollout, 6 November 2026."
+    },
+    "malaysia:kuching": {
+      "name": "Kuching",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous Malaysia/Philippines rollout, 6 November 2026."
+    },
+    "malaysia:pantai-cenang": {
+      "name": "Pantai Cenang",
+      "climateType": "beach",
+      "reason": "Approved beach-oriented holiday base; 25°C target.",
+      "status": "Authorized autonomous Malaysia/Philippines rollout, 6 November 2026."
+    },
+    "philippines:manila": {
+      "name": "Manila",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Authorized autonomous Malaysia/Philippines rollout, 6 November 2026."
+    },
+    "philippines:cebu-city": {
+      "name": "Cebu City",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Authorized autonomous Malaysia/Philippines rollout, 6 November 2026."
+    },
+    "philippines:el-nido": {
+      "name": "El Nido",
+      "climateType": "beach",
+      "reason": "Approved beach-oriented holiday base; 25°C target.",
+      "status": "Authorized autonomous Malaysia/Philippines rollout, 6 November 2026."
+    },
+    "philippines:boracay": {
+      "name": "Boracay",
+      "climateType": "beach",
+      "reason": "Approved beach-oriented holiday base; 25°C target.",
+      "status": "Authorized autonomous Malaysia/Philippines rollout, 6 November 2026."
+    },
+    "philippines:panglao": {
+      "name": "Panglao",
+      "climateType": "beach",
+      "reason": "Approved beach-oriented holiday base; 25°C target.",
+      "status": "Authorized autonomous Malaysia/Philippines rollout, 6 November 2026."
+    },
+    "philippines:banaue": {
+      "name": "Banaue",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous Malaysia/Philippines rollout, 6 November 2026."
     }
   }
 }

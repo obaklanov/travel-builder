@@ -7,9 +7,9 @@
     "persistentWetDayFraction": 0.6,
     "excludedMonthsPerVulnerableBase": 2,
     "selection": "Vulnerable if any month averages >=8 mm/day, or >=6 mm/day with >=60% wet days where wet-day data exist. Mark its two largest mean daily rainfall/precipitation months unsuitable. Equal values use calendar order. Reviewed regional/station overrides take precedence where coarse model grids conflict with official guidance; these are identified per base.",
-    "scope": "191 existing destinations. Product preference, not abnormal-weather diagnosis, flood forecast or official advisory.",
+    "scope": "194 existing destinations. Product preference, not abnormal-weather diagnosis, flood forecast or official advisory.",
     "limitations": "Model estimates and representative points; broad regions can contain different climates. NASA supplementary records are total precipitation including snow, not rain-only; cross-check Colombia estimates separately. Unflagged does not mean free of rain or weather hazards.",
-    "reviewedVulnerableCount": 62
+    "reviewedVulnerableCount": 66
   },
   "bases": [
     {
@@ -331,74 +331,73 @@
     {
       "country": "philippines",
       "regionIndex": 0,
-      "label": "Manila & western Luzon (North)",
-      "id": "philippines-0",
-      "latitude": 14.6,
-      "longitude": 120.98,
-      "needsRainFetch": true,
-      "referenceNote": "Representative point for a broad legacy region; does not describe every linked place.",
+      "label": "Manila (Metro Manila)",
+      "id": "manila",
+      "latitude": 14.5995,
+      "longitude": 120.9842,
+      "referenceNote": "Named accommodation-town point; broader excursions, mountains and island coasts can differ.",
       "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
-      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR&community=AG&longitude=120.98&latitude=14.6&start=2016&end=2025&format=JSON",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=120.9842&latitude=14.5995&start=20160101&end=20251231&format=JSON&time-standard=LST",
       "months": [
         {
           "month": 1,
-          "meanMmPerDay": 6.161,
-          "wetDayFraction": null
+          "meanMmPerDay": 6.1624,
+          "wetDayFraction": 0.7903
         },
         {
           "month": 2,
-          "meanMmPerDay": 6.5454,
-          "wetDayFraction": null
+          "meanMmPerDay": 6.5452,
+          "wetDayFraction": 0.6466
         },
         {
           "month": 3,
-          "meanMmPerDay": 4.344,
-          "wetDayFraction": null
+          "meanMmPerDay": 4.3456,
+          "wetDayFraction": 0.4677
         },
         {
           "month": 4,
-          "meanMmPerDay": 4.42,
-          "wetDayFraction": null
+          "meanMmPerDay": 4.4217,
+          "wetDayFraction": 0.52
         },
         {
           "month": 5,
-          "meanMmPerDay": 5.697,
-          "wetDayFraction": null
+          "meanMmPerDay": 5.6973,
+          "wetDayFraction": 0.8323
         },
         {
           "month": 6,
-          "meanMmPerDay": 9.346,
-          "wetDayFraction": null
+          "meanMmPerDay": 9.3461,
+          "wetDayFraction": 0.9167
         },
         {
           "month": 7,
-          "meanMmPerDay": 12.291,
-          "wetDayFraction": null
+          "meanMmPerDay": 12.2905,
+          "wetDayFraction": 0.9484
         },
         {
           "month": 8,
-          "meanMmPerDay": 8.892,
-          "wetDayFraction": null
+          "meanMmPerDay": 8.8917,
+          "wetDayFraction": 0.9
         },
         {
           "month": 9,
-          "meanMmPerDay": 11.317,
-          "wetDayFraction": null
+          "meanMmPerDay": 11.3166,
+          "wetDayFraction": 0.9033
         },
         {
           "month": 10,
-          "meanMmPerDay": 13.44,
-          "wetDayFraction": null
+          "meanMmPerDay": 13.441,
+          "wetDayFraction": 0.9258
         },
         {
           "month": 11,
-          "meanMmPerDay": 12.432,
-          "wetDayFraction": null
+          "meanMmPerDay": 12.4322,
+          "wetDayFraction": 0.8933
         },
         {
           "month": 12,
-          "meanMmPerDay": 14.02,
-          "wetDayFraction": null
+          "meanMmPerDay": 14.0185,
+          "wetDayFraction": 0.9097
         }
       ],
       "vulnerable": true,
@@ -406,9 +405,9 @@
         8,
         7
       ],
-      "reason": "Official Manila station normals take precedence over the coastal model grid: August and July are wettest. Broad northern Luzon label has local variation.",
+      "reason": "Official Manila station review retained: August and July are the two wettest planning months.",
       "selectionEvidence": {
-        "basis": "Official Manila station normals take precedence over the coastal model grid: August and July are wettest. Broad northern Luzon label has local variation.",
+        "basis": "Official Manila station normals take precedence over the coastal model grid: August and July are wettest. Retained for the narrowed Manila base.",
         "sourceUrls": [
           "https://pagasa.dost.gov.ph/climate/climatological-normals"
         ]
@@ -417,74 +416,73 @@
     {
       "country": "philippines",
       "regionIndex": 1,
-      "label": "Cebu & Bohol / Visayas",
-      "id": "philippines-1",
-      "latitude": 10.32,
-      "longitude": 123.9,
-      "needsRainFetch": true,
-      "referenceNote": "Representative point for a broad legacy region; does not describe every linked place.",
+      "label": "Cebu City (Central Visayas)",
+      "id": "cebu-city",
+      "latitude": 10.3157,
+      "longitude": 123.8854,
+      "referenceNote": "Named accommodation-town point; broader excursions, mountains and island coasts can differ.",
       "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
-      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR&community=AG&longitude=123.9&latitude=10.32&start=2016&end=2025&format=JSON",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=123.8854&latitude=10.3157&start=20160101&end=20251231&format=JSON&time-standard=LST",
       "months": [
         {
           "month": 1,
-          "meanMmPerDay": 5.958,
-          "wetDayFraction": null
+          "meanMmPerDay": 5.9591,
+          "wetDayFraction": 0.6903
         },
         {
           "month": 2,
-          "meanMmPerDay": 4.6828,
-          "wetDayFraction": null
+          "meanMmPerDay": 4.6835,
+          "wetDayFraction": 0.636
         },
         {
           "month": 3,
-          "meanMmPerDay": 2.896,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.8971,
+          "wetDayFraction": 0.4516
         },
         {
           "month": 4,
-          "meanMmPerDay": 3.47,
-          "wetDayFraction": null
+          "meanMmPerDay": 3.468,
+          "wetDayFraction": 0.3667
         },
         {
           "month": 5,
-          "meanMmPerDay": 4.534,
-          "wetDayFraction": null
+          "meanMmPerDay": 4.5335,
+          "wetDayFraction": 0.6387
         },
         {
           "month": 6,
-          "meanMmPerDay": 7.573,
-          "wetDayFraction": null
+          "meanMmPerDay": 7.5738,
+          "wetDayFraction": 0.8467
         },
         {
           "month": 7,
-          "meanMmPerDay": 7.745,
-          "wetDayFraction": null
+          "meanMmPerDay": 7.7447,
+          "wetDayFraction": 0.8065
         },
         {
           "month": 8,
-          "meanMmPerDay": 7.593,
-          "wetDayFraction": null
+          "meanMmPerDay": 7.5923,
+          "wetDayFraction": 0.7355
         },
         {
           "month": 9,
-          "meanMmPerDay": 8.052,
-          "wetDayFraction": null
+          "meanMmPerDay": 8.0528,
+          "wetDayFraction": 0.8033
         },
         {
           "month": 10,
-          "meanMmPerDay": 9.799,
-          "wetDayFraction": null
+          "meanMmPerDay": 9.7984,
+          "wetDayFraction": 0.9097
         },
         {
           "month": 11,
-          "meanMmPerDay": 5.966,
-          "wetDayFraction": null
+          "meanMmPerDay": 5.9657,
+          "wetDayFraction": 0.81
         },
         {
           "month": 12,
-          "meanMmPerDay": 7.646,
-          "wetDayFraction": null
+          "meanMmPerDay": 7.6444,
+          "wetDayFraction": 0.8323
         }
       ],
       "vulnerable": true,
@@ -497,151 +495,152 @@
     {
       "country": "philippines",
       "regionIndex": 2,
-      "label": "Palawan (West)",
-      "id": "philippines-2",
-      "latitude": 9.74,
-      "longitude": 118.74,
-      "needsRainFetch": true,
-      "referenceNote": "Representative point for a broad legacy region; does not describe every linked place.",
+      "label": "El Nido (Palawan)",
+      "id": "el-nido",
+      "latitude": 11.179,
+      "longitude": 119.392,
+      "referenceNote": "Named accommodation-town point; broader excursions, mountains and island coasts can differ.",
       "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
-      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR&community=AG&longitude=118.74&latitude=9.74&start=2016&end=2025&format=JSON",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=119.392&latitude=11.179&start=20160101&end=20251231&format=JSON&time-standard=LST",
       "months": [
         {
           "month": 1,
-          "meanMmPerDay": 2.864,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.9373,
+          "wetDayFraction": 0.3903
         },
         {
           "month": 2,
-          "meanMmPerDay": 1.2461,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.2698,
+          "wetDayFraction": 0.2862
         },
         {
           "month": 3,
-          "meanMmPerDay": 1.255,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.9662,
+          "wetDayFraction": 0.1774
         },
         {
           "month": 4,
-          "meanMmPerDay": 1.595,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.1244,
+          "wetDayFraction": 0.27
         },
         {
           "month": 5,
-          "meanMmPerDay": 3.379,
-          "wetDayFraction": null
+          "meanMmPerDay": 4.1035,
+          "wetDayFraction": 0.7161
         },
         {
           "month": 6,
-          "meanMmPerDay": 6.884,
-          "wetDayFraction": null
+          "meanMmPerDay": 8.6654,
+          "wetDayFraction": 0.9667
         },
         {
           "month": 7,
-          "meanMmPerDay": 7.872,
-          "wetDayFraction": null
+          "meanMmPerDay": 11.4541,
+          "wetDayFraction": 0.9677
         },
         {
           "month": 8,
-          "meanMmPerDay": 6.374,
-          "wetDayFraction": null
+          "meanMmPerDay": 9.2242,
+          "wetDayFraction": 0.9194
         },
         {
           "month": 9,
-          "meanMmPerDay": 6.912,
-          "wetDayFraction": null
+          "meanMmPerDay": 10.2621,
+          "wetDayFraction": 0.9333
         },
         {
           "month": 10,
-          "meanMmPerDay": 7.516,
-          "wetDayFraction": null
+          "meanMmPerDay": 8.8428,
+          "wetDayFraction": 0.9065
         },
         {
           "month": 11,
-          "meanMmPerDay": 5.811,
-          "wetDayFraction": null
+          "meanMmPerDay": 5.1181,
+          "wetDayFraction": 0.7733
         },
         {
           "month": 12,
-          "meanMmPerDay": 5.232,
-          "wetDayFraction": null
+          "meanMmPerDay": 4.4225,
+          "wetDayFraction": 0.7032
         }
       ],
-      "vulnerable": false,
-      "excludedMonths": [],
-      "reason": "Screening threshold not met at representative point."
+      "vulnerable": true,
+      "excludedMonths": [
+        7,
+        9
+      ],
+      "reason": "Heavy or persistent wet-season screening threshold met; two wettest months excluded."
     },
     {
       "country": "philippines",
       "regionIndex": 3,
-      "label": "Boracay & Panay / Visayas",
-      "id": "philippines-3",
-      "latitude": 11.97,
-      "longitude": 121.92,
-      "needsRainFetch": true,
-      "referenceNote": "Representative point for a broad legacy region; does not describe every linked place.",
+      "label": "Boracay (Western Visayas)",
+      "id": "boracay",
+      "latitude": 11.9674,
+      "longitude": 121.9248,
+      "referenceNote": "Named accommodation-town point; broader excursions, mountains and island coasts can differ.",
       "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
-      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR&community=AG&longitude=121.92&latitude=11.97&start=2016&end=2025&format=JSON",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=121.9248&latitude=11.9674&start=20160101&end=20251231&format=JSON&time-standard=LST",
       "months": [
         {
           "month": 1,
-          "meanMmPerDay": 3.507,
-          "wetDayFraction": null
+          "meanMmPerDay": 3.506,
+          "wetDayFraction": 0.5968
         },
         {
           "month": 2,
-          "meanMmPerDay": 2.5252,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.5265,
+          "wetDayFraction": 0.5442
         },
         {
           "month": 3,
-          "meanMmPerDay": 1.311,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.3098,
+          "wetDayFraction": 0.2903
         },
         {
           "month": 4,
-          "meanMmPerDay": 1.835,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.8353,
+          "wetDayFraction": 0.3
         },
         {
           "month": 5,
-          "meanMmPerDay": 7.183,
-          "wetDayFraction": null
+          "meanMmPerDay": 7.1839,
+          "wetDayFraction": 0.7387
         },
         {
           "month": 6,
-          "meanMmPerDay": 10.566,
-          "wetDayFraction": null
+          "meanMmPerDay": 10.5648,
+          "wetDayFraction": 0.9567
         },
         {
           "month": 7,
-          "meanMmPerDay": 16.02,
-          "wetDayFraction": null
+          "meanMmPerDay": 16.0213,
+          "wetDayFraction": 0.9613
         },
         {
           "month": 8,
-          "meanMmPerDay": 11.671,
-          "wetDayFraction": null
+          "meanMmPerDay": 11.6708,
+          "wetDayFraction": 0.929
         },
         {
           "month": 9,
-          "meanMmPerDay": 12.92,
-          "wetDayFraction": null
+          "meanMmPerDay": 12.9203,
+          "wetDayFraction": 0.9033
         },
         {
           "month": 10,
-          "meanMmPerDay": 14.044,
-          "wetDayFraction": null
+          "meanMmPerDay": 14.0452,
+          "wetDayFraction": 0.9548
         },
         {
           "month": 11,
-          "meanMmPerDay": 6.888,
-          "wetDayFraction": null
+          "meanMmPerDay": 6.889,
+          "wetDayFraction": 0.8367
         },
         {
           "month": 12,
-          "meanMmPerDay": 7.86,
-          "wetDayFraction": null
+          "meanMmPerDay": 7.8598,
+          "wetDayFraction": 0.7774
         }
       ],
       "vulnerable": true,
@@ -652,76 +651,233 @@
       "reason": "Heavy or persistent wet-season screening threshold met; two wettest months excluded."
     },
     {
-      "country": "malaysia",
-      "regionIndex": 0,
-      "label": "Kuala Lumpur & Malacca (West)",
-      "id": "malaysia-0",
-      "latitude": 3.14,
-      "longitude": 101.69,
-      "needsRainFetch": true,
-      "referenceNote": "Representative point for a broad legacy region; does not describe every linked place.",
+      "country": "philippines",
+      "regionIndex": 4,
+      "label": "Panglao (Bohol)",
+      "id": "panglao",
+      "latitude": 9.5546,
+      "longitude": 123.774,
+      "referenceNote": "Named accommodation-town point; broader excursions, mountains and island coasts can differ.",
       "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
-      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR&community=AG&longitude=101.69&latitude=3.14&start=2016&end=2025&format=JSON",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=123.774&latitude=9.5546&start=20160101&end=20251231&format=JSON&time-standard=LST",
       "months": [
         {
           "month": 1,
-          "meanMmPerDay": 8.059,
-          "wetDayFraction": null
+          "meanMmPerDay": 5.1462,
+          "wetDayFraction": 0.6645
         },
         {
           "month": 2,
-          "meanMmPerDay": 4.8136,
-          "wetDayFraction": null
+          "meanMmPerDay": 3.4937,
+          "wetDayFraction": 0.5618
         },
         {
           "month": 3,
-          "meanMmPerDay": 6.291,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.2766,
+          "wetDayFraction": 0.3935
         },
         {
           "month": 4,
-          "meanMmPerDay": 7.028,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.1543,
+          "wetDayFraction": 0.4067
         },
         {
           "month": 5,
-          "meanMmPerDay": 6.869,
-          "wetDayFraction": null
+          "meanMmPerDay": 4.0458,
+          "wetDayFraction": 0.7032
         },
         {
           "month": 6,
-          "meanMmPerDay": 7.078,
-          "wetDayFraction": null
+          "meanMmPerDay": 6.4832,
+          "wetDayFraction": 0.8433
         },
         {
           "month": 7,
-          "meanMmPerDay": 5.364,
-          "wetDayFraction": null
+          "meanMmPerDay": 6.6453,
+          "wetDayFraction": 0.8871
         },
         {
           "month": 8,
-          "meanMmPerDay": 6.166,
-          "wetDayFraction": null
+          "meanMmPerDay": 6.5651,
+          "wetDayFraction": 0.8581
         },
         {
           "month": 9,
-          "meanMmPerDay": 6.924,
-          "wetDayFraction": null
+          "meanMmPerDay": 5.7442,
+          "wetDayFraction": 0.85
         },
         {
           "month": 10,
-          "meanMmPerDay": 8.009,
-          "wetDayFraction": null
+          "meanMmPerDay": 7.6831,
+          "wetDayFraction": 0.9419
         },
         {
           "month": 11,
-          "meanMmPerDay": 11.61,
-          "wetDayFraction": null
+          "meanMmPerDay": 6.3295,
+          "wetDayFraction": 0.8667
         },
         {
           "month": 12,
-          "meanMmPerDay": 11.06,
-          "wetDayFraction": null
+          "meanMmPerDay": 7.0709,
+          "wetDayFraction": 0.8484
+        }
+      ],
+      "vulnerable": true,
+      "excludedMonths": [
+        10,
+        12
+      ],
+      "reason": "Heavy or persistent wet-season screening threshold met; two wettest months excluded."
+    },
+    {
+      "country": "philippines",
+      "regionIndex": 5,
+      "label": "Banaue (Ifugao highlands)",
+      "id": "banaue",
+      "latitude": 16.9186,
+      "longitude": 121.0575,
+      "referenceNote": "Named accommodation-town point; broader excursions, mountains and island coasts can differ.",
+      "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=121.0575&latitude=16.9186&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "months": [
+        {
+          "month": 1,
+          "meanMmPerDay": 3.1736,
+          "wetDayFraction": 0.4452
+        },
+        {
+          "month": 2,
+          "meanMmPerDay": 2.5318,
+          "wetDayFraction": 0.424
+        },
+        {
+          "month": 3,
+          "meanMmPerDay": 1.9625,
+          "wetDayFraction": 0.3548
+        },
+        {
+          "month": 4,
+          "meanMmPerDay": 2.2713,
+          "wetDayFraction": 0.4633
+        },
+        {
+          "month": 5,
+          "meanMmPerDay": 7.6311,
+          "wetDayFraction": 0.8032
+        },
+        {
+          "month": 6,
+          "meanMmPerDay": 9.5474,
+          "wetDayFraction": 0.9
+        },
+        {
+          "month": 7,
+          "meanMmPerDay": 14.2606,
+          "wetDayFraction": 0.9452
+        },
+        {
+          "month": 8,
+          "meanMmPerDay": 12.9012,
+          "wetDayFraction": 0.9323
+        },
+        {
+          "month": 9,
+          "meanMmPerDay": 11.9945,
+          "wetDayFraction": 0.9033
+        },
+        {
+          "month": 10,
+          "meanMmPerDay": 11.9169,
+          "wetDayFraction": 0.771
+        },
+        {
+          "month": 11,
+          "meanMmPerDay": 10.9987,
+          "wetDayFraction": 0.69
+        },
+        {
+          "month": 12,
+          "meanMmPerDay": 11.0186,
+          "wetDayFraction": 0.671
+        }
+      ],
+      "vulnerable": true,
+      "excludedMonths": [
+        7,
+        8
+      ],
+      "reason": "Heavy or persistent wet-season screening threshold met; two wettest months excluded."
+    },
+    {
+      "country": "malaysia",
+      "regionIndex": 0,
+      "label": "Kuala Lumpur (West)",
+      "id": "kuala-lumpur",
+      "latitude": 3.139,
+      "longitude": 101.6869,
+      "referenceNote": "Named accommodation-town point; broader excursions, mountains and island coasts can differ.",
+      "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=101.6869&latitude=3.139&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "months": [
+        {
+          "month": 1,
+          "meanMmPerDay": 8.0589,
+          "wetDayFraction": 0.7258
+        },
+        {
+          "month": 2,
+          "meanMmPerDay": 4.8132,
+          "wetDayFraction": 0.6078
+        },
+        {
+          "month": 3,
+          "meanMmPerDay": 6.2905,
+          "wetDayFraction": 0.7032
+        },
+        {
+          "month": 4,
+          "meanMmPerDay": 7.0279,
+          "wetDayFraction": 0.8333
+        },
+        {
+          "month": 5,
+          "meanMmPerDay": 6.8689,
+          "wetDayFraction": 0.8258
+        },
+        {
+          "month": 6,
+          "meanMmPerDay": 7.0769,
+          "wetDayFraction": 0.7833
+        },
+        {
+          "month": 7,
+          "meanMmPerDay": 5.3638,
+          "wetDayFraction": 0.6677
+        },
+        {
+          "month": 8,
+          "meanMmPerDay": 6.1661,
+          "wetDayFraction": 0.8161
+        },
+        {
+          "month": 9,
+          "meanMmPerDay": 6.9233,
+          "wetDayFraction": 0.83
+        },
+        {
+          "month": 10,
+          "meanMmPerDay": 8.0092,
+          "wetDayFraction": 0.8613
+        },
+        {
+          "month": 11,
+          "meanMmPerDay": 11.6101,
+          "wetDayFraction": 0.9367
+        },
+        {
+          "month": 12,
+          "meanMmPerDay": 11.0599,
+          "wetDayFraction": 0.8581
         }
       ],
       "vulnerable": true,
@@ -734,74 +890,73 @@
     {
       "country": "malaysia",
       "regionIndex": 1,
-      "label": "Penang & Langkawi / Northwest",
-      "id": "malaysia-1",
-      "latitude": 5.414,
-      "longitude": 100.329,
-      "needsRainFetch": true,
-      "referenceNote": "Representative point for a broad legacy region; does not describe every linked place.",
+      "label": "George Town (Penang)",
+      "id": "george-town",
+      "latitude": 5.4141,
+      "longitude": 100.3288,
+      "referenceNote": "Named accommodation-town point; broader excursions, mountains and island coasts can differ.",
       "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
-      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR&community=AG&longitude=100.329&latitude=5.414&start=2016&end=2025&format=JSON",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=100.3288&latitude=5.4141&start=20160101&end=20251231&format=JSON&time-standard=LST",
       "months": [
         {
           "month": 1,
-          "meanMmPerDay": 4.507,
-          "wetDayFraction": null
+          "meanMmPerDay": 4.5066,
+          "wetDayFraction": 0.6129
         },
         {
           "month": 2,
-          "meanMmPerDay": 3.1611,
-          "wetDayFraction": null
+          "meanMmPerDay": 3.1617,
+          "wetDayFraction": 0.4558
         },
         {
           "month": 3,
-          "meanMmPerDay": 3.539,
-          "wetDayFraction": null
+          "meanMmPerDay": 3.5384,
+          "wetDayFraction": 0.6258
         },
         {
           "month": 4,
-          "meanMmPerDay": 6.948,
-          "wetDayFraction": null
+          "meanMmPerDay": 6.9471,
+          "wetDayFraction": 0.8533
         },
         {
           "month": 5,
-          "meanMmPerDay": 8.677,
-          "wetDayFraction": null
+          "meanMmPerDay": 8.6771,
+          "wetDayFraction": 0.9452
         },
         {
           "month": 6,
-          "meanMmPerDay": 5.753,
-          "wetDayFraction": null
+          "meanMmPerDay": 5.7517,
+          "wetDayFraction": 0.88
         },
         {
           "month": 7,
-          "meanMmPerDay": 5.836,
-          "wetDayFraction": null
+          "meanMmPerDay": 5.8359,
+          "wetDayFraction": 0.8129
         },
         {
           "month": 8,
-          "meanMmPerDay": 6.658,
-          "wetDayFraction": null
+          "meanMmPerDay": 6.6577,
+          "wetDayFraction": 0.9097
         },
         {
           "month": 9,
-          "meanMmPerDay": 8.963,
-          "wetDayFraction": null
+          "meanMmPerDay": 8.9633,
+          "wetDayFraction": 0.94
         },
         {
           "month": 10,
-          "meanMmPerDay": 9.61,
-          "wetDayFraction": null
+          "meanMmPerDay": 9.6089,
+          "wetDayFraction": 0.9323
         },
         {
           "month": 11,
-          "meanMmPerDay": 14.524,
-          "wetDayFraction": null
+          "meanMmPerDay": 14.5225,
+          "wetDayFraction": 0.99
         },
         {
           "month": 12,
-          "meanMmPerDay": 7.951,
-          "wetDayFraction": null
+          "meanMmPerDay": 7.9524,
+          "wetDayFraction": 0.8355
         }
       ],
       "vulnerable": true,
@@ -814,74 +969,73 @@
     {
       "country": "malaysia",
       "regionIndex": 2,
-      "label": "Terengganu & east-coast islands (East)",
-      "id": "malaysia-2",
-      "latitude": 5.33,
-      "longitude": 103.14,
-      "needsRainFetch": true,
-      "referenceNote": "Representative point for a broad legacy region; does not describe every linked place.",
+      "label": "Kuala Terengganu (East Coast)",
+      "id": "kuala-terengganu",
+      "latitude": 5.3296,
+      "longitude": 103.137,
+      "referenceNote": "Named accommodation-town point; broader excursions, mountains and island coasts can differ.",
       "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
-      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR&community=AG&longitude=103.14&latitude=5.33&start=2016&end=2025&format=JSON",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=103.137&latitude=5.3296&start=20160101&end=20251231&format=JSON&time-standard=LST",
       "months": [
         {
           "month": 1,
-          "meanMmPerDay": 9.662,
-          "wetDayFraction": null
+          "meanMmPerDay": 9.6623,
+          "wetDayFraction": 0.7097
         },
         {
           "month": 2,
-          "meanMmPerDay": 4.7079,
-          "wetDayFraction": null
+          "meanMmPerDay": 4.708,
+          "wetDayFraction": 0.5053
         },
         {
           "month": 3,
-          "meanMmPerDay": 2.064,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.0627,
+          "wetDayFraction": 0.3452
         },
         {
           "month": 4,
-          "meanMmPerDay": 4.258,
-          "wetDayFraction": null
+          "meanMmPerDay": 4.2568,
+          "wetDayFraction": 0.52
         },
         {
           "month": 5,
-          "meanMmPerDay": 5.165,
-          "wetDayFraction": null
+          "meanMmPerDay": 5.1648,
+          "wetDayFraction": 0.8161
         },
         {
           "month": 6,
-          "meanMmPerDay": 6.416,
-          "wetDayFraction": null
+          "meanMmPerDay": 6.4162,
+          "wetDayFraction": 0.8833
         },
         {
           "month": 7,
-          "meanMmPerDay": 5.494,
-          "wetDayFraction": null
+          "meanMmPerDay": 5.4939,
+          "wetDayFraction": 0.8355
         },
         {
           "month": 8,
-          "meanMmPerDay": 6.841,
-          "wetDayFraction": null
+          "meanMmPerDay": 6.8427,
+          "wetDayFraction": 0.8935
         },
         {
           "month": 9,
-          "meanMmPerDay": 7.562,
-          "wetDayFraction": null
+          "meanMmPerDay": 7.5617,
+          "wetDayFraction": 0.91
         },
         {
           "month": 10,
-          "meanMmPerDay": 7.442,
-          "wetDayFraction": null
+          "meanMmPerDay": 7.443,
+          "wetDayFraction": 0.9097
         },
         {
           "month": 11,
-          "meanMmPerDay": 25.192,
-          "wetDayFraction": null
+          "meanMmPerDay": 25.1922,
+          "wetDayFraction": 0.99
         },
         {
           "month": 12,
-          "meanMmPerDay": 22.248,
-          "wetDayFraction": null
+          "meanMmPerDay": 22.2475,
+          "wetDayFraction": 0.8581
         }
       ],
       "vulnerable": true,
@@ -894,74 +1048,73 @@
     {
       "country": "malaysia",
       "regionIndex": 3,
-      "label": "Kota Kinabalu & western Sabah / Borneo",
-      "id": "malaysia-3",
-      "latitude": 5.98,
-      "longitude": 116.07,
-      "needsRainFetch": true,
-      "referenceNote": "Representative point for a broad legacy region; does not describe every linked place.",
+      "label": "Kota Kinabalu (Sabah)",
+      "id": "kota-kinabalu",
+      "latitude": 5.9804,
+      "longitude": 116.0735,
+      "referenceNote": "Named accommodation-town point; broader excursions, mountains and island coasts can differ.",
       "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
-      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR&community=AG&longitude=116.07&latitude=5.98&start=2016&end=2025&format=JSON",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=116.0735&latitude=5.9804&start=20160101&end=20251231&format=JSON&time-standard=LST",
       "months": [
         {
           "month": 1,
-          "meanMmPerDay": 7.596,
-          "wetDayFraction": null
+          "meanMmPerDay": 7.5958,
+          "wetDayFraction": 0.7581
         },
         {
           "month": 2,
-          "meanMmPerDay": 4.8085,
-          "wetDayFraction": null
+          "meanMmPerDay": 4.8098,
+          "wetDayFraction": 0.5548
         },
         {
           "month": 3,
-          "meanMmPerDay": 3.888,
-          "wetDayFraction": null
+          "meanMmPerDay": 3.8881,
+          "wetDayFraction": 0.5129
         },
         {
           "month": 4,
-          "meanMmPerDay": 4.456,
-          "wetDayFraction": null
+          "meanMmPerDay": 4.4559,
+          "wetDayFraction": 0.66
         },
         {
           "month": 5,
-          "meanMmPerDay": 6.949,
-          "wetDayFraction": null
+          "meanMmPerDay": 6.9514,
+          "wetDayFraction": 0.8194
         },
         {
           "month": 6,
-          "meanMmPerDay": 8.581,
-          "wetDayFraction": null
+          "meanMmPerDay": 8.5815,
+          "wetDayFraction": 0.8367
         },
         {
           "month": 7,
-          "meanMmPerDay": 8.029,
-          "wetDayFraction": null
+          "meanMmPerDay": 8.0299,
+          "wetDayFraction": 0.7581
         },
         {
           "month": 8,
-          "meanMmPerDay": 8.542,
-          "wetDayFraction": null
+          "meanMmPerDay": 8.5419,
+          "wetDayFraction": 0.8419
         },
         {
           "month": 9,
-          "meanMmPerDay": 9.25,
-          "wetDayFraction": null
+          "meanMmPerDay": 9.2514,
+          "wetDayFraction": 0.8433
         },
         {
           "month": 10,
-          "meanMmPerDay": 9.378,
-          "wetDayFraction": null
+          "meanMmPerDay": 9.3778,
+          "wetDayFraction": 0.9323
         },
         {
           "month": 11,
-          "meanMmPerDay": 9.301,
-          "wetDayFraction": null
+          "meanMmPerDay": 9.3,
+          "wetDayFraction": 0.9367
         },
         {
           "month": 12,
-          "meanMmPerDay": 9.275,
-          "wetDayFraction": null
+          "meanMmPerDay": 9.2746,
+          "wetDayFraction": 0.9323
         }
       ],
       "vulnerable": true,
@@ -974,80 +1127,158 @@
     {
       "country": "malaysia",
       "regionIndex": 4,
-      "label": "Kuching & western Sarawak / Borneo",
-      "id": "malaysia-4",
-      "latitude": 1.55,
-      "longitude": 110.36,
-      "needsRainFetch": true,
-      "referenceNote": "Representative point for a broad legacy region; does not describe every linked place.",
+      "label": "Kuching (Sarawak)",
+      "id": "kuching",
+      "latitude": 1.5535,
+      "longitude": 110.3593,
+      "referenceNote": "Named accommodation-town point; broader excursions, mountains and island coasts can differ.",
       "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
-      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR&community=AG&longitude=110.36&latitude=1.55&start=2016&end=2025&format=JSON",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=110.3593&latitude=1.5535&start=20160101&end=20251231&format=JSON&time-standard=LST",
       "months": [
         {
           "month": 1,
-          "meanMmPerDay": 16.062,
-          "wetDayFraction": null
+          "meanMmPerDay": 16.0616,
+          "wetDayFraction": 0.9516
         },
         {
           "month": 2,
-          "meanMmPerDay": 15.664,
-          "wetDayFraction": null
+          "meanMmPerDay": 15.6653,
+          "wetDayFraction": 0.8657
         },
         {
           "month": 3,
-          "meanMmPerDay": 11.85,
-          "wetDayFraction": null
+          "meanMmPerDay": 11.8509,
+          "wetDayFraction": 0.871
         },
         {
           "month": 4,
-          "meanMmPerDay": 9.272,
-          "wetDayFraction": null
+          "meanMmPerDay": 9.2723,
+          "wetDayFraction": 0.8633
         },
         {
           "month": 5,
-          "meanMmPerDay": 8.376,
-          "wetDayFraction": null
+          "meanMmPerDay": 8.3754,
+          "wetDayFraction": 0.9097
         },
         {
           "month": 6,
-          "meanMmPerDay": 9.317,
-          "wetDayFraction": null
+          "meanMmPerDay": 9.3175,
+          "wetDayFraction": 0.8867
         },
         {
           "month": 7,
-          "meanMmPerDay": 6.74,
-          "wetDayFraction": null
+          "meanMmPerDay": 6.7398,
+          "wetDayFraction": 0.7323
         },
         {
           "month": 8,
-          "meanMmPerDay": 8.748,
-          "wetDayFraction": null
+          "meanMmPerDay": 8.7466,
+          "wetDayFraction": 0.8323
         },
         {
           "month": 9,
-          "meanMmPerDay": 8.409,
-          "wetDayFraction": null
+          "meanMmPerDay": 8.4098,
+          "wetDayFraction": 0.8467
         },
         {
           "month": 10,
-          "meanMmPerDay": 9.112,
-          "wetDayFraction": null
+          "meanMmPerDay": 9.1118,
+          "wetDayFraction": 0.9419
         },
         {
           "month": 11,
-          "meanMmPerDay": 11.25,
-          "wetDayFraction": null
+          "meanMmPerDay": 11.2502,
+          "wetDayFraction": 0.9733
         },
         {
           "month": 12,
-          "meanMmPerDay": 14.1,
-          "wetDayFraction": null
+          "meanMmPerDay": 14.1002,
+          "wetDayFraction": 0.9355
         }
       ],
       "vulnerable": true,
       "excludedMonths": [
         1,
         2
+      ],
+      "reason": "Heavy or persistent wet-season screening threshold met; two wettest months excluded."
+    },
+    {
+      "country": "malaysia",
+      "regionIndex": 5,
+      "label": "Pantai Cenang (Langkawi)",
+      "id": "pantai-cenang",
+      "latitude": 6.2941,
+      "longitude": 99.7226,
+      "referenceNote": "Named accommodation-town point; broader excursions, mountains and island coasts can differ.",
+      "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=99.7226&latitude=6.2941&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "months": [
+        {
+          "month": 1,
+          "meanMmPerDay": 2.7244,
+          "wetDayFraction": 0.3774
+        },
+        {
+          "month": 2,
+          "meanMmPerDay": 1.3804,
+          "wetDayFraction": 0.2155
+        },
+        {
+          "month": 3,
+          "meanMmPerDay": 2.5959,
+          "wetDayFraction": 0.371
+        },
+        {
+          "month": 4,
+          "meanMmPerDay": 5.3709,
+          "wetDayFraction": 0.7467
+        },
+        {
+          "month": 5,
+          "meanMmPerDay": 8.5216,
+          "wetDayFraction": 0.9226
+        },
+        {
+          "month": 6,
+          "meanMmPerDay": 6.3295,
+          "wetDayFraction": 0.84
+        },
+        {
+          "month": 7,
+          "meanMmPerDay": 6.6584,
+          "wetDayFraction": 0.7677
+        },
+        {
+          "month": 8,
+          "meanMmPerDay": 7.841,
+          "wetDayFraction": 0.8323
+        },
+        {
+          "month": 9,
+          "meanMmPerDay": 10.0581,
+          "wetDayFraction": 0.8733
+        },
+        {
+          "month": 10,
+          "meanMmPerDay": 10.5261,
+          "wetDayFraction": 0.9161
+        },
+        {
+          "month": 11,
+          "meanMmPerDay": 11.7998,
+          "wetDayFraction": 0.94
+        },
+        {
+          "month": 12,
+          "meanMmPerDay": 4.639,
+          "wetDayFraction": 0.6032
+        }
+      ],
+      "vulnerable": true,
+      "excludedMonths": [
+        11,
+        10
       ],
       "reason": "Heavy or persistent wet-season screening threshold met; two wettest months excluded."
     },

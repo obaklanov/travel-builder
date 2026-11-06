@@ -1442,6 +1442,158 @@
           "accessNote": "Vientiane airport followed by ground/rail travel."
         }
       ]
+    },
+    "malaysia": {
+      "approvedAt": "2026-11-06",
+      "authorization": "User authorized selection and immediate deployment of the next two countries.",
+      "liveLabelsUpdated": true,
+      "indexCompatibility": "Original Kuala Lumpur, Penang, Terengganu, Kota Kinabalu and Kuching slots retained as named cities. Pantai Cenang (Langkawi) appended.",
+      "seasonalityStatus": "NASA POWER/MERRA-2 2016–2025 local-solar daily climate, total precipitation. Crowd/price inputs are provisional editorial proxies. Selected typical-month events are partial coverage, not future schedules. Existing Manila station-based rain exclusion retained.",
+      "destinations": [
+        {
+          "name": "Kuala Lumpur",
+          "area": "West",
+          "climateType": "standard",
+          "climateTypeLabel": "Warm living",
+          "airportCandidates": [
+            "KUL"
+          ],
+          "treasures": [
+            "Petronas Twin Towers",
+            "Batu Caves"
+          ]
+        },
+        {
+          "name": "George Town",
+          "area": "Penang",
+          "climateType": "standard",
+          "climateTypeLabel": "Warm living",
+          "airportCandidates": [
+            "PEN"
+          ]
+        },
+        {
+          "name": "Kuala Terengganu",
+          "area": "East Coast",
+          "climateType": "standard",
+          "climateTypeLabel": "Warm living",
+          "airportCandidates": [
+            "TGG"
+          ],
+          "coverageNote": "Heritage-city stay; offshore island operations require separate checks."
+        },
+        {
+          "name": "Kota Kinabalu",
+          "area": "Sabah",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "BKI"
+          ],
+          "treasures": [
+            "Mount Kinabalu"
+          ],
+          "accessNote": "Kinabalu Park is an onward excursion, and summit climbing conditions cannot be inferred from coastal city weather."
+        },
+        {
+          "name": "Kuching",
+          "area": "Sarawak",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "KCH"
+          ],
+          "nearbyPlaces": [
+            "Sarawak Cultural Village",
+            "Bako National Park"
+          ]
+        },
+        {
+          "name": "Pantai Cenang",
+          "area": "Langkawi",
+          "climateType": "beach",
+          "climateTypeLabel": "Beach",
+          "airportCandidates": [
+            "LGK"
+          ]
+        }
+      ]
+    },
+    "philippines": {
+      "approvedAt": "2026-11-06",
+      "authorization": "User authorized selection and immediate deployment of the next two countries.",
+      "liveLabelsUpdated": true,
+      "indexCompatibility": "Original Manila, Cebu/Bohol, Palawan and Boracay slots retained as Manila, Cebu City, El Nido and Boracay. Panglao and Banaue appended.",
+      "seasonalityStatus": "NASA POWER/MERRA-2 2016–2025 local-solar daily climate, total precipitation. Crowd/price inputs are provisional editorial proxies. Selected typical-month events are partial coverage, not future schedules. Existing Manila station-based rain exclusion retained.",
+      "destinations": [
+        {
+          "name": "Manila",
+          "area": "Metro Manila",
+          "climateType": "standard",
+          "climateTypeLabel": "Warm living",
+          "airportCandidates": [
+            "MNL"
+          ]
+        },
+        {
+          "name": "Cebu City",
+          "area": "Central Visayas",
+          "climateType": "standard",
+          "climateTypeLabel": "Warm living",
+          "airportCandidates": [
+            "CEB"
+          ]
+        },
+        {
+          "name": "El Nido",
+          "area": "Palawan",
+          "climateType": "beach",
+          "climateTypeLabel": "Beach",
+          "airportCandidates": [
+            "ENI"
+          ],
+          "treasures": [
+            "El Nido"
+          ],
+          "accessNote": "ENI local airport; boat excursions and sea conditions checked separately."
+        },
+        {
+          "name": "Boracay",
+          "area": "Western Visayas",
+          "climateType": "beach",
+          "climateTypeLabel": "Beach",
+          "airportCandidates": [
+            "MPH"
+          ],
+          "accessNote": "Caticlan airport followed by ground/boat transfer."
+        },
+        {
+          "name": "Panglao",
+          "area": "Bohol",
+          "climateType": "beach",
+          "climateTypeLabel": "Beach",
+          "airportCandidates": [
+            "TAG"
+          ],
+          "treasures": [
+            "Chocolate Hills"
+          ],
+          "accessNote": "TAG airport; Chocolate Hills requires an inland Bohol excursion."
+        },
+        {
+          "name": "Banaue",
+          "area": "Ifugao highlands",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "MNL"
+          ],
+          "treasures": [
+            "Batad Rice Terraces"
+          ],
+          "accessNote": "MNL is a distant gateway requiring a long overland transfer. Batad local access/walking and rice crop cycles need separate planning."
+        }
+      ]
     }
   },
   "climateTypeAssignments": {
@@ -1738,6 +1890,78 @@
       "climateType": "all-season",
       "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
       "status": "Owner-approved Japan/Laos rollout, 6 November 2026."
+    },
+    "malaysia:kuala-lumpur": {
+      "name": "Kuala Lumpur",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Authorized autonomous Malaysia/Philippines rollout, 6 November 2026."
+    },
+    "malaysia:george-town": {
+      "name": "George Town",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Authorized autonomous Malaysia/Philippines rollout, 6 November 2026."
+    },
+    "malaysia:kuala-terengganu": {
+      "name": "Kuala Terengganu",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Authorized autonomous Malaysia/Philippines rollout, 6 November 2026."
+    },
+    "malaysia:kota-kinabalu": {
+      "name": "Kota Kinabalu",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous Malaysia/Philippines rollout, 6 November 2026."
+    },
+    "malaysia:kuching": {
+      "name": "Kuching",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous Malaysia/Philippines rollout, 6 November 2026."
+    },
+    "malaysia:pantai-cenang": {
+      "name": "Pantai Cenang",
+      "climateType": "beach",
+      "reason": "Approved beach-oriented holiday base; 25°C target.",
+      "status": "Authorized autonomous Malaysia/Philippines rollout, 6 November 2026."
+    },
+    "philippines:manila": {
+      "name": "Manila",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Authorized autonomous Malaysia/Philippines rollout, 6 November 2026."
+    },
+    "philippines:cebu-city": {
+      "name": "Cebu City",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Authorized autonomous Malaysia/Philippines rollout, 6 November 2026."
+    },
+    "philippines:el-nido": {
+      "name": "El Nido",
+      "climateType": "beach",
+      "reason": "Approved beach-oriented holiday base; 25°C target.",
+      "status": "Authorized autonomous Malaysia/Philippines rollout, 6 November 2026."
+    },
+    "philippines:boracay": {
+      "name": "Boracay",
+      "climateType": "beach",
+      "reason": "Approved beach-oriented holiday base; 25°C target.",
+      "status": "Authorized autonomous Malaysia/Philippines rollout, 6 November 2026."
+    },
+    "philippines:panglao": {
+      "name": "Panglao",
+      "climateType": "beach",
+      "reason": "Approved beach-oriented holiday base; 25°C target.",
+      "status": "Authorized autonomous Malaysia/Philippines rollout, 6 November 2026."
+    },
+    "philippines:banaue": {
+      "name": "Banaue",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized autonomous Malaysia/Philippines rollout, 6 November 2026."
     }
   }
 }
