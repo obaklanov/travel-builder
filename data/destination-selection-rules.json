@@ -1160,6 +1160,130 @@
           ]
         }
       ]
+    },
+    "brunei": {
+      "approvedAt": "2026-11-06",
+      "liveLabelsUpdated": true,
+      "indexCompatibility": "Original capital and Temburong slots retained as Bandar Seri Begawan and Bangar.",
+      "seasonalityStatus": "NASA POWER/MERRA-2 2016–2025 local solar daily climate; total precipitation. Current Warm living daylight, All season, Beach and rain exclusion rules apply. Crowd/price orders remain editorial proxies. Events are partial typical-month evidence, not future schedules.",
+      "destinations": [
+        {
+          "name": "Bandar Seri Begawan",
+          "area": "Brunei-Muara",
+          "climateType": "standard",
+          "climateTypeLabel": "Warm living",
+          "airportCandidates": [
+            "BWN"
+          ],
+          "treasures": [
+            "Omar Ali Saifuddien Mosque",
+            "Kampong Ayer"
+          ]
+        },
+        {
+          "name": "Bangar",
+          "area": "Temburong",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "BWN"
+          ],
+          "treasures": [
+            "Ulu Temburong National Park"
+          ],
+          "accessNote": "BWN plus onward ground transfer and locally arranged rainforest excursion; Bangar is the town base, not the national park entrance."
+        }
+      ]
+    },
+    "indonesia": {
+      "approvedAt": "2026-11-06",
+      "liveLabelsUpdated": true,
+      "indexCompatibility": "Original Bali, Jakarta, Yogyakarta, Lombok and Komodo slots retained as Ubud, Jakarta, Yogyakarta, Senggigi and Labuan Bajo. Malang and Sanur appended.",
+      "seasonalityStatus": "NASA POWER/MERRA-2 2016–2025 local solar daily climate; total precipitation. Current Warm living daylight, All season, Beach and rain exclusion rules apply. Crowd/price orders remain editorial proxies. Events are partial typical-month evidence, not future schedules.",
+      "destinations": [
+        {
+          "name": "Ubud",
+          "area": "Central Bali",
+          "climateType": "standard",
+          "climateTypeLabel": "Warm living",
+          "airportCandidates": [
+            "DPS"
+          ],
+          "treasures": [
+            "Ulun Danu Beratan"
+          ],
+          "accessNote": "Lake Beratan requires an excursion; Ubud and Sanur represent different inland/coastal stays despite sharing DPS."
+        },
+        {
+          "name": "Jakarta",
+          "area": "Western Java",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "CGK"
+          ]
+        },
+        {
+          "name": "Yogyakarta",
+          "area": "Central Java",
+          "climateType": "standard",
+          "climateTypeLabel": "Warm living",
+          "airportCandidates": [
+            "YIA"
+          ],
+          "treasures": [
+            "Borobudur"
+          ],
+          "nearbyPlaces": [
+            "Prambanan"
+          ]
+        },
+        {
+          "name": "Senggigi",
+          "area": "Western Lombok",
+          "climateType": "beach",
+          "climateTypeLabel": "Beach",
+          "airportCandidates": [
+            "LOP"
+          ]
+        },
+        {
+          "name": "Labuan Bajo",
+          "area": "Western Flores",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "LBJ"
+          ],
+          "treasures": [
+            "Komodo National Park"
+          ],
+          "accessNote": "Boat excursion and current park access require separate checks."
+        },
+        {
+          "name": "Malang",
+          "area": "Eastern Java",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "MLG",
+            "SUB"
+          ],
+          "nearbyPlaces": [
+            "Bromo"
+          ],
+          "accessNote": "MLG or SUB with onward ground travel; Bromo is an excursion, not within Malang city."
+        },
+        {
+          "name": "Sanur",
+          "area": "Southern Bali",
+          "climateType": "beach",
+          "climateTypeLabel": "Beach",
+          "airportCandidates": [
+            "DPS"
+          ]
+        }
+      ]
     }
   },
   "climateTypeAssignments": {
@@ -1330,6 +1454,60 @@
       "climateType": "beach",
       "reason": "Approved beach-oriented holiday base; 25°C target.",
       "status": "Owner-approved Greece rollout, 6 November 2026; Ioannina excluded."
+    },
+    "brunei:bandar-seri-begawan": {
+      "name": "Bandar Seri Begawan",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Owner-approved Brunei/Indonesia rollout, 6 November 2026."
+    },
+    "brunei:bangar": {
+      "name": "Bangar",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Owner-approved Brunei/Indonesia rollout, 6 November 2026."
+    },
+    "indonesia:ubud": {
+      "name": "Ubud",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Owner-approved Brunei/Indonesia rollout, 6 November 2026."
+    },
+    "indonesia:jakarta": {
+      "name": "Jakarta",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Owner-approved Brunei/Indonesia rollout, 6 November 2026."
+    },
+    "indonesia:yogyakarta": {
+      "name": "Yogyakarta",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Owner-approved Brunei/Indonesia rollout, 6 November 2026."
+    },
+    "indonesia:senggigi": {
+      "name": "Senggigi",
+      "climateType": "beach",
+      "reason": "Approved beach-oriented holiday base; 25°C target.",
+      "status": "Owner-approved Brunei/Indonesia rollout, 6 November 2026."
+    },
+    "indonesia:labuan-bajo": {
+      "name": "Labuan Bajo",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Owner-approved Brunei/Indonesia rollout, 6 November 2026."
+    },
+    "indonesia:malang": {
+      "name": "Malang",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Owner-approved Brunei/Indonesia rollout, 6 November 2026."
+    },
+    "indonesia:sanur": {
+      "name": "Sanur",
+      "climateType": "beach",
+      "reason": "Approved beach-oriented holiday base; 25°C target.",
+      "status": "Owner-approved Brunei/Indonesia rollout, 6 November 2026."
     }
   }
 }

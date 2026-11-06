@@ -37,6 +37,20 @@
         "timeStandard": "Local solar time",
         "sourceUrl": "https://power.larc.nasa.gov/docs/services/api/temporal/daily/",
         "rainDefinition": "PRECTOTCORR total precipitation, including snow, averaged across all calendar days in mm/day. Alternative to ERA5 rain-only data due daily API quota; not directly identical."
+      },
+      "brunei": {
+        "model": "NASA POWER/MERRA-2",
+        "period": "2016–2025",
+        "timeStandard": "Local solar time",
+        "sourceUrl": "https://power.larc.nasa.gov/docs/services/api/temporal/daily/",
+        "rainDefinition": "PRECTOTCORR total precipitation, including snow, averaged across all calendar days in mm/day. Alternative to ERA5 rain-only data due daily API quota; not directly identical."
+      },
+      "indonesia": {
+        "model": "NASA POWER/MERRA-2",
+        "period": "2016–2025",
+        "timeStandard": "Local solar time",
+        "sourceUrl": "https://power.larc.nasa.gov/docs/services/api/temporal/daily/",
+        "rainDefinition": "PRECTOTCORR total precipitation, including snow, averaged across all calendar days in mm/day. Alternative to ERA5 rain-only data due daily API quota; not directly identical."
       }
     }
   },
@@ -18606,6 +18620,1515 @@
       },
       "events": [],
       "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "brunei",
+      "id": "bandar-seri-begawan",
+      "name": "Bandar Seri Begawan",
+      "area": "Brunei-Muara",
+      "latitude": 4.9031,
+      "longitude": 114.9398,
+      "airports": [
+        [
+          "BWN",
+          "Brunei International"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 0,
+      "gridLatitude": 4.9031,
+      "gridLongitude": 114.9398,
+      "elevation": 32.34,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=114.9398&latitude=4.9031&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeSources": [
+        "https://www.bruneitourism.com/temburong/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.15,
+          "meanDailyHighC": 28.71,
+          "meanRainMmPerDay": 9.8812,
+          "meanRelativeHumidityPct": 84.91,
+          "rainyDayFraction": 0.8452
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 26.86,
+          "meanDailyHighC": 28.61,
+          "meanRainMmPerDay": 6.2449,
+          "meanRelativeHumidityPct": 85.09,
+          "rainyDayFraction": 0.6502
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.14,
+          "meanDailyHighC": 28.92,
+          "meanRainMmPerDay": 6.3766,
+          "meanRelativeHumidityPct": 84.83,
+          "rainyDayFraction": 0.7
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 27.98,
+          "meanDailyHighC": 29.6,
+          "meanRainMmPerDay": 7.0611,
+          "meanRelativeHumidityPct": 81.86,
+          "rainyDayFraction": 0.81
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.47,
+          "meanDailyHighC": 29.9,
+          "meanRainMmPerDay": 9.1829,
+          "meanRelativeHumidityPct": 81.19,
+          "rainyDayFraction": 0.8581
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 28.04,
+          "meanDailyHighC": 29.4,
+          "meanRainMmPerDay": 9.2373,
+          "meanRelativeHumidityPct": 80.6,
+          "rainyDayFraction": 0.8767
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.91,
+          "meanDailyHighC": 29.33,
+          "meanRainMmPerDay": 9.5754,
+          "meanRelativeHumidityPct": 80.76,
+          "rainyDayFraction": 0.8226
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.99,
+          "meanDailyHighC": 29.48,
+          "meanRainMmPerDay": 9.9439,
+          "meanRelativeHumidityPct": 80.8,
+          "rainyDayFraction": 0.8258
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 27.73,
+          "meanDailyHighC": 29.23,
+          "meanRainMmPerDay": 10.4459,
+          "meanRelativeHumidityPct": 81.71,
+          "rainyDayFraction": 0.8933
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.56,
+          "meanDailyHighC": 29.02,
+          "meanRainMmPerDay": 11.6621,
+          "meanRelativeHumidityPct": 83.37,
+          "rainyDayFraction": 0.9323
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 27.69,
+          "meanDailyHighC": 29.15,
+          "meanRainMmPerDay": 10.8574,
+          "meanRelativeHumidityPct": 83,
+          "rainyDayFraction": 0.96
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.5,
+          "meanDailyHighC": 28.91,
+          "meanRainMmPerDay": 11.8832,
+          "meanRelativeHumidityPct": 83.68,
+          "rainyDayFraction": 0.9613
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Brunei sightseeing and Indonesian urban/island contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          2,
+          3,
+          5,
+          4,
+          9,
+          8,
+          6,
+          10,
+          11,
+          1,
+          12,
+          7
+        ],
+        "sourceUrls": [
+          "https://www.bruneitourism.com/temburong/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          2,
+          3,
+          5,
+          4,
+          9,
+          8,
+          6,
+          10,
+          11,
+          1,
+          12,
+          7
+        ],
+        "sourceUrls": [
+          "https://www.bruneitourism.com/temburong/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "brunei",
+      "id": "bangar",
+      "name": "Bangar",
+      "area": "Temburong",
+      "latitude": 4.7086,
+      "longitude": 115.073,
+      "airports": [
+        [
+          "BWN",
+          "Brunei International"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 1,
+      "gridLatitude": 4.7086,
+      "gridLongitude": 115.073,
+      "elevation": 239.6,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=115.073&latitude=4.7086&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://www.bruneitourism.com/temburong/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates. BWN is a gateway, not a local Bangar airport; onward ground transfer and rainforest tour arrangements required. Town climate does not represent all elevations inside Ulu Temburong.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.28,
+          "meanDailyHighC": 28.49,
+          "meanRainMmPerDay": 9.5123,
+          "meanRelativeHumidityPct": 89.75,
+          "rainyDayFraction": 0.7645
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 25.26,
+          "meanDailyHighC": 28.82,
+          "meanRainMmPerDay": 6.5928,
+          "meanRelativeHumidityPct": 88.66,
+          "rainyDayFraction": 0.576
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.53,
+          "meanDailyHighC": 29.09,
+          "meanRainMmPerDay": 6.4115,
+          "meanRelativeHumidityPct": 88.71,
+          "rainyDayFraction": 0.6355
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.99,
+          "meanDailyHighC": 29.23,
+          "meanRainMmPerDay": 6.8109,
+          "meanRelativeHumidityPct": 88.21,
+          "rainyDayFraction": 0.7333
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.25,
+          "meanDailyHighC": 29.17,
+          "meanRainMmPerDay": 8.9006,
+          "meanRelativeHumidityPct": 88.68,
+          "rainyDayFraction": 0.8
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.69,
+          "meanDailyHighC": 28.54,
+          "meanRainMmPerDay": 9.2246,
+          "meanRelativeHumidityPct": 88.21,
+          "rainyDayFraction": 0.8033
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.57,
+          "meanDailyHighC": 28.53,
+          "meanRainMmPerDay": 9.2335,
+          "meanRelativeHumidityPct": 87.55,
+          "rainyDayFraction": 0.729
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.71,
+          "meanDailyHighC": 28.84,
+          "meanRainMmPerDay": 9.6463,
+          "meanRelativeHumidityPct": 87.45,
+          "rainyDayFraction": 0.7258
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.52,
+          "meanDailyHighC": 28.69,
+          "meanRainMmPerDay": 10.6919,
+          "meanRelativeHumidityPct": 87.98,
+          "rainyDayFraction": 0.7767
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.42,
+          "meanDailyHighC": 28.54,
+          "meanRainMmPerDay": 11.1217,
+          "meanRelativeHumidityPct": 89.21,
+          "rainyDayFraction": 0.871
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.51,
+          "meanDailyHighC": 28.55,
+          "meanRainMmPerDay": 10.1579,
+          "meanRelativeHumidityPct": 89.54,
+          "rainyDayFraction": 0.8967
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.33,
+          "meanDailyHighC": 28.26,
+          "meanRainMmPerDay": 11.8268,
+          "meanRelativeHumidityPct": 89.98,
+          "rainyDayFraction": 0.9129
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Brunei sightseeing and Indonesian urban/island contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          2,
+          3,
+          5,
+          4,
+          9,
+          8,
+          6,
+          10,
+          11,
+          1,
+          12,
+          7
+        ],
+        "sourceUrls": [
+          "https://www.bruneitourism.com/temburong/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          2,
+          3,
+          5,
+          4,
+          9,
+          8,
+          6,
+          10,
+          11,
+          1,
+          12,
+          7
+        ],
+        "sourceUrls": [
+          "https://www.bruneitourism.com/temburong/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "indonesia",
+      "id": "ubud",
+      "name": "Ubud",
+      "area": "Central Bali",
+      "latitude": -8.5069,
+      "longitude": 115.2625,
+      "airports": [
+        [
+          "DPS",
+          "Bali Denpasar"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 0,
+      "gridLatitude": -8.5069,
+      "gridLongitude": 115.2625,
+      "elevation": 313.73,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=115.2625&latitude=-8.5069&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeSources": [
+        "https://www.indonesia.travel/id/id"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.8,
+          "meanDailyHighC": 28.33,
+          "meanRainMmPerDay": 10.2101,
+          "meanRelativeHumidityPct": 85.4,
+          "rainyDayFraction": 0.9032
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 25.75,
+          "meanDailyHighC": 28.1,
+          "meanRainMmPerDay": 10.2282,
+          "meanRelativeHumidityPct": 86.19,
+          "rainyDayFraction": 0.9541
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.99,
+          "meanDailyHighC": 28.47,
+          "meanRainMmPerDay": 7.4316,
+          "meanRelativeHumidityPct": 85.14,
+          "rainyDayFraction": 0.8645
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.94,
+          "meanDailyHighC": 28.61,
+          "meanRainMmPerDay": 3.9552,
+          "meanRelativeHumidityPct": 84.99,
+          "rainyDayFraction": 0.65
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.46,
+          "meanDailyHighC": 28.17,
+          "meanRainMmPerDay": 2.2896,
+          "meanRelativeHumidityPct": 85.77,
+          "rainyDayFraction": 0.4065
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 24.74,
+          "meanDailyHighC": 27.41,
+          "meanRainMmPerDay": 2.6995,
+          "meanRelativeHumidityPct": 85.69,
+          "rainyDayFraction": 0.4367
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 23.94,
+          "meanDailyHighC": 26.82,
+          "meanRainMmPerDay": 1.6816,
+          "meanRelativeHumidityPct": 84.38,
+          "rainyDayFraction": 0.2613
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.01,
+          "meanDailyHighC": 27.39,
+          "meanRainMmPerDay": 0.9112,
+          "meanRelativeHumidityPct": 82.55,
+          "rainyDayFraction": 0.2032
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 24.87,
+          "meanDailyHighC": 28.62,
+          "meanRainMmPerDay": 1.9792,
+          "meanRelativeHumidityPct": 81.21,
+          "rainyDayFraction": 0.26
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.9,
+          "meanDailyHighC": 29.7,
+          "meanRainMmPerDay": 3.052,
+          "meanRelativeHumidityPct": 80.46,
+          "rainyDayFraction": 0.4032
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 26.33,
+          "meanDailyHighC": 29.61,
+          "meanRainMmPerDay": 6.8015,
+          "meanRelativeHumidityPct": 82.29,
+          "rainyDayFraction": 0.7267
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.03,
+          "meanDailyHighC": 28.82,
+          "meanRainMmPerDay": 9.6282,
+          "meanRelativeHumidityPct": 84.3,
+          "rainyDayFraction": 0.8839
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Brunei sightseeing and Indonesian urban/island contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          2,
+          3,
+          1,
+          11,
+          10,
+          4,
+          5,
+          9,
+          6,
+          12,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.indonesia.travel/id/id"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          2,
+          3,
+          1,
+          11,
+          10,
+          4,
+          5,
+          9,
+          6,
+          12,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.indonesia.travel/id/id"
+        ]
+      },
+      "events": [
+        {
+          "name": "Bali Arts Festival (Denpasar excursion)",
+          "months": [
+            6,
+            7
+          ],
+          "prominence": 1,
+          "sourceUrl": "https://www.indonesia.travel/id/en/events/event-detail/pesta-kesenian-bali"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "indonesia",
+      "id": "jakarta",
+      "name": "Jakarta",
+      "area": "Western Java",
+      "latitude": -6.2088,
+      "longitude": 106.8456,
+      "airports": [
+        [
+          "CGK",
+          "Jakarta Soekarno-Hatta"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 1,
+      "gridLatitude": -6.2088,
+      "gridLongitude": 106.8456,
+      "elevation": 12.32,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=106.8456&latitude=-6.2088&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://www.indonesia.travel/id/id"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.21,
+          "meanDailyHighC": 29.04,
+          "meanRainMmPerDay": 10.3841,
+          "meanRelativeHumidityPct": 84.77,
+          "rainyDayFraction": 0.9581
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 27.06,
+          "meanDailyHighC": 28.75,
+          "meanRainMmPerDay": 15.343,
+          "meanRelativeHumidityPct": 85.63,
+          "rainyDayFraction": 0.9929
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.49,
+          "meanDailyHighC": 29.38,
+          "meanRainMmPerDay": 9.0812,
+          "meanRelativeHumidityPct": 84.14,
+          "rainyDayFraction": 0.9613
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 27.92,
+          "meanDailyHighC": 29.82,
+          "meanRainMmPerDay": 7.114,
+          "meanRelativeHumidityPct": 82.9,
+          "rainyDayFraction": 0.96
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.12,
+          "meanDailyHighC": 30.06,
+          "meanRainMmPerDay": 4.7294,
+          "meanRelativeHumidityPct": 82.71,
+          "rainyDayFraction": 0.7806
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 27.61,
+          "meanDailyHighC": 29.58,
+          "meanRainMmPerDay": 3.9286,
+          "meanRelativeHumidityPct": 82.17,
+          "rainyDayFraction": 0.71
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.15,
+          "meanDailyHighC": 29.45,
+          "meanRainMmPerDay": 2.9616,
+          "meanRelativeHumidityPct": 80.48,
+          "rainyDayFraction": 0.4548
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.16,
+          "meanDailyHighC": 29.76,
+          "meanRainMmPerDay": 1.9858,
+          "meanRelativeHumidityPct": 79.18,
+          "rainyDayFraction": 0.3806
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 27.66,
+          "meanDailyHighC": 30.41,
+          "meanRainMmPerDay": 3.2585,
+          "meanRelativeHumidityPct": 77.74,
+          "rainyDayFraction": 0.5367
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.16,
+          "meanDailyHighC": 30.69,
+          "meanRainMmPerDay": 5.3987,
+          "meanRelativeHumidityPct": 78.14,
+          "rainyDayFraction": 0.7323
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 28.01,
+          "meanDailyHighC": 30.18,
+          "meanRainMmPerDay": 7.635,
+          "meanRelativeHumidityPct": 80.23,
+          "rainyDayFraction": 0.9233
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.53,
+          "meanDailyHighC": 29.54,
+          "meanRainMmPerDay": 7.7673,
+          "meanRelativeHumidityPct": 82.88,
+          "rainyDayFraction": 0.9484
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Brunei sightseeing and Indonesian urban/island contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          2,
+          3,
+          1,
+          11,
+          10,
+          4,
+          5,
+          9,
+          6,
+          12,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.indonesia.travel/id/id"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          2,
+          3,
+          1,
+          11,
+          10,
+          4,
+          5,
+          9,
+          6,
+          12,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.indonesia.travel/id/id"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "indonesia",
+      "id": "yogyakarta",
+      "name": "Yogyakarta",
+      "area": "Central Java",
+      "latitude": -7.7956,
+      "longitude": 110.3695,
+      "airports": [
+        [
+          "YIA",
+          "Yogyakarta International"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 2,
+      "gridLatitude": -7.7956,
+      "gridLongitude": 110.3695,
+      "elevation": 159.13,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=110.3695&latitude=-7.7956&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeSources": [
+        "https://www.indonesia.travel/id/id"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.32,
+          "meanDailyHighC": 28.61,
+          "meanRainMmPerDay": 9.8676,
+          "meanRelativeHumidityPct": 86.46,
+          "rainyDayFraction": 0.9581
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 26.3,
+          "meanDailyHighC": 28.56,
+          "meanRainMmPerDay": 13.3601,
+          "meanRelativeHumidityPct": 86.73,
+          "rainyDayFraction": 0.9753
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.54,
+          "meanDailyHighC": 28.89,
+          "meanRainMmPerDay": 8.0743,
+          "meanRelativeHumidityPct": 85.84,
+          "rainyDayFraction": 0.9258
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 26.77,
+          "meanDailyHighC": 29.29,
+          "meanRainMmPerDay": 7.4889,
+          "meanRelativeHumidityPct": 85.22,
+          "rainyDayFraction": 0.8833
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.36,
+          "meanDailyHighC": 29.08,
+          "meanRainMmPerDay": 5.4387,
+          "meanRelativeHumidityPct": 86.04,
+          "rainyDayFraction": 0.6097
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.73,
+          "meanDailyHighC": 28.66,
+          "meanRainMmPerDay": 4.3459,
+          "meanRelativeHumidityPct": 85.41,
+          "rainyDayFraction": 0.6033
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.81,
+          "meanDailyHighC": 28.26,
+          "meanRainMmPerDay": 1.9564,
+          "meanRelativeHumidityPct": 83.9,
+          "rainyDayFraction": 0.3355
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.01,
+          "meanDailyHighC": 29.08,
+          "meanRainMmPerDay": 1.6375,
+          "meanRelativeHumidityPct": 80.21,
+          "rainyDayFraction": 0.2516
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.81,
+          "meanDailyHighC": 30.17,
+          "meanRainMmPerDay": 4.2799,
+          "meanRelativeHumidityPct": 78.59,
+          "rainyDayFraction": 0.48
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.44,
+          "meanDailyHighC": 30.37,
+          "meanRainMmPerDay": 5.7366,
+          "meanRelativeHumidityPct": 80.05,
+          "rainyDayFraction": 0.6323
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 26.57,
+          "meanDailyHighC": 29.42,
+          "meanRainMmPerDay": 8.7792,
+          "meanRelativeHumidityPct": 83.85,
+          "rainyDayFraction": 0.8633
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.28,
+          "meanDailyHighC": 28.68,
+          "meanRainMmPerDay": 10.5571,
+          "meanRelativeHumidityPct": 85.87,
+          "rainyDayFraction": 0.9258
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Brunei sightseeing and Indonesian urban/island contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          2,
+          3,
+          1,
+          11,
+          10,
+          4,
+          5,
+          9,
+          6,
+          12,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.indonesia.travel/id/id"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          2,
+          3,
+          1,
+          11,
+          10,
+          4,
+          5,
+          9,
+          6,
+          12,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.indonesia.travel/id/id"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "indonesia",
+      "id": "senggigi",
+      "name": "Senggigi",
+      "area": "Western Lombok",
+      "latitude": -8.4919,
+      "longitude": 116.0439,
+      "airports": [
+        [
+          "LOP",
+          "Lombok International"
+        ]
+      ],
+      "climateType": "beach",
+      "regionIndex": 3,
+      "gridLatitude": -8.4919,
+      "gridLongitude": 116.0439,
+      "elevation": 174.76,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=116.0439&latitude=-8.4919&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Approved beach-oriented holiday base; 25°C target.",
+      "climateTypeSources": [
+        "https://www.indonesia.travel/id/id"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.77,
+          "meanDailyHighC": 28.95,
+          "meanRainMmPerDay": 9.5873,
+          "meanRelativeHumidityPct": 83.69,
+          "rainyDayFraction": 0.9
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 26.62,
+          "meanDailyHighC": 28.67,
+          "meanRainMmPerDay": 9.2623,
+          "meanRelativeHumidityPct": 84.91,
+          "rainyDayFraction": 0.9329
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.94,
+          "meanDailyHighC": 29.07,
+          "meanRainMmPerDay": 7.3743,
+          "meanRelativeHumidityPct": 83.57,
+          "rainyDayFraction": 0.871
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 27.16,
+          "meanDailyHighC": 29.62,
+          "meanRainMmPerDay": 3.7712,
+          "meanRelativeHumidityPct": 81.53,
+          "rainyDayFraction": 0.6067
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.78,
+          "meanDailyHighC": 29.47,
+          "meanRainMmPerDay": 1.657,
+          "meanRelativeHumidityPct": 82.11,
+          "rainyDayFraction": 0.3419
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 26.09,
+          "meanDailyHighC": 28.85,
+          "meanRainMmPerDay": 1.7321,
+          "meanRelativeHumidityPct": 81.77,
+          "rainyDayFraction": 0.34
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.5,
+          "meanDailyHighC": 28.72,
+          "meanRainMmPerDay": 0.9067,
+          "meanRelativeHumidityPct": 79.73,
+          "rainyDayFraction": 0.1871
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.88,
+          "meanDailyHighC": 29.66,
+          "meanRainMmPerDay": 0.4182,
+          "meanRelativeHumidityPct": 76.23,
+          "rainyDayFraction": 0.1129
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 26.84,
+          "meanDailyHighC": 30.93,
+          "meanRainMmPerDay": 1.4037,
+          "meanRelativeHumidityPct": 74.86,
+          "rainyDayFraction": 0.2167
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.71,
+          "meanDailyHighC": 31.58,
+          "meanRainMmPerDay": 2.6466,
+          "meanRelativeHumidityPct": 75.08,
+          "rainyDayFraction": 0.3903
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 27.76,
+          "meanDailyHighC": 30.75,
+          "meanRainMmPerDay": 6.371,
+          "meanRelativeHumidityPct": 78.41,
+          "rainyDayFraction": 0.7467
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.17,
+          "meanDailyHighC": 29.6,
+          "meanRainMmPerDay": 8.9333,
+          "meanRelativeHumidityPct": 81.99,
+          "rainyDayFraction": 0.9032
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Brunei sightseeing and Indonesian urban/island contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          2,
+          3,
+          1,
+          11,
+          10,
+          4,
+          5,
+          9,
+          6,
+          12,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.indonesia.travel/id/id"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          2,
+          3,
+          1,
+          11,
+          10,
+          4,
+          5,
+          9,
+          6,
+          12,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.indonesia.travel/id/id"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "indonesia",
+      "id": "labuan-bajo",
+      "name": "Labuan Bajo",
+      "area": "Western Flores",
+      "latitude": -8.4964,
+      "longitude": 119.8877,
+      "airports": [
+        [
+          "LBJ",
+          "Labuan Bajo Komodo"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 4,
+      "gridLatitude": -8.4964,
+      "gridLongitude": 119.8877,
+      "elevation": 173.86,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=119.8877&latitude=-8.4964&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://www.indonesia.travel/id/id"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates. Komodo access depends on boat conditions and current park arrangements; these are not inferred from town rainfall.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.42,
+          "meanDailyHighC": 28.14,
+          "meanRainMmPerDay": 13.3939,
+          "meanRelativeHumidityPct": 86.65,
+          "rainyDayFraction": 0.929
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 26.27,
+          "meanDailyHighC": 28.02,
+          "meanRainMmPerDay": 12.2945,
+          "meanRelativeHumidityPct": 87.16,
+          "rainyDayFraction": 0.9611
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.73,
+          "meanDailyHighC": 28.64,
+          "meanRainMmPerDay": 12.2517,
+          "meanRelativeHumidityPct": 85.12,
+          "rainyDayFraction": 0.9677
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 27.05,
+          "meanDailyHighC": 29.34,
+          "meanRainMmPerDay": 8.8929,
+          "meanRelativeHumidityPct": 81.42,
+          "rainyDayFraction": 0.7633
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.77,
+          "meanDailyHighC": 29.32,
+          "meanRainMmPerDay": 4.011,
+          "meanRelativeHumidityPct": 81.28,
+          "rainyDayFraction": 0.4806
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 26.15,
+          "meanDailyHighC": 28.84,
+          "meanRainMmPerDay": 3.0149,
+          "meanRelativeHumidityPct": 79.9,
+          "rainyDayFraction": 0.3933
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.83,
+          "meanDailyHighC": 29.07,
+          "meanRainMmPerDay": 1.3732,
+          "meanRelativeHumidityPct": 76.05,
+          "rainyDayFraction": 0.2161
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.28,
+          "meanDailyHighC": 30.09,
+          "meanRainMmPerDay": 1.2507,
+          "meanRelativeHumidityPct": 72.67,
+          "rainyDayFraction": 0.229
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 27.17,
+          "meanDailyHighC": 31.16,
+          "meanRainMmPerDay": 3.4883,
+          "meanRelativeHumidityPct": 72.7,
+          "rainyDayFraction": 0.4067
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.87,
+          "meanDailyHighC": 31.55,
+          "meanRainMmPerDay": 5.5705,
+          "meanRelativeHumidityPct": 74.86,
+          "rainyDayFraction": 0.6032
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 27.81,
+          "meanDailyHighC": 30.55,
+          "meanRainMmPerDay": 11.0561,
+          "meanRelativeHumidityPct": 79.22,
+          "rainyDayFraction": 0.9167
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.93,
+          "meanDailyHighC": 28.79,
+          "meanRainMmPerDay": 11.3858,
+          "meanRelativeHumidityPct": 84.69,
+          "rainyDayFraction": 0.9516
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Brunei sightseeing and Indonesian urban/island contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          2,
+          3,
+          1,
+          11,
+          10,
+          4,
+          5,
+          9,
+          6,
+          12,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.indonesia.travel/id/id"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          2,
+          3,
+          1,
+          11,
+          10,
+          4,
+          5,
+          9,
+          6,
+          12,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.indonesia.travel/id/id"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "indonesia",
+      "id": "malang",
+      "name": "Malang",
+      "area": "Eastern Java",
+      "latitude": -7.9666,
+      "longitude": 112.6326,
+      "airports": [
+        [
+          "MLG",
+          "Malang"
+        ],
+        [
+          "SUB",
+          "Surabaya Juanda"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 5,
+      "gridLatitude": -7.9666,
+      "gridLongitude": 112.6326,
+      "elevation": 467.71,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=112.6326&latitude=-7.9666&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://www.indonesia.travel/id/id"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.5,
+          "meanDailyHighC": 27.43,
+          "meanRainMmPerDay": 11.2537,
+          "meanRelativeHumidityPct": 88.2,
+          "rainyDayFraction": 0.929
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 24.34,
+          "meanDailyHighC": 27.14,
+          "meanRainMmPerDay": 13.8189,
+          "meanRelativeHumidityPct": 89.51,
+          "rainyDayFraction": 0.9647
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.68,
+          "meanDailyHighC": 27.59,
+          "meanRainMmPerDay": 8.658,
+          "meanRelativeHumidityPct": 88.34,
+          "rainyDayFraction": 0.9097
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 24.89,
+          "meanDailyHighC": 27.98,
+          "meanRainMmPerDay": 7.9502,
+          "meanRelativeHumidityPct": 87.47,
+          "rainyDayFraction": 0.7933
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.51,
+          "meanDailyHighC": 27.95,
+          "meanRainMmPerDay": 5.0098,
+          "meanRelativeHumidityPct": 87.76,
+          "rainyDayFraction": 0.5355
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 23.95,
+          "meanDailyHighC": 27.74,
+          "meanRainMmPerDay": 2.9587,
+          "meanRelativeHumidityPct": 86.05,
+          "rainyDayFraction": 0.4633
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 23.32,
+          "meanDailyHighC": 27.93,
+          "meanRainMmPerDay": 1.5401,
+          "meanRelativeHumidityPct": 82.96,
+          "rainyDayFraction": 0.2452
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.12,
+          "meanDailyHighC": 29.76,
+          "meanRainMmPerDay": 0.8594,
+          "meanRelativeHumidityPct": 76.26,
+          "rainyDayFraction": 0.1839
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.42,
+          "meanDailyHighC": 31.58,
+          "meanRainMmPerDay": 1.8011,
+          "meanRelativeHumidityPct": 71.73,
+          "rainyDayFraction": 0.33
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.31,
+          "meanDailyHighC": 31.97,
+          "meanRainMmPerDay": 3.4028,
+          "meanRelativeHumidityPct": 72.12,
+          "rainyDayFraction": 0.4581
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.81,
+          "meanDailyHighC": 29.83,
+          "meanRainMmPerDay": 7.8512,
+          "meanRelativeHumidityPct": 79.69,
+          "rainyDayFraction": 0.81
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.72,
+          "meanDailyHighC": 27.79,
+          "meanRainMmPerDay": 12.1387,
+          "meanRelativeHumidityPct": 86.92,
+          "rainyDayFraction": 0.929
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Brunei sightseeing and Indonesian urban/island contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          2,
+          3,
+          1,
+          11,
+          10,
+          4,
+          5,
+          9,
+          6,
+          12,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.indonesia.travel/id/id"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          2,
+          3,
+          1,
+          11,
+          10,
+          4,
+          5,
+          9,
+          6,
+          12,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.indonesia.travel/id/id"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "indonesia",
+      "id": "sanur",
+      "name": "Sanur",
+      "area": "Southern Bali",
+      "latitude": -8.693,
+      "longitude": 115.262,
+      "airports": [
+        [
+          "DPS",
+          "Bali Denpasar"
+        ]
+      ],
+      "climateType": "beach",
+      "regionIndex": 6,
+      "gridLatitude": -8.693,
+      "gridLongitude": 115.262,
+      "elevation": 313.73,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=115.262&latitude=-8.693&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Approved beach-oriented holiday base; 25°C target.",
+      "climateTypeSources": [
+        "https://www.indonesia.travel/id/id"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.8,
+          "meanDailyHighC": 28.33,
+          "meanRainMmPerDay": 10.2101,
+          "meanRelativeHumidityPct": 85.4,
+          "rainyDayFraction": 0.9032
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 25.75,
+          "meanDailyHighC": 28.1,
+          "meanRainMmPerDay": 10.2282,
+          "meanRelativeHumidityPct": 86.19,
+          "rainyDayFraction": 0.9541
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.99,
+          "meanDailyHighC": 28.47,
+          "meanRainMmPerDay": 7.4316,
+          "meanRelativeHumidityPct": 85.14,
+          "rainyDayFraction": 0.8645
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.94,
+          "meanDailyHighC": 28.61,
+          "meanRainMmPerDay": 3.9552,
+          "meanRelativeHumidityPct": 84.99,
+          "rainyDayFraction": 0.65
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.46,
+          "meanDailyHighC": 28.17,
+          "meanRainMmPerDay": 2.2896,
+          "meanRelativeHumidityPct": 85.77,
+          "rainyDayFraction": 0.4065
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 24.74,
+          "meanDailyHighC": 27.41,
+          "meanRainMmPerDay": 2.6995,
+          "meanRelativeHumidityPct": 85.69,
+          "rainyDayFraction": 0.4367
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 23.94,
+          "meanDailyHighC": 26.82,
+          "meanRainMmPerDay": 1.6816,
+          "meanRelativeHumidityPct": 84.38,
+          "rainyDayFraction": 0.2613
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.01,
+          "meanDailyHighC": 27.39,
+          "meanRainMmPerDay": 0.9112,
+          "meanRelativeHumidityPct": 82.55,
+          "rainyDayFraction": 0.2032
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 24.87,
+          "meanDailyHighC": 28.62,
+          "meanRainMmPerDay": 1.9792,
+          "meanRelativeHumidityPct": 81.21,
+          "rainyDayFraction": 0.26
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.9,
+          "meanDailyHighC": 29.7,
+          "meanRainMmPerDay": 3.052,
+          "meanRelativeHumidityPct": 80.46,
+          "rainyDayFraction": 0.4032
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 26.33,
+          "meanDailyHighC": 29.61,
+          "meanRainMmPerDay": 6.8015,
+          "meanRelativeHumidityPct": 82.29,
+          "rainyDayFraction": 0.7267
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.03,
+          "meanDailyHighC": 28.82,
+          "meanRainMmPerDay": 9.6282,
+          "meanRelativeHumidityPct": 84.3,
+          "rainyDayFraction": 0.8839
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Brunei sightseeing and Indonesian urban/island contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          2,
+          3,
+          1,
+          11,
+          10,
+          4,
+          5,
+          9,
+          6,
+          12,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.indonesia.travel/id/id"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          2,
+          3,
+          1,
+          11,
+          10,
+          4,
+          5,
+          9,
+          6,
+          12,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.indonesia.travel/id/id"
+        ]
+      },
+      "events": [
+        {
+          "name": "Bali Arts Festival (Denpasar)",
+          "months": [
+            6,
+            7
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://www.indonesia.travel/id/en/events/event-detail/pesta-kesenian-bali"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
     }
   ],
   "destinationTypeAssignments": {
@@ -18776,6 +20299,60 @@
       "climateType": "beach",
       "reason": "Approved beach-oriented holiday base; 25°C target.",
       "status": "Owner-approved Greece rollout, 6 November 2026; Ioannina excluded."
+    },
+    "brunei:bandar-seri-begawan": {
+      "name": "Bandar Seri Begawan",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Owner-approved Brunei/Indonesia rollout, 6 November 2026."
+    },
+    "brunei:bangar": {
+      "name": "Bangar",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Owner-approved Brunei/Indonesia rollout, 6 November 2026."
+    },
+    "indonesia:ubud": {
+      "name": "Ubud",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Owner-approved Brunei/Indonesia rollout, 6 November 2026."
+    },
+    "indonesia:jakarta": {
+      "name": "Jakarta",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Owner-approved Brunei/Indonesia rollout, 6 November 2026."
+    },
+    "indonesia:yogyakarta": {
+      "name": "Yogyakarta",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Owner-approved Brunei/Indonesia rollout, 6 November 2026."
+    },
+    "indonesia:senggigi": {
+      "name": "Senggigi",
+      "climateType": "beach",
+      "reason": "Approved beach-oriented holiday base; 25°C target.",
+      "status": "Owner-approved Brunei/Indonesia rollout, 6 November 2026."
+    },
+    "indonesia:labuan-bajo": {
+      "name": "Labuan Bajo",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Owner-approved Brunei/Indonesia rollout, 6 November 2026."
+    },
+    "indonesia:malang": {
+      "name": "Malang",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Owner-approved Brunei/Indonesia rollout, 6 November 2026."
+    },
+    "indonesia:sanur": {
+      "name": "Sanur",
+      "climateType": "beach",
+      "reason": "Approved beach-oriented holiday base; 25°C target.",
+      "status": "Owner-approved Brunei/Indonesia rollout, 6 November 2026."
     }
   }
 }
