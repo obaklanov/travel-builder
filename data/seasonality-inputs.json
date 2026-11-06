@@ -55,12 +55,13 @@
     "allSeason": {
       "temperatureRangeC": [
         -5,
-        19
+        25
       ],
-      "penaltyPointsPerDegree": 2,
-      "rainWeight": 0.6,
-      "humidityWeight": 0.4,
-      "formula": "MAX(0, rain rank score × 0.60 + humidity rank score × 0.40 − 2 × MAX(−5 − daily mean °C, 0, daily mean °C − 19)). Inclusive range; temperature ranks are not used for this type."
+      "penaltyPointsPerDegree": 5,
+      "rainWeight": 0.8,
+      "humidityWeight": 0.2,
+      "formula": "MAX(0, rain rank score × 0.80 + humidity rank score × 0.20 − 5 × MAX(−5 − daily mean °C, 0, daily mean °C − 25)). Rain target 0 mm/day. Inclusive neutral range; no temperature rank.",
+      "rainTargetMmPerDay": 0
     },
     "beachTemperatureWeightMultiplier": 2,
     "beach": {
@@ -7345,7 +7346,7 @@
       "gridLongitude": -3.25,
       "elevation": 69,
       "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=55.9533&longitude=-3.1883&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FLondon&models=era5",
-      "climateTypeReason": "Owner-approved All season destination; temperature neutral from −5 to 19°C.",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from −5 to 25°C.",
       "climateTypeSources": [
         "https://www.visitbritain.com/en/destinations"
       ],
@@ -8919,7 +8920,7 @@
       "gridLongitude": -4.25,
       "elevation": 15,
       "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=57.4778&longitude=-4.2247&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FLondon&models=era5",
-      "climateTypeReason": "Owner-approved All season destination; temperature neutral from −5 to 19°C.",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from −5 to 25°C.",
       "climateTypeSources": [
         "https://www.visitbritain.com/en/destinations"
       ],
@@ -9097,7 +9098,7 @@
       "gridLongitude": -5,
       "elevation": 7,
       "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=56.8198&longitude=-5.1052&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FLondon&models=era5",
-      "climateTypeReason": "Owner-approved All season destination; temperature neutral from −5 to 19°C.",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from −5 to 25°C.",
       "climateTypeSources": [
         "https://www.visitbritain.com/en/destinations"
       ],
@@ -9266,7 +9267,7 @@
       "gridLongitude": -6,
       "elevation": 17,
       "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=57.4125&longitude=-6.1942&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FLondon&models=era5",
-      "climateTypeReason": "Owner-approved All season destination; temperature neutral from −5 to 19°C.",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from −5 to 25°C.",
       "climateTypeSources": [
         "https://www.visitbritain.com/en/destinations"
       ],
@@ -10795,7 +10796,7 @@
       "gridLongitude": 7.75,
       "elevation": 142,
       "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=48.5734&longitude=7.7521&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FParis&models=era5",
-      "climateTypeReason": "Owner-approved All season destination; temperature neutral from −5 to 19°C.",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from −5 to 25°C.",
       "climateTypeSources": [
         "https://www.france.fr/en/destination/?page=1"
       ],
