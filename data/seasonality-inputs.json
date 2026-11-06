@@ -62,7 +62,24 @@
       "humidityWeight": 0.4,
       "formula": "MAX(0, rain rank score × 0.60 + humidity rank score × 0.40 − 2 × MAX(−5 − daily mean °C, 0, daily mean °C − 19)). Inclusive range; temperature ranks are not used for this type."
     },
-    "beachTemperatureWeightMultiplier": 2
+    "beachTemperatureWeightMultiplier": 2,
+    "beach": {
+      "rainTargetMmPerDay": 0,
+      "minimumMeanTemperatureC": 16,
+      "coldPenaltyThresholdC": 22,
+      "coldPenaltyPointsPerDegree": 5,
+      "weights": {
+        "climate": 0.8,
+        "festivals": 0.1,
+        "crowds": 0.05,
+        "prices": 0.05
+      },
+      "ratingThresholds": {
+        "best": 60,
+        "average": 40
+      },
+      "ratingPolicy": "No forced quota. Below 16°C is UNSUITABLE and ineligible for recommendations. Otherwise BEST >=60, AVERAGE >=40, WORST <40 overall points."
+    }
   },
   "profiles": [
     {
