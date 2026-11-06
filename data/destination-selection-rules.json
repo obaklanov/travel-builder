@@ -1048,6 +1048,118 @@
           "accessNote": "Cuiabá airport requires onward road travel; Pantanal excursions and lodging can be farther along the Transpantaneira."
         }
       ]
+    },
+    "greece": {
+      "approvedAt": "2026-11-06",
+      "liveLabelsUpdated": true,
+      "excludedProposals": [
+        "Ioannina"
+      ],
+      "indexCompatibility": "Existing Athens, Thessaloniki, Santorini, Crete and Corfu slots preserved at 0–4 with city-based labels. Kalambaka, Nafplio, Rhodes Town and Naxos Town appended.",
+      "seasonalityStatus": "NASA POWER/MERRA-2 2016–2025 local solar daily climate, total precipitation. Existing daylight, All season, Beach and rain exclusion rules apply. Crowd/price orders are editorial proxies; selected events use typical months. Orthodox Easter events are not scored until a reviewed Orthodox calendar is supported.",
+      "destinations": [
+        {
+          "name": "Athens",
+          "area": "Attica",
+          "climateType": "standard",
+          "climateTypeLabel": "Warm living",
+          "airportCandidates": [
+            "ATH"
+          ],
+          "treasures": [
+            "Acropolis"
+          ]
+        },
+        {
+          "name": "Thessaloniki",
+          "area": "North",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "SKG"
+          ]
+        },
+        {
+          "name": "Fira",
+          "area": "Santorini",
+          "climateType": "standard",
+          "climateTypeLabel": "Warm living",
+          "airportCandidates": [
+            "JTR"
+          ],
+          "treasures": [
+            "Santorini"
+          ]
+        },
+        {
+          "name": "Chania",
+          "area": "Western Crete",
+          "climateType": "standard",
+          "climateTypeLabel": "Warm living",
+          "airportCandidates": [
+            "CHQ"
+          ],
+          "coverageNote": "Western Crete; not a single-base claim for the entire island."
+        },
+        {
+          "name": "Corfu Town",
+          "area": "Ionian Islands",
+          "climateType": "standard",
+          "climateTypeLabel": "Warm living",
+          "airportCandidates": [
+            "CFU"
+          ]
+        },
+        {
+          "name": "Kalambaka",
+          "area": "Meteora",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "SKG",
+            "ATH"
+          ],
+          "treasures": [
+            "Meteora"
+          ],
+          "nearbyPlaces": [
+            "Kastraki"
+          ],
+          "accessNote": "Thessaloniki or Athens airport followed by substantial ground travel; neither is a local Kalambaka airport."
+        },
+        {
+          "name": "Nafplio",
+          "area": "Peloponnese",
+          "climateType": "standard",
+          "climateTypeLabel": "Warm living",
+          "airportCandidates": [
+            "ATH"
+          ],
+          "nearbyPlaces": [
+            "Mycenae",
+            "Epidaurus"
+          ],
+          "accessNote": "Athens airport followed by ground transfer."
+        },
+        {
+          "name": "Rhodes Town",
+          "area": "Dodecanese",
+          "climateType": "standard",
+          "climateTypeLabel": "Warm living",
+          "airportCandidates": [
+            "RHO"
+          ]
+        },
+        {
+          "name": "Naxos Town",
+          "area": "Cyclades",
+          "climateType": "beach",
+          "climateTypeLabel": "Beach",
+          "airportCandidates": [
+            "JNX"
+          ]
+        }
+      ]
     }
   },
   "climateTypeAssignments": {
@@ -1164,6 +1276,60 @@
       "climateType": "all-season",
       "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
       "status": "Owner-approved Brazil rollout, 6 November 2026."
+    },
+    "greece:athens": {
+      "name": "Athens",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Owner-approved Greece rollout, 6 November 2026; Ioannina excluded."
+    },
+    "greece:thessaloniki": {
+      "name": "Thessaloniki",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Owner-approved Greece rollout, 6 November 2026; Ioannina excluded."
+    },
+    "greece:fira": {
+      "name": "Fira",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Owner-approved Greece rollout, 6 November 2026; Ioannina excluded."
+    },
+    "greece:chania": {
+      "name": "Chania",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Owner-approved Greece rollout, 6 November 2026; Ioannina excluded."
+    },
+    "greece:corfu-town": {
+      "name": "Corfu Town",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Owner-approved Greece rollout, 6 November 2026; Ioannina excluded."
+    },
+    "greece:kalambaka": {
+      "name": "Kalambaka",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Owner-approved Greece rollout, 6 November 2026; Ioannina excluded."
+    },
+    "greece:nafplio": {
+      "name": "Nafplio",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Owner-approved Greece rollout, 6 November 2026; Ioannina excluded."
+    },
+    "greece:rhodes-town": {
+      "name": "Rhodes Town",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Owner-approved Greece rollout, 6 November 2026; Ioannina excluded."
+    },
+    "greece:naxos-town": {
+      "name": "Naxos Town",
+      "climateType": "beach",
+      "reason": "Approved beach-oriented holiday base; 25°C target.",
+      "status": "Owner-approved Greece rollout, 6 November 2026; Ioannina excluded."
     }
   }
 }

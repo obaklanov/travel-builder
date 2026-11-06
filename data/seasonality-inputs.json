@@ -30,6 +30,13 @@
         "timeStandard": "Local solar time",
         "sourceUrl": "https://power.larc.nasa.gov/docs/services/api/temporal/daily/",
         "rainDefinition": "PRECTOTCORR total precipitation, including snow, averaged across all calendar days in mm/day. Alternative to ERA5 rain-only data due daily API quota; not directly identical."
+      },
+      "greece": {
+        "model": "NASA POWER/MERRA-2",
+        "period": "2016–2025",
+        "timeStandard": "Local solar time",
+        "sourceUrl": "https://power.larc.nasa.gov/docs/services/api/temporal/daily/",
+        "rainDefinition": "PRECTOTCORR total precipitation, including snow, averaged across all calendar days in mm/day. Alternative to ERA5 rain-only data due daily API quota; not directly identical."
       }
     }
   },
@@ -17072,6 +17079,1533 @@
       },
       "events": [],
       "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "greece",
+      "id": "athens",
+      "name": "Athens",
+      "area": "Attica",
+      "latitude": 37.9838,
+      "longitude": 23.7275,
+      "airports": [
+        [
+          "ATH",
+          "Athens"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 0,
+      "gridLatitude": 37.9838,
+      "gridLongitude": 23.7275,
+      "elevation": 140.03,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=23.7275&latitude=37.9838&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeSources": [
+        "https://www.discovergreece.com/destinations"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 9.71,
+          "meanDailyHighC": 12.9,
+          "meanRainMmPerDay": 2.2992,
+          "meanRelativeHumidityPct": 79.84,
+          "rainyDayFraction": 0.3452
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 10.46,
+          "meanDailyHighC": 14.02,
+          "meanRainMmPerDay": 2.0748,
+          "meanRelativeHumidityPct": 80.44,
+          "rainyDayFraction": 0.2686
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 12.03,
+          "meanDailyHighC": 15.98,
+          "meanRainMmPerDay": 2.2254,
+          "meanRelativeHumidityPct": 76.65,
+          "rainyDayFraction": 0.2258
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 15.51,
+          "meanDailyHighC": 20.25,
+          "meanRainMmPerDay": 1.0143,
+          "meanRelativeHumidityPct": 69.22,
+          "rainyDayFraction": 0.18
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 20.09,
+          "meanDailyHighC": 25.12,
+          "meanRainMmPerDay": 0.6005,
+          "meanRelativeHumidityPct": 62.18,
+          "rainyDayFraction": 0.1548
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.64,
+          "meanDailyHighC": 30.71,
+          "meanRainMmPerDay": 0.8565,
+          "meanRelativeHumidityPct": 54.28,
+          "rainyDayFraction": 0.15
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.23,
+          "meanDailyHighC": 33.19,
+          "meanRainMmPerDay": 0.3658,
+          "meanRelativeHumidityPct": 49.78,
+          "rainyDayFraction": 0.0871
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.73,
+          "meanDailyHighC": 32.47,
+          "meanRainMmPerDay": 0.412,
+          "meanRelativeHumidityPct": 53.1,
+          "rainyDayFraction": 0.0484
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 24.28,
+          "meanDailyHighC": 29.04,
+          "meanRainMmPerDay": 1.141,
+          "meanRelativeHumidityPct": 59.33,
+          "rainyDayFraction": 0.1367
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 19.47,
+          "meanDailyHighC": 23.78,
+          "meanRainMmPerDay": 1.7498,
+          "meanRelativeHumidityPct": 69.71,
+          "rainyDayFraction": 0.1742
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 15.71,
+          "meanDailyHighC": 19.12,
+          "meanRainMmPerDay": 2.2586,
+          "meanRelativeHumidityPct": 76.12,
+          "rainyDayFraction": 0.31
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 11.69,
+          "meanDailyHighC": 14.77,
+          "meanRainMmPerDay": 2.7715,
+          "meanRelativeHumidityPct": 79.93,
+          "rainyDayFraction": 0.2871
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Greek urban, heritage and island contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          12,
+          11,
+          3,
+          10,
+          4,
+          9,
+          5,
+          6,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.discovergreece.com/destinations"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          1,
+          2,
+          12,
+          11,
+          3,
+          10,
+          4,
+          9,
+          5,
+          6,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.discovergreece.com/destinations"
+        ]
+      },
+      "events": [
+        {
+          "name": "This is Athens City Festival",
+          "months": [
+            5
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://www.thisisathens.org/arts-entertainment/performing-arts/34-athens-festivals"
+        },
+        {
+          "name": "Athens Epidaurus Festival",
+          "months": [
+            6,
+            7,
+            8
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://www.thisisathens.org/arts-entertainment/performing-arts/34-athens-festivals"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "greece",
+      "id": "thessaloniki",
+      "name": "Thessaloniki",
+      "area": "North",
+      "latitude": 40.6401,
+      "longitude": 22.9444,
+      "airports": [
+        [
+          "SKG",
+          "Thessaloniki"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 1,
+      "gridLatitude": 40.6401,
+      "gridLongitude": 22.9444,
+      "elevation": 233.19,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=22.9444&latitude=40.6401&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://www.discovergreece.com/destinations"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 5.08,
+          "meanDailyHighC": 9.38,
+          "meanRainMmPerDay": 1.6431,
+          "meanRelativeHumidityPct": 81.17,
+          "rainyDayFraction": 0.2387
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 7.29,
+          "meanDailyHighC": 12.1,
+          "meanRainMmPerDay": 0.9922,
+          "meanRelativeHumidityPct": 79.19,
+          "rainyDayFraction": 0.2261
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 9.74,
+          "meanDailyHighC": 14.77,
+          "meanRainMmPerDay": 1.7105,
+          "meanRelativeHumidityPct": 75.37,
+          "rainyDayFraction": 0.2935
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 13.76,
+          "meanDailyHighC": 19.27,
+          "meanRainMmPerDay": 1.3042,
+          "meanRelativeHumidityPct": 69.1,
+          "rainyDayFraction": 0.2267
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.75,
+          "meanDailyHighC": 24.43,
+          "meanRainMmPerDay": 1.4239,
+          "meanRelativeHumidityPct": 64,
+          "rainyDayFraction": 0.3032
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 24.95,
+          "meanDailyHighC": 30.83,
+          "meanRainMmPerDay": 1.2394,
+          "meanRelativeHumidityPct": 55.77,
+          "rainyDayFraction": 0.2567
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.94,
+          "meanDailyHighC": 34.09,
+          "meanRainMmPerDay": 0.7842,
+          "meanRelativeHumidityPct": 47.58,
+          "rainyDayFraction": 0.1226
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.55,
+          "meanDailyHighC": 33.56,
+          "meanRainMmPerDay": 0.8099,
+          "meanRelativeHumidityPct": 48.24,
+          "rainyDayFraction": 0.1355
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 22.65,
+          "meanDailyHighC": 28.46,
+          "meanRainMmPerDay": 1.0164,
+          "meanRelativeHumidityPct": 56.36,
+          "rainyDayFraction": 0.16
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 16.7,
+          "meanDailyHighC": 22.42,
+          "meanRainMmPerDay": 1.1466,
+          "meanRelativeHumidityPct": 67.56,
+          "rainyDayFraction": 0.1548
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 11.95,
+          "meanDailyHighC": 16.54,
+          "meanRainMmPerDay": 1.8494,
+          "meanRelativeHumidityPct": 77.43,
+          "rainyDayFraction": 0.31
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 7.1,
+          "meanDailyHighC": 11.41,
+          "meanRainMmPerDay": 1.9273,
+          "meanRelativeHumidityPct": 82.37,
+          "rainyDayFraction": 0.2484
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Greek urban, heritage and island contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          12,
+          11,
+          3,
+          10,
+          4,
+          9,
+          5,
+          6,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.discovergreece.com/destinations"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          1,
+          2,
+          12,
+          11,
+          3,
+          10,
+          4,
+          9,
+          5,
+          6,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.discovergreece.com/destinations"
+        ]
+      },
+      "events": [
+        {
+          "name": "Thessaloniki International Film Festival",
+          "months": [
+            11
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://filmfestival.gr/en/tiff/"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "greece",
+      "id": "fira",
+      "name": "Fira",
+      "area": "Santorini",
+      "latitude": 36.4167,
+      "longitude": 25.4322,
+      "airports": [
+        [
+          "JTR",
+          "Santorini"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 2,
+      "gridLatitude": 36.4167,
+      "gridLongitude": 25.4322,
+      "elevation": 13.36,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=25.4322&latitude=36.4167&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeSources": [
+        "https://www.discovergreece.com/destinations"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 14.17,
+          "meanDailyHighC": 15.13,
+          "meanRainMmPerDay": 3.1589,
+          "meanRelativeHumidityPct": 74.08,
+          "rainyDayFraction": 0.4645
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 14.17,
+          "meanDailyHighC": 15.04,
+          "meanRainMmPerDay": 2.0628,
+          "meanRelativeHumidityPct": 75.32,
+          "rainyDayFraction": 0.3463
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 14.96,
+          "meanDailyHighC": 15.91,
+          "meanRainMmPerDay": 1.48,
+          "meanRelativeHumidityPct": 75.37,
+          "rainyDayFraction": 0.2968
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 16.95,
+          "meanDailyHighC": 18.05,
+          "meanRainMmPerDay": 0.8822,
+          "meanRelativeHumidityPct": 75.86,
+          "rainyDayFraction": 0.18
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 19.8,
+          "meanDailyHighC": 21.1,
+          "meanRainMmPerDay": 0.6157,
+          "meanRelativeHumidityPct": 76.16,
+          "rainyDayFraction": 0.1613
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 23.66,
+          "meanDailyHighC": 25.15,
+          "meanRainMmPerDay": 0.2987,
+          "meanRelativeHumidityPct": 74.51,
+          "rainyDayFraction": 0.0633
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.59,
+          "meanDailyHighC": 27.13,
+          "meanRainMmPerDay": 0.1196,
+          "meanRelativeHumidityPct": 73.33,
+          "rainyDayFraction": 0.029
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.97,
+          "meanDailyHighC": 27.33,
+          "meanRainMmPerDay": 0.1428,
+          "meanRelativeHumidityPct": 74.79,
+          "rainyDayFraction": 0.0387
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 24.45,
+          "meanDailyHighC": 25.63,
+          "meanRainMmPerDay": 0.5814,
+          "meanRelativeHumidityPct": 72.74,
+          "rainyDayFraction": 0.1167
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 21.39,
+          "meanDailyHighC": 22.34,
+          "meanRainMmPerDay": 1.082,
+          "meanRelativeHumidityPct": 73.35,
+          "rainyDayFraction": 0.2065
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 18.8,
+          "meanDailyHighC": 19.68,
+          "meanRainMmPerDay": 2.0541,
+          "meanRelativeHumidityPct": 74.56,
+          "rainyDayFraction": 0.3333
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 15.78,
+          "meanDailyHighC": 16.66,
+          "meanRainMmPerDay": 2.7915,
+          "meanRelativeHumidityPct": 74.69,
+          "rainyDayFraction": 0.4129
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Greek urban, heritage and island contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          12,
+          3,
+          11,
+          4,
+          10,
+          5,
+          6,
+          9,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.discovergreece.com/destinations"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          1,
+          2,
+          12,
+          3,
+          11,
+          4,
+          10,
+          5,
+          6,
+          9,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.discovergreece.com/destinations"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "greece",
+      "id": "chania",
+      "name": "Chania",
+      "area": "Western Crete",
+      "latitude": 35.5138,
+      "longitude": 24.018,
+      "airports": [
+        [
+          "CHQ",
+          "Chania"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 3,
+      "gridLatitude": 35.5138,
+      "gridLongitude": 24.018,
+      "elevation": 234.53,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=24.018&latitude=35.5138&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeSources": [
+        "https://www.discovergreece.com/destinations"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 12.03,
+          "meanDailyHighC": 13.81,
+          "meanRainMmPerDay": 2.2808,
+          "meanRelativeHumidityPct": 77.33,
+          "rainyDayFraction": 0.4613
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 12.12,
+          "meanDailyHighC": 14.1,
+          "meanRainMmPerDay": 1.4969,
+          "meanRelativeHumidityPct": 78.19,
+          "rainyDayFraction": 0.2933
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 13.25,
+          "meanDailyHighC": 15.63,
+          "meanRainMmPerDay": 1.2747,
+          "meanRelativeHumidityPct": 75.67,
+          "rainyDayFraction": 0.2774
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 16.05,
+          "meanDailyHighC": 19,
+          "meanRainMmPerDay": 0.6947,
+          "meanRelativeHumidityPct": 71,
+          "rainyDayFraction": 0.1367
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 19.68,
+          "meanDailyHighC": 22.81,
+          "meanRainMmPerDay": 0.5037,
+          "meanRelativeHumidityPct": 66.82,
+          "rainyDayFraction": 0.1452
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 24.2,
+          "meanDailyHighC": 27.34,
+          "meanRainMmPerDay": 0.2046,
+          "meanRelativeHumidityPct": 62.97,
+          "rainyDayFraction": 0.0333
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.67,
+          "meanDailyHighC": 29.77,
+          "meanRainMmPerDay": 0.1479,
+          "meanRelativeHumidityPct": 60.03,
+          "rainyDayFraction": 0.0258
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.76,
+          "meanDailyHighC": 29.65,
+          "meanRainMmPerDay": 0.2184,
+          "meanRelativeHumidityPct": 61.9,
+          "rainyDayFraction": 0.0355
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 24.22,
+          "meanDailyHighC": 27.03,
+          "meanRainMmPerDay": 0.7041,
+          "meanRelativeHumidityPct": 65.18,
+          "rainyDayFraction": 0.1467
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 20.66,
+          "meanDailyHighC": 23.19,
+          "meanRainMmPerDay": 1.1893,
+          "meanRelativeHumidityPct": 69.99,
+          "rainyDayFraction": 0.2581
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 17.46,
+          "meanDailyHighC": 19.53,
+          "meanRainMmPerDay": 1.9829,
+          "meanRelativeHumidityPct": 74.46,
+          "rainyDayFraction": 0.3667
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 13.99,
+          "meanDailyHighC": 15.75,
+          "meanRainMmPerDay": 2.1173,
+          "meanRelativeHumidityPct": 76.46,
+          "rainyDayFraction": 0.4129
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Greek urban, heritage and island contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          12,
+          3,
+          11,
+          4,
+          10,
+          5,
+          6,
+          9,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.discovergreece.com/destinations"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          1,
+          2,
+          12,
+          3,
+          11,
+          4,
+          10,
+          5,
+          6,
+          9,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.discovergreece.com/destinations"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "greece",
+      "id": "corfu-town",
+      "name": "Corfu Town",
+      "area": "Ionian Islands",
+      "latitude": 39.6243,
+      "longitude": 19.9217,
+      "airports": [
+        [
+          "CFU",
+          "Corfu"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 4,
+      "gridLatitude": 39.6243,
+      "gridLongitude": 19.9217,
+      "elevation": 69.96,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=19.9217&latitude=39.6243&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeSources": [
+        "https://www.discovergreece.com/destinations"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 11.6,
+          "meanDailyHighC": 13.35,
+          "meanRainMmPerDay": 4.0366,
+          "meanRelativeHumidityPct": 72.87,
+          "rainyDayFraction": 0.4613
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 12.39,
+          "meanDailyHighC": 14.38,
+          "meanRainMmPerDay": 2.9779,
+          "meanRelativeHumidityPct": 73.22,
+          "rainyDayFraction": 0.3675
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 13.49,
+          "meanDailyHighC": 15.71,
+          "meanRainMmPerDay": 2.6572,
+          "meanRelativeHumidityPct": 72.95,
+          "rainyDayFraction": 0.3968
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 16.05,
+          "meanDailyHighC": 18.62,
+          "meanRainMmPerDay": 1.4969,
+          "meanRelativeHumidityPct": 71.89,
+          "rainyDayFraction": 0.3033
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 19.41,
+          "meanDailyHighC": 21.91,
+          "meanRainMmPerDay": 1.4459,
+          "meanRelativeHumidityPct": 72.9,
+          "rainyDayFraction": 0.2774
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 24.26,
+          "meanDailyHighC": 27.07,
+          "meanRainMmPerDay": 0.8187,
+          "meanRelativeHumidityPct": 68.91,
+          "rainyDayFraction": 0.2167
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.93,
+          "meanDailyHighC": 29.92,
+          "meanRainMmPerDay": 0.3852,
+          "meanRelativeHumidityPct": 63.64,
+          "rainyDayFraction": 0.0968
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.54,
+          "meanDailyHighC": 30.48,
+          "meanRainMmPerDay": 0.7793,
+          "meanRelativeHumidityPct": 62.54,
+          "rainyDayFraction": 0.1903
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 24.41,
+          "meanDailyHighC": 26.98,
+          "meanRainMmPerDay": 2.1824,
+          "meanRelativeHumidityPct": 65.78,
+          "rainyDayFraction": 0.4
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 20.64,
+          "meanDailyHighC": 23.04,
+          "meanRainMmPerDay": 3.1294,
+          "meanRelativeHumidityPct": 68.91,
+          "rainyDayFraction": 0.329
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 17.2,
+          "meanDailyHighC": 18.97,
+          "meanRainMmPerDay": 5.8605,
+          "meanRelativeHumidityPct": 72.56,
+          "rainyDayFraction": 0.5133
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 13.62,
+          "meanDailyHighC": 15.29,
+          "meanRainMmPerDay": 4.0769,
+          "meanRelativeHumidityPct": 72.29,
+          "rainyDayFraction": 0.4161
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Greek urban, heritage and island contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          12,
+          3,
+          11,
+          4,
+          10,
+          5,
+          6,
+          9,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.discovergreece.com/destinations"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          1,
+          2,
+          12,
+          3,
+          11,
+          4,
+          10,
+          5,
+          6,
+          9,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.discovergreece.com/destinations"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "greece",
+      "id": "kalambaka",
+      "name": "Kalambaka",
+      "area": "Meteora",
+      "latitude": 39.7067,
+      "longitude": 21.6267,
+      "airports": [
+        [
+          "SKG",
+          "Thessaloniki"
+        ],
+        [
+          "ATH",
+          "Athens"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 5,
+      "gridLatitude": 39.7067,
+      "gridLongitude": 21.6267,
+      "elevation": 469.99,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=21.6267&latitude=39.7067&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://www.discovergreece.com/destinations"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 4.1,
+          "meanDailyHighC": 9.21,
+          "meanRainMmPerDay": 2.7641,
+          "meanRelativeHumidityPct": 83.7,
+          "rainyDayFraction": 0.3839
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 6.27,
+          "meanDailyHighC": 11.82,
+          "meanRainMmPerDay": 2.357,
+          "meanRelativeHumidityPct": 81.09,
+          "rainyDayFraction": 0.2933
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 8.76,
+          "meanDailyHighC": 14.65,
+          "meanRainMmPerDay": 2.6709,
+          "meanRelativeHumidityPct": 75.59,
+          "rainyDayFraction": 0.3226
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 13.06,
+          "meanDailyHighC": 19.26,
+          "meanRainMmPerDay": 1.5535,
+          "meanRelativeHumidityPct": 69.14,
+          "rainyDayFraction": 0.2767
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.78,
+          "meanDailyHighC": 24.11,
+          "meanRainMmPerDay": 1.6085,
+          "meanRelativeHumidityPct": 64.26,
+          "rainyDayFraction": 0.3581
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 24.35,
+          "meanDailyHighC": 31.03,
+          "meanRainMmPerDay": 1.4891,
+          "meanRelativeHumidityPct": 53.18,
+          "rainyDayFraction": 0.2933
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.79,
+          "meanDailyHighC": 34.99,
+          "meanRainMmPerDay": 0.8084,
+          "meanRelativeHumidityPct": 42.33,
+          "rainyDayFraction": 0.1581
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.95,
+          "meanDailyHighC": 33.91,
+          "meanRainMmPerDay": 1.032,
+          "meanRelativeHumidityPct": 43.48,
+          "rainyDayFraction": 0.1903
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 21.69,
+          "meanDailyHighC": 28.54,
+          "meanRainMmPerDay": 1.848,
+          "meanRelativeHumidityPct": 55.41,
+          "rainyDayFraction": 0.25
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 15.83,
+          "meanDailyHighC": 22.54,
+          "meanRainMmPerDay": 2.1924,
+          "meanRelativeHumidityPct": 68.22,
+          "rainyDayFraction": 0.2387
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 10.74,
+          "meanDailyHighC": 16.27,
+          "meanRainMmPerDay": 4.3055,
+          "meanRelativeHumidityPct": 80.09,
+          "rainyDayFraction": 0.4667
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 6.14,
+          "meanDailyHighC": 11.33,
+          "meanRainMmPerDay": 2.8996,
+          "meanRelativeHumidityPct": 83.94,
+          "rainyDayFraction": 0.3613
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Greek urban, heritage and island contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          12,
+          11,
+          3,
+          10,
+          4,
+          9,
+          5,
+          6,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.discovergreece.com/destinations"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          1,
+          2,
+          12,
+          11,
+          3,
+          10,
+          4,
+          9,
+          5,
+          6,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.discovergreece.com/destinations"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "greece",
+      "id": "nafplio",
+      "name": "Nafplio",
+      "area": "Peloponnese",
+      "latitude": 37.5673,
+      "longitude": 22.8016,
+      "airports": [
+        [
+          "ATH",
+          "Athens"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 6,
+      "gridLatitude": 37.5673,
+      "gridLongitude": 22.8016,
+      "elevation": 675.14,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=22.8016&latitude=37.5673&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeSources": [
+        "https://www.discovergreece.com/destinations"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 5.71,
+          "meanDailyHighC": 9.6,
+          "meanRainMmPerDay": 3.4164,
+          "meanRelativeHumidityPct": 85.34,
+          "rainyDayFraction": 0.4129
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 6.85,
+          "meanDailyHighC": 11.24,
+          "meanRainMmPerDay": 1.8408,
+          "meanRelativeHumidityPct": 83.04,
+          "rainyDayFraction": 0.2968
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 8.6,
+          "meanDailyHighC": 13.7,
+          "meanRainMmPerDay": 2.0217,
+          "meanRelativeHumidityPct": 77.79,
+          "rainyDayFraction": 0.3194
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 12.53,
+          "meanDailyHighC": 18.09,
+          "meanRainMmPerDay": 1.2957,
+          "meanRelativeHumidityPct": 70.31,
+          "rainyDayFraction": 0.1867
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.09,
+          "meanDailyHighC": 23.06,
+          "meanRainMmPerDay": 1.1999,
+          "meanRelativeHumidityPct": 63.5,
+          "rainyDayFraction": 0.2097
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 22.98,
+          "meanDailyHighC": 29.16,
+          "meanRainMmPerDay": 1.4058,
+          "meanRelativeHumidityPct": 54.79,
+          "rainyDayFraction": 0.2033
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.04,
+          "meanDailyHighC": 32.62,
+          "meanRainMmPerDay": 0.6997,
+          "meanRelativeHumidityPct": 46.9,
+          "rainyDayFraction": 0.1097
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.49,
+          "meanDailyHighC": 31.97,
+          "meanRainMmPerDay": 0.4045,
+          "meanRelativeHumidityPct": 47.7,
+          "rainyDayFraction": 0.1194
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 21.33,
+          "meanDailyHighC": 27.63,
+          "meanRainMmPerDay": 1.5258,
+          "meanRelativeHumidityPct": 57.89,
+          "rainyDayFraction": 0.1867
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 16.11,
+          "meanDailyHighC": 21.85,
+          "meanRainMmPerDay": 2.0985,
+          "meanRelativeHumidityPct": 70.27,
+          "rainyDayFraction": 0.2161
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 11.7,
+          "meanDailyHighC": 16.18,
+          "meanRainMmPerDay": 3.4136,
+          "meanRelativeHumidityPct": 81.7,
+          "rainyDayFraction": 0.3933
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 7.68,
+          "meanDailyHighC": 11.52,
+          "meanRainMmPerDay": 3.3249,
+          "meanRelativeHumidityPct": 85.23,
+          "rainyDayFraction": 0.3677
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Greek urban, heritage and island contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          12,
+          11,
+          3,
+          10,
+          4,
+          9,
+          5,
+          6,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.discovergreece.com/destinations"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          1,
+          2,
+          12,
+          11,
+          3,
+          10,
+          4,
+          9,
+          5,
+          6,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.discovergreece.com/destinations"
+        ]
+      },
+      "events": [
+        {
+          "name": "Epidaurus performances (regional excursion)",
+          "months": [
+            7,
+            8
+          ],
+          "prominence": 1,
+          "sourceUrl": "https://www.thisisathens.org/arts-entertainment/performing-arts/34-athens-festivals"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "greece",
+      "id": "rhodes-town",
+      "name": "Rhodes Town",
+      "area": "Dodecanese",
+      "latitude": 36.434,
+      "longitude": 28.2176,
+      "airports": [
+        [
+          "RHO",
+          "Rhodes"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 7,
+      "gridLatitude": 36.434,
+      "gridLongitude": 28.2176,
+      "elevation": 44.35,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=28.2176&latitude=36.434&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeSources": [
+        "https://www.discovergreece.com/destinations"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 13.98,
+          "meanDailyHighC": 15.35,
+          "meanRainMmPerDay": 5.5301,
+          "meanRelativeHumidityPct": 71.32,
+          "rainyDayFraction": 0.5032
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 14.1,
+          "meanDailyHighC": 15.6,
+          "meanRainMmPerDay": 2.598,
+          "meanRelativeHumidityPct": 71.24,
+          "rainyDayFraction": 0.3322
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 15.11,
+          "meanDailyHighC": 16.86,
+          "meanRainMmPerDay": 2.3557,
+          "meanRelativeHumidityPct": 71.96,
+          "rainyDayFraction": 0.2774
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 17.68,
+          "meanDailyHighC": 19.8,
+          "meanRainMmPerDay": 1.1344,
+          "meanRelativeHumidityPct": 72.95,
+          "rainyDayFraction": 0.1767
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 21.14,
+          "meanDailyHighC": 23.61,
+          "meanRainMmPerDay": 0.7922,
+          "meanRelativeHumidityPct": 70.1,
+          "rainyDayFraction": 0.1548
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.45,
+          "meanDailyHighC": 28.32,
+          "meanRainMmPerDay": 0.3316,
+          "meanRelativeHumidityPct": 65.84,
+          "rainyDayFraction": 0.0833
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.73,
+          "meanDailyHighC": 31.87,
+          "meanRainMmPerDay": 0.1525,
+          "meanRelativeHumidityPct": 60.06,
+          "rainyDayFraction": 0.0161
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.73,
+          "meanDailyHighC": 31.6,
+          "meanRainMmPerDay": 0.2458,
+          "meanRelativeHumidityPct": 64.11,
+          "rainyDayFraction": 0.0355
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 26.7,
+          "meanDailyHighC": 29.35,
+          "meanRainMmPerDay": 0.5189,
+          "meanRelativeHumidityPct": 62.1,
+          "rainyDayFraction": 0.08
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 23.08,
+          "meanDailyHighC": 25.29,
+          "meanRainMmPerDay": 1.3258,
+          "meanRelativeHumidityPct": 62.84,
+          "rainyDayFraction": 0.171
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 19.65,
+          "meanDailyHighC": 21.29,
+          "meanRainMmPerDay": 3.3412,
+          "meanRelativeHumidityPct": 66.27,
+          "rainyDayFraction": 0.31
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 15.89,
+          "meanDailyHighC": 17.23,
+          "meanRainMmPerDay": 5.7037,
+          "meanRelativeHumidityPct": 70.39,
+          "rainyDayFraction": 0.4516
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Greek urban, heritage and island contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          12,
+          3,
+          11,
+          4,
+          10,
+          5,
+          6,
+          9,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.discovergreece.com/destinations"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          1,
+          2,
+          12,
+          3,
+          11,
+          4,
+          10,
+          5,
+          6,
+          9,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.discovergreece.com/destinations"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "greece",
+      "id": "naxos-town",
+      "name": "Naxos Town",
+      "area": "Cyclades",
+      "latitude": 37.1036,
+      "longitude": 25.3764,
+      "airports": [
+        [
+          "JNX",
+          "Naxos"
+        ]
+      ],
+      "climateType": "beach",
+      "regionIndex": 8,
+      "gridLatitude": 37.1036,
+      "gridLongitude": 25.3764,
+      "elevation": 35.32,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=25.3764&latitude=37.1036&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Approved beach-oriented holiday base; 25°C target.",
+      "climateTypeSources": [
+        "https://www.discovergreece.com/destinations"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 13.52,
+          "meanDailyHighC": 14.6,
+          "meanRainMmPerDay": 3.4836,
+          "meanRelativeHumidityPct": 75.04,
+          "rainyDayFraction": 0.4903
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 13.63,
+          "meanDailyHighC": 14.64,
+          "meanRainMmPerDay": 2.2878,
+          "meanRelativeHumidityPct": 75.93,
+          "rainyDayFraction": 0.364
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 14.51,
+          "meanDailyHighC": 15.68,
+          "meanRainMmPerDay": 1.5912,
+          "meanRelativeHumidityPct": 75.47,
+          "rainyDayFraction": 0.2968
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 16.59,
+          "meanDailyHighC": 17.98,
+          "meanRainMmPerDay": 0.9023,
+          "meanRelativeHumidityPct": 75.86,
+          "rainyDayFraction": 0.19
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 19.52,
+          "meanDailyHighC": 21.08,
+          "meanRainMmPerDay": 0.577,
+          "meanRelativeHumidityPct": 75.61,
+          "rainyDayFraction": 0.1774
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 23.3,
+          "meanDailyHighC": 24.92,
+          "meanRainMmPerDay": 0.3225,
+          "meanRelativeHumidityPct": 74.73,
+          "rainyDayFraction": 0.0633
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.16,
+          "meanDailyHighC": 26.74,
+          "meanRainMmPerDay": 0.0985,
+          "meanRelativeHumidityPct": 74.17,
+          "rainyDayFraction": 0.029
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.44,
+          "meanDailyHighC": 26.9,
+          "meanRainMmPerDay": 0.1185,
+          "meanRelativeHumidityPct": 75.96,
+          "rainyDayFraction": 0.029
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 23.91,
+          "meanDailyHighC": 25.26,
+          "meanRainMmPerDay": 0.5323,
+          "meanRelativeHumidityPct": 73.36,
+          "rainyDayFraction": 0.1133
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 20.79,
+          "meanDailyHighC": 21.95,
+          "meanRainMmPerDay": 1.2208,
+          "meanRelativeHumidityPct": 74.13,
+          "rainyDayFraction": 0.2129
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 18.11,
+          "meanDailyHighC": 19.14,
+          "meanRainMmPerDay": 2.1397,
+          "meanRelativeHumidityPct": 75.49,
+          "rainyDayFraction": 0.34
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 15.14,
+          "meanDailyHighC": 16.15,
+          "meanRainMmPerDay": 3.133,
+          "meanRelativeHumidityPct": 75.6,
+          "rainyDayFraction": 0.429
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Greek urban, heritage and island contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          12,
+          3,
+          11,
+          4,
+          10,
+          5,
+          6,
+          9,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.discovergreece.com/destinations"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          1,
+          2,
+          12,
+          3,
+          11,
+          4,
+          10,
+          5,
+          6,
+          9,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.discovergreece.com/destinations"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
     }
   ],
   "destinationTypeAssignments": {
@@ -17188,6 +18722,60 @@
       "climateType": "all-season",
       "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
       "status": "Owner-approved Brazil rollout, 6 November 2026."
+    },
+    "greece:athens": {
+      "name": "Athens",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Owner-approved Greece rollout, 6 November 2026; Ioannina excluded."
+    },
+    "greece:thessaloniki": {
+      "name": "Thessaloniki",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Owner-approved Greece rollout, 6 November 2026; Ioannina excluded."
+    },
+    "greece:fira": {
+      "name": "Fira",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Owner-approved Greece rollout, 6 November 2026; Ioannina excluded."
+    },
+    "greece:chania": {
+      "name": "Chania",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Owner-approved Greece rollout, 6 November 2026; Ioannina excluded."
+    },
+    "greece:corfu-town": {
+      "name": "Corfu Town",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Owner-approved Greece rollout, 6 November 2026; Ioannina excluded."
+    },
+    "greece:kalambaka": {
+      "name": "Kalambaka",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Owner-approved Greece rollout, 6 November 2026; Ioannina excluded."
+    },
+    "greece:nafplio": {
+      "name": "Nafplio",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Owner-approved Greece rollout, 6 November 2026; Ioannina excluded."
+    },
+    "greece:rhodes-town": {
+      "name": "Rhodes Town",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Owner-approved Greece rollout, 6 November 2026; Ioannina excluded."
+    },
+    "greece:naxos-town": {
+      "name": "Naxos Town",
+      "climateType": "beach",
+      "reason": "Approved beach-oriented holiday base; 25°C target.",
+      "status": "Owner-approved Greece rollout, 6 November 2026; Ioannina excluded."
     }
   }
 }
