@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "reviewedAt": "2026-11-06",
   "climate": {
     "period": "2016-01-01/2025-12-31",
@@ -26,23 +26,20 @@
       40,
       70
     ],
-    "temperaturePenaltyPerDegree": 8,
-    "humidityPenaltyPerPoint": 3,
-    "bestThreshold": 65,
-    "averageThreshold": 40,
-    "crowdBands": "First six ranked months BEST; next three AVERAGE; last three WORST. Rankings are editorial proxies, not observed percent-of-capacity figures.",
-    "priceBands": "Same six/three/three ordinal bands, based on accommodation-demand guidance; no live prices.",
-    "festivalScore": "Listed flagship event or two regional events: 100; one regional event: 50; no listed event: 0. Prominence is editorial.",
-    "overall": "Weighted score >=65 BEST; >=40 AVERAGE; otherwise WORST. Absolute thresholds; no forced BEST/WORST quotas.",
+    "crowdBands": "Within-base ranks converted continuously to 0–100; first four BEST, next four AVERAGE, last four WORST. Editorial proxies, not measured visitor counts.",
+    "priceBands": "Within-base ranks converted continuously to 0–100; first four BEST, next four AVERAGE, last four WORST. Editorial accommodation-demand proxies.",
+    "festivalScore": "Keep evidence scores 100/50/0. Do not invent BEST event months where no events are listed. Final tourist rating still uses a 4/4/4 quota.",
+    "overall": "Rank the weighted tourist score within each base and year. First four BEST, middle four AVERAGE, last four WORST. BEST is relative, not a guarantee of ideal weather.",
     "calendar": "Typical recurring months, not guaranteed event schedules. Carnival and Santo Cristo follow Easter; Easter demand shifts are approximations. Confirm event dates before travel.",
     "limitations": "Crowd and price inputs are provisional editorial proxies and must be replaced by measured monthly data when available. Full-month averages hide short holiday spikes; climate grid cells can miss coastal and mountain microclimates.",
     "idealDailyMeanC": [
       18,
       26
     ],
-    "maxIdealRainMmPerDay": 2,
-    "zeroScoreRainMmPerDay": 10,
-    "rainThresholdStatus": "Initial editable assumption: ideal <=2 mm/calendar day; zero rain subscore at >=10 mm/day. Not derived from the former 20% rainy-day threshold."
+    "ranking": "Within each base only: ranks 1–4 BEST, 5–8 AVERAGE, 9–12 WORST. Equal values use January–December order to enforce exactly four per band.",
+    "temperatureTargetC": 22,
+    "humidityTargetPct": 55,
+    "climateScoring": "Temperature: distance from 22°C; rain: lower mm/day; humidity: distance from 55%. Rank each across this base’s 12 months; score = 100 × (12 − rank) / 11. Climate is the 50/30/20 weighted component score."
   },
   "profiles": [
     {
