@@ -1,12 +1,12 @@
 # Tourist-season scoring — Portugal and Colombia
 
-Reviewed: 6 November 2026. Version 1, provisional editorial model.
+Reviewed: 6 November 2026. Version 2, provisional editorial model.
 
 The live season tables and Designing matcher share the same generated ratings. The scope is five Portuguese and ten Colombian destinations. This is a preference model, not a safety rating or a forecast.
 
 ## Formula
 
-Overall = 40% climate + 20% crowds + 20% festivals + 20% prices.
+Overall = 50% climate + one sixth crowds + one sixth festivals + one sixth prices.
 
 Scores range from 0 to 100. BEST is 65 or more; AVERAGE is 40 to below 65; WORST is below 40. These thresholds are implementation choices and can be tuned. No destination is forced to have any BEST or WORST months.
 
@@ -14,8 +14,8 @@ Climate uses 2016–2025 daily ERA5 reanalysis accessed through Open-Meteo, aggr
 
 Within climate, temperature weighs 50%, rain 30% and humidity 20%:
 
-- Temperature: monthly mean daytime maximum of 18–26°C scores 100. Subtract 8 points per degree outside the interval, floored at zero.
-- Rain: historical fraction of days with at least 1 mm precipitation. At or below 20% scores 100; above that, score declines linearly to zero at 100%. This is not the probability that a particular trip day will have rain, and excludes sub-1-mm drizzle.
+- Temperature: monthly mean daily temperature of 18–26°C scores 100. Subtract 8 points per degree outside the interval, floored at zero.
+- Rain: historical rain_sum divided by all calendar days, including dry days, in mm/day. At or below 2 mm/day scores 100; above that, score declines linearly to zero at 10 mm/day. These new thresholds are editable initial assumptions, not a conversion of the old 20% rain-frequency threshold. This captures rainfall volume, not rain probability or hourly intensity.
 - Humidity: monthly mean daily relative humidity of 40–70% scores 100. Subtract 3 points per percentage point outside this interval. This is an adjustable outdoor comfort preference, not a healthy/unhealthy threshold. Humidity and heat are not independent; a future model can use apparent temperature or dew point.
 
 ## Crowds and prices: important evidence limits
@@ -44,3 +44,7 @@ After changing inputs: run `node scripts/build-seasonality.cjs` and `node script
 Hover a table cell to inspect its component scores and historical climate figures. The displayed table changes with the selected travel year; matching uses that year's rating, including trips crossing year boundaries. The collapsed methodology section lists supporting sources.
 
 Weather data attribution: Open-Meteo, CC BY 4.0, based on Copernicus ERA5 reanalysis. Documentation: https://open-meteo.com/en/docs/historical-weather-api
+
+## Rainfall quality review
+
+The ERA5 rainfall-volume export has unusually high totals for Salento and Bucaramanga. Retain these as model estimates and verify against local station observations before treating them as validated local climate. A grid-cell rainfall estimate can be biased in complex terrain. These records carry a review note in generated data and table tooltips.

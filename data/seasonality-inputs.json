@@ -1,37 +1,32 @@
 {
-  "version": 1,
+  "version": 2,
   "reviewedAt": "2026-11-06",
   "climate": {
     "period": "2016-01-01/2025-12-31",
     "model": "ERA5 via Open-Meteo",
     "sourceUrl": "https://open-meteo.com/en/docs/historical-weather-api",
     "attribution": "Weather data by Open-Meteo (CC BY 4.0), based on Copernicus ERA5 reanalysis. Model estimates, not station observations or forecasts.",
-    "rainDefinition": "Fraction of historical days with at least 1 mm total precipitation; not a forecast rain probability.",
-    "humidityDefinition": "Daily mean outdoor relative humidity; comfort preference only, not a health assessment."
+    "rainDefinition": "Historical total rain (rain_sum) divided by all calendar days, including dry days; expressed in mm/day. Not rain probability or hourly intensity.",
+    "humidityDefinition": "Daily mean outdoor relative humidity; comfort preference only, not a health assessment.",
+    "temperatureDefinition": "Mean of actual daily mean 2-m temperatures, aggregated by local calendar month; not the mean of daily maxima."
   },
   "method": {
     "weights": {
-      "climate": 0.4,
-      "crowds": 0.2,
-      "festivals": 0.2,
-      "prices": 0.2
+      "climate": 0.5,
+      "crowds": 0.16666666666666666,
+      "festivals": 0.16666666666666666,
+      "prices": 0.16666666666666666
     },
     "climateWeights": {
       "temperature": 0.5,
       "rain": 0.3,
       "humidity": 0.2
     },
-    "idealDailyHighC": [
-      18,
-      26
-    ],
     "preferredRelativeHumidityPct": [
       40,
       70
     ],
-    "maxIdealRainyDayFraction": 0.2,
     "temperaturePenaltyPerDegree": 8,
-    "rainPenaltyScale": 0.8,
     "humidityPenaltyPerPoint": 3,
     "bestThreshold": 65,
     "averageThreshold": 40,
@@ -40,7 +35,14 @@
     "festivalScore": "Listed flagship event or two regional events: 100; one regional event: 50; no listed event: 0. Prominence is editorial.",
     "overall": "Weighted score >=65 BEST; >=40 AVERAGE; otherwise WORST. Absolute thresholds; no forced BEST/WORST quotas.",
     "calendar": "Typical recurring months, not guaranteed event schedules. Carnival and Santo Cristo follow Easter; Easter demand shifts are approximations. Confirm event dates before travel.",
-    "limitations": "Crowd and price inputs are provisional editorial proxies and must be replaced by measured monthly data when available. Full-month averages hide short holiday spikes; climate grid cells can miss coastal and mountain microclimates."
+    "limitations": "Crowd and price inputs are provisional editorial proxies and must be replaced by measured monthly data when available. Full-month averages hide short holiday spikes; climate grid cells can miss coastal and mountain microclimates.",
+    "idealDailyMeanC": [
+      18,
+      26
+    ],
+    "maxIdealRainMmPerDay": 2,
+    "zeroScoreRainMmPerDay": 10,
+    "rainThresholdStatus": "Initial editable assumption: ideal <=2 mm/calendar day; zero rain subscore at >=10 mm/day. Not derived from the former 20% rainy-day threshold."
   },
   "profiles": [
     {
@@ -51,79 +53,103 @@
       "longitude": -9.1393,
       "gridLatitude": 38.75,
       "gridLongitude": -9.25,
-      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=38.7223&longitude=-9.1393&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_max,relative_humidity_2m_mean,precipitation_sum&timezone=auto&models=era5",
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=38.7223&longitude=-9.1393&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean,rain_sum,relative_humidity_2m_mean&timezone=auto&models=era5",
       "months": [
         {
           "sampleDays": 310,
           "meanDailyHighC": 14.51,
           "meanRelativeHumidityPct": 80.16,
-          "rainyDayFraction": 0.2548
+          "rainyDayFraction": 0.2548,
+          "meanDailyC": 12.25,
+          "meanRainMmPerDay": 1.8213
         },
         {
           "sampleDays": 283,
           "meanDailyHighC": 15.33,
           "meanRelativeHumidityPct": 79.1,
-          "rainyDayFraction": 0.2509
+          "rainyDayFraction": 0.2509,
+          "meanDailyC": 12.84,
+          "meanRainMmPerDay": 1.7201
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 15.98,
           "meanRelativeHumidityPct": 77.52,
-          "rainyDayFraction": 0.3323
+          "rainyDayFraction": 0.3323,
+          "meanDailyC": 13.48,
+          "meanRainMmPerDay": 2.4052
         },
         {
           "sampleDays": 300,
           "meanDailyHighC": 17.76,
           "meanRelativeHumidityPct": 77.59,
-          "rainyDayFraction": 0.3433
+          "rainyDayFraction": 0.3433,
+          "meanDailyC": 15.08,
+          "meanRainMmPerDay": 1.9503
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 20.16,
           "meanRelativeHumidityPct": 75.26,
-          "rainyDayFraction": 0.1452
+          "rainyDayFraction": 0.1452,
+          "meanDailyC": 17.19,
+          "meanRainMmPerDay": 1.1294
         },
         {
           "sampleDays": 300,
           "meanDailyHighC": 21.96,
           "meanRelativeHumidityPct": 76.57,
-          "rainyDayFraction": 0.0967
+          "rainyDayFraction": 0.0967,
+          "meanDailyC": 18.93,
+          "meanRainMmPerDay": 0.323
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 23.94,
           "meanRelativeHumidityPct": 75.66,
-          "rainyDayFraction": 0.0194
+          "rainyDayFraction": 0.0194,
+          "meanDailyC": 20.45,
+          "meanRainMmPerDay": 0.0677
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 24.56,
           "meanRelativeHumidityPct": 75.7,
-          "rainyDayFraction": 0.0097
+          "rainyDayFraction": 0.0097,
+          "meanDailyC": 20.78,
+          "meanRainMmPerDay": 0.0265
         },
         {
           "sampleDays": 300,
           "meanDailyHighC": 23.36,
           "meanRelativeHumidityPct": 76.2,
-          "rainyDayFraction": 0.1033
+          "rainyDayFraction": 0.1033,
+          "meanDailyC": 20.01,
+          "meanRainMmPerDay": 0.7963
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 21.34,
           "meanRelativeHumidityPct": 79.14,
-          "rainyDayFraction": 0.2613
+          "rainyDayFraction": 0.2613,
+          "meanDailyC": 18.49,
+          "meanRainMmPerDay": 1.8865
         },
         {
           "sampleDays": 300,
           "meanDailyHighC": 17.32,
           "meanRelativeHumidityPct": 81.56,
-          "rainyDayFraction": 0.3367
+          "rainyDayFraction": 0.3367,
+          "meanDailyC": 15.15,
+          "meanRainMmPerDay": 2.691
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 15.4,
           "meanRelativeHumidityPct": 82.77,
-          "rainyDayFraction": 0.2613
+          "rainyDayFraction": 0.2613,
+          "meanDailyC": 13.19,
+          "meanRainMmPerDay": 2.4039
         }
       ],
       "crowds": {
@@ -176,7 +202,9 @@
           "sourceUrl": "https://visitportugal.com/en/content/portugals-top-10-cultural-features"
         }
       ],
-      "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur."
+      "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur.",
+      "climateMeanTemperatureSource": "https://archive-api.open-meteo.com/v1/archive?latitude=38.7223&longitude=-9.1393&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean&timezone=auto&models=era5",
+      "climateRainAmountSource": "https://archive-api.open-meteo.com/v1/archive?latitude=38.7223&longitude=-9.1393&start_date=2016-01-01&end_date=2025-12-31&daily=rain_sum&timezone=auto&models=era5"
     },
     {
       "id": "porto",
@@ -186,79 +214,103 @@
       "longitude": -8.6291,
       "gridLatitude": 41.25,
       "gridLongitude": -8.5,
-      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=41.1579&longitude=-8.6291&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_max,relative_humidity_2m_mean,precipitation_sum&timezone=auto&models=era5",
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=41.1579&longitude=-8.6291&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean,rain_sum,relative_humidity_2m_mean&timezone=auto&models=era5",
       "months": [
         {
           "sampleDays": 310,
           "meanDailyHighC": 13.76,
           "meanRelativeHumidityPct": 82.52,
-          "rainyDayFraction": 0.3806
+          "rainyDayFraction": 0.3806,
+          "meanDailyC": 10.31,
+          "meanRainMmPerDay": 5.0329
         },
         {
           "sampleDays": 283,
           "meanDailyHighC": 15.14,
           "meanRelativeHumidityPct": 78.89,
-          "rainyDayFraction": 0.3569
+          "rainyDayFraction": 0.3569,
+          "meanDailyC": 11.44,
+          "meanRainMmPerDay": 4.1039
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 16.01,
           "meanRelativeHumidityPct": 77.15,
-          "rainyDayFraction": 0.4323
+          "rainyDayFraction": 0.4323,
+          "meanDailyC": 12.43,
+          "meanRainMmPerDay": 4.5894
         },
         {
           "sampleDays": 300,
           "meanDailyHighC": 18.4,
           "meanRelativeHumidityPct": 76.28,
-          "rainyDayFraction": 0.39
+          "rainyDayFraction": 0.39,
+          "meanDailyC": 14.66,
+          "meanRainMmPerDay": 4.5493
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 21.05,
           "meanRelativeHumidityPct": 75.32,
-          "rainyDayFraction": 0.3129
+          "rainyDayFraction": 0.3129,
+          "meanDailyC": 17.3,
+          "meanRainMmPerDay": 2.5694
         },
         {
           "sampleDays": 300,
           "meanDailyHighC": 23.05,
           "meanRelativeHumidityPct": 78.31,
-          "rainyDayFraction": 0.28
+          "rainyDayFraction": 0.28,
+          "meanDailyC": 19.37,
+          "meanRainMmPerDay": 1.8457
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 26.2,
           "meanRelativeHumidityPct": 73.93,
-          "rainyDayFraction": 0.0935
+          "rainyDayFraction": 0.0935,
+          "meanDailyC": 21.79,
+          "meanRainMmPerDay": 0.4474
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 26.57,
           "meanRelativeHumidityPct": 73.61,
-          "rainyDayFraction": 0.0742
+          "rainyDayFraction": 0.0742,
+          "meanDailyC": 21.81,
+          "meanRainMmPerDay": 0.3532
         },
         {
           "sampleDays": 300,
           "meanDailyHighC": 24.32,
           "meanRelativeHumidityPct": 75.18,
-          "rainyDayFraction": 0.2433
+          "rainyDayFraction": 0.2433,
+          "meanDailyC": 19.95,
+          "meanRainMmPerDay": 1.8827
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 21.3,
           "meanRelativeHumidityPct": 80.12,
-          "rainyDayFraction": 0.4097
+          "rainyDayFraction": 0.4097,
+          "meanDailyC": 17.52,
+          "meanRainMmPerDay": 5.5703
         },
         {
           "sampleDays": 300,
           "meanDailyHighC": 16.57,
           "meanRelativeHumidityPct": 83.9,
-          "rainyDayFraction": 0.48
+          "rainyDayFraction": 0.48,
+          "meanDailyC": 13.41,
+          "meanRainMmPerDay": 6.0963
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 14.38,
           "meanRelativeHumidityPct": 85.17,
-          "rainyDayFraction": 0.4548
+          "rainyDayFraction": 0.4548,
+          "meanDailyC": 11.3,
+          "meanRainMmPerDay": 5.3913
         }
       ],
       "crowds": {
@@ -311,7 +363,9 @@
           "sourceUrl": "https://visitportugal.com/en/content/portugals-top-10-cultural-features"
         }
       ],
-      "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur."
+      "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur.",
+      "climateMeanTemperatureSource": "https://archive-api.open-meteo.com/v1/archive?latitude=41.1579&longitude=-8.6291&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean&timezone=auto&models=era5",
+      "climateRainAmountSource": "https://archive-api.open-meteo.com/v1/archive?latitude=41.1579&longitude=-8.6291&start_date=2016-01-01&end_date=2025-12-31&daily=rain_sum&timezone=auto&models=era5"
     },
     {
       "id": "faro",
@@ -321,79 +375,103 @@
       "longitude": -7.9322,
       "gridLatitude": 37,
       "gridLongitude": -8,
-      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=37.0194&longitude=-7.9322&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_max,relative_humidity_2m_mean,precipitation_sum&timezone=auto&models=era5",
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=37.0194&longitude=-7.9322&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean,rain_sum,relative_humidity_2m_mean&timezone=auto&models=era5",
       "months": [
         {
           "sampleDays": 310,
           "meanDailyHighC": 15.13,
           "meanRelativeHumidityPct": 74.92,
-          "rainyDayFraction": 0.1774
+          "rainyDayFraction": 0.1774,
+          "meanDailyC": 13.52,
+          "meanRainMmPerDay": 1.2468
         },
         {
           "sampleDays": 283,
           "meanDailyHighC": 15.45,
           "meanRelativeHumidityPct": 76.65,
-          "rainyDayFraction": 0.1661
+          "rainyDayFraction": 0.1661,
+          "meanDailyC": 13.9,
+          "meanRainMmPerDay": 1.442
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 15.93,
           "meanRelativeHumidityPct": 75.67,
-          "rainyDayFraction": 0.2839
+          "rainyDayFraction": 0.2839,
+          "meanDailyC": 14.29,
+          "meanRainMmPerDay": 2.32
         },
         {
           "sampleDays": 300,
           "meanDailyHighC": 17.4,
           "meanRelativeHumidityPct": 76.03,
-          "rainyDayFraction": 0.2167
+          "rainyDayFraction": 0.2167,
+          "meanDailyC": 15.8,
+          "meanRainMmPerDay": 1.2807
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 19.88,
           "meanRelativeHumidityPct": 73.35,
-          "rainyDayFraction": 0.1065
+          "rainyDayFraction": 0.1065,
+          "meanDailyC": 18.06,
+          "meanRainMmPerDay": 0.6929
         },
         {
           "sampleDays": 300,
           "meanDailyHighC": 22.27,
           "meanRelativeHumidityPct": 72.1,
-          "rainyDayFraction": 0.0433
+          "rainyDayFraction": 0.0433,
+          "meanDailyC": 20.28,
+          "meanRainMmPerDay": 0.128
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 24.59,
           "meanRelativeHumidityPct": 69.32,
-          "rainyDayFraction": 0.0032
+          "rainyDayFraction": 0.0032,
+          "meanDailyC": 22.37,
+          "meanRainMmPerDay": 0.0035
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 25.24,
           "meanRelativeHumidityPct": 67.96,
-          "rainyDayFraction": 0.0032
+          "rainyDayFraction": 0.0032,
+          "meanDailyC": 23.06,
+          "meanRainMmPerDay": 0.0058
         },
         {
           "sampleDays": 300,
           "meanDailyHighC": 22.94,
           "meanRelativeHumidityPct": 73.78,
-          "rainyDayFraction": 0.0433
+          "rainyDayFraction": 0.0433,
+          "meanDailyC": 21.3,
+          "meanRainMmPerDay": 0.298
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 21.02,
           "meanRelativeHumidityPct": 77.41,
-          "rainyDayFraction": 0.1677
+          "rainyDayFraction": 0.1677,
+          "meanDailyC": 19.62,
+          "meanRainMmPerDay": 1.6374
         },
         {
           "sampleDays": 300,
           "meanDailyHighC": 17.95,
           "meanRelativeHumidityPct": 76.5,
-          "rainyDayFraction": 0.2267
+          "rainyDayFraction": 0.2267,
+          "meanDailyC": 16.42,
+          "meanRainMmPerDay": 1.5927
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 16.08,
           "meanRelativeHumidityPct": 77.38,
-          "rainyDayFraction": 0.2129
+          "rainyDayFraction": 0.2129,
+          "meanDailyC": 14.62,
+          "meanRainMmPerDay": 1.999
         }
       ],
       "crowds": {
@@ -454,7 +532,9 @@
           "sourceUrl": "https://rotaliterariadoalgarve.tcn.pt/download/booklet/rla-07-faro-en.pdf"
         }
       ],
-      "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur."
+      "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur.",
+      "climateMeanTemperatureSource": "https://archive-api.open-meteo.com/v1/archive?latitude=37.0194&longitude=-7.9322&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean&timezone=auto&models=era5",
+      "climateRainAmountSource": "https://archive-api.open-meteo.com/v1/archive?latitude=37.0194&longitude=-7.9322&start_date=2016-01-01&end_date=2025-12-31&daily=rain_sum&timezone=auto&models=era5"
     },
     {
       "id": "funchal",
@@ -464,79 +544,103 @@
       "longitude": -16.9241,
       "gridLatitude": 32.75,
       "gridLongitude": -17,
-      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=32.6669&longitude=-16.9241&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_max,relative_humidity_2m_mean,precipitation_sum&timezone=auto&models=era5",
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=32.6669&longitude=-16.9241&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean,rain_sum,relative_humidity_2m_mean&timezone=auto&models=era5",
       "months": [
         {
           "sampleDays": 310,
           "meanDailyHighC": 16.43,
           "meanRelativeHumidityPct": 79.7,
-          "rainyDayFraction": 0.2839
+          "rainyDayFraction": 0.2839,
+          "meanDailyC": 15,
+          "meanRainMmPerDay": 1.4784
         },
         {
           "sampleDays": 283,
           "meanDailyHighC": 16.35,
           "meanRelativeHumidityPct": 78.98,
-          "rainyDayFraction": 0.2792
+          "rainyDayFraction": 0.2792,
+          "meanDailyC": 14.55,
+          "meanRainMmPerDay": 1.8233
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 16.47,
           "meanRelativeHumidityPct": 78.84,
-          "rainyDayFraction": 0.3742
+          "rainyDayFraction": 0.3742,
+          "meanDailyC": 14.59,
+          "meanRainMmPerDay": 1.8155
         },
         {
           "sampleDays": 300,
           "meanDailyHighC": 17.6,
           "meanRelativeHumidityPct": 78.11,
-          "rainyDayFraction": 0.33
+          "rainyDayFraction": 0.33,
+          "meanDailyC": 15.44,
+          "meanRainMmPerDay": 1.487
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 19.21,
           "meanRelativeHumidityPct": 75.68,
-          "rainyDayFraction": 0.2258
+          "rainyDayFraction": 0.2258,
+          "meanDailyC": 16.84,
+          "meanRainMmPerDay": 0.7852
         },
         {
           "sampleDays": 300,
           "meanDailyHighC": 21.25,
           "meanRelativeHumidityPct": 75.41,
-          "rainyDayFraction": 0.1967
+          "rainyDayFraction": 0.1967,
+          "meanDailyC": 18.77,
+          "meanRainMmPerDay": 0.969
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 23.45,
           "meanRelativeHumidityPct": 73.7,
-          "rainyDayFraction": 0.0484
+          "rainyDayFraction": 0.0484,
+          "meanDailyC": 20.49,
+          "meanRainMmPerDay": 0.1313
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 24.68,
           "meanRelativeHumidityPct": 73.48,
-          "rainyDayFraction": 0.0548
+          "rainyDayFraction": 0.0548,
+          "meanDailyC": 21.58,
+          "meanRainMmPerDay": 0.2194
         },
         {
           "sampleDays": 300,
           "meanDailyHighC": 23.32,
           "meanRelativeHumidityPct": 75.01,
-          "rainyDayFraction": 0.2133
+          "rainyDayFraction": 0.2133,
+          "meanDailyC": 20.9,
+          "meanRainMmPerDay": 0.5797
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 22.05,
           "meanRelativeHumidityPct": 77.18,
-          "rainyDayFraction": 0.3645
+          "rainyDayFraction": 0.3645,
+          "meanDailyC": 19.88,
+          "meanRainMmPerDay": 1.7342
         },
         {
           "sampleDays": 300,
           "meanDailyHighC": 19.02,
           "meanRelativeHumidityPct": 79.12,
-          "rainyDayFraction": 0.3533
+          "rainyDayFraction": 0.3533,
+          "meanDailyC": 17.45,
+          "meanRainMmPerDay": 1.9357
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 17.3,
           "meanRelativeHumidityPct": 80.4,
-          "rainyDayFraction": 0.3355
+          "rainyDayFraction": 0.3355,
+          "meanDailyC": 15.94,
+          "meanRainMmPerDay": 1.8887
         }
       ],
       "crowds": {
@@ -639,7 +743,9 @@
           "rule": "carnival"
         }
       ],
-      "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur."
+      "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur.",
+      "climateMeanTemperatureSource": "https://archive-api.open-meteo.com/v1/archive?latitude=32.6669&longitude=-16.9241&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean&timezone=auto&models=era5",
+      "climateRainAmountSource": "https://archive-api.open-meteo.com/v1/archive?latitude=32.6669&longitude=-16.9241&start_date=2016-01-01&end_date=2025-12-31&daily=rain_sum&timezone=auto&models=era5"
     },
     {
       "id": "ponta-delgada",
@@ -649,79 +755,103 @@
       "longitude": -25.6687,
       "gridLatitude": 37.75,
       "gridLongitude": -25.75,
-      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=37.739&longitude=-25.6687&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_max,relative_humidity_2m_mean,precipitation_sum&timezone=auto&models=era5",
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=37.739&longitude=-25.6687&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean,rain_sum,relative_humidity_2m_mean&timezone=auto&models=era5",
       "months": [
         {
           "sampleDays": 310,
           "meanDailyHighC": 16.39,
           "meanRelativeHumidityPct": 80.4,
-          "rainyDayFraction": 0.471
+          "rainyDayFraction": 0.471,
+          "meanDailyC": 15.68,
+          "meanRainMmPerDay": 3.4968
         },
         {
           "sampleDays": 283,
           "meanDailyHighC": 15.74,
           "meanRelativeHumidityPct": 78.34,
-          "rainyDayFraction": 0.4382
+          "rainyDayFraction": 0.4382,
+          "meanDailyC": 14.95,
+          "meanRainMmPerDay": 3.2014
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 15.56,
           "meanRelativeHumidityPct": 78.09,
-          "rainyDayFraction": 0.4161
+          "rainyDayFraction": 0.4161,
+          "meanDailyC": 14.76,
+          "meanRainMmPerDay": 2.6219
         },
         {
           "sampleDays": 300,
           "meanDailyHighC": 15.98,
           "meanRelativeHumidityPct": 80.44,
-          "rainyDayFraction": 0.4233
+          "rainyDayFraction": 0.4233,
+          "meanDailyC": 15.25,
+          "meanRainMmPerDay": 2.66
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 17.36,
           "meanRelativeHumidityPct": 81.72,
-          "rainyDayFraction": 0.371
+          "rainyDayFraction": 0.371,
+          "meanDailyC": 16.67,
+          "meanRainMmPerDay": 2.321
         },
         {
           "sampleDays": 300,
           "meanDailyHighC": 19.29,
           "meanRelativeHumidityPct": 82.08,
-          "rainyDayFraction": 0.2233
+          "rainyDayFraction": 0.2233,
+          "meanDailyC": 18.67,
+          "meanRainMmPerDay": 1.2857
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 21.47,
           "meanRelativeHumidityPct": 81.98,
-          "rainyDayFraction": 0.1258
+          "rainyDayFraction": 0.1258,
+          "meanDailyC": 20.81,
+          "meanRainMmPerDay": 0.3652
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 23,
           "meanRelativeHumidityPct": 80.75,
-          "rainyDayFraction": 0.2258
+          "rainyDayFraction": 0.2258,
+          "meanDailyC": 22.33,
+          "meanRainMmPerDay": 1.1671
         },
         {
           "sampleDays": 300,
           "meanDailyHighC": 22.37,
           "meanRelativeHumidityPct": 78.23,
-          "rainyDayFraction": 0.3467
+          "rainyDayFraction": 0.3467,
+          "meanDailyC": 21.7,
+          "meanRainMmPerDay": 1.727
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 20.8,
           "meanRelativeHumidityPct": 78.64,
-          "rainyDayFraction": 0.4452
+          "rainyDayFraction": 0.4452,
+          "meanDailyC": 20.04,
+          "meanRainMmPerDay": 3.5829
         },
         {
           "sampleDays": 300,
           "meanDailyHighC": 18.63,
           "meanRelativeHumidityPct": 77.88,
-          "rainyDayFraction": 0.4333
+          "rainyDayFraction": 0.4333,
+          "meanDailyC": 17.88,
+          "meanRainMmPerDay": 3.2047
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 17.24,
           "meanRelativeHumidityPct": 78.1,
-          "rainyDayFraction": 0.4581
+          "rainyDayFraction": 0.4581,
+          "meanDailyC": 16.47,
+          "meanRainMmPerDay": 4.2829
         }
       ],
       "crowds": {
@@ -774,7 +904,9 @@
           "rule": "easter-plus-35"
         }
       ],
-      "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur."
+      "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur.",
+      "climateMeanTemperatureSource": "https://archive-api.open-meteo.com/v1/archive?latitude=37.739&longitude=-25.6687&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean&timezone=auto&models=era5",
+      "climateRainAmountSource": "https://archive-api.open-meteo.com/v1/archive?latitude=37.739&longitude=-25.6687&start_date=2016-01-01&end_date=2025-12-31&daily=rain_sum&timezone=auto&models=era5"
     },
     {
       "id": "cartagena",
@@ -784,79 +916,103 @@
       "longitude": -75.4794,
       "gridLatitude": 10.5,
       "gridLongitude": -75.5,
-      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=10.391&longitude=-75.4794&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_max,relative_humidity_2m_mean,precipitation_sum&timezone=auto&models=era5",
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=10.391&longitude=-75.4794&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean,rain_sum,relative_humidity_2m_mean&timezone=auto&models=era5",
       "months": [
         {
           "sampleDays": 310,
           "meanDailyHighC": 31.23,
           "meanRelativeHumidityPct": 76.2,
-          "rainyDayFraction": 0.0935
+          "rainyDayFraction": 0.0935,
+          "meanDailyC": 27.79,
+          "meanRainMmPerDay": 0.3771
         },
         {
           "sampleDays": 283,
           "meanDailyHighC": 31.62,
           "meanRelativeHumidityPct": 73.57,
-          "rainyDayFraction": 0.0424
+          "rainyDayFraction": 0.0424,
+          "meanDailyC": 27.9,
+          "meanRainMmPerDay": 0.1615
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 31.65,
           "meanRelativeHumidityPct": 75.22,
-          "rainyDayFraction": 0.1129
+          "rainyDayFraction": 0.1129,
+          "meanDailyC": 28.05,
+          "meanRainMmPerDay": 0.4142
         },
         {
           "sampleDays": 300,
           "meanDailyHighC": 31.21,
           "meanRelativeHumidityPct": 80.01,
-          "rainyDayFraction": 0.4767
+          "rainyDayFraction": 0.4767,
+          "meanDailyC": 28.22,
+          "meanRainMmPerDay": 2.3357
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 30.59,
           "meanRelativeHumidityPct": 84.23,
-          "rainyDayFraction": 0.7968
+          "rainyDayFraction": 0.7968,
+          "meanDailyC": 28.26,
+          "meanRainMmPerDay": 5.6719
         },
         {
           "sampleDays": 300,
           "meanDailyHighC": 30.35,
           "meanRelativeHumidityPct": 84.99,
-          "rainyDayFraction": 0.8567
+          "rainyDayFraction": 0.8567,
+          "meanDailyC": 28.13,
+          "meanRainMmPerDay": 7.0883
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 30.62,
           "meanRelativeHumidityPct": 84.79,
-          "rainyDayFraction": 0.8097
+          "rainyDayFraction": 0.8097,
+          "meanDailyC": 28.26,
+          "meanRainMmPerDay": 5.1171
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 30.36,
           "meanRelativeHumidityPct": 85.5,
-          "rainyDayFraction": 0.8935
+          "rainyDayFraction": 0.8935,
+          "meanDailyC": 28.15,
+          "meanRainMmPerDay": 6.1461
         },
         {
           "sampleDays": 300,
           "meanDailyHighC": 30.1,
           "meanRelativeHumidityPct": 85.56,
-          "rainyDayFraction": 0.9367
+          "rainyDayFraction": 0.9367,
+          "meanDailyC": 27.99,
+          "meanRainMmPerDay": 6.481
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 29.74,
           "meanRelativeHumidityPct": 85.45,
-          "rainyDayFraction": 0.9194
+          "rainyDayFraction": 0.9194,
+          "meanDailyC": 27.62,
+          "meanRainMmPerDay": 7.7997
         },
         {
           "sampleDays": 300,
           "meanDailyHighC": 29.66,
           "meanRelativeHumidityPct": 85.25,
-          "rainyDayFraction": 0.82
+          "rainyDayFraction": 0.82,
+          "meanDailyC": 27.53,
+          "meanRainMmPerDay": 6.8867
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 30.66,
           "meanRelativeHumidityPct": 81.08,
-          "rainyDayFraction": 0.2677
+          "rainyDayFraction": 0.2677,
+          "meanDailyC": 27.89,
+          "meanRainMmPerDay": 1.011
         }
       ],
       "crowds": {
@@ -917,7 +1073,9 @@
           "sourceUrl": "https://colombia.travel/en/fairs-and-festivals/hay-festival-cartagena"
         }
       ],
-      "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur."
+      "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur.",
+      "climateMeanTemperatureSource": "https://archive-api.open-meteo.com/v1/archive?latitude=10.391&longitude=-75.4794&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean&timezone=auto&models=era5",
+      "climateRainAmountSource": "https://archive-api.open-meteo.com/v1/archive?latitude=10.391&longitude=-75.4794&start_date=2016-01-01&end_date=2025-12-31&daily=rain_sum&timezone=auto&models=era5"
     },
     {
       "id": "medellin",
@@ -927,79 +1085,103 @@
       "longitude": -75.5812,
       "gridLatitude": 6.25,
       "gridLongitude": -75.5,
-      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=6.2442&longitude=-75.5812&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_max,relative_humidity_2m_mean,precipitation_sum&timezone=auto&models=era5",
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=6.2442&longitude=-75.5812&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean,rain_sum,relative_humidity_2m_mean&timezone=auto&models=era5",
       "months": [
         {
           "sampleDays": 310,
           "meanDailyHighC": 26.96,
           "meanRelativeHumidityPct": 81.75,
-          "rainyDayFraction": 0.5935
+          "rainyDayFraction": 0.5935,
+          "meanDailyC": 21.23,
+          "meanRainMmPerDay": 3.5442
         },
         {
           "sampleDays": 283,
           "meanDailyHighC": 26.82,
           "meanRelativeHumidityPct": 83.2,
-          "rainyDayFraction": 0.7597
+          "rainyDayFraction": 0.7597,
+          "meanDailyC": 21.4,
+          "meanRainMmPerDay": 5.889
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 26.58,
           "meanRelativeHumidityPct": 85.3,
-          "rainyDayFraction": 0.9097
+          "rainyDayFraction": 0.9097,
+          "meanDailyC": 21.38,
+          "meanRainMmPerDay": 8.8287
         },
         {
           "sampleDays": 300,
           "meanDailyHighC": 26.6,
           "meanRelativeHumidityPct": 86.74,
-          "rainyDayFraction": 0.93
+          "rainyDayFraction": 0.93,
+          "meanDailyC": 21.49,
+          "meanRainMmPerDay": 11.894
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 27.05,
           "meanRelativeHumidityPct": 86.3,
-          "rainyDayFraction": 0.929
+          "rainyDayFraction": 0.929,
+          "meanDailyC": 21.71,
+          "meanRainMmPerDay": 10.2087
         },
         {
           "sampleDays": 300,
           "meanDailyHighC": 27.13,
           "meanRelativeHumidityPct": 84.48,
-          "rainyDayFraction": 0.89
+          "rainyDayFraction": 0.89,
+          "meanDailyC": 21.45,
+          "meanRainMmPerDay": 7.1903
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 28.05,
           "meanRelativeHumidityPct": 79.49,
-          "rainyDayFraction": 0.8323
+          "rainyDayFraction": 0.8323,
+          "meanDailyC": 21.73,
+          "meanRainMmPerDay": 5.0487
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 28.27,
           "meanRelativeHumidityPct": 77.82,
-          "rainyDayFraction": 0.7742
+          "rainyDayFraction": 0.7742,
+          "meanDailyC": 21.82,
+          "meanRainMmPerDay": 5.7665
         },
         {
           "sampleDays": 300,
           "meanDailyHighC": 27.8,
           "meanRelativeHumidityPct": 81.66,
-          "rainyDayFraction": 0.8833
+          "rainyDayFraction": 0.8833,
+          "meanDailyC": 21.59,
+          "meanRainMmPerDay": 7.4213
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 26.44,
           "meanRelativeHumidityPct": 86.58,
-          "rainyDayFraction": 0.9548
+          "rainyDayFraction": 0.9548,
+          "meanDailyC": 21.11,
+          "meanRainMmPerDay": 9.9803
         },
         {
           "sampleDays": 300,
           "meanDailyHighC": 25.9,
           "meanRelativeHumidityPct": 87.66,
-          "rainyDayFraction": 0.93
+          "rainyDayFraction": 0.93,
+          "meanDailyC": 21.05,
+          "meanRainMmPerDay": 9.1807
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 26.28,
           "meanRelativeHumidityPct": 84.96,
-          "rainyDayFraction": 0.7129
+          "rainyDayFraction": 0.7129,
+          "meanDailyC": 21.15,
+          "meanRainMmPerDay": 4.8652
         }
       ],
       "crowds": {
@@ -1052,7 +1234,9 @@
           "sourceUrl": "https://colombia.travel/en/medellin/medellin-flower-festival"
         }
       ],
-      "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur."
+      "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur.",
+      "climateMeanTemperatureSource": "https://archive-api.open-meteo.com/v1/archive?latitude=6.2442&longitude=-75.5812&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean&timezone=auto&models=era5",
+      "climateRainAmountSource": "https://archive-api.open-meteo.com/v1/archive?latitude=6.2442&longitude=-75.5812&start_date=2016-01-01&end_date=2025-12-31&daily=rain_sum&timezone=auto&models=era5"
     },
     {
       "id": "bogota",
@@ -1062,79 +1246,103 @@
       "longitude": -74.0721,
       "gridLatitude": 4.75,
       "gridLongitude": -74,
-      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=4.711&longitude=-74.0721&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_max,relative_humidity_2m_mean,precipitation_sum&timezone=auto&models=era5",
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=4.711&longitude=-74.0721&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean,rain_sum,relative_humidity_2m_mean&timezone=auto&models=era5",
       "months": [
         {
           "sampleDays": 310,
           "meanDailyHighC": 20.79,
           "meanRelativeHumidityPct": 75.76,
-          "rainyDayFraction": 0.4419
+          "rainyDayFraction": 0.4419,
+          "meanDailyC": 14.93,
+          "meanRainMmPerDay": 1.9939
         },
         {
           "sampleDays": 283,
           "meanDailyHighC": 20.89,
           "meanRelativeHumidityPct": 76.89,
-          "rainyDayFraction": 0.6396
+          "rainyDayFraction": 0.6396,
+          "meanDailyC": 15.36,
+          "meanRainMmPerDay": 3.6682
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 20.08,
           "meanRelativeHumidityPct": 81.25,
-          "rainyDayFraction": 0.7516
+          "rainyDayFraction": 0.7516,
+          "meanDailyC": 15.24,
+          "meanRainMmPerDay": 5.7929
         },
         {
           "sampleDays": 300,
           "meanDailyHighC": 19.8,
           "meanRelativeHumidityPct": 82.71,
-          "rainyDayFraction": 0.7233
+          "rainyDayFraction": 0.7233,
+          "meanDailyC": 15.13,
+          "meanRainMmPerDay": 6.319
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 19.68,
           "meanRelativeHumidityPct": 82.68,
-          "rainyDayFraction": 0.6677
+          "rainyDayFraction": 0.6677,
+          "meanDailyC": 15.16,
+          "meanRainMmPerDay": 4.0439
         },
         {
           "sampleDays": 300,
           "meanDailyHighC": 19.05,
           "meanRelativeHumidityPct": 81.39,
-          "rainyDayFraction": 0.53
+          "rainyDayFraction": 0.53,
+          "meanDailyC": 14.61,
+          "meanRainMmPerDay": 2.204
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 18.8,
           "meanRelativeHumidityPct": 80.2,
-          "rainyDayFraction": 0.4484
+          "rainyDayFraction": 0.4484,
+          "meanDailyC": 14.32,
+          "meanRainMmPerDay": 1.4013
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 19.29,
           "meanRelativeHumidityPct": 77.58,
-          "rainyDayFraction": 0.3613
+          "rainyDayFraction": 0.3613,
+          "meanDailyC": 14.29,
+          "meanRainMmPerDay": 1.3013
         },
         {
           "sampleDays": 300,
           "meanDailyHighC": 19.95,
           "meanRelativeHumidityPct": 76.3,
-          "rainyDayFraction": 0.4433
+          "rainyDayFraction": 0.4433,
+          "meanDailyC": 14.64,
+          "meanRainMmPerDay": 1.7157
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 20.17,
           "meanRelativeHumidityPct": 79.16,
-          "rainyDayFraction": 0.6839
+          "rainyDayFraction": 0.6839,
+          "meanDailyC": 14.88,
+          "meanRainMmPerDay": 3.4339
         },
         {
           "sampleDays": 300,
           "meanDailyHighC": 20.07,
           "meanRelativeHumidityPct": 83.07,
-          "rainyDayFraction": 0.74
+          "rainyDayFraction": 0.74,
+          "meanDailyC": 14.97,
+          "meanRainMmPerDay": 5.881
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 20.21,
           "meanRelativeHumidityPct": 79.31,
-          "rainyDayFraction": 0.4806
+          "rainyDayFraction": 0.4806,
+          "meanDailyC": 14.87,
+          "meanRainMmPerDay": 2.5965
         }
       ],
       "crowds": {
@@ -1188,7 +1396,9 @@
           "sourceUrl": "https://colombia.travel/en/fairs-and-festivals/international-book-fair"
         }
       ],
-      "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur."
+      "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur.",
+      "climateMeanTemperatureSource": "https://archive-api.open-meteo.com/v1/archive?latitude=4.711&longitude=-74.0721&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean&timezone=auto&models=era5",
+      "climateRainAmountSource": "https://archive-api.open-meteo.com/v1/archive?latitude=4.711&longitude=-74.0721&start_date=2016-01-01&end_date=2025-12-31&daily=rain_sum&timezone=auto&models=era5"
     },
     {
       "id": "salento",
@@ -1198,79 +1408,103 @@
       "longitude": -75.5703,
       "gridLatitude": 4.75,
       "gridLongitude": -75.5,
-      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=4.637&longitude=-75.5703&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_max,relative_humidity_2m_mean,precipitation_sum&timezone=auto&models=era5",
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=4.637&longitude=-75.5703&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean,rain_sum,relative_humidity_2m_mean&timezone=auto&models=era5",
       "months": [
         {
           "sampleDays": 310,
           "meanDailyHighC": 22.91,
           "meanRelativeHumidityPct": 85.18,
-          "rainyDayFraction": 0.9677
+          "rainyDayFraction": 0.9677,
+          "meanDailyC": 18.21,
+          "meanRainMmPerDay": 22.2213
         },
         {
           "sampleDays": 283,
           "meanDailyHighC": 22.86,
           "meanRelativeHumidityPct": 86.31,
-          "rainyDayFraction": 0.9682
+          "rainyDayFraction": 0.9682,
+          "meanDailyC": 18.42,
+          "meanRainMmPerDay": 22.4608
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 22.71,
           "meanRelativeHumidityPct": 88.65,
-          "rainyDayFraction": 0.9903
+          "rainyDayFraction": 0.9903,
+          "meanDailyC": 18.36,
+          "meanRainMmPerDay": 32.7716
         },
         {
           "sampleDays": 300,
           "meanDailyHighC": 22.77,
           "meanRelativeHumidityPct": 89.58,
-          "rainyDayFraction": 0.9967
+          "rainyDayFraction": 0.9967,
+          "meanDailyC": 18.51,
+          "meanRainMmPerDay": 37.248
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 23.04,
           "meanRelativeHumidityPct": 89.97,
-          "rainyDayFraction": 0.9968
+          "rainyDayFraction": 0.9968,
+          "meanDailyC": 18.75,
+          "meanRainMmPerDay": 46.6255
         },
         {
           "sampleDays": 300,
           "meanDailyHighC": 22.65,
           "meanRelativeHumidityPct": 89.7,
-          "rainyDayFraction": 1
+          "rainyDayFraction": 1,
+          "meanDailyC": 18.34,
+          "meanRainMmPerDay": 55.008
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 22.49,
           "meanRelativeHumidityPct": 88.76,
-          "rainyDayFraction": 1
+          "rainyDayFraction": 1,
+          "meanDailyC": 18.17,
+          "meanRainMmPerDay": 57.5455
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 22.38,
           "meanRelativeHumidityPct": 86.7,
-          "rainyDayFraction": 1
+          "rainyDayFraction": 1,
+          "meanDailyC": 18,
+          "meanRainMmPerDay": 48.4897
         },
         {
           "sampleDays": 300,
           "meanDailyHighC": 22.53,
           "meanRelativeHumidityPct": 86.86,
-          "rainyDayFraction": 1
+          "rainyDayFraction": 1,
+          "meanDailyC": 17.99,
+          "meanRainMmPerDay": 41.8083
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 22.5,
           "meanRelativeHumidityPct": 88.96,
-          "rainyDayFraction": 0.9774
+          "rainyDayFraction": 0.9774,
+          "meanDailyC": 18.13,
+          "meanRainMmPerDay": 32.8377
         },
         {
           "sampleDays": 300,
           "meanDailyHighC": 22.6,
           "meanRelativeHumidityPct": 88.51,
-          "rainyDayFraction": 0.98
+          "rainyDayFraction": 0.98,
+          "meanDailyC": 18.24,
+          "meanRainMmPerDay": 26.7537
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 22.4,
           "meanRelativeHumidityPct": 86.83,
-          "rainyDayFraction": 0.9839
+          "rainyDayFraction": 0.9839,
+          "meanDailyC": 18.13,
+          "meanRainMmPerDay": 25.8465
         }
       ],
       "crowds": {
@@ -1323,7 +1557,10 @@
           "sourceUrl": "https://elquindio.com/informacion-local/salento/ferias-y-fiestas"
         }
       ],
-      "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur."
+      "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur.",
+      "climateMeanTemperatureSource": "https://archive-api.open-meteo.com/v1/archive?latitude=4.637&longitude=-75.5703&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean&timezone=auto&models=era5",
+      "climateRainAmountSource": "https://archive-api.open-meteo.com/v1/archive?latitude=4.637&longitude=-75.5703&start_date=2016-01-01&end_date=2025-12-31&daily=rain_sum&timezone=auto&models=era5",
+      "climateReviewNote": "Unusually high modelled rainfall; verify against local observations. Grid estimates are not validated station climatology."
     },
     {
       "id": "santa-marta",
@@ -1333,79 +1570,103 @@
       "longitude": -74.199,
       "gridLatitude": 11,
       "gridLongitude": -74.25,
-      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=11.2408&longitude=-74.199&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_max,relative_humidity_2m_mean,precipitation_sum&timezone=auto&models=era5",
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=11.2408&longitude=-74.199&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean,rain_sum,relative_humidity_2m_mean&timezone=auto&models=era5",
       "months": [
         {
           "sampleDays": 310,
           "meanDailyHighC": 29.22,
           "meanRelativeHumidityPct": 75.51,
-          "rainyDayFraction": 0.0935
+          "rainyDayFraction": 0.0935,
+          "meanDailyC": 27.81,
+          "meanRainMmPerDay": 0.4487
         },
         {
           "sampleDays": 283,
           "meanDailyHighC": 29.52,
           "meanRelativeHumidityPct": 73.95,
-          "rainyDayFraction": 0.0389
+          "rainyDayFraction": 0.0389,
+          "meanDailyC": 27.94,
+          "meanRainMmPerDay": 0.2622
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 29.58,
           "meanRelativeHumidityPct": 75.66,
-          "rainyDayFraction": 0.1355
+          "rainyDayFraction": 0.1355,
+          "meanDailyC": 28.19,
+          "meanRainMmPerDay": 0.8026
         },
         {
           "sampleDays": 300,
           "meanDailyHighC": 29.59,
           "meanRelativeHumidityPct": 79.21,
-          "rainyDayFraction": 0.4767
+          "rainyDayFraction": 0.4767,
+          "meanDailyC": 28.33,
+          "meanRainMmPerDay": 3.6527
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 29.76,
           "meanRelativeHumidityPct": 82.12,
-          "rainyDayFraction": 0.7355
+          "rainyDayFraction": 0.7355,
+          "meanDailyC": 28.39,
+          "meanRainMmPerDay": 7.4835
         },
         {
           "sampleDays": 300,
           "meanDailyHighC": 29.83,
           "meanRelativeHumidityPct": 80.62,
-          "rainyDayFraction": 0.7467
+          "rainyDayFraction": 0.7467,
+          "meanDailyC": 28.45,
+          "meanRainMmPerDay": 8.0243
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 29.96,
           "meanRelativeHumidityPct": 79.03,
-          "rainyDayFraction": 0.5645
+          "rainyDayFraction": 0.5645,
+          "meanDailyC": 28.72,
+          "meanRainMmPerDay": 4.8781
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 29.78,
           "meanRelativeHumidityPct": 80.94,
-          "rainyDayFraction": 0.6548
+          "rainyDayFraction": 0.6548,
+          "meanDailyC": 28.48,
+          "meanRainMmPerDay": 6.1877
         },
         {
           "sampleDays": 300,
           "meanDailyHighC": 29.57,
           "meanRelativeHumidityPct": 83.09,
-          "rainyDayFraction": 0.8033
+          "rainyDayFraction": 0.8033,
+          "meanDailyC": 28.13,
+          "meanRainMmPerDay": 7.8137
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 29.19,
           "meanRelativeHumidityPct": 83.68,
-          "rainyDayFraction": 0.8484
+          "rainyDayFraction": 0.8484,
+          "meanDailyC": 27.67,
+          "meanRainMmPerDay": 10.6048
         },
         {
           "sampleDays": 300,
           "meanDailyHighC": 29.12,
           "meanRelativeHumidityPct": 81.7,
-          "rainyDayFraction": 0.74
+          "rainyDayFraction": 0.74,
+          "meanDailyC": 27.74,
+          "meanRainMmPerDay": 8.4067
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 29.51,
           "meanRelativeHumidityPct": 76.39,
-          "rainyDayFraction": 0.2355
+          "rainyDayFraction": 0.2355,
+          "meanDailyC": 28.24,
+          "meanRainMmPerDay": 1.2081
         }
       ],
       "crowds": {
@@ -1458,7 +1719,9 @@
           "sourceUrl": "https://colombia.travel/en/santa-marta/fiestas-del-mar"
         }
       ],
-      "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur."
+      "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur.",
+      "climateMeanTemperatureSource": "https://archive-api.open-meteo.com/v1/archive?latitude=11.2408&longitude=-74.199&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean&timezone=auto&models=era5",
+      "climateRainAmountSource": "https://archive-api.open-meteo.com/v1/archive?latitude=11.2408&longitude=-74.199&start_date=2016-01-01&end_date=2025-12-31&daily=rain_sum&timezone=auto&models=era5"
     },
     {
       "id": "cali",
@@ -1468,79 +1731,103 @@
       "longitude": -76.532,
       "gridLatitude": 3.5,
       "gridLongitude": -76.5,
-      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=3.4516&longitude=-76.532&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_max,relative_humidity_2m_mean,precipitation_sum&timezone=auto&models=era5",
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=3.4516&longitude=-76.532&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean,rain_sum,relative_humidity_2m_mean&timezone=auto&models=era5",
       "months": [
         {
           "sampleDays": 310,
           "meanDailyHighC": 27.05,
           "meanRelativeHumidityPct": 84.34,
-          "rainyDayFraction": 0.7484
+          "rainyDayFraction": 0.7484,
+          "meanDailyC": 22.6,
+          "meanRainMmPerDay": 7.0297
         },
         {
           "sampleDays": 283,
           "meanDailyHighC": 27.07,
           "meanRelativeHumidityPct": 84.5,
-          "rainyDayFraction": 0.8728
+          "rainyDayFraction": 0.8728,
+          "meanDailyC": 22.78,
+          "meanRainMmPerDay": 10.4148
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 27.05,
           "meanRelativeHumidityPct": 84.08,
-          "rainyDayFraction": 0.8548
+          "rainyDayFraction": 0.8548,
+          "meanDailyC": 22.78,
+          "meanRainMmPerDay": 10.4487
         },
         {
           "sampleDays": 300,
           "meanDailyHighC": 27.19,
           "meanRelativeHumidityPct": 83.73,
-          "rainyDayFraction": 0.7933
+          "rainyDayFraction": 0.7933,
+          "meanDailyC": 22.98,
+          "meanRainMmPerDay": 9.389
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 27.46,
           "meanRelativeHumidityPct": 83.46,
-          "rainyDayFraction": 0.6871
+          "rainyDayFraction": 0.6871,
+          "meanDailyC": 23.14,
+          "meanRainMmPerDay": 6.8197
         },
         {
           "sampleDays": 300,
           "meanDailyHighC": 27.38,
           "meanRelativeHumidityPct": 82.58,
-          "rainyDayFraction": 0.6167
+          "rainyDayFraction": 0.6167,
+          "meanDailyC": 22.94,
+          "meanRainMmPerDay": 4.7187
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 27.8,
           "meanRelativeHumidityPct": 81.25,
-          "rainyDayFraction": 0.4774
+          "rainyDayFraction": 0.4774,
+          "meanDailyC": 23.15,
+          "meanRainMmPerDay": 3.6197
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 27.74,
           "meanRelativeHumidityPct": 81.19,
-          "rainyDayFraction": 0.5258
+          "rainyDayFraction": 0.5258,
+          "meanDailyC": 22.97,
+          "meanRainMmPerDay": 4.53
         },
         {
           "sampleDays": 300,
           "meanDailyHighC": 27.46,
           "meanRelativeHumidityPct": 82.27,
-          "rainyDayFraction": 0.64
+          "rainyDayFraction": 0.64,
+          "meanDailyC": 22.78,
+          "meanRainMmPerDay": 4.7523
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 26.63,
           "meanRelativeHumidityPct": 83.92,
-          "rainyDayFraction": 0.8323
+          "rainyDayFraction": 0.8323,
+          "meanDailyC": 22.44,
+          "meanRainMmPerDay": 11.1706
         },
         {
           "sampleDays": 300,
           "meanDailyHighC": 26.58,
           "meanRelativeHumidityPct": 84.55,
-          "rainyDayFraction": 0.88
+          "rainyDayFraction": 0.88,
+          "meanDailyC": 22.49,
+          "meanRainMmPerDay": 12.142
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 26.51,
           "meanRelativeHumidityPct": 85.17,
-          "rainyDayFraction": 0.8226
+          "rainyDayFraction": 0.8226,
+          "meanDailyC": 22.51,
+          "meanRainMmPerDay": 11.7368
         }
       ],
       "crowds": {
@@ -1601,7 +1888,9 @@
           "sourceUrl": "https://colombia.travel/es/ferias-y-fiestas/festival-petronio-alvarez"
         }
       ],
-      "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur."
+      "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur.",
+      "climateMeanTemperatureSource": "https://archive-api.open-meteo.com/v1/archive?latitude=3.4516&longitude=-76.532&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean&timezone=auto&models=era5",
+      "climateRainAmountSource": "https://archive-api.open-meteo.com/v1/archive?latitude=3.4516&longitude=-76.532&start_date=2016-01-01&end_date=2025-12-31&daily=rain_sum&timezone=auto&models=era5"
     },
     {
       "id": "barranquilla",
@@ -1611,79 +1900,103 @@
       "longitude": -74.7813,
       "gridLatitude": 10.75,
       "gridLongitude": -74.75,
-      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=10.9685&longitude=-74.7813&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_max,relative_humidity_2m_mean,precipitation_sum&timezone=auto&models=era5",
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=10.9685&longitude=-74.7813&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean,rain_sum,relative_humidity_2m_mean&timezone=auto&models=era5",
       "months": [
         {
           "sampleDays": 310,
           "meanDailyHighC": 32.49,
           "meanRelativeHumidityPct": 73.98,
-          "rainyDayFraction": 0.0452
+          "rainyDayFraction": 0.0452,
+          "meanDailyC": 28.26,
+          "meanRainMmPerDay": 0.2152
         },
         {
           "sampleDays": 283,
           "meanDailyHighC": 32.65,
           "meanRelativeHumidityPct": 71.78,
-          "rainyDayFraction": 0.0318
+          "rainyDayFraction": 0.0318,
+          "meanDailyC": 28.36,
+          "meanRainMmPerDay": 0.1834
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 32.91,
           "meanRelativeHumidityPct": 73.42,
-          "rainyDayFraction": 0.0903
+          "rainyDayFraction": 0.0903,
+          "meanDailyC": 28.61,
+          "meanRainMmPerDay": 0.39
         },
         {
           "sampleDays": 300,
           "meanDailyHighC": 33.08,
           "meanRelativeHumidityPct": 77.48,
-          "rainyDayFraction": 0.4467
+          "rainyDayFraction": 0.4467,
+          "meanDailyC": 28.96,
+          "meanRainMmPerDay": 3.3257
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 32.63,
           "meanRelativeHumidityPct": 83.13,
-          "rainyDayFraction": 0.7452
+          "rainyDayFraction": 0.7452,
+          "meanDailyC": 28.88,
+          "meanRainMmPerDay": 8.669
         },
         {
           "sampleDays": 300,
           "meanDailyHighC": 32.3,
           "meanRelativeHumidityPct": 84.56,
-          "rainyDayFraction": 0.7767
+          "rainyDayFraction": 0.7767,
+          "meanDailyC": 28.67,
+          "meanRainMmPerDay": 8.9617
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 32.51,
           "meanRelativeHumidityPct": 82.75,
-          "rainyDayFraction": 0.6032
+          "rainyDayFraction": 0.6032,
+          "meanDailyC": 28.9,
+          "meanRainMmPerDay": 5.3713
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 32.44,
           "meanRelativeHumidityPct": 84.93,
-          "rainyDayFraction": 0.7548
+          "rainyDayFraction": 0.7548,
+          "meanDailyC": 28.71,
+          "meanRainMmPerDay": 7.5977
         },
         {
           "sampleDays": 300,
           "meanDailyHighC": 32.14,
           "meanRelativeHumidityPct": 86.89,
-          "rainyDayFraction": 0.9033
+          "rainyDayFraction": 0.9033,
+          "meanDailyC": 28.34,
+          "meanRainMmPerDay": 8.9763
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 31.67,
           "meanRelativeHumidityPct": 87.16,
-          "rainyDayFraction": 0.9194
+          "rainyDayFraction": 0.9194,
+          "meanDailyC": 27.9,
+          "meanRainMmPerDay": 10.0348
         },
         {
           "sampleDays": 300,
           "meanDailyHighC": 31.44,
           "meanRelativeHumidityPct": 85.86,
-          "rainyDayFraction": 0.7267
+          "rainyDayFraction": 0.7267,
+          "meanDailyC": 27.89,
+          "meanRainMmPerDay": 7.1673
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 32.14,
           "meanRelativeHumidityPct": 78.34,
-          "rainyDayFraction": 0.1871
+          "rainyDayFraction": 0.1871,
+          "meanDailyC": 28.4,
+          "meanRainMmPerDay": 1.0323
         }
       ],
       "crowds": {
@@ -1735,7 +2048,9 @@
           "rule": "carnival"
         }
       ],
-      "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur."
+      "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur.",
+      "climateMeanTemperatureSource": "https://archive-api.open-meteo.com/v1/archive?latitude=10.9685&longitude=-74.7813&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean&timezone=auto&models=era5",
+      "climateRainAmountSource": "https://archive-api.open-meteo.com/v1/archive?latitude=10.9685&longitude=-74.7813&start_date=2016-01-01&end_date=2025-12-31&daily=rain_sum&timezone=auto&models=era5"
     },
     {
       "id": "bucaramanga",
@@ -1745,79 +2060,103 @@
       "longitude": -73.1227,
       "gridLatitude": 7.25,
       "gridLongitude": -73.25,
-      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=7.1193&longitude=-73.1227&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_max,relative_humidity_2m_mean,precipitation_sum&timezone=auto&models=era5",
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=7.1193&longitude=-73.1227&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean,rain_sum,relative_humidity_2m_mean&timezone=auto&models=era5",
       "months": [
         {
           "sampleDays": 310,
           "meanDailyHighC": 25.58,
           "meanRelativeHumidityPct": 84.04,
-          "rainyDayFraction": 0.7742
+          "rainyDayFraction": 0.7742,
+          "meanDailyC": 21.86,
+          "meanRainMmPerDay": 7.981
         },
         {
           "sampleDays": 283,
           "meanDailyHighC": 26.31,
           "meanRelativeHumidityPct": 81.89,
-          "rainyDayFraction": 0.8127
+          "rainyDayFraction": 0.8127,
+          "meanDailyC": 22.51,
+          "meanRainMmPerDay": 6.5516
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 25.8,
           "meanRelativeHumidityPct": 84.77,
-          "rainyDayFraction": 0.9419
+          "rainyDayFraction": 0.9419,
+          "meanDailyC": 22.5,
+          "meanRainMmPerDay": 13.3832
         },
         {
           "sampleDays": 300,
           "meanDailyHighC": 25.57,
           "meanRelativeHumidityPct": 85.86,
-          "rainyDayFraction": 1
+          "rainyDayFraction": 1,
+          "meanDailyC": 22.52,
+          "meanRainMmPerDay": 17.6803
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 25.64,
           "meanRelativeHumidityPct": 85.6,
-          "rainyDayFraction": 1
+          "rainyDayFraction": 1,
+          "meanDailyC": 22.71,
+          "meanRainMmPerDay": 27.1761
         },
         {
           "sampleDays": 300,
           "meanDailyHighC": 25.08,
           "meanRelativeHumidityPct": 85.62,
-          "rainyDayFraction": 1
+          "rainyDayFraction": 1,
+          "meanDailyC": 22.26,
+          "meanRainMmPerDay": 33.2637
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 25.24,
           "meanRelativeHumidityPct": 84.75,
-          "rainyDayFraction": 1
+          "rainyDayFraction": 1,
+          "meanDailyC": 22.25,
+          "meanRainMmPerDay": 32.6742
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 25.33,
           "meanRelativeHumidityPct": 84.37,
-          "rainyDayFraction": 1
+          "rainyDayFraction": 1,
+          "meanDailyC": 22.28,
+          "meanRainMmPerDay": 23.6474
         },
         {
           "sampleDays": 300,
           "meanDailyHighC": 25.44,
           "meanRelativeHumidityPct": 84.63,
-          "rainyDayFraction": 1
+          "rainyDayFraction": 1,
+          "meanDailyC": 22.3,
+          "meanRainMmPerDay": 20.5613
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 25.24,
           "meanRelativeHumidityPct": 86.59,
-          "rainyDayFraction": 0.9903
+          "rainyDayFraction": 0.9903,
+          "meanDailyC": 22,
+          "meanRainMmPerDay": 23.6197
         },
         {
           "sampleDays": 300,
           "meanDailyHighC": 25.14,
           "meanRelativeHumidityPct": 87.11,
-          "rainyDayFraction": 0.9933
+          "rainyDayFraction": 0.9933,
+          "meanDailyC": 22.01,
+          "meanRainMmPerDay": 22.0393
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 25.38,
           "meanRelativeHumidityPct": 85.63,
-          "rainyDayFraction": 0.9484
+          "rainyDayFraction": 0.9484,
+          "meanDailyC": 21.9,
+          "meanRainMmPerDay": 14.1655
         }
       ],
       "crowds": {
@@ -1870,7 +2209,10 @@
           "sourceUrl": "https://calendarioferiasyfiestas.fontur.com.co/en/agenda/bonita-fair"
         }
       ],
-      "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur."
+      "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur.",
+      "climateMeanTemperatureSource": "https://archive-api.open-meteo.com/v1/archive?latitude=7.1193&longitude=-73.1227&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean&timezone=auto&models=era5",
+      "climateRainAmountSource": "https://archive-api.open-meteo.com/v1/archive?latitude=7.1193&longitude=-73.1227&start_date=2016-01-01&end_date=2025-12-31&daily=rain_sum&timezone=auto&models=era5",
+      "climateReviewNote": "Unusually high modelled rainfall; verify against local observations. Grid estimates are not validated station climatology."
     },
     {
       "id": "san-andres",
@@ -1880,79 +2222,103 @@
       "longitude": -81.7006,
       "gridLatitude": 12.5,
       "gridLongitude": -81.75,
-      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=12.5847&longitude=-81.7006&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_max,relative_humidity_2m_mean,precipitation_sum&timezone=auto&models=era5",
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=12.5847&longitude=-81.7006&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean,rain_sum,relative_humidity_2m_mean&timezone=auto&models=era5",
       "months": [
         {
           "sampleDays": 310,
           "meanDailyHighC": 27.01,
           "meanRelativeHumidityPct": 80.62,
-          "rainyDayFraction": 0.5323
+          "rainyDayFraction": 0.5323,
+          "meanDailyC": 26.44,
+          "meanRainMmPerDay": 2.1384
         },
         {
           "sampleDays": 283,
           "meanDailyHighC": 26.81,
           "meanRelativeHumidityPct": 79.59,
-          "rainyDayFraction": 0.3781
+          "rainyDayFraction": 0.3781,
+          "meanDailyC": 26.3,
+          "meanRainMmPerDay": 0.9102
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 26.96,
           "meanRelativeHumidityPct": 79.49,
-          "rainyDayFraction": 0.2484
+          "rainyDayFraction": 0.2484,
+          "meanDailyC": 26.51,
+          "meanRainMmPerDay": 0.6484
         },
         {
           "sampleDays": 300,
           "meanDailyHighC": 27.44,
           "meanRelativeHumidityPct": 80.79,
-          "rainyDayFraction": 0.3067
+          "rainyDayFraction": 0.3067,
+          "meanDailyC": 26.97,
+          "meanRainMmPerDay": 1.0603
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 28.03,
           "meanRelativeHumidityPct": 83.68,
-          "rainyDayFraction": 0.6452
+          "rainyDayFraction": 0.6452,
+          "meanDailyC": 27.44,
+          "meanRainMmPerDay": 4.449
         },
         {
           "sampleDays": 300,
           "meanDailyHighC": 28.21,
           "meanRelativeHumidityPct": 84.18,
-          "rainyDayFraction": 0.87
+          "rainyDayFraction": 0.87,
+          "meanDailyC": 27.45,
+          "meanRainMmPerDay": 8.585
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 28.14,
           "meanRelativeHumidityPct": 84.77,
-          "rainyDayFraction": 0.8097
+          "rainyDayFraction": 0.8097,
+          "meanDailyC": 27.44,
+          "meanRainMmPerDay": 7.8132
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 28.35,
           "meanRelativeHumidityPct": 84.08,
-          "rainyDayFraction": 0.8129
+          "rainyDayFraction": 0.8129,
+          "meanDailyC": 27.57,
+          "meanRainMmPerDay": 6.6929
         },
         {
           "sampleDays": 300,
           "meanDailyHighC": 28.51,
           "meanRelativeHumidityPct": 82.92,
-          "rainyDayFraction": 0.8233
+          "rainyDayFraction": 0.8233,
+          "meanDailyC": 27.68,
+          "meanRainMmPerDay": 6.5723
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 28.22,
           "meanRelativeHumidityPct": 83.37,
-          "rainyDayFraction": 0.8871
+          "rainyDayFraction": 0.8871,
+          "meanDailyC": 27.34,
+          "meanRainMmPerDay": 9.3503
         },
         {
           "sampleDays": 300,
           "meanDailyHighC": 27.81,
           "meanRelativeHumidityPct": 84.67,
-          "rainyDayFraction": 0.8867
+          "rainyDayFraction": 0.8867,
+          "meanDailyC": 26.99,
+          "meanRainMmPerDay": 9.0847
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 27.48,
           "meanRelativeHumidityPct": 83.05,
-          "rainyDayFraction": 0.7355
+          "rainyDayFraction": 0.7355,
+          "meanDailyC": 26.81,
+          "meanRainMmPerDay": 4.0294
         }
       ],
       "crowds": {
@@ -1996,7 +2362,9 @@
         ]
       },
       "events": [],
-      "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur."
+      "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur.",
+      "climateMeanTemperatureSource": "https://archive-api.open-meteo.com/v1/archive?latitude=12.5847&longitude=-81.7006&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean&timezone=auto&models=era5",
+      "climateRainAmountSource": "https://archive-api.open-meteo.com/v1/archive?latitude=12.5847&longitude=-81.7006&start_date=2016-01-01&end_date=2025-12-31&daily=rain_sum&timezone=auto&models=era5"
     },
     {
       "id": "leticia",
@@ -2006,79 +2374,103 @@
       "longitude": -69.9406,
       "gridLatitude": -4.25,
       "gridLongitude": -70,
-      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=-4.2153&longitude=-69.9406&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_max,relative_humidity_2m_mean,precipitation_sum&timezone=auto&models=era5",
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=-4.2153&longitude=-69.9406&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean,rain_sum,relative_humidity_2m_mean&timezone=auto&models=era5",
       "months": [
         {
           "sampleDays": 310,
           "meanDailyHighC": 29.69,
           "meanRelativeHumidityPct": 89.12,
-          "rainyDayFraction": 0.8806
+          "rainyDayFraction": 0.8806,
+          "meanDailyC": 26.11,
+          "meanRainMmPerDay": 11.0584
         },
         {
           "sampleDays": 283,
           "meanDailyHighC": 29.59,
           "meanRelativeHumidityPct": 90.01,
-          "rainyDayFraction": 0.9505
+          "rainyDayFraction": 0.9505,
+          "meanDailyC": 26.06,
+          "meanRainMmPerDay": 12.1095
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 29.85,
           "meanRelativeHumidityPct": 89.81,
-          "rainyDayFraction": 0.9323
+          "rainyDayFraction": 0.9323,
+          "meanDailyC": 26.22,
+          "meanRainMmPerDay": 10.9729
         },
         {
           "sampleDays": 300,
           "meanDailyHighC": 29.64,
           "meanRelativeHumidityPct": 89.54,
-          "rainyDayFraction": 0.9333
+          "rainyDayFraction": 0.9333,
+          "meanDailyC": 26.13,
+          "meanRainMmPerDay": 9.825
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 29.29,
           "meanRelativeHumidityPct": 89.56,
-          "rainyDayFraction": 0.8742
+          "rainyDayFraction": 0.8742,
+          "meanDailyC": 25.93,
+          "meanRainMmPerDay": 8.0097
         },
         {
           "sampleDays": 300,
           "meanDailyHighC": 29.23,
           "meanRelativeHumidityPct": 88.91,
-          "rainyDayFraction": 0.7567
+          "rainyDayFraction": 0.7567,
+          "meanDailyC": 25.58,
+          "meanRainMmPerDay": 5.2607
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 29.7,
           "meanRelativeHumidityPct": 87.47,
-          "rainyDayFraction": 0.5742
+          "rainyDayFraction": 0.5742,
+          "meanDailyC": 25.72,
+          "meanRainMmPerDay": 3.7926
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 30.6,
           "meanRelativeHumidityPct": 86.24,
-          "rainyDayFraction": 0.5581
+          "rainyDayFraction": 0.5581,
+          "meanDailyC": 26.17,
+          "meanRainMmPerDay": 3.2361
         },
         {
           "sampleDays": 300,
           "meanDailyHighC": 31.28,
           "meanRelativeHumidityPct": 86.32,
-          "rainyDayFraction": 0.6867
+          "rainyDayFraction": 0.6867,
+          "meanDailyC": 26.73,
+          "meanRainMmPerDay": 4.874
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 30.8,
           "meanRelativeHumidityPct": 87.25,
-          "rainyDayFraction": 0.7645
+          "rainyDayFraction": 0.7645,
+          "meanDailyC": 26.69,
+          "meanRainMmPerDay": 6.981
         },
         {
           "sampleDays": 300,
           "meanDailyHighC": 30.41,
           "meanRelativeHumidityPct": 88.01,
-          "rainyDayFraction": 0.8667
+          "rainyDayFraction": 0.8667,
+          "meanDailyC": 26.54,
+          "meanRainMmPerDay": 8.993
         },
         {
           "sampleDays": 310,
           "meanDailyHighC": 29.55,
           "meanRelativeHumidityPct": 89.66,
-          "rainyDayFraction": 0.9355
+          "rainyDayFraction": 0.9355,
+          "meanDailyC": 26.07,
+          "meanRainMmPerDay": 11.0794
         }
       ],
       "crowds": {
@@ -2139,7 +2531,9 @@
           "sourceUrl": "https://colombia.travel/es/leticia"
         }
       ],
-      "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur."
+      "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur.",
+      "climateMeanTemperatureSource": "https://archive-api.open-meteo.com/v1/archive?latitude=-4.2153&longitude=-69.9406&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean&timezone=auto&models=era5",
+      "climateRainAmountSource": "https://archive-api.open-meteo.com/v1/archive?latitude=-4.2153&longitude=-69.9406&start_date=2016-01-01&end_date=2025-12-31&daily=rain_sum&timezone=auto&models=era5"
     }
   ]
 }
