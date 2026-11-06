@@ -61,8 +61,8 @@ window.TRAVEL_DESTINATION_PHOTOS = {
     "alt": "Cartagena’s colourful historic rooftops and church domes, with the modern skyline and Caribbean Sea beyond"
   },
   "morocco": {
-    "src": "images/morocco-dunes.jpg",
-    "alt": "Golden light and deep shadows across the sand dunes of Merzouga, Morocco"
+    "src": "images/morocco-cover.png",
+    "alt": "Camel caravan crossing orange desert dunes in Morocco"
   },
   "spain": {
     "src": "images/spain-supplied-cover.png",
