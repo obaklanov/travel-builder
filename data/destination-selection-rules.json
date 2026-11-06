@@ -12,6 +12,21 @@
       "targetBasesForLargerCountries": 10,
       "smallerCountries": "Use fewer destinations for smaller countries such as Uruguay and Paraguay.",
       "interpretation": "Guideline, not a rigid quota. Prioritize distinct experiences and Treasure access; consolidate nearby places."
+    },
+    "countryScale": {
+      "principle": "Destination counts must reflect country size and population, meaningful climate diversity, historical and architectural treasures, and distinct overnight experiences. Do not give countries similar counts simply because they are paired.",
+      "selectionOrder": [
+        "Cover existing Treasures with practical stays, consolidating nearby sites.",
+        "Represent substantially different climates and landscapes.",
+        "Represent major historical, architectural and cultural concentrations.",
+        "Scale breadth to land area and population while avoiding city-count quotas.",
+        "Remove overlapping stays; an additional airport or attraction alone is insufficient."
+      ],
+      "regionalPreference": "Retain greater depth for Europe and South America as requested.",
+      "benchmarks": {
+        "australia": 8,
+        "newZealand": "5–6; currently six"
+      }
     }
   },
   "rules": [
@@ -24,7 +39,8 @@
     "For one representative island destination, prefer practical airport access; keep distinct archipelagos separate.",
     "Do not infer property-level internet reliability from a city-wide rating.",
     "Add a separate destination when travel practicalities or a distinct geographic area make a separate stay worthwhile; assess journey times rather than using a fixed distance or destination count.",
-    "Prioritize coverage of distinctive experiences and landscapes within each country, not just major cities, population or airport size. In South America and Europe, add more destinations when they contribute a genuinely different experience; continue consolidating nearby places that fit into one stay."
+    "Prioritize coverage of distinctive experiences and landscapes within each country, not just major cities, population or airport size. In South America and Europe, add more destinations when they contribute a genuinely different experience; continue consolidating nearby places that fit into one stay.",
+    "Calibrate the number of destinations to land area, population, climate diversity and historical/architectural richness together. Each additional stay must add meaningful coverage; consolidate overlapping scenic destinations in smaller countries."
   ],
   "countries": {
     "portugal": {
@@ -2266,18 +2282,9 @@
           "airportCandidates": [
             "CHC"
           ]
-        },
-        {
-          "name": "Franz Josef",
-          "area": "West Coast glaciers",
-          "climateType": "all-season",
-          "climateTypeLabel": "All season",
-          "airportCandidates": [
-            "HKK"
-          ],
-          "accessNote": "HKK plus substantial ground transfer; mountain access separately verified."
         }
-      ]
+      ],
+      "selectionRationale": "Six destinations proportionate to the country: Auckland, Rotorua, Wellington, Queenstown, Te Anau and Christchurch. Franz Josef omitted as a separate stay to limit overlapping South Island scenic coverage. Treasure access retained."
     }
   },
   "climateTypeAssignments": {
@@ -2949,12 +2956,6 @@
     },
     "new-zealand:christchurch": {
       "name": "Christchurch",
-      "climateType": "all-season",
-      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
-      "status": "Authorized autonomous Australia/New Zealand rollout, 6 November 2026."
-    },
-    "new-zealand:franz-josef": {
-      "name": "Franz Josef",
       "climateType": "all-season",
       "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
       "status": "Authorized autonomous Australia/New Zealand rollout, 6 November 2026."

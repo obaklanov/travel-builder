@@ -125,3 +125,8 @@ Continuing authorized autonomous selection/deployment. Egypt six: Cairo, Luxor, 
 ## Australia and New Zealand — 6 November 2026
 
 Australia eight: Sydney and Perth Warm living; Surfers Paradise Beach; Melbourne, Cairns, Yulara, Darwin and Hobart All season. New Zealand seven, all All season: Auckland, Rotorua, Wellington, Queenstown, Te Anau, Christchurch and Franz Josef. Original slots retained and new stays appended. Every existing Treasure has an access base. NASA POWER/MERRA-2 daily 2016–2025 local-solar climate, total precipitation including snow. Southern-hemisphere crowd and price orders are provisional editorial proxies, not measured occupancy/prices. Dark Mofo and CubaDupa event coverage is partial and typical-month only. Reviewed Milford Sound December/January exclusions retained for the Te Anau/Fiordland excursion; these are not Te Anau town rainfall measurements. HKK to Franz Josef, ZQN to Te Anau and AKL to Rotorua require ground transfers; Hobbiton is an excursion near Matamata. Town weather does not represent reef, glacier, trail or mountain safety. Scoring rules unchanged. Rain audit now covers 211 destinations.
+
+
+### Country coverage calibration — 6 November 2026
+
+Owner correction: Australia retains eight, New Zealand reduced to six (Franz Josef removed; Christchurch retained). Six New Zealand stays are Auckland, Rotorua, Wellington, Queenstown, Te Anau and Christchurch; all All season. Future country lists balance land area/population, climate diversity, historical/architectural richness and distinct stays, with deeper Europe/South America coverage. Counts are not paired-country quotas. Treasure coverage and Milford excursion rain review retained. Current total 193 scored destinations and 210 rain reviews.

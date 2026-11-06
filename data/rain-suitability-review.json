@@ -7,9 +7,9 @@
     "persistentWetDayFraction": 0.6,
     "excludedMonthsPerVulnerableBase": 2,
     "selection": "Vulnerable if any month averages >=8 mm/day, or >=6 mm/day with >=60% wet days where wet-day data exist. Mark its two largest mean daily rainfall/precipitation months unsuitable. Equal values use calendar order. Reviewed regional/station overrides take precedence where coarse model grids conflict with official guidance; these are identified per base.",
-    "scope": "211 existing destinations. Product preference, not abnormal-weather diagnosis, flood forecast or official advisory.",
+    "scope": "210 existing destinations. Product preference, not abnormal-weather diagnosis, flood forecast or official advisory.",
     "limitations": "Model estimates and representative points; broad regions can contain different climates. NASA supplementary records are total precipitation including snow, not rain-only; cross-check Colombia estimates separately. Unflagged does not mean free of rain or weather hazards.",
-    "reviewedVulnerableCount": 74
+    "reviewedVulnerableCount": 73
   },
   "bases": [
     {
@@ -12695,85 +12695,6 @@
       "vulnerable": false,
       "excludedMonths": [],
       "reason": "Screening threshold not met at named town point."
-    },
-    {
-      "country": "new-zealand",
-      "regionIndex": 6,
-      "label": "Franz Josef (West Coast glaciers)",
-      "id": "franz-josef",
-      "latitude": -43.387,
-      "longitude": 170.183,
-      "referenceNote": "Named town point; excursions, mountain elevations and desert camps can differ.",
-      "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
-      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=170.183&latitude=-43.387&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "months": [
-        {
-          "month": 1,
-          "meanMmPerDay": 5.5576,
-          "wetDayFraction": 0.5065
-        },
-        {
-          "month": 2,
-          "meanMmPerDay": 5.4292,
-          "wetDayFraction": 0.477
-        },
-        {
-          "month": 3,
-          "meanMmPerDay": 4.975,
-          "wetDayFraction": 0.5
-        },
-        {
-          "month": 4,
-          "meanMmPerDay": 6.0475,
-          "wetDayFraction": 0.5233
-        },
-        {
-          "month": 5,
-          "meanMmPerDay": 6.174,
-          "wetDayFraction": 0.5742
-        },
-        {
-          "month": 6,
-          "meanMmPerDay": 4.8909,
-          "wetDayFraction": 0.5267
-        },
-        {
-          "month": 7,
-          "meanMmPerDay": 6.4785,
-          "wetDayFraction": 0.5742
-        },
-        {
-          "month": 8,
-          "meanMmPerDay": 5.5951,
-          "wetDayFraction": 0.571
-        },
-        {
-          "month": 9,
-          "meanMmPerDay": 6.4968,
-          "wetDayFraction": 0.5933
-        },
-        {
-          "month": 10,
-          "meanMmPerDay": 6.8231,
-          "wetDayFraction": 0.6581
-        },
-        {
-          "month": 11,
-          "meanMmPerDay": 5.9022,
-          "wetDayFraction": 0.5533
-        },
-        {
-          "month": 12,
-          "meanMmPerDay": 6.2044,
-          "wetDayFraction": 0.6032
-        }
-      ],
-      "vulnerable": true,
-      "excludedMonths": [
-        10,
-        9
-      ],
-      "reason": "Heavy or persistent wet-season screening threshold met; two wettest months excluded."
     },
     {
       "country": "italy",
