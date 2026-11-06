@@ -1454,7 +1454,7 @@ window.TRAVEL_BUILDER_FILTERS = [
       "Prefer areas without malaria transmission",
       "Show regional risk information"
     ],
-    "primary": false,
+    "primary": true,
     "pending": true,
     "priority": true,
     "defaultPriority": "prefer",
@@ -1469,7 +1469,7 @@ window.TRAVEL_BUILDER_FILTERS = [
       "Tap water drinkable preferred",
       "Treated / bottled water acceptable"
     ],
-    "primary": false,
+    "primary": true,
     "pending": true,
     "priority": true,
     "defaultPriority": "prefer",
