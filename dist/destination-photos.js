@@ -57,8 +57,8 @@ window.TRAVEL_DESTINATION_PHOTOS = {
     "alt": "Cruise boats among the limestone islands of Ha Long Bay, Vietnam"
   },
   "colombia": {
-    "src": "images/colombia.jpg",
-    "alt": "The skyline of Cartagena, Colombia, beside the Caribbean Sea"
+    "src": "images/colombia-cover.png",
+    "alt": "Cartagena’s colourful historic rooftops and church domes, with the modern skyline and Caribbean Sea beyond"
   },
   "morocco": {
     "src": "images/morocco-dunes.jpg",

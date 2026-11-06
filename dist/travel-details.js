@@ -101,11 +101,11 @@ const regionGeographyLabels={
     "Okinawa / Islands"
   ],
   "portugal": [
-    "Lisbon / Center",
-    "Porto / North",
-    "Algarve / South",
-    "Madeira / Islands",
-    "Azores / Islands"
+    "Lisbon (Central coast)",
+    "Porto (North)",
+    "Faro (Algarve)",
+    "Funchal (Madeira)",
+    "Ponta Delgada (Azores)"
   ],
   "thailand": [
     "Bangkok / Center",
