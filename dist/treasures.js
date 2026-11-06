@@ -1052,18 +1052,13 @@ const treasurePhotos = {
     "bytes": 40646
   },
   "El Peñol Rock": {
-    "author": "Tzeitel Topel",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sight_of_the_Guatap%C3%A9_Rock.JPG",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "originalTitle": "File:Sight of the Guatapé Rock.JPG",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Sight_of_the_Guatap%C3%A9_Rock.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "src": "images/treasures/colombia-penol-landscape.webp",
-    "alt": "El Peñol Rock in a wider landscape view",
-    "width": 640,
-    "height": 480,
-    "bytes": 30904
-  },
+    "src": "images/treasures/colombia-penol-owner.png",
+    "alt": "El Peñol Rock rising above green hills and the Guatapé reservoir",
+    "width": 889,
+    "height": 660,
+    "bytes": 1089728,
+    "suppliedByOwner": true
+},
   "Jemaa el-Fnaa": {
     "author": "Boris Macek",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Djemaa_el_Fna.jpg",
