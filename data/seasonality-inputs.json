@@ -51,6 +51,20 @@
         "timeStandard": "Local solar time",
         "sourceUrl": "https://power.larc.nasa.gov/docs/services/api/temporal/daily/",
         "rainDefinition": "PRECTOTCORR total precipitation, including snow, averaged across all calendar days in mm/day. Alternative to ERA5 rain-only data due daily API quota; not directly identical."
+      },
+      "japan": {
+        "model": "NASA POWER/MERRA-2",
+        "period": "2016–2025",
+        "timeStandard": "Local solar time",
+        "sourceUrl": "https://power.larc.nasa.gov/docs/services/api/temporal/daily/",
+        "rainDefinition": "PRECTOTCORR total precipitation, including snow, averaged across all calendar days in mm/day. Alternative to ERA5 rain-only data due daily API quota; not directly identical."
+      },
+      "laos": {
+        "model": "NASA POWER/MERRA-2",
+        "period": "2016–2025",
+        "timeStandard": "Local solar time",
+        "sourceUrl": "https://power.larc.nasa.gov/docs/services/api/temporal/daily/",
+        "rainDefinition": "PRECTOTCORR total precipitation, including snow, averaged across all calendar days in mm/day. Alternative to ERA5 rain-only data due daily API quota; not directly identical."
       }
     }
   },
@@ -20129,6 +20143,2043 @@
         }
       ],
       "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "japan",
+      "id": "tokyo",
+      "name": "Tokyo",
+      "area": "Kanto",
+      "latitude": 35.6762,
+      "longitude": 139.6503,
+      "airports": [
+        [
+          "HND",
+          "Tokyo Haneda"
+        ],
+        [
+          "NRT",
+          "Tokyo Narita"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 0,
+      "gridLatitude": 35.6762,
+      "gridLongitude": 139.6503,
+      "elevation": 232.92,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=139.6503&latitude=35.6762&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://www.japan.travel/en/guide/november/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 2.93,
+          "meanDailyHighC": 8.43,
+          "meanRainMmPerDay": 1.6806,
+          "meanRelativeHumidityPct": 75.89,
+          "rainyDayFraction": 0.129
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 3.99,
+          "meanDailyHighC": 9.63,
+          "meanRainMmPerDay": 1.8668,
+          "meanRelativeHumidityPct": 74.88,
+          "rainyDayFraction": 0.2155
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 8.04,
+          "meanDailyHighC": 13.63,
+          "meanRainMmPerDay": 4.7237,
+          "meanRelativeHumidityPct": 77.61,
+          "rainyDayFraction": 0.3581
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 12.88,
+          "meanDailyHighC": 18.22,
+          "meanRainMmPerDay": 4.8245,
+          "meanRelativeHumidityPct": 78.33,
+          "rainyDayFraction": 0.3633
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.58,
+          "meanDailyHighC": 22.52,
+          "meanRainMmPerDay": 5.1795,
+          "meanRelativeHumidityPct": 79.79,
+          "rainyDayFraction": 0.4194
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 21.29,
+          "meanDailyHighC": 25.57,
+          "meanRainMmPerDay": 7.1233,
+          "meanRelativeHumidityPct": 83.24,
+          "rainyDayFraction": 0.5033
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.43,
+          "meanDailyHighC": 29.42,
+          "meanRainMmPerDay": 6.3173,
+          "meanRelativeHumidityPct": 84.92,
+          "rainyDayFraction": 0.5774
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.61,
+          "meanDailyHighC": 30.77,
+          "meanRainMmPerDay": 5.9337,
+          "meanRelativeHumidityPct": 83.48,
+          "rainyDayFraction": 0.5516
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 23.07,
+          "meanDailyHighC": 27.01,
+          "meanRainMmPerDay": 7.7942,
+          "meanRelativeHumidityPct": 85.52,
+          "rainyDayFraction": 0.56
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 16.53,
+          "meanDailyHighC": 20.85,
+          "meanRainMmPerDay": 7.0451,
+          "meanRelativeHumidityPct": 84.15,
+          "rainyDayFraction": 0.4419
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 10.97,
+          "meanDailyHighC": 16.16,
+          "meanRainMmPerDay": 2.8302,
+          "meanRelativeHumidityPct": 81.8,
+          "rainyDayFraction": 0.2867
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 5.49,
+          "meanDailyHighC": 11.25,
+          "meanRainMmPerDay": 1.6608,
+          "meanRelativeHumidityPct": 77.85,
+          "rainyDayFraction": 0.1871
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Japanese city/island and Lao sightseeing contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          2,
+          1,
+          6,
+          9,
+          7,
+          12,
+          8,
+          5,
+          4,
+          3,
+          10,
+          11
+        ],
+        "sourceUrls": [
+          "https://www.japan.travel/en/guide/november/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          2,
+          1,
+          6,
+          9,
+          7,
+          12,
+          8,
+          5,
+          4,
+          3,
+          10,
+          11
+        ],
+        "sourceUrls": [
+          "https://www.japan.travel/en/guide/november/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "japan",
+      "id": "sapporo",
+      "name": "Sapporo",
+      "area": "Hokkaido",
+      "latitude": 43.0618,
+      "longitude": 141.3545,
+      "airports": [
+        [
+          "CTS",
+          "Sapporo New Chitose"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 1,
+      "gridLatitude": 43.0618,
+      "gridLongitude": 141.3545,
+      "elevation": 279.13,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=141.3545&latitude=43.0618&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://www.japan.travel/en/guide/november/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates. All season city, not a ski-only base. NASA precipitation includes snowfall; this is not ski-run or snow-cover suitability.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": -6.9,
+          "meanDailyHighC": -3.95,
+          "meanRainMmPerDay": 3.1223,
+          "meanRelativeHumidityPct": 94.44,
+          "rainyDayFraction": 0.7516
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": -6.42,
+          "meanDailyHighC": -3.38,
+          "meanRainMmPerDay": 3.0511,
+          "meanRelativeHumidityPct": 92.57,
+          "rainyDayFraction": 0.7173
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": -1.98,
+          "meanDailyHighC": 1.16,
+          "meanRainMmPerDay": 2.3775,
+          "meanRelativeHumidityPct": 90.46,
+          "rainyDayFraction": 0.4323
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 4.43,
+          "meanDailyHighC": 9.1,
+          "meanRainMmPerDay": 2.2197,
+          "meanRelativeHumidityPct": 83.39,
+          "rainyDayFraction": 0.3767
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 10.79,
+          "meanDailyHighC": 16.13,
+          "meanRainMmPerDay": 2.3981,
+          "meanRelativeHumidityPct": 81.23,
+          "rainyDayFraction": 0.3516
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 15.18,
+          "meanDailyHighC": 20.01,
+          "meanRainMmPerDay": 3.9051,
+          "meanRelativeHumidityPct": 84.12,
+          "rainyDayFraction": 0.4067
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 20.09,
+          "meanDailyHighC": 24.75,
+          "meanRainMmPerDay": 3.7288,
+          "meanRelativeHumidityPct": 86.19,
+          "rainyDayFraction": 0.3935
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 20.69,
+          "meanDailyHighC": 24.89,
+          "meanRainMmPerDay": 6.6918,
+          "meanRelativeHumidityPct": 86.78,
+          "rainyDayFraction": 0.5355
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 16.62,
+          "meanDailyHighC": 20.97,
+          "meanRainMmPerDay": 4.539,
+          "meanRelativeHumidityPct": 84.88,
+          "rainyDayFraction": 0.4433
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 9.55,
+          "meanDailyHighC": 13.76,
+          "meanRainMmPerDay": 4.5801,
+          "meanRelativeHumidityPct": 84.4,
+          "rainyDayFraction": 0.5387
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 2.39,
+          "meanDailyHighC": 5.74,
+          "meanRainMmPerDay": 4.5944,
+          "meanRelativeHumidityPct": 88.09,
+          "rainyDayFraction": 0.67
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": -4.74,
+          "meanDailyHighC": -2.13,
+          "meanRainMmPerDay": 4.0894,
+          "meanRelativeHumidityPct": 93.5,
+          "rainyDayFraction": 0.7968
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Japanese city/island and Lao sightseeing contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          4,
+          11,
+          3,
+          5,
+          10,
+          6,
+          12,
+          9,
+          1,
+          7,
+          8,
+          2
+        ],
+        "sourceUrls": [
+          "https://www.japan.travel/en/guide/november/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          4,
+          11,
+          3,
+          5,
+          10,
+          6,
+          12,
+          9,
+          1,
+          7,
+          8,
+          2
+        ],
+        "sourceUrls": [
+          "https://www.japan.travel/en/guide/november/"
+        ]
+      },
+      "events": [
+        {
+          "name": "Sapporo Snow Festival",
+          "months": [
+            2
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://www.japan.travel/en/see-and-do/festivals-and-events/"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "japan",
+      "id": "onna",
+      "name": "Onna",
+      "area": "Okinawa",
+      "latitude": 26.4974,
+      "longitude": 127.8536,
+      "airports": [
+        [
+          "OKA",
+          "Okinawa Naha"
+        ]
+      ],
+      "climateType": "beach",
+      "regionIndex": 2,
+      "gridLatitude": 26.4974,
+      "gridLongitude": 127.8536,
+      "elevation": 14.78,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=127.8536&latitude=26.4974&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Approved beach-oriented holiday base; 25°C target.",
+      "climateTypeSources": [
+        "https://www.japan.travel/en/guide/november/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.66,
+          "meanDailyHighC": 19.72,
+          "meanRainMmPerDay": 2.077,
+          "meanRelativeHumidityPct": 73.88,
+          "rainyDayFraction": 0.3742
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 18.68,
+          "meanDailyHighC": 19.81,
+          "meanRainMmPerDay": 1.8315,
+          "meanRelativeHumidityPct": 75.36,
+          "rainyDayFraction": 0.364
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 19.99,
+          "meanDailyHighC": 21.12,
+          "meanRainMmPerDay": 2.4707,
+          "meanRelativeHumidityPct": 76.64,
+          "rainyDayFraction": 0.4161
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 21.88,
+          "meanDailyHighC": 22.94,
+          "meanRainMmPerDay": 4.4256,
+          "meanRelativeHumidityPct": 79.65,
+          "rainyDayFraction": 0.4833
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.36,
+          "meanDailyHighC": 25.29,
+          "meanRainMmPerDay": 7.7097,
+          "meanRelativeHumidityPct": 84.6,
+          "rainyDayFraction": 0.6161
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 26.92,
+          "meanDailyHighC": 27.62,
+          "meanRainMmPerDay": 11.1364,
+          "meanRelativeHumidityPct": 88.53,
+          "rainyDayFraction": 0.7367
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.84,
+          "meanDailyHighC": 29.56,
+          "meanRainMmPerDay": 5.3068,
+          "meanRelativeHumidityPct": 84.67,
+          "rainyDayFraction": 0.5839
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 29.27,
+          "meanDailyHighC": 30.05,
+          "meanRainMmPerDay": 4.78,
+          "meanRelativeHumidityPct": 81.93,
+          "rainyDayFraction": 0.6129
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 28.74,
+          "meanDailyHighC": 29.48,
+          "meanRainMmPerDay": 5.7297,
+          "meanRelativeHumidityPct": 80.93,
+          "rainyDayFraction": 0.65
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.8,
+          "meanDailyHighC": 27.62,
+          "meanRainMmPerDay": 3.5335,
+          "meanRelativeHumidityPct": 76.97,
+          "rainyDayFraction": 0.4194
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 23.83,
+          "meanDailyHighC": 24.73,
+          "meanRainMmPerDay": 2.8913,
+          "meanRelativeHumidityPct": 75.37,
+          "rainyDayFraction": 0.3833
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 20.5,
+          "meanDailyHighC": 21.47,
+          "meanRainMmPerDay": 2.42,
+          "meanRelativeHumidityPct": 74.52,
+          "rainyDayFraction": 0.4323
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Japanese city/island and Lao sightseeing contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          12,
+          3,
+          11,
+          4,
+          10,
+          5,
+          6,
+          9,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.japan.travel/en/guide/november/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          1,
+          2,
+          12,
+          3,
+          11,
+          4,
+          10,
+          5,
+          6,
+          9,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.japan.travel/en/guide/november/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "japan",
+      "id": "kyoto",
+      "name": "Kyoto",
+      "area": "Kansai",
+      "latitude": 35.0116,
+      "longitude": 135.7681,
+      "airports": [
+        [
+          "KIX",
+          "Osaka Kansai"
+        ],
+        [
+          "ITM",
+          "Osaka Itami"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 3,
+      "gridLatitude": 35.0116,
+      "gridLongitude": 135.7681,
+      "elevation": 251.31,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=135.7681&latitude=35.0116&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://www.japan.travel/en/guide/november/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 2.67,
+          "meanDailyHighC": 6.61,
+          "meanRainMmPerDay": 2.7054,
+          "meanRelativeHumidityPct": 84.09,
+          "rainyDayFraction": 0.5129
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 3.27,
+          "meanDailyHighC": 7.56,
+          "meanRainMmPerDay": 2.7685,
+          "meanRelativeHumidityPct": 82.12,
+          "rainyDayFraction": 0.4735
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 7.24,
+          "meanDailyHighC": 12.32,
+          "meanRainMmPerDay": 3.8014,
+          "meanRelativeHumidityPct": 80.81,
+          "rainyDayFraction": 0.3806
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 12.29,
+          "meanDailyHighC": 17.55,
+          "meanRainMmPerDay": 4.9221,
+          "meanRelativeHumidityPct": 79.82,
+          "rainyDayFraction": 0.3733
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.01,
+          "meanDailyHighC": 22.01,
+          "meanRainMmPerDay": 5.7098,
+          "meanRelativeHumidityPct": 79.99,
+          "rainyDayFraction": 0.3871
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 21.1,
+          "meanDailyHighC": 25.33,
+          "meanRainMmPerDay": 7.577,
+          "meanRelativeHumidityPct": 83.79,
+          "rainyDayFraction": 0.49
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.61,
+          "meanDailyHighC": 29.29,
+          "meanRainMmPerDay": 7.7158,
+          "meanRelativeHumidityPct": 85.62,
+          "rainyDayFraction": 0.5903
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.41,
+          "meanDailyHighC": 30.2,
+          "meanRainMmPerDay": 6.3301,
+          "meanRelativeHumidityPct": 84.54,
+          "rainyDayFraction": 0.5419
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 23.08,
+          "meanDailyHighC": 26.9,
+          "meanRainMmPerDay": 6.6944,
+          "meanRelativeHumidityPct": 85.26,
+          "rainyDayFraction": 0.5967
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 16.61,
+          "meanDailyHighC": 20.83,
+          "meanRainMmPerDay": 5.8629,
+          "meanRelativeHumidityPct": 83.82,
+          "rainyDayFraction": 0.4548
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 10.72,
+          "meanDailyHighC": 15.3,
+          "meanRainMmPerDay": 2.8063,
+          "meanRelativeHumidityPct": 83.23,
+          "rainyDayFraction": 0.3933
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 5.07,
+          "meanDailyHighC": 9.28,
+          "meanRainMmPerDay": 3.0805,
+          "meanRelativeHumidityPct": 83.97,
+          "rainyDayFraction": 0.5581
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Japanese city/island and Lao sightseeing contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          2,
+          1,
+          6,
+          9,
+          7,
+          12,
+          8,
+          5,
+          4,
+          3,
+          10,
+          11
+        ],
+        "sourceUrls": [
+          "https://www.japan.travel/en/guide/november/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          2,
+          1,
+          6,
+          9,
+          7,
+          12,
+          8,
+          5,
+          4,
+          3,
+          10,
+          11
+        ],
+        "sourceUrls": [
+          "https://www.japan.travel/en/guide/november/"
+        ]
+      },
+      "events": [
+        {
+          "name": "Gion Matsuri",
+          "months": [
+            7
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://www.japan.travel/en/spot/83/"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "japan",
+      "id": "fujikawaguchiko",
+      "name": "Fujikawaguchiko",
+      "area": "Fuji Five Lakes",
+      "latitude": 35.4973,
+      "longitude": 138.7548,
+      "airports": [
+        [
+          "HND",
+          "Tokyo Haneda"
+        ],
+        [
+          "NRT",
+          "Tokyo Narita"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 4,
+      "gridLatitude": 35.4973,
+      "gridLongitude": 138.7548,
+      "elevation": 732.27,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=138.7548&latitude=35.4973&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://www.japan.travel/en/guide/november/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates. Tokyo airports require substantial onward ground travel. Town climate does not represent Mount Fuji summit conditions or climbing access; mountain visibility needs a separate check.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 0,
+          "meanDailyHighC": 5.26,
+          "meanRainMmPerDay": 1.5296,
+          "meanRelativeHumidityPct": 77.62,
+          "rainyDayFraction": 0.129
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 1.06,
+          "meanDailyHighC": 6.65,
+          "meanRainMmPerDay": 1.9996,
+          "meanRelativeHumidityPct": 76.88,
+          "rainyDayFraction": 0.1943
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 5.29,
+          "meanDailyHighC": 11.1,
+          "meanRainMmPerDay": 4.5074,
+          "meanRelativeHumidityPct": 78.08,
+          "rainyDayFraction": 0.3581
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 10.24,
+          "meanDailyHighC": 16.03,
+          "meanRainMmPerDay": 4.7921,
+          "meanRelativeHumidityPct": 77.97,
+          "rainyDayFraction": 0.3533
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 15.26,
+          "meanDailyHighC": 20.7,
+          "meanRainMmPerDay": 5.3044,
+          "meanRelativeHumidityPct": 78.06,
+          "rainyDayFraction": 0.4065
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 18.99,
+          "meanDailyHighC": 23.72,
+          "meanRainMmPerDay": 7.1609,
+          "meanRelativeHumidityPct": 82.43,
+          "rainyDayFraction": 0.52
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 23.23,
+          "meanDailyHighC": 27.67,
+          "meanRainMmPerDay": 7.2925,
+          "meanRelativeHumidityPct": 84.15,
+          "rainyDayFraction": 0.6484
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.11,
+          "meanDailyHighC": 28.69,
+          "meanRainMmPerDay": 6.4629,
+          "meanRelativeHumidityPct": 84.05,
+          "rainyDayFraction": 0.6258
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 20.46,
+          "meanDailyHighC": 24.91,
+          "meanRainMmPerDay": 7.36,
+          "meanRelativeHumidityPct": 86.23,
+          "rainyDayFraction": 0.5933
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 13.98,
+          "meanDailyHighC": 18.74,
+          "meanRainMmPerDay": 6.3614,
+          "meanRelativeHumidityPct": 85.49,
+          "rainyDayFraction": 0.4387
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 8.28,
+          "meanDailyHighC": 13.87,
+          "meanRainMmPerDay": 2.3566,
+          "meanRelativeHumidityPct": 82.88,
+          "rainyDayFraction": 0.2633
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 2.64,
+          "meanDailyHighC": 8.21,
+          "meanRainMmPerDay": 1.5515,
+          "meanRelativeHumidityPct": 79.12,
+          "rainyDayFraction": 0.1839
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Japanese city/island and Lao sightseeing contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          2,
+          1,
+          6,
+          9,
+          7,
+          12,
+          8,
+          5,
+          4,
+          3,
+          10,
+          11
+        ],
+        "sourceUrls": [
+          "https://www.japan.travel/en/guide/november/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          2,
+          1,
+          6,
+          9,
+          7,
+          12,
+          8,
+          5,
+          4,
+          3,
+          10,
+          11
+        ],
+        "sourceUrls": [
+          "https://www.japan.travel/en/guide/november/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "japan",
+      "id": "kanazawa",
+      "name": "Kanazawa",
+      "area": "Hokuriku",
+      "latitude": 36.5613,
+      "longitude": 136.6562,
+      "airports": [
+        [
+          "KMQ",
+          "Komatsu"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 5,
+      "gridLatitude": 36.5613,
+      "gridLongitude": 136.6562,
+      "elevation": 475.22,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=136.6562&latitude=36.5613&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://www.japan.travel/en/guide/november/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 0.5,
+          "meanDailyHighC": 2.75,
+          "meanRainMmPerDay": 6.0917,
+          "meanRelativeHumidityPct": 87.82,
+          "rainyDayFraction": 0.7839
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 0.86,
+          "meanDailyHighC": 3.77,
+          "meanRainMmPerDay": 4.7042,
+          "meanRelativeHumidityPct": 84.64,
+          "rainyDayFraction": 0.6254
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 4.96,
+          "meanDailyHighC": 9.15,
+          "meanRainMmPerDay": 4.1,
+          "meanRelativeHumidityPct": 79.96,
+          "rainyDayFraction": 0.4581
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 10.25,
+          "meanDailyHighC": 14.97,
+          "meanRainMmPerDay": 4.9213,
+          "meanRelativeHumidityPct": 76.55,
+          "rainyDayFraction": 0.4167
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 15.68,
+          "meanDailyHighC": 20.34,
+          "meanRainMmPerDay": 4.6435,
+          "meanRelativeHumidityPct": 74.22,
+          "rainyDayFraction": 0.4097
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 19.93,
+          "meanDailyHighC": 24.04,
+          "meanRainMmPerDay": 6.0454,
+          "meanRelativeHumidityPct": 78.49,
+          "rainyDayFraction": 0.4767
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.41,
+          "meanDailyHighC": 28.06,
+          "meanRainMmPerDay": 7.6255,
+          "meanRelativeHumidityPct": 81.48,
+          "rainyDayFraction": 0.5871
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.28,
+          "meanDailyHighC": 29.08,
+          "meanRainMmPerDay": 6.838,
+          "meanRelativeHumidityPct": 80.79,
+          "rainyDayFraction": 0.5774
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 21.54,
+          "meanDailyHighC": 25.38,
+          "meanRainMmPerDay": 8.0756,
+          "meanRelativeHumidityPct": 82.77,
+          "rainyDayFraction": 0.6167
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 14.73,
+          "meanDailyHighC": 18.69,
+          "meanRainMmPerDay": 5.8579,
+          "meanRelativeHumidityPct": 82.56,
+          "rainyDayFraction": 0.4968
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 8.9,
+          "meanDailyHighC": 12.68,
+          "meanRainMmPerDay": 5.0155,
+          "meanRelativeHumidityPct": 83.3,
+          "rainyDayFraction": 0.5167
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 3.24,
+          "meanDailyHighC": 5.94,
+          "meanRainMmPerDay": 7.4347,
+          "meanRelativeHumidityPct": 87.05,
+          "rainyDayFraction": 0.8
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Japanese city/island and Lao sightseeing contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          2,
+          1,
+          6,
+          9,
+          7,
+          12,
+          8,
+          5,
+          4,
+          3,
+          10,
+          11
+        ],
+        "sourceUrls": [
+          "https://www.japan.travel/en/guide/november/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          2,
+          1,
+          6,
+          9,
+          7,
+          12,
+          8,
+          5,
+          4,
+          3,
+          10,
+          11
+        ],
+        "sourceUrls": [
+          "https://www.japan.travel/en/guide/november/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "japan",
+      "id": "hiroshima",
+      "name": "Hiroshima",
+      "area": "Western Honshu",
+      "latitude": 34.3853,
+      "longitude": 132.4553,
+      "airports": [
+        [
+          "HIJ",
+          "Hiroshima"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 6,
+      "gridLatitude": 34.3853,
+      "gridLongitude": 132.4553,
+      "elevation": 329.1,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=132.4553&latitude=34.3853&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://www.japan.travel/en/guide/november/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 2.33,
+          "meanDailyHighC": 7.08,
+          "meanRainMmPerDay": 1.9594,
+          "meanRelativeHumidityPct": 82.79,
+          "rainyDayFraction": 0.3032
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 3.02,
+          "meanDailyHighC": 8.18,
+          "meanRainMmPerDay": 2.4513,
+          "meanRelativeHumidityPct": 81.26,
+          "rainyDayFraction": 0.3498
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 7.19,
+          "meanDailyHighC": 13.03,
+          "meanRainMmPerDay": 3.9515,
+          "meanRelativeHumidityPct": 80.54,
+          "rainyDayFraction": 0.3581
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 12.1,
+          "meanDailyHighC": 17.92,
+          "meanRainMmPerDay": 5.1766,
+          "meanRelativeHumidityPct": 78.97,
+          "rainyDayFraction": 0.34
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 16.63,
+          "meanDailyHighC": 22.01,
+          "meanRainMmPerDay": 5.1314,
+          "meanRelativeHumidityPct": 78.85,
+          "rainyDayFraction": 0.3258
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 20.82,
+          "meanDailyHighC": 25.44,
+          "meanRainMmPerDay": 8.3081,
+          "meanRelativeHumidityPct": 83.24,
+          "rainyDayFraction": 0.4467
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.16,
+          "meanDailyHighC": 29.14,
+          "meanRainMmPerDay": 8.6323,
+          "meanRelativeHumidityPct": 85.84,
+          "rainyDayFraction": 0.4548
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.05,
+          "meanDailyHighC": 30.33,
+          "meanRainMmPerDay": 5.5549,
+          "meanRelativeHumidityPct": 83.44,
+          "rainyDayFraction": 0.3645
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 22.44,
+          "meanDailyHighC": 26.6,
+          "meanRainMmPerDay": 7.46,
+          "meanRelativeHumidityPct": 85.15,
+          "rainyDayFraction": 0.4567
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 16.02,
+          "meanDailyHighC": 21.01,
+          "meanRainMmPerDay": 3.9456,
+          "meanRelativeHumidityPct": 83.58,
+          "rainyDayFraction": 0.3419
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 10.08,
+          "meanDailyHighC": 15.46,
+          "meanRainMmPerDay": 2.3451,
+          "meanRelativeHumidityPct": 83.45,
+          "rainyDayFraction": 0.2667
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 4.39,
+          "meanDailyHighC": 9.14,
+          "meanRainMmPerDay": 2.0811,
+          "meanRelativeHumidityPct": 83.34,
+          "rainyDayFraction": 0.3097
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Japanese city/island and Lao sightseeing contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          2,
+          1,
+          6,
+          9,
+          7,
+          12,
+          8,
+          5,
+          4,
+          3,
+          10,
+          11
+        ],
+        "sourceUrls": [
+          "https://www.japan.travel/en/guide/november/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          2,
+          1,
+          6,
+          9,
+          7,
+          12,
+          8,
+          5,
+          4,
+          3,
+          10,
+          11
+        ],
+        "sourceUrls": [
+          "https://www.japan.travel/en/guide/november/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "japan",
+      "id": "fukuoka",
+      "name": "Fukuoka",
+      "area": "Kyushu",
+      "latitude": 33.5904,
+      "longitude": 130.4017,
+      "airports": [
+        [
+          "FUK",
+          "Fukuoka"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 7,
+      "gridLatitude": 33.5904,
+      "gridLongitude": 130.4017,
+      "elevation": 185.36,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=130.4017&latitude=33.5904&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeSources": [
+        "https://www.japan.travel/en/guide/november/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 4.45,
+          "meanDailyHighC": 8.94,
+          "meanRainMmPerDay": 2.3205,
+          "meanRelativeHumidityPct": 79.17,
+          "rainyDayFraction": 0.2935
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 5.22,
+          "meanDailyHighC": 10.21,
+          "meanRainMmPerDay": 2.9796,
+          "meanRelativeHumidityPct": 77.74,
+          "rainyDayFraction": 0.3392
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 9.33,
+          "meanDailyHighC": 14.75,
+          "meanRainMmPerDay": 4.243,
+          "meanRelativeHumidityPct": 78.68,
+          "rainyDayFraction": 0.3484
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 13.84,
+          "meanDailyHighC": 19.55,
+          "meanRainMmPerDay": 5.2062,
+          "meanRelativeHumidityPct": 78.06,
+          "rainyDayFraction": 0.3567
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.18,
+          "meanDailyHighC": 23.82,
+          "meanRainMmPerDay": 6.2986,
+          "meanRelativeHumidityPct": 78.33,
+          "rainyDayFraction": 0.3484
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 22.18,
+          "meanDailyHighC": 26.99,
+          "meanRainMmPerDay": 10.4256,
+          "meanRelativeHumidityPct": 83.08,
+          "rainyDayFraction": 0.4867
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.22,
+          "meanDailyHighC": 30.56,
+          "meanRainMmPerDay": 11.4545,
+          "meanRelativeHumidityPct": 84.79,
+          "rainyDayFraction": 0.5613
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.02,
+          "meanDailyHighC": 31.59,
+          "meanRainMmPerDay": 9.6152,
+          "meanRelativeHumidityPct": 83.41,
+          "rainyDayFraction": 0.5323
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 23.7,
+          "meanDailyHighC": 27.99,
+          "meanRainMmPerDay": 8.1321,
+          "meanRelativeHumidityPct": 85.42,
+          "rainyDayFraction": 0.5
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.7,
+          "meanDailyHighC": 22.46,
+          "meanRainMmPerDay": 3.7348,
+          "meanRelativeHumidityPct": 82.95,
+          "rainyDayFraction": 0.3194
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 11.98,
+          "meanDailyHighC": 17.04,
+          "meanRainMmPerDay": 2.5984,
+          "meanRelativeHumidityPct": 80.57,
+          "rainyDayFraction": 0.2467
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 6.31,
+          "meanDailyHighC": 10.78,
+          "meanRainMmPerDay": 1.9159,
+          "meanRelativeHumidityPct": 78.99,
+          "rainyDayFraction": 0.2774
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Japanese city/island and Lao sightseeing contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          2,
+          1,
+          6,
+          9,
+          7,
+          12,
+          8,
+          5,
+          4,
+          3,
+          10,
+          11
+        ],
+        "sourceUrls": [
+          "https://www.japan.travel/en/guide/november/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          2,
+          1,
+          6,
+          9,
+          7,
+          12,
+          8,
+          5,
+          4,
+          3,
+          10,
+          11
+        ],
+        "sourceUrls": [
+          "https://www.japan.travel/en/guide/november/"
+        ]
+      },
+      "events": [
+        {
+          "name": "Hakata Gion Yamakasa",
+          "months": [
+            7
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://www.gofukuoka.jp/f-festival.html"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "laos",
+      "id": "luang-prabang",
+      "name": "Luang Prabang",
+      "area": "North",
+      "latitude": 19.8833,
+      "longitude": 102.1333,
+      "airports": [
+        [
+          "LPQ",
+          "Luang Prabang"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 0,
+      "gridLatitude": 19.8833,
+      "gridLongitude": 102.1333,
+      "elevation": 756.19,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=102.1333&latitude=19.8833&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeSources": [
+        "https://www.tourismlaos.org/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.37,
+          "meanDailyHighC": 24.97,
+          "meanRainMmPerDay": 0.7575,
+          "meanRelativeHumidityPct": 73.05,
+          "rainyDayFraction": 0.1065
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 20.48,
+          "meanDailyHighC": 27.8,
+          "meanRainMmPerDay": 0.7616,
+          "meanRelativeHumidityPct": 66.9,
+          "rainyDayFraction": 0.1025
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 23.88,
+          "meanDailyHighC": 31.07,
+          "meanRainMmPerDay": 1.5253,
+          "meanRelativeHumidityPct": 64.14,
+          "rainyDayFraction": 0.2258
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.75,
+          "meanDailyHighC": 32.31,
+          "meanRainMmPerDay": 3.674,
+          "meanRelativeHumidityPct": 66.21,
+          "rainyDayFraction": 0.4033
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.1,
+          "meanDailyHighC": 31.69,
+          "meanRainMmPerDay": 5.1225,
+          "meanRelativeHumidityPct": 75.16,
+          "rainyDayFraction": 0.671
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.31,
+          "meanDailyHighC": 29.97,
+          "meanRainMmPerDay": 5.6433,
+          "meanRelativeHumidityPct": 82.63,
+          "rainyDayFraction": 0.7533
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.75,
+          "meanDailyHighC": 28.83,
+          "meanRainMmPerDay": 10.9505,
+          "meanRelativeHumidityPct": 86.09,
+          "rainyDayFraction": 0.8484
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.34,
+          "meanDailyHighC": 28.15,
+          "meanRainMmPerDay": 11.6158,
+          "meanRelativeHumidityPct": 87.97,
+          "rainyDayFraction": 0.8258
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 24.34,
+          "meanDailyHighC": 28.52,
+          "meanRainMmPerDay": 5.281,
+          "meanRelativeHumidityPct": 85.61,
+          "rainyDayFraction": 0.6833
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 22.91,
+          "meanDailyHighC": 27.56,
+          "meanRainMmPerDay": 2.3443,
+          "meanRelativeHumidityPct": 82.29,
+          "rainyDayFraction": 0.371
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 20.8,
+          "meanDailyHighC": 26.28,
+          "meanRainMmPerDay": 1.1349,
+          "meanRelativeHumidityPct": 78.72,
+          "rainyDayFraction": 0.16
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.04,
+          "meanDailyHighC": 24.18,
+          "meanRainMmPerDay": 0.4519,
+          "meanRelativeHumidityPct": 75.91,
+          "rainyDayFraction": 0.0774
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Japanese city/island and Lao sightseeing contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          8,
+          7,
+          6,
+          9,
+          5,
+          4,
+          10,
+          3,
+          2,
+          11,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://www.tourismlaos.org/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          8,
+          7,
+          6,
+          9,
+          5,
+          4,
+          10,
+          3,
+          2,
+          11,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://www.tourismlaos.org/"
+        ]
+      },
+      "events": [
+        {
+          "name": "Lao New Year",
+          "months": [
+            4
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://www.tourismlaos.org/welcome/buddhism-and-belief/festivals/"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "laos",
+      "id": "vientiane",
+      "name": "Vientiane",
+      "area": "Central Laos",
+      "latitude": 17.9757,
+      "longitude": 102.6331,
+      "airports": [
+        [
+          "VTE",
+          "Vientiane Wattay"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 1,
+      "gridLatitude": 17.9757,
+      "gridLongitude": 102.6331,
+      "elevation": 222.17,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=102.6331&latitude=17.9757&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeSources": [
+        "https://www.tourismlaos.org/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 20.99,
+          "meanDailyHighC": 27.76,
+          "meanRainMmPerDay": 0.2939,
+          "meanRelativeHumidityPct": 72.02,
+          "rainyDayFraction": 0.0742
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 23.46,
+          "meanDailyHighC": 30.98,
+          "meanRainMmPerDay": 0.9053,
+          "meanRelativeHumidityPct": 63.23,
+          "rainyDayFraction": 0.106
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.7,
+          "meanDailyHighC": 34.76,
+          "meanRainMmPerDay": 1.6374,
+          "meanRelativeHumidityPct": 59.29,
+          "rainyDayFraction": 0.2516
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 30.26,
+          "meanDailyHighC": 36.57,
+          "meanRainMmPerDay": 2.5136,
+          "meanRelativeHumidityPct": 57.96,
+          "rainyDayFraction": 0.3433
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 29.35,
+          "meanDailyHighC": 34.19,
+          "meanRainMmPerDay": 6.0783,
+          "meanRelativeHumidityPct": 71.88,
+          "rainyDayFraction": 0.7452
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 27.85,
+          "meanDailyHighC": 31.69,
+          "meanRainMmPerDay": 6.7828,
+          "meanRelativeHumidityPct": 81.55,
+          "rainyDayFraction": 0.7967
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.13,
+          "meanDailyHighC": 30.72,
+          "meanRainMmPerDay": 8.0977,
+          "meanRelativeHumidityPct": 84.87,
+          "rainyDayFraction": 0.8129
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.78,
+          "meanDailyHighC": 30.21,
+          "meanRainMmPerDay": 9.8409,
+          "meanRelativeHumidityPct": 86.41,
+          "rainyDayFraction": 0.8581
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 26.89,
+          "meanDailyHighC": 30.45,
+          "meanRainMmPerDay": 8.5471,
+          "meanRelativeHumidityPct": 85.82,
+          "rainyDayFraction": 0.8433
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.33,
+          "meanDailyHighC": 29.52,
+          "meanRainMmPerDay": 3.5502,
+          "meanRelativeHumidityPct": 84.37,
+          "rainyDayFraction": 0.4484
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 23.02,
+          "meanDailyHighC": 28.01,
+          "meanRainMmPerDay": 0.6624,
+          "meanRelativeHumidityPct": 81.65,
+          "rainyDayFraction": 0.12
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 20.14,
+          "meanDailyHighC": 26.23,
+          "meanRainMmPerDay": 0.1565,
+          "meanRelativeHumidityPct": 77.55,
+          "rainyDayFraction": 0.0226
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Japanese city/island and Lao sightseeing contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          8,
+          7,
+          6,
+          9,
+          5,
+          4,
+          10,
+          3,
+          2,
+          11,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://www.tourismlaos.org/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          8,
+          7,
+          6,
+          9,
+          5,
+          4,
+          10,
+          3,
+          2,
+          11,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://www.tourismlaos.org/"
+        ]
+      },
+      "events": [
+        {
+          "name": "Lao New Year",
+          "months": [
+            4
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://www.tourismlaos.org/welcome/buddhism-and-belief/festivals/"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "laos",
+      "id": "pakse",
+      "name": "Pakse",
+      "area": "Southern Laos",
+      "latitude": 15.1202,
+      "longitude": 105.799,
+      "airports": [
+        [
+          "PKZ",
+          "Pakse"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 2,
+      "gridLatitude": 15.1202,
+      "gridLongitude": 105.799,
+      "elevation": 218.81,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=105.799&latitude=15.1202&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeSources": [
+        "https://www.tourismlaos.org/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.01,
+          "meanDailyHighC": 32.16,
+          "meanRainMmPerDay": 0.3289,
+          "meanRelativeHumidityPct": 63.6,
+          "rainyDayFraction": 0.0355
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 26.96,
+          "meanDailyHighC": 34.52,
+          "meanRainMmPerDay": 0.2344,
+          "meanRelativeHumidityPct": 55.69,
+          "rainyDayFraction": 0.0495
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 29.74,
+          "meanDailyHighC": 36.09,
+          "meanRainMmPerDay": 1.1926,
+          "meanRelativeHumidityPct": 54.04,
+          "rainyDayFraction": 0.171
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 30.46,
+          "meanDailyHighC": 35.76,
+          "meanRainMmPerDay": 3.1784,
+          "meanRelativeHumidityPct": 59.61,
+          "rainyDayFraction": 0.34
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.61,
+          "meanDailyHighC": 32.44,
+          "meanRainMmPerDay": 7.9281,
+          "meanRelativeHumidityPct": 76.99,
+          "rainyDayFraction": 0.7419
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 26.83,
+          "meanDailyHighC": 29.83,
+          "meanRainMmPerDay": 8.8036,
+          "meanRelativeHumidityPct": 87.11,
+          "rainyDayFraction": 0.8233
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.18,
+          "meanDailyHighC": 28.88,
+          "meanRainMmPerDay": 16.2948,
+          "meanRelativeHumidityPct": 89.49,
+          "rainyDayFraction": 0.9355
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.21,
+          "meanDailyHighC": 28.91,
+          "meanRainMmPerDay": 14.2675,
+          "meanRelativeHumidityPct": 89.67,
+          "rainyDayFraction": 0.9226
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 26.35,
+          "meanDailyHighC": 29.18,
+          "meanRainMmPerDay": 14.1654,
+          "meanRelativeHumidityPct": 88.65,
+          "rainyDayFraction": 0.8933
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.83,
+          "meanDailyHighC": 29.58,
+          "meanRainMmPerDay": 4.2893,
+          "meanRelativeHumidityPct": 86.23,
+          "rainyDayFraction": 0.5613
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 24.79,
+          "meanDailyHighC": 29.46,
+          "meanRainMmPerDay": 0.8486,
+          "meanRelativeHumidityPct": 83.07,
+          "rainyDayFraction": 0.1933
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 23.76,
+          "meanDailyHighC": 29.97,
+          "meanRainMmPerDay": 0.5213,
+          "meanRelativeHumidityPct": 74.87,
+          "rainyDayFraction": 0.0516
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Japanese city/island and Lao sightseeing contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          8,
+          7,
+          6,
+          9,
+          5,
+          4,
+          10,
+          3,
+          2,
+          11,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://www.tourismlaos.org/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          8,
+          7,
+          6,
+          9,
+          5,
+          4,
+          10,
+          3,
+          2,
+          11,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://www.tourismlaos.org/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "laos",
+      "id": "vang-vieng",
+      "name": "Vang Vieng",
+      "area": "Central Laos",
+      "latitude": 18.9242,
+      "longitude": 102.445,
+      "airports": [
+        [
+          "VTE",
+          "Vientiane Wattay"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 3,
+      "gridLatitude": 18.9242,
+      "gridLongitude": 102.445,
+      "elevation": 714.25,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=102.445&latitude=18.9242&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://www.tourismlaos.org/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates. VTE is a gateway requiring onward ground/rail travel. River, cave and activity access need separate local checks.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.89,
+          "meanDailyHighC": 25.03,
+          "meanRainMmPerDay": 0.4543,
+          "meanRelativeHumidityPct": 75.81,
+          "rainyDayFraction": 0.0774
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 20.73,
+          "meanDailyHighC": 27.32,
+          "meanRainMmPerDay": 0.7283,
+          "meanRelativeHumidityPct": 69.24,
+          "rainyDayFraction": 0.0883
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.14,
+          "meanDailyHighC": 30.32,
+          "meanRainMmPerDay": 1.4761,
+          "meanRelativeHumidityPct": 66.65,
+          "rainyDayFraction": 0.2548
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 26.2,
+          "meanDailyHighC": 31.8,
+          "meanRainMmPerDay": 3.0295,
+          "meanRelativeHumidityPct": 67.35,
+          "rainyDayFraction": 0.4167
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26,
+          "meanDailyHighC": 30.83,
+          "meanRainMmPerDay": 5.4855,
+          "meanRelativeHumidityPct": 77.61,
+          "rainyDayFraction": 0.7032
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.1,
+          "meanDailyHighC": 29.13,
+          "meanRainMmPerDay": 6.1514,
+          "meanRelativeHumidityPct": 84.79,
+          "rainyDayFraction": 0.77
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.62,
+          "meanDailyHighC": 28.32,
+          "meanRainMmPerDay": 9.1803,
+          "meanRelativeHumidityPct": 87.72,
+          "rainyDayFraction": 0.8581
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.26,
+          "meanDailyHighC": 27.83,
+          "meanRainMmPerDay": 10.3914,
+          "meanRelativeHumidityPct": 89.14,
+          "rainyDayFraction": 0.8645
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 24.34,
+          "meanDailyHighC": 28.21,
+          "meanRainMmPerDay": 6.5675,
+          "meanRelativeHumidityPct": 87.55,
+          "rainyDayFraction": 0.8033
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 23.18,
+          "meanDailyHighC": 27.69,
+          "meanRainMmPerDay": 2.5013,
+          "meanRelativeHumidityPct": 84.48,
+          "rainyDayFraction": 0.4194
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 21.5,
+          "meanDailyHighC": 26.72,
+          "meanRainMmPerDay": 0.8088,
+          "meanRelativeHumidityPct": 80.46,
+          "rainyDayFraction": 0.1667
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.88,
+          "meanDailyHighC": 24.92,
+          "meanRainMmPerDay": 0.2296,
+          "meanRelativeHumidityPct": 77.9,
+          "rainyDayFraction": 0.0581
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Japanese city/island and Lao sightseeing contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          8,
+          7,
+          6,
+          9,
+          5,
+          4,
+          10,
+          3,
+          2,
+          11,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://www.tourismlaos.org/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          8,
+          7,
+          6,
+          9,
+          5,
+          4,
+          10,
+          3,
+          2,
+          11,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://www.tourismlaos.org/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
     }
   ],
   "destinationTypeAssignments": {
@@ -20353,6 +22404,78 @@
       "climateType": "beach",
       "reason": "Approved beach-oriented holiday base; 25°C target.",
       "status": "Owner-approved Brunei/Indonesia rollout, 6 November 2026."
+    },
+    "japan:tokyo": {
+      "name": "Tokyo",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Owner-approved Japan/Laos rollout, 6 November 2026."
+    },
+    "japan:sapporo": {
+      "name": "Sapporo",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Owner-approved Japan/Laos rollout, 6 November 2026."
+    },
+    "japan:onna": {
+      "name": "Onna",
+      "climateType": "beach",
+      "reason": "Approved beach-oriented holiday base; 25°C target.",
+      "status": "Owner-approved Japan/Laos rollout, 6 November 2026."
+    },
+    "japan:kyoto": {
+      "name": "Kyoto",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Owner-approved Japan/Laos rollout, 6 November 2026."
+    },
+    "japan:fujikawaguchiko": {
+      "name": "Fujikawaguchiko",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Owner-approved Japan/Laos rollout, 6 November 2026."
+    },
+    "japan:kanazawa": {
+      "name": "Kanazawa",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Owner-approved Japan/Laos rollout, 6 November 2026."
+    },
+    "japan:hiroshima": {
+      "name": "Hiroshima",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Owner-approved Japan/Laos rollout, 6 November 2026."
+    },
+    "japan:fukuoka": {
+      "name": "Fukuoka",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Owner-approved Japan/Laos rollout, 6 November 2026."
+    },
+    "laos:luang-prabang": {
+      "name": "Luang Prabang",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Owner-approved Japan/Laos rollout, 6 November 2026."
+    },
+    "laos:vientiane": {
+      "name": "Vientiane",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Owner-approved Japan/Laos rollout, 6 November 2026."
+    },
+    "laos:pakse": {
+      "name": "Pakse",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Owner-approved Japan/Laos rollout, 6 November 2026."
+    },
+    "laos:vang-vieng": {
+      "name": "Vang Vieng",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Owner-approved Japan/Laos rollout, 6 November 2026."
     }
   }
 }

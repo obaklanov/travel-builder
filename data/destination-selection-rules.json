@@ -1284,6 +1284,164 @@
           ]
         }
       ]
+    },
+    "japan": {
+      "approvedAt": "2026-11-06",
+      "liveLabelsUpdated": true,
+      "indexCompatibility": "Original combined Tokyo/Kyoto/Osaka, Hokkaido and Okinawa slots retained as Tokyo, Sapporo and Onna. Five distinct bases appended.",
+      "seasonalityStatus": "NASA POWER/MERRA-2 2016–2025 local solar daily climate; total precipitation includes snow. Current classification, daylight and rain rules apply. Crowd/price orders are editorial proxies; event coverage is partial typical months, not confirmed future dates.",
+      "destinations": [
+        {
+          "name": "Tokyo",
+          "area": "Kanto",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "HND",
+            "NRT"
+          ],
+          "treasures": [
+            "Shibuya Crossing"
+          ]
+        },
+        {
+          "name": "Sapporo",
+          "area": "Hokkaido",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "CTS"
+          ]
+        },
+        {
+          "name": "Onna",
+          "area": "Okinawa",
+          "climateType": "beach",
+          "climateTypeLabel": "Beach",
+          "airportCandidates": [
+            "OKA"
+          ],
+          "accessNote": "Naha airport followed by ground transfer to the Onna coast."
+        },
+        {
+          "name": "Kyoto",
+          "area": "Kansai",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "KIX",
+            "ITM"
+          ],
+          "treasures": [
+            "Fushimi Inari"
+          ],
+          "nearbyPlaces": [
+            "Osaka",
+            "Nara"
+          ],
+          "accessNote": "KIX/ITM require onward ground travel."
+        },
+        {
+          "name": "Fujikawaguchiko",
+          "area": "Fuji Five Lakes",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "HND",
+            "NRT"
+          ],
+          "treasures": [
+            "Mount Fuji"
+          ],
+          "accessNote": "HND/NRT plus substantial ground transfer; local climate is not summit weather or climbing access."
+        },
+        {
+          "name": "Kanazawa",
+          "area": "Hokuriku",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "KMQ"
+          ],
+          "accessNote": "Komatsu airport with onward transfer; rail can also be useful during a multi-stop trip."
+        },
+        {
+          "name": "Hiroshima",
+          "area": "Western Honshu",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "HIJ"
+          ],
+          "nearbyPlaces": [
+            "Miyajima"
+          ]
+        },
+        {
+          "name": "Fukuoka",
+          "area": "Kyushu",
+          "climateType": "standard",
+          "climateTypeLabel": "Warm living",
+          "airportCandidates": [
+            "FUK"
+          ]
+        }
+      ]
+    },
+    "laos": {
+      "approvedAt": "2026-11-06",
+      "liveLabelsUpdated": true,
+      "indexCompatibility": "Original Luang Prabang, combined Vientiane/Vang Vieng and Pakse slots retained as Luang Prabang, Vientiane and Pakse. Vang Vieng appended.",
+      "seasonalityStatus": "NASA POWER/MERRA-2 2016–2025 local solar daily climate; total precipitation includes snow. Current classification, daylight and rain rules apply. Crowd/price orders are editorial proxies; event coverage is partial typical months, not confirmed future dates.",
+      "destinations": [
+        {
+          "name": "Luang Prabang",
+          "area": "North",
+          "climateType": "standard",
+          "climateTypeLabel": "Warm living",
+          "airportCandidates": [
+            "LPQ"
+          ],
+          "treasures": [
+            "Wat Xieng Thong",
+            "Kuang Si Falls",
+            "Pak Ou Caves"
+          ]
+        },
+        {
+          "name": "Vientiane",
+          "area": "Central Laos",
+          "climateType": "standard",
+          "climateTypeLabel": "Warm living",
+          "airportCandidates": [
+            "VTE"
+          ]
+        },
+        {
+          "name": "Pakse",
+          "area": "Southern Laos",
+          "climateType": "standard",
+          "climateTypeLabel": "Warm living",
+          "airportCandidates": [
+            "PKZ"
+          ],
+          "nearbyPlaces": [
+            "Bolaven Plateau",
+            "Vat Phou"
+          ],
+          "coverageNote": "Town climate does not describe every plateau elevation."
+        },
+        {
+          "name": "Vang Vieng",
+          "area": "Central Laos",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "VTE"
+          ],
+          "accessNote": "Vientiane airport followed by ground/rail travel."
+        }
+      ]
     }
   },
   "climateTypeAssignments": {
@@ -1508,6 +1666,78 @@
       "climateType": "beach",
       "reason": "Approved beach-oriented holiday base; 25°C target.",
       "status": "Owner-approved Brunei/Indonesia rollout, 6 November 2026."
+    },
+    "japan:tokyo": {
+      "name": "Tokyo",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Owner-approved Japan/Laos rollout, 6 November 2026."
+    },
+    "japan:sapporo": {
+      "name": "Sapporo",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Owner-approved Japan/Laos rollout, 6 November 2026."
+    },
+    "japan:onna": {
+      "name": "Onna",
+      "climateType": "beach",
+      "reason": "Approved beach-oriented holiday base; 25°C target.",
+      "status": "Owner-approved Japan/Laos rollout, 6 November 2026."
+    },
+    "japan:kyoto": {
+      "name": "Kyoto",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Owner-approved Japan/Laos rollout, 6 November 2026."
+    },
+    "japan:fujikawaguchiko": {
+      "name": "Fujikawaguchiko",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Owner-approved Japan/Laos rollout, 6 November 2026."
+    },
+    "japan:kanazawa": {
+      "name": "Kanazawa",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Owner-approved Japan/Laos rollout, 6 November 2026."
+    },
+    "japan:hiroshima": {
+      "name": "Hiroshima",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Owner-approved Japan/Laos rollout, 6 November 2026."
+    },
+    "japan:fukuoka": {
+      "name": "Fukuoka",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Owner-approved Japan/Laos rollout, 6 November 2026."
+    },
+    "laos:luang-prabang": {
+      "name": "Luang Prabang",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Owner-approved Japan/Laos rollout, 6 November 2026."
+    },
+    "laos:vientiane": {
+      "name": "Vientiane",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Owner-approved Japan/Laos rollout, 6 November 2026."
+    },
+    "laos:pakse": {
+      "name": "Pakse",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Owner-approved Japan/Laos rollout, 6 November 2026."
+    },
+    "laos:vang-vieng": {
+      "name": "Vang Vieng",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
+      "status": "Owner-approved Japan/Laos rollout, 6 November 2026."
     }
   }
 }

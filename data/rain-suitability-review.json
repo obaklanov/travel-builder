@@ -7,82 +7,81 @@
     "persistentWetDayFraction": 0.6,
     "excludedMonthsPerVulnerableBase": 2,
     "selection": "Vulnerable if any month averages >=8 mm/day, or >=6 mm/day with >=60% wet days where wet-day data exist. Mark its two largest mean daily rainfall/precipitation months unsuitable. Equal values use calendar order. Reviewed regional/station overrides take precedence where coarse model grids conflict with official guidance; these are identified per base.",
-    "scope": "185 existing destinations. Product preference, not abnormal-weather diagnosis, flood forecast or official advisory.",
+    "scope": "191 existing destinations. Product preference, not abnormal-weather diagnosis, flood forecast or official advisory.",
     "limitations": "Model estimates and representative points; broad regions can contain different climates. NASA supplementary records are total precipitation including snow, not rain-only; cross-check Colombia estimates separately. Unflagged does not mean free of rain or weather hazards.",
-    "reviewedVulnerableCount": 57
+    "reviewedVulnerableCount": 62
   },
   "bases": [
     {
       "country": "laos",
       "regionIndex": 0,
-      "label": "Luang Prabang & northern Laos (North)",
-      "id": "laos-0",
-      "latitude": 19.884,
-      "longitude": 102.135,
-      "needsRainFetch": true,
-      "referenceNote": "Representative point for a broad legacy region; does not describe every linked place.",
+      "label": "Luang Prabang (North)",
+      "id": "luang-prabang",
+      "latitude": 19.8833,
+      "longitude": 102.1333,
+      "referenceNote": "Named town point; excursions, mountain elevations and island coasts can differ.",
       "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
-      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR&community=AG&longitude=102.135&latitude=19.884&start=2016&end=2025&format=JSON",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=102.1333&latitude=19.8833&start=20160101&end=20251231&format=JSON&time-standard=LST",
       "months": [
         {
           "month": 1,
-          "meanMmPerDay": 0.757,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.7575,
+          "wetDayFraction": 0.1065
         },
         {
           "month": 2,
-          "meanMmPerDay": 0.7605,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.7616,
+          "wetDayFraction": 0.1025
         },
         {
           "month": 3,
-          "meanMmPerDay": 1.526,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.5253,
+          "wetDayFraction": 0.2258
         },
         {
           "month": 4,
-          "meanMmPerDay": 3.673,
-          "wetDayFraction": null
+          "meanMmPerDay": 3.674,
+          "wetDayFraction": 0.4033
         },
         {
           "month": 5,
-          "meanMmPerDay": 5.122,
-          "wetDayFraction": null
+          "meanMmPerDay": 5.1225,
+          "wetDayFraction": 0.671
         },
         {
           "month": 6,
-          "meanMmPerDay": 5.644,
-          "wetDayFraction": null
+          "meanMmPerDay": 5.6433,
+          "wetDayFraction": 0.7533
         },
         {
           "month": 7,
-          "meanMmPerDay": 10.95,
-          "wetDayFraction": null
+          "meanMmPerDay": 10.9505,
+          "wetDayFraction": 0.8484
         },
         {
           "month": 8,
-          "meanMmPerDay": 11.615,
-          "wetDayFraction": null
+          "meanMmPerDay": 11.6158,
+          "wetDayFraction": 0.8258
         },
         {
           "month": 9,
           "meanMmPerDay": 5.281,
-          "wetDayFraction": null
+          "wetDayFraction": 0.6833
         },
         {
           "month": 10,
-          "meanMmPerDay": 2.344,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.3443,
+          "wetDayFraction": 0.371
         },
         {
           "month": 11,
-          "meanMmPerDay": 1.135,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.1349,
+          "wetDayFraction": 0.16
         },
         {
           "month": 12,
-          "meanMmPerDay": 0.451,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.4519,
+          "wetDayFraction": 0.0774
         }
       ],
       "vulnerable": true,
@@ -95,74 +94,73 @@
     {
       "country": "laos",
       "regionIndex": 1,
-      "label": "Vientiane & Vang Vieng (Center)",
-      "id": "laos-1",
-      "latitude": 17.975,
-      "longitude": 102.633,
-      "needsRainFetch": true,
-      "referenceNote": "Representative point for a broad legacy region; does not describe every linked place.",
+      "label": "Vientiane (Central Laos)",
+      "id": "vientiane",
+      "latitude": 17.9757,
+      "longitude": 102.6331,
+      "referenceNote": "Named town point; excursions, mountain elevations and island coasts can differ.",
       "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
-      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR&community=AG&longitude=102.633&latitude=17.975&start=2016&end=2025&format=JSON",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=102.6331&latitude=17.9757&start=20160101&end=20251231&format=JSON&time-standard=LST",
       "months": [
         {
           "month": 1,
-          "meanMmPerDay": 0.294,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.2939,
+          "wetDayFraction": 0.0742
         },
         {
           "month": 2,
           "meanMmPerDay": 0.9053,
-          "wetDayFraction": null
+          "wetDayFraction": 0.106
         },
         {
           "month": 3,
-          "meanMmPerDay": 1.638,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.6374,
+          "wetDayFraction": 0.2516
         },
         {
           "month": 4,
-          "meanMmPerDay": 2.515,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.5136,
+          "wetDayFraction": 0.3433
         },
         {
           "month": 5,
-          "meanMmPerDay": 6.079,
-          "wetDayFraction": null
+          "meanMmPerDay": 6.0783,
+          "wetDayFraction": 0.7452
         },
         {
           "month": 6,
-          "meanMmPerDay": 6.783,
-          "wetDayFraction": null
+          "meanMmPerDay": 6.7828,
+          "wetDayFraction": 0.7967
         },
         {
           "month": 7,
-          "meanMmPerDay": 8.097,
-          "wetDayFraction": null
+          "meanMmPerDay": 8.0977,
+          "wetDayFraction": 0.8129
         },
         {
           "month": 8,
-          "meanMmPerDay": 9.842,
-          "wetDayFraction": null
+          "meanMmPerDay": 9.8409,
+          "wetDayFraction": 0.8581
         },
         {
           "month": 9,
-          "meanMmPerDay": 8.548,
-          "wetDayFraction": null
+          "meanMmPerDay": 8.5471,
+          "wetDayFraction": 0.8433
         },
         {
           "month": 10,
-          "meanMmPerDay": 3.551,
-          "wetDayFraction": null
+          "meanMmPerDay": 3.5502,
+          "wetDayFraction": 0.4484
         },
         {
           "month": 11,
-          "meanMmPerDay": 0.662,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.6624,
+          "wetDayFraction": 0.12
         },
         {
           "month": 12,
-          "meanMmPerDay": 0.157,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.1565,
+          "wetDayFraction": 0.0226
         }
       ],
       "vulnerable": true,
@@ -175,80 +173,158 @@
     {
       "country": "laos",
       "regionIndex": 2,
-      "label": "Pakse & Bolaven Plateau (South)",
-      "id": "laos-2",
-      "latitude": 15.12,
-      "longitude": 105.8,
-      "needsRainFetch": true,
-      "referenceNote": "Representative point for a broad legacy region; does not describe every linked place.",
+      "label": "Pakse (Southern Laos)",
+      "id": "pakse",
+      "latitude": 15.1202,
+      "longitude": 105.799,
+      "referenceNote": "Named town point; excursions, mountain elevations and island coasts can differ.",
       "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
-      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR&community=AG&longitude=105.8&latitude=15.12&start=2016&end=2025&format=JSON",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=105.799&latitude=15.1202&start=20160101&end=20251231&format=JSON&time-standard=LST",
       "months": [
         {
           "month": 1,
-          "meanMmPerDay": 0.329,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.3289,
+          "wetDayFraction": 0.0355
         },
         {
           "month": 2,
-          "meanMmPerDay": 0.2336,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.2344,
+          "wetDayFraction": 0.0495
         },
         {
           "month": 3,
-          "meanMmPerDay": 1.191,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.1926,
+          "wetDayFraction": 0.171
         },
         {
           "month": 4,
-          "meanMmPerDay": 3.179,
-          "wetDayFraction": null
+          "meanMmPerDay": 3.1784,
+          "wetDayFraction": 0.34
         },
         {
           "month": 5,
-          "meanMmPerDay": 7.927,
-          "wetDayFraction": null
+          "meanMmPerDay": 7.9281,
+          "wetDayFraction": 0.7419
         },
         {
           "month": 6,
-          "meanMmPerDay": 8.804,
-          "wetDayFraction": null
+          "meanMmPerDay": 8.8036,
+          "wetDayFraction": 0.8233
         },
         {
           "month": 7,
-          "meanMmPerDay": 16.295,
-          "wetDayFraction": null
+          "meanMmPerDay": 16.2948,
+          "wetDayFraction": 0.9355
         },
         {
           "month": 8,
-          "meanMmPerDay": 14.268,
-          "wetDayFraction": null
+          "meanMmPerDay": 14.2675,
+          "wetDayFraction": 0.9226
         },
         {
           "month": 9,
-          "meanMmPerDay": 14.166,
-          "wetDayFraction": null
+          "meanMmPerDay": 14.1654,
+          "wetDayFraction": 0.8933
         },
         {
           "month": 10,
-          "meanMmPerDay": 4.289,
-          "wetDayFraction": null
+          "meanMmPerDay": 4.2893,
+          "wetDayFraction": 0.5613
         },
         {
           "month": 11,
-          "meanMmPerDay": 0.85,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.8486,
+          "wetDayFraction": 0.1933
         },
         {
           "month": 12,
-          "meanMmPerDay": 0.521,
-          "wetDayFraction": null
+          "meanMmPerDay": 0.5213,
+          "wetDayFraction": 0.0516
         }
       ],
       "vulnerable": true,
       "excludedMonths": [
         7,
         8
+      ],
+      "reason": "Heavy or persistent wet-season screening threshold met; two wettest months excluded."
+    },
+    {
+      "country": "laos",
+      "regionIndex": 3,
+      "label": "Vang Vieng (Central Laos)",
+      "id": "vang-vieng",
+      "latitude": 18.9242,
+      "longitude": 102.445,
+      "referenceNote": "Named town point; excursions, mountain elevations and island coasts can differ.",
+      "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=102.445&latitude=18.9242&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "months": [
+        {
+          "month": 1,
+          "meanMmPerDay": 0.4543,
+          "wetDayFraction": 0.0774
+        },
+        {
+          "month": 2,
+          "meanMmPerDay": 0.7283,
+          "wetDayFraction": 0.0883
+        },
+        {
+          "month": 3,
+          "meanMmPerDay": 1.4761,
+          "wetDayFraction": 0.2548
+        },
+        {
+          "month": 4,
+          "meanMmPerDay": 3.0295,
+          "wetDayFraction": 0.4167
+        },
+        {
+          "month": 5,
+          "meanMmPerDay": 5.4855,
+          "wetDayFraction": 0.7032
+        },
+        {
+          "month": 6,
+          "meanMmPerDay": 6.1514,
+          "wetDayFraction": 0.77
+        },
+        {
+          "month": 7,
+          "meanMmPerDay": 9.1803,
+          "wetDayFraction": 0.8581
+        },
+        {
+          "month": 8,
+          "meanMmPerDay": 10.3914,
+          "wetDayFraction": 0.8645
+        },
+        {
+          "month": 9,
+          "meanMmPerDay": 6.5675,
+          "wetDayFraction": 0.8033
+        },
+        {
+          "month": 10,
+          "meanMmPerDay": 2.5013,
+          "wetDayFraction": 0.4194
+        },
+        {
+          "month": 11,
+          "meanMmPerDay": 0.8088,
+          "wetDayFraction": 0.1667
+        },
+        {
+          "month": 12,
+          "meanMmPerDay": 0.2296,
+          "wetDayFraction": 0.0581
+        }
+      ],
+      "vulnerable": true,
+      "excludedMonths": [
+        8,
+        7
       ],
       "reason": "Heavy or persistent wet-season screening threshold met; two wettest months excluded."
     },
@@ -12733,234 +12809,623 @@
     {
       "country": "japan",
       "regionIndex": 0,
-      "label": "Tokyo, Kyoto & Osaka (Center)",
-      "id": "japan-0",
-      "latitude": 35.68,
-      "longitude": 139.69,
-      "needsRainFetch": true,
-      "referenceNote": "Representative point for a broad legacy region; does not describe every linked place.",
+      "label": "Tokyo (Kanto)",
+      "id": "tokyo",
+      "latitude": 35.6762,
+      "longitude": 139.6503,
+      "referenceNote": "Named town point; excursions, mountain elevations and island coasts can differ.",
       "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
-      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR&community=AG&longitude=139.69&latitude=35.68&start=2016&end=2025&format=JSON",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=139.6503&latitude=35.6762&start=20160101&end=20251231&format=JSON&time-standard=LST",
       "months": [
         {
           "month": 1,
-          "meanMmPerDay": 1.85,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.6806,
+          "wetDayFraction": 0.129
         },
         {
           "month": 2,
-          "meanMmPerDay": 1.9942,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.8668,
+          "wetDayFraction": 0.2155
         },
         {
           "month": 3,
-          "meanMmPerDay": 4.909,
-          "wetDayFraction": null
+          "meanMmPerDay": 4.7237,
+          "wetDayFraction": 0.3581
         },
         {
           "month": 4,
-          "meanMmPerDay": 4.957,
-          "wetDayFraction": null
+          "meanMmPerDay": 4.8245,
+          "wetDayFraction": 0.3633
         },
         {
           "month": 5,
-          "meanMmPerDay": 5.702,
-          "wetDayFraction": null
+          "meanMmPerDay": 5.1795,
+          "wetDayFraction": 0.4194
         },
         {
           "month": 6,
-          "meanMmPerDay": 7.311,
-          "wetDayFraction": null
+          "meanMmPerDay": 7.1233,
+          "wetDayFraction": 0.5033
         },
         {
           "month": 7,
-          "meanMmPerDay": 5.827,
-          "wetDayFraction": null
+          "meanMmPerDay": 6.3173,
+          "wetDayFraction": 0.5774
         },
         {
           "month": 8,
-          "meanMmPerDay": 5.376,
-          "wetDayFraction": null
+          "meanMmPerDay": 5.9337,
+          "wetDayFraction": 0.5516
         },
         {
           "month": 9,
-          "meanMmPerDay": 7.789,
-          "wetDayFraction": null
+          "meanMmPerDay": 7.7942,
+          "wetDayFraction": 0.56
         },
         {
           "month": 10,
-          "meanMmPerDay": 7.572,
-          "wetDayFraction": null
+          "meanMmPerDay": 7.0451,
+          "wetDayFraction": 0.4419
         },
         {
           "month": 11,
-          "meanMmPerDay": 3.503,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.8302,
+          "wetDayFraction": 0.2867
         },
         {
           "month": 12,
-          "meanMmPerDay": 1.991,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.6608,
+          "wetDayFraction": 0.1871
         }
       ],
       "vulnerable": false,
       "excludedMonths": [],
-      "reason": "Screening threshold not met at representative point."
+      "reason": "Screening threshold not met at named town point."
     },
     {
       "country": "japan",
       "regionIndex": 1,
-      "label": "Hokkaido (North)",
-      "id": "japan-1",
-      "latitude": 43.06,
-      "longitude": 141.35,
-      "needsRainFetch": true,
-      "referenceNote": "Representative point for a broad legacy region; does not describe every linked place.",
+      "label": "Sapporo (Hokkaido)",
+      "id": "sapporo",
+      "latitude": 43.0618,
+      "longitude": 141.3545,
+      "referenceNote": "Named town point; excursions, mountain elevations and island coasts can differ.",
       "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
-      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR&community=AG&longitude=141.35&latitude=43.06&start=2016&end=2025&format=JSON",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=141.3545&latitude=43.0618&start=20160101&end=20251231&format=JSON&time-standard=LST",
       "months": [
         {
           "month": 1,
-          "meanMmPerDay": 3.122,
-          "wetDayFraction": null
+          "meanMmPerDay": 3.1223,
+          "wetDayFraction": 0.7516
         },
         {
           "month": 2,
-          "meanMmPerDay": 3.0509,
-          "wetDayFraction": null
+          "meanMmPerDay": 3.0511,
+          "wetDayFraction": 0.7173
         },
         {
           "month": 3,
-          "meanMmPerDay": 2.378,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.3775,
+          "wetDayFraction": 0.4323
         },
         {
           "month": 4,
-          "meanMmPerDay": 2.219,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.2197,
+          "wetDayFraction": 0.3767
         },
         {
           "month": 5,
-          "meanMmPerDay": 2.398,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.3981,
+          "wetDayFraction": 0.3516
         },
         {
           "month": 6,
-          "meanMmPerDay": 3.903,
-          "wetDayFraction": null
+          "meanMmPerDay": 3.9051,
+          "wetDayFraction": 0.4067
         },
         {
           "month": 7,
-          "meanMmPerDay": 3.728,
-          "wetDayFraction": null
+          "meanMmPerDay": 3.7288,
+          "wetDayFraction": 0.3935
         },
         {
           "month": 8,
-          "meanMmPerDay": 6.692,
-          "wetDayFraction": null
+          "meanMmPerDay": 6.6918,
+          "wetDayFraction": 0.5355
         },
         {
           "month": 9,
           "meanMmPerDay": 4.539,
-          "wetDayFraction": null
+          "wetDayFraction": 0.4433
         },
         {
           "month": 10,
-          "meanMmPerDay": 4.582,
-          "wetDayFraction": null
+          "meanMmPerDay": 4.5801,
+          "wetDayFraction": 0.5387
         },
         {
           "month": 11,
-          "meanMmPerDay": 4.595,
-          "wetDayFraction": null
+          "meanMmPerDay": 4.5944,
+          "wetDayFraction": 0.67
         },
         {
           "month": 12,
-          "meanMmPerDay": 4.088,
-          "wetDayFraction": null
+          "meanMmPerDay": 4.0894,
+          "wetDayFraction": 0.7968
         }
       ],
       "vulnerable": false,
       "excludedMonths": [],
-      "reason": "Screening threshold not met at representative point."
+      "reason": "Screening threshold not met at named town point."
     },
     {
       "country": "japan",
       "regionIndex": 2,
-      "label": "Okinawa (Islands)",
-      "id": "japan-2",
-      "latitude": 26.21,
-      "longitude": 127.68,
-      "needsRainFetch": true,
-      "referenceNote": "Representative point for a broad legacy region; does not describe every linked place.",
+      "label": "Onna (Okinawa)",
+      "id": "onna",
+      "latitude": 26.4974,
+      "longitude": 127.8536,
+      "referenceNote": "Named town point; excursions, mountain elevations and island coasts can differ.",
       "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
-      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=PRECTOTCORR&community=AG&longitude=127.68&latitude=26.21&start=2016&end=2025&format=JSON",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=127.8536&latitude=26.4974&start=20160101&end=20251231&format=JSON&time-standard=LST",
       "months": [
         {
           "month": 1,
-          "meanMmPerDay": 2.095,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.077,
+          "wetDayFraction": 0.3742
         },
         {
           "month": 2,
-          "meanMmPerDay": 1.7774,
-          "wetDayFraction": null
+          "meanMmPerDay": 1.8315,
+          "wetDayFraction": 0.364
         },
         {
           "month": 3,
-          "meanMmPerDay": 2.449,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.4707,
+          "wetDayFraction": 0.4161
         },
         {
           "month": 4,
-          "meanMmPerDay": 3.678,
-          "wetDayFraction": null
+          "meanMmPerDay": 4.4256,
+          "wetDayFraction": 0.4833
         },
         {
           "month": 5,
-          "meanMmPerDay": 7.15,
-          "wetDayFraction": null
+          "meanMmPerDay": 7.7097,
+          "wetDayFraction": 0.6161
         },
         {
           "month": 6,
-          "meanMmPerDay": 9.876,
-          "wetDayFraction": null
+          "meanMmPerDay": 11.1364,
+          "wetDayFraction": 0.7367
         },
         {
           "month": 7,
-          "meanMmPerDay": 5.185,
-          "wetDayFraction": null
+          "meanMmPerDay": 5.3068,
+          "wetDayFraction": 0.5839
         },
         {
           "month": 8,
-          "meanMmPerDay": 5.001,
-          "wetDayFraction": null
+          "meanMmPerDay": 4.78,
+          "wetDayFraction": 0.6129
         },
         {
           "month": 9,
-          "meanMmPerDay": 5.615,
-          "wetDayFraction": null
+          "meanMmPerDay": 5.7297,
+          "wetDayFraction": 0.65
         },
         {
           "month": 10,
-          "meanMmPerDay": 3.935,
-          "wetDayFraction": null
+          "meanMmPerDay": 3.5335,
+          "wetDayFraction": 0.4194
         },
         {
           "month": 11,
-          "meanMmPerDay": 2.834,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.8913,
+          "wetDayFraction": 0.3833
         },
         {
           "month": 12,
-          "meanMmPerDay": 2.432,
-          "wetDayFraction": null
+          "meanMmPerDay": 2.42,
+          "wetDayFraction": 0.4323
         }
       ],
       "vulnerable": true,
       "excludedMonths": [
         6,
         5
+      ],
+      "reason": "Heavy or persistent wet-season screening threshold met; two wettest months excluded."
+    },
+    {
+      "country": "japan",
+      "regionIndex": 3,
+      "label": "Kyoto (Kansai)",
+      "id": "kyoto",
+      "latitude": 35.0116,
+      "longitude": 135.7681,
+      "referenceNote": "Named town point; excursions, mountain elevations and island coasts can differ.",
+      "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=135.7681&latitude=35.0116&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "months": [
+        {
+          "month": 1,
+          "meanMmPerDay": 2.7054,
+          "wetDayFraction": 0.5129
+        },
+        {
+          "month": 2,
+          "meanMmPerDay": 2.7685,
+          "wetDayFraction": 0.4735
+        },
+        {
+          "month": 3,
+          "meanMmPerDay": 3.8014,
+          "wetDayFraction": 0.3806
+        },
+        {
+          "month": 4,
+          "meanMmPerDay": 4.9221,
+          "wetDayFraction": 0.3733
+        },
+        {
+          "month": 5,
+          "meanMmPerDay": 5.7098,
+          "wetDayFraction": 0.3871
+        },
+        {
+          "month": 6,
+          "meanMmPerDay": 7.577,
+          "wetDayFraction": 0.49
+        },
+        {
+          "month": 7,
+          "meanMmPerDay": 7.7158,
+          "wetDayFraction": 0.5903
+        },
+        {
+          "month": 8,
+          "meanMmPerDay": 6.3301,
+          "wetDayFraction": 0.5419
+        },
+        {
+          "month": 9,
+          "meanMmPerDay": 6.6944,
+          "wetDayFraction": 0.5967
+        },
+        {
+          "month": 10,
+          "meanMmPerDay": 5.8629,
+          "wetDayFraction": 0.4548
+        },
+        {
+          "month": 11,
+          "meanMmPerDay": 2.8063,
+          "wetDayFraction": 0.3933
+        },
+        {
+          "month": 12,
+          "meanMmPerDay": 3.0805,
+          "wetDayFraction": 0.5581
+        }
+      ],
+      "vulnerable": false,
+      "excludedMonths": [],
+      "reason": "Screening threshold not met at named town point."
+    },
+    {
+      "country": "japan",
+      "regionIndex": 4,
+      "label": "Fujikawaguchiko (Fuji Five Lakes)",
+      "id": "fujikawaguchiko",
+      "latitude": 35.4973,
+      "longitude": 138.7548,
+      "referenceNote": "Named town point; excursions, mountain elevations and island coasts can differ.",
+      "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=138.7548&latitude=35.4973&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "months": [
+        {
+          "month": 1,
+          "meanMmPerDay": 1.5296,
+          "wetDayFraction": 0.129
+        },
+        {
+          "month": 2,
+          "meanMmPerDay": 1.9996,
+          "wetDayFraction": 0.1943
+        },
+        {
+          "month": 3,
+          "meanMmPerDay": 4.5074,
+          "wetDayFraction": 0.3581
+        },
+        {
+          "month": 4,
+          "meanMmPerDay": 4.7921,
+          "wetDayFraction": 0.3533
+        },
+        {
+          "month": 5,
+          "meanMmPerDay": 5.3044,
+          "wetDayFraction": 0.4065
+        },
+        {
+          "month": 6,
+          "meanMmPerDay": 7.1609,
+          "wetDayFraction": 0.52
+        },
+        {
+          "month": 7,
+          "meanMmPerDay": 7.2925,
+          "wetDayFraction": 0.6484
+        },
+        {
+          "month": 8,
+          "meanMmPerDay": 6.4629,
+          "wetDayFraction": 0.6258
+        },
+        {
+          "month": 9,
+          "meanMmPerDay": 7.36,
+          "wetDayFraction": 0.5933
+        },
+        {
+          "month": 10,
+          "meanMmPerDay": 6.3614,
+          "wetDayFraction": 0.4387
+        },
+        {
+          "month": 11,
+          "meanMmPerDay": 2.3566,
+          "wetDayFraction": 0.2633
+        },
+        {
+          "month": 12,
+          "meanMmPerDay": 1.5515,
+          "wetDayFraction": 0.1839
+        }
+      ],
+      "vulnerable": true,
+      "excludedMonths": [
+        9,
+        7
+      ],
+      "reason": "Heavy or persistent wet-season screening threshold met; two wettest months excluded."
+    },
+    {
+      "country": "japan",
+      "regionIndex": 5,
+      "label": "Kanazawa (Hokuriku)",
+      "id": "kanazawa",
+      "latitude": 36.5613,
+      "longitude": 136.6562,
+      "referenceNote": "Named town point; excursions, mountain elevations and island coasts can differ.",
+      "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=136.6562&latitude=36.5613&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "months": [
+        {
+          "month": 1,
+          "meanMmPerDay": 6.0917,
+          "wetDayFraction": 0.7839
+        },
+        {
+          "month": 2,
+          "meanMmPerDay": 4.7042,
+          "wetDayFraction": 0.6254
+        },
+        {
+          "month": 3,
+          "meanMmPerDay": 4.1,
+          "wetDayFraction": 0.4581
+        },
+        {
+          "month": 4,
+          "meanMmPerDay": 4.9213,
+          "wetDayFraction": 0.4167
+        },
+        {
+          "month": 5,
+          "meanMmPerDay": 4.6435,
+          "wetDayFraction": 0.4097
+        },
+        {
+          "month": 6,
+          "meanMmPerDay": 6.0454,
+          "wetDayFraction": 0.4767
+        },
+        {
+          "month": 7,
+          "meanMmPerDay": 7.6255,
+          "wetDayFraction": 0.5871
+        },
+        {
+          "month": 8,
+          "meanMmPerDay": 6.838,
+          "wetDayFraction": 0.5774
+        },
+        {
+          "month": 9,
+          "meanMmPerDay": 8.0756,
+          "wetDayFraction": 0.6167
+        },
+        {
+          "month": 10,
+          "meanMmPerDay": 5.8579,
+          "wetDayFraction": 0.4968
+        },
+        {
+          "month": 11,
+          "meanMmPerDay": 5.0155,
+          "wetDayFraction": 0.5167
+        },
+        {
+          "month": 12,
+          "meanMmPerDay": 7.4347,
+          "wetDayFraction": 0.8
+        }
+      ],
+      "vulnerable": true,
+      "excludedMonths": [
+        9,
+        7
+      ],
+      "reason": "Heavy or persistent wet-season screening threshold met; two wettest months excluded."
+    },
+    {
+      "country": "japan",
+      "regionIndex": 6,
+      "label": "Hiroshima (Western Honshu)",
+      "id": "hiroshima",
+      "latitude": 34.3853,
+      "longitude": 132.4553,
+      "referenceNote": "Named town point; excursions, mountain elevations and island coasts can differ.",
+      "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=132.4553&latitude=34.3853&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "months": [
+        {
+          "month": 1,
+          "meanMmPerDay": 1.9594,
+          "wetDayFraction": 0.3032
+        },
+        {
+          "month": 2,
+          "meanMmPerDay": 2.4513,
+          "wetDayFraction": 0.3498
+        },
+        {
+          "month": 3,
+          "meanMmPerDay": 3.9515,
+          "wetDayFraction": 0.3581
+        },
+        {
+          "month": 4,
+          "meanMmPerDay": 5.1766,
+          "wetDayFraction": 0.34
+        },
+        {
+          "month": 5,
+          "meanMmPerDay": 5.1314,
+          "wetDayFraction": 0.3258
+        },
+        {
+          "month": 6,
+          "meanMmPerDay": 8.3081,
+          "wetDayFraction": 0.4467
+        },
+        {
+          "month": 7,
+          "meanMmPerDay": 8.6323,
+          "wetDayFraction": 0.4548
+        },
+        {
+          "month": 8,
+          "meanMmPerDay": 5.5549,
+          "wetDayFraction": 0.3645
+        },
+        {
+          "month": 9,
+          "meanMmPerDay": 7.46,
+          "wetDayFraction": 0.4567
+        },
+        {
+          "month": 10,
+          "meanMmPerDay": 3.9456,
+          "wetDayFraction": 0.3419
+        },
+        {
+          "month": 11,
+          "meanMmPerDay": 2.3451,
+          "wetDayFraction": 0.2667
+        },
+        {
+          "month": 12,
+          "meanMmPerDay": 2.0811,
+          "wetDayFraction": 0.3097
+        }
+      ],
+      "vulnerable": true,
+      "excludedMonths": [
+        7,
+        6
+      ],
+      "reason": "Heavy or persistent wet-season screening threshold met; two wettest months excluded."
+    },
+    {
+      "country": "japan",
+      "regionIndex": 7,
+      "label": "Fukuoka (Kyushu)",
+      "id": "fukuoka",
+      "latitude": 33.5904,
+      "longitude": 130.4017,
+      "referenceNote": "Named town point; excursions, mountain elevations and island coasts can differ.",
+      "source": "NASA POWER/MERRA-2 total precipitation; 2016–2025",
+      "sourceUrl": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=130.4017&latitude=33.5904&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "months": [
+        {
+          "month": 1,
+          "meanMmPerDay": 2.3205,
+          "wetDayFraction": 0.2935
+        },
+        {
+          "month": 2,
+          "meanMmPerDay": 2.9796,
+          "wetDayFraction": 0.3392
+        },
+        {
+          "month": 3,
+          "meanMmPerDay": 4.243,
+          "wetDayFraction": 0.3484
+        },
+        {
+          "month": 4,
+          "meanMmPerDay": 5.2062,
+          "wetDayFraction": 0.3567
+        },
+        {
+          "month": 5,
+          "meanMmPerDay": 6.2986,
+          "wetDayFraction": 0.3484
+        },
+        {
+          "month": 6,
+          "meanMmPerDay": 10.4256,
+          "wetDayFraction": 0.4867
+        },
+        {
+          "month": 7,
+          "meanMmPerDay": 11.4545,
+          "wetDayFraction": 0.5613
+        },
+        {
+          "month": 8,
+          "meanMmPerDay": 9.6152,
+          "wetDayFraction": 0.5323
+        },
+        {
+          "month": 9,
+          "meanMmPerDay": 8.1321,
+          "wetDayFraction": 0.5
+        },
+        {
+          "month": 10,
+          "meanMmPerDay": 3.7348,
+          "wetDayFraction": 0.3194
+        },
+        {
+          "month": 11,
+          "meanMmPerDay": 2.5984,
+          "wetDayFraction": 0.2467
+        },
+        {
+          "month": 12,
+          "meanMmPerDay": 1.9159,
+          "wetDayFraction": 0.2774
+        }
+      ],
+      "vulnerable": true,
+      "excludedMonths": [
+        7,
+        6
       ],
       "reason": "Heavy or persistent wet-season screening threshold met; two wettest months excluded."
     },
