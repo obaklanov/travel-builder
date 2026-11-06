@@ -1,0 +1,106 @@
+{
+  "updated": "2026-11-06",
+  "status": "User-approved destination selection; detailed hub data and live planner integration pending",
+  "coveragePolicy": {
+    "expandedCoverage": [
+      "South America",
+      "Europe"
+    ],
+    "reason": "Owner has greater personal interest in these regions. Colombia is intentionally more detailed; do not apply its destination count globally.",
+    "otherRegions": "Use a selective representative list with Treasure access and distinct geographic experiences."
+  },
+  "rules": [
+    "Use City (geographic area) as the display label; do not display the term base.",
+    "Provide practical overnight destinations for every Treasure; consolidate nearby Treasures when access is reasonable.",
+    "Separate accommodation destination from arrival airport; allow multiple airports per destination.",
+    "Compare complete flight plus ground-transfer journeys rather than fixing one best airport.",
+    "A town may qualify without its own airport when accommodation and attraction access justify staying there.",
+    "Include a nearby city separately only when it offers a materially different stay, such as urban conveniences and work facilities.",
+    "For one representative island destination, prefer practical airport access; keep distinct archipelagos separate.",
+    "Do not infer property-level internet reliability from a city-wide rating."
+  ],
+  "countries": {
+    "portugal": {
+      "destinations": [
+        "Lisbon (Central coast)",
+        "Porto (North)",
+        "Faro (Algarve)",
+        "Ponta Delgada (Azores)",
+        "Funchal (Madeira)"
+      ],
+      "liveLabelsUpdated": true
+    },
+    "colombia": {
+      "destinations": [
+        {
+          "name": "Bogotá",
+          "area": "Central highlands"
+        },
+        {
+          "name": "Medellín",
+          "area": "Antioquia",
+          "treasures": [
+            "El Peñol Rock"
+          ]
+        },
+        {
+          "name": "Cartagena",
+          "area": "Caribbean coast",
+          "treasures": [
+            "Cartagena Walled City"
+          ]
+        },
+        {
+          "name": "Salento",
+          "area": "Coffee region",
+          "treasures": [
+            "Cocora Valley"
+          ],
+          "airportCandidates": [
+            "PEI",
+            "AXM"
+          ],
+          "role": "Experience-focused town stay"
+        },
+        {
+          "name": "Pereira",
+          "area": "Coffee region",
+          "role": "Urban alternative; assess work facilities at property level"
+        },
+        {
+          "name": "Santa Marta",
+          "area": "Caribbean coast"
+        },
+        {
+          "name": "Cali",
+          "area": "Southwest"
+        },
+        {
+          "name": "Barranquilla",
+          "area": "Caribbean coast"
+        },
+        {
+          "name": "Bucaramanga",
+          "area": "Santander"
+        },
+        {
+          "name": "San Andrés",
+          "area": "Caribbean islands",
+          "airportCandidates": [
+            "ADZ"
+          ]
+        }
+      ],
+      "islandChoice": {
+        "selected": "San Andrés",
+        "alternative": "Providencia",
+        "reason": "San Andrés avoids the additional inter-island flight or boat transfer needed for Providencia.",
+        "sources": [
+          "https://colombia.travel/en/san-andres-island",
+          "https://satena.com/en/vuelos-nacionales/providencia"
+        ]
+      },
+      "liveIntegrationPending": true
+    }
+  }
+}
