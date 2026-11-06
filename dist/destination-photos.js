@@ -49,8 +49,8 @@ window.TRAVEL_DESTINATION_PHOTOS = {
     "alt": "A stone church beside a turquoise New Zealand lake and snow-capped mountains"
   },
   "united-states": {
-    "src": "images/united-states.jpg",
-    "alt": "New York City skyline with the Empire State Building at sunset"
+    "src": "images/usa-cover.png",
+    "alt": "Manhattan skyline with the Empire State Building in New York City"
   },
   "vietnam": {
     "src": "images/vietnam-cover.png",

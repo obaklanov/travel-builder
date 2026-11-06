@@ -15,9 +15,10 @@
     "Separate accommodation destination from arrival airport; allow multiple airports per destination.",
     "Compare complete flight plus ground-transfer journeys rather than fixing one best airport.",
     "A town may qualify without its own airport when accommodation and attraction access justify staying there.",
-    "Include a nearby city separately only when it offers a materially different stay, such as urban conveniences and work facilities.",
+    "Consolidate nearby towns and cities that can reasonably be explored during one stay into one representative destination. Different airports, city sizes or amenities alone do not justify separate entries; retain them as linked places and access options.",
     "For one representative island destination, prefer practical airport access; keep distinct archipelagos separate.",
-    "Do not infer property-level internet reliability from a city-wide rating."
+    "Do not infer property-level internet reliability from a city-wide rating.",
+    "Add a separate destination when travel practicalities or a distinct geographic area make a separate stay worthwhile; assess journey times rather than using a fixed distance or destination count."
   ],
   "countries": {
     "portugal": {
@@ -60,12 +61,11 @@
             "PEI",
             "AXM"
           ],
-          "role": "Experience-focused town stay"
-        },
-        {
-          "name": "Pereira",
-          "area": "Coffee region",
-          "role": "Urban alternative; assess work facilities at property level"
+          "role": "Representative Coffee region destination; nearby Pereira and Armenia can be explored during the same stay and remain airport gateways.",
+          "nearbyPlaces": [
+            "Pereira",
+            "Armenia"
+          ]
         },
         {
           "name": "Santa Marta",
