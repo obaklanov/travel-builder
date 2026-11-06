@@ -1,6 +1,6 @@
 # Within-base tourist-season rankings
 
-Version 3 — 6 November 2026. Portugal (5 bases), Colombia (10 bases).
+Version 3 — 6 November 2026. Portugal (5 bases), Colombia (10 bases), Italy (13 bases).
 
 Compare each base only with its own 12 calendar months. Rank 1–4 BEST, 5–8 AVERAGE, 9–12 WORST, for each climate component, the combined climate score, and the final tourist score. Equal values use January–December order; forcing equal-sized bands can separate identical or near-identical months. BEST is relative, not an absolute weather or safety guarantee.
 
@@ -17,3 +17,5 @@ Climate baseline: 2016–2025 daily mean temperature, rain_sum, daily mean RH, E
 Sources: https://open-meteo.com/en/docs/historical-weather-api ; per-base API queries and provisional crowd/price/event sources in data/seasonality-inputs.json. Open-Meteo CC BY 4.0 / Copernicus ERA5.
 
 Data flow: data/seasonality-inputs.json → scripts/build-seasonality.cjs → dist/seasonality-ratings.js → country tables and Designing matcher. Run scripts/check-seasonality.cjs after rebuild. Workbook edits do not automatically update the site.
+
+Italy: climate retrieved 6 November 2026 at each named destination’s coordinates. Existing six planner indices retained, seven added. Only selected sourced events are included. Crowd/price month orders are provisional urban, coastal/island and mountain seasonal proxies, not measured values. Ortisei uses the agreed general comfort model, not a ski-suitability model; airport-to-town transfers are required and are not part of flight samples.

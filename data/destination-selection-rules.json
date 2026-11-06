@@ -1,6 +1,6 @@
 {
   "updated": "2026-11-06",
-  "status": "Approved lists connected to live destination selectors; new Colombia seasonal ratings and detailed hub data pending review",
+  "status": "Approved Portugal, Colombia and Italy destinations integrated; climate is a historical model estimate; crowd/price/event coverage remains provisional.",
   "coveragePolicy": {
     "expandedCoverage": [
       "South America",
@@ -116,6 +116,132 @@
       "liveIntegrationPending": false,
       "seasonReviewPending": [],
       "seasonalityStatus": "Weighted model implemented: historical climate validated; crowd/price rankings and selected-event coverage are provisional."
+    },
+    "italy": {
+      "approvedAt": "2026-11-06",
+      "liveLabelsUpdated": true,
+      "seasonalityStatus": "2016–2025 ERA5 historical climate plus relative 4/4/4 scoring; 60% climate. Crowd/price inputs remain editorial; partial sourced event registry.",
+      "destinations": [
+        {
+          "name": "Rome",
+          "area": "Lazio",
+          "airportCandidates": [
+            "FCO",
+            "CIA"
+          ],
+          "treasures": [
+            "Colosseum"
+          ]
+        },
+        {
+          "name": "Venice",
+          "area": "Veneto",
+          "airportCandidates": [
+            "VCE",
+            "TSF"
+          ],
+          "treasures": [
+            "Grand Canal"
+          ]
+        },
+        {
+          "name": "Florence",
+          "area": "Tuscany",
+          "airportCandidates": [
+            "FLR",
+            "PSA"
+          ],
+          "treasures": [
+            "Leaning Tower of Pisa"
+          ],
+          "nearbyPlaces": [
+            "Pisa"
+          ]
+        },
+        {
+          "name": "Naples",
+          "area": "Campania",
+          "airportCandidates": [
+            "NAP"
+          ]
+        },
+        {
+          "name": "Catania",
+          "area": "Eastern Sicily",
+          "airportCandidates": [
+            "CTA"
+          ]
+        },
+        {
+          "name": "Ortisei",
+          "area": "Dolomites",
+          "airportCandidates": [
+            "BZO",
+            "INN",
+            "VRN"
+          ],
+          "arrivalNote": "No town airport: compare Bolzano, Innsbruck or Verona plus ground transfer.",
+          "sourceUrls": [
+            "https://www.valgardena.it/en/holidays-dolomites/arrival/by-plane-or-helicopter/"
+          ]
+        },
+        {
+          "name": "Milan",
+          "area": "Lombardy",
+          "airportCandidates": [
+            "MXP",
+            "LIN",
+            "BGY"
+          ]
+        },
+        {
+          "name": "Turin",
+          "area": "Piedmont",
+          "airportCandidates": [
+            "TRN"
+          ]
+        },
+        {
+          "name": "Bologna",
+          "area": "Emilia-Romagna",
+          "airportCandidates": [
+            "BLQ"
+          ]
+        },
+        {
+          "name": "La Spezia",
+          "area": "Liguria / Cinque Terre",
+          "airportCandidates": [
+            "PSA",
+            "GOA"
+          ],
+          "nearbyPlaces": [
+            "Cinque Terre"
+          ]
+        },
+        {
+          "name": "Bari",
+          "area": "Puglia",
+          "airportCandidates": [
+            "BRI"
+          ]
+        },
+        {
+          "name": "Palermo",
+          "area": "Western Sicily",
+          "airportCandidates": [
+            "PMO"
+          ]
+        },
+        {
+          "name": "Cagliari",
+          "area": "Sardinia",
+          "airportCandidates": [
+            "CAG"
+          ]
+        }
+      ],
+      "indexCompatibility": "Existing first six region indices retained: Rome, Venice, Florence, Naples, Catania (formerly broad Sicily) and Ortisei (formerly broad Dolomites)."
     }
   }
 }

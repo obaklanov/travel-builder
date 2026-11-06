@@ -2531,6 +2531,2114 @@
       "eventCoverage": "Selected sourced events only; zero means no listed event, not proof that no events occur.",
       "climateMeanTemperatureSource": "https://archive-api.open-meteo.com/v1/archive?latitude=-4.2153&longitude=-69.9406&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean&timezone=auto&models=era5",
       "climateRainAmountSource": "https://archive-api.open-meteo.com/v1/archive?latitude=-4.2153&longitude=-69.9406&start_date=2016-01-01&end_date=2025-12-31&daily=rain_sum&timezone=auto&models=era5"
+    },
+    {
+      "id": "rome",
+      "country": "italy",
+      "name": "Rome",
+      "area": "Lazio",
+      "regionIndex": 0,
+      "latitude": 41.9028,
+      "longitude": 12.4964,
+      "gridLatitude": 42,
+      "gridLongitude": 12.5,
+      "elevation": 58,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=41.9028&longitude=12.4964&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FRome&models=era5",
+      "climateReviewNote": null,
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 8.48,
+          "meanDailyHighC": 12.92,
+          "meanRainMmPerDay": 2.2039,
+          "meanRelativeHumidityPct": 76.94,
+          "rainyDayFraction": 0.3258
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 10.13,
+          "meanDailyHighC": 14.97,
+          "meanRainMmPerDay": 2.4845,
+          "meanRelativeHumidityPct": 75.32,
+          "rainyDayFraction": 0.3145
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 11.9,
+          "meanDailyHighC": 16.86,
+          "meanRainMmPerDay": 2.5439,
+          "meanRelativeHumidityPct": 72.66,
+          "rainyDayFraction": 0.3452
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 14.86,
+          "meanDailyHighC": 20.08,
+          "meanRainMmPerDay": 1.8693,
+          "meanRelativeHumidityPct": 71.2,
+          "rainyDayFraction": 0.3133
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.8,
+          "meanDailyHighC": 23.76,
+          "meanRainMmPerDay": 2.5897,
+          "meanRelativeHumidityPct": 71.21,
+          "rainyDayFraction": 0.3677
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 24.37,
+          "meanDailyHighC": 29.89,
+          "meanRainMmPerDay": 0.9493,
+          "meanRelativeHumidityPct": 64.05,
+          "rainyDayFraction": 0.1667
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.32,
+          "meanDailyHighC": 33.01,
+          "meanRainMmPerDay": 0.531,
+          "meanRelativeHumidityPct": 58.56,
+          "rainyDayFraction": 0.1032
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.06,
+          "meanDailyHighC": 32.95,
+          "meanRainMmPerDay": 0.9561,
+          "meanRelativeHumidityPct": 60.35,
+          "rainyDayFraction": 0.1742
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 22.51,
+          "meanDailyHighC": 27.83,
+          "meanRainMmPerDay": 3.232,
+          "meanRelativeHumidityPct": 70.02,
+          "rainyDayFraction": 0.2967
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.01,
+          "meanDailyHighC": 23.11,
+          "meanRainMmPerDay": 3.1845,
+          "meanRelativeHumidityPct": 75.67,
+          "rainyDayFraction": 0.3226
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 13.32,
+          "meanDailyHighC": 17.61,
+          "meanRainMmPerDay": 4.1637,
+          "meanRelativeHumidityPct": 79.5,
+          "rainyDayFraction": 0.4333
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 9.57,
+          "meanDailyHighC": 14.1,
+          "meanRainMmPerDay": 3.1558,
+          "meanRelativeHumidityPct": 79.35,
+          "rainyDayFraction": 0.3323
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial ordering; urban, coastal/island or dual-season mountain profile. Source guidance does not quantify these monthly ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          12,
+          3,
+          8,
+          7,
+          4,
+          10,
+          6,
+          9,
+          5
+        ],
+        "sourceUrls": [
+          "https://www.italia.it/en/italy/things-to-do/5-tips-to-visit-italian-cities",
+          "https://www.italia.it/en/italy/seasons"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy; not measured monthly prices. Separate stay and airport-transfer costs are not priced.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          12,
+          3,
+          8,
+          7,
+          4,
+          10,
+          6,
+          9,
+          5
+        ],
+        "sourceUrls": [
+          "https://www.italia.it/en/italy/things-to-do/5-tips-to-visit-italian-cities",
+          "https://www.italia.it/en/italy/seasons"
+        ]
+      },
+      "events": [
+        {
+          "name": "Rome Film Fest",
+          "months": [
+            10
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://turismoroma.it/it/node/174011"
+        }
+      ],
+      "eventCoverage": "Selected recurring events only; months extrapolated from sourced typical/recent editions, not confirmed 2027–2032 dates. Zero means none listed, not none happening."
+    },
+    {
+      "id": "venice",
+      "country": "italy",
+      "name": "Venice",
+      "area": "Veneto",
+      "regionIndex": 1,
+      "latitude": 45.4408,
+      "longitude": 12.3155,
+      "gridLatitude": 45.5,
+      "gridLongitude": 12.25,
+      "elevation": 4,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=45.4408&longitude=12.3155&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FRome&models=era5",
+      "climateReviewNote": null,
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 5.52,
+          "meanDailyHighC": 7.82,
+          "meanRainMmPerDay": 1.9781,
+          "meanRelativeHumidityPct": 79.96,
+          "rainyDayFraction": 0.229
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 7.23,
+          "meanDailyHighC": 9.72,
+          "meanRainMmPerDay": 2.611,
+          "meanRelativeHumidityPct": 79.7,
+          "rainyDayFraction": 0.2721
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 9.93,
+          "meanDailyHighC": 12.58,
+          "meanRainMmPerDay": 2.3894,
+          "meanRelativeHumidityPct": 76.01,
+          "rainyDayFraction": 0.2806
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 13.7,
+          "meanDailyHighC": 16.26,
+          "meanRainMmPerDay": 2.724,
+          "meanRelativeHumidityPct": 73.84,
+          "rainyDayFraction": 0.2867
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.9,
+          "meanDailyHighC": 20.24,
+          "meanRainMmPerDay": 4.3677,
+          "meanRelativeHumidityPct": 74.89,
+          "rainyDayFraction": 0.4226
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 23.25,
+          "meanDailyHighC": 25.84,
+          "meanRainMmPerDay": 2.4453,
+          "meanRelativeHumidityPct": 73.14,
+          "rainyDayFraction": 0.29
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.2,
+          "meanDailyHighC": 27.83,
+          "meanRainMmPerDay": 2.2465,
+          "meanRelativeHumidityPct": 69.93,
+          "rainyDayFraction": 0.3032
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.2,
+          "meanDailyHighC": 27.92,
+          "meanRainMmPerDay": 2.9626,
+          "meanRelativeHumidityPct": 70.08,
+          "rainyDayFraction": 0.2645
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 20.98,
+          "meanDailyHighC": 23.6,
+          "meanRainMmPerDay": 4.7477,
+          "meanRelativeHumidityPct": 73.73,
+          "rainyDayFraction": 0.38
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 16.29,
+          "meanDailyHighC": 18.68,
+          "meanRainMmPerDay": 3.3432,
+          "meanRelativeHumidityPct": 78.84,
+          "rainyDayFraction": 0.2968
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 11.01,
+          "meanDailyHighC": 13.09,
+          "meanRainMmPerDay": 4.0343,
+          "meanRelativeHumidityPct": 78.84,
+          "rainyDayFraction": 0.36
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 6.88,
+          "meanDailyHighC": 9.06,
+          "meanRainMmPerDay": 2.4248,
+          "meanRelativeHumidityPct": 81.82,
+          "rainyDayFraction": 0.2677
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial ordering; urban, coastal/island or dual-season mountain profile. Source guidance does not quantify these monthly ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          12,
+          3,
+          8,
+          7,
+          4,
+          10,
+          6,
+          9,
+          5
+        ],
+        "sourceUrls": [
+          "https://www.italia.it/en/italy/things-to-do/5-tips-to-visit-italian-cities",
+          "https://www.italia.it/en/italy/seasons"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy; not measured monthly prices. Separate stay and airport-transfer costs are not priced.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          12,
+          3,
+          8,
+          7,
+          4,
+          10,
+          6,
+          9,
+          5
+        ],
+        "sourceUrls": [
+          "https://www.italia.it/en/italy/things-to-do/5-tips-to-visit-italian-cities",
+          "https://www.italia.it/en/italy/seasons"
+        ]
+      },
+      "events": [
+        {
+          "name": "Venice Carnival",
+          "months": [
+            2
+          ],
+          "prominence": 2,
+          "rule": "carnival",
+          "sourceUrl": "https://www.italia.it/en/italy/things-to-do/italian-carnival-from-north-to-south"
+        }
+      ],
+      "eventCoverage": "Selected recurring events only; months extrapolated from sourced typical/recent editions, not confirmed 2027–2032 dates. Zero means none listed, not none happening."
+    },
+    {
+      "id": "florence",
+      "country": "italy",
+      "name": "Florence",
+      "area": "Tuscany",
+      "regionIndex": 2,
+      "latitude": 43.7696,
+      "longitude": 11.2558,
+      "gridLatitude": 43.75,
+      "gridLongitude": 11.25,
+      "elevation": 65,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=43.7696&longitude=11.2558&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FRome&models=era5",
+      "climateReviewNote": null,
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 6.96,
+          "meanDailyHighC": 10.58,
+          "meanRainMmPerDay": 2.6132,
+          "meanRelativeHumidityPct": 79.08,
+          "rainyDayFraction": 0.3645
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 8.78,
+          "meanDailyHighC": 12.93,
+          "meanRainMmPerDay": 3.3936,
+          "meanRelativeHumidityPct": 77.15,
+          "rainyDayFraction": 0.3887
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 10.76,
+          "meanDailyHighC": 15.36,
+          "meanRainMmPerDay": 2.6981,
+          "meanRelativeHumidityPct": 71.55,
+          "rainyDayFraction": 0.3355
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 13.88,
+          "meanDailyHighC": 18.91,
+          "meanRainMmPerDay": 2.4953,
+          "meanRelativeHumidityPct": 71.04,
+          "rainyDayFraction": 0.3333
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.77,
+          "meanDailyHighC": 22.28,
+          "meanRainMmPerDay": 2.9277,
+          "meanRelativeHumidityPct": 74.23,
+          "rainyDayFraction": 0.3742
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 23.22,
+          "meanDailyHighC": 28.33,
+          "meanRainMmPerDay": 1.3073,
+          "meanRelativeHumidityPct": 68.91,
+          "rainyDayFraction": 0.2333
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.97,
+          "meanDailyHighC": 31.46,
+          "meanRainMmPerDay": 0.8316,
+          "meanRelativeHumidityPct": 63.42,
+          "rainyDayFraction": 0.1194
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.74,
+          "meanDailyHighC": 31.57,
+          "meanRainMmPerDay": 1.1777,
+          "meanRelativeHumidityPct": 64.29,
+          "rainyDayFraction": 0.1774
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 21.14,
+          "meanDailyHighC": 26.46,
+          "meanRainMmPerDay": 3.132,
+          "meanRelativeHumidityPct": 70.84,
+          "rainyDayFraction": 0.3
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 16.59,
+          "meanDailyHighC": 21.29,
+          "meanRainMmPerDay": 3.541,
+          "meanRelativeHumidityPct": 78.43,
+          "rainyDayFraction": 0.3258
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 11.56,
+          "meanDailyHighC": 15.16,
+          "meanRainMmPerDay": 4.4633,
+          "meanRelativeHumidityPct": 81.96,
+          "rainyDayFraction": 0.44
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 8.07,
+          "meanDailyHighC": 11.69,
+          "meanRainMmPerDay": 3.4303,
+          "meanRelativeHumidityPct": 83.15,
+          "rainyDayFraction": 0.4097
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial ordering; urban, coastal/island or dual-season mountain profile. Source guidance does not quantify these monthly ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          12,
+          3,
+          8,
+          7,
+          4,
+          10,
+          6,
+          9,
+          5
+        ],
+        "sourceUrls": [
+          "https://www.italia.it/en/italy/things-to-do/5-tips-to-visit-italian-cities",
+          "https://www.italia.it/en/italy/seasons"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy; not measured monthly prices. Separate stay and airport-transfer costs are not priced.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          12,
+          3,
+          8,
+          7,
+          4,
+          10,
+          6,
+          9,
+          5
+        ],
+        "sourceUrls": [
+          "https://www.italia.it/en/italy/things-to-do/5-tips-to-visit-italian-cities",
+          "https://www.italia.it/en/italy/seasons"
+        ]
+      },
+      "events": [
+        {
+          "name": "San Giovanni",
+          "months": [
+            6
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://www.feelflorence.it/en/events/san-giovanni-patron-saint-florence"
+        }
+      ],
+      "eventCoverage": "Selected recurring events only; months extrapolated from sourced typical/recent editions, not confirmed 2027–2032 dates. Zero means none listed, not none happening."
+    },
+    {
+      "id": "naples",
+      "country": "italy",
+      "name": "Naples",
+      "area": "Campania",
+      "regionIndex": 3,
+      "latitude": 40.8518,
+      "longitude": 14.2681,
+      "gridLatitude": 41,
+      "gridLongitude": 14.25,
+      "elevation": 19,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=40.8518&longitude=14.2681&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FRome&models=era5",
+      "climateReviewNote": null,
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 9.79,
+          "meanDailyHighC": 12.65,
+          "meanRainMmPerDay": 3.7965,
+          "meanRelativeHumidityPct": 78.56,
+          "rainyDayFraction": 0.4387
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 10.95,
+          "meanDailyHighC": 14.18,
+          "meanRainMmPerDay": 3.8392,
+          "meanRelativeHumidityPct": 77.54,
+          "rainyDayFraction": 0.3534
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 12.12,
+          "meanDailyHighC": 15.5,
+          "meanRainMmPerDay": 3.3552,
+          "meanRelativeHumidityPct": 75.96,
+          "rainyDayFraction": 0.4
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 14.78,
+          "meanDailyHighC": 18.43,
+          "meanRainMmPerDay": 2.331,
+          "meanRelativeHumidityPct": 74.82,
+          "rainyDayFraction": 0.3467
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.39,
+          "meanDailyHighC": 21.77,
+          "meanRainMmPerDay": 2.7158,
+          "meanRelativeHumidityPct": 77.12,
+          "rainyDayFraction": 0.3774
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 23.55,
+          "meanDailyHighC": 27.19,
+          "meanRainMmPerDay": 1.0627,
+          "meanRelativeHumidityPct": 73.04,
+          "rainyDayFraction": 0.15
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.33,
+          "meanDailyHighC": 30.03,
+          "meanRainMmPerDay": 0.4765,
+          "meanRelativeHumidityPct": 69.41,
+          "rainyDayFraction": 0.0806
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.38,
+          "meanDailyHighC": 30.36,
+          "meanRainMmPerDay": 0.7832,
+          "meanRelativeHumidityPct": 69.72,
+          "rainyDayFraction": 0.171
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 22.66,
+          "meanDailyHighC": 26.38,
+          "meanRainMmPerDay": 4.262,
+          "meanRelativeHumidityPct": 73.07,
+          "rainyDayFraction": 0.3133
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.76,
+          "meanDailyHighC": 22.26,
+          "meanRainMmPerDay": 3.4768,
+          "meanRelativeHumidityPct": 77.5,
+          "rainyDayFraction": 0.3323
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 14.68,
+          "meanDailyHighC": 17.58,
+          "meanRainMmPerDay": 7.9037,
+          "meanRelativeHumidityPct": 80.91,
+          "rainyDayFraction": 0.5233
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 11.35,
+          "meanDailyHighC": 14.4,
+          "meanRainMmPerDay": 4.3358,
+          "meanRelativeHumidityPct": 79.57,
+          "rainyDayFraction": 0.3548
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial ordering; urban, coastal/island or dual-season mountain profile. Source guidance does not quantify these monthly ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          12,
+          3,
+          8,
+          7,
+          4,
+          10,
+          6,
+          9,
+          5
+        ],
+        "sourceUrls": [
+          "https://www.italia.it/en/italy/things-to-do/5-tips-to-visit-italian-cities",
+          "https://www.italia.it/en/italy/seasons"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy; not measured monthly prices. Separate stay and airport-transfer costs are not priced.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          12,
+          3,
+          8,
+          7,
+          4,
+          10,
+          6,
+          9,
+          5
+        ],
+        "sourceUrls": [
+          "https://www.italia.it/en/italy/things-to-do/5-tips-to-visit-italian-cities",
+          "https://www.italia.it/en/italy/seasons"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring events only; months extrapolated from sourced typical/recent editions, not confirmed 2027–2032 dates. Zero means none listed, not none happening."
+    },
+    {
+      "id": "catania",
+      "country": "italy",
+      "name": "Catania",
+      "area": "Eastern Sicily",
+      "regionIndex": 4,
+      "latitude": 37.5079,
+      "longitude": 15.083,
+      "gridLatitude": 37.5,
+      "gridLongitude": 15,
+      "elevation": 42,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=37.5079&longitude=15.083&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FRome&models=era5",
+      "climateReviewNote": null,
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 11.46,
+          "meanDailyHighC": 15.71,
+          "meanRainMmPerDay": 1.6603,
+          "meanRelativeHumidityPct": 78.6,
+          "rainyDayFraction": 0.2097
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 12.38,
+          "meanDailyHighC": 16.78,
+          "meanRainMmPerDay": 2.106,
+          "meanRelativeHumidityPct": 76.15,
+          "rainyDayFraction": 0.2332
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 13.81,
+          "meanDailyHighC": 18.13,
+          "meanRainMmPerDay": 1.6652,
+          "meanRelativeHumidityPct": 74.17,
+          "rainyDayFraction": 0.2516
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 16.63,
+          "meanDailyHighC": 21,
+          "meanRainMmPerDay": 1.091,
+          "meanRelativeHumidityPct": 71.14,
+          "rainyDayFraction": 0.1767
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 20.7,
+          "meanDailyHighC": 25.1,
+          "meanRainMmPerDay": 1.2981,
+          "meanRelativeHumidityPct": 68.19,
+          "rainyDayFraction": 0.1871
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 26.16,
+          "meanDailyHighC": 30.85,
+          "meanRainMmPerDay": 0.829,
+          "meanRelativeHumidityPct": 61.45,
+          "rainyDayFraction": 0.1267
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 29.33,
+          "meanDailyHighC": 34.14,
+          "meanRainMmPerDay": 0.2974,
+          "meanRelativeHumidityPct": 56.67,
+          "rainyDayFraction": 0.0419
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.8,
+          "meanDailyHighC": 33.61,
+          "meanRainMmPerDay": 0.5655,
+          "meanRelativeHumidityPct": 61.95,
+          "rainyDayFraction": 0.1258
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.41,
+          "meanDailyHighC": 29.89,
+          "meanRainMmPerDay": 1.5683,
+          "meanRelativeHumidityPct": 70.05,
+          "rainyDayFraction": 0.2633
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 21.12,
+          "meanDailyHighC": 25.19,
+          "meanRainMmPerDay": 2.249,
+          "meanRelativeHumidityPct": 77.27,
+          "rainyDayFraction": 0.2484
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 16.88,
+          "meanDailyHighC": 20.71,
+          "meanRainMmPerDay": 2.703,
+          "meanRelativeHumidityPct": 80.52,
+          "rainyDayFraction": 0.2833
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 13.08,
+          "meanDailyHighC": 17.19,
+          "meanRainMmPerDay": 1.1777,
+          "meanRelativeHumidityPct": 79.97,
+          "rainyDayFraction": 0.2097
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial ordering; urban, coastal/island or dual-season mountain profile. Source guidance does not quantify these monthly ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          12,
+          3,
+          4,
+          10,
+          5,
+          6,
+          9,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.italia.it/en/italy/things-to-do/5-tips-to-visit-italian-cities",
+          "https://www.italia.it/en/italy/seasons"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy; not measured monthly prices. Separate stay and airport-transfer costs are not priced.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          12,
+          3,
+          4,
+          10,
+          5,
+          6,
+          9,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.italia.it/en/italy/things-to-do/5-tips-to-visit-italian-cities",
+          "https://www.italia.it/en/italy/seasons"
+        ]
+      },
+      "events": [
+        {
+          "name": "Sant’Agata",
+          "months": [
+            2
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://www.visitsicily.info/en/feast-of-santagatha-in-catania/"
+        }
+      ],
+      "eventCoverage": "Selected recurring events only; months extrapolated from sourced typical/recent editions, not confirmed 2027–2032 dates. Zero means none listed, not none happening."
+    },
+    {
+      "id": "ortisei",
+      "country": "italy",
+      "name": "Ortisei",
+      "area": "Dolomites",
+      "regionIndex": 5,
+      "latitude": 46.5758,
+      "longitude": 11.6718,
+      "gridLatitude": 46.5,
+      "gridLongitude": 11.75,
+      "elevation": 1239,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=46.5758&longitude=11.6718&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FRome&models=era5",
+      "climateReviewNote": "Mountain grid-cell estimates do not capture every valley or slope. The general 22°C comfort model favours warmer months; it is not a ski-season or lift-opening suitability model.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": -1.63,
+          "meanDailyHighC": 2.83,
+          "meanRainMmPerDay": 0.9774,
+          "meanRelativeHumidityPct": 70.4,
+          "rainyDayFraction": 0.2419
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 1.13,
+          "meanDailyHighC": 5.6,
+          "meanRainMmPerDay": 1.6131,
+          "meanRelativeHumidityPct": 69.61,
+          "rainyDayFraction": 0.2509
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 3.48,
+          "meanDailyHighC": 8.2,
+          "meanRainMmPerDay": 1.9768,
+          "meanRelativeHumidityPct": 67.18,
+          "rainyDayFraction": 0.3097
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 6.69,
+          "meanDailyHighC": 11.7,
+          "meanRainMmPerDay": 3.2427,
+          "meanRelativeHumidityPct": 68.02,
+          "rainyDayFraction": 0.4233
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 10.6,
+          "meanDailyHighC": 15.28,
+          "meanRainMmPerDay": 5.4177,
+          "meanRelativeHumidityPct": 74.23,
+          "rainyDayFraction": 0.7065
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 16.44,
+          "meanDailyHighC": 21.81,
+          "meanRainMmPerDay": 5.1523,
+          "meanRelativeHumidityPct": 70.13,
+          "rainyDayFraction": 0.6467
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.62,
+          "meanDailyHighC": 23.14,
+          "meanRainMmPerDay": 4.6758,
+          "meanRelativeHumidityPct": 69.1,
+          "rainyDayFraction": 0.6194
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.44,
+          "meanDailyHighC": 23.04,
+          "meanRainMmPerDay": 5.1597,
+          "meanRelativeHumidityPct": 71.33,
+          "rainyDayFraction": 0.5516
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 13.31,
+          "meanDailyHighC": 18.4,
+          "meanRainMmPerDay": 3.6857,
+          "meanRelativeHumidityPct": 75.59,
+          "rainyDayFraction": 0.4433
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 9.11,
+          "meanDailyHighC": 13.88,
+          "meanRainMmPerDay": 3.3668,
+          "meanRelativeHumidityPct": 76.14,
+          "rainyDayFraction": 0.3032
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 3.38,
+          "meanDailyHighC": 7.29,
+          "meanRainMmPerDay": 3.2327,
+          "meanRelativeHumidityPct": 77.5,
+          "rainyDayFraction": 0.31
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": -0.32,
+          "meanDailyHighC": 3.67,
+          "meanRainMmPerDay": 1.7355,
+          "meanRelativeHumidityPct": 75.82,
+          "rainyDayFraction": 0.2226
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial ordering; urban, coastal/island or dual-season mountain profile. Source guidance does not quantify these monthly ranks.",
+        "lowToHigh": [
+          11,
+          5,
+          4,
+          10,
+          6,
+          9,
+          1,
+          3,
+          7,
+          12,
+          2,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.valgardena.it/en/ortisei/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy; not measured monthly prices. Separate stay and airport-transfer costs are not priced.",
+        "lowToHigh": [
+          11,
+          5,
+          4,
+          10,
+          6,
+          9,
+          1,
+          3,
+          7,
+          12,
+          2,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.valgardena.it/en/ortisei/"
+        ]
+      },
+      "events": [
+        {
+          "name": "Ortisei Christmas village",
+          "months": [
+            12
+          ],
+          "prominence": 1,
+          "sourceUrl": "https://www.valgardena.it/en/detail/base/events/ortisei-the-christmas-village-nadel-urtijeei/8D0EF01E2C0E4258AC17FFC59838540E/"
+        }
+      ],
+      "eventCoverage": "Selected recurring events only; months extrapolated from sourced typical/recent editions, not confirmed 2027–2032 dates. Zero means none listed, not none happening."
+    },
+    {
+      "id": "milan",
+      "country": "italy",
+      "name": "Milan",
+      "area": "Lombardy",
+      "regionIndex": 6,
+      "latitude": 45.4642,
+      "longitude": 9.19,
+      "gridLatitude": 45.5,
+      "gridLongitude": 9.25,
+      "elevation": 147,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=45.4642&longitude=9.19&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FRome&models=era5",
+      "climateReviewNote": null,
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 4.08,
+          "meanDailyHighC": 8.39,
+          "meanRainMmPerDay": 1.4058,
+          "meanRelativeHumidityPct": 77.32,
+          "rainyDayFraction": 0.2161
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 6.92,
+          "meanDailyHighC": 11.46,
+          "meanRainMmPerDay": 2.2859,
+          "meanRelativeHumidityPct": 74.22,
+          "rainyDayFraction": 0.2367
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 10.21,
+          "meanDailyHighC": 15.05,
+          "meanRainMmPerDay": 2.4874,
+          "meanRelativeHumidityPct": 66.33,
+          "rainyDayFraction": 0.2774
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 14.23,
+          "meanDailyHighC": 19.2,
+          "meanRainMmPerDay": 2.895,
+          "meanRelativeHumidityPct": 63.33,
+          "rainyDayFraction": 0.31
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.19,
+          "meanDailyHighC": 22.8,
+          "meanRainMmPerDay": 4.6768,
+          "meanRelativeHumidityPct": 67.76,
+          "rainyDayFraction": 0.4935
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 23.84,
+          "meanDailyHighC": 28.94,
+          "meanRainMmPerDay": 3.7843,
+          "meanRelativeHumidityPct": 63.31,
+          "rainyDayFraction": 0.3633
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.45,
+          "meanDailyHighC": 30.58,
+          "meanRainMmPerDay": 3.8587,
+          "meanRelativeHumidityPct": 64.32,
+          "rainyDayFraction": 0.3935
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.03,
+          "meanDailyHighC": 30.2,
+          "meanRainMmPerDay": 3.8016,
+          "meanRelativeHumidityPct": 64.68,
+          "rainyDayFraction": 0.3194
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 20.07,
+          "meanDailyHighC": 24.95,
+          "meanRainMmPerDay": 4.0777,
+          "meanRelativeHumidityPct": 72.03,
+          "rainyDayFraction": 0.36
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 14.98,
+          "meanDailyHighC": 19.28,
+          "meanRainMmPerDay": 4.1,
+          "meanRelativeHumidityPct": 77.97,
+          "rainyDayFraction": 0.3097
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 8.98,
+          "meanDailyHighC": 12.61,
+          "meanRainMmPerDay": 3.799,
+          "meanRelativeHumidityPct": 81.04,
+          "rainyDayFraction": 0.34
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 4.91,
+          "meanDailyHighC": 8.76,
+          "meanRainMmPerDay": 1.9303,
+          "meanRelativeHumidityPct": 82.91,
+          "rainyDayFraction": 0.2161
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial ordering; urban, coastal/island or dual-season mountain profile. Source guidance does not quantify these monthly ranks.",
+        "lowToHigh": [
+          8,
+          1,
+          2,
+          12,
+          11,
+          7,
+          3,
+          6,
+          5,
+          9,
+          10,
+          4
+        ],
+        "sourceUrls": [
+          "https://www.italia.it/en/italy/things-to-do/5-tips-to-visit-italian-cities",
+          "https://www.italia.it/en/italy/seasons"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy; not measured monthly prices. Separate stay and airport-transfer costs are not priced.",
+        "lowToHigh": [
+          8,
+          1,
+          2,
+          12,
+          11,
+          7,
+          3,
+          6,
+          5,
+          9,
+          10,
+          4
+        ],
+        "sourceUrls": [
+          "https://www.italia.it/en/italy/things-to-do/5-tips-to-visit-italian-cities",
+          "https://www.italia.it/en/italy/seasons"
+        ]
+      },
+      "events": [
+        {
+          "name": "Milan Design Week",
+          "months": [
+            4
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://www.yesmilano.it/en/design"
+        }
+      ],
+      "eventCoverage": "Selected recurring events only; months extrapolated from sourced typical/recent editions, not confirmed 2027–2032 dates. Zero means none listed, not none happening."
+    },
+    {
+      "id": "turin",
+      "country": "italy",
+      "name": "Turin",
+      "area": "Piedmont",
+      "regionIndex": 7,
+      "latitude": 45.0703,
+      "longitude": 7.6869,
+      "gridLatitude": 45,
+      "gridLongitude": 7.75,
+      "elevation": 239,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=45.0703&longitude=7.6869&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FRome&models=era5",
+      "climateReviewNote": null,
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 4.22,
+          "meanDailyHighC": 8.62,
+          "meanRainMmPerDay": 1.1948,
+          "meanRelativeHumidityPct": 73.5,
+          "rainyDayFraction": 0.2097
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 6.95,
+          "meanDailyHighC": 11.47,
+          "meanRainMmPerDay": 1.7594,
+          "meanRelativeHumidityPct": 71.49,
+          "rainyDayFraction": 0.2367
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 9.98,
+          "meanDailyHighC": 14.85,
+          "meanRainMmPerDay": 2.4035,
+          "meanRelativeHumidityPct": 64.22,
+          "rainyDayFraction": 0.2871
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 13.96,
+          "meanDailyHighC": 18.79,
+          "meanRainMmPerDay": 3.036,
+          "meanRelativeHumidityPct": 62.35,
+          "rainyDayFraction": 0.3367
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.6,
+          "meanDailyHighC": 22.01,
+          "meanRainMmPerDay": 4.2423,
+          "meanRelativeHumidityPct": 69.05,
+          "rainyDayFraction": 0.5032
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 23.25,
+          "meanDailyHighC": 28.05,
+          "meanRainMmPerDay": 2.5933,
+          "meanRelativeHumidityPct": 63.69,
+          "rainyDayFraction": 0.39
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.63,
+          "meanDailyHighC": 30.74,
+          "meanRainMmPerDay": 1.7158,
+          "meanRelativeHumidityPct": 58.46,
+          "rainyDayFraction": 0.3129
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.36,
+          "meanDailyHighC": 30.66,
+          "meanRainMmPerDay": 1.7174,
+          "meanRelativeHumidityPct": 56.5,
+          "rainyDayFraction": 0.2581
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 20.3,
+          "meanDailyHighC": 25.24,
+          "meanRainMmPerDay": 1.837,
+          "meanRelativeHumidityPct": 64.5,
+          "rainyDayFraction": 0.2567
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 15.07,
+          "meanDailyHighC": 19.23,
+          "meanRainMmPerDay": 3.0387,
+          "meanRelativeHumidityPct": 74.02,
+          "rainyDayFraction": 0.2935
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 8.71,
+          "meanDailyHighC": 12.57,
+          "meanRainMmPerDay": 3.4203,
+          "meanRelativeHumidityPct": 76.34,
+          "rainyDayFraction": 0.3067
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 4.67,
+          "meanDailyHighC": 8.82,
+          "meanRainMmPerDay": 1.2919,
+          "meanRelativeHumidityPct": 78.3,
+          "rainyDayFraction": 0.2097
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial ordering; urban, coastal/island or dual-season mountain profile. Source guidance does not quantify these monthly ranks.",
+        "lowToHigh": [
+          8,
+          1,
+          2,
+          12,
+          11,
+          7,
+          3,
+          6,
+          5,
+          9,
+          10,
+          4
+        ],
+        "sourceUrls": [
+          "https://www.italia.it/en/italy/things-to-do/5-tips-to-visit-italian-cities",
+          "https://www.italia.it/en/italy/seasons"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy; not measured monthly prices. Separate stay and airport-transfer costs are not priced.",
+        "lowToHigh": [
+          8,
+          1,
+          2,
+          12,
+          11,
+          7,
+          3,
+          6,
+          5,
+          9,
+          10,
+          4
+        ],
+        "sourceUrls": [
+          "https://www.italia.it/en/italy/things-to-do/5-tips-to-visit-italian-cities",
+          "https://www.italia.it/en/italy/seasons"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring events only; months extrapolated from sourced typical/recent editions, not confirmed 2027–2032 dates. Zero means none listed, not none happening."
+    },
+    {
+      "id": "bologna",
+      "country": "italy",
+      "name": "Bologna",
+      "area": "Emilia-Romagna",
+      "regionIndex": 8,
+      "latitude": 44.4949,
+      "longitude": 11.3426,
+      "gridLatitude": 44.5,
+      "gridLongitude": 11.25,
+      "elevation": 71,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=44.4949&longitude=11.3426&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FRome&models=era5",
+      "climateReviewNote": null,
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 4.89,
+          "meanDailyHighC": 8.89,
+          "meanRainMmPerDay": 1.1703,
+          "meanRelativeHumidityPct": 79.65,
+          "rainyDayFraction": 0.2097
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 7.67,
+          "meanDailyHighC": 12.16,
+          "meanRainMmPerDay": 2.3731,
+          "meanRelativeHumidityPct": 76.04,
+          "rainyDayFraction": 0.2968
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 10.55,
+          "meanDailyHighC": 15.57,
+          "meanRainMmPerDay": 1.7671,
+          "meanRelativeHumidityPct": 67.77,
+          "rainyDayFraction": 0.271
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 14.3,
+          "meanDailyHighC": 19.49,
+          "meanRainMmPerDay": 1.893,
+          "meanRelativeHumidityPct": 65.95,
+          "rainyDayFraction": 0.2833
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.41,
+          "meanDailyHighC": 23.15,
+          "meanRainMmPerDay": 3.8942,
+          "meanRelativeHumidityPct": 69.37,
+          "rainyDayFraction": 0.4032
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 24.38,
+          "meanDailyHighC": 29.78,
+          "meanRainMmPerDay": 1.8203,
+          "meanRelativeHumidityPct": 61.72,
+          "rainyDayFraction": 0.2533
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.67,
+          "meanDailyHighC": 32.33,
+          "meanRainMmPerDay": 1.5471,
+          "meanRelativeHumidityPct": 58.74,
+          "rainyDayFraction": 0.2258
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.13,
+          "meanDailyHighC": 31.94,
+          "meanRainMmPerDay": 1.9765,
+          "meanRelativeHumidityPct": 60.95,
+          "rainyDayFraction": 0.2677
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 21.18,
+          "meanDailyHighC": 26.47,
+          "meanRainMmPerDay": 2.852,
+          "meanRelativeHumidityPct": 68.82,
+          "rainyDayFraction": 0.3033
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 16.07,
+          "meanDailyHighC": 20.83,
+          "meanRainMmPerDay": 2.3648,
+          "meanRelativeHumidityPct": 77.22,
+          "rainyDayFraction": 0.2935
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 10.13,
+          "meanDailyHighC": 13.87,
+          "meanRainMmPerDay": 3.0313,
+          "meanRelativeHumidityPct": 82.35,
+          "rainyDayFraction": 0.35
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 6.04,
+          "meanDailyHighC": 9.65,
+          "meanRainMmPerDay": 2.0848,
+          "meanRelativeHumidityPct": 83.47,
+          "rainyDayFraction": 0.2903
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial ordering; urban, coastal/island or dual-season mountain profile. Source guidance does not quantify these monthly ranks.",
+        "lowToHigh": [
+          8,
+          1,
+          2,
+          12,
+          11,
+          7,
+          3,
+          6,
+          5,
+          9,
+          10,
+          4
+        ],
+        "sourceUrls": [
+          "https://www.italia.it/en/italy/things-to-do/5-tips-to-visit-italian-cities",
+          "https://www.italia.it/en/italy/seasons"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy; not measured monthly prices. Separate stay and airport-transfer costs are not priced.",
+        "lowToHigh": [
+          8,
+          1,
+          2,
+          12,
+          11,
+          7,
+          3,
+          6,
+          5,
+          9,
+          10,
+          4
+        ],
+        "sourceUrls": [
+          "https://www.italia.it/en/italy/things-to-do/5-tips-to-visit-italian-cities",
+          "https://www.italia.it/en/italy/seasons"
+        ]
+      },
+      "events": [
+        {
+          "name": "Il Cinema Ritrovato",
+          "months": [
+            6
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://www.bolognawelcome.com/en/events/cinema-and-theater/il-cinema-ritrovato-eng"
+        }
+      ],
+      "eventCoverage": "Selected recurring events only; months extrapolated from sourced typical/recent editions, not confirmed 2027–2032 dates. Zero means none listed, not none happening."
+    },
+    {
+      "id": "la-spezia",
+      "country": "italy",
+      "name": "La Spezia",
+      "area": "Liguria / Cinque Terre",
+      "regionIndex": 9,
+      "latitude": 44.1025,
+      "longitude": 9.8241,
+      "gridLatitude": 44.25,
+      "gridLongitude": 9.75,
+      "elevation": 11,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=44.1025&longitude=9.8241&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FRome&models=era5",
+      "climateReviewNote": null,
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 8.89,
+          "meanDailyHighC": 11.87,
+          "meanRainMmPerDay": 3.9768,
+          "meanRelativeHumidityPct": 77.04,
+          "rainyDayFraction": 0.3871
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 10.21,
+          "meanDailyHighC": 13.4,
+          "meanRainMmPerDay": 4.9654,
+          "meanRelativeHumidityPct": 76.96,
+          "rainyDayFraction": 0.424
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 11.97,
+          "meanDailyHighC": 15.42,
+          "meanRainMmPerDay": 3.93,
+          "meanRelativeHumidityPct": 71.7,
+          "rainyDayFraction": 0.3806
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 14.97,
+          "meanDailyHighC": 18.65,
+          "meanRainMmPerDay": 3.3817,
+          "meanRelativeHumidityPct": 72.09,
+          "rainyDayFraction": 0.38
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.38,
+          "meanDailyHighC": 21.66,
+          "meanRainMmPerDay": 4.0955,
+          "meanRelativeHumidityPct": 77.98,
+          "rainyDayFraction": 0.471
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 23.15,
+          "meanDailyHighC": 26.71,
+          "meanRainMmPerDay": 2.0593,
+          "meanRelativeHumidityPct": 76.61,
+          "rainyDayFraction": 0.3267
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.67,
+          "meanDailyHighC": 29.45,
+          "meanRainMmPerDay": 0.9226,
+          "meanRelativeHumidityPct": 73.58,
+          "rainyDayFraction": 0.1806
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.95,
+          "meanDailyHighC": 30.15,
+          "meanRainMmPerDay": 2.2855,
+          "meanRelativeHumidityPct": 70.78,
+          "rainyDayFraction": 0.2484
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 21.83,
+          "meanDailyHighC": 25.72,
+          "meanRainMmPerDay": 3.8893,
+          "meanRelativeHumidityPct": 76.66,
+          "rainyDayFraction": 0.3567
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.69,
+          "meanDailyHighC": 21.06,
+          "meanRainMmPerDay": 7.0426,
+          "meanRelativeHumidityPct": 81.55,
+          "rainyDayFraction": 0.4
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 12.93,
+          "meanDailyHighC": 15.88,
+          "meanRainMmPerDay": 5.972,
+          "meanRelativeHumidityPct": 80.44,
+          "rainyDayFraction": 0.44
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 10.01,
+          "meanDailyHighC": 13.01,
+          "meanRainMmPerDay": 5.1035,
+          "meanRelativeHumidityPct": 80.39,
+          "rainyDayFraction": 0.429
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial ordering; urban, coastal/island or dual-season mountain profile. Source guidance does not quantify these monthly ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          12,
+          3,
+          4,
+          10,
+          5,
+          6,
+          9,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.italia.it/en/italy/things-to-do/5-tips-to-visit-italian-cities",
+          "https://www.italia.it/en/italy/seasons"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy; not measured monthly prices. Separate stay and airport-transfer costs are not priced.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          12,
+          3,
+          4,
+          10,
+          5,
+          6,
+          9,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.italia.it/en/italy/things-to-do/5-tips-to-visit-italian-cities",
+          "https://www.italia.it/en/italy/seasons"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring events only; months extrapolated from sourced typical/recent editions, not confirmed 2027–2032 dates. Zero means none listed, not none happening."
+    },
+    {
+      "id": "bari",
+      "country": "italy",
+      "name": "Bari",
+      "area": "Puglia",
+      "regionIndex": 10,
+      "latitude": 41.1171,
+      "longitude": 16.8719,
+      "gridLatitude": 41,
+      "gridLongitude": 16.75,
+      "elevation": 9,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=41.1171&longitude=16.8719&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FRome&models=era5",
+      "climateReviewNote": null,
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 9.92,
+          "meanDailyHighC": 13.24,
+          "meanRainMmPerDay": 1.9316,
+          "meanRelativeHumidityPct": 76.27,
+          "rainyDayFraction": 0.3032
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 11.22,
+          "meanDailyHighC": 15.12,
+          "meanRainMmPerDay": 1.8141,
+          "meanRelativeHumidityPct": 74.09,
+          "rainyDayFraction": 0.2898
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 12.68,
+          "meanDailyHighC": 16.72,
+          "meanRainMmPerDay": 2.2355,
+          "meanRelativeHumidityPct": 71.17,
+          "rainyDayFraction": 0.3516
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 15.7,
+          "meanDailyHighC": 20.12,
+          "meanRainMmPerDay": 1.6183,
+          "meanRelativeHumidityPct": 67.97,
+          "rainyDayFraction": 0.3033
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 19.79,
+          "meanDailyHighC": 23.98,
+          "meanRainMmPerDay": 1.9829,
+          "meanRelativeHumidityPct": 67.11,
+          "rainyDayFraction": 0.3065
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.5,
+          "meanDailyHighC": 29.89,
+          "meanRainMmPerDay": 1.199,
+          "meanRelativeHumidityPct": 59.67,
+          "rainyDayFraction": 0.2
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.98,
+          "meanDailyHighC": 32.7,
+          "meanRainMmPerDay": 0.5606,
+          "meanRelativeHumidityPct": 55.18,
+          "rainyDayFraction": 0.1129
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.5,
+          "meanDailyHighC": 32.28,
+          "meanRainMmPerDay": 1.09,
+          "meanRelativeHumidityPct": 61.25,
+          "rainyDayFraction": 0.2355
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 23.45,
+          "meanDailyHighC": 27.95,
+          "meanRainMmPerDay": 1.831,
+          "meanRelativeHumidityPct": 69.11,
+          "rainyDayFraction": 0.2867
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 19.06,
+          "meanDailyHighC": 23.34,
+          "meanRainMmPerDay": 1.7729,
+          "meanRelativeHumidityPct": 76.38,
+          "rainyDayFraction": 0.2484
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 15.01,
+          "meanDailyHighC": 18.6,
+          "meanRainMmPerDay": 2.947,
+          "meanRelativeHumidityPct": 80.01,
+          "rainyDayFraction": 0.3567
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 11.43,
+          "meanDailyHighC": 14.77,
+          "meanRainMmPerDay": 1.6084,
+          "meanRelativeHumidityPct": 78.47,
+          "rainyDayFraction": 0.2806
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial ordering; urban, coastal/island or dual-season mountain profile. Source guidance does not quantify these monthly ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          12,
+          3,
+          4,
+          10,
+          5,
+          6,
+          9,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.italia.it/en/italy/things-to-do/5-tips-to-visit-italian-cities",
+          "https://www.italia.it/en/italy/seasons"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy; not measured monthly prices. Separate stay and airport-transfer costs are not priced.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          12,
+          3,
+          4,
+          10,
+          5,
+          6,
+          9,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.italia.it/en/italy/things-to-do/5-tips-to-visit-italian-cities",
+          "https://www.italia.it/en/italy/seasons"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring events only; months extrapolated from sourced typical/recent editions, not confirmed 2027–2032 dates. Zero means none listed, not none happening."
+    },
+    {
+      "id": "palermo",
+      "country": "italy",
+      "name": "Palermo",
+      "area": "Western Sicily",
+      "regionIndex": 11,
+      "latitude": 38.1157,
+      "longitude": 13.3615,
+      "gridLatitude": 38,
+      "gridLongitude": 13.25,
+      "elevation": 32,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=38.1157&longitude=13.3615&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FRome&models=era5",
+      "climateReviewNote": null,
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 11.96,
+          "meanDailyHighC": 15.35,
+          "meanRainMmPerDay": 1.7539,
+          "meanRelativeHumidityPct": 80.6,
+          "rainyDayFraction": 0.3355
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 12.67,
+          "meanDailyHighC": 16.4,
+          "meanRainMmPerDay": 2.0746,
+          "meanRelativeHumidityPct": 78.34,
+          "rainyDayFraction": 0.2756
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 14.13,
+          "meanDailyHighC": 17.88,
+          "meanRainMmPerDay": 2.2842,
+          "meanRelativeHumidityPct": 76.49,
+          "rainyDayFraction": 0.3613
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 16.83,
+          "meanDailyHighC": 20.91,
+          "meanRainMmPerDay": 1.5473,
+          "meanRelativeHumidityPct": 71.87,
+          "rainyDayFraction": 0.2667
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 20.5,
+          "meanDailyHighC": 24.57,
+          "meanRainMmPerDay": 2.1806,
+          "meanRelativeHumidityPct": 69.26,
+          "rainyDayFraction": 0.2774
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.94,
+          "meanDailyHighC": 30.18,
+          "meanRainMmPerDay": 0.868,
+          "meanRelativeHumidityPct": 62.21,
+          "rainyDayFraction": 0.1333
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.96,
+          "meanDailyHighC": 33.27,
+          "meanRainMmPerDay": 0.1358,
+          "meanRelativeHumidityPct": 57.5,
+          "rainyDayFraction": 0.0419
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.55,
+          "meanDailyHighC": 32.88,
+          "meanRainMmPerDay": 0.9319,
+          "meanRelativeHumidityPct": 62.93,
+          "rainyDayFraction": 0.1806
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.4,
+          "meanDailyHighC": 29.44,
+          "meanRainMmPerDay": 1.861,
+          "meanRelativeHumidityPct": 70.77,
+          "rainyDayFraction": 0.2767
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 21.37,
+          "meanDailyHighC": 25.24,
+          "meanRainMmPerDay": 2.549,
+          "meanRelativeHumidityPct": 76.54,
+          "rainyDayFraction": 0.3226
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 17.01,
+          "meanDailyHighC": 20.45,
+          "meanRainMmPerDay": 2.8163,
+          "meanRelativeHumidityPct": 81.69,
+          "rainyDayFraction": 0.4133
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 13.53,
+          "meanDailyHighC": 16.9,
+          "meanRainMmPerDay": 1.7871,
+          "meanRelativeHumidityPct": 81.51,
+          "rainyDayFraction": 0.3194
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial ordering; urban, coastal/island or dual-season mountain profile. Source guidance does not quantify these monthly ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          12,
+          3,
+          4,
+          10,
+          5,
+          6,
+          9,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.italia.it/en/italy/things-to-do/5-tips-to-visit-italian-cities",
+          "https://www.italia.it/en/italy/seasons"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy; not measured monthly prices. Separate stay and airport-transfer costs are not priced.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          12,
+          3,
+          4,
+          10,
+          5,
+          6,
+          9,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.italia.it/en/italy/things-to-do/5-tips-to-visit-italian-cities",
+          "https://www.italia.it/en/italy/seasons"
+        ]
+      },
+      "events": [
+        {
+          "name": "Santa Rosalia",
+          "months": [
+            7
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://www.visitsicily.info/en/the-feast-of-santa-rosalia/"
+        }
+      ],
+      "eventCoverage": "Selected recurring events only; months extrapolated from sourced typical/recent editions, not confirmed 2027–2032 dates. Zero means none listed, not none happening."
+    },
+    {
+      "id": "cagliari",
+      "country": "italy",
+      "name": "Cagliari",
+      "area": "Sardinia",
+      "regionIndex": 12,
+      "latitude": 39.2238,
+      "longitude": 9.1217,
+      "gridLatitude": 39.25,
+      "gridLongitude": 9,
+      "elevation": 33,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=39.2238&longitude=9.1217&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FRome&models=era5",
+      "climateReviewNote": null,
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 11.46,
+          "meanDailyHighC": 14.85,
+          "meanRainMmPerDay": 1.2406,
+          "meanRelativeHumidityPct": 79.89,
+          "rainyDayFraction": 0.229
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 12.07,
+          "meanDailyHighC": 15.87,
+          "meanRainMmPerDay": 1.1329,
+          "meanRelativeHumidityPct": 79.17,
+          "rainyDayFraction": 0.2191
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 13.4,
+          "meanDailyHighC": 17.24,
+          "meanRainMmPerDay": 1.5184,
+          "meanRelativeHumidityPct": 76.44,
+          "rainyDayFraction": 0.2871
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 15.76,
+          "meanDailyHighC": 19.8,
+          "meanRainMmPerDay": 1.3873,
+          "meanRelativeHumidityPct": 72.6,
+          "rainyDayFraction": 0.24
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 19.29,
+          "meanDailyHighC": 23.44,
+          "meanRainMmPerDay": 1.5687,
+          "meanRelativeHumidityPct": 70.92,
+          "rainyDayFraction": 0.229
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 24.47,
+          "meanDailyHighC": 28.83,
+          "meanRainMmPerDay": 0.4957,
+          "meanRelativeHumidityPct": 65.71,
+          "rainyDayFraction": 0.0667
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.55,
+          "meanDailyHighC": 32.18,
+          "meanRainMmPerDay": 0.0158,
+          "meanRelativeHumidityPct": 61.29,
+          "rainyDayFraction": 0
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.33,
+          "meanDailyHighC": 31.89,
+          "meanRainMmPerDay": 0.4126,
+          "meanRelativeHumidityPct": 64.3,
+          "rainyDayFraction": 0.0903
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 24.17,
+          "meanDailyHighC": 28.43,
+          "meanRainMmPerDay": 0.9943,
+          "meanRelativeHumidityPct": 70.59,
+          "rainyDayFraction": 0.17
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 20.33,
+          "meanDailyHighC": 24.37,
+          "meanRainMmPerDay": 1.3155,
+          "meanRelativeHumidityPct": 75.13,
+          "rainyDayFraction": 0.1968
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 15.87,
+          "meanDailyHighC": 19.26,
+          "meanRainMmPerDay": 2.304,
+          "meanRelativeHumidityPct": 79.63,
+          "rainyDayFraction": 0.3667
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 12.92,
+          "meanDailyHighC": 16.23,
+          "meanRainMmPerDay": 1.6306,
+          "meanRelativeHumidityPct": 81.13,
+          "rainyDayFraction": 0.2516
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial ordering; urban, coastal/island or dual-season mountain profile. Source guidance does not quantify these monthly ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          12,
+          3,
+          4,
+          10,
+          5,
+          6,
+          9,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.italia.it/en/italy/things-to-do/5-tips-to-visit-italian-cities",
+          "https://www.italia.it/en/italy/seasons"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy; not measured monthly prices. Separate stay and airport-transfer costs are not priced.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          12,
+          3,
+          4,
+          10,
+          5,
+          6,
+          9,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.italia.it/en/italy/things-to-do/5-tips-to-visit-italian-cities",
+          "https://www.italia.it/en/italy/seasons"
+        ]
+      },
+      "events": [
+        {
+          "name": "Sant’Efisio",
+          "months": [
+            5
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://cagliariturismo.comune.cagliari.it/it/vivicagliari/carcere-di-santefisio"
+        }
+      ],
+      "eventCoverage": "Selected recurring events only; months extrapolated from sourced typical/recent editions, not confirmed 2027–2032 dates. Zero means none listed, not none happening."
     }
   ]
 }
