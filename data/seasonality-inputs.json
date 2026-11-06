@@ -4636,6 +4636,2273 @@
         }
       ],
       "eventCoverage": "Selected recurring events only; months extrapolated from sourced typical/recent editions, not confirmed 2027–2032 dates. Zero means none listed, not none happening."
+    },
+    {
+      "id": "madrid",
+      "country": "spain",
+      "name": "Madrid",
+      "area": "Center",
+      "regionIndex": 0,
+      "latitude": 40.4168,
+      "longitude": -3.7038,
+      "gridLatitude": 40.5,
+      "gridLongitude": -3.75,
+      "elevation": 666,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=40.4168&longitude=-3.7038&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FRome&models=era5",
+      "climateReviewNote": null,
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 5.71,
+          "meanDailyHighC": 11.1,
+          "meanRainMmPerDay": 1.0032,
+          "meanRelativeHumidityPct": 74.8,
+          "rainyDayFraction": 0.2129
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 7.99,
+          "meanDailyHighC": 14.07,
+          "meanRainMmPerDay": 0.8495,
+          "meanRelativeHumidityPct": 67.41,
+          "rainyDayFraction": 0.1661
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 10.08,
+          "meanDailyHighC": 15.72,
+          "meanRainMmPerDay": 2.4203,
+          "meanRelativeHumidityPct": 63.41,
+          "rainyDayFraction": 0.3194
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 13.27,
+          "meanDailyHighC": 19.14,
+          "meanRainMmPerDay": 1.7583,
+          "meanRelativeHumidityPct": 59.24,
+          "rainyDayFraction": 0.2833
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.84,
+          "meanDailyHighC": 24.17,
+          "meanRainMmPerDay": 0.9774,
+          "meanRelativeHumidityPct": 51.41,
+          "rainyDayFraction": 0.1839
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 23.29,
+          "meanDailyHighC": 29.92,
+          "meanRainMmPerDay": 0.612,
+          "meanRelativeHumidityPct": 43.12,
+          "rainyDayFraction": 0.15
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.9,
+          "meanDailyHighC": 34.19,
+          "meanRainMmPerDay": 0.2274,
+          "meanRelativeHumidityPct": 34.48,
+          "rainyDayFraction": 0.0387
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.44,
+          "meanDailyHighC": 33.78,
+          "meanRainMmPerDay": 0.3361,
+          "meanRelativeHumidityPct": 36.41,
+          "rainyDayFraction": 0.071
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 20.8,
+          "meanDailyHighC": 27.45,
+          "meanRainMmPerDay": 1.157,
+          "meanRelativeHumidityPct": 49.79,
+          "rainyDayFraction": 0.1367
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 15.98,
+          "meanDailyHighC": 22.12,
+          "meanRainMmPerDay": 2.1113,
+          "meanRelativeHumidityPct": 61.94,
+          "rainyDayFraction": 0.2484
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 9.76,
+          "meanDailyHighC": 14.71,
+          "meanRainMmPerDay": 1.6557,
+          "meanRelativeHumidityPct": 74.39,
+          "rainyDayFraction": 0.2767
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 6.94,
+          "meanDailyHighC": 11.75,
+          "meanRainMmPerDay": 1.4116,
+          "meanRelativeHumidityPct": 78.15,
+          "rainyDayFraction": 0.2129
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for urban, coastal or mountain/island profile. Linked tourism pages describe destination context, not measured monthly crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          12,
+          3,
+          8,
+          7,
+          4,
+          10,
+          6,
+          9,
+          5
+        ],
+        "sourceUrls": [
+          "https://www.spain.info/en/destinations/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order; not observed price data or a measured index.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          12,
+          3,
+          8,
+          7,
+          4,
+          10,
+          6,
+          9,
+          5
+        ],
+        "sourceUrls": [
+          "https://www.spain.info/en/destinations/"
+        ]
+      },
+      "events": [
+        {
+          "name": "San Isidro",
+          "months": [
+            5
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://www.esmadrid.com/en/san-isidro"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; approximate typical months, not confirmed 2026–2032 schedules. No listed event does not mean none occur."
+    },
+    {
+      "id": "barcelona",
+      "country": "spain",
+      "name": "Barcelona",
+      "area": "Catalonia",
+      "regionIndex": 1,
+      "latitude": 41.3874,
+      "longitude": 2.1686,
+      "gridLatitude": 41.5,
+      "gridLongitude": 2.25,
+      "elevation": 25,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=41.3874&longitude=2.1686&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FRome&models=era5",
+      "climateReviewNote": null,
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 9.93,
+          "meanDailyHighC": 13.99,
+          "meanRainMmPerDay": 1.3829,
+          "meanRelativeHumidityPct": 75.94,
+          "rainyDayFraction": 0.1613
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 11.26,
+          "meanDailyHighC": 15.37,
+          "meanRainMmPerDay": 1.4205,
+          "meanRelativeHumidityPct": 77.83,
+          "rainyDayFraction": 0.258
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 12.64,
+          "meanDailyHighC": 16.38,
+          "meanRainMmPerDay": 1.7071,
+          "meanRelativeHumidityPct": 76.09,
+          "rainyDayFraction": 0.2935
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 14.69,
+          "meanDailyHighC": 18.21,
+          "meanRainMmPerDay": 2.181,
+          "meanRelativeHumidityPct": 76.29,
+          "rainyDayFraction": 0.2767
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.15,
+          "meanDailyHighC": 21.64,
+          "meanRainMmPerDay": 1.4048,
+          "meanRelativeHumidityPct": 77.06,
+          "rainyDayFraction": 0.2774
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 22.89,
+          "meanDailyHighC": 26.31,
+          "meanRainMmPerDay": 0.824,
+          "meanRelativeHumidityPct": 73.8,
+          "rainyDayFraction": 0.1733
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.62,
+          "meanDailyHighC": 28.93,
+          "meanRainMmPerDay": 0.9471,
+          "meanRelativeHumidityPct": 73.54,
+          "rainyDayFraction": 0.1613
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.82,
+          "meanDailyHighC": 29.29,
+          "meanRainMmPerDay": 1.5203,
+          "meanRelativeHumidityPct": 74.13,
+          "rainyDayFraction": 0.2258
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 22.52,
+          "meanDailyHighC": 25.88,
+          "meanRainMmPerDay": 2.54,
+          "meanRelativeHumidityPct": 76.79,
+          "rainyDayFraction": 0.3833
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 19.07,
+          "meanDailyHighC": 22.36,
+          "meanRainMmPerDay": 3.1539,
+          "meanRelativeHumidityPct": 79.79,
+          "rainyDayFraction": 0.3226
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 14.14,
+          "meanDailyHighC": 17.66,
+          "meanRainMmPerDay": 1.789,
+          "meanRelativeHumidityPct": 77.37,
+          "rainyDayFraction": 0.2867
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 11.21,
+          "meanDailyHighC": 15.06,
+          "meanRainMmPerDay": 1.1106,
+          "meanRelativeHumidityPct": 78.61,
+          "rainyDayFraction": 0.1677
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for urban, coastal or mountain/island profile. Linked tourism pages describe destination context, not measured monthly crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          12,
+          3,
+          8,
+          7,
+          4,
+          10,
+          6,
+          9,
+          5
+        ],
+        "sourceUrls": [
+          "https://www.spain.info/en/destinations/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order; not observed price data or a measured index.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          12,
+          3,
+          8,
+          7,
+          4,
+          10,
+          6,
+          9,
+          5
+        ],
+        "sourceUrls": [
+          "https://www.spain.info/en/destinations/"
+        ]
+      },
+      "events": [
+        {
+          "name": "La Mercè",
+          "months": [
+            9
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://www.barcelona.cat/lamerce/en"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; approximate typical months, not confirmed 2026–2032 schedules. No listed event does not mean none occur."
+    },
+    {
+      "id": "malaga",
+      "country": "spain",
+      "name": "Málaga",
+      "area": "Costa del Sol",
+      "regionIndex": 2,
+      "latitude": 36.7213,
+      "longitude": -4.4214,
+      "gridLatitude": 36.75,
+      "gridLongitude": -4.5,
+      "elevation": 22,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=36.7213&longitude=-4.4214&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FRome&models=era5",
+      "climateReviewNote": null,
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 12.93,
+          "meanDailyHighC": 16.93,
+          "meanRainMmPerDay": 1.4239,
+          "meanRelativeHumidityPct": 75.48,
+          "rainyDayFraction": 0.2226
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 14.07,
+          "meanDailyHighC": 17.88,
+          "meanRainMmPerDay": 1.0845,
+          "meanRelativeHumidityPct": 74.63,
+          "rainyDayFraction": 0.1625
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 15.39,
+          "meanDailyHighC": 19.16,
+          "meanRainMmPerDay": 3.1706,
+          "meanRelativeHumidityPct": 71.47,
+          "rainyDayFraction": 0.371
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 17.4,
+          "meanDailyHighC": 21.1,
+          "meanRainMmPerDay": 1.5087,
+          "meanRelativeHumidityPct": 71.29,
+          "rainyDayFraction": 0.2167
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 20.67,
+          "meanDailyHighC": 24.68,
+          "meanRainMmPerDay": 0.8468,
+          "meanRelativeHumidityPct": 66.38,
+          "rainyDayFraction": 0.1484
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 24.64,
+          "meanDailyHighC": 28.74,
+          "meanRainMmPerDay": 0.1717,
+          "meanRelativeHumidityPct": 60.36,
+          "rainyDayFraction": 0.04
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.42,
+          "meanDailyHighC": 31.59,
+          "meanRainMmPerDay": 0.0171,
+          "meanRelativeHumidityPct": 60.98,
+          "rainyDayFraction": 0.0065
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.48,
+          "meanDailyHighC": 31.53,
+          "meanRainMmPerDay": 0.2148,
+          "meanRelativeHumidityPct": 64.5,
+          "rainyDayFraction": 0.029
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 24.32,
+          "meanDailyHighC": 28.25,
+          "meanRainMmPerDay": 0.6503,
+          "meanRelativeHumidityPct": 68.47,
+          "rainyDayFraction": 0.1133
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 20.86,
+          "meanDailyHighC": 24.74,
+          "meanRainMmPerDay": 1.4906,
+          "meanRelativeHumidityPct": 73.19,
+          "rainyDayFraction": 0.2161
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 16.43,
+          "meanDailyHighC": 20.25,
+          "meanRainMmPerDay": 1.8393,
+          "meanRelativeHumidityPct": 74.02,
+          "rainyDayFraction": 0.24
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 14.09,
+          "meanDailyHighC": 17.74,
+          "meanRainMmPerDay": 1.7952,
+          "meanRelativeHumidityPct": 77.81,
+          "rainyDayFraction": 0.229
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for urban, coastal or mountain/island profile. Linked tourism pages describe destination context, not measured monthly crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          12,
+          3,
+          4,
+          10,
+          5,
+          6,
+          9,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.spain.info/en/destinations/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order; not observed price data or a measured index.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          12,
+          3,
+          4,
+          10,
+          5,
+          6,
+          9,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.spain.info/en/destinations/"
+        ]
+      },
+      "events": [
+        {
+          "name": "Málaga Fair",
+          "months": [
+            8
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://www.spain.info/en/calendar/fair-malaga/"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; approximate typical months, not confirmed 2026–2032 schedules. No listed event does not mean none occur."
+    },
+    {
+      "id": "bilbao",
+      "country": "spain",
+      "name": "Bilbao",
+      "area": "Basque Country",
+      "regionIndex": 3,
+      "latitude": 43.263,
+      "longitude": -2.935,
+      "gridLatitude": 43.25,
+      "gridLongitude": -3,
+      "elevation": 24,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=43.263&longitude=-2.935&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FRome&models=era5",
+      "climateReviewNote": null,
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 10.03,
+          "meanDailyHighC": 13.01,
+          "meanRainMmPerDay": 4.2126,
+          "meanRelativeHumidityPct": 78.49,
+          "rainyDayFraction": 0.5194
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 11.15,
+          "meanDailyHighC": 14.59,
+          "meanRainMmPerDay": 3.4827,
+          "meanRelativeHumidityPct": 77.28,
+          "rainyDayFraction": 0.4735
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 12.12,
+          "meanDailyHighC": 15.34,
+          "meanRainMmPerDay": 3.2048,
+          "meanRelativeHumidityPct": 75.14,
+          "rainyDayFraction": 0.5548
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 13.64,
+          "meanDailyHighC": 16.78,
+          "meanRainMmPerDay": 2.8077,
+          "meanRelativeHumidityPct": 76.8,
+          "rainyDayFraction": 0.4733
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 15.97,
+          "meanDailyHighC": 19.2,
+          "meanRainMmPerDay": 2.5832,
+          "meanRelativeHumidityPct": 80.56,
+          "rainyDayFraction": 0.471
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 19.11,
+          "meanDailyHighC": 22.19,
+          "meanRainMmPerDay": 2.9643,
+          "meanRelativeHumidityPct": 82.89,
+          "rainyDayFraction": 0.4433
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 20.91,
+          "meanDailyHighC": 23.92,
+          "meanRainMmPerDay": 1.4894,
+          "meanRelativeHumidityPct": 81.38,
+          "rainyDayFraction": 0.3258
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 21.45,
+          "meanDailyHighC": 24.85,
+          "meanRainMmPerDay": 1.6355,
+          "meanRelativeHumidityPct": 80.25,
+          "rainyDayFraction": 0.3355
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 19.66,
+          "meanDailyHighC": 23.26,
+          "meanRainMmPerDay": 2.84,
+          "meanRelativeHumidityPct": 79.67,
+          "rainyDayFraction": 0.44
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.29,
+          "meanDailyHighC": 20.99,
+          "meanRainMmPerDay": 2.9571,
+          "meanRelativeHumidityPct": 78.25,
+          "rainyDayFraction": 0.3645
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 13.41,
+          "meanDailyHighC": 16.4,
+          "meanRainMmPerDay": 5.0517,
+          "meanRelativeHumidityPct": 78.15,
+          "rainyDayFraction": 0.5733
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 11.56,
+          "meanDailyHighC": 14.41,
+          "meanRainMmPerDay": 3.8016,
+          "meanRelativeHumidityPct": 79.27,
+          "rainyDayFraction": 0.4935
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for urban, coastal or mountain/island profile. Linked tourism pages describe destination context, not measured monthly crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          12,
+          3,
+          4,
+          10,
+          5,
+          6,
+          9,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.spain.info/en/destinations/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order; not observed price data or a measured index.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          12,
+          3,
+          4,
+          10,
+          5,
+          6,
+          9,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.spain.info/en/destinations/"
+        ]
+      },
+      "events": [
+        {
+          "name": "Aste Nagusia",
+          "months": [
+            8
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://tourism.euskadi.eus/en/calendar-events/semana-grande-of-bilbao/webtur00-evento/en/"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; approximate typical months, not confirmed 2026–2032 schedules. No listed event does not mean none occur."
+    },
+    {
+      "id": "palma",
+      "country": "spain",
+      "name": "Palma",
+      "area": "Mallorca",
+      "regionIndex": 4,
+      "latitude": 39.5696,
+      "longitude": 2.6502,
+      "gridLatitude": 39.5,
+      "gridLongitude": 2.75,
+      "elevation": 32,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=39.5696&longitude=2.6502&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FRome&models=era5",
+      "climateReviewNote": null,
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 12.84,
+          "meanDailyHighC": 15.16,
+          "meanRainMmPerDay": 1.0639,
+          "meanRelativeHumidityPct": 75.73,
+          "rainyDayFraction": 0.1871
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 13.04,
+          "meanDailyHighC": 15.62,
+          "meanRainMmPerDay": 1.1721,
+          "meanRelativeHumidityPct": 77.11,
+          "rainyDayFraction": 0.1979
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 14.34,
+          "meanDailyHighC": 16.67,
+          "meanRainMmPerDay": 1.1932,
+          "meanRelativeHumidityPct": 74.81,
+          "rainyDayFraction": 0.2613
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 16.24,
+          "meanDailyHighC": 18.76,
+          "meanRainMmPerDay": 1.2917,
+          "meanRelativeHumidityPct": 73.85,
+          "rainyDayFraction": 0.2367
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 19.64,
+          "meanDailyHighC": 22.3,
+          "meanRainMmPerDay": 0.9619,
+          "meanRelativeHumidityPct": 72.63,
+          "rainyDayFraction": 0.1968
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 24.1,
+          "meanDailyHighC": 26.9,
+          "meanRainMmPerDay": 0.634,
+          "meanRelativeHumidityPct": 71.49,
+          "rainyDayFraction": 0.1
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.93,
+          "meanDailyHighC": 29.76,
+          "meanRainMmPerDay": 0.1384,
+          "meanRelativeHumidityPct": 69.56,
+          "rainyDayFraction": 0.0452
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.2,
+          "meanDailyHighC": 30.03,
+          "meanRainMmPerDay": 0.581,
+          "meanRelativeHumidityPct": 70.83,
+          "rainyDayFraction": 0.0871
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 24.56,
+          "meanDailyHighC": 27.21,
+          "meanRainMmPerDay": 1.7687,
+          "meanRelativeHumidityPct": 73.42,
+          "rainyDayFraction": 0.25
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 21.16,
+          "meanDailyHighC": 23.69,
+          "meanRainMmPerDay": 1.5368,
+          "meanRelativeHumidityPct": 76.21,
+          "rainyDayFraction": 0.2226
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 16.82,
+          "meanDailyHighC": 19.01,
+          "meanRainMmPerDay": 1.8223,
+          "meanRelativeHumidityPct": 76.11,
+          "rainyDayFraction": 0.29
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 14.23,
+          "meanDailyHighC": 16.59,
+          "meanRainMmPerDay": 1.1087,
+          "meanRelativeHumidityPct": 78.62,
+          "rainyDayFraction": 0.2097
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for urban, coastal or mountain/island profile. Linked tourism pages describe destination context, not measured monthly crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          12,
+          3,
+          4,
+          10,
+          5,
+          6,
+          9,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.spain.info/en/destinations/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order; not observed price data or a measured index.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          12,
+          3,
+          4,
+          10,
+          5,
+          6,
+          9,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.spain.info/en/destinations/"
+        ]
+      },
+      "events": [
+        {
+          "name": "Sant Sebastià",
+          "months": [
+            1
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://www.illesbalears.travel/en/mallorca/sant-antoni-and-sant-sebastia"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; approximate typical months, not confirmed 2026–2032 schedules. No listed event does not mean none occur."
+    },
+    {
+      "id": "puerto-de-la-cruz",
+      "country": "spain",
+      "name": "Puerto de la Cruz",
+      "area": "Tenerife",
+      "regionIndex": 5,
+      "latitude": 28.4134,
+      "longitude": -16.5449,
+      "gridLatitude": 28.5,
+      "gridLongitude": -16.5,
+      "elevation": 45,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=28.4134&longitude=-16.5449&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Atlantic%2FCanary&models=era5",
+      "climateReviewNote": "Climate is for Puerto de la Cruz in northern Tenerife; it does not represent the drier south or the high-altitude climate on Mount Teide.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 16.5,
+          "meanDailyHighC": 17.26,
+          "meanRainMmPerDay": 0.5752,
+          "meanRelativeHumidityPct": 76.13,
+          "rainyDayFraction": 0.1581
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 15.91,
+          "meanDailyHighC": 16.69,
+          "meanRainMmPerDay": 1.1795,
+          "meanRelativeHumidityPct": 77.87,
+          "rainyDayFraction": 0.212
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 15.75,
+          "meanDailyHighC": 16.5,
+          "meanRainMmPerDay": 0.9416,
+          "meanRelativeHumidityPct": 78.8,
+          "rainyDayFraction": 0.1935
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 16.45,
+          "meanDailyHighC": 17.18,
+          "meanRainMmPerDay": 0.6457,
+          "meanRelativeHumidityPct": 80.31,
+          "rainyDayFraction": 0.17
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.17,
+          "meanDailyHighC": 17.83,
+          "meanRainMmPerDay": 0.3403,
+          "meanRelativeHumidityPct": 81.71,
+          "rainyDayFraction": 0.1258
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 18.64,
+          "meanDailyHighC": 19.31,
+          "meanRainMmPerDay": 0.3557,
+          "meanRelativeHumidityPct": 83.92,
+          "rainyDayFraction": 0.1433
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 19.87,
+          "meanDailyHighC": 20.56,
+          "meanRainMmPerDay": 0.3081,
+          "meanRelativeHumidityPct": 84.55,
+          "rainyDayFraction": 0.1355
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 21.01,
+          "meanDailyHighC": 21.72,
+          "meanRainMmPerDay": 0.161,
+          "meanRelativeHumidityPct": 84.05,
+          "rainyDayFraction": 0.0677
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 20.79,
+          "meanDailyHighC": 21.44,
+          "meanRainMmPerDay": 0.4683,
+          "meanRelativeHumidityPct": 83.21,
+          "rainyDayFraction": 0.0867
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 20.58,
+          "meanDailyHighC": 21.3,
+          "meanRainMmPerDay": 0.6548,
+          "meanRelativeHumidityPct": 80.89,
+          "rainyDayFraction": 0.1484
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 19.09,
+          "meanDailyHighC": 19.84,
+          "meanRainMmPerDay": 0.7543,
+          "meanRelativeHumidityPct": 78.15,
+          "rainyDayFraction": 0.1833
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.58,
+          "meanDailyHighC": 18.33,
+          "meanRainMmPerDay": 0.9219,
+          "meanRelativeHumidityPct": 76.27,
+          "rainyDayFraction": 0.1839
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for urban, coastal or mountain/island profile. Linked tourism pages describe destination context, not measured monthly crowd ranks.",
+        "lowToHigh": [
+          5,
+          6,
+          9,
+          10,
+          4,
+          7,
+          11,
+          1,
+          3,
+          8,
+          2,
+          12
+        ],
+        "sourceUrls": [
+          "https://www.spain.info/en/destination/puerto-la-cruz/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order; not observed price data or a measured index.",
+        "lowToHigh": [
+          5,
+          6,
+          9,
+          10,
+          4,
+          7,
+          11,
+          1,
+          3,
+          8,
+          2,
+          12
+        ],
+        "sourceUrls": [
+          "https://www.spain.info/en/destination/puerto-la-cruz/"
+        ]
+      },
+      "events": [
+        {
+          "name": "Puerto de la Cruz Carnival",
+          "months": [
+            2
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://visitpuertodelacruz.es/en/",
+          "rule": "carnival"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; approximate typical months, not confirmed 2026–2032 schedules. No listed event does not mean none occur."
+    },
+    {
+      "id": "valencia",
+      "country": "spain",
+      "name": "Valencia",
+      "area": "East coast",
+      "regionIndex": 6,
+      "latitude": 39.4699,
+      "longitude": -0.3763,
+      "gridLatitude": 39.5,
+      "gridLongitude": -0.5,
+      "elevation": 17,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=39.4699&longitude=-0.3763&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FRome&models=era5",
+      "climateReviewNote": null,
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 11.98,
+          "meanDailyHighC": 16.9,
+          "meanRainMmPerDay": 1.0448,
+          "meanRelativeHumidityPct": 64.95,
+          "rainyDayFraction": 0.1161
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 13.03,
+          "meanDailyHighC": 18.02,
+          "meanRainMmPerDay": 0.5452,
+          "meanRelativeHumidityPct": 66.53,
+          "rainyDayFraction": 0.1201
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 14.8,
+          "meanDailyHighC": 19.31,
+          "meanRainMmPerDay": 2.1877,
+          "meanRelativeHumidityPct": 65.1,
+          "rainyDayFraction": 0.2677
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 17.01,
+          "meanDailyHighC": 21.41,
+          "meanRainMmPerDay": 1.5417,
+          "meanRelativeHumidityPct": 66.03,
+          "rainyDayFraction": 0.2467
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 20.76,
+          "meanDailyHighC": 25.25,
+          "meanRainMmPerDay": 1.0184,
+          "meanRelativeHumidityPct": 64.84,
+          "rainyDayFraction": 0.1871
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.06,
+          "meanDailyHighC": 29.48,
+          "meanRainMmPerDay": 0.828,
+          "meanRelativeHumidityPct": 64.3,
+          "rainyDayFraction": 0.1467
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.7,
+          "meanDailyHighC": 32.09,
+          "meanRainMmPerDay": 0.5152,
+          "meanRelativeHumidityPct": 66.1,
+          "rainyDayFraction": 0.0871
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.74,
+          "meanDailyHighC": 32.28,
+          "meanRainMmPerDay": 0.7594,
+          "meanRelativeHumidityPct": 67.74,
+          "rainyDayFraction": 0.1484
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 24.49,
+          "meanDailyHighC": 28.88,
+          "meanRainMmPerDay": 2.6567,
+          "meanRelativeHumidityPct": 70.89,
+          "rainyDayFraction": 0.31
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 20.64,
+          "meanDailyHighC": 25.2,
+          "meanRainMmPerDay": 2.1019,
+          "meanRelativeHumidityPct": 72.94,
+          "rainyDayFraction": 0.2
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 15.88,
+          "meanDailyHighC": 20.38,
+          "meanRainMmPerDay": 1.589,
+          "meanRelativeHumidityPct": 67.6,
+          "rainyDayFraction": 0.1767
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 12.93,
+          "meanDailyHighC": 17.54,
+          "meanRainMmPerDay": 1.1213,
+          "meanRelativeHumidityPct": 70.14,
+          "rainyDayFraction": 0.1419
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for urban, coastal or mountain/island profile. Linked tourism pages describe destination context, not measured monthly crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          12,
+          3,
+          4,
+          10,
+          5,
+          6,
+          9,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.spain.info/en/destinations/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order; not observed price data or a measured index.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          12,
+          3,
+          4,
+          10,
+          5,
+          6,
+          9,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.spain.info/en/destinations/"
+        ]
+      },
+      "events": [
+        {
+          "name": "Fallas",
+          "months": [
+            3
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://www.valencia.es/es/-/nuestras-fiestas"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; approximate typical months, not confirmed 2026–2032 schedules. No listed event does not mean none occur."
+    },
+    {
+      "id": "seville",
+      "country": "spain",
+      "name": "Seville",
+      "area": "Western Andalusia",
+      "regionIndex": 7,
+      "latitude": 37.3891,
+      "longitude": -5.9845,
+      "gridLatitude": 37.5,
+      "gridLongitude": -6,
+      "elevation": 18,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=37.3891&longitude=-5.9845&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FRome&models=era5",
+      "climateReviewNote": null,
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 11.17,
+          "meanDailyHighC": 16.78,
+          "meanRainMmPerDay": 1.4706,
+          "meanRelativeHumidityPct": 74.67,
+          "rainyDayFraction": 0.1742
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 13.13,
+          "meanDailyHighC": 19.02,
+          "meanRainMmPerDay": 1.0625,
+          "meanRelativeHumidityPct": 69.81,
+          "rainyDayFraction": 0.1378
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 14.87,
+          "meanDailyHighC": 20.54,
+          "meanRainMmPerDay": 2.759,
+          "meanRelativeHumidityPct": 67.57,
+          "rainyDayFraction": 0.3
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 17.65,
+          "meanDailyHighC": 23.42,
+          "meanRainMmPerDay": 1.617,
+          "meanRelativeHumidityPct": 63.87,
+          "rainyDayFraction": 0.2233
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 21.53,
+          "meanDailyHighC": 27.9,
+          "meanRainMmPerDay": 0.8216,
+          "meanRelativeHumidityPct": 56.21,
+          "rainyDayFraction": 0.1323
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.4,
+          "meanDailyHighC": 32.04,
+          "meanRainMmPerDay": 0.2197,
+          "meanRelativeHumidityPct": 51.07,
+          "rainyDayFraction": 0.0467
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.15,
+          "meanDailyHighC": 35.44,
+          "meanRainMmPerDay": 0.04,
+          "meanRelativeHumidityPct": 48.62,
+          "rainyDayFraction": 0.0065
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.57,
+          "meanDailyHighC": 35.82,
+          "meanRainMmPerDay": 0.021,
+          "meanRelativeHumidityPct": 47.37,
+          "rainyDayFraction": 0.0097
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 24.89,
+          "meanDailyHighC": 31.45,
+          "meanRainMmPerDay": 0.6073,
+          "meanRelativeHumidityPct": 55.27,
+          "rainyDayFraction": 0.0867
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 21,
+          "meanDailyHighC": 27.07,
+          "meanRainMmPerDay": 2.0726,
+          "meanRelativeHumidityPct": 63.89,
+          "rainyDayFraction": 0.1935
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 15.05,
+          "meanDailyHighC": 20.27,
+          "meanRainMmPerDay": 1.7683,
+          "meanRelativeHumidityPct": 73.14,
+          "rainyDayFraction": 0.22
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 12.29,
+          "meanDailyHighC": 17.42,
+          "meanRainMmPerDay": 1.6919,
+          "meanRelativeHumidityPct": 77.28,
+          "rainyDayFraction": 0.2
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for urban, coastal or mountain/island profile. Linked tourism pages describe destination context, not measured monthly crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          12,
+          3,
+          8,
+          7,
+          4,
+          10,
+          6,
+          9,
+          5
+        ],
+        "sourceUrls": [
+          "https://www.spain.info/en/destinations/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order; not observed price data or a measured index.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          12,
+          3,
+          8,
+          7,
+          4,
+          10,
+          6,
+          9,
+          5
+        ],
+        "sourceUrls": [
+          "https://www.spain.info/en/destinations/"
+        ]
+      },
+      "events": [
+        {
+          "name": "Holy Week",
+          "months": [
+            4
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://visitasevilla.es/en/holy-week-in-seville/",
+          "rule": "easter"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; approximate typical months, not confirmed 2026–2032 schedules. No listed event does not mean none occur."
+    },
+    {
+      "id": "granada",
+      "country": "spain",
+      "name": "Granada",
+      "area": "Eastern Andalusia",
+      "regionIndex": 8,
+      "latitude": 37.1773,
+      "longitude": -3.5986,
+      "gridLatitude": 37.25,
+      "gridLongitude": -3.5,
+      "elevation": 697,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=37.1773&longitude=-3.5986&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FRome&models=era5",
+      "climateReviewNote": null,
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 8.81,
+          "meanDailyHighC": 14.49,
+          "meanRainMmPerDay": 1.3042,
+          "meanRelativeHumidityPct": 70.24,
+          "rainyDayFraction": 0.2548
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 10.68,
+          "meanDailyHighC": 16.75,
+          "meanRainMmPerDay": 1.5049,
+          "meanRelativeHumidityPct": 65.63,
+          "rainyDayFraction": 0.2155
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 12.08,
+          "meanDailyHighC": 17.55,
+          "meanRainMmPerDay": 3.1055,
+          "meanRelativeHumidityPct": 66.76,
+          "rainyDayFraction": 0.4097
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 15.31,
+          "meanDailyHighC": 20.94,
+          "meanRainMmPerDay": 2.1577,
+          "meanRelativeHumidityPct": 62.22,
+          "rainyDayFraction": 0.3333
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 19.69,
+          "meanDailyHighC": 25.84,
+          "meanRainMmPerDay": 1.3448,
+          "meanRelativeHumidityPct": 52.87,
+          "rainyDayFraction": 0.2129
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 24.94,
+          "meanDailyHighC": 31.58,
+          "meanRainMmPerDay": 0.7507,
+          "meanRelativeHumidityPct": 44,
+          "rainyDayFraction": 0.1833
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 29.2,
+          "meanDailyHighC": 36.22,
+          "meanRainMmPerDay": 0.2394,
+          "meanRelativeHumidityPct": 35.31,
+          "rainyDayFraction": 0.0839
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.78,
+          "meanDailyHighC": 35.76,
+          "meanRainMmPerDay": 0.4406,
+          "meanRelativeHumidityPct": 37.35,
+          "rainyDayFraction": 0.1387
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 23.6,
+          "meanDailyHighC": 30.11,
+          "meanRainMmPerDay": 0.985,
+          "meanRelativeHumidityPct": 49.62,
+          "rainyDayFraction": 0.1733
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.98,
+          "meanDailyHighC": 25.2,
+          "meanRainMmPerDay": 1.4106,
+          "meanRelativeHumidityPct": 57.45,
+          "rainyDayFraction": 0.2323
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 12.5,
+          "meanDailyHighC": 17.91,
+          "meanRainMmPerDay": 1.836,
+          "meanRelativeHumidityPct": 69.33,
+          "rainyDayFraction": 0.2933
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 9.84,
+          "meanDailyHighC": 15.46,
+          "meanRainMmPerDay": 1.6765,
+          "meanRelativeHumidityPct": 73,
+          "rainyDayFraction": 0.2355
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for urban, coastal or mountain/island profile. Linked tourism pages describe destination context, not measured monthly crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          12,
+          3,
+          8,
+          7,
+          4,
+          10,
+          6,
+          9,
+          5
+        ],
+        "sourceUrls": [
+          "https://www.spain.info/en/destinations/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order; not observed price data or a measured index.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          12,
+          3,
+          8,
+          7,
+          4,
+          10,
+          6,
+          9,
+          5
+        ],
+        "sourceUrls": [
+          "https://www.spain.info/en/destinations/"
+        ]
+      },
+      "events": [
+        {
+          "name": "International Festival of Music and Dance",
+          "months": [
+            6,
+            7
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://www.spain.info/export/sites/gcc/gcc/.content/comun/documentos/Granada-EN.pdf"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; approximate typical months, not confirmed 2026–2032 schedules. No listed event does not mean none occur."
+    },
+    {
+      "id": "oviedo",
+      "country": "spain",
+      "name": "Oviedo",
+      "area": "Asturias",
+      "regionIndex": 9,
+      "latitude": 43.3619,
+      "longitude": -5.8494,
+      "gridLatitude": 43.25,
+      "gridLongitude": -5.75,
+      "elevation": 240,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=43.3619&longitude=-5.8494&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FRome&models=era5",
+      "climateReviewNote": null,
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 8.69,
+          "meanDailyHighC": 12.9,
+          "meanRainMmPerDay": 3.6981,
+          "meanRelativeHumidityPct": 80.71,
+          "rainyDayFraction": 0.4581
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 9.92,
+          "meanDailyHighC": 14.69,
+          "meanRainMmPerDay": 3.5261,
+          "meanRelativeHumidityPct": 78.08,
+          "rainyDayFraction": 0.4488
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 10.93,
+          "meanDailyHighC": 15.55,
+          "meanRainMmPerDay": 3.2958,
+          "meanRelativeHumidityPct": 76.77,
+          "rainyDayFraction": 0.4806
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 12.95,
+          "meanDailyHighC": 17.56,
+          "meanRainMmPerDay": 3.589,
+          "meanRelativeHumidityPct": 78.21,
+          "rainyDayFraction": 0.5133
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 15.52,
+          "meanDailyHighC": 20.02,
+          "meanRainMmPerDay": 3.6997,
+          "meanRelativeHumidityPct": 80.97,
+          "rainyDayFraction": 0.5484
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 18.45,
+          "meanDailyHighC": 22.61,
+          "meanRainMmPerDay": 5.014,
+          "meanRelativeHumidityPct": 84.61,
+          "rainyDayFraction": 0.6267
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 20.24,
+          "meanDailyHighC": 24.69,
+          "meanRainMmPerDay": 2.279,
+          "meanRelativeHumidityPct": 85.18,
+          "rainyDayFraction": 0.4677
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 20.51,
+          "meanDailyHighC": 25.38,
+          "meanRainMmPerDay": 2.6152,
+          "meanRelativeHumidityPct": 84.67,
+          "rainyDayFraction": 0.4903
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 18.27,
+          "meanDailyHighC": 23.21,
+          "meanRainMmPerDay": 3.004,
+          "meanRelativeHumidityPct": 83.05,
+          "rainyDayFraction": 0.47
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 15.86,
+          "meanDailyHighC": 20.78,
+          "meanRainMmPerDay": 3.1745,
+          "meanRelativeHumidityPct": 81.06,
+          "rainyDayFraction": 0.4097
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 11.65,
+          "meanDailyHighC": 15.75,
+          "meanRainMmPerDay": 4.3,
+          "meanRelativeHumidityPct": 82.35,
+          "rainyDayFraction": 0.51
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 9.95,
+          "meanDailyHighC": 13.96,
+          "meanRainMmPerDay": 3.6819,
+          "meanRelativeHumidityPct": 82.03,
+          "rainyDayFraction": 0.4516
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for urban, coastal or mountain/island profile. Linked tourism pages describe destination context, not measured monthly crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          12,
+          3,
+          4,
+          10,
+          5,
+          6,
+          9,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.spain.info/en/destinations/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order; not observed price data or a measured index.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          12,
+          3,
+          4,
+          10,
+          5,
+          6,
+          9,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.spain.info/en/destinations/"
+        ]
+      },
+      "events": [
+        {
+          "name": "San Mateo",
+          "months": [
+            9
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://www.turismoasturias.es/en/agenda-de-asturias/fiestas/-/calendarsuite/event/san-mateo-fiestas-en-oviedo/17840880/jr0cMeS144cd"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; approximate typical months, not confirmed 2026–2032 schedules. No listed event does not mean none occur."
+    },
+    {
+      "id": "santiago-de-compostela",
+      "country": "spain",
+      "name": "Santiago de Compostela",
+      "area": "Galicia",
+      "regionIndex": 10,
+      "latitude": 42.8782,
+      "longitude": -8.5448,
+      "gridLatitude": 43,
+      "gridLongitude": -8.5,
+      "elevation": 262,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=42.8782&longitude=-8.5448&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FRome&models=era5",
+      "climateReviewNote": null,
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 8.91,
+          "meanDailyHighC": 12.23,
+          "meanRainMmPerDay": 5.0245,
+          "meanRelativeHumidityPct": 85.1,
+          "rainyDayFraction": 0.4387
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 9.85,
+          "meanDailyHighC": 13.61,
+          "meanRainMmPerDay": 3.9332,
+          "meanRelativeHumidityPct": 82.29,
+          "rainyDayFraction": 0.424
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 10.35,
+          "meanDailyHighC": 14.25,
+          "meanRainMmPerDay": 4.4558,
+          "meanRelativeHumidityPct": 80.33,
+          "rainyDayFraction": 0.4871
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 12.26,
+          "meanDailyHighC": 16.67,
+          "meanRainMmPerDay": 3.848,
+          "meanRelativeHumidityPct": 79.57,
+          "rainyDayFraction": 0.4467
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 14.7,
+          "meanDailyHighC": 19.08,
+          "meanRainMmPerDay": 2.5868,
+          "meanRelativeHumidityPct": 80.02,
+          "rainyDayFraction": 0.3968
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 16.82,
+          "meanDailyHighC": 20.85,
+          "meanRainMmPerDay": 2.492,
+          "meanRelativeHumidityPct": 82.52,
+          "rainyDayFraction": 0.38
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.86,
+          "meanDailyHighC": 23.47,
+          "meanRainMmPerDay": 0.5994,
+          "meanRelativeHumidityPct": 79.63,
+          "rainyDayFraction": 0.1548
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 19.21,
+          "meanDailyHighC": 24.22,
+          "meanRainMmPerDay": 0.8387,
+          "meanRelativeHumidityPct": 79.58,
+          "rainyDayFraction": 0.1839
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 17.39,
+          "meanDailyHighC": 22.11,
+          "meanRainMmPerDay": 2.2137,
+          "meanRelativeHumidityPct": 81.32,
+          "rainyDayFraction": 0.33
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 15.25,
+          "meanDailyHighC": 19.44,
+          "meanRainMmPerDay": 4.7468,
+          "meanRelativeHumidityPct": 83.84,
+          "rainyDayFraction": 0.4258
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 11.59,
+          "meanDailyHighC": 14.83,
+          "meanRainMmPerDay": 5.0187,
+          "meanRelativeHumidityPct": 86.08,
+          "rainyDayFraction": 0.53
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 9.89,
+          "meanDailyHighC": 13.09,
+          "meanRainMmPerDay": 4.9416,
+          "meanRelativeHumidityPct": 86.99,
+          "rainyDayFraction": 0.471
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for urban, coastal or mountain/island profile. Linked tourism pages describe destination context, not measured monthly crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          12,
+          3,
+          4,
+          10,
+          5,
+          6,
+          9,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.spain.info/en/destinations/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order; not observed price data or a measured index.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          12,
+          3,
+          4,
+          10,
+          5,
+          6,
+          9,
+          7,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.spain.info/en/destinations/"
+        ]
+      },
+      "events": [
+        {
+          "name": "Fiestas del Apóstol Santiago",
+          "months": [
+            7
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://www.santiagoturismo.com/festas-e-tradicions/festas-do-apostolo-santiago"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; approximate typical months, not confirmed 2026–2032 schedules. No listed event does not mean none occur."
+    },
+    {
+      "id": "salamanca",
+      "country": "spain",
+      "name": "Salamanca",
+      "area": "Castile and León",
+      "regionIndex": 11,
+      "latitude": 40.9701,
+      "longitude": -5.6635,
+      "gridLatitude": 41,
+      "gridLongitude": -5.75,
+      "elevation": 821,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=40.9701&longitude=-5.6635&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FRome&models=era5",
+      "climateReviewNote": null,
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 4.85,
+          "meanDailyHighC": 9.33,
+          "meanRainMmPerDay": 1.37,
+          "meanRelativeHumidityPct": 80.59,
+          "rainyDayFraction": 0.2645
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 6.8,
+          "meanDailyHighC": 12.13,
+          "meanRainMmPerDay": 1.2707,
+          "meanRelativeHumidityPct": 73.74,
+          "rainyDayFraction": 0.2438
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 8.34,
+          "meanDailyHighC": 13.46,
+          "meanRainMmPerDay": 1.9832,
+          "meanRelativeHumidityPct": 70.45,
+          "rainyDayFraction": 0.3581
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 11.42,
+          "meanDailyHighC": 16.92,
+          "meanRainMmPerDay": 2.0863,
+          "meanRelativeHumidityPct": 65.21,
+          "rainyDayFraction": 0.39
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 15.38,
+          "meanDailyHighC": 21.42,
+          "meanRainMmPerDay": 1.311,
+          "meanRelativeHumidityPct": 59.16,
+          "rainyDayFraction": 0.2613
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 19.89,
+          "meanDailyHighC": 26.37,
+          "meanRainMmPerDay": 1.1937,
+          "meanRelativeHumidityPct": 54.84,
+          "rainyDayFraction": 0.27
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 23.17,
+          "meanDailyHighC": 30.66,
+          "meanRainMmPerDay": 0.3542,
+          "meanRelativeHumidityPct": 46.2,
+          "rainyDayFraction": 0.0806
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 23.22,
+          "meanDailyHighC": 30.99,
+          "meanRainMmPerDay": 0.24,
+          "meanRelativeHumidityPct": 44.17,
+          "rainyDayFraction": 0.071
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 18.28,
+          "meanDailyHighC": 25.21,
+          "meanRainMmPerDay": 1.006,
+          "meanRelativeHumidityPct": 55.83,
+          "rainyDayFraction": 0.16
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 14.41,
+          "meanDailyHighC": 20.29,
+          "meanRainMmPerDay": 2.009,
+          "meanRelativeHumidityPct": 65.75,
+          "rainyDayFraction": 0.3032
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 8.57,
+          "meanDailyHighC": 12.94,
+          "meanRainMmPerDay": 1.843,
+          "meanRelativeHumidityPct": 79.48,
+          "rainyDayFraction": 0.3733
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 5.94,
+          "meanDailyHighC": 10.02,
+          "meanRainMmPerDay": 1.6255,
+          "meanRelativeHumidityPct": 84.34,
+          "rainyDayFraction": 0.2742
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for urban, coastal or mountain/island profile. Linked tourism pages describe destination context, not measured monthly crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          12,
+          3,
+          8,
+          7,
+          4,
+          10,
+          6,
+          9,
+          5
+        ],
+        "sourceUrls": [
+          "https://www.spain.info/en/destinations/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order; not observed price data or a measured index.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          12,
+          3,
+          8,
+          7,
+          4,
+          10,
+          6,
+          9,
+          5
+        ],
+        "sourceUrls": [
+          "https://www.spain.info/en/destinations/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; approximate typical months, not confirmed 2026–2032 schedules. No listed event does not mean none occur."
+    },
+    {
+      "id": "zaragoza",
+      "country": "spain",
+      "name": "Zaragoza",
+      "area": "Aragon",
+      "regionIndex": 12,
+      "latitude": 41.6488,
+      "longitude": -0.8891,
+      "gridLatitude": 41.75,
+      "gridLongitude": -1,
+      "elevation": 228,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=41.6488&longitude=-0.8891&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FRome&models=era5",
+      "climateReviewNote": null,
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 7.79,
+          "meanDailyHighC": 12.87,
+          "meanRainMmPerDay": 0.9565,
+          "meanRelativeHumidityPct": 73.25,
+          "rainyDayFraction": 0.2065
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 10.14,
+          "meanDailyHighC": 15.93,
+          "meanRainMmPerDay": 0.8721,
+          "meanRelativeHumidityPct": 67.9,
+          "rainyDayFraction": 0.1696
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 12.57,
+          "meanDailyHighC": 18.16,
+          "meanRainMmPerDay": 1.4374,
+          "meanRelativeHumidityPct": 61.13,
+          "rainyDayFraction": 0.2419
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 15.46,
+          "meanDailyHighC": 21.52,
+          "meanRainMmPerDay": 1.5373,
+          "meanRelativeHumidityPct": 57.17,
+          "rainyDayFraction": 0.2233
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 19.87,
+          "meanDailyHighC": 26.56,
+          "meanRainMmPerDay": 0.9968,
+          "meanRelativeHumidityPct": 51.01,
+          "rainyDayFraction": 0.1645
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 24.88,
+          "meanDailyHighC": 32.01,
+          "meanRainMmPerDay": 0.8997,
+          "meanRelativeHumidityPct": 48.51,
+          "rainyDayFraction": 0.2
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.3,
+          "meanDailyHighC": 35.13,
+          "meanRainMmPerDay": 0.4197,
+          "meanRelativeHumidityPct": 46.01,
+          "rainyDayFraction": 0.1032
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.04,
+          "meanDailyHighC": 34.76,
+          "meanRainMmPerDay": 0.5587,
+          "meanRelativeHumidityPct": 47.25,
+          "rainyDayFraction": 0.0968
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 22.2,
+          "meanDailyHighC": 28.77,
+          "meanRainMmPerDay": 1.1987,
+          "meanRelativeHumidityPct": 57.45,
+          "rainyDayFraction": 0.1633
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.69,
+          "meanDailyHighC": 23.76,
+          "meanRainMmPerDay": 1.4842,
+          "meanRelativeHumidityPct": 66.09,
+          "rainyDayFraction": 0.2226
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 11.77,
+          "meanDailyHighC": 16.63,
+          "meanRainMmPerDay": 1.5683,
+          "meanRelativeHumidityPct": 73.1,
+          "rainyDayFraction": 0.2733
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 8.63,
+          "meanDailyHighC": 13.18,
+          "meanRainMmPerDay": 0.8835,
+          "meanRelativeHumidityPct": 78.6,
+          "rainyDayFraction": 0.2032
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for urban, coastal or mountain/island profile. Linked tourism pages describe destination context, not measured monthly crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          12,
+          3,
+          8,
+          7,
+          4,
+          10,
+          6,
+          9,
+          5
+        ],
+        "sourceUrls": [
+          "https://www.spain.info/en/destinations/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order; not observed price data or a measured index.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          12,
+          3,
+          8,
+          7,
+          4,
+          10,
+          6,
+          9,
+          5
+        ],
+        "sourceUrls": [
+          "https://www.spain.info/en/destinations/"
+        ]
+      },
+      "events": [
+        {
+          "name": "Fiestas del Pilar",
+          "months": [
+            10
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://www.zaragoza.es/ciudad/turismo/en/agenda/fiestaspilar.htm"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; approximate typical months, not confirmed 2026–2032 schedules. No listed event does not mean none occur."
+    },
+    {
+      "id": "jaca",
+      "country": "spain",
+      "name": "Jaca",
+      "area": "Pyrenees",
+      "regionIndex": 13,
+      "latitude": 42.5716,
+      "longitude": -0.5495,
+      "gridLatitude": 42.5,
+      "gridLongitude": -0.5,
+      "elevation": 825,
+      "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=42.5716&longitude=-0.5495&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FRome&models=era5",
+      "climateReviewNote": "Mountain grid-cell estimates and the general 20°C comfort model do not represent ski conditions or lift opening.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 4.37,
+          "meanDailyHighC": 8.95,
+          "meanRainMmPerDay": 2.9268,
+          "meanRelativeHumidityPct": 77.4,
+          "rainyDayFraction": 0.371
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 6.19,
+          "meanDailyHighC": 11.46,
+          "meanRainMmPerDay": 2.4647,
+          "meanRelativeHumidityPct": 74.75,
+          "rainyDayFraction": 0.2862
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 7.7,
+          "meanDailyHighC": 12.61,
+          "meanRainMmPerDay": 3.2229,
+          "meanRelativeHumidityPct": 73.61,
+          "rainyDayFraction": 0.4484
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 10.75,
+          "meanDailyHighC": 16.06,
+          "meanRainMmPerDay": 3.0123,
+          "meanRelativeHumidityPct": 71,
+          "rainyDayFraction": 0.4133
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 14.54,
+          "meanDailyHighC": 20.06,
+          "meanRainMmPerDay": 2.5694,
+          "meanRelativeHumidityPct": 67.87,
+          "rainyDayFraction": 0.4
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 19.66,
+          "meanDailyHighC": 25.31,
+          "meanRainMmPerDay": 2.356,
+          "meanRelativeHumidityPct": 63.79,
+          "rainyDayFraction": 0.38
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 22.87,
+          "meanDailyHighC": 29.1,
+          "meanRainMmPerDay": 1.0197,
+          "meanRelativeHumidityPct": 56.45,
+          "rainyDayFraction": 0.2065
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 22.86,
+          "meanDailyHighC": 29.62,
+          "meanRainMmPerDay": 1.2461,
+          "meanRelativeHumidityPct": 54.77,
+          "rainyDayFraction": 0.2194
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 17.76,
+          "meanDailyHighC": 23.93,
+          "meanRainMmPerDay": 2.1213,
+          "meanRelativeHumidityPct": 65.95,
+          "rainyDayFraction": 0.2733
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 13.6,
+          "meanDailyHighC": 19.31,
+          "meanRainMmPerDay": 3.4755,
+          "meanRelativeHumidityPct": 74.25,
+          "rainyDayFraction": 0.3387
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 7.82,
+          "meanDailyHighC": 12.37,
+          "meanRainMmPerDay": 3.4097,
+          "meanRelativeHumidityPct": 80.06,
+          "rainyDayFraction": 0.39
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 5.49,
+          "meanDailyHighC": 9.87,
+          "meanRainMmPerDay": 2.6797,
+          "meanRelativeHumidityPct": 81.96,
+          "rainyDayFraction": 0.3419
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for urban, coastal or mountain/island profile. Linked tourism pages describe destination context, not measured monthly crowd ranks.",
+        "lowToHigh": [
+          11,
+          5,
+          4,
+          10,
+          6,
+          9,
+          1,
+          3,
+          7,
+          12,
+          2,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.spain.info/en/destination/jaca/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order; not observed price data or a measured index.",
+        "lowToHigh": [
+          11,
+          5,
+          4,
+          10,
+          6,
+          9,
+          1,
+          3,
+          7,
+          12,
+          2,
+          8
+        ],
+        "sourceUrls": [
+          "https://www.spain.info/en/destination/jaca/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; approximate typical months, not confirmed 2026–2032 schedules. No listed event does not mean none occur."
     }
   ]
 }

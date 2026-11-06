@@ -1,6 +1,6 @@
 # Within-base tourist-season rankings
 
-Version 3 — 6 November 2026. Portugal (5 bases), Colombia (10 bases), Italy (13 bases).
+Version 3 — 6 November 2026. Portugal (5 bases), Colombia (10 bases), Italy (13 bases), Spain (14 bases).
 
 Compare each base only with its own 12 calendar months. Rank 1–4 BEST, 5–8 AVERAGE, 9–12 WORST, for each climate component, the combined climate score, and the final tourist score. Equal values use January–December order; forcing equal-sized bands can separate identical or near-identical months. BEST is relative, not an absolute weather or safety guarantee.
 
@@ -21,3 +21,5 @@ Data flow: data/seasonality-inputs.json → scripts/build-seasonality.cjs → di
 Italy: climate retrieved 6 November 2026 at each named destination’s coordinates. Existing six planner indices retained, seven added. Only selected sourced events are included. Crowd/price month orders are provisional urban, coastal/island and mountain seasonal proxies, not measured values. Ortisei uses the agreed general comfort model, not a ski-suitability model; airport-to-town transfers are required and are not part of flight samples.
 
 Targets updated: 20°C daily mean and 5 mm/calendar day rain. Absolute deviations are symmetric: 13°C and 27°C each differ by 7°C; 0 and 10 mm/day each differ by 5 mm/day. Equal deviations remain tied in preference, then calendar order breaks ties to preserve the four/four/four quota. These are owner-selected preferences, not universal ideal-weather standards.
+
+Spain: 14 approved destinations and 168 ERA5 climate records, retrieved 6 November 2026. First six planner indices retained. Mainland/Mallorca use the equivalent Central European local day; Puerto de la Cruz explicitly uses Atlantic/Canary local days. Holy Week events use the month of Easter Sunday as a monthly approximation. Selected festivals, crowds and price proxies remain provisional. Jaca’s winter sports and Tenerife’s cross-island microclimates are not represented by the general city-point comfort rating.

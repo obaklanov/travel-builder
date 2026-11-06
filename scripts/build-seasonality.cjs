@@ -2,7 +2,7 @@
 const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');const root=path.resolve(__dirname,'..'),input=JSON.parse(fs.readFileSync(path.join(root,'data/seasonality-inputs.json'),'utf8'));const clamp=n=>Math.max(0,Math.min(100,n));
 function easter(year){const a=year%19,b=Math.floor(year/100),c=year%100,d=Math.floor(b/4),e=b%4,f=Math.floor((b+8)/25),g=Math.floor((b-f+1)/3),h=(19*a+b-d-g+15)%30,i=Math.floor(c/4),k=c%4,l=(32+2*e+2*i-h-k)%7,m=Math.floor((a+11*h+22*l)/451),month=Math.floor((h+l-7*m+114)/31),day=(h+l-7*m+114)%31+1;return new Date(Date.UTC(year,month-1,day));}
 function shifted(date,days){const copy=new Date(date);copy.setUTCDate(copy.getUTCDate()+days);return copy;}
-function eventMonths(event,year){if(!event.rule)return event.months;const date=shifted(easter(year),event.rule==='carnival'?-47:35);return [date.getUTCMonth()+1];}
+function eventMonths(event,year){if(!event.rule)return event.months;const date=shifted(easter(year),event.rule==='carnival'?-47:event.rule==='easter'?0:35);return [date.getUTCMonth()+1];}
 function ranks(order){assert.equal(new Set(order).size,12);assert(order.every(m=>m>=1&&m<=12));return Array.from({length:12},(_,m)=>order.indexOf(m+1)+1);}
 function ranksOf(values,descending=false){return values.map((value,i)=>1+values.filter((v,j)=>(descending?v>value:v<value)||(v===value&&j<i)).length);}
 function rankScore(rank){return 100*(12-rank)/11;}

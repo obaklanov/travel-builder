@@ -1,6 +1,6 @@
 {
   "updated": "2026-11-06",
-  "status": "Approved Portugal, Colombia and Italy destinations integrated; climate is a historical model estimate; crowd/price/event coverage remains provisional.",
+  "status": "Approved Portugal, Colombia, Italy and Spain lists integrated; historical climate model and provisional crowd/price/event inputs.",
   "coveragePolicy": {
     "expandedCoverage": [
       "South America",
@@ -242,6 +242,135 @@
         }
       ],
       "indexCompatibility": "Existing first six region indices retained: Rome, Venice, Florence, Naples, Catania (formerly broad Sicily) and Ortisei (formerly broad Dolomites)."
+    },
+    "spain": {
+      "approvedAt": "2026-11-06",
+      "liveLabelsUpdated": true,
+      "indexCompatibility": "First six positions retained: Madrid, Barcelona, Málaga (formerly broad Andalusia), Bilbao, Palma (formerly Balearics), Puerto de la Cruz (formerly Canaries).",
+      "seasonalityStatus": "2016–2025 ERA5, 20°C and 5 mm/day targets, 60/20/10/10 weights and relative 4/4/4 bands. Crowd and price estimates are editorial; events are a partial registry.",
+      "destinations": [
+        {
+          "name": "Madrid",
+          "area": "Center",
+          "airportCandidates": [
+            "MAD"
+          ],
+          "nearbyPlaces": [
+            "Toledo",
+            "Segovia"
+          ]
+        },
+        {
+          "name": "Barcelona",
+          "area": "Catalonia",
+          "airportCandidates": [
+            "BCN"
+          ],
+          "treasures": [
+            "Sagrada Família"
+          ]
+        },
+        {
+          "name": "Málaga",
+          "area": "Costa del Sol",
+          "airportCandidates": [
+            "AGP"
+          ]
+        },
+        {
+          "name": "Bilbao",
+          "area": "Basque Country",
+          "airportCandidates": [
+            "BIO"
+          ],
+          "nearbyPlaces": [
+            "San Sebastián"
+          ]
+        },
+        {
+          "name": "Palma",
+          "area": "Mallorca",
+          "airportCandidates": [
+            "PMI"
+          ]
+        },
+        {
+          "name": "Puerto de la Cruz",
+          "area": "Tenerife",
+          "airportCandidates": [
+            "TFN",
+            "TFS"
+          ],
+          "treasures": [
+            "Mount Teide"
+          ]
+        },
+        {
+          "name": "Valencia",
+          "area": "East coast",
+          "airportCandidates": [
+            "VLC"
+          ]
+        },
+        {
+          "name": "Seville",
+          "area": "Western Andalusia",
+          "airportCandidates": [
+            "SVQ"
+          ],
+          "nearbyPlaces": [
+            "Córdoba"
+          ]
+        },
+        {
+          "name": "Granada",
+          "area": "Eastern Andalusia",
+          "airportCandidates": [
+            "GRX",
+            "AGP"
+          ],
+          "treasures": [
+            "Alhambra"
+          ]
+        },
+        {
+          "name": "Oviedo",
+          "area": "Asturias",
+          "airportCandidates": [
+            "OVD"
+          ]
+        },
+        {
+          "name": "Santiago de Compostela",
+          "area": "Galicia",
+          "airportCandidates": [
+            "SCQ"
+          ]
+        },
+        {
+          "name": "Salamanca",
+          "area": "Castile and León",
+          "airportCandidates": [
+            "MAD",
+            "VLL"
+          ]
+        },
+        {
+          "name": "Zaragoza",
+          "area": "Aragon",
+          "airportCandidates": [
+            "ZAZ"
+          ]
+        },
+        {
+          "name": "Jaca",
+          "area": "Pyrenees",
+          "airportCandidates": [
+            "ZAZ",
+            "BCN"
+          ]
+        }
+      ]
     }
   }
 }
