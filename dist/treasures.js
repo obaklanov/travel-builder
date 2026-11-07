@@ -1208,18 +1208,12 @@ const treasurePhotos = {
     "bytes": 104766
   },
   "Borobudur": {
-    "author": "CEphoto, Uwe Aranas",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Borobudur-Temple-Park_Indonesia_Stupas-of-Borobudur-04.jpg",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "originalTitle": "File:Borobudur-Temple-Park Indonesia Stupas-of-Borobudur-04.jpg",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Borobudur-Temple-Park_Indonesia_Stupas-of-Borobudur-04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "src": "images/treasures/indonesia-1.webp",
-    "alt": "Borobudur — Indonesia",
-    "width": 640,
-    "height": 457,
-    "bytes": 46646
-  },
+  "src": "images/treasures/indonesia-borobudur-owner.png",
+  "alt": "Borobudur stupas and Buddha statue at golden sunrise",
+  "width": 1160,
+  "height": 766,
+  "suppliedByOwner": true
+},
   "Ulun Danu Beratan": {
     "author": "Mahmud Ahsan",
     "sourceUrl": "https://unsplash.com/photos/brown-and-green-temple-near-lake-and-green-mountain-under-blue-sky-during-daytime-QqPcxfFKqfU",
@@ -1232,18 +1226,12 @@ const treasurePhotos = {
     "bytes": 45454
   },
   "Komodo National Park": {
-    "author": "Adhi Rachdian from Indonesia",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Komodo_dragon_at_Komodo_National_Park.jpg",
-    "license": "CC BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-    "originalTitle": "File:Komodo_dragon_at_Komodo_National_Park.jpg",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Komodo_dragon_at_Komodo_National_Park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "src": "images/treasures/indonesia-3.webp",
-    "alt": "Komodo National Park — Indonesia",
-    "width": 640,
-    "height": 426,
-    "bytes": 51114
-  },
+  "src": "images/treasures/indonesia-komodo-owner.png",
+  "alt": "Komodo dragon overlooking blue bays and islands in Komodo National Park",
+  "width": 1173,
+  "height": 750,
+  "suppliedByOwner": true
+},
   "Eiffel Tower": {
     "author": "Albert Bergonzo",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tour_Eiffel_Seine_River_(126580999).jpeg",
