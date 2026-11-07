@@ -135,6 +135,20 @@
         "timeStandard": "Local solar time",
         "sourceUrl": "https://power.larc.nasa.gov/docs/services/api/temporal/daily/",
         "rainDefinition": "PRECTOTCORR total precipitation, including snow, averaged across all calendar days in mm/day. Alternative to ERA5 rain-only data due daily API quota; not directly identical."
+      },
+      "mexico": {
+        "model": "NASA POWER/MERRA-2",
+        "period": "2016–2025",
+        "timeStandard": "Local solar time",
+        "sourceUrl": "https://power.larc.nasa.gov/docs/services/api/temporal/daily/",
+        "rainDefinition": "PRECTOTCORR total precipitation, including snow, averaged across all calendar days in mm/day. Alternative to ERA5 rain-only data due daily API quota; not directly identical."
+      },
+      "costa-rica": {
+        "model": "NASA POWER/MERRA-2",
+        "period": "2016–2025",
+        "timeStandard": "Local solar time",
+        "sourceUrl": "https://power.larc.nasa.gov/docs/services/api/temporal/daily/",
+        "rainDefinition": "PRECTOTCORR total precipitation, including snow, averaged across all calendar days in mm/day. Alternative to ERA5 rain-only data due daily API quota; not directly identical."
       }
     }
   },
@@ -32797,6 +32811,2523 @@
       },
       "events": [],
       "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "mexico",
+      "id": "cancun",
+      "name": "Cancún",
+      "area": "Caribbean coast",
+      "latitude": 21.1619,
+      "longitude": -86.8515,
+      "airports": [
+        [
+          "CUN",
+          "Cancún"
+        ]
+      ],
+      "climateType": "beach",
+      "regionIndex": 0,
+      "gridLatitude": 21.1619,
+      "gridLongitude": -86.8515,
+      "elevation": 6.36,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-86.8515&latitude=21.1619&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Beach-oriented holiday base; 25°C target.",
+      "climateTypeSources": [
+        "https://visitmexico.com/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.46,
+          "meanDailyHighC": 26.74,
+          "meanRainMmPerDay": 3.3195,
+          "meanRelativeHumidityPct": 78.2,
+          "rainyDayFraction": 0.4194
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 25.07,
+          "meanDailyHighC": 27.55,
+          "meanRainMmPerDay": 1.7827,
+          "meanRelativeHumidityPct": 76.4,
+          "rainyDayFraction": 0.2721
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.03,
+          "meanDailyHighC": 28.86,
+          "meanRainMmPerDay": 1.4098,
+          "meanRelativeHumidityPct": 73.27,
+          "rainyDayFraction": 0.1935
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 27.13,
+          "meanDailyHighC": 30.07,
+          "meanRainMmPerDay": 1.4047,
+          "meanRelativeHumidityPct": 72.84,
+          "rainyDayFraction": 0.1967
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.27,
+          "meanDailyHighC": 30.97,
+          "meanRainMmPerDay": 2.6761,
+          "meanRelativeHumidityPct": 74.77,
+          "rainyDayFraction": 0.3484
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 28.23,
+          "meanDailyHighC": 30.24,
+          "meanRainMmPerDay": 6.7191,
+          "meanRelativeHumidityPct": 81.15,
+          "rainyDayFraction": 0.59
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.6,
+          "meanDailyHighC": 30.69,
+          "meanRainMmPerDay": 2.7214,
+          "meanRelativeHumidityPct": 80.8,
+          "rainyDayFraction": 0.5387
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.73,
+          "meanDailyHighC": 30.85,
+          "meanRainMmPerDay": 4.2079,
+          "meanRelativeHumidityPct": 81.13,
+          "rainyDayFraction": 0.6871
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 28.36,
+          "meanDailyHighC": 30.31,
+          "meanRainMmPerDay": 4.9909,
+          "meanRelativeHumidityPct": 82.91,
+          "rainyDayFraction": 0.76
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.59,
+          "meanDailyHighC": 29.57,
+          "meanRainMmPerDay": 6.5102,
+          "meanRelativeHumidityPct": 81.67,
+          "rainyDayFraction": 0.7194
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 26.15,
+          "meanDailyHighC": 28.25,
+          "meanRainMmPerDay": 4.5007,
+          "meanRelativeHumidityPct": 80.5,
+          "rainyDayFraction": 0.5367
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.27,
+          "meanDailyHighC": 27.42,
+          "meanRainMmPerDay": 2.8978,
+          "meanRelativeHumidityPct": 79.26,
+          "rainyDayFraction": 0.4323
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Mexican cultural/highland/coastal and Costa Rican Pacific/Caribbean contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          9,
+          10,
+          6,
+          5,
+          11,
+          7,
+          8,
+          4,
+          3,
+          2,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://visitmexico.com/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          9,
+          10,
+          6,
+          5,
+          11,
+          7,
+          8,
+          4,
+          3,
+          2,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://visitmexico.com/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "mexico",
+      "id": "mexico-city",
+      "name": "Mexico City",
+      "area": "Central highlands",
+      "latitude": 19.4326,
+      "longitude": -99.1332,
+      "airports": [
+        [
+          "MEX",
+          "Mexico City"
+        ],
+        [
+          "NLU",
+          "Felipe Ángeles"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 1,
+      "gridLatitude": 19.4326,
+      "gridLongitude": -99.1332,
+      "elevation": 2626.86,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-99.1332&latitude=19.4326&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://visitmexico.com/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates. MEX or NLU; account for different airport ground transfers.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 11.16,
+          "meanDailyHighC": 19.85,
+          "meanRainMmPerDay": 0.2435,
+          "meanRelativeHumidityPct": 58.26,
+          "rainyDayFraction": 0.0742
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 13.07,
+          "meanDailyHighC": 22.61,
+          "meanRainMmPerDay": 0.2967,
+          "meanRelativeHumidityPct": 50.83,
+          "rainyDayFraction": 0.0777
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 15.33,
+          "meanDailyHighC": 25.22,
+          "meanRainMmPerDay": 0.4657,
+          "meanRelativeHumidityPct": 45.9,
+          "rainyDayFraction": 0.1419
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 16.94,
+          "meanDailyHighC": 26.59,
+          "meanRainMmPerDay": 0.8515,
+          "meanRelativeHumidityPct": 43.69,
+          "rainyDayFraction": 0.2567
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.1,
+          "meanDailyHighC": 27.02,
+          "meanRainMmPerDay": 1.8648,
+          "meanRelativeHumidityPct": 51.68,
+          "rainyDayFraction": 0.4677
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 16.58,
+          "meanDailyHighC": 23.74,
+          "meanRainMmPerDay": 4.6433,
+          "meanRelativeHumidityPct": 67.7,
+          "rainyDayFraction": 0.71
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 15.52,
+          "meanDailyHighC": 22.01,
+          "meanRainMmPerDay": 4.9028,
+          "meanRelativeHumidityPct": 75.32,
+          "rainyDayFraction": 0.9032
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 15.23,
+          "meanDailyHighC": 21.41,
+          "meanRainMmPerDay": 5.4731,
+          "meanRelativeHumidityPct": 78.92,
+          "rainyDayFraction": 0.9226
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 14.71,
+          "meanDailyHighC": 20.8,
+          "meanRainMmPerDay": 4.9224,
+          "meanRelativeHumidityPct": 81.31,
+          "rainyDayFraction": 0.86
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 13.59,
+          "meanDailyHighC": 20.55,
+          "meanRainMmPerDay": 2.0957,
+          "meanRelativeHumidityPct": 78.14,
+          "rainyDayFraction": 0.4935
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 12.34,
+          "meanDailyHighC": 20.35,
+          "meanRainMmPerDay": 0.8011,
+          "meanRelativeHumidityPct": 69.66,
+          "rainyDayFraction": 0.1933
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 11.4,
+          "meanDailyHighC": 19.63,
+          "meanRainMmPerDay": 0.186,
+          "meanRelativeHumidityPct": 64.17,
+          "rainyDayFraction": 0.0452
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Mexican cultural/highland/coastal and Costa Rican Pacific/Caribbean contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          9,
+          6,
+          5,
+          2,
+          8,
+          1,
+          7,
+          3,
+          4,
+          10,
+          11,
+          12
+        ],
+        "sourceUrls": [
+          "https://visitmexico.com/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          9,
+          6,
+          5,
+          2,
+          8,
+          1,
+          7,
+          3,
+          4,
+          10,
+          11,
+          12
+        ],
+        "sourceUrls": [
+          "https://visitmexico.com/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "mexico",
+      "id": "oaxaca",
+      "name": "Oaxaca",
+      "area": "Southern highlands",
+      "latitude": 17.0732,
+      "longitude": -96.7266,
+      "airports": [
+        [
+          "OAX",
+          "Oaxaca"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 2,
+      "gridLatitude": 17.0732,
+      "gridLongitude": -96.7266,
+      "elevation": 1953.28,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-96.7266&latitude=17.0732&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeSources": [
+        "https://visitmexico.com/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 14.85,
+          "meanDailyHighC": 23.51,
+          "meanRainMmPerDay": 0.291,
+          "meanRelativeHumidityPct": 68.66,
+          "rainyDayFraction": 0.0839
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 16.54,
+          "meanDailyHighC": 26.25,
+          "meanRainMmPerDay": 0.1561,
+          "meanRelativeHumidityPct": 61.4,
+          "rainyDayFraction": 0.0318
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 19.02,
+          "meanDailyHighC": 29.1,
+          "meanRainMmPerDay": 0.4043,
+          "meanRelativeHumidityPct": 56.07,
+          "rainyDayFraction": 0.0742
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 20.46,
+          "meanDailyHighC": 30.04,
+          "meanRainMmPerDay": 0.9756,
+          "meanRelativeHumidityPct": 54.1,
+          "rainyDayFraction": 0.2533
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 21.09,
+          "meanDailyHighC": 29.39,
+          "meanRainMmPerDay": 2.4907,
+          "meanRelativeHumidityPct": 61.37,
+          "rainyDayFraction": 0.4452
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 18.74,
+          "meanDailyHighC": 24.62,
+          "meanRainMmPerDay": 6.6937,
+          "meanRelativeHumidityPct": 76.67,
+          "rainyDayFraction": 0.8
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.87,
+          "meanDailyHighC": 23.68,
+          "meanRainMmPerDay": 3.8146,
+          "meanRelativeHumidityPct": 79.64,
+          "rainyDayFraction": 0.7194
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.78,
+          "meanDailyHighC": 23.46,
+          "meanRainMmPerDay": 5.5127,
+          "meanRelativeHumidityPct": 81.2,
+          "rainyDayFraction": 0.8387
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 17.45,
+          "meanDailyHighC": 22.82,
+          "meanRainMmPerDay": 6.5527,
+          "meanRelativeHumidityPct": 83.56,
+          "rainyDayFraction": 0.8467
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 16.48,
+          "meanDailyHighC": 22.32,
+          "meanRainMmPerDay": 3.8177,
+          "meanRelativeHumidityPct": 82.85,
+          "rainyDayFraction": 0.5419
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 15.31,
+          "meanDailyHighC": 22.31,
+          "meanRainMmPerDay": 0.7168,
+          "meanRelativeHumidityPct": 78.83,
+          "rainyDayFraction": 0.2267
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 14.62,
+          "meanDailyHighC": 22.48,
+          "meanRainMmPerDay": 0.3378,
+          "meanRelativeHumidityPct": 73.99,
+          "rainyDayFraction": 0.1
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Mexican cultural/highland/coastal and Costa Rican Pacific/Caribbean contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          9,
+          6,
+          5,
+          2,
+          8,
+          1,
+          7,
+          3,
+          4,
+          10,
+          11,
+          12
+        ],
+        "sourceUrls": [
+          "https://visitmexico.com/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          9,
+          6,
+          5,
+          2,
+          8,
+          1,
+          7,
+          3,
+          4,
+          10,
+          11,
+          12
+        ],
+        "sourceUrls": [
+          "https://visitmexico.com/"
+        ]
+      },
+      "events": [
+        {
+          "name": "Guelaguetza",
+          "months": [
+            7
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://guelaguetza.oaxaca.gob.mx/"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "mexico",
+      "id": "puerto-vallarta",
+      "name": "Puerto Vallarta",
+      "area": "Pacific coast",
+      "latitude": 20.6534,
+      "longitude": -105.2253,
+      "airports": [
+        [
+          "PVR",
+          "Puerto Vallarta"
+        ]
+      ],
+      "climateType": "beach",
+      "regionIndex": 3,
+      "gridLatitude": 20.6534,
+      "gridLongitude": -105.2253,
+      "elevation": 884.18,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-105.2253&latitude=20.6534&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Beach-oriented holiday base; 25°C target.",
+      "climateTypeSources": [
+        "https://visitmexico.com/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 19.91,
+          "meanDailyHighC": 26.82,
+          "meanRainMmPerDay": 0.38,
+          "meanRelativeHumidityPct": 63.93,
+          "rainyDayFraction": 0.0452
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 21.03,
+          "meanDailyHighC": 28.53,
+          "meanRainMmPerDay": 0.7018,
+          "meanRelativeHumidityPct": 58.17,
+          "rainyDayFraction": 0.0636
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 22.68,
+          "meanDailyHighC": 30.87,
+          "meanRainMmPerDay": 0.1563,
+          "meanRelativeHumidityPct": 47.18,
+          "rainyDayFraction": 0.0065
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 24.25,
+          "meanDailyHighC": 32.47,
+          "meanRainMmPerDay": 0.1356,
+          "meanRelativeHumidityPct": 43.7,
+          "rainyDayFraction": 0.0367
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.68,
+          "meanDailyHighC": 33.49,
+          "meanRainMmPerDay": 0.6689,
+          "meanRelativeHumidityPct": 49.72,
+          "rainyDayFraction": 0.0839
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.25,
+          "meanDailyHighC": 31.4,
+          "meanRainMmPerDay": 5.6499,
+          "meanRelativeHumidityPct": 69.18,
+          "rainyDayFraction": 0.59
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.34,
+          "meanDailyHighC": 28.72,
+          "meanRainMmPerDay": 10.4022,
+          "meanRelativeHumidityPct": 79.86,
+          "rainyDayFraction": 0.9581
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 23.94,
+          "meanDailyHighC": 27.77,
+          "meanRainMmPerDay": 12.2626,
+          "meanRelativeHumidityPct": 84.17,
+          "rainyDayFraction": 0.9935
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 23.82,
+          "meanDailyHighC": 27.72,
+          "meanRainMmPerDay": 11.6484,
+          "meanRelativeHumidityPct": 85.31,
+          "rainyDayFraction": 0.97
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 23.42,
+          "meanDailyHighC": 27.99,
+          "meanRainMmPerDay": 4.6911,
+          "meanRelativeHumidityPct": 82.02,
+          "rainyDayFraction": 0.5806
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 22.1,
+          "meanDailyHighC": 28.07,
+          "meanRainMmPerDay": 0.8074,
+          "meanRelativeHumidityPct": 75.2,
+          "rainyDayFraction": 0.1267
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 20.59,
+          "meanDailyHighC": 27.1,
+          "meanRainMmPerDay": 0.802,
+          "meanRelativeHumidityPct": 69,
+          "rainyDayFraction": 0.0774
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Mexican cultural/highland/coastal and Costa Rican Pacific/Caribbean contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          9,
+          10,
+          6,
+          5,
+          11,
+          7,
+          8,
+          4,
+          3,
+          2,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://visitmexico.com/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          9,
+          10,
+          6,
+          5,
+          11,
+          7,
+          8,
+          4,
+          3,
+          2,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://visitmexico.com/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "mexico",
+      "id": "cabo-san-lucas",
+      "name": "Cabo San Lucas",
+      "area": "Baja California Sur",
+      "latitude": 22.8905,
+      "longitude": -109.9167,
+      "airports": [
+        [
+          "SJD",
+          "Los Cabos"
+        ]
+      ],
+      "climateType": "beach",
+      "regionIndex": 4,
+      "gridLatitude": 22.8905,
+      "gridLongitude": -109.9167,
+      "elevation": 120.08,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-109.9167&latitude=22.8905&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Beach-oriented holiday base; 25°C target.",
+      "climateTypeSources": [
+        "https://visitmexico.com/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates. SJD plus ground transfer; El Arco is a separate boat excursion.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 21.39,
+          "meanDailyHighC": 24.93,
+          "meanRainMmPerDay": 0.2735,
+          "meanRelativeHumidityPct": 61.84,
+          "rainyDayFraction": 0.029
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 21.22,
+          "meanDailyHighC": 24.9,
+          "meanRainMmPerDay": 0.3529,
+          "meanRelativeHumidityPct": 62.34,
+          "rainyDayFraction": 0.0424
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 21.9,
+          "meanDailyHighC": 25.93,
+          "meanRainMmPerDay": 0.0566,
+          "meanRelativeHumidityPct": 59.78,
+          "rainyDayFraction": 0.0129
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 22.49,
+          "meanDailyHighC": 26.54,
+          "meanRainMmPerDay": 0.088,
+          "meanRelativeHumidityPct": 60.06,
+          "rainyDayFraction": 0.0133
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 23.14,
+          "meanDailyHighC": 27.33,
+          "meanRainMmPerDay": 0.0618,
+          "meanRelativeHumidityPct": 60.14,
+          "rainyDayFraction": 0.0194
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.08,
+          "meanDailyHighC": 28.94,
+          "meanRainMmPerDay": 0.2395,
+          "meanRelativeHumidityPct": 63.28,
+          "rainyDayFraction": 0.0467
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.17,
+          "meanDailyHighC": 31.23,
+          "meanRainMmPerDay": 0.3733,
+          "meanRelativeHumidityPct": 64.69,
+          "rainyDayFraction": 0.0806
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.87,
+          "meanDailyHighC": 31.44,
+          "meanRainMmPerDay": 2.7559,
+          "meanRelativeHumidityPct": 70.41,
+          "rainyDayFraction": 0.3548
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 28.33,
+          "meanDailyHighC": 30.75,
+          "meanRainMmPerDay": 3.8002,
+          "meanRelativeHumidityPct": 74.2,
+          "rainyDayFraction": 0.38
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.63,
+          "meanDailyHighC": 30.64,
+          "meanRainMmPerDay": 1.4467,
+          "meanRelativeHumidityPct": 68.95,
+          "rainyDayFraction": 0.1
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.55,
+          "meanDailyHighC": 28.66,
+          "meanRainMmPerDay": 0.844,
+          "meanRelativeHumidityPct": 64.39,
+          "rainyDayFraction": 0.0533
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 23.16,
+          "meanDailyHighC": 26.38,
+          "meanRainMmPerDay": 0.6107,
+          "meanRelativeHumidityPct": 62.87,
+          "rainyDayFraction": 0.0548
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Mexican cultural/highland/coastal and Costa Rican Pacific/Caribbean contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          9,
+          10,
+          6,
+          5,
+          11,
+          7,
+          8,
+          4,
+          3,
+          2,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://visitmexico.com/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          9,
+          10,
+          6,
+          5,
+          11,
+          7,
+          8,
+          4,
+          3,
+          2,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://visitmexico.com/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "mexico",
+      "id": "merida",
+      "name": "Mérida",
+      "area": "Yucatán heritage",
+      "latitude": 20.9674,
+      "longitude": -89.5926,
+      "airports": [
+        [
+          "MID",
+          "Mérida"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 5,
+      "gridLatitude": 20.9674,
+      "gridLongitude": -89.5926,
+      "elevation": 11.37,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-89.5926&latitude=20.9674&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeSources": [
+        "https://visitmexico.com/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates. Chichén Itzá is a separate road excursion, not in Mérida.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 23.88,
+          "meanDailyHighC": 29.76,
+          "meanRainMmPerDay": 1.2091,
+          "meanRelativeHumidityPct": 70.7,
+          "rainyDayFraction": 0.2419
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 25.46,
+          "meanDailyHighC": 32.07,
+          "meanRainMmPerDay": 0.9049,
+          "meanRelativeHumidityPct": 65.04,
+          "rainyDayFraction": 0.1413
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.63,
+          "meanDailyHighC": 34.78,
+          "meanRainMmPerDay": 0.5507,
+          "meanRelativeHumidityPct": 58.46,
+          "rainyDayFraction": 0.1
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 29.45,
+          "meanDailyHighC": 36.7,
+          "meanRainMmPerDay": 0.8289,
+          "meanRelativeHumidityPct": 55.69,
+          "rainyDayFraction": 0.17
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 30.37,
+          "meanDailyHighC": 37.05,
+          "meanRainMmPerDay": 2.2085,
+          "meanRelativeHumidityPct": 59.44,
+          "rainyDayFraction": 0.3097
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 28.72,
+          "meanDailyHighC": 33.7,
+          "meanRainMmPerDay": 7.525,
+          "meanRelativeHumidityPct": 75.19,
+          "rainyDayFraction": 0.6767
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.18,
+          "meanDailyHighC": 32.69,
+          "meanRainMmPerDay": 4.0121,
+          "meanRelativeHumidityPct": 79.72,
+          "rainyDayFraction": 0.729
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.01,
+          "meanDailyHighC": 32.5,
+          "meanRainMmPerDay": 4.7899,
+          "meanRelativeHumidityPct": 81.64,
+          "rainyDayFraction": 0.7903
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 27.54,
+          "meanDailyHighC": 31.7,
+          "meanRainMmPerDay": 5.4681,
+          "meanRelativeHumidityPct": 84.93,
+          "rainyDayFraction": 0.8167
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.56,
+          "meanDailyHighC": 30.74,
+          "meanRainMmPerDay": 4.5212,
+          "meanRelativeHumidityPct": 82.95,
+          "rainyDayFraction": 0.5935
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.25,
+          "meanDailyHighC": 30.26,
+          "meanRainMmPerDay": 1.8818,
+          "meanRelativeHumidityPct": 77.93,
+          "rainyDayFraction": 0.3667
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.47,
+          "meanDailyHighC": 30.03,
+          "meanRainMmPerDay": 1.331,
+          "meanRelativeHumidityPct": 74.41,
+          "rainyDayFraction": 0.2194
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Mexican cultural/highland/coastal and Costa Rican Pacific/Caribbean contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          9,
+          6,
+          5,
+          2,
+          8,
+          1,
+          7,
+          3,
+          4,
+          10,
+          11,
+          12
+        ],
+        "sourceUrls": [
+          "https://visitmexico.com/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          9,
+          6,
+          5,
+          2,
+          8,
+          1,
+          7,
+          3,
+          4,
+          10,
+          11,
+          12
+        ],
+        "sourceUrls": [
+          "https://visitmexico.com/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "mexico",
+      "id": "guanajuato",
+      "name": "Guanajuato",
+      "area": "Colonial heartland",
+      "latitude": 21.019,
+      "longitude": -101.2574,
+      "airports": [
+        [
+          "BJX",
+          "Bajío León"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 6,
+      "gridLatitude": 21.019,
+      "gridLongitude": -101.2574,
+      "elevation": 2008.98,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-101.2574&latitude=21.019&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://visitmexico.com/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 13.24,
+          "meanDailyHighC": 22.16,
+          "meanRainMmPerDay": 0.097,
+          "meanRelativeHumidityPct": 55.05,
+          "rainyDayFraction": 0.0323
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 15.49,
+          "meanDailyHighC": 25.07,
+          "meanRainMmPerDay": 0.25,
+          "meanRelativeHumidityPct": 48.82,
+          "rainyDayFraction": 0.0389
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.16,
+          "meanDailyHighC": 28.19,
+          "meanRainMmPerDay": 0.1604,
+          "meanRelativeHumidityPct": 39.95,
+          "rainyDayFraction": 0.0419
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 20.56,
+          "meanDailyHighC": 30.13,
+          "meanRainMmPerDay": 0.2016,
+          "meanRelativeHumidityPct": 35.1,
+          "rainyDayFraction": 0.05
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 22.66,
+          "meanDailyHighC": 31.56,
+          "meanRainMmPerDay": 1.1073,
+          "meanRelativeHumidityPct": 40.15,
+          "rainyDayFraction": 0.2161
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 21.3,
+          "meanDailyHighC": 28.83,
+          "meanRainMmPerDay": 3.9314,
+          "meanRelativeHumidityPct": 58.59,
+          "rainyDayFraction": 0.53
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 19.77,
+          "meanDailyHighC": 26.91,
+          "meanRainMmPerDay": 4.5536,
+          "meanRelativeHumidityPct": 68.09,
+          "rainyDayFraction": 0.7645
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 19.51,
+          "meanDailyHighC": 26.85,
+          "meanRainMmPerDay": 4.9156,
+          "meanRelativeHumidityPct": 70.65,
+          "rainyDayFraction": 0.7129
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 18.74,
+          "meanDailyHighC": 26,
+          "meanRainMmPerDay": 3.509,
+          "meanRelativeHumidityPct": 72.78,
+          "rainyDayFraction": 0.53
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.48,
+          "meanDailyHighC": 25.49,
+          "meanRainMmPerDay": 1.0115,
+          "meanRelativeHumidityPct": 68.96,
+          "rainyDayFraction": 0.1806
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 15.48,
+          "meanDailyHighC": 24.16,
+          "meanRainMmPerDay": 0.4875,
+          "meanRelativeHumidityPct": 64.21,
+          "rainyDayFraction": 0.09
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 13.69,
+          "meanDailyHighC": 22.26,
+          "meanRainMmPerDay": 0.2435,
+          "meanRelativeHumidityPct": 61.34,
+          "rainyDayFraction": 0.0548
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Mexican cultural/highland/coastal and Costa Rican Pacific/Caribbean contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          9,
+          6,
+          5,
+          2,
+          8,
+          1,
+          7,
+          3,
+          4,
+          10,
+          11,
+          12
+        ],
+        "sourceUrls": [
+          "https://visitmexico.com/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          9,
+          6,
+          5,
+          2,
+          8,
+          1,
+          7,
+          3,
+          4,
+          10,
+          11,
+          12
+        ],
+        "sourceUrls": [
+          "https://visitmexico.com/"
+        ]
+      },
+      "events": [
+        {
+          "name": "Festival Internacional Cervantino",
+          "months": [
+            10
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://www.festivalcervantino.gob.mx/"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "mexico",
+      "id": "guadalajara",
+      "name": "Guadalajara",
+      "area": "Jalisco",
+      "latitude": 20.6597,
+      "longitude": -103.3496,
+      "airports": [
+        [
+          "GDL",
+          "Guadalajara"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 7,
+      "gridLatitude": 20.6597,
+      "gridLongitude": -103.3496,
+      "elevation": 1655.82,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-103.3496&latitude=20.6597&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeSources": [
+        "https://visitmexico.com/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 16.59,
+          "meanDailyHighC": 24.85,
+          "meanRainMmPerDay": 0.1332,
+          "meanRelativeHumidityPct": 50.02,
+          "rainyDayFraction": 0.0387
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 18.64,
+          "meanDailyHighC": 27.56,
+          "meanRainMmPerDay": 0.2616,
+          "meanRelativeHumidityPct": 44.18,
+          "rainyDayFraction": 0.0389
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 21.24,
+          "meanDailyHighC": 30.64,
+          "meanRainMmPerDay": 0.0776,
+          "meanRelativeHumidityPct": 33.64,
+          "rainyDayFraction": 0.029
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 23.16,
+          "meanDailyHighC": 32.36,
+          "meanRainMmPerDay": 0.0729,
+          "meanRelativeHumidityPct": 29.73,
+          "rainyDayFraction": 0.0167
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25,
+          "meanDailyHighC": 33.63,
+          "meanRainMmPerDay": 0.9772,
+          "meanRelativeHumidityPct": 35.89,
+          "rainyDayFraction": 0.2355
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 23.84,
+          "meanDailyHighC": 30.44,
+          "meanRainMmPerDay": 4.3599,
+          "meanRelativeHumidityPct": 57.71,
+          "rainyDayFraction": 0.6267
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 21.31,
+          "meanDailyHighC": 26.28,
+          "meanRainMmPerDay": 6.2757,
+          "meanRelativeHumidityPct": 73.43,
+          "rainyDayFraction": 0.9065
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 20.79,
+          "meanDailyHighC": 25.58,
+          "meanRainMmPerDay": 6.0242,
+          "meanRelativeHumidityPct": 77.58,
+          "rainyDayFraction": 0.9129
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 20.53,
+          "meanDailyHighC": 25.75,
+          "meanRainMmPerDay": 4.2604,
+          "meanRelativeHumidityPct": 77.59,
+          "rainyDayFraction": 0.74
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 19.81,
+          "meanDailyHighC": 26.24,
+          "meanRainMmPerDay": 1.5562,
+          "meanRelativeHumidityPct": 70.43,
+          "rainyDayFraction": 0.3258
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 18.69,
+          "meanDailyHighC": 26.4,
+          "meanRainMmPerDay": 0.4471,
+          "meanRelativeHumidityPct": 59.92,
+          "rainyDayFraction": 0.0767
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.07,
+          "meanDailyHighC": 24.86,
+          "meanRainMmPerDay": 0.2916,
+          "meanRelativeHumidityPct": 55.53,
+          "rainyDayFraction": 0.0548
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Mexican cultural/highland/coastal and Costa Rican Pacific/Caribbean contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          9,
+          6,
+          5,
+          2,
+          8,
+          1,
+          7,
+          3,
+          4,
+          10,
+          11,
+          12
+        ],
+        "sourceUrls": [
+          "https://visitmexico.com/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          9,
+          6,
+          5,
+          2,
+          8,
+          1,
+          7,
+          3,
+          4,
+          10,
+          11,
+          12
+        ],
+        "sourceUrls": [
+          "https://visitmexico.com/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "mexico",
+      "id": "san-cristobal",
+      "name": "San Cristóbal de las Casas",
+      "area": "Chiapas highlands",
+      "latitude": 16.737,
+      "longitude": -92.6376,
+      "airports": [
+        [
+          "TGZ",
+          "Tuxtla Gutiérrez"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 8,
+      "gridLatitude": 16.737,
+      "gridLongitude": -92.6376,
+      "elevation": 1467.31,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-92.6376&latitude=16.737&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://visitmexico.com/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates. TGZ requires a ground transfer into the Chiapas highlands.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.4,
+          "meanDailyHighC": 25.19,
+          "meanRainMmPerDay": 0.6365,
+          "meanRelativeHumidityPct": 75.46,
+          "rainyDayFraction": 0.1806
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 18.63,
+          "meanDailyHighC": 27.32,
+          "meanRainMmPerDay": 0.546,
+          "meanRelativeHumidityPct": 69.59,
+          "rainyDayFraction": 0.1519
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 21.14,
+          "meanDailyHighC": 30.41,
+          "meanRainMmPerDay": 0.5315,
+          "meanRelativeHumidityPct": 63.45,
+          "rainyDayFraction": 0.1387
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 22.39,
+          "meanDailyHighC": 31.35,
+          "meanRainMmPerDay": 1.094,
+          "meanRelativeHumidityPct": 62.02,
+          "rainyDayFraction": 0.2633
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 22.57,
+          "meanDailyHighC": 30,
+          "meanRainMmPerDay": 4.1584,
+          "meanRelativeHumidityPct": 70.09,
+          "rainyDayFraction": 0.6484
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 20.57,
+          "meanDailyHighC": 25.84,
+          "meanRainMmPerDay": 9.2573,
+          "meanRelativeHumidityPct": 81.68,
+          "rainyDayFraction": 0.88
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 20.24,
+          "meanDailyHighC": 26.4,
+          "meanRainMmPerDay": 3.7565,
+          "meanRelativeHumidityPct": 79.32,
+          "rainyDayFraction": 0.6613
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 20.22,
+          "meanDailyHighC": 26.11,
+          "meanRainMmPerDay": 6.0241,
+          "meanRelativeHumidityPct": 81.59,
+          "rainyDayFraction": 0.8548
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 19.93,
+          "meanDailyHighC": 25.25,
+          "meanRainMmPerDay": 8.093,
+          "meanRelativeHumidityPct": 84.77,
+          "rainyDayFraction": 0.9267
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 19.14,
+          "meanDailyHighC": 24.61,
+          "meanRainMmPerDay": 5.4681,
+          "meanRelativeHumidityPct": 85.37,
+          "rainyDayFraction": 0.6935
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 17.98,
+          "meanDailyHighC": 24.27,
+          "meanRainMmPerDay": 1.6163,
+          "meanRelativeHumidityPct": 83.42,
+          "rainyDayFraction": 0.3667
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.16,
+          "meanDailyHighC": 24.29,
+          "meanRainMmPerDay": 0.7923,
+          "meanRelativeHumidityPct": 79.71,
+          "rainyDayFraction": 0.1774
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Mexican cultural/highland/coastal and Costa Rican Pacific/Caribbean contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          9,
+          6,
+          5,
+          2,
+          8,
+          1,
+          7,
+          3,
+          4,
+          10,
+          11,
+          12
+        ],
+        "sourceUrls": [
+          "https://visitmexico.com/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          9,
+          6,
+          5,
+          2,
+          8,
+          1,
+          7,
+          3,
+          4,
+          10,
+          11,
+          12
+        ],
+        "sourceUrls": [
+          "https://visitmexico.com/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "mexico",
+      "id": "creel",
+      "name": "Creel",
+      "area": "Copper Canyon",
+      "latitude": 27.752,
+      "longitude": -107.635,
+      "airports": [
+        [
+          "CUU",
+          "Chihuahua"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 9,
+      "gridLatitude": 27.752,
+      "gridLongitude": -107.635,
+      "elevation": 2324.15,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-107.635&latitude=27.752&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://visitmexico.com/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates. CUU is a distant gateway requiring substantial road transfer. Canyon-floor conditions differ from highland town climate.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 4.85,
+          "meanDailyHighC": 14.26,
+          "meanRainMmPerDay": 0.4073,
+          "meanRelativeHumidityPct": 53.57,
+          "rainyDayFraction": 0.0742
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 6.62,
+          "meanDailyHighC": 16.34,
+          "meanRainMmPerDay": 0.5488,
+          "meanRelativeHumidityPct": 48.65,
+          "rainyDayFraction": 0.106
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 8.98,
+          "meanDailyHighC": 19.09,
+          "meanRainMmPerDay": 0.3318,
+          "meanRelativeHumidityPct": 41,
+          "rainyDayFraction": 0.0548
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 12.26,
+          "meanDailyHighC": 22.8,
+          "meanRainMmPerDay": 0.0573,
+          "meanRelativeHumidityPct": 35.71,
+          "rainyDayFraction": 0.0133
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 15.65,
+          "meanDailyHighC": 26.11,
+          "meanRainMmPerDay": 0.1964,
+          "meanRelativeHumidityPct": 35.26,
+          "rainyDayFraction": 0.0452
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 19.97,
+          "meanDailyHighC": 29.18,
+          "meanRainMmPerDay": 1.8526,
+          "meanRelativeHumidityPct": 47.32,
+          "rainyDayFraction": 0.3267
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 19.09,
+          "meanDailyHighC": 26.43,
+          "meanRainMmPerDay": 4.3804,
+          "meanRelativeHumidityPct": 67.11,
+          "rainyDayFraction": 0.7484
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.34,
+          "meanDailyHighC": 25.38,
+          "meanRainMmPerDay": 4.9868,
+          "meanRelativeHumidityPct": 71.38,
+          "rainyDayFraction": 0.7613
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 16.79,
+          "meanDailyHighC": 24.49,
+          "meanRainMmPerDay": 2.723,
+          "meanRelativeHumidityPct": 71.38,
+          "rainyDayFraction": 0.49
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 13.82,
+          "meanDailyHighC": 22.73,
+          "meanRainMmPerDay": 0.8088,
+          "meanRelativeHumidityPct": 63.09,
+          "rainyDayFraction": 0.171
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 9.41,
+          "meanDailyHighC": 18.82,
+          "meanRainMmPerDay": 0.474,
+          "meanRelativeHumidityPct": 57.84,
+          "rainyDayFraction": 0.0833
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 6.35,
+          "meanDailyHighC": 15.41,
+          "meanRainMmPerDay": 0.6337,
+          "meanRelativeHumidityPct": 56.36,
+          "rainyDayFraction": 0.1065
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Mexican cultural/highland/coastal and Costa Rican Pacific/Caribbean contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          9,
+          6,
+          5,
+          2,
+          8,
+          1,
+          7,
+          3,
+          4,
+          10,
+          11,
+          12
+        ],
+        "sourceUrls": [
+          "https://visitmexico.com/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          9,
+          6,
+          5,
+          2,
+          8,
+          1,
+          7,
+          3,
+          4,
+          10,
+          11,
+          12
+        ],
+        "sourceUrls": [
+          "https://visitmexico.com/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "costa-rica",
+      "id": "la-fortuna",
+      "name": "La Fortuna",
+      "area": "Arenal and northern lowlands",
+      "latitude": 10.471,
+      "longitude": -84.645,
+      "airports": [
+        [
+          "SJO",
+          "San José"
+        ],
+        [
+          "LIR",
+          "Liberia"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 0,
+      "gridLatitude": 10.471,
+      "gridLongitude": -84.645,
+      "elevation": 505.84,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-84.645&latitude=10.471&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://www.visitcostarica.com/where-to-go"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates. Arenal nearby; Río Celeste requires a separate substantial ground excursion to Tenorio National Park. SJO/LIR are road gateways.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 22.79,
+          "meanDailyHighC": 26.65,
+          "meanRainMmPerDay": 0.5453,
+          "meanRelativeHumidityPct": 85.32,
+          "rainyDayFraction": 0.1613
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 23.37,
+          "meanDailyHighC": 28.31,
+          "meanRainMmPerDay": 0.3756,
+          "meanRelativeHumidityPct": 79.11,
+          "rainyDayFraction": 0.106
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.4,
+          "meanDailyHighC": 30.32,
+          "meanRainMmPerDay": 1.0424,
+          "meanRelativeHumidityPct": 74.58,
+          "rainyDayFraction": 0.1581
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.25,
+          "meanDailyHighC": 31.35,
+          "meanRainMmPerDay": 2.88,
+          "meanRelativeHumidityPct": 74.84,
+          "rainyDayFraction": 0.4033
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.13,
+          "meanDailyHighC": 29.8,
+          "meanRainMmPerDay": 10.3553,
+          "meanRelativeHumidityPct": 83.56,
+          "rainyDayFraction": 0.7484
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 24.08,
+          "meanDailyHighC": 27.29,
+          "meanRainMmPerDay": 9.8085,
+          "meanRelativeHumidityPct": 91.21,
+          "rainyDayFraction": 0.85
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 23.94,
+          "meanDailyHighC": 27,
+          "meanRainMmPerDay": 5.903,
+          "meanRelativeHumidityPct": 90.74,
+          "rainyDayFraction": 0.6516
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 23.97,
+          "meanDailyHighC": 27.29,
+          "meanRainMmPerDay": 6.3267,
+          "meanRelativeHumidityPct": 90.53,
+          "rainyDayFraction": 0.7613
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 23.92,
+          "meanDailyHighC": 27.34,
+          "meanRainMmPerDay": 8.8196,
+          "meanRelativeHumidityPct": 91.17,
+          "rainyDayFraction": 0.8967
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 23.62,
+          "meanDailyHighC": 26.76,
+          "meanRainMmPerDay": 11.1202,
+          "meanRelativeHumidityPct": 92.55,
+          "rainyDayFraction": 0.8548
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 23.26,
+          "meanDailyHighC": 26.34,
+          "meanRainMmPerDay": 9.4063,
+          "meanRelativeHumidityPct": 91.99,
+          "rainyDayFraction": 0.6233
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 22.9,
+          "meanDailyHighC": 26.12,
+          "meanRainMmPerDay": 1.477,
+          "meanRelativeHumidityPct": 89.53,
+          "rainyDayFraction": 0.2774
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Mexican cultural/highland/coastal and Costa Rican Pacific/Caribbean contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          10,
+          9,
+          6,
+          5,
+          11,
+          7,
+          8,
+          4,
+          3,
+          2,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://www.visitcostarica.com/where-to-go"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          10,
+          9,
+          6,
+          5,
+          11,
+          7,
+          8,
+          4,
+          3,
+          2,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://www.visitcostarica.com/where-to-go"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "costa-rica",
+      "id": "manuel-antonio",
+      "name": "Manuel Antonio",
+      "area": "Central Pacific",
+      "latitude": 9.409,
+      "longitude": -84.155,
+      "airports": [
+        [
+          "SJO",
+          "San José"
+        ],
+        [
+          "XQP",
+          "Quepos"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 1,
+      "gridLatitude": 9.409,
+      "gridLongitude": -84.155,
+      "elevation": 263.52,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-84.155&latitude=9.409&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://www.visitcostarica.com/where-to-go"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates. SJO with ground transfer or separately verified domestic XQP connection. Mixed national-park/coastal stay classified All season.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.22,
+          "meanDailyHighC": 28.65,
+          "meanRainMmPerDay": 2.0205,
+          "meanRelativeHumidityPct": 77.55,
+          "rainyDayFraction": 0.4161
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 26.92,
+          "meanDailyHighC": 29.71,
+          "meanRainMmPerDay": 0.9341,
+          "meanRelativeHumidityPct": 70.87,
+          "rainyDayFraction": 0.2827
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.6,
+          "meanDailyHighC": 30.61,
+          "meanRainMmPerDay": 2.361,
+          "meanRelativeHumidityPct": 68.87,
+          "rainyDayFraction": 0.4097
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 27.48,
+          "meanDailyHighC": 30.01,
+          "meanRainMmPerDay": 6.4665,
+          "meanRelativeHumidityPct": 75.36,
+          "rainyDayFraction": 0.7867
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.69,
+          "meanDailyHighC": 28.51,
+          "meanRainMmPerDay": 13.5715,
+          "meanRelativeHumidityPct": 84.42,
+          "rainyDayFraction": 0.9548
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 26.15,
+          "meanDailyHighC": 27.65,
+          "meanRainMmPerDay": 15.0929,
+          "meanRelativeHumidityPct": 87.06,
+          "rainyDayFraction": 0.9967
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.3,
+          "meanDailyHighC": 28.03,
+          "meanRainMmPerDay": 15.2196,
+          "meanRelativeHumidityPct": 86.34,
+          "rainyDayFraction": 0.9774
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.18,
+          "meanDailyHighC": 27.85,
+          "meanRainMmPerDay": 12.773,
+          "meanRelativeHumidityPct": 86.62,
+          "rainyDayFraction": 0.9903
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.91,
+          "meanDailyHighC": 27.48,
+          "meanRainMmPerDay": 14.0147,
+          "meanRelativeHumidityPct": 87.47,
+          "rainyDayFraction": 1
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.56,
+          "meanDailyHighC": 26.93,
+          "meanRainMmPerDay": 15.6367,
+          "meanRelativeHumidityPct": 88.87,
+          "rainyDayFraction": 0.9806
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.47,
+          "meanDailyHighC": 27.12,
+          "meanRainMmPerDay": 11.8206,
+          "meanRelativeHumidityPct": 88.06,
+          "rainyDayFraction": 0.97
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.85,
+          "meanDailyHighC": 28.03,
+          "meanRainMmPerDay": 4.0916,
+          "meanRelativeHumidityPct": 82.87,
+          "rainyDayFraction": 0.6613
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Mexican cultural/highland/coastal and Costa Rican Pacific/Caribbean contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          10,
+          9,
+          6,
+          5,
+          11,
+          7,
+          8,
+          4,
+          3,
+          2,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://www.visitcostarica.com/where-to-go"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          10,
+          9,
+          6,
+          5,
+          11,
+          7,
+          8,
+          4,
+          3,
+          2,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://www.visitcostarica.com/where-to-go"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "costa-rica",
+      "id": "puerto-viejo",
+      "name": "Puerto Viejo de Talamanca",
+      "area": "Caribbean coast",
+      "latitude": 9.656,
+      "longitude": -82.754,
+      "airports": [
+        [
+          "SJO",
+          "San José"
+        ],
+        [
+          "LIO",
+          "Limón"
+        ]
+      ],
+      "climateType": "beach",
+      "regionIndex": 2,
+      "gridLatitude": 9.656,
+      "gridLongitude": -82.754,
+      "elevation": 308.07,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-82.754&latitude=9.656&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Beach-oriented holiday base; 25°C target.",
+      "climateTypeSources": [
+        "https://www.visitcostarica.com/where-to-go"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates. SJO or LIO with onward ground travel. Caribbean seasonality differs from Pacific Costa Rica.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.64,
+          "meanDailyHighC": 26.35,
+          "meanRainMmPerDay": 3.9904,
+          "meanRelativeHumidityPct": 84.83,
+          "rainyDayFraction": 0.6226
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 24.62,
+          "meanDailyHighC": 26.59,
+          "meanRainMmPerDay": 2.7581,
+          "meanRelativeHumidityPct": 82.33,
+          "rainyDayFraction": 0.6325
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.01,
+          "meanDailyHighC": 27.26,
+          "meanRainMmPerDay": 3.232,
+          "meanRelativeHumidityPct": 81.03,
+          "rainyDayFraction": 0.6323
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.6,
+          "meanDailyHighC": 27.82,
+          "meanRainMmPerDay": 6.2796,
+          "meanRelativeHumidityPct": 82.44,
+          "rainyDayFraction": 0.76
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.08,
+          "meanDailyHighC": 27.84,
+          "meanRainMmPerDay": 10.7585,
+          "meanRelativeHumidityPct": 86.39,
+          "rainyDayFraction": 0.9484
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.87,
+          "meanDailyHighC": 27.29,
+          "meanRainMmPerDay": 14.1598,
+          "meanRelativeHumidityPct": 87.39,
+          "rainyDayFraction": 0.9933
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.57,
+          "meanDailyHighC": 26.96,
+          "meanRainMmPerDay": 12.132,
+          "meanRelativeHumidityPct": 89.17,
+          "rainyDayFraction": 0.9839
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.71,
+          "meanDailyHighC": 27.28,
+          "meanRainMmPerDay": 10.1141,
+          "meanRelativeHumidityPct": 87.02,
+          "rainyDayFraction": 0.9677
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.91,
+          "meanDailyHighC": 27.56,
+          "meanRainMmPerDay": 10.7989,
+          "meanRelativeHumidityPct": 85.23,
+          "rainyDayFraction": 0.98
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.73,
+          "meanDailyHighC": 27.28,
+          "meanRainMmPerDay": 14.2485,
+          "meanRelativeHumidityPct": 86.2,
+          "rainyDayFraction": 0.971
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.4,
+          "meanDailyHighC": 26.92,
+          "meanRainMmPerDay": 15.7846,
+          "meanRelativeHumidityPct": 87.96,
+          "rainyDayFraction": 0.9433
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.07,
+          "meanDailyHighC": 26.67,
+          "meanRainMmPerDay": 6.4548,
+          "meanRelativeHumidityPct": 86.76,
+          "rainyDayFraction": 0.8645
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Mexican cultural/highland/coastal and Costa Rican Pacific/Caribbean contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          6,
+          5,
+          7,
+          11,
+          8,
+          10,
+          9,
+          4,
+          3,
+          2,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://www.visitcostarica.com/where-to-go"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          6,
+          5,
+          7,
+          11,
+          8,
+          10,
+          9,
+          4,
+          3,
+          2,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://www.visitcostarica.com/where-to-go"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "costa-rica",
+      "id": "monteverde",
+      "name": "Santa Elena",
+      "area": "Monteverde cloud forest",
+      "latitude": 10.315,
+      "longitude": -84.824,
+      "airports": [
+        [
+          "SJO",
+          "San José"
+        ],
+        [
+          "LIR",
+          "Liberia"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 3,
+      "gridLatitude": 10.315,
+      "gridLongitude": -84.824,
+      "elevation": 381.42,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-84.824&latitude=10.315&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://www.visitcostarica.com/where-to-go"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates. SJO/LIR plus road transfer to Santa Elena. Cloud-forest elevations and mist can differ from coarse model climate.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 23.87,
+          "meanDailyHighC": 28.6,
+          "meanRainMmPerDay": 0.6818,
+          "meanRelativeHumidityPct": 82.85,
+          "rainyDayFraction": 0.1806
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 24.84,
+          "meanDailyHighC": 30.82,
+          "meanRainMmPerDay": 0.4781,
+          "meanRelativeHumidityPct": 74.68,
+          "rainyDayFraction": 0.1413
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.29,
+          "meanDailyHighC": 33.25,
+          "meanRainMmPerDay": 1.2377,
+          "meanRelativeHumidityPct": 68.31,
+          "rainyDayFraction": 0.1774
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 27.11,
+          "meanDailyHighC": 33.76,
+          "meanRainMmPerDay": 3.3133,
+          "meanRelativeHumidityPct": 69.2,
+          "rainyDayFraction": 0.4233
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.47,
+          "meanDailyHighC": 31.22,
+          "meanRainMmPerDay": 10.1715,
+          "meanRelativeHumidityPct": 80.16,
+          "rainyDayFraction": 0.7613
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.11,
+          "meanDailyHighC": 28.41,
+          "meanRainMmPerDay": 9.4542,
+          "meanRelativeHumidityPct": 89.07,
+          "rainyDayFraction": 0.8767
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25,
+          "meanDailyHighC": 28.42,
+          "meanRainMmPerDay": 5.7563,
+          "meanRelativeHumidityPct": 88.88,
+          "rainyDayFraction": 0.671
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.05,
+          "meanDailyHighC": 28.6,
+          "meanRainMmPerDay": 6.1187,
+          "meanRelativeHumidityPct": 88.33,
+          "rainyDayFraction": 0.7645
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.03,
+          "meanDailyHighC": 28.55,
+          "meanRainMmPerDay": 8.5351,
+          "meanRelativeHumidityPct": 88.64,
+          "rainyDayFraction": 0.89
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.56,
+          "meanDailyHighC": 27.73,
+          "meanRainMmPerDay": 10.6931,
+          "meanRelativeHumidityPct": 90.76,
+          "rainyDayFraction": 0.8613
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 24.22,
+          "meanDailyHighC": 27.61,
+          "meanRainMmPerDay": 8.3454,
+          "meanRelativeHumidityPct": 90.52,
+          "rainyDayFraction": 0.6467
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 23.75,
+          "meanDailyHighC": 27.62,
+          "meanRainMmPerDay": 1.6182,
+          "meanRelativeHumidityPct": 88.51,
+          "rainyDayFraction": 0.3226
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Mexican cultural/highland/coastal and Costa Rican Pacific/Caribbean contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          10,
+          9,
+          6,
+          5,
+          11,
+          7,
+          8,
+          4,
+          3,
+          2,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://www.visitcostarica.com/where-to-go"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          10,
+          9,
+          6,
+          5,
+          11,
+          7,
+          8,
+          4,
+          3,
+          2,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://www.visitcostarica.com/where-to-go"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "costa-rica",
+      "id": "tortuguero",
+      "name": "Tortuguero",
+      "area": "Northern Caribbean canals",
+      "latitude": 10.542,
+      "longitude": -83.502,
+      "airports": [
+        [
+          "SJO",
+          "San José"
+        ],
+        [
+          "TTQ",
+          "Tortuguero"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 4,
+      "gridLatitude": 10.542,
+      "gridLongitude": -83.502,
+      "elevation": 213.32,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-83.502&latitude=10.542&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://www.visitcostarica.com/where-to-go"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates. SJO plus road and boat access, or separately confirmed domestic TTQ flight. Wildlife/canal destination, not a swimming resort.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.12,
+          "meanDailyHighC": 26.88,
+          "meanRainMmPerDay": 4.4488,
+          "meanRelativeHumidityPct": 88.67,
+          "rainyDayFraction": 0.6323
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 24.25,
+          "meanDailyHighC": 27.51,
+          "meanRainMmPerDay": 3.2393,
+          "meanRelativeHumidityPct": 85.24,
+          "rainyDayFraction": 0.6007
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.86,
+          "meanDailyHighC": 28.68,
+          "meanRainMmPerDay": 4.0172,
+          "meanRelativeHumidityPct": 82.45,
+          "rainyDayFraction": 0.6065
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.57,
+          "meanDailyHighC": 29.43,
+          "meanRainMmPerDay": 6.7687,
+          "meanRelativeHumidityPct": 83.2,
+          "rainyDayFraction": 0.7267
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.93,
+          "meanDailyHighC": 28.92,
+          "meanRainMmPerDay": 14.3561,
+          "meanRelativeHumidityPct": 88.2,
+          "rainyDayFraction": 0.9129
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.52,
+          "meanDailyHighC": 27.74,
+          "meanRainMmPerDay": 16.9984,
+          "meanRelativeHumidityPct": 91.75,
+          "rainyDayFraction": 0.9967
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.42,
+          "meanDailyHighC": 27.55,
+          "meanRainMmPerDay": 12.5386,
+          "meanRelativeHumidityPct": 92.19,
+          "rainyDayFraction": 0.9452
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.47,
+          "meanDailyHighC": 27.81,
+          "meanRainMmPerDay": 9.7184,
+          "meanRelativeHumidityPct": 90.9,
+          "rainyDayFraction": 0.9774
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.48,
+          "meanDailyHighC": 27.9,
+          "meanRainMmPerDay": 11.1035,
+          "meanRelativeHumidityPct": 90.54,
+          "rainyDayFraction": 0.9967
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.28,
+          "meanDailyHighC": 27.56,
+          "meanRainMmPerDay": 15.0539,
+          "meanRelativeHumidityPct": 91.26,
+          "rainyDayFraction": 0.9645
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 24.96,
+          "meanDailyHighC": 27.24,
+          "meanRainMmPerDay": 14.8165,
+          "meanRelativeHumidityPct": 91.73,
+          "rainyDayFraction": 0.8767
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.57,
+          "meanDailyHighC": 27.07,
+          "meanRainMmPerDay": 6.77,
+          "meanRelativeHumidityPct": 90.66,
+          "rainyDayFraction": 0.8516
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for Mexican cultural/highland/coastal and Costa Rican Pacific/Caribbean contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          10,
+          9,
+          6,
+          5,
+          11,
+          7,
+          8,
+          4,
+          3,
+          2,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://www.visitcostarica.com/where-to-go"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          10,
+          9,
+          6,
+          5,
+          11,
+          7,
+          8,
+          4,
+          3,
+          2,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://www.visitcostarica.com/where-to-go"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
     }
   ],
   "destinationTypeAssignments": {
@@ -33471,6 +36002,96 @@
       "climateType": "all-season",
       "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
       "status": "Authorized autonomous Australia/New Zealand rollout, 6 November 2026."
+    },
+    "mexico:cancun": {
+      "name": "Cancún",
+      "climateType": "beach",
+      "reason": "Beach-oriented holiday base; 25°C target.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "mexico:mexico-city": {
+      "name": "Mexico City",
+      "climateType": "all-season",
+      "reason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "mexico:oaxaca": {
+      "name": "Oaxaca",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "mexico:puerto-vallarta": {
+      "name": "Puerto Vallarta",
+      "climateType": "beach",
+      "reason": "Beach-oriented holiday base; 25°C target.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "mexico:cabo-san-lucas": {
+      "name": "Cabo San Lucas",
+      "climateType": "beach",
+      "reason": "Beach-oriented holiday base; 25°C target.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "mexico:merida": {
+      "name": "Mérida",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "mexico:guanajuato": {
+      "name": "Guanajuato",
+      "climateType": "all-season",
+      "reason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "mexico:guadalajara": {
+      "name": "Guadalajara",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "mexico:san-cristobal": {
+      "name": "San Cristóbal de las Casas",
+      "climateType": "all-season",
+      "reason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "mexico:creel": {
+      "name": "Creel",
+      "climateType": "all-season",
+      "reason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "costa-rica:la-fortuna": {
+      "name": "La Fortuna",
+      "climateType": "all-season",
+      "reason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "costa-rica:manuel-antonio": {
+      "name": "Manuel Antonio",
+      "climateType": "all-season",
+      "reason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "costa-rica:puerto-viejo": {
+      "name": "Puerto Viejo de Talamanca",
+      "climateType": "beach",
+      "reason": "Beach-oriented holiday base; 25°C target.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "costa-rica:monteverde": {
+      "name": "Santa Elena",
+      "climateType": "all-season",
+      "reason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "costa-rica:tortuguero": {
+      "name": "Tortuguero",
+      "climateType": "all-season",
+      "reason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
     }
   }
 }

@@ -2285,6 +2285,199 @@
         }
       ],
       "selectionRationale": "Six destinations proportionate to the country: Auckland, Rotorua, Wellington, Queenstown, Te Anau and Christchurch. Franz Josef omitted as a separate stay to limit overlapping South Island scenic coverage. Treasure access retained."
+    },
+    "mexico": {
+      "approvedAt": "2026-11-06",
+      "authorization": "User authorized selecting and deploying the next two countries.",
+      "liveLabelsUpdated": true,
+      "indexCompatibility": "Original five positions retained as Cancún, Mexico City, Oaxaca, Puerto Vallarta and Cabo San Lucas; five distinct stays appended.",
+      "selectionRationale": "Ten destinations reflect large area/population, historical and architectural depth, varied highlands, contrasting coasts and Copper Canyon. Nearby attractions grouped into representative stays.",
+      "seasonalityStatus": "NASA POWER/MERRA-2 daily 2016–2025; total precipitation. Crowd/price inputs provisional editorial proxies. Festivals have partial typical-month coverage. Scoring rules unchanged.",
+      "destinations": [
+        {
+          "name": "Cancún",
+          "area": "Caribbean coast",
+          "climateType": "beach",
+          "climateTypeLabel": "Beach",
+          "airportCandidates": [
+            "CUN"
+          ]
+        },
+        {
+          "name": "Mexico City",
+          "area": "Central highlands",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "MEX",
+            "NLU"
+          ],
+          "treasures": [
+            "Zócalo"
+          ],
+          "nearbyPlaces": [
+            "Teotihuacán"
+          ],
+          "accessNote": "MEX or NLU; account for different airport ground transfers."
+        },
+        {
+          "name": "Oaxaca",
+          "area": "Southern highlands",
+          "climateType": "standard",
+          "climateTypeLabel": "Warm living",
+          "airportCandidates": [
+            "OAX"
+          ]
+        },
+        {
+          "name": "Puerto Vallarta",
+          "area": "Pacific coast",
+          "climateType": "beach",
+          "climateTypeLabel": "Beach",
+          "airportCandidates": [
+            "PVR"
+          ]
+        },
+        {
+          "name": "Cabo San Lucas",
+          "area": "Baja California Sur",
+          "climateType": "beach",
+          "climateTypeLabel": "Beach",
+          "airportCandidates": [
+            "SJD"
+          ],
+          "treasures": [
+            "El Arco"
+          ],
+          "accessNote": "SJD plus ground transfer; El Arco is a separate boat excursion."
+        },
+        {
+          "name": "Mérida",
+          "area": "Yucatán heritage",
+          "climateType": "standard",
+          "climateTypeLabel": "Warm living",
+          "airportCandidates": [
+            "MID"
+          ],
+          "treasures": [
+            "Chichén Itzá"
+          ],
+          "nearbyPlaces": [
+            "Uxmal"
+          ],
+          "accessNote": "Chichén Itzá is a separate road excursion, not in Mérida."
+        },
+        {
+          "name": "Guanajuato",
+          "area": "Colonial heartland",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "BJX"
+          ]
+        },
+        {
+          "name": "Guadalajara",
+          "area": "Jalisco",
+          "climateType": "standard",
+          "climateTypeLabel": "Warm living",
+          "airportCandidates": [
+            "GDL"
+          ]
+        },
+        {
+          "name": "San Cristóbal de las Casas",
+          "area": "Chiapas highlands",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "TGZ"
+          ],
+          "accessNote": "TGZ requires a ground transfer into the Chiapas highlands."
+        },
+        {
+          "name": "Creel",
+          "area": "Copper Canyon",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "CUU"
+          ],
+          "accessNote": "CUU is a distant gateway requiring substantial road transfer. Canyon-floor conditions differ from highland town climate."
+        }
+      ]
+    },
+    "costa-rica": {
+      "approvedAt": "2026-11-06",
+      "authorization": "User authorized selecting and deploying the next two countries.",
+      "liveLabelsUpdated": true,
+      "indexCompatibility": "Original three positions narrowed to La Fortuna, Manuel Antonio and Puerto Viejo; cloud forest and canal stays appended.",
+      "selectionRationale": "Five selective stays cover volcanoes, cloud forest, Pacific park/coast and two distinct Caribbean experiences; capital used as airport gateway rather than an extra stay.",
+      "seasonalityStatus": "NASA POWER/MERRA-2 daily 2016–2025; total precipitation. Crowd/price inputs provisional editorial proxies. Festivals have partial typical-month coverage. Scoring rules unchanged.",
+      "destinations": [
+        {
+          "name": "La Fortuna",
+          "area": "Arenal and northern lowlands",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "SJO",
+            "LIR"
+          ],
+          "treasures": [
+            "Arenal Volcano",
+            "Río Celeste"
+          ],
+          "accessNote": "Arenal nearby; Río Celeste requires a separate substantial ground excursion to Tenorio National Park. SJO/LIR are road gateways."
+        },
+        {
+          "name": "Manuel Antonio",
+          "area": "Central Pacific",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "SJO",
+            "XQP"
+          ],
+          "treasures": [
+            "Manuel Antonio"
+          ],
+          "accessNote": "SJO with ground transfer or separately verified domestic XQP connection. Mixed national-park/coastal stay classified All season."
+        },
+        {
+          "name": "Puerto Viejo de Talamanca",
+          "area": "Caribbean coast",
+          "climateType": "beach",
+          "climateTypeLabel": "Beach",
+          "airportCandidates": [
+            "SJO",
+            "LIO"
+          ],
+          "accessNote": "SJO or LIO with onward ground travel. Caribbean seasonality differs from Pacific Costa Rica."
+        },
+        {
+          "name": "Santa Elena",
+          "area": "Monteverde cloud forest",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "SJO",
+            "LIR"
+          ],
+          "accessNote": "SJO/LIR plus road transfer to Santa Elena. Cloud-forest elevations and mist can differ from coarse model climate."
+        },
+        {
+          "name": "Tortuguero",
+          "area": "Northern Caribbean canals",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "SJO",
+            "TTQ"
+          ],
+          "accessNote": "SJO plus road and boat access, or separately confirmed domestic TTQ flight. Wildlife/canal destination, not a swimming resort."
+        }
+      ]
     }
   },
   "climateTypeAssignments": {
@@ -2959,6 +3152,96 @@
       "climateType": "all-season",
       "reason": "Owner-approved All season destination; temperature neutral from +5 to +25°C.",
       "status": "Authorized autonomous Australia/New Zealand rollout, 6 November 2026."
+    },
+    "mexico:cancun": {
+      "name": "Cancún",
+      "climateType": "beach",
+      "reason": "Beach-oriented holiday base; 25°C target.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "mexico:mexico-city": {
+      "name": "Mexico City",
+      "climateType": "all-season",
+      "reason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "mexico:oaxaca": {
+      "name": "Oaxaca",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "mexico:puerto-vallarta": {
+      "name": "Puerto Vallarta",
+      "climateType": "beach",
+      "reason": "Beach-oriented holiday base; 25°C target.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "mexico:cabo-san-lucas": {
+      "name": "Cabo San Lucas",
+      "climateType": "beach",
+      "reason": "Beach-oriented holiday base; 25°C target.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "mexico:merida": {
+      "name": "Mérida",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "mexico:guanajuato": {
+      "name": "Guanajuato",
+      "climateType": "all-season",
+      "reason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "mexico:guadalajara": {
+      "name": "Guadalajara",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "mexico:san-cristobal": {
+      "name": "San Cristóbal de las Casas",
+      "climateType": "all-season",
+      "reason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "mexico:creel": {
+      "name": "Creel",
+      "climateType": "all-season",
+      "reason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "costa-rica:la-fortuna": {
+      "name": "La Fortuna",
+      "climateType": "all-season",
+      "reason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "costa-rica:manuel-antonio": {
+      "name": "Manuel Antonio",
+      "climateType": "all-season",
+      "reason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "costa-rica:puerto-viejo": {
+      "name": "Puerto Viejo de Talamanca",
+      "climateType": "beach",
+      "reason": "Beach-oriented holiday base; 25°C target.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "costa-rica:monteverde": {
+      "name": "Santa Elena",
+      "climateType": "all-season",
+      "reason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "costa-rica:tortuguero": {
+      "name": "Tortuguero",
+      "climateType": "all-season",
+      "reason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
     }
   }
 }
