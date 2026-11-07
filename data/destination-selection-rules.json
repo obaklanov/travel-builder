@@ -2478,6 +2478,236 @@
           "accessNote": "SJO plus road and boat access, or separately confirmed domestic TTQ flight. Wildlife/canal destination, not a swimming resort."
         }
       ]
+    },
+    "united-states": {
+      "approvedAt": "2026-11-06",
+      "authorization": "User authorized selecting and deploying the next two countries.",
+      "liveLabelsUpdated": true,
+      "indexCompatibility": "Original five US and four South African geographic slots retained as named towns; distinct additional stays appended.",
+      "selectionRationale": "Twelve selective destinations reflect continental size and population, major cultural/architectural cities, desert and mountain landscapes, Alaska and Hawaii; not an exhaustive state list.",
+      "seasonalityStatus": "NASA POWER/MERRA-2 daily 2016–2025; total precipitation. Crowd/price inputs provisional editorial proxies. Festivals have partial typical-month coverage. Scoring rules unchanged.",
+      "destinations": [
+        {
+          "name": "New York",
+          "area": "Northeast",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "JFK",
+            "EWR"
+          ],
+          "treasures": [
+            "Statue of Liberty"
+          ]
+        },
+        {
+          "name": "Miami Beach",
+          "area": "South Florida",
+          "climateType": "beach",
+          "climateTypeLabel": "Beach",
+          "airportCandidates": [
+            "MIA",
+            "FLL"
+          ]
+        },
+        {
+          "name": "Los Angeles",
+          "area": "Southern California",
+          "climateType": "standard",
+          "climateTypeLabel": "Warm living",
+          "airportCandidates": [
+            "LAX"
+          ]
+        },
+        {
+          "name": "Flagstaff",
+          "area": "Grand Canyon and Arizona highlands",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "FLG",
+            "PHX"
+          ],
+          "treasures": [
+            "Grand Canyon"
+          ],
+          "accessNote": "FLG or PHX plus ground transfer; the South Rim is a separate substantial road excursion. Highland town weather differs greatly from the canyon floor.",
+          "sourceUrls": [
+            "https://www.visitarizona.com/places/grand-canyon/getting-here"
+          ]
+        },
+        {
+          "name": "Seattle",
+          "area": "Pacific Northwest",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "SEA"
+          ]
+        },
+        {
+          "name": "San Francisco",
+          "area": "Northern California",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "SFO"
+          ],
+          "treasures": [
+            "Golden Gate Bridge"
+          ]
+        },
+        {
+          "name": "Chicago",
+          "area": "Great Lakes",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "ORD",
+            "MDW"
+          ]
+        },
+        {
+          "name": "Washington, DC",
+          "area": "Capital region",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "IAD",
+            "DCA"
+          ]
+        },
+        {
+          "name": "New Orleans",
+          "area": "Louisiana",
+          "climateType": "standard",
+          "climateTypeLabel": "Warm living",
+          "airportCandidates": [
+            "MSY"
+          ]
+        },
+        {
+          "name": "Honolulu",
+          "area": "Oahu, Hawaii",
+          "climateType": "beach",
+          "climateTypeLabel": "Beach",
+          "airportCandidates": [
+            "HNL"
+          ]
+        },
+        {
+          "name": "Anchorage",
+          "area": "Southcentral Alaska",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "ANC"
+          ],
+          "accessNote": "Southcentral Alaska representative stay; remote parks and glaciers require separate ground/air excursions."
+        },
+        {
+          "name": "Jackson",
+          "area": "Grand Teton and Yellowstone",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "JAC"
+          ],
+          "accessNote": "Grand Teton access nearby; Yellowstone is a longer seasonal excursion. Winter road closures require separate planning; town climate does not establish park access.",
+          "sourceUrls": [
+            "https://www.nps.gov/grte/planyourvisit/roads.htm"
+          ]
+        }
+      ]
+    },
+    "south-africa": {
+      "approvedAt": "2026-11-06",
+      "authorization": "User authorized selecting and deploying the next two countries.",
+      "liveLabelsUpdated": true,
+      "indexCompatibility": "Original five US and four South African geographic slots retained as named towns; distinct additional stays appended.",
+      "selectionRationale": "Six stays cover Cape heritage, safari Lowveld, subtropical coast, Garden Route, Gauteng history and Drakensberg highlands without duplicating nearby towns.",
+      "seasonalityStatus": "NASA POWER/MERRA-2 daily 2016–2025; total precipitation. Crowd/price inputs provisional editorial proxies. Festivals have partial typical-month coverage. Scoring rules unchanged.",
+      "destinations": [
+        {
+          "name": "Cape Town",
+          "area": "Western Cape",
+          "climateType": "standard",
+          "climateTypeLabel": "Warm living",
+          "airportCandidates": [
+            "CPT"
+          ],
+          "treasures": [
+            "Table Mountain",
+            "Boulders Beach"
+          ],
+          "nearbyPlaces": [
+            "Cape Winelands"
+          ],
+          "accessNote": "Boulders Beach and Winelands require separate road excursions."
+        },
+        {
+          "name": "Hazyview",
+          "area": "Kruger and Panorama Route",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "MQP"
+          ],
+          "treasures": [
+            "Kruger National Park"
+          ],
+          "nearbyPlaces": [
+            "Panorama Route"
+          ],
+          "accessNote": "MQP plus road transfer. Park gates, game drives and Panorama Route excursions require separate planning.",
+          "sourceUrls": [
+            "https://www.southafrica.net/uk/en/travel/category/travel-trade-uk/product-updates-media-centre-trade-events/exploring-south-africas-panorama-route"
+          ]
+        },
+        {
+          "name": "Umhlanga",
+          "area": "KwaZulu-Natal coast",
+          "climateType": "beach",
+          "climateTypeLabel": "Beach",
+          "airportCandidates": [
+            "DUR"
+          ],
+          "accessNote": "DUR plus ground transfer; represents the KwaZulu-Natal resort coast rather than every Durban neighborhood."
+        },
+        {
+          "name": "Knysna",
+          "area": "Garden Route",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "GRJ"
+          ],
+          "accessNote": "GRJ plus road transfer; Garden Route attractions spread over a substantial area."
+        },
+        {
+          "name": "Johannesburg",
+          "area": "Gauteng",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "JNB"
+          ]
+        },
+        {
+          "name": "Underberg",
+          "area": "Southern Drakensberg",
+          "climateType": "all-season",
+          "climateTypeLabel": "All season",
+          "airportCandidates": [
+            "DUR",
+            "PZB"
+          ],
+          "accessNote": "DUR or PZB plus substantial road transfer. Mountain/Lesotho excursions and seasonal access differ from town climate.",
+          "sourceUrls": [
+            "https://drakensberg.org/"
+          ]
+        }
+      ]
     }
   },
   "climateTypeAssignments": {
@@ -3239,6 +3469,114 @@
     },
     "costa-rica:tortuguero": {
       "name": "Tortuguero",
+      "climateType": "all-season",
+      "reason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "united-states:new-york": {
+      "name": "New York",
+      "climateType": "all-season",
+      "reason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "united-states:miami": {
+      "name": "Miami Beach",
+      "climateType": "beach",
+      "reason": "Beach-oriented holiday base; 25°C target.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "united-states:los-angeles": {
+      "name": "Los Angeles",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "united-states:flagstaff": {
+      "name": "Flagstaff",
+      "climateType": "all-season",
+      "reason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "united-states:seattle": {
+      "name": "Seattle",
+      "climateType": "all-season",
+      "reason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "united-states:san-francisco": {
+      "name": "San Francisco",
+      "climateType": "all-season",
+      "reason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "united-states:chicago": {
+      "name": "Chicago",
+      "climateType": "all-season",
+      "reason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "united-states:washington": {
+      "name": "Washington, DC",
+      "climateType": "all-season",
+      "reason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "united-states:new-orleans": {
+      "name": "New Orleans",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "united-states:honolulu": {
+      "name": "Honolulu",
+      "climateType": "beach",
+      "reason": "Beach-oriented holiday base; 25°C target.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "united-states:anchorage": {
+      "name": "Anchorage",
+      "climateType": "all-season",
+      "reason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "united-states:jackson": {
+      "name": "Jackson",
+      "climateType": "all-season",
+      "reason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "south-africa:cape-town": {
+      "name": "Cape Town",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "south-africa:hazyview": {
+      "name": "Hazyview",
+      "climateType": "all-season",
+      "reason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "south-africa:umhlanga": {
+      "name": "Umhlanga",
+      "climateType": "beach",
+      "reason": "Beach-oriented holiday base; 25°C target.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "south-africa:knysna": {
+      "name": "Knysna",
+      "climateType": "all-season",
+      "reason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "south-africa:johannesburg": {
+      "name": "Johannesburg",
+      "climateType": "all-season",
+      "reason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "south-africa:underberg": {
+      "name": "Underberg",
       "climateType": "all-season",
       "reason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
       "status": "Authorized next-two-country rollout, 6 November 2026."

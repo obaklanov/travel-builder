@@ -149,6 +149,20 @@
         "timeStandard": "Local solar time",
         "sourceUrl": "https://power.larc.nasa.gov/docs/services/api/temporal/daily/",
         "rainDefinition": "PRECTOTCORR total precipitation, including snow, averaged across all calendar days in mm/day. Alternative to ERA5 rain-only data due daily API quota; not directly identical."
+      },
+      "united-states": {
+        "model": "NASA POWER/MERRA-2",
+        "period": "2016–2025",
+        "timeStandard": "Local solar time",
+        "sourceUrl": "https://power.larc.nasa.gov/docs/services/api/temporal/daily/",
+        "rainDefinition": "PRECTOTCORR total precipitation, including snow, averaged across all calendar days in mm/day. Alternative to ERA5 rain-only data due daily API quota; not directly identical."
+      },
+      "south-africa": {
+        "model": "NASA POWER/MERRA-2",
+        "period": "2016–2025",
+        "timeStandard": "Local solar time",
+        "sourceUrl": "https://power.larc.nasa.gov/docs/services/api/temporal/daily/",
+        "rainDefinition": "PRECTOTCORR total precipitation, including snow, averaged across all calendar days in mm/day. Alternative to ERA5 rain-only data due daily API quota; not directly identical."
       }
     }
   },
@@ -35328,6 +35342,3029 @@
       },
       "events": [],
       "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "united-states",
+      "id": "new-york",
+      "name": "New York",
+      "area": "Northeast",
+      "latitude": 40.7128,
+      "longitude": -74.006,
+      "airports": [
+        [
+          "JFK",
+          "New York JFK"
+        ],
+        [
+          "EWR",
+          "Newark"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 0,
+      "gridLatitude": 40.7128,
+      "gridLongitude": -74.006,
+      "elevation": 10.17,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-74.006&latitude=40.7128&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://www.visittheusa.com/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 1.9,
+          "meanDailyHighC": 4.27,
+          "meanRainMmPerDay": 4.1762,
+          "meanRelativeHumidityPct": 81.41,
+          "rainyDayFraction": 0.329
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 2.66,
+          "meanDailyHighC": 5.21,
+          "meanRainMmPerDay": 4.0811,
+          "meanRelativeHumidityPct": 82.08,
+          "rainyDayFraction": 0.3887
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 5.13,
+          "meanDailyHighC": 7.83,
+          "meanRainMmPerDay": 4.4465,
+          "meanRelativeHumidityPct": 80.58,
+          "rainyDayFraction": 0.3613
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 9.39,
+          "meanDailyHighC": 12.2,
+          "meanRainMmPerDay": 4.0511,
+          "meanRelativeHumidityPct": 81.51,
+          "rainyDayFraction": 0.4
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 14.31,
+          "meanDailyHighC": 16.98,
+          "meanRainMmPerDay": 4.2239,
+          "meanRelativeHumidityPct": 83.96,
+          "rainyDayFraction": 0.429
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 20.02,
+          "meanDailyHighC": 22.48,
+          "meanRainMmPerDay": 2.4878,
+          "meanRelativeHumidityPct": 82.68,
+          "rainyDayFraction": 0.3967
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.35,
+          "meanDailyHighC": 26.62,
+          "meanRainMmPerDay": 5.1508,
+          "meanRelativeHumidityPct": 81.64,
+          "rainyDayFraction": 0.5742
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 23.8,
+          "meanDailyHighC": 26.15,
+          "meanRainMmPerDay": 3.5635,
+          "meanRelativeHumidityPct": 79.34,
+          "rainyDayFraction": 0.4935
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 20.91,
+          "meanDailyHighC": 23.4,
+          "meanRainMmPerDay": 3.8515,
+          "meanRelativeHumidityPct": 78.3,
+          "rainyDayFraction": 0.3433
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 15.77,
+          "meanDailyHighC": 18.47,
+          "meanRainMmPerDay": 4.214,
+          "meanRelativeHumidityPct": 78.55,
+          "rainyDayFraction": 0.3161
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 9.36,
+          "meanDailyHighC": 12.15,
+          "meanRainMmPerDay": 3.8133,
+          "meanRelativeHumidityPct": 77.49,
+          "rainyDayFraction": 0.2733
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 4.41,
+          "meanDailyHighC": 6.69,
+          "meanRainMmPerDay": 4.8023,
+          "meanRelativeHumidityPct": 81.4,
+          "rainyDayFraction": 0.329
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for US city/coastal/mountain and South African coastal/highland/safari contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          12,
+          4,
+          10,
+          5,
+          9,
+          6,
+          8,
+          7
+        ],
+        "sourceUrls": [
+          "https://www.visittheusa.com/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          12,
+          4,
+          10,
+          5,
+          9,
+          6,
+          8,
+          7
+        ],
+        "sourceUrls": [
+          "https://www.visittheusa.com/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "united-states",
+      "id": "miami",
+      "name": "Miami Beach",
+      "area": "South Florida",
+      "latitude": 25.7907,
+      "longitude": -80.13,
+      "airports": [
+        [
+          "MIA",
+          "Miami"
+        ],
+        [
+          "FLL",
+          "Fort Lauderdale"
+        ]
+      ],
+      "climateType": "beach",
+      "regionIndex": 1,
+      "gridLatitude": 25.7907,
+      "gridLongitude": -80.13,
+      "elevation": 2.81,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-80.13&latitude=25.7907&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Beach-oriented holiday base; 25°C target.",
+      "climateTypeSources": [
+        "https://www.visittheusa.com/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 21.75,
+          "meanDailyHighC": 23.2,
+          "meanRainMmPerDay": 1.8805,
+          "meanRelativeHumidityPct": 76.19,
+          "rainyDayFraction": 0.3355
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 23.08,
+          "meanDailyHighC": 24.43,
+          "meanRainMmPerDay": 1.4119,
+          "meanRelativeHumidityPct": 76.63,
+          "rainyDayFraction": 0.2686
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 23.72,
+          "meanDailyHighC": 25.16,
+          "meanRainMmPerDay": 1.3963,
+          "meanRelativeHumidityPct": 73.37,
+          "rainyDayFraction": 0.2774
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.14,
+          "meanDailyHighC": 26.47,
+          "meanRainMmPerDay": 2.3354,
+          "meanRelativeHumidityPct": 73.54,
+          "rainyDayFraction": 0.37
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.78,
+          "meanDailyHighC": 27.99,
+          "meanRainMmPerDay": 4.4577,
+          "meanRelativeHumidityPct": 75.53,
+          "rainyDayFraction": 0.629
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 28.24,
+          "meanDailyHighC": 29.21,
+          "meanRainMmPerDay": 7.5842,
+          "meanRelativeHumidityPct": 78.12,
+          "rainyDayFraction": 0.8533
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 29.24,
+          "meanDailyHighC": 30.15,
+          "meanRainMmPerDay": 4.6436,
+          "meanRelativeHumidityPct": 76.41,
+          "rainyDayFraction": 0.8839
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 29.39,
+          "meanDailyHighC": 30.32,
+          "meanRainMmPerDay": 5.5054,
+          "meanRelativeHumidityPct": 77.02,
+          "rainyDayFraction": 0.9258
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 28.74,
+          "meanDailyHighC": 29.73,
+          "meanRainMmPerDay": 6.1075,
+          "meanRelativeHumidityPct": 77.77,
+          "rainyDayFraction": 0.8733
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 27.23,
+          "meanDailyHighC": 28.24,
+          "meanRainMmPerDay": 4.2011,
+          "meanRelativeHumidityPct": 77.67,
+          "rainyDayFraction": 0.6161
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.08,
+          "meanDailyHighC": 26.22,
+          "meanRainMmPerDay": 2.599,
+          "meanRelativeHumidityPct": 76.11,
+          "rainyDayFraction": 0.3867
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 23.32,
+          "meanDailyHighC": 24.57,
+          "meanRainMmPerDay": 1.7443,
+          "meanRelativeHumidityPct": 77.22,
+          "rainyDayFraction": 0.329
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for US city/coastal/mountain and South African coastal/highland/safari contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          9,
+          10,
+          6,
+          5,
+          11,
+          7,
+          8,
+          4,
+          3,
+          2,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://www.visittheusa.com/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          9,
+          10,
+          6,
+          5,
+          11,
+          7,
+          8,
+          4,
+          3,
+          2,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://www.visittheusa.com/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "united-states",
+      "id": "los-angeles",
+      "name": "Los Angeles",
+      "area": "Southern California",
+      "latitude": 34.0522,
+      "longitude": -118.2437,
+      "airports": [
+        [
+          "LAX",
+          "Los Angeles"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 2,
+      "gridLatitude": 34.0522,
+      "gridLongitude": -118.2437,
+      "elevation": 395,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-118.2437&latitude=34.0522&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeSources": [
+        "https://www.visittheusa.com/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 11.96,
+          "meanDailyHighC": 17.75,
+          "meanRainMmPerDay": 2.9235,
+          "meanRelativeHumidityPct": 64.9,
+          "rainyDayFraction": 0.1806
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 12.45,
+          "meanDailyHighC": 18.36,
+          "meanRainMmPerDay": 2.9476,
+          "meanRelativeHumidityPct": 64.1,
+          "rainyDayFraction": 0.2155
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 13.18,
+          "meanDailyHighC": 18.71,
+          "meanRainMmPerDay": 2.5178,
+          "meanRelativeHumidityPct": 69.34,
+          "rainyDayFraction": 0.2484
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 15.65,
+          "meanDailyHighC": 21.81,
+          "meanRainMmPerDay": 0.4794,
+          "meanRelativeHumidityPct": 65.17,
+          "rainyDayFraction": 0.0633
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 16.91,
+          "meanDailyHighC": 22.96,
+          "meanRainMmPerDay": 0.2805,
+          "meanRelativeHumidityPct": 67.72,
+          "rainyDayFraction": 0.0581
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 20.6,
+          "meanDailyHighC": 27.18,
+          "meanRainMmPerDay": 0.0307,
+          "meanRelativeHumidityPct": 58.11,
+          "rainyDayFraction": 0.0033
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 23.69,
+          "meanDailyHighC": 30.3,
+          "meanRainMmPerDay": 0.0153,
+          "meanRelativeHumidityPct": 49.25,
+          "rainyDayFraction": 0.0032
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.42,
+          "meanDailyHighC": 31.24,
+          "meanRainMmPerDay": 0.2354,
+          "meanRelativeHumidityPct": 48.23,
+          "rainyDayFraction": 0.0097
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 22.96,
+          "meanDailyHighC": 29.63,
+          "meanRainMmPerDay": 0.1087,
+          "meanRelativeHumidityPct": 54.04,
+          "rainyDayFraction": 0.0267
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 20.14,
+          "meanDailyHighC": 27.05,
+          "meanRainMmPerDay": 0.3078,
+          "meanRelativeHumidityPct": 51.36,
+          "rainyDayFraction": 0.0516
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 16.11,
+          "meanDailyHighC": 22.67,
+          "meanRainMmPerDay": 1.2291,
+          "meanRelativeHumidityPct": 52.86,
+          "rainyDayFraction": 0.1
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 13.06,
+          "meanDailyHighC": 19.02,
+          "meanRainMmPerDay": 2.9433,
+          "meanRelativeHumidityPct": 59.33,
+          "rainyDayFraction": 0.1742
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for US city/coastal/mountain and South African coastal/highland/safari contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          12,
+          4,
+          10,
+          5,
+          9,
+          6,
+          8,
+          7
+        ],
+        "sourceUrls": [
+          "https://www.visittheusa.com/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          12,
+          4,
+          10,
+          5,
+          9,
+          6,
+          8,
+          7
+        ],
+        "sourceUrls": [
+          "https://www.visittheusa.com/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "united-states",
+      "id": "flagstaff",
+      "name": "Flagstaff",
+      "area": "Grand Canyon and Arizona highlands",
+      "latitude": 35.1983,
+      "longitude": -111.6513,
+      "airports": [
+        [
+          "FLG",
+          "Flagstaff"
+        ],
+        [
+          "PHX",
+          "Phoenix"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 3,
+      "gridLatitude": 35.1983,
+      "gridLongitude": -111.6513,
+      "elevation": 1835.9,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-111.6513&latitude=35.1983&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://www.visittheusa.com/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates. FLG or PHX plus ground transfer; the South Rim is a separate substantial road excursion. Highland town weather differs greatly from the canyon floor.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 1.23,
+          "meanDailyHighC": 8.26,
+          "meanRainMmPerDay": 1.6846,
+          "meanRelativeHumidityPct": 63.5,
+          "rainyDayFraction": 0.2194
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 3,
+          "meanDailyHighC": 10.68,
+          "meanRainMmPerDay": 1.7686,
+          "meanRelativeHumidityPct": 58.25,
+          "rainyDayFraction": 0.1943
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 5.89,
+          "meanDailyHighC": 13.74,
+          "meanRainMmPerDay": 1.839,
+          "meanRelativeHumidityPct": 56.25,
+          "rainyDayFraction": 0.2452
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 10.99,
+          "meanDailyHighC": 19.73,
+          "meanRainMmPerDay": 0.4656,
+          "meanRelativeHumidityPct": 40.79,
+          "rainyDayFraction": 0.08
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 15.36,
+          "meanDailyHighC": 24.04,
+          "meanRainMmPerDay": 0.5035,
+          "meanRelativeHumidityPct": 36.81,
+          "rainyDayFraction": 0.1194
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 22.19,
+          "meanDailyHighC": 31.24,
+          "meanRainMmPerDay": 0.3813,
+          "meanRelativeHumidityPct": 28.32,
+          "rainyDayFraction": 0.0767
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.2,
+          "meanDailyHighC": 32.52,
+          "meanRainMmPerDay": 2.2425,
+          "meanRelativeHumidityPct": 43.05,
+          "rainyDayFraction": 0.4226
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 22.95,
+          "meanDailyHighC": 31.19,
+          "meanRainMmPerDay": 2.0578,
+          "meanRelativeHumidityPct": 49.84,
+          "rainyDayFraction": 0.4548
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 19.44,
+          "meanDailyHighC": 27.94,
+          "meanRainMmPerDay": 1.011,
+          "meanRelativeHumidityPct": 45.17,
+          "rainyDayFraction": 0.2133
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 13.1,
+          "meanDailyHighC": 21.94,
+          "meanRainMmPerDay": 1.0446,
+          "meanRelativeHumidityPct": 44.45,
+          "rainyDayFraction": 0.1194
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 6.93,
+          "meanDailyHighC": 15.41,
+          "meanRainMmPerDay": 1.2014,
+          "meanRelativeHumidityPct": 49.66,
+          "rainyDayFraction": 0.12
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 3.06,
+          "meanDailyHighC": 10.58,
+          "meanRainMmPerDay": 1.3058,
+          "meanRelativeHumidityPct": 56.72,
+          "rainyDayFraction": 0.1806
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for US city/coastal/mountain and South African coastal/highland/safari contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          11,
+          4,
+          10,
+          5,
+          12,
+          1,
+          2,
+          3,
+          9,
+          6,
+          8,
+          7
+        ],
+        "sourceUrls": [
+          "https://www.visittheusa.com/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          11,
+          4,
+          10,
+          5,
+          12,
+          1,
+          2,
+          3,
+          9,
+          6,
+          8,
+          7
+        ],
+        "sourceUrls": [
+          "https://www.visittheusa.com/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "united-states",
+      "id": "seattle",
+      "name": "Seattle",
+      "area": "Pacific Northwest",
+      "latitude": 47.6062,
+      "longitude": -122.3321,
+      "airports": [
+        [
+          "SEA",
+          "Seattle"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 4,
+      "gridLatitude": 47.6062,
+      "gridLongitude": -122.3321,
+      "elevation": 110.01,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-122.3321&latitude=47.6062&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://www.visittheusa.com/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 4.34,
+          "meanDailyHighC": 7.32,
+          "meanRainMmPerDay": 5.7896,
+          "meanRelativeHumidityPct": 90.46,
+          "rainyDayFraction": 0.6161
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 4.03,
+          "meanDailyHighC": 7.27,
+          "meanRainMmPerDay": 4.8464,
+          "meanRelativeHumidityPct": 88.96,
+          "rainyDayFraction": 0.6749
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 6.52,
+          "meanDailyHighC": 10.54,
+          "meanRainMmPerDay": 3.8765,
+          "meanRelativeHumidityPct": 85.82,
+          "rainyDayFraction": 0.5871
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 9.24,
+          "meanDailyHighC": 13.72,
+          "meanRainMmPerDay": 3.1356,
+          "meanRelativeHumidityPct": 82.2,
+          "rainyDayFraction": 0.5467
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 13.11,
+          "meanDailyHighC": 17.8,
+          "meanRainMmPerDay": 2.0677,
+          "meanRelativeHumidityPct": 80.6,
+          "rainyDayFraction": 0.4
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 15.44,
+          "meanDailyHighC": 20.13,
+          "meanRainMmPerDay": 1.8906,
+          "meanRelativeHumidityPct": 80.45,
+          "rainyDayFraction": 0.3533
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.28,
+          "meanDailyHighC": 23.26,
+          "meanRainMmPerDay": 0.474,
+          "meanRelativeHumidityPct": 78.36,
+          "rainyDayFraction": 0.1129
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.56,
+          "meanDailyHighC": 23.93,
+          "meanRainMmPerDay": 0.764,
+          "meanRelativeHumidityPct": 77,
+          "rainyDayFraction": 0.1581
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 15.36,
+          "meanDailyHighC": 20.41,
+          "meanRainMmPerDay": 2.0033,
+          "meanRelativeHumidityPct": 80.3,
+          "rainyDayFraction": 0.3167
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 10.6,
+          "meanDailyHighC": 14.93,
+          "meanRainMmPerDay": 4.327,
+          "meanRelativeHumidityPct": 85.22,
+          "rainyDayFraction": 0.5
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 6.84,
+          "meanDailyHighC": 10.03,
+          "meanRainMmPerDay": 6.2583,
+          "meanRelativeHumidityPct": 90.42,
+          "rainyDayFraction": 0.67
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 4.19,
+          "meanDailyHighC": 6.87,
+          "meanRainMmPerDay": 6.4097,
+          "meanRelativeHumidityPct": 92.47,
+          "rainyDayFraction": 0.6548
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for US city/coastal/mountain and South African coastal/highland/safari contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          12,
+          4,
+          10,
+          5,
+          9,
+          6,
+          8,
+          7
+        ],
+        "sourceUrls": [
+          "https://www.visittheusa.com/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          12,
+          4,
+          10,
+          5,
+          9,
+          6,
+          8,
+          7
+        ],
+        "sourceUrls": [
+          "https://www.visittheusa.com/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "united-states",
+      "id": "san-francisco",
+      "name": "San Francisco",
+      "area": "Northern California",
+      "latitude": 37.7749,
+      "longitude": -122.4194,
+      "airports": [
+        [
+          "SFO",
+          "San Francisco"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 5,
+      "gridLatitude": 37.7749,
+      "gridLongitude": -122.4194,
+      "elevation": 86.52,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-122.4194&latitude=37.7749&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://www.visittheusa.com/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 10.07,
+          "meanDailyHighC": 13.83,
+          "meanRainMmPerDay": 4.2029,
+          "meanRelativeHumidityPct": 85.95,
+          "rainyDayFraction": 0.3419
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 10.61,
+          "meanDailyHighC": 14.86,
+          "meanRainMmPerDay": 3.2839,
+          "meanRelativeHumidityPct": 80.17,
+          "rainyDayFraction": 0.2686
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 11.25,
+          "meanDailyHighC": 15.44,
+          "meanRainMmPerDay": 2.9293,
+          "meanRelativeHumidityPct": 81.18,
+          "rainyDayFraction": 0.3548
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 12.85,
+          "meanDailyHighC": 17.83,
+          "meanRainMmPerDay": 0.9703,
+          "meanRelativeHumidityPct": 79.12,
+          "rainyDayFraction": 0.15
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 14.46,
+          "meanDailyHighC": 19.76,
+          "meanRainMmPerDay": 0.4814,
+          "meanRelativeHumidityPct": 76.46,
+          "rainyDayFraction": 0.0742
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 16.48,
+          "meanDailyHighC": 22.1,
+          "meanRainMmPerDay": 0.0624,
+          "meanRelativeHumidityPct": 72.2,
+          "rainyDayFraction": 0.0133
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.01,
+          "meanDailyHighC": 22.56,
+          "meanRainMmPerDay": 0.0182,
+          "meanRelativeHumidityPct": 72.52,
+          "rainyDayFraction": 0
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.95,
+          "meanDailyHighC": 23.74,
+          "meanRainMmPerDay": 0.0208,
+          "meanRelativeHumidityPct": 72.95,
+          "rainyDayFraction": 0
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 18.22,
+          "meanDailyHighC": 24.47,
+          "meanRainMmPerDay": 0.1479,
+          "meanRelativeHumidityPct": 70.88,
+          "rainyDayFraction": 0.0233
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 16.49,
+          "meanDailyHighC": 22.8,
+          "meanRainMmPerDay": 1.158,
+          "meanRelativeHumidityPct": 68.27,
+          "rainyDayFraction": 0.0968
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 12.75,
+          "meanDailyHighC": 17.76,
+          "meanRainMmPerDay": 1.9304,
+          "meanRelativeHumidityPct": 76.6,
+          "rainyDayFraction": 0.21
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 10.04,
+          "meanDailyHighC": 14.01,
+          "meanRainMmPerDay": 3.64,
+          "meanRelativeHumidityPct": 84.19,
+          "rainyDayFraction": 0.3226
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for US city/coastal/mountain and South African coastal/highland/safari contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          12,
+          4,
+          10,
+          5,
+          9,
+          6,
+          8,
+          7
+        ],
+        "sourceUrls": [
+          "https://www.visittheusa.com/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          12,
+          4,
+          10,
+          5,
+          9,
+          6,
+          8,
+          7
+        ],
+        "sourceUrls": [
+          "https://www.visittheusa.com/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "united-states",
+      "id": "chicago",
+      "name": "Chicago",
+      "area": "Great Lakes",
+      "latitude": 41.8781,
+      "longitude": -87.6298,
+      "airports": [
+        [
+          "ORD",
+          "Chicago O Hare"
+        ],
+        [
+          "MDW",
+          "Chicago Midway"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 6,
+      "gridLatitude": 41.8781,
+      "gridLongitude": -87.6298,
+      "elevation": 180.72,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-87.6298&latitude=41.8781&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://www.visittheusa.com/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": -2.11,
+          "meanDailyHighC": 0.08,
+          "meanRainMmPerDay": 1.519,
+          "meanRelativeHumidityPct": 85.65,
+          "rainyDayFraction": 0.2484
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": -1.28,
+          "meanDailyHighC": 1.47,
+          "meanRainMmPerDay": 1.964,
+          "meanRelativeHumidityPct": 83.14,
+          "rainyDayFraction": 0.2615
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 2.79,
+          "meanDailyHighC": 5.72,
+          "meanRainMmPerDay": 2.6268,
+          "meanRelativeHumidityPct": 80.52,
+          "rainyDayFraction": 0.3387
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 6.98,
+          "meanDailyHighC": 10.09,
+          "meanRainMmPerDay": 3.0072,
+          "meanRelativeHumidityPct": 79.99,
+          "rainyDayFraction": 0.4033
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 12.54,
+          "meanDailyHighC": 15.62,
+          "meanRainMmPerDay": 3.4986,
+          "meanRelativeHumidityPct": 81.39,
+          "rainyDayFraction": 0.4161
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 19.19,
+          "meanDailyHighC": 22.15,
+          "meanRainMmPerDay": 3.3655,
+          "meanRelativeHumidityPct": 79.52,
+          "rainyDayFraction": 0.39
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 22.92,
+          "meanDailyHighC": 25.33,
+          "meanRainMmPerDay": 3.5972,
+          "meanRelativeHumidityPct": 78.5,
+          "rainyDayFraction": 0.4161
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 23.02,
+          "meanDailyHighC": 25.49,
+          "meanRainMmPerDay": 2.7879,
+          "meanRelativeHumidityPct": 75.19,
+          "rainyDayFraction": 0.3839
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 20.07,
+          "meanDailyHighC": 22.91,
+          "meanRainMmPerDay": 2.5355,
+          "meanRelativeHumidityPct": 74.79,
+          "rainyDayFraction": 0.3267
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 13.49,
+          "meanDailyHighC": 16.43,
+          "meanRainMmPerDay": 3.5465,
+          "meanRelativeHumidityPct": 75.36,
+          "rainyDayFraction": 0.3581
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 6.19,
+          "meanDailyHighC": 8.8,
+          "meanRainMmPerDay": 1.6689,
+          "meanRelativeHumidityPct": 78.47,
+          "rainyDayFraction": 0.25
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 0.91,
+          "meanDailyHighC": 3.19,
+          "meanRainMmPerDay": 1.6324,
+          "meanRelativeHumidityPct": 83.55,
+          "rainyDayFraction": 0.2355
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for US city/coastal/mountain and South African coastal/highland/safari contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          12,
+          4,
+          10,
+          5,
+          9,
+          6,
+          8,
+          7
+        ],
+        "sourceUrls": [
+          "https://www.visittheusa.com/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          12,
+          4,
+          10,
+          5,
+          9,
+          6,
+          8,
+          7
+        ],
+        "sourceUrls": [
+          "https://www.visittheusa.com/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "united-states",
+      "id": "washington",
+      "name": "Washington, DC",
+      "area": "Capital region",
+      "latitude": 38.9072,
+      "longitude": -77.0369,
+      "airports": [
+        [
+          "IAD",
+          "Washington Dulles"
+        ],
+        [
+          "DCA",
+          "Washington National"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 7,
+      "gridLatitude": 38.9072,
+      "gridLongitude": -77.0369,
+      "elevation": 70.81,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-77.0369&latitude=38.9072&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://www.visittheusa.com/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 0.8,
+          "meanDailyHighC": 5.04,
+          "meanRainMmPerDay": 2.3108,
+          "meanRelativeHumidityPct": 81.36,
+          "rainyDayFraction": 0.2419
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 3.31,
+          "meanDailyHighC": 8.05,
+          "meanRainMmPerDay": 2.668,
+          "meanRelativeHumidityPct": 80.8,
+          "rainyDayFraction": 0.3428
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 7.12,
+          "meanDailyHighC": 12.64,
+          "meanRainMmPerDay": 2.4659,
+          "meanRelativeHumidityPct": 76.96,
+          "rainyDayFraction": 0.2774
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 12.68,
+          "meanDailyHighC": 18.24,
+          "meanRainMmPerDay": 2.575,
+          "meanRelativeHumidityPct": 74.84,
+          "rainyDayFraction": 0.3333
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 17.76,
+          "meanDailyHighC": 22.76,
+          "meanRainMmPerDay": 3.9161,
+          "meanRelativeHumidityPct": 77.8,
+          "rainyDayFraction": 0.4452
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 23.26,
+          "meanDailyHighC": 28.39,
+          "meanRainMmPerDay": 2.9682,
+          "meanRelativeHumidityPct": 71.33,
+          "rainyDayFraction": 0.4033
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.86,
+          "meanDailyHighC": 31.97,
+          "meanRainMmPerDay": 4.4734,
+          "meanRelativeHumidityPct": 67.9,
+          "rainyDayFraction": 0.5194
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.3,
+          "meanDailyHighC": 30.43,
+          "meanRainMmPerDay": 3.6272,
+          "meanRelativeHumidityPct": 69.81,
+          "rainyDayFraction": 0.4774
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 21.89,
+          "meanDailyHighC": 27.21,
+          "meanRainMmPerDay": 3.2984,
+          "meanRelativeHumidityPct": 71.36,
+          "rainyDayFraction": 0.34
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 15.52,
+          "meanDailyHighC": 21.28,
+          "meanRainMmPerDay": 2.3805,
+          "meanRelativeHumidityPct": 73.18,
+          "rainyDayFraction": 0.2129
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 7.99,
+          "meanDailyHighC": 13.52,
+          "meanRainMmPerDay": 2.2405,
+          "meanRelativeHumidityPct": 74.61,
+          "rainyDayFraction": 0.2233
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 2.87,
+          "meanDailyHighC": 7.46,
+          "meanRainMmPerDay": 2.836,
+          "meanRelativeHumidityPct": 81.17,
+          "rainyDayFraction": 0.2516
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for US city/coastal/mountain and South African coastal/highland/safari contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          12,
+          4,
+          10,
+          5,
+          9,
+          6,
+          8,
+          7
+        ],
+        "sourceUrls": [
+          "https://www.visittheusa.com/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          12,
+          4,
+          10,
+          5,
+          9,
+          6,
+          8,
+          7
+        ],
+        "sourceUrls": [
+          "https://www.visittheusa.com/"
+        ]
+      },
+      "events": [
+        {
+          "name": "National Cherry Blossom Festival",
+          "months": [
+            3,
+            4
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://nationalcherryblossomfestival.org/"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "united-states",
+      "id": "new-orleans",
+      "name": "New Orleans",
+      "area": "Louisiana",
+      "latitude": 29.9511,
+      "longitude": -90.0715,
+      "airports": [
+        [
+          "MSY",
+          "New Orleans"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 8,
+      "gridLatitude": 29.9511,
+      "gridLongitude": -90.0715,
+      "elevation": 1.69,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-90.0715&latitude=29.9511&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeSources": [
+        "https://www.visittheusa.com/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 11.86,
+          "meanDailyHighC": 15.52,
+          "meanRainMmPerDay": 3.4915,
+          "meanRelativeHumidityPct": 81.56,
+          "rainyDayFraction": 0.3677
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 15.06,
+          "meanDailyHighC": 18.68,
+          "meanRainMmPerDay": 3.5289,
+          "meanRelativeHumidityPct": 83.62,
+          "rainyDayFraction": 0.3498
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.26,
+          "meanDailyHighC": 21.6,
+          "meanRainMmPerDay": 3.7061,
+          "meanRelativeHumidityPct": 80.75,
+          "rainyDayFraction": 0.3194
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 21.02,
+          "meanDailyHighC": 24.07,
+          "meanRainMmPerDay": 4.8003,
+          "meanRelativeHumidityPct": 78.7,
+          "rainyDayFraction": 0.3433
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 25.16,
+          "meanDailyHighC": 27.82,
+          "meanRainMmPerDay": 5.4103,
+          "meanRelativeHumidityPct": 77.77,
+          "rainyDayFraction": 0.4323
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 28.14,
+          "meanDailyHighC": 30.56,
+          "meanRainMmPerDay": 5.981,
+          "meanRelativeHumidityPct": 75.87,
+          "rainyDayFraction": 0.6067
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 28.99,
+          "meanDailyHighC": 31.29,
+          "meanRainMmPerDay": 5.6866,
+          "meanRelativeHumidityPct": 76.23,
+          "rainyDayFraction": 0.7581
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 29.18,
+          "meanDailyHighC": 31.57,
+          "meanRainMmPerDay": 6.2574,
+          "meanRelativeHumidityPct": 75.03,
+          "rainyDayFraction": 0.7258
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 27.28,
+          "meanDailyHighC": 29.99,
+          "meanRainMmPerDay": 3.8986,
+          "meanRelativeHumidityPct": 75.04,
+          "rainyDayFraction": 0.4367
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 22.93,
+          "meanDailyHighC": 26.33,
+          "meanRainMmPerDay": 2.8143,
+          "meanRelativeHumidityPct": 76.35,
+          "rainyDayFraction": 0.2613
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 17.44,
+          "meanDailyHighC": 21.01,
+          "meanRainMmPerDay": 2.4131,
+          "meanRelativeHumidityPct": 79.53,
+          "rainyDayFraction": 0.26
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 14.04,
+          "meanDailyHighC": 17.45,
+          "meanRainMmPerDay": 4.5126,
+          "meanRelativeHumidityPct": 83.92,
+          "rainyDayFraction": 0.3452
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for US city/coastal/mountain and South African coastal/highland/safari contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          12,
+          4,
+          10,
+          5,
+          9,
+          6,
+          8,
+          7
+        ],
+        "sourceUrls": [
+          "https://www.visittheusa.com/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          1,
+          2,
+          11,
+          3,
+          12,
+          4,
+          10,
+          5,
+          9,
+          6,
+          8,
+          7
+        ],
+        "sourceUrls": [
+          "https://www.visittheusa.com/"
+        ]
+      },
+      "events": [
+        {
+          "name": "New Orleans Jazz and Heritage Festival",
+          "months": [
+            4,
+            5
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://www.nojazzfest.com/faq/"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "united-states",
+      "id": "honolulu",
+      "name": "Honolulu",
+      "area": "Oahu, Hawaii",
+      "latitude": 21.3099,
+      "longitude": -157.8581,
+      "airports": [
+        [
+          "HNL",
+          "Honolulu"
+        ]
+      ],
+      "climateType": "beach",
+      "regionIndex": 9,
+      "gridLatitude": 21.3099,
+      "gridLongitude": -157.8581,
+      "elevation": 78.06,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-157.8581&latitude=21.3099&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Beach-oriented holiday base; 25°C target.",
+      "climateTypeSources": [
+        "https://www.visittheusa.com/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 23.48,
+          "meanDailyHighC": 24.99,
+          "meanRainMmPerDay": 2.091,
+          "meanRelativeHumidityPct": 75.88,
+          "rainyDayFraction": 0.3935
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 23,
+          "meanDailyHighC": 24.56,
+          "meanRainMmPerDay": 3.155,
+          "meanRelativeHumidityPct": 74.99,
+          "rainyDayFraction": 0.4982
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 23.34,
+          "meanDailyHighC": 24.91,
+          "meanRainMmPerDay": 3.0463,
+          "meanRelativeHumidityPct": 75.64,
+          "rainyDayFraction": 0.5065
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 24.05,
+          "meanDailyHighC": 25.65,
+          "meanRainMmPerDay": 2.2411,
+          "meanRelativeHumidityPct": 76.18,
+          "rainyDayFraction": 0.5033
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.78,
+          "meanDailyHighC": 26.47,
+          "meanRainMmPerDay": 1.5955,
+          "meanRelativeHumidityPct": 75.37,
+          "rainyDayFraction": 0.4161
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.67,
+          "meanDailyHighC": 27.38,
+          "meanRainMmPerDay": 1.3373,
+          "meanRelativeHumidityPct": 74.92,
+          "rainyDayFraction": 0.3467
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.23,
+          "meanDailyHighC": 27.87,
+          "meanRainMmPerDay": 1.5642,
+          "meanRelativeHumidityPct": 75.18,
+          "rainyDayFraction": 0.4129
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.69,
+          "meanDailyHighC": 28.44,
+          "meanRainMmPerDay": 1.5554,
+          "meanRelativeHumidityPct": 74.12,
+          "rainyDayFraction": 0.3581
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 26.73,
+          "meanDailyHighC": 28.49,
+          "meanRainMmPerDay": 1.8805,
+          "meanRelativeHumidityPct": 73.9,
+          "rainyDayFraction": 0.4033
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 26.25,
+          "meanDailyHighC": 27.88,
+          "meanRainMmPerDay": 2.3819,
+          "meanRelativeHumidityPct": 74.83,
+          "rainyDayFraction": 0.5097
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 25.22,
+          "meanDailyHighC": 26.69,
+          "meanRainMmPerDay": 2.1617,
+          "meanRelativeHumidityPct": 75.83,
+          "rainyDayFraction": 0.5433
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.08,
+          "meanDailyHighC": 25.46,
+          "meanRainMmPerDay": 3.4312,
+          "meanRelativeHumidityPct": 77,
+          "rainyDayFraction": 0.5581
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for US city/coastal/mountain and South African coastal/highland/safari contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          9,
+          10,
+          6,
+          5,
+          11,
+          7,
+          8,
+          4,
+          3,
+          2,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://www.visittheusa.com/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          9,
+          10,
+          6,
+          5,
+          11,
+          7,
+          8,
+          4,
+          3,
+          2,
+          1,
+          12
+        ],
+        "sourceUrls": [
+          "https://www.visittheusa.com/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "united-states",
+      "id": "anchorage",
+      "name": "Anchorage",
+      "area": "Southcentral Alaska",
+      "latitude": 61.2181,
+      "longitude": -149.9003,
+      "airports": [
+        [
+          "ANC",
+          "Anchorage"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 10,
+      "gridLatitude": 61.2181,
+      "gridLongitude": -149.9003,
+      "elevation": 295.96,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-149.9003&latitude=61.2181&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://www.visittheusa.com/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates. Southcentral Alaska representative stay; remote parks and glaciers require separate ground/air excursions.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": -7.41,
+          "meanDailyHighC": -5.53,
+          "meanRainMmPerDay": 1.9051,
+          "meanRelativeHumidityPct": 92.26,
+          "rainyDayFraction": 0.4484
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": -6.39,
+          "meanDailyHighC": -3.94,
+          "meanRainMmPerDay": 1.9366,
+          "meanRelativeHumidityPct": 90.25,
+          "rainyDayFraction": 0.424
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": -4.34,
+          "meanDailyHighC": -1.55,
+          "meanRainMmPerDay": 1.3619,
+          "meanRelativeHumidityPct": 89.09,
+          "rainyDayFraction": 0.3742
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 0.77,
+          "meanDailyHighC": 3.22,
+          "meanRainMmPerDay": 1.2531,
+          "meanRelativeHumidityPct": 83.01,
+          "rainyDayFraction": 0.3433
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 6.48,
+          "meanDailyHighC": 9.42,
+          "meanRainMmPerDay": 1.9111,
+          "meanRelativeHumidityPct": 79.98,
+          "rainyDayFraction": 0.4806
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 11.58,
+          "meanDailyHighC": 14.71,
+          "meanRainMmPerDay": 2.0161,
+          "meanRelativeHumidityPct": 78.89,
+          "rainyDayFraction": 0.4333
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 13.99,
+          "meanDailyHighC": 16.96,
+          "meanRainMmPerDay": 3.0381,
+          "meanRelativeHumidityPct": 81.05,
+          "rainyDayFraction": 0.4742
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 12.81,
+          "meanDailyHighC": 15.71,
+          "meanRainMmPerDay": 4.3563,
+          "meanRelativeHumidityPct": 82.68,
+          "rainyDayFraction": 0.6065
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 8.64,
+          "meanDailyHighC": 11.37,
+          "meanRainMmPerDay": 3.8575,
+          "meanRelativeHumidityPct": 85.02,
+          "rainyDayFraction": 0.6333
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 2.29,
+          "meanDailyHighC": 4.51,
+          "meanRainMmPerDay": 2.6959,
+          "meanRelativeHumidityPct": 87.64,
+          "rainyDayFraction": 0.471
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": -4.78,
+          "meanDailyHighC": -2.97,
+          "meanRainMmPerDay": 2.5922,
+          "meanRelativeHumidityPct": 92.46,
+          "rainyDayFraction": 0.48
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": -7.1,
+          "meanDailyHighC": -5.22,
+          "meanRainMmPerDay": 2.1742,
+          "meanRelativeHumidityPct": 93.27,
+          "rainyDayFraction": 0.4968
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for US city/coastal/mountain and South African coastal/highland/safari contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          11,
+          4,
+          10,
+          5,
+          12,
+          1,
+          2,
+          3,
+          9,
+          6,
+          8,
+          7
+        ],
+        "sourceUrls": [
+          "https://www.visittheusa.com/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          11,
+          4,
+          10,
+          5,
+          12,
+          1,
+          2,
+          3,
+          9,
+          6,
+          8,
+          7
+        ],
+        "sourceUrls": [
+          "https://www.visittheusa.com/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "united-states",
+      "id": "jackson",
+      "name": "Jackson",
+      "area": "Grand Teton and Yellowstone",
+      "latitude": 43.4799,
+      "longitude": -110.7624,
+      "airports": [
+        [
+          "JAC",
+          "Jackson Hole"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 11,
+      "gridLatitude": 43.4799,
+      "gridLongitude": -110.7624,
+      "elevation": 2418.4,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-110.7624&latitude=43.4799&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://www.visittheusa.com/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates. Grand Teton access nearby; Yellowstone is a longer seasonal excursion. Winter road closures require separate planning; town climate does not establish park access.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": -11.41,
+          "meanDailyHighC": -5.69,
+          "meanRainMmPerDay": 2.072,
+          "meanRelativeHumidityPct": 96.74,
+          "rainyDayFraction": 0.4097
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": -10.41,
+          "meanDailyHighC": -5.35,
+          "meanRainMmPerDay": 2.7088,
+          "meanRelativeHumidityPct": 97.92,
+          "rainyDayFraction": 0.4876
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": -6.59,
+          "meanDailyHighC": -1.8,
+          "meanRainMmPerDay": 2.0551,
+          "meanRelativeHumidityPct": 95.08,
+          "rainyDayFraction": 0.4581
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": -0.94,
+          "meanDailyHighC": 4.26,
+          "meanRainMmPerDay": 1.9444,
+          "meanRelativeHumidityPct": 79.55,
+          "rainyDayFraction": 0.42
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 5.45,
+          "meanDailyHighC": 11.86,
+          "meanRainMmPerDay": 2.0523,
+          "meanRelativeHumidityPct": 70.99,
+          "rainyDayFraction": 0.4065
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 11.41,
+          "meanDailyHighC": 18.4,
+          "meanRainMmPerDay": 1.5245,
+          "meanRelativeHumidityPct": 62.86,
+          "rainyDayFraction": 0.28
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 16.97,
+          "meanDailyHighC": 24.57,
+          "meanRainMmPerDay": 0.6424,
+          "meanRelativeHumidityPct": 49.52,
+          "rainyDayFraction": 0.1742
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 15.75,
+          "meanDailyHighC": 23.65,
+          "meanRainMmPerDay": 1.2241,
+          "meanRelativeHumidityPct": 48.61,
+          "rainyDayFraction": 0.2258
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 10.68,
+          "meanDailyHighC": 18.69,
+          "meanRainMmPerDay": 1.694,
+          "meanRelativeHumidityPct": 53.09,
+          "rainyDayFraction": 0.26
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 2.33,
+          "meanDailyHighC": 9.13,
+          "meanRainMmPerDay": 1.8443,
+          "meanRelativeHumidityPct": 66.49,
+          "rainyDayFraction": 0.3419
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": -4.54,
+          "meanDailyHighC": 1.09,
+          "meanRainMmPerDay": 1.7797,
+          "meanRelativeHumidityPct": 82.36,
+          "rainyDayFraction": 0.36
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": -9.81,
+          "meanDailyHighC": -4.61,
+          "meanRainMmPerDay": 2.3318,
+          "meanRelativeHumidityPct": 93.37,
+          "rainyDayFraction": 0.4419
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for US city/coastal/mountain and South African coastal/highland/safari contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          11,
+          4,
+          10,
+          5,
+          12,
+          1,
+          2,
+          3,
+          9,
+          6,
+          8,
+          7
+        ],
+        "sourceUrls": [
+          "https://www.visittheusa.com/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          11,
+          4,
+          10,
+          5,
+          12,
+          1,
+          2,
+          3,
+          9,
+          6,
+          8,
+          7
+        ],
+        "sourceUrls": [
+          "https://www.visittheusa.com/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "south-africa",
+      "id": "cape-town",
+      "name": "Cape Town",
+      "area": "Western Cape",
+      "latitude": -33.9249,
+      "longitude": 18.4241,
+      "airports": [
+        [
+          "CPT",
+          "Cape Town"
+        ]
+      ],
+      "climateType": "standard",
+      "regionIndex": 0,
+      "gridLatitude": -33.9249,
+      "gridLongitude": 18.4241,
+      "elevation": 18.82,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=18.4241&latitude=-33.9249&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeSources": [
+        "https://www.southafrica.net/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates. Boulders Beach and Winelands require separate road excursions.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 19.51,
+          "meanDailyHighC": 21.3,
+          "meanRainMmPerDay": 0.399,
+          "meanRelativeHumidityPct": 79.21,
+          "rainyDayFraction": 0.071
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 19.44,
+          "meanDailyHighC": 21.28,
+          "meanRainMmPerDay": 0.376,
+          "meanRelativeHumidityPct": 79.55,
+          "rainyDayFraction": 0.0707
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.42,
+          "meanDailyHighC": 20.19,
+          "meanRainMmPerDay": 0.9252,
+          "meanRelativeHumidityPct": 81.76,
+          "rainyDayFraction": 0.1677
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 17.17,
+          "meanDailyHighC": 19.04,
+          "meanRainMmPerDay": 1.3482,
+          "meanRelativeHumidityPct": 80.16,
+          "rainyDayFraction": 0.1833
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 16.38,
+          "meanDailyHighC": 17.98,
+          "meanRainMmPerDay": 2.2036,
+          "meanRelativeHumidityPct": 80.66,
+          "rainyDayFraction": 0.2774
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 15.28,
+          "meanDailyHighC": 16.65,
+          "meanRainMmPerDay": 4.537,
+          "meanRelativeHumidityPct": 79.23,
+          "rainyDayFraction": 0.4133
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 14.27,
+          "meanDailyHighC": 15.6,
+          "meanRainMmPerDay": 3.7246,
+          "meanRelativeHumidityPct": 79.72,
+          "rainyDayFraction": 0.4129
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 14.15,
+          "meanDailyHighC": 15.49,
+          "meanRainMmPerDay": 2.6457,
+          "meanRelativeHumidityPct": 79.78,
+          "rainyDayFraction": 0.3613
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 14.77,
+          "meanDailyHighC": 16.23,
+          "meanRainMmPerDay": 1.6618,
+          "meanRelativeHumidityPct": 80.29,
+          "rainyDayFraction": 0.2833
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 16.13,
+          "meanDailyHighC": 17.86,
+          "meanRainMmPerDay": 0.9896,
+          "meanRelativeHumidityPct": 80.46,
+          "rainyDayFraction": 0.1677
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 17.3,
+          "meanDailyHighC": 19.02,
+          "meanRainMmPerDay": 0.6686,
+          "meanRelativeHumidityPct": 78.87,
+          "rainyDayFraction": 0.12
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.59,
+          "meanDailyHighC": 20.29,
+          "meanRainMmPerDay": 0.5042,
+          "meanRelativeHumidityPct": 78.3,
+          "rainyDayFraction": 0.1323
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for US city/coastal/mountain and South African coastal/highland/safari contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          6,
+          7,
+          8,
+          5,
+          9,
+          4,
+          10,
+          3,
+          11,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.southafrica.net/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          6,
+          7,
+          8,
+          5,
+          9,
+          4,
+          10,
+          3,
+          11,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.southafrica.net/"
+        ]
+      },
+      "events": [
+        {
+          "name": "Cape Town International Jazz Festival",
+          "months": [
+            3
+          ],
+          "prominence": 2,
+          "sourceUrl": "https://alpha.capetownjazzfest.com/"
+        }
+      ],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "south-africa",
+      "id": "hazyview",
+      "name": "Hazyview",
+      "area": "Kruger and Panorama Route",
+      "latitude": -25.0436,
+      "longitude": 31.1275,
+      "airports": [
+        [
+          "MQP",
+          "Kruger Mpumalanga"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 1,
+      "gridLatitude": -25.0436,
+      "gridLongitude": 31.1275,
+      "elevation": 600.25,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=31.1275&latitude=-25.0436&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://www.southafrica.net/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates. MQP plus road transfer. Park gates, game drives and Panorama Route excursions require separate planning.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.24,
+          "meanDailyHighC": 30.49,
+          "meanRainMmPerDay": 5.6919,
+          "meanRelativeHumidityPct": 72.21,
+          "rainyDayFraction": 0.6194
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 24.08,
+          "meanDailyHighC": 29.96,
+          "meanRainMmPerDay": 6.876,
+          "meanRelativeHumidityPct": 75.64,
+          "rainyDayFraction": 0.6537
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 23.13,
+          "meanDailyHighC": 29.38,
+          "meanRainMmPerDay": 3.6579,
+          "meanRelativeHumidityPct": 75.03,
+          "rainyDayFraction": 0.471
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 21.18,
+          "meanDailyHighC": 27.81,
+          "meanRainMmPerDay": 2.4305,
+          "meanRelativeHumidityPct": 71.66,
+          "rainyDayFraction": 0.3767
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.82,
+          "meanDailyHighC": 26.33,
+          "meanRainMmPerDay": 1.0134,
+          "meanRelativeHumidityPct": 64.1,
+          "rainyDayFraction": 0.1452
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 16.68,
+          "meanDailyHighC": 24.67,
+          "meanRainMmPerDay": 0.3562,
+          "meanRelativeHumidityPct": 58.41,
+          "rainyDayFraction": 0.0933
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 16.63,
+          "meanDailyHighC": 24.97,
+          "meanRainMmPerDay": 0.318,
+          "meanRelativeHumidityPct": 53.35,
+          "rainyDayFraction": 0.0613
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 19.22,
+          "meanDailyHighC": 27.91,
+          "meanRainMmPerDay": 0.2747,
+          "meanRelativeHumidityPct": 50.55,
+          "rainyDayFraction": 0.071
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 21.83,
+          "meanDailyHighC": 30.37,
+          "meanRainMmPerDay": 0.8882,
+          "meanRelativeHumidityPct": 51.05,
+          "rainyDayFraction": 0.1667
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 22.74,
+          "meanDailyHighC": 30.94,
+          "meanRainMmPerDay": 1.8384,
+          "meanRelativeHumidityPct": 56.79,
+          "rainyDayFraction": 0.3419
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 24.15,
+          "meanDailyHighC": 31.66,
+          "meanRainMmPerDay": 3.5945,
+          "meanRelativeHumidityPct": 61.98,
+          "rainyDayFraction": 0.52
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.89,
+          "meanDailyHighC": 31.6,
+          "meanRainMmPerDay": 5.4692,
+          "meanRelativeHumidityPct": 67.94,
+          "rainyDayFraction": 0.6226
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for US city/coastal/mountain and South African coastal/highland/safari contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          2,
+          1,
+          3,
+          12,
+          11,
+          4,
+          10,
+          5,
+          9,
+          6,
+          8,
+          7
+        ],
+        "sourceUrls": [
+          "https://www.southafrica.net/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          2,
+          1,
+          3,
+          12,
+          11,
+          4,
+          10,
+          5,
+          9,
+          6,
+          8,
+          7
+        ],
+        "sourceUrls": [
+          "https://www.southafrica.net/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "south-africa",
+      "id": "umhlanga",
+      "name": "Umhlanga",
+      "area": "KwaZulu-Natal coast",
+      "latitude": -29.7265,
+      "longitude": 31.0845,
+      "airports": [
+        [
+          "DUR",
+          "Durban King Shaka"
+        ]
+      ],
+      "climateType": "beach",
+      "regionIndex": 2,
+      "gridLatitude": -29.7265,
+      "gridLongitude": 31.0845,
+      "elevation": 116.92,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=31.0845&latitude=-29.7265&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "Beach-oriented holiday base; 25°C target.",
+      "climateTypeSources": [
+        "https://www.southafrica.net/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates. DUR plus ground transfer; represents the KwaZulu-Natal resort coast rather than every Durban neighborhood.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.41,
+          "meanDailyHighC": 27.26,
+          "meanRainMmPerDay": 3.9912,
+          "meanRelativeHumidityPct": 78.71,
+          "rainyDayFraction": 0.5419
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 24.68,
+          "meanDailyHighC": 27.43,
+          "meanRainMmPerDay": 3.4803,
+          "meanRelativeHumidityPct": 79.61,
+          "rainyDayFraction": 0.576
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 24.15,
+          "meanDailyHighC": 27.06,
+          "meanRainMmPerDay": 2.9562,
+          "meanRelativeHumidityPct": 79.13,
+          "rainyDayFraction": 0.4645
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 22.31,
+          "meanDailyHighC": 25.38,
+          "meanRainMmPerDay": 2.7801,
+          "meanRelativeHumidityPct": 76.92,
+          "rainyDayFraction": 0.4233
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 20.65,
+          "meanDailyHighC": 24.24,
+          "meanRainMmPerDay": 1.8021,
+          "meanRelativeHumidityPct": 72.14,
+          "rainyDayFraction": 0.1839
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 18.72,
+          "meanDailyHighC": 22.82,
+          "meanRainMmPerDay": 0.5648,
+          "meanRelativeHumidityPct": 67.24,
+          "rainyDayFraction": 0.09
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.14,
+          "meanDailyHighC": 22.38,
+          "meanRainMmPerDay": 0.701,
+          "meanRelativeHumidityPct": 65.38,
+          "rainyDayFraction": 0.1032
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.74,
+          "meanDailyHighC": 22.86,
+          "meanRainMmPerDay": 0.8212,
+          "meanRelativeHumidityPct": 68.97,
+          "rainyDayFraction": 0.1613
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 20.01,
+          "meanDailyHighC": 23.92,
+          "meanRainMmPerDay": 1.888,
+          "meanRelativeHumidityPct": 74.15,
+          "rainyDayFraction": 0.2767
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 20.65,
+          "meanDailyHighC": 24.12,
+          "meanRainMmPerDay": 2.9803,
+          "meanRelativeHumidityPct": 75.81,
+          "rainyDayFraction": 0.4484
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 21.91,
+          "meanDailyHighC": 25.1,
+          "meanRainMmPerDay": 3.3652,
+          "meanRelativeHumidityPct": 77.99,
+          "rainyDayFraction": 0.5433
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 23.34,
+          "meanDailyHighC": 26.3,
+          "meanRainMmPerDay": 4.4451,
+          "meanRelativeHumidityPct": 80.07,
+          "rainyDayFraction": 0.6419
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for US city/coastal/mountain and South African coastal/highland/safari contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          6,
+          7,
+          8,
+          5,
+          9,
+          4,
+          10,
+          3,
+          11,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.southafrica.net/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          6,
+          7,
+          8,
+          5,
+          9,
+          4,
+          10,
+          3,
+          11,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.southafrica.net/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "south-africa",
+      "id": "knysna",
+      "name": "Knysna",
+      "area": "Garden Route",
+      "latitude": -34.0351,
+      "longitude": 23.0465,
+      "airports": [
+        [
+          "GRJ",
+          "George"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 3,
+      "gridLatitude": -34.0351,
+      "gridLongitude": 23.0465,
+      "elevation": 349.38,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=23.0465&latitude=-34.0351&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://www.southafrica.net/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates. GRJ plus road transfer; Garden Route attractions spread over a substantial area.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 20.92,
+          "meanDailyHighC": 26.51,
+          "meanRainMmPerDay": 1.508,
+          "meanRelativeHumidityPct": 72.47,
+          "rainyDayFraction": 0.3
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 20.83,
+          "meanDailyHighC": 26.51,
+          "meanRainMmPerDay": 1.517,
+          "meanRelativeHumidityPct": 72.49,
+          "rainyDayFraction": 0.3251
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 19.64,
+          "meanDailyHighC": 25.1,
+          "meanRainMmPerDay": 1.9441,
+          "meanRelativeHumidityPct": 74.72,
+          "rainyDayFraction": 0.371
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 17.3,
+          "meanDailyHighC": 22.58,
+          "meanRainMmPerDay": 1.3915,
+          "meanRelativeHumidityPct": 72.55,
+          "rainyDayFraction": 0.26
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 15.91,
+          "meanDailyHighC": 21.06,
+          "meanRainMmPerDay": 1.1406,
+          "meanRelativeHumidityPct": 68.94,
+          "rainyDayFraction": 0.2129
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 14.01,
+          "meanDailyHighC": 18.66,
+          "meanRainMmPerDay": 1.5041,
+          "meanRelativeHumidityPct": 67.2,
+          "rainyDayFraction": 0.2267
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 13.09,
+          "meanDailyHighC": 17.99,
+          "meanRainMmPerDay": 1.2928,
+          "meanRelativeHumidityPct": 67.04,
+          "rainyDayFraction": 0.2677
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 13.24,
+          "meanDailyHighC": 18.31,
+          "meanRainMmPerDay": 1.7334,
+          "meanRelativeHumidityPct": 70.13,
+          "rainyDayFraction": 0.2968
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 14.5,
+          "meanDailyHighC": 19.62,
+          "meanRainMmPerDay": 2.0394,
+          "meanRelativeHumidityPct": 73.24,
+          "rainyDayFraction": 0.2867
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 16.38,
+          "meanDailyHighC": 21.82,
+          "meanRainMmPerDay": 1.775,
+          "meanRelativeHumidityPct": 72.18,
+          "rainyDayFraction": 0.3097
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 17.65,
+          "meanDailyHighC": 23.05,
+          "meanRainMmPerDay": 1.7029,
+          "meanRelativeHumidityPct": 72.09,
+          "rainyDayFraction": 0.2533
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 19.33,
+          "meanDailyHighC": 24.84,
+          "meanRainMmPerDay": 1.3456,
+          "meanRelativeHumidityPct": 72.19,
+          "rainyDayFraction": 0.2935
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for US city/coastal/mountain and South African coastal/highland/safari contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          6,
+          7,
+          8,
+          5,
+          9,
+          4,
+          10,
+          3,
+          11,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.southafrica.net/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          6,
+          7,
+          8,
+          5,
+          9,
+          4,
+          10,
+          3,
+          11,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.southafrica.net/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "south-africa",
+      "id": "johannesburg",
+      "name": "Johannesburg",
+      "area": "Gauteng",
+      "latitude": -26.2041,
+      "longitude": 28.0473,
+      "airports": [
+        [
+          "JNB",
+          "Johannesburg OR Tambo"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 4,
+      "gridLatitude": -26.2041,
+      "gridLongitude": 28.0473,
+      "elevation": 1538.19,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=28.0473&latitude=-26.2041&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://www.southafrica.net/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 21.72,
+          "meanDailyHighC": 28.66,
+          "meanRainMmPerDay": 3.3529,
+          "meanRelativeHumidityPct": 63.74,
+          "rainyDayFraction": 0.5161
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 21.45,
+          "meanDailyHighC": 28.19,
+          "meanRainMmPerDay": 3.5555,
+          "meanRelativeHumidityPct": 65.69,
+          "rainyDayFraction": 0.523
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 20.27,
+          "meanDailyHighC": 27.71,
+          "meanRainMmPerDay": 2.1831,
+          "meanRelativeHumidityPct": 62.31,
+          "rainyDayFraction": 0.3161
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 16.84,
+          "meanDailyHighC": 24.35,
+          "meanRainMmPerDay": 2.0463,
+          "meanRelativeHumidityPct": 63.16,
+          "rainyDayFraction": 0.2867
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 13.44,
+          "meanDailyHighC": 21.82,
+          "meanRainMmPerDay": 0.6237,
+          "meanRelativeHumidityPct": 56.21,
+          "rainyDayFraction": 0.0935
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 10.11,
+          "meanDailyHighC": 18.9,
+          "meanRainMmPerDay": 0.3321,
+          "meanRelativeHumidityPct": 54.9,
+          "rainyDayFraction": 0.05
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 9.96,
+          "meanDailyHighC": 18.98,
+          "meanRainMmPerDay": 0.18,
+          "meanRelativeHumidityPct": 50.04,
+          "rainyDayFraction": 0.0452
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 13.52,
+          "meanDailyHighC": 23.08,
+          "meanRainMmPerDay": 0.1007,
+          "meanRelativeHumidityPct": 42.81,
+          "rainyDayFraction": 0.0194
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 17.99,
+          "meanDailyHighC": 27.53,
+          "meanRainMmPerDay": 0.3354,
+          "meanRelativeHumidityPct": 38.52,
+          "rainyDayFraction": 0.08
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 19.95,
+          "meanDailyHighC": 28.8,
+          "meanRainMmPerDay": 1.7956,
+          "meanRelativeHumidityPct": 45.52,
+          "rainyDayFraction": 0.2226
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 20.91,
+          "meanDailyHighC": 28.49,
+          "meanRainMmPerDay": 3.2388,
+          "meanRelativeHumidityPct": 57.41,
+          "rainyDayFraction": 0.46
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 21.63,
+          "meanDailyHighC": 28.47,
+          "meanRainMmPerDay": 3.854,
+          "meanRelativeHumidityPct": 63.05,
+          "rainyDayFraction": 0.5742
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for US city/coastal/mountain and South African coastal/highland/safari contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          6,
+          7,
+          8,
+          5,
+          9,
+          4,
+          10,
+          3,
+          11,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.southafrica.net/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          6,
+          7,
+          8,
+          5,
+          9,
+          4,
+          10,
+          3,
+          11,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.southafrica.net/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
+    },
+    {
+      "country": "south-africa",
+      "id": "underberg",
+      "name": "Underberg",
+      "area": "Southern Drakensberg",
+      "latitude": -29.793,
+      "longitude": 29.494,
+      "airports": [
+        [
+          "DUR",
+          "Durban King Shaka"
+        ],
+        [
+          "PZB",
+          "Pietermaritzburg"
+        ]
+      ],
+      "climateType": "all-season",
+      "regionIndex": 5,
+      "gridLatitude": -29.793,
+      "gridLongitude": 29.494,
+      "elevation": 1700.6,
+      "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=29.494&latitude=-29.793&start=20160101&end=20251231&format=JSON&time-standard=LST",
+      "climateTypeReason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
+      "climateTypeSources": [
+        "https://www.southafrica.net/"
+      ],
+      "climateReviewNote": "NASA POWER/MERRA-2, 2016–2025 local solar days. Rain component uses corrected total precipitation (including snow), not ERA5 rain-only data. Coarse grid estimates can miss coastal and mountain microclimates. DUR or PZB plus substantial road transfer. Mountain/Lesotho excursions and seasonal access differ from town climate.",
+      "months": [
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.76,
+          "meanDailyHighC": 25.81,
+          "meanRainMmPerDay": 6.4332,
+          "meanRelativeHumidityPct": 71.68,
+          "rainyDayFraction": 0.7258
+        },
+        {
+          "sampleDays": 283,
+          "meanDailyC": 17.99,
+          "meanDailyHighC": 24.55,
+          "meanRainMmPerDay": 6.3619,
+          "meanRelativeHumidityPct": 75.39,
+          "rainyDayFraction": 0.7208
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 16.81,
+          "meanDailyHighC": 23.77,
+          "meanRainMmPerDay": 5.0896,
+          "meanRelativeHumidityPct": 73.19,
+          "rainyDayFraction": 0.6419
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 13.35,
+          "meanDailyHighC": 20.46,
+          "meanRainMmPerDay": 3.568,
+          "meanRelativeHumidityPct": 72.25,
+          "rainyDayFraction": 0.45
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 10.57,
+          "meanDailyHighC": 18.54,
+          "meanRainMmPerDay": 1.2737,
+          "meanRelativeHumidityPct": 64.67,
+          "rainyDayFraction": 0.1548
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 7.81,
+          "meanDailyHighC": 16.61,
+          "meanRainMmPerDay": 0.5315,
+          "meanRelativeHumidityPct": 58.51,
+          "rainyDayFraction": 0.0667
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 7.34,
+          "meanDailyHighC": 16.25,
+          "meanRainMmPerDay": 0.781,
+          "meanRelativeHumidityPct": 54.67,
+          "rainyDayFraction": 0.0903
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 9.96,
+          "meanDailyHighC": 19.41,
+          "meanRainMmPerDay": 0.6935,
+          "meanRelativeHumidityPct": 52.05,
+          "rainyDayFraction": 0.1226
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 13.77,
+          "meanDailyHighC": 23.29,
+          "meanRainMmPerDay": 1.6258,
+          "meanRelativeHumidityPct": 52.99,
+          "rainyDayFraction": 0.25
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 15.42,
+          "meanDailyHighC": 24.38,
+          "meanRainMmPerDay": 2.9152,
+          "meanRelativeHumidityPct": 58.15,
+          "rainyDayFraction": 0.429
+        },
+        {
+          "sampleDays": 300,
+          "meanDailyC": 17.19,
+          "meanDailyHighC": 25.65,
+          "meanRainMmPerDay": 3.5065,
+          "meanRelativeHumidityPct": 63.21,
+          "rainyDayFraction": 0.5933
+        },
+        {
+          "sampleDays": 310,
+          "meanDailyC": 18.48,
+          "meanDailyHighC": 26.31,
+          "meanRainMmPerDay": 5.9055,
+          "meanRelativeHumidityPct": 67.69,
+          "rainyDayFraction": 0.7871
+        }
+      ],
+      "crowds": {
+        "basis": "Provisional editorial low-to-high monthly order for US city/coastal/mountain and South African coastal/highland/safari contexts. Tourism links describe destination context, not measured crowd ranks.",
+        "lowToHigh": [
+          6,
+          7,
+          8,
+          5,
+          9,
+          4,
+          10,
+          3,
+          11,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.southafrica.net/"
+        ]
+      },
+      "prices": {
+        "basis": "Provisional accommodation-demand proxy using seasonal crowd order, not observed prices.",
+        "lowToHigh": [
+          6,
+          7,
+          8,
+          5,
+          9,
+          4,
+          10,
+          3,
+          11,
+          2,
+          12,
+          1
+        ],
+        "sourceUrls": [
+          "https://www.southafrica.net/"
+        ]
+      },
+      "events": [],
+      "eventCoverage": "Selected recurring festivals only; typical months from linked official sources, not confirmed 2026–2032 schedules. No listed event does not mean none occur. Event coverage is partial."
     }
   ],
   "destinationTypeAssignments": {
@@ -36089,6 +39126,114 @@
     },
     "costa-rica:tortuguero": {
       "name": "Tortuguero",
+      "climateType": "all-season",
+      "reason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "united-states:new-york": {
+      "name": "New York",
+      "climateType": "all-season",
+      "reason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "united-states:miami": {
+      "name": "Miami Beach",
+      "climateType": "beach",
+      "reason": "Beach-oriented holiday base; 25°C target.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "united-states:los-angeles": {
+      "name": "Los Angeles",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "united-states:flagstaff": {
+      "name": "Flagstaff",
+      "climateType": "all-season",
+      "reason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "united-states:seattle": {
+      "name": "Seattle",
+      "climateType": "all-season",
+      "reason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "united-states:san-francisco": {
+      "name": "San Francisco",
+      "climateType": "all-season",
+      "reason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "united-states:chicago": {
+      "name": "Chicago",
+      "climateType": "all-season",
+      "reason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "united-states:washington": {
+      "name": "Washington, DC",
+      "climateType": "all-season",
+      "reason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "united-states:new-orleans": {
+      "name": "New Orleans",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "united-states:honolulu": {
+      "name": "Honolulu",
+      "climateType": "beach",
+      "reason": "Beach-oriented holiday base; 25°C target.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "united-states:anchorage": {
+      "name": "Anchorage",
+      "climateType": "all-season",
+      "reason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "united-states:jackson": {
+      "name": "Jackson",
+      "climateType": "all-season",
+      "reason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "south-africa:cape-town": {
+      "name": "Cape Town",
+      "climateType": "standard",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "south-africa:hazyview": {
+      "name": "Hazyview",
+      "climateType": "all-season",
+      "reason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "south-africa:umhlanga": {
+      "name": "Umhlanga",
+      "climateType": "beach",
+      "reason": "Beach-oriented holiday base; 25°C target.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "south-africa:knysna": {
+      "name": "Knysna",
+      "climateType": "all-season",
+      "reason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "south-africa:johannesburg": {
+      "name": "Johannesburg",
+      "climateType": "all-season",
+      "reason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
+      "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "south-africa:underberg": {
+      "name": "Underberg",
       "climateType": "all-season",
       "reason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
       "status": "Authorized next-two-country rollout, 6 November 2026."
