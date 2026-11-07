@@ -1,6 +1,6 @@
 # Within-base tourist-season rankings
 
-Current rain target: 2 mm/calendar day for Warm living and All season, effective 6 November 2026. Beach remains 0; Winter uses its separate snow model. Later dated sections supersede historical settings.
+Current targets, effective 6 November 2026: Warm living 21°C / 1 mm per calendar day / 65% RH. All season remains +5 to +25°C neutral / 2 mm per calendar day / 55% RH. Beach and Winter retain their separate rules. Later dated sections supersede historical settings.
 
 Version 5 — 6 November 2026. Portugal (5 bases), Colombia (10 bases), Italy (13 bases), Spain (14 bases).
 
@@ -147,3 +147,8 @@ US twelve: New York, Flagstaff, Seattle, San Francisco, Chicago, Washington DC, 
 ## Rain target reduced to 2 mm/day — 6 November 2026
 
 Owner-approved change after external season-guide comparison. Warm living method.rainTargetMmPerDay and All season method.allSeason.rainTargetMmPerDay now both equal 2 mm per calendar day, including dry days (roughly 56–62 mm/month). Rank absolute distance from this target symmetrically within each destination. Beach remains 0 mm/day; Winter snow parameters, temperatures, humidity target, weights, within-base labels, daylight rules, source climate observations and reviewed rain exclusions remain unchanged. Rebuilt all 226 destination profiles for 2026–2032. Older sections recording 5 mm/day are historical.
+
+
+## Warm living targets: 21°C, 1 mm/day, 65% RH — 6 November 2026
+
+User explicitly changed Warm living targets. Temperature target now 21°C; rain target 1 mm per calendar day including dry days; humidity target 65%. A scoped method.warmLiving.humidityTargetPct override leaves All season and Beach at the existing global 55% humidity target. All season rain stays 2 mm/day and its temperature interval remains +5 to +25°C. Beach rain stays 0 mm/day and temperature 25°C; Winter snow rules unchanged. Weights, relative ranks/quotas, daylight penalties, destination classifications, climate observations and rain exclusions unchanged. All 226 profiles rebuilt for 2026–2032. Older target descriptions in historical sections are superseded by this section.

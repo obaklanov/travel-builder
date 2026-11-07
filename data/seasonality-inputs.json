@@ -190,10 +190,10 @@
     "limitations": "Crowd and price inputs are provisional editorial proxies and must be replaced by measured monthly data when available. Full-month averages hide short holiday spikes; climate grid cells can miss coastal and mountain microclimates.",
     "ranking": "Within each base only: ranks 1–4 BEST, 5–8 AVERAGE, 9–12 WORST. Equal values use January–December order to enforce exactly four per band.",
     "humidityTargetPct": 55,
-    "climateScoring": "Temperature: absolute distance from base-type target (standard 19°C, beach 25°C, winter −5°C); rain: absolute distance from 2 mm/calendar day; humidity: absolute distance from 55%. Rank only the base’s own 12 months; rank score = 100 × (12 − rank) / 11. Climate is 50% temperature, 30% rain, 20% humidity. Symmetric deviations, then calendar-order tie-breaking, preserve 4/4/4 bands. Beach destinations double the temperature component weight before normalizing: temperature 2/3, rain 1/5, humidity 2/15. Multiplying deviation values before ranking alone would not change ranks.",
-    "rainTargetMmPerDay": 2,
+    "climateScoring": "Temperature: absolute distance from base-type target (standard 21°C, beach 25°C, winter −5°C); Warm living rain: absolute distance from 1 mm/calendar day; All season rain: 2 mm/calendar day; Beach rain: 0 mm/day. Warm living humidity: absolute distance from 65%; All season and Beach humidity: absolute distance from 55%. Rank only the base’s own 12 months; rank score = 100 × (12 − rank) / 11. Climate is 50% temperature, 30% rain, 20% humidity. Symmetric deviations, then calendar-order tie-breaking, preserve 4/4/4 bands. Beach destinations double the temperature component weight before normalizing: temperature 2/3, rain 1/5, humidity 2/15. Multiplying deviation values before ranking alone would not change ranks.",
+    "rainTargetMmPerDay": 1,
     "temperatureTargetsC": {
-      "standard": 19,
+      "standard": 21,
       "beach": 25,
       "winter": -5,
       "all-season": null
@@ -268,6 +268,9 @@
       "definition": "Warm living only: each year, average astronomical sunrise-to-sunset daylight across all days of each month at the base latitude. The three shortest months lose 5 overall tourist points (floor zero), and cannot be BEST. Other climate types are unchanged. No replacement BEST months are promoted to preserve a quota.",
       "sourceUrl": "https://gml.noaa.gov/grad/solcalc/solareqns.PDF",
       "limitations": "Approximate astronomical daylight, not measured sunshine, cloud cover, twilight or terrain shading. Fixed small preference penalty, including bases near the equator where seasonal differences are small."
+    },
+    "warmLiving": {
+      "humidityTargetPct": 65
     }
   },
   "profiles": [
@@ -7333,7 +7336,7 @@
       "gridLongitude": -0.25,
       "elevation": 16,
       "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=51.5074&longitude=-0.1278&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FLondon&models=era5",
-      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 19°C target.",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 21°C target.",
       "climateTypeSources": [
         "https://www.visitbritain.com/en/destinations"
       ],
@@ -7699,7 +7702,7 @@
       "gridLongitude": -2.25,
       "elevation": 52,
       "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=53.4808&longitude=-2.2426&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FLondon&models=era5",
-      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 19°C target.",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 21°C target.",
       "climateTypeSources": [
         "https://www.visitbritain.com/en/destinations"
       ],
@@ -7877,7 +7880,7 @@
       "gridLongitude": -6,
       "elevation": 13,
       "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=54.5973&longitude=-5.9301&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FLondon&models=era5",
-      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 19°C target.",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 21°C target.",
       "climateTypeSources": [
         "https://www.visitbritain.com/en/destinations"
       ],
@@ -8052,7 +8055,7 @@
       "gridLongitude": -2.25,
       "elevation": 33,
       "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=51.3811&longitude=-2.359&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FLondon&models=era5",
-      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 19°C target.",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 21°C target.",
       "climateTypeSources": [
         "https://www.visitbritain.com/en/destinations"
       ],
@@ -8230,7 +8233,7 @@
       "gridLongitude": -1,
       "elevation": 22,
       "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=53.959&longitude=-1.0815&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FLondon&models=era5",
-      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 19°C target.",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 21°C target.",
       "climateTypeSources": [
         "https://www.visitbritain.com/en/destinations"
       ],
@@ -8404,7 +8407,7 @@
       "gridLongitude": -3,
       "elevation": 122,
       "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=54.3809&longitude=-2.907&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FLondon&models=era5",
-      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 19°C target.",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 21°C target.",
       "climateTypeSources": [
         "https://www.visitbritain.com/en/destinations"
       ],
@@ -8747,7 +8750,7 @@
       "gridLongitude": -3.25,
       "elevation": 14,
       "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=51.4816&longitude=-3.1791&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FLondon&models=era5",
-      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 19°C target.",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 21°C target.",
       "climateTypeSources": [
         "https://www.visitbritain.com/en/destinations"
       ],
@@ -8916,7 +8919,7 @@
       "gridLongitude": -3.75,
       "elevation": 13,
       "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=53.2801&longitude=-3.828&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FLondon&models=era5",
-      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 19°C target.",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 21°C target.",
       "climateTypeSources": [
         "https://www.visitbritain.com/en/destinations"
       ],
@@ -9597,7 +9600,7 @@
       "gridLongitude": 2.25,
       "elevation": 36,
       "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=48.8566&longitude=2.3522&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FParis&models=era5",
-      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 19°C target.",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 21°C target.",
       "climateTypeSources": [
         "https://www.france.fr/en/destination/?page=1"
       ],
@@ -9775,7 +9778,7 @@
       "gridLongitude": -0.75,
       "elevation": 49,
       "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=49.2765&longitude=-0.7025&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FParis&models=era5",
-      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 19°C target.",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 21°C target.",
       "climateTypeSources": [
         "https://www.france.fr/en/destination/?page=1"
       ],
@@ -9940,7 +9943,7 @@
       "gridLongitude": 5.25,
       "elevation": 6,
       "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=43.2965&longitude=5.3698&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FParis&models=era5",
-      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 19°C target.",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 21°C target.",
       "climateTypeSources": [
         "https://www.france.fr/en/destination/?page=1"
       ],
@@ -10280,7 +10283,7 @@
       "gridLongitude": 4.75,
       "elevation": 184,
       "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=45.764&longitude=4.8357&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FParis&models=era5",
-      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 19°C target.",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 21°C target.",
       "climateTypeSources": [
         "https://www.france.fr/en/destination/?page=1"
       ],
@@ -10619,7 +10622,7 @@
       "gridLongitude": -2,
       "elevation": 23,
       "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=48.6493&longitude=-2.0257&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FParis&models=era5",
-      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 19°C target.",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 21°C target.",
       "climateTypeSources": [
         "https://www.france.fr/en/destination/?page=1"
       ],
@@ -10788,7 +10791,7 @@
       "gridLongitude": 0.75,
       "elevation": 58,
       "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=47.3941&longitude=0.6848&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FParis&models=era5",
-      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 19°C target.",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 21°C target.",
       "climateTypeSources": [
         "https://www.france.fr/en/destination/?page=1"
       ],
@@ -11136,7 +11139,7 @@
       "gridLongitude": 5,
       "elevation": 250,
       "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=47.322&longitude=5.0415&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FParis&models=era5",
-      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 19°C target.",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 21°C target.",
       "climateTypeSources": [
         "https://www.france.fr/en/destination/?page=1"
       ],
@@ -11305,7 +11308,7 @@
       "gridLongitude": 6.25,
       "elevation": 449,
       "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=45.8992&longitude=6.1294&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FParis&models=era5",
-      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 19°C target.",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 21°C target.",
       "climateTypeSources": [
         "https://www.france.fr/en/destination/?page=1"
       ],
@@ -11483,7 +11486,7 @@
       "gridLongitude": 4.75,
       "elevation": 29,
       "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=43.9493&longitude=4.8055&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FParis&models=era5",
-      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 19°C target.",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 21°C target.",
       "climateTypeSources": [
         "https://www.france.fr/en/destination/?page=1"
       ],
@@ -11657,7 +11660,7 @@
       "gridLongitude": -0.5,
       "elevation": 16,
       "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=44.8378&longitude=-0.5792&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FParis&models=era5",
-      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 19°C target.",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 21°C target.",
       "climateTypeSources": [
         "https://www.france.fr/en/destination/?page=1"
       ],
@@ -11826,7 +11829,7 @@
       "gridLongitude": 1.25,
       "elevation": 145,
       "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=44.889&longitude=1.2167&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FParis&models=era5",
-      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 19°C target.",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 21°C target.",
       "climateTypeSources": [
         "https://www.france.fr/en/destination/?page=1"
       ],
@@ -11991,7 +11994,7 @@
       "gridLongitude": 1.5,
       "elevation": 153,
       "climateSource": "https://archive-api.open-meteo.com/v1/archive?latitude=43.6047&longitude=1.4442&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Crain_sum%2Crelative_humidity_2m_mean%2Cprecipitation_sum&timezone=Europe%2FParis&models=era5",
-      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 19°C target.",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 21°C target.",
       "climateTypeSources": [
         "https://www.france.fr/en/destination/?page=1"
       ],
@@ -12321,7 +12324,7 @@
       "gridLongitude": null,
       "elevation": 1194.76,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-77.0428&latitude=-12.0464&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 19°C target.",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 21°C target.",
       "climateTypeSources": [
         "https://www.peru.travel/es/destinos"
       ],
@@ -12495,7 +12498,7 @@
       "gridLongitude": null,
       "elevation": 3739.76,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-71.9675&latitude=-13.532&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 19°C target.",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 21°C target.",
       "climateTypeSources": [
         "https://www.peru.travel/es/destinos"
       ],
@@ -12669,7 +12672,7 @@
       "gridLongitude": null,
       "elevation": 115.02,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-73.2516&latitude=-3.7437&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 19°C target.",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 21°C target.",
       "climateTypeSources": [
         "https://www.peru.travel/es/destinos"
       ],
@@ -12843,7 +12846,7 @@
       "gridLongitude": null,
       "elevation": 3330.29,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-71.5375&latitude=-16.409&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 19°C target.",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 21°C target.",
       "climateTypeSources": [
         "https://www.peru.travel/es/destinos"
       ],
@@ -13008,7 +13011,7 @@
       "gridLongitude": null,
       "elevation": 4105.46,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-70.0219&latitude=-15.8402&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 19°C target.",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 21°C target.",
       "climateTypeSources": [
         "https://www.peru.travel/es/destinos"
       ],
@@ -13182,7 +13185,7 @@
       "gridLongitude": null,
       "elevation": 866.03,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-74.9328&latitude=-14.8359&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 19°C target.",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 21°C target.",
       "climateTypeSources": [
         "https://www.peru.travel/es/destinos"
       ],
@@ -13347,7 +13350,7 @@
       "gridLongitude": null,
       "elevation": 1872.38,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-79.0287&latitude=-8.1116&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 19°C target.",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 21°C target.",
       "climateTypeSources": [
         "https://www.peru.travel/es/destinos"
       ],
@@ -13685,7 +13688,7 @@
       "gridLongitude": null,
       "elevation": 243.34,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-69.1891&latitude=-12.5933&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 19°C target.",
+      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 21°C target.",
       "climateTypeSources": [
         "https://www.peru.travel/es/destinos"
       ],
@@ -13854,7 +13857,7 @@
       "gridLongitude": -58.3816,
       "elevation": 6.58,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-58.3816&latitude=-34.6037&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "climateTypeSources": [
         "https://www.argentina.travel/en/news/what-to-do-in-argentinas-most-sought-after-tourist-destinations"
       ],
@@ -14019,7 +14022,7 @@
       "gridLongitude": -54.5786,
       "elevation": 247.46,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-54.5786&latitude=-25.5972&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "climateTypeSources": [
         "https://www.argentina.travel/en/news/what-to-do-in-argentinas-most-sought-after-tourist-destinations"
       ],
@@ -14184,7 +14187,7 @@
       "gridLongitude": -68.8458,
       "elevation": 917.6,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-68.8458&latitude=-32.8895&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "climateTypeSources": [
         "https://www.argentina.travel/en/news/what-to-do-in-argentinas-most-sought-after-tourist-destinations"
       ],
@@ -14697,7 +14700,7 @@
       "gridLongitude": -65.4117,
       "elevation": 2168.53,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-65.4117&latitude=-24.7859&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "climateTypeSources": [
         "https://www.argentina.travel/en/news/what-to-do-in-argentinas-most-sought-after-tourist-destinations"
       ],
@@ -14866,7 +14869,7 @@
       "gridLongitude": -65.4985,
       "elevation": 3608.27,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-65.4985&latitude=-23.7464&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "climateTypeSources": [
         "https://www.argentina.travel/en/news/what-to-do-in-argentinas-most-sought-after-tourist-destinations"
       ],
@@ -15031,7 +15034,7 @@
       "gridLongitude": -64.1888,
       "elevation": 662.17,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-64.1888&latitude=-31.4201&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "climateTypeSources": [
         "https://www.argentina.travel/en/news/what-to-do-in-argentinas-most-sought-after-tourist-destinations"
       ],
@@ -15209,7 +15212,7 @@
       "gridLongitude": -65.0385,
       "elevation": 58.87,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-65.0385&latitude=-42.7692&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "climateTypeSources": [
         "https://www.argentina.travel/en/news/what-to-do-in-argentinas-most-sought-after-tourist-destinations"
       ],
@@ -15543,7 +15546,7 @@
       "gridLongitude": -43.1729,
       "elevation": 80.76,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-43.1729&latitude=-22.9068&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "climateTypeSources": [
         "https://www.gov.br/turismo/pt-br/assuntos/ultimas-noticia/viajando-na-epoca-certa/"
       ],
@@ -15716,7 +15719,7 @@
       "gridLongitude": -38.5016,
       "elevation": 53.16,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-38.5016&latitude=-12.9777&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "climateTypeSources": [
         "https://www.gov.br/turismo/pt-br/assuntos/ultimas-noticia/viajando-na-epoca-certa/"
       ],
@@ -16553,7 +16556,7 @@
       "gridLongitude": -34.877,
       "elevation": 67.48,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-34.877&latitude=-8.0476&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "climateTypeSources": [
         "https://www.gov.br/turismo/pt-br/assuntos/ultimas-noticia/viajando-na-epoca-certa/"
       ],
@@ -16895,7 +16898,7 @@
       "gridLongitude": -56.4836,
       "elevation": 282.58,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-56.4836&latitude=-21.1261&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "climateTypeSources": [
         "https://www.gov.br/turismo/pt-br/assuntos/ultimas-noticia/viajando-na-epoca-certa/"
       ],
@@ -17225,7 +17228,7 @@
       "gridLongitude": 23.7275,
       "elevation": 140.03,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=23.7275&latitude=37.9838&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "climateTypeSources": [
         "https://www.discovergreece.com/destinations"
       ],
@@ -17583,7 +17586,7 @@
       "gridLongitude": 25.4322,
       "elevation": 13.36,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=25.4322&latitude=36.4167&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "climateTypeSources": [
         "https://www.discovergreece.com/destinations"
       ],
@@ -17748,7 +17751,7 @@
       "gridLongitude": 24.018,
       "elevation": 234.53,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=24.018&latitude=35.5138&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "climateTypeSources": [
         "https://www.discovergreece.com/destinations"
       ],
@@ -17913,7 +17916,7 @@
       "gridLongitude": 19.9217,
       "elevation": 69.96,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=19.9217&latitude=39.6243&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "climateTypeSources": [
         "https://www.discovergreece.com/destinations"
       ],
@@ -18247,7 +18250,7 @@
       "gridLongitude": 22.8016,
       "elevation": 675.14,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=22.8016&latitude=37.5673&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "climateTypeSources": [
         "https://www.discovergreece.com/destinations"
       ],
@@ -18422,7 +18425,7 @@
       "gridLongitude": 28.2176,
       "elevation": 44.35,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=28.2176&latitude=36.434&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "climateTypeSources": [
         "https://www.discovergreece.com/destinations"
       ],
@@ -18752,7 +18755,7 @@
       "gridLongitude": 114.9398,
       "elevation": 32.34,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=114.9398&latitude=4.9031&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "climateTypeSources": [
         "https://www.bruneitourism.com/temburong/"
       ],
@@ -19082,7 +19085,7 @@
       "gridLongitude": 115.2625,
       "elevation": 313.73,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=115.2625&latitude=-8.5069&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "climateTypeSources": [
         "https://www.indonesia.travel/id/id"
       ],
@@ -19422,7 +19425,7 @@
       "gridLongitude": 110.3695,
       "elevation": 159.13,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=110.3695&latitude=-7.7956&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "climateTypeSources": [
         "https://www.indonesia.travel/id/id"
       ],
@@ -21446,7 +21449,7 @@
       "gridLongitude": 130.4017,
       "elevation": 185.36,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=130.4017&latitude=33.5904&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "climateTypeSources": [
         "https://www.japan.travel/en/guide/november/"
       ],
@@ -21620,7 +21623,7 @@
       "gridLongitude": 102.1333,
       "elevation": 756.19,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=102.1333&latitude=19.8833&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "climateTypeSources": [
         "https://www.tourismlaos.org/"
       ],
@@ -21794,7 +21797,7 @@
       "gridLongitude": 102.6331,
       "elevation": 222.17,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=102.6331&latitude=17.9757&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "climateTypeSources": [
         "https://www.tourismlaos.org/"
       ],
@@ -21968,7 +21971,7 @@
       "gridLongitude": 105.799,
       "elevation": 218.81,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=105.799&latitude=15.1202&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "climateTypeSources": [
         "https://www.tourismlaos.org/"
       ],
@@ -22298,7 +22301,7 @@
       "gridLongitude": 101.6869,
       "elevation": 231.94,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=101.6869&latitude=3.139&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "climateTypeSources": [
         "https://www.malaysia.travel/"
       ],
@@ -22463,7 +22466,7 @@
       "gridLongitude": 100.3288,
       "elevation": 193.57,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=100.3288&latitude=5.4141&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "climateTypeSources": [
         "https://www.malaysia.travel/"
       ],
@@ -22628,7 +22631,7 @@
       "gridLongitude": 103.137,
       "elevation": 32.49,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=103.137&latitude=5.3296&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "climateTypeSources": [
         "https://www.malaysia.travel/"
       ],
@@ -23297,7 +23300,7 @@
       "gridLongitude": 120.9842,
       "elevation": 201.16,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=120.9842&latitude=14.5995&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "climateTypeSources": [
         "https://genevapm.dfa.gov.ph/resources/visit-the-philippines"
       ],
@@ -23462,7 +23465,7 @@
       "gridLongitude": 123.8854,
       "elevation": 98.77,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=123.8854&latitude=10.3157&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "climateTypeSources": [
         "https://genevapm.dfa.gov.ph/resources/visit-the-philippines"
       ],
@@ -25138,7 +25141,7 @@
       "gridLongitude": 100.5018,
       "elevation": 4.48,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=100.5018&latitude=13.7563&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "climateTypeSources": [
         "https://www.tourismthailand.org/Destinations"
       ],
@@ -25312,7 +25315,7 @@
       "gridLongitude": 98.9853,
       "elevation": 759.08,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=98.9853&latitude=18.7883&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "climateTypeSources": [
         "https://www.tourismthailand.org/Destinations"
       ],
@@ -25985,7 +25988,7 @@
       "gridLongitude": 99.823,
       "elevation": 85.97,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=99.823&latitude=17.0077&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "climateTypeSources": [
         "https://www.tourismthailand.org/Destinations"
       ],
@@ -26506,7 +26509,7 @@
       "gridLongitude": 30.7133,
       "elevation": 455.92,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=30.7133&latitude=36.8969&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "climateTypeSources": [
         "https://goturkiye.com/"
       ],
@@ -26671,7 +26674,7 @@
       "gridLongitude": 27.1428,
       "elevation": 127.14,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=27.1428&latitude=38.4237&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "climateTypeSources": [
         "https://goturkiye.com/"
       ],
@@ -27001,7 +27004,7 @@
       "gridLongitude": 29.1187,
       "elevation": 823.25,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=29.1187&latitude=37.9164&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "climateTypeSources": [
         "https://goturkiye.com/"
       ],
@@ -27496,7 +27499,7 @@
       "gridLongitude": 108.338,
       "elevation": 155.61,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=108.338&latitude=15.8801&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "climateTypeSources": [
         "https://vietnam.travel/place-to-go/"
       ],
@@ -27681,7 +27684,7 @@
       "gridLongitude": 106.6297,
       "elevation": 46.81,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=106.6297&latitude=10.8231&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "climateTypeSources": [
         "https://vietnam.travel/place-to-go/"
       ],
@@ -28510,7 +28513,7 @@
       "gridLongitude": 31.2357,
       "elevation": 135.44,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=31.2357&latitude=30.0444&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "climateTypeSources": [
         "https://www.experienceegypt.eg/en/region/12/the-nile"
       ],
@@ -28675,7 +28678,7 @@
       "gridLongitude": 32.6396,
       "elevation": 248.37,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=32.6396&latitude=25.6872&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "climateTypeSources": [
         "https://www.experienceegypt.eg/en/region/12/the-nile"
       ],
@@ -29170,7 +29173,7 @@
       "gridLongitude": 31.6157,
       "elevation": 226.54,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=31.6157&latitude=22.3457&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "climateTypeSources": [
         "https://www.experienceegypt.eg/en/region/12/the-nile"
       ],
@@ -29345,7 +29348,7 @@
       "gridLongitude": 32.8998,
       "elevation": 253.64,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=32.8998&latitude=24.0889&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "climateTypeSources": [
         "https://www.experienceegypt.eg/en/region/12/the-nile"
       ],
@@ -29510,7 +29513,7 @@
       "gridLongitude": -7.9811,
       "elevation": 836.94,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-7.9811&latitude=31.6295&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "climateTypeSources": [
         "https://www.visitmorocco.com/en"
       ],
@@ -29675,7 +29678,7 @@
       "gridLongitude": -5.0003,
       "elevation": 575.32,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-5.0003&latitude=34.0331&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "climateTypeSources": [
         "https://www.visitmorocco.com/en"
       ],
@@ -30183,7 +30186,7 @@
       "gridLongitude": -6.937,
       "elevation": 1556.79,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-6.937&latitude=30.9335&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "climateTypeSources": [
         "https://www.visitmorocco.com/en"
       ],
@@ -30513,7 +30516,7 @@
       "gridLongitude": 151.2093,
       "elevation": 31.72,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=151.2093&latitude=-33.8688&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "climateTypeSources": [
         "https://www.australia.com/en"
       ],
@@ -31173,7 +31176,7 @@
       "gridLongitude": 115.8613,
       "elevation": 16.76,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=115.8613&latitude=-31.9523&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "climateTypeSources": [
         "https://www.australia.com/en"
       ],
@@ -33179,7 +33182,7 @@
       "gridLongitude": -96.7266,
       "elevation": 1953.28,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-96.7266&latitude=17.0732&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "climateTypeSources": [
         "https://visitmexico.com/"
       ],
@@ -33683,7 +33686,7 @@
       "gridLongitude": -89.5926,
       "elevation": 11.37,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-89.5926&latitude=20.9674&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "climateTypeSources": [
         "https://visitmexico.com/"
       ],
@@ -34022,7 +34025,7 @@
       "gridLongitude": -103.3496,
       "elevation": 1655.82,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-103.3496&latitude=20.6597&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "climateTypeSources": [
         "https://visitmexico.com/"
       ],
@@ -35700,7 +35703,7 @@
       "gridLongitude": -118.2437,
       "elevation": 395,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-118.2437&latitude=34.0522&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "climateTypeSources": [
         "https://www.visittheusa.com/"
       ],
@@ -36712,7 +36715,7 @@
       "gridLongitude": -90.0715,
       "elevation": 1.69,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-90.0715&latitude=29.9511&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "climateTypeSources": [
         "https://www.visittheusa.com/"
       ],
@@ -37382,7 +37385,7 @@
       "gridLongitude": 18.4241,
       "elevation": 18.82,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=18.4241&latitude=-33.9249&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "climateTypeReason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "climateTypeSources": [
         "https://www.southafrica.net/"
       ],
@@ -38425,13 +38428,13 @@
     "brazil:rio-de-janeiro": {
       "name": "Rio de Janeiro",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Owner-approved Brazil rollout, 6 November 2026."
     },
     "brazil:salvador": {
       "name": "Salvador",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Owner-approved Brazil rollout, 6 November 2026."
     },
     "brazil:manaus": {
@@ -38461,7 +38464,7 @@
     "brazil:recife-olinda": {
       "name": "Recife & Olinda",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Owner-approved Brazil rollout, 6 November 2026."
     },
     "brazil:florianopolis": {
@@ -38473,7 +38476,7 @@
     "brazil:bonito": {
       "name": "Bonito",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Owner-approved Brazil rollout, 6 November 2026."
     },
     "brazil:pocone": {
@@ -38485,7 +38488,7 @@
     "greece:athens": {
       "name": "Athens",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Owner-approved Greece rollout, 6 November 2026; Ioannina excluded."
     },
     "greece:thessaloniki": {
@@ -38497,19 +38500,19 @@
     "greece:fira": {
       "name": "Fira",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Owner-approved Greece rollout, 6 November 2026; Ioannina excluded."
     },
     "greece:chania": {
       "name": "Chania",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Owner-approved Greece rollout, 6 November 2026; Ioannina excluded."
     },
     "greece:corfu-town": {
       "name": "Corfu Town",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Owner-approved Greece rollout, 6 November 2026; Ioannina excluded."
     },
     "greece:kalambaka": {
@@ -38521,13 +38524,13 @@
     "greece:nafplio": {
       "name": "Nafplio",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Owner-approved Greece rollout, 6 November 2026; Ioannina excluded."
     },
     "greece:rhodes-town": {
       "name": "Rhodes Town",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Owner-approved Greece rollout, 6 November 2026; Ioannina excluded."
     },
     "greece:naxos-town": {
@@ -38539,7 +38542,7 @@
     "brunei:bandar-seri-begawan": {
       "name": "Bandar Seri Begawan",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Owner-approved Brunei/Indonesia rollout, 6 November 2026."
     },
     "brunei:bangar": {
@@ -38551,7 +38554,7 @@
     "indonesia:ubud": {
       "name": "Ubud",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Owner-approved Brunei/Indonesia rollout, 6 November 2026."
     },
     "indonesia:jakarta": {
@@ -38563,7 +38566,7 @@
     "indonesia:yogyakarta": {
       "name": "Yogyakarta",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Owner-approved Brunei/Indonesia rollout, 6 November 2026."
     },
     "indonesia:senggigi": {
@@ -38635,25 +38638,25 @@
     "japan:fukuoka": {
       "name": "Fukuoka",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Owner-approved Japan/Laos rollout, 6 November 2026."
     },
     "laos:luang-prabang": {
       "name": "Luang Prabang",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Owner-approved Japan/Laos rollout, 6 November 2026."
     },
     "laos:vientiane": {
       "name": "Vientiane",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Owner-approved Japan/Laos rollout, 6 November 2026."
     },
     "laos:pakse": {
       "name": "Pakse",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Owner-approved Japan/Laos rollout, 6 November 2026."
     },
     "laos:vang-vieng": {
@@ -38665,19 +38668,19 @@
     "malaysia:kuala-lumpur": {
       "name": "Kuala Lumpur",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Authorized autonomous Malaysia/Philippines rollout, 6 November 2026."
     },
     "malaysia:george-town": {
       "name": "George Town",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Authorized autonomous Malaysia/Philippines rollout, 6 November 2026."
     },
     "malaysia:kuala-terengganu": {
       "name": "Kuala Terengganu",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Authorized autonomous Malaysia/Philippines rollout, 6 November 2026."
     },
     "malaysia:kota-kinabalu": {
@@ -38701,13 +38704,13 @@
     "philippines:manila": {
       "name": "Manila",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Authorized autonomous Malaysia/Philippines rollout, 6 November 2026."
     },
     "philippines:cebu-city": {
       "name": "Cebu City",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Authorized autonomous Malaysia/Philippines rollout, 6 November 2026."
     },
     "philippines:el-nido": {
@@ -38767,13 +38770,13 @@
     "thailand:bangkok": {
       "name": "Bangkok",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Authorized autonomous South Korea/Thailand rollout, 6 November 2026."
     },
     "thailand:chiang-mai": {
       "name": "Chiang Mai",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Authorized autonomous South Korea/Thailand rollout, 6 November 2026."
     },
     "thailand:kata": {
@@ -38797,7 +38800,7 @@
     "thailand:sukhothai": {
       "name": "Sukhothai",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Authorized autonomous South Korea/Thailand rollout, 6 November 2026."
     },
     "turkey:istanbul": {
@@ -38815,13 +38818,13 @@
     "turkey:antalya": {
       "name": "Antalya",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Authorized autonomous Türkiye/Vietnam rollout, 6 November 2026."
     },
     "turkey:izmir": {
       "name": "İzmir",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Authorized autonomous Türkiye/Vietnam rollout, 6 November 2026."
     },
     "turkey:trabzon": {
@@ -38833,7 +38836,7 @@
     "turkey:pamukkale": {
       "name": "Pamukkale",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Authorized autonomous Türkiye/Vietnam rollout, 6 November 2026."
     },
     "turkey:oludeniz": {
@@ -38851,13 +38854,13 @@
     "vietnam:hoi-an": {
       "name": "Hoi An",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Authorized autonomous Türkiye/Vietnam rollout, 6 November 2026."
     },
     "vietnam:ho-chi-minh-city": {
       "name": "Ho Chi Minh City",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Authorized autonomous Türkiye/Vietnam rollout, 6 November 2026."
     },
     "vietnam:duong-dong": {
@@ -38887,13 +38890,13 @@
     "egypt:cairo": {
       "name": "Cairo",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Authorized autonomous Egypt/Morocco rollout, 6 November 2026."
     },
     "egypt:luxor": {
       "name": "Luxor",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Authorized autonomous Egypt/Morocco rollout, 6 November 2026."
     },
     "egypt:hurghada": {
@@ -38911,25 +38914,25 @@
     "egypt:abu-simbel": {
       "name": "Abu Simbel",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Authorized autonomous Egypt/Morocco rollout, 6 November 2026."
     },
     "egypt:aswan": {
       "name": "Aswan",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Authorized autonomous Egypt/Morocco rollout, 6 November 2026."
     },
     "morocco:marrakech": {
       "name": "Marrakech",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Authorized autonomous Egypt/Morocco rollout, 6 November 2026."
     },
     "morocco:fes": {
       "name": "Fes",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Authorized autonomous Egypt/Morocco rollout, 6 November 2026."
     },
     "morocco:essaouira": {
@@ -38947,7 +38950,7 @@
     "morocco:ouarzazate": {
       "name": "Ouarzazate",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Authorized autonomous Egypt/Morocco rollout, 6 November 2026."
     },
     "morocco:chefchaouen": {
@@ -38959,7 +38962,7 @@
     "australia:sydney": {
       "name": "Sydney",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Authorized autonomous Australia/New Zealand rollout, 6 November 2026."
     },
     "australia:melbourne": {
@@ -38983,7 +38986,7 @@
     "australia:perth": {
       "name": "Perth",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Authorized autonomous Australia/New Zealand rollout, 6 November 2026."
     },
     "australia:darwin": {
@@ -39055,7 +39058,7 @@
     "mexico:oaxaca": {
       "name": "Oaxaca",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Authorized next-two-country rollout, 6 November 2026."
     },
     "mexico:puerto-vallarta": {
@@ -39073,7 +39076,7 @@
     "mexico:merida": {
       "name": "Mérida",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Authorized next-two-country rollout, 6 November 2026."
     },
     "mexico:guanajuato": {
@@ -39085,7 +39088,7 @@
     "mexico:guadalajara": {
       "name": "Guadalajara",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Authorized next-two-country rollout, 6 November 2026."
     },
     "mexico:san-cristobal": {
@@ -39145,7 +39148,7 @@
     "united-states:los-angeles": {
       "name": "Los Angeles",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Authorized next-two-country rollout, 6 November 2026."
     },
     "united-states:flagstaff": {
@@ -39181,7 +39184,7 @@
     "united-states:new-orleans": {
       "name": "New Orleans",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Authorized next-two-country rollout, 6 November 2026."
     },
     "united-states:honolulu": {
@@ -39205,7 +39208,7 @@
     "south-africa:cape-town": {
       "name": "Cape Town",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Authorized next-two-country rollout, 6 November 2026."
     },
     "south-africa:hazyview": {

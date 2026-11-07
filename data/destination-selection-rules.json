@@ -2768,13 +2768,13 @@
     "brazil:rio-de-janeiro": {
       "name": "Rio de Janeiro",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Owner-approved Brazil rollout, 6 November 2026."
     },
     "brazil:salvador": {
       "name": "Salvador",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Owner-approved Brazil rollout, 6 November 2026."
     },
     "brazil:manaus": {
@@ -2804,7 +2804,7 @@
     "brazil:recife-olinda": {
       "name": "Recife & Olinda",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Owner-approved Brazil rollout, 6 November 2026."
     },
     "brazil:florianopolis": {
@@ -2816,7 +2816,7 @@
     "brazil:bonito": {
       "name": "Bonito",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Owner-approved Brazil rollout, 6 November 2026."
     },
     "brazil:pocone": {
@@ -2828,7 +2828,7 @@
     "greece:athens": {
       "name": "Athens",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Owner-approved Greece rollout, 6 November 2026; Ioannina excluded."
     },
     "greece:thessaloniki": {
@@ -2840,19 +2840,19 @@
     "greece:fira": {
       "name": "Fira",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Owner-approved Greece rollout, 6 November 2026; Ioannina excluded."
     },
     "greece:chania": {
       "name": "Chania",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Owner-approved Greece rollout, 6 November 2026; Ioannina excluded."
     },
     "greece:corfu-town": {
       "name": "Corfu Town",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Owner-approved Greece rollout, 6 November 2026; Ioannina excluded."
     },
     "greece:kalambaka": {
@@ -2864,13 +2864,13 @@
     "greece:nafplio": {
       "name": "Nafplio",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Owner-approved Greece rollout, 6 November 2026; Ioannina excluded."
     },
     "greece:rhodes-town": {
       "name": "Rhodes Town",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Owner-approved Greece rollout, 6 November 2026; Ioannina excluded."
     },
     "greece:naxos-town": {
@@ -2882,7 +2882,7 @@
     "brunei:bandar-seri-begawan": {
       "name": "Bandar Seri Begawan",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Owner-approved Brunei/Indonesia rollout, 6 November 2026."
     },
     "brunei:bangar": {
@@ -2894,7 +2894,7 @@
     "indonesia:ubud": {
       "name": "Ubud",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Owner-approved Brunei/Indonesia rollout, 6 November 2026."
     },
     "indonesia:jakarta": {
@@ -2906,7 +2906,7 @@
     "indonesia:yogyakarta": {
       "name": "Yogyakarta",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Owner-approved Brunei/Indonesia rollout, 6 November 2026."
     },
     "indonesia:senggigi": {
@@ -2978,25 +2978,25 @@
     "japan:fukuoka": {
       "name": "Fukuoka",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Owner-approved Japan/Laos rollout, 6 November 2026."
     },
     "laos:luang-prabang": {
       "name": "Luang Prabang",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Owner-approved Japan/Laos rollout, 6 November 2026."
     },
     "laos:vientiane": {
       "name": "Vientiane",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Owner-approved Japan/Laos rollout, 6 November 2026."
     },
     "laos:pakse": {
       "name": "Pakse",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Owner-approved Japan/Laos rollout, 6 November 2026."
     },
     "laos:vang-vieng": {
@@ -3008,19 +3008,19 @@
     "malaysia:kuala-lumpur": {
       "name": "Kuala Lumpur",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Authorized autonomous Malaysia/Philippines rollout, 6 November 2026."
     },
     "malaysia:george-town": {
       "name": "George Town",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Authorized autonomous Malaysia/Philippines rollout, 6 November 2026."
     },
     "malaysia:kuala-terengganu": {
       "name": "Kuala Terengganu",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Authorized autonomous Malaysia/Philippines rollout, 6 November 2026."
     },
     "malaysia:kota-kinabalu": {
@@ -3044,13 +3044,13 @@
     "philippines:manila": {
       "name": "Manila",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Authorized autonomous Malaysia/Philippines rollout, 6 November 2026."
     },
     "philippines:cebu-city": {
       "name": "Cebu City",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Authorized autonomous Malaysia/Philippines rollout, 6 November 2026."
     },
     "philippines:el-nido": {
@@ -3110,13 +3110,13 @@
     "thailand:bangkok": {
       "name": "Bangkok",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Authorized autonomous South Korea/Thailand rollout, 6 November 2026."
     },
     "thailand:chiang-mai": {
       "name": "Chiang Mai",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Authorized autonomous South Korea/Thailand rollout, 6 November 2026."
     },
     "thailand:kata": {
@@ -3140,7 +3140,7 @@
     "thailand:sukhothai": {
       "name": "Sukhothai",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Authorized autonomous South Korea/Thailand rollout, 6 November 2026."
     },
     "turkey:istanbul": {
@@ -3158,13 +3158,13 @@
     "turkey:antalya": {
       "name": "Antalya",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Authorized autonomous Türkiye/Vietnam rollout, 6 November 2026."
     },
     "turkey:izmir": {
       "name": "İzmir",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Authorized autonomous Türkiye/Vietnam rollout, 6 November 2026."
     },
     "turkey:trabzon": {
@@ -3176,7 +3176,7 @@
     "turkey:pamukkale": {
       "name": "Pamukkale",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Authorized autonomous Türkiye/Vietnam rollout, 6 November 2026."
     },
     "turkey:oludeniz": {
@@ -3194,13 +3194,13 @@
     "vietnam:hoi-an": {
       "name": "Hoi An",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Authorized autonomous Türkiye/Vietnam rollout, 6 November 2026."
     },
     "vietnam:ho-chi-minh-city": {
       "name": "Ho Chi Minh City",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Authorized autonomous Türkiye/Vietnam rollout, 6 November 2026."
     },
     "vietnam:duong-dong": {
@@ -3230,13 +3230,13 @@
     "egypt:cairo": {
       "name": "Cairo",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Authorized autonomous Egypt/Morocco rollout, 6 November 2026."
     },
     "egypt:luxor": {
       "name": "Luxor",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Authorized autonomous Egypt/Morocco rollout, 6 November 2026."
     },
     "egypt:hurghada": {
@@ -3254,25 +3254,25 @@
     "egypt:abu-simbel": {
       "name": "Abu Simbel",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Authorized autonomous Egypt/Morocco rollout, 6 November 2026."
     },
     "egypt:aswan": {
       "name": "Aswan",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Authorized autonomous Egypt/Morocco rollout, 6 November 2026."
     },
     "morocco:marrakech": {
       "name": "Marrakech",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Authorized autonomous Egypt/Morocco rollout, 6 November 2026."
     },
     "morocco:fes": {
       "name": "Fes",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Authorized autonomous Egypt/Morocco rollout, 6 November 2026."
     },
     "morocco:essaouira": {
@@ -3290,7 +3290,7 @@
     "morocco:ouarzazate": {
       "name": "Ouarzazate",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Authorized autonomous Egypt/Morocco rollout, 6 November 2026."
     },
     "morocco:chefchaouen": {
@@ -3302,7 +3302,7 @@
     "australia:sydney": {
       "name": "Sydney",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Authorized autonomous Australia/New Zealand rollout, 6 November 2026."
     },
     "australia:melbourne": {
@@ -3326,7 +3326,7 @@
     "australia:perth": {
       "name": "Perth",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Authorized autonomous Australia/New Zealand rollout, 6 November 2026."
     },
     "australia:darwin": {
@@ -3398,7 +3398,7 @@
     "mexico:oaxaca": {
       "name": "Oaxaca",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Authorized next-two-country rollout, 6 November 2026."
     },
     "mexico:puerto-vallarta": {
@@ -3416,7 +3416,7 @@
     "mexico:merida": {
       "name": "Mérida",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Authorized next-two-country rollout, 6 November 2026."
     },
     "mexico:guanajuato": {
@@ -3428,7 +3428,7 @@
     "mexico:guadalajara": {
       "name": "Guadalajara",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Authorized next-two-country rollout, 6 November 2026."
     },
     "mexico:san-cristobal": {
@@ -3488,7 +3488,7 @@
     "united-states:los-angeles": {
       "name": "Los Angeles",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Authorized next-two-country rollout, 6 November 2026."
     },
     "united-states:flagstaff": {
@@ -3524,7 +3524,7 @@
     "united-states:new-orleans": {
       "name": "New Orleans",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Authorized next-two-country rollout, 6 November 2026."
     },
     "united-states:honolulu": {
@@ -3548,7 +3548,7 @@
     "south-africa:cape-town": {
       "name": "Cape Town",
       "climateType": "standard",
-      "reason": "Warm living: mixed-purpose cultural or scenic base; 19°C target.",
+      "reason": "Warm living: mixed-purpose cultural or scenic base; 21°C target.",
       "status": "Authorized next-two-country rollout, 6 November 2026."
     },
     "south-africa:hazyview": {
