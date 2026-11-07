@@ -1,10 +1,12 @@
 # Within-base tourist-season rankings
 
+Current rain target: 2 mm/calendar day for Warm living and All season, effective 6 November 2026. Beach remains 0; Winter uses its separate snow model. Later dated sections supersede historical settings.
+
 Version 5 — 6 November 2026. Portugal (5 bases), Colombia (10 bases), Italy (13 bases), Spain (14 bases).
 
 Compare each base only with its own 12 calendar months. Rank 1–4 BEST, 5–8 AVERAGE, 9–12 WORST, for each climate component, the combined climate score, and the final tourist score. Equal values use January–December order; forcing equal-sized bands can separate identical or near-identical months. BEST is relative, not an absolute weather or safety guarantee.
 
-Temperature: smallest absolute distance from the base’s primary-type target: standard 19°C, beach 25°C, winter −5°C. Rain: smallest absolute distance from 5 mm/calendar day, including dry days. Humidity: smallest distance from editable 55% RH target (comfort, not health). Each rank becomes 100 × (12 − rank) / 11. This replaces clipped absolute scores so very wet bases still distinguish wetter and drier months.
+Temperature: smallest absolute distance from the base’s primary-type target: standard 19°C, beach 25°C, winter −5°C. Rain: smallest absolute distance from 2 mm/calendar day, including dry days. Humidity: smallest distance from editable 55% RH target (comfort, not health). Each rank becomes 100 × (12 − rank) / 11. This replaces clipped absolute scores so very wet bases still distinguish wetter and drier months.
 
 Climate = 50% temperature + 30% rain + 20% humidity rank scores. Tourist score = 60% climate + 20% festivals + 10% crowds + 10% prices. Rank the resulting scores within the base and year, descending, to label four/four/four months. Preserve full precision until display.
 
@@ -140,3 +142,8 @@ Country-scale selection: Mexico ten (large population/area, high historical/arch
 ## United States and South Africa — 6 November 2026
 
 US twelve: New York, Flagstaff, Seattle, San Francisco, Chicago, Washington DC, Anchorage and Jackson All season; Los Angeles and New Orleans Warm living; Miami Beach and Honolulu Beach. Breadth reflects continental size/population, architecture/cultural centers, desert/highland, Alaska and Hawaii; not an exhaustive state inventory. South Africa six: Cape Town Warm living; Umhlanga Beach; Hazyview, Knysna, Johannesburg and Underberg All season. Covers Cape heritage, safari, coast, Garden Route, Gauteng history and Drakensberg without extra nearby-city entries. Existing slots retained; new places appended. All Treasures covered through named stay or identified excursion. Grand Canyon from Flagstaff is a substantial South Rim road excursion; town climate differs from canyon floor. Jackson represents Grand Teton with longer seasonal Yellowstone excursions; road closures require separate checking. Hazyview uses MQP, not distant JNB; Knysna uses GRJ; Underberg requires road transfer. NASA POWER/MERRA-2 2016–2025 local-solar daily climate with total precipitation. Crowd/price orders remain editorial proxies; Cherry Blossom, Jazz Fest and Cape Town Jazz Festival typical-month coverage is partial. Climate and daylight formulas unchanged. Rain screen applied to named points; monthly climate does not establish park access or safety. Total 226 scored destinations and 226 rain reviews.
+
+
+## Rain target reduced to 2 mm/day — 6 November 2026
+
+Owner-approved change after external season-guide comparison. Warm living method.rainTargetMmPerDay and All season method.allSeason.rainTargetMmPerDay now both equal 2 mm per calendar day, including dry days (roughly 56–62 mm/month). Rank absolute distance from this target symmetrically within each destination. Beach remains 0 mm/day; Winter snow parameters, temperatures, humidity target, weights, within-base labels, daylight rules, source climate observations and reviewed rain exclusions remain unchanged. Rebuilt all 226 destination profiles for 2026–2032. Older sections recording 5 mm/day are historical.
