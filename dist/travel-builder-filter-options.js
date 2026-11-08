@@ -182,66 +182,105 @@ window.TRAVEL_BUILDER_FILTERS = [
     "id": "temperature",
     "label": "Temperature",
     "group": "weather",
-    "pending": true,
+    "pending": false,
     "options": [
-      "Any",
-      "Cool · under 15°C",
-      "Mild · 15–24°C",
-      "Warm · 25–30°C",
-      "Hot · over 30°C"
+      [
+        "",
+        "No preference"
+      ],
+      [
+        "cool",
+        "Cool (<10°C)"
+      ],
+      [
+        "mild",
+        "Mild (10–<20°C)"
+      ],
+      [
+        "warm",
+        "Warm (20–27°C)"
+      ],
+      [
+        "hot",
+        "Hot (>27°C)"
+      ]
     ],
     "primary": true,
     "priority": true,
+    "defaultPriority": "prefer",
+    "help": "Historical monthly daily-average temperature, including nights; not a forecast."
+  },
+  {
+    "id": "humidity",
+    "label": "Humidity",
+    "group": "weather",
+    "primary": false,
+    "pending": false,
+    "options": [
+      [
+        "",
+        "No preference"
+      ],
+      [
+        "very-dry",
+        "Very dry (<30%)"
+      ],
+      [
+        "dry",
+        "Dry (30–<45%)"
+      ],
+      [
+        "balanced",
+        "Balanced (45–<60%)"
+      ],
+      [
+        "humid",
+        "Humid (60–80%)"
+      ],
+      [
+        "very-humid",
+        "Very humid (>80%)"
+      ]
+    ],
+    "help": "Historical monthly average relative humidity; not a forecast.",
+    "priority": true,
     "defaultPriority": "prefer"
   },
-{
-  "id": "humidity",
-  "label": "Humidity",
-  "group": "weather",
-  "primary": false,
-  "pending": true,
-  "options": [
-    [
-      "",
-      "No preference"
-    ],
-    [
-      "very-dry",
-      "1 · Very dry"
-    ],
-    [
-      "dry",
-      "2 · Dry"
-    ],
-    [
-      "balanced",
-      "3 · Balanced"
-    ],
-    [
-      "humid",
-      "4 · Humid"
-    ],
-    [
-      "very-humid",
-      "5 · Very humid"
-    ]
-  ],
-  "help": "Requires reviewed local monthly humidity data; this preference is not verified yet."
-},
   {
     "id": "rain",
     "label": "Rain tolerance",
     "group": "weather",
-    "pending": true,
+    "pending": false,
     "options": [
-      "Any",
-      "Dry preferred",
-      "Some rain is fine",
-      "Rain is fine"
+      [
+        "",
+        "No preference"
+      ],
+      [
+        "very-dry",
+        "Very dry (<0.1 mm/day)"
+      ],
+      [
+        "light",
+        "Light rain (0.1–1 mm/day)"
+      ],
+      [
+        "moderate",
+        "Moderate rain (>1–3 mm/day)"
+      ],
+      [
+        "rainy",
+        "Rainy (>3–10 mm/day)"
+      ],
+      [
+        "very-rainy",
+        "Very rainy (>10 mm/day)"
+      ]
     ],
     "primary": false,
     "priority": true,
-    "defaultPriority": "prefer"
+    "defaultPriority": "prefer",
+    "help": "Maximum tolerated historical monthly-average rainfall per day. Drier conditions also match. Very rainy accepts any rainfall level."
   },
   {
     "id": "interests",
@@ -1131,24 +1170,24 @@ window.TRAVEL_BUILDER_FILTERS = [
     "priority": true,
     "defaultPriority": "prefer"
   },
-{
-  "id": "venomousWildlife",
-  "label": "Wildlife exposure you prefer to avoid",
-  "group": "health",
-  "options": [
-    "Scorpions",
-    "Venomous marine life",
-    "Venomous snakes",
-    "Venomous spiders"
-  ],
-  "pending": true,
-  "primary": true,
-  "multiple": true,
-  "priority": true,
-  "defaultPriority": "prefer",
-  "presentation": "tags",
-  "help": "Select wildlife exposure you prefer to avoid. Requires reviewed regional and seasonal exposure data; presence alone does not measure risk."
-},
+  {
+    "id": "venomousWildlife",
+    "label": "Wildlife exposure you prefer to avoid",
+    "group": "health",
+    "options": [
+      "Scorpions",
+      "Venomous marine life",
+      "Venomous snakes",
+      "Venomous spiders"
+    ],
+    "pending": true,
+    "primary": true,
+    "multiple": true,
+    "priority": true,
+    "defaultPriority": "prefer",
+    "presentation": "tags",
+    "help": "Select wildlife exposure you prefer to avoid. Requires reviewed regional and seasonal exposure data; presence alone does not measure risk."
+  },
   {
     "id": "diet",
     "label": "Food preferences",
@@ -1162,7 +1201,7 @@ window.TRAVEL_BUILDER_FILTERS = [
       "Known for spicy food",
       "Known for street food",
       "Known for vegetarian dishes"
-],
+    ],
     "pending": true,
     "primary": true,
     "multiple": true,
@@ -1260,8 +1299,8 @@ window.TRAVEL_BUILDER_FILTERS = [
     "shortLabels": {
       "": "Any",
       "lower": "$ Lower",
-      "middle": "$$ Mid",
-      "higher": "$$$ Higher"
+      "middle": "$ Mid",
+      "higher": "$ Higher"
     }
   },
   {

@@ -158,3 +158,6 @@ Supersedes earlier overall weighting and daylight sections. All destination type
 
 ## Rain target and Cusco — 7 November 2026
 Supersedes earlier nonzero rain targets: Warm living and All season both target 1 mm per calendar day; Beach retains 0 mm. Winter uses snow measures rather than a rain target. Cusco is now All season (neutral +5 to +25°C). Other inputs, humidity targets, weights and exclusions unchanged.
+
+## Homepage climate matching — 8 November 2026
+Temperature uses monthly daily means: Cool <10°C, Mild 10–<20°C, Warm 20–27°C, Hot >27°C. Relative humidity bands: <30%, 30–<45%, 45–<60%, 60–80%, >80%. Rain tolerance ceilings use average mm/day: <0.1, <=1, <=3, <=10, unlimited. Drier months satisfy a higher rain tolerance. Must-have checks every touched month; nice-to-have uses trip-day-weighted means and a graded proximity score. Missing data fails hard requirements and is disclosed for soft preferences. Climate matching is separate from default seasonality ratings; existing suitability exclusions remain enforced.

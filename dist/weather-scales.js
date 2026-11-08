@@ -26,11 +26,11 @@
       if(index===3)art+='<path d="M74 54q-5 5 0 10t0 10m9-20q-5 5 0 10t0 10" fill="none" stroke="#df7665" stroke-width="2"/>';
     }else{
       art=(index===0?sun:'')+cloud;
-      if(index>0)for(let i=0;i<(index===1?3:6);i++)art+='<path d="M'+(27+i*7)+' 64l-3 7" stroke="#6a9fc8" stroke-width="2.5" stroke-linecap="round"/>';
+      if(index>0)for(let i=0;i<Math.min(9,index*2+1);i++)art+='<path d="M'+(27+i*7)+' 64l-3 7" stroke="#6a9fc8" stroke-width="2.5" stroke-linecap="round"/>';
     }
     return '<svg viewBox="0 0 100 84" aria-hidden="true">'+art+'</svg>';
   }
-  for(const [id,names] of [['temperature',['Cool','Mild','Warm','Hot']],['rain',['Dry','Some rain','Rain is fine']],['humidity',['1','2','3','4','5']],['advisory',['1','2','3','4','5']]]){
+  for(const [id,names] of [['temperature',['Cool','Mild','Warm','Hot']],['rain',['Very dry','Light','Moderate','Rainy','Very rainy']],['humidity',['1','2','3','4','5']],['advisory',['1','2','3','4','5']]]){
     const field=document.querySelector('#builder-'+id),slot=field.closest('.builder-slot'),label=slot.querySelector('.builder-field-label'),choices=[...field.options].slice(1);
     field.hidden=true;field.classList.add('variant-source');field.setAttribute('aria-hidden','true');slot.classList.add('weather-scale-slot');
     const wrap=document.createElement('div');wrap.className='weather-scale';
@@ -42,7 +42,7 @@
     const buttons=choices.map((choice,i)=>{const button=document.createElement('button');button.type='button';button.className='variant-button';button.innerHTML=picture(id,i)+'<span>'+names[i]+'</span>';button.title=choice.textContent;button.setAttribute('aria-label',choice.textContent);button.addEventListener('click',()=>choose(i));steps.append(button);return button;});
     const any=document.createElement('button');any.type='button';any.className='variant-button weather-scale-any';any.textContent='No preference';any.addEventListener('click',()=>{field.value='';field.dispatchEvent(new Event('change',{bubbles:true}));});
     range.addEventListener('input',()=>choose(Number(range.value)-1));range.addEventListener('pointerdown',()=>{if(!field.value)choose(Number(range.value)-1);});range.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();choose(Number(range.value)-1);}});
-    function sync(){const index=choices.findIndex(c=>c.value===field.value),selected=index>=0,current=selected?index:1;range.value=String(current+1);range.setAttribute('aria-valuetext',selected?choices[index].textContent:'No preference; move to choose');scene.innerHTML=picture(id,current);scene.classList.toggle('is-unset',!selected);caption.textContent=selected?choices[index].textContent:'No preference';any.setAttribute('aria-pressed',String(!selected));buttons.forEach((b,i)=>b.setAttribute('aria-pressed',String(selected&&i===index)));}
-    wrap.append(scene,caption,range);wrap.append(any);field.after(wrap);form.addEventListener('change',sync);sync();
+    function sync(){const index=choices.findIndex(c=>c.value===field.value),selected=index>=0,current=selected?index:1;range.value=String(current+1);range.setAttribute('aria-valuetext',selected?choices[index].textContent:'No preference; move to choose');scene.innerHTML=picture(id,current);scene.classList.toggle('is-unset',!selected);caption.replaceChildren();const text=selected?choices[index].textContent:'No preference',parts=text.match(/^(.*?)\s*(\([^)]*\))$/);if(parts){caption.append(document.createTextNode(parts[1]+' '));const criteria=document.createElement('small');criteria.textContent=parts[2];caption.append(criteria);}else caption.textContent=text;any.setAttribute('aria-pressed',String(!selected));buttons.forEach((b,i)=>b.setAttribute('aria-pressed',String(selected&&i===index)));}
+    wrap.append(scene,caption,range);if(['temperature','humidity','rain'].includes(id)){const criteria=document.createElement('p');criteria.className='weather-scale-criteria';criteria.textContent=choices.map(c=>c.textContent).join(' · ');wrap.append(criteria);}wrap.append(any);field.after(wrap);form.addEventListener('change',sync);sync();
   }
 })();

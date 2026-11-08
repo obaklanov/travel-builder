@@ -356,3 +356,7 @@
 .design-create{min-height:0;padding:8px 0 14px;gap:12px;}
 @media(max-width:1100px){.designing-canvas{grid-template-areas:"party where" "travel budget" "create create" "weather city" "experience needs" "health health";}}
 @media(max-width:650px){.designing-canvas{grid-template-areas:"party" "where" "travel" "budget" "create" "weather" "city" "experience" "needs" "health";}.design-create{position:static;}}
+
+.weather-scale-caption small{font-size:11px;display:inline-block;font-weight:400;}.weather-climate-summary{font-size:13px;color:#526580;line-height:1.6;}
+
+.weather-scale-criteria{font-size:11px;line-height:1.5;color:var(--category-label);text-align:center;margin:8px 0;}

@@ -30,6 +30,12 @@
     const amount=c=>c.costs.reduce((sum,n)=>sum+n,0),unique=[...new Set(Object.values(data).map(amount))].sort((a,b)=>a-b);
     return Object.fromEntries(Object.entries(data).map(([key,c])=>[key,['lower','middle','higher'][Math.min(2,Math.floor(unique.indexOf(amount(c))*3/Math.max(1,unique.length)))]]));
   }
+
+  const weatherBands={rain:{'very-dry':[-Infinity,.1,false],light:[-Infinity,1,true],moderate:[-Infinity,3,true],rainy:[-Infinity,10,true],'very-rainy':[-Infinity,Infinity,false]},temperature:{cool:[-Infinity,10,false],mild:[10,20,false],warm:[20,27,true],hot:[27,Infinity,false]},humidity:{'very-dry':[-Infinity,30,false],dry:[30,45,false],balanced:[45,60,false],humid:[60,80,true],'very-humid':[80,Infinity,false]}};
+  function weatherFits(id,value,choice){const b=weatherBands[id]?.[choice];if(!b||!Number.isFinite(value))return false;return (choice==='hot'||choice==='very-humid'?value>b[0]:value>=b[0])&&(b[2]?value<=b[1]:value<b[1]);}
+  function weatherPreference(id,value,choice){if(!Number.isFinite(value))return 0;if(weatherFits(id,value,choice))return 1;const b=weatherBands[id]?.[choice];if(!b)return 0;const distance=Math.max(b[0]-value,0,value-b[1]);return 1/(1+Math.max(distance,.01)/(id==='temperature'?5:id==='rain'?3:15));}
+  function tripWeather(profile,start,end){const entries=[],cursor=new Date(start.getFullYear(),start.getMonth(),1,12);let totalDays=0;const sums={temperature:0,rain:0,humidity:0},keys={temperature:'meanDailyC',rain:'meanRainMmPerDay',humidity:'meanRelativeHumidityPct'},known={temperature:true,rain:true,humidity:true};while(cursor<=end){const year=cursor.getFullYear(),month=cursor.getMonth(),first=Math.max(start.getDate()*(start.getFullYear()===year&&start.getMonth()===month),1),last=end.getFullYear()===year&&end.getMonth()===month?end.getDate():new Date(year,month+1,0).getDate(),days=last-first+1,raw=profile?.months?.[month],values={};for(const [id,key]of Object.entries(keys)){const value=raw?.[key];values[id]=Number.isFinite(value)?value:null;if(values[id]===null)known[id]=false;else sums[id]+=value*days;}entries.push({year,month:month+1,days,...values});totalDays+=days;cursor.setMonth(month+1);}return {months:entries,days:totalDays,averages:Object.fromEntries(Object.keys(keys).map(id=>[id,known[id]&&totalDays?sums[id]/totalDays:null]))};}
+
   function match(f,data,routes,now=new Date(),defs=[]){
     const limits=dateLimits(now),lengths=durationValues(f.days),people=Number(f.people||1),rules=partyRules(f.party);
     if(!lengths.length||!Number.isInteger(people)||people<rules.min||people>rules.max||unverifiedRequirements(f,defs).length)return [];
@@ -64,6 +70,8 @@
             const winterProfile=country.scoredSeasonality?.profiles?.[regionIndex];if(winterProfile?.climateType==='winter'){let unsuitable=false;const cursor=new Date(start.getFullYear(),start.getMonth(),1,12);while(cursor<=end){const snow=winterProfile.winterClimate?.months?.[cursor.getMonth()];if(!snow||!Number.isFinite(snow.meanDailyC)||!Number.isFinite(snow.meanMonthlySnowfallCm)||!Number.isFinite(snow.snowCoverFraction)||snow.meanDailyC>5)unsuitable=true;cursor.setMonth(cursor.getMonth()+1);}if(unsuitable)continue;}
             let seasonFits=true;if(f.season){const cursor=new Date(start.getFullYear(),start.getMonth(),1,12);while(cursor<=end){if(!f.season.includes((country.seasonByYear?.[cursor.getFullYear()]?.[regionIndex]||country.regions[regionIndex][1])[cursor.getMonth()]))seasonFits=false;cursor.setMonth(cursor.getMonth()+1);}}
             if(f.season&&hard('season')&&!seasonFits)continue;
+            const weather=tripWeather(country.scoredSeasonality?.profiles?.[regionIndex],start,end),weatherIds=Object.keys(weatherBands).filter(id=>selected(f[id]));
+            if(weatherIds.some(id=>hard(id)&&!weather.months.every(m=>weatherFits(id,m[id],f[id]))))continue;
             for(const route of routes(key,{origin:f.origin,regionIndex,departureDate:iso(start),returnDate:iso(end)})){
               if(f.arrival&&route.code!==f.arrival)continue;
               if(days<Math.ceil((route.time*2+24)/24))continue;
@@ -74,7 +82,8 @@
               rates[4]+=fitnessWeekly/(7*people);const amount=Math.round(total(rates,days,people)*100)/100;if(budget!==null&&hard('budget')&&amount>ceiling)continue;
               let score=0;const relaxed=[];
               for(const [id,active,fits] of [['budget',budget!==null,amount<=ceiling],['flightHours',!!f.flightHours,flightFits],['season',!!f.season,seasonFits],['priceLevel',!!f.priceLevel,bands[key]===f.priceLevel],['newPlaces',f.newPlaces==='yes'&&f.profileKnown,!visited.has(key)]])if(active&&!hard(id)){if(fits)score++;else relaxed.push(id);}
-              const candidate={key,regionIndex,region:country.regions[regionIndex][0],rating:(country.seasonByYear?.[month.getFullYear()]?.[regionIndex]||country.regions[regionIndex][1])[month.getMonth()],route,days,start:iso(start),end:iso(end),people,rates,fitnessWeekly,fitnessTotal:Math.round(fitnessWeekly*days/7*100)/100,total:amount,budget,ceiling,score,relaxed,priceBand:bands[key],recordedVisited:visited.has(key)};
+              for(const id of weatherIds)if(!hard(id)){score+=weatherPreference(id,weather.averages[id],f[id]);if(!weatherFits(id,weather.averages[id],f[id]))relaxed.push(id);}
+              const candidate={weather,key,regionIndex,region:country.regions[regionIndex][0],rating:(country.seasonByYear?.[month.getFullYear()]?.[regionIndex]||country.regions[regionIndex][1])[month.getMonth()],route,days,start:iso(start),end:iso(end),people,rates,fitnessWeekly,fitnessTotal:Math.round(fitnessWeekly*days/7*100)/100,total:amount,budget,ceiling,score,relaxed,priceBand:bands[key],recordedVisited:visited.has(key)};
               // Keep one representative duration per region/month/arrival to bound memory for broad ranges.
               const id=[key,regionIndex,iso(start).slice(0,7),route.code].join('|'),previous=out.get(id);
               if(!previous||candidate.score>previous.score||(candidate.score===previous.score&&Math.abs(days-center)<Math.abs(previous.days-center)))out.set(id,candidate);
@@ -85,6 +94,6 @@
     }
     return [...out.values()];
   }
-  const engine={match,total,candidateMonths,regionExclusionId,dateLimits,durationValues,partyRules,unverifiedRequirements,priceBands};
+  const engine={weatherBands,weatherFits,weatherPreference,tripWeather,match,total,candidateMonths,regionExclusionId,dateLimits,durationValues,partyRules,unverifiedRequirements,priceBands};
   if(typeof module!=='undefined'&&module.exports)module.exports=engine;else window.TRAVEL_BUILDER_ENGINE=engine;
 })();
