@@ -248,7 +248,7 @@ window.TRAVEL_BUILDER_FILTERS = [
   },
   {
     "id": "rain",
-    "label": "Rain tolerance",
+    "label": "Precipitation",
     "group": "weather",
     "pending": false,
     "options": [
@@ -262,25 +262,25 @@ window.TRAVEL_BUILDER_FILTERS = [
       ],
       [
         "light",
-        "Light rain (0.1–1 mm/day)"
+        "Light precipitation (0.1–1 mm/day)"
       ],
       [
         "moderate",
-        "Moderate rain (>1–3 mm/day)"
+        "Moderate precipitation (>1–3 mm/day)"
       ],
       [
         "rainy",
-        "Rainy (>3–10 mm/day)"
+        "Wet (>3–10 mm/day)"
       ],
       [
         "very-rainy",
-        "Very rainy (>10 mm/day)"
+        "Very wet (>10 mm/day)"
       ]
     ],
     "primary": false,
     "priority": true,
     "defaultPriority": "prefer",
-    "help": "Maximum tolerated historical monthly-average rainfall per day. Drier conditions also match. Very rainy accepts any rainfall level."
+    "help": "Maximum tolerated historical monthly-average precipitation per day. Drier conditions also match. Sources currently include rain-only and total precipitation (including snow water equivalent); measures are not yet standardized."
   },
   {
     "id": "interests",

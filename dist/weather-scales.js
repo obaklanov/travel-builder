@@ -30,13 +30,13 @@
     }
     return '<svg viewBox="0 0 100 84" aria-hidden="true">'+art+'</svg>';
   }
-  for(const [id,names] of [['temperature',['Cool','Mild','Warm','Hot']],['rain',['Very dry','Light','Moderate','Rainy','Very rainy']],['humidity',['1','2','3','4','5']],['advisory',['1','2','3','4','5']]]){
+  for(const [id,names] of [['temperature',['Cool','Mild','Warm','Hot']],['rain',['Very dry','Light','Moderate','Wet','Very wet']],['humidity',['1','2','3','4','5']],['advisory',['1','2','3','4','5']]]){
     const field=document.querySelector('#builder-'+id),slot=field.closest('.builder-slot'),label=slot.querySelector('.builder-field-label'),choices=[...field.options].slice(1);
     field.hidden=true;field.classList.add('variant-source');field.setAttribute('aria-hidden','true');slot.classList.add('weather-scale-slot');
     const wrap=document.createElement('div');wrap.className='weather-scale';
     const scene=document.createElement('div');scene.className='weather-scale-scene';
     const caption=document.createElement('output');caption.className='weather-scale-caption';caption.setAttribute('aria-live','polite');
-    const range=document.createElement('input');range.type='range';range.min='1';range.max=String(choices.length);range.step='1';range.className='weather-scale-range';range.id='builder-'+id+'-range';range.setAttribute('aria-label',id==='humidity'?'Humidity':id==='rain'?'Rain tolerance':id==='advisory'?'Safety level':'Temperature');label.htmlFor=range.id;
+    const range=document.createElement('input');range.type='range';range.min='1';range.max=String(choices.length);range.step='1';range.className='weather-scale-range';range.id='builder-'+id+'-range';range.setAttribute('aria-label',id==='humidity'?'Humidity':id==='rain'?'Precipitation':id==='advisory'?'Safety level':'Temperature');label.htmlFor=range.id;
     const steps=document.createElement('div');steps.className='weather-scale-steps';steps.style.setProperty('--weather-steps',choices.length);
     function choose(i){field.value=choices[i].value;field.dispatchEvent(new Event('change',{bubbles:true}));}
     const buttons=choices.map((choice,i)=>{const button=document.createElement('button');button.type='button';button.className='variant-button';button.innerHTML=picture(id,i)+'<span>'+names[i]+'</span>';button.title=choice.textContent;button.setAttribute('aria-label',choice.textContent);button.addEventListener('click',()=>choose(i));steps.append(button);return button;});
