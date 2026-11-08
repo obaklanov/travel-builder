@@ -3580,6 +3580,12 @@
       "climateType": "all-season",
       "reason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
       "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "peru:cusco": {
+      "name": "Cusco",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season classification: tolerate cooler Andean conditions; neutral +5 to +25°C, rain target 1 mm/day.",
+      "status": "Approved 7 November 2026"
     }
   }
 }

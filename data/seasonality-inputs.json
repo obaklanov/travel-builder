@@ -190,7 +190,7 @@
     "limitations": "Crowd and price inputs are provisional editorial proxies and must be replaced by measured monthly data when available. Full-month averages hide short holiday spikes; climate grid cells can miss coastal and mountain microclimates.",
     "ranking": "Within each base only: ranks 1–4 BEST, 5–8 AVERAGE, 9–12 WORST. Equal values use January–December order to enforce exactly four per band.",
     "humidityTargetPct": 55,
-    "climateScoring": "Temperature: absolute distance from base-type target (standard 21°C, beach 25°C, winter −5°C); Warm living rain: absolute distance from 1 mm/calendar day; All season rain: 2 mm/calendar day; Beach rain: 0 mm/day. Warm living humidity: absolute distance from 65%; All season and Beach humidity: absolute distance from 55%. Rank only the base’s own 12 months; rank score = 100 × (12 − rank) / 11. Climate is 50% temperature, 30% rain, 20% humidity. Symmetric deviations, then calendar-order tie-breaking, preserve 4/4/4 bands. Beach destinations double the temperature component weight before normalizing: temperature 2/3, rain 1/5, humidity 2/15. Multiplying deviation values before ranking alone would not change ranks.",
+    "climateScoring": "Temperature: absolute distance from base-type target (standard 21°C, beach 25°C, winter −5°C); Warm living rain: absolute distance from 1 mm/calendar day; All season rain: 1 mm/calendar day; Beach rain: 0 mm/day. Warm living humidity: absolute distance from 65%; All season and Beach humidity: absolute distance from 55%. Rank only the base’s own 12 months; rank score = 100 × (12 − rank) / 11. Climate is 50% temperature, 30% rain, 20% humidity. Symmetric deviations, then calendar-order tie-breaking, preserve 4/4/4 bands. Beach destinations double the temperature component weight before normalizing: temperature 2/3, rain 1/5, humidity 2/15. Multiplying deviation values before ranking alone would not change ranks.",
     "rainTargetMmPerDay": 1,
     "temperatureTargetsC": {
       "standard": 21,
@@ -208,7 +208,7 @@
       "rainWeight": 0.6,
       "humidityWeight": 0.4,
       "formula": "MAX(0, rain rank score × 0.60 + humidity rank score × 0.40 − 5 × MAX(5 − daily mean °C, 0, daily mean °C − 25)). Rain target 2 mm/day. Inclusive neutral range; no temperature rank.",
-      "rainTargetMmPerDay": 2
+      "rainTargetMmPerDay": 1
     },
     "beachTemperatureWeightMultiplier": 2,
     "beach": {
@@ -12492,13 +12492,13 @@
           "Cusco"
         ]
       ],
-      "climateType": "standard",
+      "climateType": "all-season",
       "regionIndex": 1,
       "gridLatitude": null,
       "gridLongitude": null,
       "elevation": 3739.76,
       "climateSource": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CRH2M%2CPRECTOTCORR&community=AG&longitude=-71.9675&latitude=-13.532&start=20160101&end=20251231&format=JSON&time-standard=LST",
-      "climateTypeReason": "Mixed-purpose cultural or scenic base; Warm living 21°C target.",
+      "climateTypeReason": "Owner-approved All season classification: tolerate cooler Andean conditions; neutral +5 to +25°C, rain target 1 mm/day.",
       "climateTypeSources": [
         "https://www.peru.travel/es/destinos"
       ],
@@ -39240,6 +39240,12 @@
       "climateType": "all-season",
       "reason": "All season scenic or historical destination; temperature neutral from +5 to +25°C.",
       "status": "Authorized next-two-country rollout, 6 November 2026."
+    },
+    "peru:cusco": {
+      "name": "Cusco",
+      "climateType": "all-season",
+      "reason": "Owner-approved All season classification: tolerate cooler Andean conditions; neutral +5 to +25°C, rain target 1 mm/day.",
+      "status": "Approved 7 November 2026"
     }
   }
 }

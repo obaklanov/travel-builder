@@ -155,3 +155,6 @@ User explicitly changed Warm living targets. Temperature target now 21°C; rain 
 
 ## Current rules — 7 November 2026
 Supersedes earlier overall weighting and daylight sections. All destination types now use 70% climate, 10% festivals, 10% crowds, 10% prices. Warm living daylight uses the day-weighted annual average: no penalty for a monthly shortfall up to 1.5 hours, then 3.2 overall points per additional hour, capped at 8 points (four-hour shortfall). No automatic rating cap. Other climate types retain no daylight penalty. Climate targets, component weights, suitability exclusions and type-specific rating bands are unchanged.
+
+## Rain target and Cusco — 7 November 2026
+Supersedes earlier nonzero rain targets: Warm living and All season both target 1 mm per calendar day; Beach retains 0 mm. Winter uses snow measures rather than a rain target. Cusco is now All season (neutral +5 to +25°C). Other inputs, humidity targets, weights and exclusions unchanged.

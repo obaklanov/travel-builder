@@ -12,9 +12,9 @@ assert.equal(model.eventMonths({rule:'easter'},2027)[0],3);assert.equal(model.ev
 assert.equal(model.temperatureTargetC(),21);assert.equal(model.temperatureTargetC('beach'),25);assert.equal(model.temperatureTargetC('winter'),-5);assert.throws(()=>model.temperatureTargetC('unknown'));
 const typeFixture=[-12,-5,0,5,12,21,25,30,35,40,45,50].map(meanDailyC=>({meanDailyC,meanRainMmPerDay:5,meanRelativeHumidityPct:55}));
 assert.equal(model.climateScores(typeFixture)[5].temperatureRank,1);assert.equal(model.climateScores(typeFixture,'beach')[6].temperatureRank,1);assert.equal(model.winterClimateScore({meanDailyC:-5,meanMonthlySnowfallCm:60,snowCoverFraction:.8}).temperature,100);
-const classified=Object.values(model.out.countries).flatMap(c=>c.profiles);assert.equal(classified.filter(p=>p.climateType==='beach').length,36);assert.equal(classified.filter(p=>p.climateType==='winter').length,2);assert.equal(classified.filter(p=>p.climateType==='standard').length,111);
+const classified=Object.values(model.out.countries).flatMap(c=>c.profiles);assert.equal(classified.filter(p=>p.climateType==='beach').length,36);assert.equal(classified.filter(p=>p.climateType==='winter').length,2);assert.equal(classified.filter(p=>p.climateType==='standard').length,110);
 for(const country of Object.values(model.out.countries))for(const [index,p] of country.profiles.entries()){assert.equal(p.temperatureTargetC,model.temperatureTargetC(p.climateType));if(['all-season','winter'].includes(p.climateType))continue;const expected=model.ranksOf(p.months.map(m=>Math.abs(m.meanDailyC-p.temperatureTargetC)));for(const year of Object.values(country.years))year[index].forEach((m,i)=>assert.equal(m.climateRanks.temperature,expected[i]));}
-console.log('PASS: standard/beach/winter resolve to 21/25/-5°C; correct temperature ranks for every profile and year; 36 beach, 2 winter, 77 All season, 111 Warm living.');
+console.log('PASS: standard/beach/winter resolve to 21/25/-5°C; correct temperature ranks for every profile and year; 36 beach, 2 winter, 78 All season, 110 Warm living.');
 
 const cartagena=model.out.countries.colombia.profiles.find(p=>p.id==='cartagena');assert.equal(cartagena.climateType,'standard');assert.equal(cartagena.temperatureTargetC,21);
 
@@ -23,7 +23,7 @@ const neutral=Array.from({length:12},(_,i)=>({meanDailyC:10,meanRainMmPerDay:i,m
 for(const t of [4,0,26,28,200]){const changed=model.climateScores(neutral.map(m=>({...m,meanDailyC:t})),'all-season');changed.forEach((m,i)=>assert(Math.abs(m.total-Math.max(0,baseAllSeason[i].total-model.allSeasonTemperaturePenalty(t)))<1e-10));}
 assert.equal(model.resolvedClimateType({country:'united-kingdom',id:'edinburgh',climateType:'standard'}),'all-season');assert.equal(model.resolvedClimateType({country:'france',id:'strasbourg'}),'all-season');console.log('PASS: All season inclusive limits, 5 points/degree outside, unchanged scores within range, floor at zero, and owner-approved future assignments.');
 
-assert.equal(classified.filter(p=>p.climateType==='all-season').length,77);
+assert.equal(classified.filter(p=>p.climateType==='all-season').length,78);
 
 for(const [key,id] of [['portugal','porto'],['italy','venice']]){const p=model.out.countries[key].profiles.find(p=>p.id===id);assert.equal(p.climateType,'all-season');assert.equal(p.temperatureTargetC,null);}
 
@@ -43,7 +43,7 @@ const winterCountry={...data.france,regions:[['Test Winter','BBBBBBBBBBBB']],sco
 const rainAudit=JSON.parse(read('data/rain-suitability-review.json'));assert.equal(rainAudit.bases.length,226);assert.equal(rainAudit.bases.filter(p=>p.vulnerable).length,85);assert.equal(Object.values(data).reduce((n,d)=>n+d.regions.length,0),226);for(const p of rainAudit.bases){assert.equal(data[p.country].regions[p.regionIndex][0],p.label);assert.equal(p.months.length,12);if(!p.vulnerable)continue;assert.equal(new Set(p.excludedMonths).size,2);for(const month of p.excludedMonths){assert.equal(data[p.country].regions[p.regionIndex][1][month-1],'U');const filters={destination:p.country,region:String(p.regionIndex),month:'2027-'+String(month).padStart(2,'0'),days:'14',people:'1',origin:'YYZ',season:'',budget:''};assert.equal(engine.match(filters,{[p.country]:data[p.country]},(k,r)=>context.getFlightRoutes(k,r),new Date('2026-11-06T12:00:00Z')).length,0);}}
 assert.deepEqual(rainAudit.bases.find(p=>p.country==='costa-rica'&&p.regionIndex===2).excludedMonths,[7,12]);assert.deepEqual(rainAudit.bases.find(p=>p.id==='salento').excludedMonths,[4,5]);console.log('PASS: 226-base audit, 85 two-month exclusions, all 170 blocked recommendation windows and reviewed regional exceptions.');
 
-const neutralBoundary=model.climateScores(neutral,'all-season');assert.equal(neutralBoundary[2].rainRank,1);for(const m of neutralBoundary)assert(Math.abs(m.total-(m.rain*.6+m.humidity*.4))<1e-10);console.log('PASS: All season 2 mm/day rain target, 60/40 rain/humidity, inclusive +5 to +25°C range and 5-point penalty.');
+const neutralBoundary=model.climateScores(neutral,'all-season');assert.equal(neutralBoundary[1].rainRank,1);for(const m of neutralBoundary)assert(Math.abs(m.total-(m.rain*.6+m.humidity*.4))<1e-10);console.log('PASS: All season 1 mm/day rain target, 60/40 rain/humidity, inclusive +5 to +25°C range and 5-point penalty.');
 
 // Approved Brazil classification and gateway coverage.
 assert.deepEqual(Array.from(model.out.countries.brazil.profiles,p=>p.climateType),["standard","standard","all-season","all-season","all-season","all-season","standard","beach","standard","all-season"]);
@@ -103,6 +103,8 @@ assert.deepEqual(Array.from(model.out.countries["united-states"].profiles,p=>p.c
 assert.deepEqual(Array.from(model.out.countries["south-africa"].profiles,p=>p.climateType),["standard","all-season","beach","all-season","all-season","all-season"]);
 
 // Climate target scope: only Warm living changes to 21°C, 1 mm/day, 65% RH.
-assert.equal(model.out.method.rainTargetMmPerDay,1);assert.equal(model.out.method.allSeason.rainTargetMmPerDay,2);assert.equal(model.out.method.beach.rainTargetMmPerDay,0);assert.equal(model.out.method.warmLiving.humidityTargetPct,65);assert.equal(model.out.method.humidityTargetPct,55);
-assert.equal(model.climateScores(fixture,'standard')[1].rainRank,1);assert.equal(model.climateScores(fixture,'all-season')[2].rainRank,1);
+assert.equal(model.out.method.rainTargetMmPerDay,1);assert.equal(model.out.method.allSeason.rainTargetMmPerDay,1);assert.equal(model.out.method.beach.rainTargetMmPerDay,0);assert.equal(model.out.method.warmLiving.humidityTargetPct,65);assert.equal(model.out.method.humidityTargetPct,55);
+assert.equal(model.climateScores(fixture,'standard')[1].rainRank,1);assert.equal(model.climateScores(fixture,'all-season')[1].rainRank,1);
 const humidityFixture=Array.from({length:12},(_,i)=>({meanDailyC:21,meanRainMmPerDay:1,meanRelativeHumidityPct:40+i*5}));assert.equal(model.climateScores(humidityFixture,'standard')[5].humidityRank,1);for(const type of ['all-season','beach'])assert.equal(model.climateScores(humidityFixture,type)[3].humidityRank,1);
+
+assert.equal(model.out.countries.peru.profiles.find(p=>p.id==='cusco').climateType,'all-season');
