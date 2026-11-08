@@ -168,9 +168,9 @@
   },
   "method": {
     "weights": {
-      "climate": 0.6,
+      "climate": 0.7,
+      "festivals": 0.1,
       "crowds": 0.1,
-      "festivals": 0.2,
       "prices": 0.1
     },
     "climateWeights": {
@@ -217,10 +217,10 @@
       "coldPenaltyThresholdC": 22,
       "coldPenaltyPointsPerDegree": 5,
       "weights": {
-        "climate": 0.8,
+        "climate": 0.7,
         "festivals": 0.1,
-        "crowds": 0.05,
-        "prices": 0.05
+        "crowds": 0.1,
+        "prices": 0.1
       },
       "ratingThresholds": {
         "best": 60,
@@ -230,10 +230,10 @@
     },
     "winter": {
       "weights": {
-        "climate": 0.8,
+        "climate": 0.7,
         "festivals": 0.1,
-        "crowds": 0.05,
-        "prices": 0.05
+        "crowds": 0.1,
+        "prices": 0.1
       },
       "climateWeights": {
         "temperature": 0.5,
@@ -262,12 +262,12 @@
       "winter": "Winter"
     },
     "warmLivingDaylight": {
-      "shortestMonths": 3,
-      "penaltyTouristPoints": 5,
-      "maximumRating": "A",
-      "definition": "Warm living only: each year, average astronomical sunrise-to-sunset daylight across all days of each month at the base latitude. The three shortest months lose 5 overall tourist points (floor zero), and cannot be BEST. Other climate types are unchanged. No replacement BEST months are promoted to preserve a quota.",
+      "thresholdHours": 1.5,
+      "pointsPerHour": 3.2,
+      "maximumPenalty": 8,
+      "definition": "Warm living only: compare monthly daylight with the day-weighted annual average; deduct 3.2 overall points per hour of shortfall beyond 1.5 hours, capped at 8 points. No rating cap. Other types have no daylight deduction.",
       "sourceUrl": "https://gml.noaa.gov/grad/solcalc/solareqns.PDF",
-      "limitations": "Approximate astronomical daylight, not measured sunshine, cloud cover, twilight or terrain shading. Fixed small preference penalty, including bases near the equator where seasonal differences are small."
+      "limitations": "Astronomical daylight, not measured sunshine or cloud cover; preference thresholds are editorial."
     },
     "warmLiving": {
       "humidityTargetPct": 65
