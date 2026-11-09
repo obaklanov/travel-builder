@@ -6,7 +6,7 @@
     ],
     "passport": "Valid for the duration of your stay.",
     "sourceUrl": "https://travel.gc.ca/destinations/mexico#entryexit",
-    "checkedAt": "2026-11-01",
+    "checkedAt": "2026-11-09",
     "needsReview": false,
     "checkFailed": false
   },
@@ -15,7 +15,7 @@
     "notes": [],
     "passport": "Valid for the duration of your stay.",
     "sourceUrl": "https://travel.gc.ca/destinations/japan#entryexit",
-    "checkedAt": "2026-11-01",
+    "checkedAt": "2026-11-09",
     "needsReview": false,
     "checkFailed": false
   },
@@ -27,7 +27,7 @@
     ],
     "passport": "Valid for at least 3 months after leaving the Schengen area.",
     "sourceUrl": "https://travel.gc.ca/destinations/portugal#entryexit",
-    "checkedAt": "2026-11-01",
+    "checkedAt": "2026-11-09",
     "needsReview": false,
     "checkFailed": false
   },
@@ -39,7 +39,7 @@
     ],
     "passport": "Valid for at least 3 months after leaving the Schengen area.",
     "sourceUrl": "https://travel.gc.ca/destinations/italy#entryexit",
-    "checkedAt": "2026-11-01",
+    "checkedAt": "2026-11-09",
     "needsReview": false,
     "checkFailed": false
   },
@@ -50,7 +50,7 @@
     ],
     "passport": "Valid for the duration of your stay.",
     "sourceUrl": "https://travel.gc.ca/destinations/argentina#entryexit",
-    "checkedAt": "2026-11-01",
+    "checkedAt": "2026-11-09",
     "needsReview": false,
     "checkFailed": false
   },
@@ -61,7 +61,7 @@
     ],
     "passport": "Valid for at least 6 months upon entry.",
     "sourceUrl": "https://travel.gc.ca/destinations/thailand#entryexit",
-    "checkedAt": "2026-11-01",
+    "checkedAt": "2026-11-09",
     "needsReview": false,
     "checkFailed": false
   },
@@ -73,7 +73,7 @@
     ],
     "passport": "Valid for at least 6 months after your expected departure from Egypt.",
     "sourceUrl": "https://travel.gc.ca/destinations/egypt#entryexit",
-    "checkedAt": "2026-11-01",
+    "checkedAt": "2026-11-09",
     "needsReview": false,
     "checkFailed": false
   },
@@ -84,7 +84,7 @@
     ],
     "passport": "Valid for at least 3 months after your expected departure from New Zealand.",
     "sourceUrl": "https://travel.gc.ca/destinations/new-zealand#entryexit",
-    "checkedAt": "2026-11-01",
+    "checkedAt": "2026-11-09",
     "needsReview": false,
     "checkFailed": false
   },
@@ -95,7 +95,7 @@
     ],
     "passport": "For air travel, a Canadian passport must be valid for the duration of your stay.",
     "sourceUrl": "https://travel.gc.ca/destinations/united-states#entryexit",
-    "checkedAt": "2026-11-01",
+    "checkedAt": "2026-11-09",
     "needsReview": false,
     "checkFailed": false
   },
@@ -106,7 +106,7 @@
     ],
     "passport": "Valid for at least 6 months beyond your expected departure from Vietnam.",
     "sourceUrl": "https://travel.gc.ca/destinations/vietnam#entryexit",
-    "checkedAt": "2026-11-01",
+    "checkedAt": "2026-11-09",
     "needsReview": false,
     "checkFailed": false
   },
@@ -117,7 +117,7 @@
     ],
     "passport": "Valid for the duration of your stay.",
     "sourceUrl": "https://travel.gc.ca/destinations/colombia#entryexit",
-    "checkedAt": "2026-11-01",
+    "checkedAt": "2026-11-09",
     "needsReview": false,
     "checkFailed": false
   },
@@ -126,7 +126,7 @@
     "notes": [],
     "passport": "Valid for at least 6 months beyond your expected departure from Morocco.",
     "sourceUrl": "https://travel.gc.ca/destinations/morocco#entryexit",
-    "checkedAt": "2026-11-01",
+    "checkedAt": "2026-11-09",
     "needsReview": false,
     "checkFailed": false
   },
@@ -137,7 +137,7 @@
     ],
     "passport": "Valid for at least 3 months after your planned departure from the Schengen area.",
     "sourceUrl": "https://travel.gc.ca/destinations/spain#entryexit",
-    "checkedAt": "2026-11-01",
+    "checkedAt": "2026-11-09",
     "needsReview": false,
     "checkFailed": false
   },
@@ -148,7 +148,7 @@
     ],
     "passport": "Valid for at least 3 months after your planned departure from the Schengen area.",
     "sourceUrl": "https://travel.gc.ca/destinations/greece#entryexit",
-    "checkedAt": "2026-11-01",
+    "checkedAt": "2026-11-09",
     "needsReview": false,
     "checkFailed": false
   },
@@ -159,7 +159,7 @@
     ],
     "passport": "Valid for the duration of your stay.",
     "sourceUrl": "https://travel.gc.ca/destinations/costa-rica#entryexit",
-    "checkedAt": "2026-11-01",
+    "checkedAt": "2026-11-09",
     "needsReview": false,
     "checkFailed": false
   },
@@ -171,7 +171,7 @@
     "passport": "Valid for at least 6 months after entry, with at least one blank page.",
     "sourceUrl": "https://travel.gc.ca/destinations/indonesia#entryexit",
     "checkedAt": "2026-11-01",
-    "needsReview": false,
+    "needsReview": true,
     "checkFailed": false
   },
   "france": {
@@ -182,7 +182,7 @@
     ],
     "passport": "Valid for at least 3 months after leaving the Schengen area.",
     "sourceUrl": "https://travel.gc.ca/destinations/france#entryexit",
-    "checkedAt": "2026-11-01",
+    "checkedAt": "2026-11-09",
     "needsReview": false,
     "checkFailed": false
   },
@@ -194,7 +194,7 @@
     ],
     "passport": "Valid for the duration of your stay.",
     "sourceUrl": "https://travel.gc.ca/destinations/united-kingdom#entryexit",
-    "checkedAt": "2026-11-01",
+    "checkedAt": "2026-11-09",
     "needsReview": false,
     "checkFailed": false
   },
@@ -205,7 +205,7 @@
     ],
     "passport": "Valid for at least 150 days from entry, with room for entry and exit stamps.",
     "sourceUrl": "https://travel.gc.ca/destinations/turkiye#entryexit",
-    "checkedAt": "2026-11-01",
+    "checkedAt": "2026-11-09",
     "needsReview": false,
     "checkFailed": false
   },
@@ -216,7 +216,7 @@
     ],
     "passport": "Valid for at least 6 months after arrival.",
     "sourceUrl": "https://travel.gc.ca/destinations/peru#entryexit",
-    "checkedAt": "2026-11-01",
+    "checkedAt": "2026-11-09",
     "needsReview": false,
     "checkFailed": false
   },
@@ -228,7 +228,7 @@
     ],
     "passport": "Valid for the duration of your stay.",
     "sourceUrl": "https://travel.gc.ca/destinations/brazil#entryexit",
-    "checkedAt": "2026-11-01",
+    "checkedAt": "2026-11-09",
     "needsReview": false,
     "checkFailed": false
   },
@@ -239,7 +239,7 @@
     ],
     "passport": "Valid for at least 30 days after departure, with at least 2 empty visa pages.",
     "sourceUrl": "https://travel.gc.ca/destinations/south-africa#entryexit",
-    "checkedAt": "2026-11-01",
+    "checkedAt": "2026-11-09",
     "needsReview": false,
     "checkFailed": false
   },
@@ -251,7 +251,7 @@
     ],
     "passport": "Valid beyond your expected departure date.",
     "sourceUrl": "https://travel.gc.ca/destinations/south-korea#entryexit",
-    "checkedAt": "2026-11-01",
+    "checkedAt": "2026-11-09",
     "needsReview": false,
     "checkFailed": false
   },
@@ -263,7 +263,7 @@
     ],
     "passport": "Valid on the day of entry.",
     "sourceUrl": "https://travel.gc.ca/destinations/australia#entryexit",
-    "checkedAt": "2026-11-01",
+    "checkedAt": "2026-11-09",
     "needsReview": false,
     "checkFailed": false
   },
@@ -274,7 +274,7 @@
     ],
     "passport": "Valid for at least six months beyond your expected departure from Laos.",
     "sourceUrl": "https://travel.gc.ca/destinations/laos#entryexit",
-    "checkedAt": "2026-11-04",
+    "checkedAt": "2026-11-09",
     "needsReview": false,
     "checkFailed": false
   },
@@ -286,7 +286,7 @@
     ],
     "passport": "Valid for at least six months beyond your expected departure from Philippines.",
     "sourceUrl": "https://travel.gc.ca/destinations/philippines#entryexit",
-    "checkedAt": "2026-11-04",
+    "checkedAt": "2026-11-09",
     "needsReview": false,
     "checkFailed": false
   },
@@ -297,7 +297,7 @@
     ],
     "passport": "Valid for at least six months beyond your expected departure from Malaysia.",
     "sourceUrl": "https://travel.gc.ca/destinations/malaysia#entryexit",
-    "checkedAt": "2026-11-04",
+    "checkedAt": "2026-11-09",
     "needsReview": false,
     "checkFailed": false
   },
@@ -309,7 +309,7 @@
     ],
     "passport": "Valid for at least six months beyond your expected departure from Brunei.",
     "sourceUrl": "https://travel.gc.ca/destinations/brunei#entryexit",
-    "checkedAt": "2026-11-04",
+    "checkedAt": "2026-11-09",
     "needsReview": false,
     "checkFailed": false
   }
